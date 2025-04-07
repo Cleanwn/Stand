@@ -1,0 +1,26 @@
+#pragma once
+
+namespace rage
+{
+	enum ChannelIds
+	{
+		NETWORK_VOICE_CHANNEL_ID = 2,
+		NETWORK_GAME_CHANNEL_ID = 7,
+		NETWORK_PARTY_CHANNEL_ID = 8,
+		NETWORK_SESSION_VOICE_CHANNEL_ID = 11,
+		NETWORK_SESSION_ACTIVITY_CHANNEL_ID = 12,
+		NETWORK_SESSION_GAME_CHANNEL_ID = 13,
+	};
+
+	enum netNatType
+	{
+		NET_NAT_UNKNOWN,
+		NET_NAT_OPEN,
+		NET_NAT_MODERATE,
+		NET_NAT_STRICT,
+
+		NET_NAT_NUM_TYPES
+	};
+}
+
+using enum rage::ChannelIds;

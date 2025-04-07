@@ -1,0 +1,29 @@
+#pragma once
+
+#include <cstdint>
+
+namespace Stand
+{
+	enum DirectPacket : uint64_t
+	{
+		DP_HANDSHAKE = 0,
+		DP_I_GOT_YOU = 1,
+
+		DP_PONG_INFO = 2,
+		DP_PONG_INVITE,
+		DP_PONG_INVITE_ACCEPTED,
+		DP_PONG_INVITE_EXPIRED,
+		DP_PONG_POS,
+		DP_PONG_I_LOSE,
+		DP_PONG_BYE,
+
+		DP_DEV_CLEAR_DETECT,
+		DP_DEV_FORCE_DETECT,
+
+		DP_ADDR_REQUEST,
+		DP_ADDR_RESPONSE,
+
+		DP_HOSTSHARE_ACK,
+		DP_HOSTSHARE_KICK_DESYNC,
+	};
+}

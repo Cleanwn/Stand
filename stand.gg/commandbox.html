@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Commandbox Link | Stand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" crossorigin="anonymous" />
+</head>
+<body style="height:100vh;background-color:#111">
+	<div class="uk-position-center">
+		<div class="uk-card uk-card-primary">
+			<div class="uk-card-body uk-text-center">
+				<h3>Commandbox Link</h3>
+				<p>The following commandbox input has been shared:</p>
+				<pre></pre>
+				<button onclick="beamItUp();" class="uk-button uk-button-default">Show In Commandbox</button>
+			</div>
+		</div>
+	</div>
+	<script src="/common.js"></script>
+	<script>
+		let hash = decodeURIComponent(location.hash.toString().replace("#", ""));
+
+		document.querySelector("pre").textContent = hash;
+
+		function beamItUp()
+		{
+			copy_to_clipboard("Stand-Commandbox-"+hash);
+		}
+	</script>
+</body>
+</html>

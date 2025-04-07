@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alternative Injection Methods | Stand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+	<link href="/halfmoon-config.css" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+	<div class="page-wrapper with-navbar">
+		<nav class="navbar">
+			<div class="container-xl">
+				<a class="navbar-brand" href="/">Stand</a>
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="/account/">Account</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/help/">Help</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content-wrapper">
+			<div class="container-xl">
+				<div class="content">
+					<h1>Alternative Methods of Injecting Stand</h1>
+					<p>We generally recommend you use <a href="https://github.com/calamity-inc/Stand-Launchpad/releases/latest/download/Stand.Launchpad.exe" download>Stand Launchpad</a>, which requires BattlEye to be disabled, but alternatives are available.</p>
+					<h2>Automatic Injection via DLL</h2>
+					<p>You can download our <a href="/dl/D3DCOMPILER_43.dll" download>D3DCOMPILER_43.dll</a> and place it in your game directory to have it automatically update and inject Stand when you start the game. This requires BattlEye to be disabled.</p>
+					<p>However, the Launchpad with its "Automatically inject when game starts" option should be a better solution all-around, because it allows you to launch the game, and it downloads Stand updates before launching the game, so early-inject enhancements will consistently work.</p>
+					<h2>Using Another Injector</h2>
+					<p><a href="supported-versions" target="_blank">Stand's DLLs</a> are entirely self-contained and therefore can be used with any injector, such as <a href="https://github.com/DarthTon/Xenos" target="_blank" rel="noreferrer noopener">Xenos</a>, but this option comes at the cost of auto-updating. You can still manually update when Stand gives you an update notification by unloading it and then injecting the new DLL.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

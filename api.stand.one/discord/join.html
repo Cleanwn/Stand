@@ -1,0 +1,6 @@
+<p>If you're reading this, your browser is not executing Javascript. Must suck to have such a shit browser.</p>
+<script>
+	document.querySelector("p").textContent="Please wait...";
+	localStorage.setItem("link_token",location.hash.replace("#",""));
+	location.href="https://discord.com/api/oauth2/authorize?client_id=1269083011673096245&redirect_uri="+encodeURIComponent("https://backend-services.stand.sh/discord/join_callback.php")+"&response_type=code&scope=identify%20guilds.join";
+</script>

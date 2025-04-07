@@ -1,0 +1,17 @@
+:root {
+	--dm-navbar-brand-text-color-hover: #eee;
+	--dm-navbar-link-text-color-hover: #eee;
+	--dm-navbar-link-active-text-color: #eee;
+	--dm-navbar-link-active-text-color-hover: #fff;
+
+	--container-xl-max-width: 1550px;
+
+	--content-title-font-size: min(2rem, 24px);
+	--base-font-size: min(1.4rem, 16.8px);
+
+	--collapse-content-padding: min(2rem, 20px);
+}
+
+.p-20 {
+	padding: min(2rem, 20px) !important;
+}

@@ -1,0 +1,5658 @@
+! Thanks for helping with the translation of Stand into your language!
+! Before you begin, I guess you need to know a little about the project so you can work efficiently.
+! Lines starting with "# LABEL=" need to be translated except for the "LABEL=" part and to indicate that it has been translated, you need to remove the "# ", which might be a bit annoying at first, but this will become practical for updating the translation.
+! There are some things that you shouldn't translate:
+! - The name "Stand"
+! - Pairs of curly brackets, e.g. {} or {player}
+! - Folders or files like %appdata%/Stand/Theme
+! - Emojis (unless there's a culturally different meaning)
+! - Technical Terms, i.e. anything that would make less sense if translated
+! Alright, I think you're ready to unleash your powers now! ;D
+
+!!!!!!!!!!!!!
+!! General !!
+!!!!!!!!!!!!!
+
+HI=Bây giờ bạn là [Người dùng Stand]!
+HI_TRCK=Chào mừng trở lại với Stand!
+HI_TRCK_0=Không có người chơi nào bạn theo dõi đang trực tuyến.
+HI_TRCK_1={} hiện đang trực tuyến.
+HI_TRCK_M={} họ hiện đang trực tuyến.
+
+HKFAIL=Có lẽ không thể thay đổi một hoặc nhiều chức năng trò chơi cần thiết cho {} do một menu khác mà bạn đang sử dụng. :/
+WOT1=Trong khi thực hiện yêu cầu gần đây nhất của bạn, tôi đã thực hiện những hành động sau:
+WOT2=• Không có gì
+WOT3=• Ngẫu Nhiên
+WOT4=• Không có
+WOT5=Xin lưu ý rằng danh sách này không phải là sự trình bày đầy đủ về mọi thứ đã xảy ra.
+2FAST=Bạn đang làm điều này quá nhanh. Hãy chờ rồi thử lại.
+ARGNME=[tên]
+
+! E.g. Command: wanted [0 to 5]
+ARGRNGE=đến
+
+ARGVAL=[giá trị]
+ARGVALOPT=(giá trị)
+NRML=Bình Thường
+INVARG=Đó là một đối số không hợp lệ. :?
+GENWARN=Bạn có chắc chắn muốn làm điều này không?
+IRREV=Hành động này không thể hoàn tác.
+GENFAIL=Hmm, cách đó không hiệu quả. :/
+IPSUM=Dưới đây là một số văn bản khiến bạn mãn nhãn
+PRCD=Thuc Thi
+ABRT=Huy Bo
+SHW=Hiện
+HDE=Ẩn
+HIDE=Ẩn đi
+NONE=Không có
+JUSTON=Bật
+OFF=Tắt
+ON=Đã Kích Hoạt
+DOFF=Đã Vô Hiệu
+DOFF2=Vô Hiệu
+ALL=Tất cả
+
+! Thousands separator, e.g. 1,000,000
+THSNDSEP=,
+
+! "Not Applicable"
+NA=N/A
+
+GEMINI=Mở mắt thần...
+RCMD=Khuyến Khích
+NRCMD=Không Khuyến Khích
+CPYF=Sao chép {}
+GENWAIT=Vui lòng chờ...
+CMDLEN=Không được nhiều hơn {} ký tự.
+AND={} và {}
+
+! A more fancy way of saying "this is local"
+GEN_H_LOC=Điều này sẽ chỉ ảnh hưởng đến trò chơi của bạn.
+
+! When the user is seeing an empty list:
+ETYLST=Không có gì để xem ở đây.
+
+NPHYS=[Lệnh Không Có Dạng Vật Lý]
+
+! Repetitions in log:
+LOG_REP_S=+ lặp lại 1 lần
+LOG_REP_P=+ lặp lại {} lần
+
+IPNAM={ip} (trước đây tên là {name})
+
+CHRCNT={cur}/{max} nhân vật
+PLYCNT={cur}/{max} người chơi
+PTCCNT={cur}/{max} người tham gia
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Search Commands !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SRCH=Tìm Kiếm
+ARGCLU=[manh mối]
+SRCHNRES=Không có kết quả. :/
+
+!!!!!!!!!!!!!!!!!!!!
+!! Error Handling !!
+!!!!!!!!!!!!!!!!!!!!
+
+ERR_L_B=THÔNG TIN LỖI BẮT ĐẦU
+ERR_L_E=THÔNG TIN LỖI KẾT THÚC
+
+ERR_T_GEN=Tìm thông tin lỗi trong %appdata%/Stand/Log.txt.
+ERR_T_CAU=Bắt gặp một ngoại lệ.
+ERR_T_GME=Trò chơi đã xảy ra lỗi nghiêm trọng và có thể cần khởi động lại ngay.
+ERR_T_OTH=Stand gặp phải sự cố không mong muốn.
+
+ERR_LUA=Lưu ý: Lỗi này xảy ra khi thực thi tập lệnh Lua.
+
+SVM=Khôi Phục Tập Lệnh Lỗi
+4FMONLY=Chỉ Dành Cho Freemode
+
+SVM_ERR=Đã ngăn chặn {script} tập lệnh lỗi trên {operation}.
+SVM_DIE={script} tập lệnh lỗi trên {operation}.
+SVM_EXP=Thấy một ngoại lệ trong khi thực hiện tập lệnh {script}.
+
+SVM_BLM_S=Điều này có thể do sự kiện gần đây nhất của {player} gây ra.
+SVM_BLM_D=Điều này có thể do ({event}) của {player} gây ra.
+
+SVM_INVOP=Mã opcode {opcode} không hợp lệ trong tập lệnh {script}; tắt nó thay vì làm crash trò chơi.
+SVM_FRZ=Tập lệnh {} dường như bị kẹt trong một vòng lặp vô hạn; tắt nó thay vì đóng băng trò chơi.
+
+!!!!!!!!!!
+!! Tabs !! These are to be on the left side of the menu which shouldn't be too wide so keep these as short as possible
+!!!!!!!!!!
+
+ACTVTE=Kích Hoạt
+TUT_ONE=Một
+TUT_TWO=Hai
+SLF=Bản Thân
+VEH=Phương Tiện
+Online=Trực Tuyến
+PLYLST=Người Chơi
+WRLD=Thế Giới
+GME=Trò Chơi
+
+!!!!!!!!!!!!!!!!
+!! References !!
+!!!!!!!!!!!!!!!!
+
+PLY=Người chơi
+
+STTNGS=Cài Đặt
+
+KPCRSR=Giữ Vị Trí Khi Xem Lại
+
+TABS=Tab
+KPCRSRR_H=Sẽ làm cho các tab như "Bản Thân" ghi nhớ vị trí bạn đã truy cập chúng lần cuối.
+
+LSTS=Danh Sách
+KPCRSRS_H=Sẽ làm cho các tab như "Cài Đặt" ghi nhớ vị trí bạn đã truy cập chúng lần cuối.
+
+KPCRSR_L_RDC=Danh Sách: Giảm Hiệu Ứng Cho Danh Sách Lớn
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Tutorial & Help !!
+!!!!!!!!!!!!!!!!!!!!!
+
+TUT=Hướng Dẫn
+TUT2=Hướng Dẫn Sử Dụng Stand
+
+RPT=Lặp Lại
+
+! Or "Skip"
+DISM=Bỏ Qua
+
+TUT_LD=Stand đã được nạp. Tải trò chơi để tiếp tục.
+
+TUT_OPEN=Để đổi giữa các tab của Stand, hãy sử dụng {}.
+TUT_OPEN2=Để chuyển tab của Stand, hãy sử dụng {numpad} hoặc {alt} nếu bạn không có bàn phím số.
+TUT_USE=Nhấn {} để sử dụng lệnh tập trung.
+TUT_BK=Nhấn {} để quay trở lại.
+TUT_DN2=Nhấn {} để di chuyển xuống.
+TUT_RUP=Để di chuyển lên, nhấn {}.
+TUT_TABS=Điều hướng tuyệt vời. Hãy chuẩn bị, tôi sẽ kích hoạt các tab ngay bây giờ!
+TUT_RNXT=Nhấn {} để chuyển sang tab tiếp theo.
+TUT_RPRV=Nhấn {} để quay lại tab trước.
+
+TUT_CMD2=Hãy chú ý cách nó nói "Câu Lệnh: " ở đây. Điều này có nghĩa là bạn có thể sử dụng tính năng này thông qua Hộp Lệnh của Stand! Bạn có thể mở Hộp Lệnh bất kỳ lúc nào bằng cách nhấn {}.
+TUT_SLIDER=Sử dụng {} và {} để thao tác với thanh trượt.
+TUT_PROFILES=Nếu bạn muốn Stand ghi nhớ trạng thái của lệnh vào lần tiếp theo khi nạp, bạn có thể sử dụng hồ sơ (Stand > Hồ Sơ).
+TUT_CTX2=Sử dụng {} để mở menu ngữ cảnh, cho phép bạn cài các phím tắt, tương quan, v.v.
+
+TUT_HDE=Su dung {} de an Stand cua ban.
+
+HLP_CTRLLR=Ban co the mo Stand bang tay cam cua minh bang cach su dung {}.
+
+HLP_CMDCHAIN=Ban co the xau chuoi cac lenh lai voi nhau bang dau cham phay, vi du: "{}".
+
+!!!!!!!!!!!!!!
+!! Commands !!
+!!!!!!!!!!!!!!
+
+CMD=Lệnh
+B_CB=Hộp Lệnh
+CMDPRMPT=Hộp Lệnh Stand
+KB_CMDPRMPT=Mo Hop Lenh
+
+CMDUNK=Xin lỗi, "{}" không phải là lệnh mà tôi biết. :/
+CMDAMBIG=Xin lỗi, "{}" có thể có nhiều nghĩa. :/
+CMDISS={} không có sẵn cho người chơi khác. :/
+CMDPERM=Bạn không được phép sử dụng {}.
+MORE=... và {} hơn thế nữa.
+MANYMORE=... và nhiều thứ khác.
+
+CMDONL=Lệnh này chỉ có trong GTA Online.
+CMDONLONC=Lệnh này chỉ khả dụng sau khi bạn đã tham gia GTA Online.
+CMDNEEDHOST=Lệnh này chỉ khả dụng khi bạn là chủ phiên. :|
+CMDNH=Lệnh này không có sẵn với chủ phiên. :|
+CMDOTH=Lệnh này không có sẵn cho chính bạn. :|
+CMDDISA=Lệnh này hiện đang bị vô hiệu hóa. Kiểm tra thông báo của chúng tôi để biết thêm thông tin.
+
+CMD_DR_S=Lệnh được thực hiện thành công. :)
+
+FRMTSEL_AVAIL=Định dạng văn bản được hỗ trợ ở đây. Nhấn {} để lựa chọn.
+FRMTSEL_H=Sử dụng các phím mũi tên để điều hướng và {} để chèn mã.
+FRMTSEL_H_R=Đặt lại: Xóa định dạng được áp dụng.
+FRMTSEL_H_N=Dòng mới.
+
+B_CTX=Menu Ngu Canh
+CTX_MIN=Đặt Thành Giá Trị Tối Thiểu
+CTX_MAX=Đặt Thành Giá Trị Tối Đa
+
+CTX_UNAVAIL={option} không có sẵn với {command}
+
+AUTOSTATE=Tương Quan Trạng Thái Với
+AUTOSTATE_OFF=Không Có Gì
+AUTOSTATE_OPN=Stand Ở Trạng Thái Mở
+AUTOSTATE_OFT=Đi Bộ
+AUTOSTATE_AIM=Nhắm Mục Tiêu
+AUTOSTATE_FRE=Góc Tự Do
+AUTOSTATE_CHT=Trò Chuyện
+AUTOSTATE_HST=Là Chủ Phiên
+
+AUTOSTATEINV=Tương Quan Đảo Ngược
+
+IVRT=Đảo Ngược
+
+AUTOSTATE_H=Tương quan: {command} sẽ là {state} trong khi {condition}.
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_ON=đã kích hoạt
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_OFF=vô hiệu
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OPN=Stand đang mở
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OFT=bạn đang đi bộ
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_AIM=bạn đang nhắm
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_FRE=bạn đang tham gia phiên tự do
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_CHT=bạn đang trò chuyện
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_HST=bạn là chủ phiên
+
+CMDSTATE_L=Cài {0} đến {1} :)
+CMDSTATE_L_E={0} đã là {1}. :)
+
+CMDSTATE_LON=Đã Kích Hoạt {}. :)
+CMDSTATE_LOFF=Vô Hiệu {}. :)
+
+CMDSTATE_LON_E={} đã bật. :)
+CMDSTATE_LOFF_E={} đã tắt. :)
+
+CMDSTATE_OON=Đã kích hoạt thành công. :)
+CMDSTATE_OOFF=Đã vô hiệu thành công. :)
+
+CMDSTATE_OON_E=Nó đã được kích hoạt. :)
+CMDSTATE_OOFF_E=Nó đã bị vô hiệu hóa. :)
+
+! E.g. "Freeze on Herobrine" or "Freeze on All Players". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A={command} trên {player}
+
+! E.g. "WiriScript's Immortality on Herobrine". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A_LUA={script} với {command} trên {player}
+
+SUPPGEN=Loại Bỏ Các Phản Hồi Chung Chung
+SUPPGEN_H=Loại bỏ các phản hồi chung chung như "Lệnh được thực thi thành công".
+
+SUPPGEN_CB_H=Bao gồm Hộp Lệnh Stand, hộp lệnh trên giao diện web và các lệnh trò chuyện.
+
+WARNS=Cảnh Báo
+
+WARNAUTOPROC=Tự Động Tiếp Tục Cảnh Báo
+
+WARNSKIPPROC=Bỏ Qua Các Cảnh Báo Đã Được Chấp Nhận
+
+WARNFRCERD=Buộc Tôi Đọc Cảnh Báo
+
+HOTKEY=Phím Tắt
+ARGHOTKEY=[phím tắt]
+HOTKEYS=Phím Tắt
+HOTKEY_A=Thêm Phím Tắt
+HOTKEY_C2=Đổi Phím Tắt
+HOTKEY_R2=Xoá Phím Tắt
+HOTKEY_U=Nhấn phím mà bạn muốn dùng làm phím tắt cho {}.
+HOTKEY_T=Đã lưu phím tắt của {} vào %appdata%/Stand/Hotkeys.txt. :)
+
+HOTKEY_HOLD=Chế Độ Giữ
+
+!!!!!!!!!!!!!!!!!!!
+!! Keyboard Keys !!
+!!!!!!!!!!!!!!!!!!!
+
+K_UNK=Phím Không Xác Định
+
+K_R=Phải {}
+K_L=Trái {}
+
+K_SHFT=Shift
+K_ALT=Alt
+K_CTRL=Ctrl
+
+! E.g. "Hold W"
+K_HOLD=Giữ
+
+K_SPC=Cách
+K_ISRT=Insert
+K_DEL=Delete
+K_HME=Home
+K_END=End
+K_PGUP=Page Up
+K_PGDN=Page Down
+K_RET=Enter
+K_BACK=Backspace
+K_ESC=Escape
+K_A_U=Mũi Tên Lên
+K_A_L=Mũi Tên Trái
+K_A_R=Mũi Tên Phải
+K_A_D=Mũi Tên Xuống
+K_TAB=Tab
+K_LMB=Chuột Trái
+K_MMB=Chuột Giữa
+K_RMB=Chuột Phải
+K_X1=Mouse 4
+K_X2=Mouse 5
+K_MPP=Media Play/Pause
+K_MS=Media Stop
+K_NT=Next Track
+K_PT=Previous Track
+K_CAPS=Caps Lock
+
+HMB=Chỉnh Sửa Phím Bổ Trợ
+HMB_H=Cách xử lý ctrl, shift và alt.
+STRCT=Strict
+HMB_STRCT_H=Không thể nhấn các phím sửa đổi bổ sung. Vì vậy, nhấn Ctrl+Shift+G sẽ không kích hoạt G cũng như Ctrl+G.
+SMRT=Smart
+HMB_SMRT_H=Strict nếu phím tắt có phím bổ trợ, nếu không thì lax. Vì vậy, nhấn Ctrl+Shift+G sẽ kích hoạt G chứ không phải Ctrl+G.
+LAX=Lax
+HMB_LAX_H=Có thể ấn phím tắt. Vì vậy, nhấn Ctrl+Shift+G sẽ kích hoạt G và Ctrl+G.
+
+DHK=Vô Hiệu Hoá Phím Tắt
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Controller Buttons !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+CK=Phím Tay Cầm
+
+CK_LT=Trigger Trái
+CK_RT=Trigger Phải
+CK_LB=Bumper Trái
+CK_RB=Bumper Phải
+CK_LS=Stick Trái (L3)
+CK_RS=Stick Phải (R3)
+CK_D_U=D-Pad Lên
+CK_D_D=D-Pad Xuống
+CK_D_L=D-Pad Trái
+CK_D_R=D-Pad Phải
+CK_STRT=Bắt Đầu
+CK_BCK=Quay Lại
+
+!!!!!!!!!!!!!!!!!!!!
+!! Authentication !!
+!!!!!!!!!!!!!!!!!!!!
+
+UPDAVAIL=Stand {} có sẵn
+
+FREE_T=Lệnh này không có trong Phiên bản Free của Stand. ;)
+CMDFULLSP=Để sử dụng lệnh này, hãy chuyển đến Story Mode hoặc nâng cấp lên Phiên bản Regular của Stand.
+CMDNEDR=Lệnh này chỉ khả dụng với Phiên bản Regular hoặc cao hơn.
+CMDNEDU=Lệnh này chỉ khả dụng với Phiên bản Ultimate của Stand.
+
+ACTVTE_H=Kích hoạt Stand để có quyền truy cập vào menu đầy đủ, ngay cả khi ở GTA Online.
+ACTVTE_PSTE2=Dán Khoá Kích Hoạt
+ACTVTE_RGST=Tạo Một Tài Khoản
+ACTVTE_ERR_F2=Nội dung trong bảng nhớ tạm của bạn không khớp với định dạng của khoá kích hoạt Stand. :?
+ACTVTE_STRT2=Đang xác thực khoá kích hoạt của bạn...
+ACTVTE_SUCC2=Stand đã được kích hoạt thành công. :D
+
+ACTVTE_ERR_I2=Khóa kích hoạt của bạn không hợp lệ. :/
+ACTVTE_RGN=Khoá kích hoạt của bạn đã được tạo lại.
+AUTHSHR2=Khoá kích hoạt của bạn đang được sử dụng ở nơi khác. Hãy tạo lại nó hoặc thử lại sau.
+
+AUTH_X=Kích hoạt của bạn đã hết hạn.
+AUTH_CE=Đã xảy ra lỗi kết nối.
+CONHELP=Nếu thiết bị của bạn trực tuyến, hãy đảm bảo không có gì cản trở kết nối của Stand.
+
+TELEKOM_OFF=Chào mừng trực tuyến trở lại! :D
+
+VER_UNSUPP=Phiên bản Stand của bạn không còn được hỗ trợ.
+VER_UNSUPP_AUTHONLY=Phiên bản Stand của bạn không còn được hỗ trợ và chúng tôi sẽ không hỗ trợ xác thực cho phiên bản này trong thời gian dài nữa.
+UPDHELP=Bạn có thể dễ dàng cập nhật Stand bằng cách gỡ tải, nhấn "Check For Updates" trong Launchpad, sau đó nạp lại Stand.
+
+!!!!!!!!!!!!!!!!
+!! Filesystem !!
+!!!!!!!!!!!!!!!!
+
+FWERR=Không mở được {} để ghi. :|
+
+WRDR=Tủ Đồ
+
+OPNFLD=Mở Thư Mục
+
+OPNSTND=Mở Thư Mục Stand
+OPNSTND_H=Mở thư mục %appdata%/Stand của bạn.
+
+OPNASI=Mở Thư Mục ASI Mods
+OPNASI_H=Mở thư mục %appdata%/Stand/ASI Mods của bạn.
+
+OPNGTA=Mở Thư Mục GTA V
+
+OPNTHME=Mở Thư Mục Chủ Đề
+OPNTHME_H=Mở thư mục %appdata%/Stand/Theme của bạn.
+
+!!!!!!!!!!!!
+!! Colour !!
+!!!!!!!!!!!!
+
+C_H=Màu
+C_S=Độ Bão Hoà
+C_V=Giá Trị
+
+CR_HSV=Bảng Màu HSV
+CR_RGB=Bảng Màu RGB
+
+OPCTY=Độ Mờ
+
+C_R=Đỏ
+C_G=Xanh Lá
+C_B=Xanh Dương
+
+CN_A=Cầu Vòng
+CN_R=Đỏ
+CN_R_WINE=Đỏ Rượu Vang
+CN_G=Xanh Lá
+CN_G_D=Xanh Lá Tối
+CN_G_LIME=Xanh Vàng
+CN_OLIVE=Xanh Ôliu
+CN_MOSS=Rêu
+CN_TUR=Màu Ngọc
+CN_B=Xanh Dương
+CN_B_D=Xanh Dương Tối
+CN_B_COOL=Xanh Mát
+CN_B_ROYAL=Xanh Dương Đậm
+CN_C=Lục Lam
+CN_AQUA=Thủy
+CN_PLUM=Mận
+CN_Y=Vàng
+CN_Y_D=Vàng Tối
+CN_P=Hồng
+CN_P_H=Hồng Nóng
+CN_SALMON=Đỏ Cá Hồi
+CN_U=Tím
+CN_U_D=Tím Tối
+CN_M=Đỏ Tươi
+CN_O=Cam
+DN_O_L=Cam Sáng
+CN_O_RUST=Vàng Rỉ Sét
+CN_BR=Nâu
+CN_BR_L=Nâu Sáng
+CN_EARTH=Trái Đất
+CN_W=Trắng
+CN_L=Đen
+CN_GR=Xám
+CN_GR_D=Xám Tối
+
+C_PAT={colour} Mẫu
+
+OTHR=Khác
+CLRHEX=Nhập Mã Hex
+CURRCLRHEX=Màu Hiện Tại (Hex)
+
+LGBT=Chế Độ Cầu Vồng
+LGBT_H=Xoay vòng màu sắc mỗi x mili giây nhưng vẫn cho phép bạn thay đổi độ bão hòa, giá trị và độ mờ.
+
+CLR=Màu Sắc
+
+LGBTQ={}: Chế Độ Cầu Vồng
+
+! As in "colour finish"
+CLRFIN=Hoàn Tất
+
+! "LSC" is Los Santos Customs
+CLRSTD=Màu LSC
+
+CLRSTD_1=Than Chì
+CLRSTD_2=Thép Đen
+CLRSTD_3=Thép Tối
+CLRSTD_4=Bạc
+CLRSTD_5=Bạc Xanh
+CLRSTD_6=Thép Cuộn
+CLRSTD_7=Bạc Bóng Tối
+CLRSTD_8=Bạc Đá
+CLRSTD_9=Bạc Midnight
+CLRSTD_10=Bạc Gang
+CLRSTD_11=Đen Antraxit
+CLRSTD_12=Đen Nhám
+CLRSTD_13=Xám Nhám
+CLRSTD_14=Xám Nhám Nhạt
+CLRSTD_15=Đen Tiện Ích
+CLRSTD_16=Đen Poly Tiện Ích
+CLRSTD_17=Bạc Đen Tiện Ích
+CLRSTD_18=Bạc Tiện Ích
+CLRSTD_19=Bạc Gang Tiện Ích
+CLRSTD_20=Bạc Shadow Tiện Ích
+CLRSTD_21=Đen Mòn
+CLRSTD_22=Xám Than Mòn
+CLRSTD_23=Xám Bạc Mòn
+CLRSTD_24=Bạc Mòn
+CLRSTD_25=Bạc Xanh Mòn
+CLRSTD_26=Bạc Bóng Mòn
+CLRSTD_28=Đỏ Torino
+CLRSTD_29=Đỏ Formula
+CLRSTD_30=Đỏ Rực
+CLRSTD_31=Đỏ Graceful
+CLRSTD_32=Đỏ Garnet
+CLRSTD_33=Đỏ Hoàng Hôn
+CLRSTD_34=Đỏ Cabernet
+CLRSTD_35=Đỏ Candy
+CLRSTD_36=Cam Bình Minh
+CLRSTD_37=Vàng Gold Cổ Điển
+CLRSTD_39=Đỏ Nhám
+CLRSTD_40=Đỏ Sẫm Kim Loại
+CLRSTD_41=Cam Nhám
+CLRSTD_42=Vàng Nhám
+CLRSTD_43=Đỏ Tiện Ích
+CLRSTD_44=Đỏ Tươi Tiện Ích
+CLRSTD_45=Đỏ Garnet Tiện Ích
+CLRSTD_46=Đỏ Mòn
+CLRSTD_47=Vàng Đỏ Mòn
+CLRSTD_48=Đỏ Sẫm Mòn
+CLRSTD_50=Xanh Lá Racing
+CLRSTD_51=Xanh Biển
+CLRSTD_52=Xanh Ôliu
+CLRSTD_53=Xanh Lá Tươi
+CLRSTD_54=Xanh Xăng
+CLRSTD_55=Xanh Chanh Nhám
+CLRSTD_56=Xạnh Lá Đậm Tiện Ích
+CLRSTD_57=Xanh Lá Tiện Ích
+CLRSTD_58=Xanh Lá Đậm Mòn
+CLRSTD_59=Xanh Lá Mòn
+CLRSTD_60=Xanh Wash Mòn
+CLRSTD_61=Xanh Galaxy
+CLRSTD_63=Xanh Saxon
+CLRSTD_65=Xanh Mariner
+CLRSTD_66=Xanh Harbor
+CLRSTD_67=Xanh Diamond
+CLRSTD_68=Xanh Surf
+CLRSTD_69=Xanh Nautical
+CLRSTD_70=Siêu Xanh
+CLRSTD_71=Tím Schafter
+CLRSTD_72=Tím Spinnaker
+CLRSTD_73=Xanh Racing
+CLRSTD_74=Xanh Nhạt
+CLRSTD_75=Xanh Đậm Tiện Ích
+CLRSTD_76=Xanh Midnight Tiện Ích
+CLRSTD_77=Xanh Tiện Ích
+CLRSTD_78=Xanh Bọt Biển Util
+CLRSTD_79=Xanh Chớp Util
+CLRSTD_80=Maui Blue Poly Tiện Ích
+CLRSTD_81=Xanh Nhạt Tiện Ích
+CLRSTD_82=Màu Xanh Đậm
+CLRSTD_83=Màu Xanh Nhám
+CLRSTD_84=Xanh Midnight Nhám
+CLRSTD_85=Xanh Đậm Mòn
+CLRSTD_86=Xanh Mòn
+CLRSTD_87=Xanh Nhạt Mòn
+CLRSTD_89=Vàng Race
+CLRSTD_90=Đồng
+CLRSTD_91=Vàng Sương
+CLRSTD_93=Champagne
+CLRSTD_94=Nâu Nỉ
+CLRSTD_95=Nâu Creek
+CLRSTD_96=Nâu Socola
+CLRSTD_97=Nâu Phong
+CLRSTD_98=Nâu Yên Xe
+CLRSTD_99=Nâu Rơm
+CLRSTD_100=Nâu Rêu
+CLRSTD_101=Nâu Bò Rừng
+CLRSTD_102=Nâu Gỗ Sồi
+CLRSTD_103=Nâu Gỗ Dẻ Gai
+CLRSTD_104=Nâu Sienna
+CLRSTD_105=Nâu Cát
+CLRSTD_106=Nâu Phai
+CLRSTD_107=Kem
+CLRSTD_108=Nâu Tiện Ích
+CLRSTD_109=Nâu Vừa Tiện Ích
+CLRSTD_110=Nâu Nhạt Tiện Ích
+CLRSTD_111=Trắng Băng
+CLRSTD_112=Trắng Sương
+CLRSTD_113=Be Mật Ong Mòn
+CLRSTD_114=Nâu Mòn
+CLRSTD_115=Nâu Đậm Mòn
+CLRSTD_116=Be Rơm Mòn
+CLRSTD_117=Thép Cuộn
+CLRSTD_118=Thép Cuộn Đen
+CLRSTD_119=Nhôm Cuộn
+CLRSTD_120=Chrome
+CLRSTD_121=Kem Mòn
+CLRSTD_122=Kem Tiện Ích
+CLRSTD_123=Cam Mòn
+CLRSTD_124=Cam Nhạt Mòn
+CLRSTD_125=Xanh Hạt Đậu
+CLRSTD_126=Vàng Mòn
+CLRSTD_127=Xanh Xe Cảnh Sát
+CLRSTD_128=Xanh Lá Nhám
+CLRSTD_129=Nâu Nhám
+CLRSTD_130=Cam Mòn
+CLRSTD_131=Trắng Băng Nhám
+CLRSTD_132=Trắng Mòn
+CLRSTD_133=Xanh Quân Đội Ôliu Mòn
+CLRSTD_134=Trắng Tiện Ích
+CLRSTD_136=Hồng Cá Hồi
+CLRSTD_137=Hồng Pfister
+CLRSTD_138=Cam Tươi
+CLRSTD_140=Xanh Tươi
+CLRSTD_141=Xanh Midnight
+CLRSTD_142=Tím Midnight
+CLRSTD_144=Xanh Hunter
+CLRSTD_145=Tím Tươi
+CLRSTD_146=Tím Midnight Kim Loại
+CLRSTD_147=Đen Carbon
+CLRSTD_148=Tím Schafter Nhám
+CLRSTD_149=Tím Midnight Nhám
+CLRSTD_150=Đỏ Lava
+CLRSTD_151=Rừng Xanh Nhám
+CLRSTD_152=Xám Ôliu Nhám
+CLRSTD_153=Đất Tối Nhám
+CLRSTD_154=Desert Tan Nhám
+CLRSTD_155=Xanh Lá Nhám
+CLRSTD_156=Màu Hợp Kim Mặc Định
+CLRSTD_157=Xanh Epsilon
+CLRSTD_158=Vàng Nguyên Chất
+CLRSTD_159=Vàng Cuộn
+CLRSTD_160=Vàng Gold
+
+CLRFR=Màu Chính
+
+CLRSEC=Màu Phụ
+
+CLRINT=Màu Nội Thất
+CLRPRL=Màu Ngọc Trai
+
+VEHMOD20=Khói Lốp Xe
+CLRTIRE=Màu Khói Lốp Xe
+TIREINDEP=Khói Màu Ngày Quốc Khánh
+
+NEONLGHTS=Đèn Neon
+
+APOS_F=Đằng Trước
+APOS_B=Phía Sau
+
+CLRBR=Màu Nền
+
+CLRFT=Tập Trung Màu Văn Bản
+CLRFRT=Tập Trung Viền Màu Văn Bản
+CLRFS=Tập Trung Kết Cấu Màu Văn Bản
+
+CLRBT=Không Tập Trung Màu Văn Bản
+CLRBRT=Không Tập Trung Màu Viền Văn Bản
+CLRBS=Không Tập Trung Kết Cấu Màu Văn Bản
+
+CLRHU=Màu HUD
+
+CLRAR=Màu AR
+
+CLRMGME=Màu Minigame
+
+HAIR_V=Màu Tóc
+HAIRHI=Màu Tóc: Nổi Bật
+HAIRR=Màu Tóc: Cầu Vồng
+
+GUNTINT=Vũ Khí Hiện Tại: Màu Sắc
+GUNTINTR=Vũ Khí Hiện Tại: Màu: Màu Cầu Vồng
+
+WINTINT=Màu Kính Xe
+
+! "Livery" is VEHMOD48
+RFTLIV=Tem Nắp Capo
+
+!!!!!!!!!!!!!!!
+!! Collision !!
+!!!!!!!!!!!!!!!
+
+GHOST=Đi Xuyên Vật Thể
+GHOST_H=Cho phép đi xuyên tường và xe cộ.
+
+COLSNS=Va Chạm
+
+GHOSTVEHS=Không Va Chạm Với Các Phương Tiện Khác
+
+NOCOLPED=Không Va Chạm Với Người Đi Bộ
+NOCOLOBJ=Không Va Chạm Với Vật Thể
+NOCOLOBJ_H=Lưu ý điều này không bao gồm các đối tượng bản đồ tĩnh như cây cối.
+
+GHOSTRIDE=Đi Xuyên Mọi Thứ
+GHOSTRIDE_H=Vô hiệu hóa hoàn toàn va chạm đối với phương tiện hiện tại của bạn (không khuyến khích đối với các phương tiện không bay).
+
+!!!!!!!!!!
+!! Self !!
+!!!!!!!!!!
+
+MVMNT=Chuyển Động
+
+VIS=Ngoại Hình
+
+OTFT=Trang Phục
+
+HEAD=Đầu
+HEAD_V=Kiểu Đầu
+FACIALHAIR=Râu
+FACIALHAIR_V=Màu Râu
+MASK=Mặt Nạ
+MASK_V=Kiểu Mặt Nạ
+HAIR=Tóc
+TOP1=Áo
+TOP1_V=Kiểu Áo
+TOP2=Áo 2
+TOP2_V=Kiểu Áo 2
+TOP3=Áo 3
+TOP3_V=Kiểu Áo 3
+BAG=Túi / Dù Lượn
+BAG_V=Túi / Kiểu Dù Lượn
+PCHUTE=Dù Lượn / Túi
+PCHUTE_V=Dù / Kiểu Túi
+TORSO=Găng Tay / Thân Trên
+TORSO_V=Găng Tay / Kiểu Thân
+GLOVES=Găng Tay
+GLOVES_V=Kiểu Găng Tay
+PANTS=Quần Dài
+PANTS_V=Kiểu Quần Dài
+SHOES=Đôi Giày
+SHOES_V=Kiểu Giày
+ACCESSORIES=Phụ Kiện
+ACCESSORIES_V=Kiểu Phụ Kiện
+DECALS=Đề Can
+DECALS_V=Kiểu Đề Can
+HAT=Mũ
+HAT_V=Kiểu Mũ
+GLASSES=Kính
+GLASSES_V=Kiểu Kính
+EARWEAR=Bông Tai
+EARWEAR_V=Kiểu Bông Tai
+WATCH=Đồng Hồ
+WATCH_V=Kiểu Đồng Hồ
+BRACELET=Vòng Tay
+BRACELET_V=Kiểu Vòng Tay
+
+SVEOTFT=Lưu Trang Phục
+
+! Alternatively, "What Will Be Saved"
+SVESEL=Điều Gì Sẽ Được Lưu
+
+BADFILE=Tôi không thể lưu một tập tin có tên như vậy. :/
+
+LDOTFT_E1=Outfit không chỉ rõ nó được làm cho mô hình nào. :?
+LDOTFT_E2=Trang phục được làm cho mô hình không hợp lệ: {}
+LDOTFT_E3=Trang phục được làm cho một mô hình khác. :?
+LDOTFT_TF=Bộ trang phục này được thiết kế cho {}, bạn có muốn biến đổi không?
+
+DOTFTRESTR=Vô Hiệu Hoá Hạn Chế Trang Phục
+DOTFTRESTR_H=Cho phép bạn lưu trang phục với túi xách, v.v.
+
+NVEHHAIRSCL=Vô Hiệu Điều Chỉnh Tóc Trên Xe
+
+LKOTFT=Khoá Trang Phục
+LKOTFT_H=Không cho phép thay đổi trang phục bên ngoài Stand, điều này sẽ làm lỗi Casino Heist và có thể cả các nhiệm vụ khác. ⚠️
+
+CHNGMDL=Biến Đổi
+
+PLYBLCHRS=Nhân Vật Có Thể Chơi
+GRNDANMLS=Động Vật Trên Cạn
+WTRANMLS=Động Vật Dưới Nước
+FLYNANMLS=Động Vật Bay
+NPCS=NPC
+
+ONLN_MALE=Nhân Vật Nam
+ONLN_FEMALE=Nhân Vật Nữ
+
+CHNGMDL_W=Bạn cần ở dưới nước trước khi biến thành động vật dưới nước. :)
+
+MDL=Mô Hình
+
+FNDMDL_H=Cho phép bạn tìm các mô hình để chuyển đổi sang sử dụng tên của chúng.
+
+CURMDL=Mô Hình Hiện Tại
+
+OP=Trang Phục Có Sẵn
+
+OP_D=Mô Hình Hiện Tại: Mặc Định
+OP_D_H=Trang phục mặc định do Rockstar xác định cho mô hình hiện tại của bạn.
+
+OP_RNG=Mô Hình Hiện Tại: Ngẫu Nhiên
+RNG=Ngẫu Nhiên
+
+OP_0=Trực Tuyến Nữ: Cởi Trần
+
+OP_COP_M=Trực Tuyến Nam: Cảnh Sát
+OP_COP_F=Nữ Trực Tuyến: Cảnh Sát
+
+WNTDLVL=Cấp Truy Nã
+
+WNTD=Đặt Cấp Độ Truy Nã
+
+LKWNTD=Khoá Cấp Truy Nã
+
+FKWNTD=Giả Mạo Cấp Truy Nã
+FKWNTD_H=Thay đổi số lượng sao truy nã hiển thị ở góc trên bên phải.
+
+PTFXTRAIL=Hiệu Ứng Vệt PTFX
+BONES=Bộ Xương
+
+WLKSTL=Kiểu Đi bộ
+WLKSTL_1=Bắn Ra
+WLKSTL_3=Giữ Thùng Rác
+WLKSTL_4=Chạy
+WLKSTL_5=Franklin (Cứng Rắn)
+WLKSTL_8=Chạy Trốn
+WLKSTL_9=Sợ Hãi
+WLKSTL_10=Gợi Cảm
+WLKSTL_12=Bị Thương
+WLKSTL_13=Lester (Gậy)
+WLKSTL_14=Túi
+WLKSTL_15=Bảo Lãnh
+WLKSTL_16=Bảo Lãnh (Tazered)
+WLKSTL_17=Dũng Cảm
+WLKSTL_18=Bình Thản
+WLKSTL_19=Say Vừa Phải
+WLKSTL_20=Say Vừa Phải (Ngẩng Đầu)
+WLKSTL_21=Say Ít
+WLKSTL_22=Say Nhiều
+WLKSTL_23=Du Côn
+WLKSTL_24=Băng Đảng (Chậm)
+WLKSTL_25=Băng Đảng (Hèn Nhát)
+WLKSTL_26=Băng Đảng
+WLKSTL_27=Chạy Bộ
+WLKSTL_28=Người Gác Tù
+WLKSTL_30=Franklin (Cặp sách)
+WLKSTL_31=Michael (Canh Gác)
+WLKSTL_32=Michael (Chậm)
+WLKSTL_33=Gầu Múc
+WLKSTL_34=Cúi Xuống
+WLKSTL_35=Chổi Lau Nhà
+WLKSTL_36=Phụ Nữ (Nam)
+WLKSTL_37=Phụ Nữ (Nữ)
+WLKSTL_38=Xã Hội Đen (Nam)
+WLKSTL_39=Xã Hội Đen (Nữ)
+WLKSTL_40=Sang Trọng (Nam)
+WLKSTL_41=Sang Trọng (Nữ)
+WLKSTL_42=Anh Tràng Cứng Rắn (Nam)
+WLKSTL_43=Anh Tràng Cứng Rắn (Nữ)
+WLKSTL_44=Bấm Chuông
+WLKSTL_45=Thư Giãn
+WLKSTL_46=Còng Tay
+WLKSTL_47=Buồn
+WLKSTL_48=Hỗn Láo (Nam)
+WLKSTL_49=Hỗn Láo (Nữ)
+WLKSTL_50=Kiêu Ngạo
+WLKSTL_51=Tự Điên
+WLKSTL_52=Giày Cao Gót
+WLKSTL_53=Leo
+WLKSTL_54=Nhặt Rác
+WLKSTL_55=Bóng Râm
+WLKSTL_56=Sành Điệu
+
+PRSVRWALK=Giữ Nguyên Kiểu Đi Khi Chiến Đấu
+PRSVRWALK_H=Ngăn nhân vật của bạn chuyển sang "chế độ chiến đấu" bất cứ khi nào có bạo lực xung quanh bạn.
+
+WALKONAIR=Đi Bộ Trên Không
+
+AIRSWM=Bơi Trên Không
+
+WTRWLK=Đi Bộ Dưới Nước
+
+DRNKMODE=Chế Độ Say Rượu
+
+TNISMDE=Chế Độ Quần Vợt
+
+FLOPPY=Chế Độ Người Mềm
+FLOPPY_SYNCH=Ưu Tiên Đồng Bộ Hoá
+FLOPPY_SYNCH_H=Giới hạn tốc độ và vô hiệu hóa việc lên, xuống và chạy nước rút để đảm bảo điều này sẽ đồng bộ hóa.
+
+DEMIGOD=Tự Động Hồi Máu
+DEMIGOD_H=Giữ cho nhân vật của bạn có sức khỏe và áo giáp tối đa.
+DEMIGOD_H_O=Giữ cho nhân vật của họ có sức khỏe và áo giáp tối đa.
+
+MXHLTH=Sức Khoẻ Tối Đa
+
+CLUMSY=Vụng Về
+CLUMSY_H=Làm cho nhân vật của bạn bị ngã nhiều hơn.
+
+NOROLLCL=Không Hồi Chiêu Khi Chiến Đấu
+
+RESPWRCL=Hồi Sinh Tại Nơi Chết
+
+RESPWDLY=Trì Hoãn Hồi Sinh
+RESPWDLY_H=Thay đổi số giây hồi sinh trrong GTA Online thành số giây nhất định.
+
+EWO=Tự Tử
+
+SPCSH=Đặt Tiền Cho Story Mode
+SPCSH_H=Cho phép bạn thay đổi số tiền mà Michael, Franklin và Trevor có.
+
+SCHR_M=Michael
+SCHR_F=Franklin
+SCHR_T=Trevor
+
+HLTH=Sức Khoẻ
+ARMR=Giáp
+
+REGEN=Mức Độ Tái Sinh
+REGEN_H_H=Tăng sức khỏe của bạn với số lượng này, mỗi giây.
+REGEN_A_H=Tăng giáp của bạn với số lượng này, mỗi giây.
+ONLYINCOVER=Chỉ Trong Vỏ Bọc
+
+RFHLT=Phục Hồi Sức Khoẻ
+RFARM=Phục Hồi Giáp
+
+GOD=Bất Tử
+GOD_H=Làm cho nhân vật của bạn không chết.
+
+NRGDL=Không Bị Ngã
+NRGDL_H=Làm cho nhân vật của bạn không thể ngã.
+
+NO_GRACE=Mẹo Xịn: Không bật Không Bị Ngã và {feature_name} cùng lúc. ;)
+
+SEATGLUE=Không Bị Ngã Khỏi Xe
+SEATGLUE_H=Làm cho nhân vật của bạn không thể rơi khỏi xe.
+
+INFSTAM=Thể Lực Không Giới Hạn
+
+PARALCK=Khoá Dù
+LCK_FULL=Đầy
+LCK_ETY=Trống
+
+WET=Đặt Độ Ướt Của Nhân Vật
+
+WETLCK=Khoá Độ Ướt Của Nhân Vật
+
+SCLE=Tỉ Lệ
+SCLE_H=Thay đổi chiều cao, chiều rộng và chiều sâu của nhân vật của bạn *chỉ bạn*.
+
+SCLECAM=Tỉ Lệ Ảnh Hưởng Đến Camera
+
+SCLESPD=Tỉ Lệ Hiệu Ứng Tốc Độ
+
+VISZ=Chỉnh Độ Cao Tầm Nhìn
+VISZ_H=Chỉnh vị trí độ cao của tầm nhìn cho nhân vật của bạn, được sử dụng với tỷ lệ.
+
+! {Self > Appearance > Invisibility} & {Vehicle > Invisibility}
+INVIS=Tàng Hình
+INVIS_H=Lưu ý: Khi ở trong xe, những người chơi khác vẫn có thể nhìn thấy bạn trừ khi bạn cũng làm cho phương tiện của mình trở nên vô hình.
+
+! Player > Trolling > Ram > Invisibility
+RAM_INVIS=Tàng Hình
+
+LOCVIS=Hiển Thị Cục Bộ
+
+LEV=Bay Lên
+
+NOCLIP=No Clip
+
+LEV_AP=Áp Dụng Pitch Cho Thực Thể
+
+KPMOMNTM=Giữ Đà
+
+MOVSPD=Tốc Độ Di Chuyển
+
+! Used in button instructions to mean "go faster"
+SPRNT=Bay Nhanh
+
+SPRNTMUL=Hệ Số Tăng Tốc
+SPRNTMUL_H=Tốc độ bạn di chuyển khi nhấn {}.
+
+ACCEL=Tăng Tốc
+ACCEL_H=Tăng tốc làm tăng tốc độ bay lên khi bạn di chuyển lâu hơn. Đặt lại sau khi bạn chạy nước rút hoặc ngừng di chuyển.
+
+OROM=Chỉ Xoay Khi Chuyển Động
+
+PASSMOV=Di Chuyển Thụ Động
+
+PASSMOV_MIN=Khoảng Cách Tối Thiểu Từ Mặt Đất
+PASSMOV_MAX=Khoảng Cách Tối Đa Với Mặt Đất
+SPD=Tốc Độ
+
+MAXDIST=Khoảng Cách Tối Đa
+
+ASS=Hỗ Trợ
+
+FRC_U=Lực Hướng Lên
+FRC_D=Lực Hướng Xuống
+
+ASS_D=Xuống Vùng Nguy Hiểm
+ASS_D_H=Bạn phải cách mặt đất bao xa trước khi hỗ trợ ngừng kéo bạn xuống.
+
+SNAP=Xuống Đất
+
+WLKSPD=Tốc Độ Đi Và Chạy
+
+INCFRCT=Tăng Ma Sát
+INCFRCT_H=Giảm độ trơn trượt khi rẽ với tốc độ đi/chạy cao.
+
+SWMSPD=Tốc Độ Bơi
+
+NOBLD=Không Chảy Máu
+NOBLD_H=Giữ cho nhân vật của bạn không có vết máu.
+
+SONIC=Chạy Nhanh
+
+FLY=Bay Nhanh
+ASC=Bay Len
+DESC=Bay Xuong
+FLY_LAND=Hạ Cánh
+
+BI_CLSMNU_MOV=An Stand cua ban de co them tuy chon di chuyen
+
+SHWBI_JMP2FLY=Hướng Dẫn Về Nút: Nhay Cao Và Bay
+SHWBI_CTRLS=Hướng Dẫn Về Nút: Điều Khiển
+
+FROG=Nhảy Cao
+FROG_H=Bạn có thể giữ nút nhảy để nhảy cao hơn.
+
+GRCELND=Hạ Cánh Nhẹ Nhàng
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Animations !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+ANIM=Hoạt Ảnh
+CANCL=Huỷ Bỏ
+SCENARIOS=Hành Động
+LOOPED=Hoạt Ảnh Lập Lại
+LOOPED_H=Điều này không áp dụng cho các kịch bản.
+PART_MVMT=Di Chuyển Một Phần
+PART_MVMT_H=Cho phép bạn di chuyển trong khi thực hiện hoạt ảnh, nhưng phải đổi lại bằng độ thật của hoạt ảnh.
+AUTO_CANCL=Tự Động Huỷ
+AUTO_CANCL_H=Tự động hủy hoạt ảnh hiện tại của bạn khi bạn cố gắng di chuyển.
+
+ANIM1=Khoe Mẽ
+ANIM2=Hút Thuốc
+ANIM3=Ngủ
+ANIM4=Vỗ Tay
+ANIM5=Bảo Vệ
+ANIM6=Gõ Búa
+ANIM7=Cảnh Sát Rảnh
+ANIM8=Bới Rác
+ANIM9=Quay Phim Hóng Hớt
+ANIM10=Thư Giãn
+ANIM11=Nóng Nảy
+ANIM12=Soạn Tin Nhắn
+ANIM14=Khám Nghiệm
+ANIM15=Đợi
+ANIM16=Dọn Dẹp
+ANIM17=Dùng Máy Rút Tiền
+ANIM18=Tập Yoga
+ANIM19=Tượng
+ANIM20=Hàn
+ANIM21=Tắm Nắng
+ANIM22=Tắm Nắng Lưng
+ANIM23=Phò Cao Cấp
+ANIM24=Phò Rẻ Tiền
+ANIM25=Ghi Chú
+ANIM26=Quỳ Gối
+ANIM27=Chạy bộ
+ANIM28=Dùng Ống Nhòm
+ANIM29=Chán Nản
+ANIM30=Làm Vườn
+ANIM31=Ngồi Trên Đất
+ANIM32=Câu Cá
+ANIM33=Duyệt Qua
+ANIM34=Ngồi Ghế
+
+ANIM_DANCE=Điệu Nhảy
+
+ANIM35=Lắc Mông
+ANIM36=Nhảy Hề 1
+ANIM37=Nhảy Hề 2
+ANIM38=Nhảy 1
+ANIM39=Nhảy 2
+ANIM40=Nhảy 3
+ANIM41=Nhảy 4
+ANIM42=Nhảy 5
+ANIM43=Nhảy Chậm 1
+ANIM44=Nhảy Chậm 2
+ANIM45=Nhảy Chậm 3
+ANIM46=Nhảy Bục
+ANIM47=Nhảy Một Mình
+ANIM48=Nhảy Ngại Ngùng 1
+ANIM49=Nhảy Ngại Ngùng 2
+ANIM50=Nhảy Ngại Ngùng 3
+ANIM51=Nhảy Ngớ Ngẩn 2
+ANIM52=Nhảy Ngớ Ngẩn 3
+ANIM53=Điệu Nhảy Trung Quốc
+ANIM54=Nhảy Trèo Thuyền
+
+ANIM55=Uống
+ANIM56=Quái Thú
+ANIM57=Thư Thái
+ANIM58=Nhìn Trời
+
+! To prone, as in to lie on your stomach
+ANIM59=Nằm Sấp
+
+ANIM60=Vẫy Xe
+ANIM62=Say 1
+ANIM63=Say 2
+ANIM64=Say 3
+ANIM65=Guitar Không Khí
+ANIM66=Đàn Không Khí
+ANIM67=Lập Luận 1
+ANIM68=Lập Luận 2
+ANIM69=Pha Chế Rượu
+
+! Aka. Air Kiss
+ANIM70=Hôn Gió
+
+ANIM71=Mỉa Mai
+ANIM72=Mang Nó Lên
+ANIM73=Lại Đây
+ANIM75=Dùng Đài
+ANIM74=Khoanh Tay 1
+ANIM76=Khoanh Tay 2
+ANIM77=Khoanh Tay 3
+
+! As in "damn it"
+ANIM78=Chết Tiệt
+
+ANIM79=Trộm Cắp
+ANIM81=Bất Lực 1
+ANIM82=Bất Lực 2
+ANIM83=Ngã
+ANIM84=Buồn Ngủ
+ANIM85=Quan Sát
+ANIM86=Điệu Nhảy Jack
+ANIM88=Gõ
+ANIM89=Nhảy Vòng 1
+ANIM90=Nhảy Vòng 2
+ANIM91=Nhảy Vòng 3
+ANIM92=Nhảy Vòng 4
+ANIM93=Lắc Mông 2
+ANIM94=Nghiêng
+ANIM95=Cúi Người Gợi Cảm
+ANIM96=Thợ Cơ Khí
+ANIM97=Suy Nghĩ
+ANIM98=Thở Dốc
+ANIM99=Hít Đất
+ANIM100=Đếm Ngược Bắt Đầu Cuộc Đua
+ANIM101=Nhấc Vai
+ANIM102=Tập Yoga
+ANIM103=Cười
+ANIM104=Cử Chỉ Băng Đảng
+ANIM105=Ngất Xỉu
+ANIM106=Bò
+ANIM107=Lật 1
+ANIM108=Lật 2
+ANIM109=Trượt 1
+ANIM110=Trượt 2
+ANIM111=Cấp Cứu
+ANIM112=Duỗi
+ANIM113=Ăn Mừng
+ANIM114=Thằng Hề
+ANIM115=Lo Lắng 1
+ANIM127=Lo Lắng 2
+ANIM116=Chắp Tay
+ANIM117=Đánh DJ
+
+! Being arrested
+ANIM118=Dơ Tay
+! Being arrested
+ANIM121=Đầu Hàng
+
+ANIM119=Huýt Sáo
+ANIM120=Khoanh Tay
+ANIM122=Gõ Bàn Phím
+ANIM123=Dập Lửa
+ANIM124=Like
+
+! As in, bending your body towards someone to show respect.
+ANIM125=Cúi
+
+ANIM126=Siêu Anh Hùng
+ANIM128=Cúi Người
+ANIM129=Tắm
+ANIM130=Rửa Mặt
+ANIM131=Karate
+ANIM132=Boxing
+
+ANIM166=Nhảy Chéo Chân
+ANIM167=Nháy Chéo Chân 1 (Thấp)
+ANIM168=Nhảy Chéo Chân 2
+ANIM169=Nháy Chéo Chân 2 (Thấp)
+
+OBJANIM=Hoạt Ảnh Với Vật Thể
+
+ANIM133=Xách Va Li
+ANIM134=Uống Bia
+ANIM135=Uống Từ Lon
+
+! As in begging
+ANIM136=Cầm Biểu Ngữ
+
+ANIM137=Chơi Trống Bongos
+ANIM138=Đọc Sách
+ANIM139=Đưa Hoa
+ANIM140=Quét Nhà
+ANIM141=Cầm Thùng Bia
+ANIM142=Cầm Pizza
+ANIM143=Cầm Rượu Sâm Banh
+ANIM144=Uống Cà Phê
+ANIM145=Cầm Túi Vải
+ANIM146=Cầm Túi Đi Chợ
+ANIM147=Chơi Guitar
+
+! In this animation, the teddy bear known as "Mr. Raspberry" gets sexed
+ANIM148=Chú Gấu Tội Nghệp
+
+ANIM149=Ngồi Ghế Vườn (Female)
+ANIM150=Ngồi Ghế Vườn (Male)
+ANIM151=Xem Bản Đồ
+ANIM152=Cầm Máy Quay
+ANIM153=Cầm Mic
+ANIM154=Chống Gậy
+ANIM155=Nghe Điện Thoại 1
+ANIM156=Nghe Điện Thoại 2
+ANIM157=Cầm Bảng Biểu Ngữ
+ANIM158=Cầm Hoa Hồng
+ANIM159=Cầm Biển Báo Cao Tốc
+ANIM160=Cầm Biển Cấm Đỗ Xe
+ANIM161=Cầm Ô
+ANIM162=Cầm Cốc Whiskey
+ANIM163=Cầm Chai Whiskey
+ANIM164=Cầm Cốc Rượu Vang
+ANIM165=Cầm Chai Rượu Vang
+ANIM170=Nhảy Với Rượu Vang
+ANIM171=Nhảy Với Chai Bia
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Bodyguards !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+BDYGUARD=Vệ Sĩ
+COUNT=Số Lượng
+WPN_SINGULAR=Vũ Khí
+BDYGUARD_DEL=Xoá Tất Cả Vệ Sĩ
+BDYGUARD_TP=Dịch Chuyển Khi Xa
+FORMATION=Đội Hình
+LINE=Hàng
+CIRCLE=Vòng Tròn
+ALT_CIRCLE=Bảo Vệ
+BEHVR=Hành Vi
+PRIM_WEAP=Vũ Khí Chính
+SCND_WEAP=Vũ Khí Phụ
+WEAP_H=Vệ sĩ sẽ sử dụng vũ khí chính của họ bất cứ khi nào có thể. Nếu không, họ sẽ cố gắng sử dụng vũ khí phụ.
+
+!!!!!!!!!!!!!!!!!!!!
+!! Self > Weapons !!
+!!!!!!!!!!!!!!!!!!!!
+
+WPN=Vũ Khí
+
+GETGNS=Nhận Vũ Khí
+DELGNS=Xoá Vũ Khí
+ALLGNS=Tất Cả Vũ Khí
+
+GAIMPNSH=Khi Nhắm...
+GSHTPNSH=Khi Bắn...
+
+GRTYGUN=Súng Trọng Lực
+CTRVPHYS=Bắt Lấy Vật Thể
+FRCMUL=Hệ Số Sức Mạnh
+COL=Va Chạm
+
+VEHGUN=Súng Phương Tiện
+VEHGUN_H=Làm cho súng của bạn bắn ra phượng tiện.
+
+WEAPCOMPS=Phụ Kiện
+WEAPCOMPS_H=Cho phép bạn xem và sửa đổi các phụ kiện mà vũ khí bạn đã có.
+
+WEAPLOCK=Khoá Vũ Khí
+TINT=Màu Vũ Khí
+
+! "Livery" is VEHMOD48
+WEAPLIVTNT=Tem Súng
+
+SVPRST=Lưu Tuỳ Chỉnh
+VWPRSTS=Xem Cài Đặt Trước
+
+LOADS=Bộ Trang Bị
+SVLOAD=Lưu Bộ Trang Bị
+VWLOADS=Xem Tải Bên Ngoài
+
+SVLOAD_H_WEAP=Lưu vũ khí hiện đang được trang bị của bạn vào Hộp Lệnh để dễ dàng áp dụng cho Khóa Vũ Khí.
+
+WEAPLOCK_INV=Chỉ Loại Bỏ Vũ Khí Đã Chọn
+WEAPLOCK_INV_H=Biến "Khóa Vũ Khí" thành "Danh Sách Đen Vũ Khí", sao cho các vũ khí được chọn sẽ chỉ bị xóa.
+
+AIMBT=Aimbot
+
+AIMBT_LCKOUT=Thời Gian Tái Kích Hoạt (ms)
+AIMBT_LCKOUT_H=Aimbot sẽ bị vô hiệu hóa trong bao lâu sau khi bạn di chuyển camera.
+
+SMTHNG=Làm Mượt
+
+LOSCHECK=Kiểm Tra Đường Nhắm
+
+TGTBONE=Xương Mục Tiêu
+NECK=Cổ
+RELBOW=Khuỷu Tay Phải
+LELBOW=Khuỷu Tay Trái
+RHAND=Tay Phải
+LHAND=Tay Trái
+PELVIS=Xương Chậu
+RCALF=Bắp Chân Phải
+LCALF=Bắp Chân Trái
+RFOOT=Bàn Chân Phải
+LFOOT=Bàn Chân Trái
+
+TRIGBT=Cò Súng
+MAGICB=Đạn Ma Thuật
+MAGICB_H=Đảm Bảo Cò Súng Không Bao Giờ Hụt.
+
+TRGSEL=Lựa Chọn Mục Tiêu
+
+PROXYROCKET=Tên Lửa Lân Cận
+PROXYROCKET_H=Proximity rockets only work on other players.
+
+SPRMELEE=Siêu Cận Chiến
+SPRMELEE_H=Ném NPC và phương tiện ra xa bạn sau khi bạn tấn công họ. Sẽ không hoạt động trên người chơi khác.
+
+INSTAPROXY=Nổ Bom Ngay Lập Tức
+
+FILAMMO=Làm Đầy Đạn
+RMVAMMO=Xoá Tất Cả Đạn
+INFAMMO=Vô Hạn Đạn
+
+SKPRLD=Không Thay Đạn
+
+NOSPOL=Bắn Liên Tục
+NOSPOL_H=Loại bỏ độ trễ trước khi bắn từ vũ khí hiện tại.
+
+NOSPRD=Không Toẽ Đạn
+NORECL=Không Giật
+
+RAPFRE=Đạn Lửa
+
+RAPFREVEH=Đạn Lửa Cho Vũ Khí Xe
+
+DMG=Hệ Số Sát Thương
+DMG_H=Chỉnh hệ số sát thương do nắm đấm và súng của bạn gây ra.
+
+RNGMUL=Phạm Vi Sát Thương
+
+RKSPDMUL=Hệ Số Tốc Độ Tên Lửa
+
+! Or "Bullets Per Shotgun Shot"
+SHTGNSZE=Đạn Shotgun
+
+INSTLKNON=Khoá Mục Tiêu Ngay
+
+EXPAMMO=Cú Đấm Nổ
+
+EXPTYP=Loại Vụ Nổ
+EXPTYP_H=Cho phép bạn chọn kiểu nổ của Cú Đấm Nổ.
+
+EXP_TAG_GRENADE=Lựu Đạn
+EXP_TAG_GRENADELAUNCHER=Súng Phóng Lựu
+EXP_TAG_STICKYBOMB=Bom Dính
+EXP_TAG_MOLOTOV=Bom Xăng
+EXP_TAG_ROCKET=Tên Lửa
+EXP_TAG_TANKSHELL=Vỏ Xe Tăng
+EXP_TAG_HI_OCTANE=Octane Cao
+EXP_TAG_CAR=Xe Ô Tô
+EXP_TAG_PLANE=Máy Bay
+EXP_TAG_PETROL_PUMP=Bơm Dầu
+EXP_TAG_BIKE=Xe Đạp
+EXP_TAG_DIR_STEAM=Hơi Nước
+EXP_TAG_DIR_FLAME=Ngọn Lửa
+EXP_TAG_DIR_WATER_HYDRANT=Vòi Nước
+EXP_TAG_DIR_GAS_CANISTER=Lửa Bình Gas
+EXP_TAG_BOAT=Thuyền
+EXP_TAG_SHIP_DESTROY=Tàu Thuỷ
+EXP_TAG_TRUCK=Xe Tải
+EXP_TAG_BULLET=Đạn
+EXP_TAG_SMOKEGRENADELAUNCHER=Súng Phóng Lựu Khói
+EXP_TAG_SMOKEGRENADE=Lựu Đạn Khói
+EXP_TAG_BZGAS=BZ Gas
+EXP_TAG_FLARE=Pháo Sáng
+EXP_TAG_GAS_CANISTER=Bình Gas
+EXP_TAG_EXTINGUISHER=Bình Chữa Cháy
+EXP_TAG_PROGRAMMABLEAR=Programmable AR
+EXP_TAG_TRAIN=Tàu Hoả
+EXP_TAG_BARREL=Thùng
+EXP_TAG_PROPANE=Propane
+EXP_TAG_BLIMP=Khí Cầu (Xanh)
+EXP_TAG_DIR_FLAME_EXPLODE=Ngọn Lửa Bùng Nổ
+EXP_TAG_TANKER=Bồn Dầu
+EXP_TAG_PLANE_ROCKET=Tên Lửa Máy Bay
+EXP_TAG_VEHICLE_BULLET=Đạn Xe
+EXP_TAG_GAS_TANK=Bình Xăng
+EXP_TAG_BIRD_CRAP=Phân Chim
+EXP_TAG_RAILGUN=Súng Điện Từ
+EXP_TAG_BLIMP2=Khí Cầu (Đỏ & Lục Lam)
+EXP_TAG_FIREWORK=Pháo Hoa
+EXP_TAG_SNOWBALL=Bóng Tuyết
+EXP_TAG_PROXMINE=Mìn Lân Cận
+EXP_TAG_VALKYRIE_CANNON=Pháo Valkyrie
+EXP_TAG_AIR_DEFENCE=Phòng Không
+EXP_TAG_PIPEBOMB=Bom Ống
+EXP_TAG_VEHICLEMINE=Mìn Xe
+EXP_TAG_EXPLOSIVEAMMO=Đạn Nổ
+EXP_TAG_APCSHELL=Vỏ APC
+EXP_TAG_BOMB_CLUSTER=Bom Chùm
+EXP_TAG_BOMB_GAS=Bom Gas
+EXP_TAG_BOMB_INCENDIARY=Bom Cháy
+EXP_TAG_BOMB_STANDARD=Bom
+EXP_TAG_TORPEDO=Ngư Lôi
+EXP_TAG_TORPEDO_UNDERWATER=Ngư Lôi (Dưới Nước)
+EXP_TAG_BOMBUSHKA_CANNON=Pháo Bombushka
+EXP_TAG_BOMB_CLUSTER_SECONDARY=Bom Chùm (Thứ Cấp)
+EXP_TAG_HUNTER_BARRAGE=Hunter Barrage
+EXP_TAG_HUNTER_CANNON=Hunter Cannon
+EXP_TAG_ROGUE_CANNON=Pháo Rogue
+EXP_TAG_MINE_UNDERWATER=Mìn Nước
+EXP_TAG_ORBITAL_CANNON=Orbital Cannon
+EXP_TAG_BOMB_STANDARD_WIDE=Bom (Rộng)
+EXP_TAG_EXPLOSIVEAMMO_SHOTGUN=Đạn Nổ (Shotgun)
+EXP_TAG_OPPRESSOR2_CANNON=Oppressor Mk II Cannon
+EXP_TAG_MORTAR_KINETIC=Kinetic Mortar
+EXP_TAG_VEHICLEMINE_KINETIC=Mìn Xe Kinetic
+EXP_TAG_VEHICLEMINE_EMP=Mìn Xe EMP
+EXP_TAG_VEHICLEMINE_SPIKE=Mìn Xe Spike
+EXP_TAG_VEHICLEMINE_SLICK=Mìn Xe Slick
+EXP_TAG_VEHICLEMINE_TAR=Mìn Xe Tar
+EXP_TAG_SCRIPT_DRONE=Drone Hành Trình
+EXP_TAG_RAYGUN=Up-n-Atomizer (Raygun)
+EXP_TAG_BURIEDMINE=Mìn Chôn
+EXP_TAG_SCRIPT_MISSILE=Tên Lửa Hành Trình
+EXP_TAG_RCTANK_ROCKET=Tên Lửa Xe Tăng RC
+EXP_TAG_BOMB_WATER=Bom Nước
+EXP_TAG_BOMB_WATER_SECONDARY=Bom Nước (Thứ Cấp)
+EXP_TAG_MINE_CNCSPIKE=Gai
+EXP_TAG_BZGAS_MK2=BZ Gas Mk II
+EXP_TAG_FLASHGRENADE=Lựu Chớp
+EXP_TAG_STUNGRENADE=Lựu Choáng
+EXP_TAG_CNC_KINETICRAM=Kinetic Ram
+EXP_TAG_SCRIPT_MISSILE_LARGE=Tên Lửa Hành Trình (Lớn)
+EXP_TAG_SUBMARINE_BIG=Tàu Ngầm (To)
+EXP_TAG_EMPLAUNCHER_EMP=EMP Launcher EMP
+EXP_TAG_RAILGUNXM3=Súng Điện Từ (MP)
+EXP_TAG_BALANCED_CANNONS=Pháo Cân Bằng (F35)
+
+IMPPART=Hiệu Ứng Tác Động
+IMPPART_H=Chọn hiệu ứng để sử dụng cho Hiệu Ứng Tác Động.
+
+TTLFRDM=Tự Do Hoàn Toàn
+TTLFRDM_H=Cho phép bạn sử dụng vũ khí trong nhà và ở chế độ passive.
+TTLFRDM_MOV_H=Cho phép bạn chạy nước rút, lẻn và nhảy vào bên trong.
+
+TPGUN=Súng Dịch Chuyển
+
+! "Sticky" as in "Sticky Bomb"
+INCSTICK=Tăng Giới Hạn Dính
+INCFLARE=Tăng Giới Hạn Pháo Sáng
+
+INCPROJ_H=Điều này nói về số lượng bạn có thể bắn ra chứ không phải trong kho của bạn.
+
+LASGUN=Mắt Lazer
+
+!!!!!!!!!!!!!
+!! Vehicle !!
+!!!!!!!!!!!!!
+
+NOVEHFND=Hãy ngồi lên xe trước. :)
+VEHALRDIN=Bạn đã ở trong rồi. :?
+VEHCTRL=Không thể kiểm soát phương tiện của bạn. :|
+
+PVS=Phương Tiện Cá Nhân
+
+INSUR=Bảo Hiểm
+ADDINSUR=Thêm Bảo Hiểm
+DSTRYD=Phá Hủy
+UINSRD=Không Có Bảo Hiểm
+INSURCLM=Yêu Cầu Bồi Thường Bảo Hiểm
+
+REQ=Yêu Cầu
+REQNDRV=Yêu Cầu & Lái Đến Điểm Gần Nhất
+REQNCALL=Yêu Cầu & Lái Đến Chỗ Tôi
+
+PVRPLC=Thay Thế Bằng Xe Hiện Tại
+PVRPLC_H=Lưu dữ liệu chiếc xe bạn đang lái thay cho chiếc xe cá nhân này.
+
+PVSVE_H=Lưu dữ liệu của phương tiện cá nhân này trong gara của Stand.
+PVSVEA=Lưu Tất Cả Vào Gara
+PVSVEA_H=Lưu dữ liệu của tất cả các phương tiện cá nhân của bạn vào gara của Stand.
+! "Garage" must use same translation as GRG. "Personal Vehicles" must stay as-is.
+PVSVEA_S=Xe cá nhân của bạn đã được lưu vào Gara > Phương Tiện Cá Nhân. :D
+
+CURPV=Xe Cá Nhân Hiện Tại
+PVEHNTFND=Tôi không thể tìm thấy phương tiện cá nhân của bạn. :/
+
+LSTVEH=Phương Tiện Trước Đó
+LSTVEHNTFND=Tôi không thể tìm thấy phương tiện trước đó của bạn. :/
+
+CALLVEH=Dịch Chuyển Tới Tôi & Lái
+
+RC=Điều Khiển Từ Xa
+RC_STCK=Nhan {} neu ban bi ket.
+
+GTARC=Điều Khiển Từ Xa Imani Tech
+GTARC_E=Xe này không hỗ trợ Điều khiển từ xa Imani Tech và "Điều Khiển Từ Xa Mọi Phương Tiện" không được bật.
+
+RCANYVEH=Điều Khiển Từ Xa Tất Cả Phương Tiện
+
+RETSTOR=Quay Lại Gara
+
+VEHFOLLOW=Theo Tôi
+
+SPWNR=Spawner
+SPWND=Spawned
+
+! The act of doing it, to spawn
+SPWN=Spawn
+
+SPWNR_CLASSES=Loại Phương Tiện
+
+VEH_CLASS=Loại Phương Tiện
+VEH_SEATS=Chỗ Ngồi
+
+DLC=DLC
+DLCS=DLCs
+DLC_10=Game Launch
+DLC_60=Beach Bum
+DLC_100=Valentine's Day Massacre
+DLC_110=Business
+DLC_130=High Life
+DLC_140=I'm Not a Hipster
+DLC_150=Independence Day
+DLC_160=SA Flight School
+DLC_170=Last Team Standing
+DLC_180=Next Gen Release
+DLC_190=Festive Surprise 2014
+DLC_210=Heists DLC
+DLC_270=Ill-Gotten Gains Part 1
+DLC_280=Ill-Gotten Gains Part 2
+DLC_300=Lowriders
+DLC_301=Halloween Surprise
+DLC_310=Executives and Other Criminals
+DLC_311=Festive Surprise 2015
+DLC_320=January 2016
+DLC_321=Be My Valentine
+DLC_330=Lowriders: Custom Classics
+DLC_340=Further Adventures in Finance and Felony
+DLC_350=Cunning Stunts
+DLC_360=Bikers
+DLC_370=Import/Export
+DLC_380=Special Vehicle Circuit
+DLC_400=Gunrunning Pack
+DLC_410=Smuggler's Run
+DLC_420=The Doomsday Heist
+DLC_430=Southern SA Super Sport Series
+DLC_440=After Hours
+DLC_460=Arena War
+DLC_480=Diamond Casino & Resort
+DLC_490=Diamond Casino Heist
+DLC_510=LS Summer Special
+DLC_520=Cayo Perico Heist
+DLC_570=LS Tuners
+DLC_580=The Contract
+DLC_610=The Criminal Enterprises
+DLC_640=Drug Wars
+DLC_670=San Andreas Mercenaries
+DLC_680=The Chop Shop
+DLC_690=Bottom Dollar Bounties
+
+MANUFNS=Tên Nhà Sản Xuất
+
+SPWNTUNE=Điều Chỉnh Spawn Phương Tiện
+SPWNTUNE_H=Cho phép bạn chọn cấu hình độ cho xe được tạo thông qua Stand.
+TUNE_PRESETS=Điều Chỉnh Cài Sẵn
+TUNE_STCK=Mặc Định
+TUNE_PERF=Hiệu Suất
+TUNE_PERF_H=Chỉ nâng cấp Động cơ, Phanh, Hộp số, Giáp và Turbo.
+TUNE_PERFWSPL=Hiệu Suất, Và Cánh Gió
+TUNE_FULL=Đầy Đủ
+
+SPWCLR=Màu Phương Tiện Spawn
+
+SPWPLATE=Biển Số Phương Tiện Spawn
+
+TUNE=Nâng Cấp
+TUNE_H=Nâng cấp đầy đủ chiếc xe hiện tại hoặc trước đó của bạn.
+
+RTUNE=Nâng Cấp Ngẫu Nhiên
+RTUNE_VIS=Chỉ Bên Ngoài
+RTUNE_PERF=Chỉ Hiệu Suất
+RTUNE_PERF_S=Chỉ Hiệu Suất & Cánh Gió
+
+PERF=Nâng Cấp Hiệu Suất
+PERF_H=Nâng cấp Máy, Phanh, Hộp số, Giáp và Turbo của xe hiện tại hoặc cuối cùng của bạn.
+PERF_T=Đã nâng cấp hiệu suất cho chiếc xe của bạn. :D
+PERF_E=Xe của bạn đã được nâng cấp toàn diện, hiệu suất cao nhất. :)
+
+PERFWSPL=Nâng Cấp Hiệu Suất, Và Cánh Gió
+
+DNGRD=Hạ Cấp
+DNGRD_H=Đặt lại chiếc xe hiện tại hoặc trước đó của bạn về mặc định.
+
+GRG=Gara
+SVEVEH=Lưu Phương Tiện
+
+PARA=Dù
+PARA_GEN=Kiểu Dù
+PARA_BRK=Dù Hỏng
+SECUROSERV=SecuroServ
+
+XTRA=Bổ Sung
+XTRAS=Bổ Sung
+XTRAS_N=Xe của bạn không có tính năng bổ sung.
+
+PARAON=Kích Hoạt Dù
+PARAON_H=Không có tác dụng đối với tất cả các phương tiện, ví dụ: trên xe máy.
+
+PARA_H_VIS=Lưu ý rằng sau khi bạn đã mở dù của xe, có thể có các thay đổi không được áp dụng.
+
+VEHFIN0=Bình Thường
+VEHFIN1=Kim Loại
+VEHFIN2=Ngọc Trai
+VEHFIN3=Nhám
+VEHFIN4=Kim Loại Bóng
+VEHFIN5=Chrome
+VEHFIN6=Sặc Sỡ
+
+WHLS=Bánh Xe
+WHLSCLR=Màu Bánh Xe
+WHLTYP=Kiểu Bánh Xe
+VEHMOD23=Bánh Trước
+
+VEHMOD0=Cánh Gió
+VEHMOD1=Cản Trước
+VEHMOD2=Cản Sau
+VEHMOD3=Bệ Bước Chân
+VEHMOD4=Ống Xả
+VEHMOD5=Khung
+VEHMOD6=Két Nước
+VEHMOD7=Mui
+VEHMOD8=Chắn Bùn
+VEHMOD9=Chắn Bùn Bên Phải
+VEHMOD10=Nóc / Vũ Khí
+VEHMOD11=Động Cơ
+VEHMOD12=Phanh
+VEHMOD13=Hộp Số
+VEHMOD14=Còi
+VEHMOD15=Độ Gầm
+VEHMOD16=Giáp
+VEHMOD18=Turbo
+VEHMOD24=Bánh Sau
+VEHMOD25=Khung Biển Số
+
+! Alternatively, "Benny's Plates"
+VEHMOD26=Biển Số
+
+VEHMOD27=Trang Trí Viền
+VEHMOD28=Đồ Trang Trí
+VEHMOD29=Bảng Điều Khiển
+VEHMOD30=Kiểu Mặt Số
+VEHMOD31=Loa Cửa
+VEHMOD32=Ghế
+VEHMOD33=Vô Lăng
+VEHMOD34=Cần Số
+VEHMOD35=Bảng Logo
+VEHMOD36=Loa
+VEHMOD37=Cốp
+VEHMOD38=Trợ Lực
+VEHMOD39=Khối Động Cơ
+VEHMOD40=Tăng Tốc / Lọc Gió
+VEHMOD41=Giảm Xóc
+VEHMOD42=Khung Bánh
+VEHMOD43=Ăng Ten
+VEHMOD44=Viền
+VEHMOD45=Bình Xăng
+VEHMOD46=Cửa Trái
+VEHMOD47=Cửa Phải
+VEHMOD48=Tem
+VEHMOD49=Thanh Trợ Sáng
+
+VEHDRFTYR=Lốp Trơn
+
+VEHBPTYR=Lốp Chống Đạn
+
+SCRCHD=Xe Hỏng / Cháy
+
+TONK=Gỡ Trụ Súng
+
+BHVONFT=Hành Vi Khi Đi Bộ
+
+BHVINVEH=Khi Trong Xe
+
+SPWNDRVE=Lái Phương Tiện Spawn
+SPWNDRVE_H=Ngay lập tức đưa bạn vào ghế lái của những chiếc xe mà bạn spawn bằng Stand.
+
+SPWNAIR=Spawn Máy Bay Trên Không
+
+SPWNFRNT=Spawn Phía Trước
+SPWNFRNT_H=Spawn phương tiện ngay phía trước cách bạn vài mét bằng Stand.
+
+SPWLIKEPV=Spawn Giống Như Xe Cá Nhân
+
+SPWNDEL=Xoá Phương Tiện Trước Đó
+
+SPWNVEL=Giữ Vận Tốc
+
+INPTVEHMDL=Thêm Tên Mô Hình
+ARGMDLNME=[tên mô hình]
+INPTVEHMDL_H=Cách "chế độ chuyên gia" spawn phương tiện.
+INPTOBJMDL_H=Cách "chế độ chuyên gia" spawn vật thể.
+INPTMDL_E=Thật không may, {} không phải là tên mô hình hợp lệ. :/
+INPTVEHMDL_E=Rất tiếc, {} không phải là tên mô hình phương tiện hợp lệ. :/
+
+ARSPD=Đồng Hồ AR
+ARSPD_H=Đưa cho nhân vật kính AR khi chạy ứng dụng đồng hồ tốc độ.
+
+CM=Mồi Nhiệt
+CM_AUTO=Tự Động Triển Khai
+CM_OF=Chỉ Trên Máy Bay
+CM_PERIOD=Triển Khai Định Kì
+CM_PERIOD_D=Triển Khai Định Kì: Tạm Hoãn
+
+FLARE=Pháo Sáng
+CHAFF=Mồi Khói
+BOTH=Cả Hai
+
+CM_FLARE=Triển Khai Pháo Sáng
+CM_CHAFF=Triển Khai Mồi Khói
+CM_BOTH=Triển Khai Cả Hai
+
+CM_PT=Mẫu Nguỵ Trang
+CM_HOR=Ngang
+CM_HOR_UP=Ngang, Hướng Lên
+CM_HOR_DOWN=Ngang, Hướng Xuống
+CM_VERT=Dọc
+CM_VERT_DOWN=Dọc, Hướng Xuống
+
+AUTODRIVE=Tự Lái
+AUTODRIVE_C=Giữ Tốc Độ
+AUTODRIVE_SDB=Hiện Đèn Hiệu Đích
+AUTODRIVE_ACOI=Huỷ Khi Bạn Lái
+AUTODRIVE_ACOI_H=Tự động huỷ tự lái khi bạn cố gắng điều khiển xe.
+AUTODRIVE_NOCLIP=Không Va Chạm Khi Xe Tự Lái
+AUTODRIVE_NOCLIP_H=Vô hiệu hóa va chạm với các phương tiện khác trong khi lái xe tự động. Hữu ích để bù đắp cho việc tìm đường kém khi bạn tự lái xe.
+AUTODRIVE_STORE=Store
+AUTODRIVE_MOVIE=Movies
+AUTODRIVE_CLUBHOUSE=Motorcycle Gang Clubhouse
+AUTODRIVE_FACILITY=Facility
+AUTODRIVE_AGENCY=Facility
+AUTODRIVE_OFFICE=Office
+AUTODRIVE_HANGAR=Hangar
+AUTODRIVE_ERR2=Lái tự động không có sẵn cho loại xe này.
+AUTODRIVE_ERR3=Tôi không thể tìm thấy một điểm đến thích hợp, xin lỗi. :(
+AUTODRIVE_ERR4=Bạn đã đến đích rồi. :P
+AUTODRIVE_ARRIVE=Chúng tôi đã đến đích của bạn. ^_^
+AUTODRIVE_DRIVE=Phong Cách Lái
+AUTODRIVE_LAW=Đúng Luật
+AUTODRIVE_NOTSOLAWFUL=Đúng Luật, Bỏ Qua Đèn Đỏ
+AUTODRIVE_BACK=Ngược
+AUTODRIVE_DEST=Lái Tới...
+AUTODRIVE_DEST_NONE=Đi Đến Bất Cứ Đâu
+AUTODRIVE_DEST_NONE_H=Đưa bạn đi khắp nơi mà không có điểm đến cụ thể.
+
+LGTSIGS=Đèn Tín Hiệu
+TRNSIG=Xi Nhan
+TRNSIG_HAZ=Hazard
+TRNSIG_AUTO=Tự Động Tắt Đèn Xi Nhan
+BRAKELIGHTS=Sáng Đèn Phanh Khi Dừng
+MTESIRENS=Tắt Còi Báo Động
+
+AUTORKTBST=Tự Động Rocket Boost
+AUTORKTBST_H2=Tự động sử dụng rocket boost khi được sạc.
+
+RKTBST=Rocket Boost
+
+OVRD=Ghi Đè
+RKTBST_H_OVRD=Cho phép bạn thay đổi phương tiện bạn lái có rocket boost.
+
+VERTRKTBST=Rocket Boost Dọc
+
+CHRGBHV=Bay Ngẫu Nhiên
+RKTBST_NVREND=Vô Hạn
+RKTBST_NVREND_H=Làm cho việc tăng tốc không bao giờ kết thúc trừ khi bạn gặp sự cố.
+RKTBST_INSTRFLL=Nạp Tức Thì
+RKTBST_INSTRFLL_H=Nạp lại ngay sau khi hết.
+RKTBST_NORFLL=Không Có Thời Gian Nạp
+RKTBST_NORFLL_H=Nạp lại ngay lập tức khi các điều kiện được đáp ứng.
+RKTBST_EMPTY=Luôn Trống
+
+RMP=Mũi Nhọn
+RMMSCOOP=Mũi Múc
+INCRMMFRC=Tăng Lực Đâm
+
+LSC=Los Santos Customs
+
+VDO=Mở/Đóng Cửa
+
+VEHDOOR_A=Tất Cả Cửa
+VEHDOOR_0=Cửa Trước Trái
+VEHDOOR_1=Cửa Trước Phải
+VEHDOOR_2=Cửa Sau Trái
+VEHDOOR_3=Cửa Sau Phải
+VEHDOOR_4=Mui Xe
+VEHDOOR_5=Cốp
+VEHDOOR_6=Sau
+VEHDOOR_7=Sau 2
+
+LOCKD=Khoá Cửa
+LOCKD_O=Chỉ Khi Trống
+XCLUDEPVS=Loại Trừ Phương Tiện Của Người Khác
+
+ENGTGL=Bật/Tắt Động Cơ
+ENGTGL_H=Lưu ý rằng việc nhấn về phía trước hoặc phía sau sẽ khiến nhân vật của bạn bật lại động cơ trên hầu hết các loại xe.
+
+FLIPVEH=Quay Thẳng Xe
+FLIPVEH_H=Quay chiếc xe hiện tại hoặc trước đó của bạn thẳng theo góc đang nhìn.
+
+ATRNSUBCAR=Tự Chuyển Đổi Chế Độ Lặn
+NANIM=Không Hoạt Ảnh
+
+DRBYINANY=Lái Tất Cả Phương Tiện
+DRBYWITHANY=Lái Xe Với Tất Cả Súng
+
+WHEELONWHEELS=Hiện Bánh Đổi Súng Trên Xe
+WHEELONWHEELS_H=Lưu ý là bạn vẫn có thể sử dụng lăn chuột để đi qua từng cái một, việc này bạn cần làm để đổi vũ khí của xe.
+
+BMBTRJC=Hiện Quỹ Đạo Bom
+
+FLYTHRUWND=Bay Qua Kính Chắn Gió
+
+! "Glued To Seats" is SEATGLUE
+FLYTHRUWND_H=Ném bạn ra khỏi xe khi va chạm trực diện ở tốc độ cao như trong Story Mode. Điều này sẽ tắt "Không Ngã Khỏi Xe".
+
+ANTINLCKON=Khoá Tất Cả Phương Tiện
+
+! "Can't Be Locked On" is NLCKON
+ANTINLCKON_H=Cho phép bạn khóa xe Imani Tech. Điều này cũng bỏ qua các tính năng như "Không Thể Bị Khoá".
+
+SETSEAT=Đặt Ghế Phương Tiện
+DRV=Tài Xế
+
+LVENGRUN=Để Động Cơ Khi Ra Khỏi Xe
+
+NOJACK=Không Thể Bị Kéo Ra
+
+PEG=Đặt Làm Phương Tiện Pegasus
+PEG_H=Cho phép bạn đặt một số máy bay đã được spawn vào nhà chứa máy bay của mình bằng cách làm cho trò chơi nghĩ rằng đó là phương tiện của Pegasus.
+
+DSTRY=Phá Hủy
+
+DELVEH_H=Xoá phương tiện hiện tại hoặc trước đó của bạn.
+
+FIXVEH=Sửa Phương Tiện
+FIXVEH_H=Sửa chữa chiếc xe hiện tại hoặc trước đó của bạn.
+
+VEHGOD=Không Thể Phá Hủy
+VEHGOD_H=Làm cho bất kỳ phương tiện nào bạn điều khiển hoặc lái không thể bị hư hỏng.
+
+SPWNGOD=Làm cho phương tiện được spawn ra không thể bị phá hủy
+
+SPWNLIST=Danh Sách Xe Được Spawn
+
+VEH_DRV=Lái
+VEH_ENT=Vào
+VEH_EMPTY=Trống
+DEL=Xoá
+
+SPWNBLIP=Đánh Dấu Xe Được Spawn
+SPWNBLIP_TXT=Xe Được Spawn ({})
+CLRBLIP=Xoá Đánh Dấu
+ONLYLTST=Chỉ Dành Cho Xe Trước Đó
+
+MINT=Không Trầy Xước
+MINT_H=Giữ cho phương tiện của bạn không bị móp và trầy xước.
+
+PLATE=Biển Số
+
+PLATESPEED=Đồng Hồ Tốc Độ
+PLATESPEED_A=Hiện Tốc Độ Trên Biển Số
+
+CHARLIMIT=Không được vượt quá {number} ký tự. :|
+
+RNDISE=Ngẫu Nhiên
+
+SCRLTXT=Cuộn Văn Bản
+
+LCKPLT=Khoá Chữ Biển Số
+
+BADCHAR="{}" không phải là ký tự hợp lệ cho việc này. :|
+
+HORNBOOST=Còi Tăng Tốc
+
+SPRDRV=Lái Siêu Tốc
+
+SPRDRVCAM=Lái Siêu Tốc Dùng Camera
+SPRDRVCAM_H=Thay đổi định nghĩa về "phía trước" để Super Drive lái về hướng bạn nhìn chứ không phải hướng mũi xe.
+
+SPRHBRK=Siêu Phanh
+
+DRVONWTR=Lái Trên Mặt Nước
+
+DRVUNDWTR=Lái Xe Dưới Nước
+
+SPDLMT=Giới Hạn Tốc Độ (KMH)
+SPDLMT_H=Đặt giới hạn tốc độ của phương tiện mà bạn điều khiển hoặc lái. (Mặc định: 540)
+
+JMPABL=Khả Năng Nhảy
+JMPABL_H=Lưu ý nếu có cả khả năng nhảy và tăng tốc tên lửa thì game sẽ chuyển tăng tốc sang phím phụ.
+
+GLDABL=Khả Năng Lướt
+
+HEADLIT=Đèn Pha
+
+HEADLITMUL=Cường Độ Đèn Pha
+H_HILOCAL=*giá trị cao hơn chỉ tác dụng với bạn*
+
+GRVTYMTPLY=Hệ Số Trọng Lực
+
+NOTAIR=Không Trên Máy Bay
+
+HNEDIT=Chỉnh Sửa Điều Khiển
+HNE_BASE=Cơ Bản
+HNE_AIRCRAFT=Phi Cơ
+
+! Motorcycles and bicycles alike.
+HNE_BIKES=Xe Đạp
+
+HNE_FLYING=Bay
+HNE_VERTFLY=Bay Thẳng Đứng
+HNE_SPECFLY=Bay Đặc Biệt
+HNE_SEAPLANE=Thuỷ Phi Cơ
+HNE_SUBMARINE=Tàu Ngằm
+HNE_TRAILER=Xe Kéo
+HNE_CAR=Xe Ô Tô
+
+SPECFLY_H=Lưu ý rằng đối với các loại xe không phải Deluxo, đầu vào "roof" (Giữ H hoặc D-Pad bên phải) được sử dụng để chuyển đổi bay đặc biệt.
+
+DELUXO=Deluxo
+OPP2=Oppressor Mk II
+
+SHWNA=Hiện Không Áp Dụng
+
+HNE_VWSCR=Xem Tập Lệnh Điều Khiển
+HNE_VWSCR_H=Xem các tập lệnh trong thư mục con "Điều Khiển" của thư mục Hộp Lệnh của bạn.
+
+HNE_NA=Danh mục này không áp dụng cho chiếc xe hiện tại của bạn.
+
+CSTWNGBVHR=Tuỳ Chỉnh Cánh
+CSTWNGBVHR_H=Cho phép bạn tùy chỉnh hành vi cánh gió của oppressor.
+
+LESSENBURN=Giảm Nổ Lốp
+
+SMTHCST=Xuống Dốc Mượt Mà
+SMTHCST_H=Giảm tốc khi không tải của xe xuống mức thực tế hơn.
+
+DRFTMDE=Chế Độ Drift
+DRFTMDE_H=Trò giải trí của chúng tôi về điều chỉnh drift, tính năng này chỉ có sẵn cho một số ít xe. Phiên bản của chúng tôi hoạt động cho nhiều loại xe hơn, nhưng một số loại xe sẽ không cho cảm giác mượt mà như những loại xe khác.
+
+MINPOS=Vị Trí Tối Thiểu
+MAXPOS=Vị Trí Tối Đa
+CSTWNGBVHR_SPD=Tốc Độ
+MAXPOS2SPD=Đặt Tốc Độ Dựa Trên Vị Trí Tối Đa
+
+SMTHFLY=Không Nhiễu Loạn
+
+HELIAUTOSTAB=Tắt Tự Động Ổn Định Trực Thăng
+HELIAUTOSTAB_H=Ban đầu được lấy cảm hứng từ script BetterHeliMode của Murten.
+
+NLCKON=Không Thể Bị Khoá
+
+INSTASEAT=Vào & Ra Xe Ngay
+INSTASEAT_H=Bỏ qua việc nhân vật của bạn tới gần xe, ngồi ghế và nổ máy.
+
+EXITSTOP=Dừng Xe Khi Dời Khỏi
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Vehicle Classes !!
+!!!!!!!!!!!!!!!!!!!!!
+
+off_road=Xe Địa Hình
+sport_classic=Xe Thể Thao Cổ Điển
+Military=Xe Quân Sự
+Compacts=Xe Gia Đình
+sport=Xe Thể Thao
+Muscle=Xe Cơ Bắp
+motorcycle=Xe Máy
+open_wheel=Xe Đua
+Super=Siêu Xe
+van=Xe Van
+suv=Xe SUV
+Commercial=Xe Quảng Bá
+plane=Máy Bay
+sedan=Xe Sedans
+Service=Xe Dịch Vụ
+Industrial=Xe Công Nghiệp
+helicopter=Trực Thăng
+boat=Thuyền
+Utility=Xe Tiện Ích
+Emergency=Xe Khẩn Cấp
+cycle=Xe Đạp
+coupe=Xe Hai Cửa
+rail=Tàu Hoả
+
+!!!!!!!!!!!
+!! World !!
+!!!!!!!!!!!
+
+PLCS=Vị Trí
+INHAB=Dân Cư
+ATMO=Thế Giới
+
+DWNTWN=Thành Phố
+
+! GTA calls a point on the map a "blip"
+BLIPS=Đánh Dấu
+BLIPNFND=Tôi không thể tìm thấy đánh dấu phù hợp. :/
+
+TP=Dịch Chuyển
+
+DEDFX=Hiệu Ứng Chết
+RESPFX=Hiệu Ứng Hồi Sinh
+TPFX=Hiệu Ứng Dịch Chuyển
+
+TPS=Dịch Chuyển Tới...
+TPWAIT=Đang Chuẩn Bị Dịch Chuyển...
+
+WP=Điểm Đánh Dấu
+WPS=Điểm Đánh Dấu Trên...
+OBJCTV=Vật Thể
+TP_MP=Dịch chuyển đến đây sẽ dữ nguyên trạng thái Thế giới trực tuyến, điều này có thể khiến trò chơi không phản hồi trong thời gian ngắn.
+TP_CAYO=Đảm bảo rằng trạng thái thế giới Cayo Perico hoặc IPL được bật trước khi dịch chuyển để tránh rơi xuống nước.
+
+RPLTP=Dịch Chuyển Điểm Trước Đó
+RP_E=Không có vị trí dịch chuyển trước đó. :?
+
+UNDOTP=Hoàn Tác Dịch Chuyển
+UNDOTP_E=Không có gì để hoàn tác. :?
+
+STORS=Cửa Hàng
+
+AMMUNAT=Cửa Hàng Súng
+SHTNGRNGE=Tiệm Súng Có Bia Nhắm
+BARBR=Tiệm Cắt Tóc
+CLTHST=Tiệm Quần Áo
+TATTOO=Tiệm Xăm
+
+LNDMRKS=Địa Danh
+
+LSIA=Sân Bay Los Santos
+FRTZNC=Khu Quân Sự
+MTCHIL=Đỉnh Núi Chiliad
+
+CAYO=Cayo Perico
+
+CSNO=Casino
+
+! Translate "Tower" & "Helipad"
+MAZEHELIPAD=Nóc Toà Maze Bank
+
+HIGHPLACE=Dịch Chuyển Lên Trời
+
+AUTOTPWP=Tự Động Dịch Chuyển
+AUTOTPWP_H=Tự động dịch chuyển đến điểm bạn đánh dấu.
+AUTOTPWP_T=Bạn đã được tự động dịch chuyển đến điểm đánh dấu. :)
+
+WPORTAL=Tạo Cổng Dịch Chuyển Đến Đánh Dấu
+
+CBPOS=Toạ Độ Từ Bảng Nhớ Tạm
+CBPOS_H=Quét bảng nhớ tạm của bạn để tìm vectơ 3D hoặc 2D.
+CBPOS_T=Tôi không thể tìm thấy vectơ 3D hoặc 2D trong bảngg nhớ tạm của bạn. :?
+
+POS=Toạ Độ
+
+! Stand > Settings > Appearance > Position
+MNUPOS=Toạ Độ
+
+! World > Places > Position
+MYPOS=Toạ Độ
+
+POS_Z=Z (Độ Cao)
+
+SVDPLCS=Địa Điểm Đã Lưu
+SVDPLCS_H=Bạn có thể lưu địa điểm ở {}.
+
+SVPLC_M=Lưu Toạ Độ
+SVPLC_W=Lưu Toạ Độ Điểm Đánh Dấu
+
+CPPOS=Sao Chép Toạ Độ Vào Bảng Nhớ
+
+CPSUCC=Sao chép vào bảng nhớ thành công. :D
+CPERR=Sao chép vào bảng nhớ thất bại. :|
+
+IPLS=Địa Điểm
+IPLS_H=Cho phép bạn tải và gỡ các phần của thế giới ("IPL") *chỉ bạn*.
+
+IPLTP=Dịch Chuyển Tới Địa Điểm
+IPLTP_H=Sẽ dịch chuyển bạn đến IPL khi bạn kích hoạt chúng bên dưới.
+IPL_MP=Việc kích hoạt IPL này sẽ đảm bảo trạng thái thế giới trực tuyến, có thể khiến trò chơi không phản hồi trong thời gian ngắn
+
+TRFC=Giao Thông
+
+TRFCLR=Đổi Màu Tất Cả Phương Tiện
+
+DPEDS_A=Tắt Người Đi Bộ
+
+DTRFC_A=Tắt Phương Tiện
+DTRFC_2=Bật, Bao Gồm Cả Xe Đang Đỗ
+
+SWRLDST=Đặt Thế Giới
+SWRLDST_H=Lưu ý rằng việc thay đổi trạng thái thế giới có thể khiến trò chơi không phản hồi trong thời gian ngắn.
+
+SP=Story Mode
+
+S_SP=Chơi Đơn
+S_MP=Chơi Chung
+
+INT=Trong Nhà
+INTS=Địa Điểm Trong Nhà
+
+INT_BKR=Bunker
+STYL=Phong Cách
+SECTY=Bảo Mật
+EQUIPUPGR=Nâng Cấp Thiết Bị
+GUNLKR=Tủ Đựng Súng
+PSNLQRTS=Phòng Cá Nhân
+GUNRNGE=Khu Tập Bắn
+
+INT_VW=Kho Để Xe Hàng
+INT_VW_2=Có Nhãn Hiệu
+INT_VW_1=Thành Thị
+INT_VW_0_1=Cơ Bản (Màu 1)
+INT_VW_0_2=Cơ Bản (Màu 2)
+INT_VW_0_3=Cơ Bản (Màu 3)
+INT_VW_0_4=Cơ Bản (Màu 4)
+
+INT_IF=Facility IAA
+INT_SR=Phòng Máy Chủ
+INT_BS=Tàu Ngầm Bogdan
+INT_HL=Humane Labs
+INT_FR=FIB (Đột Kích Văn Phòng)
+INT_LFB=La Fuente Blanca
+INT_SSWCC=Câu Lạc Bộ Hài Kịch Split Sides
+INT_BM=Bahama Mamas
+INT_TR=Phòng Tra Tấn
+INT_MR=Phòng Trọ
+INT_OG=Omega's Garage
+INT_CIN=Rạp Phim
+INT_RCYL=Nhà Máy Tái Chế
+
+INT_PYSC=Văn Phòng Friedlander
+INT_SOL=Văn Phòng Solomon
+
+INT_FH=Nhà Floyd's
+INT_JH=Nhà Janitor
+INT_LH=Nhà Lester
+
+INT_BENNY=Benny's Original Motor Works
+INT_HAYES=Hayes Autos
+INT_TEQ=Tequi-La-La
+INT_FDRY=Xưởng Xúc
+INT_UDG=Union Depository Garage
+INT_ESR=Phòng Lưu Trữ Epsilon
+INT_CC=Phòng Tạo Nhân Vật
+INT_ME=Bãi Đỗ Xe Nhiệm Vụ Cuối
+INT_NG=Gara Nightclub
+INT_WEED=Trang Trại Cỏ
+INT_STILT=Nhà Sàn
+
+INT_A_H=Căn Hộ Cao Cấp
+INT_A_M=Căn Hộ Trung Cấp
+INT_A_L=Căn Hộ Thấp Cấp
+
+INT_G_H=Gara Cao Cấp
+INT_G_M=Gara Trung Cấp
+INT_G_L=Gara Thấp Cấp
+
+INT_W_L=Kho Lớn
+INT_W_M=Kho Vừa
+INT_W_S=Kho Bé
+
+YANK=North Yankton
+YANKMAPRDR=North Yankton Map & Radar
+IPL_USSLUX=USS Luxington
+IPL_HOSPITAL=Trung Tâm Y Tế Pillbox Hill
+FMEORSHME=Fame or Shame
+FCEBK=Lifeinvader
+IPL_JEWEL=Trang Sức Vangelico
+IPL_MXRD=Max Renda
+IPL_UFOEYE=UFO Núi Chiliad
+IPL_FINBANK=Union Depository
+IPL_PLNCRSH=Rãnh Tai Nạn Máy Bay
+
+! Translate "Factory"
+IPL_CLKNBLLFCTRY=Nhà Máy Clucking Bell
+IPL_LSTRFCTRY=Lester's Factory
+
+! Translate "Morgue"
+IPL_MORGUE=Nhà Xác
+
+! Translate "Heist" and "Yacht"
+IPL_AYACHT=Trộm Du Thuyền Series A
+
+! Translate "Ranch" and "Fire"
+IPL_RANCH=Trang Trại O'Neil Brothers
+IPL_RANCH_LIT=Trang Trại O'Neil Brothers Bị Cháy
+
+! Translate "Clubhouse"
+IPL_LOSTHOUSE=Câu Lạc Bộ Lost MC
+
+! Translate "House"
+IPL_BCHOUSE=Nhà Banham Canyon
+
+IPL_TRNWRCK=Tai Nạn Tàu Hoả
+IPL_REDCRPT=Thảm Đỏ
+
+! Translate anything but "FIB"
+IPL_FIBLBBY=Sảnh FIB
+! Translate anything but "FIB"
+IPL_FIBHELI=Tai Nạn Trực Thăng FIB
+! Translate anything but "FIB"
+IPL_FIBRBBL=Đống Đổ Nát FIB
+
+! Translate "Triathlon"
+IPL_TRIA2=Cuộc Thi Alamo Sea
+! Translate "Triathlon"
+IPL_TIRA1=Cuộc Thi LSIA
+
+! Translate "Gates"
+IPL_ZGATES=Cổng Fort Zancudo
+
+! Translate "Airfield" and "Boxes"
+IPL_BOXES=Thùng Ở Sân Bay Sandy Shores
+
+IPL_SPNN=Máy Rửa Xe
+
+! Translate "Billboard" and "Graffiti"
+IPL_MAZEGRFF=Graffiti Trên Bảng Maze Bank
+! Translate "Billboard" and "Graffiti"
+IPL_OILGRFF=Graffiti Trên Bảng Ron Oil
+! Translate "Billboard" and "Graffiti"
+IPL_FRUITBB=Biển Quảng Cáo iFruit
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL1=Biển Quảng Cáo Billboard 1
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL2=Biển Quảng Cáo Billboard 2
+
+! Translate "Church" and "Grave"
+IPL_GRVE=Mộ Nhà Thờ Hill Valley
+
+XSTPNSH=Phạt NPC Tồn Tại
+NPRXPNSH=Phạt NPC Ở Gần
+PRX=Khoảng Cách
+NAIMPNSH=Phạt NPC Ngắm Bắn
+NAIMPNSH_H=Phạt NPC vì ngắm bắn vào bạn.
+NHOSPNSH=Phạt NPC Thù Địch
+INCLUDE_EVERYONE=Bao Gồm Mọi Người
+INCLUDE_EVERYONE_M=Bao Gồm Mọi Người Trong Nhiệm Vụ
+INCLUDE_FRIEND=Bao Gồm Bạn Bè
+INCLUDE_PASS=Bao Gồm Hành Khách
+INCLUDE_CREW=Bao Gồm Thành Viên Crew
+INCLUDE_ORG=Bao Gồm Thành Viên Tổ Chức
+INCLUDE_H1=Thay vì chỉ có bạn, các hình phạt sẽ được áp dụng khi nhóm đối tượng này cũng là mục tiêu.
+INCLUDE_H2=Tương tự như trên, nhưng chỉ có hiệu quả khi trong nhiệm vụ.
+PAIMPNSH=Hình Phạt Nhắm Vào Người Chơi
+PAIMPNSH_H=Trừng phạt người chơi nhắm vào khu vực của bạn.
+AIMME=Chỉ Trừng Phạt Khi Nhắm Vào Tôi
+AIMMEN=Nếu bị vô hiệu hóa, NPC sẽ bị trừng phạt vì nhắm vào khu vực của bạn, bất kể họ nhắm vào ai
+AIMMEP=Nếu bị vô hiệu hóa, người chơi sẽ bị trừng phạt vì nhắm vào khu vực của bạn, bất kể họ đang nhắm vào ai
+PNSH_EXPANON=Vụ Nổ Ấn Danh
+PNSH_EXP=Vụ Nổ Của Bạn
+PNSH_BRN=Cháy
+PNSH_DIE=Chết
+PNSH_REV=Hồi Sinh
+PNSH_UNRM=Tắt Vũ Khí
+PNSH_UNRM_H=Chỉ để lại cho họ nắm đấm.
+PNSH_INTRP=Gián Đoạn
+PNSH_CWR=Núp
+PNSH_FLEE=Chạy Trốn
+PNSH_PSH=Đẩy Xa Ra
+PNSH_MRK=Tâm Ngắm AR
+PNSH_SHWMDLNME=Hiển Thị Tên Mô Hình
+PSNH_FIX=Sửa Chữa
+PSNH_WEKN=Giảm Máu
+PSNH_WEKN_H=Giảm máu của họ nên họ sẽ dễ dàng chết.
+
+! "ESP" as in "Extra Sensory Perception"
+NESP=ESP NPC
+! "ESP" as in "Extra Sensory Perception"
+PESP=ESP Người Chơi
+
+! "ESP" as in "Extra Sensory Perception"
+BONESP=Xương ESP
+XCLDED=Loại Trừ Người Chết
+
+! "ESP" as in "Extra Sensory Perception"
+BOXESP=Hộp ESP
+
+RNDR_LWLTCY=Hiển Thị Độ Trễ Thấp
+RNDR_LGCY=Hiển Thị Truyền Thống
+RNDR_NTV=Hiển Thị Gốc
+
+! "ESP" as in "Extra Sensory Perception"
+NAMESP=ESP Tên
+
+MINTXTSCL=Tỉ Lệ Văn Bản Tối Thiểu
+MAXTXTSCL=Tỉ Lệ Văn Bản Tối Đa
+INVTXTSCL=Đảo Ngược Tỉ Lệ Văn Bản
+
+! "ESP" as in "Extra Sensory Perception"
+LINESP=Dòng ESP
+
+ESPTAGS_H=Thẻ được sắp xếp trong danh sách này theo mức độ ưu tiên hiển thị của chúng.
+
+CLRARE=Dọn Sạch Khu Vực
+IGMISSENT=Bỏ Qua Các Thực Thể Nhiệm Vụ
+NDLY=Không Độ Trễ
+
+DELROPES=Xoá Tất Cả Dây
+
+DOORS=Thế Giới Mở Nâng Cao
+DOORS_H=Mở ra thế giới nhiều hơn và cho phép bạn bước vào nhiều ngôi nhà theo ý muốn.
+
+DOORS_ENT=Nhan {input} de vao {interior}.
+DOORS_EXT=Nhan {} de ra ngoai.
+
+DEDSEC=Hack Giống Như Watch_Dogs
+
+DEDSEC_HACK=Hack
+DEDSEC_HACK_H=Cho phép bạn cấu hình các bản hack nào sẽ xuất hiện trên màn hình của bạn.
+
+DEDSEC_GENAC=Hành Động Chung
+DEDSEC_VEHAC=Hành Động Phương Tiện
+DEDSEC_VEHAC_H=Áp dụng nếu bạn đang chọn người chơi bên trong xe.
+DEDSEC_NPCAC=Hành Động NPC
+DEDSEC_PLRAC_H=Áp dụng nếu bạn chọn một người chơi đi bộ.
+
+DEDSEC_TUT_ESP=Nhin theo huong chung cua nguoi choi, NPC hoac phuong tien.
+DEDSEC_TUT_OPT=Su dung {} de hien thi cac tuy chon hack cho muc tieu hien tai cua ban.
+DEDSEC_TUT_OPTMSE=nut chuot giua hoac {}
+DEDSEC_TUT_SEL=Di chuyen camera cua ban de chon mot tuy chon va nha nut de su dung no.
+
+DEDSEC_OPT_FRZ=Dong Bang
+DEDSEC_OPT_UFRZ=Huy Dong Bang
+DEDSEC_OPT_EXP=No Tung
+DEDSEC_OPT_UNRM=Tat Vu Khi
+DEDSEC_OPT_DEL=Xoá
+
+DEDSEC_OPT_DSTRY=Pha Huy
+DEDSEC_OPT_DRV=Lái
+DEDSEC_OPT_ENT=Vào
+DEDSEC_OPT_EMPTY=Trong
+DEDSEC_OPT_IGNITE=Chay Binh Xang
+DEDSEC_OPT_SLINGSHOT=Phóng
+
+DEDSEC_OPT_BRN=Cháy
+DEDSEC_OPT_FLEE=Chay Tron
+DEDSEC_OPT_CWR=Núp
+DEDSEC_OPT_REV=Hoi Sinh
+
+DEDSEC_OPT_KLL=Giet
+DEDSEC_OPT_CGE=Nhot Long
+DEDSEC_OPT_MNU=Mo Stand
+
+DEDSEC_STICKY=Lựa Chọn Dính
+DEDSEC_STICKY_H=Các bản hack chỉ được bỏ chọn sau độ trễ được chỉ định tính bằng mili giây. Điều này rất hữu ích cho người điều khiển.
+DEDSEC_PASSIVE=Khi Không Có Mục Tiêu Được Chọn
+DEDSEC_ACTIVE=Khi Mục Tiêu Được Chọn
+
+SHWRETCL=Hiển Thị Ô Kẻ
+DRWLINE=Hiển Thị Đường Kẻ
+DRWBOX=Hiển Thị Hộp
+
+DEDSECDELAY=Thời Gian Mở Điện Thoại
+DEDSECDELAY_H=Cho phép bạn mở điện thoại của mình mặc dù có mục tiêu hack nếu bạn nhả phím trong khoảng thời gian mili giây nhất định.
+
+GGSR=GeoGuessr
+GGSR_H=Bạn biết rõ về San Andreas đến mức nào?
+GGSR_VIEW=Xem Mục Tiêu
+GGSR_SBMT=Dự Đoán Của Bạn
+GGSR_SBMT_H=Nhập vị trí bằng cách đặt điểm đánh dấu, sử dụng freecam hoặc di chuyển/dịch chuyển nhân vật của bạn.
+GGSR_WIN=Bạn hiểu rồi!
+GGSR_OFF=Bạn đoán cách mục tiêu là {} mét.
+
+ARWP=Đánh Dấu AR
+ARWP_H=Đặt đèn hiệu tại các điểm đánh dấu của bạn và cung cấp cho bạn cách để xem độ cao liên quan đến một số điểm đánh dấu được đặt qua Stand.
+
+ARGPS=Dẫn Đường AR
+ARGPS_H=Điều hướng bạn đến điểm đánh dấu của bạn.
+
+ARBCNPLY=Đèn Hiệu Trên Người Tập Trung
+ARBCNPLY_P=Trong Danh Sách Người Chơi
+ARBCNPLY_S=Ở Trong Một Danh Sách Người Chơi
+
+WHNENTPLY=Khi Vào Danh Sách Người Chơi...
+SPCPLY=Quan Sát Họ
+
+WHNLVEPLY=Khi Rời Khỏi Danh Sách Người Chơi...
+STPSPECPLY=Ngừng Quan Sát Họ
+
+STPSPEC=Dừng Quan Sát
+
+SRT=Sắp Xếp
+SRTBY=Sắp Xếp Theo
+SRTREV=Thứ Tự Ngược Lại
+
+! Or "Raised Tags"
+HOISTFLGS=Thẻ Nâng Cao
+HOISTFLGS_H=Người chơi có thẻ sẽ được đặt phía trên người chơi không có thẻ.
+
+NME=Tên
+SRTBY_SLT=Chỗ
+
+SPID2=ID Theo Phiên / Vị Trí
+
+LANG_EN=Tiếng Anh
+LANG_FR=Tiếng Pháp
+LANG_DE=Tiếng Đức
+LANG_IT=Tiếng Ý
+LANG_ES=Tiếng Tây Ban Nha (Spain)
+LANG_BR=Tiếng Bồ Đào Nha
+LANG_PL=Tiếng Ba Lan
+LANG_RU=Tiếng Nga
+LANG_KR=Tiếng Hàn
+LANG_TW=Tiếng Trung Phồn Thể
+LANG_JP=Tiếng Nhật
+LANG_MX=Tiếng Tây Ban Nha (Mexico)
+LANG_CN=Tiếng Trung Giản Thể
+
+DSCVYTME=Thời Gian Khám Phá
+
+CTOS=Mất Điện
+CTOS_2=Kích Hoạt, Bao Gồm Cả Xe Cộ
+
+NOSKY=Tắt Bầu Trời
+
+OVRDWTR=Ghi Đè Thời Tiết
+OVRDWTR_H=Ghi đè thời tiết *chỉ bạn*.
+OVRDOFF=Mặc Định
+WTR_EXTRASUNNY=Thêm Nắng
+WTR_CLEAR=Thông Thoáng
+WTR_CLOUDS=Mây
+WTR_SMOG=Khói Bụi
+WTR_FOGGY=Sương Mù
+WTR_OVERCAST=U Ám
+WTR_RAIN=Mưa
+WTR_THUNDER=Sấm Chớp
+WTR_CLEARING=Sạch Sẽ
+WTR_NEUTRAL=Trung Lập
+WTR_SNOW=Tuyết
+WTR_BLIZZARD=Bão Tuyết
+WTR_SNOWLIGHT=Ánh Tuyết
+WTR_XMAS=Giáng Sinh
+WTR_HALLOWEEN=Halloween Quang Đãng
+WTR_RAIN_HALLOWEEN=Halloween Mưa
+WTR_SNOW_HALLOWEEN=Halloween Tuyết
+
+AESLGHT=Ánh Sáng Thẩm Mỹ
+PLCMNT=Vị Trí
+PLCMNT_CHR=Nhân Vật
+PLCMNT_CHR_H=Luồng ánh sáng tỏa sáng từ nhân vật của bạn.
+PLCMNT_CAM=Camera
+PLCMNT_CAM_H=Luồng ánh sáng chiếu ra từ camera.
+PLCMNT_OVL=Đèn Hình Bầu Dục
+PLCMNT_OVL_H=81 đèn được sắp xếp thành hình bầu dục xung quanh nhân vật của bạn.
+RNGE=Phạm Vi
+ITNST=Cường Độ
+
+! Might also be called "falloff" or "edge gradient", I'm no expert on lights
+DFFRCTN=Nhiễu Xạ
+
+WRLDBDR=Biên Giới Thế Giới
+WRLDBDR_H=Hiển thị đường biên giới thế giới nếu bạn ở trong phạm vi số mét được chỉ định.
+
+WAT=Nước
+
+WVEBHV=Hành Vi Sóng
+SMTH=Mượt
+MGNT=Từ Tính
+
+ZDIFF=Độ Cao Của Nước
+WATZDIFFLOC=Chỉ Áp Dụng Độ Cao Cho Vùng Nước Gần Đó
+
+STROVR=Ghi Đè Sức Mạnh
+
+OPCDIF=Độ Mờ Đục
+WATOD_H=Cho phép bạn thêm và xóa độ mờ của nước *chỉ bạn*.
+
+TRAINS=Tôi Thích Tàu Hoả
+TRAINS_H=Làm cho xe lửa trở nên phổ biến hơn trong thế giới.
+
+CLK=Đồng Hồ
+
+TIME=Thời Gian
+
+CLKSYNC=Sử Dụng Thời Gian Phiên
+
+LKTIME=Khoá Thời Gian
+
+SYSTIME=Sử Dụng Thời Gian Hệ Thống
+
+SMTHTRNS=Chuyển Tiếp Mượt Mà
+
+CLKPRST_12=Buổi Trưa
+CLKPRST_6=Buổi Sáng
+CLKPRST_0=Buổi Đêm
+CLKPRST_18=Buổi Chiều
+
+!!!!!!!!!!!!!
+!! Players !!
+!!!!!!!!!!!!!
+
+ALLPLY=Tất Cả Người Chơi
+
+XCLDS=Loại Trừ
+
+XCLDF=Loại Trừ Bạn Bè
+XCLDM=Loại Trừ Tôi
+XCLDCM=Loại Từ Thành Viên Crew
+XCLDSU=Loại Trừ Người Dùng Stand
+XCLDPR=Loại Trừ Người Chơi
+XCLDOG=Loại Trừ Thành Viên Tổ Chức
+XCLD50=Loại Trừ Cơ Quan Chức Năng
+XCLDMIS=Loại Trừ Nhiệm Vụ
+XCLDMDR=Loại Trừ Modder
+XCLDLMDR=Loại Trừ Có Khả Năng Modder
+
+XCLD_GRD=Ngăn chặn vệ sĩ của bạn tấn công nhóm đối tượng này.
+
+PS_ON_H=Bao gồm bạn bè, người lạ và chính bạn.
+PS_F_S=Bạn Bè & Người Lạ
+PS_S=Người Lạ
+
+PSC_M=Tôi
+PSC_FM=Bạn Bè & Tôi
+PSC_CFM=Thành Viên Crew, Bạn Bè, Tôi
+
+PLYFTRLST=[Người Chơi]
+
+SLFHRM=Bạn có chắc chắn muốn làm điều này với chính mình?
+
+FLAGS=Thẻ
+FLAGS_A=Thẻ Người Chơi
+
+BRCKTS=Dấu Ngoặc
+
+FLAG_SELF=Bản Thân
+FLAG_FRIEND=Bạn Bè
+FLAG_CREW=Thành Viên Crew
+FLAG_ATTACKED=Tấn Công Bạn
+FLAG_HOST=Chủ Phiên
+FLAG_SCRIPT_HOST=Chủ Tập Lệnh
+FLAG_SPEC=Quan Sát
+FLAG_GOD=Bất Tử
+FLAG_VEHGOD=Bất Tử Xe
+FLAG_INVEH=Trong Phương Tiện
+FLAG_RC=Xe RC
+FLAG_OTR=Tắt Radar
+FLAG_INT=Trong Nhà
+FLAG_TYPING=Đang Nhập
+FLAG_DEAD=Chết
+FLAG_VPN=VPN
+FLAG_INVISIBLE=Vô Hình
+FLAG_ORG_MEMBER=Thành Viên Tổ Chức
+
+NXTHST=Chủ Phiên Tiếp Theo
+
+! Plural version of FLAG_FRIEND
+FLAG_FRIEND_P=Bạn Bè
+
+! Plural version of FLAG_CREW
+FLAG_CREW_P=Thành Viên Crew
+
+! Plural version of FLAG_MOD
+FLAG_MOD_P=Modders
+
+! Plural version of FLAG_ATTACKED
+FLAG_ATTACKED_P=Tấn Công Bạn
+
+PLYTP=Dịch Chuyển Đến Họ
+PLYTP_A=Dịch Chuyển Tới {}
+
+PLYTPVEH=Dịch Chuyển Vào Xe Của Họ
+PLYNVEH={} không ở trong xe. :/
+
+PLYAPT=Dịch Chuyển Đến Căn Hộ...
+
+OFFICE_GARAGE={office}, Garage {num}
+
+NEAR_ME=Gần Tôi
+NEAR_WP=Đánh Dấu Gần Tôi
+
+APTID=ID Căn Hộ
+INTID=ID Nhà
+
+PLY_VISIT=Dịch Chuyển Đến Căn Hộ Của Họ
+
+PLYSMMN_D=Dịch Chuyển/Triệu Hồi Họ
+
+PLYSMMN=Dịch Chuyển Tới Tôi
+PLYSMMNPLY=Dịch Chuyển Đến Người Chơi...
+PLYSMMNWP2=Dịch Chuyển Đến Điểm Đánh Dấu
+PLYSMMNOBJ=Dịch Chuyển Tới Mục Tiêu
+
+PLYWPTP=Dịch Chuyến Đến Đánh Dấu Của Họ
+PLYWPTP_N={} chưa đặt điểm đánh dấu.
+
+COPYWP=Sao Chép Điểm Đánh Dấu Của Họ
+
+PLYNAPT={} không ở trong căn hộ. :/
+
+PLYCASINOTP=Dịch Chuyển Tới Casino
+
+PLYFRND=Gửi Lời Mời Kết Bạn
+
+PLYINHIST=Trong Lịch Sử Người Chơi
+
+PLYENGMULT=Hệ Số Công Suất Động Cơ
+
+PLYGIFT=Tặng Phương Tiện Spawn
+PLYGIFT_H=Cho phép họ đưa bất kỳ chiếc xe nào vào gara của mình bất kể giá trị.
+PLYGIFT_W=Sau khi bạn tiếp tục, {} sẽ có thể đưa chiếc xe đang lái vào gara của mình. Tuy nhiên, để điều này đạt được hiệu quả như mong muốn, họ không được phép mang bất kỳ phương tiện cá nhân nào ra ngoài và phải đưa phương tiện đó vào một gara đầy chỗ, ví dụ: chứa đầy những chiếc xe NPC cấp thấp, để họ có thể chọn "thay thế".
+PLYGIFT_T=Nếu mọi thứ được thực hiện chính xác thì giờ đây {} có thể lái xe vào gara của họ. :)
+PLYVEHNCTRL=Không thể kiểm soát phương tiện của {}. :|
+
+FRGMDL=Làm Giả Mô Hình
+FRGMDL_W=Vui lòng chỉ sử dụng phương tiện có mô hình giả mạo để lái vào gara của bạn vì bất kỳ hành động nào khác có thể dễ dàng làm crash trò chơi.
+
+! "Wanted" as in "Wanted Level", we don't want our ~~poor~~ criminals to be forever alone
+PLYBAIL=Không Bị Truy Nã
+
+PLYBEAST=Biến Thành Quái Thú
+
+PLYGRVNPC=Hút NPC
+PLYAGRNPC=NPC Giận Dữ
+
+PARTICLE=Hiệu Ứng
+PLRPTFXSPM=Spam Hiệu Ứng
+
+HDELCL=Ẩn Cục Bộ
+HDELCL_H=Ngăn chặn bạn khỏi bị spam bởi các hiệu ứng.
+
+PLYMUGLOP=Vòng Lặp Trộm Cướp
+
+PLYRAGDOLL=Đẩy Ngã
+
+PLYSHAKECAM=Lắc Camera
+
+GIVESH=Tặng Chủ Tập Lệnh
+
+PLYARM=Tặng Tất Cả Vụ Khí
+PLYARM_P=Tặng Vũ Khí
+
+PLYAMMO=Tặng Đạn
+PLYAMMO_H=Tặng họ đạn cho vũ khí hiện tại của họ.
+PLYAMMO_T={} hiện không cầm vũ khí mà tôi có thể tặng đạn cho họ. :/
+
+PLYPARA=Tặng Dù
+
+BNTY=Đăt Tiền Thưởng
+BNTY_T=Tiền thưởng phải nằm trong khoảng từ 0 đến 10.000 USD. :)
+
+BNTYSLF=Đặt Tiền Thưởng Cho Bản Thân
+BNTYSLF_H=Đồng thời đặt tiền thưởng cho chính bạn để tránh gây ra sự nghi ngờ.
+
+LOOPBNTY=Vòng Lặp Tiền Thưởng
+
+FRNDLY=Bạn Bè
+
+TROLL=Trêu Chọc
+
+RAM=Đập
+
+PLYBLME=Đổ Tội Giết Người...
+
+PLY_NOTIFY=Gửi Thông Báo
+
+PLY_NOTIFY_REMO=Tiền Bị Xoá
+PLY_NOTIFY_STOL=Tiền Bị Trộm
+PLY_NOTIFY_BANK=Tiền Gửi Ngân Hàng
+
+PLY_NOTIFY_SPAM=Spam Thông Báo
+
+CPOTFT=Sao Chép Trang Phục
+
+CPVEH=Sao Chép Phương Tiện
+
+CMDBHLF=Thay Họ Ra Lệnh
+CMDBHLFALL=Ra Lệnh Thay Mọi Người
+
+PLYCHTMCK=Giả Mạo Tin Nhắn
+
+PLYCHTOWO=OwO Hoá Tin Nhắn
+
+SHWCAM=Hiện Góc Nhìn
+
+SMS=Gửi Tin Nhắn
+
+SMS2=Tin Nhắn Văn Bản
+SMSS=Tin Nhắn
+
+DTS=Phát Hiện
+DT_ANY=Phát Hiện Bất Kì
+
+ADT=Chống Phát Hiện
+
+ADT_SPEC_H=Bất kể điều này, vị trí máy ảnh của bạn luôn được đồng bộ hóa và bạn vẫn có thể bị phát hiện đang quan sát dựa trên vị trí đó.
+
+CLSFN=Phân Loại
+CLSFNS=Phân Loại
+CLSFN_ANY=Phân Loại Bất Kì
+
+DT_T=Đã phát hiện {player} kích hoạt: {reason}
+CLSFN_T={player} hiện được phân loại là {classification}
+DT_CLSFN=Đã phát hiện {player} kích hoạt ({reason}) và hiện được phân loại là {classification}
+
+REACT_T={toast} — áp dụng phản ứng {reaction}.
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_K=đá
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_C=crash
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_T=mất kết nối
+
+CLSFN_N_H=Người chơi này chưa kích hoạt bất kỳ phát hiện nào của modder hoặc quản trị viên.
+CLSFN_PM=Có Thể Modder
+CLSFN_LM=Có Khả Năng Modder
+FLAG_MOD=Modder
+FLAG_MODAMN=Modder hoặc Admin
+CLSFN_MA_H=Stand đang điều tra xem người chơi này là modder hay quản trị viên Rockstar.
+FLAG_AMN=Quản Trị Viên
+
+! Plural version of CLSFN_LM
+CLSFN_LM_P=Có Khả Năng Modder
+
+! Plural version of FLAG_AMN
+FLAG_AMN_P=Quản Trị Viên
+
+CLSFNTAGSLF=Thẻ Phân Loại Bản Thân
+
+MDDRDT_H=Nhấp để loại bỏ phát hiện.
+MDDRDT_H_LUA=Phát hiện này đã được thêm bởi {}. Nhấn vào đây để loại bỏ nó.
+
+DT_H_PREMPT=Đây là một sự phát hiện trước.
+
+C2C=Ấn để sao chép giá trị.
+C2CN=Ấn để sao chép tên.
+C2OL=Ấn để sao chép {link}
+
+C2IN=Ấn để nhập giá trị.
+C2APPLY=Ấn để áp dụng giá trị.
+C2SEL=Ấn để chọn một giá trị.
+
+MDDRDT_SUI=Nhận Dạng Người Dùng Stand
+SUI=Nhận Dạng Người Dùng Stand (SUI)
+MDDRDT_SUI_H=Nhận dạng những người dùng Stand khác nhưng cũng cho phép họ nhận dạng bạn.
+
+DT_SU=Người Dùng Stand
+DT_SU_C=Người Dùng Stand (Đồng Tải)
+CLNG=Đồng Tải
+
+CMDSUI=Lệnh này yêu cầu bạn phải bật Nhận dạng người dùng Stand.
+
+CMDSTAND=Lệnh này chỉ khả dụng trên những Người dùng Stand khác đã bật Nhận dạng người dùng Stand.
+
+HS=HostShare™
+HS_H=Khi bạn là người chủ phiên, hãy cho phép những Người dùng Stand khác tận dụng các đặc quyền của người chủ phiên, miễn là cả hai bạn đều đã bật S.U.I.
+
+MDDRDT_SID=Nhận Dạng Người Dùng Khác
+MDDRDT_SID_T={} Người Dùng
+
+MDDRDT_RAC=Rockstar Chống Gian Lận
+
+MDDRDT_HLTH=Sức Khoẻ Được Sửa Đổi
+
+MDDRDT_LNGDED=Chết Quá Lâu
+
+MDDRDT_LNGOTR=Tắt Radar Quá Lâu
+
+MDDRDT_ARMR=Nhiều Giáp
+
+MDDRDT_PRES=Phát Hiện Giả Mạo
+MDDRDT_PRES_H=Phát hiện giả mạo phiên cũng như các thao tác tinh vi hơn.
+
+NMECHNG=Tôi đã từng thấy {newname} trước đây với cái tên {oldname}. :O
+
+MDDRDT_RID3=RID Nhân Viên Rockstar
+
+MDDRDT_T2IP=Địa Chỉ IP Take-Two
+
+DT_HT_2=Giả Mạo Mã Máy Chủ (Quyết Liệt)
+DT_HT_1=Giả Mạo Mã Máy Chủ (Điểm Ngọt)
+DT_HT_0=Giả Mạo Mã Máy Chủ (Hạn Chế)
+DT_HT_3=Giả Mạo Mã Máy Chủ (Khác)
+
+MDDRDT_TRFRM=Mô Hình Nhân Vật Được Sửa Đổi
+
+MDDRDT_GODATK=Tấn Công Khi Đươc Bảo Vệ
+
+MDDRDT_RSDEV=Cờ Phát Triển Rockstar
+MDDRDT_RSDEV_H=Khiến người chơi không thể bầu chọn hợp pháp để đá bạn.
+
+MDDRDT_RSQA=Cờ Rockstar QA
+MDDRDT_CHEAT=Cờ Lừa Đảo
+
+SPF_H_FLAG=Chỉ những modder khác mới có thể nhìn thấy điều này.
+
+MDDRDT_RP2=Rank/RP Không Hợp Lệ
+MDDRDT_RP3=Thứ Hạng RP Không Khớp
+MDDRDT_RP4=Giả Mạo Rank
+
+MDDRT_NONET=Chặn Sự Kiện Mạng
+MDDRT_NONET_H=Cho biết rằng người chơi có thể đã chặn các sự kiện mạng quan trọng, chẳng hạn như yêu cầu quyền kiểm soát một thực thể.
+
+MDDRT_DRIVEB=Vũ Khí Lái Xe Được Sửa Đổi
+
+MDDRT_SILENTCHAT=Nhắn Tin Mà Không Gõ
+
+MDDRT_BOUNTYSPAM=Spam Tiền Thưởng
+MDDRT_BOUNTYSPAM_H=Cho biết rằng người chơi đã đặt tiền thưởng ở mức không thể tin được, ví dụ: một tiền thưởng cho tất cả mọi người trong phiên.
+
+MDDRT_SUSSYBOUNTY=Tiền Thưởng Được Sửa Đổi
+MDDRT_SUSSYBOUNTY_H=Cho biết rằng người chơi đã đặt tiền thưởng có giá trị bất hợp pháp, ví dụ: 6969.
+
+MDDRT_EXPBLAME=Đổ Lỗi Cho Vụ Nổ
+MDDRT_EXPBLAME_H=Lưu ý rằng điều này cũng có thể phát hiện khi modder tung cho ai đó những cú đánh nổ.
+
+MDDRT_EXPL=Vụ Nổ Sửa Đổi
+MDDRT_EXPL_B=Ngăn chặn vụ nổ đồng bộ hóa với bạn. Điều này sẽ không giúp ích gì cho người khác.
+MDDRT_EXPL_H=Chủ yếu phát hiện khi modder gây ra vụ nổ trên người hoặc sử dụng đạn nổ. Lưu ý rằng điều này hiếm khi có thể gây ra cho những người chơi hợp pháp.
+
+VICTIM=Nạn Nhân: {}
+
+MOD_ORGNAME=Tên Tổ Chức Được Sửa Đổi
+
+MDDRT_CAYO=Ẩn Khỏi Danh Sách Người Chơi
+
+MDDRT_MISC=Dữ Liệu Sửa Đổi
+
+ATTKRS=Tấn Công
+ATTRKS_PRE_1=Gửi Máy Bay
+ATTRKS_PRE_2=Gửi Xe Máy
+ATTRKS_PRE_3=Gửi Chú Hề
+ATTRKS_PRE_4=Gửi Trực Thăng
+ATTRKS_PRE_5=Gửi Băng Đảng BMX
+ATTRKS_PRE_6=Gửi Nông Dân
+ATTRKS_PRE_7=Gửi Xe Tăng Nhỏ
+ATTRKS_PRE_8=Gửi Quân Sự (Vũ Khí Kết Hợp)
+ATTRKS_PRE_9=Gửi Bóng Ma
+
+ACCURACY=Độ Chính Xác Khi Tấn Công
+
+AGGR=Hiếu Chiến
+AGGR1=Thân Thiện
+AGGR1_H=Bảo vệ bạn và những người khác khỏi những kẻ tấn công AI. Sẽ không tấn công người chơi.
+AGGR2=Phòng Vệ
+AGGR2_H=Bảo vệ bạn khỏi mục tiêu thù địch.
+AGGR3_H=Bảo vệ bạn khỏi các mục tiêu thù địch, nhưng thường tấn công ngay trong tầm nhìn.
+DEL_ATTKRS=Xoá Tất Cả Kẻ Tấn Công
+FILL_VEH=Làm Đầy Xe
+FILL_VEH_H=Thay vì tạo ra một phương tiện mới cho mỗi kẻ tấn công, các phương tiện hiện có sẽ được trang bị đầy đủ trước khi một phương tiện mới được tạo ra.
+
+! As in "Kill the engine"
+KLL=Giết
+! The "EMP" projectile in-game that turns your car off. 
+EMP=Tắt Máy
+FLIPPLRVEH=Lật
+SPINVEH=Xoay
+POP_TYRES=Nổ Lốp
+DETACH_AIR=Tháo Cánh (Máy Bay)
+DETROIT=Tháo Bánh Xe
+SLIPPERY=Lốp Trơn
+SLIPPERY_H=Phải mất một thời gian để vô hiệu hóa.
+DEL_DOORS=Tháo Cửa
+IGNITE=Đốt
+TURNAROUND=Xoay Ngược
+DSTRYPROP=Phá Cánh Quạt (Máy Bay)
+BREAKBOOM=Nổ Đuôi (Trực Thăng)
+
+SLINGSHOT=Phóng
+
+V_F=Phía Trước
+V_B=Phía Sau
+
+PLYDDVEH=Vô Hiệu Hoá Lái Xe
+PLYDDVEH_H=Đặt họ vào tình trạng không thể lái xe có thể khắc phục được bằng lời mời đến căn hộ.
+
+INFLOAD=Màn Hình Tải Vô Hạn
+
+INFRING=Tiếng Điện Thoại Vô Hạn
+
+FRZ=Đóng Băng
+
+FAKEDROP=Thả Tiền Giả
+
+NOPSSVE=Chặn Chế Độ Passive
+
+! Putting someone in a cage
+PLYCGE=Lồng
+
+PLYCAGE_TINY=Lồng Bé
+PLYCAGE_GOLD=Lồng Vừa
+PLYCAGE_FNCE=Lồng Hàng Rào
+PLYCAGE_STNT=Lồng Khổng Lồ
+
+! Being put in a cage
+CGE=Lồng
+
+PLYKLL=Giết
+
+PLYEXP=Nổ Tung
+
+! For reference: Block Blaming is PTX_PSV
+PLYKLL_H=Không hoạt động với việc đổ lỗi cho khối hoặc nếu bạn đang ở chế độ Passive.
+
+CGES=Lồng
+
+PLYKCK=Đá
+
+PLYKCK_T_H=Thật Dễ Dàng. ;P
+! Single target version of PLYKCK_T_C.
+PLYKCK_T_C=Tôi sẽ cố gắng thuyết phục họ rời đi. :)
+! Multiple targets version of PLYKCK_T_C_M.
+PLYKCK_T_C_M=Tôi sẽ cố gắng thuyết phục họ rời đi. :)
+
+PLYKCK_SMRT=Thông Minh
+PLYKCK_SMRT_A=Cú Đá Thông Minh
+PLYKCK_SMRT_H2=Loại bỏ người chơi bằng mọi cách cần thiết.
+
+PLYKCK_BL=Danh Sách Đen
+PLYKCK_BL_A=Đá Danh Sách Đen
+PLYKCK_BL_H=Thêm người chơi vào danh sách đen giống như họ bị bỏ phiếu bầu, nhưng lại đá họ như một kẻ không đồng bộ.
+
+PLYKCK_H=Chủ Phiên
+PLYKCK_H_H=Đá người chơi bằng cơ chế đá phiếu bầu.
+
+PLYKCK_NH=Không Phải Chủ Phiên
+
+PLYKCK_PC=Đóng Kết Nối
+
+PLYKCK_B=Chia Tay
+PLYKCK_B_G=Cú Đá Chia Tay
+
+BRKUR=Phản Ứng Cú Đá Chia Tay
+BRKUR_H=Điều này sẽ chỉ có hiệu lực đối với những cú đá chia tay được sử dụng để chống lại người khác.
+
+KBKR=Phản Ứng Cú Đá Chia Tay Knockoff
+KBRK_E=Cú Đá Chia Tay Knockoff
+
+GEN_H_HOST=Điều này sẽ chỉ có hiệu lực khi bạn là chủ phiên.
+GEN_H_NHOST=Điều này sẽ chỉ có hiệu lực khi bạn không phải chủ phiên.
+
+PLYBAN=Ban
+
+PLYKCK_O=Cực Khoái
+
+PLYKCK_L=Love Letter
+PLYKCK_L_G=Cú Đá Love Letter
+
+PLYKCK_H_DSCRT=Một cú đá rời rạc sẽ không cho mục tiêu biết ai đã thực hiện nó.
+
+PLYKCK_H_B_H=Không thể cản phá khi bạn là chủ phiên.
+PLYKCK_H_HO=Chỉ khả dụng khi bạn là chủ phiên.
+PLYKCK_H_B_P=Bị chặn bởi các menu phổ biến.
+PLYKCK_H_B_M=Bị chặn bởi hầu hết các menu.
+
+BE_K=BattlEye Kick
+BE_B=BattlEye Ban
+BE_B_H=Khiến người nhận không thể tham gia GTA Online cho đến khi họ khởi động lại trò chơi.
+
+PLYCRSH=Crash
+SUI_ET=Cơ hội để điều này xảy ra với một Người dùng Stand khác là rất nhỏ. Nhưng tôi là ai mà dám hỏi người sử dụng thần thánh? :^)
+
+PLYCRSH_H_AOE2=Lưu ý: Điều này cũng có thể khiến những người chơi khác ở gần mục tiêu của bạn bị crash.
+
+PLYCRSH_E=Elegant
+PLYCRSH_G=Burger King Foot Lettuce
+PLYCRSH_V=Vehicular Manslaughter
+PLYCRSH_T=Steamroller
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T=Đã ngăn chặn sự cố ({type}).
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T_BLM=Đã ngăn chặn sự cố ({type}), có thể do {player} gây ra.
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_TRNLOOP=Vòng Lặp Tàu
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_ATTLOOP=Vòng Lập Tệp Đính Kèm
+
+! Buffer overruns cause memory corruption, which could go unnoticed, but could also crash the game.
+! Type may be a codename such as XA, or a human-readable name, such as "Ped Outfit Texture".
+BU_T=Đã ngăn chặn lỗi tràn bộ nhớ đệm ({type})
+
+! To be used within BU_T
+BU_TEX=Kết Cấu Ped Outfit
+
+BU_VEHLIT=Đèn Xe
+
+INVTASK=Một NPC đang chạy một tác vụ không hợp lệ và đang hủy bỏ nó.
+
+TIMEOUT=Ngắt Kết Nối
+FLAG_TIMEOUT=Mất Kết Nối
+TIMEOUT_H=Tạm thời chặn hầu hết lưu lượng truy cập mạng đi và đến người chơi này.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Player > Information !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+INFO=Thông Tin
+
+NME_S=Tên (Stand)
+NME_H=Tên (Phiên)
+NME_R=Tên (Social Club)
+
+STUS=Trạng Thái
+
+DMG_WEAP=Hệ Số Sát Thương Súng
+DMG_MELEE=Hệ Số Sát Thương Cận Chiến
+
+ORG=Tổ Chức
+
+ORGT_SV=SecuroServ
+ORGT_MC=Câu Lạc Bộ Mô Tô
+
+BOSS=Chủ
+
+STS=Thống Kê
+
+NDATA=Không Có Dữ Liệu
+
+CHAR1=Nhân Vật 1
+CHAR2=Nhân Vật 2
+CHAR1_ACT=Nhân Vật 1 (Hoạt Động)
+CHAR2_ACT=Nhân Vật 2 (Hoạt Động)
+
+CNNTN=Kết Nối
+
+IP=Địa Chỉ IP
+RLYIP=IP Chuyển Tiếp
+LANIP=IP LAN
+PRT=Cổng
+RLYPRT=Cổng Chuyển Tiếp
+
+CONVIA=Kết Nối Qua
+CONVIA_P2P=P2P
+CONVIA_RLY=Trung Gian
+CONVIA_RLY_S=Kết nối qua máy chủ trung gian
+CONVIA_PLY_S=Kết Nối Qua {}
+
+PING=Ping
+MS=ms
+
+MNY_W=Tiền Trong Ví
+MNY_B=Tiền Trong Ngân Hàng
+MNY_A=Tổng Số Tiền
+
+DIST=Khoảng Cách
+
+KLLS=Giết
+DTHS=Chết
+KD=Tỉ Lệ K/D
+
+FAVVEH=Phương Tiện Yêu Thích
+FAVWEAP=Vũ Khí Yêu Thích
+FAVRDSTAT=Đài Radio Yêu Thích
+
+OWNBKR=Sở Hữu Bunker
+OWNFAC=Sở Hữu Facility
+OWNCLB=Sở Hữu Nightclub
+
+HOSTKN=Mã Máy Chủ
+
+HOSTQPOS=Vị Trí Hàng Đợi Máy Chủ
+
+HQSA_NH=Tên Hàm Băm
+
+GIP_Q=Đợi Phản Hồi
+GIP_P=Thực Hiện Yêu Cầu
+GIP_F=Yêu Cầu Thất Bại
+
+CT=Thành Phố
+RGION=Vùng
+CTRY=Quốc Gia
+
+! E.g. "Discovered: 10 seconds ago"
+DSCVAGO=Phát Hiện
+
+! E.g. "Invulnerable For: 10 seconds"
+GODTIME=Bất Tử Trong
+
+CRW=Crew
+CRWTG=Thẻ
+MOTTO=Khẩu Hiệu
+ALTBDG=Huy Hiệu Thay Thế
+
+!!!!!!!!!!!!!!!
+!! Durations !!
+!!!!!!!!!!!!!!!
+
+DUR_AGO={} trước
+
+DUR_S=giây
+DUR_S_P=giây
+DUR_M=phút
+DUR_M_P=phút
+DUR_H=giờ
+DUR_H_P=giờ
+DUR_D=ngày
+DUR_D_P=ngày
+
+!!!!!!!!!!!!
+!! Online !!
+!!!!!!!!!!!!
+
+SESS=Phiên
+NWSESS=Phiên Mới
+
+NWSESS_CHAR=Dừng Lại Ở Lựa Chọn Nhân Vật
+
+NWSESS_SP=Tạo Phiên Công Cộng
+NWSESS_IO=Tạo Phiên Chỉ Mời
+NWSESS_CC=Tạo Phiên Chỉ Thành Viên Crew
+NWSESS_C=Tạo Phiên Crew
+NWSESS_CF=Tạo Phiên Chỉ Bạn Bè
+NWSESS_S=Tạo Phiên Solo
+NWSESS_FF=Tham Gia Cùng Một Người Bạn
+NWSESS_FC=Tham Gia Cùng Crew
+NWSESS_FP=Tìm Phiên Công Cộng
+NWSESS_NP=Tìm Phiên Công Cộng Mới
+NWSESS_NP_H=Giống như "Tìm Phiên Công Cộng" nhưng trước tiên đưa bạn vào một phiên mới để bạn không vào lại phiên cũ.
+NWSESS_CTOR=Chế Độ Sáng Tạo
+NWSESS_SCTV=Social Club TV
+
+TRK=Theo Dõi
+TRKD=Đã Theo Dõi
+HISTTRK=Người Chơi Đã Theo Dõi
+HIST_KEEP_TRA=Giữ Theo Dõi
+
+TRK_H=Thông báo cho bạn khi người chơi này chuyển phiên, trực tuyến hoặc ngoại tuyến.
+
+TRK_T_CNF=Đang Cập Nhật Theo Dõi...
+
+INJTRKINFO=Hiển Thị Người Chơi Đang Theo Dõi Khi Nạp
+
+META=Meta
+
+RSADMINS=Quản Trị Viên Rockstar
+
+! SC = Social Club
+SCFRIENDS=Bạn Bè SC
+
+ADDMISS=Thêm Mất Tích
+PLYNOTESET=Đặt Ghi Chú
+PLYNOTESET_H_A=Đặt ghi chú của mọi quản trị viên trong lịch sử của bạn.
+TRCKALL=Theo Dõi Tất Cả
+UTRCKALL=Bỏ Theo Dõi Tất Cả
+WHTLALL=Danh Sách Trắng Tất Cả
+UWHTLALL=Bỏ Danh Sách Trắng Tất Cả
+HIST_DNG=Vùng Nguy Hiểm
+HIST_CLR=Xoá Lịch Sử
+
+ONLSTS=Trạng Thái Trực Tuyến
+ONLSTS_O2=Ngoại Tuyến
+ONLSTS_S=Trong Story Mode
+ONLSTS_H=Máy Chủ {}
+ONLSTS_C=Trong {session_type}
+ONLSTS_CH=Trong {session_type} chủ phiên: {host}
+
+TRK_T={name} hiện đang {activity}
+
+ONLSTS_TRK_O=ngoại tuyến
+ONLSTS_TRK_S=trong Story Mode
+ONLSTS_TRK_H=máy chủ {}
+ONLSTS_TRK_C=trong {}
+ONLSTS_TRK_CH=trong {session_type} chủ phiên {host}
+
+ST_S=phiên solo
+ST_I=phiên chỉ mời
+ST_F2=phiên chỉ bạn bè
+ST_CC=phiên chỉ thành viên crew
+ST_C=phiên crew
+ST_P=phiên công cộng
+ST_O=phiên không rõ
+
+! Short online statuses:
+SHTONLSTS_O2=Ngoại Tuyến
+SHTONLSTS_S=Story Mode
+SHTONLSTS_ST_S=Solo
+SHTONLSTS_ST_I=Mời
+SHTONLSTS_ST_CF=Chỉ Bạn Bè
+SHTONLSTS_ST_CC=Chỉ Crew
+SHTONLSTS_ST_C2=Crew
+SHTONLSTS_ST_P=Công Cộng
+SHTONLSTS_ST_O=Khác
+
+PTX=Bảo Vệ
+PTX_W=Việc tắt tính năng bảo vệ trong Stand sẽ không giúp quá trình đồng tải của bạn ổn định hơn. Việc vô hiệu hóa chỉ vô hiệu hóa các biện pháp bảo vệ.
+
+! Alternatively, "Protections Help Page"
+PTXGDE=Hướng Dẫn Bảo Vệ
+
+COLOAD=Đồng Tải
+COLOAD_DPTX=Tắt {} Khi Đồng Tải
+
+PTX_CRSHE=Sự Kiện Crash
+
+PTX_KICK=Sự Kiện Cú Đá
+PTX_KICK_SH=Cú Đá Chủ Tập Lệnh
+
+PTX_INV=Sự Kiện Modded
+PTX_INV_H=Các sự kiện chỉ có thể được gửi bởi modder.
+
+PTX_WEIRD=Sự Kiện Bất Thường
+PTX_WEIRD_H=Các sự kiện có thể do modder gửi nhưng cũng có thể diễn ra hợp pháp trong một số trường hợp hiếm gặp.
+
+VEHKICK=Đá Khỏi Phương Tiện
+
+INTKICK=Đá Khỏi Nhà
+
+TRIGDEFD=Cuộc Tấn Công Kinh Doanh
+
+PLYFRCECAMFRNT=Buộc Chuyển Tiếp Camera
+PLYFRCECAMFRNT_H=Cũng có thể vô hiệu hóa khả năng bất khả xâm phạm của người chơi trong một số trường hợp.
+
+PLYMISSION=Buộc Tham Gia Nhiệm Vụ Freemode
+PLYMISSION_H=Buộc các mục tiêu vào trạng thái nhiệm vụ freemode, có nghĩa là chúng không thể ở chế độ passive hoặc vào nhà.
+
+! Forces the recipient into a mission start screen
+SND2JB=Gửi Nhiệm Vụ
+
+SND2JB_0=Severe Weather Patterns
+SND2JB_1=Half-track Bully
+SND2JB_2=Exit Strategy
+SND2JB_3=Offshore Assets
+SND2JB_4=Cover Blown
+SND2JB_5=Mole Hunt
+SND2JB_6=Data Breach
+SND2JB_7=Work Dispute
+
+PTX_BAIL=Xoá Truy Nã
+
+PTX_EVTS=Sự Kiện
+PTX_NET=Sự Kiện Mạng
+PTX_NET_ANY=Bất Kì Sự Kiện
+
+PTX_RAWNET=Sự Kiện Mạng Gốc
+PTX_RAWSYNC=Đồng Bộ Gốc
+
+PTX_RAW_W=Điều này dành cho người dùng nâng cao. Nếu không biết mình đang làm gì thì đừng làm, và đặc biệt đừng đi chặn mọi thứ.
+
+PTX_NET_R_B_W=Hãy nhớ khi tôi nói với bạn "đừng cứ chặn mọi thứ" ...? Chỉ vì bạn có thể làm được, không có nghĩa là bạn phải làm. Đặc biệt là nếu bạn không có lý do chính đáng cho việc đó.
+
+PTX_APUP=Bất Kì Vật Phẩm Được Thu Thập
+PTX_APUP_T=Bạn đã thu thập một mẫu vật phẩm thuộc loại {}
+PTX_APUP_L=Bạn đã thu thập một vật phẩm
+
+PTX_CASHPUP=Thu Thập Tiền Mặt
+PTX_CASHPUP_T=Bạn đã thu thập tiền mặt
+
+PTX_RPPUP=Thu Thập RP
+PTX_RPPUP_T=Bạn đã thu thập RP
+
+PLYKCK_IPUP=Thu Thập Không Hợp Lệ
+
+PTX_IPUP=Đã Thu Thập Không Hợp Lệ
+PTX_IPUP_H=Phải làm gì trong trường hợp bạn nhặt được vật phẩm không hợp lệ, thứ có thể sẽ khiến bạn bị đuổi khỏi phiên.
+PTX_IPUP_T=Bạn đã thu thập không hợp lệ
+
+PTX_APT=Lời Mời Căn Hộ
+
+PTX_CAYO=Lời Mời Cayo Perico
+
+PTX_DRVCTRL=Điều Khiển Phương Tiện
+PTX_DRVCTRL_H=Khi ai đó cố gắng kiểm soát phương tiện bạn đang lái, phương tiện đó có thể được sử dụng để dịch chuyển bạn.
+
+SE=Sự Kiện Tập Lệnh
+
+GIVE_WEAPON_EVENT=Sự Kiện Tặng Vũ Khí
+REMOVE_WEAPON_EVENT=Sự Kiện Xoá Vũ Khí
+REMOVE_ALL_WEAPONS_EVENT=Sự Kiện Xoá Tất Cả Vũ Khí
+FIRE_EVENT=Cháy
+EXPLOSION_EVENT=Vụ Nổ
+NETWORK_PTFX_EVENT=PTFX
+NETWORK_PLAY_SOUND_EVENT=Phát Âm Thanh
+
+RCT_T=Thông Báo
+RCT_L_F=Viết Vào Tệp Log
+RCT_L_C=Viết Vào Bảng Điều Khiển
+RCT_C=Thông Báo Trong Trò Chuyện
+RCT_C_T=Thông Báo Trong Trò Chuyện Nhóm
+
+RTC_PLY=Hành Động Người Chơi
+
+RCT_N_B=Chặt Sự Kiện Mạng Của Họ
+RCT_BIS=Chặn Đồng Bộ Đến
+RCT_BOS=Chặn Đồng Bộ Đi
+RCT_N_L=Ghi Lại Sự Kiện Mạng Của Họ
+RCT_SI_L=Ghi Lại Đồng Bộ Đến
+RCT_SO_L=Ghi Lại Đồng Bộ Đi
+RCT_N_T=Thông Báo Các Sự Kiện Mạng Của Họ
+RCT_SI_T=Thông Báo Các Đồng Bộ Đến
+RCT_SO_T=Thông Báo Các Đồng Bộ Đi
+
+RCT_T_OUT={event} tới {player}
+PTX_NET_R_T_T={event} từ {player}
+RCT_T_AGAINST={event} từ {sender} chống lại {target}
+
+PTX_NET_R_B=Chặn
+
+! What "Block" does for chat messages
+PTX_NET_R_B_H_C=Sẽ ngăn tin nhắn đến được với bạn nhưng người khác vẫn thấy nó.
+
+
+PTX_S=Đồng Bộ
+PTX_INC=Đến
+PTX_OUT=Đi
+PTX_SI=Đồng Bộ Đến
+PTX_SO=Đồng Bộ Đi
+PTX_SI_ANY=Bất Kì Đồng Bộ Đến
+
+OUTSBH=Chặn Đồng Bộ Đi Tới Chủ Phiên
+OUTSBH_H=Điều này giúp bạn tránh bị đá khỏi trò chơi bởi BattlEye khi không phải là chủ phiên, nhưng đồng thời chủ phiên cũng sẽ không thể tương tác với bạn.
+
+PTX_CSB=Phản Ứng Đồng Bộ Hoá Mô Hình Tuỳ Chỉnh
+ADDMDL=Thêm Mô Hình
+PTX_CSB_T=Đồng bộ mô hình bởi {player} với {hash}
+
+PTX_IMS=Đồng Bộ Mô Hình Không Hợp Lệ
+PTX_IMS_T=Đồng bộ mô hình không hợp lệ từ {player} với {hash} bằng {type}
+
+PTX_WOS=Đồng Bộ Đối Tượng Thế Giới
+
+PTX_ATTACH=Spam Tệp Đính Kèm
+
+PTX_BEWARE_RESYNCH=Những người chơi khác có thể đồng bộ lại các đối tượng do người modder tạo ra, vì vậy hãy lưu ý điều đó.
+
+PTX_S_CC=Tạo Nhân Bản
+PTX_S_CU=Cập Nhật Nhân Bản
+PTX_S_CD=Xoá Nhân Bản
+PTX_S_ACC=Phát Hiện Tạo Nhân Bản
+PTX_S_ACU=Phát Hiện Cập Nhật Nhân Bản
+PTX_S_ACD=Phát Hiện Xoá Nhân Bản
+
+PLY_BOS_H_A=Ngăn việc cập nhật vị trí của bạn cho những người chơi khác và thậm chí có thể ngăn những người chơi khác biết rằng bạn đang tham gia phiên nếu bạn tham gia khi nó được bật.
+PLY_BOS_H_1=Dừng cập nhật vị trí của bạn cho người chơi này.
+
+MYSLF=Bản Thân Tôi
+SOMELS=Người Khác
+
+KARMA=Nghiệp Chướng
+
+LLKT=Thông Báo Khi Bị Cú Đá Love Letter
+LLKT_T=Bạn đã bị đá love letter.
+
+DSKK=Ngắt Đồng Bộ Cú Đá Nghiệp Chướng
+DSKK_H2=Làm cú đá ngắt đồng bộ nhắm vào bạn của vài menu khác luôn bị phản tác dụng.
+
+LLLUBE=Love Letter Lube
+LLLUBE_H=Khiến bạn ít bị chủ phiên chọn làm mục tiêu bị đá Love Letter hơn.
+LLLUBE_1=Uy Tín
+LLLUBE_1_H=Một số modder có thể phát hiện ra điều này, không chắc chắn.
+LLLUBE_0_H=Đây là phương án hiệu quả nhất nhưng các modder khác có thể phát hiện ra điều này.
+
+CAMSHAKE=Sự Kiện Lắc Camera
+
+EXPSPAM=Spam Vụ Nổ
+EXPSPAM_H=Áp dụng khi ai đó spam các vụ nổ lên nhân vật của bạn.
+
+RAGDOLLEVT=Sự Kiện Đẩy Ngã
+
+SNDSPM=Spam Âm Thanh
+
+MODDMGEVT=Sự Kiện Mod Sát Thương
+
+PRESES=Sự Kiện Hiện Diện
+
+BFSTN=Chặn Thông Báo Chỉ Số Bạn Bè
+BFSTN_H=Chặn các thông báo như "...đã thu thập tất cả các đồ sưu tầm"
+
+BJI=Chặn Mời Nhiệm Vụ
+
+PTX_VK=Chặn Bỏ Phiếu Đá Người Chơi
+PTX_VK_T=Đã chặn một cuộc bỏ phiếu. :)
+
+MAGIC=Phép Thuật
+PTX_VK_SP=SCTV / Chế Độ Quan Sát
+PTX_VK_F1=Nhiệm Vụ Freemode 1
+PTX_VK_F2=Nhiệm Vụ Freemode 2
+PTX_VK_F3=Nhiệm Vụ Freemode 3
+PTX_VK_F4=Nhiệm Vụ Freemode 4
+
+PTX_BJ=Đảo Ngược Chặn Tham Gia
+PTX_BJ_H=Phát hiện những kẻ không phải là chủ phiên cố gắng chặn bạn tham gia và xóa họ khỏi phiên, cho phép bạn tham gia.
+PTX_BJ_T2={} đang chặn bạn tham gia, tôi sẽ cố đuổi chúng khỏi phiên.
+
+PTX_NB=Chặn Ngắt Kết Nối
+PTX_NB_1=Người Chơi Không Còn Trong Phiên
+PTX_NB_2=Đổi Crew Chính
+
+PTX_NB_SPC=Chế Độ Quan Sát
+PTX_NB_SPC_H=Mục Tiêu Rời Đi, v.v.
+
+PTX_NB_O=Lý Do Khác
+PTX_NB_O_H=Mất kết nối và không gì.
+
+PTX_NB_T=Game muốn ngắt kết nối ({a1}, {a2}, {a3}); {action}.
+PTX_NB_T_A=cho phép
+PTX_NB_T_B=chặn
+
+PTX_HCK=Cú Đá Của Chủ Phiên
+
+PTX_HKK=Cú Đá Nghiệp Chướng
+PTX_HKK_H=Đá chủ phiên khi họ đá bạn. Lưu ý rằng bạn vẫn sẽ bị đuổi khỏi phiên.
+
+PTX_HK=Giảm Cú Đá Của Chủ Phiên
+PTX_HK_H=Giảm bớt các cú đá của chủ phiên cái mà bạn chỉ nhận được thông báo rằng một cú đá của chủ phiên đã xảy ra và tất cả người chơi dường như đã rời đi.
+PTX_HK_T=Ai đó đã dùng cú đá chủ phiên vào bạn {method}, có thể là {player}.
+
+HKI=Chủ phiên sắp đá bạn ra.
+HKI_BS=Tôi đề nghị chặn đồng bộ với họ.
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_V=Bỏ Phiếu Đá
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_N=Lỗi Mạng
+
+PTX_PSV=Chặn Đổ Lỗi
+PTX_PSV_H2=Khiến bạn không thể gây sát thương cho người khác nên những vụ nổ đổ lỗi cho bạn cũng không gây sát thương. Cũng khiến người khác không thể tấn công bạn.
+PTX_PSV_W=Trong trường hợp bạn chưa đọc văn bản trợ giúp, hãy để tôi nhắc lại: Bạn sẽ không thể gây ra bất kỳ thiệt hại nào khi bật tính năng này. Thay vì chỉ kích hoạt tính năng này, bạn có thể sử dụng menu ngữ cảnh để đặt tương quan nhắm đảo ngược.
+
+PTX_ENTSPAM=Chặn Spam Vật Thể
+PTX_ENTSPAM_STATUS=Phát hiện {count} của {name}
+PTX_ENTSPAM_NEW=Có vẻ có quá nhiều {}. Đang xử lý.
+PTX_ENTSPAM_CALM=Đã xử lý sự việc {}. :)
+
+VEHPARTS=bộ phận bị hỏng của xe
+
+ACCAM=Màn Hình Chống Crash
+PTX_ENTSPAM_USECAM=Tự Động Dùng Màn Hình Chống Crash
+PTX_ENTSPAM_CAM=Rất tiếc khóa màn hình của bạn ở đây, nhưng việc kết xuất hình ảnh sẽ không giải quyết được vấn đề này. Sử dụng "tp lsia" hoặc "tp mtchil" có thể giải quyết vấn đề này nhanh hơn.
+
+PTX_DRAW=Ngăn Chặn Kết Xuất Hình Ảnh Đến Chết
+PTX_DRAW_H=Ngăn chặn trò chơi kết xuất hình ảnh nhiều đến mức bị treo.
+PTX_DRAW_T=Trình kết xuất hình ảnh làm việc quá sức
+
+PTX_DELSTALE=Xoá Vật Thể Cũ
+PTX_DELSTALE_H=Xóa các đối tượng có thông tin mô hình đã được tải xuống vì trò chơi này là một kiệt tác hoàn hảo.
+PTX_DELSTALE_T=Xóa vật thể có mô hình {} nơi thông tin mô hình đã được xoá.
+PTX_DELSTALE_T_2=Đang xóa vật thể phân đoạn có mô hình {} trong đó thông tin mô hình phân đoạn đã được xoá.
+
+NOMODPOP=Xoá Khu Vực Mod Tỉ Lệ Dân Cư
+NOMODPOP_H=Xóa các khu vực mod tỉ lệ dân cư để GTA Online trông không trống vắng hơn bình thường.
+NOMODPOP_T=Đã xóa khu vực mod dân cư. :)
+
+NOBEAST=Ngăn Biến Thành Quái Thú
+NOBEAST_H=Ngăn chặn việc bạn bị biến thành quái thú trong sự kiện freemode "Săn Quái Vật", thứ mà các modder có thể sử dụng như một cách để troll bạn.
+NOBEAST_T=Ngăn chặn việc bạn bị biến thành quái vật bằng cách bỏ tập lệnh do {} làm chủ.
+
+NPLYMDLSWP=Chặn Hoán Đổi Mô Hình
+NPLYMDLSWP_H=Chặn những người chơi biến thành những mô hình thường không thể chơi được (chỉ với bạn) . Về nguyên tắc, điều này không cần thiết vì chúng tôi đã sửa tất cả các crash liên quan (mà chúng tôi biết).
+
+FRCRLY=Buộc Kết Nối Trung Gian
+
+LOWFPSTIMEOUT_T=Phát hiện FPS thấp - ngắt kết nối {}
+
+REVOTR=Hiện Người Chơi Tắt Radar
+
+REVINV=Hiện Người Chơi Tàng Hình
+
+BEORB=Biến Thành Orbital Cannon
+BEORB_H=Đưa tất cả những người bạn giết đến bệnh viện và hiển thị thông báo bị tiêu diệt bởi orbital cannon.
+
+BESCRHST=Trở Thành Chủ Tập Lệnh
+
+BESCRHSTKLEPTO=Trộm Chủ Tập Lệnh
+BESCRHSTKLEPTO_H=Chỉ có một và cái này dành cho những ai muốn trở thành máy chủ tập lệnh mọi lúc mà không thỏa hiệp.
+
+BJS=Chặn Tham Gia
+
+BJ_ALL=Từ Tất Cả Mọi Người
+BJ_ALL_A=Chặn Tất Cả Mọi Người Tham Gia
+
+BJ_STR=Chặn Người Lạ
+BJ_STR_A=Chặn Người Lạ Tham Gia
+BJ_STR_H=Chặn những người không phải bạn trên Social Club tham gia.
+
+BJ_ADS=Từ Advertisers Đã Biết
+BJ_ADS_A=Chặn Tham Gia Từ Advertisers Đã Biết
+
+BJ_REM=Từ Người Chơi Đã Loại Bỏ
+BJ_REM_A=Chặn Người Chơi Đã Bị Đá Tham Gia
+BJ_REM_H=Chặn tham gia của những người chơi mà bạn đã đá hoặc crash.
+
+BJ_REMOVED=Người Chơi Đã Đá
+BJ_REMOVED_H=Danh sách những người chơi hiện bị chặn tham gia vì bạn đã đá họ.
+BJ_KICKEDP_H=Nhấp để xoá người chơi này.
+
+BJ_WHT=Từ Ngoài Danh Sách Trắng
+BJ_WHT_H=Chặn tất cả người chơi bên ngoài danh sách trắng tham gia.
+BJ_WHT_A=Chặn Người Chơi Bên Ngoài Danh Sách Trắng
+
+BJ=Chặn Tham Gia
+BJ_H=Chỉ có thể chặn tham gia với tư cách là người chủ phiên. Stand sẽ cố gắng loại bỏ họ khi bạn không phải là chủ phiên.
+BJ_T2=Đã chặn {player} tham gia vì {feature}
+
+MSG=Tin Nhắn
+
+BJMSG_ASS=Nội Dung Không Tương Thích
+BJMSG_TU=Đảm Bảo Cập Nhật Tiêu Đề Mới Nhất
+BJMSG_TAR=Tuỳ Chọn Nhắm Khác Nhau
+BJMSG_BAR=Tài Khoản Của Bạn Có Tiếng Xấu
+BJMSG_C=Bạn Là Kẻ Gian Lận
+BJMSG_BS=Bạn Là Bad Sport
+BJMSG_DLC=Nội Dung Tải Xuống Có Thể Không Tương Thích
+BJMSG_BT=Loại Bản Dựng Khác Nhau
+BJMSG_CONT=Nội Dung Khác Nhau
+BJMSG_BSO=Chỉ Bad Sports
+BJMSG_CO=Chỉ Kẻ Gian Lận
+BJMSG_PR=Cuộc Đua Cao Cấp
+BJMSG_CON=Không Thể Kết Nối
+BJMSG_PRIV=Riêng Tư
+BJMSG_F=Chỉ Bạn Bè
+BJMSG_VK=Bạn Đã Bị Bỏ Phiếu Đá
+BJMSG_ID=Vô Hiệu Lời Mời
+BJMSG_POOF=Không Còn Tồn Tại
+BJMSG_BUG=Phiên Không Dự Định
+
+LSCM=LS Car Meet
+
+SETREPLVL=Đặt Cấp Độ
+SETREPLVL_H=Lưu ý rằng bạn cần phải trở thành thành viên của LS Car Meet trước khi có thể chỉnh cấp độ.
+SETREPLVL_T=Việc thay đổi cấp độ của bạn đang được xử lý; vào lại LS Car Meet để hoàn thành.
+
+UNLKPRIZRID=Mở Khoá Prize Ride
+UNLKPRIZRID_T=Nó đã là của bạn! Chỉ cần nhận trong menu tương tác bên trong LS Car Meet. :)
+
+H3=Casino Heist
+
+H3_RPT=Bỏ Thời Gian Hồi Nhiệm Vụ
+H3_RPT_H=Hãy chắc chắn rằng bạn không ở trong arcade khi sử dụng tính năng này.
+H3_RPT_T=Tạm biệt thời gian chờ hồi nhiệm vụ. :D
+
+H3_POIACC=P.O.I. & Điểm Truy Cập
+
+SCOP=Scope
+H3_SCOP_H=Chỉ sử dụng tính năng này sau khi đã hoàn thành nhiệm vụ scope out ban đầu, nếu không sẽ bị softlock.
+
+USCOP=Unscope
+
+H3_VLT=Chỉnh Mục Tiêu Cướp
+H3_VLT_H=Sử dụng điều này sau khi trả tiền cho vụ cướp nhưng trước khi scope mục tiêu cướp.
+H3_VLT_3=Kim Cương
+H3_VLT_2=Tranh
+H3_VLT_1=Vàng Gold
+H3_VLT_0=Tiền Mặt
+H3_VLT_T=Tôi tự hỏi sẽ có những gì trong hầm. :^)
+
+H3_FNSH1=Hoàn Thành Bảng Đầu Tiên
+H3_FNSH1_H=Sử dụng điều này sau khi trả tiền cho heist và chỉnh mục tiêu cướp.
+H3_FNSH1_1=Im Lặng & Lén Lút
+H3_FNSH1_2=Big Con
+H3_FNSH1_3=Tấn Công
+H3_FNSH1_T=Đã hoàn thành bảng thứ nhất. :D
+
+H3_FNSH2=Hoàn Thành Bảng Thứ Hai
+H3_FNSH2_T=Đã hoàn thành bảng thứ hai. :D
+
+H3_RSTCRW=Đặt Lại Đội
+H3_RSTCRW_H=Trong trường hợp bạn đã lựa chọn đội không tốt và bạn muốn thay đổi.
+H3_RSTCRW_T=Đã đặt lại đội. Bạn cần phải vào lại arcade để hiển thị thay đổi. :)
+
+H_FNSH_W=Hoàn thành các nhiệm vụ setup theo cách này sẽ không được tính cho các thử thách "All In Order" và "Criminal Mastermind".
+
+H_FNSH=Hoàn Thành Setup
+H_TRGT=Chỉnh Mục Tiêu
+
+H4=Cayo Perico Heist
+H4_FNSH_T=Tất cả đã hoàn tất. Bạn cần vào lại Kosatka của mình để hiển thị thay đổi. :)
+
+H4_TRGT_0=Chai Rượu Tequila
+H4_TRGT_1=Vòng Cổ Ruby
+H4_TRGT_2=Trái Phiếu Trong Két
+H4_TRGT_3=Kim Cương Hồng
+H4_TRGT_4=Tập Tin Madrazo
+H4_TRGT_5=Báo Sapphire
+
+H2_FNSH=Hoàn Thành Setup Doomsday
+H2_FNSH_H=Bỏ qua tất cả nhiệm vụ setup của heist doomsday.
+H2_FNSH_T=Setup hoàn tất. Bạn sẽ cần phải vào lại facility của mình để hiển thị thay đổi. :)
+
+H1_FNSH=Hoàn Thành Setup Apartment
+H1_FNSH_H=Bỏ qua tất cả nhiệm vụ setup của heist apartment.
+H1_FNSH_T=Setup hoàn tất. Bạn sẽ cần phải vào lại apartment của mình để hiển thị thay đổi. :)
+
+RIGOFF=Không Can Thiệp
+
+WHEEL=Phần Thưởng Quay May Mắn
+WHEEL_1=Xe Ô Tô
+WHEEL_2=Vé Giảm Giá
+WHEEL_3=Chip
+WHEEL_4=Tiền Mặt
+WHEEL_6=Quần Áo
+WHEEL_7=Bí Ấn: Phương Tiện
+WHEEL_8=Bí Ẩn: Vật Tư Kinh Doanh
+WHEEL_9=Bí Ẩn: Đồ Ăn
+WHEEL_10=Bí Ẩn: Chip
+WHEEL_11=Bí Ẩn: Tiền Mặt
+WHEEL_12=Bí Ẩn: RP
+WHEEL_13=Bí Ẩn: Quần Áo
+
+MONEYLINK2=Hướng Dẫn Kiếm Tiền
+
+SLOTS2=Kết Quả Máy Đánh Bạc
+SLOTS_H=Đừng kiếm nhiều hơn GTA$ {} trong vòng 24 giờ! Hơn nữa, điều này có thể không an toàn nếu bạn đã sử dụng hoặc đang sử dụng các menu khác trên tài khoản này.
+SLOTS_WJ=Giải Đặc Biệt
+SLOTS_WS=Thắng Nhỏ
+SLOTS_L=Thua
+
+ROULETTE=Kết Quả Outcome
+CSNO_H_OPB=Điều này ảnh hưởng được đến người chơi khác.
+
+CSNO_BJ=Luôn Thắng Blackjack
+CSNO_BJ_H=Làm cho sòng bạc luôn luôn thua.
+
+SNKSNARMR=Nạp Đồ Ăn & Giáp
+SNKSNARMR_T=Được rồi, tất cả đã được nạp đầy. :D
+
+ENHNCMTS=Nâng Cao
+
+NOAFK=Tắt Kick Do AFK
+
+NOMECHCDLN=Tắt Thời Gian Hồi Mechanic
+
+NOMKIICLDN=Tắt Thời Gian Hồi Oppressor Mk II
+
+NOEWOCLDN=Tắt Thời Gian Hồi Tự Sát
+
+NOGTARCFP=Tắt Màn Hình Xe RC
+
+NODTHBAR=Tắt Rào Cản Tử Thần
+
+NOPSSVCLDN=Tắt Thời Gian Hồi Chế Độ Passive
+
+NOORBCLDN=Tắt Thời Gian Hồi Orbital Cannon
+
+NOSUBMSLCLDN=Tắt Thời Gian Hồi Tên Lửa Kosatka
+
+NOSUBMSLMAXRNGE=Tắt Giới Hạn Phạm Vi Tên Lửa Kosatka
+NOSUBMSLMAXRNGE_H=Không có tác dụng đối với tên lửa đã phóng.
+
+NONANOMAXRNGE=Vô Hiệu Giới Hạn Phạm Vi Nano Drone
+NONANOCLDNS=Tắt Thời Gian Hồi Nano Drone
+
+! "Business Battle" is SCR_FE_BB
+NOFMBTLMSC=Tắt Nhạc Business Battle
+NOFMBTLMSC_H=Lưu ý rằng việc bật tính năng này sẽ không chấm dứt âm thanh vi phạm đang phát.
+
+NFMEVTENDAUD=Tắt Âm Thanh Kết Thúc Sự Kiện
+
+TGGLEMAP=Có Thể Chuyển Đổi Bản Đồ Lớn
+TGGLEMAP_H=Làm bản đồ nhỏ có thể giữ chế độ lớn giống khi ở trên máy bay.
+
+PAWS=Cho Phép Tạm Dừng
+
+NOINTCHK=Bỏ Qua Các Hạn Chế Bên Trong
+NOINTCHK_H=Đánh lừa việc kiểm tra một số địa điểm như xưởng đúc để bạn có thể vào bên trong mà không bị dịch chuyển ra ngoài.
+
+PASSIWPNVEH=Cho Phép Sử Dụng Vũ Khí Của Xe Trong Chế Độ Passive
+
+NWRKCLD=Tắt Thời Gian Hồi Của VIP Work
+
+SLLINPRV=Tất Cả Nhiệm Vụ Trong Phiên Riêng Tư
+
+GHSTNRBYDR=Cuộc Đua Công Bằng
+GHSTNRBYDR_H=Đảm bảo rằng các đối thủ trong cuộc đua chơi công bằng bằng cách làm mờ họ nếu họ đến quá gần.
+
+ALLPICLK=Bỏ Qua Rào Cản Menu Tương Tác
+ALLPICLK_H=Cho phép bạn sử dụng hầu hết các tùy chọn trong menu tương tác ngay cả khi chúng chuyển sang màu xám hoặc không khả dụng.
+
+UNKLCSNO=Mở Khoá Sòng Bạc
+
+AMTTSUIT=Bỏ Qua Thời Gian Thử Xe
+
+NODRIPFEED=Tắt Dripfeeding
+NODRIPFEED_H=Cho phép bạn spawn, lái xe và mua các phương tiện DLC mới trước khi chúng được mở cho người chơi hợp pháp.
+
+NEMTYNTFY=Tắt Thông Báo Trống
+EMTYNTFY=Thông Báo Trống
+
+BST=Testosterone Cá Mập Bò (BST)
+
+GETBST=Lấy BST
+
+RMBNTY=Gỡ Tiền Thưởng
+
+QWQPROG=Tiến Trình Nhanh
+
+! Don't translate this if it doesn't help the user recognise the option; I assume most menu users know it as Recoveries.
+QWQPROG_H=Aka. "Recoveries".
+
+GIVECOLL=Tặng Collectibles
+GIVECOLL_0=Movie Props
+GIVECOLL_1=Hidden Caches
+GIVECOLL_2=Treasure Chests
+GIVECOLL_3=Radio Antennas
+GIVECOLL_4=Media USBs
+GIVECOLL_5=Shipwrecks
+GIVECOLL_6=Buried Stashes
+GIVECOLL_8=Jack O' Lanterns
+GIVECOLL_9=LD Organics Merchandise
+GIVECOLL_10=Junk Energy Skydives
+GIVECOLL_16=Snowmen
+GIVECOLL_17=G's Cache
+! Tags as in graffiti
+GIVECOLL_19=Los Santos Tags
+
+GIVECOLLE=Tặng Collectibles
+GIVECOLLE_NCEO=Tặng Collectible (Không Phải Sếp)
+
+CEOPAY=Vòng Lặp Tiền CEO
+CEOPAY_H2=Trả lương xứng đáng cho các cộng sự và vệ sĩ. Người nhận không nhất thiết phải là cộng sự hay vệ sĩ của bạn.
+
+PLYRP=Tặng RP
+PLYRP_H=Tặng cho người chơi một lượng RP. Có thể sử dụng nhiều lần.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCFIG=Thả Tượng Casino
+PLYCFIG_H=Có thể dùng để tặng RP và tiền mặt.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCRDS=Thả Thẻ Bài
+PLYCRDS_H=Có thể sử dụng để tặng RP và chip ở sòng bạc.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYSNK=Thả P's & Q's
+
+PLYEXPAMMO_H=Hoàn động tốt nhất ở khoảng cách gần.
+
+OTR=Tắt Radar
+
+MNTLS=Trạng Thái Tinh Thần
+
+MNTL=Đặt Trạng Thái Tinh Thần
+MNTL_T=Trạng thái tinh thần của bạn đang ở mức {}. :)
+
+LCKMNTL=Khoá Trạng Thái Tinh Thần
+
+MNTLPULS=Trạng Thái Tinh Thần Dao Động
+MNTLPULS_H=Dao động trạng thái tinh thần được biểu thị bằng màu sắc nhạt của bạn.
+
+CLUBPOP=Đặt Mức Độ Nổi Tiếng Của Nightclub
+CLUBPOP_P=Mức Độ Nổi Tiếng Của Nightclub
+CLUBPOP_L=Khoá Độ Nổi Tiếng Của Nightclub
+
+RNK=Thứ Hạng
+
+SETLVL=Đặt Thứ Hạng
+GEN_T_NEWSESS=Bạn cần tham gia một phiên mới để áp dụng thay đổi. :)
+
+! Refering to any number of possible targets.
+GEN_T_NEWSESS_O=Họ cần tham gia một phiên mới để áp dụng thay đổi. :)
+
+FSTRUN=Khả Năng Chạy Nhanh
+ABILOPT=Nhận
+ABILUNL=Từ Bỏ
+
+BADSPORT=Trạng Thái Bad Sport
+RELINQ=Từ Bỏ
+
+UNLKS=Mở Khoá
+
+STATEDIT=Chỉnh Sửa Thống Kê
+STAT_STR_LABEL=Điều này cần một nhãn.
+STAT_STR_RID=Điều này cần một ID Rockstar
+STAT_KD=Điều Chỉnh K/D
+STAT_POP=Thống Kê Phổ Biến
+STAT_RAW=Thống Kê Gốc
+STAT_WARN=Đừng đùa giỡn với các giá trị ở đây trừ khi bạn biết chúng là gì và bạn đang đặt chúng đúng cách.
+
+STAT_YEAR=Năm
+STAT_MONTH=Tháng
+STAT_DAY=Ngày
+STAT_HOUR=Giờ
+STAT_MINUTE=Phút
+STAT_SECOND=Giây
+STAT_MILLISECOND=Mili Giây
+
+KDEDIT=K/D
+KDEDIT_H=Thuật toán mà R* sử dụng cho việc này là khác nhau ở một số khu vực của trò chơi, do đó giá trị có thể hơi khác nhau tùy thuộc vào nơi bạn nhìn.
+
+TOTAL_RACES_WON=Cuộc Đua Đã Thắng
+TOTAL_RACES_LOST=Cuộc Đua Đã Thua
+TOTAL_DEATHMATCH_WON=Trận Đấu Tử Thần Đã Thắng
+TOTAL_DEATHMATCH_LOST=Trận Đấu Tử Thần Đã Thua
+TOTAL_TDEATHMATCH_WON=Trận Đấu Tử Thần Đồng Đội Đã Thắng
+TOTAL_TDEATHMATCH_LOST=Trận Đấu Tử Thần Đồng Đội Đã Thua
+
+STAT_WAIT=Đang tải thống kê, vui lòng chờ...
+
+UNLKALL=Mở Khoá Tất Cả
+UNLKALL_H=Dùng khi bạn muốn mở khoá tất cả những thứ bên dưới.
+
+UNLKONL=Mở Khoá GTA Online (Bỏ Qua Mở Đầu)
+
+UNLKALLACHIV=Mở Khoá Tất Cả Thành Tích
+
+RVLMAP=Mở Khoá Toàn Bộ Bản Đồ
+
+OVRDPROBNS=Ghi Đè Tiền Thưởng Pre-Order
+
+FREEORB=Mở Khoá Orbital Cannon Miễn Phí
+
+GNDRCHNG=Mở Khoá Thay Đổi Giới Tính
+GNDRCHNG_H=Cho phép bạn thay đổi giới tính của nhân vật bằng cách sử dụng Style > Change Appearance trong menu tương tác.
+GNDRCHNG_T=Bây giờ bạn có thể sử dụng Style > Change Appearance trong menu tương tác để hoàn tất quá trình chuyển đổi của mình. :D
+
+LVRIES=Mở Khoá Tem Độc Quyền
+LVRIES_T=Các tem độc quyền đã được mở khóa. :D
+
+RSRCH=Mở Khoá Nghiên Cứu Bunker
+RSRCH_T=Nghiên cứu Bunker đã được mở khoá. :D
+
+UNLKOSA=Mở Khoá Mua Kosatka
+
+H3CLTH=Mở Khoá Quần Áo Casino Heist
+AWCLTH=Mở Khoá Quần Áo Arena War
+CLTH_T=Quần áo đã được mở khoá. :D
+
+UNLKSR=Mở Khoá Thưởng Bunker Shooting Range
+UNLKSR_H=Mở khóa phần thưởng khi hoàn thành cả 3 cấp độ của trường bắn, bao gồm cả khả năng ném được tăng lên.
+UNLKSR_T=Phần thưởng Bunker Shooting Range đã được mở khoá. :D
+
+AWDS=Mở Khoá Giải Thưởng
+AWDS_H=Cho bạn rất nhiều giải thưởng bao gồm quần áo và hình xăm mà họ mở khóa được.
+
+VEHCUST=Mở Khoá Tuỳ Chỉnh Xe
+
+UNLKAMUTINTS=Mở Khoá Màu Ammu-Nation
+UNLKAMUTINTS_H=Mở khóa các màu Quân đội, Xanh lục, Cam & LSPD cho tất cả các loại vũ khí hiện hành.
+
+FLLSTATS=Chỉ Số Nhân Vật Tối Đa
+FLLSTATS_H=Tăng tối đa các chỉ số về Sức chịu đựng, Sức Mạnh, Bắn Súng, Lén Lút, Bay, Lái Xe và Dung Tích Phổi của bạn.
+
+VWRPTSTAT=Xem Thống Kê Báo Cáo
+
+CMEND=Khen Thưởng
+
+CMENDT=Thông Báo Khen Thưởng
+CMENDT_H=Thông báo cho bạn khi ai đó khen bạn là người hữu ích hoặc thân thiện.
+CMENDT_T={player} đã khen ngợi bạn vì {reason}. :D
+ESTAT_0=hữu ích
+ESTAT_1=thân thiện
+
+PLYISE=Thống Kê Khen Thưởng/Báo Cáo
+
+ISE_H=Hữu Ích
+ISE_F=Thân Thiện
+
+RPRPT=Báo Cáo
+
+ISE_G2=Lối Chơi Đau Buồn hoặc Phá Hoại
+ISE_X2=Cheating hoặc Modding
+ISE_B2=Lợi Dụng Lỗi Game hoặc Tính Năng
+ISE_TC_A=Nhắn Tin: Làm Phiền Tôi
+ISE_TC_H=Nhắn Tin: Sử Dụng Ngôn Từ Thù Ghét
+ISE_VC_A=Nói Chuyện: Làm Phiền Tôi
+ISE_VC_H=Nói Chuyện: Sử Dụng Ngôn Từ Thù Ghét
+ISE_VG=Nội dung Bạo Lực hoặc Đẫm Máu
+ISE_ONC=Tên hoặc Nội Dung Phản Cảm
+
+STAT_OFFENSIVE_LANGUAGE=Ngôn Từ Xúc Phạm
+STAT_OFFENSIVE_TAGPLATE=Biển Số Xúc Phạm
+STAT_OFFENSIVE_UGC=Nội Dung Phản Cảm
+STAT_BAD_CREW_NAME=Tên Crew Xấu
+STAT_BAD_CREW_MOTTO=Crew Motto Xấu
+STAT_BAD_CREW_STATUS=Trạng Thái Crew Xấu
+STAT_BAD_CREW_EMBLEM=Biểu Tượng Crew Xấu
+
+STAT_IS_CHEATER=Là Kẻ Gian Lận
+STAT_WAS_I_BAD_SPORT=Từng Là Bad Sport
+STAT_IS_HIGH_EARNER=Người Có Thu Nhập Cao
+
+YES=Có
+NO=Không
+
+PLYHIST=Lịch Sử Người Chơi
+
+PYLFND_H2=Cho phép bạn tìm người chơi trong lịch sử của mình bằng tên, ID Rockstar và ghi chú.
+
+PLYNOTE=Ghi Chú
+PLYNOTE_T=Ghi chú không có gì thay đổi.
+PLYNOTED=Người Chơi Đã Ghi Chú
+HIST_KEEP_NTE=Giữ Ghi Chú
+
+AGGREGS=Tập Hợp
+
+1SEEN=Thấy Lần Đầu
+
+LSEEN=Thấy Lần Cuối
+
+CPYNME=Sao Chép Tên
+CPYRID=Sao Chép Rockstar ID
+
+PLYHIST_DEL_E=Không thể xóa mục của người chơi hiện đang trong phiên của bạn.
+
+CONFAIL=Kết nối thất bại.
+
+SPF=Giả Mạo
+
+NSPFD=Không Giả Mạo
+
+SPFUPD=Bạn sẽ cần tham gia lại phiên hoặc tham gia phiên mới để người khác thấy sự thay đổi. :)
+
+SPFNME_D=Giả Mạo Tên
+SPFDNME=Tên Giả Mạo
+
+HRD=Cứng
+SFT=Mềm
+
+SPFNMEFRMHST=Lấy Tên Ngẫu Nhiên Từ Lịch Sử Người Chơi
+
+SPFPRST=Cài Sẵn Tên & RID Giả Mạo
+YTRS=Youtubers
+RSEMPS=Nhân Viên Rockstar
+
+SPFHT_D=Giả Mạo Mã Máy Chủ
+SPFHT_H=Cho phép bạn thay đổi mã máy chủ của mình. Giá trị thấp hơn sẽ cải thiện vị trí của bạn trong hàng đợi máy chủ.
+SPFHT_W=Lưu ý rằng bất kỳ mã máy chủ cụ thể nào chỉ có thể được sử dụng bởi một người chơi trong phiên bất kỳ và các giá trị quá thấp có thể bị modder khác phát hiện.
+
+SPFDHT=Giả Mạo Mã Máy Chủ
+
+SPFDHTPRST_0=Hạn Chế
+SPFDHTPRST_1=Điểm Ngọt
+SPFDHTPRST_2=Thô Bạo
+
+AKCKHST=Đá Chủ Phiên Khi Ở Vị Trí Tiếp Theo Trong Hàng Đợi
+
+SPFSESS=Giả Mạo Phiên
+
+HDESESS=Ẩn Phiên
+HDESESS_H=Ẩn phiên của bạn để tránh bất kỳ ai cố gắng theo dõi, tham gia hoặc quan sát bạn.
+HDESESS_H_CPY=Lưu ý: Bạn hiện đã bật "Sao Chép Thông Tin Phiên", tính năng này được ưu tiên hơn "Ẩn Phiên". Kiểm tra Lịch Sử Người Chơi của bạn.
+HDESESS_NX=Phiên Không Tồn Tại
+
+FF=Giả Bạn Bè
+TRK_FF=Bật + Giả Bạn Bè
+TRK_FF_H=Đồng thời thêm người chơi này vào danh sách bạn bè trong trò chơi.
+
+MARKASFF=Đanh Dấu Là Bạn Giả
+UMARKASFF=Huỷ Đánh Dấu Bạn Giả
+
+CPYSESS=Sao Chép Thông Tin Phiên
+CPYSESS_H=Tác dụng làm chuyển hướng bất kỳ ai đang cố gắng theo dõi, tham gia hoặc quan sát bạn đến người chơi này.
+CPYSESS_F=Sao Chép Thông Tin Phiên Từ
+
+WHTJOIN=Danh Sách Trắng Tham Gia
+
+! For reference, "Block Joins From Anyone" is BJ_ALL_A
+WHTJOIN_H=Điều này cho phép họ bỏ qua mọi cơ chế chặn tham gia mà bạn áp dụng, ngoại trừ "Chặn Tât Cả Mọi Người Tham Gia" và các phản ứng dành riêng cho người chơi.
+
+SESSTYP=Loại Phiên
+SESSTYP_H=Loại phiên mà bất kì ai đang theo dõi bạn nhìn thấy.
+NVLD=Không Hợp Lệ
+
+SPFHST=Giả Mạo Chủ Phiên
+SPFDHST=Chủ Phiên Giả Mạo
+YOU=Bạn
+
+SPFCRW=Giả Mạo Crew
+
+SPFCRW_ID_H=Điều này xác định biểu tượng nào sẽ được hiển thị. Phải khác 0 để hiển thị thẻ crew của bạn.
+
+NCRW=Không Có Crew
+
+CPY2SPFCRW=Sao Chép Vào Giả Mạo Crew
+
+SPFCRWMINE=Sao Chép Từ Crew Của Tôi
+
+SPFRNK_D=Giả Mạo Thứ Hạng
+SPFRNK_H=Cho phép bạn thay đổi thứ hạng mà người chơi khác nhìn thấy về bạn trong danh sách người chơi.
+SPFDRNK=Thứ Hạng Giả Mạo
+
+SPFKD=Giả Mạo K/D
+SPFDKD=K/D Giả Mạo
+
+SPFPOS=Giả Mạo Vị Trí
+SPFDPOS=Vị Trí Giả Mạo
+
+PLYMGNT=Nam Châm Người Chơi
+PLYMGNT_H=Điều này sẽ giúp tăng tốc độ phiên chơi của bạn khi có thêm người chơi khác.
+
+STRMSPF=Giả Mạo Tên Người Chơi Khác
+
+HIDEPLIST=Ẩn Tên Khỏi Danh Sách Người Chơi
+HIDEPLIST_H=Ẩn Bạn Khỏi Danh Sách Người Chơi HUD
+
+PHNSPF=Giả Mạo Chế Độ Điện Thoại
+PHNSPF_0=Không Sử Dụng Điện Thoại
+PHNSPF_1=Đang Gọi
+PHNSPF_2=Nhắn Tin
+PHNSPF_3=Ghi Âm
+
+RIDTOOLS=Công Cụ ID Rockstar
+
+N2R_I=Đó là cái tên không hợp lệ. :?
+N2R_Q=Đang tìm kiếm RID của người chơi đó...
+N2R_E=Không tìm thấy RID cho tên đó. :?
+
+R2N_Q=Đang tìm kiếm tên người chơi đó...
+R2N_E=Không tìm thấy tên cho RID đó. :?
+
+PLYINV=Mời Vào Phiên
+INV_N=Mời Vào Phiên Bằng Tên
+INV_R=Mời Vào Phiên Bằng RID
+PLYINV_E=Không thể gửi lời mời với loại phiên này. :/
+
+PLYPRFL=Mở Hồ Sơ
+PRFL_N=Mở Hồ Sơ Bằng Tên
+PRFL_R=Mở Hồ Sơ Bằng RID
+
+JOIN2=Tham Gia
+JOIN_N=Tham Gia Phiên Bằng Tên
+JOIN_R=Tham Gia Phiên Bằng RID
+
+! Join methods
+JM_N=Phương Pháp Ninja
+JM_F=Phương Pháp Bạn Bè
+JM_M=Phương Pháp Tìm Phiên
+
+! I mean "Nuts" as a covert way of saying crazy, just translate it as "Crazy" if you can't be sly.
+JM_NUTS=Phương Pháp Điên
+
+JOIN_T_A=Bạn đã ở trong phiên này.
+
+JOIN_T_N=Người chơi này hiện không tham gia phiên GTA Online. :/
+PLYOFFLINE=Người chơi này hiện đang ngoại tuyến. :/
+
+PLYSPEC=Quan Sát
+SPEC=Quan Sát Người Chơi
+SPEC_N=Quan Sát Nguòi Chơi Bằng Tên
+SPEC_R=Quan Sát Người Chơi Bằng RID
+
+NAMKICK=Cú Đá Bằng Tên
+RIDKICK=Cú Đá Bằng RID
+
+LGTM=Phương Pháp Chính Thức
+
+RCTS=Phản Ứng
+
+JOINR=Phản Ứng Người Tham Gia
+JOINT={} đang tham gia
+
+HISTWJOINR=Người Chơi Với Phản Ứng Tham Gia
+HIST_KEEP_JRE=Giữ Người Chơi Với Phản Ứng Tham Gia
+
+HISTWWHT=Người Chơi Với Danh Sách Trắng Tham Gia
+HIST_KEEP_WHT=Giữ Danh Sách Trắng
+
+HISTADD2=Thêm Người Chơi
+HISTADD=Thêm Người Chơi Bằng Tên
+HISTADDRID=Thêm Người Chơi Bằng RID
+
+HOSTR=Phản Ứng Thay Đổi Chủ Phiên
+HOSTR_T={} hiện là chủ phiên
+
+SHR=Phản Ứng Máy Chủ Tập Lệnh Thay Đổi
+SHR_T={} hiện là chủ tập lệnh
+
+VKR=Phản Ứng Bỏ Phiếu Đá
+VKR_A=Bỏ Phiếu Để Đá Bất Kì Ai
+VKR_M=Bỏ Phiếu Để Đá Tôi
+VKR_T={player} đang bỏ phiếu đá {target}
+
+LLKR=Phản Ứng Cú Đá Love Letter
+LLKR_T={player} đang đá love letter vào {target}
+
+BOUNTYR=Phản Ứng Tiền Thưởng
+BOUNTYR_P={} đã treo thưởng cho bạn số tiền ${}.
+BOUNTYR_H=Điều này không áp dụng khi NPC đặt tiền thưởng cho bạn.
+
+PTFXSPAMR=Phản Ứng Spam Hiệu Ứng
+PTFXSPAMR_H=Không phải lúc nào cũng độc hại nhưng có thể làm giảm FPS của bạn.
+
+LEAVET=Thông Báo Người Chơi Rời Đi
+LOGLEAVE_T={} rời đi
+
+LR=Lý Do Người Chơi Rời Đi
+LR_H=Lưu ý rằng các kết luận về Lý Lo Người Chơi Rời Đi có thể không chính xác vì tính năng này không thể được triển khai theo phương pháp không theo kinh nghiệm.
+
+LR_WHERE=Ở Đâu
+LR_WHAT=Cái Gì
+
+LR_N={player} rời đi bình thường
+LR_SN=Hiển Thị "Rời Đi Bình Thường"
+
+LR_Q={player} thoát trò chơi
+LR_SQ=Hiển Thị "Thoát Trò Chơi"
+
+LR_B={player} đã bị chặn tham gia
+LR_SB=Hiển Thị "Bị Chặn Tham Gia"
+
+LR_T={player} mất kết nối
+LR_DL={player} mất kết nối cố gắng huỷ đồng bộ cú đá {other}
+LR_VK={player} đã bị bỏ phiếu đá
+LR_HK={player} đã bị cú đá chủ phiên bởi {other}
+LR_SHK={player} đã bị cú đá chủ tập lệnh bởi {other}
+LR_LL={player} đã bị cú đá love letter bởi {other}
+LR_K_B={player} đã bị cú đá chia tay bởi {other}
+LR_K_O={player} đã bị cú đá cực khoái
+LR_FMD={player} thoát do chết freemode
+LR_FMDC={player} bị crash sau khi bị chết freemode
+! "Quit To Story Mode" is QTSP
+LR_MOD={player} đã sử dụng mod để thoát về story mode
+LR_BAN={player} đã bị cấm khỏi GTA Online
+LR_U={player} đã rời đi với lý do không xác định ({id})
+
+! The only substitute for {reason} is NETWORK_BAIL as of now
+LR_E={player} rời đi vì {reason}
+
+AIM_MODE=Đặt Chế Độ Nhắm Mục Tiêu
+AIM_MODE_0=Hỗ Trợ Ngắm - Đầy Đủ
+AIM_MODE_1=Hỗ Trợ Ngắm - Một Phần
+AIM_MODE_2=Ngắm Tự Do - Hỗ Trợ
+AIM_MODE_3=Ngắm Tự Do
+
+RMLDR=Xoá Thông Báo "Transaction Pending"
+RMLDR_H=Loại bỏ mọi thông báo đang tải ở phía dưới bên phải màn hình của bạn.
+
+CHTRMLDR=Không "Transaction Pending" Khi Trò Chuyện
+CHTRMLDR_H=Loại bỏ thông báo tải khi bạn mở trò chuyện.
+
+LVINT=Rời Khỏi Nhà Hiện Tại
+
+FRCSVE=Buộc Lưu Đám Mây
+
+THDR=Thời Tiết Sấm Sét
+THDR_ON=Bật Yêu Cầu
+THDR_OFF=Tắt Yêu Cầu
+THDR_N=Thông Báo Khi Yêu Cầu
+THDR_N_T={} đã yêu cầu sấm sét
+
+RSTFM=Khởi Động Lại Tập Lệnh Freemode
+
+RJNSESS=Tham Gia Lại Phiên
+
+SLFDS=Một Mình
+SLFDS_H=Làm cho bạn trở thành người duy nhất trong phiên hiện tại mà không làm gián đoạn trải nghiệm của người khác.
+
+SLR_N=Không Lý Do Rời Đi
+SLR_C=Rời Đi Vì Gian Lận
+
+HSTTLS=Công Cụ Chủ Phiên
+
+SETSESSTYP=Đặt Loại Phiên
+
+CLRBLKLST=Xoá Danh Sách Đen
+CLRBLKLST_H=Cho phép những người trước đây đã bị bỏ phiếu đá tham gia lại.
+
+SESSTYP_S=Solo
+SESSTYP_I=Chỉ Mời
+SESSTYP_F=Chỉ Bạn Bè
+SESSTYP_CC=Chỉ Crew
+SESSTYP_C=Crew
+SESSTYP_P=Công Cộng
+
+CSTMVK=Tuỳ Chỉnh Ngưỡng Bỏ Phiếu Đá
+CSTMVK_H=Số lượng phiếu bầu cần thiết trước khi bạn đá ai đó.
+
+! For reference: "I'll try to convince them to leave." is PLYKCK_T_C
+CSTMVK_MSG={} đã vượt quá số lượng lượt bỏ phiếu của bạn. Tôi sẽ cố gắng thuyết phục họ rời đi.
+
+THRESHOLD=Số Lượng
+
+AUTOREJOIN=Tự Động Tham Gia Lại Các Phiên Bị Huỷ Đồng Bộ Hoá
+AUTOREJOIN_H=Tự động tham gia lại các phiên mà bạn đã bị hủy đồng bộ hóa.
+AUTOREJOIN_MSG=Đã phát hiện một phiên không đồng bộ, đang cố gắng tham gia lại...
+AUTOREJOIN_FAIL=Không thể tham gia lại phiên trước đó của bạn. :(
+
+QTSP=Thoát Về Story Mode
+
+QTSPF=Buộc Thoát Về Story Mode
+QTSPF_H=Khởi động lại tất cả hệ thống trò chơi, sau đó đưa bạn vào chế độ câu chuyện.
+
+NDLYXPS=Tắt Chi Phí Hằng Ngày
+
+OCWS=Mở Trò Chuyện Khi Cuộn
+OCWS_H=Khắc phục sự cố là bạn có thể cuộn cuộc trò chuyện khi nó đang đóng bằng cách làm cho nó hiện lên khi cuộn.
+
+CHATAO=Luôn Mở
+
+BBGS=Chặn Tập Lệnh Nền
+BBGS_H=Chặn việc thực thi tập lệnh nền mà Rockstar sử dụng để giới thiệu các DLC mới nhưng cũng gây khó chịu cho modder.
+
+ADMDLC=DLC Quản Trị Viên Rockstar
+ADMDLC_H2=Mở khóa quần áo độc quyền và Social Club TV.
+
+HUDTS=Dấu Phẩy Hàng Nghìn Cho Tiền
+HUDTS_H=Thêm dấu phẩy hàng nghìn vào giá trị tiền hiển thị ở trên cùng bên phải.
+
+FLLPLYLST=Tất Cả Người Trong Danh Sách Người Chơi
+FLLPLYLST_H=Hiển thị tất cả người chơi trong danh sách người chơi, bỏ qua trạng thái Cayo Perico.
+
+FMBNR2T=Biểu Ngữ Freemode Đến Thông Báo
+
+PHNANIM=Hoạt Ảnh Điện Thoại
+PHNANIM_H2=Cung cấp hoạt ảnh cho nhân vật của bạn khi sử dụng điện thoại.
+
+SPDUPDIAL=Tăng Tốc Quay Số
+
+NLSCBAR=Vô Hiệu Hoá Hạn Chế LSC
+NLSCBAR_H=Cho phép bạn vào Los Santos Customs với tất cả các phương tiện, kể cả những phương tiện không có chủ sở hữu và sửa đổi hoàn toàn chúng.
+
+BLIPTAGS=Thẻ Người Chơi Trên Blips
+
+RSTHDSHT=Đặt Lại Ảnh Chân Dung
+RSTHDSHT_H=Sửa lỗi khi danh sách người chơi hoặc thông báo có hình vuông màu đen thay vì ảnh chụp đầu.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+TRNSS=Chuyển Tiếp
+
+SESSHOP=Giới Hạn Phiên
+MINPLYS=Người Chơi Tối Thiểu
+MAXPLYS=Người Chơi Tối Đa
+
+SSS=Chuyển Phiên Liền Mạch
+
+WRLDSTCNG=Thay Đổi Trạng Thái Thế Giới
+WRLDSTCNG_1=Trì Hoãn
+WRLDSTCNG_2=Trì Hoãn, Chỉ Online
+WRLDSTCNG_3=Trì Hoãn, Chỉ Story Mode
+WRLDSTCNG_T=Đang thay đổi trạng thái thế giới trong {}...
+
+SPDUP=Tăng Tốc
+
+TRNS_SPDUP_BRDCST=Không Đợi Phát Dữ Liệu
+TRNS_SPDUP_FMMC=Đừng Chờ Khởi Chạy Nhiệm Vụ
+TRNS_SPDUP_SPWN=Đừng Hỏi Tôi Để Spawn
+
+TRNS_SPDUP_BESCRHST_H=Điều này có thể giúp tăng tốc độ tham gia của bạn, nhưng sẽ khiến phiên ở trạng thái bị hỏng, khiến không ai có thể tham gia sau bạn.
+
+JGRPOVRD=Ghi Đè Tham Gia Nhóm
+JGRPOVRD_H=Cho phép bạn, ví dụ: sử dụng vị trí dành cho khán giả để tham gia một phiên đầy đủ mà không thực sự quan sát. Tuy nhiên, điều này có thể gây ra lỗi khi tham gia nhiệm vụ. ⚠️
+JGRPOVRD_0=Quan Sát
+JGRPOVRD_1=Freemoder
+
+SSWPD=Bỏ Qua Chuyển Cảnh Xuống
+SSWPD_H=Bỏ qua chuyển cảnh từ trên mây xuống khi tham gia phiên.
+
+TRNSHLP=Giúp Đỡ Chuyển Tiếp
+TRNSHLP_H=Đảm bảo bạn không bị mắc kẹt trên mây.
+
+UNSTK=Giải Quyết Mắc Kẹt
+
+NSPWNACTY=Tắt Hoạt Động Khi Spawn
+NSPWNACTY_H=Ngăn chân vật của bạn thực hiện hành động gì đó khi vào phiên.
+
+NDLCITRO=Tắt Phim Giới Thiệu DLC
+
+SHWTRNSTT=Hiện Trạng Thái Chuyển Tiếp
+
+SHWARRSYNC=Hiện Tiến Trình Đồng Bộ Hoá Mảng
+SHWARRSYNC_T=Mảng {}/{} đã đồng bộ hóa Freemode ({}%)
+
+SHWRSMSG=Hiện Tin Nhắn Hỗ Trợ Rockstar
+
+GTAOSTUS_O=Dịch vụ GTA Online hiện tại đang {}
+GTAOSTUS_O_L=giới hạn
+GTAOSTUS_O_D=sập
+GTAOSTUS_M=Hỗ trợ Rockstar nói "{}"
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions > Matchmaking !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+MM=Tìm Phiên
+
+MMREGION2=Ghi Đè Vùng
+MMREGION=Vùng
+
+Australia=Châu Úc
+Europe=Châu Âu
+Asia=Châu Á
+Japan=Nhật Bản
+LATAM=Mỹ Latinh
+REGION_NA=Bắc Mỹ
+USA_East=Phía Đông Nước Mỹ
+USA_West=Phía Tây Nước Mỹ
+
+MMPOOLOVRD=Ghi Đè Nhóm
+MMPOOL=Nhóm
+
+MMPOOL_NRM=Bình Thường
+MMPOOL_CHEAT=Gian Lận
+MMPOOL_BADBOY=Bad Sport
+
+MMMGNT=Số Lượng Người Chơi Yêu Thích
+MMMGNT_H=Đưa bạn vào các phiên có số người chơi như bạn chọn.
+
+MMOFF_H=Đã tắt tính năng tìm phiên để bạn không tìm thấy các phiên công cộng hiện có.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session > Session Code !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSCODE=Mã Phiên
+SESSCODE_T_X=Mã mời phiên này đã hết hạn.
+
+CODEJOIN=Tham Gia Phiên Bằng Mã
+CODESPEC=Quan Sát Phiên Bằng Mã
+ARGCODE=[mã]
+
+CPYINVL=Sao Chép Liên Kết Mời
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Session Scripts !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SESSSCRS=Tập Lệnh Phiên
+
+RUNSCR=Chạy Tập Lệnh
+RUNSCR_PREP=Chuẩn bị thực thi tập lệnh điều khiển...
+RUNSCR_RUN=Đang chạy tập lệnh {}...
+
+RUNSCRS=Tập Lệnh Đang Chạy
+
+PRTCPTS=Những Người Tham Gia
+
+STRTINST=Bắt Đầu Ngay
+
+SESSSCRSTRT=Bắt Đầu Tập Lệnh Phiên
+SESSSCRSTRT_T={player} đã bắt đầu tập lệnh {script}.
+
+SESSSCRSTRT_ANY=Bất Kì Tập Lệnh
+
+SCRCAT_GRIEF=Phá Vỡ Phiên
+NOCAT=Chưa Phân Loại
+
+SCRCAT_FA=Hoạt Động Freemode
+SCRCAT_AG=Arcade Game
+SCRCAT_RFA=Gỡ Bỏ Hoạt Động Freemode
+SCRCAT_SERV=Dịch Vụ
+SCRCAT_CUT=Cắt Cảnh
+
+SCRCAT_FA_P=Hoạt Động Freemode
+SCRCAT_AG_P=Arcade Games
+SCRCAT_RFA_P=Gỡ Bỏ Hoạt Động Freemode
+SCRCAT_SERV_P=Dịch Vụ
+SCRCAT_CUT_P=Cắt Cảnh
+SCRCAT_MISS_P=Nhiệm Vụ
+
+SCR_FRCEPI=Mở Menu Tương Tác
+SCR_PS=Trường Bay
+SCR_STRIKE=Sét Đánh Bất Ngờ Người Chơi Bất Kì
+SCR_DPSSV=Tắt Chế Độ Passive
+SCR_DARTS=Phi Tiêu
+SCR_IMPDM=Tử Chiến Ngẫu Hứng
+SCR_SLASHER=Máy Chém
+
+!! Session Scripts: Freemode Activities
+
+SCR_FE_BB=Business Battle
+SCR_FE_KL=Danh Sách Giết
+SCR_FE_CPC=Sưu Tập Đánh Dấu
+SCR_FE_C=Thử Thách
+SCR_FE_PI=Viết Lên
+SCR_FE_PI_CI=Lồng Lên
+SCR_FE_PTP=Dữ Bánh Xe
+SCR_FE_HP=Tài Sản Nóng
+SCR_FE_KOTC=Vua Của Lâu Đài
+SCR_FE_CD=Thiệt Hại Hình Sự
+SCR_FE_HTB=Săn Quái Vật
+
+!! Session Scripts: Challenges - Types
+SCR_FE_C_0=Nhảy Xa Nhất
+SCR_FE_C_1=Rơi Tự Do Dài Nhất
+SCR_FE_C_2=Tốc Độ Cao Nhất
+SCR_FE_C_3=Bốc Đuôi Xa Nhất
+SCR_FE_C_4=Bốc Đầu Xa Nhất
+SCR_FE_C_5=Không Tai Nạn
+SCR_FE_C_6=Nhảy Dù Thấp Nhất
+SCR_FE_C_7=Trộm Phương Tiện
+SCR_FE_C_8=Gần Xe Khác
+SCR_FE_C_9=Lái Xe Ngược Chiều
+SCR_FE_C_10=Sinh Tồn Lâu Nhất
+SCR_FE_C_11=Bay Thấp
+SCR_FE_C_12=Bay Ngược
+SCR_FE_C_13=Ngã Dài Nhất
+SCR_FE_C_14=Bay Dưới Cầu
+SCR_FE_C_15=Giết Bằng Bắn Vào Đầu
+SCR_FE_C_16=Lái Xe
+SCR_FE_C_17=Cận Chiến
+SCR_FE_C_18=Giết Bằng Bắn Tỉa
+
+!! Session Scripts: Arcade Games
+
+SCR_AG_BRII=Vùng Đất Trả Thù II
+SCR_AG_CAM=Camhedz
+SCR_AG_PUZ=QUB3D
+SCR_AG_RAC=Đua và Đuổi
+SCR_AG_SM3=Không Gian Khỉ 3
+SCR_AG_TWR=Tàn Tích Của Phù Thuỷ
+
+!! Session Scripts: Removed Freemode Activities
+
+SCR_FE_DD=Thả Chết
+SCR_RFA_HT=Mục Tiêu Di Động
+SCR_OFM_PT=Bắn Hạ Máy Bay
+SCR_OFM_DC=Trốn Cảnh Sát
+SCR_OFM_DV=Phá Hủy Phương Tiện
+
+!! Session Scripts: Session Breaking
+
+SCR_FMINTRO=Giới Thiệu GTA Online
+
+!! Session Scripts: Services
+
+SCR_SERV_A=Không Kích
+SCR_SERV_AD=Thả Đạn
+SCR_SERV_BH=Trực Thăng Dự Phòng
+SCR_SERV_IBH=Trực Thăng Dự Phòng (Cayo Perico)
+SCR_SERV_BT=Thuyền Đón
+SCR_SERV_HT=Trực Thăng Đón
+
+!! Session Scripts: Options on running scripts
+
+SCORE=Điểm
+
+!!!!!!!!!!!!!!!!
+!! Player Bar !!
+!!!!!!!!!!!!!!!!
+
+PBAR=Thanh Người Chơi
+
+HDEIF=Ẩn Nếu
+PBAR_HI_1=Danh Sách Người Chơi Được Hiển Thị
+PBAR_HI_2=Thanh XP Được Hiển Thị
+
+PBAR_ALNE=Hiển Thị Ngay Cả Khi Một Mình
+
+SHWTGS=Hiển Thị Thẻ
+
+HDEPNTG=Ẩn Người Chơi Không Có Thẻ
+
+DFLTCLR=Màu Mặc Định
+
+TGCLRS=Màu Thẻ
+
+UCLR=Sử Dụng Màu
+
+!!!!!!!!!!!!!!!!!!!
+!! Online > Chat !!
+!!!!!!!!!!!!!!!!!!!
+
+CHT=Trò Chuyện
+
+PRFNTY=Bỏ Qua Bộ Lọc Tục Tĩu
+PRFNTY_H=Cho phép bạn chửi thề mà không bị che mờ với người chơi khác
+
+HTML=Bỏ Qua Bộ Lọc Kí Tự
+HTML_H=Cho phép bạn sử dụng các kí tự như < và > trong trò chuyện.
+
+ONLYTEAM=Trong Trò Chuyện Nhóm
+
+MSGFILTBP=Bộ Lọc Tin Nhắn Bị Bỏ Qua
+
+CHTSPM=Spam Chat
+
+CHTLG=Nhật Kí Tin Nhắn Trò Chuyện
+
+TBCMPLT=Nhập Tên Người Chơi
+TBCMPLT_H=Hoàn thành tên người chơi cho bạn khi bạn nhấn phím tắt được chỉ định trong khi soạn tin nhắn trò chuyện.
+
+PSTE=Dán Vào Tin Nhắn Trò Chuyện
+PSTE_H=Dán văn bản từ khay nhớ tạm của bạn khi bạn nhấn phím tắt được chỉ định trong khi soạn tin nhắn trò chuyện.
+
+TPNGIDCTR2=Chỉ Báo Đang Gõ
+TPNGIDCTR_H=Hiển thị chỉ báo đang gõ như trong Discord khi những người chơi khác đang gõ.
+TPNGIDCTR_1={a} đang soạn...
+TPNGIDCTR_M={} đang soạn...
+
+TPNGPOS_C=Vị Trí Trò Chuyện Đã Đóng
+TPNGPOS_O=Mở Vị Trí Trò Chuyện
+
+SNDMSG=Gửi Tin Nhắn
+
+ITEAMCHT=Trong Trò Chuyện Nhóm
+
+TEXT=Văn Bản
+ARGTXT=[văn bản]
+
+SPAM=Spam
+SPAM_H=Lời nhắc thân thiện rằng điều khoản dịch vụ của chúng tôi nghiêm cấm quảng cáo đại chúng và việc tham gia vào những quảng cáo như vậy sẽ khiến tài khoản của bạn bị đình chỉ.
+
+INTVAL_MS=Khoảng thời gian (ms)
+
+LOCHIST=Thêm Vào Lịch Sử Cục Bộ
+LOCHIST_H_SPAM=Trong trường hợp bạn cũng muốn spam.
+
+FRCSEND=Gửi Tất Cả Tin Nhắn
+FRCSEND_H=Biến hộp trò chuyện thành giao diện cho lệnh "Gửi Tin Nhắn", giúp mạng lưới tin nhắn của bạn trở nên nhất quán.
+
+FRCRECV=Hiển Thị Tất Cả Tin Nhắn
+FRCRECV_H2=Buộc trò chơi hiển thị tất cả tin nhắn trò chuyện đã nhận trong hộp trò chuyện, bất kể ai đã gửi nó.
+
+TIMESTAMP_MS=Dấu Thời Gian Trong Tin Nhắn
+
+OWOMYMSGS=OwO Nếu Tin Nhắn Của Tôi
+OWOMYMSGS_H=OwO hoá các tin nhắn gửi đi của bạn. Lưu ý rằng bạn sẽ không thấy sự khác biệt cục bộ.
+
+SENDPM=Gửi Tin Nhắn Riêng Tư
+SENDPM_H=Gửi tin nhắn trò chuyện mà chỉ người chơi này và bạn mới có thể xem.
+
+CHATSING=Hát Trong Trò Chuyện
+CHATSING_H=Hát bài trong %appdata%/Stand/Song.lrc của bạn.
+
+NTPNGIDCTR=Ngăn Chặn Chỉ Báo Gõ
+NTPNGIDCTR_H=Khiến người chơi khác không thể nhìn thấy khi bạn đang soạn tin nhắn.
+
+PTX_TYPNGSTRT=Bắt Đầu Sự Kiện Gõ
+PTX_TYPNGSTOP=Kết Thúc Sự Kiện Gõ
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Commands !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CMDS=Lệnh
+CMDS_H=Xử lý tin nhắn trò chuyện với tiền tố đã chọn như các lệnh cho hộp lệnh của Stand nhưng lưu ý rằng hầu hết các lệnh không có sẵn cho những người chơi khác.
+
+PFX=Tiền Tố
+
+REPLPFX=Tiền Tố Trả Lời
+
+REPLYVIS=Hiển Thị Trả Lời
+EVERYONE=Mọi Người
+ISSUER_N_ME=Nhà Phát Hành & Tôi
+ISSUER=Nhà Phát Hành
+NOONE=Không Ai Cả
+
+ON4M=Bật Cho Tôi
+
+4F=Cho Bạn Bè
+
+4C=Cho Thành Viên Crew
+
+4T=Cho Nhóm Trò Chuyện
+4T_H=Ví dụ: thành viên CEO/MC của bạn.
+
+4S=Cho Người Lạ
+
+! When a friend or stranger tries to kick or crash the Stand user
+SLFHRM_O=Đừng cắn vào tay người cho bạn ăn. ;)
+
+CMDBXDCS=Tài Liệu Hộp Lệnh
+
+CMDLST=Danh Sách Lệnh
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Reactions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CHT_ANY=Bất Kì Tin Nhắn
+CHT_ANY_G=Tin Nhắn Trò Chyện
+
+CHT_SPF=Tin Nhắn Giả Mạo
+CHT_AD=Quảng Cáo
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session Browser !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSBRWS=Tìm Kiếm Phiên
+
+NFLTR=Không Lọc
+
+MREFLTR=Thêm Bộ Lọc
+
+SESSBRWS_FLTR_AST_H=Nếu bật, chỉ những phiên phù hợp với các giá trị băm hiện tại của bạn sẽ được hiển thị. Bạn có thể giả mạo checksums của mình để có một loại "tìm riêng tư."
+
+NHKNADS=Không Được Chủ Bởi Nhà Quảng Cáo Đã Biết
+
+RFRSH=Làm Mới
+
+SESSS=Phiên
+
+HSTPRF=Xem Hồ Sơ Của Chủ Phiên
+
+LSESSDETS=Đang tải thông tin phiên...
+
+RM_PROMPT=Yêu Cầu Danh Sách Thành Viên
+RM_CONFIRMED=Đang Yêu Cầu Danh Sách Thành Viên...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Request Services !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+REQSRV=Yêu Cầu Dịch Vụ
+
+AIRSTRK=Yêu Cầu Không Kích
+AIRSTRK_H=Cung cấp cho bạn một pháo sáng và tạo ra một chiếc máy bay phản lực Merryweather sẵn sàng ném bom vào vị trí của pháo sáng.
+
+AM_AMMO_DROP=Yêu Cầu Thả Đạn
+
+AM_BOAT_TAXI=Yêu Cầu Thuyền Đón
+
+AM_HELI_TAXI=Yêu Cầu Máy Bay Đón
+AM_HELI_TAXI_0=Maverick
+AM_HELI_TAXI_1=Supervolito
+
+AM_BACKUP_HELI=Yêu Cầu Trực Thăng Dự Phòng
+
+REQNANO=Yêu Cầu Nano Drone
+
+!!!!!!!!!!!!!!!!!!
+!! Online > ATM !!
+!!!!!!!!!!!!!!!!!!
+
+ATM=ATM
+
+AUTODEPO=Tự Động Gửi Tiền Từ Ví
+WLTHPPR_T=Đã chuyển ${} từ ví của bạn tới ngân hàng. :)
+
+WTHDRW=Rút
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! SC DM Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SCDMT=Thông Báo DM Social Club
+SCDMT_T=SC DM từ {sender}: {text}
+
+! Those thingies in the top-right corner of the screen.
+SCNOTIF=Thông Báo Social Club
+
+!!!!!!!!!!!!
+!! CEO/MC !!
+!!!!!!!!!!!!
+
+CEO=CEO/MC
+
+NOCEO={} không tham gia tổ chức hoặc câu lạc bộ mô tô nào.
+CMDNBOSS=Lệnh này chỉ khả dụng khi bạn là VIP, CEO hoặc chủ tịch.
+GEN_H_BOSS=Điều này sẽ chỉ có hiệu lực khi bạn là VIP, CEO hoặc chủ tịch.
+
+CEOKICK=Đá CEO/MC
+CEOKICK_E=Rất tiếc, chỉ có thể đá thành viên CEO/MC.
+
+MISSIONEVT=Bắt Đầu Nhiệm Vụ Freemode
+MISSIONEVT_NCEO=Bắt Đầu Nhiệm Vụ Freemode (Không Phải Sếp)
+
+INTTPEVT=Dịch Chuyển Vào Bên Trong
+INTTPEVT_NCEO=Dịch Chuyển Vào Bên Trong (Không Phải Sếp)
+
+CEOAPPEAL=Xoá Lệnh Cấm CEO/MC
+
+CEOJOIN=Tham Gia CEO/MC
+CEOJOIN_T=Đang cố gắng tham gia một cách nhẹ nhàng...
+CEOJOIN_E=Trở lại để buộc tham gia.
+
+CEOTYP=Đổi Loại
+CEOTYP_H=Thay đổi tổ chức thành câu lạc bộ mô tô hoặc ngược lại.
+
+CEOCAP=Vô Hiệu Giới Hạn Thành Viên
+
+CEOCOL=Màu Vị Trí
+CEOCOL_H=Đã phân bổ cho tổ chức của {}.
+
+ORGCR_S=Đăng Kí CEO/VIP
+ORGCR_M=Bắt Đầu Câu Lạc Bộ Mô Tô
+
+!!!!!!!!!!
+!! Game !!
+!!!!!!!!!!
+
+! "Snake" refers to the classic game
+SNAKE=Rắn
+SNAKE_1=Trong Lúc Chuyển Phiên
+
+SNAKE_C=Đóng Stand để bạn có thể chơi Rắn bằng các phím điều hướng menu của mình
+
+PONG_C=Đóng Stand để bạn có thể điều khiển Pong bằng các phím điều hướng menu của mình
+
+INVSEND_PONG=Mời Chơi Pong
+
+INVRECV_PONG=Chấp Nhận Chơi Pong
+INVRECV_PONG_T={player} đã mời bạn chơi Pong. Sử dụng Người Chơi > {player} > Chấp Nhận Chơi Pong để chấp nhận.
+
+INVSENT=Đang chờ {} chấp nhận lời mời của bạn
+
+CNLINV=Huỷ Lời Mời
+
+CNLGME_PONG=Huỷ Trò Chơi Pong
+
+GETREADY=Chuẩn Bị!
+
+PLYGMECNCLT={} đã huỷ trò chơi.
+
+T_M_C=Xoá Thông Báo Trên Minimap
+
+SKPCTSCN=Bỏ Qua Đoạn Cắt Cảnh
+
+TMSCL=Tỉ Lệ Thời Gian
+TMSCL_H=Thay đổi tốc độ thời gian *chỉ bạn*.
+
+AIMTMSCL=Tỉ Lệ Thời Gian Ngắm
+AIMTMSCL_H=Thay đổi tốc độ thời gian khi bạn đang nhắm *chỉ bạn*.
+
+SCRNSHT=Chế Độ Chụp Màn Hình
+
+RWND=Tua Ngược Thời Gian
+RWND_H2=Quay ngược thời gian bằng cách nhấn phím tắt được chỉ định hoặc khả năng đặc biệt trên bộ điều khiển.
+
+UNRSTRCAM=Góc Nhìn Không Giới Hạn
+UNRSTRCAM_H=Cho phép bạn di chuyển camera theo vòng tròn 360°.
+
+FC=Góc Nhìn Tự Do
+FC_H=Về cơ bản cho phép bạn mang camera đi bất cứ đâu bạn muốn.
+
+FC_DTP=Dịch Chuyển khi Tắt
+FC_DTP_H=Dịch chuyển nhân vật của bạn đến vị trí của camera khi bạn tắt freecam.
+
+FC_NZ=Bỏ Qua Góc Pitch
+FC_NZ_H=Vô hiệu hóa chuyển động tiến và lùi ảnh hưởng đến độ cao tùy thuộc vào nơi bạn đang nhìn.
+
+FC_MF=Minimap Theo Freecam
+
+MOVCTRL=Kiểm Soát Chuyển Động
+MOVCTRL_FC=Chuyển đổi chuyển động giữa freecam và nhân vật của bạn
+
+EDTHCLR=Chỉnh Màu HUD/UI
+
+EDTLB=Chỉnh Nhãn
+
+ADDLB=Thêm Nhãn
+ADDLB_H=Thêm nhãn vào danh sách và cho bạn chỉnh sửa nó.
+ADDLB_E=Thật không may, {} không phải là nhãn hợp lệ. :/
+
+RVLLB=Hiện Nhãn
+RVLLB_H=Ngăn chặn các nhãn văn bản trong trò chơi và thay vào đó hiển thị nhãn.
+
+OWOLB=OwO Hoá Nhãn
+
+LBLST=Danh Sách Nhãn
+
+EDIT=Chỉnh Sửa
+
+! {} should be at the end as it could be very long
+RESET=Đặt lại vể {}
+
+REMOVE=Xoá Bỏ
+
+FOV=Góc Nhìn
+
+FOV_TP_VEH=Góc Nhìn Thứ Ba, Trên Xe
+FOV_TP_ONF=Góc Nhìn Thứ Ba, Đi Bộ
+FOV_FP_VEH=Góc Nhìn Thứ Nhất, Trên Xe
+FOV_FP_ONF=Góc Nhìn Thứ Nhất, Đi Bộ
+FOV_AIM=Ngắm Băn
+FOV_SNIP=Bắn Tỉa
+
+CAMDIST=Hệ Số Khoảng Cách Camera
+
+2PRSN=Góc Nhìn Thứ Hai
+
+! "Heading" as in the rotation
+CAMPUKE=Khoá Góc Camera
+
+RDRG=Kết Xuất
+
+VISSTTNGS=Cài Đặt Hình Ảnh
+
+NITEV=Tầm Nhìn Ban Đêm
+
+THERV=Tầm Nhìn Nhiệt
+
+SHDR=Ghi Đè Đổ Bóng
+
+DSTSCLMUL=Tỉ Lệ Khoảng Cách
+
+RDRHDOLY=Chỉ Kết Xuất HD
+
+POTAT=Chế Độ Khoai Tây
+POTAT_H=Khôi phục đồ họa gốc năm 2013 của trò chơi.
+
+BLKALLDRW=Vô Hiệu Hầu Hết Kết Xuất
+
+LKSTRMFCS=Khoá Tập Trung Trực Tuyến
+LKDPOS=Vị Trí Bị Khoá
+SELPOS_T=Khi bạn đã chọn một vị trí, hãy nhấn {} để xác nhận vị trí đó.
+
+SGMELNG=Đặt Ngôn Ngữ Trò Chơi
+SGMELNG_H=Một số ngôn ngữ có phông chữ khác, phông chữ này chỉ được tải sau khi khởi động lại trò chơi.
+
+STUTFIX=Sửa Lỗi Giật Hình Ở FPS Cao
+STUTFIX_H=Sửa lỗi giật hình xảy ra khi trò chơi đạt tới 188 FPS.
+
+NKBDHK=Tắt Kiểm Soát Phím
+NKBDHK_H=Cho phép bạn nhấn phím Windows khi tập trung vào GTA và dừng độ trễ của trò chơi dẫn đến độ trễ khi nhấn phím.
+
+DBGNTVS=Ghi Đè Bản Gỡ Lỗi Gốc
+DBGNTVS_H=Triển khai và ghi đè các bản gỡ lỗi gốc vẫn được sử dụng trong một số tập lệnh của trò chơi.
+
+! As in "Software Patch"
+PTCHS=Bản Vá Lỗi
+
+PRJTPOOL=Nhóm Projectile
+PTCH_PRJTPOOL_H=Thay vì từ chối tạo ra projectile mới khi nhóm projectile đầy, bản vá này sẽ xóa projectile cũ nhất.
+
+ANAL=Hỗ Trợ Bàn Phím Analog
+ANAL_H=Nếu bạn có bàn phím analog được hỗ trợ, điều này giúp trò chơi hiểu được mức độ mạnh mà bạn đang nhấn phím.
+ANAL_L=Bàn Phím Được Hỗ Trợ
+
+PRSRSUB=Trừ Áp Suất
+PRSRDIV=Bộ Chia Áp Suất
+
+DEV=Thiết Bị
+PRSR=Áp Suất
+
+EJ=Cải Tiến Nạp Sớm
+EJ_H=Các cải tiến của trò chơi sẽ được áp dụng nếu Stand được nạp khi trò chơi bắt đầu.
+
+GMEPOOL=Chỉnh Kích Thước Nhóm Trò Chơi
+GMEPOOL_H=Nhân kích thước của nhóm cho các thực thể, tài nguyên tập lệnh, v.v. Đồng thời tăng kích thước nhóm bộ nhớ để tránh lỗi "hết bộ nhớ". Cố gắng phát lại bản ghi với nhóm trò chơi đã sửa đổi sẽ làm crash trò chơi.
+
+MEMPOOL=Kích Thước Nhóm Bộ Nhớ (MB)
+
+SETHIPRIO2=Đặt Trò Chơi Ở Mức Ưu Tiên Cao
+SPDUPSTRUP=Tăng Tốc Khởi Động
+SKPGMEITR2=Bỏ Qua Giới Thiệu & Giấy Phép
+
+SVMR=Tái Triển Khai Sử Dụng Script VM
+SVMR_H=Thay thế thời gian chạy tập lệnh của trò chơi bằng phiên bản được tối ưu hóa hơn một chút.
+
+! Legacy as in "the old way"
+LGCY=Legacy
+
+YEET_W=Để làm rõ, điều này sẽ làm crash trò chơi của bạn.
+
+!!!!!!!!!!!!!!!!!!
+!! Game > Radio !!
+!!!!!!!!!!!!!!!!!!
+
+RD=Radio
+
+MBLRD=Radio Di Động
+MBLRD_H=Cho phép nghe radio khi đi bộ.
+
+LKRD=Khoá Kênh Radio
+LKRD_H=Không cho phép trò chơi hoặc người chơi khác thay đổi radio của bạn.
+
+RDSTS=Kênh Radio
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Game > Disables !!
+!!!!!!!!!!!!!!!!!!!!!
+
+DBLES=Tắt
+
+DGMEINPT=Tắt Đầu Vào Trò Chơi
+! Preset for Disable Game Inputs
+JUSTMOUSE=Chuột
+DGMEINPT_H_MOUSE=Vô hiệu hóa hầu hết các đầu vào trò chơi trong khi Stand được mở.
+! Preset for Disable Game Inputs
+CTRLLR=Tay Cầm
+DGMEINPT_H_CTRLLR=Vô hiệu hóa một số đầu vào trò chơi trong khi Stand được mở.
+! Preset for Disable Game Inputs
+CTRLLR_N_TABS=Tay Cầm + Tab
+DGMEINPT_H_CTRLLR_N_TABS=Tương tự như "Tay Cầm" nhưng cũng vô hiệu hóa khả năng tăng tốc của xe và đầu vào phanh.
+DGMEINPT_H_NUMPAD=Cho phép tất cả đầu vào trò chơi.
+
+DGMEINPT_P=Bạn có muốn sử dụng cài đặt sẵn {preset} cho {disable_game_inputs_path} để tắt các đầu vào trò chơi bị xung đột khi Stand đang mở không?
+
+DSBLPHNE=Chặn Cuộc Gọi
+DSBLPHNE_H=Chặn tất cả các cuộc gọi điện thoại đến.
+
+NCAMSHK=Tắt Lắc Camera
+
+NSTNTJMP=Bỏ Qua Quay Chậm Khi Bay Xe
+
+DSBLREC=Tắt Quay Màn Hình Game
+DSBLREC_H=Vô hiệu hóa khả năng quay clip Rockstar Editor.
+
+NCINCAM=Vô Hiệu Camera Điện Ảnh
+
+NVEHFCSCAM=Vô Hiệu Tập Trung Vào Xe
+NVEHFCSCAM_H=Tắt gợi ý camera khi bạn mở camera điện ảnh khi đang ở trong xe hoặc gần người chơi thân thiện, v.v.
+
+NIDLECAM=Tắt Camera Nhàn Rỗi
+
+DSBLRESTRAR=Vô Hiệu Hạn Chế Khu Vực
+DSBLRESTRAR_H=Điều này có thể khiến bạn không có vũ khí trong nhiệm vụ hoặc thậm chí khiến bạn không vào được nhiệm vụ. ⚠️
+
+NFLTMSC=Vô Hiệu Nhạc Khi Bay
+NWNTMSC=Tắt Nhạc Truy Nã
+
+PRVNUM7SCO=Chặn Numpad 7 Mở Social Club
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > Info Overlay !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+HUDINFO=Giao Diện Thông Tin
+
+IGTIME=Thời Gian Trong Game
+
+RWTIME=Thời Gian Thực
+
+DPS=Số Lần Vẽ Mỗi Giây
+
+GPUOVHD=Độ Trễ CPU (ms)
+GPUOVHD_H=CPU của bạn phải đợi bao nhiêu mili giây để GPU hoàn thành khung hình.
+
+TS=Khung Hình Trên Giây
+TS_H=Hiển thị thông số FPS.
+
+GEAR=Cấp Số
+GEAR_R=Số Lùi
+
+RPM=RPM
+
+HQSA=Yếu Tố Hàng Đợi Chủ Phiên
+HQSA_0=Rockstar ID Thấp Nhất
+HQSA_1=Rockstar ID Cao Nhất
+HQSA_2=Tên Băm Thấp Nhất
+HQSA_3=Tên Băm Cao Nhất
+
+WSPCW=Ai Đang Quan Sát Ai
+WSPCW_T={spectator} đang quan sát {spectatee}
+
+CTRYBRKDWN=Thống Kê Các Quốc Gia
+CTRYBRKDWN_H=Hiển thị tất cả các quốc gia của người chơi trong phiên cùng số lượng người chơi bên cạnh mỗi quốc gia.
+
+NEPOOL=Sự Kiện Mạng Đi
+
+SRTBYCTRYNME=Sắp Xếp Theo Tên Quốc Gia
+SRTBYCNT=Sắp Xếp Theo Số Lượng
+
+ALTDE=Độ Cao
+GRNDIST=Khoảng Cách Mặt Đất
+
+ROT_ENT=Góc Xoay (Thực Thể)
+ROT_CAM=Góc Xoay (Camera)
+ROT_X=Pitch
+ROT_Y=Roll
+ROT_Z=Yaw
+
+PEDS=Người Đi Bộ
+
+VEHS=Phương Tiện
+
+OBJS=Vật Thể
+
+PUPS=Vật Phẩm Thu Thập
+
+PROJ=Projectiles
+
+SCPROG=Chương Trình Tập Lệnh
+
+SCTHDS=Chủ Đề Tập Lệnh
+
+EHLT=Thực Thể Xử Lý Đánh Dấu Cuối Cùng
+
+NGILT=Natives GTA Được Gọi Đánh Dấu Cuối Cùng
+
+NSILT=Natives Stand Được Gọi Đánh Dấu Cuối Cùng
+
+CTRLREQS=Yêu Cầu Điều Khiển
+
+FIBS=Fibers
+
+STH=Trình Xử Lý Đánh Dấu Tập Lệnh
+
+PRSNTHDLS=Trình Sử Lý Vẽ
+
+! "Keep-Alive" may be kept as-is, as it's a rather technical term/concept.
+KACONS=Kết Nối Keep-Alive
+
+!!!!!!!!!!!!!!!!!!!!
+!! Game > Minimap !!
+!!!!!!!!!!!!!!!!!!!!
+
+MINIMAP=Minimap
+
+SLEEK=Ẩn Viền Minimap
+
+DNWINVI=Tắt Thông Báo Lời Mời Mới
+DNWINVI_H=Tắt thông báo lời mời mới bên cạnh bản đồ và trên ứng dụng Job List.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > AR Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ARNOTIFS=Thông Báo AR
+
+DBGMODE=Chế Độ Debug
+
+STATSCLE=Tỉ Lệ Tĩnh
+DYNSCLE=Tỉ Lệ Động
+DYNSCLG=Tỉ Lệ Động
+
+HOROFF=Vị Trí Chiều Ngang
+VERTOFF=Vị Trí Chiều Dọc
+DPHOFF=Vị Trí Cao Thấp
+
+FPHOROFF=Vị Trí Chiều Ngang Góc Nhìn Thứ Nhất
+FPVERTOFF=Vị Trí Chiều Dọc Góc Nhìn Thứ Nhất
+FPDPHOFF=Vị Trí Cao Thấp Góc Nhìn Thứ Nhất
+
+RESVRDTOPSPC=Không Gian Trống Trên Cùng
+
+ROTMODE=Chế Độ Xoay
+ARNOTIFS_ROTMODE_0=Thực Thể
+ARNOTIFS_ROTMODE_1=Thực Thể, Bao Gồm Pitch
+ARNOTIFS_ROTMODE_2=Camera
+ARNOTIFS_ROTMODE_3=Camera, Bao Gồm Pitch
+
+ENSTXTREAD=Đảm Bảo Khả Năng Đọc
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Credits !!
+!!!!!!!!!!!!!!!!!!!!!
+
+CRED=Credits
+
+CRED_Pocakking=Đã tạo BigBaseV2, đây là điểm khởi đầu tuyệt vời.
+CRED_QuickNET=Chia sẻ kiến thức của mình về GTA và C++ và trả lời những câu hỏi ngu ngốc.
+CRED_UPD=Đã giúp giữ cho menu được cập nhật bằng cách chia sẻ bản đồ chéo.
+CRED_alloc8or=Duy trì DB gốc của mình và chia sẻ nhiều dữ liệu hữu ích.
+CRED_SirMestre=Đã tạo LittleInjector, công cụ này giúp tạo Launchpad.
+CRED_Give-Two=Đã tạo ScriptHookV, giúp kết xuất DirectX.
+CRED_gir489=Đã chia sẻ kiến thức của mình về GTA và tạo ra bigbasev2-fix.
+
+! Check the "Languages" section at https://en.wikipedia.org/wiki/Fork_(software_development)
+CRED_Ryan=Đã tạo ra Pluto, nhánh của Lua mà chúng tôi sử dụng.
+
+CRED_BE=Đã hỗ trợ cho phép bạn sử dụng Stand bất chấp BattlEye.
+
+CRED_UPX=Cho phép Stand DLL nhỏ hơn thực tế.
+CRED_UnknownCheats=Kim Cương Trong Bùn
+CRED_StackOverflow=Tự Nhiên
+
+CRED_LANG=Người Dịch
+
+CRED_Thimo=Duy trì bản dịch tiếng Hà Lan của Stand.
+CRED_moue=Duy trì bản dịch tiếng Litva của Stand.
+CRED_aeronyx=Duy trì bản dịch tiếng Bồ Đào Nha của Stand.
+CRED_zzzz=Duy trì bản dịch tiếng Trung của Stand.
+CRED_IceDoomfist=Duy trì bản dịch tiếng Hàn của Stand.
+CRED_99Anvar99=Duy trì bản dịch tiếng Nga của Stand.
+CRED_Lancito01=Duy trì bản dịch tiếng Tây Ban Nha của Stand.
+CRED_Itreax=Duy trì bản dịch tiếng Pháp của Stand.
+CRED_Emre=Duy trì bản dịch tiếng Thổ Nhĩ Kỳ của Stand.
+CRED_DumbBird=Duy trì bản dịch tiếng Ba Lan của Stand.
+CRED_JA=Duy trì bản dịch tiếng Nhật của Stand.
+CRED_VI=Duy trì bản dịch tiếng Việt của Stand.
+CRED_IT=Duy trì bản dịch tiếng Ý của Stand.
+
+MISC=Điều Khác
+
+CRED_YOU=... và bạn!
+CRED_YOU_H=Có, bạn sẽ nhận được cúp tham gia. Nhưng nghiêm túc mà nói, cảm ơn bạn đã ủng hộ Stand, báo lỗi và gợi ý tính năng!
+
+!!!!!!!!!!!
+!! Stand !!
+!!!!!!!!!!!
+
+CMDSCRPT=Hộp Lệnh Tập Lệnh
+
+ASI=ASI Mods
+ASI_H=Cho phép bạn sử dụng các mod ASI với triển khai ScriptHookV của Stand.
+ASICE=Có vẻ như mod ASI này không tương thích hoặc đã hoàn thành công việc của nó rất nhanh.
+ASI_D_T=Có vẻ như mod ASI này không được tải đúng cách.
+
+ASI_TMP=Sử Dụng Thư Mục Tạm
+ASI_TMP_H=Điều này cho phép bạn khởi động lại các mod ASI không hỗ trợ gỡ tải, nhưng có thể khiến các mod ASI đọc/ghi cấu hình trong thư mục tạm.
+
+ASI_DOC=Lừa Kiểm Tra Trực Tuyến
+ASI_DOC_H=Cho phép bạn sử dụng các mod ASI từ chối hoạt động trực tuyến.
+
+LUA=Tập Lệnh Lua
+LUA_H=Cho phép bạn chạy các tập lệnh được viết cho Stand in Lua và/cho Pluto.
+
+LUA_RNNG2=Đang Chạy {}
+LUA_START=Bắt Đầu Tập Lệnh
+LUA_STOP=Dừng Tập Lệnh
+
+CMPTLY=Lớp Tương Thích
+CMPTLYS=Lớp Tương Thích
+
+RESTRCS=Hạn Chế
+
+LUA_REPODEV=Bạn đang sửa đổi tập lệnh đã được cài đặt qua kho lưu trữ, vì vậy hãy cẩn thận rằng những thay đổi của bạn sẽ bị ghi đè bởi bản cập nhật tiếp theo của tập lệnh.
+
+FILEGON=Tập tin không còn tồn tại.
+
+LUACFGPRST_0=Người Dùng
+
+! Currently unused.
+LUACFGPRST_1=Người Dùng Khó Tính
+
+LUACFGPRST_2=Nhà Phát Triển
+
+DEVHINT=Có vẻ như bạn đang phát triển tập lệnh Lua. Hãy cân nhắc sử dụng cài đặt sẵn của nhà phát triển trong Lua Scripts > Cài đặt để bạn biết về các vấn đề tiềm ẩn.
+
+DISINACC=Vô Hiệu Hoá Internet
+
+FRCSILNTSTRT=Buộc Khởi Động Im Lặng
+FRCSILNTSTP=Buộc Dừng Im Lặng
+ENFRCSILNTSTRT=Thực Thi Khởi Động Im Lặng
+ENFRCSILNTSTP=Thực Thi Dừng Im Lặng
+
+YES_NOTIFY=Có + Thông Báo
+
+WRNOS=Cảnh Báo Trước Khi Chạy Tập Lệnh Nguy Hiểm
+LUA_W_OS=Tập lệnh này chứa mã yêu cầu quyền truy cập trực tiếp vào hệ thống của bạn. Đừng tiếp tục nếu bạn không tin tưởng vào nguồn của nó.
+
+WRNMNY=Cảnh Báo Trước Khi Chạy Tập Lệnh Kiếm Tiền
+LUA_W_MNY=Kịch bản này có liên quan đến tiền bạc. Chúng tôi không thể đảm bảo rằng tài khoản của bạn sẽ không bị cấm một thời gian sau khi sử dụng tập lệnh này (vì lệnh cấm bị trì hoãn) chúng tôi không thực hiện kiểm tra độ an toàn đối với nội dung do người dùng tạo.
+
+LUA_SCAM=Nếu bạn trả tiền cho tập lệnh này, BẠN ĐÃ BỊ LỪA ĐẢO! 99% nội dung được cung cấp miễn phí trong kho lưu trữ của chúng tôi hoặc trên Discord. Bạn đã trả tiền cho những kẻ lừa đảo để lừa đảo, nó không giúp ích bất kỳ điều gì và không trả tiền cho những người sáng tạo ban đầu.
+
+4DEV=Cho Nhà Phát Triển
+
+REPO=Kho Lưu Trữ
+REPO_H_LUA=Kho lưu trữ cho phép bạn dễ dàng truy cập vào một số tập lệnh lua.
+
+REPO_P_H=Bạn đã cài đặt cái này từ kho lưu trữ. Stand sẽ giữ cho nó được cập nhật.
+
+REPO_MISNGLCL=Gói {} thiếu tệp cục bộ, đang thực hiện cập nhật để khắc phục sự cố này.
+REPO_DLFAIL=Không thể tải xuống {file} cho gói {package}
+
+SECCONT_NCRED=Để truy cập nội dung được bảo mật này, Stand cần được kích hoạt.
+SECCONT_NAVAIL=Không thể truy cập nội dung được bảo mật này.
+
+VER=Phiên Bản
+ATR=Tác Giả
+
+DEPS=Phụ Thuộc
+DEP_M_O=Phần phụ thuộc được đặt là thủ công.
+DEP_M_F=Phần phụ thuộc không còn được đánh dấu là cài đặt thủ công.
+
+HELP=Nhận Hỗ Trợ Từ Stand
+
+WEB2=Giao Diện Web
+WEB2_H=Giao diện web cho phép bạn sử dụng Stand từ trình duyệt, ngay cả trên điện thoại thông minh của bạn.
+WEB=Mở Giao Diện Web
+WEB_T=Bây giờ bạn đang sử dụng giao diện web. :O
+WEB_T_L=Bạn không còn sử dụng giao diện web.
+
+RELAY_C=Đang kết nối tới {}...
+RELAY_E=Không thể kết nối với trung gian ({}).
+RELAY_L=Kết nối với máy chủ trung gian bị mất.
+
+TESTS=Thử Nghiệm
+
+CLRNOTIFS=Xoá Thông Báo
+CLRNOTIFS_H=Xoá thông báo hệ thống của Stand.
+
+EMPTYLOG=Log.txt Trống
+EMPTYLOG_H=Làm sạch %appdata%/Stand/Log.txt của bạn.
+EMPTYLOG_T=Log trống rỗng :)
+
+FNDCMD=Tìm Lệnh
+FNDCMD_H=Cho phép bạn tìm các lệnh trong Stand bằng tên và văn bản trợ giúp.
+
+CTXSTAR=Lưu
+CTXSTAR_H=Lưu lệnh này để bạn có thể tìm thấy nó trong {}.
+
+CMDSTARS=Lệnh Đã Lưu
+CMDSTARS_H=Liệt kê tất cả các lệnh bạn đã lưu bằng tùy chọn trong menu ngữ cảnh.
+
+CON=Bảng Điều Khiển
+
+LNDFT=Các Lệnh Có Trạng Thái Không Mặc Định
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST=Tạo Tính Năng (vi).txt
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_H=Lưu tất cả các lệnh hiện có trong %appdata%/Stand/Features (vi).txt với văn bản trợ giúp và cú pháp của chúng.
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_T=Đã lưu danh sách tính năng vào %appdata%/Stand/Features (vi).txt :D
+
+FTRLST_1OPTN=Một Lựa Chọn
+FTRLST_OPTNS={} Lựa Chọn
+FTRLST_MOPTNS={} Lựa Chọn Khác
+
+PERMS=Quyền
+FTRLST_OTHP=Có thể được người chơi khác sử dụng với quyền {}.
+FTRLST_R=Dành Riêng Cho Phiên Bản Regular
+FTRLST_U=Dành Riêng Cho Phiên Bản Ultimate
+
+PERM_F=Lệnh Thân Thiện
+PERM_N=Lệnh Trung Lập
+PERM_S=Lệnh Spawn
+PERM_R=Lệnh Thô Lỗ
+PERM_A=Lệnh Tích Cực
+PERM_T=Lệnh Tiêu Cực
+
+UNLD=Gỡ Stand
+UNLD_H=Loại bỏ Stand khỏi trò chơi cho đến khi bạn nạp lại nó.
+UNLD_T=Stand cua ban da bien mat.
+
+BADBOY=Bạn vừa cố đá một Người dùng Stand khác họ không làm gì đáng bị như vậy. Hãy đối xử với người khác như cách bạn muốn được họ đối xử. Stand của bạn sẽ hoạt động trở lại sau vài giây.
+
+NWOOM=Mạng đã hết bộ nhớ cho một mạng ngang hàng. Loại bỏ người đang cố đá bạn hoặc rời khỏi phiên.
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! State & Profiles !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+PRFLS=Hồ Sơ
+PRFLS_H=Cấu hình cho phép bạn lưu và tải trạng thái của tất cả các lệnh.
+
+NEWPRFL=Tạo Hồ Sơ
+NEWPRFL_H=Lưu trạng thái của mọi lệnh vào một hồ sơ mới.
+
+DELPRFL_S=Đã xóa thành công hồ sơ {}.
+DELPRFL_F=Không xóa được hồ sơ {}. Hãy thử xóa tập tin theo cách thủ công.
+
+LOAD=Tải
+LSTATE=Tải Trạng Thái
+LSTATE_H_CTX2=Áp dụng trạng thái từ hồ sơ hoạt động của bạn cho lệnh này.
+LSTATE_H2=Áp dụng trạng thái từ hồ sơ này cho mọi lệnh.
+LSTATE_T2=Trạng thái được áp dụng từ hồ sơ {}. :)
+LSTATE_T_CTX2=Đã áp dụng trạng thái từ hồ sơ {profile} cho {command}. :)
+
+SAVE=Lưu
+SSTATE=Lưu Trạng Thái
+SSTATE_H_CTX2=Lưu trạng thái của lệnh này vào hồ sơ hoạt động của bạn.
+SSTATE_H2=Lưu trạng thái của mọi lệnh vào hồ sơ này.
+SSTATE_T2=Đã lưu trạng thái vào hồ sơ {}. :)
+SSTATE_T_CTX=Đã lưu trạng thái của {command} vào hồ sơ {profile}. :)
+
+AUTOLOAD=Tải Khi Nạp
+
+AUTOSAVE2=Tự Động Lưu
+AUTOSAVE2_H=Luôn cập nhật hồ sơ này khi bạn sử dụng Stand.
+AUTOSAVE2_H_T=Tính năng tự động lưu sẽ được bật lại vào lần tiếp theo bạn nạp Stand.
+AUTOSAVE2_T=Không cần, hồ sơ này sẽ được lưu tự động. :)
+
+GODFLT=Áp Dụng Trạng Thái Mặc Định
+GODFLT_H=Đặt lại tất cả các lệnh về trạng thái mặc định.
+GODFLT_T=Áp dụng trạng thái mặc định.
+GODFLT_CTX=Đã áp dụng trạng thái mặc định cho {}. :)
+
+RGODFLT=Áp Dụng Trạng Thái Mặc Định Cho Phần Tử Con
+RGODFLT_CTX=Đã áp dụng trạng thái mặc định cho tất cả phần tử con của {}. :)
+
+PRFL_H_ACTV=Đây là hồ sơ hoạt động của bạn.
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Appearance !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+STTNGS_TXT=Phông Chữ & Văn Bản
+
+STFNT=Đặt Phông Chữ
+
+CMBINTXT=Hộp Lệnh Nhập Văn Bản
+TXT_S=Chữ Bé
+
+TXTSCL=Tỉ Lệ Văn Bản
+
+OFF_X=X Offset
+OFF_Y=Y Offset
+
+TXTBOX=Hiển Thị Hộp Giới Hạn Văn Bản
+
+FNTPRST=Sử Dụng Phông Chữ Có Sẵn
+FNTPRST_H_YAHEI=Phông chữ mặc định của Stand.
+FNTPRST_H_NANUMGOTHIC=Phông chữ phụ của Stand cho tiếng Hàn
+FNTPRST_H_BEVIETNAM=Phông chữ phụ của Stand cho tiếng Việt
+
+RLDFNT=Tải Lại Font
+
+SPRS=Kết Cấu
+
+LFTBND=Bên Trái
+LFTBND_1=Chỉ Chuyển Đổi
+LFTBND_1C=Chỉ Chuyển Đổi, Gọn Gàng
+LFTBND_2=Tất Cả Lệnh
+LFTBND_2C=Tất Cả Lệnh, Gọn Gàng
+
+RLDSPR=Tải Lại Kết Cấu
+
+HDR=Tiêu Đề
+2HIDE=Biến Mất
+CUS=Tuỳ Chỉnh
+
+FRMINT=Thời Gian Khung
+
+SCRLBR=Thanh Cuộn
+SCRLBR_1=Bật Cho Danh Sách Lớn
+
+LSTWDT=Chiều Rộng Danh Sách
+LSTHHT=Chiều Cao Danh Sách
+
+WDT=Chiều Rộng
+HHT=Chiều Cao
+
+SPCSZE=Kích Thước Đệm
+
+LERP=Cuộn Mượt
+
+BGBLR=Làm Mờ Nền
+BGBLR_H=Lưu ý rằng các giá trị cao hơn này đòi hỏi GPU của bạn cực kỳ cao.
+HDR_BGBLR_H=Chỉ nên bật cho các tiêu đề có độ trong suốt vì sẽ lãng phí tài nguyên nếu tạo ra hiệu ứng hình ảnh bị ẩn hoàn toàn.
+
+INFOTXT=Thông Tin Văn Bản
+
+ALGN=Căn Chỉnh
+TA=Căn Chỉnh Văn Bản
+
+ALIGN_TL=Trên Cùng Bên Trái
+ALIGN_TC=Trên Cùng Ở Giữa
+ALIGN_TR=Trên Cùng Bên Phải
+ALIGN_CL=Ở Giữa Bên Trái
+ALIGN_CC=Ở Giữa
+ALIGN_CR=Ở Giữa Bên Phải
+ALIGN_BL=Dưới Cùng Bên Trái
+ALIGN_BC=Dưới Cùng Ở Giữa
+ALIGN_BR=Dưới Cùng Bên Phải
+
+DRPSHDW=Đổ Bóng
+
+SHWNME=Hiện Tên
+SHWLICON=Hiện Biểu Tượng Bên Trái
+SHWRICON=Hiện Biểu Tượng Bên Phải
+
+ICUTXTCLR=Biểu Tượng Dùng Màu Văn Bản
+
+ADDRBAR=Thanh Địa Chỉ
+
+SHWCRLSTNLY=Chỉ Hiển Thị Danh Sách Hiện Tại
+
+ADDRSEP=Dấu Phân Cách Địa Chỉ
+
+WDTAFFBSCRLBR=Chiều Rộng Bị Ảnh Hưởng Bởi Thanh Cuộn
+
+WDTAFFBCLMNS=Chiều Rộng Bị Ảnh Hưởng Bởi Cột
+
+CTX_ADDR=Sao Chép Địa Chỉ
+CTX_ADDR_0=Định Dạng Của Tôi
+CTX_ADDR_1=Định Dạng Mặc Định
+CTX_ADDR_2=Định Dạng API
+CTX_ADDR_3=Liên Kết Tập Trung
+
+BRD=Ranh Giới
+
+RNDD=Làm Tròn
+
+MAXCLMNS=Số Cột Tối Đa
+
+MNUHGT=Lệnh Hiển Thị Tối Đa
+
+CRS=Con Trỏ
+
+SCRLGP=Khoảng Cách Cuộn
+CRSPAD_H=Đặt số lượng lệnh tối thiểu bạn sẽ thấy bên dưới hoặc bên trên lựa chọn của mình trừ khi bạn ở đầu hoặc cuối danh sách.
+
+CMDINFOTXT=Văn Bản Thông Tin Lệnh
+
+BLWTBS=Tab Dưới
+
+RPOS_L=Trái
+RPOS_B=Dưới
+RPOS_R=Phải
+RPOS_T=Trên
+
+! As in the distance between menu components
+PDDGN=Phần Đệm
+
+SHWHLPTXT=Hiện Văn Bản Trợ Giúp
+
+SHWSYNTX=Hiện Cú Pháp Lệnh
+
+SHWSLDBHV=Cho Biết Hành Vi Của Thanh Trượt
+
+SHWOTHP=Cho Biết Nếu Người Chơi Khác Có Thể Dùng
+
+SHWCMDOWNR=Hiện Sở Hữu Tập Lệnh
+SHWCMDOWNR_T=Lệnh này được thêm bởi {}.
+
+NOTFS=Thông Báo
+
+TYP=Loại
+STNDNTF_M=Stand, Cạnh Bản Đồ
+STNDNTF_C=Stand, Vị Trí Tuỳ Chỉnh
+
+CUSTPOS=VỊ Trí Tuỳ Chỉnh
+CUSTPOS_H=Điều này sẽ chỉ có hiệu lực với loại được đặt thành "Stand, Vị trí tùy chỉnh".
+
+INVFLOW=Đảo Ngược Luồng
+
+BRDCLR=Màu Viền
+
+FLSHCLR=Màu Flash
+
+FLSHNTF=Thông báo Flash
+
+TIMNG=Thời Gian
+READSPD=Tốc Độ Đọc (WPM)
+READSTRT=Độ Trễ Bắt Đầu Đọc (ms)
+MINDUR=Thời Lượng Tối Thiểu (ms)
+MAXDUR=Thời Lượng Tối Đa (ms)
+SAMPNOT=Hiển Thị Thông Báo Mẫu
+
+SIZE_S=Nhỏ
+SIZE_M=Trung Bình
+SIZE_L=Lớn
+
+MAXSHWMCHCMD=Hiển Thị Tối Đa Các Lệnh Phù Hợp
+
+KPDRFCLS=Giữ Bản Nháp Khi Đóng
+
+SHWBI=Hiển Thị Hướng Dẫn Nút
+
+SHWCRSPOS=Hiện Vị Trí Con Trỏ
+SHWCRSPOS_H=Chuyển đổi chế độ hiển thị của chỉ dẫn vị trí con trỏ ở phía trên bên phải giao diện người dùng trong trò chơi của Stand.
+
+CRSPOSIDIV=Vị Trí Con Trỏ Bao Gồm Các Dải Phân Cách
+
+! Root as in the root of the command tree, which in this context is the text that reads "Stand 0.69 (Regular)" etc.
+RN=Tên Gốc
+
+RN_RNDBOOL=Đại diện cho đội mà tài khoản Stand của bạn đã được chỉ định ngẫu nhiên.
+RN_100=Cho Nguời Dùng Stand 100(.x).
+RN_EA=Cho Người Dùng Trước Bản Stand 100.
+RN_U=Cho Người Dùng Stand Ultimate
+RN_EU=Cho ai đã lãng phí 100 euro cho Phiên bản Ultimate/Toxic đầu tiên.
+
+BKRST=Đặt Lại Con Trỏ
+BKRST_H=Di chuyển con trỏ lên đầu danh sách khi nút 'quay lại' được nhấn trong khi không có gì để quay lại.
+
+BKCLS=Trở Lại Để Tắt
+BKCLS_H=Cho phép đóng menu Stand bằng cách nhấn quay lại trong khi không còn gì để quay lại.
+
+INJOPEN2=Mở Sau Khi Nạp
+
+PRFILVAL=Nhập Giá Trị Hiện Tại Cho Hộp Lệnh
+
+CMDTP_S=Thanh Trượt
+CMDTP_S_N=Thanh Trượt Số
+CMDTP_AV=Nhập Văn Bản
+
+SELDIV=Bộ Chia Có Thể Chọn
+SELNA=Thanh Trượt N/A Có Thể Chọn
+
+RHTBNDVAL=Giá Trị Bên Phải
+
+LANG=Ngôn Ngữ
+LANG_H=Nếu bạn không thể hiểu ngôn ngữ mà văn bản này được viết, có thể thay đổi ngôn ngữ.
+LANG_H2=Bản dịch này hiện không được duy trì. Hãy liên lạc nếu bạn nghĩ rằng bạn có thể cập nhật nó.
+
+STRMPRF=Kết Xuất Trực Tuyến
+STRMPRF_H=Ngăn không cho phần mềm phát trực tuyến hiển thị Stand nếu phần mềm này sử dụng DirectX/chụp trò chơi.
+
+ENTPREVS=Xem Trước Thực Thể
+DENTPREVS=Tắt Xem Trước Vật Thể
+OPQ=Mờ Đục
+ENTPREVROTSPD=Tốc Độ Quay
+ADDPREVDISTP=Khoảng Cách Nhân Vật Thêm Vào
+ADDPREVDISTO=Khoảng Cách Vật Thể Thêm Vào
+ADDPREVDISTV=Khoảng Cách Phương Tiện Thêm Vào
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+CLRS=Màu Sắc
+
+KSPD=Thời Gian Lặp Lại Phím
+KSPD_H=Khoảng thời gian mà bàn phím của bạn được lặp lại trong khi bạn đang giữ một phím.
+
+KHSPD=Thời Gian Lặp Lại Giữ Phím
+KHSPD_H=Khoảng thời gian mà bàn phím của bạn được lặp lại khi bạn nhấn giữ một phím trong một thời gian.
+
+TKSPD=Thời Gian Lặp Lại Phím Cho Tab
+
+WRPINTHLD=Ngắt Dữ Trên Wrap-Around
+
+IPT=Đầu Vào
+
+KSCHM=Sơ Đồ Nhập Phím
+PRSTS=Tuỳ Chọn Có Sẵn
+KSCHM_A=Linh Hoạt
+KSCHM_0=Không Phím Số
+KSCHM_1=Phím Số
+KSCHM_1_E=Trước tiên hãy nhấn bất kỳ phím nào trên bàn phím số của bạn để chứng minh rằng bạn có phím đó. :?
+
+QWQCTX=Phím Tắt Tuỳ Chọn Ngữ Cảnh
+
+MOUSE=Hỗ Trợ Chuột
+MOUSE_H=Lưu ý rằng cách này không hoạt động với phương thức nhập "Windows" do nó liên tục căn giữa con trỏ của bạn.
+
+MOUSEFOCUS=Đặt Vị Trí Con Trỏ Không Dùng Chuột
+
+MOVWTHMSE=Đi Chuyển Với Chuột
+
+CTRLLRSPPRT=Hỗ Trợ Tay Cầm
+
+CTRLLRSCHM=Nhập Sơ Đồ Tay Cầm
+
+HDENFO=Ẩn Thông Tin
+HDENFO_H=Điều này có thể giúp bạn tránh hiển thị thông tin nhạy cảm khi chia sẻ màn hình Stand.
+
+RDCTD=[Ẩn]
+
+HDENME=Ẩn Tên Không Giả Mạo
+HDENME_H=Điều này đề cập đến tên hiển thị trong danh sách thông tin người chơi và không bị ảnh hưởng bởi "Giả Mạo Tên Người Chơi Khác".
+
+HDERID=Ẩn Rockstar ID
+HDEIP=Ẩn Địa Chỉ IP
+HDEGIP=Ẩn GeoIP
+
+B_OC=Mở/Đóng Menu
+B_OC_1=Mở/Đóng Menu 1
+B_OC_2=Mở/Đóng Menu 2
+B_RU=Tab Trước
+B_RD=Tab Sau
+B_MU=Lên
+B_MD=Xuống
+B_ML=Trái
+B_MR=Phải
+B_MC=Nhấp
+B_MB=Trở Lại
+
+DISCRP=Hiển Thị Trạng Thái Trên Discord
+
+CLRCMDS=Màu Lệnh
+PRVWCLRTXR=Xem Trước Màu Trong Kết Cấu
+PRCWCLRLST=Xem Trước Màu Trong Danh Sách
+
+SFX=Hiệu Ứng Âm Thanh
+
+MNUNVRMD=Lời Nhắc Điều Hướng Menu
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings > Session Joining !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSJNG=Tham Gia Phiên
+
+SPCUCON=Suy Đoán Kết Nối
+SPCUCON_H=Cố gắng tăng tốc độ tham gia các phiên thông qua Stand bằng cách kết nối theo suy đoán với máy chủ và lưu một số dữ liệu vào bộ nhớ đệm.
+
+AUTOCHNGTRGT=Tự Động Thay Đổi Chế Độ Nhắm Mục Tiêu
+AUTOCHNGTRGT_H=Điều này chỉ áp dụng khi tham gia phiên qua Stand. Các phương thức tham gia không có hộp thoại luôn thực hiện việc này.
+AUTOCHNGTRGT_T=Đã đặt chế độ nhắm mục tiêu thành {}.
+AUTOCHNGTRGT_T_0=hỗ trợ nhắm
+AUTOCHNGTRGT_T_1=ngắm tự do
+
+REJBLK=Kiểm Tra Việc Tham Gia Có Thành Công Không
+REJBLK_H=Hủy bỏ nỗ lực tham gia nếu máy chủ không cho phép tham gia, ví dụ: Phiên đã đầy.
+REJBLK_T=Có vẻ như máy chủ không cho phép bạn tham gia ngay bây giờ.
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Tunables !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+TNBL=Điều Chỉnh
+TNBL_H=Cho phép bạn kích hoạt một số tính năng mà Rockstar chỉ kích hoạt trong một số sự kiện nhất định.
+
+NINSURPAY=Vô Hiệu Các Khoản Thanh Toán Bảo Hiểm
+NINSURPAY_H=Giúp bạn không phải đóng tiền bảo hiểm khi phá hoại phương tiện cá nhân của người khác.
+
+TNBL_HLWN=Sự Kiện Halloween
+
+TNBL_PYTE=Cây Nấm Peyote
+
+!!!!!!!!!!!!!!!!!!!!
+!! World > Editor !!
+!!!!!!!!!!!!!!!!!!!!
+
+EDTR=Chỉnh Sửa
+
+ROT_L=Xoay Trai
+ROT_R=Xoay Phai
+
+TOOLS=Công Cụ
+
+TP2LKAT=Dịch Chuyển Tới Nơi Tôi Đang Tìm
+DELSPWD=Xoá Tất Cả Spawn
+
+FCSIMNU=Tập Trung Vào Stand
+
+!!!!!!!!!!!!!!!!!!
+!! Asset Hashes !!
+!!!!!!!!!!!!!!!!!!
+
+AST=Asset Hashes
+
+ASTFIX=Sửa Asset Hashes
+ASTFIX_H=Cho phép bạn tham gia các phiên có nội dung đã sửa đổi, thông thường sẽ hiển thị lỗi nội dung không tương thích.
+
+ASTCRC=Asset Checksum
+
+ASTSET=Đặt Asset Checksum
+ASTSET_H=Cho phép bạn nhập asset checksum tùy chỉnh (tối đa 8 chữ số thập lục phân) để hạn chế tìm phiên và phiên của bạn.
+ASTSET_T=Đặt asset checksum của bạn thành {}.
+
+ASTRST=Đặt Lại Asset Checksum
+
+OVRXTR=Ghi Đè Extra Checksum
+
+XTRCRC=Extra Checksum
+XTRCRC_H=Cho phép bạn nhập extra checksum tùy chỉnh (tối đa 8 chữ số hex) để hạn chế tìm phiên và phiên của bạn.
+
+XTRCRC_PRSTS=Extra Checksum: Cài Sẵn
+
+!!!!!!!!!!!!!!!!!
+!! Custom DLCs !!
+!!!!!!!!!!!!!!!!!
+
+CUSTDLC=DLC Tuỳ Chỉnh
+CUSTDLC_H=Cho phép bạn tải các DLC tùy chỉnh như xe bổ sung một cách dễ dàng.
+
+! Don't translate the folder names
+CUSTDLCS_OPNFLD=Mở thư mục "DLC tùy chỉnh", bạn có thể coi thư mục này giống như thư mục "dlcpacks" của GTA, đăng ký và tải các DLC ở đây dễ dàng chỉ bằng một cú nhấp chuột.
+
+CUSTDLC_ETY=DLC đã được tải nhưng không tìm thấy nội dung có thể spawn.
+
+CUSTDLC_SPF=Làm Giả Mô Hình
+CUSTDLC_SPF_H=Giả mạo các mô hình từ các DLC tùy chỉnh đến các mô hình thực sự có trong trò chơi để những người chơi không có DLC tùy chỉnh vẫn có thể nhìn thấy thứ gì đó.

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stand Web Interface</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" crossorigin="anonymous" />
+	<style>
+		abbr {
+			cursor: help;
+		}
+
+		@media (width < 960px) {
+			#root-list-container {
+				width: 100% !important;
+			}
+
+			#root-list-container:has(.uk-sticky-fixed) {
+				padding-left: 0;
+			}
+
+			#root-list {
+				background: #fff;
+				width: auto !important;
+			}
+
+			#root-list.uk-sticky-fixed {
+				width: 100% !important;
+			}
+
+			#content-container {
+				margin-top: -20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="uk-margin-left uk-margin-right uk-margin-top uk-margin-bottom">
+		<h1>Stand Web Interface</h1>
+		<div id="no-mod">
+			<h2>Not connected to Stand</h2>
+			<ul>
+				<li>If this is the PC where Stand is injected, <a onclick="copy_to_clipboard('Stand-Relay-relay1.stand.sh')">click here to instruct Stand to connect to the relay</a>.</li>
+				<li>If you're on a different device, use <b>Stand > Web Interface</b> to get Stand to connect to the relay.</li>
+			</ul>
+		</div>
+		<div id="connected" class="uk-hidden">
+			<button class="uk-button uk-button-default" onclick="document.getElementById('qr-code-container').classList.toggle('uk-hidden');document.querySelector('soup-qr-code').textContent='https://stand.sh/web#'+web_key">QR Code</button>
+			<form onsubmit="return submitcommand()" style="display:inline-block;width:calc(100% - 127px)">
+				<input type="text" id="command-box" class="uk-input" placeholder="Command">
+			</form>
+			<br>
+			<div id="qr-code-container" class="uk-hidden">
+				<br>
+				<soup-qr-code></soup-qr-code>
+			</div>
+			<br>
+			<div class="uk-child-width-auto" uk-grid>
+				<div id="root-list-container">
+					<ul id="root-list" class="uk-tab-left" uk-sticky uk-tab></ul>
+				</div>
+				<div id="content-container">
+					<div id="await-list">
+						<div uk-spinner="ratio: 3"></div>
+					</div>
+					<div id="show-list" class="uk-hidden">
+						<ul id="addressbar" class="uk-breadcrumb uk-hidden"></ul>
+						<ul id="command-list" class="uk-list"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="disconnected" class="uk-hidden">
+			<h2>Disconnected from relay</h2>
+			<p>That could mean a number of things:</p>
+			<ul>
+				<li>You opened the web interface elsewhere</li>
+				<li>Your internet said goodbye</li>
+				<li>The relay went down for maintenance</li>
+			</ul>
+			<p><button class="uk-button uk-button-primary" onclick="location.reload()">Retry</button></p>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
+	<script src="https://use-soup-wasm.calamity.inc"></script>
+	<script src="/common.js"></script>
+	 <script src="lang/en.js?v=24.10.1"></script>
+	 <script src="lang/de.js?v=24.10.1"></script>
+	 <script src="lang/nl.js?v=24.10.1"></script>
+	 <script src="lang/lt.js?v=24.10.1"></script>
+	 <script src="lang/pt.js?v=24.10.1"></script>
+	 <script src="lang/zh.js?v=24.10.1"></script>
+	 <script src="lang/ko.js?v=24.10.1"></script>
+	 <script src="lang/ru.js?v=24.10.1"></script>
+	 <script src="lang/es.js?v=24.10.1"></script>
+	 <script src="lang/fr.js?v=24.10.1"></script>
+	 <script src="lang/tr.js?v=24.10.1"></script>
+	 <script src="lang/pl.js?v=24.10.1"></script>
+	 <script src="lang/ja.js?v=24.10.1"></script>
+	 <script src="lang/vi.js?v=24.10.1"></script>
+	 <script src="lang/it.js?v=24.10.1"></script>
+	<script src="lang/sex.js?v=24.10.1"></script>
+	<script>
+		var active_lang_arr = lang_en,
+		get_localized_text=key=>(active_lang_arr[key]?active_lang_arr[key]:key),
+		get_english_text=key=>(lang_en[key]?lang_en[key]:key),
+		web_key = location.hash.replace("#", "").split("@")[0],
+		ws, dom_pointer, first_tab = false, last_elm, label_count = 0, had_mod = false;
+
+		if(web_key)
+		{
+			location.hash = "";
+			localStorage.setItem("activation_key", web_key);
+		}
+		else
+		{
+			web_key=localStorage.getItem("activation_key");
+		}
+		if(!web_key)
+		{
+			location.href="/account/";
+		}
+		else
+		{
+			ws = new WebSocket("wss://198-251-84-252.viatls.com:4269");
+			ws.onopen = () => {
+				ws.send("license " + web_key);
+			};
+			ws.onmessage = e => {
+				let i = e.data.indexOf(" "),
+				command = e.data,
+				data = "";
+				if(i > 0)
+				{
+					command = e.data.substr(0, i);
+					data = e.data.substr(i + 1);
+				}
+				//console.log(command, data);
+				switch(command)
+				{
+					case "no_mod":
+					document.getElementById("no-mod").classList.remove("uk-hidden");
+					document.getElementById("connected").classList.add("uk-hidden");
+					fetch("https://198-251-89-45.p2ptls.com/pub?topic=" + web_key, {
+						method: "POST",
+						body: "r",
+						mode: "no-cors",
+					});
+					break;
+
+					case "lost_mod":
+					document.getElementById("no-mod").classList.remove("uk-hidden");
+					document.getElementById("connected").classList.add("uk-hidden");
+					clear_pagination();
+					break;
+
+					case "toast":
+					UIkit.notification({
+						message: get_localized_text(data),
+						status: "primary",
+						pos: "bottom-right",
+						timeout: 5000
+					});
+					break;
+
+					case "tabs":
+					document.getElementById("no-mod").classList.add("uk-hidden");
+					document.getElementById("connected").classList.remove("uk-hidden");
+					dom_pointer = document.getElementById("root-list");
+					dom_pointer.innerHTML = "";
+					first_tab = true;
+					break;
+
+					case "b":
+					{
+						let a = document.createElement("a");
+						a.textContent = get_localized_text(data);
+						a.setAttribute("data-me", "");
+						a.onclick = onclick_tab;
+						last_elm = document.createElement("li");
+						last_elm.appendChild(a);
+						last_elm.setAttribute("data-key", data);
+						dom_pointer.appendChild(last_elm);
+						if(first_tab)
+						{
+							request_tab(data);
+							first_tab = false;
+							had_mod = true;
+						}
+						reconsider_tabs_width();
+						break;
+					}
+
+					case "l":
+					{
+						dom_pointer = document.getElementById("command-list");
+						dom_pointer.innerHTML = "";
+						document.getElementById("await-list").classList.add("uk-hidden");
+						document.getElementById("show-list").classList.remove("uk-hidden");
+						let a = document.createElement("a");
+						a.textContent = get_localized_text(data);
+						a.setAttribute("data-me", "");
+						a.onclick = onclick_paginator;
+						let li = document.createElement("li");
+						li.setAttribute("data-key", data);
+						li.appendChild(a);
+						document.querySelector("#addressbar").appendChild(li);
+						if(document.querySelector("#addressbar").childElementCount>1)
+						{
+							document.querySelector("#addressbar").classList.remove("uk-hidden");
+						}
+						break;
+					}
+
+					case "<":
+					document.querySelector("#addressbar").removeChild(document.querySelector("#addressbar").lastElementChild);
+					case "j":
+					dom_pointer = document.getElementById("command-list");
+					dom_pointer.innerHTML = "";
+					document.getElementById("await-list").classList.add("uk-hidden");
+					document.getElementById("show-list").classList.remove("uk-hidden");
+					break;
+
+					case "e":
+					{
+						update_dom_pointer(data);
+						break;
+					}
+
+					case "a":
+					{
+						last_elm = document.createElement("li");
+						let icon_span = document.createElement("span");
+						icon_span.setAttribute("uk-icon", "play-circle");
+						last_elm.appendChild(icon_span);
+						let space_span = document.createElement("span");
+						space_span.textContent = " ";
+						last_elm.appendChild(space_span);
+						let a = document.createElement("a");
+						a.textContent = get_localized_text(data);
+						a.setAttribute("data-me", "");
+						a.onclick = onclick_command;
+						last_elm.appendChild(a);
+						last_elm.setAttribute("data-key", data);
+						dom_pointer.appendChild(last_elm);
+						break;
+					}
+
+					case "i":
+					{
+						last_elm = document.createElement("li");
+						let icon_span = document.createElement("span");
+						icon_span.setAttribute("uk-icon", "menu");
+						last_elm.appendChild(icon_span);
+						let space_span = document.createElement("span");
+						space_span.textContent = " ";
+						last_elm.appendChild(space_span);
+						let a = document.createElement("a");
+						a.textContent = get_localized_text(data);
+						a.setAttribute("data-me", "");
+						a.onclick = onclick_commandlist;
+						last_elm.appendChild(a);
+						last_elm.setAttribute("data-key", data);
+						dom_pointer.appendChild(last_elm);
+						break;
+					}
+
+					case "v":
+					if(data)
+					{
+						let a = document.createElement("a");
+						a.textContent = get_localized_text(data);
+						a.setAttribute("data-me", "");
+						a.onclick = onclick_command;
+						last_elm = document.createElement("li");
+						let span = document.createElement("span");
+						last_elm.appendChild(a);
+						last_elm.appendChild(span);
+						last_elm.setAttribute("data-key", data);
+						dom_pointer = dom_pointer.appendChild(last_elm);
+					}
+					else
+					{
+						dom_pointer = dom_pointer.parentElement;
+					}
+					break;
+
+					case "r":
+					{
+						data = data.split(":");
+						last_elm = document.createElement("li");
+						last_elm.setAttribute("data-key", data[0]);
+						let icon_span = document.createElement("span");
+						icon_span.setAttribute("uk-icon", "quote-right");
+						last_elm.appendChild(icon_span);
+						let space_span = document.createElement("span");
+						space_span.textContent = " ";
+						last_elm.appendChild(space_span);
+						let name_span = document.createElement("span");
+						name_span.textContent = get_localized_text(data[0]);
+						name_span.setAttribute("data-me", "");
+						last_elm.appendChild(name_span);
+						if(data.length > 1)
+						{
+							let value_span = document.createElement("span");
+							value_span.className = "value";
+							value_span.textContent = ": " + data[1];
+							last_elm.appendChild(value_span);
+						}
+						dom_pointer.appendChild(last_elm);
+						break;
+					}
+
+					case "-":
+					{
+						last_elm = document.createElement("li");
+						last_elm.textContent = get_localized_text(data);
+						dom_pointer.appendChild(last_elm);
+						break;
+					}
+
+					case "t":
+					{
+						let input = document.createElement("input");
+						input.type = "checkbox";
+						if(data.substr(0, 1) == "1")
+						{
+							input.checked = true;
+						}
+						input.onchange = onclick_command;
+						last_elm = document.createElement("li");
+						last_elm.appendChild(input);
+						let space_span = document.createElement("span");
+						space_span.textContent = " ";
+						last_elm.appendChild(space_span);
+						let label = document.createElement("label");
+						label.setAttribute("for", input.id = "labeled" + (label_count++));
+						label.textContent = get_localized_text(data.substr(1));
+						label.setAttribute("data-me", "");
+						last_elm.appendChild(label);
+						last_elm.setAttribute("data-key", data.substr(1));
+						dom_pointer.appendChild(last_elm);
+					}
+					break;
+
+					case "n":
+					{
+						update_dom_pointer(data);
+						dom_pointer.querySelector("input").checked = true;
+						break;
+					}
+
+					case "f":
+					{
+						update_dom_pointer(data);
+						dom_pointer.querySelector("input").checked = false;
+						break;
+					}
+
+					case "d":
+					{
+						last_elm = document.createElement("li");
+						last_elm.setAttribute("data-key", data);
+						let icon_span = document.createElement("span");
+						icon_span.setAttribute("uk-icon", "menu");
+						last_elm.appendChild(icon_span);
+						let space_span = document.createElement("span");
+						space_span.textContent = " ";
+						last_elm.appendChild(space_span);
+						let span1 = document.createElement("span");
+						span1.textContent = get_localized_text(data);
+						span1.setAttribute("data-me", "");
+						last_elm.appendChild(span1);
+						let span2 = document.createElement("span");
+						span2.textContent = " ";
+						last_elm.appendChild(span2);
+						let select = document.createElement("select");
+						select.onchange = commandstatechange;
+						last_elm.appendChild(select);
+						dom_pointer.appendChild(last_elm);
+						dom_pointer = select;
+						item_type = "option";
+					}
+					break;
+
+					case ">":
+					{
+						let option = document.createElement("option");
+						option.value = data;
+						option.textContent = get_localized_text(data);
+						option.setAttribute("data-text", data);
+						dom_pointer.appendChild(option);
+						break;
+					}
+
+					case "z":
+					{
+						data = data.split(":");
+						last_elm = document.createElement("li");
+						let icon_span = document.createElement("span");
+						icon_span.setAttribute("uk-icon", "pencil");
+						last_elm.appendChild(icon_span);
+						let space_span = document.createElement("span");
+						space_span.textContent = " ";
+						last_elm.appendChild(space_span);
+						let label = document.createElement("label"),
+						input = document.createElement("input");
+						label.setAttribute("for", input.id = "labeled" + (label_count++));
+						label.textContent = get_localized_text(data[0]);
+						label.setAttribute("data-me", "");
+						last_elm.appendChild(label);
+						let span = document.createElement("span");
+						span.textContent = " ";
+						last_elm.appendChild(span);
+						last_elm.setAttribute("data-key", data[0]);
+						input.type = "number";
+						input.min = data[1];
+						input.max = data[2];
+						input.step = data[3];
+						input.value = data[4];
+						input.onchange = commandstatechange;
+						last_elm.appendChild(input);
+						dom_pointer.appendChild(last_elm);
+					}
+					break;
+
+					case "s":
+					{
+						let select = dom_pointer.querySelector("select");
+						if(select)
+						{
+							dom_pointer = select;
+						}
+						if(dom_pointer.tagName == "SELECT")
+						{
+							Object.values(dom_pointer.children).forEach(e => {
+								e.removeAttribute("selected")
+							});
+							Object.values(dom_pointer.children).forEach(e => {
+								if(e.value == data)
+								{
+									e.setAttribute("selected","selected")
+								}
+							});
+							dom_pointer = dom_pointer.parentNode.parentNode;
+						}
+						else
+						{
+							let input = dom_pointer.querySelector("input");
+							if(input)
+							{
+								input.value = data;
+							}
+							else
+							{
+								let span = dom_pointer.querySelector("span.value");
+								if(span)
+								{
+									span.textContent = ": " + data;
+								}
+							}
+						}
+					}
+					break;
+
+					case "m":
+					{
+						let input = dom_pointer.querySelector("input");
+						if(input)
+						{
+							input.max = data;
+						}
+					}
+					break;
+
+					case "l":
+					if(data)
+					{
+						let li = document.createElement("li"),
+						ul = document.createElement("ul");
+						last_elm = document.createElement("span");
+						last_elm.textContent = get_localized_text(data);
+						last_elm.setAttribute("data-me", "");
+						li.appendChild(last_elm);
+						li.appendChild(ul);
+						li.setAttribute("data-key", data);
+						dom_pointer.appendChild(li);
+						dom_pointer = ul;
+					}
+					else if(dom_pointer.id != "root-list")
+					{
+						dom_pointer = dom_pointer.parentElement.parentElement;
+					}
+					break;
+
+					case "h":
+					{
+						let span = document.createElement("span");
+						span.textContent = " ";
+						last_elm.appendChild(span);
+						let abbr = document.createElement("abbr");
+						abbr.setAttribute("data-title", data);
+						abbr.setAttribute("title", get_localized_text(data));
+						abbr.textContent = "?";
+						last_elm.appendChild(abbr);
+					}
+					break;
+
+					case "c":
+					{
+						let span = document.createElement("span");
+						span.textContent = " ";
+						last_elm.appendChild(span);
+						let abbr = document.createElement("abbr");
+						let commands = data.split(" ");
+						abbr.setAttribute("title", "Command" + (commands.length == 1 ? "" : "s") + ": " + commands.join(", "));
+						abbr.textContent = "C";
+						last_elm.appendChild(abbr);
+					}
+					break;
+
+					case "show_command_box":
+					{
+						let input = document.getElementById("command-box");
+						input.value = data;
+						input.focus();
+					}
+					break;
+
+					case "lang":
+					active_lang_arr=data==3?[]:window["lang_" + data];
+					document.querySelectorAll("[data-key]").forEach(e=>{
+						e.querySelector("[data-me]").textContent=get_localized_text(e.getAttribute("data-key"));
+					});
+					document.querySelectorAll("[data-text]").forEach(e=>{
+						e.textContent=get_localized_text(e.getAttribute("data-text"));
+					});
+					document.querySelectorAll("[data-title]").forEach(e=>{
+						e.setAttribute("title",get_localized_text(e.getAttribute("data-title")));
+					});
+					reconsider_tabs_width();
+					break;
+				}
+			};
+			ws.onclose = () => {
+				if(had_mod)
+				{
+					document.getElementById("no-mod").classList.add("uk-hidden");
+					document.getElementById("connected").classList.add("uk-hidden");
+					document.getElementById("disconnected").classList.remove("uk-hidden");
+				}
+			};
+		}
+
+		function update_dom_pointer(data)
+		{
+			//console.log(data);
+			dom_pointer = document.querySelector("#command-list [data-key='"+data+"']");
+		}
+
+		function clear_pagination()
+		{
+			document.querySelector("#addressbar").innerHTML="";
+			document.querySelector("#addressbar").classList.add("uk-hidden");
+		}
+
+		function request_tab(key)
+		{
+			clear_pagination();
+			paginate(key);
+		}
+
+		function await_list()
+		{
+			document.getElementById("await-list").classList.remove("uk-hidden");
+			document.getElementById("command-list").innerHTML="";
+			document.getElementById("show-list").classList.add("uk-hidden");
+		}
+
+		function paginate(path)
+		{
+			ws.send("p "+path);
+			await_list();
+		}
+
+		function onclick_tab(e)
+		{
+			if(document.querySelector("#addressbar").childElementCount!=1||document.querySelector("#addressbar").children[0].getAttribute("data-key")!=e.target.parentElement.getAttribute("data-key"))
+			{
+				request_tab(e.target.parentElement.getAttribute("data-key"));
+			}
+		}
+
+		function onclick_paginator(e)
+		{
+			let elm=e.target.parentElement,
+			path=elm.getAttribute("data-key"),
+			delelm=elm;
+			if(elm.nextElementSibling)
+			{
+				let hadprev=false;
+				while(elm.previousElementSibling)
+				{
+					hadprev=true;
+					elm=elm.previousElementSibling;
+					path=elm.getAttribute("data-key")+">"+path;
+				}
+				paginate(path);
+				while(delelm)
+				{
+					let _delelm=delelm;
+					delelm=delelm.nextElementSibling;
+					_delelm.parentNode.removeChild(_delelm);
+				}
+				if(!hadprev)
+				{
+					document.querySelector("#addressbar").classList.add("uk-hidden");
+				}
+			}
+		}
+
+		function onclick_command(e)
+		{
+			ws.send("k " + e.target.parentElement.getAttribute("data-key"));
+		}
+
+		function onclick_commandlist(e)
+		{
+			onclick_command(e);
+			await_list();
+		}
+
+		function commandstatechange(e)
+		{
+			ws.send("s " + e.target.parentElement.getAttribute("data-key") + ":" + get_english_text(e.target.value));
+		}
+
+		function submitcommand()
+		{
+			let input = document.getElementById("command-box");
+			ws.send("c " + input.value);
+			input.value = "";
+			return false;
+		}
+
+		var tabswidthtimer,tabswidthinterval;
+		function reconsider_tabs_width()
+		{
+			document.querySelector("#root-list-container").style.width="";
+			clearTimeout(tabswidthtimer);
+			clearInterval(tabswidthinterval);
+			tabswidthinterval=setInterval(()=>{
+				document.documentElement.scrollTop=0;
+			},1);
+			tabswidthtimer=setTimeout(()=>{
+				tabswidthtimer=setTimeout(()=>{
+					clearInterval(tabswidthinterval);
+					document.querySelector("#root-list-container").style.width=document.querySelector("#root-list-container").clientWidth+"px";
+				},50);
+			},50);
+		}
+
+		var prevWidth=document.documentElement.clientWidth
+		window.onresize=()=>{
+			if(prevWidth!=document.documentElement.clientWidth)
+			{
+				prevWidth=document.documentElement.clientWidth;
+				reconsider_tabs_width();
+			}
+		}
+	</script>
+</body>
+</html>

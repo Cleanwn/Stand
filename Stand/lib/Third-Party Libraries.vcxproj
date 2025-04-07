@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{715e3842-0d57-4068-ba22-9d4fa46de633}</ProjectGuid>
+    <RootNamespace>ThirdPartyLibraries</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>_bin\$(Configuration)\</OutDir>
+    <IntDir>_bin\$(Configuration)\int\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>_bin\$(Configuration)\</OutDir>
+    <IntDir>_bin\$(Configuration)\int\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;PLUTO_WARN_GLOBAL_SHADOW;PLUTO_COMMON_GLOBAL_NAMES="menu","players","util","table","string";PLUTO_WARN_NON_PORTABLE_NAME;PLUTO_COMPATIBLE_NEW;PLUTO_COMPATIBLE_CLASS;PLUTO_ILP_ENABLE;PLUTO_LOAD_HOOK=luaS_moderateLoad;PLUTO_LOADFILE_HOOK=luaS_moderateLoadfile;PLUTO_DISABLE_UNMODERATED_LOAD;PLUTO_LOADCLIB_HOOK=luaS_moderateCLib;PLUTO_HTTP_REQUEST_HOOK=luaS_moderateHttpRequest;PLUTO_READ_FILE_HOOK=luaS_moderateReadFile;PLUTO_WRITE_FILE_HOOK=luaS_moderateWriteFile;LUA_USE_LONGJMP;SOUP_USE_INTRIN;_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>..\..\..\Soup\;discord-rpc\include\;fmt\;StackWalker 1.20\;rapidjson 28c59ab\;MinHook 423d1e4\include\;lua\</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <CallingConvention>FastCall</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalOptions>/Zc:__cplusplus /wd4646 %(AdditionalOptions)</AdditionalOptions>
+      <IncludeInUnityFile>false</IncludeInUnityFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;PLUTO_WARN_GLOBAL_SHADOW;PLUTO_COMMON_GLOBAL_NAMES="menu","players","util","table","string";PLUTO_WARN_NON_PORTABLE_NAME;PLUTO_COMPATIBLE_NEW;PLUTO_COMPATIBLE_CLASS;PLUTO_ILP_ENABLE;PLUTO_LOAD_HOOK=luaS_moderateLoad;PLUTO_LOADFILE_HOOK=luaS_moderateLoadfile;PLUTO_DISABLE_UNMODERATED_LOAD;PLUTO_LOADCLIB_HOOK=luaS_moderateCLib;PLUTO_HTTP_REQUEST_HOOK=luaS_moderateHttpRequest;PLUTO_READ_FILE_HOOK=luaS_moderateReadFile;PLUTO_WRITE_FILE_HOOK=luaS_moderateWriteFile;LUA_USE_LONGJMP;SOUP_USE_INTRIN;_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>..\..\..\Soup\;discord-rpc\include\;fmt\;StackWalker 1.20\;rapidjson 28c59ab\;MinHook 423d1e4\include\;lua\</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <CallingConvention>FastCall</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zc:__cplusplus /wd4646 %(AdditionalOptions)</AdditionalOptions>
+      <IncludeInUnityFile>false</IncludeInUnityFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DirectXTK\AlphaTestEffect.cpp" />
+    <ClCompile Include="DirectXTK\BasicEffect.cpp" />
+    <ClCompile Include="DirectXTK\BasicPostProcess.cpp" />
+    <ClCompile Include="DirectXTK\BinaryReader.cpp" />
+    <ClCompile Include="DirectXTK\BufferHelpers.cpp" />
+    <ClCompile Include="DirectXTK\CommonStates.cpp" />
+    <ClCompile Include="DirectXTK\DDSTextureLoader.cpp" />
+    <ClCompile Include="DirectXTK\DGSLEffect.cpp" />
+    <ClCompile Include="DirectXTK\DGSLEffectFactory.cpp" />
+    <ClCompile Include="DirectXTK\DirectXHelpers.cpp" />
+    <ClCompile Include="DirectXTK\DualPostProcess.cpp" />
+    <ClCompile Include="DirectXTK\DualTextureEffect.cpp" />
+    <ClCompile Include="DirectXTK\EffectCommon.cpp" />
+    <ClCompile Include="DirectXTK\EffectFactory.cpp" />
+    <ClCompile Include="DirectXTK\EnvironmentMapEffect.cpp" />
+    <ClCompile Include="DirectXTK\GamePad.cpp" />
+    <ClCompile Include="DirectXTK\GeometricPrimitive.cpp" />
+    <ClCompile Include="DirectXTK\Geometry.cpp" />
+    <ClCompile Include="DirectXTK\GraphicsMemory.cpp" />
+    <ClCompile Include="DirectXTK\Keyboard.cpp" />
+    <ClCompile Include="DirectXTK\Mouse.cpp" />
+    <ClCompile Include="DirectXTK\PrimitiveBatch.cpp" />
+    <ClCompile Include="DirectXTK\ScreenGrab.cpp" />
+    <ClCompile Include="DirectXTK\SimpleMath.cpp" />
+    <ClCompile Include="DirectXTK\SkinnedEffect.cpp" />
+    <ClCompile Include="DirectXTK\SpriteBatch.cpp" />
+    <ClCompile Include="DirectXTK\SpriteFont.cpp" />
+    <ClCompile Include="DirectXTK\ToneMapPostProcess.cpp" />
+    <ClCompile Include="DirectXTK\VertexTypes.cpp" />
+    <ClCompile Include="DirectXTK\WICTextureLoader.cpp" />
+    <ClCompile Include="discord-rpc\src\connection_win.cpp" />
+    <ClCompile Include="discord-rpc\src\discord_register_win.cpp" />
+    <ClCompile Include="discord-rpc\src\discord_rpc.cpp" />
+    <ClCompile Include="discord-rpc\src\rpc_connection.cpp" />
+    <ClCompile Include="discord-rpc\src\serialization.cpp" />
+    <ClCompile Include="fmt\format.cc" />
+    <ClCompile Include="fmt\os.cc" />
+    <ClCompile Include="MinHook 423d1e4\src\buffer.c" />
+    <ClCompile Include="MinHook 423d1e4\src\hde\hde32.c" />
+    <ClCompile Include="MinHook 423d1e4\src\hde\hde64.c" />
+    <ClCompile Include="MinHook 423d1e4\src\hook.c" />
+    <ClCompile Include="MinHook 423d1e4\src\trampoline.c" />
+    <ClCompile Include="Pluto\lapi.cpp" />
+    <ClCompile Include="Pluto\lassertlib.cpp" />
+    <ClCompile Include="Pluto\lauxlib.cpp" />
+    <ClCompile Include="Pluto\lbase32.cpp" />
+    <ClCompile Include="Pluto\lbase64.cpp" />
+    <ClCompile Include="Pluto\lbaselib.cpp" />
+    <ClCompile Include="Pluto\lbigint.cpp" />
+    <ClCompile Include="Pluto\lcatlib.cpp" />
+    <ClCompile Include="Pluto\lcode.cpp" />
+    <ClCompile Include="Pluto\lcorolib.cpp" />
+    <ClCompile Include="Pluto\lcryptolib.cpp" />
+    <ClCompile Include="Pluto\lctype.cpp" />
+    <ClCompile Include="Pluto\ldblib.cpp" />
+    <ClCompile Include="Pluto\ldebug.cpp" />
+    <ClCompile Include="Pluto\ldo.cpp" />
+    <ClCompile Include="Pluto\ldump.cpp" />
+    <ClCompile Include="Pluto\lfunc.cpp" />
+    <ClCompile Include="Pluto\lgc.cpp" />
+    <ClCompile Include="Pluto\lhttplib.cpp" />
+    <ClCompile Include="Pluto\linit.cpp" />
+    <ClCompile Include="Pluto\liolib.cpp" />
+    <ClCompile Include="Pluto\ljson.cpp" />
+    <ClCompile Include="Pluto\llex.cpp" />
+    <ClCompile Include="Pluto\lmathlib.cpp" />
+    <ClCompile Include="Pluto\lmem.cpp" />
+    <ClCompile Include="Pluto\loadlib.cpp" />
+    <ClCompile Include="Pluto\lobject.cpp" />
+    <ClCompile Include="Pluto\lopcodes.cpp" />
+    <ClCompile Include="Pluto\loslib.cpp" />
+    <ClCompile Include="Pluto\lparser.cpp" />
+    <ClCompile Include="Pluto\lschedulerlib.cpp" />
+    <ClCompile Include="Pluto\lsocketlib.cpp" />
+    <ClCompile Include="Pluto\lstarlib.cpp" />
+    <ClCompile Include="Pluto\lstate.cpp" />
+    <ClCompile Include="Pluto\lstring.cpp" />
+    <ClCompile Include="Pluto\lstrlib.cpp" />
+    <ClCompile Include="Pluto\ltable.cpp" />
+    <ClCompile Include="Pluto\ltablib.cpp" />
+    <ClCompile Include="Pluto\ltm.cpp" />
+    <ClCompile Include="Pluto\lundump.cpp" />
+    <ClCompile Include="Pluto\lurllib.cpp" />
+    <ClCompile Include="Pluto\lutf8lib.cpp" />
+    <ClCompile Include="Pluto\lvector3lib.cpp" />
+    <ClCompile Include="Pluto\lvm.cpp" />
+    <ClCompile Include="Pluto\lxml.cpp" />
+    <ClCompile Include="Pluto\lzio.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\Intrin\aes_helper.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\Intrin\crc32_intrin.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\Intrin\hardware_rng.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\Intrin\sha1_transform.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\Intrin\sha256_transform.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\adler32.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\aes.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\alloc.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Asn1Identifier.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Asn1Sequence.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\base.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\base32.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\base64.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Bigint.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Capture.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\cat.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\CpuInfo.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\crc32.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Curve25519.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\DefaultRngInterface.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\deflate.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\DetachedScheduler.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\dnsHttpResolver.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\dnsName.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\dnsRawResolver.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\dnsResolver.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\dnsSmartResolver.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\dnsUdpResolver.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\dns_records.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\ecc.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\filesystem.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\HardwareRng.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\HttpRequest.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\HttpRequestTask.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\IpAddr.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\joaat.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\json.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\JsonArray.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\JsonBool.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\JsonFloat.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\JsonInt.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\JsonNode.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\JsonNull.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\JsonObject.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\JsonString.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\log.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\MimeMessage.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\netConfig.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\netConnectTask.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\netStatus.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Oid.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\os.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\pem.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Promise.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\rand.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Reader.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\rsa.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Scheduler.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\SelfDeletingThread.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Server.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\sha1.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\sha256.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\sha384.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\sha512.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Socket.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\SocketTlsEncrypter.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\SocketTlsHandshaker.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\spaceship.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\string.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Task.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Thread.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\time.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\TrustStore.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\unicode.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Uri.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\urlenc.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\version_compare.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Worker.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\Writer.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\X509Certchain.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\X509Certificate.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\X509RelativeDistinguishedName.cpp" />
+    <ClCompile Include="Pluto\vendor\Soup\soup\xml.cpp" />
+    <ClCompile Include="StackWalker\StackWalker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DirectXTK\AlignedNew.h" />
+    <ClInclude Include="DirectXTK\Audio.h" />
+    <ClInclude Include="DirectXTK\Bezier.h" />
+    <ClInclude Include="DirectXTK\BinaryReader.h" />
+    <ClInclude Include="DirectXTK\BufferHelpers.h" />
+    <ClInclude Include="DirectXTK\CommonStates.h" />
+    <ClInclude Include="DirectXTK\DDS.h" />
+    <ClInclude Include="DirectXTK\DDSTextureLoader.h" />
+    <ClInclude Include="DirectXTK\DemandCreate.h" />
+    <ClInclude Include="DirectXTK\DirectXHelpers.h" />
+    <ClInclude Include="DirectXTK\EffectCommon.h" />
+    <ClInclude Include="DirectXTK\Effects.h" />
+    <ClInclude Include="DirectXTK\GamePad.h" />
+    <ClInclude Include="DirectXTK\GeometricPrimitive.h" />
+    <ClInclude Include="DirectXTK\Geometry.h" />
+    <ClInclude Include="DirectXTK\GraphicsMemory.h" />
+    <ClInclude Include="DirectXTK\Keyboard.h" />
+    <ClInclude Include="DirectXTK\LoaderHelpers.h" />
+    <ClInclude Include="DirectXTK\Mouse.h" />
+    <ClInclude Include="DirectXTK\pch.h" />
+    <ClInclude Include="DirectXTK\PlatformHelpers.h" />
+    <ClInclude Include="DirectXTK\PostProcess.h" />
+    <ClInclude Include="DirectXTK\PrimitiveBatch.h" />
+    <ClInclude Include="DirectXTK\ScreenGrab.h" />
+    <ClInclude Include="DirectXTK\SDKMesh.h" />
+    <ClInclude Include="DirectXTK\SharedResourcePool.h" />
+    <ClInclude Include="DirectXTK\SimpleMath.h" />
+    <ClInclude Include="DirectXTK\SpriteBatch.h" />
+    <ClInclude Include="DirectXTK\SpriteFont.h" />
+    <ClInclude Include="DirectXTK\vbo.h" />
+    <ClInclude Include="DirectXTK\VertexTypes.h" />
+    <ClInclude Include="DirectXTK\WICTextureLoader.h" />
+    <ClInclude Include="discord-rpc\include\discord_register.h" />
+    <ClInclude Include="discord-rpc\include\discord_rpc.h" />
+    <ClInclude Include="discord-rpc\src\backoff.h" />
+    <ClInclude Include="discord-rpc\src\connection.h" />
+    <ClInclude Include="discord-rpc\src\msg_queue.h" />
+    <ClInclude Include="discord-rpc\src\rpc_connection.h" />
+    <ClInclude Include="discord-rpc\src\serialization.h" />
+    <ClInclude Include="fmt\fmt\args.h" />
+    <ClInclude Include="fmt\fmt\chrono.h" />
+    <ClInclude Include="fmt\fmt\color.h" />
+    <ClInclude Include="fmt\fmt\compile.h" />
+    <ClInclude Include="fmt\fmt\core.h" />
+    <ClInclude Include="fmt\fmt\format-inl.h" />
+    <ClInclude Include="fmt\fmt\format.h" />
+    <ClInclude Include="fmt\fmt\os.h" />
+    <ClInclude Include="fmt\fmt\ostream.h" />
+    <ClInclude Include="fmt\fmt\printf.h" />
+    <ClInclude Include="fmt\fmt\ranges.h" />
+    <ClInclude Include="fmt\fmt\std.h" />
+    <ClInclude Include="fmt\fmt\xchar.h" />
+    <ClInclude Include="MinHook 423d1e4\include\MinHook.h" />
+    <ClInclude Include="MinHook 423d1e4\src\buffer.h" />
+    <ClInclude Include="MinHook 423d1e4\src\hde\hde32.h" />
+    <ClInclude Include="MinHook 423d1e4\src\hde\hde64.h" />
+    <ClInclude Include="MinHook 423d1e4\src\hde\pstdint.h" />
+    <ClInclude Include="MinHook 423d1e4\src\hde\table32.h" />
+    <ClInclude Include="MinHook 423d1e4\src\hde\table64.h" />
+    <ClInclude Include="MinHook 423d1e4\src\trampoline.h" />
+    <ClInclude Include="Pluto\lapi.h" />
+    <ClInclude Include="Pluto\lauxlib.h" />
+    <ClInclude Include="Pluto\lcode.h" />
+    <ClInclude Include="Pluto\lcryptolib.hpp" />
+    <ClInclude Include="Pluto\lctype.h" />
+    <ClInclude Include="Pluto\ldebug.h" />
+    <ClInclude Include="Pluto\ldo.h" />
+    <ClInclude Include="Pluto\lerrormessage.hpp" />
+    <ClInclude Include="Pluto\lfunc.h" />
+    <ClInclude Include="Pluto\lgc.h" />
+    <ClInclude Include="Pluto\ljson.hpp" />
+    <ClInclude Include="Pluto\ljumptab.h" />
+    <ClInclude Include="Pluto\ljumptabgcc.h" />
+    <ClInclude Include="Pluto\llex.h" />
+    <ClInclude Include="Pluto\llimits.h" />
+    <ClInclude Include="Pluto\lmem.h" />
+    <ClInclude Include="Pluto\lobject.h" />
+    <ClInclude Include="Pluto\lopcodes.h" />
+    <ClInclude Include="Pluto\lopnames.h" />
+    <ClInclude Include="Pluto\lparser.h" />
+    <ClInclude Include="Pluto\lprefix.h" />
+    <ClInclude Include="Pluto\lstate.h" />
+    <ClInclude Include="Pluto\lstring.h" />
+    <ClInclude Include="Pluto\lsuggestions.hpp" />
+    <ClInclude Include="Pluto\ltable.h" />
+    <ClInclude Include="Pluto\ltm.h" />
+    <ClInclude Include="Pluto\lua.h" />
+    <ClInclude Include="Pluto\lua.hpp" />
+    <ClInclude Include="Pluto\luaconf.h" />
+    <ClInclude Include="Pluto\lualib.h" />
+    <ClInclude Include="Pluto\lundump.h" />
+    <ClInclude Include="Pluto\lvm.h" />
+    <ClInclude Include="Pluto\lzio.h" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\adler32.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\aes.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\alloc.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Asn1Element.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Asn1Identifier.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Asn1Sequence.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Asn1Type.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\AtomicDeque.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\base.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\base32.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\base64.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Bigint.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\bitmask.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Bitset.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\bitutil.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\branchless.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Buffer.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\BufferRefWriter.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\BufferWriter.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Callback.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Capture.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\cat.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\CertStore.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\CidrSubnet4.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\CidrSubnet6.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\CidrSupernet.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\CpuInfo.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\crc32.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\CryptoHashAlgo.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Curve25519.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\DefaultRngInterface.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\deflate.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\DelayedCtor.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\deleter.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\DetachedScheduler.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dnsClass.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dnsHeader.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dnsHttpResolver.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dnsLookupTask.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dnsName.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dnsQuestion.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dnsRawResolver.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dnsResolver.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dnsResource.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dnsSmartResolver.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dnsType.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dnsUdpResolver.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\dns_records.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\ecc.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Endian.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Exception.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\filesystem.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\format.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\fwd.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\HardwareRng.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\HttpRequest.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\HttpRequestTask.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\HttpResponse.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\IntStruct.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\IntVector.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\ioBase.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\IpAddr.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\IpGroups.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Ipv6Maths.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\IstreamReader.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\joaat.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\json.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\JsonArray.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\JsonBool.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\JsonFloat.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\JsonInt.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\JsonNode.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\JsonNodeType.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\JsonNull.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\JsonObject.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\JsonString.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\LcgRng.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\log.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\logSink.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\logStdSink.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\macros.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\memory.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\MimeMessage.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\MimeType.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\NamedCurves.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\netConfig.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\netConnectTask.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\netStatus.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\ObfusString.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Oid.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Optional.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\os.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\OstreamWriter.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Packet.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\pem.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\plusaes.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\PoppedNode.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\PrimitiveRaii.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Promise.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\rand.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Reader.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\ReuseTag.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\RngInterface.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\rsa.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Scheduler.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\scoped_enum.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\SelfDeletingThread.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Server.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\ServerService.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\ServerServiceUdp.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\sha1.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\sha256.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\sha384.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\sha512.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\SharedPtr.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\ShortString.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\signal.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Socket.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\SocketAddr.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\SocketTlsEncrypter.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\SocketTlsHandshaker.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\spaceship.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\string.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\StringBuilder.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\stringifyable.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\StringLiteral.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\StringReader.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\StringRefReader.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\StringRefWriter.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\StringWriter.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\StructMap.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Task.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Thread.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\time.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsAlertDescription.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsCertificate.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsCipherSuite.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsClientHello.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsClientHelloExtEllipticCurves.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsClientHelloExtServerName.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsContentType.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsEncryptedPreMasterSecret.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsExtensionType.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsHandshake.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsHelloExtensions.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsMac.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsProtocolVersion.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsRandom.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsRecord.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsServerHello.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsServerKeyExchange.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsServerRsaData.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TlsSignatureScheme.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TransientToken.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\TrustStore.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\type.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\type_traits.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\unicode.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\UniquePtr.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Uri.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\urlenc.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\version_compare.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\WeakRef.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Worker.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\Writer.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\X509Certchain.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\X509Certificate.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\X509RelativeDistinguishedName.hpp" />
+    <ClInclude Include="Pluto\vendor\Soup\soup\xml.hpp" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\allocators.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\cursorstreamwrapper.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\document.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\encodedstream.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\encodings.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\error\en.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\error\error.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\filereadstream.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\filewritestream.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\fwd.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\clzll.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\itoa.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\meta.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\pow10.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\regex.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\stack.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\strtod.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\internal\swap.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\memorybuffer.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\memorystream.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\pointer.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\prettywriter.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\rapidjson.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\reader.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\schema.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\stream.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\stringbuffer.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\uri.h" />
+    <ClInclude Include="rapidjson 28c59ab\rapidjson\writer.h" />
+    <ClInclude Include="StackWalker\StackWalker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DirectXTK\SimpleMath.inl" />
+    <None Include="DirectXTK\TeapotData.inc" />
+    <None Include="Pluto\vendor\Soup\soup\Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,359 @@
+local function has_cta_link(str)
+	str = str:gsub("点", ".")
+	--str = rs3(str) -- remove spaces around punctuation
+	str = rs(str) -- remove spaces
+	return "www." in str
+		or ".cc" in str
+		or ".cn" in str
+		or (".co" in str and not (".come" in str)) -- .co & .com
+		or ".net" in str
+		or ".top" in str or ".t0p" in str
+		or ".net" in str
+		or ".org" in str
+		or ".tk" in str
+		or ".ru" in str
+		or (".io" in str and not ("gleam.io" in str)) -- gleam.io is almost like a brand name
+		or ".info" in str
+		or ".biz" in str
+		or ".xyz" in str
+		or ".online" in str
+		or ".me" in str
+		or ".icu" in str
+		or ".lol" in str
+		or ".vip" in str
+		or ".shop" in str
+		or ".app" in str
+		or ".mba" in str -- yes, this is a TLD, e.g. 91.mba is a porn site advertising in GTA.
+end
+
+-- String has call to action?
+function c(msg)
+	local msg_nospaces = rs(msg) -- remove spaces
+	msg_nospaces = msg_nospaces:replace("_", ""):replace("\"", "")
+
+	return "discord" in msg -- some advertisers will simply say "discord <username>"
+		or "discord.gg" in msg_nospaces
+		or "dc:" in msg
+		or "dm @" in msg
+		or "sellix.io" in msg_nospaces
+		or "guilded" in msg
+		or "telegram" in msg
+		or "follow to my yt" in msg
+		or "reddit" in msg
+		or ("youtube" in msg and not cw(msg, "saw")) -- trying not to match things like "i saw it on youtube"
+		or "twitter" in msg
+		or "follow twitch" in msg
+		or "join us today" in msg
+		or "visit our website" in msg
+		or "visit now" in msg
+		or "ig   " in msg
+		or (cw(msg, "insta") and not ("i insta" in msg)) -- as in "instagram", not "instant".
+		or cw(msg, "instagram")
+
+		-- Note that for Russian text we can't use 'c', 'е', 'о', 'р' because of the homoglyph logic
+		or "диcкopд" in msg -- (дискорд) Discord
+
+		-- qq吗/qq妈 = qq?
+		or ("qq" in msg and not ("qq?" in msg) and not ("qq？" in msg) and not ("qq吗" in msg) and not ("qq妈" in msg) and not ("qq啊" in msg) and not ("qq阿" in msg) and not ("qq多少" in msg) and not ("发qq" in msg))
+		or ("扣" in msg_nospaces and not ("扣逼" in msg_nospaces) and not ("扣B" in msg_nospaces) and not ("扣1" in msg_nospaces) and not ("扣2" in msg_nospaces) and not ("扣掉" in msg_nospaces) and not ("扣出来" in msg_nospaces)) -- QQ
+		or "君羊" in msg_nospaces -- QQ Group
+		or "官方q" in msg_nospaces -- "official q"
+		or "威信" in msg_nospaces -- WeChat
+		or ("微" in msg_nospaces and not ("微笑" in msg_nospaces) and not ("微小" in msg_nospaces) and not ("微微" in msg_nospaces) and not ("微笑" in msg_nospaces) and not ("卑微" in msg_nospaces) and not ("微信吗" in msg_nospaces) and not ("微信妈" in msg_nospaces) and not ("微信?" in msg_nospaces) and not ("微信？" in msg_nospaces) and not ("微风" in msg_nospaces) and not ("细微" in msg_nospaces) and not ("微弱" in msg_nospaces) and not ("稍微" in msg_nospaces)) -- (short for 微信) WeChat
+		or "薇信" in msg_nospaces -- WeChat
+		or "维信" in msg_nospaces -- WeChat
+		or "v信" in msg_nospaces -- WeChat
+		or "维心" in msg_nospaces -- WeChat
+		or "徽信" in msg_nospaces -- WeChat
+		or "\\/信" in msg_nospaces -- WeChat
+		or "信搜搜" in msg_nospaces -- WeChat
+		or "gtasos" in msg_nospaces -- WeChat user name?
+		or cw(msg, "vx") -- WeChat
+		or cw(msg, "+v") -- Add wechat
+		or "加v" in msg_nospaces -- Add wechat
+		or ("小成序" in msg_nospaces and not ("小成序的" in msg_nospaces) and not ("小成序啊" in msg_nospaces) and not ("小成序阿" in msg_nospaces) and not ("小成序上" in msg_nospaces) and not ("小成序里" in msg_nospaces) and not ("小成序中" in msg_nospaces) and not ("小成序?" in msg_nospaces) and not ("小成序？" in msg_nospaces) and not ("小成序吗" in msg_nospaces)) -- WeChat Mini Program
+		or "需要找:" in msg_nospaces or "需要找：" in msg_nospaces -- Add on QQ or WeChat
+		or cw(msg, "tb") -- "Taobao" (Shopping Site)
+		-- "淘宝战士" is typically used to mock those who purchase recovery services, possess a high level, and have a large amount of money
+		or ("淘宝" in msg_nospaces and not ("淘宝吗" in msg_nospaces) and not ("淘宝妈" in msg_nospaces) and not ("淘宝战士" in msg_nospaces))-- "Taobao" (Shopping Site)
+		or "店铺" in msg_nospaces -- "Taobao" (Shopping Site)
+		or "淘bao" in msg_nospaces -- "Taobao" (Shopping Site)
+		or ("陶宝" in msg_nospaces and not ("陶宝吗" in msg_nospaces) and not ("陶宝妈" in msg_nospaces))-- "Taobao" (Shopping Site)
+		or ("某宝" in msg_nospaces and not ("某宝上" in msg_nospaces) and not ("某宝里" in msg_nospaces)) -- "Taobao" (Shopping Site)
+		or "淘莱" in msg_nospaces -- "Taobao" (Shopping Site)
+		or ("掏宝" in msg_nospaces and not ("掏宝吗" in msg_nospaces) and not ("掏宝妈" in msg_nospaces))-- "Taobao" (Shopping Site)
+		or "要者可加" in msg_nospaces -- "Those who want can add"
+		or "群:" in msg_nospaces or "群：" in msg_nospaces -- QQ Gruop
+		or ("q群" in msg_nospaces and not ("q群里" in msg_nospaces) and not ("q群吗" in msg_nospaces) and not ("q群妈" in msg_nospaces))-- "Join Group"
+		or ("加群" in msg_nospaces and not ("加群吗" in msg_nospaces) and not ("加群妈" in msg_nospaces))-- "Join Group"
+		or ("进群" in msg_nospaces and not ("进群吗" in msg_nospaces) and not ("进群妈" in msg_nospaces)) -- "Join Group"
+		or msg_nospaces:match("群%d") -- Matches "群123456" but not "这里有一群人"
+		or msg_nospaces:match("q%d%d%d%d%d") -- Matches "q3578829253"
+		or ("裙" in msg_nospaces and not ("裙子" in msg_nospaces)) -- Group/Server
+		-- 加q不 = Do you want to add me on QQ?
+		or ("加q" in msg_nospaces and not ("加q不" in msg_nospaces) and not ("加qq不" in msg_nospaces) and not ("加q?" in msg_nospaces) and not ("加q？" in msg_nospaces) and not ("加q吗" in msg_nospaces) and not ("加q妈" in msg_nospaces))
+		or "买挂找" in msg_nospaces -- Come to me to buy mod menus
+		or ("网站" in msg_nospaces and not ("网站多少" in msg_nospaces))-- Website
+		or ("官网" in msg_nospaces and not ("官网多少" in msg_nospaces))-- Website
+		or ("网址" in msg_nospaces and not ("网址多少" in msg_nospaces))-- Website
+		or "spectral" in msg
+		or "truesecurityservices" in msg
+		or "hard2hit" in msg
+		or "softhouse" in msg
+
+		or has_cta_link(msg)
+end
+
+-- Name is call to action?
+function cl(name)
+	return has_cta_link(name)
+end
+
+-- String has promise of good things?
+function p(msg)
+	local msg_nospaces = rs2(msg) -- remove spaces and punctuation
+	msg_nospaces = msg_nospaces:replace("_", ""):replace("\"", "")
+
+	return (cw(msg, "money") and not ("money grab" in msg) and msg ~= "alright, fool. i got a word on a hustle. it's outside a town at this serious dealer's spot, but you don't gotta deal with him. he's been selling chemical to some hillbilly types cookin out their rv. boost the caravan and meet my dudes at the youtool depot off the freeway. you get money, and i'm in the crystal game. it's all good.") -- https://gta.fandom.com/wiki/Meth%27d_Up
+		or cw(msg, "m0ney")
+		or cw(msg, "cash")
+		or cw(msg, "safecash") -- [sic] "Want to gain 100m safecash?"
+		or cw(msg, "gta$")
+		or "gta $" in msg
+		or cw(msg, "rp")
+		or (cw(msg, "level") and not (" level of " in msg) and not ("low level" in msg))
+		or cw(msg, "unlocks")
+		or "unlock all" in msg
+		or "unlockall" in msg
+		or "maxstats" in msg
+		or "max stats" in msg
+		or "lobby boost" in msg
+		or "gifted vehicles" in msg
+		or "we host giveaways" in msg  -- just giveaways may be a bit too broad, e.g. people just saying "they hosted giveaways"
+		or "undetected mod menu" in msg
+		or "gtav mod menu" in msg
+		or "free mod menu" in msg
+		or "free external mod menu" in msg
+		or "buy menu" in msg
+		or "stand ultimate cracked" in msg
+		or cw(msg, "booter")
+		or cw(msg, "vpn")
+		or "i speed up the grind" in msg
+		or "never need to grind again" in msg
+		or "modding service" in msg
+		or "acct modded" in msg
+		or "account modded" in msg
+		or "pirating" in msg
+		or "free tv" in msg
+		or "fast$" in msg_nospaces
+		or "recovery" in msg
+		or "recoveries" in msg
+		or "recivery" in msg
+		or "reciveries" in msg
+		or "gta:online services" in msg
+		or "fast delivery" in msg
+		or "5 trustpilot" in msg
+		or "lots of vouches" in msg
+		or "be rich in gta" in msg
+		or "cheapest prices" in msg
+		or "fast support" in msg
+		or "stable features" in msg
+		or "good protections" in msg
+		or "solid protections" in msg
+		or "free protections" in msg
+		or "menu protections" in msg
+		or "say goodbye to pesky kicks and crashes" in msg
+		or "try it out for a limited time while it's free" in msg
+		or "menus $15" in msg
+		or "account service" in msg
+		or "modd account" in msg
+		or "thecashlounge" in msg -- their ads don't have any "promise of good things", but I suppose the domain name is enough
+		or "levellifters" in msg -- their ads don't have any "promise of good things", but I suppose the domain name is enough
+
+		or "$6 for 500 million" in msg
+		or "$6 for 5000 level" in msg
+		or "$1,000,000,000 only $10" in msg
+		or "$1,000,000,000 for only $10" in msg
+		or "$10 for $750m" in msg
+		or "$15 for $1b" in msg
+		or "$20 for 2b" in msg
+		or msg_nospaces:match("$[1-9]%d=[1-9]")
+		or msg_nospaces:match("$=[1-9]")
+		or msg_nospaces:match("usdt=[1-9]")
+		or msg_nospaces:match("=$[1-9]")
+		or msg_nospaces:match("->$[1-9]")
+		or msg:match("$[1-9] runs")
+		or msg:match("[1-9]$ runs")
+		or "billiondollars-$10" in msg_nospaces
+		or "1billion=8eur" in msg_nospaces
+		or "10$1billon" in msg_nospaces -- [sic]
+		or msg:match("billon en solo %d+ pesos")
+		or msg:match("million for [1-9]%$")
+		or msg:match("millones del juego por [1-9] dolar")
+
+		or "3billion packag" in msg_nospaces
+
+		-- Note that for Russian text we can't use 'c', 'е', 'о', 'р' because of the homoglyph logic
+		or "дeнeг" in msg -- (денег) money
+		or "бaблo" in msg -- (бабло) "loot", used to refer to money, e.g. если надо еще бабло
+
+		or "grana" in msg -- "money"
+		or "dinheiro" in msg -- "money"
+		or "up de contas" in msg -- basically "recovery" in Portuguese
+		or "upar sua conta" in msg -- basically "recovery" in Portuguese
+		or "cuenta full modeada" in msg -- "fully modded account"
+		or "adquirir uma conta" in msg -- "acquire an account"
+		or "tudo desbloqueado" in msg -- "everything unlocked"
+		or "desbloqueia tudo" in msg -- "unlock everything"
+		or "cheteo cuentas" in msg -- "[I] mod accounts"
+		or "cheto cuentas" in msg -- "[I] mod accounts"
+		or "contas 100% upadas" in msg -- something like "account 100% recovered"
+		or "brindes modded" in msg -- "modded gifts"
+		or "status no maximo" in msg -- "status no máximo", Portuguese, "status at maximum"
+		or "colocar sua experiência em outro nivel" in msg -- "colocar sua experiência em outro nível", Portuguese, "take your experience to another level"
+		or "full acesso" in msg -- "full access", used in regards to selling accounts
+		or "escolher qualquer nivel" in msg
+
+		or "唰" in msg_nospaces -- Money
+		or ("刷钱" in msg_nospaces and not ("刷钱的" in msg_nospaces)) -- Money
+		or ("刷金" in msg_nospaces and not ("刷金的" in msg_nospaces)) -- Money
+		or ("金币" in msg_nospaces and not ("爆金币" in msg_nospaces) and not ("些金币" in msg_nospaces) and not ("金币?" in msg_nospaces) and not ("金币？" in msg_nospaces) and not ("金币啊" in msg_nospaces) and not ("金币阿" in msg_nospaces) and not ("金币吗" in msg_nospaces) and not ("金币上" in msg_nospaces) and not ("金币的" in msg_nospaces))  -- money
+		or "钱等级" in msg_nospaces -- Money Level
+
+		or "科伎" in msg_nospaces -- Same meaning as "科技"
+		or ("科技" in msg_nospaces and not ("开科技" in msg_nospaces) and not ("科技?" in msg_nospaces) and not ("科技？" in msg_nospaces) and not ("科技吗" in msg_nospaces) and not ("科技妈" in msg_nospaces))-- hacks
+		or "keji" in msg_nospaces -- "科技" (hacks)
+		or "外挂" in msg_nospaces -- hacks
+		or "辅助" in msg_nospaces -- hacks
+		or "修改器" in msg_nospaces -- hacks
+		or "歪挂" in msg_nospaces -- mod menus
+		or "试用" in msg_nospaces -- Sell Menus
+		or "笼子" in msg_nospaces -- Cage (Promoting mod menu)
+		or "恶搞" in msg_nospaces -- Trolling
+		or "高效踢出" in msg_nospaces -- "efficient kicks"
+
+		or "代练" in msg_nospaces -- Recovery Service
+		or "人工" in msg_nospaces -- Recovery Service
+		or "下单送" in msg_nospaces -- Recovery Service
+		or "信誉" in msg_nospaces -- Recovery Service
+		or "带岛" in msg_nospaces -- Recovery Service
+		or "耍前" in msg_nospaces  -- Recovery Service (Homophone of "刷钱")
+		or ("绝版" in msg_nospaces and not ("绝版的吗" in msg_nospaces) and not ("绝版的妈" in msg_nospaces))-- Recovery Service
+		or ("手工" in msg_nospaces and not ("手工的" in msg_nospaces))-- Recovery Service
+		or ("手刷" in msg_nospaces and not ("手刷的" in msg_nospaces)) -- Recovery Service
+		or "名务" in msg_nospaces -- Recovery Service
+		or "代/练" in msg_nospaces  -- Recovery Service
+		or "秒变富豪" in msg_nospaces  -- Recovery Service
+		or "你还在因为没钱而烦恼么" in msg_nospaces -- Recovery Service
+		or "地堡" in msg_nospaces -- Bunker (Unlock bunker research)
+		or "业务" in msg_nospaces -- Business, Sell Recovery Service
+		or "售后" in msg_nospaces -- After Sales Support (Promotional Words)
+		or "先刷" in msg_nospaces -- Service before payment (Recovery Service)
+		or ("稳定" in msg_nospaces and not ("稳定?" in msg_nospaces) and not ("稳定？" in msg_nospaces) and not ("稳定吗" in msg_nospaces) and not ("稳定妈" in msg_nospaces)) -- Safe
+		or ("封号" in msg_nospaces and not ("封号?" in msg_nospaces) and not ("封号？" in msg_nospaces) and not ("封号吗" in msg_nospaces) and not ("封号妈" in msg_nospaces))-- If banned there will be compensation or claim never to be banned
+
+		or ("有妹子" in msg_nospaces and not ("有妹子?" in msg_nospaces) and not ("有妹子？" in msg_nospaces) and not ("有妹子吗" in msg_nospaces) and not ("有妹子妈" in msg_nospaces) and not ("有妹子在" in msg_nospaces) and not ("有妹子的" in msg_nospaces))  -- There are girls
+		or "组队" in msg_nospaces -- Team up (Encourage newbies to join their QQ groups (where they actually sell recovery services))
+		or "新萌" in msg_nospaces -- Newbies (Encourage newbies to join their QQ groups (where they actually sell recovery services))
+		or ("萌新交流" in msg_nospaces and not ("萌新交流吗" in msg_nospaces) and not ("萌新交流妈" in msg_nospaces) and not ("萌新交流的" in msg_nospaces)) -- newbie chat
+		or ("进群一起玩" in msg_nospaces and not ("进群一起玩不" in msg_nospaces) and not ("进群一起玩?" in msg_nospaces) and not ("进群一起玩？" in msg_nospaces) and not ("进群一起玩吗" in msg_nospaces) and not ("进群一起玩妈" in msg_nospaces) and not ("进群一起玩呗" in msg_nospaces))
+		or ("加群一起玩" in msg_nospaces and not ("加群一起玩不" in msg_nospaces) and not ("加群一起玩?" in msg_nospaces) and not ("加群一起玩？" in msg_nospaces) and not ("加群一起玩吗" in msg_nospaces) and not ("加群一起玩妈" in msg_nospaces) and not ("加群一起玩呗" in msg_nospaces))
+		or ("做任务" in msg_nospaces and not ("做任务不" in msg_nospaces) and not ("做任务?" in msg_nospaces) and not ("做任务？" in msg_nospaces) and not ("做任务吗" in msg_nospaces) and not ("做任务妈" in msg_nospaces) and not ("做任务呗" in msg_nospaces) and not ("做任务吧" in msg_nospaces) and not ("做任务的" in msg_nospaces))  -- Play Missions
+
+		or "解锁" in msg_nospaces -- Unlocks
+		or "解所" in msg_nospaces -- Unlocks
+
+		or "中出" in msg_nospaces -- Sell porn videos
+		or "欧美" in msg_nospaces -- Sell porn videos
+		or "制服" in msg_nospaces -- Sell porn videos
+		or "资源" in msg_nospaces -- Sell porn videos
+		or "偷拍" in msg_nospaces -- Sell porn videos
+		or "丝袜" in msg_nospaces -- Sell porn videos
+		or "色情" in msg_nospaces -- Sell porn videos
+		or "强奸" in msg_nospaces -- Sell porn videos
+		or "轮奸" in msg_nospaces -- Sell porn videos
+		or "乱伦" in msg_nospaces -- Sell porn videos
+		or "乱论" in msg_nospaces -- Sell porn videos
+		or "凌辱" in msg_nospaces -- Sell porn videos
+		or "自慰" in msg_nospaces -- Sell porn videos
+		or "国产" in msg_nospaces -- Sell porn videos
+		or "看片" in msg_nospaces -- Sell porn videos
+		or "后入" in msg_nospaces -- Sell porn videos
+		or "幼女" in msg_nospaces -- Sell porn videos
+		or "小电影" in msg_nospaces -- Sell porn videos
+		or "在线观看" in msg_nospaces -- Sell porn videos
+		or "莉罗" in msg_nospaces -- Sell porn videos
+		or "坚强" in msg_nospaces -- Sell porn videos
+		or "三级p" in msg_nospaces -- "三级片" Porn Videos
+		or "免在成" in msg_nospaces -- Watch porn videos online for free
+		or "免成费" in msg_nospaces -- "Free" Watch porn videos online for free
+		or "在线看" in msg_nospaces -- watch online (Sell porn videos)
+		or "资源" in msg_nospaces -- Resources (Some advertising robots will sell pornographic movies)
+		or "偷拍" in msg_nospaces -- Sneak shots (Some advertising robots will sell pornographic movies)
+		or "偷录" in msg_nospaces -- Sneak shots (Some advertising robots will sell pornographic movies)
+		or "丝袜" in msg_nospaces -- Stockings (Some advertising robots will sell pornographic movies)
+		or "主萝" in msg_nospaces -- a portemanteau of 主播 & 萝莉 (Anchor & Loli) used by some porn advertising bots
+		or "网红自拍分享" in msg_nospaces -- Advertisements about pornographic websites
+		or "网荭自拍分享" in msg_nospaces -- Advertisements about pornographic websites
+		or "网红吃瓜分享" in msg_nospaces -- Advertisements about pornographic websites
+		or "网红片总分享" in msg_nospaces -- Advertisements about pornographic websites
+		or "最新吃瓜" in msg_nospaces -- Advertisement for a pornographic video site
+		or "情色影院" in msg_nospaces -- Advertisements about pornographic websites
+		or ("成人电影" in msg_nospaces and not ("成人电影?" in msg_nospaces) and not ("成人电影？" in msg_nospaces) and not ("成人电影里" in msg_nospaces) and not ("成人电影吗" in msg_nospaces) and not ("成人电影妈" in msg_nospaces) and not ("成人电影的" in msg_nospaces))  -- Adult Movies
+		or "成人影院就在" in msg_nospaces -- Pornographic Advertising
+
+		or "新店开业" in msg_nospaces -- New Store Opening
+		or "诚信" in msg_nospaces -- Good faith
+		or "最低价" in msg_nospaces -- "Lowest price"
+		or "棋牌" in msg_nospaces -- chess and cards (gamble)
+		or "彩票" in msg_nospaces -- lottery
+		or "提升级别" in msg_nospaces -- Upgrade level
+		or "提升等级" in msg_nospaces -- Upgrade level
+		or "等级提升" in msg_nospaces -- Upgrade level
+		or "等级提高" in msg_nospaces -- Upgrade level
+		or "便宜出挂" in msg_nospaces -- Sell mod menus at cheap price
+		or "元带任务到账" in msg_nospaces -- Paid to make money through Missions
+		or ("定制" in msg_nospaces and not ("定制的" in msg_nospaces) and not ("定制?" in msg_nospaces) and not ("定制？" in msg_nospaces) and not ("定制吗" in msg_nospaces) and not ("定制妈" in msg_nospaces)) -- customization
+		or "快去看看好的电影吧" in msg_nospaces -- "watch a good movie"
+end
+
+-- Message has misc promotion?
+function mp(msg)
+	local msg_nospaces = rs2(msg) -- remove spaces and punctuation
+
+	return "varias referencias" in msg
+		or "feito rapidamente" in msg
+		or "forfree" in msg_nospaces
+end
+
+-- Should DM be blocked?
+function dm(sender_rid, text)
+	text = text:lower()
+
+	if "infinitymods.cc" in text or "chaosmodz.org" in text then
+		util.sc_block(sender_rid)
+		return true
+	end
+
+	return false
+end
+
+-- Is Stand Dev RID?
+function d(rid)
+	switch rid do
+		case 208021973: -- BurningGoddess
+		case 209846805: -- OhNoesAnyway
+		case 211597418: -- On-The-Beat
+		case 222973515: -- FoxesAreCool69.
+		case 223707589: -- _auora
+		case 224194124: -- Goddess.Sainan
+		case 228237086: -- yassified_
+		case 228730058: -- nuIlptr
+		case 228857475: -- Goddess..
+		case 236710997: -- cardboard_eater0
+		case 235500704: -- Divine..
+		case 239319916: -- pinkbuttpIug
+			return true
+	end
+	return false
+end

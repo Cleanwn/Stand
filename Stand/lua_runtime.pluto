@@ -1,0 +1,548 @@
+--dummy,R"EOC(--[[Stand Lua Runtime]]--
+pluto_use "0.2.0"
+--@pluto_warnings disable-var-shadow
+
+local threading_status=0
+local implicit_keep_running=false
+local r={}
+local pre_stop_handlers={}
+local function x(e)
+	SCRIPT_SILENT_START=false
+	e=tostring(e)
+	util.toast(SCRIPT_RELPATH..": "..e)
+	util.log(debug.traceback(e,2))
+end
+local function is_callable(f)
+	if type(f) == "function" then
+		return true
+	end
+	if mt := getmetatable(f) then
+		return is_callable(mt.__call)
+	end
+	return false
+end
+local function check_callable(f)
+	if not is_callable(f) then
+		error("Expected a function/callable, got "..tostring(f))
+	end
+end
+function internal_xpcall_ioiqocsdvv(f,...)
+	return xpcall(f,x,...)
+end
+function internal_coroutine_create_hsdkbejsis(f,...)
+	local a={...}
+	local c=coroutine.create(function()
+		internal_xpcall_ioiqocsdvv(f,table.unpack(a))
+	end)
+	table.insert(r,c)
+	coroutine.resume(c)
+	return c
+end
+
+if SCRIPT_MAY_NEED_OS then
+	local og_os_execute=os.execute
+	local og_io_popen=io.popen
+	util.i_really_need_manual_access_to_process_apis=function()
+		os.execute=og_os_execute
+		io.popen=og_io_popen
+	end
+end
+os.execute=nil
+io.popen=nil
+
+os.exit=nil
+
+if not async_http.have_access() then
+	local socket = require"pluto:socket"
+	socket.connect = function()
+		error("socket.connect is not allowed with 'Disable Internet Access' restriction")
+	end
+	package.preload.socket = function()
+		return socket
+	end
+end
+
+-- Data should be kept separate from code, to prevent obfuscation, etc.
+local load=_G.load
+if not util.get_tunable_bool($crypto.joaat("lua_runtime.allow_load")) then
+	_G.load=nil
+end
+
+function internal_menu_toggle_loop_sgmayqvfwr(parent,menu_name,command_names,help_text,f,on_stop,perm=COMMANDPERM_USERONLY)
+	if on_stop ~= nil then
+		check_callable(on_stop)
+	end
+
+	local r, ref
+	local cmd=menu.toggle(parent,menu_name,command_names,help_text,function(s)
+		if s and not (r and util.is_scheduled_in(r)) then
+			r=coroutine.running()
+			repeat
+				f()
+				util.yield_once()
+			until not ref.value
+			r=nil
+			if on_stop ~= nil then
+				on_stop()
+			end
+		end
+	end,false,perm)
+	ref = cmd.ref ? (cmd:ref()) : cmd
+	return cmd
+end
+menu.toggle_loop=internal_menu_toggle_loop_sgmayqvfwr
+
+internal_menu_inline_rainbow_rrzsmxvnda=function(c)
+	local r=menu.internal_create_rainbow_carqdmtrem(c)
+	c:getChildren()[1]:attachBefore(r)
+end
+menu.inline_rainbow=internal_menu_inline_rainbow_rrzsmxvnda
+
+internal_menu_default_and_delete_bqokz2yxr8=function(c)
+	util.create_thread(function()
+		if (menu.get_type(c) & COMMAND_FLAG_LIST) ~= 0 then
+			menu.recursively_apply_default_state(c)
+		else
+			menu.apply_default_state(c)
+		end
+		util.yield()
+		util.yield()
+		menu.delete(c)
+	end)
+end
+menu.default_and_delete=internal_menu_default_and_delete_bqokz2yxr8
+
+util.require_natives=function(version,flavour)
+	if version == nil or version == 0 or version == "" then
+		SCRIPT_SILENT_START=false
+		version=LATEST_NATIVES_VERSION
+		util.toast(SCRIPT_RELPATH..": require_natives called without a version, using "..version,TOAST_ALL)
+	end
+	if SAVEMIGRATION ~= nil then
+		util.internal_emit_bad_practice_w7uoni5ptt("Calling require_natives multiple times doesn't make your script more compatible, just makes it slower to start.")
+	end
+	local f = tostring(version)
+	if f:sub(0, 8) ~= "natives-" then
+		f = "natives-"..f
+	end
+	if flavour ~= nil and flavour ~= "" then
+		f = $"{f}.{flavour}"
+	end
+	local p = f:split(".")[1]
+	util.ensure_package_is_installed("lua/"..p)
+	util.require_no_lag(f)
+end
+util.require_no_lag=function(f)
+	util.execute_in_os_thread(function()
+		require(f)
+	end)
+end
+util.yield_once=coroutine.yield
+util.yield=function(m)
+	if m==nil then
+		util.yield_once()
+	else
+		m=m+util.current_time_millis()
+		repeat
+			util.yield_once()
+		until m<util.current_time_millis()
+	end
+end
+util.on_pre_stop=function(f)
+	table.insert(pre_stop_handlers,f)
+end
+util.try_run=function(f,...)
+	local a={...}
+	return internal_xpcall_ioiqocsdvv(function()
+		f(table.unpack(a))
+	end)
+end
+util.create_thread=internal_coroutine_create_hsdkbejsis
+util.create_tick_handler=function(f,...)
+	local a={...}
+	return internal_coroutine_create_hsdkbejsis(function()
+		while f(table.unpack(a)) ~= false do
+			util.yield_once()
+		end
+	end)
+end
+util.stop_thread=function()
+	util.shoot_thread(coroutine.running())
+	util.yield_once()
+end
+util.shoot_thread=function(c)
+	for i,v in pairs(r) do
+		if v==c then
+			r[i]=nil
+		end
+	end
+end
+util.is_scheduled_in=function(c)
+	for r as v do
+		if v==c then
+			return true
+		end
+	end
+	return false
+end
+util.keep_running=function()
+	if threading_status ~= 2 then
+		-- consolidate implicit & explicit "keep running" signals in first tick
+		threading_status = 1
+	else
+		-- unfortunately, this has to be a coroutine because of ILP
+		internal_coroutine_create_hsdkbejsis(function()
+			while true do
+				util.yield_once()
+			end
+		end)
+	end
+end
+util.get_thread_count=function()--undocumented
+	local c=0
+	for _,v in r do
+		c += 1
+	end
+	return c
+end
+util.stop_all_threads=function()--undocumented
+	r={}
+end
+util.clear_commands_and_event_handlers=function()--undocumented
+	pre_stop_handlers={}
+	util.clear_commands_and_native_event_handlers()
+	util.yield_once()
+	util.yield_once()
+	util.yield_once()
+	util.yield_once()
+end
+util.dispatch_on_pre_stop=function()--undocumented
+	for i,f in ipairs(pre_stop_handlers) do
+		f()
+	end
+end
+util.restart_script=function()
+	util.dispatch_on_pre_stop()
+	util.stop_all_threads()
+	util.create_thread(function()
+		util.clear_commands_and_event_handlers()
+
+		-- Ensure all libraries are re-required
+		for n in package.loaded do
+			package.loaded[n] = nil
+		end
+
+		-- Don't issue double-require natives warning
+		SAVEMIGRATION=nil
+
+		local c,e=loadfile(filesystem.scripts_dir() .. SCRIPT_RELPATH)
+		if c then
+			internal_coroutine_create_hsdkbejsis(c)
+			if implicit_keep_running then
+				util.keep_running()
+			end
+		else
+			util.toast(SCRIPT_RELPATH..": "..e,TOAST_ALL)
+		end
+	end)
+end
+util.stop_script=function()
+	util.request_stop()
+	util.stop_all_threads()
+	util.yield_once()
+end
+util.set_local_player_wanted_level=function(wl)
+	players.set_wanted_level(players.user(), wl)
+end
+
+local function REQUEST_MODEL(model)
+	return native_invoker.unified_void(model, 0x963D27A58DF860AC, "i")
+end
+local function HAS_MODEL_LOADED(model)
+	return native_invoker.unified_bool(model, 0x98A4EB5D89A0C952, "i")
+end
+util.request_model=function(model, timeout=2000)
+	local hash = type(model) == "string" ? util.joaat(model) : model
+	timeout += util.current_time_millis()
+	REQUEST_MODEL(hash)
+	while (not HAS_MODEL_LOADED(hash) and util.current_time_millis() < timeout) do
+		util.yield()
+	end
+	if not HAS_MODEL_LOADED(hash) then
+		error("Failed to load model: " .. model)
+	end
+end
+
+chat.internal_lock=function(callback,...)
+	local a={...}
+	if util.is_session_started() then
+		while not chat.internal_try_lock() do
+			util.yield_once()
+		end
+		internal_xpcall_ioiqocsdvv(callback,table.unpack(a))
+		chat.internal_unlock()
+	end
+end
+chat.is_open=function()
+	return chat.get_state() ~= 0
+end
+chat.internal_close=function()
+	while chat.is_open() do
+		chat.internal_close_impl()
+		util.yield_once()
+	end
+end
+chat.close=function()
+	chat.internal_lock(chat.internal_close)
+end
+chat.internal_open=function(team_chat)
+	while not chat.is_open() do
+		chat.internal_open_impl(team_chat)
+		util.yield_once()
+	end
+end
+chat.open=function(team_chat)
+	chat.internal_lock(chat.internal_open,team_chat)
+end
+chat.ensure_open_with_empty_draft=function(team_chat)
+	chat.internal_lock(function()
+		if chat.is_open() then
+			local expected_state = 2
+			if team_chat then
+				expected_state = 1
+			end
+			if chat.get_state() == expected_state then
+				chat.remove_from_draft(chat.get_draft():len())
+				return
+			end
+			chat.internal_close()
+		end
+		chat.internal_open(team_chat)
+		chat.remove_from_draft(chat.get_draft():len())
+	end)
+end
+chat.add_to_draft=function(appendix)
+	chat.internal_lock(chat.internal_add_to_draft,appendix)
+end
+
+lang.get_localised=function(k)
+	return lang.get_string(k, lang.get_current())
+end
+lang.get_localized=lang.get_localised
+
+memory.alloc_int = || -> memory.alloc(4)
+memory.alloc_float = || -> memory.alloc(4)
+
+players.add_command_hook=function(f)
+	local cb=function(p)
+		local cmd = menu.player_root(p)
+		if cmd:isValid() then
+			f(p, cmd)
+		end
+	end
+	players.on_join(cb)
+	for players.list() as p do
+		util.create_thread(function()
+			cb(p)
+		end)
+	end
+end
+players.dispatch_on_join=function()
+	local cbs = players.internal_get_join_callbacks()
+	for players.list() as p do
+		for cbs as cb do
+			util.create_thread(function()
+				cb(p, false)
+			end)
+		end
+	end
+end
+players.detections_root=function(p)
+	local cmd = menu.player_root(p)
+	if cmd:isValid() then
+		cmd = cmd:getChildren():find(|x| -> x:getType() == COMMAND_LIST_CUSTOM_SPECIAL_MEANING)
+	end
+	return cmd
+end
+
+local function NETWORK_HAS_CONTROL_OF_ENTITY(entity)
+	return native_invoker.unified_bool(entity, 0x01BF60A500E28887, "i")
+end
+local function NETWORK_REQUEST_CONTROL_OF_ENTITY(entity)
+	return native_invoker.unified_bool(entity, 0xB69317BF5E782347, "i")
+end
+entities.request_control=function(entity, timeout=2000)
+	local handle = entities.any_to_handle(entity)
+	local start_time = os.millis()
+	while os.millis() - start_time < timeout do
+		if NETWORK_HAS_CONTROL_OF_ENTITY(handle) then
+			return true
+		end
+		NETWORK_REQUEST_CONTROL_OF_ENTITY(handle)
+		util.yield()
+	end
+	return false
+end
+
+directx.draw_texture = function(...args)
+	local sizeX, sizeY, centreX, centreY, posX, posY
+	switch #args do
+		case 9, 12:
+			sizeX, sizeY = directx.size_hud_to_client(args[2], args[3])
+			centreX, centreY = directx.pos_hud_to_client(args[4], args[5])
+			posX, posY = directx.pos_hud_to_client(args[6], args[7])
+			return directx.draw_texture_client(
+				args[1],
+				sizeX, sizeY,
+				centreX, centreY,
+				posX, posY,
+				table.unpack(args, 8)
+			)
+		case 13, 16:
+			sizeX, sizeY = directx.size_hud_to_client(args[5], args[6])
+			centreX, centreY = directx.pos_hud_to_client(args[7], args[8])
+			posX, posY = directx.pos_hud_to_client(args[9], args[10])
+			return directx.draw_texture_client(
+				args[1], args[2], args[3], args[4],
+				sizeX, sizeY,
+				centreX, centreY,
+				posX, posY,
+				table.unpack(args, 11)
+			)
+	end
+	error("Unexpected number of arguments")
+end
+directx.draw_texture_by_points_client = function(id, x1, y1, x2, y2, ...)
+	x1, y1 = directx.pos_client_to_hud(x1, y1)
+	x2, y2 = directx.pos_client_to_hud(x2, y2)
+	return directx.draw_texture_by_points(id, x1, y1, x2, y2, ...)
+end
+directx.draw_texture_by_points_square = function(id, x1, y1, x2, y2, ...) -- undocumented
+	x1, y1 = directx.square_to_client(x1, y1)
+	x2, y2 = directx.square_to_client(x2, y2)
+	return directx.draw_texture_by_points_client(id, x1, y1, x2, y2, ...)
+end
+directx.draw_circle = function(x, y, r, ...)
+	x, y = directx.pos_hud_to_client(x, y)
+	r = directx.size_hud_to_client(r, r)
+	return directx.draw_circle_client(x, y, r, ...)
+end
+directx.draw_circle_client = function(x, y, r, ...)
+	x, y = directx.client_to_square(x, y)
+	r = directx.client_to_square(r, r)
+	return directx.draw_circle_square(x, y, r, ...)
+end
+
+filesystem.exists=io.exists
+filesystem.is_regular_file=io.isfile
+filesystem.is_dir=io.isdir
+filesystem.mkdir=io.makedir
+filesystem.mkdirs=io.makedirs
+filesystem.list_files=io.listdir
+
+memory.tunable=function(hash)
+	return memory.script_global(GLOBAL_TUNABLE_BASE + memory.tunable_offset(hash))
+end
+memory.tunable_offset=function(hash)
+	while not memory.tunables_can_query() do
+		util.yield()
+	end
+	return memory.tunables_query_offset(hash)
+end
+
+print=util.log
+os.sleep=util.yield
+
+-- soup.json redirects to pluto:json since May 23, 2024; emits deprecation warning since July 18, 2024.
+soup.json={
+	encode=function(...)
+		util.internal_emit_deprecated_hzpyiownhj("soup.json.encode")
+		return require"pluto:json".encode(...)
+	end,
+	decode=function(...)
+		util.internal_emit_deprecated_hzpyiownhj("soup.json.decode")
+		return require"pluto:json".decode(...)
+	end
+}
+
+-- soup.version_compare is a redirect & deprecated since September 13, 2024.
+soup.version_compare=function(...)
+	util.internal_emit_deprecated_hzpyiownhj("soup.version_compare")
+	return compareversions(...)
+end
+
+util.play_wav=|file|->util.create_thread(||->do
+	local fr = soup.FileReader(file)
+	local wav = soup.audWav(fr)
+	local dev = soup.audDevice.getDefault()
+	local pb = dev:open(wav.channels)
+	local mix = soup.audMixer()
+	mix.stop_playback_when_done = true
+	mix:setOutput(pb)
+	mix:playSound(wav)
+	while pb:isPlaying() do
+		coroutine.yield()
+	end
+end)
+
+lang.get_country_name=|cc,lc|->soup.getCountryName(string.upper(cc),lang.get_code_for_soup(lc))
+
+return function(s)
+	internal_xpcall_ioiqocsdvv(function()
+		local c,e=load(s,SCRIPT_RELPATH)
+		if c then
+			if SCRIPT_2TAKE1_COMPAT then
+				util.ensure_package_is_installed("lua_compat_layer/2Take1Menu")
+				require"2take1 compat"
+			elseif SCRIPT_KIDDIONS_COMPAT then
+				util.ensure_package_is_installed("lua_compat_layer/Kiddion's Modest Menu")
+				require"kiddions_compat"
+			end
+			local t=internal_coroutine_create_hsdkbejsis(c)
+			local keep_running=(threading_status==1)
+			if not keep_running and util.internal_is_keep_running_implied_uuqepkb32o() then
+				keep_running=true
+				implicit_keep_running=true
+			end
+			threading_status=2
+			if not keep_running and #r == 1 and coroutine.status(t) ~= "suspended" then
+				util.request_stop()
+			end
+			if util.can_continue() then
+				util.internal_yield_zfvasowkyumq()
+				if keep_running then
+					util.keep_running()
+				end
+				local b=true
+				while true do
+					b=false
+					for i,v in r do
+						if coroutine.status(v)=="suspended" then
+							coroutine.resume(v)
+							b=true
+						elseif coroutine.status(v)=="dead" then
+							r[i]=nil
+						end
+					end
+					if not b or not util.can_continue() then
+						break
+					end
+					util.internal_yield_zfvasowkyumq()
+				end
+			end
+			util.dispatch_on_pre_stop()
+			if select(3, util.can_continue()) == false then
+				local c = coroutine.create(require"pluto:http".closeconnections)
+				coroutine.resume(c)
+				while coroutine.status(c) == "suspended" do
+					util.draw_debug_text($"Finishing tasks for {SCRIPT_NAME}...")
+					util.internal_yield_zfvasowkyumq()
+					coroutine.resume(c)
+				end
+			end
+		else
+			SCRIPT_SILENT_START=false
+			util.toast(SCRIPT_RELPATH..": "..e,TOAST_ALL)
+		end
+	end)
+end--)EOC"

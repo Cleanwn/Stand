@@ -1,0 +1,5658 @@
+! Thanks for helping with the translation of Stand into your language!
+! Before you begin, I guess you need to know a little about the project so you can work efficiently.
+! Lines starting with "# LABEL=" need to be translated except for the "LABEL=" part and to indicate that it has been translated, you need to remove the "# ", which might be a bit annoying at first, but this will become practical for updating the translation.
+! There are some things that you shouldn't translate:
+! - The name "Stand"
+! - Pairs of curly brackets, e.g. {} or {player}
+! - Folders or files like %appdata%/Stand/Theme
+! - Emojis (unless there's a culturally different meaning)
+! - Technical Terms, i.e. anything that would make less sense if translated
+! Alright, I think you're ready to unleash your powers now! ;D
+
+!!!!!!!!!!!!!
+!! General !!
+!!!!!!!!!!!!!
+
+HI=Je bent nu een [Stand Gebruiker]! :D
+HI_TRCK=Welkom terug bij Stand!
+HI_TRCK_0=Geen van de door jou gevolgde spelers zijn momenteel online.
+HI_TRCK_1={} is momenteel online.
+HI_TRCK_M={} zijn momenteel online.
+
+HKFAIL=Een of meer spelfuncties die nodig zijn voor {} kunnen niet verandert worden, waarschijnlijk vanwege een ander menu dat je gebruikt. :/
+WOT1=Tijdens mijn reis om je meest recente verzoeken te vervullen heb ik de volgende acties genomen:
+WOT2=• Niks
+WOT3=• Nada
+WOT4=• Noppes
+WOT5=Weet dat deze lijst niet een echte representatie is van wat er allemaal is gebeurd.
+2FAST=Je doet dit te snel. Neem een slok, en probeer het daarna opnieuw.
+ARGNME=[naam]
+
+! E.g. Command: wanted [0 to 5]
+ARGRNGE=tot
+
+ARGVAL=[waarde]
+ARGVALOPT=(waarde)
+NRML=Normaal
+INVARG=Dat is een ongeldig argument. :?
+GENWARN=Weet je heel zeker dat je dit wilt doen?
+IRREV=Deze actie kan niet ongedaan gemaakt worden.
+GENFAIL=Hmm, dat werkte niet. :/
+IPSUM=Hier is wat tekst om je ogen van te laten genieten
+PRCD=Doorgaan
+ABRT=Annuleren
+SHW=Tonen
+HDE=Verbergen
+HIDE=Verstopt
+NONE=Geen
+JUSTON=Aan
+OFF=Uit
+ON=Ingeschakeld
+DOFF=Uitgeschakeld
+DOFF2=Uitschakelen
+ALL=Alle
+
+! Thousands separator, e.g. 1,000,000
+THSNDSEP=.
+
+! "Not Applicable"
+NA=N.V.T
+
+GEMINI=Het derde oog openen...
+RCMD=Aangeraden
+NRCMD=Niet aangeraden
+CPYF=Kopieer {}
+GENWAIT=Even geduld...
+CMDLEN=Dit kan niet meer dan {} karakters lang zijn.
+AND={} en {}
+
+! A more fancy way of saying "this is local"
+GEN_H_LOC=Dit beïnvloed alleen jouw spel.
+
+! When the user is seeing an empty list:
+ETYLST=Niks te zien hier.
+
+NPHYS=[Commando Heeft Geen Fysieke vorm]
+
+! Repetitions in log:
+LOG_REP_S=+ herhaalde 1 keer
+LOG_REP_P=+ herhaald {} keer
+
+IPNAM={ip} (eerder gezien als {name})
+
+CHRCNT={cur}/{max} karakters
+PLYCNT={cur}/{max} spelers
+PTCCNT={cur}/{max} deelnemers
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Search Commands !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SRCH=Zoeken
+ARGCLU=[aanwijzing]
+SRCHNRES=Geen resulaten. :/
+
+!!!!!!!!!!!!!!!!!!!!
+!! Error Handling !!
+!!!!!!!!!!!!!!!!!!!!
+
+ERR_L_B=FOUT INFORMATIE BEGINT
+ERR_L_E=FOUT INFORMATIE EINDIGT
+
+ERR_T_GEN=Informatie over deze fout is te vinden in %appdata%/Stand/Log.txt.
+ERR_T_CAU=Een fout opgevangen.
+ERR_T_GME=Het spel had een fatale fout en zou misschien opnieuw opgestart moeten worden.
+ERR_T_OTH=Stand is een onverwachte fout tegengekomen.
+
+ERR_LUA=Notitie: Deze foutmelding is ontstaan tijdens het uitvoeren van een Lua script.
+
+SVM=Script Fout Herstel
+4FMONLY=Alleen Voor Totale Vrijheid
+
+SVM_ERR={script} script sterfing voorkomen op {operation}.
+SVM_DIE={script} script stierf op {operation}.
+SVM_EXP=Fout opgevangen tijdens het uitvoeren van {script} script.
+
+SVM_BLM_S=Dit kan zijn veroorzaakt door {player}'s meest recente gebeurtenis.
+SVM_BLM_D=Dit kan zijn veroorzaakt door {player}'s meest recente gebeurtenis ({event}).
+
+SVM_INVOP=Ongeldige opcode {opcode} in {script} script; wordt beëindigd in plaats van het crashen van het spel.
+SVM_FRZ={} script lijkt vast te hangen in een oneindige loop; het script wordt afgebroken zodat het spel niet vastloopt.
+
+!!!!!!!!!!
+!! Tabs !! These are to be on the left side of the menu which shouldn't be too wide so keep these as short as possible
+!!!!!!!!!!
+
+ACTVTE=Activeer
+TUT_ONE=Een
+TUT_TWO=Twee
+SLF=Zelf
+VEH=Voertuig
+Online=Online
+PLYLST=Spelers
+WRLD=Wereld
+GME=Spel
+
+!!!!!!!!!!!!!!!!
+!! References !!
+!!!!!!!!!!!!!!!!
+
+PLY=Speler
+
+STTNGS=Instellingen
+
+KPCRSR=Muis Positie Behouden Bij Opnieuw Bezoeken
+
+TABS=Tabbladen
+KPCRSRR_H=Zorgt ervoor dat tabbladen zoals "Zelf" de muispositie van de laatste keer onthouden.
+
+LSTS=Lijsten
+KPCRSRS_H=Zorgt ervoor dat lijsten zoals "Instellingen" de muispositie van de laatste keer onthouden.
+
+KPCRSR_L_RDC=Lijsten: Verminderde Effecten Voor Enorme Lijsten
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Tutorial & Help !!
+!!!!!!!!!!!!!!!!!!!!!
+
+TUT=Tutorial
+TUT2=Stand Tutorial
+
+RPT=Herhalen
+
+! Or "Skip"
+DISM=Afwijzen
+
+TUT_LD=Stand is geïnjecteerd. Laadt het spel om verder te gaan.
+
+TUT_OPEN=Om de zichtbaarheid van je Stand in te schakelen, gebruik je {}.
+TUT_OPEN2=Om de zichtbaarheid van je Stand uit te schakelen, gebruik je {numpad} of {alt} als je geen numpad hebt.
+TUT_USE=Druk op {} om de gemarkeerde opdracht uit te voeren.
+TUT_BK=Druk op {} om terug te gaan.
+TUT_DN2=Druk op {} om naar beneden te gaan.
+TUT_RUP=Druk op {} om weer omhoog te gaan.
+TUT_TABS=Uitstekende navigatie. Hou je vast, ik ga nu tabbladen inschakelen!
+TUT_RNXT=Druk op {} om naar het volgende tabblad te gaan.
+TUT_RPRV=Druk op {} om naar het vorige tabblad te gaan.
+
+TUT_CMD2=Let op hoe het hier "Commando: " zegt. Dit betekent dat je deze functie kan gebruiken via het Stand Opdrachtvenster! Je kan het Opdrachtvenster openen op elk moment door op {} te drukken.
+TUT_SLIDER=Gebruik {} en {} om schuifregelaars te manipuleren.
+TUT_PROFILES=Als je wilt dat Stand de staat van commando's onthoudt de volgende keer dat je het injecteert, kan je profielen gebruiken (Stand > Profielen).
+TUT_CTX2=Gebruik {} om het contextmenu te openen, waarmee je sneltoetsen, correlaties, en meer kan configureren.
+
+TUT_HDE=Druk op {} om je stand weer te verbergen.
+
+HLP_CTRLLR=Je kan Stand openen met je controller via {}.
+
+HLP_CMDCHAIN=Je kan commando's samenvoegen met een puntkomma, b.v. "{}".
+
+!!!!!!!!!!!!!!
+!! Commands !!
+!!!!!!!!!!!!!!
+
+CMD=Commando
+B_CB=Opdrachtvenster
+CMDPRMPT=Stand Opdrachtvenster
+KB_CMDPRMPT=Opdrachtvenster Openen
+
+CMDUNK=Sorry, "{}" is niet een commando die ik ken. :/
+CMDAMBIG=Sorry, "{}" kan meerdere dingen betekenen. :/
+CMDISS={} is niet beschikbaar voor andere spelers. :/
+CMDPERM=Je hebt geen toestemming om {} te gebruiken.
+MORE=... en {} meer.
+MANYMORE=... en veel meer.
+
+CMDONL=Dit commando is alleen beschikaar in GTA Online.
+CMDONLONC=Dit commando is alleen beschikbaar nadat je GTA Online hebt betreedt.
+CMDNEEDHOST=Dit commando is alleen beschikbaar als je de beheerder bent. :|
+CMDNH=Dit commando is niet beschikbaar op de beheerder. :|
+CMDOTH=Dit commando is niet beschikbaar voor jezelf. :|
+CMDDISA=Dit commando is momenteel uitgeschakeld. Controlleer onze mededelingen voor meer informatie.
+
+CMD_DR_S=Commando succesvol uitgevoerd. :)
+
+FRMTSEL_AVAIL=Tekst formatering is hier ondersteund. Druk op {} voor een selectie.
+FRMTSEL_H=Gebruik de pijltjestoetsen om te navigeren en {} om code in te voegen.
+FRMTSEL_H_R=Reset: Toegepaste formatering verwijderen.
+FRMTSEL_H_N=Nieuwe lijn.
+
+B_CTX=Context Menu
+CTX_MIN=Zet Op Min. Waarde
+CTX_MAX=Zet Op Max. Waarde
+
+CTX_UNAVAIL={option} is niet beschikbaar op {command}.
+
+AUTOSTATE=Verband In Staat Met
+AUTOSTATE_OFF=Niets
+AUTOSTATE_OPN=Stand Is Open
+AUTOSTATE_OFT=Te Voet
+AUTOSTATE_AIM=Richten
+AUTOSTATE_FRE=Zit in Vrije modus
+AUTOSTATE_CHT=Chatten
+AUTOSTATE_HST=Sessie Beheerder Zijn
+
+AUTOSTATEINV=Verband Omdraaien
+
+IVRT=Omkeren
+
+AUTOSTATE_H=Verband: {command} zal {state} zijn tijdens {condition}.
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_ON=ingeschakeld
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_OFF=uitgeschakeld
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OPN=Stand is open
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OFT=je bent te voet
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_AIM=je bent aan het richten
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_FRE=je bent in een vrije modus sessie
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_CHT=je bent aan het chatten
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_HST=je bent de sessie beheerder
+
+CMDSTATE_L={0} is veranderd naar {1}. :)
+CMDSTATE_L_E={0} is al {1}. :)
+
+CMDSTATE_LON={} ingeschakeld. :)
+CMDSTATE_LOFF={} uitgeschakeld. :)
+
+CMDSTATE_LON_E={} is al aan. :)
+CMDSTATE_LOFF_E={} is al uit. :)
+
+CMDSTATE_OON=Succesvol ingeschakeld. :)
+CMDSTATE_OOFF=Succesvol uitgeschakeld. :)
+
+CMDSTATE_OON_E=Het is al ingeschakeld. :)
+CMDSTATE_OOFF_E=Het is al uitgeschakeld. :)
+
+! E.g. "Freeze on Herobrine" or "Freeze on All Players". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A={command} op {player}
+
+! E.g. "WiriScript's Immortality on Herobrine". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A_LUA={script}'s {command} op {player}
+
+SUPPGEN=Algemene Reacties Onderdrukken
+SUPPGEN_H=Onderdrukt algemene reacties zoals "Commando succesvol uitgevoerd".
+
+SUPPGEN_CB_H=Bevat het Stand Opdrachtvenster, het opdrachtvenster op de webinterface en chat commando's.
+
+WARNS=Waarschuwingen
+
+WARNAUTOPROC=Automatisch Doorgaan Bij Waarschuwingen
+
+WARNSKIPPROC=Al Geaccepteerde Waarschuwingen Overslaan
+
+WARNFRCERD=Forceer Mij Waarschuwingen Te Lezen
+
+HOTKEY=Sneltoets
+ARGHOTKEY=[sneltoets]
+HOTKEYS=Sneltoetsen
+HOTKEY_A=Sneltoets Toevoegen
+HOTKEY_C2=Sneltoets Wijzigen
+HOTKEY_R2=Sneltoets Verwijderen
+HOTKEY_U=Druk op de knop die je wilt gebruiken als sneltoets voor {}.
+HOTKEY_T={}'s sneltoetsen zijn opgeslagen in %appdata%/Stand/Hotkeys.txt :)
+
+HOTKEY_HOLD=Inhoud Modus
+
+!!!!!!!!!!!!!!!!!!!
+!! Keyboard Keys !!
+!!!!!!!!!!!!!!!!!!!
+
+K_UNK=Onbekende Knop
+
+K_R=Rechter {}
+K_L=Linker {}
+
+K_SHFT=Shift
+K_ALT=Alt
+K_CTRL=Ctrl
+
+! E.g. "Hold W"
+K_HOLD=Houd
+
+K_SPC=Spatie
+K_ISRT=Insert
+K_DEL=Delete
+K_HME=Home
+K_END=End
+K_PGUP=Pagina Omhoog
+K_PGDN=Pagina Omlaag
+K_RET=Enter
+K_BACK=Backspace
+K_ESC=Escape
+K_A_U=Peiltje Omhoog
+K_A_L=Peiltje Naar Links
+K_A_R=Peiltje Naar Rechts
+K_A_D=Peiltje Omlaag
+K_TAB=Tab
+K_LMB=Muis Links
+K_MMB=Muis Midden
+K_RMB=Muis Rechts
+K_X1=Muis 4
+K_X2=Muis 5
+K_MPP=Media Afspelen/Pauzeren
+K_MS=Media Stoppen
+K_NT=Volgende Nummer
+K_PT=Vorige Nummer
+K_CAPS=Caps Lock
+
+HMB=Gemodificeerde Toets Koppeling
+HMB_H=Hoe ctrl, shift & alt worden behandeld.
+STRCT=Streng
+HMB_STRCT_H=Geen verdere toetsen mogen worden ingedrukt. Dus, het indrukken van Ctrl+Shift+G of Ctrl+G zou G niet triggeren.
+SMRT=Slim
+HMB_SMRT_H=Strict als de sneltoets modificering toetsen heeft, anders lax. Dus, het indrukken van Ctrl+Shift+G zou G triggeren maar niet Ctrl+G.
+LAX=Los
+HMB_LAX_H=Verdere modificering toetsen mogen worden ingedrukt. Dus, het indrukken van Ctrl+Shift+G zou G triggeren en Ctrl+G ook.
+
+DHK=Sneltoetsen Uitschakelen
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Controller Buttons !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+CK=Controller Knop
+
+CK_LT=Linker Trigger
+CK_RT=Rechter Trigger
+CK_LB=Linker Bumper
+CK_RB=Rechter Bumper
+CK_LS=Linker Stick (L3)
+CK_RS=Rechter Stick (R3)
+CK_D_U=D-Pad Omhoog
+CK_D_D=D-Pad Omlaag
+CK_D_L=D-Pad Links
+CK_D_R=D-Pad Rechts
+CK_STRT=Start
+CK_BCK=Terug
+
+!!!!!!!!!!!!!!!!!!!!
+!! Authentication !!
+!!!!!!!!!!!!!!!!!!!!
+
+UPDAVAIL=Stand {} is beschikbaar.
+
+FREE_T=Deze functie is niet beschikbaar in de gratis versie van Stand. ;)
+CMDFULLSP=Om dit commando te gebruiken, ga je naar de Story Mode of upgrade je naar de Reguliere Editie van Stand.
+CMDNEDR=Dit commando is alleen beschikbaar met de Reguliere Editie of hoger.
+CMDNEDU=Dit commando is alleen beschikbaar met de Ultieme Editie van Stand.
+
+ACTVTE_H=Activeer Stand om toegang te krijgen tot het volledige menu, zelfs als je in GTA Online bent.
+ACTVTE_PSTE2=Plak Activatie Sleutel
+ACTVTE_RGST=Maak Een Account
+ACTVTE_ERR_F2=De inhoud van je klembord komt niet overheen met het formaat van een Stand activatie sleutel. :?
+ACTVTE_STRT2=Je activatie sleutel wordt gevalideerd...
+ACTVTE_SUCC2=Stand is succesvol geactiveerd. :D
+
+ACTVTE_ERR_I2=Je activatie sleutel is ongeldig. :/
+ACTVTE_RGN=Je activatie sleutel is geregenereerd.
+AUTHSHR2=Je activatie sleutel wordt ergens anders gebruikt. Regenereer het of probeer het later opnieuw.
+
+AUTH_X=Je activatie is verlopen.
+AUTH_CE=Een verbindingsfout is opgetreden.
+CONHELP=Als je apparaat online is, zorg er dan voor dat Stand's verbindingen niet wordt verstoord.
+
+TELEKOM_OFF=Welkom terug online! :D
+
+VER_UNSUPP=Je versie van Stand wordt niet meer ondersteund.
+VER_UNSUPP_AUTHONLY=Je versie van Stand wordt niet meer ondersteund en we zullen authenticatie voor deze versie niet voor veel langer ondersteunen.
+UPDHELP=Je kunt Stand eenvoudig bijwerken door het uit te laden, op "Check For Updates" te klikken binnen de Launchpad, en als laatst Stand opnieuw te injecteren.
+
+!!!!!!!!!!!!!!!!
+!! Filesystem !!
+!!!!!!!!!!!!!!!!
+
+FWERR=Gefaald om {} te openen voor schrijven. :|
+
+WRDR=Garderobe
+
+OPNFLD=Map Openen
+
+OPNSTND=Stand Map Openen
+OPNSTND_H=Opent je %appdata%/Stand/ map.
+
+OPNASI=ASI Mods Map Openen
+OPNASI_H=Opent je %appdata%/Stand/ASI Mods map.
+
+OPNGTA=GTA V Map Openen
+
+OPNTHME=Thema Map Openen
+OPNTHME_H=Opent je %appdata%/Stand/Theme map.
+
+!!!!!!!!!!!!
+!! Colour !!
+!!!!!!!!!!!!
+
+C_H=Tint.
+C_S=Saturatie
+C_V=Waarde
+
+CR_HSV=HSV Representatie
+CR_RGB=RGB Representatie
+
+OPCTY=Ondoorzichtigheid
+
+C_R=Rood
+C_G=Groen
+C_B=Blauw
+
+CN_A=Regenboog
+CN_R=Rood
+CN_R_WINE=Wijnrood
+CN_G=Groen
+CN_G_D=Donkergroen
+CN_G_LIME=Limoengroen
+CN_OLIVE=Olijf
+CN_MOSS=Mos
+CN_TUR=Turquoise
+CN_B=Blauw
+CN_B_D=Donkerblauw
+CN_B_COOL=Koud Blauw
+CN_B_ROYAL=Royaal Blauw
+CN_C=Cyaan
+CN_AQUA=Aqua
+CN_PLUM=Pruim
+CN_Y=Geel
+CN_Y_D=Donkergeel
+CN_P=Roze
+CN_P_H=Heet Roze
+CN_SALMON=Zalm
+CN_U=Paars
+CN_U_D=Donkerpaars
+CN_M=Magenta
+CN_O=Oranje
+DN_O_L=Lichtoranje
+CN_O_RUST=Roest Oranje
+CN_BR=Bruin
+CN_BR_L=Lichtbruin
+CN_EARTH=Aarde
+CN_W=Wit
+CN_L=Zwart
+CN_GR=Grijs
+CN_GR_D=Donkergrijs
+
+C_PAT={colour} Patroon
+
+OTHR=Anders
+CLRHEX=Voer Hex Code In
+CURRCLRHEX=Huidige Kleur (Hex)
+
+LGBT=Regenboog Modus
+LGBT_H=Loopt door alle kleuren heen elke x milliseconden, maar laat je nog wel de saturatie, waarde, en ondoorzichtigheid veranderen.
+
+CLR=Kleur
+
+LGBTQ={}: Regenboog Modus
+
+! As in "colour finish"
+CLRFIN=Afwerking
+
+! "LSC" is Los Santos Customs
+CLRSTD=LSC Kleuren
+
+CLRSTD_1=Grafiet
+CLRSTD_2=Zwart Staal
+CLRSTD_3=Donker Staal
+CLRSTD_4=Zilver
+CLRSTD_5=Blauwig Zilver
+CLRSTD_6=Gewalst Staal
+CLRSTD_7=Schaduw Zilver
+CLRSTD_8=Steen Zilver
+CLRSTD_9=Middernacht Zilver
+CLRSTD_10=Gietijzer Zilver
+CLRSTD_11=Antraciet Zwart
+CLRSTD_12=Mat Zwart
+CLRSTD_13=Mat Grijs
+CLRSTD_14=Mat Lichtgrijs
+CLRSTD_15=Nuts Zwart
+CLRSTD_16=Nuts Zwart Poly
+CLRSTD_17=Nuts Donker Zilver
+CLRSTD_18=Nuts Zilver
+CLRSTD_19=Nuts Gietijzer Zilver
+CLRSTD_20=Nuts Schaduw Zilver
+CLRSTD_21=Versleten Zwart
+CLRSTD_22=Versleten Grafiet
+CLRSTD_23=Versleten Zilver Grijs
+CLRSTD_24=Versleten Zilver
+CLRSTD_25=Versleten Blauwig Zilver
+CLRSTD_26=Versleten Schaduw Zilver
+CLRSTD_28=Torino Rood
+CLRSTD_29=Formule Rood
+CLRSTD_30=Gloed Rood
+CLRSTD_31=Genade Rood
+CLRSTD_32=Granaat Rood
+CLRSTD_33=Zonsondergang Rood
+CLRSTD_34=Cabernet Rood
+CLRSTD_35=Snoep Rood
+CLRSTD_36=Zonsondergang Oranje
+CLRSTD_37=Klassiek Goud
+CLRSTD_39=Mat Rood
+CLRSTD_40=Mat Donker Rood
+CLRSTD_41=Mat Oranje
+CLRSTD_42=Mat Geel
+CLRSTD_43=Nuts Rood
+CLRSTD_44=Nuts Vel Rood
+CLRSTD_45=Nuts Granaat Rood
+CLRSTD_46=Versleten Rood
+CLRSTD_47=Versleten Gouden Rood
+CLRSTD_48=Versleten Donkerrood
+CLRSTD_50=Racen Groen
+CLRSTD_51=Zee Groen
+CLRSTD_52=Olijf Groen
+CLRSTD_53=Vel Groen
+CLRSTD_54=Benzine Groen
+CLRSTD_55=Mat Limoen Groen
+CLRSTD_56=Nuts Donkergroen
+CLRSTD_57=Nuts Groen
+CLRSTD_58=Versleten Donkergroen
+CLRSTD_59=Versleten Groen
+CLRSTD_60=Versleten Zee Was
+CLRSTD_61=Heelal Blauw
+CLRSTD_63=Saxon Blauw
+CLRSTD_65=Marinier Blauw
+CLRSTD_66=Haven Blauw
+CLRSTD_67=Diamant Blauw
+CLRSTD_68=Surf Blauw
+CLRSTD_69=Nautisch Blauw
+CLRSTD_70=Ultra Blauw
+CLRSTD_71=Schafter Rood
+CLRSTD_72=Spinnaker Paars
+CLRSTD_73=Racen Blauw
+CLRSTD_74=Lichtblauw
+CLRSTD_75=Nuts Donkerblauw
+CLRSTD_76=Nuts Middernacht Blauw
+CLRSTD_77=Nuts Blauw
+CLRSTD_78=Nuts Zeeschuim Blauw
+CLRSTD_79=Nuts Bliksem Blauw
+CLRSTD_80=Nuts Maui Blauw Poly
+CLRSTD_81=Nuts Lichtblauw
+CLRSTD_82=Mat Donkerblauw
+CLRSTD_83=Mat Blauw
+CLRSTD_84=Mat Middernacht Blauw
+CLRSTD_85=Versleten Donkerblauw
+CLRSTD_86=Versleten Blauw
+CLRSTD_87=Versleten Lichtblauw
+CLRSTD_89=Race Geel
+CLRSTD_90=Brons
+CLRSTD_91=Douw Geel
+CLRSTD_93=Champagne
+CLRSTD_94=Feltzer Bruin
+CLRSTD_95=Kreek Bruin
+CLRSTD_96=Chocolade Bruin
+CLRSTD_97=Maple Bruin
+CLRSTD_98=Zadel Bruin
+CLRSTD_99=Stro Bruin
+CLRSTD_100=Mos Bruin
+CLRSTD_101=Bizon Bruin
+CLRSTD_102=Woodbeech Bruin
+CLRSTD_103=Beechwood Bruin
+CLRSTD_104=Sienna Bruin
+CLRSTD_105=Zandig Bruin
+CLRSTD_106=Gebleekt Bruin
+CLRSTD_107=Crème
+CLRSTD_108=Nuts Bruin
+CLRSTD_109=Nuts Medium Bruin
+CLRSTD_110=Nuts Lichtbruin
+CLRSTD_111=Ijs Wit
+CLRSTD_112=Vorst Wit
+CLRSTD_113=Versleten Honing Beige
+CLRSTD_114=Versleten Bruin
+CLRSTD_115=Versleten Donkerbruin
+CLRSTD_116=Versleten Stro Beige
+CLRSTD_117=Geborsteld Staal
+CLRSTD_118=Geborsteld Zwart Staal
+CLRSTD_119=Geborsteld Aluminium
+CLRSTD_120=Chroom
+CLRSTD_121=Versleten Crème
+CLRSTD_122=Nuts Crème
+CLRSTD_123=Versleten Oranje
+CLRSTD_124=Versleten Lichtoranje
+CLRSTD_125=Erwt Groen
+CLRSTD_126=Versleten Geel
+CLRSTD_127=Politie Auto Groen
+CLRSTD_128=Mat Geel
+CLRSTD_129=Mat Bruin
+CLRSTD_130=Versleten Oranje
+CLRSTD_131=Mat Ijs Wit
+CLRSTD_132=Versleten Wit
+CLRSTD_133=Versleten Olijf Groen
+CLRSTD_134=Nuts Wit
+CLRSTD_136=Zaal Roze
+CLRSTD_137=Pfister Roze
+CLRSTD_138=Vel Oranje
+CLRSTD_140=Vel Blauw
+CLRSTD_141=Middernacht Blauw
+CLRSTD_142=Middernacht Paars
+CLRSTD_144=Jager Groen
+CLRSTD_145=Vel Paars
+CLRSTD_146=Metalen Middernacht Paars
+CLRSTD_147=Carbon Zwart
+CLRSTD_148=Mat Schafter Paars
+CLRSTD_149=Mat Middernacht Paars
+CLRSTD_150=Lava Rood
+CLRSTD_151=Mat Bos Groen
+CLRSTD_152=Mat Olijf Saai
+CLRSTD_153=Mat Donker Aarde
+CLRSTD_154=Mat Woestijn Tint
+CLRSTD_155=Mat Bladeren Groen
+CLRSTD_156=Standaard Legering Kleur
+CLRSTD_157=Epsilon Blauw
+CLRSTD_158=Puur Goud
+CLRSTD_159=Geborsteld Goud
+CLRSTD_160=Goud
+
+CLRFR=Primaire Kleur
+
+CLRSEC=Secundaire Kleur
+
+CLRINT=Interieur Kleur
+CLRPRL=Parelmoer Kleur
+
+VEHMOD20=Wiel Rook
+CLRTIRE=Wiel Rook Kleur
+TIREINDEP=Onafhankelijkheidsdag Wiel Rook
+
+NEONLGHTS=Neon Belichting
+
+APOS_F=Voorkant
+APOS_B=Achterkant
+
+CLRBR=Achtergrond Kleur
+
+CLRFT=Gefocuste Tekst Kleur
+CLRFRT=Gefocuste Rechts-Gebonden Tekst Kleur
+CLRFS=Gefocuste Textuur Kleur
+
+CLRBT=Ongefocuste Tekst Kleur
+CLRBRT=Ongefocuste Rechts-Gebonden Tekst Kleur
+CLRBS=Ongefocuste Textuur Kleur
+
+CLRHU=HUD Kleur
+
+CLRAR=AR Kleur
+
+CLRMGME=Minigame Kleur
+
+HAIR_V=Haarkleur
+HAIRHI=Haar Kleur: Highlight
+HAIRR=Haar Kleur: Regenboog Modus
+
+GUNTINT=Huidige Wapen: Tint
+GUNTINTR=Huidige Wapen: Tint: Regenboog Modus
+
+WINTINT=Raam Tint
+
+! "Livery" is VEHMOD48
+RFTLIV=Dak Kleurstelling
+
+!!!!!!!!!!!!!!!
+!! Collision !!
+!!!!!!!!!!!!!!!
+
+GHOST=Verminderde Botsing
+GHOST_H=Maakt het mogelijk door muren en voertuigen te lopen.
+
+COLSNS=Botsingen
+
+GHOSTVEHS=Geen Botsing Met Andere Voertuigen
+
+NOCOLPED=Geen Botsingen Met Peds
+NOCOLOBJ=Geen Botsingen Met Objecten
+NOCOLOBJ_H=Weet dat dit stationaire map objecten zoals bomen negeert
+
+GHOSTRIDE=Geen Botsing
+GHOSTRIDE_H=Schakelt botsingen voor je huidige voertuig volledig uit (niet aanbevolen voor niet-vliegende voertuigen).
+
+!!!!!!!!!!
+!! Self !!
+!!!!!!!!!!
+
+MVMNT=Beweging
+
+VIS=Uiterlijk
+
+OTFT=Outfit
+
+HEAD=Hoofd
+HEAD_V=Soort Hoofd
+FACIALHAIR=Gezichtshaar
+FACIALHAIR_V=Gezichtshaar Kleur
+MASK=Masker
+MASK_V=Soort Masker
+HAIR=Haar
+TOP1=Top
+TOP1_V=Top Variatie
+TOP2=Top 2
+TOP2_V=Top 2 Variatie
+TOP3=Top 3
+TOP3_V=Top 3 Variatie
+BAG=Rugzak / Parachute
+BAG_V=Soort Rugzak / Parachute
+PCHUTE=Parachute / Rugzak
+PCHUTE_V=Soort Parachute / Rugzak
+TORSO=Handschoenen / Torso
+TORSO_V=Soort Handschoenen / Torso
+GLOVES=Handschoenen
+GLOVES_V=Soort Handschoenen
+PANTS=Broek
+PANTS_V=Soort Broek
+SHOES=Schoenen
+SHOES_V=Soort Schoenen
+ACCESSORIES=Accessoires
+ACCESSORIES_V=Soort Accessoires
+DECALS=Tatoeage
+DECALS_V=Soort Tatoeage
+HAT=Hoed
+HAT_V=Soort Hoed
+GLASSES=Bril
+GLASSES_V=Soort Bril
+EARWEAR=Oorbedekking
+EARWEAR_V=Soort Oorbedekking
+WATCH=Horloge
+WATCH_V=Soort Horloge
+BRACELET=Armband
+BRACELET_V=Soort Armband
+
+SVEOTFT=Outfit Opslaan
+
+! Alternatively, "What Will Be Saved"
+SVESEL=Wat Op Te Slaan
+
+BADFILE=Ik kan geen bestand met een naam zoals dat opslaan. :/
+
+LDOTFT_E1=Outfit specificeert niet voor welk model het is gemaakt. :?
+LDOTFT_E2=Outfit is gemaakt voor een ongeldig model: {}
+LDOTFT_E3=Outfit is gemaakt voor een ander model. :?
+LDOTFT_TF=Deze outfit is gemaakt voor {}, wil je transformeren?
+
+DOTFTRESTR=Outfit Beperkingen Uitschakelen
+DOTFTRESTR_H=Maakt het mogelijk om outfits met duffel bags, etc, op te slaan.
+
+NVEHHAIRSCL=In-Voertuig Haar Schalen Uitschakelen
+
+LKOTFT=Outfit Vastzetten
+LKOTFT_H=Maakt het wisselen van outfit buiten Stand niet mogelijk, wat de Casino Heist en mogelijk andere missies breekt. ⚠️
+
+CHNGMDL=Transformeer
+
+PLYBLCHRS=Speelbare Personages
+GRNDANMLS=Landdieren
+WTRANMLS=Waterdieren
+FLYNANMLS=Luchtdieren
+NPCS=NPCs
+
+ONLN_MALE=Online Man
+ONLN_FEMALE=Online Vrouw
+
+CHNGMDL_W=Je moet in het water zijn om in een waterdier te veranderen. :)
+
+MDL=Model
+
+FNDMDL_H=Hiermee kan je modellen vinden om in te transformeren door middel van hun naam.
+
+CURMDL=Huidige Model
+
+OP=Geprefabriceerde outfits
+
+OP_D=Huidige Model: Standaard
+OP_D_H=Het door Rockstar gedefinieerde standaard outfit voor je huidige model.
+
+OP_RNG=Huidige Model: Willekeurig
+RNG=Willekeurig
+
+OP_0=Online Vrouw: Toploos
+
+OP_COP_M=Online Man: Agent
+OP_COP_F=Online Vrouw: Agent
+
+WNTDLVL=Wanted Level
+
+WNTD=Wanted Level Instellen
+
+LKWNTD=Wanted Level Vastzetten
+
+FKWNTD=Nep Wanted Level
+FKWNTD_H=Verandert het aantal wanted sterren in de rechterbovenhoek.
+
+PTFXTRAIL=PTFX Paden
+BONES=Botten
+
+WLKSTL=Loop Stijl
+WLKSTL_1=Ballistisch
+WLKSTL_3=Vuilnis Vasthoudend
+WLKSTL_4=Rennen
+WLKSTL_5=Franklin (Taai)
+WLKSTL_8=Vluchtend
+WLKSTL_9=Bang
+WLKSTL_10=Sexy
+WLKSTL_12=Gewond
+WLKSTL_13=Lester (Wandelstok)
+WLKSTL_14=Zak
+WLKSTL_15=Borgsom
+WLKSTL_16=Borgsom (Tazered)
+WLKSTL_17=Moedig
+WLKSTL_18=Gewoontjes
+WLKSTL_19=Matig Dronken
+WLKSTL_20=Matig Dronken (Hoofd Omhoog)
+WLKSTL_21=Lichtelijk Dronken
+WLKSTL_22=Heel Dronken
+WLKSTL_23=Taai
+WLKSTL_24=Gangster (Langzaam)
+WLKSTL_25=Gangster (Verlegen)
+WLKSTL_26=Gangster
+WLKSTL_27=Joggen
+WLKSTL_28=Gevangenisbewaker
+WLKSTL_30=Franklin (Koffer)
+WLKSTL_31=Michael (Conciërge)
+WLKSTL_32=Michael (Langzaam)
+WLKSTL_33=Emmer
+WLKSTL_34=Gehurkt
+WLKSTL_35=Dwijl
+WLKSTL_36=Femme (Man)
+WLKSTL_37=Femme (Vrouw)
+WLKSTL_38=Gangster (Man)
+WLKSTL_39=Gangster (Vrouw)
+WLKSTL_40=Chique (Man)
+WLKSTL_41=Chique (Vrouw)
+WLKSTL_42=Taaie Gast (Man)
+WLKSTL_43=Taaie Gast (Vrouw)
+WLKSTL_44=In De War
+WLKSTL_45=Ontspannen
+WLKSTL_46=Geboeid
+WLKSTL_47=Triest
+WLKSTL_48=Onbeschaamd (Mannelijk)
+WLKSTL_49=Onbeschaamd (Vrouwelijk)
+WLKSTL_50=Arrogant
+WLKSTL_51=Zelfverzekerd
+WLKSTL_52=Hielen
+WLKSTL_53=Wandelen
+WLKSTL_54=Vuilnisman
+WLKSTL_55=Verdacht
+WLKSTL_56=Hipster
+
+PRSVRWALK=Loop Stijl Bewaren Tijdens Gevecht
+PRSVRWALK_H=Voorkomt dat je personage in "gevechtsmodus" gaat wanneer er geweld in de buurt is.
+
+WALKONAIR=In De Lucht Lopen
+
+AIRSWM=In De Lucht Zwemmen
+
+WTRWLK=Onderwater Lopen
+
+DRNKMODE=Dronken Modus
+
+TNISMDE=Tennis Modus
+
+FLOPPY=Floppy Modus
+FLOPPY_SYNCH=Synchroniseren Prioritiseren
+FLOPPY_SYNCH_H=Beperkt de snelheid en schakelt stijgen, dalen en sprinten uit om ervoor te zorgen dat dit synchroon loopt.
+
+DEMIGOD=Automatisch Genezen
+DEMIGOD_H=Houdt je personage op maximale gezondheid en bepantsering.
+DEMIGOD_H_O=Behoudt zijn/haar personage op maximale gezondheid en bepantsering.
+
+MXHLTH=Maximale Gezondheid
+
+CLUMSY=Onhandigheid
+CLUMSY_H=Laat je personage vaker omvallen.
+
+NOROLLCL=Geen Gevecht Rol Afkoeling
+
+RESPWRCL=Respawn Op Locatie van Dood
+
+RESPWDLY=Respawn Vertraging
+RESPWDLY_H=Verandert de respawn tijd in GTA Online naar het gegeven aantal seconden.
+
+EWO=Zelfmoord
+
+SPCSH=Story Mode Cash Instellen
+SPCSH_H=Laat je de hoeveelheid geld van Michael, Franklin, & Trevor wijzigen.
+
+SCHR_M=Michael
+SCHR_F=Franklin
+SCHR_T=Trevor
+
+HLTH=Gezondheid
+ARMR=Pantser
+
+REGEN=Regeneratie Snelheid
+REGEN_H_H=Verhoogt je gezondheid met dit aantal, per seconde.
+REGEN_A_H=Verhoogt je pantser met dit aantal, per seconde.
+ONLYINCOVER=Alleen In Dekking
+
+RFHLT=Gezondheid Bijvullen
+RFARM=Pantser Bijvullen
+
+GOD=Onsterfelijkheid
+GOD_H=Zorgt ervoor dat je personage niet dood kan.
+
+NRGDL=Elegantie
+NRGDL_H=Zorgt ervoor dat je personage niet meer omvalt.
+
+NO_GRACE=Pro Tip: Zet Elegantie en {feature_name} niet tegelijkertijd aan. ;)
+
+SEATGLUE=Vastgelijmd Aan Stoelen
+SEATGLUE_H=Zorgt ervoor dat je personage niet meer van fietsen kan vallen.
+
+INFSTAM=Oneindige Stamina
+
+PARALCK=Parachutes Vastzetten
+LCK_FULL=Vol
+LCK_ETY=Leeg
+
+WET=Natheid Instellen
+
+WETLCK=Natheid Vastzetten
+
+SCLE=Schaal
+SCLE_H=Verandert de hoogte, breedte, en diepte van je personage *lokaal*.
+
+SCLECAM=Schaal Beïnvloedt Camera
+
+SCLESPD=Schaal Beïnvloedt Snelheid
+
+VISZ=Optische Z Correctie
+VISZ_H=Corrigeerd de Z positie van je personage, om gebruikt te worden met schaal.
+
+! {Self > Appearance > Invisibility} & {Vehicle > Invisibility}
+INVIS=Onzichtbaarheid
+INVIS_H=Notitie: Wanneer je in een voertuig zit kunnen andere spelers je nog wel zien, behalve als je je voertuig ook onzichtbaar maakt.
+
+! Player > Trolling > Ram > Invisibility
+RAM_INVIS=Onzichtbaarheid
+
+LOCVIS=Lokaal Zichtbaar
+
+LEV=Zweven
+
+NOCLIP=No Clip
+
+LEV_AP=Helling Toepassen op Entiteit
+
+KPMOMNTM=Momentum Behouden
+
+MOVSPD=Bewegingssnelheid
+
+! Used in button instructions to mean "go faster"
+SPRNT=Rennen
+
+SPRNTMUL=Rennen Vermenigvuldiger
+SPRNTMUL_H=Hoe snel je gaat zolang je {} indrukt.
+
+ACCEL=Versnelling
+ACCEL_H=Acceleratie verhoogt de snelheid van levitatie hoe langer je beweegt. Reset wanneer je sprint of stopt met bewegen.
+
+OROM=Alleen Draaien Bij Beweging
+
+PASSMOV=Passieve Beweging
+
+PASSMOV_MIN=Min. Afstand Vanaf Grond
+PASSMOV_MAX=Max. Afstand Vanaf Grond
+SPD=Snelheid
+
+MAXDIST=Max. Afstand
+
+ASS=Assistent
+
+FRC_U=Opwaartse Kracht
+FRC_D=Neerwaartse Kracht
+
+ASS_D=Neerwaartse Deadzone
+ASS_D_H=Hoe ver je van van de grond moet zijn tot de assistent stopt je naar beneden te halen.
+
+SNAP=Klikking
+
+WLKSPD=Loop En Ren Snelheid
+
+INCFRCT=Verhoogde Frictie
+INCFRCT_H=Vermindert het uitglijden tijdens het draaien met een hoge loop/ren snelheid.
+
+SWMSPD=Zwem Snelheid
+
+NOBLD=Geen Bloed
+NOBLD_H=Houdt je personage vrij van bloed.
+
+SONIC=Super Snel Rennen
+
+FLY=Super Vliegen
+ASC=Stijgen
+DESC=Dalen
+FLY_LAND=Landen
+
+BI_CLSMNU_MOV=Verberg je Stand voor meer bewegingsmogelijkheden
+
+SHWBI_JMP2FLY=Knop Instructies: Super Spring Om Te Vliegen
+SHWBI_CTRLS=Knop Instructies: Besturing
+
+FROG=Super Springen
+FROG_H=Je kan de springknop inhouden om hoger te springen.
+
+GRCELND=Zachte Landing
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Animations !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+ANIM=Animaties
+CANCL=Annuleer
+SCENARIOS=Scenario's
+LOOPED=Gelusde Animaties
+LOOPED_H=Dit is niet van toepassing op scenario's.
+PART_MVMT=Gedeeltelijke Beweging
+PART_MVMT_H=Laat je bewegen terwijl je een animatie uitvoert, ten koste van de animatie's kwaliteit.
+AUTO_CANCL=Automatisch Annuleren
+AUTO_CANCL_H=Annuleert automatisch je huidige animatie wanneer je probeert te bewegen.
+
+ANIM1=Flex
+ANIM2=Rook
+ANIM3=Slaap
+ANIM4=Klap
+ANIM5=Bewaker
+ANIM6=Hamer
+ANIM7=Inactieve Agent
+ANIM8=Vuilnisbak Doorzoeken
+ANIM9=Geschokt Filmen
+ANIM10=Chillen
+ANIM11=Ongeduldig
+ANIM12=Sms'en
+ANIM14=Neiging Tot Dood
+ANIM15=Wacht
+ANIM16=Schoonmaken
+ANIM17=Gebruik ATM
+ANIM18=Yoga
+ANIM19=Standbeeld
+ANIM20=Lassen
+ANIM21=Zonnebaden
+ANIM22=Rug Zonnebaden
+ANIM23=Hoge-Klasse Prostituee
+ANIM24=Lage-Klasse Prostituee
+ANIM25=Kladblok
+ANIM26=Kniel
+ANIM27=Jog
+ANIM28=Verrekijker
+ANIM29=Staande Zwerver
+ANIM30=Tuinieren
+ANIM31=Zit Op De Grond
+ANIM32=Sta & Vis
+ANIM33=Zoeken
+ANIM34=Zit
+
+ANIM_DANCE=Dansen
+
+ANIM35=Buttwiggle
+ANIM36=Clown Dans 1
+ANIM37=Clown Dans 2
+ANIM38=Dans 1
+ANIM39=Dans 2
+ANIM40=Dans 3
+ANIM41=Dans 4
+ANIM42=Dans 5
+ANIM43=Langzame Dans 1
+ANIM44=Langzame Dans 2
+ANIM45=Langzame Dans 3
+ANIM46=Podium Dans
+ANIM47=Solo Dans
+ANIM48=Verlegen Dans 1
+ANIM49=Verlegen Dans 2
+ANIM50=Gekke Dans 1
+ANIM51=Gekke Dans 2
+ANIM52=Gekke Dans 3
+ANIM53=Tao Dans
+ANIM54=De Woogie
+
+ANIM55=Drink
+ANIM56=Beest
+ANIM57=Chill
+ANIM58=Wolkkijker
+
+! To prone, as in to lie on your stomach
+ANIM59=Vooroverliggend
+
+ANIM60=Overhalen
+ANIM62=Dronken 1
+ANIM63=Dronken 2
+ANIM64=Dronken 3
+ANIM65=Lucht Gitaar
+ANIM66=Lucht Synth
+ANIM67=Argumenteren 1
+ANIM68=Argumenteren 2
+ANIM69=Barman
+
+! Aka. Air Kiss
+ANIM70=Luchtkus
+
+ANIM71=Sarcastisch
+ANIM72=Kom Maar Op
+ANIM73=Kom Bij Mij
+ANIM75=Gebruik Radio
+ANIM74=Armen Gekruist 1
+ANIM76=Armen Gekruist 2
+ANIM77=Armen Gekruist 3
+
+! As in "damn it"
+ANIM78=Verdomme
+
+ANIM79=Steel
+ANIM81=Facepalm 1
+ANIM82=Facepalm 2
+ANIM83=Omvallen
+ANIM84=In Slaap Vallen
+ANIM85=Inspecteer
+ANIM86=Jumping Jacks
+ANIM88=Klop
+ANIM89=Lap Dance 1
+ANIM90=Lap Dance 2
+ANIM91=Lap Dance 3
+ANIM92=Lap Dance 4
+ANIM93=Twerk
+ANIM94=Leun
+ANIM95=Flirterige Leun
+ANIM96=Monteur
+ANIM97=Mediteer
+ANIM98=Buiten Adem
+ANIM99=Opdrukken
+ANIM100=Race Start Aftellen
+ANIM101=Schouders Ophalen
+ANIM102=Yoga Pose
+ANIM103=Lachen
+ANIM104=Gang Teken
+ANIM105=Flauwvallen
+ANIM106=Kruip
+ANIM107=Salto 1
+ANIM108=Salto 2
+ANIM109=Glij 1
+ANIM110=Glij 2
+ANIM111=CPR
+ANIM112=Uitrekken
+ANIM113=Vieren
+ANIM114=Clown
+ANIM115=Nerveus 1
+ANIM127=Nerveus 2
+ANIM116=Namaste
+ANIM117=DJ
+
+! Being arrested
+ANIM118=Handen Omhoog
+! Being arrested
+ANIM121=Overgeven
+
+ANIM119=Fluiten
+ANIM120=Leunen, Armen Gekruist
+ANIM122=Typen Op Toetsenbord
+ANIM123=Staan Bij Vuur
+ANIM124=Duimen Omhoog
+
+! As in, bending your body towards someone to show respect.
+ANIM125=Buigen
+
+ANIM126=Superheld
+ANIM128=Buig Voorover
+ANIM129=Douchen
+ANIM130=Gezicht Schoonmaken
+ANIM131=Karate
+ANIM132=Boksen
+
+ANIM166=Shuffle 1
+ANIM167=Shuffle 1 (Laag)
+ANIM168=Shuffle 2
+ANIM169=Shuffle 2 (Laag)
+
+OBJANIM=Object Animaties
+
+ANIM133=Koffer
+ANIM134=Drink Bier
+ANIM135=Drink Uit Blikje
+
+! As in begging
+ANIM136=Bedelen
+
+ANIM137=Bongo's Spelen
+ANIM138=Lees Boek
+ANIM139=Geef Bloemen
+ANIM140=Vegen Met Bezem
+ANIM141=Bierkrat Dragen
+ANIM142=Pizza Dragen
+ANIM143=Champagne Vasthouden
+ANIM144=Drink Koffie
+ANIM145=Kleine Duffeltas
+ANIM146=Tas Overdragen
+ANIM147=Gitaar Spelen
+
+! In this animation, the teddy bear known as "Mr. Raspberry" gets sexed
+ANIM148=Arme Mr. Raspberry
+
+ANIM149=Zitten in Tuinstoel (Vrouwelijk)
+ANIM150=Zitten in Tuinstoel (Mannelijk)
+ANIM151=Kaart Doorzoeken
+ANIM152=Camera Vasthouden
+ANIM153=Microfoon Vasthouden
+ANIM154=Loop Met Stok
+ANIM155=Mobiel 1
+ANIM156=Mobiel 2
+ANIM157=Bord Vasthouden
+ANIM158=Roos Vasthouden
+ANIM159=Snelweg Bord Vasthouden
+ANIM160="No Parking" Bord Vasthouden
+ANIM161=Paraplu Vasthouden
+ANIM162=Whiskeyglas Vasthouden
+ANIM163=Whiskeyfles Vasthouden
+ANIM164=Wijnglas Vasthouden
+ANIM165=Wijnfles Vasthouden
+ANIM170=Dans Met Wijn
+ANIM171=Dans Met Bier
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Bodyguards !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+BDYGUARD=Lijfwachten
+COUNT=Hoeveelheid
+WPN_SINGULAR=Wapen
+BDYGUARD_DEL=Verwijder Alle Lijfwachten
+BDYGUARD_TP=Teleporteer Wanneer Ver Weg
+FORMATION=Formatie
+LINE=Lijn
+CIRCLE=Cirkel
+ALT_CIRCLE=Alternatieve Cirkel
+BEHVR=Gedrag
+PRIM_WEAP=Primair Wapen
+SCND_WEAP=Secundair Wapen
+WEAP_H=Bodyguards zullen hun primair wapen gebruiken wanneer mogelijk. Anders zullen ze proberen hun secundaire wapen te gebruiken.
+
+!!!!!!!!!!!!!!!!!!!!
+!! Self > Weapons !!
+!!!!!!!!!!!!!!!!!!!!
+
+WPN=Wapens
+
+GETGNS=Krijg Wapens
+DELGNS=Verwijder Wapens
+ALLGNS=Alle Wapens
+
+GAIMPNSH=Tijdens Richten...
+GSHTPNSH=Tijdens Schieten...
+
+GRTYGUN=Zwaartekracht Geweer
+CTRVPHYS=Contactieve Zwaartekracht
+FRCMUL=Druk Vermenigvuldiging
+COL=Botsing
+
+VEHGUN=Voertuig Geweer
+VEHGUN_H=Maakt je wapens voertuigen laten schieten.
+
+WEAPCOMPS=Componenten
+WEAPCOMPS_H=Staat je toe om de componenten van je geselecteerde wapen te bekijken en te wijzigen.
+
+WEAPLOCK=Wapens Vergrendelen
+TINT=Wapen Tint
+
+! "Livery" is VEHMOD48
+WEAPLIVTNT=Kleurstelling Tint
+
+SVPRST=Preset Opslaan
+VWPRSTS=Presets Bekijken
+
+LOADS=Loadouts
+SVLOAD=Loadout Opslaan
+VWLOADS=Loadouts Bekijken
+
+SVLOAD_H_WEAP=Slaat je huidige wapens op in een Opdrachtvenster Script om de loadout makkelijk toe te passen op Wapens Vergrendelen.
+
+WEAPLOCK_INV=Alleen Geselecteerde Wapens Verwijderen
+WEAPLOCK_INV_H=Veranderd "Wapens Vergrendelen" in "Wapens Blacklisten", zodat geselecteerde wapens alleen worden verwijderd.
+
+AIMBT=Aimbot
+
+AIMBT_LCKOUT=Re-engage Tijd (ms)
+AIMBT_LCKOUT_H=Hoe lang de aimbot uitgeschakeld blijft nadat je de camera hebt bewogen.
+
+SMTHNG=Vloeiing
+
+LOSCHECK=Zichtlijn Controle
+
+TGTBONE=Doel Bot
+NECK=Nek
+RELBOW=Rechter Elleboog
+LELBOW=Linker Elleboog
+RHAND=Rechter Hand
+LHAND=Linker Hand
+PELVIS=Bekken
+RCALF=Rechter Kuit
+LCALF=Linker Kuit
+RFOOT=Rechter Voet
+LFOOT=Linker Voet
+
+TRIGBT=Triggerbot
+MAGICB=Magische Kogels
+MAGICB_H=Zorgt ervoor dat de triggerbot nooit mist.
+
+TRGSEL=Doelwit Selectie
+
+PROXYROCKET=Nabijheid Raketten
+PROXYROCKET_H=Nabijheid raketten werken alleen op andere spelers.
+
+SPRMELEE=Super Melee
+SPRMELEE_H=Slingert mensen en voertuigen van je af wanneer je ze melee-aanvalt. Zal niet werken op andere spelers.
+
+INSTAPROXY=Directe Nabijheid Mijn Ontploffing
+
+FILAMMO=Alle Amunitie Bijvullen
+RMVAMMO=Alle Amunitie Verwijderen
+INFAMMO=Onbeperkte Munitie
+
+SKPRLD=Herladen Overslaan
+
+NOSPOL=Geen Spooling
+NOSPOL_H=Verwijdert de vertraging voor het schieten van toepasselijke wapens.
+
+NOSPRD=Geen Spreiding
+NORECL=Geen Terugslag
+
+RAPFRE=Snel Afvuren
+
+RAPFREVEH=Voertuig Wapens Snel Afvuren
+
+DMG=Schade Vermenigvuldiger
+DMG_H=Past een vermenigvuldiger toe op de schade die wordt aangericht door je vuisten en geweren.
+
+RNGMUL=Bereik Vermenigvuldiger
+
+RKSPDMUL=Raket Snelheid Vermenigvuldiger
+
+! Or "Bullets Per Shotgun Shot"
+SHTGNSZE=Kogels Per Shotgun Schot
+
+INSTLKNON=Direct Richt Focus
+
+EXPAMMO=Explosieve Inslag
+
+EXPTYP=Explosietype
+EXPTYP_H=Laat je het explosietype bij Explosieve Impact selecteren.
+
+EXP_TAG_GRENADE=Granaat
+EXP_TAG_GRENADELAUNCHER=Granaat Werper
+EXP_TAG_STICKYBOMB=Plak Bom
+EXP_TAG_MOLOTOV=Molotov
+EXP_TAG_ROCKET=Raket
+EXP_TAG_TANKSHELL=Tank Projectiel
+EXP_TAG_HI_OCTANE=Hoog Octaan
+EXP_TAG_CAR=Auto
+EXP_TAG_PLANE=Vliegtuig
+EXP_TAG_PETROL_PUMP=Benzinepomp
+EXP_TAG_BIKE=Fiets
+EXP_TAG_DIR_STEAM=Stoom
+EXP_TAG_DIR_FLAME=Vlam
+EXP_TAG_DIR_WATER_HYDRANT=Brandkraan
+EXP_TAG_DIR_GAS_CANISTER=Gasfles Vlam
+EXP_TAG_BOAT=Boot
+EXP_TAG_SHIP_DESTROY=Schip
+EXP_TAG_TRUCK=Truck
+EXP_TAG_BULLET=Kogel
+EXP_TAG_SMOKEGRENADELAUNCHER=Rook Granaat Werper
+EXP_TAG_SMOKEGRENADE=Rook Granaat
+EXP_TAG_BZGAS=BZ Gas
+EXP_TAG_FLARE=Vuurpijl
+EXP_TAG_GAS_CANISTER=Gasfles
+EXP_TAG_EXTINGUISHER=Blusser
+EXP_TAG_PROGRAMMABLEAR=Programmeerbaar AR
+EXP_TAG_TRAIN=Trein
+EXP_TAG_BARREL=Vat
+EXP_TAG_PROPANE=Propaan
+EXP_TAG_BLIMP=Zeppelin (Blauw)
+EXP_TAG_DIR_FLAME_EXPLODE=Vlam Explodeer
+EXP_TAG_TANKER=Tanker
+EXP_TAG_PLANE_ROCKET=Vliegtuig Raket
+EXP_TAG_VEHICLE_BULLET=Voertuig Kogel
+EXP_TAG_GAS_TANK=Gas Tank
+EXP_TAG_BIRD_CRAP=Vogel Stront
+EXP_TAG_RAILGUN=Railgun
+EXP_TAG_BLIMP2=Zeppelin (Rood & Cyaan)
+EXP_TAG_FIREWORK=Vuurwerk
+EXP_TAG_SNOWBALL=Sneeuwbal
+EXP_TAG_PROXMINE=Nabijheid Mijn
+EXP_TAG_VALKYRIE_CANNON=Valkyrie Kanon
+EXP_TAG_AIR_DEFENCE=Lucht Verdediging
+EXP_TAG_PIPEBOMB=Pijp Bom
+EXP_TAG_VEHICLEMINE=Voertuig Mijn
+EXP_TAG_EXPLOSIVEAMMO=Explosieve Ammunitie
+EXP_TAG_APCSHELL=APC Projectiel
+EXP_TAG_BOMB_CLUSTER=Cluster Bom
+EXP_TAG_BOMB_GAS=Gas Bom
+EXP_TAG_BOMB_INCENDIARY=Brandstichter Bom
+EXP_TAG_BOMB_STANDARD=Bom
+EXP_TAG_TORPEDO=Torpedo
+EXP_TAG_TORPEDO_UNDERWATER=Torpedo (Onderwater)
+EXP_TAG_BOMBUSHKA_CANNON=Bombushka Kanon
+EXP_TAG_BOMB_CLUSTER_SECONDARY=Cluster Bom (Secundair)
+EXP_TAG_HUNTER_BARRAGE=Jager Barrage
+EXP_TAG_HUNTER_CANNON=Jager Kanon
+EXP_TAG_ROGUE_CANNON=Wild Kanon
+EXP_TAG_MINE_UNDERWATER=Onderwater Mijn
+EXP_TAG_ORBITAL_CANNON=Orbitaal Kanon
+EXP_TAG_BOMB_STANDARD_WIDE=Bom (Wijd)
+EXP_TAG_EXPLOSIVEAMMO_SHOTGUN=Explosieve Ammunitie (Shotgun)
+EXP_TAG_OPPRESSOR2_CANNON=Oppressor Mk II Kanon
+EXP_TAG_MORTAR_KINETIC=Kinetische Mortier
+EXP_TAG_VEHICLEMINE_KINETIC=Kinetische Voertuig Mijn
+EXP_TAG_VEHICLEMINE_EMP=EMP Voertuig Mijn
+EXP_TAG_VEHICLEMINE_SPIKE=Stekel Voertuig Mijn
+EXP_TAG_VEHICLEMINE_SLICK=Glad Voertuig Mijn
+EXP_TAG_VEHICLEMINE_TAR=Teer Voertuig Mijn
+EXP_TAG_SCRIPT_DRONE=Script Drone
+EXP_TAG_RAYGUN=Up-n-Atomizer (Raygun)
+EXP_TAG_BURIEDMINE=Begraven Mijn
+EXP_TAG_SCRIPT_MISSILE=Script Raket
+EXP_TAG_RCTANK_ROCKET=RC Tank Raket
+EXP_TAG_BOMB_WATER=Water Bom
+EXP_TAG_BOMB_WATER_SECONDARY=Water Bom (Secundair)
+EXP_TAG_MINE_CNCSPIKE=Stekels
+EXP_TAG_BZGAS_MK2=BZ Gas Mk II
+EXP_TAG_FLASHGRENADE=Flits Granaat
+EXP_TAG_STUNGRENADE=Verdoving Granaat
+EXP_TAG_CNC_KINETICRAM=Kinetische Ram
+EXP_TAG_SCRIPT_MISSILE_LARGE=Script Raket (Groot)
+EXP_TAG_SUBMARINE_BIG=Onderzeeër (Groot)
+EXP_TAG_EMPLAUNCHER_EMP=EMP Werper EMP
+EXP_TAG_RAILGUNXM3=Railgun (MP)
+EXP_TAG_BALANCED_CANNONS=Gebalanceerde Kanonnen (F35)
+
+IMPPART=Inslag Deeltjes
+IMPPART_H=Laat je selecteren welke deeltjes je wilt gebruiken voor Inslag Deeltjes.
+
+TTLFRDM=Totale Vrijheid
+TTLFRDM_H=Laat je wapens gebruiken in interieurs en in passieve modus.
+TTLFRDM_MOV_H=Laat je rennen, sluipen en springen in interieurs.
+
+TPGUN=Teleportatie Geweer
+
+! "Sticky" as in "Sticky Bomb"
+INCSTICK=Verhoogde Sticky Limiet
+INCFLARE=Verhoogde Flare Limiet
+
+INCPROJ_H=Dit verwijst naar de hoeveelheid die je in de wereld kan plaatsen, niet in je inventaris.
+
+LASGUN=Laservizier
+
+!!!!!!!!!!!!!
+!! Vehicle !!
+!!!!!!!!!!!!!
+
+NOVEHFND=Ga alsjeblieft eerst met je kont in een voertuig zitten. :)
+VEHALRDIN=Je zit er al in. :?
+VEHCTRL=Het overnemen van de controle van dit voertuig is gefaald. :|
+
+PVS=Persoonlijke Voertuigen
+
+INSUR=Verzekering
+ADDINSUR=Verzekering Toevoegen
+DSTRYD=Vernietigd
+UINSRD=Onverzekerd
+INSURCLM=Verzekeringsclaim Maken
+
+REQ=Opvragen
+REQNDRV=Opvragen & Rij Op Ingevoegde Locatie
+REQNCALL=Opvragen & Rij Op Mijn Locatie
+
+PVRPLC=Vervang Met Huidige Voertuig
+PVRPLC_H=Slaat de gegevens van het huidige voertuig op in plaats van je persoonlijke voertuig.
+
+PVSVE_H=Slaat de gegevens van dit voertuig op in Stand's garage.
+PVSVEA=Alles Opslaan Naar Garage
+PVSVEA_H=Slaat de gegevens van al je persoonlijke voertuigen op in Stand's garage.
+! "Garage" must use same translation as GRG. "Personal Vehicles" must stay as-is.
+PVSVEA_S=Je persoonlijke voertuigen zijn opgestaan in Garage > Persoonlijke Voertuigen. :D
+
+CURPV=Huidige Persoonlijke Voertuig
+PVEHNTFND=Ik heb je persoonlijke voertuig niet kunnen vinden. :/
+
+LSTVEH=Laatste Voertuig
+LSTVEHNTFND=Ik heb je laatste voertuig niet kunnen vinden. :/
+
+CALLVEH=Naar Mij Teleporteren & Besturen
+
+RC=Afstandsbediening
+RC_STCK=Druk op {} als je vast zit.
+
+GTARC=Imani Tech Afstandsbediening
+GTARC_E=Dit voertuig heeft geen ondersteuning voor Imani Tech Afstandsbediening en "Afstandsbediening Op Elk Voertuig" is niet ingeschakeld.
+
+RCANYVEH=Afstandsbediening Op Elk Voertuig
+
+RETSTOR=Terugkeren Naar Opslag
+
+VEHFOLLOW=Volg Mij
+
+SPWNR=Invoegen
+SPWND=Ingevoegd
+
+! The act of doing it, to spawn
+SPWN=Invoegen
+
+SPWNR_CLASSES=Klassen
+
+VEH_CLASS=Klasse
+VEH_SEATS=Stoelen
+
+DLC=DLC
+DLCS=DLCs
+DLC_10=Spel Lancering
+DLC_60=Beach Bum
+DLC_100=Valentine's Day Massacre
+DLC_110=Business
+DLC_130=High Life
+DLC_140=I'm Not a Hipster
+DLC_150=Independence Day
+DLC_160=SA Flight School
+DLC_170=Last Team Standing
+DLC_180=Next Gen Release
+DLC_190=Festive Surprise 2014
+DLC_210=Heists DLC
+DLC_270=Ill-Gotten Gains Part 1
+DLC_280=Ill-Gotten Gains Part 2
+DLC_300=Lowriders
+DLC_301=Halloween Surprise
+DLC_310=Executives and Other Criminals
+DLC_311=Festive Surprise 2015
+DLC_320=January 2016
+DLC_321=Be My Valentine
+DLC_330=Lowriders: Custom Classics
+DLC_340=Further Adventures in Finance and Felony
+DLC_350=Cunning Stunts
+DLC_360=Bikers
+DLC_370=Import/Export
+DLC_380=Special Vehicle Circuit
+DLC_400=Gunrunning Pack
+DLC_410=Smuggler's Run
+DLC_420=The Doomsday Heist
+DLC_430=Southern SA Super Sport Series
+DLC_440=After Hours
+DLC_460=Arena War
+DLC_480=Diamond Casino & Resort
+DLC_490=Diamond Casino Heist
+DLC_510=LS Summer Special
+DLC_520=Cayo Perico Heist
+DLC_570=LS Tuners
+DLC_580=The Contract
+DLC_610=The Criminal Enterprises
+DLC_640=Drug Wars
+DLC_670=San Andreas Mercenaries
+DLC_680=The Chop Shop
+DLC_690=Bodem Dollar Beloningen
+
+MANUFNS=Fabrikant Namen
+
+SPWNTUNE=Ingevoegde Voertuig Opvoeren
+SPWNTUNE_H=Laat je het afstemmingsprofiel selecteren voor voertuigen die ingevoegd zijn met Stand.
+TUNE_PRESETS=Standaard Opvoering
+TUNE_STCK=Standaard
+TUNE_PERF=Prestatie
+TUNE_PERF_H=Verbeterd alleen EMS, Remmen, Transmissie, Armor en Turbo.
+TUNE_PERFWSPL=Prestatie, Inclusief Spoiler
+TUNE_FULL=Volledig
+
+SPWCLR=Gekleurde Ingevoegde Voertuigen
+
+SPWPLATE=Ingevoegde Voertuigen Kentekenplaat
+
+TUNE=Upgrade
+TUNE_H=Upgrade je huidige of laatste voertuig compleet.
+
+RTUNE=Willekeurige Upgrade
+RTUNE_VIS=Alleen Visueel
+RTUNE_PERF=Alleen Prestatie
+RTUNE_PERF_S=Alleen Prestatie & Spoiler
+
+PERF=Prestatie Upgrade
+PERF_H=Verbeterd de EMS, Remmen, Transmissie, Armor en Turb van je huidige of laatste voertuig.
+PERF_T=Je voertuig heeft een prestatie verbetering ontvangen. :D
+PERF_E=Je voertuig is al volledig verbeterd, qua prestaties. :)
+
+PERFWSPL=Prestatie Upgrade, Inclusief Spoiler
+
+DNGRD=Downgrade
+DNGRD_H=Herstelt je huidige of laatste voertuig naar fabrieksinstellingen.
+
+GRG=Garage
+SVEVEH=Voertuig Opslaan
+
+PARA=Parachute
+PARA_GEN=Normale Parachute
+PARA_BRK=Gebroken Parachute
+SECUROSERV=SecuroServ
+
+XTRA=Extra
+XTRAS=Extra's
+XTRAS_N=Je voertuig heeft geen extra's.
+
+PARAON=Parachute Inschakelen
+PARAON_H=Heeft niet effect op alle voertuigen, b.v. niet op motorfietsen.
+
+PARA_H_VIS=Weet dat nadat je de parachute van het voertuig hebt geopend, niet alle wijzigingen van toepassing zijn.
+
+VEHFIN0=Normaal
+VEHFIN1=Metalen
+VEHFIN2=Parelglans
+VEHFIN3=Mat
+VEHFIN4=Metaal
+VEHFIN5=Chroom
+VEHFIN6=Kameleon
+
+WHLS=Wielen
+WHLSCLR=Wiel Kleur
+WHLTYP=Wiel Categorie
+VEHMOD23=Voorwielen
+
+VEHMOD0=Spoilers
+VEHMOD1=Voorbumper / Tegenmaatregelen
+VEHMOD2=Achterbumper
+VEHMOD3=Zijrok
+VEHMOD4=Uitlaat
+VEHMOD5=Frame
+VEHMOD6=Rooster
+VEHMOD7=Kap
+VEHMOD8=Spatbord
+VEHMOD9=Rechter Spatbord
+VEHMOD10=Dak / Wapens
+VEHMOD11=Motor
+VEHMOD12=Remmen
+VEHMOD13=Transmissie
+VEHMOD14=Claxon
+VEHMOD15=Suspensie
+VEHMOD16=Bepantsering
+VEHMOD18=Turbo
+VEHMOD24=Achterwielen
+VEHMOD25=Kenteken Houders
+
+! Alternatively, "Benny's Plates"
+VEHMOD26=Ijdelheid Platen
+
+VEHMOD27=Trim Ontwerp
+VEHMOD28=Ornamenten
+VEHMOD29=Dashboard
+VEHMOD30=Dial Ontwerp
+VEHMOD31=Deur Speaker
+VEHMOD32=Stoelen
+VEHMOD33=Stuur
+VEHMOD34=Schakelhendel
+VEHMOD35=Borden
+VEHMOD36=Speakers
+VEHMOD37=Kofferbak
+VEHMOD38=Hydraulica
+VEHMOD39=Motorblok
+VEHMOD40=Boost / Lucht Filter
+VEHMOD41=Stutten
+VEHMOD42=Boogdekking
+VEHMOD43=Antenne
+VEHMOD44=Trim
+VEHMOD45=Tank
+VEHMOD46=Linker Deur
+VEHMOD47=Rechter Deur
+VEHMOD48=Kleurstelling
+VEHMOD49=Koplampen
+
+VEHDRFTYR=Drift Banden
+
+VEHBPTYR=Kogelvrije Wielen
+
+SCRCHD=Verschroeid
+
+TONK=Turret Verwijderen
+
+BHVONFT=Gedrag Te Voet
+
+BHVINVEH=Gedrag In Voertuig
+
+SPWNDRVE=Bestuur Ingevoegd Voertuig
+SPWNDRVE_H=Stopt je gelijk op het bestuurdersstoel van voertuigen die je invoegt met Stand.
+
+SPWNAIR=Luchtvaartuigen Invoegen In De Lucht
+
+SPWNFRNT=Voor Invoegen
+SPWNFRNT_H=Zet het voertuig dat je invoegd met Stand een paar meter voor je neer.
+
+SPWLIKEPV=Invoegen Als Persoonlijk Voertuig
+
+SPWNDEL=Vorige Voertuig Verwijderen
+
+SPWNVEL=Snelheid Behouden
+
+INPTVEHMDL=Voer Modelnaam In
+ARGMDLNME=[model naam]
+INPTVEHMDL_H=De "expert mode" om voertuigen in te voegen.
+INPTOBJMDL_H=De "expert mode" om objecten in te voegen.
+INPTMDL_E=Helaas, {} is geen geldige modelnaam. :/
+INPTVEHMDL_E=Helaas, {} is geen geldige voertuigmodelnaam. :/
+
+ARSPD=AR Snelheidsmeter
+ARSPD_H=Geeft je personage een AR-bril met een snelheidsmeter app.
+
+CM=Tegenmaatregelen
+CM_AUTO=Auto-Opzetten
+CM_OF=Alleen In Luchtvaartuigen
+CM_PERIOD=Periodiek Opzetten
+CM_PERIOD_D=Periodiek Opzetten: Vertraging
+
+FLARE=Vuurpijlen
+CHAFF=Chaff
+BOTH=Beide
+
+CM_FLARE=Vuurpijlen Inzetten
+CM_CHAFF=Chaff Inzetten
+CM_BOTH=Vuurpijlen & Chaff Inzetten
+
+CM_PT=Patroon
+CM_HOR=Horizontaal
+CM_HOR_UP=Horizontaal, Naar Boven
+CM_HOR_DOWN=Horizontaal, Naar Beneden
+CM_VERT=Verticaal
+CM_VERT_DOWN=Verticaal, Naar Beneden
+
+AUTODRIVE=Auto-Rijden
+AUTODRIVE_C=Cruise Snelheid
+AUTODRIVE_SDB=Toon Bestemming Markeerder
+AUTODRIVE_ACOI=Annuleren Bij Invoer
+AUTODRIVE_ACOI_H=Annuleert automatisch wanneer je probeert het voertuig te besturen.
+AUTODRIVE_NOCLIP=Geen Voertuigbotsing Tijdens Auto-Rijden
+AUTODRIVE_NOCLIP_H=Schakelt botsing met andere voertuigen uit tijdens het auto-rijden. Handig om te compenseren voor slechte pad-vinding tijdens agressief rijden.
+AUTODRIVE_STORE=Winkel
+AUTODRIVE_MOVIE=Bioscoop
+AUTODRIVE_CLUBHOUSE=Motorclubhuis
+AUTODRIVE_FACILITY=Faciliteit
+AUTODRIVE_AGENCY=Bureau
+AUTODRIVE_OFFICE=Kantoor
+AUTODRIVE_HANGAR=Hangaar
+AUTODRIVE_ERR2=Auto-Rijden is niet beschikbaar voor dit type voertuig.
+AUTODRIVE_ERR3=Ik kon geen goede bestemming vinden, sorry. :(
+AUTODRIVE_ERR4=Je bent al op je bestemming. :P
+AUTODRIVE_ARRIVE=We zijn aangekomen op je bestemming. ^_^
+AUTODRIVE_DRIVE=Rijstijl
+AUTODRIVE_LAW=Wettig
+AUTODRIVE_NOTSOLAWFUL=Wettig, Negeer Stoplichten
+AUTODRIVE_BACK=Achterwaarts
+AUTODRIVE_DEST=Rij naar...
+AUTODRIVE_DEST_NONE=Waar De Wind Ons Brengt
+AUTODRIVE_DEST_NONE_H=Rijdt je rond zonder een specifieke bestemming.
+
+LGTSIGS=Licht Signalen
+TRNSIG=Draai Signalen
+TRNSIG_HAZ=Gevaar
+TRNSIG_AUTO=Automatisch Draai Signalen Uitschakelen
+BRAKELIGHTS=Gebruik Remlichten Wanneer Gestopt
+MTESIRENS=Sirenes Dempen
+
+AUTORKTBST=Automatisch Raketboost
+AUTORKTBST_H2=Gebruikt automatisch de raketboost wanneer deze is opgeladen.
+
+RKTBST=Raketboost
+
+OVRD=Overschrijven
+RKTBST_H_OVRD=Hiermee kan je wijzigen of de voertuigen die je rijdt een raketboost hebben.
+
+VERTRKTBST=Verticale Raketboost
+
+CHRGBHV=Oplading Gedrag
+RKTBST_NVREND=Oneindig
+RKTBST_NVREND_H=Laat de boost nooit eindigen, behalve als je crasht.
+RKTBST_INSTRFLL=Gelijk Bijvullen
+RKTBST_INSTRFLL_H=Vult de boost gelijk bij nadat het is afgelopen.
+RKTBST_NORFLL=Geen Bijvul Tijd
+RKTBST_NORFLL_H=Vult de boost onmiddellijk bij als aan de voorwaarden zijn voldaan.
+RKTBST_EMPTY=Altijd Leeg
+
+RMP=Helling
+RMMSCOOP=Ram Schepping
+INCRMMFRC=Verhoogde Ram Kracht
+
+LSC=Los Santos Customs
+
+VDO=Open/Sluit Deuren
+
+VEHDOOR_A=Alle Deuren
+VEHDOOR_0=Voorkant Links
+VEHDOOR_1=Voorkant Rechts
+VEHDOOR_2=Achterkant Links
+VEHDOOR_3=Achterkant Rechts
+VEHDOOR_4=Autokap
+VEHDOOR_5=Kofferbak
+VEHDOOR_6=Achter
+VEHDOOR_7=Achter 2
+
+LOCKD=Vergrendel Deuren
+LOCKD_O=Alleen Als Leeg
+XCLUDEPVS=Persoonlijke Voertuigen van Anderen Uitsluiten
+
+ENGTGL=Schakel Motor Aan/Uit
+ENGTGL_H=Weet dat als je vooruit of achteruit drukt, je personage de motor weer aanzet in de meeste voertuigen.
+
+FLIPVEH=Voertuig Rechtop Zetten
+FLIPVEH_H=Zet je huidige of laatste voertuig rechtop.
+
+ATRNSUBCAR=Onderzeeër Auto Automatisch Transformeren
+NANIM=Geen Animatie
+
+DRBYINANY=Drive-by In Alle Voertuigen
+DRBYWITHANY=Drive-by Met Alle Wapens
+
+WHEELONWHEELS=Wapen Wiel In Voertuigen
+WHEELONWHEELS_H=Let op dat je nog steeds de scrollwiel omhoog kan gebruiken om door de wapens heen te gaan, wat je nodig hebt om door de voertuigwapens heen te gaan.
+
+BMBTRJC=Toon Bom Traject
+
+FLYTHRUWND=Vlieg Door Voorruit
+
+! "Glued To Seats" is SEATGLUE
+FLYTHRUWND_H=Gooit je uit het voertuig bij frontale botsingen met hoge snelheid zoals in Story Mode. Dit overschrijft "Vastgelijmd Aan Stoelen".
+
+ANTINLCKON=Op Alle Voertuigen Vergrendelen
+
+! "Can't Be Locked On" is NLCKON
+ANTINLCKON_H=Laat je vergrendelen op Imani Tech voertuigen. Dit omzeilt ook functies zoals "Kan Niet Vergrendeld Worden".
+
+SETSEAT=Zet Voertuig Stoel
+DRV=Bestuurder
+
+LVENGRUN=Laat Motor Aan Bij Uitstappen
+
+NOJACK=Kan Niet Uit Worden Getrokken
+
+PEG=Zet Als Pegasus Voertuig
+PEG_H=Laat je sommige ingevoegde luchtvaartuigen in je hangar zetten door het spel te laten denken dat het een pegasus luchtvaartuig is
+
+DSTRY=Vernietigen
+
+DELVEH_H=Verwijdert je huidige of laatste voertuig.
+
+FIXVEH=Repareer Voertuig
+FIXVEH_H=Repareert je huidige of laatste voertuig.
+
+VEHGOD=Onverwoestbaar
+VEHGOD_H=Maakt elk voertuig dat je bestuurd onverwoestbaar.
+
+SPWNGOD=Maak Ingevoegde Voertuigen Onverwoestbaar
+
+SPWNLIST=Lijst Van Ingevoegde Voertuigen
+
+VEH_DRV=Besturen
+VEH_ENT=Betreden
+VEH_EMPTY=Legen
+DEL=Verwijderen
+
+SPWNBLIP=Blips Op Ingevoegde Voertuigen
+SPWNBLIP_TXT=Voertuig ({}) Ingevoegd
+CLRBLIP=Blips Verwijderen
+ONLYLTST=Alleen Voor Laatste Voertuig
+
+MINT=Permanent Nieuwe Conditie
+MINT_H=Houdt je voertuig vrij van deuken en krassen.
+
+PLATE=Kentekenplaat
+
+PLATESPEED=Snelheidsmeter
+PLATESPEED_A=Kentekenplaat Snelheidsmeter
+
+CHARLIMIT=Kan niet meer dan {number} tekens bevatten. :|
+
+RNDISE=Randomiseren
+
+SCRLTXT=Tekst Scrollen
+
+LCKPLT=Kentekenplaat Tekst Vergrendelen
+
+BADCHAR="{}" is geen geldig teken voor dit. :|
+
+HORNBOOST=Claxon Boost
+
+SPRDRV=Super Voertuig
+
+SPRDRVCAM=Super Voertuig Gebruikt Camera
+SPRDRVCAM_H=Verandert de definitie van "vooruit" zodat Super Voertuig is waar je kijkt in plaats van waar je voertuig naartoe gaat.
+
+SPRHBRK=Super Handrem
+
+DRVONWTR=Rij Op Water
+
+DRVUNDWTR=Onderwater Rijden
+
+SPDLMT=Snelheidslimiet (KMH)
+SPDLMT_H=Stelt de maximumsnelheid in van voertuigen die je bestuurt. (Standaard: 540)
+
+JMPABL=Spring Vermogen
+JMPABL_H=Weet dat als je spring en raketboost vermogen beide hebt, het spel de boost naar de secundaire sneltoets overzet.
+
+GLDABL=Glij Vermogen
+
+HEADLIT=Koplampen
+
+HEADLITMUL=Intensiteit Koplampen
+H_HILOCAL=*hogere waardes worden alleen lokaal getoond*
+
+GRVTYMTPLY=Zwaartekracht Vermenigvuldiger
+
+NOTAIR=Niet In Luchtvaartuigen
+
+HNEDIT=Besturing Bewerker
+HNE_BASE=Basis
+HNE_AIRCRAFT=Vliegtuig
+
+! Motorcycles and bicycles alike.
+HNE_BIKES=Fietsen
+
+HNE_FLYING=Vliegend
+HNE_VERTFLY=Verticaal Vliegend
+HNE_SPECFLY=Speciaal Vliegend
+HNE_SEAPLANE=Watervliegtuig
+HNE_SUBMARINE=Onderzeeërs
+HNE_TRAILER=Trailers
+HNE_CAR=Auto
+
+SPECFLY_H=Let op dat voor voertuigen anders dan de Deluxo, de "dak" input (H ingedrukt houden of D-Pad Rechts) wordt gebruikt om speciale vlucht in te schakelen.
+
+DELUXO=Deluxo
+OPP2=Oppressor Mk II
+
+SHWNA=Toon Niet Toepasbare
+
+HNE_VWSCR=Bekijk Behandelende Scripts
+HNE_VWSCR_H=Bekijk scripts in de "Handling" sub-map van je Opdrachtvenster Scripts map.
+
+HNE_NA=Deze categorie is niet van toepassing op je huidige voertuig.
+
+CSTWNGBVHR=Aangepaste Vleugels Gedrag
+CSTWNGBVHR_H=Hiermee kan je het gedrag van de vleugels van de oppressor aanpassen.
+
+LESSENBURN=Band Burnouts Verminderen
+
+SMTHCST=Soepel Rijden
+SMTHCST_H=Vermindert de stationaire deacceleratie van je voertuig naar een realistischer tempo.
+
+DRFTMDE=Drift Modus
+DRFTMDE_H=Onze recreatie van de drift tuning, die alleen beschikbaar is voor een handvol voertuigen. Onze versie werkt voor veel meer voertuigen, maar sommige voertuigen voelen niet zo soepel aan als andere.
+
+MINPOS=Min Positie
+MAXPOS=Max Positie
+CSTWNGBVHR_SPD=Snelheid
+MAXPOS2SPD=Snelheid Instellen Gebaseerd Op Max Positie
+
+SMTHFLY=Geen Turbulentie
+
+HELIAUTOSTAB=Heli Auto-Stabilisatie Uitschakelen
+HELIAUTOSTAB_H=Origineel geïnspireerd door Murten's BetterHeliMode script.
+
+NLCKON=Kan Niet Op Vastzetten
+
+INSTASEAT=Gelijk Instappen En Uitstappen
+INSTASEAT_H=Slaat je personage naar het voertuig lopen over, de motor aan en uitzetten en uit/afstappen.
+
+EXITSTOP=Voertuig Stoppen Bij Uitstappen
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Vehicle Classes !!
+!!!!!!!!!!!!!!!!!!!!!
+
+off_road=Off-Road
+sport_classic=Klassieke Sportwagens
+Military=Militair
+Compacts=Compact
+sport=Sportwagens
+Muscle=Muscle
+motorcycle=Motorfietsen
+open_wheel=Open Wiel
+Super=Super
+van=Bussen
+suv=SUV's
+Commercial=Commercieel
+plane=Vliegtuigen
+sedan=Sedans
+Service=Onderhoud
+Industrial=Industrieel
+helicopter=Helikopters
+boat=Boten
+Utility=Bedrijfswagen
+Emergency=Noodvoertuigen
+cycle=Fietsen
+coupe=Coupés
+rail=Treinen
+
+!!!!!!!!!!!
+!! World !!
+!!!!!!!!!!!
+
+PLCS=Plaatsen
+INHAB=Inwoners
+ATMO=Atmosfeer
+
+DWNTWN=Centrum
+
+! GTA calls a point on the map a "blip"
+BLIPS=Blips
+BLIPNFND=Ik heb geen bijpassende blip kunnen vinden. :/
+
+TP=Teleporteren
+
+DEDFX=Dood Effect
+RESPFX=Respawn Effect
+TPFX=Teleportatie Effect
+
+TPS=Teleporteer naar...
+TPWAIT=Teleportatie Voorbereiden...
+
+WP=Routepunt
+WPS=Routepunt op...
+OBJCTV=Objectief
+TP_MP=Hierheen teleporteren zorgt ervoor dat de Online wereld staat ingeladen is, dit kan het spel tijdelijk niet laten reageren.
+TP_CAYO=Zorg ervoor dat Cayo Perico wereld staat of IPLs zijn ingeschakeld zodat je niet in het water beland.
+
+RPLTP=Laatste Teleportatie Herhalen
+RP_E=Niks te herhalen. :?
+
+UNDOTP=Teleportatie Ongedaan Maken
+UNDOTP_E=Er is niks om ongedaan te maken. :?
+
+STORS=Winkels
+
+AMMUNAT=Ammu-Nation
+SHTNGRNGE=Ammu-Nation met Schietbaan
+BARBR=Kapperszaak
+CLTHST=Kledingzaak
+TATTOO=Tattoo Shop
+
+LNDMRKS=Oriëntatiepunten
+
+LSIA=Los Santos International Airport
+FRTZNC=Fort Zancudo
+MTCHIL=Mount Chiliad
+
+CAYO=Cayo Perico
+
+CSNO=Casino
+
+! Translate "Tower" & "Helipad"
+MAZEHELIPAD=Maze Bank Toren Helipad
+
+HIGHPLACE=Heel Hoog
+
+AUTOTPWP=Automatisch Teleporteren Naar Routepunten
+AUTOTPWP_H=Teleporteert je automatisch naar een routepunt die je insteld.
+AUTOTPWP_T=Je bent automatisch naar je routepunt geteleporteerd. :)
+
+WPORTAL=Naar Routepunten Teleporteren Met Portalen
+
+CBPOS=Positie Van Klembord
+CBPOS_H=Scant je klembord voor een 3D of 2D vector.
+CBPOS_T=Ik heb geen 3D of 2D vector in je klembord kunnen vinden. :?
+
+POS=Positie
+
+! Stand > Settings > Appearance > Position
+MNUPOS=Positie
+
+! World > Places > Position
+MYPOS=Positie
+
+POS_Z=Z (Hoogte)
+
+SVDPLCS=Opgeslagen Plaatsen
+SVDPLCS_H=Je kan plaatsen opslaan in {}.
+
+SVPLC_M=Mijn Positie Opslaan
+SVPLC_W=Routepunt Positie Opslaan
+
+CPPOS=Kopieer Positie Naar klembord
+
+CPSUCC=Kopiëren naar klembord geslaagd. :D
+CPERR=Kopiëren naar klembord gefaald. :|
+
+IPLS=IPLs
+IPLS_H=Laat je gebieden van de wereld ("IPLs") in en uitladen *lokaal*.
+
+IPLTP=Teleporteer Naar IPLs
+IPLTP_H=Teleporteert je naar IPLs als je ze beneden inschakeld.
+IPL_MP=Het inschakelen van deze IPL zorgt ervoor dat de Online wereld staat ingeladen is, dit kan het spel tijdelijk niet laten reageren
+
+TRFC=Verkeer
+
+TRFCLR=Verkeer Kleur
+
+DPEDS_A=Voetgangers Uitschakelen
+
+DTRFC_A=Verkeer Uitschakelen
+DTRFC_2=Ingeschakeld, Inclusief Geparkeerde Voertuigen
+
+SWRLDST=Wereld Staat Instellen
+SWRLDST_H=Weet dat het veranderen tussen wereld status het spel kort niet meer kan laten reageren.
+
+SP=Story Mode
+
+S_SP=SP
+S_MP=MP
+
+INT=Interieur
+INTS=Interieurs
+
+INT_BKR=Bunker
+STYL=Stijl
+SECTY=Veiligheid
+EQUIPUPGR=Apparatuur Upgrade
+GUNLKR=Wapenkast
+PSNLQRTS=Persoonlijke Vertrekken
+GUNRNGE=Schietbaan
+
+INT_VW=Voertuig Magazijn
+INT_VW_2=Branded
+INT_VW_1=Urban
+INT_VW_0_1=Standaard (Kleuren 1)
+INT_VW_0_2=Standaard (Kleuren 2)
+INT_VW_0_3=Standaard (Kleuren 3)
+INT_VW_0_4=Standaard (Kleuren 4)
+
+INT_IF=IAA Faciliteit
+INT_SR=Server Kamer
+INT_BS=Bogdan's Onderzeeër
+INT_HL=Humane Labs
+INT_FR=FIB (Bureau Inval)
+INT_LFB=La Fluente Blanca
+INT_SSWCC=Split Sides West Comedy Club
+INT_BM=Bahama Mamas
+INT_TR=Martel Kamer
+INT_MR=Motel Kamer
+INT_OG=Omega's Garage
+INT_CIN=Bioscoop
+INT_RCYL=Recycling Plantage
+
+INT_PYSC=Friedlander's Kantoor
+INT_SOL=Solomon's Kantoor
+
+INT_FH=Floyd's Huis
+INT_JH=Janitor's Huis
+INT_LH=Lester's Huis
+
+INT_BENNY=Benny's Originele Motor Werken
+INT_HAYES=Hayes Auto's
+INT_TEQ=Tequi-La-La
+INT_FDRY=Gieterij
+INT_UDG=Union Depository Garage
+INT_ESR=Epsilon Opslag Kamer
+INT_CC=Personage Creatie Kamer
+INT_ME=Missie Einde Parkeerplaats
+INT_NG=Nachtclub Garage
+INT_WEED=Weed Plantage
+INT_STILT=Stilt Huis
+
+INT_A_H=High-End Appartement
+INT_A_M=Mid-End Appartement
+INT_A_L=Low-End Appartement
+
+INT_G_H=High-End Garage
+INT_G_M=Mid-End Garage
+INT_G_L=Low-End Garage
+
+INT_W_L=Groot Magazijn
+INT_W_M=Middelmatig Magazijn
+INT_W_S=Klein Magazijn
+
+YANK=North Yankton
+YANKMAPRDR=North Yankton Kaart & Radar
+IPL_USSLUX=USS Luxington
+IPL_HOSPITAL=Pillbox Hill Medisch Centrum
+FMEORSHME=Fame or Shame
+FCEBK=Lifeinvader
+IPL_JEWEL=Vangelico Fine Jewelry
+IPL_MXRD=Max Renda
+IPL_UFOEYE=Mount Chiliad UFO
+IPL_FINBANK=Union Depository
+IPL_PLNCRSH=Plane Crash Trench
+
+! Translate "Factory"
+IPL_CLKNBLLFCTRY=Clucking Bell Fabriek
+IPL_LSTRFCTRY=Lester's Fabriek
+
+! Translate "Morgue"
+IPL_MORGUE=Mortuarium
+
+! Translate "Heist" and "Yacht"
+IPL_AYACHT=Series A Overval Jacht
+
+! Translate "Ranch" and "Fire"
+IPL_RANCH=O'Neil Brothers Boerderij
+IPL_RANCH_LIT=O'Neil Brothers Boerderij Vuur
+
+! Translate "Clubhouse"
+IPL_LOSTHOUSE=Lost MC Clubhuis
+
+! Translate "House"
+IPL_BCHOUSE=Banham Canyon Huis
+
+IPL_TRNWRCK=Trein Crash
+IPL_REDCRPT=Rode Loper
+
+! Translate anything but "FIB"
+IPL_FIBLBBY=FIB Lobby
+! Translate anything but "FIB"
+IPL_FIBHELI=FIB Helikopter Crash
+! Translate anything but "FIB"
+IPL_FIBRBBL=FIB Puin
+
+! Translate "Triathlon"
+IPL_TRIA2=Alamo Sea Triatlon
+! Translate "Triathlon"
+IPL_TIRA1=LSIA Triatlon
+
+! Translate "Gates"
+IPL_ZGATES=Fort Zancudo Poorten
+
+! Translate "Airfield" and "Boxes"
+IPL_BOXES=Sandy Shores Vliegveld Dozen
+
+IPL_SPNN=Wasstraat Spinners
+
+! Translate "Billboard" and "Graffiti"
+IPL_MAZEGRFF=Maze Bank Reclamebord Graffiti
+! Translate "Billboard" and "Graffiti"
+IPL_OILGRFF=Ron Oil Reclamebord Graffiti
+! Translate "Billboard" and "Graffiti"
+IPL_FRUITBB=iFruit Reclamebord
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL1=Meltdown Reclamebord 1
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL2=Meltdown Reclamebord 2
+
+! Translate "Church" and "Grave"
+IPL_GRVE=Hill Valley Kerkgraf
+
+XSTPNSH=NPC Bestaans Straffing
+NPRXPNSH=NPC Nabijheid Straffing
+PRX=Nabijheid
+NAIMPNSH=NPC Richten Straffen
+NAIMPNSH_H=Straf NPCs voor het richten in jouw gebied.
+NHOSPNSH=NPC Vriendelijkheid Straffen
+INCLUDE_EVERYONE=Inclusief Iedereen
+INCLUDE_EVERYONE_M=Inclusief Iedereen, In Missies
+INCLUDE_FRIEND=Inclusief Vrienden
+INCLUDE_PASS=Inclusief Passagiers
+INCLUDE_CREW=Inclusief Bemanningsleden
+INCLUDE_ORG=Inclusief Organisatie Leden
+INCLUDE_H1=In plaats van alleen jou, zullen straffen van toepassing zijn wanneer deze demografie ook een doelwit is.
+INCLUDE_H2=Hetzelfde als hierboven, maar alleen effectief in missies.
+PAIMPNSH=Speler Richten Straffen
+PAIMPNSH_H=Straf spelers voor het richten in jouw gebied.
+AIMME=Alleen Straffen Bij Richten Naar Mij
+AIMMEN=Indien uitgeschakeld worden NPCs gestraft voor het richten in jouw gebied, ongeacht op wie ze richten
+AIMMEP=Indien uitgeschakeld worden spelers gestraft voor het richten in jouw gebied, ongeacht op wie ze richten
+PNSH_EXPANON=Anonieme Explosies
+PNSH_EXP=Eigen Explosies
+PNSH_BRN=Verbranden
+PNSH_DIE=Sterfen
+PNSH_REV=Herrijzen
+PNSH_UNRM=Ontwapenen
+PNSH_UNRM_H=Laat ze alleen hun vuisten houden.
+PNSH_INTRP=Onderbreken
+PNSH_CWR=In Elkaar Duiken
+PNSH_FLEE=Vluchten
+PNSH_PSH=Wegduwen
+PNSH_MRK=AR Markeerder
+PNSH_SHWMDLNME=Toon Model Naam
+PSNH_FIX=Repareer
+PSNH_WEKN=Verzwakken
+PSNH_WEKN_H=Verlaagt hun gezondheid zodat ze makkelijk dood gaan.
+
+! "ESP" as in "Extra Sensory Perception"
+NESP=NPC ESP
+! "ESP" as in "Extra Sensory Perception"
+PESP=Speler ESP
+
+! "ESP" as in "Extra Sensory Perception"
+BONESP=Bot ESP
+XCLDED=Doden Uitzonderen
+
+! "ESP" as in "Extra Sensory Perception"
+BOXESP=Doos ESP
+
+RNDR_LWLTCY=Lage Vertraging Rendering
+RNDR_LGCY=Oude Rendering
+RNDR_NTV=Oorspronkelijke Rendering
+
+! "ESP" as in "Extra Sensory Perception"
+NAMESP=Naam ESP
+
+MINTXTSCL=Min. Tekst Schaal
+MAXTXTSCL=Max. Tekst Schaal
+INVTXTSCL=Tekst Schaling Omkeren
+
+! "ESP" as in "Extra Sensory Perception"
+LINESP=Lijn ESP
+
+ESPTAGS_H=Tags zijn gesorteerd in deze lijst op weergave prioriteit.
+
+CLRARE=Gebied Leegmaken
+IGMISSENT=Missie Entiteiten Negeren
+NDLY=Geen Vertraging
+
+DELROPES=Verwijder Alle Touwen
+
+DOORS=Verbeterde Open Wereld
+DOORS_H=Opent de wereld meer en laat je meer interieurs betreden wanneer je wilt.
+
+DOORS_ENT=Druk op {input} om {interior} te betreden.
+DOORS_EXT=Druk op {} om te verlaten.
+
+DEDSEC=Watch_Dogs-Achtige Wereld Hacking
+
+DEDSEC_HACK=Hacks
+DEDSEC_HACK_H=Staat je toe om te configureren welke hacks verschijnen op je scherm.
+
+DEDSEC_GENAC=Algemene Acties
+DEDSEC_VEHAC=Voertuig Acties
+DEDSEC_VEHAC_H=Wordt toegepast als je een speler selecteert in een voertuig.
+DEDSEC_NPCAC=NPC Acties
+DEDSEC_PLRAC_H=Wordt toegepast als je een speler selecteert op de grond.
+
+DEDSEC_TUT_ESP=Kijk in de directie van een speler, NPS, of voertuig.
+DEDSEC_TUT_OPT=Drup op {} om de hack-opties voor je huidige doelwit te bekijken.
+DEDSEC_TUT_OPTMSE=de middelste muisknop of {}
+DEDSEC_TUT_SEL=Beweeg je camera om een optie te selecteren en laat de knop los om deze te gebruiken.
+
+DEDSEC_OPT_FRZ=Bevriezen
+DEDSEC_OPT_UFRZ=Ontdooien
+DEDSEC_OPT_EXP=Explodeer
+DEDSEC_OPT_UNRM=Ontwapenen
+DEDSEC_OPT_DEL=Verwijder
+
+DEDSEC_OPT_DSTRY=Vernietigen
+DEDSEC_OPT_DRV=Besturen
+DEDSEC_OPT_ENT=Betreden
+DEDSEC_OPT_EMPTY=Leeg
+DEDSEC_OPT_IGNITE=Ontsteken
+DEDSEC_OPT_SLINGSHOT=Katapult
+
+DEDSEC_OPT_BRN=Verbranden
+DEDSEC_OPT_FLEE=Vluchten
+DEDSEC_OPT_CWR=Ineenkrimpen
+DEDSEC_OPT_REV=Herrijzen
+
+DEDSEC_OPT_KLL=Doden
+DEDSEC_OPT_CGE=Kooien
+DEDSEC_OPT_MNU=In Stand
+
+DEDSEC_STICKY=Plakkerige Selectie
+DEDSEC_STICKY_H=Hacks worden alleen gedeselecteerd na de opgegeven vertraging in milliseconden. Dit is handig voor controllers.
+DEDSEC_PASSIVE=Wanneer Geen Doelwit Geselecteerd...
+DEDSEC_ACTIVE=Wanneer Doelwit Geselecteerd...
+
+SHWRETCL=Crosshair Weergeven
+DRWLINE=Toon Lijn
+DRWBOX=Toon Vak
+
+DEDSECDELAY=Telefoon Open Deadline
+DEDSECDELAY_H=Laat je je telefoon openen tijdens dat je een hack doelwit hebt, als je de sleutel in de opgegeven hoeveelheid milliseconden loslaat.
+
+GGSR=GeoGuessr
+GGSR_H=Hoe goed ken jij San Andreas?
+GGSR_VIEW=Doel Bekijken
+GGSR_SBMT=Neem Een Gok
+GGSR_SBMT_H=Voer een positie in door een waypoint te zetten, door freecam te gebruiken, of door je karakter te verplaatsen of te teleporteren.
+GGSR_WIN=Je hebt het goed!
+GGSR_OFF=Je gok is {} meter van je doel.
+
+ARWP=AR Routepunt
+ARWP_H=Toont een straal bij je routepunt en geeft je een manier om de hoogte zien van sommige routepunten die zijn geplaatst via Stand.
+
+ARGPS=AR GPS
+ARGPS_H=Navigeert je naar je routepunten.
+
+ARBCNPLY=AR Routepunt Op Gefocuste Speler
+ARBCNPLY_P=In Speler Lijst
+ARBCNPLY_S=Binnen Een Speler's Lijst
+
+WHNENTPLY=Bij Binnenkomen Speler's Lijst...
+SPCPLY=Toekijken
+
+WHNLVEPLY=Bij Verlaten Van Speler's Lijst...
+STPSPECPLY=Stop Met Toeschouwen
+
+STPSPEC=Toeschouwen Stoppen
+
+SRT=Sortering
+SRTBY=Sorteren Bij
+SRTREV=Uitkomst Omdraaien
+
+! Or "Raised Tags"
+HOISTFLGS=Verhoogde Tags
+HOISTFLGS_H=Spelers met verhoogde tags worden boven spelers zonder verhoogde tags geplaatst.
+
+NME=Naam
+SRTBY_SLT=Slot
+
+SPID2=Sessie Speler ID / Slot
+
+LANG_EN=Engels
+LANG_FR=Frans
+LANG_DE=Duits
+LANG_IT=Italiaans
+LANG_ES=Spaans (Spanje)
+LANG_BR=Portugees
+LANG_PL=Pools
+LANG_RU=Russisch
+LANG_KR=Koreaans
+LANG_TW=Traditioneel Chinees
+LANG_JP=Japans
+LANG_MX=Spaans (Mexico)
+LANG_CN=Versimpeld Chinees
+
+DSCVYTME=Ontdekking Tijd
+
+CTOS=Verduistering
+CTOS_2=Ingeschakeld, inclusief Voertuigen
+
+NOSKY=Skybox Uitschakelen
+
+OVRDWTR=Weer Overschrijven
+OVRDWTR_H=Overschrijft het weer *lokaal*.
+OVRDOFF=Niet Overschrijven
+WTR_EXTRASUNNY=Extra Zonnig
+WTR_CLEAR=Helder
+WTR_CLOUDS=Wolken
+WTR_SMOG=Smog
+WTR_FOGGY=Mistig
+WTR_OVERCAST=Bewolkt
+WTR_RAIN=Regen
+WTR_THUNDER=Donder
+WTR_CLEARING=Ophelderen
+WTR_NEUTRAL=Neutraal
+WTR_SNOW=Sneeuw
+WTR_BLIZZARD=Sneeuwstorm
+WTR_SNOWLIGHT=Sneeuwlicht
+WTR_XMAS=Kerstmis
+WTR_HALLOWEEN=Heldere Halloween
+WTR_RAIN_HALLOWEEN=Regenachtige Halloween
+WTR_SNOW_HALLOWEEN=Besneeuwde Halloween
+
+AESLGHT=Esthetisch Licht
+PLCMNT=Plaatsing
+PLCMNT_CHR=Personage
+PLCMNT_CHR_H=Een enkel licht dat uit je personage schijnt.
+PLCMNT_CAM=Camera
+PLCMNT_CAM_H=Een enkel licht dat uit je camera schijnt.
+PLCMNT_OVL=Ovaal Aan Lichten
+PLCMNT_OVL_H=81 lichten in een ovaal rond je personage.
+RNGE=Bereik
+ITNST=Intensiteit
+
+! Might also be called "falloff" or "edge gradient", I'm no expert on lights
+DFFRCTN=Diffractie
+
+WRLDBDR=Wereld Grens
+WRLDBDR_H=Toont de wereld grens als je binnen een gespecificeerd aantal meters in de buurt bent.
+
+WAT=Water
+
+WVEBHV=Golf Gedrag
+SMTH=Glad
+MGNT=Magnetisch
+
+ZDIFF=Z Differentieel
+WATZDIFFLOC=Z Differentieel Alleen Toepassen Op Dichtbij Water
+
+STROVR=Kracht Overschrijven
+
+OPCDIF=Dekking Verschil
+WATOD_H=Laat je water ondoorzichtidheid toevoegen of verwijderen *lokaal*.
+
+TRAINS=Ik Hou Van Treinen
+TRAINS_H=Laat treinen vaker voorkomen in de wereld.
+
+CLK=Klok
+
+TIME=Tijd
+
+CLKSYNC=Sessie Tijd Gebruiken
+
+LKTIME=Tijd Vastzetten
+
+SYSTIME=Gebruik Systeem Tijd
+
+SMTHTRNS=Soepele Overgang
+
+CLKPRST_12=Middag
+CLKPRST_6=Ochtend
+CLKPRST_0=Middernacht
+CLKPRST_18=Namiddag
+
+!!!!!!!!!!!!!
+!! Players !!
+!!!!!!!!!!!!!
+
+ALLPLY=Alle Spelers
+
+XCLDS=Uitzonderingen
+
+XCLDF=Vrienden Uitzonderen
+XCLDM=Mij Uitzonderen
+XCLDCM=Bemanningsleden Uitzonderen
+XCLDSU=Stand Gebruikers Uitzonderen
+XCLDPR=Spelers Uitzonderen
+XCLDOG=Organisatie Leden Uitzonderen
+XCLD50=Autoriteiten Uitzonderen
+XCLDMIS=Missies Uitzonderen
+XCLDMDR=Modders Uitsluiten
+XCLDLMDR=Waarschijnlijke Modders Uitsluiten
+
+XCLD_GRD=Voorkomt dat je bodyguards deze demografie aanvallen.
+
+PS_ON_H=Bevat je vrienden, onbekenden, & jezelf.
+PS_F_S=Vrienden & Vreemdelingen
+PS_S=Vreemdelingen
+
+PSC_M=Ik
+PSC_FM=Vrienden & Ik
+PSC_CFM=Bemannings Leden, Vrienden, & Ik
+
+PLYFTRLST=[Speler]
+
+SLFHRM=Weet je zeker dat je dit jezelf aan wilt doen?
+
+FLAGS=Labels
+FLAGS_A=Speler Labels
+
+BRCKTS=Haakjes
+
+FLAG_SELF=Zelf
+FLAG_FRIEND=Vriend
+FLAG_CREW=Bemanning Lid
+FLAG_ATTACKED=Viel Je Aan
+FLAG_HOST=Host
+FLAG_SCRIPT_HOST=Script Host
+FLAG_SPEC=Toeschouwen
+FLAG_GOD=Onsterfelijk
+FLAG_VEHGOD=Onverwoestbaar Voertuig
+FLAG_INVEH=In Voertuig
+FLAG_RC=Gebruikt RC Voertuig
+FLAG_OTR=Van De Radar
+FLAG_INT=In Een Interieur
+FLAG_TYPING=Typen
+FLAG_DEAD=Dood
+FLAG_VPN=VPN
+FLAG_INVISIBLE=Onzichtbaar
+FLAG_ORG_MEMBER=Organisatie Lid
+
+NXTHST=Volgende Beheerder
+
+! Plural version of FLAG_FRIEND
+FLAG_FRIEND_P=Vrienden
+
+! Plural version of FLAG_CREW
+FLAG_CREW_P=Bemanningsleden
+
+! Plural version of FLAG_MOD
+FLAG_MOD_P=Modders
+
+! Plural version of FLAG_ATTACKED
+FLAG_ATTACKED_P=Viel Je Aan
+
+PLYTP=Teleporteer Naar Hen
+PLYTP_A=Teleporteer Naar {}
+
+PLYTPVEH=In Zijn/Haar Voertuig Teleporteren
+PLYNVEH={} is niet in een voertuig. :/
+
+PLYAPT=Teleporteer Naar Appartement...
+
+OFFICE_GARAGE={office}, Garage {num}
+
+NEAR_ME=In De Buurt
+NEAR_WP=In De Buurt Richtingspunt
+
+APTID=Appartement ID
+INTID=Interieur ID
+
+PLY_VISIT=Teleporteer In Zijn/Haar Appartement
+
+PLYSMMN_D=Teleporteer/Breng Hen
+
+PLYSMMN=Teleporteer Naar Mij
+PLYSMMNPLY=Teleporteer Naar Speler...
+PLYSMMNWP2=Teleporteer Naar Mijn Richtingspunt
+PLYSMMNOBJ=Teleporteer Naar Mijn Objectief
+
+PLYWPTP=Teleporteer Naar Hun Richtingspunt
+PLYWPTP_N={} heeft geen richtingspunt ingesteld.
+
+COPYWP=Kopieer Hun Richtingspunt
+
+PLYNAPT={} is niet in een appartement. :/
+
+PLYCASINOTP=Teleporteer Naar Casino
+
+PLYFRND=Vriendschapsverzoek Sturen
+
+PLYINHIST=In Speler Geschiedenis
+
+PLYENGMULT=Motor Vermogen Vermenigvuldiger
+
+PLYGIFT=Ingevoegde Voertuig Geven
+PLYGIFT_H=Laat hem/haar elk voertuig in een garage zetten, onafhankelijk van de waarde.
+PLYGIFT_W=Zodra je verdergaat kan {} zijn/haar huidige voertuig in een garage zetten. Echter, om dit te laten werken zoals het hoort mag zijn/haar persoonlijke voertuig niet aanwezig zijn, en moet de garage vol zijn met bijvoorbeeld slechte auto's, zodat je deze kan vervangen door middel van "replace."
+PLYGIFT_T=Als alles correct is gedaan kan {} nu het voertuig in een garage rijden. :)
+PLYVEHNCTRL=Gefaald in controle nemen over {}'s voertuig. :|
+
+FRGMDL=Model Vervalsen
+FRGMDL_W=Gebruik het liefst een voertuig met een vervals model, omdat een ander voertuig het spel makkelijk kan laten crashen.
+
+! "Wanted" as in "Wanted Level", we don't want our ~~poor~~ criminals to be forever alone
+PLYBAIL=Nooit Gewild
+
+PLYBEAST=Verander In Een Beest
+
+PLYGRVNPC=NPCs Aantrekken
+PLYAGRNPC=Agressieve NPCs
+
+PARTICLE=Deeltje
+PLRPTFXSPM=Deeltjes Spam
+
+HDELCL=Lokaal Verbergen
+HDELCL_H=Voorkomt dat je wordt gespammed met deeltjes.
+
+PLYMUGLOP=Overvaller Lus
+
+PLYRAGDOLL=Ragdoll
+
+PLYSHAKECAM=Schud Camera
+
+GIVESH=Geef Script Beheerder
+
+PLYARM=Alle Wapens Geven
+PLYARM_P=Geef Wapens
+
+PLYAMMO=Geef Munitie
+PLYAMMO_H=Geeft hem/haar munitie voor zijn/haar huidige wapen.
+PLYAMMO_T={} houdt momenteel geen wapen vast waarvoor ik munitie kan geven. :/
+
+PLYPARA=Geef Parachute
+
+BNTY=Plaats Premie
+BNTY_T=De premie moet tussen $0 en $10.000 zijn, inclusief. :)
+
+BNTYSLF=Premie Op Mezelf Plaatsen
+BNTYSLF_H=Plaatst ook een premie op jezelf om verdenkingen te voorkomen.
+
+LOOPBNTY=Premie Loop
+
+FRNDLY=Vriendelijk
+
+TROLL=Trollen
+
+RAM=Ram
+
+PLYBLME=Beschuldigen Voor Doden...
+
+PLY_NOTIFY=Stuur Notificatie
+
+PLY_NOTIFY_REMO=Cash Opgenomen
+PLY_NOTIFY_STOL=Cash Gestolen
+PLY_NOTIFY_BANK=Cash Gestort
+
+PLY_NOTIFY_SPAM=Notificatie Spam
+
+CPOTFT=Outfit Kopiëren
+
+CPVEH=Kopieer Voertuig
+
+CMDBHLF=Geef Commando's Uit Hun Naam
+CMDBHLFALL=Geef Commando's Uit Iedereens Naam
+
+PLYCHTMCK=Chat Berichten Bespotten
+
+PLYCHTOWO=OwO-iveer Chat Berichten
+
+SHWCAM=Camera Weergeven
+
+SMS=Tekst Bericht Versturen
+
+SMS2=Tekst Bericht
+SMSS=Tekst Berichten
+
+DTS=Detecties
+DT_ANY=Elke Detectie
+
+ADT=Anti-Detectie
+
+ADT_SPEC_H=Onafhankelijk van dit, is je camera positie altijd gesynchroniseerd en kan je nog steeds worden gedetecteerd te beschouwen op basis van deze positie.
+
+CLSFN=Classificatie
+CLSFNS=Classificaties
+CLSFN_ANY=Elke Classificatie
+
+DT_T={player} heeft een detectie geactiveerd: {reason}
+CLSFN_T={player} is nu geclassificeerd als {classification}
+DT_CLSFN={player} heeft een detectie geactiveerd ({reason}) en is nu geclassificeerd als {classification}
+
+REACT_T={toast} - {reaction} reactie toepassen.
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_K=kick
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_C=crash
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_T=time-out
+
+CLSFN_N_H=Deze speler heeft geen modder of admin detecties geactiveerd.
+CLSFN_PM=Mogelijk Modder
+CLSFN_LM=Waarschijnlijk Modder
+FLAG_MOD=Modder
+FLAG_MODAMN=Modder of Admin
+CLSFN_MA_H=Stand is bezig met het onderzoeken of deze speler een modder of een Rockstar admin is.
+FLAG_AMN=Admin
+
+! Plural version of CLSFN_LM
+CLSFN_LM_P=Waarschijnlijke Modders
+
+! Plural version of FLAG_AMN
+FLAG_AMN_P=Admins
+
+CLSFNTAGSLF=Klassificatie Vlaggen Op Zelf
+
+MDDRDT_H=Klik om detectie te verwijderen.
+MDDRDT_H_LUA=Deze detectie is toegevoegd door {}. Klik om deze te verwijderen.
+
+DT_H_PREMPT=Dit is een prefentieve detectie.
+
+C2C=Klik om waarde te kopiëren.
+C2CN=Klik om naam te kopiëren.
+C2OL=Klik om {link} te openen.
+
+C2IN=Klik om waarde in te voegen.
+C2APPLY=Klik om waarde toe te passen.
+C2SEL=Klik om een waarde te selecteren.
+
+MDDRDT_SUI=Stand Gebruiker Identificatie
+SUI=Stand Gebruiker Identificatie (SGI)
+MDDRDT_SUI_H=Identificeert andere Stand gebruikers maar laat hen ook jou identificeren als .
+
+DT_SU=Stand Gebruiker
+DT_SU_C=Stand Gebruiker (Co-Loading)
+CLNG=Co-Loading
+
+CMDSUI=Dit commando vereist dat Stand Gebruiker Identificactie ingeschakeld is.
+
+CMDSTAND=Dit commando is alleen ingeschakeld voor andere Stand Gebruikers die Stand Gebruiker Identifiactie ingeschakeld hebben.
+
+HS=BeheerderDelen™
+HS_H=Wanneer je beheerder bent, geeft dit andere Stand gebruikers een voordeel, zolang beide partijen S.G.I. ingeschakeld hebben.
+
+MDDRDT_SID=Andere Gebruiker Identificaties
+MDDRDT_SID_T={} Gebruiker
+
+MDDRDT_RAC=Rockstar Anti Cheat
+
+MDDRDT_HLTH=Gemodificeerde Gezondheid
+
+MDDRDT_LNGDED=Te Lang Dood
+
+MDDRDT_LNGOTR=Van De Radar Voor Te Lang
+
+MDDRDT_ARMR=Te Veel Bepantsering
+
+MDDRDT_PRES=Aanwezigheid Vervalsing
+MDDRDT_PRES_H=Detecteert sessie vervalsing en meer subtiele manipulatie.
+
+NMECHNG=Ik heb {newname} eerder gezien als {oldname}. :O
+
+MDDRDT_RID3=Rockstar Medewerker RID
+
+MDDRDT_T2IP=Take-Two IP Adres
+
+DT_HT_2=Vervalsde Beheerder Token (Agressief)
+DT_HT_1=Vervalsde Beheerder Token (Zoete Plek)
+DT_HT_0=Vervalsde Beheerder Token (Handicap)
+DT_HT_3=Vervalsde Beheerder Token (Anders)
+
+MDDRDT_TRFRM=Modded Karakter Model
+
+MDDRDT_GODATK=Aanvallend Tijdens Onschendbaarheid
+
+MDDRDT_RSDEV=Rockstar Ontwikkelaar Vlag
+MDDRDT_RSDEV_H=Zorgt ervoor dat spelers niet in staat zijn om je legitiem te stem kicken.
+
+MDDRDT_RSQA=Rockstar QA Vlag
+MDDRDT_CHEAT=Cheater Vlag
+
+SPF_H_FLAG=Alleen andere modders kunnen dit zien.
+
+MDDRDT_RP2=Ongeldige Rang/RP
+MDDRDT_RP3=RP-Rang Mismatch
+MDDRDT_RP4=Vervalsde Rang
+
+MDDRT_NONET=Geblokkeerde Netwerk Gebeurtenis
+MDDRT_NONET_H=Indiceert dat een gebruiker essentiële netwerk gebeurtenissen, zoals het vragen om controle over een entiteit, heeft geblokkeerd.
+
+MDDRT_DRIVEB=Modded Langsrij Wapen
+
+MDDRT_SILENTCHAT=Chatten Zonder Typen
+
+MDDRT_BOUNTYSPAM=Bounty Spam
+MDDRT_BOUNTYSPAM_H=Indiceert dat een speler bounties heeft geplaatst op een onmogelijke snelheid, bijvoorbeeld een bounty voor iedereen in de sessie.
+
+MDDRT_SUSSYBOUNTY=Modded Bounty
+MDDRT_SUSSYBOUNTY_H=Indiceert dat een speler een bounty heeft geplaatst met een illegale waarde, bijvoorbeeld 6969.
+
+MDDRT_EXPBLAME=Explosie Beschuldiging
+MDDRT_EXPBLAME_H=Let op dat dit ook kan detecteren wanneer een modder iemand explosieve hits geeft.
+
+MDDRT_EXPL=Modded Explosie
+MDDRT_EXPL_B=Voorkomt dat de explosie naar jou synchroniseert. Dit helpt anderen niet.
+MDDRT_EXPL_H=Detecteert voornamelijk wanneer modders explosies spawnen op mensen of explosieve munitie gebruiken. Let op dat dit zelden ook af kan gaan voor legitieme spelers.
+
+VICTIM=Slachtoffer: {}
+
+MOD_ORGNAME=Modded Organisatie Naam
+
+MDDRT_CAYO=Verborgen Van Speler Lijst
+
+MDDRT_MISC=Modded Data
+
+ATTKRS=Aanvallers
+ATTRKS_PRE_1=Stuur Jets
+ATTRKS_PRE_2=Stuur Fietsers
+ATTRKS_PRE_3=Stuur Clowns
+ATTRKS_PRE_4=Stuur Helikopters
+ATTRKS_PRE_5=Stuur BMX Gang
+ATTRKS_PRE_6=Stuur Boeren
+ATTRKS_PRE_7=Stuur Minitanks
+ATTRKS_PRE_8=Stuur Militairen (Gecombineerde Macht)
+ATTRKS_PRE_9=Stuur Spookachtige Fantomen
+
+ACCURACY=Nauwkeurigheid
+
+AGGR=Agressie
+AGGR1=Vriendelijk
+AGGR1_H=Verdedigt jou en anderen tegen AI-aanvallers. Zal spelers niet aanvallen.
+AGGR2=Defensief
+AGGR2_H=Verdedigt jou van alle vijandige doelwitten.
+AGGR3_H=Verdedigt jou van alle vijandige doelwitten, maar vaak pas op zicht.
+DEL_ATTKRS=Verwijder Alle Aanvallers
+FILL_VEH=Vul Voertuigen
+FILL_VEH_H=In plaats van een nieuw voertuig te maken voor elke aanvaller, worden bestaande voertuigen volledig gevuld voordat er een nieuwe wordt gemaakt.
+
+! As in "Kill the engine"
+KLL=Stop
+! The "EMP" projectile in-game that turns your car off. 
+EMP=EMP
+FLIPPLRVEH=Ondersteboven Draaien
+SPINVEH=Draaien
+POP_TYRES=Banden Ploffen
+DETACH_AIR=Vleugel Ontkoppelen
+DETROIT=Wiel Loskoppelen
+SLIPPERY=Gladde Wielen
+SLIPPERY_H=Duurt even om uit te schakelen.
+DEL_DOORS=Deuren Verwijderen
+IGNITE=Ontsteken
+TURNAROUND=Omdraaien
+DSTRYPROP=Vernietig Propellers
+BREAKBOOM=Tail Boom Afbreken
+
+SLINGSHOT=Katapult
+
+V_F=Vooruit
+V_B=Achteruit
+
+PLYDDVEH=Voertuigen Besturen Uitschakelen
+PLYDDVEH_H=Zet ze in een staat waar ze onder andere geen voertuigen kunnen besturen, dit kan opgelost worden met een appartement uitnodiging.
+
+INFLOAD=Oneindig Laadscherm
+
+INFRING=Oneindig Telefoon Afgaan
+
+FRZ=Bevriezen
+
+FAKEDROP=Nep Geld Drop
+
+NOPSSVE=Passieve Modus Blokkeren
+
+! Putting someone in a cage
+PLYCGE=Kooien
+
+PLYCAGE_TINY=Kleine Kooi
+PLYCAGE_GOLD=Gouden Kooi
+PLYCAGE_FNCE=Hek Kooi
+PLYCAGE_STNT=Stunt Buis
+
+! Being put in a cage
+CGE=Gekooid
+
+PLYKLL=Doden
+
+PLYEXP=Exploderen
+
+! For reference: Block Blaming is PTX_PSV
+PLYKLL_H=Werkt niet met beschuldiging blokkeren of als je in passieve modus staat.
+
+CGES=Kooien
+
+PLYKCK=Kick
+
+PLYKCK_T_H=Te makkelijk. ;P
+! Single target version of PLYKCK_T_C.
+PLYKCK_T_C=Ik zal proberen hem/haar te overtuigen om te vertrekken. :)
+! Multiple targets version of PLYKCK_T_C_M.
+PLYKCK_T_C_M=Ik zal proberen ze te overtuigen om te vertrekken. :)
+
+PLYKCK_SMRT=Slim
+PLYKCK_SMRT_A=Slimme Kick
+PLYKCK_SMRT_H2=Verwijdert de speler door elke mogelijke manier nodig.
+
+PLYKCK_BL=Zwarte Lijst
+PLYKCK_BL_A=Zwarte Lijst Kick
+PLYKCK_BL_H=Voegt de speler toe aan de zwarte lijst alsof ze een vote kick krijgen, maar kickt ze als een desync.
+
+PLYKCK_H=Beheerder
+PLYKCK_H_H=Kickt de speler met het stem kick mechanisme.
+
+PLYKCK_NH=Niet-Beheerder
+
+PLYKCK_PC=Pool's Gesloten
+
+PLYKCK_B=Uitmaak
+PLYKCK_B_G=Uitmaak Kick
+
+BRKUR=Uitmaak Kick Reacties
+BRKUR_H=Deze optie heeft alleen effect als je de sessie host bent en de uitmaak kick niet tegen jou is.
+
+KBKR=Afslaan Uitmaak Kick Reacties
+KBRK_E=Afslaan Uitmaak Kick
+
+GEN_H_HOST=Deze optie heeft alleen effect als je de sessie host bent.
+GEN_H_NHOST=Dit heeft alleen effect als niet je de sessie beheerder bent.
+
+PLYBAN=Verbannen
+
+PLYKCK_O=Orgasme
+
+PLYKCK_L=Liefdesbrief
+PLYKCK_L_G=Liefdesbrief Kick
+
+PLYKCK_H_DSCRT=Een discrete kick die niet zal doorgeven wie het heeft gedaan.
+
+PLYKCK_H_B_H=Niet te blokkeren als je beheerder bent.
+PLYKCK_H_HO=Alleen beschikbaar als je de beheerder bent.
+PLYKCK_H_B_P=Geblokkeerd door populaire menu's.
+PLYKCK_H_B_M=Geblokkeerd door de meeste menu's.
+
+BE_K=BattlEye Kick
+BE_B=BattlEye Ban
+BE_B_H=Zorgt ervoor dat ontvangers niet langer GTA Online kunnen betreden, totdat ze het spel opnieuw opstarten.
+
+PLYCRSH=Crash
+SUI_ET=De kans dat dit werkt op een andere Stand gebruiker is heel klein. Maar wie ben ik om de goddelijke gebruiker in vraag te stellen? :^)
+
+PLYCRSH_H_AOE2=Notitie: Dit kan ook andere spelers crashen die dicht bij je doelwit zijn.
+
+PLYCRSH_E=Elegant
+PLYCRSH_G=Burger King Voet Sla
+PLYCRSH_V=Voertuig Doodslag
+PLYCRSH_T=Stoomwals
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T=Voorkwam een crash ({type}).
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T_BLM=Voorkwam een crash ({type}), waarschijnlijk veroorzaakt door {player}.
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_TRNLOOP=Trein Lus
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_ATTLOOP=Bijlage Loop
+
+! Buffer overruns cause memory corruption, which could go unnoticed, but could also crash the game.
+! Type may be a codename such as XA, or a human-readable name, such as "Ped Outfit Texture".
+BU_T=Buffer overrun voorkomen ({type}).
+
+! To be used within BU_T
+BU_TEX=Ped Outfit Textuur
+
+BU_VEHLIT=Voertuig Lichten
+
+INVTASK=Een NPC voert een ongeldige taak uit, deze wordt afgebroken.
+
+TIMEOUT=Time-out
+FLAG_TIMEOUT=In Time-out
+TIMEOUT_H=Blokkeert het meeste netwerkverkeer van en naar deze speler.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Player > Information !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+INFO=Informatie
+
+NME_S=Naam (Stand)
+NME_H=Naam (Sessie)
+NME_R=Naam (Social Club)
+
+STUS=Status
+
+DMG_WEAP=Wapen Schade Vermenigvuldiger
+DMG_MELEE=Melee Schade Vermenigvuldiger
+
+ORG=Organisatie
+
+ORGT_SV=SecuroServ
+ORGT_MC=Motorclub
+
+BOSS=Baas
+
+STS=Statistieken
+
+NDATA=Geen Gegevens
+
+CHAR1=Karakter 1
+CHAR2=Karakter 2
+CHAR1_ACT=Karakter 1 (Actief)
+CHAR2_ACT=Karakter 2 (Actief)
+
+CNNTN=Verbinding
+
+IP=IP-Adres
+RLYIP=Relais IP
+LANIP=LAN IP
+PRT=Poort
+RLYPRT=Relais Poort
+
+CONVIA=Verbonden Via
+CONVIA_P2P=P2P
+CONVIA_RLY=Relay
+CONVIA_RLY_S=Verbonden via relay
+CONVIA_PLY_S=Verbonden via {}
+
+PING=Ping
+MS=ms
+
+MNY_W=Geld In Portemonnee
+MNY_B=Geld In Bank
+MNY_A=Geld In Totaal
+
+DIST=Afstand
+
+KLLS=Moorden
+DTHS=Doden
+KD=M/D Ratio
+
+FAVVEH=Favoriete Voertuig
+FAVWEAP=Favoriete Wapen
+FAVRDSTAT=Favoriete Radio Station
+
+OWNBKR=Bezit Bunker
+OWNFAC=Bezit Faciliteit
+OWNCLB=Bezit Nachtclub
+
+HOSTKN=Beheerder Token
+
+HOSTQPOS=Beheerder Wachtrij Positie
+
+HQSA_NH=Naam Hash
+
+GIP_Q=Aanvraag In Afwachting
+GIP_P=Aanvraag Uitvoeren
+GIP_F=Aanvraag Gefaald
+
+CT=Stad
+RGION=Regio
+CTRY=Land
+
+! E.g. "Discovered: 10 seconds ago"
+DSCVAGO=Ontdekt
+
+! E.g. "Invulnerable For: 10 seconds"
+GODTIME=Onschendbaar Voor
+
+CRW=Bemanning
+CRWTG=Vlag
+MOTTO=Motto
+ALTBDG=Alternatieve Badge
+
+!!!!!!!!!!!!!!!
+!! Durations !!
+!!!!!!!!!!!!!!!
+
+DUR_AGO={} geleden
+
+DUR_S=seconde
+DUR_S_P=seconden
+DUR_M=minuut
+DUR_M_P=minuten
+DUR_H=uur.
+DUR_H_P=uren.
+DUR_D=dag
+DUR_D_P=dagen
+
+!!!!!!!!!!!!
+!! Online !!
+!!!!!!!!!!!!
+
+SESS=Sessie
+NWSESS=Nieuwe Sessie
+
+NWSESS_CHAR=Pit Stop Bij Personage Selectie
+
+NWSESS_SP=Publieke Sessie Maken
+NWSESS_IO=Op Uitnodiging Sessie Maken
+NWSESS_CC=Gesloten Bemanning Sessie Maken
+NWSESS_C=Bemanning Sessie Maken
+NWSESS_CF=Gesloten Vrienden Sessie Maken
+NWSESS_S=Solo Sessie Maken
+NWSESS_FF=Meedoen Met Een Vriend
+NWSESS_FC=Bemanningsleden Sessie Betreden
+NWSESS_FP=Openbare Sessie Zoeken
+NWSESS_NP=Nieuwe Publieke Sessie Vinden
+NWSESS_NP_H=Zoals "Nieuwe Sessie" maar zet je in eerst in een verse sessie waardoor je hopelijk niet in dezelfde sessie eindigd.
+NWSESS_CTOR=Entertainer Modus
+NWSESS_SCTV=Social Club TV
+
+TRK=Volgen
+TRKD=Gevolgd
+HISTTRK=Gevolgd Spelers
+HIST_KEEP_TRA=Behoudt Gevolgde
+
+TRK_H=Toont meldingen wanneer deze speler van sessie wisselt, online komt of offline gaat.
+
+TRK_T_CNF=Bij Volg Updates...
+
+INJTRKINFO=Toon Online Gevolgde Spelers Bij Injectie
+
+META=Meta
+
+RSADMINS=Rockstar Admins
+
+! SC = Social Club
+SCFRIENDS=SC Vrienden
+
+ADDMISS=Voeg Onbrekende Toe
+PLYNOTESET=Notitie Instellen
+PLYNOTESET_H_A=Stelt de notitie van elke admin in je geschiedenis.
+TRCKALL=Alle Volgen
+UTRCKALL=Alle Ontvolgen
+WHTLALL=Whitelist Alle
+UWHTLALL=On-Whitelist Alle
+HIST_DNG=Gevaarlijke Zone
+HIST_CLR=Verwijder Geschiedenis
+
+ONLSTS=Online Status
+ONLSTS_O2=Offline
+ONLSTS_S=In Story Mode
+ONLSTS_H=Beheert {}
+ONLSTS_C=In {session_type}
+ONLSTS_CH=In {session_type} beheert door {host}
+
+TRK_T={name} is nu {activity}.
+
+ONLSTS_TRK_O=offline
+ONLSTS_TRK_S=in Story Mode
+ONLSTS_TRK_H=in {} als beheerder
+ONLSTS_TRK_C=in {}
+ONLSTS_TRK_CH=in {session_type} beheert door {host}
+
+ST_S=een solo sessie
+ST_I=een alleen uitnodiging sessie
+ST_F2=een gesloten vriend sessie
+ST_CC=een gesloten crew sessie
+ST_C=een crew sessie
+ST_P=een publieke sessie
+ST_O=een sessie van een onbekend type
+
+! Short online statuses:
+SHTONLSTS_O2=Offline
+SHTONLSTS_S=Story Mode
+SHTONLSTS_ST_S=Solo
+SHTONLSTS_ST_I=Uinodiging
+SHTONLSTS_ST_CF=Gesloten Vriend
+SHTONLSTS_ST_CC=Gesloten Crew
+SHTONLSTS_ST_C2=Crew
+SHTONLSTS_ST_P=Publieke
+SHTONLSTS_ST_O=Anders
+
+PTX=Beschermingen
+PTX_W=Beschermingen uitschakelen in Stand maakt je co-load niet stabieler. Het uitschakelen van beschermingen schakelt gewoon beschermingen uit.
+
+! Alternatively, "Protections Help Page"
+PTXGDE=Bescherming Helppagina
+
+COLOAD=Co-Loading
+COLOAD_DPTX=Schakel {} Uit Tijdens Co-Loading
+
+PTX_CRSHE=Crash Gebeurtenis
+
+PTX_KICK=Kick Gebeurtenis
+PTX_KICK_SH=Script Beheerder Kick
+
+PTX_INV=Modded Gebeurtenis
+PTX_INV_H=Gebeurtenissen die alleen verstuurd kunnen worden door een modder.
+
+PTX_WEIRD=Ongebruikelijke Gebeurtenis
+PTX_WEIRD_H=Gebeurtenissen die mogelijk door een modder zijn verstuurd, maar ook legitiem kunnen gebeuren onder zeldzame omstandigheden.
+
+VEHKICK=Verwijderen Uit Voertuig
+
+INTKICK=Kick Van Interieur
+
+TRIGDEFD=Bedrijfsoverval veroorzaken
+
+PLYFRCECAMFRNT=Forceer Camera Naar Voren
+PLYFRCECAMFRNT_H=Kan ook een speler's onkwetsbaarheid onder bepaalde omstandigheden uitschakelen.
+
+PLYMISSION=Forceer In Freemode Missie
+PLYMISSION_H=Forceert doelwitten in de freemode missie status, wat betekent dat ze niet in passief modus of in interieurs kunnen zijn.
+
+! Forces the recipient into a mission start screen
+SND2JB=Naar Werk Sturen
+
+SND2JB_0=Severe Weather Patterns
+SND2JB_1=Half-track Bully
+SND2JB_2=Exit Strategy
+SND2JB_3=Offshore Assets
+SND2JB_4=Cover Blown
+SND2JB_5=Mole Hunt
+SND2JB_6=Data Breach
+SND2JB_7=Work Dispute
+
+PTX_BAIL=Wanted Level Verwijderen
+
+PTX_EVTS=Gebeurtenissen
+PTX_NET=Netwerk Gebeurtenissen
+PTX_NET_ANY=Elke Gebeurtenis
+
+PTX_RAWNET=Onverwerkte Netwerk Gebeurtenissen
+PTX_RAWSYNC=Rauwe Synchronisaties
+
+PTX_RAW_W=Dit is voor geavanceerde gebruikers. Als je niet weet wat je doet, doe het dan niet, en zorg ervoor dat je niet zomaar alles blokkeert.
+
+PTX_NET_R_B_W=Weet je nog wanneer ik je zei "en blokkeer vooral niet alles" ...? Dat je het kan betekent niet dat je het moet. Al helemaal niet als je er geen goede reden voor hebt.
+
+PTX_APUP=Elke Pickup Opgepakt
+PTX_APUP_T=Je hebt een pickup opgepakt van het type {}
+PTX_APUP_L=Je hebt een pickup opgepakt
+
+PTX_CASHPUP=Cash Pickup Opgepakt
+PTX_CASHPUP_T=Je hebt een cash pickup opgepakt
+
+PTX_RPPUP=RP Pickup Opgepakt
+PTX_RPPUP_T=Je hebt een RP pickup opgepakt
+
+PLYKCK_IPUP=Ongeldige Pickup
+
+PTX_IPUP=Ongeldige Pickup Opgepakt
+PTX_IPUP_H=Wat te doen in het geval dat je een pickup oppakt die je uit de sessie zou gooien.
+PTX_IPUP_T=Je hebt een ongeldige pickup opgepakt
+
+PTX_APT=Uitnodigen Tot Appartement
+
+PTX_CAYO=Cayo Perico Uitnodiging
+
+PTX_DRVCTRL=Voertuig Overname
+PTX_DRVCTRL_H=Wanneer iemand controle neemt over het voertuig waar je in zit, dit kan gebruikt worden om naar jou te teleporteren.
+
+SE=Script Gebeurtenis
+
+GIVE_WEAPON_EVENT=Geef Wapen Gebeurtenis
+REMOVE_WEAPON_EVENT=Verwijder Wapen Gebeurtenis
+REMOVE_ALL_WEAPONS_EVENT=Verwijder Alle Wapens Gebeurtenis
+FIRE_EVENT=Vuur
+EXPLOSION_EVENT=Explosie
+NETWORK_PTFX_EVENT=PTFX
+NETWORK_PLAY_SOUND_EVENT=Speel Geluid
+
+RCT_T=Notificatie
+RCT_L_F=Schrijf Naar Log Bestand
+RCT_L_C=Schrijf Naar Console
+RCT_C=Aankondigen In Chat
+RCT_C_T=Aankondigen In Team Chat
+
+RTC_PLY=Speler Acties
+
+RCT_N_B=Speler's Netwerk Gebeurtenissen Blokkeren
+RCT_BIS=Speler's Inkomende Synchronisaties Blokkeren
+RCT_BOS=Speler's Uitgaande Synchronisaties Blokkeren
+RCT_N_L=Speler's Netwerk Gebeurtenissen Loggen
+RCT_SI_L=Hun Inkomende Synchronisaties Blokkeren
+RCT_SO_L=Hun Uitgaande Synchronisaties Blokkeren
+RCT_N_T=Notificaties Voor Hun Netwerk Gebeurtenissen
+RCT_SI_T=Notificaties Voor Hun Inkomende Synchronisaties
+RCT_SO_T=Notificaties Voor Hun Uitgaande Synchronisaties
+
+RCT_T_OUT={event} naar {player}
+PTX_NET_R_T_T={event} van {player}
+RCT_T_AGAINST={event} van {sender} naar {target}
+
+PTX_NET_R_B=Blokkeren
+
+! What "Block" does for chat messages
+PTX_NET_R_B_H_C=Zal voorkomen dat het bericht je bereikt, maar anderen zullen het nog wel zien.
+
+
+PTX_S=Synchronisaties
+PTX_INC=Inkomende
+PTX_OUT=Uitgaande
+PTX_SI=Inkomende Synchronisaties
+PTX_SO=Uitgaande Synchronisaties
+PTX_SI_ANY=Elke Inkomende Synchronisatie
+
+OUTSBH=Blokkeer Uitgaande Syncs Naar Beheerder
+OUTSBH_H=Dit helpt je BattlEye kicks te vermijden als niet-beheerder, maar betekent ook dat de beheerder niet met je kan communiceren.
+
+PTX_CSB=Aangepaste Model Synchronisatie Reacties
+ADDMDL=Model Toevoegen
+PTX_CSB_T=Model synchronisatie door {player} met {hash}
+
+PTX_IMS=Ongeldige Model Synchronisaties
+PTX_IMS_T=Ongeldige model synchronisatie door {player} met {hash} als {type}
+
+PTX_WOS=Wereld Object Synchronisatie
+
+PTX_ATTACH=Bevestiging Spam
+
+PTX_BEWARE_RESYNCH=Andere spelers kunnen objecten die door modders gespawned zijn hersynchroniseren, dus wees daar bewust van.
+
+PTX_S_CC=Clone Maken
+PTX_S_CU=Clone Bijwerken
+PTX_S_CD=Clone Verwijderen
+PTX_S_ACC=Clone Maken Erkennen
+PTX_S_ACU=Clone Bijwerken Erkennen
+PTX_S_ACD=Clone Verwijderen Erkennen
+
+PLY_BOS_H_A=Stopt het bijwerken van je positie voor andere spelers, en kan er zelfs voor zorgen dat andere spelers weten dat je in de sessie zit als je met dit ingeschakeld het spel betreedt.
+PLY_BOS_H_1=Stopt het bijwerken van je positie voor deze speler.
+
+MYSLF=Mezelf
+SOMELS=Iemand Anders
+
+KARMA=Karma
+
+LLKT=Notificatie Bij Liefdesbrief Kick
+LLKT_T=Je bent gekickt met een liefdesbrief.
+
+DSKK=Desync Kick Karma
+DSKK_H2=Laat desync kick opties van sommige andere menu's altijd terugvuren als ze tegen jou gebruikt worden.
+
+LLLUBE=Liefdesbrief Glijmiddel
+LLLUBE_H=Maakt je een minder waarschijnlijke kandidaat voor wanneer de beheerder iemand zoekt voor een Liefdesbrief kick.
+LLLUBE_1=Legaal
+LLLUBE_1_H=Sommige modders kunnen dit detecteren, misleidend.
+LLLUBE_0_H=Dit is de meest effectieve optie, maar andere modders kunnen dit detecteren.
+
+CAMSHAKE=Camera Schud Gebeurtenis
+
+EXPSPAM=Explosie Spam
+EXPSPAM_H=Wordt toegepast wanneer iemand explosies op je personage spamt.
+
+RAGDOLLEVT=Lappenpop Gebeurtenis
+
+SNDSPM=Geluid Spam
+
+MODDMGEVT=Modded Schade Gebeurtenis
+
+PRESES=Aanwezigheid Gebeurtenissen
+
+BFSTN=Blokkeer Vriend Stat Notificaties
+BFSTN_H=Blokkeert notificaties zoals "...heeft alle Letter Scraps verzameld."
+
+BJI=Blokkeer Baan Uitnodigingen
+
+PTX_VK=Stem Kick Blokkeren
+PTX_VK_T=Stem kick geblokkeerd. :)
+
+MAGIC=Magie
+PTX_VK_SP=SCTV / Toeschouw Modus
+PTX_VK_F1=Freemode Missie 1
+PTX_VK_F2=Freemode Missie 2
+PTX_VK_F3=Freemode Missie 3
+PTX_VK_F4=Freemode Missie 4
+
+PTX_BJ=Join Blokkeer Karma
+PTX_BJ_H=Detecteerd wanneer niet-beheerders proberen je join te blokkeren en verwijdert ze van de sessie, zodat je wel kan betreden.
+PTX_BJ_T2={} blokkeert je join, ik zal proberen ze uit de sessie te verwijderen.
+
+PTX_NB=Borgsom Blokkeren
+PTX_NB_1=Speler Is Niet Langer In Sessie
+PTX_NB_2=Primaire Crew Wisselen
+
+PTX_NB_SPC=Toeschouwing Gerelateerd
+PTX_NB_SPC_H=Doelwit over, etc.
+
+PTX_NB_O=Andere Redenen
+PTX_NB_O_H=Time-outs en dergelijke.
+
+PTX_NB_T=Het spel wil afbreken ({a1}, {a2}, {a3}); {action}.
+PTX_NB_T_A=toegestaan
+PTX_NB_T_B=geblokkeerd
+
+PTX_HCK=Beheerder-Gestuurde Kicks
+
+PTX_HKK=Beheerder Kick Karma
+PTX_HKK_H=Kickt de beheerder als antwoord op hun kick. Let wel op dat je nog steeds gekickt wordt van de sessie.
+
+PTX_HK=Beheerder Kicks Verminderen
+PTX_HK_H=Vermindert beheerder kicks zodat je alleen een melding krijgt als een beheerder kick is gebeurd en dat het lijkt dat alle spelers het spel hebben verlaten.
+PTX_HK_T=Iemand heeft een beheerder kick op je gebruikt ({method}), waarschijnlijk {player}.
+
+HKI=De beheerder gaat je binnenkort kicken.
+HKI_BS=Ik raad je aan syncs met hen te blokkeren.
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_V=Stem Kick
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_N=Netwerk Fout
+
+PTX_PSV=Beschuldiging Blokkeren
+PTX_PSV_H2=Maakt dat je anderen geen schade kan toebrengen, zodat explosies die jou beschuldigen geen schade toebrengen. Dit maakt het ook onmogelijk voor anderen om jou schade toe te brengen.
+PTX_PSV_W=In het geval dat je de hulptekst niet hebt gelezen, laat me het herhalen: Je kan geen schade aanrichten met dit ingeschakeld. In plaats van dit gewoon aanzetten, kan je in het context menu kiezen om de correlatie om te keren.
+
+PTX_ENTSPAM=Blokkeer Entiteit Spam
+PTX_ENTSPAM_STATUS={count} instanties van {name}
+PTX_ENTSPAM_NEW=Het lijkt erop dat er te veel instanties van {} zijn. Ik ben ermee bezig.
+PTX_ENTSPAM_CALM={} situatie afgehandeld. :)
+
+VEHPARTS=afgebroken voertuig onderdelen
+
+ACCAM=Anti-Crash Camera
+PTX_ENTSPAM_USECAM=Gebruik Automatisch Anti-Crash Camera
+PTX_ENTSPAM_CAM=Sorry voor het vergrendelen van je camera hierboven, maar de rendering kan dit niet goed afhandelen. Het gebruiken van "tp lsia" of "tp mtchil" kan dit sneller verhelpen.
+
+PTX_DRAW=Voorkom Dat De Renderer Dood Gaat
+PTX_DRAW_H=Voorkomt dat het spel te veel renderd waardoor het crasht.
+PTX_DRAW_T=De renderer is overbelast
+
+PTX_DELSTALE=Verwijder Oude Objecten
+PTX_DELSTALE_H=Verwijdert objecten waarvan de model info is ontladen omdat dit spel een vlekkeloze meesterwerk is.
+PTX_DELSTALE_T=Verwijderen van een object met model {} waarvan model info is ontladen.
+PTX_DELSTALE_T_2=Verwijderen van een fragment object met model {} waarvan fragment model info is ontladen.
+
+NOMODPOP=Verwijder Modded Pop vermenigvuldiger Gebieden
+NOMODPOP_H=Verwijdert modded populatie vermenigvuldiger gebieden zodat GTA Online er niet meer kaal uitziet dan normaal.
+NOMODPOP_T=Een modded populatie vermenigvuldiger gebied verwijderd. :)
+
+NOBEAST=In Beesten Veranderen Uitschakelen
+NOBEAST_H=Hiermee voorkom je dat je in een beest wordt veranderd door het "Hunt The Beast" freemode gebeurtenis, dat door modders kan worden gebruikt om je te trollen.
+NOBEAST_T=Voorkomen dat je in een beest werd veranderd door het droppen van een script, deze wordt beheerd door {}.
+
+NPLYMDLSWP=Speler Model Wissel Blokkeren
+NPLYMDLSWP_H=Blokkeert lokaal spelers die transformeren in modellen die normaal niet speelbaar zijn. In principe is dit niet nodig omdat we alle gerelateerde crashes patchen (voor zover wij weten).
+
+FRCRLY=Relais Verbindingen Forceren
+
+LOWFPSTIMEOUT_T=Lage FPS gedetecteerd - {} wordt in time-out gezet.
+
+REVOTR=Van De Rader Spelers Onthullen
+
+REVINV=Onzichtbar Spelers Onthullen
+
+BEORB=Wordt Het Orbitaal Kanon
+BEORB_H=Stuurt iedereen die je doodt naar het ziekenhuis en toont het orbitaal kanon dood bericht.
+
+BESCRHST=Script Beheerder Worden
+
+BESCRHSTKLEPTO=Script Beheerder Worden Kleptomaan
+BESCRHSTKLEPTO_H=Er kan er maar een zijn, en dit is voor degene die heel graag dit willen zijn zonder compromis.
+
+BJS=Betredingen Blokkeren
+
+BJ_ALL=Van Iedereen
+BJ_ALL_A=Blokkeer Betredingen Van Iedereen
+
+BJ_STR=Van Onbekenden
+BJ_STR_A=Blokkeer Betredingen Van Onbekenden
+BJ_STR_H=Blokkeer betredingen van mensen die geen vriend van je zijn op Social Club.
+
+BJ_ADS=Van Bekende Adverteerders
+BJ_ADS_A=Blokkeert Betredingen Van Bekende Adverteerders
+
+BJ_REM=Van Verwijderde Spelers
+BJ_REM_A=Blokkeer Betredingen Van Verwijderde Spelers
+BJ_REM_H=Blokkeer betredingen van spelers die je hebt gekickt of gecrasht.
+
+BJ_REMOVED=Verwijderde Spelers
+BJ_REMOVED_H=Een lijst van spelers die momenteel geblokkeerd zijn van het betreden omdat je ze hebt verwijderd.
+BJ_KICKEDP_H=Klik om deze speler te verwijderen.
+
+BJ_WHT=Van Niet-Witelisted
+BJ_WHT_H=Blokkeert betredingen van alle spelers die niet op je whitelist staan.
+BJ_WHT_A=Blokkeer Betredingen Van Niet-Witelisted
+
+BJ=Betreding Blokkeren
+BJ_H=Betredingen kunnen alleen worden geblokkeerd als sessie beheerder. Stand zal proberen ze te kicken als je een niet-beheerder bent.
+BJ_T2={player} is geblokkeerd van het betreden van de sessie omdat {feature} is ingeschakeld.
+
+MSG=Bericht
+
+BJMSG_ASS=Incompatibele Middelen
+BJMSG_TU=Verzeker Laatste Titel Update
+BJMSG_TAR=Andere Doelwit Voorkeur
+BJMSG_BAR=Je Account Heeft Een Slechte Reputatie
+BJMSG_C=Je Bent Een Cheater
+BJMSG_BS=Je Bent Een Slechte Sport
+BJMSG_DLC=Incompatibele Downloadbare Inhoud
+BJMSG_BT=Ander Bouw Type
+BJMSG_CONT=Andere Inhoud
+BJMSG_BSO=Alleen Slechte Sporters
+BJMSG_CO=Alleen Cheaters
+BJMSG_PR=Premium Race
+BJMSG_CON=Kan Niet Verbinden
+BJMSG_PRIV=Privé
+BJMSG_F=Alleen Vrienden
+BJMSG_VK=Je Bent Al Uitgestemd
+BJMSG_ID=Uitnodigingen Uitgeschakeld
+BJMSG_POOF=Bestaat Niet Langer
+BJMSG_BUG=Ongewenste Sessie
+
+LSCM=LS Car Meet
+
+SETREPLVL=Reputatie Niveau Instellen
+SETREPLVL_H=Weet dat je een lid moet zijn van de LS Car Meet voordat je er een reputatie kan verdienen.
+SETREPLVL_T=De verandering van uw reputatieniveau is in behandeling; Betreedt LS Car Meet (opnieuw) om het te voltooien.
+
+UNLKPRIZRID=Prijs Auto Ontgrendelen
+UNLKPRIZRID_T=Het is allemaal van jou! Claim het gewoon in het interactieve menu in LS Car Meet. :)
+
+H3=Casino Heist
+
+H3_RPT=Verwijder Herhaal Afkoeling
+H3_RPT_H=Zorg ervoor dat je niet in de arcade zit als je dit gebruikt.
+H3_RPT_T=De afkoeling zegt doei. :D
+
+H3_POIACC=P.O.I. & Toegangspunten
+
+SCOP=Verkennen
+H3_SCOP_H=Gebruik dit alleen na het voltooien van de initiële toegangspunten bereiking, anders zal dit softlocken.
+
+USCOP=Verkennen Ongedaan Maken
+
+H3_VLT=Vault-inhoud Instellen
+H3_VLT_H=Gebruik dit na betaling voor de overval, maar voordat je de inhoud van de kluis bekijkt.
+H3_VLT_3=Diamanten
+H3_VLT_2=Kunst
+H3_VLT_1=Goud
+H3_VLT_0=Geld
+H3_VLT_T=Ik vraag me af wat er in de kluis ligt. :^)
+
+H3_FNSH1=Eerste Bord Voltooien
+H3_FNSH1_H=Gebruik dit na het betalen voor de overval en het optioneel instellen van de kluisinhoud.
+H3_FNSH1_1=Stil & Stiekem
+H3_FNSH1_2=Grote Oplichterij
+H3_FNSH1_3=Agressief
+H3_FNSH1_T=Dat is een bord minder. :D
+
+H3_FNSH2=Tweede Bord Voltooien
+H3_FNSH2_T=Dat zijn twee borden minder. :D
+
+H3_RSTCRW=Bemanning Resetten
+H3_RSTCRW_H=In het geval dat je een slechte keuze hebt gemaakt voor je bemanning die je wilt wijzigen.
+H3_RSTCRW_T=Herstel van crew. Je moet de arcade opnieuw betreden om de wijziging zichtbaar te maken. :)
+
+H_FNSH_W=De opzet missies op deze manier voltooien telt niet voor de "All In Order" en "Criminal Mastermind" uitdagingen.
+
+H_FNSH=Opzet Missies Voltooien
+H_TRGT=Doel Instellen
+
+H4=Cayo Perico Heist
+H4_FNSH_T=Opstellingen voltooid. Je moet de Kosatka opnieuw betreden om de wijziging zichtbaar te maken. :)
+
+H4_TRGT_0=Tequila
+H4_TRGT_1=Robijn Ketting
+H4_TRGT_2=Toonder Bonds
+H4_TRGT_3=Roze Diamant
+H4_TRGT_4=Madrazo Bestanden
+H4_TRGT_5=Saffier Panter
+
+H2_FNSH=Voltooi Doomsday Heist Opstellingen
+H2_FNSH_H=Voltooit alle opstel-missies voor je momenteel actieve doomsday heist.
+H2_FNSH_T=Opstellingen voltooid. Je moet je faciliteit opnieuw betreden om de wijziging zichtbaar te maken. :)
+
+H1_FNSH=Voltooi Appartement Overval Opstellingen
+H1_FNSH_H=Voltooit alle opstel-missies voor je momenteel actieve appartementoverval.
+H1_FNSH_T=Opstellingen voltooid. Je moet je appartement opnieuw betreden om de wijziging zichtbaar te maken. :)
+
+RIGOFF=Niet Manipuleren
+
+WHEEL=Gelukswiel Beloning
+WHEEL_1=Podium Voertuig
+WHEEL_2=Korting
+WHEEL_3=Fiche
+WHEEL_4=Losgeld
+WHEEL_6=Kleren
+WHEEL_7=Mysterie: Voertuig
+WHEEL_8=Mystery: Zakelijke Benodigheden
+WHEEL_9=Mysterie: Snacks
+WHEEL_10=Mysterie: Fiches
+WHEEL_11=Mysterie: Losgeld
+WHEEL_12=Mysterie: RP
+WHEEL_13=Mysterie: Kleren
+
+MONEYLINK2=Geld Gids
+
+SLOTS2=Speelautomaat Uitkomst
+SLOTS_H=Verdien niet meer dan GTA$ {} binnen 24 uur! Bovendien kan dit onveilig zijn als je andere menu's voormalig of momenteel op dit account gebruikt.
+SLOTS_WJ=Jackpot
+SLOTS_WS=Kleine Winst
+SLOTS_L=Verlies
+
+ROULETTE=Roulette Uitkomst
+CSNO_H_OPB=Andere spelers kunnen hier ook van profiteren.
+
+CSNO_BJ=Blackjack Altijd Winnen
+CSNO_BJ_H=Zorgt ervoor dat de dealer altijd bust.
+
+SNKSNARMR=Snacks & Bepantsering Bijvullen
+SNKSNARMR_T=Alsjeblieft, allemaal bijgevuld. :D
+
+ENHNCMTS=Verbeteringen
+
+NOAFK=Afwezig/AFK Kick Uitschakelen
+
+NOMECHCDLN=Monteur Afkoeling Uitschakelen
+
+NOMKIICLDN=Oppressor Mk II Afkoeling Uitschakelen
+
+NOEWOCLDN=Zelfmoord Afkoeling Uitschakelen
+
+NOGTARCFP=Geforceerd RC Perspectief Uitschakelen
+
+NODTHBAR=Doodsbarrières Uitschakelen
+
+NOPSSVCLDN=Passiefe Modus Afkoeling Uitschakelen
+
+NOORBCLDN=Orbitaal Kanon Afkoeling Uitschakelen
+
+NOSUBMSLCLDN=Kosatka Missile Afkoeling Uitschakelen
+
+NOSUBMSLMAXRNGE=Kosatka Missile Afstand Limiet Uitschakelen
+NOSUBMSLMAXRNGE_H=Heeft geen effect op gelanceerde raketten.
+
+NONANOMAXRNGE=Nano Drone Afstand Limiet Uitschakelen
+NONANOCLDNS=Nano Drone Vaardigheid Afkoeling Uitschakelen
+
+! "Business Battle" is SCR_FE_BB
+NOFMBTLMSC=Bedrijf Gevecht Muziek Uitschakelen
+NOFMBTLMSC_H=Weet dat het inschakelen van deze functie beledigende geluiden die momenteel al afspelen niet beëindigd.
+
+NFMEVTENDAUD=Event Eind Teller Geluid Uitschakelen
+
+TGGLEMAP=Wisselbare Grote Kaart
+TGGLEMAP_H=Laat de minimap altijd werken alsof je in een vliegtuig bent.
+
+PAWS=Pauzeren Toelaten
+
+NOINTCHK=Interieur Beperkingen Overschrijven
+NOINTCHK_H=Omzeilt checks voor sommige interieurs zoals de gieterij zodat je binnen kan zijn zonder eruit te worden geteleporteerd.
+
+PASSIWPNVEH=Gewapende Voertuigen Toestaan In Passieve Modus
+
+NWRKCLD=VIP Werk Afkoeling Uitschakelen
+
+SLLINPRV=Alle Missies In Privé Sessies
+
+GHSTNRBYDR=Zorg Voor Schone Races
+GHSTNRBYDR_H=Zorgt ervoor dat tegenstanders eerlijk spelen door ze lokaal te ghosten als ze te dichtbij komen.
+
+ALLPICLK=Interactie Menu Limitaties Omzeilen
+ALLPICLK_H=Laat je een groot deel van de opties van een interactie menu gebruiken, zelfs als ze grijs zijn.
+
+UNKLCSNO=Casino Regio Blokkering Omzeilen
+
+AMTTSUIT=Tijd Restrictie Voor Voertuig Gechiktheid Uitschakelen
+
+NODRIPFEED=Dripfeeding Uitschakelen
+NODRIPFEED_H=Laat je de nieuwe DLC voetuigen invoegen, rijden en kopen voordat ze beschikbaar zijn voor legit plebs.
+
+NEMTYNTFY=Lege Notificaties Uitschakelen
+EMTYNTFY=Lege Notificatie
+
+BST=Bull Shark Testosterone (BST)
+
+GETBST=BST Krijgen
+
+RMBNTY=Verwijder Bounty
+
+QWQPROG=Snelle Progressie
+
+! Don't translate this if it doesn't help the user recognise the option; I assume most menu users know it as Recoveries.
+QWQPROG_H=Ook wel. "Recoveries".
+
+GIVECOLL=Geef Verzamelobjecten
+GIVECOLL_0=Film Props
+GIVECOLL_1=Verborgen Verstopplaatsen
+GIVECOLL_2=Schatkisten
+GIVECOLL_3=Radio Antennas
+GIVECOLL_4=Media USBs
+GIVECOLL_5=Scheepswrakken
+GIVECOLL_6=Verborgen Voorraden
+GIVECOLL_8=Jack O' Lanterns
+GIVECOLL_9=LD Organics Merchandise
+GIVECOLL_10=Junk Energy Skydives
+GIVECOLL_16=Sneeuwpop
+GIVECOLL_17=G's Opslag
+! Tags as in graffiti
+GIVECOLL_19=Los Santos Labellen
+
+GIVECOLLE=Geef Verzamelobject
+GIVECOLLE_NCEO=Geef Verzamelobjecten (Niet Mijn Baas)
+
+CEOPAY=CEO Geld Herhaling
+CEOPAY_H2=Geeft medewerkers en bodyguards wat voldoende geld. De ontvangers hoeven niet je medewerkers of bodyguards te zijn.
+
+PLYRP=Geef RP
+PLYRP_H=Geeft de speler een hoop RP. Kan meerdere keren gebruikt worden.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCFIG=Casino Figurines Geven
+PLYCFIG_H=Kan worden gebruikt om RP en geld te geven.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCRDS=Spelkaarten Geven
+PLYCRDS_H=Kan worden gebruikt om RP en casino chips te geven.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYSNK=Noteer P's & Q's
+
+PLYEXPAMMO_H=Werkt het best in directe nabijheid.
+
+OTR=Van De Radar
+
+MNTLS=Mentale Staat
+
+MNTL=Mentale Staat Instellen
+MNTL_T=Je mentale staat is nu op {}. :)
+
+LCKMNTL=Mentale Staat Vasstzetten
+
+MNTLPULS=Pulserende Mentale Staat
+MNTLPULS_H=Oscilleert de mentale staat die wordt aangegeven door de kleur van je blip.
+
+CLUBPOP=Nachtclub Populariteit Instellen
+CLUBPOP_P=Nachtclub Populariteit
+CLUBPOP_L=Nachtclub Populariteit Vastzetten
+
+RNK=Rang
+
+SETLVL=Rang Instellen
+GEN_T_NEWSESS=Je moet de sessie opnieuw betreden voordat de veranderingen effectief zijn. :)
+
+! Refering to any number of possible targets.
+GEN_T_NEWSESS_O=Ze zullen een nieuwe sessie moeten betreden voordat de veranderingen effect hebben. :)
+
+FSTRUN=Snel Rennen Mogelijkheid
+ABILOPT=Verkrijgen
+ABILUNL=Leren Ongedaan Maken
+
+BADSPORT=Onsportief Status
+RELINQ=Afstaan
+
+UNLKS=Ontgrendelingen
+
+STATEDIT=Stat Bewerker
+STAT_STR_LABEL=Dit verwacht een label.
+STAT_STR_RID=Dit verwacht een Rockstar ID.
+STAT_KD=K/D Bewerker
+STAT_POP=Populaire Statistieken
+STAT_RAW=Rauwe Statistieken
+STAT_WARN=Speel niet met de waarden hier tenzij je zeker weet wat ze zijn en dat je ze goed instelt.
+
+STAT_YEAR=Jaar
+STAT_MONTH=Maand
+STAT_DAY=Dag
+STAT_HOUR=Uur
+STAT_MINUTE=Minuut
+STAT_SECOND=Seconde
+STAT_MILLISECOND=Milliseconde
+
+KDEDIT=K/D
+KDEDIT_H=Het algoritme dat R* hiervoor gebruikt is anders in sommige delen van het spel, daardoor kan de waarde iets afwijken afhankelijk van waar je kijkt.
+
+TOTAL_RACES_WON=Races Gewonnen
+TOTAL_RACES_LOST=Races Verloren
+TOTAL_DEATHMATCH_WON=Death Matches Gewonnen
+TOTAL_DEATHMATCH_LOST=Death Matches Verloren
+TOTAL_TDEATHMATCH_WON=Team Death Matches Gewonnen
+TOTAL_TDEATHMATCH_LOST=Team Death Matches Verloren
+
+STAT_WAIT=Statistieken laden, even geduld...
+
+UNLKALL=Alles Ontgrendelen
+UNLKALL_H=Voor als je alles beneden tegelijk wilt ontgrendelen.
+
+UNLKONL=GTA Online Ontgrendelen (Proloog Overslaan)
+
+UNLKALLACHIV=Alle Prestaties Ontgrendelen
+
+RVLMAP=Volledige Map Onthullen
+
+OVRDPROBNS=Pre-Order Bonus Uitschakelen
+
+FREEORB=Gratis Orbitaal Kanon Schot Ontgrendelen
+
+GNDRCHNG=Geslachts Verandering Ontgrendelen
+GNDRCHNG_H=Laat je je personage's geslacht veranderen met Stijl > Uiterlijk Veranderen in het interactie menu.
+GNDRCHNG_T=Je mag nu Stijl > Uiterlijk Veranderen gebruiken in het interactie menu om je transitie te voltooien. :D
+
+LVRIES=Exclusieve Kleding Ontgrendelen
+LVRIES_T=Exclusieve kleding is ontgrendeld. :D
+
+RSRCH=Bunker Onderzoek Ontgrendelen
+RSRCH_T=Bunker onderzoek is ontgrendeld. :D
+
+UNLKOSA=Kosatka Ongrendelen Voor Aankoop
+
+H3CLTH=Casino Heist Kleding Ontgrendelen
+AWCLTH=Arena War Kleding Ontgrendelen
+CLTH_T=Kleding is ontgrendeld. :D
+
+UNLKSR=Bunker Schietbaan Beloningen Ontgrendelen
+UNLKSR_H=Ontgrendelt de beloningen voor het voltooien van alle 3 de niveaus in de schietbaan, inclusief verhoogde capaciteit voor gooibare objecten.
+UNLKSR_T=Bunker Schietbaan beloningen zijn ontgrendeld. :D
+
+AWDS=Prijzen Ontgrendelen
+AWDS_H=Geeft je een boel prijzen, waaronder kleding en tatoeages die ze ontgrendelen.
+
+VEHCUST=Voertuig Aanpassingen Ontgrendelen
+
+UNLKAMUTINTS=Ammu-Nation Tinten Ontgrendelen
+UNLKAMUTINTS_H=Ontgrendel de Leger, Groen, Oranje, & LSPD tinten voor alle beschikbare wapens.
+
+FLLSTATS=Maximalizeer Personage Statistieken
+FLLSTATS_H=Maximaliseert je uithoudingsvermogen, kracht, schieten, onopgemerktheid, vliegen, rijden en longcapaciteit statistieken.
+
+VWRPTSTAT=Meldingsstatistieken bekijken
+
+CMEND=Aanbeveling
+
+CMENDT=Melden Bij Aanbeveling
+CMENDT_H=Geeft je een melding wanneer iemand je aanprijst omdat je behulpzaam of vriendelijk bent.
+CMENDT_T={player} heeft je geprezen om {reason}. :D
+ESTAT_0=behulpzaam zijn
+ESTAT_1=vriendelijk zijn
+
+PLYISE=Aanbeveling/Melding Status Verhogen
+
+ISE_H=Behulpzaam
+ISE_F=Vriendelijk
+
+RPRPT=Meldingen
+
+ISE_G2=Griefen of Verstorend Spelgedrag
+ISE_X2=Valsspelen of Modden
+ISE_B2=Glitchen of Misbruik van Spel Functies
+ISE_TC_A=Tekstchat: Irriteert Me
+ISE_TC_H=Tekstchat: Haatzaaierij
+ISE_VC_A=Spraakchat: Irriteert Me
+ISE_VC_H=Spraakchat: Haatzaaierij
+ISE_VG=Geweldadige of Bloederige Inhoud
+ISE_ONC=Beledigende Speler Naam of Inhoud
+
+STAT_OFFENSIVE_LANGUAGE=Aanvallend Taalgebruik
+STAT_OFFENSIVE_TAGPLATE=Ongepaste Kentekenplaat
+STAT_OFFENSIVE_UGC=Aanvallende Inhoud
+STAT_BAD_CREW_NAME=Slechte Bemanning Naam
+STAT_BAD_CREW_MOTTO=Slechte Bemannig Motto
+STAT_BAD_CREW_STATUS=Slechte Bemanning Status
+STAT_BAD_CREW_EMBLEM=Slechte Bemanning Embleem
+
+STAT_IS_CHEATER=Is Een Valsspeler
+STAT_WAS_I_BAD_SPORT=Onsportief
+STAT_IS_HIGH_EARNER=Hoge Verdiener
+
+YES=Ja
+NO=Nee
+
+PLYHIST=Speler Geschiedenis
+
+PYLFND_H2=Staat je toe om spelers in je geschiedenis te vinden met naam, Rockstar ID, en notitie.
+
+PLYNOTE=Noteren
+PLYNOTE_T=De notitie blijft ongewijzigd.
+PLYNOTED=Genoteerde Spelers
+HIST_KEEP_NTE=Behoudt Genoteerde
+
+AGGREGS=Aggregaties
+
+1SEEN=Eerst Gezien
+
+LSEEN=Laatst Gezien
+
+CPYNME=Naam Kopiëren
+CPYRID=Rockstar ID Kopiëren
+
+PLYHIST_DEL_E=Kan de invoer van een speler die momenteel in je sessie zit niet verwijderen.
+
+CONFAIL=Verbinding mislukt.
+
+SPF=Vervalsing
+
+NSPFD=Niet Vervalsd
+
+SPFUPD=Je moet opnieuw deelnemen aan deze, of een nieuwe sessie zodat anderen de wijziging kunnen zien. :)
+
+SPFNME_D=Naam Vervalsing
+SPFDNME=Vervalsde Naam
+
+HRD=Hard
+SFT=Zacht
+
+SPFNMEFRMHST=Krijg Willekeurige Naam Van Speler Geschiedenis
+
+SPFPRST=Naam & RID Vervalsing Voorinstellingen
+YTRS=Youtubers
+RSEMPS=Rockstar Medewerkers
+
+SPFHT_D=Beheerder Sleutel Vervalsing
+SPFHT_H=Laat je je beheerder sleutel met lagere waardes verhogen waardoor je positie in de beheerder rij verhoogt.
+SPFHT_W=Weet dat beheerder sleutel maar door een speler in de sessie gebruikt kan worden, en waardes die te laag zijn kunnen gedetecteerd worden door andere modders.
+
+SPFDHT=Vervalsde Beheerder Sleutel
+
+SPFDHTPRST_0=Handicap
+SPFDHTPRST_1=Ideale Plaats
+SPFDHTPRST_2=Agressief
+
+AKCKHST=Kick Beheerder Wanneer Ik De Sessie Join Als Volgende In Rij
+
+SPFSESS=Sessie Vervalsing
+
+HDESESS=Sessie Verbergen
+HDESESS_H=Verstopt je sessie voor iedereen die je probeert te volgen, bezoeken, of toeschouwen.
+HDESESS_H_CPY=Notitie: Je hebt "Kopieer Sessie Info" ingeschakeld wat voorrang heeft op "Verberg Sessie". Controleer je Speler Geschiedenis Aggregaties.
+HDESESS_NX=Niet-Bestaande Sessie
+
+FF=Nep Vriend
+TRK_FF=Ingeschakeld + Nep Vriend
+TRK_FF_H=Voegt deze speler ook toe aan de in-game vriendenlijst.
+
+MARKASFF=Markeer Als Nep Vriend
+UMARKASFF=De-Markeer Als Nep Vriend
+
+CPYSESS=Sessie Informatie Kopiëren
+CPYSESS_H=Maakt je effectief een omleiding naar deze persoon voor iedereen die je probeert te volgen, bezoeken, of toeschouwen.
+CPYSESS_F=Sessie Informatie Kopiëren Van
+
+WHTJOIN=Whitelist Betreden
+
+! For reference, "Block Joins From Anyone" is BJ_ALL_A
+WHTJOIN_H=Dit zal deze persoon toestaan om de sessie te betreden, omzeilt 'Block Joins From Anyone' en speler-specifieke reacties.
+
+SESSTYP=Sessie Type
+SESSTYP_H=Het sessie type dat iedereen die je volgt te zien krijgt.
+NVLD=Ongeldig
+
+SPFHST=Beheerder Vervalsing
+SPFDHST=Vervalsde Beheerder
+YOU=Jij
+
+SPFCRW=Bemanning Vervalsing
+
+SPFCRW_ID_H=Dit bepaalt welke emblems wordt getoond. Moet niet nul zijn om je bemanning tag te tonen.
+
+NCRW=Geen Bemanning
+
+CPY2SPFCRW=Kopieer Naar Bemanning Vervalsing
+
+SPFCRWMINE=Kopieer Van Mijn Bemanning
+
+SPFRNK_D=Rang Vervalsing
+SPFRNK_H=Laat je de rank veranderen die andere spelers bij je zien in de speler lijst.
+SPFDRNK=Vervalsde Rank
+
+SPFKD=K/D Vervalsing
+SPFDKD=Vervalsd K/D
+
+SPFPOS=Positie Vervalsing
+SPFDPOS=Vervalsde Positie
+
+PLYMGNT=Speler Magneet
+PLYMGNT_H=Dit versnelt hoe snel je sessie bevolkt wordt door andere spelers.
+
+STRMSPF=Andermans Namen Vervalsen
+
+HIDEPLIST=Verbergen Van Speler Lijst
+HIDEPLIST_H=Verbergt je van de speler lijst in de HUD van het spel.
+
+PHNSPF=Telefoon Modus Vervalsing
+PHNSPF_0=Telefoon Niet Gebruiken
+PHNSPF_1=Bellen
+PHNSPF_2=Sms'en
+PHNSPF_3=Opnemen
+
+RIDTOOLS=Rockstar ID Hulpmiddelen
+
+N2R_I=Dat is een ongeldige naam. :?
+N2R_Q=Zoeken naar deze speler's RID...
+N2R_E=Zoeken naar een RID voor deze speler mislukt. :?
+
+R2N_Q=Zoeken naar die speler's naam...
+R2N_E=Geen RID gevonden voor die naam. :?
+
+PLYINV=Uitnodigen Tot Sessie
+INV_N=Uitnodigen Tot Sessie Bij Naam
+INV_R=Uitnodigen Tot Sessie Bij RID
+PLYINV_E=Het is niet mogelijk om uitnodigingen te sturen voor dit type sessie. :/
+
+PLYPRFL=Profiel Tonen
+PRFL_N=Profiel Openen Bij Naam
+PRFL_R=Profiel Openen Bij RID
+
+JOIN2=Toetreden
+JOIN_N=Sessie Toetreden Bij Naam
+JOIN_R=Sessie Toetreden Bij RID
+
+! Join methods
+JM_N=Ninja Methode
+JM_F=Vriend Methode
+JM_M=Matchmaking Methode
+
+! I mean "Nuts" as a covert way of saying crazy, just translate it as "Crazy" if you can't be sly.
+JM_NUTS=Gek Methode
+
+JOIN_T_A=Je zit al in deze sessie.
+
+JOIN_T_N=Deze speler zit momenteel niet in een GTA Online sessie. :/
+PLYOFFLINE=Deze speler is momenteel offline. :/
+
+PLYSPEC=Toeschouwen
+SPEC=Toekijken
+SPEC_N=Speler Toekijken Bij Naam
+SPEC_R=Speler Toekijken Bij RID
+
+NAMKICK=Kick Bij Naam
+RIDKICK=Kick Bij RID
+
+LGTM=Rechtmatige Methode
+
+RCTS=Reacties
+
+JOINR=Nieuwe Speler Reacties
+JOINT={} doet mee aan het spel
+
+HISTWJOINR=Spelers Met Join Reacties
+HIST_KEEP_JRE=Behoudt Spelers Met Join Reacties
+
+HISTWWHT=Spelers Met Whitelist Join
+HIST_KEEP_WHT=Behoudt Ge-whitelisted
+
+HISTADD2=Speler Toevoegen
+HISTADD=Speler Toevoegen Met Naam
+HISTADDRID=Speler Toevoegen Met RID
+
+HOSTR=Beheerder Verandering Reacties
+HOSTR_T={} is nu beheerder
+
+SHR=Script Beheerder Verandering Reacties
+SHR_T={} is nu script beheerder
+
+VKR=Stem Kick Reacties
+VKR_A=Stemt Om Iemand Te Kicken
+VKR_M=Stemt Om Mij Te kicken
+VKR_T={player} stemt om {target} te kicken
+
+LLKR=Liefdesbrief Kick Reacties
+LLKR_T={player} is {target} aan het liefdesbrief kicken
+
+BOUNTYR=Bounty Reacties
+BOUNTYR_P={} heeft een bounty op je gezet voor ${}.
+BOUNTYR_H=Dit is niet van toepassing wanneer een NPC een bounty op je zet.
+
+PTFXSPAMR=Deeltjes Spam Reacties
+PTFXSPAMR_H=Niet altijd kwaadaardig, maar kan je FPS verlagen.
+
+LEAVET=Speler Verlaat Meldingen
+LOGLEAVE_T={} heeft het spel verlaten
+
+LR=Speler Verlaat Redenen
+LR_H=Weet dat de conclusie van Verlaat Redenen onnauwkeurig kan zijn omdat deze functie niet niet-heuristisch kan worden geïmplementeerd.
+
+LR_WHERE=Waar
+LR_WHAT=Wat
+
+LR_N={player} verlaat normaal
+LR_SN=Toon "Verlaat Normaal"
+
+LR_Q={player} heeft het spel afgesloten
+LR_SQ=Toon "Sloot De Game"
+
+LR_B={player} is geblokkeerd te betreden
+LR_SB=Toon "Was Geblokkeerd Van Joinen"
+
+LR_T={player} is verlopen
+LR_DL={player} is verlopen tijdens het desync kicken van {other}
+LR_VK={player} is stem kicked
+LR_HK={player} is beheerder kicked door {other}
+LR_SHK={player} is script beheerder kicked door {other}
+LR_LL={player} is liefdesbrief kicked door {other}
+LR_K_B={player} is uitmaak kicked door {other}
+LR_K_O={player} is orgasme kicked
+LR_FMD={player} verlaat door een freemode dood
+LR_FMDC={player} is gecrasht na een freemode dood
+! "Quit To Story Mode" is QTSP
+LR_MOD={player} gebruikte mods om te verlaten naar story mode
+LR_BAN={player} is verbannen van GTA Online
+LR_U={player} verlaat voor een onbekende reden ({id})
+
+! The only substitute for {reason} is NETWORK_BAIL as of now
+LR_E={player} verlaat door {reason}
+
+AIM_MODE=Richting Modus Instellen
+AIM_MODE_0=Bijgestuurd Richten - Volledig
+AIM_MODE_1=Bijgestuurd Richten - Gedeeltelijk
+AIM_MODE_2=Vrij Richten - Bijgestuurd
+AIM_MODE_3=Vrij Richten
+
+RMLDR="Transaction Pending" Verwijderen
+RMLDR_H=Verwijdert elke actieve laadindicator rechtsonder op je scherm.
+
+CHTRMLDR=Geen "Transaction Pending" Tijdens Chatten
+CHTRMLDR_H=Verwijdert laadindicators tijdens dat je chat open hebt.
+
+LVINT=Huidige Interieur Verlaten
+
+FRCSVE=Cloud Opslaan Forceren
+
+THDR=Donder Weer
+THDR_ON=Aanvraag Aanzetten
+THDR_OFF=Aanvraag Uitzetten
+THDR_N=Notificatie Bij Aanvraag
+THDR_N_T={} heeft donder aangevraagd.
+
+RSTFM=Freemode Script Herstarten
+
+RJNSESS=Sessie Opnieuw Betreden
+
+SLFDS=Alleen Zijn
+SLFDS_H=Maakt je de enige in je huidige sessie zonder de ervaring van iemand anders te verstoren.
+
+SLR_N=Geen Reden Verlaten
+SLR_C=Verlaat Door Cheaten
+
+HSTTLS=Beheerder Gereedschappen
+
+SETSESSTYP=Sessie Type Instellen
+
+CLRBLKLST=Zwarte Lijst Legen
+CLRBLKLST_H=Laat spelers die voormalig stem gekickt zijn om weer te joinen.
+
+SESSTYP_S=Solo
+SESSTYP_I=Alleen Uitnodiging
+SESSTYP_F=Gesloten Vrienden
+SESSTYP_CC=Gesloten Bemanning
+SESSTYP_C=Bemanning
+SESSTYP_P=Publiek
+
+CSTMVK=Aangepaste Vote Kick Drempel
+CSTMVK_H=De hoeveelheid vote kicks die nodig zijn voordat je iemand kickt.
+
+! For reference: "I'll try to convince them to leave." is PLYKCK_T_C
+CSTMVK_MSG={} heeft je vote kick drempel overschreden. Ik zal proberen ze te overtuigen om te vertrekken.
+
+THRESHOLD=Drempel
+
+AUTOREJOIN=Automatisch Gedesynchroniseerde Sessies Opnieuw Betreden
+AUTOREJOIN_H=Betreed automatisch sessies waar je gedesynchroniseerd van bent geraakt.
+AUTOREJOIN_MSG=Gedesynchroniseerde sessie gedetecteerd, probeer opnieuw te betreden...
+AUTOREJOIN_FAIL=Kon je laatste sessie niet opnieuw betreden. :(
+
+QTSP=Afsluiten Naar Story Mode
+
+QTSPF=Geforceerd Afsluiten Naar Story Mode
+QTSPF_H=Herstart alle spel systemen, en laadt je daarna in story mode.
+
+NDLYXPS=Dagelijkse Uitgaven Uitschakelen
+
+OCWS=Open Chat Tijdens Scrollen
+OCWS_H=Fixt het feit dat je kan scrollen in de chat terwijl het gesloten is door het te laten zien wanneer je scrollt.
+
+CHATAO=Altijd Open
+
+BBGS=Achtergrond Scripts Blokkeren
+BBGS_H=Blokkeert de uitvoering van achtergrond scripts die Rockstar gebruikt voor het teasen van nieuwe DLCs maar ook complicaties kunnen veroorzaken voor modders.
+
+ADMDLC=Rockstar Admin DLC
+ADMDLC_H2=Ontgrendelt exclusieve kleding en Social Club TV.
+
+HUDTS=Duizendtal Scheidingsteken Voor Geld
+HUDTS_H=Voegt een duizendtal scheidingsteken toe aan geld waardes die worden weergegeven in de rechter bovenhoek.
+
+FLLPLYLST=Alle Spelers In Speler Lijst
+FLLPLYLST_H=Toont alle spelers in de in-game speler lijst, negeert Cayo Perico staat.
+
+FMBNR2T=Freemode Banners Naar Notificaties
+
+PHNANIM=Telefoon Animaties
+PHNANIM_H2=Geeft je personage animaties wanneer je de telefoon gebruikt.
+
+SPDUPDIAL=Bellen Versnellen
+
+NLSCBAR=LSC Beperkingen Uitschakelen
+NLSCBAR_H=Laat je Los Santos Customs met alle voertuigen betreden, inclusief voertuigen die niet in je eigendom zijn, en ze volledig modificeren.
+
+BLIPTAGS=Speler Tags Op Blips
+
+RSTHDSHT=Ped Headshots Resetten
+RSTHDSHT_H=Fixt wanneer de speler lijst of notificaties zwarte vierkanten hebben in plaats van headshots.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+TRNSS=Transities
+
+SESSHOP=Sessie Springer
+MINPLYS=Min Spelers
+MAXPLYS=Max Spelers
+
+SSS=Naadloos Sessie Wisselen
+
+WRLDSTCNG=Wereld Staat Verandering
+WRLDSTCNG_1=Verschoven
+WRLDSTCNG_2=Verschoven, Alleen Online
+WRLDSTCNG_3=Verschoven, Alleen Story Mode
+WRLDSTCNG_T=Wereld staat veranderen in {}...
+
+SPDUP=Versnellen
+
+TRNS_SPDUP_BRDCST=Niet Wachten Op Data Broadcast
+TRNS_SPDUP_FMMC=Niet Wachten Voor Missie Launcher
+TRNS_SPDUP_SPWN=Niet Vragen Om Toestemming Om Te Spawnen
+
+TRNS_SPDUP_BESCRHST_H=Dit kan je helpen om sneller te joinen, maar zal de sessie in een gebroken staat brengen, waardoor niemand anders meer kan joinen na jou.
+
+JGRPOVRD=Groep Betreden Overschrijven
+JGRPOVRD_H=Hiermee kun je bijvoorbeeld een toeschouwers plek gebruiken om deel te nemen aan een sessie die anders vol zit, zonder zelf toeschouwer te zijn. Dit kan echter problemen veroorzaken bij het betreden van banen. ⚠️
+JGRPOVRD_0=Toeschouwer
+JGRPOVRD_1=Freemoder
+
+SSWPD=Camera Daling Overslaan
+SSWPD_H=Slaat de dalende camera tijdens het laden van een sessie over.
+
+TRNSHLP=Transitie Helper
+TRNSHLP_H=Zorgt ervoor dat je niet vast blijft in de wolken.
+
+UNSTK=Losmaken
+
+NSPWNACTY=Spawn Activiteiten Uitschakelen
+NSPWNACTY_H=Voorkomt dat je personage een animatie speelt na het joinen van een sessie.
+
+NDLCITRO=DLC Intro Film Uitschakelen
+
+SHWTRNSTT=Overgangsstatus Weergeven
+
+SHWARRSYNC=Toon Array Synch Voortgang
+SHWARRSYNC_T=Freemode gesynchroniseerd {}/{} arrays ({}%)
+
+SHWRSMSG=Rockstar Hulp Bericht Tonen
+
+GTAOSTUS_O=GTA Online service is momenteel {}
+GTAOSTUS_O_L=gelimiteerd
+GTAOSTUS_O_D=beneden
+GTAOSTUS_M=Rockstar Support zegt "{}"
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions > Matchmaking !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+MM=Matchmaking
+
+MMREGION2=Regio Overschrijven
+MMREGION=Regio
+
+Australia=Australië
+Europe=Europa
+Asia=Azië
+Japan=Japan
+LATAM=Latijns Amerika
+REGION_NA=Noord Amerika
+USA_East=USA, Oost
+USA_West=USA, West
+
+MMPOOLOVRD=Pool Overschrijving
+MMPOOL=Pool
+
+MMPOOL_NRM=Normaal
+MMPOOL_CHEAT=Cheater
+MMPOOL_BADBOY=Slechte Verliezer
+
+MMMGNT=Speler Hoeveelheid Voorkeur
+MMMGNT_H=Stopt je in een sessie met ongeveer het aangegeven aantal spelers.
+
+MMOFF_H=Matchmaking uitschakelen zodat je niet meer bestaande openbare sessies vindt.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session > Session Code !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSCODE=Sessie Code
+SESSCODE_T_X=Deze sessie code is verlopen.
+
+CODEJOIN=Sessie Betreden Met Code
+CODESPEC=Beschouw Sessie Via Code
+ARGCODE=[code]
+
+CPYINVL=Kopieer Uitnodiging Link
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Session Scripts !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SESSSCRS=Sessie Scripts
+
+RUNSCR=Script Uitvoeren
+RUNSCR_PREP=Voorbereiden van script uitvoeren...
+RUNSCR_RUN={} script uitvoeren...
+
+RUNSCRS=Actieve Scripts
+
+PRTCPTS=Deelnemers
+
+STRTINST=Onmiddelijk Starten
+
+SESSSCRSTRT=Sessie Script Starten
+SESSSCRSTRT_T={player} heeft {script} script gestart.
+
+SESSSCRSTRT_ANY=Elke Script
+
+SCRCAT_GRIEF=Sessie Brekend
+NOCAT=Ongecategoriseerd
+
+SCRCAT_FA=Freemode Activiteit
+SCRCAT_AG=Arcade Spel
+SCRCAT_RFA=Verwijderde Freemode Activiteit
+SCRCAT_SERV=Service
+SCRCAT_CUT=Tussenfilmpje
+
+SCRCAT_FA_P=Freemode Activiteiten
+SCRCAT_AG_P=Arcade Spellen
+SCRCAT_RFA_P=Verwijderde Freemode Activiteiten
+SCRCAT_SERV_P=Services
+SCRCAT_CUT_P=Tussenfilmpjes
+SCRCAT_MISS_P=Missies
+
+SCR_FRCEPI=Interactie Menu Openen
+SCR_PS=Vliegschool
+SCR_STRIKE=Bliksem Inslag Voor Willekeurig Persoon
+SCR_DPSSV=Passieve Modus Uitschakelen
+SCR_DARTS=Darts
+SCR_IMPDM=Impromptu Deathmatch
+SCR_SLASHER=Slasher
+
+!! Session Scripts: Freemode Activities
+
+SCR_FE_BB=Zakelijk Gevecht
+SCR_FE_KL=Doden Lijst
+SCR_FE_CPC=Checkpoint Collectie
+SCR_FE_C=Uitdagingen
+SCR_FE_PI=Vastgezet
+SCR_FE_PI_CI=Gekooid
+SCR_FE_PTP=Houd het Wiel
+SCR_FE_HP=Heet Eigendom
+SCR_FE_KOTC=Koning van het Kasteel
+SCR_FE_CD=Criminele Schade
+SCR_FE_HTB=Jagen op het beest
+
+!! Session Scripts: Challenges - Types
+SCR_FE_C_0=Langste Sprong
+SCR_FE_C_1=Langste Vrije Val
+SCR_FE_C_2=Hoogste Snelheid
+SCR_FE_C_3=Langste Stoppie
+SCR_FE_C_4=Langste Wheelie
+SCR_FE_C_5=Geen Crashes
+SCR_FE_C_6=Laagste Parachute
+SCR_FE_C_7=Voertuigen Gestolen
+SCR_FE_C_8=Bijna-ongevallen
+SCR_FE_C_9=Omgekeerd Rijden
+SCR_FE_C_10=Langste Val Overleefd
+SCR_FE_C_11=Laag Vliegen
+SCR_FE_C_12=Omgekeerd Vliegen
+SCR_FE_C_13=Langste Vlucht
+SCR_FE_C_14=Onder Bruggen Vliegen
+SCR_FE_C_15=Headshot Doden
+SCR_FE_C_16=Driveby
+SCR_FE_C_17=Melee
+SCR_FE_C_18=Sniper Doden
+
+!! Session Scripts: Arcade Games
+
+SCR_AG_BRII=Badlands Revenge II
+SCR_AG_CAM=Camhedz
+SCR_AG_PUZ=QUB3D
+SCR_AG_RAC=Race and Chase
+SCR_AG_SM3=Space Monkey 3
+SCR_AG_TWR=The Wizard's Ruin
+
+!! Session Scripts: Removed Freemode Activities
+
+SCR_FE_DD=Uitwisseling
+SCR_RFA_HT=Bewegend Doelwit
+SCR_OFM_PT=Vliegtuig Neerhalen
+SCR_OFM_DC=Politie Afleiden
+SCR_OFM_DV=Voertuigen Vernietigen
+
+!! Session Scripts: Session Breaking
+
+SCR_FMINTRO=GTA Online Intro
+
+!! Session Scripts: Services
+
+SCR_SERV_A=Airstrike
+SCR_SERV_AD=Ammunitie Neerleggen
+SCR_SERV_BH=Helikopter Back-up
+SCR_SERV_IBH=Helikopter Back-up (Cayo Perico)
+SCR_SERV_BT=Boot Pick-up
+SCR_SERV_HT=Helikopter pick-up
+
+!! Session Scripts: Options on running scripts
+
+SCORE=Score
+
+!!!!!!!!!!!!!!!!
+!! Player Bar !!
+!!!!!!!!!!!!!!!!
+
+PBAR=Speler Balk
+
+HDEIF=Verbergen Als
+PBAR_HI_1=Speler Lijst Is Zichtbaar
+PBAR_HI_2=XP Balk Is Zichtbaar
+
+PBAR_ALNE=Ook Weergeven Als Je Alleen Bent
+
+SHWTGS=Labels Weergeven
+
+HDEPNTG=Verberg Spelers Zonder Label
+
+DFLTCLR=Standaard Kleuren
+
+TGCLRS=Label Kleuren
+
+UCLR=Gebruik Kleur
+
+!!!!!!!!!!!!!!!!!!!
+!! Online > Chat !!
+!!!!!!!!!!!!!!!!!!!
+
+CHT=Chat
+
+PRFNTY=Vloek Filter Omzeilen
+PRFNTY_H=Laat je vloeken in chat zonder dat het gecensureerd wordt voor anderen.
+
+HTML=Karakter Limiet Omzeilen
+HTML_H=Laat je ondeugende karakters zoals < en > in de chat gebruiken.
+
+ONLYTEAM=In Team Chat
+
+MSGFILTBP=Omzeild Bericht Filter
+
+CHTSPM=Chat Spam
+
+CHTLG=Chat Berichten Opslaan
+
+TBCMPLT=Spelersnamen Uittypen
+TBCMPLT_H=Compleet spelersnamen voor je als je op de toegewezen sneltoets drukt tijdens het typen van een chat bericht.
+
+PSTE=In Chat Bericht Plakken
+PSTE_H=Plakt tekst van je klembord als je op de toegewezen sneltoets drukt tijdens het typen van een chat bericht.
+
+TPNGIDCTR2=Typen Indicator
+TPNGIDCTR_H=Toont een typ indicator zoals Discord als spelers aan het typen zijn.
+TPNGIDCTR_1={a} is aan het typen...
+TPNGIDCTR_M={} zijn aan het typen...
+
+TPNGPOS_C=Gesloten Chat Positie
+TPNGPOS_O=Open Chat Positie
+
+SNDMSG=Bericht Versturen
+
+ITEAMCHT=In Team Chat
+
+TEXT=Tekst
+ARGTXT=[tekst]
+
+SPAM=Spam
+SPAM_H=Vriendelijke herinnering dat onze servicevoorwaarden het massaal adverteren verbieden, en dat het doen hiervan zal resulteren in een schorsing van je account.
+
+INTVAL_MS=Onderbreking (ms)
+
+LOCHIST=Toevoegen Aan Lokale Geschiedenis
+LOCHIST_H_SPAM=In het geval dat je zelf ook de spam wil ontvangen.
+
+FRCSEND=Stuur Alle Chat Berichten
+FRCSEND_H=Verandert de chat box in een interface voor het "Stuur Bericht" commando, waardoor je berichten consistent worden verzonden.
+
+FRCRECV=Toon Alle Chat Berichten
+FRCRECV_H2=Forceert het spel om alle ontvangen chat berichten in het chat venster te tonen, ongeacht wie het heeft verzonden.
+
+TIMESTAMP_MS=Tijdstempel In Berichten
+
+OWOMYMSGS=OwO-iveer Mijn Chat Berichten
+OWOMYMSGS_H=OwO-iveert je uitgaande berichten. Weet dat je lokaal geen verschil zult zien.
+
+SENDPM=Stuur Privé Bericht
+SENDPM_H=Stuurt een chat bericht die alleen deze speler en jij kunnen zien.
+
+CHATSING=Zingen In Chat
+CHATSING_H=Zingt het lied in je %appdata%/Stand/Song.lrc.
+
+NTPNGIDCTR=Typ Indicator Onderdrukken
+NTPNGIDCTR_H=Zorgt ervoor dat andere spelers niet kunnen zien wanneer je een bericht aan het typen bent.
+
+PTX_TYPNGSTRT=Typ Gebeurtenis Starten
+PTX_TYPNGSTOP=Typ Gebeurtenis Stoppen
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Commands !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CMDS=Commando's
+CMDS_H=Verwerkt chat berichten met het gekozen voorvoegsel net zoals commando's in Stand's opdrachtvenster, weet dat veel commando's niet beschikbaar zijn voor andere spelers.
+
+PFX=Voorvoegsel
+
+REPLPFX=Antwoord Voorvoegsel
+
+REPLYVIS=Antwoord Zichtbaarheid
+EVERYONE=Iedereen
+ISSUER_N_ME=Afzender & Mij
+ISSUER=Afzender
+NOONE=Niemand
+
+ON4M=Ingeschakeld Voor Mij
+
+4F=Voor Vrienden
+
+4C=Voor Crewleden
+
+4T=Voor Team Chat
+4T_H=Bijv. je CEO/MC leden.
+
+4S=Voor Onbekenden
+
+! When a friend or stranger tries to kick or crash the Stand user
+SLFHRM_O=Bijt niet in de hand die je voedt. ;)
+
+CMDBXDCS=Stand Opdrachtvenster Documentatie
+
+CMDLST=Opdrachtlijst
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Reactions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CHT_ANY=Elk Bericht
+CHT_ANY_G=Chat Bericht
+
+CHT_SPF=Vervalsd Bericht
+CHT_AD=Advertentie
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session Browser !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSBRWS=Sessie Verkenner
+
+NFLTR=Niet Filteren
+
+MREFLTR=Meer Filters
+
+SESSBRWS_FLTR_AST_H=Wanneer ingeschakeld worden alleen sessies die overeenkomen met je huidige inhoud hashes getoond. Je mag je checksum vervalsen voor een soort "privé matchmaking".
+
+NHKNADS=Niet Beheerd Door Bekende Adverteerder
+
+RFRSH=Vernieuwen
+
+SESSS=Sessies
+
+HSTPRF=Beheerders Profiel Bekijken
+
+LSESSDETS=Sessie details ophalen...
+
+RM_PROMPT=Vraag Ledenlijst Aan
+RM_CONFIRMED=Ledenlijst Aanvragen...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Request Services !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+REQSRV=Diensten Aanvragen
+
+AIRSTRK=Airstrike Aanvragen
+AIRSTRK_H=Geeft je een fakkel en brengt een Merryweather jet die de locatie van de fakkel bombardeert.
+
+AM_AMMO_DROP=Munitie Aanvragen
+
+AM_BOAT_TAXI=Boot Ophaling Aanvragen
+
+AM_HELI_TAXI=Helikopter Ophaling Aanvragen
+AM_HELI_TAXI_0=Maverick
+AM_HELI_TAXI_1=Supervolito
+
+AM_BACKUP_HELI=Helikopter Backup Aanvragen
+
+REQNANO=Nano Drone Aanvragen
+
+!!!!!!!!!!!!!!!!!!
+!! Online > ATM !!
+!!!!!!!!!!!!!!!!!!
+
+ATM=Geldautomaat
+
+AUTODEPO=Portemonnee Automatisch Storten
+WLTHPPR_T=${} Overgemaakt van je portemonnee naar je bank. :)
+
+WTHDRW=Opnemen
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! SC DM Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SCDMT=Social Club DM Notificaties
+SCDMT_T=SC DM van {sender}: {text}
+
+! Those thingies in the top-right corner of the screen.
+SCNOTIF=Social Club Notificaties
+
+!!!!!!!!!!!!
+!! CEO/MC !!
+!!!!!!!!!!!!
+
+CEO=CEO/MC
+
+NOCEO={} zit niet in een organisatie of motorclub.
+CMDNBOSS=Dit commando is alleen beschikbaar als je een VIP, CEO of president bent.
+GEN_H_BOSS=Dit heeft alleen effect als je een VIP, CEO of president bent.
+
+CEOKICK=Kick Van CEO/MC
+CEOKICK_E=Sorry, het is alleen mogelijk om leden van een CEO/MC te kicken.
+
+MISSIONEVT=Start Freemode Missie
+MISSIONEVT_NCEO=Start Freemode Missie (Niet Mijn Baas)
+
+INTTPEVT=Teleporteer Naar Interieur
+INTTPEVT_NCEO=Teleporteer Naar Interieur (Niet Mijn Baas)
+
+CEOAPPEAL=CEO/MC Verbanning Verwijderen
+
+CEOJOIN=CEO/MC Betreden
+CEOJOIN_T=Probeer een vloeiende join...
+CEOJOIN_E=Terugvallen naar gedwongen join.
+
+CEOTYP=Type Veranderen
+CEOTYP_H=Verandert je organisatie in een motorclub of vice versa.
+
+CEOCAP=Lid Limiet Verwijderen
+
+CEOCOL=Kleur Plekken
+CEOCOL_H=Toegekend tot {}'s organisatie.
+
+ORGCR_S=Registreer Als Een CEO/VIP
+ORGCR_M=Start Een Motorclub
+
+!!!!!!!!!!
+!! Game !!
+!!!!!!!!!!
+
+! "Snake" refers to the classic game
+SNAKE=Snake
+SNAKE_1=Tijdens Sessie Transitie
+
+SNAKE_C=Sluit Stand zodat je Snake kan besturen met je navigatie toetsen
+
+PONG_C=Sluit Stand zodat je Pong kan besturen met je navigatie toetsen
+
+INVSEND_PONG=Uitnodingen Voor Pong
+
+INVRECV_PONG=Pong Uitnodiging Accepteren
+INVRECV_PONG_T={player} heeft je uitgenodigd om Pong te spelen. Gebruik Spelers > {player} > Pong Uitnodiging Accepteren om deel te nemen.
+
+INVSENT=Wachten op {} om je uitnodiging te accepteren.
+
+CNLINV=Uitnodiging Annuleren
+
+CNLGME_PONG=Pong Spel Annuleren
+
+GETREADY=Maak Je Gereed!
+
+PLYGMECNCLT={} heeft het spel beëindigt.
+
+T_M_C=Verwijder Notificaties Boven Map
+
+SKPCTSCN=Tussenfilmpje Overslaan
+
+TMSCL=Tijd Schaal
+TMSCL_H=Verandert de snelheid van tijd *lokaal*.
+
+AIMTMSCL=Richt Tijd Schaal
+AIMTMSCL_H=Verandert de snelheid van tijd *lokaal* wanneer je richt.
+
+SCRNSHT=Screenshot Modus
+
+RWND=Positie Terugdraaien
+RWND_H2=Ga terug in tijd door het drukken van de toegewezen sneltoets of speciale vaardigheid op controller.
+
+UNRSTRCAM=Spel Camera Onbeperken
+UNRSTRCAM_H=Laat je de camera draaien in een volledige 360° cirkel.
+
+FC=Freecam
+FC_H=Laat je de camera overal naartoe nemen.
+
+FC_DTP=Teleporteer Bij Uitschakelen
+FC_DTP_H=Teleporteerd je personage naar de camera's locatie als je freecam uitzet.
+
+FC_NZ=Beweging Negeert Helling
+FC_NZ_H=Schakelt het aanpassen van hoogte via voorwaarts en achterwaarts lopen uit, afhankelijk van waar je naar kijkt.
+
+FC_MF=Minimap Volgt Freecam
+
+MOVCTRL=Beweging Besturing
+MOVCTRL_FC=Wisselt je beweging invoer tussen freecam en personage
+
+EDTHCLR=HUD/UI Kleuren Aanpassen
+
+EDTLB=Labels Bewerken
+
+ADDLB=Label Toevoegen
+ADDLB_H=Voegt een label toe aan de lijst waarmee je het kunt bewerken.
+ADDLB_E=Helaas, {} is geen geldig label. :/
+
+RVLLB=Toon Labels
+RVLLB_H=Voorkomt dat in-spel tekstlabels worden verwerkt en toont in plaats daarvan het label.
+
+OWOLB=OwO-iveer Labels
+
+LBLST=Labellijst
+
+EDIT=Bewerk
+
+! {} should be at the end as it could be very long
+RESET=Herstelt naar {}
+
+REMOVE=Verwijder
+
+FOV=Gezichtsveld
+
+FOV_TP_VEH=Derde Persoon, In Voertuig
+FOV_TP_ONF=Derde Persoon, Te Voet
+FOV_FP_VEH=Eerste Persoon, In Voertuig
+FOV_FP_ONF=Eerste Persoon, Te Voet
+FOV_AIM=Richten
+FOV_SNIP=Sniperen
+
+CAMDIST=Camera Afstand Vermenigvulder
+
+2PRSN=2e Persoons Perspectief
+
+! "Heading" as in the rotation
+CAMPUKE=Gameplay Camera Rotatie Vaststellen
+
+RDRG=Tekenen
+
+VISSTTNGS=Visuele Instellingen
+
+NITEV=Nachtzicht
+
+THERV=Thermisch Zicht
+
+SHDR=Shader Overschrijven
+
+DSTSCLMUL=Afstand Schaling
+
+RDRHDOLY=Alleen HD Tekenen
+
+POTAT=Aardappel Modus
+POTAT_H=Herstelt de originele graphics van de game uit 2013.
+
+BLKALLDRW=Schakel Rendering Grotendeels Uit
+
+LKSTRMFCS=Stroming Focus Vastzetten
+LKDPOS=Vaste Positie
+SELPOS_T=Zodra je een positie hebt geselecteerd, druk op {} om vast te zetten.
+
+SGMELNG=Game Taal Instellen
+SGMELNG_H=Sommige talen hebben een andere lettertype dat alleen geladen wordt na een herstart van de game.
+
+STUTFIX=Fix Stotteren Bij Hoge FPS
+STUTFIX_H=Fixt het stotteren dat gebeurd wanneer het spel in de buurt komt van 188 FPS.
+
+NKBDHK=Toetsenbord Haak Uitschakelen
+NKBDHK_H=Staat je toe om de Windows toets te gebruiken terwijl GTA gefocused is en voorkomt game lag die resulteert in toetsenbord vertraging.
+
+DBGNTVS=Debug Natives Overschrijven
+DBGNTVS_H=Implementeert en overschrijft de debug natives die nog steeds gebruikt worden in sommige scripts van de game.
+
+! As in "Software Patch"
+PTCHS=Patches
+
+PRJTPOOL=Projectiel Pool
+PTCH_PRJTPOOL_H=In plaats van het weigeren om nieuwe projectielen te spawnen wanneer de projectiel pool vol is, verwijdert deze patch het oudste projectiel.
+
+ANAL=Analoog Toetsenbord Ondersteuning
+ANAL_H=Als je een ondersteund analoog toetsenbord hebt laat dit het spel begrijpen hoe hard je op je toetsen drukt.
+ANAL_L=Ondersteunde Toetsenborden
+
+PRSRSUB=Druk Aftrekker
+PRSRDIV=Druk Deler
+
+DEV=Apparaat
+PRSR=Druk
+
+EJ=Vroege Injectie Verbeteringen
+EJ_H=Spel verbeteringen die zullen worden toegepast als Stand wordt geïnjecteerd als het spel begint.
+
+GMEPOOL=Speel Pool Grootte Vermenigvulder
+GMEPOOL_H=Vermenigvuldigt de grootte van pools voor entiteiten, scriptbronnen, enz. Vergroot ook de geheugenpools om "out of memory" fouten te voorkomen. Pogingen om een replay-opname te maken met gewijzigde spelpools zal het spel laten crashen.
+
+MEMPOOL=Geheugenpool Grootte (MB)
+
+SETHIPRIO2=Zet Spel Op Hoge Prioriteit
+SPDUPSTRUP=Versnel Opstarten
+SKPGMEITR2=Intro & Licentie Overslaan
+
+SVMR=Gebruik Script VM Herimplementatie
+SVMR_H=Vervangt de script runtime van de game met een iets geoptimaliseerde versie.
+
+! Legacy as in "the old way"
+LGCY=Verouderde
+
+YEET_W=Voor de duidelijkheid, dit crasht je spel.
+
+!!!!!!!!!!!!!!!!!!
+!! Game > Radio !!
+!!!!!!!!!!!!!!!!!!
+
+RD=Radio
+
+MBLRD=Mobiele Radio
+MBLRD_H=Maakt het mogelijk om te voet naar de radio te luisteren.
+
+LKRD=Radiostation Vastzetten
+LKRD_H=Weigert alle wijzigingen aan het radiostation door het spel of andere spelers.
+
+RDSTS=Radio Zenders
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Game > Disables !!
+!!!!!!!!!!!!!!!!!!!!!
+
+DBLES=Uitschakelingen
+
+DGMEINPT=Spel Invoer Uitschakelen
+! Preset for Disable Game Inputs
+JUSTMOUSE=Muis
+DGMEINPT_H_MOUSE=Schakelt de meeste spel invoer uit terwijl Stand open is.
+! Preset for Disable Game Inputs
+CTRLLR=Controller
+DGMEINPT_H_CTRLLR=Spel invoer gedeeltelijk Uitschakelen terwijl Stand open is.
+! Preset for Disable Game Inputs
+CTRLLR_N_TABS=Controller + Tabbladen
+DGMEINPT_H_CTRLLR_N_TABS=Hetzelfde als "Controller" maar schakelt ook voertuig acceleratie en rem invoer uit.
+DGMEINPT_H_NUMPAD=Alle spel invoer inschakelen.
+
+DGMEINPT_P=Wil je de {preset} Preset gebruiken voor {disable_game_inputs_path} om tegenstrijdige spel invoer te voorkomen zolang Stand open is?
+
+DSBLPHNE=Rechtsreeks Naar Voicemail
+DSBLPHNE_H=Blokkeert alle binnenkomende mobiele oproepen.
+
+NCAMSHK=Camera Schudden Uitschakelen
+
+NSTNTJMP=Stunt Sprongen Uitschakelen
+
+DSBLREC=Opnames Uitschakelen
+DSBLREC_H=Schakelt de mogelijkheid om Rockstar Editor opnames te maken uit.
+
+NCINCAM=Cinematic Camera Uitschakelen
+
+NVEHFCSCAM=Voertuig Camera Focus Uitschakelen
+NVEHFCSCAM_H=Schakelt de hint camera uit wanneer je op de cinematische camera knop drukt terwijl in een voertuig in een vriendelijke speler staat, etc.
+
+NIDLECAM=Inactiviteits Camera Uitschakelen
+
+DSBLRESTRAR=Beperkte Gebieden Uitschakelen
+DSBLRESTRAR_H=Dit kan ervoor zorgen dat je geen wapens meer hebt in missies of dat je zelfs niet in de missie kan laden. ⚠️
+
+NFLTMSC=Vlieg Muziek Uitschakelen
+NWNTMSC=Wanted Level Muziek Uitschakelen
+
+PRVNUM7SCO=Voorkom Dat Numpad 7 Social Club Opent
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > Info Overlay !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+HUDINFO=Info Overlay
+
+IGTIME=In-Spel Tijd
+
+RWTIME=Echte-Wereld Tijd
+
+DPS=Tekeningen Per Seconde
+
+GPUOVHD=GPU Overhead (ms)
+GPUOVHD_H=Hoeveel milliseconden je CPU wacht op je GPU om de frame af te maken.
+
+TS=Ticks Per Seconde
+TS_H=Gelijk aan tekeningen per seconde.
+
+GEAR=Schakelaar
+GEAR_R=Achteruit
+
+RPM=RPM
+
+HQSA=Host Wachtrij Factor
+HQSA_0=Laagste Rockstar ID
+HQSA_1=Hoogste Rockstar ID
+HQSA_2=Laagste Naam Hash
+HQSA_3=Hoogste Naam Hash
+
+WSPCW=Wie Beschouwt Wie
+WSPCW_T={spectator} is {spectatee} aan het beschouwen
+
+CTRYBRKDWN=Land Afbreking
+CTRYBRKDWN_H=Toont alle landen van de spelers in de sessie met het aantal spelers naast elk land.
+
+NEPOOL=Uitgaande Netwerk Gebeurtenissen
+
+SRTBYCTRYNME=Sorteer Op Land Naam
+SRTBYCNT=Sorteer Op Hoeveelheid
+
+ALTDE=Hoogte
+GRNDIST=Afstand Tot Grond
+
+ROT_ENT=Rotatie (Entiteit)
+ROT_CAM=Rotatie (Camera)
+ROT_X=Stampen
+ROT_Y=Rollen
+ROT_Z=Gieren
+
+PEDS=Voetgangers
+
+VEHS=Voertuigen
+
+OBJS=Objecten
+
+PUPS=Pickups
+
+PROJ=Projectielen
+
+SCPROG=Script Programma's
+
+SCTHDS=Script Threads
+
+EHLT=Entiteiten Handelaars Laatste Tick
+
+NGILT=Waardes Aangeroepen Door GTA Laatste Tick
+
+NSILT=Waardes Aangeroepen Door Stand Laatste Tick
+
+CTRLREQS=Controle Verzoeken
+
+FIBS=Fibers
+
+STH=Script Tick Handelaars
+
+PRSNTHDLS=Handelaars Tekenen
+
+! "Keep-Alive" may be kept as-is, as it's a rather technical term/concept.
+KACONS=Keep-Alive Verbindingen
+
+!!!!!!!!!!!!!!!!!!!!
+!! Game > Minimap !!
+!!!!!!!!!!!!!!!!!!!!
+
+MINIMAP=Minimap
+
+SLEEK=Strakke Minimap
+
+DNWINVI=Nieuwe Uitnodiging Indicator Uitschakelen
+DNWINVI_H=Schakelt de nieuwe uitnodiging indicator naast de map en op de Baan Lijst app uit.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > AR Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ARNOTIFS=AR Notificaties
+
+DBGMODE=Debug Modus
+
+STATSCLE=Statische Schaal
+DYNSCLE=Dynamische Schaal
+DYNSCLG=Dynamische Schaling
+
+HOROFF=Horizontaal Afzet
+VERTOFF=Verticaal Afzet
+DPHOFF=Diepte Afzet
+
+FPHOROFF=Eerste Persoon Horizontale Afzet
+FPVERTOFF=Eerste Persoon Verticale Afzet
+FPDPHOFF=Eerste Persoon Diepte Afzet
+
+RESVRDTOPSPC=Gereserveerde Bovenkant Ruimte
+
+ROTMODE=Rotatie Modus
+ARNOTIFS_ROTMODE_0=Entiteit
+ARNOTIFS_ROTMODE_1=Entiteit, Inclusief Horizontale As
+ARNOTIFS_ROTMODE_2=Camera
+ARNOTIFS_ROTMODE_3=Camera, Inclusief Verticale As
+
+ENSTXTREAD=Zorg Voor Leesbare Tekst
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Credits !!
+!!!!!!!!!!!!!!!!!!!!!
+
+CRED=Credits
+
+CRED_Pocakking=Maakte BigBasev2, wat een goed startpunt was.
+CRED_QuickNET=Deelde zijn kennis over GTA en C++ en beantwoordde domme vragen.
+CRED_UPD=Heeft geholpen met het updaten van het menu door het delen van crossmaps.
+CRED_alloc8or=Onderhoudt zijn Native DB en deelde veel nuttige data.
+CRED_SirMestre=Maakte LittleInjector, die goed hielp bij het maken van Launchpad.
+CRED_Give-Two=Maakte een ScriptHookV implementatie, die hielp met DirectX rendering.
+CRED_gir489=Deelde zijn kennis over GTA en maakde bigbasev2-fix.
+
+! Check the "Languages" section at https://en.wikipedia.org/wiki/Fork_(software_development)
+CRED_Ryan=Maakte Pluto, de fork van Lua die we gebruiken.
+
+CRED_BE=Hielp met het mogelijk maken om Stand met BattlEye te gebruiken.
+
+CRED_UPX=Laat de Stand DLL kleiner zijn dan het eigenlijk is.
+CRED_UnknownCheats=Diamanten in de modder.
+CRED_StackOverflow=Natuurlijk.
+
+CRED_LANG=Vertalers
+
+CRED_Thimo=Onderhoudt de Nederlandse vertaling van Stand.
+CRED_moue=Onderhoudt de Litouwse vertaling van Stand.
+CRED_aeronyx=Onderhoudt de Portugese vertaling van Stand.
+CRED_zzzz=Onderhoudt de Chinese vertaling van Stand.
+CRED_IceDoomfist=Onderhoudt de Koreaanse vertaling van Stand.
+CRED_99Anvar99=Onderhoudt de Russische vertaling van Stand.
+CRED_Lancito01=Onderhoudt de Spaanse vertaling van Stand.
+CRED_Itreax=Onderhoudt de Franse vertaling van Stand.
+CRED_Emre=Onderhoudt de Turkse vertaling van Stand.
+CRED_DumbBird=Onderhoudt de Poolse vertaling van Stand.
+CRED_JA=Onderhoudt de Japanse vertaling van Stand.
+CRED_VI=Onderhoudt de Vietnamese vertaling van Stand.
+CRED_IT=Onderhoudt de Italiaanse vertaling van Stand.
+
+MISC=Overig
+
+CRED_YOU=... en jij!
+CRED_YOU_H=Ja, je krijgt een deelnametrofee. Maar serieus, bedankt voor het steunen van Stand, het melden van bugs, en het suggereren van functies!
+
+!!!!!!!!!!!
+!! Stand !!
+!!!!!!!!!!!
+
+CMDSCRPT=Opdrachtvenster Scripts
+
+ASI=ASI Mods
+ASI_H=Laat je ASI Mods gebruiken met Stand's ScriptHookV implementatie.
+ASICE=Het lijkt erop dat deze ASI mod niet compatiebel is of zijn taak heel snel beëindigd.
+ASI_D_T=Het lijkt erop dat deze ASI mod niet correct is ontladen.
+
+ASI_TMP=Gebruik Temp Map
+ASI_TMP_H=Hiermee kan je ASI-mods opnieuw starten die niet worden ontladen, maar kunnen ASI-mods configuraties lezen / schrijven in de tijdelijke map.
+
+ASI_DOC=Online Controles Misleiden
+ASI_DOC_H=Laat je ASI mods gebruiken die normaal gesproken weigeren te werken in online.
+
+LUA=Lua Scripts
+LUA_H=Laat je scripts draaien die geschreven zijn voor Stand in Lua en/of Pluto.
+
+LUA_RNNG2=Draai {}
+LUA_START=Start Script
+LUA_STOP=Stop Script
+
+CMPTLY=Compatibiliteit Laag
+CMPTLYS=Compatibiliteit Lagen
+
+RESTRCS=Beperkingen
+
+LUA_REPODEV=Je bewerkt een script dat is geïnstalleerd via de repository, dus wees ervan bewust dat je wijzigingen worden overschreven bij de volgende update van het script.
+
+FILEGON=Bestand bestaat niet meer.
+
+LUACFGPRST_0=Gebruiker
+
+! Currently unused.
+LUACFGPRST_1=Makkelijk-Geïrriteerde Gebruiker
+
+LUACFGPRST_2=Ontwikkelaar
+
+DEVHINT=Het lijkt erop dat je een Lua script aan het ontwikkelen bent. Overweeg om de ontwikkelaars preset te gebruiken in Lua Scripts > Instellingen, zodat je op de hoogte bent van mogelijke problemen.
+
+DISINACC=Internet Toegang Uitschakelen
+
+FRCSILNTSTRT=Forceer Stille Start
+FRCSILNTSTP=Forceer Stille Stop
+ENFRCSILNTSTRT=Stille Start Afdwingen
+ENFRCSILNTSTP=Stille Stop Afdwingen
+
+YES_NOTIFY=Ja + Waarschuwen
+
+WRNOS=Waarschuw Me Voordat Gevaarlijke Scripts Worden Uitgevoerd
+LUA_W_OS=Dit script bevat code die directe toegang tot je systeem vraagt. Ga niet verder als je de broncode niet vertrouwd.
+
+WRNMNY=Waarschuw Me Voordat Geld Scripts Worden Uitgevoerd
+LUA_W_MNY=Dit script is geld-gerelateerd. We kunnen niet garanderen dat je account niet een paar dagen later wordt verbannen omdat bans vertragingen hebben. En omdat wij geen veiligheidscontroles uitvoeren op gebruikers-gegenereerde content.
+
+LUA_SCAM=Als je voor dit script hebt betaald, BEN JE GESCAMMED! 99% van de inhoud is gratis beschikbaar in onze repository of op Discord. Je betaalde oplichters die het stelen, geen verdere waarde bieden en de originele makers niet betalen.
+
+4DEV=Voor Ontwikkelaars
+
+REPO=Repository
+REPO_H_LUA=De repository geeft je makkelijk toegang tot een selectie van lua scripts.
+
+REPO_P_H=Je hebt dit geïnstalleerd vanuit een repository. Stand zal het bijwerken.
+
+REPO_MISNGLCL=Pakket {} mist lokale bestanden, er wordt een update uitgevoerd om dit hopelijk op te lossen.
+REPO_DLFAIL=Gefaald om {file} te downloaden voor pakket {package}
+
+SECCONT_NCRED=Om deze content te bekijken, moet Stand geactiveerd zijn.
+SECCONT_NAVAIL=Gefaald om deze content te bekijken.
+
+VER=Versie
+ATR=Auteur
+
+DEPS=Afhankelijkheden
+DEP_M_O=Afhankelijkheid instellen als handmatig geïnstalleerd.
+DEP_M_F=Afhankelijkheid is niet langer gemarkeerd als handmatig geïnstalleerd.
+
+HELP=Hulp Ontvangen Bij Stand
+
+WEB2=Web Interface
+WEB2_H=Met de web interface kan je Stand vanuit de browser gebruiken, zelfs op je smartphone.
+WEB=Open Web Interface
+WEB_T=Je gebruikt nu de web interface. :O
+WEB_T_L=Je gebruikt nu niet meer de web interface.
+
+RELAY_C=Verbinden met {}...
+RELAY_E=Gefaald om verbinding te maken met relay ({}).
+RELAY_L=Verbinding met relay verbroken.
+
+TESTS=Experimenten
+
+CLRNOTIFS=Leeg Notificaties
+CLRNOTIFS_H=Leegt Stand's notificatie systeem.
+
+EMPTYLOG=Log.txt Leegmaken
+EMPTYLOG_H=Verschoont je %appdata%/Stand/Log.txt.
+EMPTYLOG_T=Log leeggemaakt :)
+
+FNDCMD=Zoek Commando
+FNDCMD_H=Laat je commando's in Stand vinden door middel van naam of hulp tekst.
+
+CTXSTAR=Opslaan
+CTXSTAR_H=Slaat dit commando op zodat je het kan vinden in {}.
+
+CMDSTARS=Opgeslagen Commando's
+CMDSTARS_H=Toont alle commando's die je hebt opgeslagen met de optie in het context menu.
+
+CON=Console
+
+LNDFT=Commando's Met Niet-Standaard Staat
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST=Genereer Features (nl).txt
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_H=Slaat alle huidige beschikbare commando's op in %appdata%/Stand/Features (en).txt met de bijbehorende helptekst en uitleg.
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_T=Functie lijst is opgeslagen in %appdata%/Stand/Features (nl).txt :D
+
+FTRLST_1OPTN=Een Optie
+FTRLST_OPTNS={} Opties
+FTRLST_MOPTNS={} Meer Opties
+
+PERMS=Rechten
+FTRLST_OTHP=Kan gebruikt worden door ander spelers met het {} recht.
+FTRLST_R=Exclusief tot de Reguliere Editie
+FTRLST_U=Exclusief tot de Ultieme Editie
+
+PERM_F=Vriendelijk Commando's
+PERM_N=Neutraal Commando's
+PERM_S=Invoeg Commando's
+PERM_R=Onbeleefde Commando's
+PERM_A=Agressiefe Commando's
+PERM_T=Gemene Commando's
+
+UNLD=Stand Uitladen
+UNLD_H=Verwijdert Stand uit het spel totdat je het opnieuw injecteert.
+UNLD_T=Je Stand verdwijnt.
+
+BADBOY=Je hebt zojuist geprobeerd om een andere Stand Gebruiker te kicken die niets heeft gedaan om het te verdienen. Behandel anderen zoals je zelf behandeld wilt worden. Je Stand zal over een paar seconden weer beschikbaar zijn.
+
+NWOOM=Het netwerk heeft onvoldoende geheugen voor nog een peer. Verwijder het persoon die je probeert te kicken of verlaat de sessie.
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! State & Profiles !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+PRFLS=Profielen
+PRFLS_H=Profielen laten je de staat van alle commando's opslaan en laden.
+
+NEWPRFL=Profiel Aanmaken
+NEWPRFL_H=Sla de staat van elk commando op in een nieuw profiel.
+
+DELPRFL_S=Profiel {} succesvol verwijderd.
+DELPRFL_F=Gefaald om het {} profiel te verwijderen. Probeer het bestand handmatig te verwijderen.
+
+LOAD=Laad
+LSTATE=Laad Staat
+LSTATE_H_CTX2=Laadt de staat van je actieve profiel naar dit commando.
+LSTATE_H2=Laadt de staat van dit profiel naar elk commando.
+LSTATE_T2=Staat van profiel {} is toegepast. :)
+LSTATE_T_CTX2=Staat van profiel {profile} is toegepast op {command}. :)
+
+SAVE=Opslaan
+SSTATE=Staat Opslaan
+SSTATE_H_CTX2=Slaat de staat van dit commando op in je actieve profiel.
+SSTATE_H2=Slaat de staat van elk commando op in dit profiel.
+SSTATE_T2=Staat van profiel {} is opgeslagen. :)
+SSTATE_T_CTX=Staat van {command} is opgeslagen in profiel {profile}. :)
+
+AUTOLOAD=Laad Bij Injecteren
+
+AUTOSAVE2=Automatisch Opslaan
+AUTOSAVE2_H=Behoudt dit profiel up-to-date als je Stand gebruikt.
+AUTOSAVE2_H_T=Automatisch opslaan zal worden ingeschakeld zodra je Stand opnieuw injecteert.
+AUTOSAVE2_T=Niet nodig, dit profiel wordt automatisch opgeslagen. :)
+
+GODFLT=Standaard Stand Toepassen
+GODFLT_H=Herstelt alle commando's naar hun originele staat.
+GODFLT_T=Standaard staat toegepast. :)
+GODFLT_CTX={}'s standaard staat toegepast. :)
+
+RGODFLT=Pas Standaard Staat Toe Op Onderliggende
+RGODFLT_CTX=Past standaard staat toe op alle onderliggende van {}. :)
+
+PRFL_H_ACTV=Dit is je actieve profiel.
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Appearance !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+STTNGS_TXT=Lettertype & Tekst
+
+STFNT=Lettertype Instellen
+
+CMBINTXT=Opdrachtvenster Invoer Tekst
+TXT_S=Kleine Tekst
+
+TXTSCL=Tekst Schaal
+
+OFF_X=X Afstand
+OFF_Y=Y Afstand
+
+TXTBOX=Tekstgrenzen Tonen
+
+FNTPRST=Vooraf Ingstelde Lettertype Gebruiken
+FNTPRST_H_YAHEI=Stand's standaard lettertype.
+FNTPRST_H_NANUMGOTHIC=Stand's hulp lettertype voor Koreaans.
+FNTPRST_H_BEVIETNAM=Stand's hulp lettertype voor Vietnamees.
+
+RLDFNT=Lettertype Herladen
+
+SPRS=Afbeeldingen
+
+LFTBND=Linksgebonden
+LFTBND_1=Alleen Schakels
+LFTBND_1C=Alleen Schakels, Compact
+LFTBND_2=Alleen Commando's
+LFTBND_2C=Alleen Commando's, Compact
+
+RLDSPR=Afbeeldingen Herladen
+
+HDR=Vaandel
+2HIDE=Verdwijn
+CUS=Aangepast
+
+FRMINT=Frame Vertraging
+
+SCRLBR=Scrollbar
+SCRLBR_1=Ingeschakeld Voor Grote Lijsten
+
+LSTWDT=Lijst Breedte
+LSTHHT=Lijst Hoogte
+
+WDT=Breedte
+HHT=Hoogte
+
+SPCSZE=Spacer Breedte
+
+LERP=Soepel Scrollen
+
+BGBLR=Achtergrondvervaging
+BGBLR_H=Weet dat hogere waardes van dit extreem veeleisend zijn voor je GPU.
+HDR_BGBLR_H=Zal alleen ingeschakeld moeten worden voor vaandels met transparantie omdat het een verspilling van computerkracht zou zijn om een visueel effect te produceren dat volledig verborgen zou zijn.
+
+INFOTXT=Info Tekst
+
+ALGN=Uitlijning
+TA=Tekst Uitlijning
+
+ALIGN_TL=Linksboven
+ALIGN_TC=Middenboven
+ALIGN_TR=Rechtsboven
+ALIGN_CL=Linksmidden
+ALIGN_CC=Midden
+ALIGN_CR=Rechtsmidden
+ALIGN_BL=Linksonder
+ALIGN_BC=Middenonder
+ALIGN_BR=Rechtsonder
+
+DRPSHDW=Slagschaduw
+
+SHWNME=Naam Weergeven
+SHWLICON=Pictogram Links Weergeven
+SHWRICON=Pictogram Rechts Weergeven
+
+ICUTXTCLR=Pictogrammen Gebruiken Tekst Kleur
+
+ADDRBAR=Adres Balk
+
+SHWCRLSTNLY=Alleen Huidige Lijst Tonen
+
+ADDRSEP=Adres Scheider
+
+WDTAFFBSCRLBR=Breedte Wordt Beïnvloed Door Scrollbar
+
+WDTAFFBCLMNS=Breedte Beïnvloed Door Kolommen
+
+CTX_ADDR=Adres Kopiëren
+CTX_ADDR_0=Mijn Format
+CTX_ADDR_1=Standaard Format
+CTX_ADDR_2=API Format
+CTX_ADDR_3=Focus Link
+
+BRD=Rand
+
+RNDD=Afgerond
+
+MAXCLMNS=Max Kolommen
+
+MNUHGT=Zichtbare Commando's Maximalizeren
+
+CRS=Aanwijzer
+
+SCRLGP=Scroll Ruimte
+CRSPAD_H=Zet de maximale hoeveelheid aan commando's die je ziet onder of boven je selectie, behalve als je aan het begin of einde van een lijst staat.
+
+CMDINFOTXT=Commando Info Tekst
+
+BLWTBS=Onder Tabbladen
+
+RPOS_L=Links
+RPOS_B=Bodem
+RPOS_R=Rechts
+RPOS_T=Top
+
+! As in the distance between menu components
+PDDGN=Opvulling
+
+SHWHLPTXT=Hulptekst Tonen
+
+SHWSYNTX=Commando Syntax Tonen
+
+SHWSLDBHV=Slider Gedrag Vertonen
+
+SHWOTHP=Toon Als Bruikbaar Door Andere Spelers
+
+SHWCMDOWNR=Toon Beherend Script
+SHWCMDOWNR_T=Dit commando is toegevoegd door {}.
+
+NOTFS=Notificaties
+
+TYP=Type
+STNDNTF_M=Stand, Naast De Map
+STNDNTF_C=Stand, Aangepaste Positie
+
+CUSTPOS=Aangepaste Positie
+CUSTPOS_H=Dit zal alleen effect hebben met type ingesteld op "Stand, Aangepaste Positie".
+
+INVFLOW=Stroming Omdraaien
+
+BRDCLR=Rand Kleur
+
+FLSHCLR=Flits Kleur
+
+FLSHNTF=Snelle Notificatie
+
+TIMNG=Tijdmeting
+READSPD=Lees Snelheid (WPM)
+READSTRT=Lees Start Vertraging (ms)
+MINDUR=Min Duur (ms)
+MAXDUR=Max Duur (ms)
+SAMPNOT=Toon Voorbeeld Notificatie
+
+SIZE_S=Klein
+SIZE_M=Gemiddeld
+SIZE_L=Groot
+
+MAXSHWMCHCMD=Max Getoonde Overeenkomende Commando's
+
+KPDRFCLS=Concept Behouden Wanneer Gesloten
+
+SHWBI=Knop Instructies Tonen
+
+SHWCRSPOS=Toon Muis Positie
+SHWCRSPOS_H=Schakelt de zichtbaarheid van de muispositie-indicator rechtsboven in de in-spel GUI van Stand.
+
+CRSPOSIDIV=Muis Positie Bevat Verdelers
+
+! Root as in the root of the command tree, which in this context is the text that reads "Stand 0.69 (Regular)" etc.
+RN=Root Naam
+
+RN_RNDBOOL=Representeer het team waaraan je Stand account willekeurig is toegewezen.
+RN_100=Voor gebruikers van Stand 100(.x).
+RN_EA=Voor een gebruiker zijn voor Stand 100.
+RN_U=Voor een Ultieme Editie gebruiker zijn.
+RN_EU=Voor het verspillen van 100 euro aan de eerdere Ultimate/Toxic Editie.
+
+BKRST=Teruggaan Reset Aanwijzer
+BKRST_H=Zet de aanwijzer bovenaan de lijst wanneer je terug drukt terwijl er niks is om naar terug te gaan.
+
+BKCLS=Terug Sluit Menu
+BKCLS_H=Laat je Stand's Interface sluiten door op terug de drukken wanneer er niks anders is om naar terug te gaan.
+
+INJOPEN2=Openen Na Injecteren
+
+PRFILVAL=Huidige Commando Aanvullen Voor Opdrachtvenster
+
+CMDTP_S=Schuifregelaars
+CMDTP_S_N=Nummer Schuifregelaars
+CMDTP_AV=Tekst Invoer
+
+SELDIV=Selecteerbare Verdelers
+SELNA=Selecteerbare N/A Verschuivers
+
+RHTBNDVAL=Rechtsgebonden Waarde
+
+LANG=Taal
+LANG_H=Als je de taal waarin deze tekst is geschreven niet begrijpt, kan je dit wijzigen.
+LANG_H2=Deze vertaling wordt momenteel niet onderhoudt. Neem contact op als je deze kan bijwerken.
+
+STRMPRF=Stream-Proof Tekening
+STRMPRF_H=Voorkomt dat Stand zichtbaar is voor streaming-software, als het DirectX/game capture gebruikt.
+
+ENTPREVS=Entiteit Voorbeelden
+DENTPREVS=Entiteit Voorbeelden Uitschakelen
+OPQ=Ondoorzichtig
+ENTPREVROTSPD=Draai Snelheid
+ADDPREVDISTP=Additionele Karakter Afstand
+ADDPREVDISTO=Additionele Object Afstand
+ADDPREVDISTV=Additionele Voertuig Afstand
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+CLRS=Kleuren
+
+KSPD=Toets Herhaling Periode
+KSPD_H=De hoeveelheid tijd tussen het herhalen van een toets tijdens het inhouden.
+
+KHSPD=Toets Inhouden Herhaling Periode
+KHSPD_H=De hoeveelheid tijd tussen het herhalen van een toets tijdens het inhouden voor een lange periode.
+
+TKSPD=Toets Herhaling Vertraging Voor Tabbladen
+
+WRPINTHLD=Vasthouden Onderbreken Bij Omwikkelen
+
+IPT=Invoer
+
+KSCHM=Toetsenbord Invoer Schema
+PRSTS=Voorinstellingen
+KSCHM_A=Flexibel
+KSCHM_0=Geen Numpad
+KSCHM_1=Numpad
+KSCHM_1_E=Druk alsjeblieft eerst op een toets om te bewijzen dat je een numpad hebt. :?
+
+QWQCTX=Context Optie Sneltoetsen
+
+MOUSE=Muis Ondersteuning
+MOUSE_H=Weet dat dit niet werkt met de "Windows" invoer methode vanwege het constant centreren van je aanwijzer.
+
+MOUSEFOCUS=Zet Muis Positie Op Niet-Muis Navigatie
+
+MOVWTHMSE=Bewegen Met Muis
+
+CTRLLRSPPRT=Controller Ondersteuning
+
+CTRLLRSCHM=Controller Invoer Schema
+
+HDENFO=Informatie Verbergen
+HDENFO_H=Dit kan helpen in het vermijden van het tonen van gevoelige informatie tijdens het scherm delen met Stand
+
+RDCTD=[Verborgen]
+
+HDENME=Onvervalsde Naam Verbergen
+HDENME_H=Dit verwijst naar de naam die wordt getoond in de speler informatie lijst en is onaangetast door "Andermans Namen Vervalsen' Namen".
+
+HDERID=Rockstar ID Verbergen
+HDEIP=IP Adres Verbergen
+HDEGIP=GeoIP Verbergen
+
+B_OC=Open/Sluit Menu
+B_OC_1=Open/Sluit Menu 1
+B_OC_2=Open/Sluit Menu 2
+B_RU=Vorige Tabblad
+B_RD=Volgende Tabblad
+B_MU=Omhoog
+B_MD=Omlaag
+B_ML=Links
+B_MR=Rechts
+B_MC=Klik
+B_MB=Terug
+
+DISCRP=Discord Rich Presence
+
+CLRCMDS=Kleur Commando's
+PRVWCLRTXR=Kleur Voorbeeld In Textuur
+PRCWCLRLST=Kleur Voorbeeld In Lijst
+
+SFX=Geluidseffecten
+
+MNUNVRMD=Menu Navigatie Herrineringen
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings > Session Joining !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSJNG=Sessie Joining
+
+SPCUCON=Speculatieve Verbindingen
+SPCUCON_H=Probeert het verbinden met sessies via Stand te versnellen door vooraf verbinding te maken met hosts en sommige data te cachen.
+
+AUTOCHNGTRGT=Verander Doel Modus Automatisch
+AUTOCHNGTRGT_H=Dit wordt alleen toegepast bij het betreden van een sessie via Stand. Normale betreding methoden zonder dialoogvenster doen dit altijd.
+AUTOCHNGTRGT_T=Doel modus veranderd naar {}.
+AUTOCHNGTRGT_T_0=geassisteerd richten
+AUTOCHNGTRGT_T_1=vrij richten
+
+REJBLK=Check Of Join Succesvol Zal Zijn
+REJBLK_H=Stopt de join poging als de host de join niet toestaat, bijvoorbeeld omdat de sessie vol is.
+REJBLK_T=De host lijkt je join niet toe te staan.
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Tunables !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+TNBL=Tunables
+TNBL_H=Laat je dingen inschakelen die normaal door Rockstar worden ingeschakeld voor sommige specifieke weken.
+
+NINSURPAY=Verzekering Betalingen Uitschakelen
+NINSURPAY_H=Voorkomt dat je moet betalen na het vernietigen van persoonlijke voertuigen van anderen.
+
+TNBL_HLWN=Halloween Evenement
+
+TNBL_PYTE=Peyote Planten
+
+!!!!!!!!!!!!!!!!!!!!
+!! World > Editor !!
+!!!!!!!!!!!!!!!!!!!!
+
+EDTR=Bewerker
+
+ROT_L=Naar links draaien
+ROT_R=Naar rechts draaien
+
+TOOLS=Gereedschappen
+
+TP2LKAT=Teleporteer Naar Waar Ik Kijk
+DELSPWD=Verwijder Alle Ingevoegde
+
+FCSIMNU=Focus In Stand
+
+!!!!!!!!!!!!!!!!!!
+!! Asset Hashes !!
+!!!!!!!!!!!!!!!!!!
+
+AST=Asset Hashes
+
+ASTFIX=Fix Asset Hashes
+ASTFIX_H=Laat je sessies betreden met aangepaste assets, die normaal een incompatibele assets fout zouden tonen.
+
+ASTCRC=Asset Checksum
+
+ASTSET=Zet Asset Checksum
+ASTSET_H=Laat je een aangepaste asset checksum invoeren (tot 8 hexadecimale cijfers) om je matchmaking en sessies te beperken.
+ASTSET_T=Stel je asset checksum in op {}.
+
+ASTRST=Asset Checksum Resetten
+
+OVRXTR=Extra Checksum Overschrijven
+
+XTRCRC=Extra Checksum
+XTRCRC_H=Laat je een aangepaste extra checksum invoeren (tot 8 hexadecimale cijfers) om je matchmaking en sessies te beperken.
+
+XTRCRC_PRSTS=Extra Checksum: Voorinstelling
+
+!!!!!!!!!!!!!!!!!
+!! Custom DLCs !!
+!!!!!!!!!!!!!!!!!
+
+CUSTDLC=Aangepaste DLCs
+CUSTDLC_H=Laat je aangepaste DLCs zoals voertuig addons makkelijk laden.
+
+! Don't translate the folder names
+CUSTDLCS_OPNFLD=Opent de "Custom DLCs" map, die je kunt behandelen als GTA's "dlcpacks" map, behalve dat het registreren en laden van DLCs hier zo makkelijk is als een klik.
+
+CUSTDLC_ETY=DLC is geladen, maar er is geen invoegbare inhoud gevonden.
+
+CUSTDLC_SPF=Vervals Modellen
+CUSTDLC_SPF_H=Vervalst modellen van aangepaste DLCs naar modellen die eigenlijk in het spel zitten, zodat spelers zonder de aangepaste DLC nog steeds iets kunnen zien.

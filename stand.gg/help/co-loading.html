@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Co-Loading With Stand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+	<link href="/halfmoon-config.css" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+	<div class="page-wrapper with-navbar">
+		<nav class="navbar">
+			<div class="container-xl">
+				<a class="navbar-brand" href="/">Stand</a>
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="/account/">Account</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/help/">Help</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content-wrapper">
+			<div class="container-xl">
+				<div class="content">
+					<h1>Co-Loading With Stand</h1>
+					<p>Co-loading with Stand is really simple: In general, you just inject your other menu(s) of choice first, and then use the Launchpad to inject Stand.</p>
+					<h2>Menus that have been tested</h2>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Menu</th>
+								<th>Load Order</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2Take1Menu</td>
+								<td>Doesn't matter</td>
+							</tr>
+							<tr>
+								<td>Cherax</td>
+								<td>Stand last</td>
+							</tr>
+							<tr>
+								<td>Nightfall</td>
+								<td>Doesn't matter</td>
+							</tr>
+							<tr>
+								<td>Midnight</td>
+								<td>Stand last</td>
+							</tr>
+							<tr>
+								<td>Phantom-X</td>
+								<td>Stand last</td>
+							</tr>
+							<tr>
+								<td>Dis2rbed</td>
+								<td>Stand last</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>You won't have any issues <i>co-loading</i> external menus, like Kiddion's Modest.</p>
+					<h2>Limitations when co-loading</h2>
+					<p>Since the co-loaded menus are not cooperating in any way, you may experience certain issues:</p>
+					<ul>
+						<li>Vehicle Indestructible in Stand not having an effect</li>
+						<li>Game Inputs not being enabled or disabled as expected</li>
+					</ul>
+					<p>As well as many other minor things.</p>
+					<h3>Unloading when co-loading</h3>
+					<p>If you want to unload menus in a co-loading setup, you should unload them in reverse loading order, e.g. if you loaded Stand last, it should be unloaded first, otherwise you risk breaking other menus.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

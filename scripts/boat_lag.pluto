@@ -1,0 +1,27 @@
+util.require_natives()
+
+menu.my_root():toggle("lag player", {""}, "", function(on)
+    if on then
+        toggled = on
+        local vehs = {}
+        local pos = players.get_pos(players.user())
+        util.request_model("patrolboat")
+        for i = 1, 23 do
+            vehs[i] = entities.create_vehicle(util.joaat("patrolboat"),pos,0)
+            entities.set_can_migrate(vehs[i],false)
+            ENTITY.SET_ENTITY_INVINCIBLE(vehs[i],true)
+        end
+        while toggled do
+            for vehs as veh do
+                if toggled ~= false then
+                    ENTITY.SET_ENTITY_COORDS_NO_OFFSET(veh, pos, false, false, false)
+                end
+            end
+            util.yield(3000)
+        end
+        for vehs as veh do
+            entities.delete(veh)
+        end
+    end
+    toggled = false
+end)

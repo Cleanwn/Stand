@@ -1,0 +1,64 @@
+util.require_natives("3095a")
+
+local ent = 0
+local vehs = util.get_vehicles() -- Be it this or a table of vehicle names.
+local current_index = 1
+local supported_vehs = {}
+
+local function getVehName(veh)
+	if type(veh) == "string" then
+		return veh
+	else
+		return veh.name
+	end
+end
+
+menu.action(menu.my_root(), "Next", {}, "", function ()
+	if current_index > #vehs then
+		util.toast("Done")
+		return
+	else
+		util.toast($"{current_index}/{#vehs}")
+	end
+
+	local veh = vehs[current_index]
+	local name = getVehName(veh)
+	local hash = util.joaat(name)
+
+	util.request_model(hash)
+
+	if ENTITY.DOES_ENTITY_EXIST(ent) then
+		STREAMING.SET_MODEL_AS_NO_LONGER_NEEDED(ENTITY.GET_ENTITY_MODEL(ent))
+		entities.delete(ent)
+	end
+
+	local pos = players.get_position(players.user())
+	ent = entities.create_vehicle(hash, pos, 1.0)
+
+	if ent ~= 0 then
+		PED.SET_PED_INTO_VEHICLE(players.user_ped(), ent, -1)
+		VEHICLE.SET_VEHICLE_EXTRA_COLOUR_5(ent, 136) -- Salmon Pink
+
+		current_index += 1
+	else
+		util.toast($"Failed to create entity from hash: {name}")
+	end
+end)
+
+menu.action(menu.my_root(), "Add Current", {}, "", function ()
+	local veh = vehs[current_index - 1]
+	local name = getVehName(veh)
+	supported_vehs:insert(name)
+	util.toast($"Added {name} to the list.")
+end)
+
+menu.action(menu.my_root(), "Add Previous", {}, "", function ()
+	local veh = vehs[current_index - 2]
+	local name = getVehName(veh)
+	supported_vehs:insert(name)
+	util.toast($"Added {name} to the list.")
+end)
+
+menu.action(menu.my_root(), "Print List", {}, "", function ()
+	util.log("\n" .. supported_vehs:concat("\n"))
+end)

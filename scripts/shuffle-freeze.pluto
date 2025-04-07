@@ -1,0 +1,15 @@
+util.require_natives("2944a", "g-uno")
+
+local root = menu.my_root()
+
+root:action("funny freeze", {""}, '', function()
+    local pid = players.user()
+
+    local pos = players.get_position(pid)
+    local vehicle = GET_VEHICLE_PED_IS_USING(GET_PLAYER_PED_SCRIPT_INDEX(pid))
+    local ped = CREATE_RANDOM_PED(pos)
+    --SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(ped, true)
+    SET_PED_INTO_VEHICLE(ped, vehicle, -2)
+    util.yield(250)
+    TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(ped, vehicle)
+end)

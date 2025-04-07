@@ -1,0 +1,5658 @@
+! Thanks for helping with the translation of Stand into your language!
+! Before you begin, I guess you need to know a little about the project so you can work efficiently.
+! Lines starting with "# LABEL=" need to be translated except for the "LABEL=" part and to indicate that it has been translated, you need to remove the "# ", which might be a bit annoying at first, but this will become practical for updating the translation.
+! There are some things that you shouldn't translate:
+! - The name "Stand"
+! - Pairs of curly brackets, e.g. {} or {player}
+! - Folders or files like %appdata%/Stand/Theme
+! - Emojis (unless there's a culturally different meaning)
+! - Technical Terms, i.e. anything that would make less sense if translated
+! Alright, I think you're ready to unleash your powers now! ;D
+
+!!!!!!!!!!!!!
+!! General !!
+!!!!!!!!!!!!!
+
+HI=Dabar Jūs esate [Stand Vartotojas]! :D
+HI_TRCK=Sveiki atvykę į „Stand“!
+HI_TRCK_0=Nė vienas iš jūsų sekamų žaidėjų šiuo metu yra prisijungęs.
+HI_TRCK_1={} šiuo metu yra prisijungęs.
+HI_TRCK_M={} šiuo metu yra prisijungę.
+
+HKFAIL=Viena ar daugiau funkcijų, kurios reikalingos {} nebuvo pakeistos, nes greičiausiai dėl kito meniu kurį Jūs naudojate. :/
+WOT1=Keliaudamas įvykdyti jūsų naujausią prašymą, atlikau šiuos veiksmus:
+WOT2=• Nieko
+WOT3=• Nieko
+WOT4=• Nieko
+WOT5=Atkreipkite dėmesį, kad šis sąrašas jokiu būdu neatspindi visko, kas įvyko.
+2FAST=Tu darai tai per greitai. Giliai įkvepk ir bandyk iš naujo.
+ARGNME=[name]
+
+! E.g. Command: wanted [0 to 5]
+ARGRNGE=į
+
+ARGVAL=[value]
+ARGVALOPT=(vertė)
+NRML=Normalus
+INVARG=Tai neteisingas argumentas. :?
+GENWARN=Ar tikrai norite tai padaryti?
+IRREV=Šio veiksmo anuliuoti negalima.
+GENFAIL=Hmm, tai nesuveikė. :/
+IPSUM=Štai šiek tiek teksto, kuriuo galėsite pasimėgauti akimis
+PRCD=Testi
+ABRT=Nutraukti
+SHW=Rodyti
+HDE=Paslėpti
+HIDE=Paslėptas
+NONE=Nė vienas
+JUSTON=Įjungta
+OFF=Išjungta
+ON=Įjungta
+DOFF=Išjungtas
+DOFF2=Išjungti
+ALL=Visi
+
+! Thousands separator, e.g. 1,000,000
+THSNDSEP=,
+
+! "Not Applicable"
+NA=Netaikoma
+
+GEMINI=Atidarau trečiąją akį...
+RCMD=Rekomenduojama
+NRCMD=Nerekomenduojama
+CPYF=Kopijuoti {}
+GENWAIT=Prašome palaukti...
+CMDLEN=Negali būti daugiau nei {} simbolių.
+AND={} ir {}
+
+! A more fancy way of saying "this is local"
+GEN_H_LOC=Tai paveiks tik jūsų žaidimą.
+
+! When the user is seeing an empty list:
+ETYLST=Čia nieko nematyti...
+
+NPHYS=[Komanda neturi fizinės formos]
+
+! Repetitions in log:
+LOG_REP_S=+ pakartotas 1 kartą
+LOG_REP_P=+ pakartotas {} kartų
+
+IPNAM={ip} (matytas anksčiau kaip {name})
+
+CHRCNT={cur}/{max} simboliai
+PLYCNT={cur}/{max} žaidėjai
+PTCCNT={cur}/{max} dalyviai
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Search Commands !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SRCH=Ieškoti
+ARGCLU=[raktažodis]
+SRCHNRES=Nerasta jokių rezultatų. :/
+
+!!!!!!!!!!!!!!!!!!!!
+!! Error Handling !!
+!!!!!!!!!!!!!!!!!!!!
+
+ERR_L_B=KLAIDOS INFORMACIJA PRASIDEDA
+ERR_L_E=KLAIDOS INFORMACIJA BAIGIASI
+
+ERR_T_GEN=Klaidų informaciją gali rasti čia %appdata%/Stand/Log.txt.
+ERR_T_CAU=Pagavo išimtį
+ERR_T_GME=Kritinė Klaida. Žaidimas persikraus.
+ERR_T_OTH=„Stand“ susidūrė su netikėta problema.
+
+ERR_LUA=Pastaba: ši klaida įvyko vykdant "Lua" skriptą.
+
+SVM=Skriptų Klaidų Atstatymas
+4FMONLY=Tik laisvajam pobūdžiui
+
+SVM_ERR=Apsaugojo nuo {script} skripto mirties ant {operation}.
+SVM_DIE={script} skriptas sustojo veikti {operation}.
+SVM_EXP=Pagauta išimtiss {script} skripte.
+
+SVM_BLM_S=Tai galbūt atsitiko dėl {player} sukelto įvykio.
+SVM_BLM_D=Tai galbūt atsitiko dėl {player} sukelto įvykio ({event}).
+
+SVM_INVOP=Neteisingas op-kodas {opcode} skripte {script} ; Skriptas išjungiamas, kad išvengti crasho.
+SVM_FRZ={} matomai skriptas yra užstrigęs cikle; jis bus išjungtas, kad netrukdytų žaidimo veiklai.
+
+!!!!!!!!!!
+!! Tabs !! These are to be on the left side of the menu which shouldn't be too wide so keep these as short as possible
+!!!!!!!!!!
+
+ACTVTE=Aktivuoti
+TUT_ONE=Pirmas
+TUT_TWO=Antras
+SLF=Aš
+VEH=Transport. Priem.
+Online=Online
+PLYLST=Žaidėjai
+WRLD=Pasaulis
+GME=Žaidimas
+
+!!!!!!!!!!!!!!!!
+!! References !!
+!!!!!!!!!!!!!!!!
+
+PLY=Žaidėjas
+
+STTNGS=Nustatymai
+
+KPCRSR=Apsilankius palaikyti žymeklį
+
+TABS=Skirtukai
+KPCRSRR_H=Privers skirtukus, kaip „Aš“, prisiminti žymeklio vietą, kurią turėjote, kai paskutinį kartą juose lankėtės.
+
+LSTS=Sąrašai
+KPCRSRS_H=Sudarys tokius sąrašus kaip „Nustatymai“, kad prisimintų žymeklio vietą, kurią turėjote, kai paskutinį kartą jose lankėtės.
+
+KPCRSR_L_RDC=Sąrašai: sumažintas efektas didžiuliems sąrašams
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Tutorial & Help !!
+!!!!!!!!!!!!!!!!!!!!!
+
+TUT=Tutorialas
+TUT2=„Stand“ Tutorialas
+
+RPT=Pakartoti
+
+! Or "Skip"
+DISM=Praleisti
+
+TUT_LD=„Stand“ yra paruoštas. Paleisk žaidimą, kad testi.
+
+TUT_OPEN=Norėdami atidaryti „Stand“ , naudokite {}.
+TUT_OPEN2=Jei norite atidaryti „Stand“, naudokite {numpad} arba {alt}, jei neturite skaičių klaviatūros.
+TUT_USE=Spauskite {}, kad panaudoti pasirinktą komandą.
+TUT_BK=Spauskite {}, kad sugrįžti atgal.
+TUT_DN2=Norėdami eiti žemyn, spauskite {}.
+TUT_RUP=Kad grįžti į viršų, spustelėkite {}.
+TUT_TABS=Puikus naršymas. Pasiruošk, dabar įjungsiu skirtukus!
+TUT_RNXT=Spauskite {}, kad pereitumėte į kitą skirtuką.
+TUT_RPRV=Spauskite {}, kad pereitumėte į ankstesnį skirtuką.
+
+TUT_CMD2=Atkreipkite dėmesį, kaip čia sakoma „Komanda: “. Tai reiškia, kad šią funkciją galite naudoti naudodami „Stand“ komandų laukelį! Galite bet kada atidaryti komandų laukelį paspausdami {}.
+TUT_SLIDER=Norėdami valdyti slankiklius, naudokite {} ir {}.
+TUT_PROFILES=Jei norite, kad kitą kartą „Stand“ atsimintų komandų būseną, galite naudoti profilius („Stand“ > Profiliai).
+TUT_CTX2=Naudokite {}, kad atidarytumėte kontekstinį meniu, kuriame galėsite konfigūruoti sparčiuosius klavišus, koreliacijas ir kt.
+
+TUT_HDE=Naudok {} , kad vėl paslėpti Stand.
+
+HLP_CTRLLR=Tu gali atidaryti Stand su savo pulteliu naudojant {}.
+
+HLP_CMDCHAIN=Galite sujungti komandas naudodami kabliataškį, pvz. „{}“.
+
+!!!!!!!!!!!!!!
+!! Commands !!
+!!!!!!!!!!!!!!
+
+CMD=Komanda
+B_CB=Komandų Laukas
+CMDPRMPT=Stand Komandų Laukas
+KB_CMDPRMPT=Atidaryti Komandų Lauką
+
+CMDUNK=Atleisk, "{}" nėra komanda, kurią aš žinočiau. :/
+CMDAMBIG=Atleisk, "{}" gali reikši kelis dalykus. :/
+CMDISS={} nėra galima kietiems žaidėjams. :/
+CMDPERM=Jūs negalite naudoti {}.
+MORE=... ir {} dar.
+MANYMORE=... ir dar daugiau.
+
+CMDONL=Ši komanda veikia tik GTA Online.
+CMDONLONC=Ši komanda pradės veikti tik tada, kai prisijungsitė prie GTA Online.
+CMDNEEDHOST=Ši komanda galima tik tada, kai esate host'as. :|
+CMDNH=Ši komanda neveiks ant hosto. :|
+CMDOTH=Jums ši komanda nėra leidžiama naudoti. :|
+CMDDISA=Ši komanda šiuo metu išjungta. Daugiau informacijos rasite mūsų pranešimuose.
+
+CMD_DR_S=Komanda sėkmingai įvykdyta. :)
+
+FRMTSEL_AVAIL=Čia palaikomas teksto formatavimas. Norėdami pasirinkti, paspauskite {}.
+FRMTSEL_H=Naršykite rodyklių klavišais ir įveskite kodą {}.
+FRMTSEL_H_R=Iš naujo nustatyti: išvalomas pritaikytas formatavimas.
+FRMTSEL_H_N=Nauja linija.
+
+B_CTX=Konteksto Meniu
+CTX_MIN=Nustatyti Min. Vertę
+CTX_MAX=Nustatyti Max. Vertę
+
+CTX_UNAVAIL={option} nėra prieinamas su {command}.
+
+AUTOSTATE=Koreliuoti būsena su
+AUTOSTATE_OFF=Su Niekuom
+AUTOSTATE_OPN=Kai atidaromas „Stand“
+AUTOSTATE_OFT=Kai stovi
+AUTOSTATE_AIM=Kai taikaisi
+AUTOSTATE_FRE=Būvimu Freeroam’e
+AUTOSTATE_CHT=Kai chattini
+AUTOSTATE_HST=Būnant Sesijos Host'u
+
+AUTOSTATEINV=Atvirkštinė koreliacija
+
+IVRT=Apkeisti
+
+AUTOSTATE_H=Koreliacija: {command} bus {state} kol {condition}.
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_ON=įjungta
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_OFF=išjungta
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OPN=„Stand“ yra atidarytas
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OFT=tu esi ant kojų
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_AIM=tu taikaisi
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_FRE=esate freeroam sesijoje
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_CHT=tu chattini
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_HST=esate sesijos host'as
+
+CMDSTATE_L=Nustatyti {0} į {1}. :)
+CMDSTATE_L_E={0} jau yra {1}. :)
+
+CMDSTATE_LON=Įjungta {}. :)
+CMDSTATE_LOFF=Išjungta {}. :)
+
+CMDSTATE_LON_E={} jau įjungta. :)
+CMDSTATE_LOFF_E={} jau išjungta. :)
+
+CMDSTATE_OON=Sėkmingai įjungta. :)
+CMDSTATE_OOFF=Sėkmingai išjungta. :)
+
+CMDSTATE_OON_E=jau įjungta. :)
+CMDSTATE_OOFF_E=jau išjungta. :)
+
+! E.g. "Freeze on Herobrine" or "Freeze on All Players". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A={command} ant {player}
+
+! E.g. "WiriScript's Immortality on Herobrine". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A_LUA={script} {command} ant {player}
+
+SUPPGEN=Išjungti bendruosius atsakymus
+SUPPGEN_H=Išjungia bendrus atsakyms, pvz., „Komanda sėkmingai įvykdyta“.
+
+SUPPGEN_CB_H=Apima „Stand Command Box“, komandų langelį žiniatinklio sąsajoje ir pokalbių komandas.
+
+WARNS=Įspėjimai
+
+WARNAUTOPROC=Automatiškai tęsti neskaitant įspėjimų
+
+WARNSKIPPROC=Praleisti Priimtus Įspėjimus
+
+WARNFRCERD=Priversti mane skaityti įspėjimus
+
+HOTKEY=Spartusis klavišas
+ARGHOTKEY=[klavišas]
+HOTKEYS=Spartieji Klavišai
+HOTKEY_A=Pridėti spartųjį klavišą
+HOTKEY_C2=Pakeisti Spartujį Klavišą
+HOTKEY_R2=Pašalinti Spartujį Klavišą
+HOTKEY_U=Paspauskite klavišą, kurį norite naudoti kaip spartųjį klavišą {}.
+HOTKEY_T=Išsaugota {} spartusis klavišas į %appdata%/Stand/Hotkeys.txt :)
+
+HOTKEY_HOLD=Laikymo Režimas
+
+!!!!!!!!!!!!!!!!!!!
+!! Keyboard Keys !!
+!!!!!!!!!!!!!!!!!!!
+
+K_UNK=Nežinomas klavišas
+
+K_R=Dešinė {}
+K_L=Kairė {}
+
+K_SHFT=Shift
+K_ALT=Alt
+K_CTRL=Ctrl
+
+! E.g. "Hold W"
+K_HOLD=Laikyti
+
+K_SPC=Space
+K_ISRT=Insert
+K_DEL=Delete
+K_HME=Home
+K_END=End
+K_PGUP=Page Up
+K_PGDN=Page Down
+K_RET=Enter
+K_BACK=Backspace
+K_ESC=Escape
+K_A_U=Arrow Up
+K_A_L=Arrow Left
+K_A_R=Arrow Right
+K_A_D=Arrow Down
+K_TAB=Tab
+K_LMB=Pėlės Kairysis Mygtukas
+K_MMB=Pėlės Vidurinis Mygtukas
+K_RMB=Pėlės Dešinysis Mygtukas
+K_X1=Mouse 4
+K_X2=Mouse 5
+K_MPP=Medija Groti/Pauzė
+K_MS=Medija Stop
+K_NT=Sekantis Takelis
+K_PT=Praeitas Takelis
+K_CAPS=Didžiosios Raidės
+
+HMB=Modifikavimo Raktas Sutampa
+HMB_H=Kaip yra laikomas ctrl, shift ir alt.
+STRCT=Griežtas
+HMB_STRCT_H=Negalima spausti jokių papildomų modifikatorių klavišų. Taigi, paspaudus Ctrl+Shift+G, nesuveiks nei G, nei Ctrl+G.
+SMRT=Protingas
+HMB_SMRT_H=Griežtas, jei sparčioji klaviatūra turi modifikacinius klavišus, priešingu atveju - laisvas. Taigi, paspaudus Ctrl+Shift+G, bus įjungtas G, bet ne Ctrl+G.
+LAX=Lax
+HMB_LAX_H=Galima paspausti papildomus modifikatoriaus klavišus. Taigi, paspaudus Ctrl+Shift+G, būtų įjungti G ir Ctrl+G.
+
+DHK=Išjungti Sparčiuosius Klavišus
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Controller Buttons !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+CK=Žaidimų pulto mygtukai
+
+CK_LT=Kairysis Gaidukas
+CK_RT=Dešinysis Gaidukas
+CK_LB=Kairysis Bamperis
+CK_RB=Dešinysis Bamperis
+CK_LS=Kairysis Pagaliukas (L3)
+CK_RS=Dešinysis Pagaliukas (R3)
+CK_D_U=D-Pad Viršus
+CK_D_D=D-Pad Apačia
+CK_D_L=D-Pad Kairė
+CK_D_R=D-Pad Dešinė
+CK_STRT=Start
+CK_BCK=Atgal
+
+!!!!!!!!!!!!!!!!!!!!
+!! Authentication !!
+!!!!!!!!!!!!!!!!!!!!
+
+UPDAVAIL=Stand naujinys {} yra galimas parsisiuntimui.
+
+FREE_T=Ši funkcija nėra prieinama nemokamame „Stand“ leidime. ;)
+CMDFULLSP=Norėdami naudoti šią komandą, eikite į „Story Mode“ arba atsinaujinkite į „Stand Regular“.
+CMDNEDR=Ši komanda pasiekiama tik naudojant „regular“ arba aukštesnę versiją.
+CMDNEDU=Ši komanda pasiekiama tik su „Ultimate“ versija.
+
+ACTVTE_H=Suaktyvinkite „Stand“, kad gautumėte prieigą prie viso meniu, net kai esate GTA Online.
+ACTVTE_PSTE2=Įklijuoti Aktyvavimo Raktą
+ACTVTE_RGST=Sukurti Paskyrą
+ACTVTE_ERR_F2=Iškarpinės turinys neatitinka „Stand“ aktyvavimo rakto formato. :?
+ACTVTE_STRT2=Jūsų aktyvavimo raktas tikrinamas...
+ACTVTE_SUCC2=„Stand“ sėkmingai suaktyvintas. :D
+
+ACTVTE_ERR_I2=Jūsų aktyvavimo raktas netinkamas. :/
+ACTVTE_RGN=Jūsų aktyvavimo raktas buvo sugeneruotas iš naujo.
+AUTHSHR2=Jūsų aktyvinimo raktas naudojamas kitur. Sugeneruokite jį iš naujo arba bandykite dar kartą vėliau.
+
+AUTH_X=Jūsų aktyvinimas baigėsi.
+AUTH_CE=Įvyko ryšio klaida.
+CONHELP=Jei įrenginys prijungtas prie interneto, įsitikinkite, kad niekas netrukdo „Stand“ jungtims.
+
+TELEKOM_OFF=Sveiki atvykę į internetą! :D
+
+VER_UNSUPP=Jūsų „Stand“ versija nebepalaikoma.
+VER_UNSUPP_AUTHONLY=Jūsų „Stand“ versija nebepalaikoma ir mes jau greitai nebepalaikysime šios versijos autentiškumo patvirtinimo.
+UPDHELP=Galite lengvai atnaujinti „Stand“, išjungdami jį, paspausdami „Check For Updates“ ir launchpad'e galiausiai vėl įjungdami „Stand“.
+
+!!!!!!!!!!!!!!!!
+!! Filesystem !!
+!!!!!!!!!!!!!!!!
+
+FWERR=Nepavyko atidaryti {} , kad įrašyti. :|
+
+WRDR=Drabužinė
+
+OPNFLD=Atidaryti Aplanką
+
+OPNSTND=Atidaryti „Stand“ aplanką
+OPNSTND_H=Atidaro Jūsų %appdata%/Stand/ aplanką.
+
+OPNASI=Atidaryti „ASI Mods“ aplanką
+OPNASI_H=Atidaro jūsų %appdata%/Stand/ASI Mods aplanką.
+
+OPNGTA=Atidaryti GTA V Aplanką
+
+OPNTHME=Atidaryti Temų Aplanką
+OPNTHME_H=Atidaro Jūsų %appdata%/Stand/Theme aplanką.
+
+!!!!!!!!!!!!
+!! Colour !!
+!!!!!!!!!!!!
+
+C_H=Atspalvis.
+C_S=Sodrumas
+C_V=Vertė
+
+CR_HSV=HSV Reprezentacija
+CR_RGB=RGB Reprezentacija
+
+OPCTY=Neskaidrumas
+
+C_R=Raudona
+C_G=Žalia
+C_B=Mėlyna
+
+CN_A=Vaivorykštė
+CN_R=Raudona
+CN_R_WINE=Vyno Raudona
+CN_G=Žalia
+CN_G_D=Tamsiai Žalia
+CN_G_LIME=Žalsvai Geltona
+CN_OLIVE=Alyvinė
+CN_MOSS=Samanų
+CN_TUR=Turkio
+CN_B=Mėlyna
+CN_B_D=Tamsiai Mėlyna
+CN_B_COOL=Vėsiai Mėlyna
+CN_B_ROYAL=Karališkoji Mėlyna
+CN_C=Žydra
+CN_AQUA=Akvamarino
+CN_PLUM=Slyvinė
+CN_Y=Geltona
+CN_Y_D=Tamsiai Geltona
+CN_P=Rožinė
+CN_P_H=Karšta Rožinė
+CN_SALMON=Lašišos
+CN_U=Violetinė
+CN_U_D=Tamsiai Violetinė
+CN_M=Magenta
+CN_O=Oranžinė
+DN_O_L=Šviesiai Oranžinė
+CN_O_RUST=Rūdžių Oranžinė
+CN_BR=Ruda
+CN_BR_L=Šviesiai Ruda
+CN_EARTH=Žemės Spalva
+CN_W=Balta
+CN_L=Juoda
+CN_GR=Pilka
+CN_GR_D=Tamsiai Pilka
+
+C_PAT={colour} Raštas
+
+OTHR=Kita
+CLRHEX=Įvesti Hex Kodą
+CURRCLRHEX=Dabartinė Spalva (Hex)
+
+LGBT=Vaivorykštės režimas
+LGBT_H=Perjungia spalvų atspalvį kas milisekundę, bet vis tiek leidžia pakeisti sodrumą, vertę ir neskaidrumą.
+
+CLR=Spalva
+
+LGBTQ={}: Vaivorykštės Režimas
+
+! As in "colour finish"
+CLRFIN=Apdaila
+
+! "LSC" is Los Santos Customs
+CLRSTD=LSC Spalvos
+
+CLRSTD_1=Grafito
+CLRSTD_2=Juoduojo Plieno
+CLRSTD_3=Tamsus Plienas
+CLRSTD_4=Sidabrinė
+CLRSTD_5=Mėlynai Sidabrinė
+CLRSTD_6=Valcuotojo Plieno
+CLRSTD_7=Šešėlio Sidabro
+CLRSTD_8=Sidabro Akmens
+CLRSTD_9=Vidurnakčio Sidabro
+CLRSTD_10=Ketaus Sidabro
+CLRSTD_11=Antracito Juoda
+CLRSTD_12=Matinė Juoda
+CLRSTD_13=Matinė Pilka
+CLRSTD_14=Matinė Šviesiai Pilka
+CLRSTD_15=Util Juoda
+CLRSTD_16=Util Juodo Poliesterio
+CLRSTD_17=Util Tamsiai Sidabrinė
+CLRSTD_18=Util Sidabrinė
+CLRSTD_19=Util Ketaus Sidabro
+CLRSTD_20=Util Šešėlio Sidabrinė
+CLRSTD_21=Nusitrynus Juoda
+CLRSTD_22=Nusitrynus Grafito
+CLRSTD_23=Nusitrynus Sidabro Pilka
+CLRSTD_24=Nusitrynus Sidabro
+CLRSTD_25=Nusitrynus Mėlynojo Sidabro
+CLRSTD_26=Nusitrynus Šešėlio Sidabrinė
+CLRSTD_28=Torino Raudona
+CLRSTD_29=Formula Raudona
+CLRSTD_30=Liepsnojanti Raudona
+CLRSTD_31=Maloni Raudona
+CLRSTD_32=Granatų Raudona
+CLRSTD_33=Saulėlydžio Raudona
+CLRSTD_34=Cabernet Raudona
+CLRSTD_35=Saldainių Raudona
+CLRSTD_36=Saulėtekio Oranžinė
+CLRSTD_37=Klasikinė Aukso
+CLRSTD_39=Matinė Raudona
+CLRSTD_40=Matinė Tamsiai Raudona
+CLRSTD_41=Matinė Oranžinė
+CLRSTD_42=Matinė Geltona
+CLRSTD_43=Util Raudona
+CLRSTD_44=Util Ryškiai Raudona
+CLRSTD_45=Util Granatų Raudona
+CLRSTD_46=Nusitrynus Raudona
+CLRSTD_47=Nusitrynus Auksinė Raudona
+CLRSTD_48=Nusitrynus Tamsiai Raudona
+CLRSTD_50=Lenktynių Žalia
+CLRSTD_51=Jūros Žalia
+CLRSTD_52=Alyvuogių Žalia
+CLRSTD_53=Ryškiai Žalia
+CLRSTD_54=Kuro Žalia
+CLRSTD_55=Matinė Laimo Žalia
+CLRSTD_56=Util Tamsiai Žalia
+CLRSTD_57=Util Žalia
+CLRSTD_58=Nusitrynus Tamsiai Žalia
+CLRSTD_59=Nusitrynus Žalia
+CLRSTD_60=Nusitrynus Jūros
+CLRSTD_61=Galaktikos Mėlyna
+CLRSTD_63=Saksonijos Mėlyna
+CLRSTD_65=Marino Mėlyna
+CLRSTD_66=Uosto Mėlyna
+CLRSTD_67=Deimanto Mėlyna
+CLRSTD_68=Banglenčių Mėlyna
+CLRSTD_69=Jūrinė Mėlyna
+CLRSTD_70=Ultra Mėlyna
+CLRSTD_71=Schafterio Violetinė
+CLRSTD_72=Spinnakerio Mėlyna
+CLRSTD_73=Lenktynių Mėlyna
+CLRSTD_74=Šviesiai Mėlyna
+CLRSTD_75=Util Tamsiai Mėlyna
+CLRSTD_76=Util Vidurnakčio Mėlyna
+CLRSTD_77=Util Mėlyna
+CLRSTD_78=Util Jūros Putos Mėlyna
+CLRSTD_79=Util Žaibo Mėlyna
+CLRSTD_80=Util Maui Mėlyna
+CLRSTD_81=Util Šviesiai Mėlyna
+CLRSTD_82=Matinė Tamsiai Mėlyna
+CLRSTD_83=Matinė Mėlyna
+CLRSTD_84=Matinė Vidurnakčio Mėlyna
+CLRSTD_85=Nusitrynus Tamsiai Mėlyna
+CLRSTD_86=Nusitrynus Mėlyna
+CLRSTD_87=Nusitrynus Šviesiai Mėlyna
+CLRSTD_89=Lenktynių Geltona
+CLRSTD_90=Bronzinė
+CLRSTD_91=Rasos Geltona
+CLRSTD_93=Šampano
+CLRSTD_94=Feltzerio Ruda
+CLRSTD_95=Upelio Ruda
+CLRSTD_96=Šokolado Ruda
+CLRSTD_97=Klevo Ruda
+CLRSTD_98=Balno Ruda
+CLRSTD_99=Šiaudų Ruda
+CLRSTD_100=Samanų Ruda
+CLRSTD_101=Bizonų Ruda
+CLRSTD_102=Miškasodinė Ruda
+CLRSTD_103=Bukmedžio Ruda
+CLRSTD_104=Sienos Ruda
+CLRSTD_105=Smėlio Ruda
+CLRSTD_106=Balinta Ruda
+CLRSTD_107=Kreminė
+CLRSTD_108=Util Ruda
+CLRSTD_109=Util Vidutiniškai Ruda
+CLRSTD_110=Util Šviesiai Ruda
+CLRSTD_111=Ledo Balta
+CLRSTD_112=Šerkšno Balta
+CLRSTD_113=Nusitrynus Medaus Beižinė
+CLRSTD_114=Nusitrynus Ruda
+CLRSTD_115=Nusitrynus Tamsiai Ruda
+CLRSTD_116=Nusitrynus Smėlio
+CLRSTD_117=Poliruoto Plieno
+CLRSTD_118=Poliruoto Juoduojo Plieno
+CLRSTD_119=Poliruoto Aliuminio
+CLRSTD_120=Chromo
+CLRSTD_121=Nusitrynus Kreminė
+CLRSTD_122=Util Kreminė
+CLRSTD_123=Nusitrynus Oranžinė
+CLRSTD_124=Nusitrynus Šviesiai Oranžinė
+CLRSTD_125=Žirnių Žalia
+CLRSTD_126=Nusitrynus Geltona
+CLRSTD_127=Policijos Mėlyna
+CLRSTD_128=Matinė Žalia
+CLRSTD_129=Matinė Ruda
+CLRSTD_130=Nusitrynus Oranžinė
+CLRSTD_131=Matinė Ledo Balta
+CLRSTD_132=Nusitrynus Balta
+CLRSTD_133=Nusitrynus Alyvinų Žalia
+CLRSTD_134=Util Balta
+CLRSTD_136=Lašišų Rožinė
+CLRSTD_137=Pfister Rožinė
+CLRSTD_138=Ryškiai Oranžinė
+CLRSTD_140=Ryškiai Mėlyna
+CLRSTD_141=Vidurnakčio Mėlyna
+CLRSTD_142=Vidurnakčio Violetinė
+CLRSTD_144=Medžiotojo Žalia
+CLRSTD_145=Ryškiai Violetinė
+CLRSTD_146=Metalinė Vidurnakčio Violetinė
+CLRSTD_147=Karboninė Juoda
+CLRSTD_148=Matinė Schafterio Violetinė
+CLRSTD_149=Metalinė Vidurnakčio Violetinė
+CLRSTD_150=Lavos Raudona
+CLRSTD_151=Matinė Miško Žalia
+CLRSTD_152=Matinė Alyvinė
+CLRSTD_153=Matinė Tamsi Žemės
+CLRSTD_154=Matinė Dykumos
+CLRSTD_155=Matinė Lapijos Žalia
+CLRSTD_156=Numatytoji Lydinio Spalva
+CLRSTD_157=Epsilono Mėlyna
+CLRSTD_158=Gryno Aukso
+CLRSTD_159=Poliruoto Aukso
+CLRSTD_160=Aukso
+
+CLRFR=Pagrindinė spalva
+
+CLRSEC=Antroji spalva
+
+CLRINT=Interjero spalva
+CLRPRL=Perlamutrinė spalva
+
+VEHMOD20=Padangų Dūmai
+CLRTIRE=Padangų Dūmų Spalva
+TIREINDEP=Nepriklausomybės Dienos Padangų Dūmai
+
+NEONLGHTS=Neoninės Šviesos
+
+APOS_F=Priekis
+APOS_B=Galas
+
+CLRBR=Fono spalva
+
+CLRFT=Sutelkto teksto spalva
+CLRFRT=Sutelkto teksto kairės pusės spalva
+CLRFS=Sutelktos tekstūros spalva
+
+CLRBT=Nenukreipto teksto spalva
+CLRBRT=Atfokusuoto teksto kairės pusės spalva
+CLRBS=Nenukreiptos tekstūros spalva
+
+CLRHU=HUD Spalva
+
+CLRAR=AR Spalva
+
+CLRMGME=Mini-žaidimų Spalva
+
+HAIR_V=Plaukų spalva
+HAIRHI=Plaukų spalva: Paryškinimas
+HAIRR=Plaukų spalva: Vaivorykštės Rėžimas
+
+GUNTINT=Dabartinis Ginklas: Nudažyti
+GUNTINTR=Dabartinis Ginklas: Nudažyti: Vaivorykštės Režimas
+
+WINTINT=Langų Tamsinimas
+
+! "Livery" is VEHMOD48
+RFTLIV=Stogo spalvos
+
+!!!!!!!!!!!!!!!
+!! Collision !!
+!!!!!!!!!!!!!!!
+
+GHOST=Sumažintas susidūrimas
+GHOST_H=Leidžia vaikščioti per sienas ir transporto priemones.
+
+COLSNS=Susidūrimai
+
+GHOSTVEHS=Nėra susidūrimo su kitomis transporto priemonėmis
+
+NOCOLPED=Jokių susidūrimų su pėsčiaisiais
+NOCOLOBJ=Jokių susidūrimų su objektais
+NOCOLOBJ_H=Atkreipkite dėmesį, kad tai netaikoma stacionariems žemėlapio objektams, pavyzdžiui, medžiams.
+
+GHOSTRIDE=Jokio susidūrimo
+GHOSTRIDE_H=Visiškai išjungia dabartinės transporto priemonės susidūrimą (nerekomenduojama skraidančioms transporto priemonėms).
+
+!!!!!!!!!!
+!! Self !!
+!!!!!!!!!!
+
+MVMNT=Judėjimas
+
+VIS=Išvaizda
+
+OTFT=Apranga
+
+HEAD=Galva
+HEAD_V=Galvos variacija
+FACIALHAIR=Veido plaukai
+FACIALHAIR_V=Veido plaukų spalva
+MASK=Kaukė
+MASK_V=Kaukės variacija
+HAIR=Plaukai
+TOP1=Viršus
+TOP1_V=Viršaus variacija
+TOP2=Viršus 2
+TOP2_V=Viršaus 2 variacija
+TOP3=Viršus 3
+TOP3_V=Viršaus 3 variacija
+BAG=Krepšys / parašiutas
+BAG_V=Krepšio / parašiuto variacija
+PCHUTE=Parašiutas / krepšys
+PCHUTE_V=Parašiuto / krepšio variacija
+TORSO=Pirštinės / liemuo
+TORSO_V=Pirštinės / liemens variacija
+GLOVES=Pirštinės
+GLOVES_V=Pirštinių variacija
+PANTS=Kelnės
+PANTS_V=Kelnių variacija
+SHOES=Batai
+SHOES_V=Batų variacija
+ACCESSORIES=Aksesuarai
+ACCESSORIES_V=Aksesuarų variacija
+DECALS=Lipdukai
+DECALS_V=Lipdukų variacija
+HAT=Kepurė
+HAT_V=Kepurės variacija
+GLASSES=Akiniai
+GLASSES_V=Akinių variacija
+EARWEAR=Ausinės
+EARWEAR_V=Ausinių variacija
+WATCH=Laikrodis
+WATCH_V=Laikrodžio variacija
+BRACELET=Apyrankė
+BRACELET_V=Apyrankės variacija
+
+SVEOTFT=Išsaugoti aprangą
+
+! Alternatively, "What Will Be Saved"
+SVESEL=Ką išsaugoti
+
+BADFILE=Aš negaliu išsaugoti failo su tokiu pavadinimu. :/
+
+LDOTFT_E1=Apranga nenurodė, kuriam modeliui jis buvo sukurtas. :?
+LDOTFT_E2=Apranga buvo sukurta netinkamam modeliui: {}
+LDOTFT_E3=Apranga buvo kuriama kitokiam modeliui. :?
+LDOTFT_TF=Ši apranga buvo sukurta {}, ar norėtum transformuotis?
+
+DOTFTRESTR=Išjungti Aprangos Apribojimus
+DOTFTRESTR_H=Leidžia išsaugoti aprangą su rankinėmis ir pan.
+
+NVEHHAIRSCL=Išjungti Plaukų Masto Sistemą Transporto Priemonėje
+
+LKOTFT=Užrakinti aprangą
+LKOTFT_H=Neleidžia aprangos pokyčių už Stand ribų, kas galbūt pažeidžia „Casino Heist“ ir kitas misijas. ⚠️
+
+CHNGMDL=Transformuotis
+
+PLYBLCHRS=Žaidimo Veikėjai
+GRNDANMLS=Sausumos Gyvūnai
+WTRANMLS=Vandens Gyvūnai
+FLYNANMLS=Skraidantys Gyvūnai
+NPCS=Civiliai
+
+ONLN_MALE=Online Vyras
+ONLN_FEMALE=Online Moteris
+
+CHNGMDL_W=Norėdami tapti vandens gyvūnu, turite būti vandenyje. :)
+
+MDL=Modelis
+
+FNDMDL_H=Leidžia rasti modelius, kuriuos galima paversti jų pavadinimu.
+
+CURMDL=Dabartinis Modelis
+
+OP=Išankstinės aprangos komplektai
+
+OP_D=Dabartinis modelis: numatytasis
+OP_D_H=„Rockstar“ apibrėžta numatytoji jūsų dabartinio modelio apranga.
+
+OP_RNG=Dabartinis Modelis: Atsitiktinis
+RNG=Atsitiktinis
+
+OP_0=Online Moteris: Nuoga
+
+OP_COP_M=Online Vyras: Policininkas
+OP_COP_F=Online Moteris: Policininkė
+
+WNTDLVL=Ieškomumo lygis
+
+WNTD=Nustato ieškomumo lygį
+
+LKWNTD=Užrakinti ieškomumo lygį
+
+FKWNTD=Netikras Ieškomumo Lygis
+FKWNTD_H=Pakeičia ieškomumo lygio žvaigždučių skaičių.
+
+PTFXTRAIL=PTFX Trails'ai
+BONES=Kaulai
+
+WLKSTL=Vaikščiojimo stilius
+WLKSTL_1=Balistinis
+WLKSTL_3=Laikant šiukšles
+WLKSTL_4=Bėgantis
+WLKSTL_5=Franklinas (Kietas)
+WLKSTL_8=Pabėgimas
+WLKSTL_9=Išsigandęs
+WLKSTL_10=Seksualus
+WLKSTL_12=Sužeistas
+WLKSTL_13=Lesteris (Lazda)
+WLKSTL_14=Tašė
+WLKSTL_15=Bail Bondas
+WLKSTL_16=Bail Bond (Nutazintas)
+WLKSTL_17=Drąsus
+WLKSTL_18=Paprastas
+WLKSTL_19=Kukliai girtas
+WLKSTL_20=Kukliai girtas (Galva į viršų)
+WLKSTL_21=Lengvai Girtas
+WLKSTL_22=Labai girtas
+WLKSTL_23=Kietas
+WLKSTL_24=Gangsteris (Lėtas)
+WLKSTL_25=Gangsteris (Kuklus)
+WLKSTL_26=Gangsteris
+WLKSTL_27=Bėgiojimas
+WLKSTL_28=Kalėjimo Apsauginis
+WLKSTL_30=Franklinas (Portfelis)
+WLKSTL_31=Maiklas (Valytojas)
+WLKSTL_32=Maiklas (Lėtas)
+WLKSTL_33=Kibiras
+WLKSTL_34=Atsitūpęs
+WLKSTL_35=Valydamas
+WLKSTL_36=Moteris (Vyras)
+WLKSTL_37=Moteris (Moteris)
+WLKSTL_38=Gangsteris (Vyras)
+WLKSTL_39=Gangsterė (Moteris)
+WLKSTL_40=Pošlus (Vyras)
+WLKSTL_41=Pošli (Moteris)
+WLKSTL_42=Kietas riešutėlis (Vyras)
+WLKSTL_43=Kietas riešutėlis (Moteris)
+WLKSTL_44=Irzlus
+WLKSTL_45=Atsipalaidavęs
+WLKSTL_46=Surakintas
+WLKSTL_47=Liūdnas
+WLKSTL_48=Šelmiškas (Vyras)
+WLKSTL_49=Šelmiškas (Moteris)
+WLKSTL_50=Arogantiškas
+WLKSTL_51=Pasitikintis Savim
+WLKSTL_52=Aukštakulniai
+WLKSTL_53=Žygiuoti
+WLKSTL_54=Šiukšlių Išvežėjas
+WLKSTL_55=Įtartinas
+WLKSTL_56=Hipsteris
+
+PRSVRWALK=Palaikyti Ėjimo Stilių Kovos Metu
+PRSVRWALK_H=Neleidžia jūsų personažui pereiti į „kovos režimą“, kai šalia vyrauja smurtas.
+
+WALKONAIR=Vaikščioti ore
+
+AIRSWM=Plaukti Ore
+
+WTRWLK=Vaikščioti po vandeniu
+
+DRNKMODE=Girtas Režimas
+
+TNISMDE=Teniso Režimas
+
+FLOPPY=Floppy Režimas
+FLOPPY_SYNCH=Pirmenybė Sinchronizavimui
+FLOPPY_SYNCH_H=Apriboja greitį ir išjungia pakilimą, nusileidimą ir sprintą, kad būtų užtikrintas sinchronizavimas.
+
+DEMIGOD=Auto-Gydimas
+DEMIGOD_H=Išlaiko jūsų charakterį maksimaliom gyvybėm ir šarvais.
+DEMIGOD_H_O=Išlaiko jų žaidėja maksimaliom gyvybėm ir šarvais.
+
+MXHLTH=Maksimalios Gyvybės
+
+CLUMSY=Nerangumas
+CLUMSY_H=Priverčia jūsų žaidėja dažniau nukristi.
+
+NOROLLCL=Jokio Kūlversčio Atvėsimo Laiko
+
+RESPWRCL=Atsirasti Mirties Vietoje
+
+RESPWDLY=Atsiradimo Delsimas
+RESPWDLY_H=Pakeičia GTA Online atsiradimo laiką į nurodytą sekundžių skaičių.
+
+EWO=Nusižudyti
+
+SPCSH=Nustatyti Story Mode pinigų kiekį
+SPCSH_H=Leidžia pakeisti kiek pinigų turi Maiklas, Franklinas ir Trevoras (Singleplayer).
+
+SCHR_M=Michael
+SCHR_F=Franklin
+SCHR_T=Trevor
+
+HLTH=Gyvybės
+ARMR=Šarvai
+
+REGEN=Atsistatymo Greitis
+REGEN_H_H=Padidina tavo gyvybes šiuo kiekiu, per sekundę.
+REGEN_A_H=Padidina tavo šarvus šiuo kiekiu per sekundę.
+ONLYINCOVER=Tik Priedangoje
+
+RFHLT=Papildyti Gyvybes
+RFARM=Papildyti Šarvus
+
+GOD=Nemirtingumas
+GOD_H=Tampi dievu, esi nemirtingas.
+
+NRGDL=Grakštumas
+NRGDL_H=Padaro jūsų personažą nesugebančiu nugriūti.
+
+NO_GRACE=Pro Patarimas: Neįjunkite Grakštmo ir {feature_name} vienu metu. ;)
+
+SEATGLUE=Priklijuotas prie vietų
+SEATGLUE_H=Padaro jūsų personažą nesugebančiu nukristi nuo motociklų.
+
+INFSTAM=Nesibaigianti Stamina
+
+PARALCK=Užrakinti Parašiutus
+LCK_FULL=Pilnas
+LCK_ETY=Tuščias
+
+WET=Nustatyi drėgnumą
+
+WETLCK=Užrakinti drėgnumą
+
+SCLE=Skalė
+SCLE_H=Pakeičia jūsų personažo aukštį, plotį ir gylį *lokaliai*.
+
+SCLECAM=Mastelis veikia kamerą
+
+SCLESPD=Mastelis veikia greitį
+
+VISZ=Vizualinė Z korekcija
+VISZ_H=Pataiso jūsų simbolių vizualinę Z padėtį, kad būtų galima naudoti su masteliu.
+
+! {Self > Appearance > Invisibility} & {Vehicle > Invisibility}
+INVIS=Nematomumas
+INVIS_H=Pastaba: kai esate transporto priemonėje, kiti žaidėjai vis tiek galės jus matyti, nebent jūs taip pat padarysite savo transporto priemonę nematomą.
+
+! Player > Trolling > Ram > Invisibility
+RAM_INVIS=Nematomumas
+
+LOCVIS=Lokaliai Matomas
+
+LEV=Levitacija
+
+NOCLIP=Noclipas
+
+LEV_AP=Taikyti Pikį Subjektui
+
+KPMOMNTM=Palaikyti momentą
+
+MOVSPD=Judėjimo Greitis
+
+! Used in button instructions to mean "go faster"
+SPRNT=Bėgti
+
+SPRNTMUL=Bėgimo daugiklis
+SPRNTMUL_H=Ant kiek greitai bėgsi, kai laikysi {}.
+
+ACCEL=Akceleracija
+ACCEL_H=Kuo ilgiau judate, tuo labiau didėja levitacijos greitis. Atsistato tada, kai bėgate arba nustojate judėti.
+
+OROM=Pasukti Tik Judesio Metu
+
+PASSMOV=Pasyvjus Judėjimas
+
+PASSMOV_MIN=Min. Atstumas Nuo Žemės
+PASSMOV_MAX=Max. Atstumas Nuo Žemės
+SPD=Greitis
+
+MAXDIST=Max. Atstumas
+
+ASS=Asistentas
+
+FRC_U=Jėga Aukštyn
+FRC_D=Jėga Žemyn
+
+ASS_D=Žemyn Deadzonas
+ASS_D_H=Kiek toli nuo žemės turi būti, kol asistentas nustos bandyti tave nuversti.
+
+SNAP=Laužymas
+
+WLKSPD=Ėjimo ir Bėgimo Greitis
+
+INCFRCT=Padidėjusi Trintis
+INCFRCT_H=Sumažina slidumą sukant dideliu ėjimo/bėgimo greičiu.
+
+SWMSPD=Plaukimo Greitis
+
+NOBLD=Jokio kraujo
+NOBLD_H=Jūsų žaidėjas nekraujuoja.
+
+SONIC=Super Bėgimas
+
+FLY=Super Skraidymas
+ASC=Kilti
+DESC=Leistis
+FLY_LAND=Nusileisti
+
+BI_CLSMNU_MOV=Paslėpkite „Stand“, kad turėtumėte daugiau judėjimo parinkčių
+
+SHWBI_JMP2FLY=Mygtuko instrukcijos: Super Šuolis į Skrydį
+SHWBI_CTRLS=Mygtukų instrukcijos: Valdikliai
+
+FROG=Super Šuolis
+FROG_H=Laikydami nuspaustą šuolio mygtuką galite šokti aukščiau.
+
+GRCELND=Grakštus Nusileidimas
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Animations !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+ANIM=Animacijos
+CANCL=Užbaigti
+SCENARIOS=Scenarijai
+LOOPED=Ciklinės Animacijos
+LOOPED_H=Tai netaikoma scenarijams.
+PART_MVMT=Dalinis Judėjimas
+PART_MVMT_H=Leidžia judėti atliekant animaciją už animacijos kokybės kainą.
+AUTO_CANCL=Automatiškai Užbaigti
+AUTO_CANCL_H=Automatiškai užbaigia esamą animaciją, kai bandote judėti.
+
+ANIM1=Įtempti Raumenis
+ANIM2=Rūkyti
+ANIM3=Miegoti
+ANIM4=Ploti
+ANIM5=Saugoti
+ANIM6=Kalti
+ANIM7=Stovintis Policininkas
+ANIM8=Apieškoti Dėžę
+ANIM9=Sukrėstas Filmavimas
+ANIM10=Stovėti
+ANIM11=Nekantrus
+ANIM12=Siųsti Žinutes
+ANIM14=Netoli Mirties
+ANIM15=Laukti
+ANIM16=Valyti
+ANIM17=Naudotis Bankomatu
+ANIM18=Joga
+ANIM19=Statula
+ANIM20=Suvirinti
+ANIM21=Degintis
+ANIM22=Degintis (Nugara)
+ANIM23=Aukštos Klasės Prostitutė
+ANIM24=Žemos Klasės Prostitutė
+ANIM25=Užrašų Knygelė
+ANIM26=Klauptis
+ANIM27=Bėgioti
+ANIM28=Žiūrinai
+ANIM29=Stovintis Benamis
+ANIM30=Sodininkauti
+ANIM31=Sedėti Ant Žemės
+ANIM32=Stovėti Ir Žvejoti
+ANIM33=Naršyti
+ANIM34=Sėdėti
+
+ANIM_DANCE=Šokiai
+
+ANIM35=Judinti Užpakalį
+ANIM36=Klouno Šokis 1
+ANIM37=Klouno Šokis 2
+ANIM38=Šokis 1
+ANIM39=Šokis 2
+ANIM40=Šokis 3
+ANIM41=Šokis 4
+ANIM42=Šokis 5
+ANIM43=Lėtas Šokis 1
+ANIM44=Lėtas Šokis 2
+ANIM45=Lėtas Šokis 3
+ANIM46=Podiumo Šokis
+ANIM47=Solo Šokis
+ANIM48=Drovus Šokis 1
+ANIM49=Drovus Šokis 2
+ANIM50=Kvailas Šokis 1
+ANIM51=Kvailas Šokis 2
+ANIM52=Kvailas Šokis 3
+ANIM53=Tao Šokis
+ANIM54=“Woogie” Šokis
+
+ANIM55=Gerti
+ANIM56=Žvėris
+ANIM57=Ramus
+ANIM58=Stebėti Debesis
+
+! To prone, as in to lie on your stomach
+ANIM59=Atsigulti
+
+ANIM60=Pasitraukti
+ANIM62=Girtas 1
+ANIM63=Girtas 2
+ANIM64=Girtas 3
+ANIM65=Oro Gitara
+ANIM66=Oro Sintezatorius
+ANIM67=Ginčytis 1
+ANIM68=Ginčytis 2
+ANIM69=Barmenas
+
+! Aka. Air Kiss
+ANIM70=Oro Bučinys
+
+ANIM71=Sarkastiškas
+ANIM72=Išbandyk Mane
+ANIM73=Ateik Čia
+ANIM75=Naudoti Radiją
+ANIM74=Sukryžiuotos Rankos 1
+ANIM76=Sukryžiuotos Rankos 2
+ANIM77=Sukryžiuotos Rankos 3
+
+! As in "damn it"
+ANIM78=Po Velnių
+
+ANIM79=Vogti
+ANIM81=Nusivylimas 1
+ANIM82=Nusivylimas 2
+ANIM83=Nukristi
+ANIM84=Užmigti
+ANIM85=Apžiūrėti
+ANIM86=Žvaigždutės
+ANIM88=Belstis
+ANIM89=Striptizo Šokis 1
+ANIM90=Striptizo Šokis 2
+ANIM91=Striptizo Šokis 3
+ANIM92=Striptizo Šokis 4
+ANIM93=Tverkinti
+ANIM94=Pasilenkti
+ANIM95=Koketiškai Pasilenkti
+ANIM96=Mechanikas
+ANIM97=Medituoti
+ANIM98=Trūksta Oro
+ANIM99=Atsispaudimas
+ANIM100=Lenktynių Pradžios Skaičiavimas
+ANIM101=Gūžtelti Pečiais
+ANIM102=Jogos Poza
+ANIM103=Juoktis
+ANIM104=Gaujos Ženklas
+ANIM105=Nualpti
+ANIM106=Ropoti
+ANIM107=Salto 1
+ANIM108=Salto 2
+ANIM109=Čiuožti 1
+ANIM110=Čiuožti 2
+ANIM111=Gaivinimas
+ANIM112=Ražytis
+ANIM113=Švesti
+ANIM114=Klounas
+ANIM115=Nervuotas 1
+ANIM127=Nervuotas 2
+ANIM116=Namaste
+ANIM117=DJ
+
+! Being arrested
+ANIM118=Rankas Virš Galvos
+! Being arrested
+ANIM121=Pasiduoti
+
+ANIM119=Švilpti
+ANIM120=Lenktis, Rankos Sukryžiuotos
+ANIM122=Naudotis Klaviatūra
+ANIM123=Stovėti Prie Laužo
+ANIM124=Rodytį Liuksą
+
+! As in, bending your body towards someone to show respect.
+ANIM125=Parodyti Pagarbą
+
+ANIM126=Superherojus
+ANIM128=Nusilenkti
+ANIM129=Praustis
+ANIM130=Prausti Veidą
+ANIM131=Karate
+ANIM132=Sparingas
+
+ANIM166=Maišymas 1
+ANIM167=Maišymas 1 (Žemas)
+ANIM168=Maišymas 2
+ANIM169=Maišymas 2 (Žemas)
+
+OBJANIM=Objektų Animacijos
+
+ANIM133=Portfelis
+ANIM134=Gerti Alų
+ANIM135=Gerti Iš Skardinės
+
+! As in begging
+ANIM136=Pradžia
+
+ANIM137=Groti Bongos
+ANIM138=Skaityti Knygą
+ANIM139=Duoti Gėles
+ANIM140=Valyti su šluota
+ANIM141=Alaus Dėžės Nešiojimas
+ANIM142=Nešti Picą
+ANIM143=Laikyti Šampaną
+ANIM144=Gerti Kavą
+ANIM145=Mažas Daiktų Krepšys
+ANIM146=Rankinė
+ANIM147=Groti Gitara
+
+! In this animation, the teddy bear known as "Mr. Raspberry" gets sexed
+ANIM148=Vargšas Ponas Avietė
+
+ANIM149=Sėdėti Krėsle (Moteris)
+ANIM150=Sėdėti Krėsle (Vyras)
+ANIM151=Analizuoti Žemėlapį
+ANIM152=Laikyti Fotoaparatą
+ANIM153=Laikyti Mikrofoną
+ANIM154=Vaikščioti Su Lazda
+ANIM155=Mobilusis Telefonas 1
+ANIM156=Mobilusis Telefonas 2
+ANIM157=Laikyti Ženklą
+ANIM158=Laikyti Rožę
+ANIM159=Laikykite Greitkelio Ženklą
+ANIM160=Laikykite Ženklą "Stovėti Draudžiama"
+ANIM161=Laikyti Skėtį
+ANIM162=Laikyti Viskio Stiklinę
+ANIM163=Laikyti Viskio Butelį
+ANIM164=Laikyti Vyno Stiklinę
+ANIM165=Laikyti Vyno Butelį
+ANIM170=Šokti Su Vynu
+ANIM171=Šokti Su Alum
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Bodyguards !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+BDYGUARD=Asmens Sargybiniai
+COUNT=Skaičius
+WPN_SINGULAR=Ginklas
+BDYGUARD_DEL=Ištrinti Visus Sargybinius
+BDYGUARD_TP=Teleportuoti, Kai Toli
+FORMATION=Formacija
+LINE=Linija
+CIRCLE=Apskritimas
+ALT_CIRCLE=Alternatyvus Apskritimas
+BEHVR=Elgesys
+PRIM_WEAP=Pagrindinis Ginklas
+SCND_WEAP=Antrinis Ginklas
+WEAP_H=Asmens sargybiniai naudos savo pagrindinį ginklą, kai tik bus įmanoma. Priešingu atveju jie bandys panaudoti savo antrinį ginklą.
+
+!!!!!!!!!!!!!!!!!!!!
+!! Self > Weapons !!
+!!!!!!!!!!!!!!!!!!!!
+
+WPN=Ginklai
+
+GETGNS=Gauti Ginklus
+DELGNS=Išimti Ginklus
+ALLGNS=Visi Ginklai
+
+GAIMPNSH=Kai taikaisi...
+GSHTPNSH=Kai šaudai...
+
+GRTYGUN=Gravitacijos Šautuvas
+CTRVPHYS=Kontroliuojama fizika
+FRCMUL=Jėgos daugiklis
+COL=Susidūrimas
+
+VEHGUN=Transporto Priemonių Ginklas
+VEHGUN_H=Jūsų ginklai šaudo transporto priemones.
+
+WEAPCOMPS=Komponentai
+WEAPCOMPS_H=Leidžia peržiūrėti ir keisti, kokius komponentus turi pasirinktas ginklas.
+
+WEAPLOCK=Užrakinti Ginklus
+TINT=Ginklo Atspalvis
+
+! "Livery" is VEHMOD48
+WEAPLIVTNT=TP Atspalvis
+
+SVPRST=Išsaugoti Nustatymą
+VWPRSTS=Peržiūrėti Nustatymus
+
+LOADS=Loadout'ai
+SVLOAD=Išsaugoti Loadout'ą
+VWLOADS=Peržiūrėti Loadout'us
+
+SVLOAD_H_WEAP=Išsaugo šiuo metu turimus ginklus į komandų langelio skriptą taip, kad ateityje būtų galima lengvai naudoti loadoutą
+
+WEAPLOCK_INV=Pašalinti Tik Pasirinktus Ginklus
+WEAPLOCK_INV_H=Pakeičia "Užrakinti Ginklus" į "Juodąjį Ginklų Sąrašą", todėl pašalinti bus galima tik pasirinktus ginklus.
+
+AIMBT=Aimbotas
+
+AIMBT_LCKOUT=Taikymosi Iš Naujo Laikas (ms)
+AIMBT_LCKOUT_H=Kiek laiko aimbotas bus išjungtas, kai pajudinsite kamerą.
+
+SMTHNG=Sklandumas
+
+LOSCHECK=Matymo Patikrinimas
+
+TGTBONE=Taikymosi Kaulas
+NECK=Kaklas
+RELBOW=Dešinioji Alkūnė
+LELBOW=Kairioji Alkūnė
+RHAND=Dešinioji Ranka
+LHAND=Kairioji Ranka
+PELVIS=Dubuo
+RCALF=Dešinioji Blauzda
+LCALF=Kairioji Blauzda
+RFOOT=Dešinioji Pėda
+LFOOT=Kairioji Pėda
+
+TRIGBT=Triggerbotas
+MAGICB=Magiškos Kulkos
+MAGICB_H=Užtikrina, kad triggerbot’as visada pataikytų.
+
+TRGSEL=Taikinių Pasirinkimas
+
+PROXYROCKET=Artumo Raketos
+PROXYROCKET_H=Artumo raketos veikia tik prieš kitus žaidėjus
+
+SPRMELEE=Super Kumščiai
+SPRMELEE_H=NPC ir transporto priemones nustumia nuo jūsų po to, kai juos atakuojate artimoje kovoje (su rankomis). Neveikia prieš kitus žaidėjus.
+
+INSTAPROXY=Momentinis Artumo Minų Detonavimas
+
+FILAMMO=Pripildyti Visą Amuniciją
+RMVAMMO=Ištuštinti Visą Amuniciją
+INFAMMO=Nesibaigianti Amunicija
+
+SKPRLD=Praleisti užsitaisynėjimą
+
+NOSPOL=Jokio Užsikrovimo
+NOSPOL_H=Pašalina uždelsimą prieš šaudant iš kaikurių ginklų.
+
+NOSPRD=Jokios Sklaidos
+NORECL=Jokios Atatrankos
+
+RAPFRE=Super-Greitas šaudymas
+
+RAPFREVEH=Super-Greiti trans. priem. ginklai
+
+DMG=Žalos Daugiklis
+DMG_H=Taikomas jūsų kumščių ir ginklų padarytos žalos daugiklis.
+
+RNGMUL=Atstumo Modifikatorius
+
+RKSPDMUL=Raketų Greičio Daugiklis
+
+! Or "Bullets Per Shotgun Shot"
+SHTGNSZE=Granulių Skaičius Šautuvo Šovinyje
+
+INSTLKNON=Momentinis 'Lock-On'
+
+EXPAMMO=Sprogstamosios Kulkos
+
+EXPTYP=Sprogimo Tipas
+EXPTYP_H=Leidžia pasirinkti sprogimų tipą.
+
+EXP_TAG_GRENADE=Granata
+EXP_TAG_GRENADELAUNCHER=Granatsvaidis
+EXP_TAG_STICKYBOMB=Lipni Bomba
+EXP_TAG_MOLOTOV=Molotovas
+EXP_TAG_ROCKET=Raketa
+EXP_TAG_TANKSHELL=Tanko Sviedinys
+EXP_TAG_HI_OCTANE=High Octane
+EXP_TAG_CAR=Automobilis
+EXP_TAG_PLANE=Lėktuvas
+EXP_TAG_PETROL_PUMP=Benzino Pompa
+EXP_TAG_BIKE=Dviratis
+EXP_TAG_DIR_STEAM=Garai
+EXP_TAG_DIR_FLAME=Liepsna
+EXP_TAG_DIR_WATER_HYDRANT=Vandens Hidrantas
+EXP_TAG_DIR_GAS_CANISTER=Benzino Bako Liepsna
+EXP_TAG_BOAT=Valtis
+EXP_TAG_SHIP_DESTROY=Laivas
+EXP_TAG_TRUCK=Sunkvežimis
+EXP_TAG_BULLET=Šovinys
+EXP_TAG_SMOKEGRENADELAUNCHER=Dūminis Granatsvaidis
+EXP_TAG_SMOKEGRENADE=Dūminė Granata
+EXP_TAG_BZGAS=BZ Dujos
+EXP_TAG_FLARE=Signalinė Raketa
+EXP_TAG_GAS_CANISTER=Benzo Bakas
+EXP_TAG_EXTINGUISHER=Gesintuvas
+EXP_TAG_PROGRAMMABLEAR=Užprogramuojamas Šautuvas
+EXP_TAG_TRAIN=Traukinys
+EXP_TAG_BARREL=Vamzdis
+EXP_TAG_PROPANE=Propanas
+EXP_TAG_BLIMP=Blimp (Mėlynas)
+EXP_TAG_DIR_FLAME_EXPLODE=Liepsnos Sprogimas
+EXP_TAG_TANKER=Tanklaivis
+EXP_TAG_PLANE_ROCKET=Lėktuvo Raketa
+EXP_TAG_VEHICLE_BULLET=Automobilio Šovinys
+EXP_TAG_GAS_TANK=Dujų Rezervuaras
+EXP_TAG_BIRD_CRAP=Paukščių Šūdas
+EXP_TAG_RAILGUN=Railgunas
+EXP_TAG_BLIMP2=Blimp (Raudona & Žydra)
+EXP_TAG_FIREWORK=Fejerverkas
+EXP_TAG_SNOWBALL=Sniego Gniūžtė
+EXP_TAG_PROXMINE=Artumu Veikianti Mina
+EXP_TAG_VALKYRIE_CANNON=Valkyrie Pabūklas
+EXP_TAG_AIR_DEFENCE=Oro Gynyba
+EXP_TAG_PIPEBOMB=Vamzdinė Bomba
+EXP_TAG_VEHICLEMINE=Prieštankinė Mina
+EXP_TAG_EXPLOSIVEAMMO=Sprogstamieji Šoviniai
+EXP_TAG_APCSHELL=APC Sviedinys
+EXP_TAG_BOMB_CLUSTER=Kasetinė Bomba
+EXP_TAG_BOMB_GAS=Dujinė Bomba
+EXP_TAG_BOMB_INCENDIARY=Padegamoji Bomba
+EXP_TAG_BOMB_STANDARD=Bomba
+EXP_TAG_TORPEDO=Torpeda
+EXP_TAG_TORPEDO_UNDERWATER=Torpeda (Povandeninė)
+EXP_TAG_BOMBUSHKA_CANNON=Bombushka Pabūklas
+EXP_TAG_BOMB_CLUSTER_SECONDARY=Kasetinė Bomba (Antrinė)
+EXP_TAG_HUNTER_BARRAGE=Hunter Antskrydis
+EXP_TAG_HUNTER_CANNON=Hunter Pabūklas
+EXP_TAG_ROGUE_CANNON=Rogue Pabūklas
+EXP_TAG_MINE_UNDERWATER=Povandeninė Mina
+EXP_TAG_ORBITAL_CANNON=Orbitinis Pabūklas
+EXP_TAG_BOMB_STANDARD_WIDE=Bomba (Plati)
+EXP_TAG_EXPLOSIVEAMMO_SHOTGUN=Sprogstamieji Šoviniai (Shotgunas)
+EXP_TAG_OPPRESSOR2_CANNON=Oppressor Mk II Pabūklas
+EXP_TAG_MORTAR_KINETIC=Kinetinis Minosvaidis
+EXP_TAG_VEHICLEMINE_KINETIC=Kinetinė Prieštankinė Mina
+EXP_TAG_VEHICLEMINE_EMP=EMP Mina
+EXP_TAG_VEHICLEMINE_SPIKE=Spike Mina
+EXP_TAG_VEHICLEMINE_SLICK=Slick Mina
+EXP_TAG_VEHICLEMINE_TAR=Tar Mina
+EXP_TAG_SCRIPT_DRONE=Skriptinis Dronas
+EXP_TAG_RAYGUN=Up-n-Atomizer (Raygunas)
+EXP_TAG_BURIEDMINE=Užkasta Mina
+EXP_TAG_SCRIPT_MISSILE=Skriptinė Raketa
+EXP_TAG_RCTANK_ROCKET=RC Tanko Raketa
+EXP_TAG_BOMB_WATER=Vandens Bomba
+EXP_TAG_BOMB_WATER_SECONDARY=Vandens Bomba (Antrinė)
+EXP_TAG_MINE_CNCSPIKE=Spygliai
+EXP_TAG_BZGAS_MK2=BZ Dujos Mk II
+EXP_TAG_FLASHGRENADE=Blykstinė Granata
+EXP_TAG_STUNGRENADE=Smūginė Granata
+EXP_TAG_CNC_KINETICRAM=Kinetinis Ram'as
+EXP_TAG_SCRIPT_MISSILE_LARGE=Skriptinė Raketa (Didelė)
+EXP_TAG_SUBMARINE_BIG=Povandeninis Laivas (Didelis)
+EXP_TAG_EMPLAUNCHER_EMP=EMP Leistuvas EMP
+EXP_TAG_RAILGUNXM3=Railgunas (MP)
+EXP_TAG_BALANCED_CANNONS=Subalansuoti Pabūklai (F35)
+
+IMPPART=Smūgio Dalelės
+IMPPART_H=Leidžia pasirinkti dalelę, kurią naudosite smūgio dalelėms.
+
+TTLFRDM=Visiška laisvė
+TTLFRDM_H=Leidžia tau naudoti ginklus passive mode ir pastatuose.
+TTLFRDM_MOV_H=Leidžia bėgti, sėlinti ir šokinėti interjeruose.
+
+TPGUN=Teleporacijos Šautuvas
+
+! "Sticky" as in "Sticky Bomb"
+INCSTICK=Padidintas Lipniųjų Bombų Limitas
+INCFLARE=Padidintas Signalinių Raketų Limitas
+
+INCPROJ_H=Tai reiškia sumą, kurią galite įdėti į pasaulį, o ne į savo inventorių.
+
+LASGUN=Lazeriniai Taikikliai
+
+!!!!!!!!!!!!!
+!! Vehicle !!
+!!!!!!!!!!!!!
+
+NOVEHFND=Pradžioje įlipkite į mašiną. :)
+VEHALRDIN=Jūs jau joje. :?
+VEHCTRL=Nepavyko suvaldyti savo jūsų transporto priemonės. :|
+
+PVS=Asmenininės Transporto Priemonės
+
+INSUR=Draudimas
+ADDINSUR=Pridėti draudimą
+DSTRYD=Sunaikinta
+UINSRD=Neapdrausta
+INSURCLM=Pateikti Draudimo Išmoką
+
+REQ=Iškviesti
+REQNDRV=Iškviesti & Važiuoti
+REQNCALL=Iškviestu & Važiuoti į mano Lokaciją
+
+PVRPLC=Pakeisti Su Dabartine Transporto Priemone
+PVRPLC_H=Išsaugo transporto priemonės, kuria šiuo metu vairuojate, duomenis vietoj šios asmeninės transporto priemonės.
+
+PVSVE_H=Išsaugo šios asmeninės transporto priemonės duomenis „Stand“ garaže.
+PVSVEA=Išsaugoti Viską Į Garažą
+PVSVEA_H=Įrašo visų jūsų asmeninių transporto priemonių duomenis į „Stand“ garažą.
+! "Garage" must use same translation as GRG. "Personal Vehicles" must stay as-is.
+PVSVEA_S=Jūsų asmeninės transporto priemonės buvo išsaugotos Garažas > Asmeninės transporto priemonės. :D
+
+CURPV=Esama Asmeninė Transporto Priemonė
+PVEHNTFND=Neradau jūsų asm. trans. priem. :/
+
+LSTVEH=Paskutinė transporto priemonė
+LSTVEHNTFND=Neradau jūsų praeitos trans. priem. :/
+
+CALLVEH=Teleportuoti pas mane & Važiuoti
+
+RC=Nuotolinis Valdymas
+RC_STCK=Spausk {} jeigu užstrigai.
+
+GTARC=Imani Tech Nuotolinio Valdymo Pultas
+GTARC_E=Ši transporto priemonė nepalaiko „Imani Tech Remote Control“ ir „Remote Control Any Vehicle“ nėra įjungta.
+
+RCANYVEH=Nuotolinis Valdymas Bet Kuriai Transporto Priemonei
+
+RETSTOR=Grįžti Į Saugyklą
+
+VEHFOLLOW=Sek mane
+
+SPWNR=Spawneris
+SPWND=Atspawninta
+
+! The act of doing it, to spawn
+SPWN=Spawninti
+
+SPWNR_CLASSES=Klasės
+
+VEH_CLASS=Klasė
+VEH_SEATS=Vietos
+
+DLC=DLC
+DLCS=DLC
+DLC_10=Žaidimo Paleidimo
+DLC_60=Beach Bum
+DLC_100=Valentine's Day Massacre
+DLC_110=Business
+DLC_130=High Life
+DLC_140=I'm Not a Hipster
+DLC_150=Independence Day
+DLC_160=SA Flight School
+DLC_170=Last Team Standing
+DLC_180=Next Gen Release
+DLC_190=Festive Surprise 2014
+DLC_210=Heists DLC
+DLC_270=Ill-Gotten Gains Part 1
+DLC_280=Ill-Gotten Gains Part 2
+DLC_300=Lowriders
+DLC_301=Halloween Surprise
+DLC_310=Executives and Other Criminals
+DLC_311=Festive Surprise 2015
+DLC_320=January 2016
+DLC_321=Be My Valentine
+DLC_330=Lowriders: Custom Classics
+DLC_340=Further Adventures in Finance and Felony
+DLC_350=Cunning Stunts
+DLC_360=Bikers
+DLC_370=Import/Export
+DLC_380=Special Vehicle Circuit
+DLC_400=Gunrunning Pack
+DLC_410=Smuggler's Run
+DLC_420=The Doomsday Heist
+DLC_430=Southern SA Super Sport Series
+DLC_440=After Hours
+DLC_460=Arena War
+DLC_480=Diamond Casino & Resort
+DLC_490=Diamond Casino Heist
+DLC_510=LS Summer Special
+DLC_520=Cayo Perico Heist
+DLC_570=LS Tuners
+DLC_580=The Contract
+DLC_610=The Criminal Enterprises
+DLC_640=Drug Wars
+DLC_670=San Andreas Mercenaries
+DLC_680=The Chop Shop
+DLC_690="Bottom Dollar" Premijos
+
+MANUFNS=Gamintojų Pavadinimai
+
+SPWNTUNE=Tiuninguoti Atspawnintas trans. priem.
+SPWNTUNE_H=Leidžia pasirinkti tiuningo profilį transporto priemonėms, kurios buvo atspawnintos per Stand.
+TUNE_PRESETS=Numatytieji Tiuningo Nustatymai
+TUNE_STCK=Stockas
+TUNE_PERF=Performancas
+TUNE_PERF_H=Atnaujina tik EMS, stabdžius, transmisiją, šarvus ir „Turbo“.
+TUNE_PERFWSPL=Performancas, Įskaitant Spoilerį
+TUNE_FULL=Pilnai
+
+SPWCLR=Nuspalvinti Atspawnintas Trans. Priem.
+
+SPWPLATE=Atspawnintų Transporto Priemonių Valstybinis Numeris
+
+TUNE=Pagerinti
+TUNE_H=Visiškai pagerina jūsų dabartinę ar paskutinę transporto priemonę.
+
+RTUNE=Atsitiktinis Pagerinimas
+RTUNE_VIS=Tik Vizualiai
+RTUNE_PERF=Tik Galingumas
+RTUNE_PERF_S=Tik Galingumas Ir Spoileris
+
+PERF=Performance Patobulinimas
+PERF_H=Pagerinami dabartinės ar paskutinės transporto priemonės EMS, stabdžiai, transmisija, šarvai ir „Turbo“.
+PERF_T=Suteikiau tavo transporto priemonei patobulinimą. :D
+PERF_E=YJūsų transporto priemonė jau visiškai patobulinta, atsižvelgiant į performance. :)
+
+PERFWSPL=Našumo Atnaujinimas Įskaitant Spoilerį
+
+DNGRD=Nutobulinimas
+DNGRD_H=Dabartinę arba paskutinę trans. priem. paverčia atgal į stocką.
+
+GRG=Garažas
+SVEVEH=Išsaugoti Transporto Priemonę
+
+PARA=Parašiutas
+PARA_GEN=Paprastas Parašiutas
+PARA_BRK=Sugadintas Parašiutas
+SECUROSERV=SecuroServ
+
+XTRA=Daugiau
+XTRAS=Daugiau
+XTRAS_N=Jusu trans. priem. daugiau nieko neturi.
+
+PARAON=Įjungti Parašiutą
+PARAON_H=Neturi įtakos visoms transporto priemonėms, pvz. ne ant motociklų.
+
+PARA_H_VIS=Atminkite, kad atidarius transporto priemonės parašiutą ne visi pakeitimai bus taikomi.
+
+VEHFIN0=Normali
+VEHFIN1=Metalinė
+VEHFIN2=Perlinė
+VEHFIN3=Matte
+VEHFIN4=Metalai
+VEHFIN5=Chrominė
+VEHFIN6=Chameleoninė
+
+WHLS=Ratlankiai
+WHLSCLR=Ratų Spalva
+WHLTYP=Ratlankių Kategorija
+VEHMOD23=Priekiniai Ratai
+
+VEHMOD0=Spoileriai
+VEHMOD1=Priekinis Sparnas / Atsakomoji Priemonė (Countermeasures)
+VEHMOD2=Galinis Sparnas
+VEHMOD3=Šoninis Sparnas
+VEHMOD4=Duslintuvas
+VEHMOD5=Rėmas
+VEHMOD6=Vėdinimo Šnervės
+VEHMOD7=Kapotas
+VEHMOD8=Amortizatorius
+VEHMOD9=Dešinysis Amortizatorius
+VEHMOD10=Stogas / Ginklai
+VEHMOD11=Variklis
+VEHMOD12=Stabdžiai
+VEHMOD13=Transmisija
+VEHMOD14=Garso Signalai
+VEHMOD15=Pakaba
+VEHMOD16=Šarvai
+VEHMOD18=Turbina
+VEHMOD24=Galiniai Ratlankiai
+VEHMOD25=Numerių Laikiklis
+
+! Alternatively, "Benny's Plates"
+VEHMOD26=Benny's Numerių Laikiliai
+
+VEHMOD27=Vidaus Apkarpimų Dizainas
+VEHMOD28=Ornamentai
+VEHMOD29=Prietaisų Skydelis
+VEHMOD30=Ciferblatų Dizainas
+VEHMOD31=Durų Garso Sistema
+VEHMOD32=Sėdynės
+VEHMOD33=Vairas
+VEHMOD34=Pavarų Svirtis
+VEHMOD35=Plokštės
+VEHMOD36=Garsiakalbiai
+VEHMOD37=Bagažinė
+VEHMOD38=Hidraulika
+VEHMOD39=Variklio Dangtis
+VEHMOD40=Boostas / Oro Filtras
+VEHMOD41=Statramsčiai
+VEHMOD42=Arkos Dangtelis
+VEHMOD43=Antenos
+VEHMOD44=Apkarpymas
+VEHMOD45=Bakas
+VEHMOD46=Kairiosios Durys
+VEHMOD47=Dešinės Durys
+VEHMOD48=Puošyba
+VEHMOD49=Šviesos Juosta
+
+VEHDRFTYR=Drift Padangos
+
+VEHBPTYR=Neperšaunamos padangos
+
+SCRCHD=Apdegęs
+
+TONK=Nuimti Bokštelį
+
+BHVONFT=Elgesys pėsčiomis
+
+BHVINVEH=Elgesys esant trans. priem.
+
+SPWNDRVE=Vairuoti atspawnintas trans. priem.
+SPWNDRVE_H=Akimirksniu įlipate į vairuotojo vietą transporto priemonėse, kurias atspawninote per Stand.
+
+SPWNAIR=Suspawninti Lėktuvą Ore
+
+SPWNFRNT=Atspawninti Priešais
+SPWNFRNT_H=Keletą metrų priešais jus atspawnins transporto priemonę, kurią pasirinkote per „Stand“.
+
+SPWLIKEPV=Atsirasti Kaip Asmeninė Trans. Priem.
+
+SPWNDEL=Sunaikinti ankstesnią trans. priem.
+
+SPWNVEL=Išlaikyti Trajektoriją
+
+INPTVEHMDL=Įvesti modelio pavadinimą
+ARGMDLNME=[model name]
+INPTVEHMDL_H=„Eksperto režimo“ būdas spawnint transporto priemones.
+INPTOBJMDL_H=„Eksperto režimo“ būdas spawnint objektus.
+INPTMDL_E=Deja, {} nėra tinkamas modelio pavadinimas. :/
+INPTVEHMDL_E=Deja, {} yra netinkamas transporto priemonės modelio pavadinimas. :/
+
+ARSPD=AR Spidometras
+ARSPD_H=Suteikia jūsų žaidėjui AR akinius, spidometro programa.
+
+CM=Atsakomosios Priemonės
+CM_AUTO=Auto-Naudojimas
+CM_OF=Tik Orlaiviuose
+CM_PERIOD=Periodinis Panaudojimas
+CM_PERIOD_D=Periodinis Panaudojimas: Delsimas
+
+FLARE=Flare’ai
+CHAFF=Chaff’as
+BOTH=Abu
+
+CM_FLARE=Naudoti Flare’us
+CM_CHAFF=Naudoti Chaff’ą
+CM_BOTH=Naudoti Flare’us & Chaff’ą
+
+CM_PT=Šablonas
+CM_HOR=Horizontaliai
+CM_HOR_UP=Horizontaliai, Viršun
+CM_HOR_DOWN=Horizontaliai, Žemyn
+CM_VERT=Vertikaliai
+CM_VERT_DOWN=Vertikaliai, Žemyn
+
+AUTODRIVE=Automatinis Vairavimas
+AUTODRIVE_C=Kruizinis Greitis
+AUTODRIVE_SDB=Rodyti Kelionės Tikslo Spindulį
+AUTODRIVE_ACOI=Atšaukti Įvesties Metu
+AUTODRIVE_ACOI_H=Automatiškai nutraukiamas, kai bandote valdyti transporto priemonę.
+AUTODRIVE_NOCLIP=Jokio Susidūrimo Su Automobiliu Važiuojant Auto-pilotu
+AUTODRIVE_NOCLIP_H=Išjungia susidūrimą su kitomis transporto priemonėmis automatiškai važiuojant. Naudinga kompensuoti prastą kelio radimą pasirinkus agresyvų vairavimą.
+AUTODRIVE_STORE=Parduotuvė
+AUTODRIVE_MOVIE=Kino Filmai
+AUTODRIVE_CLUBHOUSE=Motociklininkų Gaujos Klubas
+AUTODRIVE_FACILITY=Patalpos
+AUTODRIVE_AGENCY=Agentūra
+AUTODRIVE_OFFICE=Ofisas
+AUTODRIVE_HANGAR=Angaras
+AUTODRIVE_ERR2=Šiam transporto priemonės tipui "Auto-Vairavimo" funkcija nepasiekiama.
+AUTODRIVE_ERR3=Nepavyko rasti tinkamos paskirties vietos, atsiprašau. :(
+AUTODRIVE_ERR4=Jūs jau esate kelionės tikslo vietoje. :P
+AUTODRIVE_ARRIVE=Pasiekėme jūsų kelionės tikslą. ^_^
+AUTODRIVE_DRIVE=Vairavimo Stilius
+AUTODRIVE_LAW=Teisėtas
+AUTODRIVE_NOTSOLAWFUL=Teisėtas, Ignoruoti "Stop" Žibintus
+AUTODRIVE_BACK=Atgalinis
+AUTODRIVE_DEST=Važiuoti į...
+AUTODRIVE_DEST_NONE=Kad Ir Kur Mus Nuves Vėjas
+AUTODRIVE_DEST_NONE_H=Važiuoja be jokios konkrečios vietos.
+
+LGTSIGS=Šviesos Signalai
+TRNSIG=Posūkių Signalai
+TRNSIG_HAZ=Avarinis
+TRNSIG_AUTO=Automatiškai Išjungti Posūkio Signalus
+BRAKELIGHTS=Stabdymo Žibintų Naudojimas Sustojus
+MTESIRENS=Užtildyti Sirenas
+
+AUTORKTBST=Auto Rocket Boost'as
+AUTORKTBST_H2=Rocket boost'as automatiškai įsijungs vėl tik jam pasikrovus.
+
+RKTBST=Rocket Boostas
+
+OVRD=Nepaisyti
+RKTBST_H_OVRD=Leidžia pakeisti jūsų vairuojamos transporto priemonės rocket boost'ą.
+
+VERTRKTBST=Vertikalus Rocket Boost'as
+
+CHRGBHV=Įkrovimo Elgesys
+RKTBST_NVREND=Begalinis
+RKTBST_NVREND_H=Padaro boostą nesibaigiančiu, nebent nukrisite.
+RKTBST_INSTRFLL=Momentinis papildymas
+RKTBST_INSTRFLL_H=Pasibaigus, tuoj pat pripildo rocket boostą.
+RKTBST_NORFLL=Nėra papildymo laiko
+RKTBST_NORFLL_H=Boostą iškart užpildo, kai tenkinamos jo sąlygos.
+RKTBST_EMPTY=Visados tuščias
+
+RMP=Rampa
+RMMSCOOP=Naikinimo Semtuvas
+INCRMMFRC=Padidėjusi Smūgio Jėga
+
+LSC=Los Santos Customs
+
+VDO=Atidaryti/Uždaryti Duris
+
+VEHDOOR_A=Visos Durys
+VEHDOOR_0=Priekinės iš kairės pusės
+VEHDOOR_1=Priekinės iš galinės pusės
+VEHDOOR_2=Galinės iš kairės pusės
+VEHDOOR_3=Galinės iš dešinės pusės
+VEHDOOR_4=Kapotas
+VEHDOOR_5=Bagažinė
+VEHDOOR_6=Galas
+VEHDOOR_7=Galas 2
+
+LOCKD=Užrakinti Duris
+LOCKD_O=Tik Kai Laisva
+XCLUDEPVS=Išskirti Kitų Asmenines Transporto Priemones
+
+ENGTGL=Įjungti/Išjungti variklį
+ENGTGL_H=Atminkite, kad paspausdami pirmyn arba atgal jūsų veikėjas vėl įjungs variklį daugelyje transporto priemonių.
+
+FLIPVEH=Pasukti transporto priemonę vertikaliai
+FLIPVEH_H=Dabartinę ar paskutinę trans. priem. pasuka vertikaliai.
+
+ATRNSUBCAR=Auto Transformuoti Povandeninius Automobilius
+NANIM=Jokios Animacijos
+
+DRBYINANY="Drive-By" Visomis Transporto Priemonėmis
+DRBYWITHANY="Drive-By" Su Visais Ginklais
+
+WHEELONWHEELS=Ginklų Ratukas Transporto Priemonėse
+WHEELONWHEELS_H=Atminkite, kad vis tiek galite naudoti slinkties ratuką aukštyn, kad pereitumėte po vieną, o tai turite padaryti norėdami pereiti transporto priemonių ginklus.
+
+BMBTRJC=Rodyti Bombų Trajektoriją
+
+FLYTHRUWND=Skrydis Per Priekinį Stiklą
+
+! "Glued To Seats" is SEATGLUE
+FLYTHRUWND_H=Dideliu greičiu įvykus susidūrimui, kaip ir istorijos režime, išskrendate iš automobilio priekinio stiklo.
+
+ANTINLCKON=Užfiksuoti Visas Transporto Priemonęs
+
+! "Can't Be Locked On" is NLCKON
+ANTINLCKON_H=Leidžia užfiksuoti "Imani Tech" transporto priemones. Taip pat padeda apeiti tokias funkcijas kaip "Can't be locked on".
+
+SETSEAT=Nustatyti Transporto Priemonės Sėdynę
+DRV=Vairuotojas
+
+LVENGRUN=Išlipant Palikti Variklį Įjungtą
+
+NOJACK=Būti Neištraukiamam
+
+PEG=Nustatykite kaip „Pegasus“ transporto priemonę
+PEG_H=Leidžia į savo angarą įdėti tam tikrus suspawnintus lėktuvus, priversdamas žaidimą manyti, kad tai „Pegasus“ transporto priemonė.
+
+DSTRY=Sunaikinti
+
+DELVEH_H=Ištrina dabartinę arba buvusią trans. priem.
+
+FIXVEH=Sutaisyti Automobilį
+FIXVEH_H=Sutaiso tavo dabartini arba buvusį automobilį.
+
+VEHGOD=Nesunaikinama
+VEHGOD_H=Negalima sugadinti jokios jūsų vairuojamos ar vairuojamos transporto priemonės.
+
+SPWNGOD=Atspawnintos Mašinos Nesunaikinamos
+
+SPWNLIST=Atspawnintų Transporto Priemonių Sąrašas
+
+VEH_DRV=Vairuoti
+VEH_ENT=Įlipti
+VEH_EMPTY=Ištuštinti
+DEL=Ištrinti
+
+SPWNBLIP=Taškai Ant Sukurtų Transporto Priemonių
+SPWNBLIP_TXT=Sukurta Transporto Priemonė ({})
+CLRBLIP=Panaikinti Taškus
+ONLYLTST=Tik Naujausiam Automobiliui
+
+MINT=Visados geras stovis
+MINT_H=Palaiko jūsų mašiną, kaip naują.
+
+PLATE=Mašinos Numeriai
+
+PLATESPEED=Spidometras
+PLATESPEED_A=Spidometras ant mašinos numerių
+
+CHARLIMIT=Negali viršyti {number} simbolių. :|
+
+RNDISE=Atsitiktinis
+
+SCRLTXT=Slenkantis Tekstas
+
+LCKPLT=Užrakinti Valstybinio Numerio Ženklo Tekstą
+
+BADCHAR="{}" nėra tinkamas simbolis. :|
+
+HORNBOOST=Garso Signalo Boost’as
+
+SPRDRV=Super Vairavimas
+
+SPRDRVCAM=Super Vairavimas Naudojant Kamera
+SPRDRVCAM_H=Pakeičia „Super Vairavimo“ „priekio“ apibrėžtį, kad ji būtų ten kur žiūrite, o ne kur važiuoja jūsų transporto priemonė.
+
+SPRHBRK=Super Rankinis Stabdis
+
+DRVONWTR=Važiuoti Ant Vandens
+
+DRVUNDWTR=Važiuoti Po Vandeniu
+
+SPDLMT=Greičio Limitas (KMH)
+SPDLMT_H=Nustato trans. priem. greičio limitą. (Įprastas limitas: 540)
+
+JMPABL=Galimybė Šokinėti
+JMPABL_H=Atminkite, kad jei turite ir šuolio, ir raketos boost'ą, žaidimas boost'o mygtuką pakeis į antrajį.
+
+GLDABL=Galimybė Sklandyti
+
+HEADLIT=Priekiniai Žibintai
+
+HEADLITMUL=Farų Stiprumas (Mašinos Lempų)
+H_HILOCAL=*Įtin padidintas mašinos lempų pajėgumas veiks tik locally*
+
+GRVTYMTPLY=Gravitacijos Daugiklis
+
+NOTAIR=Ne Lėktuvuose
+
+HNEDIT=Valdymo Editorius
+HNE_BASE=Pagrindinis
+HNE_AIRCRAFT=Orlaiviai
+
+! Motorcycles and bicycles alike.
+HNE_BIKES=Motociklai
+
+HNE_FLYING=Skraidymas
+HNE_VERTFLY=Vertikalus Skraidymas
+HNE_SPECFLY=Specialusis Skraidymas
+HNE_SEAPLANE=Hidroplanai
+HNE_SUBMARINE=Povandeniniai Laivai
+HNE_TRAILER=Sunkvežimiai/Priekabos
+HNE_CAR=Automobiliai
+
+SPECFLY_H=Atkreipkite dėmesį, kad kitose transporto priemonėse, išskyrus "Deluxo", specialiajam skrydžio režimui perjungti naudojama "stogo" įvestis (laikykite H arba "D-Pad" dešinėje).
+
+DELUXO=Deluxo
+OPP2=Oppressor Mk II
+
+SHWNA=Rodyti Netaikomus
+
+HNE_VWSCR=Peržiūrėti Valdymo Skriptus
+HNE_VWSCR_H=Peržiūrėkite skriptus, esančius "Command Box" aplanko "Handling" poaplankyje "Scripts".
+
+HNE_NA=Ši kategorija netaikoma jūsų dabartinei transporto priemonei.
+
+CSTWNGBVHR=Pasirinktinis Sparnų Elgesys
+CSTWNGBVHR_H=Leidžia pritaikyti sparnų elgseną originaliam Oppressor'iui.
+
+LESSENBURN=Sumažinti Padangų Susidėvėjimą
+
+SMTHCST=Sklandus Važiavimas
+SMTHCST_H=Sumažina važiuojančios transporto priemonės lėtėjimą iki tikroviškesnio tempo.
+
+DRFTMDE=Drift Režimas
+DRFTMDE_H=Mūsų atkurtas "drifto" tiuningas, kurį anksčiau buvo galima naudoti tik keliose transporto priemonėse. Mūsų versija veikia daug didesniam transporto priemonių skaičiui, tačiau kai kurios transporto priemonės neis taip skersai, kaip kitos.
+
+MINPOS=Min. Padėtis
+MAXPOS=Maks. Padėtis
+CSTWNGBVHR_SPD=Greitis
+MAXPOS2SPD=Nustatykite Greitį Pagal Maksimalią Padėtį
+
+SMTHFLY=Jokios Turbulencijos
+
+HELIAUTOSTAB=Išjungti Automatinį Sraigtasparnio Stabilizavimą
+HELIAUTOSTAB_H=Įkvėpė Murteno BetterHeliMode skriptas.
+
+NLCKON=Negalima Užsilockinti
+
+INSTASEAT=Akimirksniu įlipkite ir išlipkite iš transporto priemonių
+INSTASEAT_H=Praleidžia jūsų žaidėją einant prie transporto priemonės, įjungiant variklį ir įlipant / išlipant.
+
+EXITSTOP=Sustabdyti mašinas išlipant
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Vehicle Classes !!
+!!!!!!!!!!!!!!!!!!!!!
+
+off_road=Bekeliniai Visureigiai
+sport_classic=Sportas-Klasika
+Military=Kariniai
+Compacts=Kompaktiški
+sport=Sportiniai
+Muscle=Amerikietiški
+motorcycle=Motociklai
+open_wheel=Atviro Rato
+Super=Super-Mašinos
+van=Mikroautobusai
+suv=Visureigiai
+Commercial=Komerciniai
+plane=Lėktuvai
+sedan=Sedanai
+Service=Tarnybiniai
+Industrial=Pramoniniai
+helicopter=Sraigtasparniai
+boat=Laivai
+Utility=Komunaliniai
+Emergency=Avariniai
+cycle=Dviračiai
+coupe=Kupė
+rail=Traukiniai
+
+!!!!!!!!!!!
+!! World !!
+!!!!!!!!!!!
+
+PLCS=Vietos
+INHAB=Gyventojai
+ATMO=Atmosfera
+
+DWNTWN=Centras
+
+! GTA calls a point on the map a "blip"
+BLIPS=Taškai
+BLIPNFND=Nepavyko rasti tinkamo užrašo. :/
+
+TP=Teleportuotis
+
+DEDFX=Mirties Efektas
+RESPFX=Atsiradimo Efektas
+TPFX=Teleportavimosi Efektas
+
+TPS=Teleportuotis į...
+TPWAIT=Ruošiama teleportuotis...
+
+WP=Waypointą
+WPS=Waypointas ant...
+OBJCTV=Tikslas
+TP_MP=Teleportuojantis čia bus užtikrinta Online Mode pasaulio būsena, dėl kurios žaidimas gali netrukus užstrigti.
+TP_CAYO=Įsitikinkite, kad Cayo Perico pasaulio būsena arba IPLai yra įjungti prieš teleportavimasi, kad išvengti atsiradimo vandenyje.
+
+RPLTP=Pakartoti paskutini Teleportą
+RP_E=Nėra ko kartoti. :?
+
+UNDOTP=Anuliuoti Teleportą
+UNDOTP_E=Nėra ko anuliuoti. :?
+
+STORS=Parduotuvės
+
+AMMUNAT=Ammu-Nation
+SHTNGRNGE=Ammu-Nation su Šaudykla
+BARBR=Kirpykla
+CLTHST=Rubų Parduotuvė
+TATTOO=Tatuiruočių Salonas
+
+LNDMRKS=Orientyrai
+
+LSIA=Los Santos International Airport
+FRTZNC=Fort Zancudo
+MTCHIL=Čiliad Kalnas
+
+CAYO=Cayo Perico
+
+CSNO=Kazino
+
+! Translate "Tower" & "Helipad"
+MAZEHELIPAD=Maze Bank Bokštas Sraigtasparnių-Aikštelė
+
+HIGHPLACE=Labai labai aukštai
+
+AUTOTPWP=Auto-Teleporti į Waypointus
+AUTOTPWP_H=Automatiškai teleportuoja jus į bet kurį nustatytą waypointą.
+AUTOTPWP_T=Jūs buvote automatiškai nuteleportuotas į jūsų waypointą. :)
+
+WPORTAL=Teleportuotis į Waypointą Su Portalais
+
+CBPOS=Padėtis iš Iškarpinės
+CBPOS_H=Nuskaito iškarpinę 3D ar 2D vektoriui.
+CBPOS_T=Neradau jokio 3D ar 2D vektoriaus Jūsų iškarpinėje. :?
+
+POS=Pozicija
+
+! Stand > Settings > Appearance > Position
+MNUPOS=Pozicija
+
+! World > Places > Position
+MYPOS=Pozicija
+
+POS_Z=Z (Aukštis)
+
+SVDPLCS=Išsaugotos Vietos
+SVDPLCS_H=Galite išsaugoti vietas {}.
+
+SVPLC_M=Išsaugoti Mano Pozicija
+SVPLC_W=Išsaugoti Kelio Taško Pozicija
+
+CPPOS=Nukopijuoti padėtį į Iškarpinę
+
+CPSUCC=Nukopijavimas į iškarpinę sėkmingas. :D
+CPERR=Nukopijavimas į iškarpinę nesėkmingas. :|
+
+IPLS=IPL
+IPLS_H=Leidžia įkelti ir iškelti pasaulio dalis („IPL“) *lokaliai*.
+
+IPLTP=Teleportuotis į IPLus
+IPLTP_H=Teleportuos jus į IPLus, kai įjungsite juos apačioje.
+IPL_MP=Įjungus šį IPL bus užtikrinta Online Mode pasaulio būsena, dėl kurios žaidimas gali netrukus užstrigti
+
+TRFC=Eismas
+
+TRFCLR=Eismo Spalva
+
+DPEDS_A=Išjungti Pėsčiuosius
+
+DTRFC_A=Išjungti Eismą
+DTRFC_2=Įjungta, Įskaitant Priparkuotus Automobilius
+
+SWRLDST=Nustatyti Pasaulio Būsena
+SWRLDST_H=Tai gali trumpam užšaldyti žaidimą.
+
+SP=Story Mode Režimas
+
+S_SP=SP
+S_MP=MP
+
+INT=Interjeras
+INTS=Interjerai
+
+INT_BKR=Bunkeris
+STYL=Stilius
+SECTY=Apsauga
+EQUIPUPGR=Įrangos Pagerinimas
+GUNLKR=Ginklų Spintelė
+PSNLQRTS=Asmeninis Kampelis
+GUNRNGE=Šaudykla
+
+INT_VW=Transporto Priemonių Sandėlis
+INT_VW_2=Firminis
+INT_VW_1=Miesto
+INT_VW_0_1=Pagrindinis (1 spalva)
+INT_VW_0_2=Pagrindinis (2 spalvos)
+INT_VW_0_3=Pagrindinis (3 spalvos)
+INT_VW_0_4=Pagrindinis (4 spalvos)
+
+INT_IF=IAA Pastatas
+INT_SR=Serverių Kabinetas
+INT_BS=Bogdano Povandeninis Laivas
+INT_HL=„Humane Labs“ Labaratorija
+INT_FR=FIB (Biuro reidas)
+INT_LFB=La Fluente Blanca
+INT_SSWCC=Split Sides West Comedy Club
+INT_BM=Bahama Mamas
+INT_TR=Kankinimo Kambarys
+INT_MR=Motelio Kambarys
+INT_OG=Omegos Garažas
+INT_CIN=Kinas
+INT_RCYL=Perdirbimo Gamykla
+
+INT_PYSC=Friedlanderio Ofisas
+INT_SOL=Solomono Ofisas
+
+INT_FH=Floido Namas
+INT_JH=Prižiūrėtojų Namas
+INT_LH=Lesterio Namas
+
+INT_BENNY=„Benny's Original“ Motoriniai Darbai
+INT_HAYES=Hayes Automobiliai
+INT_TEQ=Tequi-La-La
+INT_FDRY=Liejykla
+INT_UDG=Sąjungos Depozitoriumo Garažas
+INT_ESR=„Epsilon“ Saugykla
+INT_CC=Personažo Kūrimo Kambarys
+INT_ME=Misijos Pabaigos Automobilių Stovėjimo Aikštelė
+INT_NG=Naktinio Klubo Garažas
+INT_WEED=Marihuanos Ferma
+INT_STILT=Stilių Namas
+
+INT_A_H=Aukštos Klasės Apartamentai
+INT_A_M=Vidutinės Klasės Apartamentai
+INT_A_L=Mažos Klasės Apartamentai
+
+INT_G_H=Aukščiausios Klasės Garažas
+INT_G_M=Vidutinės Klasės Garažas
+INT_G_L=Žemos Klasės Garažas
+
+INT_W_L=Didelis Sandėlis
+INT_W_M=Vidutinis Sandėlis
+INT_W_S=Mažasis Sandėlis
+
+YANK=Šiaurės Janktonas
+YANKMAPRDR=North Yankton Žėmėlapis & Radaras
+IPL_USSLUX=USS Luxington
+IPL_HOSPITAL=Pillbox Hill Medicinos Centras
+FMEORSHME=„Šlovė ar Gėda“
+FCEBK=„Lifeinvader“
+IPL_JEWEL=Vangelico Papuošalai
+IPL_MXRD=„Max Renda“
+IPL_UFOEYE=Čilijado Kalno NSO
+IPL_FINBANK=Sąjungos Depozitoriumas
+IPL_PLNCRSH=Lėktuvo Katastrofos Tranšėja
+
+! Translate "Factory"
+IPL_CLKNBLLFCTRY=Clucking Bell Gamykla
+IPL_LSTRFCTRY=Lester's Sleptuvė
+
+! Translate "Morgue"
+IPL_MORGUE=Lavoninė
+
+! Translate "Heist" and "Yacht"
+IPL_AYACHT=Series A Jachtos Apiplėšimas
+
+! Translate "Ranch" and "Fire"
+IPL_RANCH=O'Neil Brothers Ranča
+IPL_RANCH_LIT=O'Neil Brothers Ranch Gaisras
+
+! Translate "Clubhouse"
+IPL_LOSTHOUSE=Lost MC Klubnamis
+
+! Translate "House"
+IPL_BCHOUSE=Banham Canyon Namai
+
+IPL_TRNWRCK=Traukinio avarija
+IPL_REDCRPT=Raudonasis Kilimas
+
+! Translate anything but "FIB"
+IPL_FIBLBBY=FIB Ložė
+! Translate anything but "FIB"
+IPL_FIBHELI=FIB Sraigtasparnio Avarija
+! Translate anything but "FIB"
+IPL_FIBRBBL=FIB Skalda
+
+! Translate "Triathlon"
+IPL_TRIA2=Alamo Sea Triatlonas
+! Translate "Triathlon"
+IPL_TIRA1=LSIA Triatlonas
+
+! Translate "Gates"
+IPL_ZGATES=Fort Zancudo Vartai
+
+! Translate "Airfield" and "Boxes"
+IPL_BOXES=Sandy Shores Aerodromo Dėžės
+
+IPL_SPNN=Automobilių plovimo įranga
+
+! Translate "Billboard" and "Graffiti"
+IPL_MAZEGRFF=Maze Bank Skelbimų lenta Grafiti
+! Translate "Billboard" and "Graffiti"
+IPL_OILGRFF=Ron Oil Skelbimų lenta Grafiti
+! Translate "Billboard" and "Graffiti"
+IPL_FRUITBB=iFruit Skelbimų Lenta
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL1=Meltdown Skelbimų Lenta 1
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL2=Meltdown Skelbimų Lenta 2
+
+! Translate "Church" and "Grave"
+IPL_GRVE=Hill Valley Bažnyčia Kapai
+
+XSTPNSH=NPC Bausmės už egzistavimą
+NPRXPNSH=NPC Artumo Bausmės
+PRX=Artumas
+NAIMPNSH=NPC Taikymosi Bausmės
+NAIMPNSH_H=Nubausti NPCs už taikymasį į jūsų zoną.
+NHOSPNSH=NPC Priešiškumo Bausmės
+INCLUDE_EVERYONE=Įtraukti Visus
+INCLUDE_EVERYONE_M=Įtraukti Visus, Misijose
+INCLUDE_FRIEND=Įtraukti Draugus
+INCLUDE_PASS=Įtraukti Keleivius
+INCLUDE_CREW=Įtraukti Grupės Narius
+INCLUDE_ORG=Įtraukti Organizacijos Narius
+INCLUDE_H1=Bausmės bus taikomos ne tik jums, bet ir šiai demografinei grupei kai ji yra taikinys.
+INCLUDE_H2=Tas pats, kaip ir pirmiau, bet veiksminga tik misijų metu.
+PAIMPNSH=Žaidėjų Taikymosi Bausmės
+PAIMPNSH_H=Nubausti žaidėjus už taikymasi į jūsų zoną.
+AIMME=Nubausti jeigu taikomasi į mane
+AIMMEN=Jeigu išjungta, NPCs bus nubausti už taikymasį į jūsų zoną, neatsižvelgiant į ka jie taikosi
+AIMMEP=Jeigu išjungta, Žaidėjai bus nubausti už taikymasį į jūsų zoną, neatsižvelgiant į ka jie taikosi
+PNSH_EXPANON=Nežinomas Sprogimas
+PNSH_EXP=Man priklausantis sprogimas
+PNSH_BRN=Padegti
+PNSH_DIE=Mirtis
+PNSH_REV=Prikelti
+PNSH_UNRM=Nuginklavimas
+PNSH_UNRM_H=Atims iš žaidėjų ginklus ir paliks juos vien su kumščiais.
+PNSH_INTRP=Sutrukdyti
+PNSH_CWR=Pritūpti
+PNSH_FLEE=Bėgti
+PNSH_PSH=Nustumti lauk
+PNSH_MRK=AR Žymeklis
+PNSH_SHWMDLNME=Rodyti Modelio Pavadinimą
+PSNH_FIX=Sutaisyti
+PSNH_WEKN=Susilpninti
+PSNH_WEKN_H=Sumažina jų gyvybę, todėl jie lengvai mirs.
+
+! "ESP" as in "Extra Sensory Perception"
+NESP=NPC ESP
+! "ESP" as in "Extra Sensory Perception"
+PESP=Žaidėjų ESP
+
+! "ESP" as in "Extra Sensory Perception"
+BONESP=Kaulų ESP
+XCLDED=Atskirti mirusius
+
+! "ESP" as in "Extra Sensory Perception"
+BOXESP=Dėžutės ESP
+
+RNDR_LWLTCY=Low latency Atvaizdavimas
+RNDR_LGCY=Legacy Atvaizdavimas
+RNDR_NTV=Vietinis Atvaizdavimas
+
+! "ESP" as in "Extra Sensory Perception"
+NAMESP=Vardo ESP
+
+MINTXTSCL=Min. Teksto Skalė
+MAXTXTSCL=Max. Teksto Skalė
+INVTXTSCL=Invert Teksto Didinimas
+
+! "ESP" as in "Extra Sensory Perception"
+LINESP=Linijų ESP
+
+ESPTAGS_H=Žymos šiame sąraše rūšiuojamos pagal jų rodymo prioritetą.
+
+CLRARE=Išvalyti Plotą
+IGMISSENT=Ignoruoti Misijos Objektus
+NDLY=Jokio Delsimo
+
+DELROPES=Ištrinti Visas Virves
+
+DOORS=Patobulintas Atviras Pasaulis
+DOORS_H=Daugiau atveria pasaulį ir leidžia laisvalaikiu įeiti į daugelį interjerų.
+
+DOORS_ENT=Spausk {input}, kad įeiti į {interior}.
+DOORS_EXT=Spausk {}, kad išeiti.
+
+DEDSEC=Watch_Dogs stiliaus pasaulio hackinimas
+
+DEDSEC_HACK=Hackai
+DEDSEC_HACK_H=Leidžia sukonfigūruoti, kurie hackai bus rodomi jūsų ekrane.
+
+DEDSEC_GENAC=Bendrieji Veiksmai
+DEDSEC_VEHAC=Transporto Priemonės Veiksmai
+DEDSEC_VEHAC_H=Taikoma, jei renkatės žaidėją transporto priemonėje.
+DEDSEC_NPCAC=NPC Veiksmai
+DEDSEC_PLRAC_H=Taikoma, jei renkatės žaidėją pėsčiomis.
+
+DEDSEC_TUT_ESP=Pažiurėti į bendrą žaidėjo, NPC, ar trans. priem. kryptį
+DEDSEC_TUT_OPT=Naudok {} norėdamas pamatyti hackinimo parinktis pagal savo dabartinį taikinį.
+DEDSEC_TUT_OPTMSE=vidurinis pelės mygtukas arba {}
+DEDSEC_TUT_SEL=Perkelkite kamerą, kai pasirinkote pasirinkti parinktį ir atleiskite mygtuką, kad galėtumėte ją naudoti.
+
+DEDSEC_OPT_FRZ=Užšaldyti
+DEDSEC_OPT_UFRZ=Atfreezinti
+DEDSEC_OPT_EXP=Susprogdinti
+DEDSEC_OPT_UNRM=Nuginkluoti
+DEDSEC_OPT_DEL=Ištrinti
+
+DEDSEC_OPT_DSTRY=Sunaikinti
+DEDSEC_OPT_DRV=Vairuoti
+DEDSEC_OPT_ENT=Įlipti
+DEDSEC_OPT_EMPTY=Tuščia
+DEDSEC_OPT_IGNITE=Uždegti
+DEDSEC_OPT_SLINGSHOT=Skraidinti
+
+DEDSEC_OPT_BRN=Deginti
+DEDSEC_OPT_FLEE=Bėgti
+DEDSEC_OPT_CWR=Bailėtis
+DEDSEC_OPT_REV=Prikelti
+
+DEDSEC_OPT_KLL=Nužudyti
+DEDSEC_OPT_CGE=Narvas
+DEDSEC_OPT_MNU=Stande
+
+DEDSEC_STICKY=Greitas Pasirinkimas
+DEDSEC_STICKY_H=Greitas pasirinkimas panaikinamas tik po nurodytos delsos milisekundėmis. Tai naudinga kontroleriams.
+DEDSEC_PASSIVE=Kai nepasirinktas taikinys...
+DEDSEC_ACTIVE=Kai pasirinktas taikinys...
+
+SHWRETCL=Rodyti Taikyklį
+DRWLINE=Rodyti Liniją
+DRWBOX=Rodyti Langelį
+
+DEDSECDELAY=Telefono Atidarymo Terminas
+DEDSECDELAY_H=Leidžia atidaryti telefoną nepaisant hackinimo objekto, jei atleidžiate klavišą per nurodytą milisekundžių skaičių.
+
+GGSR=GeoGuessr
+GGSR_H=Kaip gerai pažįsti San Andreasą?
+GGSR_VIEW=Žiūrėti Tikslą
+GGSR_SBMT=Paimk Savo Spėjimą
+GGSR_SBMT_H=Įveskite poziciją nustatydami kelio tašką (waypoint), naudodami laisvą kamerą arba judindami/teleportuodami savo personažą.
+GGSR_WIN=Supratai!
+GGSR_OFF=Jūsų spėjimas yra {} metrai nuo tikslo.
+
+ARWP=AR Waypointas
+ARWP_H=Padeda švyturį savo waypointuose ir suteikia galimybę pamatyti aukštį, susietą su kai kuriais per „Stand“ esančiais tarpiniais taškais.
+
+ARGPS=AR GPS
+ARGPS_H=Parodys tau kelią į tavo kelionės tikslą.
+
+ARBCNPLY=AR Švyturys ant žaidėjų
+ARBCNPLY_P=In Žaidėjų Sąrašas
+ARBCNPLY_S=Žaidėjo Sąraše
+
+WHNENTPLY=Įeinant į žaidėjų sąrašą...
+SPCPLY=Stebėti Juos
+
+WHNLVEPLY=Išeinant Iš Žaidėjų Sąrašo...
+STPSPECPLY=Nustokite Juos Stebėti
+
+STPSPEC=Baigti Stebėjimą
+
+SRT=Filtravimas
+SRTBY=Filtruoti pagal
+SRTREV=Atvirkštine eiga
+
+! Or "Raised Tags"
+HOISTFLGS=Pakeltos Žymos
+HOISTFLGS_H=Žaidėjai su pakeltomis žymomis bus dedami virš žaidėjų be jokių pakeltų žymų.
+
+NME=Vardas
+SRTBY_SLT=Vieta
+
+SPID2=Sesijos Žaidėjo ID / Vieta
+
+LANG_EN=Anglų
+LANG_FR=Prancūzų
+LANG_DE=Vokiečių
+LANG_IT=Italų
+LANG_ES=Ispanų (Ispanija)
+LANG_BR=Portugalų
+LANG_PL=Lenkų
+LANG_RU=Rusų
+LANG_KR=Korėjiečių
+LANG_TW=Tradicinė Kinų
+LANG_JP=Japonų
+LANG_MX=Ispanų (Meksika)
+LANG_CN=Supaprastinta Kinų kalba
+
+DSCVYTME=Atradimų Laikas
+
+CTOS=Blackout'as
+CTOS_2=Įjungta Įskaitant Automobilius
+
+NOSKY=Išjungti „Skybox“.
+
+OVRDWTR=Pakeisti orą
+OVRDWTR_H=Pakeičia orą *lokaliai*.
+OVRDOFF=Draudžiama keisti
+WTR_EXTRASUNNY=Labai Saulėta
+WTR_CLEAR=Giedra
+WTR_CLOUDS=Debesuota
+WTR_SMOG=Smogas
+WTR_FOGGY=Rūkas
+WTR_OVERCAST=Itin Debesuota
+WTR_RAIN=Lietus
+WTR_THUNDER=Žaibas
+WTR_CLEARING=Giedrėjimas
+WTR_NEUTRAL=Neutralus
+WTR_SNOW=Sninga
+WTR_BLIZZARD=Pūga
+WTR_SNOWLIGHT=Sniego šviesa
+WTR_XMAS=Kalėdos
+WTR_HALLOWEEN=Giedrus Helovinas
+WTR_RAIN_HALLOWEEN=Lietingas Helovinas
+WTR_SNOW_HALLOWEEN=Snieguotas Helovinas
+
+AESLGHT=Aestetinė Šviesa
+PLCMNT=Vieta
+PLCMNT_CHR=Žaidėjas
+PLCMNT_CHR_H=Viena šviesa, spindinti iš jūsų žaidėjo.
+PLCMNT_CAM=Kamera
+PLCMNT_CAM_H=Viena šviesa, spindinti iš kameros.
+PLCMNT_OVL=Šviesų Ovalas
+PLCMNT_OVL_H=81 šviesos, išdėstytos ovalu aplink jūsų žaidėją.
+RNGE=Ribos
+ITNST=Intensyvumas
+
+! Might also be called "falloff" or "edge gradient", I'm no expert on lights
+DFFRCTN=Difrakcija
+
+WRLDBDR=Pasaulio Kraštas
+WRLDBDR_H=Parodo kur yra pasaulio kraštas jeigu esate arti jo.
+
+WAT=Vanduo
+
+WVEBHV=Bangų Manipuliacija
+SMTH=Švelnus
+MGNT=Magnetinis
+
+ZDIFF=Z Diferencialas
+WATZDIFFLOC=Taikykiti Z diferencialą tik šalia esančiam vandeniui
+
+STROVR=Stiprumas Nepaisyti
+
+OPCDIF=Skaidrumo diferencialas
+WATOD_H=Leidžia tau sumažinti arba padidinti vandens skaidrumą *lokaliai*.
+
+TRAINS=Man patinka traukiniai
+TRAINS_H=Traukiniai tampa žymiai dažnesni pasaulyje.
+
+CLK=Laikrodis
+
+TIME=Laikas
+
+CLKSYNC=Naudoti Sesijos Laiką
+
+LKTIME=Užrakinti Laiką
+
+SYSTIME=Naudokite Sistemos Laiką
+
+SMTHTRNS=Sklandus Perėjimas
+
+CLKPRST_12=Vidurdienis
+CLKPRST_6=Rytas
+CLKPRST_0=Vidurnaktis
+CLKPRST_18=Po pietų
+
+!!!!!!!!!!!!!
+!! Players !!
+!!!!!!!!!!!!!
+
+ALLPLY=Visi Žaidėjai
+
+XCLDS=Atskiria
+
+XCLDF=Išskirti Draugus
+XCLDM=Išskirti Mane
+XCLDCM=Išskirti Grupės Narius
+XCLDSU=Išskirti „Stand“ naudotojus
+XCLDPR=Išskirti Žaidėjus
+XCLDOG=Išskirti Organizacijos Narius
+XCLD50=Išskirti Valdžios Institucijas
+XCLDMIS=Išskirti Misijas
+XCLDMDR=Neįtraukti Modderių
+XCLDLMDR=Neįtraukti Tikėtinų Modderių
+
+XCLD_GRD=Neleidžia jūsų asmens sargybiniams užpulti šios demografinės padėties.
+
+PS_ON_H=Įtraukia draugus, nepažįstamus ir tave patį.
+PS_F_S=Draugai ir nepažįstami žmonės
+PS_S=Nepažįstami žmonės
+
+PSC_M=Aš
+PSC_FM=Draugai & Aš
+PSC_CFM=Grupės nariai, Draugai, & Aš
+
+PLYFTRLST=[Žaidėjas]
+
+SLFHRM=Ar tikrai norite tai padaryti sau??
+
+FLAGS=Žymės
+FLAGS_A=Žaidėjų Žymos
+
+BRCKTS=Skliausteliai
+
+FLAG_SELF=Aš
+FLAG_FRIEND=Draugas
+FLAG_CREW=Grupės Narys
+FLAG_ATTACKED=Užpuolikas
+FLAG_HOST=Hostas
+FLAG_SCRIPT_HOST=Script Hostas
+FLAG_SPEC=Žiūrovas
+FLAG_GOD=Nepažeidžiamas
+FLAG_VEHGOD=Nesunaikinama Transporto Priemonė
+FLAG_INVEH=Transporto Priemonėje
+FLAG_RC=Naudoja RC transportą
+FLAG_OTR=Pasislėpęs nuo Radar
+FLAG_INT=Bute arba Apartamente
+FLAG_TYPING=Rašo...
+FLAG_DEAD=Miręs
+FLAG_VPN=VPT (VPN)
+FLAG_INVISIBLE=Nematomas
+FLAG_ORG_MEMBER=Organizacijos Narys
+
+NXTHST=Sekantis Hostas
+
+! Plural version of FLAG_FRIEND
+FLAG_FRIEND_P=Draugai
+
+! Plural version of FLAG_CREW
+FLAG_CREW_P=Grupės Nariai
+
+! Plural version of FLAG_MOD
+FLAG_MOD_P=Modderiai
+
+! Plural version of FLAG_ATTACKED
+FLAG_ATTACKED_P=Užpuolikai
+
+PLYTP=Teleportuotis Pas Juos
+PLYTP_A=Teleportuoti į {}
+
+PLYTPVEH=Teleportuotis Į Jų Trans. Priem.
+PLYNVEH={} nėra transporto priemonėje. :/
+
+PLYAPT=Teleportuotis į butą...
+
+OFFICE_GARAGE={office}, Garažas {num}
+
+NEAR_ME=Prie manęs
+NEAR_WP=Prie mano waypointo
+
+APTID=Buto ID
+INTID=Interjero ID
+
+PLY_VISIT=Teleportuotis į jų butą
+
+PLYSMMN_D=Teleportuoti/Pakviesti Juos
+
+PLYSMMN=Teleportuoti Pas Mane
+PLYSMMNPLY=Teleportuoti Pas Žaidėją...
+PLYSMMNWP2=Teleportuoti Į Mano Kelio Tašką
+PLYSMMNOBJ=Teleportuoti Į Mano Tikslą
+
+PLYWPTP=Teleportuoti Į Jų Kelio Tašką
+PLYWPTP_N={} neturi jokio kelio taško.
+
+COPYWP=Kopijuoti Jų Kelionės Tikslą
+
+PLYNAPT={} nėra bute. :/
+
+PLYCASINOTP=Teleportuotis Į Kazino
+
+PLYFRND=Siųsti draugavimo užklausą
+
+PLYINHIST=Žaidėjų Istorijoje
+
+PLYENGMULT=Variklio Galios Daugiklis
+
+PLYGIFT=Dovanoti Atspawninta Trans. Priemonę
+PLYGIFT_H=Leidžia jiems įsivaryti mašiną į garažą neatsižvelgiant į jos vertę.
+PLYGIFT_W=Kai jūs tesite, {} transporto priemonę, kurioje jie yra, galės įvaryti į savo garažą. Tačiau tam, kad būtų pasiektas numatytas efektas, jie neturi turėti asmeninės transporto priemonės lauke, be to, jie privalo pastatyti transporto priemonę į pilną garažą, pvz. pripildyta žemos klasės NPC automobilių, kad jie galėtų pasirinkti „replace“.
+PLYGIFT_T=Jei viskas buvo padaryta teisingai, {} dabar gali įvaryti trans. priem. į savo garažą. :)
+PLYVEHNCTRL=Nepavyko kontroliuoti {} transporto priemonės. :|
+
+FRGMDL=Kaltinis Modelis
+FRGMDL_W=Norėdami įvažiuoti į savo garažą, naudokite tik suklastotą modelį turinčią transporto priemonę, nes bet koks kitas veiksmas gali lengvai užcrashinti žaidimą.
+
+! "Wanted" as in "Wanted Level", we don't want our ~~poor~~ criminals to be forever alone
+PLYBAIL=Never Wanted
+
+PLYBEAST=Paversti Į Žvėrį
+
+PLYGRVNPC=Gravituoti NPCs
+PLYAGRNPC=Agresyvūs NPCs
+
+PARTICLE=Dalelė
+PLRPTFXSPM=Dalelių Spam’as
+
+HDELCL=Paslėpti Lokaliai
+HDELCL_H=Apsaugo jus nuo particle spam'o
+
+PLYMUGLOP=Plėšiko Loop'as
+
+PLYRAGDOLL=Ragdoll'as
+
+PLYSHAKECAM=Pakratyti Kamerą
+
+GIVESH=Duoti Skript Host'ą
+
+PLYARM=Duoti Visus Ginklus
+PLYARM_P=Duoti Ginklus
+
+PLYAMMO=Duoti Amuniciją
+PLYAMMO_H=Duoda jiem amuniciją dabartiniam ginklui.
+PLYAMMO_T={} dabar nelaiko ginklo, kuriam galėčiau suteikti amunicijos. :/
+
+PLYPARA=Duoti Parašiutą
+
+BNTY=Uždėti Bounty
+BNTY_T=Bountis turi būti tarp $0 ir $10.000 dolerių. :)
+
+BNTYSLF=Uždėti Bounty ant Savęs
+BNTYSLF_H=Taip pat uždėdate sau bounty, kad išvengtumėte įtarimo.
+
+LOOPBNTY=Atlygio Už Galvą Nesibaigiantis Ciklas
+
+FRNDLY=Draugiškas
+
+TROLL=Trolinimas
+
+RAM=Trenkti
+
+PLYBLME=Kaltinti už nužudymą...
+
+PLY_NOTIFY=Siųsti Pranešimus
+
+PLY_NOTIFY_REMO=Pinigai Atimti
+PLY_NOTIFY_STOL=Pinigai Pavogti
+PLY_NOTIFY_BANK=Pinigai padėti į Banką
+
+PLY_NOTIFY_SPAM=Pranešimų Spamas
+
+CPOTFT=Kopijuoti Aprangą
+
+CPVEH=Kopijuoti Trans. Priem.
+
+CMDBHLF=Vykdyti komandas jų (žaidėjų) vardu
+CMDBHLFALL=Vykdyti Komandas Visų Vardu
+
+PLYCHTMCK=Tyčiotis Iš Chat'o Žinučių
+
+PLYCHTOWO=„OwO“ stiliaus pokalbių pranešimai
+
+SHWCAM=Rodyti Kamerą
+
+SMS=Siųsti SMS
+
+SMS2=Žinutė
+SMSS=Teksto žinutės
+
+DTS=Aptikimai
+DT_ANY=Betkoks Aptikimas
+
+ADT=Anti-Aptikimas
+
+ADT_SPEC_H=Nepaisant to, jūsų kameros padėtis visada sinchronizuojama ir vis tiek galite būti aptiktas, kad esate žiūrovas (stebėtojas)
+
+CLSFN=Klasifikacija
+CLSFNS=Klasifikacijos
+CLSFN_ANY=Betkokia Klasifikacija
+
+DT_T={player} suaktyvino aptikimą: {reason}
+CLSFN_T={player} dabar klasifikuojamas kaip {classification}
+DT_CLSFN={player} patriggerino detection'ą ({reason}) ir dabar yra klasifikuojamas kaip {classification}
+
+REACT_T={toast} - taikant {reaction} reakciją.
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_K=kick'as
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_C=Crash'as
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_T=Timeout'as
+
+CLSFN_N_H=Šis žaidėjas nesuaktyvino jokio modder'io ar administratoriaus aptikimo.
+CLSFN_PM=Galimas Modderis
+CLSFN_LM=Tikėtinas Modderis
+FLAG_MOD=Modderis
+FLAG_MODAMN=Modderis arba Adminas
+CLSFN_MA_H=„Stand“ analizuoja, ar šis žaidėjas yra modder'is ar „Rockstar“ administratorius.
+FLAG_AMN=Adminas
+
+! Plural version of CLSFN_LM
+CLSFN_LM_P=Tikėtini Modderiai
+
+! Plural version of FLAG_AMN
+FLAG_AMN_P=Adminai
+
+CLSFNTAGSLF=Klasifikavimo žymos ant savęs
+
+MDDRDT_H=Spauskite, kad nuimti detectioną.
+MDDRDT_H_LUA=Šį aptikimą pridėjo {}. Spustelėkite, jei norite jį pašalinti.
+
+DT_H_PREMPT=Tai yra prevencinis aptikimas.
+
+C2C=Spausk, kad nukopijuoti vertę
+C2CN=Spausk, kad nukopijuoti vardą
+C2OL=Spausk, kad atidaryti {link}
+
+C2IN=Spustelėk, kad nustatytum reikšmę
+C2APPLY=Spustelėk, kad pridėtum reikšmę
+C2SEL=Spausk, kad pasirinktum.
+
+MDDRDT_SUI=Stand Naudotojo Identifikacija
+SUI=Stand Vartotojo Identifikavimas (SUI)
+MDDRDT_SUI_H=Atpažįsta kitus „Stand“ vartotojus tavo sesijoje kurie taipogi gali atpažinti tave. .
+
+DT_SU=„Stand“ Vartotojas
+DT_SU_C=„Stand“ Vartotojas (Naudoja ne Vieną Meniu)
+CLNG=Naudoja Ne Vieną Meniu
+
+CMDSUI=Ši komanda reikalauja įjungtos „Stand“ naudotojų atpažinimo funkcijos.
+
+CMDSTAND=Ši komanda veikia tik su kitais „Stand“ naudotojais kurie turi įjungta naudotojų atpažinimą.
+
+HS=HostShare™
+HS_H=Kai esate šeimininkas, kiti Stand naudotojai gali naudotis jūsų host'o privilegijomis tol, kol abu esate įjungę S.U.I.
+
+MDDRDT_SID=Kitų Naudotojų Atpažinimo Funkcijos
+MDDRDT_SID_T={} Naudotojas
+
+MDDRDT_RAC=Rockstar Anti Cheat
+
+MDDRDT_HLTH=Modintas HP
+
+MDDRDT_LNGDED=Per ilgai miręs
+
+MDDRDT_LNGOTR=Per Ilgai Nematomas Radaro
+
+MDDRDT_ARMR=Perdaug Šarvų
+
+MDDRDT_PRES=Buvimo Spūfingas
+MDDRDT_PRES_H=Aptinka sesijos spūfingą ir subtilesnį manipuliavimą.
+
+NMECHNG=Seniau mačiau {newname} su šiuo vardu {oldname}. :O
+
+MDDRDT_RID3=Rockstar Darbuotojo RID
+
+MDDRDT_T2IP=„Take-Two“ IP Adresas
+
+DT_HT_2=Moddintas Host Token'as (Agresyvus)
+DT_HT_1=Moddintas Host Token'as (Saldus taškas)
+DT_HT_0=Moddintas Host Token'as (Neįgalumas)
+DT_HT_3=Spūfintas Host Token'as (Kita)
+
+MDDRDT_TRFRM=Moddintas Character Modelis
+
+MDDRDT_GODATK=Puola būdamas nemirtingas
+
+MDDRDT_RSDEV=Rockstar Kūrėjo Flagas
+MDDRDT_RSDEV_H=Visiškai neleidžia žaidėjams išbalsuoti tavęs iš sesijos.
+
+MDDRDT_RSQA=Rockstar QA Flagas
+MDDRDT_CHEAT=Cheater'io Flagas
+
+SPF_H_FLAG=Tai galės matyti tik kiti modderiai.
+
+MDDRDT_RP2=Neteisingas Lygis/RP
+MDDRDT_RP3=RP-Lygio Neatitikimas
+MDDRDT_RP4=Spūfintas Lygis
+
+MDDRT_NONET=Užblokuotas Tinklo Įvykis
+MDDRT_NONET_H=Nurodo, kad vartotojas galėjo užblokuoti esminius tinklo įvykius, pvz., paprašyti valdyti objektą.
+
+MDDRT_DRIVEB=Modifikuotas Pravažiavimo Ginklas
+
+MDDRT_SILENTCHAT=Pokalbiai Be Rašymo
+
+MDDRT_BOUNTYSPAM=Premijos Spamas
+MDDRT_BOUNTYSPAM_H=Nurodo, kad žaidėjas skyrė premijas neįmanomu kiekiu, pvz. premija kiekvienai sesijos dalyvio galvai.
+
+MDDRT_SUSSYBOUNTY=Modifikuota Premija
+MDDRT_SUSSYBOUNTY_H=Nurodo, kad žaidėjas uždėjo negalimos vertės premiją, pvz. 6969.
+
+MDDRT_EXPBLAME=Sprogimų Kaltinimas
+MDDRT_EXPBLAME_H=Atminkite, kad tai taip pat gali būti aptiktia, kai modderis kam nors duoda sprogstamųjų smūgių funkciją.
+
+MDDRT_EXPL=Moddintas Sprogimas
+MDDRT_EXPL_B=Neleidžia sprogimui sinchronizuoti su jumis. Tai nepadės kitiems žaidėjams.
+MDDRT_EXPL_H=Aptinka, kai modderiai sukuria sprogimus ant žmonių arba naudoja sprogstamąją amuniciją. Atkreipkite dėmesį, kad retai tai gali suveikti ir ne modderiams.
+
+VICTIM=Auka: {}
+
+MOD_ORGNAME=Modifikuotas Organizacijos Pavadinimas
+
+MDDRT_CAYO=Paslėpta Žaidėjų Sąraše
+
+MDDRT_MISC=Modifikuoti Duomenys
+
+ATTKRS=Užpuolikai
+ATTRKS_PRE_1=Siųsti Naikintuvus
+ATTRKS_PRE_2=Siųsti Baikerius
+ATTRKS_PRE_3=Siųsti Klounus
+ATTRKS_PRE_4=Siųsti Sraigtasparnius
+ATTRKS_PRE_5=Siųsti BMX Gaują
+ATTRKS_PRE_6=Siųsti Ūkininkus
+ATTRKS_PRE_7=Siųsti Mini-Tankus
+ATTRKS_PRE_8=Siųsti Kariuomenė (Kombinuota Ginkluotė)
+ATTRKS_PRE_9=Siųsti Šiurpius Fantomus
+
+ACCURACY=Taiklumas
+
+AGGR=Agresija
+AGGR1=Draugiškas
+AGGR1_H=Apsaugo jus ir kitus nuo AI užpuolikų. Nepuls žaidėjų.
+AGGR2=Gynybinis
+AGGR2_H=Apsaugo jus nuo bet kokių priešiškų taikinių.
+AGGR3_H=Gina jus nuo priešiškų taikinių, bet dažnai įsitraukia tik pamačius taikinį.
+DEL_ATTKRS=Ištrinti visus užpuolikus
+FILL_VEH=Užpildyti Trans. Priemonę
+FILL_VEH_H=Užuot kiekvienam užpuolikui sukuriant naują transporto priemonę, esamos transporto priemonės bus visiškai užpildytos prieš sukuriant naują.
+
+! As in "Kill the engine"
+KLL=Sugadinti
+! The "EMP" projectile in-game that turns your car off. 
+EMP=EMP
+FLIPPLRVEH=Apversti
+SPINVEH=Apsukti
+POP_TYRES=Susprogdinti Padangas
+DETACH_AIR=Nuimti Sparną
+DETROIT=Nuimti Ratą
+SLIPPERY=Slidžios Padangos
+SLIPPERY_H=Užtrunka šiek tiek laiko, kad išjungti.
+DEL_DOORS=Pašalinti Duris
+IGNITE=Uždegti
+TURNAROUND=Apsisukti
+DSTRYPROP=Sunaikinti Propelerius
+BREAKBOOM=Nulaužti Uodegą
+
+SLINGSHOT=Stumti Į Priekį
+
+V_F=Pirmyn
+V_B=Atgal
+
+PLYDDVEH=Neleisti vairuoti trans. priem.
+PLYDDVEH_H=Uždrauždia valdyti trans. priemonęs.
+
+INFLOAD=Nesibaigiantis Loading Screenas
+
+INFRING=Nesibaigiantis Telefono Skambėjimas
+
+FRZ=Freezas
+
+FAKEDROP=Netikras Money Drop’as
+
+NOPSSVE=Blokuoti Pasyvųjį Režimą
+
+! Putting someone in a cage
+PLYCGE=Uždaryti Į Narvą
+
+PLYCAGE_TINY=Mažas Narvas
+PLYCAGE_GOLD=Auksinis Narvas
+PLYCAGE_FNCE=Tvorinis Narvas
+PLYCAGE_STNT=Kaskadinis Vamzdis
+
+! Being put in a cage
+CGE=Uždarytas Narve
+
+PLYKLL=Užmušti
+
+PLYEXP=Sprogti
+
+! For reference: Block Blaming is PTX_PSV
+PLYKLL_H=Neveikia su kaltinimų blokavimu ir arba jei esate pasyviajame režime.
+
+CGES=Narvai
+
+PLYKCK=Kickas
+
+PLYKCK_T_H=Per lengva. ;P
+! Single target version of PLYKCK_T_C.
+PLYKCK_T_C=Priversiu juos išeiti. :)
+! Multiple targets version of PLYKCK_T_C_M.
+PLYKCK_T_C_M=Priversiu juos išeiti. :)
+
+PLYKCK_SMRT=Protingas
+PLYKCK_SMRT_A=Gudrusis Kick'as
+PLYKCK_SMRT_H2=Išmeta žaidėją betkokia kaina.
+
+PLYKCK_BL=Juodasis Sąrašas
+PLYKCK_BL_A=„Juodasis Sąrašas“ Kick'as
+PLYKCK_BL_H=Įtraukia žaidėją į juodąjį sąrašą taip, lyg jis būtų išbalsuotas, nors iš tiesų pašalina juos kaip desync.
+
+PLYKCK_H=Host
+PLYKCK_H_H=Išmeta žaidėją naudojant balsavimo metodą.
+
+PLYKCK_NH=Non-Host
+
+PLYKCK_PC=Pool'as Uždarytas
+
+PLYKCK_B=Breakup
+PLYKCK_B_G=„Breakup“ Kick'as
+
+BRKUR=„Breakup“ Kick'o Reakcijos
+BRKUR_H=Tai turės įtakos tik tada, kai būsite sesijos hostas, o „Breakup“ nebus panaudotas prieš jus.
+
+KBKR=Netikro „Breakup“ Kick'o Reakcijos
+KBRK_E=Netikras „Breakup“ Kick'as
+
+GEN_H_HOST=Tai turės įtakos tik tada, kai būsite sesijos hostas.
+GEN_H_NHOST=Tai turės įtakos tik tada, kai nebųsite sesijos hostas.
+
+PLYBAN=Uždrausti (Ban)
+
+PLYKCK_O=Orgazmas
+
+PLYKCK_L=Meilės Laiškas
+PLYKCK_L_G=„Meilės Laiško“ Kick'as
+
+PLYKCK_H_DSCRT=Atskiras kick'as, kuris nepasakys taikiniui, kas tai padarė.
+
+PLYKCK_H_B_H=Neblokuojamas, kai esate sesijos host'as.
+PLYKCK_H_HO=Galima tik tada, kai esate host'as.
+PLYKCK_H_B_P=Blokuojamas populiarių meniu.
+PLYKCK_H_B_M=Blokuojamas daugelio meniu.
+
+BE_K=BattlEye Kickas
+BE_B=BattlEye Banas
+BE_B_H=Gavėjai negali prisijungti prie „GTA Online“, kol iš naujo nepaleidžia žaidimo.
+
+PLYCRSH=Krašinti žaidėją
+SUI_ET=Tikimybė, kad tai veiks su kitu „Stand“ vartotoju yra labai maža. Bet kas aš toks, kad galėčiau abejoti dieviškuoju vartotoju? :^)
+
+PLYCRSH_H_AOE2=Pastaba: tai taip pat gali užcrashint’i kitus žaidėjus, esančius netoli jūsų taikinio.
+
+PLYCRSH_E=Paprastas
+PLYCRSH_G=„Burger King“ Pėdų Salotos
+PLYCRSH_V=Transporto Priemonių Žmogžudystė
+PLYCRSH_T=Steamrolleris
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T=Užkirto kelią crash'ui ({type}).
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T_BLM=Užkirto kelią crash'ui ({type}), kurį greičiausiai sukėlė {player}.
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_TRNLOOP=Traukinių Ciklas
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_ATTLOOP=Attachmentų Ciklas
+
+! Buffer overruns cause memory corruption, which could go unnoticed, but could also crash the game.
+! Type may be a codename such as XA, or a human-readable name, such as "Ped Outfit Texture".
+BU_T=Užkirstas kelias buferio viršijimui ({type}).
+
+! To be used within BU_T
+BU_TEX=Pėsčiojo Aprangos Tekstūra
+
+BU_VEHLIT=Transporto Priemonių Žibintai
+
+INVTASK=NPC vykdo negaliojančią užduotį, todėl ji nutraukiama.
+
+TIMEOUT=Laiko Baigtis
+FLAG_TIMEOUT=Baigiasi Laikas
+TIMEOUT_H=Laikinai blokuoja didžiąją dalį tinklo srauto iš ir į šį žaidėją.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Player > Information !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+INFO=Informacija
+
+NME_S=Vardas (Stand)
+NME_H=Vardas (Sesija)
+NME_R=Vardas (Social Club)
+
+STUS=Būsena
+
+DMG_WEAP=Ginklo Žalos Daugiklis
+DMG_MELEE=Artimo Atstumo Ginklo Žalos Daugiklis
+
+ORG=Organizacija
+
+ORGT_SV=SecuroServ
+ORGT_MC=Motociklų Klubas
+
+BOSS=Bosas
+
+STS=Statistika
+
+NDATA=Nėra duomenų
+
+CHAR1=Personažas 1
+CHAR2=Personažas 2
+CHAR1_ACT=Personažas 1 (Aktyvus)
+CHAR2_ACT=Personažas 2 (Aktyvus)
+
+CNNTN=Ryšys
+
+IP=IP Adresas
+RLYIP=Relės IP
+LANIP=Vietinio Tinklo (LAN) IP
+PRT=Portas
+RLYPRT=Relės Portas
+
+CONVIA=Prisijungta Per
+CONVIA_P2P=P2P
+CONVIA_RLY=Relė
+CONVIA_RLY_S=Prisijungta per rėlę
+CONVIA_PLY_S=Prisijungta per {}
+
+PING=Pingas
+MS=ms
+
+MNY_W=Pinigai Piniginėje
+MNY_B=Pinigai Banke
+MNY_A=Visi pinigai
+
+DIST=Atstumas
+
+KLLS=Killai
+DTHS=Mirtys
+KD=K/D Vidurkis
+
+FAVVEH=Mėgstamiausia Transporto Priemonė
+FAVWEAP=Mėgstamiausias Ginklas
+FAVRDSTAT=Mėgstamiausia Radijo Stotis
+
+OWNBKR=Turi Bunkerį
+OWNFAC=Turi Pramoninį Pastatą
+OWNCLB=Turi Naktinį Klubą
+
+HOSTKN=Hosto Tokenas
+
+HOSTQPOS=Host Eilės pozicija
+
+HQSA_NH=Vardo Hashas
+
+GIP_Q=Laukiama užklausos
+GIP_P=Vykdoma užklausa
+GIP_F=Užklausa nepavyko
+
+CT=Miestas
+RGION=Regionas
+CTRY=Šalis
+
+! E.g. "Discovered: 10 seconds ago"
+DSCVAGO=Atpažinta prieš
+
+! E.g. "Invulnerable For: 10 seconds"
+GODTIME=Jau yra dievo režime, kaip
+
+CRW=Grupė
+CRWTG=Žyma
+MOTTO=Šūkis
+ALTBDG=Alternatyvus Ženklelis
+
+!!!!!!!!!!!!!!!
+!! Durations !!
+!!!!!!!!!!!!!!!
+
+DUR_AGO={} prieš
+
+DUR_S=sekundė
+DUR_S_P=sekundės
+DUR_M=minutė
+DUR_M_P=minutės
+DUR_H=valanda.
+DUR_H_P=valandos.
+DUR_D=diena
+DUR_D_P=dienos
+
+!!!!!!!!!!!!
+!! Online !!
+!!!!!!!!!!!!
+
+SESS=Sesija
+NWSESS=Nauja sesija
+
+NWSESS_CHAR=„Pit Stop“ Simbolių Pasirinkime
+
+NWSESS_SP=Sukurti Viešą Sesiją
+NWSESS_IO=Sukurti Privačią Sesiją
+NWSESS_CC=Sukurti Uždarą Gaujos Sesiją
+NWSESS_C=Sukurti Gaujos Sesiją
+NWSESS_CF=Sukurti Artimų Draugų Sesiją
+NWSESS_S=Sukurti Solo Sesiją
+NWSESS_FF=Jungtis pas Draugą
+NWSESS_FC=Jungtis pas Grupės Narius
+NWSESS_FP=Surasti Viešą Sesiją
+NWSESS_NP=Surasti Naują Viešą Sesiją
+NWSESS_NP_H=Veikia kaip "Surasti Viešą Sesiją" bet pirmiau įmeta tave naują sesiją tam, kad neatsidurtum toj pačioj sesijoj.
+NWSESS_CTOR=Kurėjo Režimas
+NWSESS_SCTV=„Social Club“ TV
+
+TRK=Sekimas
+TRKD=Sekamas
+HISTTRK=Sekami Žaidėjai
+HIST_KEEP_TRA=Palikti Stebimus
+
+TRK_H=Pateikia pranešimus, kai žaidėjas perjungia sesijas, prisijungia prie sesijos arba išeina visiškai iš sesijos.
+
+TRK_T_CNF=Apie stebėjimo atnaujinimą...
+
+INJTRKINFO=Rodyti Žaidime Sekamus Žaidėjus Meniu Paleidimo Metu
+
+META=Meta
+
+RSADMINS=„Rockstar“ Administratoriai
+
+! SC = Social Club
+SCFRIENDS=SC Draugai
+
+ADDMISS=Pridėti Trūkstamą
+PLYNOTESET=Pridėti Pastabą
+PLYNOTESET_H_A=Prideda pastabą kiekvienam administratoriui jūsų istorijoje.
+TRCKALL=Stebėti Visus
+UTRCKALL=Nebesekti Visų
+WHTLALL=Pridėti Visus Į Baltąjį Sąrašą
+UWHTLALL=Išbraukti Visus Iš Baltojo Sąrašo
+HIST_DNG=Pavojaus Zona
+HIST_CLR=Išvalyti Istoriją
+
+ONLSTS=Interneto Būsena
+ONLSTS_O2=Neprisijungęs
+ONLSTS_S=Story Režime
+ONLSTS_H=Hostina {}.
+ONLSTS_C=Sesijoje {session_type}
+ONLSTS_CH={session_type} šeimininkauja {host}
+
+TRK_T={name} dabar {activity}.
+
+ONLSTS_TRK_O=offline
+ONLSTS_TRK_S=Story Režime
+ONLSTS_TRK_H=hostina {}
+ONLSTS_TRK_C=yra {}
+ONLSTS_TRK_CH={session_type} šeimininkauja {host}
+
+ST_S=solo sesija
+ST_I=sesija tik su pakvietimu
+ST_F2=uždara draugų sesija
+ST_CC=uždara grupės sesija
+ST_C=grupės sesijoje
+ST_P=viešoje sesijoje
+ST_O=nežinomoje sesijoje
+
+! Short online statuses:
+SHTONLSTS_O2=Neprisijungęs
+SHTONLSTS_S=Story Mode
+SHTONLSTS_ST_S=Solo
+SHTONLSTS_ST_I=Pakvietimo
+SHTONLSTS_ST_CF=Uždara Draugų
+SHTONLSTS_ST_CC=Uždara Grupės
+SHTONLSTS_ST_C2=Grupės
+SHTONLSTS_ST_P=Vieša
+SHTONLSTS_ST_O=Kita
+
+PTX=Apsauga
+PTX_W=Išjungiant apsaugas „Stand“ tavo co-load'o stabilesnio nepadarys. Išjungiant apsaugas visiškai niekas nepasikeis.
+
+! Alternatively, "Protections Help Page"
+PTXGDE=Apsaugų Gido Puslapis
+
+COLOAD=Co-Loading'as
+COLOAD_DPTX=Išjungta {} kai Co-Load'ini
+
+PTX_CRSHE=Crash Įvykis
+
+PTX_KICK=Kick Įvykis
+PTX_KICK_SH=Script Host Kick'as
+
+PTX_INV=Koreguotas Įvykis (Modded Event)
+PTX_INV_H=Įvykiai, kurie įvykstą tik dėl modderio.
+
+PTX_WEIRD=Neįprastas Įvykis
+PTX_WEIRD_H=Įvykiai, kuriuos galėjo išsiųsti modderis, bet kurie retomis aplinkybėmis gali nutikti ir savaime.
+
+VEHKICK=Išmesti iš transporto priemonės
+
+INTKICK=Išmesti Iš Interjero
+
+TRIGDEFD=Pradėti Verslo Reidą
+
+PLYFRCECAMFRNT=Priversti kamerą žiūrėti į priekį
+PLYFRCECAMFRNT_H=Taip pat tam tikromis aplinkybėmis gali išjungti žaidėjo nepažeidžiamumą.
+
+PLYMISSION=Priverstinai Prijungti Į Freemode Misiją
+PLYMISSION_H=Priverstinai prijungia taikinius į laisvojo režimo misijos būseną, o tai reiškia, kad jie negalės būti pasyviam režime arba patekti į (pastato) vidų.
+
+! Forces the recipient into a mission start screen
+SND2JB=Siųsti į Darbą
+
+SND2JB_0=Sunkios Oro Sąlygos
+SND2JB_1=„Half-track“ Gaidys
+SND2JB_2=Išėjimo Strategija
+SND2JB_3=Ofšorinis Turtas
+SND2JB_4=„Cover Blown“
+SND2JB_5=„Kurmių Medžioklė“
+SND2JB_6=„Duomenų Pažeidimas“
+SND2JB_7=„Ginčas Dėl Darbo“
+
+PTX_BAIL=Išjungti ieškomumą
+
+PTX_EVTS=Įvykiai
+PTX_NET=Tinklo Įvykis
+PTX_NET_ANY=Bet koks įvykis
+
+PTX_RAWNET=Raw Network Įvykiai
+PTX_RAWSYNC=Raw Sinchronizavimas
+
+PTX_RAW_W=Tai skirta pažengusiems vartotojams. Jei nežinote, ką darote, nedarykite to, o ypač neblokuokite visko.
+
+PTX_NET_R_B_W=Pamenate, kai aš jums sakiau „neblokuoti visko“ ...? Tai, kad galite tai padaryti, dar nereiškia, kad turite. Ypač jei neturite tam rimtų priežasčių.
+
+PTX_APUP=Surinktas bet koks Pikapas
+PTX_APUP_T=Tu surinkai pikapa rūšies {}
+PTX_APUP_L=Tu paėmiai pikapa
+
+PTX_CASHPUP=Pinigų pikapas Paiimtas
+PTX_CASHPUP_T=Tu paėmei pinigų pikapa
+
+PTX_RPPUP=RP Pikapas Paiimtas
+PTX_RPPUP_T=Tu paėmei RP pikapa
+
+PLYKCK_IPUP=Negalimas Pikapas
+
+PTX_IPUP=Paimtas Netinkamas Pikapas
+PTX_IPUP_H=Naudoti tuo atveju, jei paimsite netinkamą pikapą, kuris išmes jus iš sesijos.
+PTX_IPUP_T=Jūs paėmėte netinkamą pikapa
+
+PTX_APT=Pakviesti į butą
+
+PTX_CAYO=Cayo Perico Pakvietimas
+
+PTX_DRVCTRL=Periimti automobilį
+PTX_DRVCTRL_H=Periimi automobilio kontrolęs, pvz. tam, kad nusiteleportuoti.
+
+SE=Skripto Įvykis
+
+GIVE_WEAPON_EVENT=Ginklo Davimo Įvykis
+REMOVE_WEAPON_EVENT=Ginklo Atėmimo Įvykis
+REMOVE_ALL_WEAPONS_EVENT=Atimti Visus Ginklus Įvykis
+FIRE_EVENT=Ugnis
+EXPLOSION_EVENT=Sprogimas
+NETWORK_PTFX_EVENT=PTFX
+NETWORK_PLAY_SOUND_EVENT=Paleisti garsą
+
+RCT_T=Pranešimas
+RCT_L_F=Rašytį į Log Failą
+RCT_L_C=Rašyti Į Konsolę
+RCT_C=Pranešti Chate
+RCT_C_T=Pranešti komandos Chate
+
+RTC_PLY=Žaidėjų Elgesys
+
+RCT_N_B=Blokuoti žaidėjo tinklo veiklą ir įvykius
+RCT_BIS=Blokuoti žaidėjo ateinančius syncs
+RCT_BOS=Blokuoti žaidėjo išeinančius syncs
+RCT_N_L=Įrašyti žaidėjo tinklo veiklą ir įvykius
+RCT_SI_L=Įrašyti žaidėjo gaunamas sinchronizacijas
+RCT_SO_L=Įrašyti žaidėjo išeinančias sinchronizacijas
+RCT_N_T=Pranešimai apie jų išeinančius įvykius
+RCT_SI_T=Pranešimai apie jų ateinančius įvykius
+RCT_SO_T=Pranešimai apie jų išeinančias sinchronizacijas
+
+RCT_T_OUT={event} iki {player}
+PTX_NET_R_T_T={event} nuo {player}
+RCT_T_AGAINST={event} nuo {sender} prieš {target}
+
+PTX_NET_R_B=Blokuoti
+
+! What "Block" does for chat messages
+PTX_NET_R_B_H_C=Žinutė negalės pasiekti tavęs, tačiau kiti ją matys.
+
+
+PTX_S=Sinchronizacijos
+PTX_INC=Ateinančios
+PTX_OUT=Išeinančios
+PTX_SI=Išeinančios Sinchronizacijos
+PTX_SO=Išeinančios Sinchronizacijos
+PTX_SI_ANY=Bet koks gaunamas Sinchronizavimas
+
+OUTSBH=Blokuoti Išeinančias Sinchronizacijas Hostui
+OUTSBH_H=Tai padeda išvengti „BattlEye“ kickų nebūnant hostu, bet taip pat reiškia, kad hostass negalės su jumis sąveikauti.
+
+PTX_CSB=Custom Modelių Sinchronizavimo Reakcijos
+ADDMDL=Pridėti Modelį
+PTX_CSB_T=Modelis, kurį sinchronizavo {player} su {hash}
+
+PTX_IMS=Negalimo Modelio Sinchronizacija
+PTX_IMS_T=Negalimo modelio sinchronizacija nuo {player} su {hash}, kaip {type}
+
+PTX_WOS=Pasaulio Objektų Sinchronizavimas
+
+PTX_ATTACH=Priedų Spam'as
+
+PTX_BEWARE_RESYNCH=Kiti žaidėjai gali iš naujo resinchronizuoti modderių sukurtus objektus, todėl turėkite tai omenyje.
+
+PTX_S_CC=Sukurti Kloną
+PTX_S_CU=Atnaujinti Kloną
+PTX_S_CD=Ištrinti Klona
+PTX_S_ACC=Sutikti su klono sukūrimu
+PTX_S_ACU=Sutikti su klono atnaujinimu
+PTX_S_ACD=Sutikti su klono ištrinimu
+
+PLY_BOS_H_A=Neleidžia žaidimui atnaujinti jūsų vietos, taip paslėpiant jus nuo kitų modderių. Norint naudoti šią funkciją, reikia prisijungti į sesiją jau įjungus funkciją.
+PLY_BOS_H_1=Nenaujina vietos šiam specifiniam žaidėjui.
+
+MYSLF=Aš Pats
+SOMELS=Kažkas kitas
+
+KARMA=Karma
+
+LLKT=Pranešimas, kai jūs esate išmestas naudojant „meilės laišką“.
+LLKT_T=Jūs buvote išmestas naudojant „meilės laišką“.
+
+DSKK=Desinchronizavimo Kick'ų Karma
+DSKK_H2=Kai kurių kitų meniu desinchronizavimo kick'ai ar kt. visada atsirūgs, jeigu jie naudojami prieš jus.
+
+LLLUBE=Meilės Laiško Lubrikantas
+LLLUBE_H=Dėl to esate mažiau tikėtinas kandidatas, kai sesijos host'as rinksis, kam skirti "Meilės laiško" kick'ą.
+LLLUBE_1=Teisėtas
+LLLUBE_1_H=Kai kurie modderiai gali tai aptikti klaidingai.
+LLLUBE_0_H=Tai efektyviausias variantas, tačiau kiti modderiai gali tai pamatyti.
+
+CAMSHAKE=Kameros Pakratymo Įvykis
+
+EXPSPAM=Sprogimų Loop'as
+EXPSPAM_H=Taikoma, kai kas nors siunčia sprogimų loop'ą jūsų personažui.
+
+RAGDOLLEVT="Ragdoll" Įvykis
+
+SNDSPM=Garso Spamas
+
+MODDMGEVT=Moddintas Žalos Įvykis
+
+PRESES=Buvimo Įvykiai
+
+BFSTN=Blokuoti Draugo Statistikos Pranešimus
+BFSTN_H=Blokuoja Pranešimus, Pvz., „...surinko visas laiškų iškarpas“.
+
+BJI=Blokuoti Kvietimus Į Darbą
+
+PTX_VK=Blokuoti Kick Balsavimą
+PTX_VK_T=Užblokavo balsavimo kick'ą. :)
+
+MAGIC=Magija
+PTX_VK_SP=SCTV / Žiūrovo Režimas
+PTX_VK_F1=Freemode Misija 1
+PTX_VK_F2=Freemode Misija 2
+PTX_VK_F3=Freemode Misija 3
+PTX_VK_F4=Freemode Misija 4
+
+PTX_BJ=Blokavimo Prisijungti Karma
+PTX_BJ_H=Aptinka, kai non-host'ai bando užblokuoti jūsų prisijungimą į sesiją, ir pašalina juos iš sesijos tam, kad galėtumėte prisijungti.
+PTX_BJ_T2={} blokuoja jūsų prisijungimą, pabandysiu juos pašalinti iš sesijos.
+
+PTX_NB=Blockuoti Išpirkimus
+PTX_NB_1=Žaidėjo nebėra sesijoje
+PTX_NB_2=Keičiama pagrindinė grupė (crew)
+
+PTX_NB_SPC=Susiję Su Stebėjimu
+PTX_NB_SPC_H=Adresatas išejo ir kt.
+
+PTX_NB_O=Kitos priežąstys
+PTX_NB_O_H=Timeout'ai ir kt.
+
+PTX_NB_T=Žaidimas nori išsijungti ({a1}, {a2}, {a3}); {action}.
+PTX_NB_T_A=leista
+PTX_NB_T_B=užblokuota
+
+PTX_HCK=Host'o Valdomi Kick'ai
+
+PTX_HKK=Host Kick'ų Karma
+PTX_HKK_H=Išmeta host'ą, reaguodamas į host'o kick'ą. Atminkite, kad vis tiek būsite išmestas iš sesijos.
+
+PTX_HK=Sumažinti Host Kick'us
+PTX_HK_H=Sumažina host kick'us taip, kad gaunate tik pranešimą, kad įvyko host kick'as, o visi kiti žaidėjai atrodo lyg būtų išėję.
+PTX_HK_T=Kažkas panaudojo host kick'ą prieš jus ({method}), greičiausiai {player}.
+
+HKI=Hostas netrukus jus išmes.
+HKI_BS=Patariama blokuoti sinchronizacijas su jais.
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_V=Balsavimo Kick'as
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_N=Tinklo/Interneto Klaida
+
+PTX_PSV=Blokuoti Šmeižtą/Kaltinimą (Blaming)
+PTX_PSV_H2=Neleidžia Jums padaryti žalos tam, kad ant Jūsų blame'inti sprogimai nepadarytų žalos kitiems. Kiti žmonės Jums taip pat negali padaryti žalos.
+PTX_PSV_W=Jei neskaitėte pagalbos teksto, leiskite pakartoti: įjungę šią parinktį negalėsite padaryti jokios žalos. Užuot tai įjungę, galbūt norėsite naudoti kontekstinį meniu, kad nustatytumėte atvirkštinę taikymo koreliaciją.
+
+PTX_ENTSPAM=Blokuoti Subjektų Šlamštą
+PTX_ENTSPAM_STATUS={count} atvejai {name}
+PTX_ENTSPAM_NEW=Atrodo, kad pernelyg daug atvejų {}. Dirbama prie to.
+PTX_ENTSPAM_CALM={} situacija išspręsta. :)
+
+VEHPARTS=nulūžusios transporto priemonės dalys
+
+ACCAM=„Anti-Crash“ Kamera
+PTX_ENTSPAM_USECAM=Automatiškai Naudoti „Anti-Crash” Kamerą
+PTX_ENTSPAM_CAM=Atsiprašome, kad čia užrakinome jūsų kamerą, bet atvaizdavimas greitai su tuo nesusitvarkys. Naudojant "tp lsia" arba "tp mtchil" gali padėti išspręsti viską greičiau.
+
+PTX_DRAW=Neleisti rendereriui dirbti iki mirties
+PTX_DRAW_H=Sustabdo žaidimo renderingą ant tiek, kad jis užsicrash’ina.
+PTX_DRAW_T=Rendereris yra pervargęs
+
+PTX_DELSTALE=Ištrinti Pasenusius Objektus
+PTX_DELSTALE_H=Ištrina objektus, kurių modelio informacija buvo panaikinta, nes šis žaidimas yra nepriekaištingas meno šedevras.
+PTX_DELSTALE_T=Ištrinamas objektas su modeliu {}, kuriame modelio informacija buvo ištrinta.
+PTX_DELSTALE_T_2=Ištrinamas fragmento objektas su modeliu {}, kuriame fragmento modelio informacija buvo ištrinta.
+
+NOMODPOP=Ištrintiti Modifikuotas Populiacijos Daugiklio Sritis
+NOMODPOP_H=Ištrina modifikuotas gyventojų daugiklio sritis, todėl „GTA Online“ neatrodys taip tuščiai nei įprastai.
+NOMODPOP_T=Ištrinta modifikuota gyventojų daugiklio sritis. :)
+
+NOBEAST=Išjungti Virtimą Žvėrimi
+NOBEAST_H=Apsaugo jus pavertimo žvėrimi per laisvojo režimo įvykį "Hunt The Beast", kurį modderiai gali naudoti kaip priemonę jus trolinti.
+NOBEAST_T=Neleido jums pavirsti žvėrimi, išmetant skriptą, kurį įjungė {}.
+
+NPLYMDLSWP=Blokuoti Žaidėjų Modelių Apsikeitimus
+NPLYMDLSWP_H=Vietišksi blokuoja žaidėjus, kurie transformuojasi į modelius, su kuriais paprastai nėra žaidžiama. Iš esmės to nereikia, nes sutvarkome visus susijusius crash’us (kuriuos žinome).
+
+FRCRLY=Priverstinės Relės Jungtys
+
+LOWFPSTIMEOUT_T=Aptikti žemi FPS — skiriamas {} time'outas.
+
+REVOTR=Atskleist "Off Radar" žaidėjų Poziciją
+
+REVINV=Rodyti Nematomus Žaidėjus
+
+BEORB=Tapk Orbitos Patranka
+BEORB_H=Tą ką nužudai išsiunčia į ligonines ir parodo orbitos patrankos kill message'a.
+
+BESCRHST=Tapti Skriptų Hostu
+
+BESCRHSTKLEPTO=Tapk Skriptų Hostu Kleptomaniaku
+BESCRHSTKLEPTO_H=Gali būti tik vienas, ir tai yra tiems, kurie iš tikrųjų nori tuo būti visada be kompromisų.
+
+BJS=Blokuoti Prisijungimus
+
+BJ_ALL=Nuo Visų
+BJ_ALL_A=Blokuoti Prisijungimus Nuo Visų
+
+BJ_STR=Nuo Nepažįstamų
+BJ_STR_A=Blokuoti Prisijungimus Iš Nepažįstamų Žmonių
+BJ_STR_H=Blokuoja žmonių, kurie nėra jūsų draugai socialiniame klube, prisijungimus.
+
+BJ_ADS=Nuo Žinomų Reklamuotojų
+BJ_ADS_A=Blockuoti Prisijungimus Žinomiems Reklamuotojiems
+
+BJ_REM=Iš Pašalintų Žaidėjų
+BJ_REM_A=Blokuoti Prisijungimus Iš Pašalintų Žaidėjų
+BJ_REM_H=Blokuoja Žaidėjų, Kuriuos Išmėtėte Ar Užcrashinite, Prisijungimus.
+
+BJ_REMOVED=Pašalinti Žaidėjai
+BJ_REMOVED_H=Žaidėjų, kuriems šiuo metu neleidžiama prisijungti, nes juos pašalinote, sąrašas.
+BJ_KICKEDP_H=Spustelėkite, jei norite pašalinti šį žaidėją.
+
+BJ_WHT=Iš Ne Baltajame Sąraše Esančių
+BJ_WHT_H=Blokuoja prisijungimus visiems žaidėjams, kurių specialiai neįtraukėte į baltąjį sąrašą.
+BJ_WHT_A=Blokuoti Prisijungimus Iš Į Baltąjį Sąrašą Neįtrauktųjų
+
+BJ=Blokuoti Prisijungimą
+BJ_H=Prisijungimai gali būti blokuojami tik tada, kai esate sesijos hostas. „Stand“ bandys juos pašalinti, net kai esate ne hostas.
+BJ_T2=Užblokuotas {player} nuo prisijungimo, deka {feature}
+
+MSG=Pranešimas
+
+BJMSG_ASS=Nesuderinami Ištekliai
+BJMSG_TU=Užtikrinkite Naujausią Titulinį Atnaujinimą
+BJMSG_TAR=Skirtingos Taikymosi Nuostatos
+BJMSG_BAR=Jūsų Paskyra Turi Prastą Reputaciją
+BJMSG_C=Jūs Esate Sukčius
+BJMSG_BS=Jūs Esate Prasto Etoso
+BJMSG_DLC=Nesuderinamas Atsisiunčiamas Turinys
+BJMSG_BT=Skirtingas Pastatymo (Build'o) tipas
+BJMSG_CONT=Skirtingas Turinys
+BJMSG_BSO=Tik Prasto Etoso
+BJMSG_CO=Tik Sukčiai
+BJMSG_PR=Premium Lenktynės
+BJMSG_CON=Nepavyko Prisijungti
+BJMSG_PRIV=Privatus
+BJMSG_F=Tik Draugai
+BJMSG_VK=Jūs Jau Buvote Išbalsuoti
+BJMSG_ID=Kvietimai Išjungti
+BJMSG_POOF=Neegzistuoja
+BJMSG_BUG=Neplanuota Sesija
+
+LSCM=LS Mašinų Festivalis
+
+SETREPLVL=Nustatyti Reputacijos Lygį
+SETREPLVL_H=Atminkite, kad jums reikia tapti „LS Car Meet“ nariu, kad galėtumėte pelnyti reputaciją.
+SETREPLVL_T=Laukiama jūsų reputacijos lygio pakeitimo; (iš naujo) įeikite į „LS Car Meet“ dabar, kad jį užbaigtumėte.
+
+UNLKPRIZRID=Atrakinti Prizinį Automobilį
+UNLKPRIZRID_T=Viskas tavo! Tiesiog atsiimkite automobilį per „LS Car Meet“ sąveikos meniu. :)
+
+H3=Kazino Apiplėšimas
+
+H3_RPT=Panaikinti Pakartotini Cooldowną
+H3_RPT_H=Naudodamiesi tuo įsitikinkite, kad nesate arkado viduje.
+H3_RPT_T=Cooldownas sako ate ate. :D
+
+H3_POIACC=P.O.I. Ir Prieigos Taškai
+
+SCOP=Apžvelgti
+H3_SCOP_H=Naudokite tai tik atlikę pradinę heisto užduotį, nes kitaip ji užsiblokuos.
+
+USCOP=Baigti Apžvalgą
+
+H3_VLT=Nustatykite Saugyklos Turinį
+H3_VLT_H=Naudokite tai sumokėję už apiplėšimą, bet prieš apžiūrėdami saugyklos turinį.
+H3_VLT_3=Deimantai
+H3_VLT_2=Piešiniai
+H3_VLT_1=Auksas
+H3_VLT_0=Grinieji Pinigai
+H3_VLT_T=Įdomu, kas gi slepiasi saugykloje. :^)
+
+H3_FNSH1=Baigti Pirmąją Lentelę
+H3_FNSH1_H=Naudokite tai sumokėję už apiplėšimą ir pasirinkdami nustatę saugyklos turinį.
+H3_FNSH1_1=Tyliai & Slaptai
+H3_FNSH1_2=Didysis Šou
+H3_FNSH1_3=Agresyvus
+H3_FNSH1_T=Tai viena lenta mažiau. :D
+
+H3_FNSH2=Baigti Antrąją Lentelę
+H3_FNSH2_T=Tai jau dviejomis lentelėmis mažiau. :D
+
+H3_RSTCRW=Atstatyti Įgulą Iš Naujo
+H3_RSTCRW_H=Jei blogai pasirinkote įgulą, kurią norėtumėte pakeisti.
+H3_RSTCRW_T=Įgulos atstatymas. Kad pakeitimas būtų matomas, turėsite iš naujo įeiti į arkadą. :)
+
+H_FNSH_W=Tokiu būdu baigus sąrankos misijas, „All In Order“ ir „Criminal Mastermind“ iššūkiai nebus skaičiuojami.
+
+H_FNSH=Užbaikite Sąrankos (setup) Misijas
+H_TRGT=Nustatyti Tikslą
+
+H4=Cayo Perico Apiplėšimas
+H4_FNSH_T=Viskas padaryta. Turėsite iš naujo įlipti į savo Kosatka, kad pamatytumėte pokyčius. :)
+
+H4_TRGT_0=Tekila
+H4_TRGT_1=Rubino Karoliai
+H4_TRGT_2=Pareikštinės Obligacijos
+H4_TRGT_3=Rožinis Deimantas
+H4_TRGT_4=Madrazo Failai
+H4_TRGT_5=Safyro Pantera
+
+H2_FNSH=Baigti Doomsday Apiplėšimo Setupus
+H2_FNSH_H=Praleidžia visus Doomsday Apiplėšimo setupus.
+H2_FNSH_T=Setupai baigti. Kad pakeitimai būtų matomi, turėsite iš naujo įeiti į savo įstaigą. :)
+
+H1_FNSH=Baigti Buto Apiplėšimų Setupus
+H1_FNSH_H=Praleidžia visus Buto Apiplėšimo setupus.
+H1_FNSH_T=Nustatymai atlikti. Kad pakeitimai būtų matomi, turėsite iš naujo įeiti į butą. :)
+
+RIGOFF=Negalima Manipuliuoti
+
+WHEEL=Laimės Rato Prizas
+WHEEL_1=Podiumo Automobilis
+WHEEL_2=Nuolaida
+WHEEL_3=Žetonai
+WHEEL_4=Grynieji Pinigai
+WHEEL_6=Drabužiai
+WHEEL_7=Paslaptis: Transporto priemonė
+WHEEL_8=Paslaptis: Verlso reikmenys
+WHEEL_9=Paslaptis: Užkandžiai
+WHEEL_10=Paslaptis: Žetonai
+WHEEL_11=Paslaptis: Grynieji pinigai
+WHEEL_12=Paslaptis: RP
+WHEEL_13=Paslaptis: Drabužiai
+
+MONEYLINK2=Pinigų Vadovas (Gidas)
+
+SLOTS2=Lošimo Automatų Rezultatas
+SLOTS_H=Per 24 valandas neuždirbkite daugiau nei GTA$ {}! Be to, tai gali būti nesaugu, jei šioje paskyroje naudojote ar naudojate kitus meniu.
+SLOTS_WJ=Stambiausias Laimėjimas
+SLOTS_WS=Mažas Laimėjimas
+SLOTS_L=Pralaimėjimas
+
+ROULETTE=Ruletės Rezultatas
+CSNO_H_OPB=Kiti žaidėjai taip pat gali tuo pasinaudoti.
+
+CSNO_BJ=Visada Laimėk Blackjack
+CSNO_BJ_H=Priverčia dalintoją visada bust'inti.
+
+SNKSNARMR=Papildyti užkandžius ir šarvus
+SNKSNARMR_T=Štai, esate pilnas atsargų :D
+
+ENHNCMTS=Patobulinimai
+
+NOAFK=Išjungti idle/AFK kick'ą
+
+NOMECHCDLN=Išjungti Mechaniko Laiko Apribojimą
+
+NOMKIICLDN=Išjungti Oppressor Mk II Laiko Apribojimą
+
+NOEWOCLDN=Išjungti Savižudybės Laiko Apribojimą
+
+NOGTARCFP=Išjungti Priverstinį RC Perspektyvą
+
+NODTHBAR=Išjungti Mirties Barjerus
+
+NOPSSVCLDN=Išjungti Pasyvaus Režimo Laiko Apribojimą
+
+NOORBCLDN=Išjungti Orbitos Patrankos Laiko Apribojimą
+
+NOSUBMSLCLDN=Išjungti Kosatka raketų delsimo laikotarpį
+
+NOSUBMSLMAXRNGE=Išjungti Kosatka raketų atstumo ribą
+NOSUBMSLMAXRNGE_H=Neturi įtakos jau paleistoms raketoms.
+
+NONANOMAXRNGE=Išjungti „Nano Drone“ nuotolio ribą
+NONANOCLDNS=Išjungti Nano Drono Paslaugos Laikmatį
+
+! "Business Battle" is SCR_FE_BB
+NOFMBTLMSC=Išjungti Business Battle Muziką
+NOFMBTLMSC_H=Atkreipkite dėmesį, kad įjungus šią funkciją nebus nutrauktas jau grojamas garsas.
+
+NFMEVTENDAUD=Išjungti Įvykio Pabaigos Muziką
+
+TGGLEMAP=Perjungiamas Didelis Žemėlapis
+TGGLEMAP_H=Minimalus žemėlapis visada veikia taip, lyg būtumėte lėktuve.
+
+PAWS=Leisti Pristabdymus
+
+NOINTCHK=Apeiti Vidinių Patalpų Apribojimus
+NOINTCHK_H=Apgauna patikrinimus kai kuriuose interjeruose, pavyzdžiui, liejykloje, todėl galite būti jų viduje nesiteleportuodami.
+
+PASSIWPNVEH=Leisti naudoti ginkluotas trans. priem. pasyviam režime
+
+NWRKCLD=Išjungti VIP Darbų Laiko Apribojimus
+
+SLLINPRV=Visos Misijos Privačiose Sesijose
+
+GHSTNRBYDR=Užtikrinkite Švarias Lenktynes
+GHSTNRBYDR_H=Užtikrina, kad lenktynėse besipriešinantys vairuotojai žaistų sąžiningai ir užghost’intų juos vietoje, jei jie priartėtų per arti.
+
+ALLPICLK=Nepaisyti Sąveikos Meniu Barjerų
+ALLPICLK_H=Leidžia naudoti daugumą sąveikos meniu parinkčių, net jei jos yra pilkos arba nepasiekiamos.
+
+UNKLCSNO=Apeiti Kazino Regioninį Blokavimą
+
+AMTTSUIT=Apeiti Time Trial Transp. Priem. Reikalavimus
+
+NODRIPFEED=Išjunkite dripfeeding'ą
+NODRIPFEED_H=Leidžia suspawninti, vairuoti ir pirkti visas naujas DLC transporto priemones, kol jos nebus prieinamos "legit" žmonėms.
+
+NEMTYNTFY=Išjungti Tuščius Pranešimus
+EMTYNTFY=Tuščias Pranešimas
+
+BST=Jaučio Ryklio Testosteronas (JRT)
+
+GETBST=Gauti JRT
+
+RMBNTY=Pašalinti Premiją (Bounty)
+
+QWQPROG=Greitas Progresas
+
+! Don't translate this if it doesn't help the user recognise the option; I assume most menu users know it as Recoveries.
+QWQPROG_H=t.y. "Recoveries".
+
+GIVECOLL=Duoti Kolekcionuojamus Daiktus
+GIVECOLL_0=Kino Rekvizitai
+GIVECOLL_1=Paslėptos Talpyklos
+GIVECOLL_2=Lobių Skrynios
+GIVECOLL_3=Radijo Antenos
+GIVECOLL_4=Medijos USB
+GIVECOLL_5=Laivų Nuolaužos
+GIVECOLL_6=Užkastos Dėžės
+GIVECOLL_8=Džeko Žibintai
+GIVECOLL_9="LD Organics" Prekės
+GIVECOLL_10="Junk Energy" Šuoliai Parašiutu
+GIVECOLL_16=Sniego Seniai
+GIVECOLL_17=G Lobis
+! Tags as in graffiti
+GIVECOLL_19=Los Santos Žymos
+
+GIVECOLLE=Duoti Kolekcionuojamus Daiktus
+GIVECOLLE_NCEO=Duoti Kolekcionuojamą Daiktą (Ne Mano Bosas)
+
+CEOPAY=CEO Pinigų Kilpa
+CEOPAY_H2=Suteikia kolegoms ir asmens sargybiniams deramą atlyginimą. Gavėjai neturi būti jūsų partneriai ar asmens sargybiniai.
+
+PLYRP=Duoti RP
+PLYRP_H=Suteikia žaidėjui daugybę RP. Galima naudoti daug kartų.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCFIG=Duoti Kazino Figūrėles
+PLYCFIG_H=Galima naudoti RP ir pinigų suteikimui.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCRDS=Duoti Žaidimo Kortas
+PLYCRDS_H=Galima naudoti RP ir kazino žetonų suteikimui.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYSNK=Duoti P's & Q's užkandžio.
+
+PLYEXPAMMO_H=Geriausiai veikia iš arti.
+
+OTR=Pasislėpti Nuo Radaro
+
+MNTLS=Psichinė būsena
+
+MNTL=Nustatyti Psichinę būseną
+MNTL_T=Tavo Psichinė būsena dabar yra {}. :)
+
+LCKMNTL=Užrakinti Psichinę Būseną
+
+MNTLPULS=Pulsuojanti Psichinė Būsena
+MNTLPULS_H=Svyruojanti psichinė būsena, kurią rodo jūsų rutuliuko ant mini-map’o spalva.
+
+CLUBPOP=Nustatyti Naktinio Klubo populiaruma
+CLUBPOP_P=Naktinio Klubo Populiarumas
+CLUBPOP_L=Užraktinti Naktinio Klubo Populiarumą
+
+RNK=Lygis
+
+SETLVL=Nustatyti Lygį
+GEN_T_NEWSESS=Kad pakeitimas būtų pritaikytas, turėsite prisijungti prie naujos sesijos. :)
+
+! Refering to any number of possible targets.
+GEN_T_NEWSESS_O=Kad pakeitimas būtų pritaikytas, jie turės prisijungti prie naujos sesijos. :)
+
+FSTRUN=Greitas Bėgimas
+ABILOPT=Gauti
+ABILUNL=Atisakyti
+
+BADSPORT=„Bad Sport“ statusas
+RELINQ=Atsisakyti
+
+UNLKS=Atrakinimai
+
+STATEDIT=Statistikos Editorius
+STAT_STR_LABEL=Tikimasi label'io (etiketės).
+STAT_STR_RID=Tikimasi Rockstar ID.
+STAT_KD=K/D Editorius
+STAT_POP=Populiarios Statistikos
+STAT_RAW=Žalia Statistika
+STAT_WARN=Nežaiskite su šiomis reikšmėmis, jei nesate tikri, kokios jos yra ir ar tinkamai jas nustatėte.
+
+STAT_YEAR=Metai
+STAT_MONTH=Mėnuo
+STAT_DAY=Diena
+STAT_HOUR=Valanda
+STAT_MINUTE=Minutė
+STAT_SECOND=Sekundė
+STAT_MILLISECOND=Milisekundė
+
+KDEDIT=K/D
+KDEDIT_H=Algoritmas, kurį R* naudoja šiam tikslui, kai kuriose žaidimo srityse skiriasi, todėl skaičius gali būti šiek tiek kitoks, priklausomai nuo to, kur žiūrite.
+
+TOTAL_RACES_WON=Laimėtos Lenktynės
+TOTAL_RACES_LOST=Pralaimėtos Lenktynės
+TOTAL_DEATHMATCH_WON=Laimėtos Mirties Rungtynės
+TOTAL_DEATHMATCH_LOST=Prlaimėtos Mirties Rungtynės
+TOTAL_TDEATHMATCH_WON=Laimėtos Komandinės Mirties Rungtynės
+TOTAL_TDEATHMATCH_LOST=Pralaimėtos Komandinės Mirties Rungtynės
+
+STAT_WAIT=Įkeliama statistika, palaukite...
+
+UNLKALL=Atrakinti viską
+UNLKALL_H=Kai Jūs norite atrakinti viską, kas pavaizduota apačioje.
+
+UNLKONL=Atrakink GTA Online (Praleisti Prologą)
+
+UNLKALLACHIV=Atrakinti visus pasiekimus
+
+RVLMAP=Atskleisti Visą Žemėlapį
+
+OVRDPROBNS=Nepaisyti išankstinio užsakymo premijos
+
+FREEORB=Atrakinkite Nemokamą Orbitinės Patrankos Šūvį
+
+GNDRCHNG=Atrakinti Lyties Pakeitimą
+GNDRCHNG_H=Leidžia tau pakeisti žaidėjo lytį naudojant Stilius > Pakeisti Išvaizdą sąveikos meniu.
+GNDRCHNG_T=Jus dabar galite naudoti Stilius > Pakeisti Išvaizdą sąveikos meniu, kad išsaugoti pokyčius. :D
+
+LVRIES=Atrakinti Išskirtinius išdažymus
+LVRIES_T=Išskirtiniai išdažymai buvo atrakinti. :D
+
+RSRCH=Atrakinti Bunkerio Išradimus
+RSRCH_T=Bunkerio Išradimai buvo atrakinti. :D
+
+UNLKOSA=Atrakinti Kosatka Nusipirkimui
+
+H3CLTH=Atrakinti Kazino Apiplėšimo Drabužius
+AWCLTH=Atrakinti Arenos Karų Drabužius
+CLTH_T=Drabužiai buvo atrakinti. :D
+
+UNLKSR=Atrakinti Bunkerio Šaudyklos Apdovanojimus
+UNLKSR_H=Atrakina apdovanojimus kuriuos gaunama įvykdant visus 3 šaudyklos lygius įskaitant padidintą talpą metamiejiam ginklam.
+UNLKSR_T=Bunkerio Šaudyklos Apdovanojimai buvo atrakinti. :D
+
+AWDS=Atrakina Apdovanojimus
+AWDS_H=Suteikia Jums daugybę apdovanojimų įskaitant drabužius ir tatuiruotęs kurie juos atrakina.
+
+VEHCUST=Atrakinti Transporto Priemonės Nustatymų Keitimą
+
+UNLKAMUTINTS=Atrakinti Ammu-Nation Apdažymus
+UNLKAMUTINTS_H=Atrakina Army, Green, Orange, & LSPD apdažymus visiems tinkančiams ginklams.
+
+FLLSTATS=Maksimali Žaidėjo Statistika
+FLLSTATS_H=Suteikia maksimalią Ištvermę, Jėgą, Šaudymo sugebėjimus, Slaptumo, Pilotavimo, Vairavimo, ir Plaučių talpos statistikas.
+
+VWRPTSTAT=Peržiūrėti Reportų Statistiką
+
+CMEND=Pagyrimas
+
+CMENDT=Pranešti apie pagyrimą
+CMENDT_H=Pranešimas, kai Jus kažkas pagyrė už draugiškumą arba pagalbą.
+CMENDT_T={player} pagyrė tave už {reason}. :D
+ESTAT_0=pagalbą.
+ESTAT_1=draugiškumą.
+
+PLYISE=Padidinti Skundimų/Pagyrimų statsus
+
+ISE_H=Naudingas
+ISE_F=Draugiškas
+
+RPRPT=Skųsti
+
+ISE_G2=Žaidimo Trikdymas
+ISE_X2=Sukčiavimas Arba Modifikavimas
+ISE_B2=Žaidimo Funkcijų Trikdžiai Arba Piktnaudžiavimas Jomis
+ISE_TC_A=Teksto Kanalas: Erzina Mane
+ISE_TC_H=Teksto Kanalas; Naudoja Necenzūrinę Leksiką
+ISE_VC_A=Balso Pokalbis: Erzina Mane
+ISE_VC_H=Balso Pokalbis: Naudoja Necenzūrinę Leksiką
+ISE_VG=Smurtinis Arba Šokiruojantis Turinys
+ISE_ONC=Įžeidžiantis Žaidėjo Vardas arba Turinys
+
+STAT_OFFENSIVE_LANGUAGE=Įžeidžianti kalba
+STAT_OFFENSIVE_TAGPLATE=Įžeidžiantis žymos lentelė
+STAT_OFFENSIVE_UGC=Įžeidžiantis Turinys
+STAT_BAD_CREW_NAME=Blogas Gaujos Vardas
+STAT_BAD_CREW_MOTTO=Blogas Gaujos Šūkis
+STAT_BAD_CREW_STATUS=Bloga Gaujos Būsena
+STAT_BAD_CREW_EMBLEM=Bloga Gaujos Emblema
+
+STAT_IS_CHEATER=Sukčius (Cheateris)
+STAT_WAS_I_BAD_SPORT=Buvo blogas
+STAT_IS_HIGH_EARNER=Daug Uždirbantis
+
+YES=Taip
+NO=Ne
+
+PLYHIST=Žaidėjo Istorija
+
+PYLFND_H2=Leidžia rasti žaidėjų savo istorijoje naudojant vardą, Rockstar ID ir užrašus (pastabas).
+
+PLYNOTE=Įsiminti
+PLYNOTE_T=Užrašas lieka nepakitęs.
+PLYNOTED=Įsiminti Žaidėjai
+HIST_KEEP_NTE=Palikti Įsidėmėtus
+
+AGGREGS=Agregacijos
+
+1SEEN=Pirmai matytas
+
+LSEEN=Paskutinį kartą matytas
+
+CPYNME=Kopijuoti Pavadinimą
+CPYRID=Nusikopijuoti RID
+
+PLYHIST_DEL_E=Negalima ištrinti žaidėjo, kuris šiuo metu dalyvauja jūsų sesijoje, įrašo.
+
+CONFAIL=Nepavyko prisijungti.
+
+SPF=Spūfingas
+
+NSPFD=Ne Spūfinta
+
+SPFUPD=Tau reikia iš naujo prisijungti į šią sesiją arba surasti naują sesiją norint pokyčiams nustatyti. :)
+
+SPFNME_D=Vardo Spūfinimas
+SPFDNME=Apgaulingas Vardas
+
+HRD=Kietas
+SFT=Minkštas
+
+SPFNMEFRMHST=Gaukite Atsitiktinį Vardą Iš Žaidėjų Istorijos
+
+SPFPRST=Vardo & RID Spūfinimo Numatytieji Nustatymai
+YTRS=Tinklaraštininkai (Youtuberiai)
+RSEMPS=Rockstar Darbuotojai
+
+SPFHT_D=Host Token Spūfinimas
+SPFHT_H=Leidžia jum pakeisti Host Tokeną į mažesnes vertes tam, kad greičiau taptumėtę hostu.
+SPFHT_W=Žinokite, jog host token vertė yra skirta vieną per vieną žaidėją, ir mažos vertės yra lengvai aptinkamos kitų moderių.
+
+SPFDHT=Spūfintas Host Token
+
+SPFDHTPRST_0=Invalidas
+SPFDHTPRST_1=Auksinis Viduriukas
+SPFDHTPRST_2=Agresyvus
+
+AKCKHST=Išmesti hostą prisijungdamas kaip kitas eilėje
+
+SPFSESS=Sesijos Spūfinimas
+
+HDESESS=Paslėpti sesiją
+HDESESS_H=Uždengia jūsų sesiją visiems, kurie bando jus sekti, prisijungti ar stebėti.
+HDESESS_H_CPY=Pastaba: šiuo metu esate įjungę „Kopijuoti sesijos informaciją“, kuri turi viršenybę prieš „Slėpti sesiją“. Patikrinkite savo žaidėjų istorijos suvestines.
+HDESESS_NX=Neegzistuojanti sesija
+
+FF=Netikras Draugas
+TRK_FF=Įjungta + Netikras Draugas
+TRK_FF_H=Taip pat prideda šį žaidėją į žaidimų draugų sąrašą.
+
+MARKASFF=Pažymėti Kaip Netikrą Draugą
+UMARKASFF=Panaikinti Netikro Draugo Žymėjimą
+
+CPYSESS=Kopijuoti sesijos informaciją
+CPYSESS_H=Veiksmingai verčia jus veikti kaip peradresavimą į šį asmenį visiems, kurie bando jus sekti, prisijungti ar stebėti.
+CPYSESS_F=Sesijos informacijos kopijavimas iš
+
+WHTJOIN=Pridėti Prie Baltojo Sąrašo
+
+! For reference, "Block Joins From Anyone" is BJ_ALL_A
+WHTJOIN_H=Taip jie galės apeiti visus jūsų įdiegtus prisijungimo blokavimo mechanizmus, išskyrus "Blokuoti bet kieno prisijungimus" ir konkretaus žaidėjo reakcijas.
+
+SESSTYP=Sesijos Tipas
+SESSTYP_H=Seanso tipas, kurį mato visi, kurie bando jus sekti.
+NVLD=Netinkamas
+
+SPFHST=Host'o Spūfinimas
+SPFDHST=Spūf’intas Host'as
+YOU=Jūs
+
+SPFCRW=Grupės Spūfinimas
+
+SPFCRW_ID_H=Tai nustato, kuri emblema bus rodoma. Turi būti ne nulis, kad būtų rodoma grupės žyma.
+
+NCRW=Jokios Grupės
+
+CPY2SPFCRW=Kopijuoti į Grupės Spūfinimą
+
+SPFCRWMINE=Kopijuoti Iš Mano Grupių
+
+SPFRNK_D=Lygio Spūfinimas
+SPFRNK_H=Leidžia jum pasikeisti dabartinį ranką į netikrą, kurį mato kiti žaidėjai.
+SPFDRNK=Spūfintas Rank'as
+
+SPFKD=K/D Spūfinimas
+SPFDKD=K/D Suspūfintas
+
+SPFPOS=Pozicijos Spūfingas
+SPFDPOS=Spūfinta Pozicija
+
+PLYMGNT=Žaidėjų Magnetas
+PLYMGNT_H=Tai pagreitins sesijos užpildymą kitais žaidėjais.
+
+STRMSPF=Spūfinti Kitų Žaidėjų Vardus
+
+HIDEPLIST=Paslėpti Nuo Žaidėjų Sąrašo
+HIDEPLIST_H=Paslepia jus iš žaidimo HUD žaidėjų sąrašo.
+
+PHNSPF=Telefono Režimo spoofinimas
+PHNSPF_0=Nenaudojamas Telefonas
+PHNSPF_1=Skambinimas
+PHNSPF_2=SMS siuntimas
+PHNSPF_3=Įrašinėjimas
+
+RIDTOOLS=„Rockstar ID“ Įrankiai
+
+N2R_I=Negalimas Vardas. :?
+N2R_Q=Ieškomas žaidėjo RID...
+N2R_E=Nepavyko rasti RID šiuo vardu. :?
+
+R2N_Q=Ieškomas žaidėjo vardas...
+R2N_E=Nevapyko rasti vardo pagal duotajį RID. :?
+
+PLYINV=Pakviesti Į Sesiją
+INV_N=Kviesti Į Sesiją Vardu
+INV_R=Pakviesti Į Sesiją Pagal RID
+PLYINV_E=Neįmanoma Siųsti Kvietimų Į Tokio Tipo Sesiją. :/
+
+PLYPRFL=Parodyti Profilį
+PRFL_N=Atidaryti profilį pagal vardą
+PRFL_R=Atidaryti profilį pagal RID
+
+JOIN2=Prisijungti
+JOIN_N=Prisijungti į sesiją pagal vardą
+JOIN_R=Prisijungti į sesiją pagal RID
+
+! Join methods
+JM_N=Nindzių Metodas
+JM_F=Draugų Metodas
+JM_M=Matchmaking Metodas
+
+! I mean "Nuts" as a covert way of saying crazy, just translate it as "Crazy" if you can't be sly.
+JM_NUTS=Pamišęs Metodas
+
+JOIN_T_A=Jūs jau esate šioje sesijoje.
+
+JOIN_T_N=Šis žaidėjas kol kas nėra Online sesijoje. :/
+PLYOFFLINE=Šis žaidėjas šiuo metu neprisijungęs. :/
+
+PLYSPEC=Stebėti
+SPEC=Stebėti
+SPEC_N=Stebėti žaidėją pagal vardą
+SPEC_R=Stebėti žaidėją pagal RID
+
+NAMKICK=Išmesti Pagal Vardą
+RIDKICK=Išmesti Pagal RID
+
+LGTM=Teisingas Metodas
+
+RCTS=Reakcijos
+
+JOINR=Žaidėjo prisijungimo reakcijos
+JOINT={} jungiasi
+
+HISTWJOINR=Žaidėjai su Prisijungimo Reakcijomis
+HIST_KEEP_JRE=Palikti Žaidėjus Su Prisijungimo Reakcijomis
+
+HISTWWHT=Žaidėjai, Įtraukti Į Baltąjį Sąrašą
+HIST_KEEP_WHT=Palikti Baltajame Sąraše Esančius
+
+HISTADD2=Pridėti Žaidėją
+HISTADD=Pridėti Žaidėją Pagal Vardą
+HISTADDRID=Pridėti Žaidėją pagal RID
+
+HOSTR=Pakeist Host reakcijas
+HOSTR_T={} dabar yra hostas
+
+SHR=Pakeisti Script Host reakcijas
+SHR_T={} dabar yra script hostas
+
+VKR=Balsavimo išmesti draudimai
+VKR_A=Balsavimas išmesti bet ką
+VKR_M=Balsavimas išmesti mane
+VKR_T={player} balsuoja išmesti {target}
+
+LLKR=„Meilės laiško“ kick'o reakcijos
+LLKR_T={player} naudoja „meilės laišką“, kad išmesti {target}
+
+BOUNTYR=Premijos Reakcijos
+BOUNTYR_P={} uždėjo ant tavęs premiją ${}.
+BOUNTYR_H=Tai netaikoma, kai NPC jums uždeda premiją.
+
+PTFXSPAMR=Dalelių Spam’o Reakcijos
+PTFXSPAMR_H=Ne visada kenkėjiška, bet gali sumažinti FPS.
+
+LEAVET=Žaidėjo Atsijungimo Pranešimai
+LOGLEAVE_T={} paliko logus
+
+LR=Žaidėjo Išėjimo Priežastys
+LR_H=Atkreipkite dėmesį, kad "Išėjimo Priežastys" gali būti netikslios, nes ši funkcija negali būti įgyvendinta neheuristiniu būdu.
+
+LR_WHERE=Kur
+LR_WHAT=Kas
+
+LR_N={player} išejo
+LR_SN=Rodyti "Išėjo"
+
+LR_Q={player} uždarė žaidimą
+LR_SQ=Rodyti "Uždarė Žaidimą"
+
+LR_B={player} buvo užblokuotas prisijungti
+LR_SB=Rodyti "Buvo Užblokuotas Prisijungti“
+
+LR_T={player} laikas baigėsi
+LR_DL={player} baigėsi laikas bandant desinchronizuoti {other}
+LR_VK={player} buvo išbalsuotas
+LR_HK={player} buvo host kick'intas nuo {other}
+LR_SHK={player} buvo script host kick'intas nuo {other}
+LR_LL={player} buvo iškickintas naudojant „meilės laišką“, kurį siuntė {other}
+LR_K_B={player} buvo išmestas naudojant „breakup“ kick'ą dėka {other}
+LR_K_O={player} buvo išmestas naudojant „orgasm“ kick'ą
+LR_FMD={player} išėjo dėl laisvojo režimo mirties
+LR_FMDC={player} užsicrash'ino po laisvojo režimo mirties
+! "Quit To Story Mode" is QTSP
+LR_MOD={player} naudojo modus, kad išeitų į istorijos režimą
+LR_BAN={player} buvo visam laikui pašalintas iš GTA Online
+LR_U={player} išėjo dėl nežinomos priežasties ({id})
+
+! The only substitute for {reason} is NETWORK_BAIL as of now
+LR_E={player} išėjo dėl {reason}
+
+AIM_MODE=Nustatyti Taikymosi Režimą
+AIM_MODE_0=Aim Assistas - Max
+AIM_MODE_1=Aim Assistas - Vidutinis
+AIM_MODE_2=Free Aimas - Max
+AIM_MODE_3=Free Aimas
+
+RMLDR=Panaikinti "Transaction Pending" errorą
+RMLDR_H=Pašalina bet kokį aktyvų indikatorių ekrano apačioje, dešinėje.
+
+CHTRMLDR=Išjungti "Transaction Pending", Kai Chat'ini
+CHTRMLDR_H=Pašalina įkėlimo indikatorius, kai chat'as atidarytas.
+
+LVINT=Palikti Dabartinį Interjerą
+
+FRCSVE=Priverstinis „Cloud“ Išsaugijomas
+
+THDR=Perkūnija
+THDR_ON=Įgalinti Užklausą
+THDR_OFF=Išjungti Užklausą
+THDR_N=Pranešti Pageidavus
+THDR_N_T={} paprašė perkūnijos.
+
+RSTFM=Perkrauti Freemode Skriptą
+
+RJNSESS=Iš Naujo Prisijungti Į Sesiją
+
+SLFDS=Tapk Vienišas
+SLFDS_H=Išmeta tave į sesiją kurioje esi vienas, neliečiant kitų žaidėjų.
+
+SLR_N=Nėra Išėjimo Priežasties
+SLR_C=Išėjo Dėl Sukčiavimo
+
+HSTTLS=Hosto Įrankiai
+
+SETSESSTYP=Nustatyti Sesijos Tipą
+
+CLRBLKLST=Išvalyti Juodąjį Sąrašą
+CLRBLKLST_H=Leidžiama vėl prisijungti žmonėms, kurie anksčiau buvo išmesti iš sesijos.
+
+SESSTYP_S=Solo Sesija
+SESSTYP_I=Tik Su Pakvietimu
+SESSTYP_F=Uždara Draugų Sesija
+SESSTYP_CC=Uždara Grupės Sesija
+SESSTYP_C=Grupės Sesija
+SESSTYP_P=Vieša Sesija
+
+CSTMVK=Pasirinktinis Balsavimo Išmesti Reikiamų Balsų Riba
+CSTMVK_H=Kiek balsų reikia, kad ką nors nubalsuotumėte.
+
+! For reference: "I'll try to convince them to leave." is PLYKCK_T_C
+CSTMVK_MSG={} viršijo jūsų balsų skaičiaus ribą. Pabandysiu juos įtikinti išeiti.
+
+THRESHOLD=Riba
+
+AUTOREJOIN=Automatiškai Sugrįžti Prie Nesinchronizuotų Sesijų
+AUTOREJOIN_H=Automatiškai Sugrįžti Prie Sesijų, Iš Kurių Buvote Išsinchronizuotas.
+AUTOREJOIN_MSG=Aptiktas sesijos desinchronizavimas, bandoma vėl prisijungti...
+AUTOREJOIN_FAIL=Nepavyko vėl prisijungti prie jūsų paskutinės sesijos. :(
+
+QTSP=Grįžti į Story Mode režimą
+
+QTSPF=Priverstinis grįžimas į story mode
+QTSPF_H=Iš naujo paleidžia visas žaidimo sistemas ir tada įkelia jus į istorijos režimą.
+
+NDLYXPS=Išjungti Kasdieninęs Išlaidas
+
+OCWS=Atidarykite Pokalbį Slinkdami
+OCWS_H=Ištaisomas faktas, kad galite slinkti per pokalbį, kai jis uždarytas, taip priverčiant pokalbių langą susiaktyvinti.
+
+CHATAO=Visada Atidaryta
+
+BBGS=Blokuoti Foninius Skriptus
+BBGS_H=Blokuojamas foninis skriptas, su kurio Rockstar mums slapta praneša apie naujus DLC, kas kelia problemų modderiam.
+
+ADMDLC=Rockstar Admin DLC
+ADMDLC_H2=Atrakina išskirtinius drabužius ir social club TV.
+
+HUDTS=Tūkstančių Atskirtukas Pinigams
+HUDTS_H=Viršutiniame dešiniajame kampe rodomoms pinigų vertėms prideda tūkstančių skirtuką.
+
+FLLPLYLST=Visi Žaidėjai Iš Žaidėjų Sąrašo
+FLLPLYLST_H=Žaidėjų sąraše rodomi visi žaidėjai, neatsižvelgiant į Cayo Perico.
+
+FMBNR2T=Freemode Reklamjuostės į Pranešimus
+
+PHNANIM=Telefono Animacijos
+PHNANIM_H2=Suteikia jūsų personažui animaciją naudojant telefoną.
+
+SPDUPDIAL=Paspartinti Skambinimą
+
+NLSCBAR=Išjungti LSC apribojimus
+NLSCBAR_H=Leidžia įvažiuoti į Los Santos Customs su visomis transporto priemonėmis, įskaitant jums nepriklausančias, ir jas pilnai modifikuoti.
+
+BLIPTAGS=Žaidėjo Žymės Ant Blipų
+
+RSTHDSHT=Iš Naujo Nustatyti Ped’sų Headshot’us
+RSTHDSHT_H=Pataisoma, kai grotuvų sąraše arba pranešimuose yra juodi kvadratai, o ne nuotraukos.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+TRNSS=Transitionai
+
+SESSHOP="Šoklys Tarp Sesijų"
+MINPLYS=Min. Žaidėjų Skaičius
+MAXPLYS=Max Žaidėjų Skaičius
+
+SSS=Sklandus Sesijos Perjungimas
+
+WRLDSTCNG=Pasaulio Būsenos Pasikeitimas
+WRLDSTCNG_1=Atidėtas
+WRLDSTCNG_2=Atidėtas, Tik Online
+WRLDSTCNG_3=Atidėtas, Tik Istorijos Režimas
+WRLDSTCNG_T=Pasaulio būsena bus pakeista po {}...
+
+SPDUP=Pagreitinti
+
+TRNS_SPDUP_BRDCST=Nelaukti Duomenų Perdavimo
+TRNS_SPDUP_FMMC=Nelaukite Misijos Paleidimo
+TRNS_SPDUP_SPWN=Neprašykite Leidimo Spawnintis
+
+TRNS_SPDUP_BESCRHST_H=Tai gali padėti pagreitinti prisijungimą, tačiau sesija bus nutraukta ir niekas nebegalės prisijungti po Jūsų.
+
+JGRPOVRD=Prisijungimo Prie Grupės Nepaisymas
+JGRPOVRD_H=Galite pasinaudoti žiūrovo vieta ir prisijungti prie pilnos sesijos, tačiau iš tikrųjų joje nedalyvauti. Dėl to gali kilti problemų prisijungiant prie įvarių misijų. ⚠️
+JGRPOVRD_0=Stebėtojas
+JGRPOVRD_1=Freemoderis
+
+SSWPD=Praleisti Kameros Nusileidimą
+SSWPD_H=Praleidžia kameros nusileidimo animaciją prisijungus į naują sesiją.
+
+TRNSHLP=Transitionų Padėjėjas
+TRNSHLP_H=Užtikrina, kad neužstrigtumėte debesyse jungiantis į sesiją.
+
+UNSTK=Atstrigti
+
+NSPWNACTY=Išjungti Spawn'o Veiklą
+NSPWNACTY_H=Neleidžia jūsų veikėjui vykdyti animacijos po prisijungimo į sesiją.
+
+NDLCITRO=Išjungti DLC Intro Movie
+
+SHWTRNSTT=Rodyti perėjimo būseną
+
+SHWARRSYNC=Rodyti Masyvo Sinchro Eigą
+SHWARRSYNC_T=Laisvo Režimo sinchro {}/{} masyvai ({}%)
+
+SHWRSMSG=Rodyti „Rockstar Support“ Pranešimą
+
+GTAOSTUS_O=Šiuo metu teikiama „GTA Online“ paslauga {}
+GTAOSTUS_O_L=ribojama
+GTAOSTUS_O_D=išjungta
+GTAOSTUS_M=„Rockstar Support“ komanda sako „{}“
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions > Matchmaking !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+MM=Matchmaking'as
+
+MMREGION2=Regiono Nepaisymas
+MMREGION=Regionas
+
+Australia=Australija
+Europe=Europa
+Asia=Azija
+Japan=Japonija
+LATAM=Lotynų Amerika
+REGION_NA=Šiaurės Amerika
+USA_East=JAV, Rytai
+USA_West=JAV, Vakarai
+
+MMPOOLOVRD=MM Baseino Nepaisymas
+MMPOOL=Baseinas
+
+MMPOOL_NRM=Normalus
+MMPOOL_CHEAT=Cheaterių
+MMPOOL_BADBOY=Blogi Žmonės
+
+MMMGNT=Žaidėjų Skaičiaus Pageidavimai
+MMMGNT_H=Įtraukia jus į sesijas su maždaug nurodytu žaidėjų skaičiumi.
+
+MMOFF_H=Išjungta matchmaking'o paieška, kad neberastumėte esamų viešų seansų.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session > Session Code !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSCODE=Sesijos Kodas
+SESSCODE_T_X=Šio sesijos kvietimo kodas nebegalioja.
+
+CODEJOIN=Prisijunkite prie sesijos naudodami kodą
+CODESPEC=Stebėti sesiją naudodami kodą
+ARGCODE=[kodas]
+
+CPYINVL=Kopijuoti Kvietimo Nuorodą
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Session Scripts !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SESSSCRS=Sesijos Skriptai
+
+RUNSCR=Paleisti Skriptą
+RUNSCR_PREP=Ruošiamas nuotolinis skripto vykdymas...
+RUNSCR_RUN=Leidžiamas {} skriptas...
+
+RUNSCRS=Veikiantys Skriptai
+
+PRTCPTS=Dalyviai
+
+STRTINST=Paleisti Iš karto
+
+SESSSCRSTRT=Įjungti Sesijos Skriptą
+SESSSCRSTRT_T={player} įjungė {script} skriptą.
+
+SESSSCRSTRT_ANY=Betkoks Skriptas
+
+SCRCAT_GRIEF=Sesijos Laužymas
+NOCAT=Nekategorizuota
+
+SCRCAT_FA=Freemode Veikla
+SCRCAT_AG=Arcade Žaidimai
+SCRCAT_RFA=Išjungtos Freemode Veiklos
+SCRCAT_SERV=Paslaugos
+SCRCAT_CUT=Scena
+
+SCRCAT_FA_P=Freemode Veiklos
+SCRCAT_AG_P=Arcade Žaidimai
+SCRCAT_RFA_P=Išjungtos Freemode Veiklos
+SCRCAT_SERV_P=Paslaugos
+SCRCAT_CUT_P=Scenos
+SCRCAT_MISS_P=Misijos
+
+SCR_FRCEPI=Atidaryti Sąveikos Meniu
+SCR_PS=Pilotavimo Mokykla
+SCR_STRIKE=Žaibo Smūgis Atsitiktiniam Žaidėjui
+SCR_DPSSV=Išjungti Pasyvųjį Režimą
+SCR_DARTS=Smiginis
+SCR_IMPDM=Impromptu Rungtis Iki Mirties
+SCR_SLASHER=Slasher
+
+!! Session Scripts: Freemode Activities
+
+SCR_FE_BB=Business Battle
+SCR_FE_KL=Kill List
+SCR_FE_CPC=Checkpoint Collection
+SCR_FE_C=Challenges
+SCR_FE_PI=Penned In
+SCR_FE_PI_CI=Caged In
+SCR_FE_PTP=Hold the Wheel
+SCR_FE_HP=Hot Property
+SCR_FE_KOTC=King of the Castle
+SCR_FE_CD=Criminal Damage
+SCR_FE_HTB=Hunt the Beast
+
+!! Session Scripts: Challenges - Types
+SCR_FE_C_0=Ilgiausias Šuolis
+SCR_FE_C_1=Ilgiausias Laisvas Kritimas
+SCR_FE_C_2=Didžiausias Greitis
+SCR_FE_C_3=Ilgiausias Stoppie
+SCR_FE_C_4=Ilgiausias Wheelie
+SCR_FE_C_5=Jokių Avarijų
+SCR_FE_C_6=Žemiausias Parašiutas
+SCR_FE_C_7=Pavogtos Transporto Priemonės
+SCR_FE_C_8=Arčiausi Nepasisekimai
+SCR_FE_C_9=Vairavimas Atbulomis
+SCR_FE_C_10=Išgyventi Ilgiausią Kritimą
+SCR_FE_C_11=Žemas Skraidymas
+SCR_FE_C_12=Apverstas Skraidymas
+SCR_FE_C_13=Ilgiausias Užstatas
+SCR_FE_C_14=Skristi Po Tiltais
+SCR_FE_C_15=Nužudymai Su Šūviu Į Galvą
+SCR_FE_C_16=Pravažiamas
+SCR_FE_C_17=Artima Kova
+SCR_FE_C_18=Snaiperio Nužudymai
+
+!! Session Scripts: Arcade Games
+
+SCR_AG_BRII=Badlands Revenge II
+SCR_AG_CAM=Camhedz
+SCR_AG_PUZ=QUB3D
+SCR_AG_RAC=Race and Chase
+SCR_AG_SM3=Space Monkey 3
+SCR_AG_TWR=The Wizard's Ruin
+
+!! Session Scripts: Removed Freemode Activities
+
+SCR_FE_DD=Dead Drop
+SCR_RFA_HT=Judantis Taikinys
+SCR_OFM_PT=Lėktuvo Nusileidimas
+SCR_OFM_DC=Atitraukti Policininkus
+SCR_OFM_DV=Sunaikinti Transporto Priemonę
+
+!! Session Scripts: Session Breaking
+
+SCR_FMINTRO=GTA Online Intro
+
+!! Session Scripts: Services
+
+SCR_SERV_A=Oro Antskrydis
+SCR_SERV_AD=Amunicijos Lašas
+SCR_SERV_BH=Sraigtasparnio Pagalba
+SCR_SERV_IBH=Sraigtasparnio Pagalba (Cayo Perico)
+SCR_SERV_BT=Paėmimas Su Laivu
+SCR_SERV_HT=Paėmimas Su Sraigtasparniu
+
+!! Session Scripts: Options on running scripts
+
+SCORE=Taškai
+
+!!!!!!!!!!!!!!!!
+!! Player Bar !!
+!!!!!!!!!!!!!!!!
+
+PBAR=Žaidėjo Juosta
+
+HDEIF=Slėpti Jeigu
+PBAR_HI_1=Matomas Žaidėjų Sąrašas
+PBAR_HI_2=XP Juosta Matoma
+
+PBAR_ALNE=Rodyti net jei vienas
+
+SHWTGS=Rodyti žymas
+
+HDEPNTG=Slėpti grotuvus be žymų
+
+DFLTCLR=Numatytoji spalva
+
+TGCLRS=Žymų spalvos
+
+UCLR=Naudokite spalvą
+
+!!!!!!!!!!!!!!!!!!!
+!! Online > Chat !!
+!!!!!!!!!!!!!!!!!!!
+
+CHT=Chatas
+
+PRFNTY=Apeiti Nešvankybės filtrus
+PRFNTY_H=Leidžia tau keiktis teksto kanale ir be cenzūrų kitiems.
+
+HTML=Apeiti Simbolių filtrus
+HTML_H=Leidžia tau naudoti simbolius kaip < ir > teksto kanale.
+
+ONLYTEAM=Tik Komandos Pokalbiai
+
+MSGFILTBP=Apeitas Pranešimų Filtras
+
+CHTSPM=Pokalbių Loop'as
+
+CHTLG=Įrašinėti teksto kanalo žinutes
+
+TBCMPLT=Išrašyti žaidėjų vardus
+TBCMPLT_H=Automatiškai išrašo žaidėjo vardą kai paspaudžiate nustatytą mygtuką rašant žinutę i teksto kanalą.
+
+PSTE=Iklijuoti tekstą
+PSTE_H=Įklijuoją tekstą, kai paspaudžiate nustatytą mygtuką rašant žinutę į teksto kanalą.
+
+TPNGIDCTR2=Rašymo Indikatorius
+TPNGIDCTR_H=Rodo rašymo indikatorių kaip Discorde, kai rašo kiti žaidėjai žinutę į teksto kanalą.
+TPNGIDCTR_1={a} rašo...
+TPNGIDCTR_M={} rašo...
+
+TPNGPOS_C=Uždaryto Chat'o Pozicija
+TPNGPOS_O=Atidaryto Chat'o Pozicija
+
+SNDMSG=Siųsti Žinutę
+
+ITEAMCHT=Į Komandos Chat'ą
+
+TEXT=Tekstas
+ARGTXT=[text]
+
+SPAM=Spamas
+SPAM_H=Draugiškas priminimas, kad mūsų paslaugų teikimo sąlygos draudžia masinę reklamą, o užsiimant tokiai veikla paskyra bus laikinai užblokuota.
+
+INTVAL_MS=Intervalas (ms)
+
+LOCHIST=Pridėti Prie Vietinės Istorijos
+LOCHIST_H_SPAM=Jei taip pat norite spamminti patys.
+
+FRCSEND=Siųsti Visas Pokalbių Žinutes
+FRCSEND_H=Pokalbių langą paverčia komandos "Siųsti Žinutę" sąsaja, kad žinutės būtų nuosekliai sujungtos į tinklą.
+
+FRCRECV=Rodyti Visas Chat'o Žinutes
+FRCRECV_H2=Priverčia žaidimą rodyti visas gautas žinutes pokalbių laukelyje, neatsižvelgiant į tai, kas jas atsiuntė.
+
+TIMESTAMP_MS=Laiko Žyma Žinutėse
+
+OWOMYMSGS=OwO-fikuoti Mano Pokalbio Žinutes
+OWOMYMSGS_H=OwO-fikuoja jūsų siunčiamus pranešimus. Atminkite, kad jūs skirtumo nepastebėsite.
+
+SENDPM=Siųsti Privačią Žinutę
+SENDPM_H=Siunčia pranešimą, kurį mato tik šis žaidėjas ir jūs.
+
+CHATSING=Dainuoti Sesijos Chat'e
+CHATSING_H=Dainuos dainą pagal jos žodžius, kurie yra jūsų %appdata%/Stand/Song.lrc.
+
+NTPNGIDCTR=Slėpti rašymo indikatorių
+NTPNGIDCTR_H=Paslepia jūsų rašymo indikatorių nuo kitų žaidėjų, kai rašote žinutę į teksto kanalą.
+
+PTX_TYPNGSTRT=Pradėti Rašyti Įvykį
+PTX_TYPNGSTOP=Baigti Rašyti Įvykį
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Commands !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CMDS=Komandos
+CMDS_H=Apdorokite pokalbio pranešimus naudodami pasirinktą priešdėlį kaip Stand komandų lauke , bet žinokite jog ne kiekviena komanda yra galima kitiems žaidėjams.
+
+PFX=Priešdėlis
+
+REPLPFX=Atsakymo Priešdėlis
+
+REPLYVIS=Atsakymo Matomumas
+EVERYONE=Visi
+ISSUER_N_ME=Autorius Ir Aš
+ISSUER=Autorius
+NOONE=Niekas
+
+ON4M=Įjungtas man
+
+4F=Draugams
+
+4C=Grupės Nariams
+
+4T=Komandos Pokalbiam
+4T_H=pvz., tavo CEO/MC nariams.
+
+4S=Nepažįstamiems
+
+! When a friend or stranger tries to kick or crash the Stand user
+SLFHRM_O=Nekandžiokite rankos, kuri jus maitina. ;)
+
+CMDBXDCS=Komandų langelio dokumentacija
+
+CMDLST=Komandų sąrašas
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Reactions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CHT_ANY=Betkokia Žinutė
+CHT_ANY_G=Chat'o Žinutė
+
+CHT_SPF=Spūfinta Žinutė
+CHT_AD=Reklama
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session Browser !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSBRWS=Sesijų Naršyklė
+
+NFLTR=Nefiltruoti
+
+MREFLTR=Daugiau Filtrų
+
+SESSBRWS_FLTR_AST_H=Jei ši funkcija įjungta, bus rodomos tik tos sesijos, kurios atitinka jūsų dabartinius asset hashus. Galite suklastoti savo checksumus, kad būtų vos ne privatus matchmakingas.
+
+NHKNADS=Žinomas Reklamuotojas Nehostina
+
+RFRSH=Atnaujinti
+
+SESSS=Sesijos
+
+HSTPRF=Žiūrėti host'o profilį
+
+LSESSDETS=Gaunama sesijos informacija...
+
+RM_PROMPT=Prašyti Narių Sąrašo
+RM_CONFIRMED=Prašoma Narių Sąrašo...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Request Services !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+REQSRV=Reikalauti Paslaugų
+
+AIRSTRK=Iškviesti Bombardavimą
+AIRSTRK_H=Duoda tau šviesos signalą ir atspawnina a Merryweather naikintuvą pasiruošusį bomborduoti šviesos signalo kordinates.
+
+AM_AMMO_DROP=Reikalauti Šovinių
+
+AM_BOAT_TAXI=Reikalauti Laivo
+
+AM_HELI_TAXI=Reikalauti Sraigtasparnio
+AM_HELI_TAXI_0=Maverick
+AM_HELI_TAXI_1=Supervolito
+
+AM_BACKUP_HELI=Reikalauti Straigtasparnio pagalbos
+
+REQNANO=Išsikviesti Nano Droną
+
+!!!!!!!!!!!!!!!!!!
+!! Online > ATM !!
+!!!!!!!!!!!!!!!!!!
+
+ATM=Bankomatas
+
+AUTODEPO=Automatiškai įnešti į piniginę
+WLTHPPR_T=Inešta ${} iš piniginės į banką. :)
+
+WTHDRW=Atsiimti
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! SC DM Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SCDMT=Social Club SMS Pranešimai
+SCDMT_T=SC SMS nuo {sender}: {text}
+
+! Those thingies in the top-right corner of the screen.
+SCNOTIF=Social Club Pranešimas
+
+!!!!!!!!!!!!
+!! CEO/MC !!
+!!!!!!!!!!!!
+
+CEO=CEO/MC
+
+NOCEO={} nėra organizacijoje ar motociklų klube.
+CMDNBOSS=Ši komanda pasiekiama tik tada, kai esate VIP, generalinis direktorius (CEO) arba prezidentas.
+GEN_H_BOSS=Tai įsigalios tik tada, kai būsite VIP, generalinis direktorius (CEO) ar prezidentas.
+
+CEOKICK=Išmesti iš CEO/MC
+CEOKICK_E=Atsiprašome, išmesti galima tik CEO/MC narius.
+
+MISSIONEVT=Pradėti „Freemode“ Misiją
+MISSIONEVT_NCEO=Pradėti „Freemode“ misiją (ne mano bosas)
+
+INTTPEVT=Teleportuoti Į Vidų
+INTTPEVT_NCEO=Teleportuoti Į Vidų (Ne Mano Bosas)
+
+CEOAPPEAL=Pašalinti CEO / MC Draudimą
+
+CEOJOIN=Prisijungti prie CEO/MC
+CEOJOIN_T=Bandoma grakščiai prisijungti...
+CEOJOIN_E=Grįžtama prie priverstinio prisijungimo.
+
+CEOTYP=Pakeisti Tipą
+CEOTYP_H=Pakeičia jūsų organizaciją į motociklų klubą arba atvirkščiai.
+
+CEOCAP=Išjungti Narių Limitą
+
+CEOCOL=Spalvų Lizdai
+CEOCOL_H=Paskirtas {} organizacijai.
+
+ORGCR_S=Užsiregistruoti kaip generalinis direktorius / VIP
+ORGCR_M=Įkurti Motociklų Klubą
+
+!!!!!!!!!!
+!! Game !!
+!!!!!!!!!!
+
+! "Snake" refers to the classic game
+SNAKE=Gyvatėlė
+SNAKE_1=Sesijos perėjimo metu
+
+SNAKE_C=Uždaryti „Stand“ tam, kad galėtumėte žaisti „Snake“ su strėlyčių mygtukais
+
+PONG_C=Uždaryti „Stand“ tam, kad galėtumėte žaisti Stalo Tenisą su strėlyčių mygtukais
+
+INVSEND_PONG=Pakviesti į Stalo Tenisą
+
+INVRECV_PONG=Priimti Pakvietimą į Stalo Teniso žaidimą
+INVRECV_PONG_T={player} pakvietė tave į Stalo teniso partiją. Eik į žaidėjai > {player} > Priimti Stalo Teniso Pakvietimą.
+
+INVSENT=Laukiama, kol {} priims tavo pakvietimą.
+
+CNLINV=Atšaukti pakvietimą
+
+CNLGME_PONG=Pabaigti Stalo Teniso partiją
+
+GETREADY=Pasiruošk!
+
+PLYGMECNCLT={} atšaukė partiją.
+
+T_M_C=Išjungti pranešimus virš žėmėlapio
+
+SKPCTSCN=Praleisti sceną
+
+TMSCL=Laiko skalė
+TMSCL_H=Pakeičia laiko greitį *lokaliai*.
+
+AIMTMSCL=Nusitaikymo laiko skalė
+AIMTMSCL_H=Pakeičia laiko greitį *lokaliai* kol jūs taikotės su ginklu.
+
+SCRNSHT=Screenshot Režimas
+
+RWND=Atkurti Senąją Poziciją
+RWND_H2=Grįžkite atgal paspausdami priskirtą sparčiąjį klavišą arba specialią valdiklio funkciją.
+
+UNRSTRCAM=Neriboti žaidimo kameros
+UNRSTRCAM_H=Leidžia tau judėti su kamera pilnu 360° apskritimu.
+
+FC=Freecam
+FC_H=Leidžia tau nuskristi su kamera kur jūs norite.
+
+FC_DTP=Teleportuotis ant Išjungimo
+FC_DTP_H=Nuteleportuoja jūsų žaidėją į esamą kamerjos vietą, kai išjungiate Freecam.
+
+FC_NZ=Judėjimas nepaiso pikio
+FC_NZ_H=Neleidžia judėti pirmyn ir atgal, veikiant aukštį, atsižvelgiant į tai, kur jūsų žaidėjas žiūri.
+
+FC_MF=Žėmėlapis seka Freecam
+
+MOVCTRL=Judėjimo Kontrolė
+MOVCTRL_FC=Pakeičia Jūsų judėjimo nustatymus tarp žaidėjo ir laisvosios kameros
+
+EDTHCLR=Keisti HUD/UI Spalvas
+
+EDTLB=Redaguoti etiketes
+
+ADDLB=Pridėti etikėtes
+ADDLB_H=Prideda etikėtę į sąrašą kurį vėliau galima koreguoti.
+ADDLB_E=Deja, {} nėra tinkama etiketė. :/
+
+RVLLB=Atskleisti etiketes
+RVLLB_H=Sustabdo žaidime esančias teksto etikėtes nuo išsiaiškinimo ir vietoi to - rodo jum etikėtes.
+
+OWOLB=OwO-fikuoti Etiketes
+
+LBLST=Etikečių sąrašas
+
+EDIT=Koreguoti
+
+! {} should be at the end as it could be very long
+RESET=Atstatyti į {}
+
+REMOVE=Pašalinti
+
+FOV=Matymo Laukas
+
+FOV_TP_VEH=Trečiasis Asmuo, Transporto Priemonėje
+FOV_TP_ONF=Trečiasis Asmuo, Pėsčiomis
+FOV_FP_VEH=Pirmas Asmuo, Transporto Priemonėje
+FOV_FP_ONF=Pirmas Asmuo, Pėsčiomis
+FOV_AIM=Taikymas
+FOV_SNIP=Snaiperio Taikymas
+
+CAMDIST=Kameros Atstumo Daugiklis
+
+2PRSN=2-ojo asmens perspektyvas
+
+! "Heading" as in the rotation
+CAMPUKE=Užrakinti Žaidimo Kameros Heading'ą
+
+RDRG=Atvaizdavimas
+
+VISSTTNGS=Vaizdiniai Nustatymai
+
+NITEV=Naktinis Matymas
+
+THERV=Šilumos Matymas
+
+SHDR=Shader'ių Nepaisymas
+
+DSTSCLMUL=Atstumo Mastelio keitimas
+
+RDRHDOLY=Pateikti tik HD
+
+POTAT=Potato Režimas
+POTAT_H=Sugražina senas 2013 metų žaidimo grafikas.
+
+BLKALLDRW=Išjunkti Didžiąją Dalį Atvaizdavimo
+
+LKSTRMFCS=Užrakinkite Srautinį Fokusavimą
+LKDPOS=Užrakinta Padėtis
+SELPOS_T=Pasirinkę poziciją, paspauskite {}, kad ją patvirtintumėte.
+
+SGMELNG=Nustatyti Žaidimo Kalbą
+SGMELNG_H=Kai kurios kalbos turi skirtingą šriftą, kuris veiks tik paleidus žaidimą iš naujo.
+
+STUTFIX=Ištaisyti strigimą esant dideliem FPS
+STUTFIX_H=Ištaisyto strigimus, atsirandančius žaidimui artėjant prie 188 FPS.
+
+NKBDHK=Išjungti Klaviatūros hook'ą
+NKBDHK_H=Leidžia paspausti „Windows“ klavišą, kai sufokusuotas GTA langas, ir sustabdyti žaidimo lag'ą, dėl kurio atsiranda klavišo paspaudimo delay'us.
+
+DBGNTVS=Nepaisyti Derinimo Raktažodžių
+DBGNTVS_H=Įdiegia ir nepaiso derinimo vietinių raktažodžius, kurie vis dar naudojami kai kuriuose žaidimo skriptuose.
+
+! As in "Software Patch"
+PTCHS=Programinės Įrangos Pataisos
+
+PRJTPOOL=Objektų Limitas
+PTCH_PRJTPOOL_H=Vietoj to, kad būtų atsisakyta paleisti naujus objektus, kai objektų limitas yra pilnas, ši pataisa ištrins seniausią objektą.
+
+ANAL=Analoginės Klaviatūros Palaikymas
+ANAL_H=Jei turite palaikomą analoginę klaviatūrą, žaidimas supras, kaip stipriai spaudžiate klavišus.
+ANAL_L=Palaikomos Klaviatūros
+
+PRSRSUB=Slėgio Dedamoji
+PRSRDIV=Slėgio Daliklis
+
+DEV=Įrenginys
+PRSR=Slėgis
+
+EJ=Ankstyvo Paleidimo Patobulinimai
+EJ_H=Žaidimo patobulinimai, kurie bus taikomi, tik žaidimui prasidėjus paleidžiant „Stand“.
+
+GMEPOOL=Žaidimo Baseinų Dydžio Daugiklis
+GMEPOOL_H=Padaugina objektų, scenarijaus išteklių ir tt. telkinių dydį. Taip pat padidinkite atminties telkinio dydį, kad išvengtumėte klaidų, susijusių su „nepakanka atminties“. Bandant pakartoti įrašą naudojant modifikuotus žaidimų telkinius, žaidimas crash'ins.
+
+MEMPOOL=Atminties Telkinio Dydis (MB)
+
+SETHIPRIO2=Nustatyti Aukštą Žaidimo Prioritetą
+SPDUPSTRUP=Paspartinti Paleidimą
+SKPGMEITR2=Praleisti Įvadą ir Licencizaciją
+
+SVMR=Naudoti Skripto VM Reimplementaciją
+SVMR_H=Žaidimo rintome skriptas pakeičiamas į šiek tiek labiau optimizuota versija.
+
+! Legacy as in "the old way"
+LGCY=Senasis Būdas
+
+YEET_W=Jūsų žiniai, tai išjunks jūsų žaidimą
+
+!!!!!!!!!!!!!!!!!!
+!! Game > Radio !!
+!!!!!!!!!!!!!!!!!!
+
+RD=Radija
+
+MBLRD=Mobili Radija
+MBLRD_H=Leidžia klausytis radijos būnant pėsčiam.
+
+LKRD=Užrakinti Radijos stotį
+LKRD_H=Žaidimas ir kiti žaidėjai negalės pakeisti radijo stoties.
+
+RDSTS=Radijo Stotys
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Game > Disables !!
+!!!!!!!!!!!!!!!!!!!!!
+
+DBLES=Išjungia
+
+DGMEINPT=Išjungti Žaidimo Įvestis
+! Preset for Disable Game Inputs
+JUSTMOUSE=Pėlė
+DGMEINPT_H_MOUSE=Išjungia didžąją dalį žaidimo įvesčių kai „Stand“ atidarytas.
+! Preset for Disable Game Inputs
+CTRLLR=Žaidimų Pultas
+DGMEINPT_H_CTRLLR=Išjungia dalį žaidimo įvesčių, kai „Stand“ atidarytas.
+! Preset for Disable Game Inputs
+CTRLLR_N_TABS=Žaidimų pultas + Skiltys
+DGMEINPT_H_CTRLLR_N_TABS=Veikia taip pat kaip "Žaidimų Pultas" tik tais, kad kartu išjungia transporto akseleratoriaus ir stabdžių įvestis.
+DGMEINPT_H_NUMPAD=Įjungia visas žaidimo įvestis.
+
+DGMEINPT_P=Ar Jūs norėtumėte naudoti {preset} nustatymus {disable_game_inputs_path} išjungti konfliktinius žaidimo įvestis, kol „Stand“ atidarytas?
+
+DSBLPHNE=Tiesiai į balso paštą
+DSBLPHNE_H=Užblokuoja visus skambučius.
+
+NCAMSHK=Išjungti Kameros Drebėjimą
+
+NSTNTJMP=Išjungti Akrobatinius Šuolius
+
+DSBLREC=Išjungti Įrašus
+DSBLREC_H=Išjungiama galimybė fiksuoti Rockstar Editor klipus.
+
+NCINCAM=Išjungti Kinematinę Kamerą
+
+NVEHFCSCAM=Išjungti Transporto Priemonės Fokusavimo Kamerą
+NVEHFCSCAM_H=Išjungia užuominų kamerą, kai paspaudžiate kino kameros mygtuką, kai esate transporto priemonėje šalia draugiško žaidėjo ir pan.
+
+NIDLECAM=Išjungti AFK kamerą
+
+DSBLRESTRAR=Išjungti Draudžiamas Vietas
+DSBLRESTRAR_H=Tai gali sukelti tai, kad jūs neturite ginklų misijose ar net draudimą prisijungti į misijas. ⚠️
+
+NFLTMSC=Išjungti skrydžio muziką
+NWNTMSC=Išjungti Ieškomumo Muziką
+
+PRVNUM7SCO=Neleisti Numpad7 mygtukui atidaryti „Social Club“
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > Info Overlay !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+HUDINFO=Overlayaus Info
+
+IGTIME=Laikas Žaidyme
+
+RWTIME=Laikas Realybėje
+
+DPS=Kadrai per Sekundę
+
+GPUOVHD=GPU Overhead’as (ms)
+GPUOVHD_H=Kiek milisekundžių jūsų CPU laukia, kol GPU užbaigs kadrą.
+
+TS=Ticksai per Sekundę
+TS_H=Lygus kadrams per sekundę.
+
+GEAR=Pavara
+GEAR_R=Atbulinis
+
+RPM=RPM
+
+HQSA=Hosto Eilės Faktorius
+HQSA_0=Žemiausias „Rockstar“ ID
+HQSA_1=Aukščiausias „Rockstar ID
+HQSA_2=Žemiausias Vardo Hashas
+HQSA_3=Aukščiausias Vardo Hashas
+
+WSPCW=Kas Ką Stebi
+WSPCW_T={spectator} stebi {spectatee}
+
+CTRYBRKDWN=Šalies Suskirstymas
+CTRYBRKDWN_H=Rodomos visos sesijos žaidėjų šalys su žaidėjų skaičiumi prie kiekvienos šalies.
+
+NEPOOL=Išeinantys Tinklo Įvykiai
+
+SRTBYCTRYNME=Rūšiuoti pagal šalies pavadinimą
+SRTBYCNT=Rūšiuoti pagal skaičių
+
+ALTDE=Aukštis
+GRNDIST=Žemės Atstumas
+
+ROT_ENT=Rotacija (esybė)
+ROT_CAM=Pasukimas (kamera)
+ROT_X=Aukštis
+ROT_Y=Pasukimas
+ROT_Z=Pokrypis
+
+PEDS=Civiliai
+
+VEHS=Transportas
+
+OBJS=Objektai
+
+PUPS=Pikupai
+
+PROJ=Šoviniai
+
+SCPROG=Skriptų Programos
+
+SCTHDS=Skriptų Branduoliai
+
+EHLT=Subjektų Paskutinis Ticksas
+
+NGILT=Ivokintas GTA Last Tickas
+
+NSILT=Stand Invokinti Last Tickai
+
+CTRLREQS=Kontroliuoti Prašymus
+
+FIBS=Fiberiai
+
+STH=Skriptų Ticksai
+
+PRSNTHDLS=Piešti Handler'ius
+
+! "Keep-Alive" may be kept as-is, as it's a rather technical term/concept.
+KACONS="Keep-Alive" Ryšiai
+
+!!!!!!!!!!!!!!!!!!!!
+!! Game > Minimap !!
+!!!!!!!!!!!!!!!!!!!!
+
+MINIMAP=Mini-žemėlapis
+
+SLEEK=Elegantiškas Mini-žemėlapis
+
+DNWINVI=Išjungti Naujų Kvietimų Indikatorių
+DNWINVI_H=Išjungiamas naujų kvietimų indikatorius šalia žemėlapio ir programoje „Darbų Sąrašas“.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > AR Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ARNOTIFS=AR Pranešimai
+
+DBGMODE=Derinimo Režimas
+
+STATSCLE=Statinė Skalė
+DYNSCLE=Dinaminė Skalė
+DYNSCLG=Dinaminis Mastelio Keitimas
+
+HOROFF=Horizontalus Poslinkis
+VERTOFF=Vertikalus Poslinkis
+DPHOFF=Gylio Poslinkis
+
+FPHOROFF=Pirmojo Asmens Horizontalus Poslinkis
+FPVERTOFF=Pirmojo Asmens Vertikalus Poslinkis
+FPDPHOFF=Pirmojo Asmens Gylio Poslinkis
+
+RESVRDTOPSPC=Rezervuota Viršutinė Erdvė
+
+ROTMODE=Sukimosi Režimas
+ARNOTIFS_ROTMODE_0=Objektas
+ARNOTIFS_ROTMODE_1=Objektas, Įskaitant Aukštį
+ARNOTIFS_ROTMODE_2=Kamera
+ARNOTIFS_ROTMODE_3=Kamera, Įskaitant Aukštį
+
+ENSTXTREAD=Užtikrinti Teksto Skaitomumą
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Credits !!
+!!!!!!!!!!!!!!!!!!!!!
+
+CRED=Kreditai
+
+CRED_Pocakking=sukūrė BigBaseV2, kas buvo gera pradžia.
+CRED_QuickNET=Pasidalino savo GTA ir C++ žiniomis, atsakė į kvailus klausimus.
+CRED_UPD=Padėjo nuolat atnaujinti meniu, dalindamasi kryžminiais žemėlapiais.
+CRED_alloc8or=Išlaiko savo DB ir pasidalino su daug naudingos informacijos.
+CRED_SirMestre=Sukūrė LittleInjector, kuris padėjo sukurti Launchpad.
+CRED_Give-Two=Sukūrė ScriptHookV implementacija, kuris padėjo su DirectX vaizdavimu.
+CRED_gir489=Pasidalino savo GTA žiniomis, sukūrė bigbasev2 sutvarkytą versiją.
+
+! Check the "Languages" section at https://en.wikipedia.org/wiki/Fork_(software_development)
+CRED_Ryan=Sukūrė "Pluto" - mūsų naudojamą Lua fork'ą.
+
+CRED_BE=Padėjo tau naudoti „Stand“ nepaisant „BattlEye“.
+
+CRED_UPX=Leidžia „Stand“ ".DLL" failui būti mažesniam, neigu jis jau yra..
+CRED_UnknownCheats=Deimantai purve.
+CRED_StackOverflow=Savaime aišku už ką.
+
+CRED_LANG=Vertėjai
+
+CRED_Thimo=Tvarko „Stand“ vertimą į Olandų kalbą.
+CRED_moue=Tvarko „Stand“ vertimą į Lietuvių kalbą.
+CRED_aeronyx=Tvarko „Stand“ vertimą į Portugalų kalbą.
+CRED_zzzz=Tvarko „Stand“ vertimą į Kinų kalbą.
+CRED_IceDoomfist=Tvarko „Stand“ vertimą į Korėjiečių kalbą.
+CRED_99Anvar99=Tvarko „Stand“ vertimą į Rusų kalbą.
+CRED_Lancito01=Tvarko „Stand“ vertimą į Ispanų kalbą.
+CRED_Itreax=Tvarko „Stand“ vertimą į Prancūzų kalbą.
+CRED_Emre=Tvarko „Stand“ vertimą į Turkų kalbą.
+CRED_DumbBird=Tvarko „Stand“ vertimą į Lenkų kalbą.
+CRED_JA=Tvarko „Stand“ vertimą į Japonų kalbą.
+CRED_VI=Tvarko „Stand“ vertimą į Vietnamiečių kalbą.
+CRED_IT=Tvarko „Stand“ vertimą į Italų kalbą.
+
+MISC=Kiti
+
+CRED_YOU=... ir Jūs!
+CRED_YOU_H=Taip, Jūs gaunate dalyvavimo trofėjų. Bet jei rimtai, ačiū už „Stand“ palaikymą, pranešimus apie klaidas ir funkcijų siūlymą!
+
+!!!!!!!!!!!
+!! Stand !!
+!!!!!!!!!!!
+
+CMDSCRPT=Komandų Dėžutės Skriptai
+
+ASI=ASI Modai
+ASI_H=Leidžia naudoti ASI modus su „Stand ScriptHookV“ diegimu.
+ASICE=Panašu, kad šis ASI modas nesuderinamas arba tiesiog labai greitai baigė savo darbą.
+ASI_D_T=Panašu, jog šis ASI modas tinkamai neišsijungė.
+
+ASI_TMP=Naudokite Temp Aplanką
+ASI_TMP_H=Tai leidžia iš naujo paleisti ASI modus, kurie nepalaiko unloadingo, bet tai gali priversti ASI modus readint / writint nustatymus laikinajame aplanke.
+
+ASI_DOC=Apgauti tikrinimus internete
+ASI_DOC_H=Leidžia naudoti ASI modifikacijas, kurios atsisako veikti, kai esate prisijungę į Online sesiją.
+
+LUA=Lua Skriptai
+LUA_H=Leidžia paleisti skriptus, kurie buvo parašyti „Stand“ naudojant Lua kalbą ir (arba) Pluto kalbą.
+
+LUA_RNNG2=Vykdoma {}
+LUA_START=Pradėti Skriptą
+LUA_STOP=Sustabdyti skriptą
+
+CMPTLY=Suderinamumo Sluoksnis
+CMPTLYS=Suderinamumo Sluoksniai
+
+RESTRCS=Apribojimai
+
+LUA_REPODEV=Modifikuojate skriptą, kuris buvo įdiegtas per saugyklą, todėl būkite atsargūs, nes jūsų pakeitimai bus atstatyti su sekančiu skripto naujinimu.
+
+FILEGON=Failas nebeegzistuoja
+
+LUACFGPRST_0=Vartotojas
+
+! Currently unused.
+LUACFGPRST_1=Lengvai Erzinamas Vartotojas
+
+LUACFGPRST_2=Programuotojas
+
+DEVHINT=Panašu, kad kuriate Lua skriptą. Apsvarstykite galimybę naudoti kūrėjo iš anksto numatytą režimą: Lua Skriptai > Nustatymai, kad sužinotumėte apie galimas problemas.
+
+DISINACC=Išjungti Interneto Prieigą
+
+FRCSILNTSTRT=Priverstinis Tylus Paleidimas
+FRCSILNTSTP=Priverstinis Tylus Sustabdymas
+ENFRCSILNTSTRT=Įgalinti Tylųjį Paleidimą
+ENFRCSILNTSTP=Įjungti Tylų Sustabdymą
+
+YES_NOTIFY=Taip + Pranešti
+
+WRNOS=Įspėti Mane Prieš Paleisdami Pavojingus Skriptus
+LUA_W_OS=Šiame skripte yra kodas, kuris prašo tiesioginės prieigos prie jūsų failų ir sistemos. Netęskite, jei nepasitikite jo šaltiniu.
+
+WRNMNY=Įspėti Mane Prieš Paleisdami Pinigų Skriptus
+LUA_W_MNY=Šis skriptas yra susijęs su pinigais. Negalime garantuoti, kad po šio skripto naudojimo jūsų paskyra kurį laiką nebus užbanninta (nes banai vėluoja), mes neatliekame vartotojų sukurto turinio saugumo testų.
+
+LUA_SCAM=Jei sumokėjote už šį skriptą, BUVOTE APGAUTE! 99% turinio yra laisvai prieinama mūsų saugykloje arba „Discord“. Jūs sumokėjote sukčiams, kurie apiplėšia, nesuteikia jokios papildomos vertės ir nemoka pradiniams kūrėjams.
+
+4DEV=Kūrėjams
+
+REPO=Saugykla
+REPO_H_LUA=Saugykla suteikia lengvą prieigą prie pasirinktų lua skriptų.
+
+REPO_P_H=Įdiegėte tai iš saugyklos. „Stand“ jį nuolat atnaujins.
+
+REPO_MISNGLCL=Pakete {} trūksta vietinių failų, todėl atnaujinama, kad tai išspręstų.
+REPO_DLFAIL=Nepavyko atsisiųsti {file} paketui {package}
+
+SECCONT_NCRED=Norint pasiekti šį apsaugotą turinį, reikia suaktyvinti „Stand“.
+SECCONT_NAVAIL=Nepavyko pasiekti šio apsaugoto turinio.
+
+VER=Versija
+ATR=Autorius
+
+DEPS=Priklausomybės (Dependencies)
+DEP_M_O=Priklausomybė nustatyta kaip įdiegta rankiniu būdu.
+DEP_M_F=Priklausomybė nebepažymėta kaip įdiegta rankiniu būdu.
+
+HELP=Gaukite pagalbos su „Stand“
+
+WEB2=Interneto Sąsaja
+WEB2_H=Žiniatinklio sąsaja leidžia naudoti „Stand“ iš naršyklės, net ir išmaniajame telefone.
+WEB=Atidaryti internetinę versiją
+WEB_T=Dabar jūs naudojate internetinė versiją. :O
+WEB_T_L=Jūs baigiate naudoti internetinę versiją.
+
+RELAY_C=Jungiamasi prie {}...
+RELAY_E=Nepavyko prisijungti ({}).
+RELAY_L=Nutrauktas ryšys.
+
+TESTS=Eksperimentai
+
+CLRNOTIFS=Išvalyti Pranešimus
+CLRNOTIFS_H=Išvalo „Stand“ pranešimų sistemą.
+
+EMPTYLOG=Ištuštinti Log.txt
+EMPTYLOG_H=Valo tavo %appdata%/Stand/Log.txt.
+EMPTYLOG_T=Žurnalas ištuštintas :)
+
+FNDCMD=Rasti Komandą
+FNDCMD_H=Leidžia tau rasti komandas „Stand“ pagal vardą ir komandų aprašymą.
+
+CTXSTAR=Išsaugoti
+CTXSTAR_H=Išsaugo šią komandą, kad galėtumėte ją rasti {}.
+
+CMDSTARS=Išsaugotos komandos
+CMDSTARS_H=Išvardija visas komandas, kurias išsaugojote naudodami atitinkamą kontekstinio meniu parinktį.
+
+CON=Konsolė
+
+LNDFT=Komandos su nenumatyta būsena
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST=Generuoti Features (lt).txt
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_H=Išsaugo visas šiuo metu galimas komandas aplanke %appdata%/Stand/Features (lt).txt with their help text and syntax.
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_T=Išsaugotas funkcijų sąrašas į %appdata%/Stand/Features (lt).txt :D
+
+FTRLST_1OPTN=Pirmas Nustatymas
+FTRLST_OPTNS={} Nustatymai
+FTRLST_MOPTNS={} Daugiau Nustatymų
+
+PERMS=Leidimai (Teisės)
+FTRLST_OTHP=Gali naudoti kiti žaidėjai, turintys {} leidimą.
+FTRLST_R=Išskirtinai tik „Regular“ versijoje
+FTRLST_U=Išskirtinai tik „Ultimate“ versijoje
+
+PERM_F=Draugiškos Komandos (Funkcijos)
+PERM_N=Neutralios Komandos (Funkcijos)
+PERM_S=Spawninimo Komandos
+PERM_R=Nemandagios Komandos
+PERM_A=Agresyvios Komandos
+PERM_T=Toksiškos Komandos
+
+UNLD=Visiškai išjungti Stand
+UNLD_H=Pašalina Stand iš žaidimo tol, kol Jūs vėl jo neįjungsite.
+UNLD_T=Tavo Stand dingo.
+
+BADBOY=Jūs ką tik bandėte išmesti kitą „Stand“ vartotoją, kuris nieko nepadarė, kad to nusipelnytų. Elkitės su kitais žmonėmis taip, kaip norėtumėte, kad jie elgtųsi su jumis. Jūsų „Stand“ vėl bus pasiekiamas po kelių sekundžių.
+
+NWOOM=Tinkle nebėra atminties vienam iš žaidėjų. Pašalinkite bandantį jus išmesti žaidėją arba palikite sesiją.
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! State & Profiles !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+PRFLS=Profiliai
+PRFLS_H=Profiliai leidžia išsaugoti ir įkelti visų komandų būseną.
+
+NEWPRFL=Sukurti Profilį
+NEWPRFL_H=Išsaugokite kiekvienos komandos būseną naujame profilyje.
+
+DELPRFL_S=Sėkmingai ištrintas {} profilis.
+DELPRFL_F=Nepavyko ištrinti {} profilio. Pabandykite ištrinti profilį rankiniu būdu.
+
+LOAD=Įkelti
+LSTATE=Įjungti būseną
+LSTATE_H_CTX2=Šiai komandai taiko būseną iš aktyvaus profilio.
+LSTATE_H2=Kiekvienai komandai taiko būseną iš šio profilio.
+LSTATE_T2=Taikoma būsena nuo {} profilio. :)
+LSTATE_T_CTX2=Taikoma būsena nuo {profile} profilio į {command}. :)
+
+SAVE=Išsaugoti
+SSTATE=Išsaugoti būseną
+SSTATE_H_CTX2=Išsaugo šios komandos būseną jūsų aktyviame profilyje.
+SSTATE_H2=Išsaugo kiekvienos komandos būseną šiame profilyje.
+SSTATE_T2=Būsena išsaugota {} profilyje. :)
+SSTATE_T_CTX=Išaugota {command} būsena {profile} profilyje. :)
+
+AUTOLOAD=Paloadinti painjectinus
+
+AUTOSAVE2=Išsaugoti Automatiškai
+AUTOSAVE2_H=Šis profilis nuolat atnaujinamas, kai naudojate „Stand“.
+AUTOSAVE2_H_T=Automatinis išsaugojimas bus iš naujo įjungtas, kai kitą kartą naudosite „Stand“.
+AUTOSAVE2_T=Nereikia, šis profilis išsaugomas automatiškai. :)
+
+GODFLT=Nustatyti į pradinę būseną
+GODFLT_H=Atstato visų komandų būsenas į pradinęs būsenas.
+GODFLT_T=Nustatyta pradinė būsena. :)
+GODFLT_CTX=Nustatyta {}'s numatytoji būsena. :)
+
+RGODFLT=Taikyti numatytąją būseną vaikams
+RGODFLT_CTX=Pritaikyta numatytoji būsena visiems vaikams {}. :)
+
+PRFL_H_ACTV=Tai yra tavo aktyvusis profilis.
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Appearance !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+STTNGS_TXT=Šriftas ir Tekstas
+
+STFNT=Nustatyti Šriftą
+
+CMBINTXT=Komandų Laukelio Įvesties Tekstas
+TXT_S=Mažas Tekstas
+
+TXTSCL=Teksto skalė
+
+OFF_X=X poslinkis
+OFF_Y=Y poslinkis
+
+TXTBOX=Rodyti teksto ribojimo laukelius
+
+FNTPRST=Naudoti išankstinį šriftą
+FNTPRST_H_YAHEI=„Stand“ numatytasis šriftas.
+FNTPRST_H_NANUMGOTHIC=„Stand“ pagalbinis šriftas korėjiečių kalbai.
+FNTPRST_H_BEVIETNAM=„Stand“ pagalbinis šriftas vietnamiečių kalbai.
+
+RLDFNT=Perkrauti šriftą
+
+SPRS=Tekstūros
+
+LFTBND=Kairėje
+LFTBND_1=Tik Jungikliai
+LFTBND_1C=Tik Jungikliai, Kompaktiškas
+LFTBND_2=Visos Komandos
+LFTBND_2C=Visos komandos, Kompaktiškas
+
+RLDSPR=Perkrauti tekstūras
+
+HDR=Logotipas
+2HIDE=Dinkti
+CUS=Kitas
+
+FRMINT=Kadrų intervalas
+
+SCRLBR=Slinkties juosta
+SCRLBR_1=Įjungta dideliems sąrašams
+
+LSTWDT=Sąrašo Plotis
+LSTHHT=Sąrašo Aukštis
+
+WDT=Plotis
+HHT=Aukštis
+
+SPCSZE=Tarpų Dydis
+
+LERP=Sklandus Slinkimas
+
+BGBLR=Fono suliejimas
+BGBLR_H=Atkreipkite dėmesį, kad didesnės to vertės labai reikalauja jūsų GPU.
+HDR_BGBLR_H=Turėtų būti įjungta tik skaidrioms antraštėms, nes būtų švaistomi ištekliai norint sukurti vaizdinį efektą, kuris būtų visiškai paslėptas.
+
+INFOTXT=Informacinis Tekstas
+
+ALGN=Lyginimas
+TA=Teksto Lyginimas
+
+ALIGN_TL=Viršus Kairė
+ALIGN_TC=Viršus Centras
+ALIGN_TR=Viršus Dešinė
+ALIGN_CL=Centras Kairė
+ALIGN_CC=Centras
+ALIGN_CR=Centras Dešinė
+ALIGN_BL=Apačia Kairė
+ALIGN_BC=Apačia Centras
+ALIGN_BR=Apačia Dešinė
+
+DRPSHDW=Krintantis Šešėlis
+
+SHWNME=Rodyti Pavadinimą
+SHWLICON=Rodyti Piktogramą Kairėje
+SHWRICON=Rodyti Piktogramą Dešinėje
+
+ICUTXTCLR=Piktogramos Naudoja Teksto Spalvą
+
+ADDRBAR=Adresų Linija
+
+SHWCRLSTNLY=Rodyti Tik Dabartinį Sąrašą
+
+ADDRSEP=Adresų Skirtukas
+
+WDTAFFBSCRLBR=Plotis, kurį veikia slinkties juosta
+
+WDTAFFBCLMNS=Plotis Paveiktas Stulpelių
+
+CTX_ADDR=Kopijuoti Adresą
+CTX_ADDR_0=Mano Formatas
+CTX_ADDR_1=Numatytasis Formatas
+CTX_ADDR_2=API Formatas
+CTX_ADDR_3=Fokus Sąsaja
+
+BRD=Barjeras
+
+RNDD=Suapvalintas
+
+MAXCLMNS=Maksimalūs Stulpeliai
+
+MNUHGT=Maks. Matomos komandos
+
+CRS=Žymeklis
+
+SCRLGP=Slinkties Tarpas
+CRSPAD_H=Nustato mažiausią komandų kiekį, kurį matysite žemiau arba virš pasirinkimo, nebent esate sąrašo pradžioje ar pabaigoje.
+
+CMDINFOTXT=Komandos informacijos tekstas
+
+BLWTBS=Žemiau skirtukų
+
+RPOS_L=Kairė
+RPOS_B=Apačia
+RPOS_R=Dešinė
+RPOS_T=Viršus
+
+! As in the distance between menu components
+PDDGN=Padding'as
+
+SHWHLPTXT=Rodyti pagalbos tekstą
+
+SHWSYNTX=Rodyti komandų sintaksę
+
+SHWSLDBHV=Nurodykite Slankiklio Elgesį
+
+SHWOTHP=Nurodykite, ar jį gali naudoti kiti žaidėjai
+
+SHWCMDOWNR=Rodyti Savininko Skriptą
+SHWCMDOWNR_T=Šią komandą pridėjo {}.
+
+NOTFS=Pranešimai
+
+TYP=Tipas
+STNDNTF_M=„Stand“, Greta Žemėlapio
+STNDNTF_C=„Stand“, Pasirinktinė Pozicija
+
+CUSTPOS=Pasirinktinė Pozicija
+CUSTPOS_H=Tai galios tik tada, kai tipas nustatytas į „Stand, Pasirinktinė padėtis“.
+
+INVFLOW=Apverskite Srautą
+
+BRDCLR=Kraštinės Spalva
+
+FLSHCLR=Blykstės Spalva
+
+FLSHNTF=Greitas pranešimas
+
+TIMNG=Laikas
+READSPD=Skaitymo Greitis (ŽPM)
+READSTRT=Skaitymo Pradžios Delsa (ms)
+MINDUR=Min. Trukmė (ms)
+MAXDUR=Maks. Trukmė (ms)
+SAMPNOT=Rodyti Pranešimo Pavyzdį
+
+SIZE_S=Mažas
+SIZE_M=Vidutinis
+SIZE_L=Didelis
+
+MAXSHWMCHCMD=Maks. Rodyti Atitinkančias Komandas
+
+KPDRFCLS=Išlaikyti Juodraštį Uždarius
+
+SHWBI=Rodyti mygtuko instrukcijas
+
+SHWCRSPOS=Rodyti žymeklio padėtį
+SHWCRSPOS_H=Perjungia žymeklio padėties indikatoriaus matomumą „Stand“ žaidimo GUI viršuje, dešinėje.
+
+CRSPOSIDIV=Žymeklio padėtis apima daliklius
+
+! Root as in the root of the command tree, which in this context is the text that reads "Stand 0.69 (Regular)" etc.
+RN=„Stand“ Vardas
+
+RN_RNDBOOL=Atstovaukite komandai, kuriai atsitiktine tvarka buvo priskirta jūsų „Stand” paskyra.
+RN_100=100(.x). „Stand“ naudotojams.
+RN_EA=Už tai, kad buvote vartotojas prieš „Stand“ 100.
+RN_U=Už tai, kad esate „Ultimate“ leidimo vartotojas.
+RN_EU=Už tai, kad be reikalo išleidote 100 eurų ant ankstyvosios „Ultimate“ ar „Toxic“ versijos.
+
+BKRST="Atgal" Atstato Žymeklį
+BKRST_H=Perkelia žymeklį į sąrašo viršų, kai paspaudžiamas "atgal" ir nėra prie ko grįžti.
+
+BKCLS=Meniu „Atgal“ uždaromas
+BKCLS_H=Leidžia „Stand“ žaidimo GUI uždaryti paspaudus atgal, kai nėra prie ko grįžti.
+
+INJOPEN2=Atidaryti po Injekcijos
+
+PRFILVAL=Iš Anksto Užpildykite Dabartinę Komandų Langelio Vertę
+
+CMDTP_S=Slankikliai
+CMDTP_S_N=Skaičių Slankikliai
+CMDTP_AV=Teksto Įvestys
+
+SELDIV=Pasirenkami skirstytuvai
+SELNA=Pasirenkamieji N/A Slankikliai
+
+RHTBNDVAL=Dešinioji Vertė
+
+LANG=Kalba
+LANG_H=Jei negalite suprasti kalbos, kuria parašytas šis tekstas, pakeiskite ją.
+LANG_H2=Šis vertimas šiuo metu neprižiūrimas. Susisiekite, jei manote, kad galėtumėte jį atnaujinti.
+
+STRMPRF=Stream-Proof Renderinimas
+STRMPRF_H=„Stand“ tampa nematomas transliacijos programinei įrangai, jei ji naudoja „DirectX“ arba kitą žaidimų fiksavimą.
+
+ENTPREVS=Objektų Peržiūros
+DENTPREVS=Išjungti Objektų Peržiūras
+OPQ=Nepermatomas
+ENTPREVROTSPD=Sukimosi Greitis
+ADDPREVDISTP=Papildomas Veikėjo Atstumas
+ADDPREVDISTO=Papildomas Objekto Atstumas
+ADDPREVDISTV=Papildomas Transporto Priemonės Atstumas
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+CLRS=Spalvos
+
+KSPD=Rakto Pakartojimo Intervalas
+KSPD_H=Intervalas, kuriuo klaviatūros įvedimas yra pakartojamas, kai laikote nuspaudę klavišą.
+
+KHSPD=Klavišo Ilgalaikio Pakartojimo Intervalas
+KHSPD_H=Intervalas, kuriuo pasikartoja klaviatūros įvestis, kai paspaudžiate klavišą.
+
+TKSPD=Klavišų Kartojimo Intervalas Skirtukams
+
+WRPINTHLD=Trukdyti laikimą per "Wrap-Around"
+
+IPT=Įvestis
+
+KSCHM=Klaviatūros įvesties schema
+PRSTS=Išankstiniai nustatymai
+KSCHM_A=Lankstus
+KSCHM_0=Jokio Numpado
+KSCHM_1=Numpadas
+KSCHM_1_E=Pirmiausia paspauskite bet kurį skaičių klaviatūros klavišą, kad patvirtintumėte, jog jį turite. :?
+
+QWQCTX=Kontekstinių Parinkčių Spartieji Klavišai
+
+MOUSE=Pėlės Palaikymas
+MOUSE_H=Atkreipkite dėmesį, kad tai neveikia su Windows įvesties metodu, nes Windows nuolat centruoja žymeklį.
+
+MOUSEFOCUS=Nustatykite žymeklio padėtį naršant ne pelėje
+
+MOVWTHMSE=Judėk su Pele
+
+CTRLLRSPPRT=Valdiklio palaikymas
+
+CTRLLRSCHM=Žaidimų pulto įvesties schema
+
+HDENFO=Slėpti informaciją
+HDENFO_H=Tai gali padėti išvengti privačios informacijos parodymo kai dalijatės ekranu naudojant „Stand“.
+
+RDCTD=[Paslėpta]
+
+HDENME=Slėpti suklastotą vardą
+HDENME_H=Tai reiškia žaidėjo informacijos sąraše rodomą vardą ir jo neturi įtakos „Apgaulingi kitų žaidėjų vardai“.
+
+HDERID=Slėpti „Rockstar“ ID
+HDEIP=Slėpti IP adresą
+HDEGIP=Paslėpti GeoIP
+
+B_OC=Atidaryti / uždaryti meniu
+B_OC_1=Atidaryti/Uždaryti Meniu 1
+B_OC_2=Atidaryti/Uždaryti Menii 2
+B_RU=Ankstesnis skirtukas
+B_RD=Sekantis skirtukas
+B_MU=Į viršų
+B_MD=Į apačią
+B_ML=Į kairę
+B_MR=Į dešinę
+B_MC=Spustelėkite
+B_MB=Atgal
+
+DISCRP=Discord Rich Presence
+
+CLRCMDS=Spalvų Komandos
+PRVWCLRTXR=Peržiūrėti spalvas Tekstūrose
+PRCWCLRLST=Peržiūrėti spalvas Sąraše
+
+SFX=Garso Efektai
+
+MNUNVRMD=Meniu Naršymo Priminimai
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings > Session Joining !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSJNG=Sesijų Prisijungimas
+
+SPCUCON=Spekuliatyvūs Ryšiai
+SPCUCON_H=Bandoma paspartinti prisijungimą prie sesijų naudojant „Stand“, spekuliatyviai prisijungiant prie hosto ir talpinant kai kuriuos duomenis.
+
+AUTOCHNGTRGT=Automatiškai Pakeisti Taikymo Režimą
+AUTOCHNGTRGT_H=Tai taikoma tik prisijungiant prie sesijų per Stand. Prisijungimo metodai be dialogo langų tai daro visada.
+AUTOCHNGTRGT_T=Taikymo režimas pakeistas į {}.
+AUTOCHNGTRGT_T_0=pagalbinis taikymasis
+AUTOCHNGTRGT_T_1=laisvasis taikymasis
+
+REJBLK=Patikrinti, Ar Prisijungti Pavyks
+REJBLK_H=Atšaukia prisijungimo bandymą, jei host'as neleidžia prisijungti, pvz. nes sesija pilna.
+REJBLK_T=Panašu, kad host'as šiuo metu neleidžia jums prisijungti.
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Tunables !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+TNBL=Tunables'ai
+TNBL_H=Leidžia tau naudotis ir įjungia specialius "Rockstar event week" įvykius.
+
+NINSURPAY=Išjunkite Draudimo Išmokas
+NINSURPAY_H=Neleidžia jums mokėti už draudimą sunaikinant kitų žaidėjų asmenines transporto priemones.
+
+TNBL_HLWN=Halloween'as
+
+TNBL_PYTE=Peyoto Augalai
+
+!!!!!!!!!!!!!!!!!!!!
+!! World > Editor !!
+!!!!!!!!!!!!!!!!!!!!
+
+EDTR=Redaktorius
+
+ROT_L=Pasukti Į Kairę
+ROT_R=Sukti Į Dešinę
+
+TOOLS=Įrankiai
+
+TP2LKAT=Teleportuotis ten, kur Žiūriu
+DELSPWD=Ištrinti Atspawnintus Objektus
+
+FCSIMNU=Fokusuoti „Stand'e“
+
+!!!!!!!!!!!!!!!!!!
+!! Asset Hashes !!
+!!!!!!!!!!!!!!!!!!
+
+AST=Asset’ų Hash’ai
+
+ASTFIX=Pataisyti Asset’ų Hash’us
+ASTFIX_H=Leidžia prisijungti prie sesijų su pakeistais asset’ais, kurie paprastai rodo nesuderinamų asset’ų klaidą.
+
+ASTCRC=Asset’ų Kontrolinė Suma
+
+ASTSET=Nustatyti Asset’ų Kontrolinę Sumą
+ASTSET_H=Leidžia įvesti pasirinktinę asset’ų kontrolinę sumą (iki 8 šešioliktainių skaitmenų), kad apribotumėte matchmaking’ą ir sesijas.
+ASTSET_T=Nustatykite asset’ų kontrolinę sumą į {}.
+
+ASTRST=Iš Naujo Nustatyti Asset’ų Kontrolinę Sumą
+
+OVRXTR=Nepaisyti Papildomos Kontrolinės Sumos
+
+XTRCRC=Papildoma Kontrolinė Suma
+XTRCRC_H=Leidžia įvesti pasirinktinę papildomą kontrolinę sumą (iki 8 šešioliktainių skaitmenų), kad apribotumėte matchmaking’ą ir sesijas.
+
+XTRCRC_PRSTS=Papildoma Kontrolinė Suma: Išankstiniai Nustatymai
+
+!!!!!!!!!!!!!!!!!
+!! Custom DLCs !!
+!!!!!!!!!!!!!!!!!
+
+CUSTDLC=Individualūs DLC
+CUSTDLC_H=Leidžia lengvai įkelti pasirinktinius DLC, pvz., papildomas transporto priemones.
+
+! Don't translate the folder names
+CUSTDLCS_OPNFLD=Atidaromas aplankas “Custom DLCs”, kurį galite traktuoti kaip GTA “dlcpacks” aplanką, išskyrus tai, kad DLC registracija ir įkėlimas čia yra paprastas kaip vienas paspaudimas.
+
+CUSTDLC_ETY=DLC įkeltas, bet nerasta turinio, kurį būtų galima atspawninti.
+
+CUSTDLC_SPF=Spūfinti Modelius
+CUSTDLC_SPF_H=Suklastoja modelius nuo pasirinktinių DLC iki modelių, kurie iš tikrųjų yra žaidime, kad žaidėjai, neturintys pasirinktinio DLC, vis tiek galėtų ką nors pamatyti.

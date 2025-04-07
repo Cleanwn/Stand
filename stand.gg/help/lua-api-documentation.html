@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lua API Documentation | Stand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+    <link href="/halfmoon-config.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://rawcdn.githack.com/Sainan/prismjs-monokai/f74d1d07b4e109a02a9b9d309e567bf2d068bd9c/src/monokai.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://rawcdn.githack.com/PlutoLang/plutolang.github.io/8fc3eaa1b0fe0d2fe38125f7f80d26af7b298106/src/theme/pluto.js"></script>
+</head>
+<body class="dark-mode">
+    <div class="page-wrapper with-navbar">
+        <nav class="navbar">
+            <div class="container-xl">
+                <a class="navbar-brand" href="/">Stand</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/account/">Account</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="/help/">Help</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-wrapper">
+            <div class="container-xl">
+                <div class="content">
+<h1>Stand Lua API Documentation</h1>
+
+<h3>Table of Contents</h3>
+<ul>
+    <li><a href="#general">About Developing Stand Luas</a></li>
+    <li><a href="#types">Types</a></li>
+    <li><a href="#global-variables">Global Variables</a></li>
+    <li><a href="#menu-functions">Menu Functions</a></li>
+    <li><a href="#players-functions">Players Functions</a></li>
+    <li><a href="#entities-functions">Entities Functions</a></li>
+    <li><a href="#chat-functions">Chat Functions</a></li>
+    <li><a href="#directx-functions">DirectX Functions</a></li>
+    <li><a href="#util-functions">Util Functions</a></li>
+    <li><a href="#v3-functions">V3 Functions</a></li>
+    <li><a href="#lang-functions">Lang Functions</a></li>
+    <li><a href="#filesystem-functions">Filesystem Functions</a></li>
+    <li><a href="#async-http-functions">Async HTTP Functions</a></li>
+    <li><a href="#memory-functions">Memory Functions</a></li>
+    <li><a href="#profiling-functions">Profiling Functions</a></li>
+</ul>
+
+<h3><a name="general" href="#general">§</a> About Developing Stand Luas</h3>
+<h5>Game Natives</h5>
+<p>This Stand Lua API that is described in this document is developed with the game's own scripting features in mind, which are at your fingertips with just a call to <code>util.require_natives</code>.</p>
+<p>You can find a nice viewer for the game's native functions at <a href="https://nativedb.dotindustries.dev/natives" target="_blank" rel="noreferrer noopener">nativedb.dotindustries.dev</a>, which is powered by <a href="https://github.com/alloc8or/gta5-nativedb-data" target="_blank" rel="noreferrer noopener">alloc8or's nativedb data</a>.</p>
+<h5>Runtime Settings</h5>
+<p>We highly recommend using <b>Stand > Lua Scripts > Settings > Presets > Developer</b> and/or reviewing all the Lua runtime settings available to you, as they can help you write more polished and less buggy code.</p>
+<h5>Language</h5>
+<p>Stand uses <a href="https://plutolang.github.io/docs/Introduction" target="_blank">Pluto</a> which adds new features, improvements, and optimisations while being compatible with existing Lua code.</p>
+<p>If nothing else, you should at least get <a href="https://github.com/PlutoLang/Syntax-Highlighting" target="_blank">Pluto Syntax Highlighting</a> so you can properly view .pluto files.</p>
+<p>Note that for .lua files, Stand disables the 'new' and 'class' keywords from Pluto.</p>
+<h5>Bindings</h5>
+<p>Stand also provides <a href="https://github.com/calamity-inc/Soup-Lua-Bindings/blob/main/LUA_API.md#soup-lua-bindings">Soup Lua Bindings</a>.</p>
+<h5>Examples</h5>
+<p>You can get our example scripts via the repository: <a href="https://stand.gg/focus#Stand%3ELua%20Scripts%3ERepository%3EExample%20Scripts" target="_blank">Stand > Lua Scripts > Repository > Example Scripts</a></p>
+
+<h3><a name="types" href="#types">§</a> Types</h3>
+<h5><i class="text-success">Vector3</i></h5>
+<p>A v3 instance or a table with <code>x</code>, <code>y</code> &amp; <code>z</code> fields of type number.</p>
+<h5><i class="text-success">Colour</i></h5>
+<p>A table with <code>r</code>, <code>g</code>, <code>b</code> &amp; <code>a</code> fields of type number with values between 0.0 and 1.0.</p>
+<p>Functions that take this as a parameter also support 4 floats instead of it, which is more performant.</p>
+<h5><i class="text-success">Label</i></h5>
+<p>A string or the return value of <code>lang.register</code>.</p>
+<h5><i class="text-success">CommandAny</i></h5>
+<p>Not an actual type, but the base for CommandRef and CommandUniqPtr, which both support the following operations:</p>
+<ul>
+    <li><code>.menu_name</code> — shorthand for menu.get_menu_name/menu.set_menu_name</li>
+    <li><code>.command_names</code> — shorthand for menu.get_command_names/menu.set_command_names</li>
+    <li><code>.help_text</code> — shorthand for menu.get_help_text/menu.set_help_text</li>
+    <li><code>.name_for_config</code> — shorthand for menu.get_name_for_config/menu.set_name_for_config</li>
+
+    <li><code>:getPhysical()</code> — shorthand for menu.get_physical</li>
+    <li><code>:equals(CommandAny)</code> — returns a boolean that indicates if this CommandAny refers to the same command as another CommandAny instance</li>
+</ul>
+<h5><i class="text-success">CommandRef</i></h5>
+<p>A reference to a command in Stand. Supports all of CommandAny's operations as well as:</p>
+<ul>
+    <li><code>:isValid()</code> — shorthand for menu.is_ref_valid</li>
+    <li><code>:refByRelPath()</code> — shorthand for menu.ref_by_rel_path</li>
+    <li><code>:delete()</code> — shorthand for menu.delete</li>
+    <li><code>:defaultAndDelete()</code> — shorthand for menu.default_and_delete</li>
+    <li><code>:detach()</code> — shorthand for menu.detach</li>
+    <li><code>:attach(...)</code> — shorthand for menu.attach</li>
+    <li><code>:attachAfter(...)</code> — shorthand for menu.attach_after</li>
+    <li><code>:attachBefore(...)</code> — shorthand for menu.attach_before</li>
+    <li><code>:focus()</code> — shorthand for menu.focus</li>
+    <li><code>:isFocused()</code> — shorthand for menu.is_focused</li>
+    <li><code>:getApplicablePlayers()</code> — shorthand for menu.get_applicable_players</li>
+    <li><code>:getParent()</code> — shorthand for menu.get_parent</li>
+    <li><code>:getType()</code> — shorthand for menu.get_type</li>
+    <li><code>:getChildren()</code> — shorthand for menu.get_children</li>
+    <li><code>:getFocus()</code> — shorthand for menu.list_get_focus</li>
+    <li><code>:getFocusPhysical()</code> — shorthand for menu.list_get_focus_physical</li>
+    <li><code>:trigger()</code> — shorthand for menu.trigger_command</li>
+    <li><code>:onTickInViewport(...)</code> — shorthand for menu.on_tick_in_viewport</li>
+    <li><code>:onFocus(...)</code> — shorthand for menu.on_focus</li>
+    <li><code>:onBlur(...)</code> — shorthand for menu.on_blur</li>
+    <li><code>:removeHandler(...)</code> — shorthand for menu.remove_handler</li>
+    <li><code>:getState()</code> — shorthand for menu.get_state</li>
+    <li><code>:getDefaultState()</code> — shorthand for menu.get_default_state</li>
+    <li><code>:setState(...)</code> — shorthand for menu.set_state</li>
+    <li><code>:applyDefaultState()</code> — shorthand for menu.apply_default_state</li>
+    <li><code>:recursivelyApplyDefaultState()</code> — shorthand for menu.recursively_apply_default_state</li>
+    <li><code>:setListActionOptions(...)</code> — shorthand for menu.set_list_action_options</li>
+    <li><code>:setTextsliderOptions(...)</code> — shorthand for menu.set_textslider_options</li>
+    <li><code>:addValueReplacement(...)</code> — shorthand for menu.add_value_replacement</li>
+    <li><code>:setTemporary()</code> — shorthand for menu.set_temporary</li>
+
+    <li><code>.visible</code> — shorthand for menu.get_visible/menu.set_visible</li>
+    <li><code>.value</code> — shorthand for menu.get_value/menu.set_value</li>
+    <li><code>.min_value</code> — shorthand for menu.get_min_value/menu.set_min_value</li>
+    <li><code>.max_value</code> — shorthand for menu.get_max_value/menu.set_max_value</li>
+    <li><code>.step_size</code> — shorthand for menu.get_step_size/menu.set_step_size</li>
+    <li><code>.precision</code> — shorthand for menu.get_precision/menu.set_precision</li>
+    <li><code>.indicator_type</code> — shorthand for menu.get_indicator_type/menu.set_indicator_type</li>
+    <li><code>.target</code> — shorthand for menu.get_target/menu.set_target</li>
+
+    <li><code>:list(...)</code> — shorthand for menu.list</li>
+    <li><code>:action(...)</code> — shorthand for menu.action</li>
+    <li><code>:toggle(...)</code> — shorthand for menu.toggle</li>
+    <li><code>:toggle_loop(...)</code> — shorthand for menu.toggle_loop</li>
+    <li><code>:slider(...)</code> — shorthand for menu.slider</li>
+    <li><code>:slider_float(...)</code> — shorthand for menu.slider_float</li>
+    <li><code>:click_slider(...)</code> — shorthand for menu.click_slider</li>
+    <li><code>:click_slider_float(...)</code> — shorthand for menu.click_slider_float</li>
+    <li><code>:list_select(...)</code> — shorthand for menu.list_select</li>
+    <li><code>:list_action(...)</code> — shorthand for menu.list_action</li>
+    <li><code>:text_input(...)</code> — shorthand for menu.text_input</li>
+    <li><code>:colour(...)</code> — shorthand for menu.colour</li>
+    <li><code>:rainbow(...)</code> — shorthand for menu.rainbow</li>
+    <li><code>:inline_rainbow(...)</code> — shorthand for menu.inline_rainbow</li>
+    <li><code>:divider(...)</code> — shorthand for menu.divider</li>
+    <li><code>:readonly(...)</code> — shorthand for menu.readonly</li>
+    <li><code>:readonly_name(...)</code> — shorthand for menu.readonly_name</li>
+    <li><code>:hyperlink(...)</code> — shorthand for menu.hyperlink</li>
+    <li><code>:textslider(...)</code> — shorthand for menu.textslider</li>
+    <li><code>:textslider_stateful(...)</code> — shorthand for menu.textslider_stateful</li>
+    <li><code>:player_list_players_shortcut(...)</code> — shorthand for menu.player_list_players_shortcut</li>
+    <li><code>:link(...)</code> — shorthand for menu.link</li>
+</ul>
+<h5><i class="text-success">CommandUniqPtr</i></h5>
+<p>Holds a detached command. Detached commands don't exist in the menu in any way, and are not usable via the command box.</p>
+<p>Supports all of CommandAny's operations as well as:</p>
+<ul>
+    <li><code>:ref()</code> — returns a CommandRef to the command</li>
+</ul>
+
+<h3><a name="global-variables" href="#global-variables">§</a> Global Variables</h3>
+<h5 class="text-danger">SCRIPT_NAME</h3>
+<p>A <i class="text-success">string</i> containing the name of your script (this excludes <code>.lua</code>).</p>
+<h5 class="text-danger">SCRIPT_FILENAME</h5>
+<p>A <i class="text-success">string</i> containing the name of your script file.</p>
+<h5 class="text-danger">SCRIPT_RELPATH</h5>
+<p>A <i class="text-success">string</i> containing the path to your script file from the Lua Scripts folder.</p>
+<h5 class="text-danger">SCRIPT_MANUAL_START</h5>
+<p>A <i class="text-success">bool</i> indicating if your script was started in direct response to a user action.</p>
+<h5 class="text-danger">SCRIPT_SILENT_START</h5>
+<p>A <i class="text-success">bool</i> indicating if a silent start of your script is desired.</p>
+
+<h3><a name="menu-functions" href="#menu-functions">§</a> Menu Functions</h3>
+<!-- menu.my_root -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">my_root</span>()</h5>
+<p>Returns a reference to the list that your script gets when it is started.</p>
+<!-- menu.player_root -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">player_root</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns a reference to the list that the given player owns. Note that the returned reference may be invalid even if called in an on_join handler.</p>
+<!-- menu.shadow_root -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">shadow_root</span>()</h5>
+<p>Using return value of this function to create a command produces a detached commmand (CommandUniqPtr) instead of a CommandRef.</p>
+<!-- menu.ref_by_path -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">ref_by_path</span>(<i class="text-success">string</i> <i class="text-warning">path</i>, <i class="text-success">?int</i> <i class="text-warning">tree_version</i> = <span class="text-danger">nil</span>)</h5>
+<p>Returns a reference to any command in Stand using a path such as <code>Self>Immortality</code>. Note that the path has to be in English (UK) and using the no-space greater-than separator.</p>
+<p>Providing a tree version is optional but highly recommended for future-proofing. You can find this in any tree config file, such as your profile.</p>
+<!-- menu.ref_by_rel_path -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">ref_by_rel_path</span>(<i class="text-success">int</i> <i class="text-warning">base</i>, <i class="text-success">string</i> <i class="text-warning">path</i>)</h5>
+<!-- menu.ref_by_command_name -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">ref_by_command_name</span>(<i class="text-success">string</i> <i class="text-warning">command_name</i>)</h5>
+<p>Note that this should not be used every tick to avoid low performance.</p>
+<!-- menu.list -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">list</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i> = <span class="text-danger">{}</span>, <i class="text-success">Label</i> <i class="text-warning">help_text</i> = <span class="text-danger">""</span>, <i class="text-success">?function</i> <i class="text-warning">on_click</i> = <span class="text-danger">nil</span>, <i class="text-success">?function</i> <i class="text-warning">on_back</i> = <span class="text-danger">nil</span>, <i class="text-success">?function</i> <i class="text-warning">on_active_list_update</i> = <span class="text-danger">nil</span>)</h5>
+<!-- menu.action -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">action</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">function</i> <i class="text-warning">on_click</i>, <i class="text-success">?function</i> <i class="text-warning">on_command</i> = <span class="text-danger">nil</span>, <i class="text-success">?string</i> <i class="text-warning">syntax</i> = <span class="text-danger">nil</span>, <i class="text-success">int</i> <i class="text-warning">perm</i> = <span class="text-danger">COMMANDPERM_USERONLY</span>)</h5>
+<p><code>perm</code> may be any of:</p>
+<ul>
+    <li><span class="text-danger">COMMANDPERM_FRIENDLY</span></li>
+    <li><span class="text-danger">COMMANDPERM_NEUTRAL</span></li>
+    <li><span class="text-danger">COMMANDPERM_SPAWN</span></li>
+    <li><span class="text-danger">COMMANDPERM_RUDE</span></li>
+    <li><span class="text-danger">COMMANDPERM_AGGRESSIVE</span></li>
+    <li><span class="text-danger">COMMANDPERM_TOXIC</span></li>
+    <li><span class="text-danger">COMMANDPERM_USERONLY</span></li>
+</ul>
+<p>Your <code>on_click</code> function will be called with click_type and effective_issuer. The click type could be any of:</p>
+<ul>
+    <li><span class="text-danger">CLICK_MENU</span></li>
+    <li><span class="text-danger">CLICK_COMMAND</span></li>
+    <li><span class="text-danger">CLICK_HOTKEY</span></li>
+    <li><span class="text-danger">CLICK_BULK</span></li>
+    <li><span class="text-danger">CLICK_AUTO</span></li>
+    <li><span class="text-danger">CLICK_SCRIPTED</span></li>
+    <li><span class="text-danger">CLICK_WEB</span></li>
+    <li><span class="text-danger">CLICK_WEB_COMMAND</span></li>
+    <li><span class="text-danger">CLICK_CHAT_ALL</span></li>
+    <li><span class="text-danger">CLICK_CHAT_TEAM</span></li>
+</ul>
+<p>And could match any or neither of these bitflags:</p>
+<ul>
+    <li><span class="text-danger">CLICK_FLAG_AUTO</span></li>
+    <li><span class="text-danger">CLICK_FLAG_CHAT</span></li>
+    <li><span class="text-danger">CLICK_FLAG_WEB</span></li>
+</ul>
+<p>Your <code>on_command</code> function will be called with the provided arguments, click_type, and effective_issuer. If <code>on_command</code> is not provided, commands will be redirected to <code>on_click</code>.</p>
+<!-- menu.toggle -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">toggle</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">function</i> <i class="text-warning">on_change</i>, <i class="text-success">bool</i> <i class="text-warning">default_on</i> = <span class="text-danger">false</span>, <i class="text-success">int</i> <i class="text-warning">perm</i> = <span class="text-danger">COMMANDPERM_USERONLY</span>)</h5>
+<p>Your <code>on_change</code> function will be called with <code>on</code> and <code>click_type</code>.</p>
+<!-- menu.toggle_loop -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">toggle_loop</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">function</i> <i class="text-warning">on_tick</i>, <i class="text-success">?function</i> <i class="text-warning">on_stop</i> = <span class="text-danger">nil</span>, <i class="text-success">int</i> <i class="text-warning">perm</i> = <span class="text-danger">COMMANDPERM_USERONLY</span>)</h5>
+<p>Your <code>on_tick</code> function will be called every tick that the toggle is checked; you should not call <code>util.yield</code> in this context.</p>
+<!-- menu.slider, menu.slider_float -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">slider</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">int</i> <i class="text-warning">min_value</i>, <i class="text-success">int</i> <i class="text-warning">max_value</i>, <i class="text-success">int</i> <i class="text-warning">default_value</i>, <i class="text-success">int</i> <i class="text-warning">step_size</i>, <i class="text-success">function</i> <i class="text-warning">on_change</i>)</h5>
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">slider_float</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">int</i> <i class="text-warning">min_value</i>, <i class="text-success">int</i> <i class="text-warning">max_value</i>, <i class="text-success">int</i> <i class="text-warning">default_value</i>, <i class="text-success">int</i> <i class="text-warning">step_size</i>, <i class="text-success">function</i> <i class="text-warning">on_change</i>)</h5>
+<p>Your <code>on_change</code> function will be called with <code>value</code>, <code>prev_value</code> and <code>click_type</code>.</p>
+<p>Note that the float variant is practically identical except the last 2 digits are indicated to be numbers after the decimal point. The precision can be changed with <code>menu.set_precision</code>.</p>
+<!-- menu.click_slider, menu.click_slider_float -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">click_slider</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">int</i> <i class="text-warning">min_value</i>, <i class="text-success">int</i> <i class="text-warning">max_value</i>, <i class="text-success">int</i> <i class="text-warning">default_value</i>, <i class="text-success">int</i> <i class="text-warning">step_size</i>, <i class="text-success">function</i> <i class="text-warning">on_click</i>)</h5>
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">click_slider_float</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">int</i> <i class="text-warning">min_value</i>, <i class="text-success">int</i> <i class="text-warning">max_value</i>, <i class="text-success">int</i> <i class="text-warning">default_value</i>, <i class="text-success">int</i> <i class="text-warning">step_size</i>, <i class="text-success">function</i> <i class="text-warning">on_click</i>)</h5>
+<p>Your <code>on_click</code> function will be called with <code>value</code> and <code>click_type</code>.</p>
+<p>Note that the float variant is practically identical except the last 2 digits are indicated to be numbers after the decimal point. The precision can be changed with <code>menu.set_precision</code>.</p>
+<!-- menu.list_select -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">list_select</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">table&lt;int, table&gt;</i> <i class="text-warning">options</i>, <i class="text-success">int</i> <i class="text-warning">default_value</i>, <i class="text-success">function</i> <i class="text-warning">on_change</i>)</h5>
+<p><code>options</code> must be table of list action item data. List action item data is an index-based table that contains value, menu_name, command_names, help_text, and category. Value and menu_name are mandatory.</p>
+<p>Your <code>on_change</code> function will be called with the option's value, the option's menu_name, the previous option's value, and click_type as parameters.</p>
+<pre><code class="language-pluto">menu.my_root():list_select("list_select", {}, "", {
+    {1, "Uno"},
+    {2, "Dos"},
+    {3, "Tres"},
+}, 1, function(value, menu_name, prev_value, click_type)
+    util.toast("Value changed to " .. lang.get_localised(menu_name) .. " (" .. value .. ")")
+end)</code></pre>
+<!-- menu.list_action -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">list_action</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">table&lt;int, table&gt;</i> <i class="text-warning">options</i>, <i class="text-success">function</i> <i class="text-warning">on_item_click</i>)</h5>
+<p><code>options</code> must be table of list action item data. List action item data is an index-based table that contains value, menu_name, command_names, help_text, and category. Value and menu_name are mandatory.</p>
+<p>Your <code>on_item_click</code> function will be called with the option's value, the option's menu_name, and click_type as parameters.</p>
+<pre><code class="language-pluto">menu.my_root():list_action("list_action", {}, "", {
+    {1, "Uno"},
+    {2, "Dos"},
+    {3, "Tres"},
+}, function(value, menu_name, click_type)
+    util.toast("Clicked on " .. lang.get_localised(menu_name) .. " (" .. value .. ")")
+end)</code></pre>
+<!-- menu.text_input -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">text_input</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">function</i> <i class="text-warning">on_change</i>, <i class="text-success">string</i> <i class="text-warning">default_value</i> = <span class="text-danger">""</span>)</h5>
+<p>Your <code>on_change</code> function will be called with the string and click type.</p>
+<!-- menu.colour -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">colour</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">Colour</i> <i class="text-warning">default</i>, <i class="text-success">bool</i> <i class="text-warning">transparency</i>, <i class="text-success">function</i> <i class="text-warning">on_change</i>)</h5>
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">colour</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">number</i> <i class="text-warning">default_r</i>, <i class="text-success">number</i> <i class="text-warning">default_g</i>, <i class="text-success">number</i> <i class="text-warning">default_b</i>, <i class="text-success">number</i> <i class="text-warning">default_a</i>, <i class="text-success">bool</i> <i class="text-warning">transparency</i>, <i class="text-success">function</i> <i class="text-warning">on_change</i>)</h5>
+<p>Your <code>on_change</code> function will be called with Colour and click type.</p>
+<pre><code class="language-pluto">menu.my_root():colour(lang.find_builtin("Colour"), {}, "", 1.0, 0.0, 1.0, 1.0, false, function(colour, click_type)
+    -- ...
+end)</code></pre>
+<!-- menu.rainbow -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">rainbow</span>(<i class="text-success">CommandRef</i> <i class="text-warning">colour_command</i>)</h5>
+<p>Creates a rainbow slider for the given colour command. This should be called right after creating the colour command.</p>
+<!-- menu.inline_rainbow -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">inline_rainbow</span>(<i class="text-success">CommandRef</i> <i class="text-warning">colour_command</i>)</h5>
+<p>Creates a rainbow slider inside of the given colour command. This should be called right after creating the colour command.</p>
+<!-- menu.divider -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">divider</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>)</h5>
+<!-- menu.readonly -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">readonly</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">string</i> <i class="text-warning">value</i> = <span class="text-danger">""</span>)</h5>
+<p>Pairs well with <code>menu.on_tick_in_viewport</code> and <code>menu.set_value</code>.</p>
+<!-- menu.readonly_name -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">readonly_name</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>)</h5>
+<p>Pairs well with <code>menu.on_tick_in_viewport</code> and <code>menu.set_menu_name</code>.</p>
+<!-- menu.hyperlink -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">hyperlink</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">string</i> <i class="text-warning">link</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i> = <span class="text-danger">""</span>)</h5>
+<!-- menu.textslider -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">textslider</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">table&lt;int, Label&gt;</i> <i class="text-warning">options</i>, <i class="text-success">function</i> <i class="text-warning">on_click</i>)</h5>
+<p>We highly recommend using <code>menu.list_action</code> instead of this, unless the options are really unimportant.</p>
+<p>Your <code>on_click</code> function will be called with the option's index, the option's value, and click_type as parameters.</p>
+<!-- menu.textslider_stateful -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">textslider_stateful</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>, <i class="text-success">table&lt;int, Label&gt;</i> <i class="text-warning">options</i>, <i class="text-success">function</i> <i class="text-warning">on_click</i>)</h5>
+<p>We highly recommend using <code>menu.list_select</code> instead of this, unless the options are really unimportant.</p>
+<p>Your <code>on_click</code> function will be called with the option's index, the option's value, and click_type as parameters.</p>
+<!-- menu.player_list_players_shortcut -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">player_list_players_shortcut</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>, <i class="text-success">string</i> <i class="text-warning">command_name</i>, <i class="text-success">bool</i> <i class="text-warning">single_only</i> = <span class="text-danger">false</span>)</h5>
+<!-- menu.link -->
+<h5><i class="text-success">CommandRef|CommandUniqPtr</i> menu.<span class="text-primary">link</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">CommandRef</i> <i class="text-warning">target</i>, <i class="text-success">bool</i> <i class="text-warning">show_address_in_corner</i> = <span class="text-danger">false</span>)</h5>
+<!-- menu.apply_command_states -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">apply_command_states</span>()</h5>
+<p>Loads state & hotkeys for commands you've created without needing to yield, although note that your script is always expected to create all (stateful) commands within the first 100 ticks.</p>
+<!-- menu.delete -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">delete</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.default_and_delete -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">default_and_delete</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.replace -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">replace</span>(<i class="text-success">CommandRef</i> <i class="text-warning">old</i>, <i class="text-success">CommandUniqPtr</i> <i class="text-warning">new</i>)</h5>
+<!-- menu.detach -->
+<h5><i class="text-success">CommandUniqPtr</i> menu.<span class="text-primary">detach</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.attach -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">attach</span>(<i class="text-success">CommandRef</i> <i class="text-warning">parent</i>, <i class="text-success">CommandUniqPtr</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.attach_after -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">attach_after</span>(<i class="text-success">CommandRef|CommandUniqPtr</i> <i class="text-warning">anchor</i>, <i class="text-success">CommandUniqPtr</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.attach_before -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">attach_before</span>(<i class="text-success">CommandRef|CommandUniqPtr</i> <i class="text-warning">anchor</i>, <i class="text-success">CommandUniqPtr</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.is_ref_valid -->
+<h5><i class="text-success">bool</i> menu.<span class="text-primary">is_ref_valid</span>(<i class="text-success">CommandRef</i> <i class="text-warning">ref</i>)</h5>
+<p>Returns if the referenced command still exists.</p>
+<!-- menu.focus -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">focus</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.focus -->
+<h5><i class="text-success">bool</i> menu.<span class="text-primary">is_focused</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.get_applicable_players -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> menu.<span class="text-primary">get_applicable_players</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">?bool</i> <i class="text-warning">include_user</i> = <span class="text-danger">nil</span>)</h5>
+<!-- menu.get_parent -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">get_parent</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.get_type -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">get_type</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<p>The type may equal one of these values:</p>
+<ul>
+    <li><code>COMMAND_LINK</code></li>
+    <li><code>COMMAND_ACTION</code></li>
+    <li><code>COMMAND_ACTION_ITEM</code></li>
+    <li><code>COMMAND_INPUT</code></li>
+    <li><code>COMMAND_TEXTSLIDER</code></li>
+    <li><code>COMMAND_TEXTSLIDER_STATEFUL</code></li>
+    <li><code>COMMAND_READONLY_NAME</code></li>
+    <li><code>COMMAND_READONLY_VALUE</code></li>
+    <li><code>COMMAND_READONLY_LINK</code></li>
+    <li><code>COMMAND_DIVIDER</code></li>
+    <li><code>COMMAND_LIST</code></li>
+    <li><code>COMMAND_LIST_CUSTOM_SPECIAL_MEANING</code></li>
+    <li><code>COMMAND_LIST_PLAYER</code></li>
+    <li><code>COMMAND_LIST_COLOUR</code></li>
+    <li><code>COMMAND_LIST_HISTORICPLAYER</code></li>
+    <li><code>COMMAND_LIST_READONLY</code></li>
+    <li><code>COMMAND_LIST_REFRESHABLE</code></li>
+    <li><code>COMMAND_LIST_CONCEALER</code></li>
+    <li><code>COMMAND_LIST_SEARCH</code></li>
+    <li><code>COMMAND_LIST_NAMESHARE</code></li>
+    <li><code>COMMAND_LIST_ACTION</code></li>
+    <li><code>COMMAND_LIST_SELECT</code></li>
+    <li><code>COMMAND_TOGGLE_NO_CORRELATION</code></li>
+    <li><code>COMMAND_TOGGLE</code></li>
+    <li><code>COMMAND_TOGGLE_CUSTOM</code></li>
+    <li><code>COMMAND_SLIDER</code></li>
+    <li><code>COMMAND_SLIDER_FLOAT</code></li>
+    <li><code>COMMAND_SLIDER_RAINBOW</code></li>
+</ul>
+<p>List types will return a non-zero value if ANDed with <code>COMMAND_FLAG_LIST</code>.</p>
+<p>Additionally, if you AND the type with <code>COMMAND_FULLTYPEFLAG</code>, you may find the result to equal one of the following:</p>
+<ul>
+    <li><code>COMMAND_FLAG_LIST</code></li>
+    <li><code>COMMAND_FLAG_LIST_ACTION</code></li>
+    <li><code>COMMAND_FLAG_TOGGLE</code></li>
+    <li><code>COMMAND_FLAG_SLIDER</code></li>
+</ul>
+<p>Note that not all commands in Stand are physical, e.g. <code>COMMAND_LINK</code> can only take on the appearance of another command. You can use <code>type >= COMMAND_FIRST_PHYSICAL</code> to check if a command type is physical.</p>
+<!-- menu.get_children -->
+<h5><i class="text-success">table&lt;int, CommandRef&gt;</i> menu.<span class="text-primary">get_children</span>(<i class="text-success">CommandRef</i> <i class="text-warning">list</i>)</h5>
+<!-- menu.list_get_focus -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">list_get_focus</span>(<i class="text-success">CommandRef</i> <i class="text-warning">list</i>)</h5>
+<!-- menu.list_get_focus_physical -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">list_get_focus_physical</span>(<i class="text-success">CommandRef</i> <i class="text-warning">list</i>)</h5>
+<!-- menu.collect_garbage -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">collect_garbage</span>()</h5>
+<p>Removes invalidated weakrefs from an internal vector. Stand does this automatically, but if you bulk-delete-or-replace commands, you might want to call this right after.</p>
+<!-- menu.is_open -->
+<h5><i class="text-success">bool</i> menu.<span class="text-primary">is_open</span>()</h5>
+<!-- menu.get_position -->
+<h5><i class="text-success">number, number</i> menu.<span class="text-primary">get_position</span>()</h5>
+<p>Returns the menu grid origin x & y.</p>
+<!-- menu.get_main_view_position_and_size -->
+<h5><i class="text-success">number, number, number, number</i> menu.<span class="text-primary">get_main_view_position_and_size</span>()</h5>
+<p>Returns x, y, width, & height for the current main view (active list, warning, etc.).</p>
+<!-- menu.get_current_menu_list -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">get_current_menu_list</span>()</h5>
+<p>Returns a reference to the current menu list, which ignores the context menu.</p>
+<!-- menu.get_current_ui_list -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">get_current_ui_list</span>()</h5>
+<p>Returns a reference to the current UI list, which can include the context menu.</p>
+<!-- menu.get_active_list_cursor_text -->
+<h5><i class="text-success">string</i> menu.<span class="text-primary">get_active_list_cursor_text</span>(<i class="text-success">bool</i> <i class="text-warning">even_when_disabled</i> = <span class="text-danger">false</span>, <i class="text-success">bool</i> <i class="text-warning">even_when_inappropriate</i> = <span class="text-danger">false</span>)</h5>
+<p>Returns the cursor text of the current UI list.</p>
+<!-- menu.are_tabs_visible -->
+<h5><i class="text-success">bool</i> menu.<span class="text-primary">are_tabs_visible</span>()</h5>
+<!-- menu.show_command_box -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">show_command_box</span>(<i class="text-success">string</i> <i class="text-warning">prefill</i>)</h5>
+<!-- menu.show_command_box_click_based -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">show_command_box_click_based</span>(<i class="text-success">int</i> <i class="text-warning">click_type</i>, <i class="text-success">string</i> <i class="text-warning">prefill</i>)</h5>
+<!-- menu.trigger_commands -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">trigger_commands</span>(<i class="text-success">string</i> <i class="text-warning">input</i>)</h5>
+<p>Note that this should not be used every tick to avoid low performance.</p>
+<!-- menu.trigger_command -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">trigger_command</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">string</i> <i class="text-warning">arg</i>)</h5>
+<!-- menu.command_box_is_open -->
+<h5><i class="text-success">bool</i> menu.<span class="text-primary">command_box_is_open</span>()</h5>
+<!-- menu.command_box_get_dimensions -->
+<h5><i class="text-success">number, number, number, number</i> menu.<span class="text-primary">command_box_get_dimensions</span>()</h5>
+<p>Returns x, y, width, & height.</p>
+<!-- menu.is_in_screenshot_mode -->
+<h5><i class="text-success">bool</i> menu.<span class="text-primary">is_in_screenshot_mode</span>()</h5>
+<!-- menu.on_tick_in_viewport -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">on_tick_in_viewport</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">function</i> <i class="text-warning">callback</i>)</h5>
+<!-- menu.on_focus -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">on_focus</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">function</i> <i class="text-warning">callback</i>)</h5>
+<!-- menu.on_blur -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">on_blur</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">function</i> <i class="text-warning">callback</i>)</h5>
+<!-- menu.remove_handler -->
+<h5><i class="text-success">bool</i> menu.<span class="text-primary">remove_handler</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">int</i> <i class="text-warning">handler_id</i>)</h5>
+<!-- menu.get_physical -->
+<h5><i class="text-success">Label</i> menu.<span class="text-primary">get_physical</span>(<i class="text-success">CommandRef|CommandUniqPtr</i> <i class="text-warning">command</i>)</h5>
+<p>If <code>command</code> points to a link, its target is returned. Otherwise, <code>command</code> is returned.</p>
+<!-- menu.get_menu_name -->
+<h5><i class="text-success">Label</i> menu.<span class="text-primary">get_menu_name</span>(<i class="text-success">CommandRef|CommandUniqPtr</i> <i class="text-warning">command</i>)</h5>
+<p>You might want to use <code>lang.get_string</code> on the return value.</p>
+<!-- menu.get_command_names -->
+<h5><i class="text-success">table&lt;int, string&gt;</i> menu.<span class="text-primary">get_command_names</span>(<i class="text-success">CommandRef|CommandUniqPtr</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.get_help_text -->
+<h5><i class="text-success">Label</i> menu.<span class="text-primary">get_help_text</span>(<i class="text-success">CommandRef|CommandUniqPtr</i> <i class="text-warning">command</i>)</h5>
+<p>You might want to use <code>lang.get_string</code> on the return value.</p>
+<!-- menu.get_perm -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">get_help_text</span>(<i class="text-success">CommandRef|CommandUniqPtr</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.get_name_for_config -->
+<h5><i class="text-success">string</i> menu.<span class="text-primary">get_name_for_config</span>(<i class="text-success">CommandRef|CommandUniqPtr</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.get_visible -->
+<h5><i class="text-success">bool</i> menu.<span class="text-primary">get_visible</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.get_value -->
+<h5><i class="text-success">int|bool|string</i> menu.<span class="text-primary">get_value</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.get_min_value -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">get_min_value</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.get_max_value -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">get_max_value</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.get_step_size -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">get_step_size</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.get_precision -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">get_precision</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<p>For float sliders.</p>
+<!-- menu.get_indicator_type -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">get_indicator_type</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<p>For lists. See menu.set_indicator_type for possible values.</p>
+<!-- menu.get_target -->
+<h5><i class="text-success">CommandRef</i> menu.<span class="text-primary">get_target</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<p>For links.</p>
+<!-- menu.get_state -->
+<h5><i class="text-success">string</i> menu.<span class="text-primary">get_state</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.get_default_state -->
+<h5><i class="text-success">string</i> menu.<span class="text-primary">get_default_state</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.set_state -->
+<h5><i class="text-success">string</i> menu.<span class="text-primary">set_state</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">string</i> <i class="text-warning">state</i>)</h5>
+<!-- menu.apply_default_state -->
+<h5><i class="text-success">string</i> menu.<span class="text-primary">apply_default_state</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<!-- menu.recursively_apply_default_state -->
+<h5><i class="text-success">string</i> menu.<span class="text-primary">recursively_apply_default_state</span>(<i class="text-success">CommandRef</i> <i class="text-warning">list</i>)</h5>
+<!-- menu.set_menu_name -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_menu_name</span>(<i class="text-success">CommandRef|CommandUniqPtr</i> <i class="text-warning">command</i>, <i class="text-success">Label</i> <i class="text-warning">menu_name</i>)</h5>
+<!-- menu.set_command_names -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_command_names</span>(<i class="text-success">CommandRef|CommandUniqPtr</i> <i class="text-warning">command</i>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names</i>)</h5>
+<!-- menu.set_help_text -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_help_text</span>(<i class="text-success">CommandRef|CommandUniqPtr</i> <i class="text-warning">command</i>, <i class="text-success">Label</i> <i class="text-warning">help_text</i>)</h5>
+<!-- menu.set_name_for_config -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_name_for_config</span>(<i class="text-success">CommandRef|CommandUniqPtr</i> <i class="text-warning">command</i>, <i class="text-success">string</i> <i class="text-warning">name_for_config</i>)</h5>
+<p>If empty (which is the default), the name for config is the English (UK) translation of the menu_name, but if you change the menu_name of a command or have multiple commands in the same list with the same name, this will help the state and hotkeys system to keep the association.</p>
+<!-- menu.set_visible -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_visible</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">bool</i> <i class="text-warning">visible</i>)</h5>
+<!-- menu.set_value -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_value</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">int|bool|string</i> <i class="text-warning">value</i>)</h5>
+<!-- menu.set_min_value -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_min_value</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">int</i> <i class="text-warning">min_value</i>)</h5>
+<!-- menu.set_max_value -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_max_value</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">int</i> <i class="text-warning">max_value</i>)</h5>
+<!-- menu.set_step_size -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_step_size</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">int</i> <i class="text-warning">step_size</i>)</h5>
+<!-- menu.set_precision -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_precision</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">int</i> <i class="text-warning">precision</i>)</h5>
+<p>For float sliders.</p>
+<!-- menu.set_indicator_type -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_indicator_type</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">int</i> <i class="text-warning">indicator_type</i>)</h5>
+<p>For lists. Possible values for <code>indicator_type</code>:</p>
+<ul>
+    <li><code>LISTINDICATOR_ARROW</code></li>
+    <li><code>LISTINDICATOR_ARROW_IF_CHILDREN</code></li>
+    <li><code>LISTINDICATOR_OFF</code></li>
+    <li><code>LISTINDICATOR_ON</code></li>
+</ul>
+<!-- menu.set_target -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_target</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">CommandRef</i> <i class="text-warning">target</i>)</h5>
+<p>For links.</p>
+<!-- menu.set_list_action_options -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_list_action_options</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">table&lt;int, table&gt;</i> <i class="text-warning">options</i>)</h5>
+<p>Also works for <code>list_select</code>.</p>
+<!-- menu.set_textslider_options -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_textslider_options</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">table&lt;int, Label&gt;</i> <i class="text-warning">options</i>)</h5>
+<!-- menu.add_value_replacement -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">add_value_replacement</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">int</i> <i class="text-warning">value</i>, <i class="text-success">string</i> <i class="text-warning">replacement</i>)</h5>
+<p>For number sliders.</p>
+<!-- menu.set_temporary -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">set_temporary</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>)</h5>
+<p>Commands marked as "temporary" will not have state or hotkey options and can't be added to "Saved Commands." However, they will still have their state set to default in the script stop process.</p>
+<!-- menu.show_warning -->
+<h5><i class="text-success">void</i> menu.<span class="text-primary">show_warning</span>(<i class="text-success">CommandRef</i> <i class="text-warning">command</i>, <i class="text-success">int</i> <i class="text-warning">click_type</i>, <i class="text-success">string</i> <i class="text-warning">message</i>, <i class="text-success">function</i> <i class="text-warning">proceed_callback</i>, <i class="text-success">?function</i> <i class="text-warning">cancel_callback</i> = <span class="text-danger">nil</span>, <i class="text-success">bool</i> <i class="text-warning">skippable</i> = <span class="text-danger">false</span>)</h5>
+<p><code>skippable</code> will not have an effect when "Force Me To Read Warnings" is disabled.</p>
+<!-- menu.get_activation_key_hash -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">get_activation_key_hash</span>()</h5>
+<p>Returns a 32-bit integer derived from the user's activation key. 0 if no activation key.</p>
+<!-- menu.get_edition -->
+<h5><i class="text-success">int</i> menu.<span class="text-primary">get_edition</span>()</h5>
+<p>Returns a value between 0 and 3 depending on the user's edition.</p>
+<!-- menu.get_version -->
+<h5><i class="text-success">table&lt;string, string&gt;</i> menu.<span class="text-primary">get_version</span>()</h5>
+<table class="table">
+    <tbody>
+        <tr>
+            <th><code>full</code></th>
+            <th><code>"Stand 0.93.1"</code></th>
+            <th><code>"Stand 0.93.1-preview1"</code></th>
+        </tr>
+        <tr>
+            <th><code>version</code></th>
+            <td><code>"0.93.1"</code></td>
+            <td><code>"0.93.1-preview1"</code></td>
+        </tr>
+        <tr>
+            <th><code>version_target</code></th>
+            <td><code>"0.93.1"</code></td>
+            <td><code>"0.93.1"</code></td>
+        </tr>
+        <tr>
+            <th><code>branch</code></th>
+            <td><code>nil</code></td>
+            <td><code>"preview1"</code></td>
+        </tr>
+        <tr>
+            <th><code>brand</code></th>
+            <td><code>"Stand"</code></td>
+            <td><code>"Stand"</code></td>
+        </tr>
+        <tr>
+            <th><code>game</code></th>
+            <td><code>"1.67-3028"</code></td>
+            <td><code>"1.67-3028"</code></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3><a name="players-functions" href="#players-functions">§</a> Players Functions</h3>
+<!-- players.add_command_hook -->
+<h5><i class="text-success">void</i> players.<span class="text-primary">add_command_hook</span>(<i class="text-success">function</i> <i class="text-warning">callback</i>)</h5>
+<p>Registers a function to be called when a player should have script features added. Your callback will be called with the player id and player root as arguments.</p>
+<p>Note that although your callback may yield, it should create all player commands in the same tick as it is called.</p>
+<!-- players.on_join -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">on_join</span>(<i class="text-success">function</i> <i class="text-warning">callback</i>)</h5>
+<p>Registers a function to be called when a player joins the session. Your callback will be called with the player id as argument.</p>
+<p>Note that although your callback may yield, it should create all player commands in the same tick as it is called.</p>
+<!-- players.on_leave -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">on_leave</span>(<i class="text-success">function</i> <i class="text-warning">callback</i>)</h5>
+<p>Registers a function to be called when a player leaves the session. Your callback will be called with the player id and name as arguments.</p>
+<!-- players.dispatch_on_join -->
+<h5><i class="text-success">void</i> players.<span class="text-primary">dispatch_on_join</span>()</h5>
+<p>Calls your join handler(s) for every player that is already in the session.</p>
+<!-- players.exists -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">exists</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Checks if a player with the given id is in session.</p>
+<!-- players.user -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">user</span>()</h5>
+<p>Alternative to the <code>PLAYER.PLAYER_ID</code> native.</p>
+<!-- players.user_ped -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">user_ped</span>()</h5>
+<p>Alternative to the <code>PLAYER.PLAYER_PED_ID</code> native.</p>
+<!-- players.list -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> players.<span class="text-primary">list</span>(<i class="text-success">bool</i> <i class="text-warning">include_user</i> = <span class="text-danger">true</span>, <i class="text-success">bool</i> <i class="text-warning">include_friends</i> = <span class="text-danger">true</span>, <i class="text-success">bool</i> <i class="text-warning">include_strangers</i> = <span class="text-danger">true</span>)</h5>
+<p>Returns an index-based table with all matching player ids.</p>
+<!-- players.list_only -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> players.<span class="text-primary">list_only</span>(<i class="text-success">bool</i> <i class="text-warning">include_user</i> = <span class="text-danger">false</span>, <i class="text-success">bool</i> <i class="text-warning">include_friends</i> = <span class="text-danger">false</span>, <i class="text-success">bool</i> <i class="text-warning">include_crew_members</i> = <span class="text-danger">false</span>, <i class="text-success">bool</i> <i class="text-warning">include_org_members</i> = <span class="text-danger">false</span>, <i class="text-success">bool</i> <i class="text-warning">include_modders</i> = <span class="text-danger">false</span>, <i class="text-success">bool</i> <i class="text-warning">include_likely_modders</i> = <span class="text-danger">false</span>)</h5>
+<p>Returns an index-based table with all matching player ids.</p>
+<!-- players.list_except -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> players.<span class="text-primary">list_except</span>(<i class="text-success">bool</i> <i class="text-warning">exclude_user</i> = <span class="text-danger">false</span>, <i class="text-success">bool</i> <i class="text-warning">exclude_friends</i> = <span class="text-danger">false</span>, <i class="text-success">bool</i> <i class="text-warning">exclude_crew_members</i> = <span class="text-danger">false</span>, <i class="text-success">bool</i> <i class="text-warning">exclude_org_members</i> = <span class="text-danger">false</span>, <i class="text-success">bool</i> <i class="text-warning">exclude_modders</i> = <span class="text-danger">false</span>, <i class="text-success">bool</i> <i class="text-warning">exclude_likely_modders</i> = <span class="text-danger">false</span>)</h5>
+<p>Returns an index-based table with all matching player ids.</p>
+<!-- players.list_all_with_excludes -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> players.<span class="text-primary">list_all_with_excludes</span>(<i class="text-success">bool</i> <i class="text-warning">include_user</i> = <span class="text-danger">false</span>)</h5>
+<p>Like players.list but using <code>Players > All Players > Excludes</code>.</p>
+<!-- players.get_host -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_host</span>()</h5>
+<!-- players.get_script_host -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_script_host</span>()</h5>
+<!-- players.get_focused -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> players.<span class="text-primary">get_focused</span>()</h5>
+<p>Returns an index-based table containing the ids of all players focused in the menu.</p>
+<!-- players.get_name -->
+<h5><i class="text-success">string</i> players.<span class="text-primary">get_name</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>, <i class="text-success">bool</i> <i class="text-warning">ignore_streamer_spoof</i> = <span class="text-danger">false</span>)</h5>
+<!-- players.get_rockstar_id -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_rockstar_id</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- <p>This value might be spoofed by <b>hard</b> RID spoofing.</p> -->
+<!-- players.get_rockstar_id_2 -->
+<!--<h5><i class="text-success">int</i> players.<span class="text-primary">get_rockstar_id_2</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>This value might be spoofed by <b>soft</b> RID spoofing.</p> -->
+<!-- players.get_ip -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_ip</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns <code>4294967295</code> if unknown.</p>
+<!-- players.get_ip_string -->
+<h5><i class="text-success">string</i> players.<span class="text-primary">get_ip_string</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns <code>255.255.255.255</code> if unknown.</p>
+<!-- players.get_port -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_port</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns <code>0</code> if unknown.</p>
+<!-- players.get_connect_ip -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_connect_ip</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns <code>4294967295</code> if the player is not connected via P2P.</p>
+<!-- players.get_connect_port -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_connect_port</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns <code>0</code> if the player is not connected via P2P.</p>
+<!-- players.get_lan_ip -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_lan_ip</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns <code>4294967295</code> if unknown.</p>
+<!-- players.get_lan_port -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_lan_port</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns <code>0</code> if unknown.</p>
+<!-- players.are_stats_ready -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">are_stats_ready</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_rank -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_rank</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_rp -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_rp</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_money -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_money</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_wallet -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_wallet</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_bank -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_bank</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_kd -->
+<h5><i class="text-success">number</i> players.<span class="text-primary">get_kd</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_kills -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_kills</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_deaths -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_deaths</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_language -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_language</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns the same as the <code>LOCALIZATION.GET_CURRENT_LANGUAGE</code> native.</p>
+<!-- players.is_using_controller -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_using_controller</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_name_with_tags -->
+<h5><i class="text-success">string</i> players.<span class="text-primary">get_name_with_tags</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_tags_string -->
+<h5><i class="text-success">string</i> players.<span class="text-primary">get_tags_string</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.is_godmode -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_godmode</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.is_marked_as_modder -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_marked_as_modder</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns true if the player has the "Modder" tag.</p>
+<!-- players.is_marked_as_modder_or_admin -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_marked_as_modder_or_admin</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns true if the player has the "Modder or Admin" tag.</p>
+<!-- players.is_marked_as_admin -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_marked_as_admin</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns true if the player has the "Admin" tag.</p>
+<!-- players.is_marked_as_attacker -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_marked_as_attacker</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.is_otr -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_otr</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.is_out_of_sight -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_out_of_sight</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.is_in_interior -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_in_interior</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.is_typing -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_typing</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.is_using_vpn -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_using_vpn</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.is_visible -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_visible</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_host_token -->
+<h5><i class="text-success">string</i> players.<span class="text-primary">get_host_token</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns the player's host token as a decimal string.</p>
+<!-- players.get_host_token_hex -->
+<h5><i class="text-success">string</i> players.<span class="text-primary">get_host_token_hex</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns the player's host token as a 16-character padded hex string.</p>
+<!-- players.get_host_queue_position -->
+<h5><i class="text-success">number</i> players.<span class="text-primary">get_host_queue_position</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns the position or 0 if not applicable.</p>
+<!-- players.get_host_queue -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> players.<span class="text-primary">get_host_queue</span>(<i class="text-success">bool</i> <i class="text-warning">include_user</i> = <span class="text-danger">true</span>, <i class="text-success">bool</i> <i class="text-warning">include_friends</i> = <span class="text-danger">true</span>, <i class="text-success">bool</i> <i class="text-warning">include_strangers</i> = <span class="text-danger">true</span>)</h5>
+<p>Returns an index-based table with all matching player ids, sorted in ascending host queue order.</p>
+<!-- players.get_boss -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_boss</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns -1 if not applicable.</p>
+<!-- players.get_org_type -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_org_type</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns -1 for none, 0 for CEO, or 1 for Motorcycle Club.</p>
+<!-- players.get_org_colour -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_org_colour</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns -1 if not applicable. If you want the HUD colour, add 192 to the return value.</p>
+<!-- players.clan_get_motto -->
+<h5><i class="text-success">string</i> players.<span class="text-primary">clan_get_motto</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_position -->
+<h5><i class="text-success">userdata</i> players.<span class="text-primary">get_position</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Works at all distances.</p>
+<!-- players.is_in_vehicle -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_in_vehicle</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Works at all distances.</p>
+<!-- players.get_vehicle_model -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_vehicle_model</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Works at all distances in many cases, but best when the user is close to them.</p>
+<!-- players.is_using_rc_vehicle -->
+<h5><i class="text-success">bool</i> players.<span class="text-primary">is_using_rc_vehicle</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_bounty -->
+<h5><i class="text-success">?int</i> players.<span class="text-primary">get_bounty</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns the value of the player's bounty or nil.</p>
+<!-- players.send_sms -->
+<h5><i class="text-success">void</i> players.<span class="text-primary">send_sms</span>(<i class="text-success">int</i> <i class="text-warning">recipient</i>, <i class="text-success">string</i> <i class="text-warning">text</i>)</h5>
+<p>Receipient must be a friend or member of the same non-Rockstar crew; doesn't work on self. Message must be 1-255 characters.</p>
+<!-- players.get_cam_pos -->
+<h5><i class="text-success">Vector3</i> players.<span class="text-primary">get_cam_pos</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_cam_rot -->
+<h5><i class="text-success">Vector3</i> players.<span class="text-primary">get_cam_rot</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_spectate_target -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_spectate_target</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns a player id or -1 if not applicable.</p>
+<!-- players.get_waypoint -->
+<h5><i class="text-success">number, number, number, bool</i> players.<span class="text-primary">get_waypoint</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>Returns X, Y, Z, and a bool to indicate if the Z is guessed. Z will always be guessed for remote players.</p>
+<!-- players.get_net_player -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">get_net_player</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<p>The address of the player's CNetGamePlayer/rage::netPlayer instance or 0.</p>
+<!-- players.set_wanted_level -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">set_wanted_level</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>, <i class="text-success">int</i> <i class="text-warning">wanted_level</i>)</h5>
+<!-- players.give_pickup_reward -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">give_pickup_reward</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>, <i class="text-success">string|int</i> <i class="text-warning">reward</i>)</h5>
+<p>Valid rewards can be found in pickups.meta <code>&lt;Rewards&gt;</code> blocks. Some examples are <code>REWARD_HEALTH</code>, <code>REWARD_ARMOUR</code>, <code>REWARD_WEAPON_PISTOL</code>, and <code>REWARD_AMMO_PISTOL</code>. Only works on remote players.</p>
+<!-- players.get_weapon_damage_modifier -->
+<h5><i class="text-success">number</i> players.<span class="text-primary">get_weapon_damage_modifier</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.get_melee_weapon_damage_modifier -->
+<h5><i class="text-success">number</i> players.<span class="text-primary">get_melee_weapon_damage_modifier</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.add_detection -->
+<h5><i class="text-success">CommandRef</i> players.<span class="text-primary">add_detection</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>, <i class="text-success">Label</i> <i class="text-warning">name</i>, <i class="text-success">int</i> <i class="text-warning">toast_flags</i> = <i class="text-danger">TOAST_DEFAULT</i>, <i class="text-success">int</i> <i class="text-warning">severity</i> = <i class="text-danger">100</i>)</h5>
+<!-- players.on_flow_event_done -->
+<h5><i class="text-success">int</i> players.<span class="text-primary">on_flow_event_done</span>(<i class="text-success">function</i> <i class="text-warning">callback</i>)</h5>
+<pre><code class="language-pluto">players.on_flow_event_done(function(p, name, extra)
+    name = lang.get_localised(name)
+    if extra then
+        name ..= " ("
+        name ..= extra
+        name ..= ")"
+    end
+    util.toast(players.get_name(p)..": "..name)
+end)</code></pre>
+<!-- players.teleport_2d -->
+<h5><i class="text-success">void</i> players.<span class="text-primary">teleport_2d</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>, <i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>)</h5>
+<!-- players.teleport_3d -->
+<h5><i class="text-success">void</i> players.<span class="text-primary">teleport_3d</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>, <i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>, <i class="text-success">number</i> <i class="text-warning">z</i>)</h5>
+<!-- players.get_millis_since_discovery -->
+<h5><i class="text-success">?int</i> players.<span class="text-primary">get_millis_since_discovery</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+<!-- players.detections_root -->
+<h5><i class="text-success">CommandRef</i> players.<span class="text-primary">detections_root</span>(<i class="text-success">int</i> <i class="text-warning">player_id</i>)</h5>
+
+<h3><a name="entities-functions" href="#entities-functions">§</a> Entities Functions</h3>
+<!-- entities.create_ped -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">create_ped</span>(<i class="text-success">int</i> <i class="text-warning">type</i>, <i class="text-success">int</i> <i class="text-warning">hash</i>, <i class="text-success">Vector3</i> <i class="text-warning">pos</i>, <i class="text-success">number</i> <i class="text-warning">heading</i>)</h5>
+<p>A wrapper for the <code>PED.CREATE_PED</code> native. Returns <code>INVALID_GUID</code> on failure.</p>
+<!-- entities.create_vehicle -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">create_vehicle</span>(<i class="text-success">int</i> <i class="text-warning">hash</i>, <i class="text-success">Vector3</i> <i class="text-warning">pos</i>, <i class="text-success">number</i> <i class="text-warning">heading</i>)</h5>
+<p>A wrapper for the <code>VEHICLE.CREATE_VEHICLE</code> native. Returns <code>INVALID_GUID</code> on failure.</p>
+<!-- entities.create_object -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">create_object</span>(<i class="text-success">int</i> <i class="text-warning">hash</i>, <i class="text-success">Vector3</i> <i class="text-warning">pos</i>)</h5>
+<p>A wrapper for the <code>OBJECT.CREATE_OBJECT_NO_OFFSET</code> native. Returns <code>INVALID_GUID</code> on failure.</p>
+<!-- entities.get_user_vehicle_as_handle -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">get_user_vehicle_as_handle</span>(<i class="text-success">bool</i> <i class="text-warning">include_last_vehicle</i> = <span class="text-danger">true</span>)</h5>
+<p>Returns <code>INVALID_GUID</code> if vehicle not found.</p>
+<!-- entities.get_user_vehicle_as_pointer -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">get_user_vehicle_as_pointer</span>(<i class="text-success">bool</i> <i class="text-warning">include_last_vehicle</i> = <span class="text-danger">true</span>)</h5>
+<p>Returns <code>0</code> if vehicle not found.</p>
+<!-- entities.get_user_personal_vehicle_as_handle -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">get_user_personal_vehicle_as_handle</span>()</h5>
+<!-- entities.handle_to_pointer -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">handle_to_pointer</span>(<i class="text-success">int</i> <i class="text-warning">handle</i>)</h5>
+<p>Returns the address of the entity with the given script handle.</p>
+<!-- entities.has_handle -->
+<h5><i class="text-success">bool</i> entities.<span class="text-primary">has_handle</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>Returns the entity with the given address has a script handle.</p>
+<!-- entities.pointer_to_handle -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">pointer_to_handle</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>Returns a script handle for the entity with the given address. If the entity does not have a script handle, one will be assigned to it. Note that script handles are a limited resource and allocating too many of them can cause the game to become unstable or even crash.</p>
+<!-- entities.get_all_vehicles_as_handles -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> entities.<span class="text-primary">get_all_vehicles_as_handles</span>()</h5>
+<p>This will force a script handle to be allocated for all vehicles. Note that script handles are a limited resource and allocating too many of them can cause the game to become unstable or even crash.</p>
+<!-- entities.get_all_vehicles_as_pointers -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> entities.<span class="text-primary">get_all_vehicles_as_pointers</span>()</h5>
+<!-- entities.get_all_peds_as_handles -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> entities.<span class="text-primary">get_all_peds_as_handles</span>()</h5>
+<p>This will force a script handle to be allocated for all peds. Note that script handles are a limited resource and allocating too many of them can cause the game to become unstable or even crash.</p>
+<!-- entities.get_all_peds_as_pointers -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> entities.<span class="text-primary">get_all_peds_as_pointers</span>()</h5>
+<!-- entities.get_all_objects_as_handles -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> entities.<span class="text-primary">get_all_objects_as_handles</span>()</h5>
+<p>This will force a script handle to be allocated for all objects. Note that script handles are a limited resource and allocating too many of them can cause the game to become unstable or even crash.</p>
+<!-- entities.get_all_objects_as_pointers -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> entities.<span class="text-primary">get_all_objects_as_pointers</span>()</h5>
+<!-- entities.get_all_pickups_as_handles -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> entities.<span class="text-primary">get_all_pickups_as_handles</span>()</h5>
+<p>This will force a script handle to be allocated for all pickups. Note that script handles are a limited resource and allocating too many of them can cause the game to become unstable or even crash.</p>
+<!-- entities.get_all_pickups_as_pointers -->
+<h5><i class="text-success">table&lt;int, int&gt;</i> entities.<span class="text-primary">get_all_pickups_as_pointers</span>()</h5>
+<!-- entities.delete -->
+<h5><i class="text-success">void</i> entities.<span class="text-primary">delete</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>)</h5>
+<p>This will handle control requests on its own, and force deletion locally if control cannot be obtained.</p>
+<p>Note that deleting some entities causes other entities to get deleted as well (e.g. deleting weapons deletes their attachments) which can be problematic if you're iterating over entity pointers to delete them as some of the subsequent pointers can go stale. Handles don't have this issue because they get invalidated when the respective entity is deleted.</p>
+<!-- entities.get_model_hash -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">get_model_hash</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>)</h5>
+<!-- entities.get_model_uhash -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">get_model_uhash</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>)</h5>
+<!-- entities.get_position -->
+<h5><i class="text-success">Vector3</i> entities.<span class="text-primary">get_position</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>The result might be less precise than the native counterpart.</p>
+<!-- entities.get_rotation -->
+<h5><i class="text-success">Vector3</i> entities.<span class="text-primary">get_rotation</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>The result might be less precise than the native counterpart.</p>
+<!-- entities.get_health -->
+<h5><i class="text-success">number</i> entities.<span class="text-primary">get_health</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>)</h5>
+<!-- entities.get_upgrade_value -->
+<h5><i class="text-success">number</i> entities.<span class="text-primary">get_upgrade_value</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>, <i class="text-success">int</i> <i class="text-warning">modType</i>)</h5>
+<!-- entities.get_upgrade_max_value -->
+<h5><i class="text-success">number</i> entities.<span class="text-primary">get_upgrade_max_value</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>, <i class="text-success">int</i> <i class="text-warning">modType</i>)</h5>
+<!-- entities.set_upgrade_value -->
+<h5><i class="text-success">number</i> entities.<span class="text-primary">set_upgrade_value</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>, <i class="text-success">int</i> <i class="text-warning">modType</i>, <i class="text-success">int</i> <i class="text-warning">value</i>)</h5>
+<!-- entities.get_current_gear -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">get_current_gear</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>Only applicable to vehicles.</p>
+<!-- entities.set_current_gear -->
+<h5><i class="text-success">void</i> entities.<span class="text-primary">set_current_gear</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>, <i class="text-success">int</i> <i class="text-warning">current_gear</i>)</h5>
+<p>Only applicable to vehicles.</p>
+<!-- entities.get_next_gear -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">get_next_gear</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>Only applicable to vehicles.</p>
+<!-- entities.set_next_gear -->
+<h5><i class="text-success">void</i> entities.<span class="text-primary">set_next_gear</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>, <i class="text-success">int</i> <i class="text-warning">next_gear</i>)</h5>
+<p>Only applicable to vehicles.</p>
+<!-- entities.get_rpm -->
+<h5><i class="text-success">number</i> entities.<span class="text-primary">get_rpm</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>Only applicable to vehicles.</p>
+<!-- entities.set_rpm -->
+<h5><i class="text-success">void</i> entities.<span class="text-primary">set_rpm</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>, <i class="text-success">float</i> <i class="text-warning">rpm</i>)</h5>
+<p>Only applicable to vehicles.</p>
+<!-- entities.get_gravity -->
+<h5><i class="text-success">number</i> entities.<span class="text-primary">get_gravity</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>Only applicable to vehicles.</p>
+<!-- entities.set_gravity -->
+<h5><i class="text-success">number</i> entities.<span class="text-primary">set_gravity</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>, <i class="text-success">number</i> <i class="text-warning">gravity</i>)</h5>
+<p>Only applicable to vehicles.</p>
+<!-- entities.set_gravity_multiplier -->
+<h5><i class="text-success">number</i> entities.<span class="text-primary">set_gravity_multiplier</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>, <i class="text-success">number</i> <i class="text-warning">gravity_multiplier</i>)</h5>
+<p>Only applicable to vehicles.</p>
+<!-- entities.get_boost_charge -->
+<h5><i class="text-success">number</i> entities.<span class="text-primary">get_boost_charge</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>Only applicable to vehicles. Returns a value between 0.0 and 1.25.</p>
+<!-- entities.get_draw_handler -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">get_draw_handler</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>Returns a pointer or 0.</p>
+<!-- entities.vehicle_draw_handler_get_pearlecent_colour -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">vehicle_draw_handler_get_pearlecent_colour</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<!-- entities.vehicle_draw_handler_get_wheel_colour -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">vehicle_draw_handler_get_wheel_colour</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<!-- entities.get_vehicle_has_been_owned_by_player -->
+<h5><i class="text-success">bool</i> entities.<span class="text-primary">get_vehicle_has_been_owned_by_player</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<!-- entities.get_player_info -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">get_player_info</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>Only applicable to peds.</p>
+<!-- entities.player_info_get_game_state -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">player_info_get_game_state</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<!-- entities.get_weapon_manager -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">get_weapon_manager</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>Only applicable to peds.</p>
+<!-- entities.get_head_blend_data -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">get_head_blend_data</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>)</h5>
+<!-- entities.get_net_object -->
+<h5><i class="text-success">?int</i> entities.<span class="text-primary">get_net_object</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>)</h5>
+<p>Returns a pointer to the entity's rage::netObject. Returns 0 or nil if not applicable, depending on nullptr preference.</p>
+<!-- entities.get_owner -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">get_owner</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>)</h5>
+<p>Returns the ID of the player that owns this entity.</p>
+<!-- entities.set_can_migrate -->
+<h5><i class="text-success">void</i> entities.<span class="text-primary">set_can_migrate</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>, <i class="text-success">bool</i> <i class="text-warning">can_migrate</i>)</h5>
+<p>Prevents ambient ownership changes so that only explicit requests will be processed.</p>
+<!-- entities.get_can_migrate -->
+<h5><i class="text-success">bool</i> entities.<span class="text-primary">get_can_migrate</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>)</h5>
+<!-- entities.give_control -->
+<h5><i class="text-success">void</i> entities.<span class="text-primary">give_control</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>, <i class="text-success">int</i> <i class="text-warning">player</i>)</h5>
+<!-- entities.vehicle_get_handling -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">vehicle_get_handling</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<!-- entities.handling_get_subhandling -->
+<h5><i class="text-success">int</i> entities.<span class="text-primary">handling_get_subhandling</span>(<i class="text-success">int</i> <i class="text-warning">handling_addr</i>, <i class="text-success">int</i> <i class="text-warning">type</i>)</h5>
+<p>Type:</p>
+<ul>
+    <li>0 = HANDLING_TYPE_BIKE</li>
+    <li>1 = HANDLING_TYPE_FLYING</li>
+    <li>2 = HANDLING_TYPE_VERTICAL_FLYING</li>
+    <li>3 = HANDLING_TYPE_BOAT</li>
+    <li>4 = HANDLING_TYPE_SEAPLANE</li>
+    <li>5 = HANDLING_TYPE_SUBMARINE</li>
+    <li>6 = HANDLING_TYPE_TRAIN</li>
+    <li>7 = HANDLING_TYPE_TRAILER</li>
+    <li>8 = HANDLING_TYPE_CAR</li>
+    <li>9 = HANDLING_TYPE_WEAPON</li>
+</ul>
+<p>You can view the relevant handling types for your current vehicle by opening with the Handling Editor: <code>Vehicle > Movement > Handling Editor</code>.</p>
+<!-- entities.detach_wheel -->
+<h5><i class="text-success">void</i> entities.<span class="text-primary">detach_wheel</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>, <i class="text-success">int</i> <i class="text-warning">wheel_index</i>)</h5>
+<!-- entities.get_bomb_bay_position -->
+<h5><i class="text-success">Vector3</i> entities.<span class="text-primary">get_bomb_bay_position</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>)</h5>
+<!-- entities.is_player_ped -->
+<h5><i class="text-success">bool</i> entities.<span class="text-primary">is_player_ped</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>)</h5>
+<!-- entities.is_invulnerable -->
+<h5><i class="text-success">bool</i> entities.<span class="text-primary">is_invulnerable</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>)</h5>
+<!-- entities.request_control -->
+<h5><i class="text-success">bool</i> entities.<span class="text-primary">request_control</span>(<i class="text-success">int</i> <i class="text-warning">handle_or_ptr</i>, <i class="text-success">int</i> <i class="text-warning">timeout</i> = <span class="text-danger">2000</span>)</h5>
+This internally calls <code>util.yield</code>. Returns <code>false</code> if control could not be attained within <code>timeout</code>.
+
+<h3><a name="chat-functions" href="#chat-functions">§</a> Chat Functions</h3>
+<!-- chat.on_message -->
+<h5><i class="text-success">int</i> chat.<span class="text-primary">on_message</span>(<i class="text-success">function</i> <i class="text-warning">callback</i>)</h5>
+<p>Registers a function to be called when a chat message is sent:</p>
+<pre><code class="language-pluto">chat.on_message(function(sender, reserved, text, team_chat, networked, is_auto)
+    -- Do stuff...
+end)</code></pre>
+<!-- chat.send_message -->
+<h5><i class="text-success">void</i> chat.<span class="text-primary">send_message</span>(<i class="text-success">string</i> <i class="text-warning">text</i>, <i class="text-success">bool</i> <i class="text-warning">team_chat</i>, <i class="text-success">bool</i> <i class="text-warning">add_to_local_history</i>, <i class="text-success">bool</i> <i class="text-warning">networked</i>)</h5>
+<p>As you might be aware, messages have a limit of 140 UTF-16 characters. However, that is only true for the normal input, as you can use up to 255 UTF-8 characters over the network, and many more for the local history. If your message-to-be-networked exceeds 255 UTF-8 characters, Stand will split it into multiple.</p>
+<p>Like all chat messages sent via Stand, the text may have the following sequences replaced: <code>${nl}</code>, <code>${name}</code>, <code>${ip}</code>, <code>${geoip.isp}</code>, <code>${geoip.country}</code>, <code>${geoip.region}</code>, <code>${geoip.city}</code></p>
+<!-- chat.send_targeted_message -->
+<h5><i class="text-success">void</i> chat.<span class="text-primary">send_targeted_message</span>(<i class="text-success">int</i> <i class="text-warning">recipient</i>, <i class="text-success">int</i> <i class="text-warning">sender</i>, <i class="text-success">string</i> <i class="text-warning">text</i>, <i class="text-success">bool</i> <i class="text-warning">team_chat</i>)</h5>
+<p><code>sender</code> will only be respected when <code>recipient == players.user()</code>, otherwise <code>sender</code> will be forced to <code>players.user()</code>.</p>
+<!-- chat.get_state -->
+<h5><i class="text-success">int</i> chat.<span class="text-primary">get_state</span>()</h5>
+<p>Possible return values:</p>
+<ul>
+    <li><code>0</code> = Closed</li>
+    <li><code>1</code> = Writing in team chat</li>
+    <li><code>2</code> = Writing in all chat</li>
+</ul>
+<!-- chat.is_open -->
+<h5><i class="text-success">bool</i> chat.<span class="text-primary">is_open</span>()</h5>
+<!-- chat.open -->
+<h5><i class="text-success">void</i> chat.<span class="text-primary">open</span>()</h5>
+<!-- chat.close -->
+<h5><i class="text-success">void</i> chat.<span class="text-primary">close</span>()</h5>
+<!-- chat.get_draft -->
+<h5><i class="text-success">string</i> chat.<span class="text-primary">get_draft</span>()</h5>
+<p>Returns the message that the user is currently drafting or an empty string if not applicable.</p>
+<!-- chat.ensure_open_with_empty_draft -->
+<h5><i class="text-success">void</i> chat.<span class="text-primary">ensure_open_with_empty_draft</span>(<i class="text-success">bool</i> <i class="text-warning">team_chat</i>)</h5>
+<!-- chat.add_to_draft -->
+<h5><i class="text-success">void</i> chat.<span class="text-primary">add_to_draft</span>(<i class="text-success">string</i> <i class="text-warning">appendix</i>)</h5>
+<!-- chat.remove_from_draft -->
+<h5><i class="text-success">void</i> chat.<span class="text-primary">remove_from_draft</span>(<i class="text-success">int</i> <i class="text-warning">characters</i>)</h5>
+<!-- chat.get_history -->
+<h5><i class="text-success">table&lt;int, table&lt;string, any&gt;&gt;</i> chat.<span class="text-primary">chat.get_history</span>()</h5>
+<pre><code class="language-pluto">util.create_tick_handler(function()
+    for chat.get_history() as msg do
+        local str = msg.sender_name.." ["..(msg.team_chat ? "TEAM" : "ALL")..(msg.is_auto ? ", AUTO" : "").."] "..msg.contents
+        if msg.time ~= 0 then
+            str = "["..os.date('%H:%M:%S', msg.time).."] "..str
+        end
+        util.draw_debug_text(str)
+    end
+end)</code></pre>
+
+<h3><a name="directx-functions" href="#directx-functions">§</a> DirectX Functions</h3>
+<p>Any X and Y value must be between 0.0 to 1.0.</p>
+<p>The <code>draw</code> functions are in the HUD coordinate space, which is superimposed 1920x1080. You can also append <code>_client</code> to any draw function, e.g. <code>draw_line_client</code> to draw in client coordinate space, which is based on the game window size.</p>
+<!-- directx.create_texture -->
+<h5><i class="text-success">int</i> directx.<span class="text-primary">create_texture</span>(<i class="text-success">string</i> <i class="text-warning">path</i>)</h5>
+<p>An absolute path is recommended, e.g. by using <code>filesystem.resources_dir()</code>.</p>
+<!-- directx.has_texture_loaded -->
+<h5><i class="text-success">?bool</i> directx.<span class="text-primary">has_texture_loaded</span>(<i class="text-success">int</i> <i class="text-warning">id</i>)</h5>
+<p>Returns nil if the texture is still queued. Otherwise, returns true or false depending on if loading suceeded.</p>
+<!-- directx.get_texture_dimensions -->
+<h5><i class="text-success">int, int</i> directx.<span class="text-primary">get_texture_dimensions</span>(<i class="text-success">int</i> <i class="text-warning">id</i>)</h5>
+<!-- directx.get_texture_character -->
+<h5><i class="text-success">string</i> directx.<span class="text-primary">get_texture_character</span>(<i class="text-success">int</i> <i class="text-warning">id</i>)</h5>
+<p>Returns a string that can be used in text rendered by Stand via DirectX to display the given texture.</p>
+<!-- directx.draw_texture(9/12) -->
+<h5><i class="text-success">void</i> directx.<span class="text-primary">draw_texture</span>(<i class="text-success">int</i> <i class="text-warning">id</i>, <i class="text-success">number</i> <i class="text-warning">sizeX</i>, <i class="text-success">number</i> <i class="text-warning">sizeY</i>, <i class="text-success">number</i> <i class="text-warning">centerX</i>, <i class="text-success">number</i> <i class="text-warning">centerY</i>, <i class="text-success">number</i> <i class="text-warning">posX</i>, <i class="text-success">number</i> <i class="text-warning">posY</i>, <i class="text-success">number</i> <i class="text-warning">rotation</i>, <i class="text-success">Colour</i> <i class="text-warning">colour</i>)</h5>
+<p>Draws the given texture this tick if it has loaded.</p>
+<!-- directx.draw_texture(13/16) -->
+<h5><i class="text-success">void</i> directx.<span class="text-primary">draw_texture</span>(<i class="text-success">int</i> <i class="text-warning">id</i>, <i class="text-success">any</i> <i class="text-warning">reserved1</i>, <i class="text-success">any</i> <i class="text-warning">reserved2</i>, <i class="text-success">int</i> <i class="text-warning">ms</i>, <i class="text-success">number</i> <i class="text-warning">sizeX</i>, <i class="text-success">number</i> <i class="text-warning">sizeY</i>, <i class="text-success">number</i> <i class="text-warning">centerX</i>, <i class="text-success">number</i> <i class="text-warning">centerY</i>, <i class="text-success">number</i> <i class="text-warning">posX</i>, <i class="text-success">number</i> <i class="text-warning">posY</i>, <i class="text-success">number</i> <i class="text-warning">rotation</i>, <i class="text-success">Colour</i> <i class="text-warning">colour</i>)</h5>
+<p>Draws the given texture for <code>ms</code> milliseconds. Note that the texture may not appear immediately if it's still loading.</p>
+<!-- directx.draw_texture_by_points -->
+<h5><i class="text-success">void</i> directx.<span class="text-primary">draw_texture_by_points</span>(<i class="text-success">int</i> <i class="text-warning">id</i>, <i class="text-success">number</i> <i class="text-warning">x1</i>, <i class="text-success">number</i> <i class="text-warning">y1</i>, <i class="text-success">number</i> <i class="text-warning">x2</i>, <i class="text-success">number</i> <i class="text-warning">y2</i>, <i class="text-success">Colour</i> <i class="text-warning">colour</i>)</h5>
+<p>Draws the given texture this tick if it has loaded.</p>
+<!-- directx.create_font -->
+<h5><i class="text-success">userdata</i> directx.<span class="text-primary">create_font</span>(<i class="text-success">string</i> <i class="text-warning">path</i>)</h5>
+<!-- directx.draw_text -->
+<h5><i class="text-success">void</i> directx.<span class="text-primary">draw_text</span>(<i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>, <i class="text-success">string</i> <i class="text-warning">text</i>, <i class="text-success">int</i> <i class="text-warning">alignment</i>, <i class="text-success">number</i> <i class="text-warning">scale</i>, <i class="text-success">Colour</i> <i class="text-warning">colour</i>, <i class="text-success">bool</i> <i class="text-warning">force_in_bounds</i> = <span class="text-danger">false</span>, <i class="text-success">?userdata</i> <i class="text-warning">font</i> = <span class="text-danger">nil</span>, <i class="text-success">?Vector3</i> <i class="text-warning">draw_origin_3d</i> = <span class="text-danger">v3()</span>)</h5>
+<p><code>alignment</code> can be any of:</p>
+<ul>
+    <li><code>ALIGN_TOP_LEFT</code></li>
+    <li><code>ALIGN_TOP_CENTRE</code></li>
+    <li><code>ALIGN_TOP_RIGHT</code></li>
+    <li><code>ALIGN_CENTRE_LEFT</code></li>
+    <li><code>ALIGN_CENTRE</code></li>
+    <li><code>ALIGN_CENTRE_RIGHT</code></li>
+    <li><code>ALIGN_BOTTOM_LEFT</code></li>
+    <li><code>ALIGN_BOTTOM_CENTRE</code></li>
+    <li><code>ALIGN_BOTTOM_RIGHT</code></li>
+</ul>
+<!-- directx.draw_rect -->
+<h5><i class="text-success">void</i> directx.<span class="text-primary">draw_rect</span>(<i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>, <i class="text-success">number</i> <i class="text-warning">width</i>, <i class="text-success">number</i> <i class="text-warning">height</i>, <i class="text-success">Colour</i> <i class="text-warning">colour</i>)</h5>
+<!-- directx.draw_line(5) -->
+<h5><i class="text-success">void</i> directx.<span class="text-primary">draw_line</span>(<i class="text-success">number</i> <i class="text-warning">x1</i>, <i class="text-success">number</i> <i class="text-warning">y1</i>, <i class="text-success">number</i> <i class="text-warning">x2</i>, <i class="text-success">number</i> <i class="text-warning">y2</i>, <i class="text-success">Colour</i> <i class="text-warning">colour</i>)</h5>
+<!-- directx.draw_line(6) -->
+<h5><i class="text-success">void</i> directx.<span class="text-primary">draw_line</span>(<i class="text-success">number</i> <i class="text-warning">x1</i>, <i class="text-success">number</i> <i class="text-warning">y1</i>, <i class="text-success">number</i> <i class="text-warning">x2</i>, <i class="text-success">number</i> <i class="text-warning">y2</i>, <i class="text-success">Colour</i> <i class="text-warning">colour1</i>, <i class="text-success">Colour</i> <i class="text-warning">colour2</i>)</h5>
+<!-- directx.draw_triangle -->
+<h5><i class="text-success">void</i> directx.<span class="text-primary">draw_triangle</span>(<i class="text-success">number</i> <i class="text-warning">x1</i>, <i class="text-success">number</i> <i class="text-warning">y1</i>, <i class="text-success">number</i> <i class="text-warning">x2</i>, <i class="text-success">number</i> <i class="text-warning">y2</i>, <i class="text-success">number</i> <i class="text-warning">x3</i>, <i class="text-success">number</i> <i class="text-warning">y3</i>, <i class="text-success">Colour</i> <i class="text-warning">colour</i>)</h5>
+<!-- directx.draw_circle -->
+<h5><i class="text-success">void</i> directx.<span class="text-primary">draw_circle</span>(<i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>, <i class="text-success">number</i> <i class="text-warning">radius</i>, <i class="text-success">Colour</i> <i class="text-warning">colour</i>, <i class="text-success">int</i> <i class="text-warning">part</i> = <span class="text-danger">-1</span>)</h5>
+<p>The part may optionally be a number between 0-3, inclusive, in which case it will only draw the bottom right, bottom left, top left, or top right part of the circle, respectively. </p>
+<!-- directx.get_client_size -->
+<h5><i class="text-success">number, number</i> directx.<span class="text-primary">get_client_size</span>()</h5>
+<!-- directx.get_text_size -->
+<h5><i class="text-success">number, number</i> directx.<span class="text-primary">get_text_size</span>(<i class="text-success">string</i> <i class="text-warning">text</i>, <i class="text-success">number</i> <i class="text-warning">scale</i> = <span class="text-danger">1.0</span>, <i class="text-success">?userdata</i> <i class="text-warning">font</i> = <span class="text-danger">nil</span>)</h5>
+<p>Returns width and height.</p>
+<!-- directx.pos_hud_to_client -->
+<h5><i class="text-success">number, number</i> directx.<span class="text-primary">pos_hud_to_client</span>(<i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>)</h5>
+<!-- directx.size_hud_to_client -->
+<h5><i class="text-success">number, number</i> directx.<span class="text-primary">size_hud_to_client</span>(<i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>)</h5>
+<!-- directx.pos_client_to_hud -->
+<h5><i class="text-success">number, number</i> directx.<span class="text-primary">pos_client_to_hud</span>(<i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>)</h5>
+<!-- directx.size_client_to_hud -->
+<h5><i class="text-success">number, number</i> directx.<span class="text-primary">size_client_to_hud</span>(<i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>)</h5>
+<!-- directx.blurrect_new -->
+<h5><i class="text-success">int</i> directx.<span class="text-primary">blurrect_new</span>()</h5>
+<!-- directx.blurrect_free -->
+<h5><i class="text-success">void</i> directx.<span class="text-primary">blurrect_free</span>(<i class="text-success">int</i> <i class="text-warning">instance</i>)</h5>
+<p>Frees an instance. This is automatically done for all instances your script has allocated but not freed once it finishes.</p>
+<!-- directx.blurrect_draw -->
+<h5><i class="text-success">void</i> directx.<span class="text-primary">blurrect_draw</span>(<i class="text-success">int</i> <i class="text-warning">instance</i>, <i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>, <i class="text-success">number</i> <i class="text-warning">width</i>, <i class="text-success">number</i> <i class="text-warning">height</i>, <i class="text-success">int</i> <i class="text-warning">strength</i>)</h5>
+<p>Prefer to use 1 instance per region, as any draw with a different size requires the buffers to be reallocated.</p>
+<p><code>strength</code> should be around 4 and can't exceed 255.</p>
+
+<h3><a name="util-functions" href="#util-functions">§</a> Util Functions</h3>
+<!-- util.require_natives -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">require_natives</span>(<i class="text-success">int|string</i> <i class="text-warning">version</i>, <i class="text-success">?string</i> <i class="text-warning">flavour</i>)</h5>
+<p>Loads the natives lib with the provided version, installing it from the repository if needed.</p>
+<!-- util.execute_in_os_thread -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">execute_in_os_thread</span>(<i class="text-success">function</i> <i class="text-warning">func</i>)</h5>
+<p>Executes the given function in an OS thread to avoid holding up the game for expensive tasks like using require on a big file, creating lots of commands, or performing expensive calculations. Note that this will hold up your entire script, and calling natives or certain api functions in this context may lead to instabilities.</p>
+<!-- util.require_no_lag -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">require_no_lag</span>(<i class="text-success">string</i> <i class="text-warning">file</i>)</h5>
+<p>Like <code>require</code>, but in an OS thread, to avoid holding up the game. Might not work for every library.</p>
+<!-- util.create_tick_handler -->
+<h5><i class="text-success">thread</i> util.<span class="text-primary">create_tick_handler</span>(<i class="text-success">function</i> <i class="text-warning">func</i>)</h5>
+<p>Registers the parameter-function to be called every tick until it returns <code>false</code>.</p>
+<pre><code class="language-pluto">util.create_tick_handler(function()
+    -- Code that runs every tick...
+end)</code></pre>
+<!-- util.try_run -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">try_run</span>(<i class="text-success">function</i> <i class="text-warning">func</i>)</h5>
+<!-- util.keep_running -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">keep_running</span>()</h5>
+<p>Prevents Stand cleaning up your script for being idle. This is implicit when you create commands, register event handlers, or use the async_http API.</p>
+<!-- util.yield -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">yield</span>(<i class="text-success">?int</i> <i class="text-warning">wake_in_ms</i> = <span class="text-danger">nil</span>)</h5>
+<p>Pauses the execution of the calling thread until the next tick or in <code>wake_in_ms</code> milliseconds.</p>
+<p>If you're gonna create a "neverending" loop, don't forget to yield:</p>
+<pre><code class="language-pluto">while true do
+    -- Code that runs every tick...
+    util.yield()
+end</code></pre>
+<p>For simple loops, you should prefer <code>util.create_tick_handler</code>.</p>
+<!-- util.can_continue -->
+<h5><i class="text-success">bool, bool</i> util.<span class="text-primary">can_continue</span>()</h5>
+<p>The first bool remains true until your script is being stopped. You generally won't need to check against this as the runtime will handle the stop process, but in special situations like execute_in_os_thread, you might like to check against this to see if you want to continue with an expensive operation.</p>
+<p>The second bool indicates if a silent stop of your script has been requested.</p>
+<!-- util.set_busy -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">set_busy</span>(<i class="text-success">bool</i> <i class="text-warning">busy</i>)</h5>
+<!-- util.create_thread -->
+<h5><i class="text-success">thread</i> util.<span class="text-primary">create_thread</span>(<i class="text-success">function</i> <i class="text-warning">thread_func</i>, <i class="text-warning">...</i>)</h5>
+<p>Creates the kind of thread that your script gets when it is created, or one of your callbacks is invoked, which is just another coroutine that gets resumed every tick and is expected to yield or return.</p>
+<!-- util.stop_thread -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">stop_thread</span>()</h5>
+<p>Stops the calling thread.</p>
+<!-- util.shoot_thread -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">shoot_thread</span>(<i class="text-success">thread</i> <i class="text-warning">thrd</i>)</h5>
+<p>Stops the given thread.</p>
+<!-- util.is_scheduled_in -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_scheduled_in</span>(<i class="text-success">thread</i> <i class="text-warning">thrd</i>)</h5>
+<p>Checks if the given thread is still being resumed every tick.</p>
+<!-- util.restart_script -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">restart_script</span>()</h5>
+<p>Goes through the script stop process, freshly loads the contents of the script file, and starts the main thread again. Note that the thread scheduler stays as-is, so this restart is different from a stop-and-start.</p>
+<!-- util.stop_script -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">stop_script</span>()</h5>
+<!-- util.on_pre_stop -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">on_pre_stop</span>(<i class="text-success">function</i> <i class="text-warning">func</i>)</h5>
+<!-- util.on_stop -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">on_stop</span>(<i class="text-success">function</i> <i class="text-warning">func</i>)</h5>
+<p>Script stop process:</p>
+<ul>
+    <li>on_pre_stop handlers are called.</li>
+    <li>Default state is applied to all commands (Change callbacks may be called at this point with <code>CLICK_BULK</code>).</li>
+    <li>on_stop handlers are called.</li>
+</ul>
+<p>Note that yielding and creating threads are not available during the stop process.</p>
+<!-- util.toast -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">toast</span>(<i class="text-success">string</i> <i class="text-warning">message</i>, <i class="text-success">int</i> <i class="text-warning">bitflags</i> = <span class="text-danger">TOAST_DEFAULT</span>)</h5>
+<p>Shows a notifications.</p>
+<p>Possible bitflags:</p>
+<ul>
+<li><span class="text-danger">TOAST_ABOVE_MAP</span> — Uses Stand notifications if enabled</li>
+<li><span class="text-danger">TOAST_CONSOLE</span></li>
+<li><span class="text-danger">TOAST_FILE</span></li>
+<li><span class="text-danger">TOAST_WEB</span></li>
+<li><span class="text-danger">TOAST_CHAT</span></li>
+<li><span class="text-danger">TOAST_CHAT_TEAM</span></li>
+<li><span class="text-danger">TOAST_DEFAULT</span> — Equal to <code>(TOAST_ABOVE_MAP | TOAST_WEB)</code></li>
+<li><span class="text-danger">TOAST_LOGGER</span> — Equal to <code>(TOAST_CONSOLE | TOAST_FILE)</code></li>
+<li><span class="text-danger">TOAST_ALL</span> — Equal to <code>(TOAST_DEFAULT | TOAST_LOGGER)</code></li>
+</ul>
+<p>Note that the chat flags are mutually exclusive.</p>
+<!-- util.log -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">log</span>(<i class="text-success">string</i> <i class="text-warning">message</i>)</h5>
+<p>Alias for <code>util.<span class="text-primary">toast</span>(message, <span class="text-danger">TOAST_LOGGER</span>)</code></p>
+<!-- util.draw_debug_text -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">draw_debug_text</span>(<i class="text-success">string</i> <i class="text-warning">text</i>)</h5>
+<p>Draws the given text for the current tick using the "Info Text" system.</p>
+<!-- util.draw_centred_text -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">draw_centred_text</span>(<i class="text-success">string</i> <i class="text-warning">text</i>)</h5>
+<!-- util.show_corner-help -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">show_corner_help</span>(<i class="text-success">string</i> <i class="text-warning">message</i>)</h5>
+<p>Shorthand for</p>
+<pre><code class="language-pluto">util.BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(message)
+if not HUD.END_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(0) then
+    util.BEGIN_TEXT_COMMAND_DISPLAY_HELP(message)
+    HUD.END_TEXT_COMMAND_DISPLAY_HELP(0, false, true, -1)
+end
+</code></pre>
+<!-- util.replace_corner_help -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">replace_corner_help</span>(<i class="text-success">string</i> <i class="text-warning">message</i>, <i class="text-success">string</i> <i class="text-warning">replacement_message</i>)</h5>
+<p>Shorthand for</p>
+<pre><code class="language-pluto">util.BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(message)
+if HUD.END_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(0) then
+    util.BEGIN_TEXT_COMMAND_DISPLAY_HELP(replacement_message)
+    HUD.END_TEXT_COMMAND_DISPLAY_HELP(0, false, true, -1)
+end</code></pre>
+<!-- util.set_local_player_wanted_level -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">set_local_player_wanted_level</span>(<i class="text-success">int</i> <i class="text-warning">wanted_level</i>)</h5>
+<p>Replacement for</p>
+<pre><code class="language-pluto">PLAYER.SET_PLAYER_WANTED_LEVEL_NO_DROP(PLAYER.PLAYER_ID(), wanted_level, false)
+PLAYER.SET_PLAYER_WANTED_LEVEL_NOW(PLAYER.PLAYER_ID(), false)</code></pre>
+<p>using pointers to avoid potentially tripping anti-cheat.</p>
+<!-- util.joaat -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">joaat</span>(<i class="text-success">string</i> <i class="text-warning">text</i>)</h5>
+<p>This produces the kind of hash used pretty much everywhere in GTA. Although note that even tho this is named JOAAT, this uses RAGE's version of JOAAT — the most notable difference is that the input is computed as lowercase.</p>
+<!-- util.ujoaat -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">ujoaat</span>(<i class="text-success">string</i> <i class="text-warning">text</i>)</h5>
+<p>Similar to util.joaat, but returns an unsigned number:</p>
+<pre><code class="language-pluto">util. joaat("stand") --> -830507952
+util.ujoaat("stand") --> 3464459344</code></pre>
+<!-- util.reverse_joaat -->
+<h5><i class="text-success">string</i> util.<span class="text-primary">reverse_joaat</span>(<i class="text-success">int</i> <i class="text-warning">hash</i>)</h5>
+<p>Returns an empty string if the given hash is not found in Stand's dictionaries.</p>
+<!-- util.is_this_model_a_blimp -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_this_model_a_blimp</span>(<i class="text-success">int|string</i> <i class="text-warning">model</i>)</h5>
+<!-- util.is_this_model_an_object -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_this_model_an_object</span>(<i class="text-success">int|string</i> <i class="text-warning">model</i>)</h5>
+<!-- util.is_this_model_a_submarine -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_this_model_a_submarine</span>(<i class="text-success">int|string</i> <i class="text-warning">model</i>)</h5>
+<!-- util.is_this_model_a_submarine_car -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_this_model_a_submarine_car</span>(<i class="text-success">int|string</i> <i class="text-warning">model</i>)</h5>
+<!-- util.is_this_model_a_trailer -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_this_model_a_trailer</span>(<i class="text-success">int|string</i> <i class="text-warning">model</i>)</h5>
+<!-- util.get_vehicles -->
+<h5><i class="text-success">table&lt;int, table&gt;</i> util.<span class="text-primary">get_vehicles</span>()</h5>
+<p>Returns an index-based table with a table for each vehicle in the game. The inner tables contain <code>name</code>, <code>manufacturer</code>, and <code>class</code>.</p>
+<p><code>class</code> is a signed JOAAT hash with the following possible keys: <code>off_road</code>, <code>sport_classic</code>, <code>military</code>, <code>compacts</code>, <code>sport</code>, <code>muscle</code>, <code>motorcycle</code>, <code>open_wheel</code>, <code>super</code>, <code>van</code>, <code>suv</code>, <code>commercial</code>, <code>plane</code>, <code>sedan</code>, <code>service</code>, <code>industrial</code>, <code>helicopter</code>, <code>boat</code>, <code>utility</code>, <code>emergency</code>, <code>cycle</code>, <code>coupe</code>, <code>rail</code></p>
+<p><code>class</code> is guaranteed to be a valid builtin language label.</p>
+<!-- util.get_objects -->
+<h5><i class="text-success">table&lt;int, string&gt;</i> util.<span class="text-primary">get_objects</span>()</h5>
+<p>Returns an index-based table with a string for each object.</p>
+<!-- util.get_weapons -->
+<h5><i class="text-success">table&lt;int, table&gt;</i> util.<span class="text-primary">get_weapons</span>()</h5>
+<p>Returns an index-based table with a table for each weapon in the game. The inner tables contain <code>hash</code>, <code>label_key</code>, <code>category</code>, & <code>category_id</code>. Note that the categories are specific to Stand.</p>
+<!-- util.BEGIN_TEXT_COMMAND_DISPLAY_TEXT -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">BEGIN_TEXT_COMMAND_DISPLAY_TEXT</span>(<i class="text-success">string</i> <i class="text-warning">message</i>)</h5>
+<p>Replacement for</p>
+<pre><code class="language-pluto">HUD.BEGIN_TEXT_COMMAND_DISPLAY_TEXT("STRING")
+HUD.ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(message)</code></pre>
+<p>which increases your message's character limit.</p>
+<!-- util._BEGIN_TEXT_COMMAND_LINE_COUNT -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">_BEGIN_TEXT_COMMAND_LINE_COUNT</span>(<i class="text-success">string</i> <i class="text-warning">message</i>)</h5>
+<p>Replacement for</p>
+<pre><code class="language-pluto">HUD._BEGIN_TEXT_COMMAND_LINE_COUNT("STRING")
+HUD.ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(message)</code></pre>
+<p>which increases your message's character limit.</p>
+<!-- util.BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED</span>(<i class="text-success">string</i> <i class="text-warning">message</i>)</h5>
+<p>Replacement for</p>
+<pre><code class="language-pluto">HUD.BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED("STRING")
+HUD.ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(message)</code></pre>
+<p>which increases your message's character limit.</p>
+<!-- util.BEGIN_TEXT_COMMAND_DISPLAY_HELP -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">BEGIN_TEXT_COMMAND_DISPLAY_HELP</span>(<i class="text-success">string</i> <i class="text-warning">message</i>)</h5>
+<p>Replacement for</p>
+<pre><code class="language-pluto">HUD.BEGIN_TEXT_COMMAND_DISPLAY_HELP("STRING")
+HUD.ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(message)</code></pre>
+<p>which increases your message's character limit.</p>
+<!-- util._BEGIN_TEXT_COMMAND_GET_WIDTH -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">_BEGIN_TEXT_COMMAND_GET_WIDTH</span>(<i class="text-success">string</i> <i class="text-warning">message</i>)</h5>
+<p>Replacement for</p>
+<pre><code class="language-pluto">HUD._BEGIN_TEXT_COMMAND_GET_WIDTH("STRING")
+HUD.ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(message)</code></pre>
+<p>which increases your message's character limit.</p>
+<!-- util.BEGIN_TEXT_COMMAND_THEFEED_POST -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">BEGIN_TEXT_COMMAND_THEFEED_POST</span>(<i class="text-success">string</i> <i class="text-warning">message</i>)</h5>
+<p>Replacement for</p>
+<pre><code class="language-pluto">HUD.BEGIN_TEXT_COMMAND_THEFEED_POST("STRING")
+HUD.ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(message)</code></pre>
+<p>which increases your message's character limit.</p>
+<!-- util.get_rp_required_for_rank -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">get_rp_required_for_rank</span>(<i class="text-success">int</i> <i class="text-warning">rank</i>)</h5>
+<!-- util.get_session_players_bitflag -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">get_session_players_bitflag</span>()</h5>
+<!-- util.trigger_script_event -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">trigger_script_event</span>(<i class="text-success">int</i> <i class="text-warning">session_player_bitflags</i>, <i class="text-success">table&lt;any, int&gt;</i> <i class="text-warning">args</i>, <i class="text-success">bool</i> <i class="text-warning">reinterpret_floats</i> = <span class="text-danger">false</span>)</h5>
+<p>args[1] should be the event hash (f_0), args[2] is ignored, args[3] and onwards is the data (f_3 and onwards).</p>
+<p><i>session_player_bitflags</i> has a bit set to <code>1</code> for every player that should receive the script event; you can use <code>util.get_session_players_bitflag()</code> if you intend for everyone to receive the script event or use <code>1 &lt;&lt; player_id</code> to target individual players.</p>
+<p><i>reinterpret_floats</i> changes the behaviour when an argument is a float to push it as a float instead of casting it to an int.</p>
+<!-- util.current_time_millis -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">current_time_millis</span>()</h5>
+<!-- util.current_unix_time_seconds -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">current_unix_time_seconds</span>()</h5>
+<p>Returns how many seconds have passed since the UNIX epoch (00:00:00 UTC on 1 January 1970).</p>
+<!-- util.remove_handler -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">remove_handler</span>(<i class="text-success">int</i> <i class="text-warning">handler_id</i>)</h5>
+<!-- util.is_session_started -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_session_started</span>()</h5>
+<!-- util.is_session_transition_active -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_session_transition_active</span>()</h5>
+<!-- util.get_char_slot -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">get_char_slot</span>()</h5>
+<!-- util.get_ground_z -->
+<h5><i class="text-success">bool, number</i> util.<span class="text-primary">get_ground_z</span>(<i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>, <i class="text-success">number</i> <i class="text-warning">z_hint</i> = <span class="text-danger">1000.0</span>)</h5>
+<p>The most precise way to get the ground Z coordinate which respects water.</p>
+<p>The ground Z will be below the <code>z_hint</code>.</p>
+<p>If the bool return value is <code>true</code>, the number is the ground Z. If not, you should try again next tick. You may want to count the calls you made and abort after a certain amount of calls with the bool being <code>false</code>.</p>
+<!-- util.spoof_script -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">spoof_script</span>(<i class="text-success">string|int</i> <i class="text-warning">script</i>, <i class="text-success">function</i> <i class="text-warning">func</i>)</h5>
+<p>If the provided script is not running, your function is not called and this returns <code>false</code>.</p>
+<!-- util.spoof_script_thread -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">spoof_script_thread</span>(<i class="text-success">int</i> <i class="text-warning">thread_id</i>, <i class="text-success">function</i> <i class="text-warning">func</i>)</h5>
+<p>If the script thread was not found, your function is not called and this returns <code>false</code>.</p>
+<!-- util.remove_blip -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">remove_blip</span>(<i class="text-success">int</i> <i class="text-warning">blip</i>)</h5>
+<!-- util.arspinner_is_enabled -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">arspinner_is_enabled</span>()</h5>
+<!-- util.arspinner_enable -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">arspinner_enable</span>()</h5>
+<!-- util.arspinner_disable -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">arspinner_disable</span>()</h5>
+<!-- util.graceland_is_enabled -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">graceland_is_enabled</span>()</h5>
+<!-- util.graceland_enable -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">graceland_enable</span>()</h5>
+<!-- util.graceland_disable -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">graceland_disable</span>()</h5>
+<!-- util.is_bigmap_active -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_bigmap_active</span>()</h5>
+<!-- util.copy_to_clipboard -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">copy_to_clipboard</span>(<i class="text-success">string</i> <i class="text-warning">text</i>, <i class="text-success">bool</i> <i class="text-warning">notify</i> = <span class="text-danger">true</span>)</h5>
+<!-- util.get_clipboard_text -->
+<h5><i class="text-success">string</i> util.<span class="text-primary">get_clipboard_text</span>()</h5>
+<!-- util.read_colons_and_tabs_file -->
+<h5><i class="text-success">table&lt;string,string&gt;</i> util.<span class="text-primary">read_colons_and_tabs_file</span>(<i class="text-success">string</i> <i class="text-warning">file</i>)</h5>
+<p>Allows you to read a file in the colons and tabs format, which is what Stand uses for profiles, hotkeys, etc.</p>
+<!-- util.write_colons_file -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">write_colons_file</span>(<i class="text-success">string</i> <i class="text-warning">file</i>, <i class="text-success">table&lt;string,string&gt;</i> <i class="text-warning">data</i>)</h5>
+<p>Allows you to write a file in the colons <del>and tabs</del> format.</p>
+<!-- util.draw_ar_beacon -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">draw_ar_beacon</span>(<i class="text-success">Vector3</i> <i class="text-warning">pos</i>)</h5>
+<!-- util.draw_box -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">draw_box</span>(<i class="text-success">Vector3</i> <i class="text-warning">pos</i>, <i class="text-success">Vector3</i> <i class="text-warning">rot</i>, <i class="text-success">Vector3</i> <i class="text-warning">dimensions</i>, <i class="text-success">int</i> <i class="text-warning">r</i>, <i class="text-success">int</i> <i class="text-warning">g</i>, <i class="text-success">int</i> <i class="text-warning">b</i>, <i class="text-success">int</i> <i class="text-warning">a</i> = <span class="text-danger">255</span>)</h5>
+<p>Draws a box with 3d rotation using polys. Note that backfaceculling applies to the inside.</p>
+<!-- util.draw_sphere -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">draw_sphere</span>(<i class="text-success">Vector3</i> <i class="text-warning">pos</i>, <i class="text-success">int</i> <i class="text-warning">radius</i>, <i class="text-success">int</i> <i class="text-warning">r</i>, <i class="text-success">int</i> <i class="text-warning">g</i>, <i class="text-success">int</i> <i class="text-warning">b</i>, <i class="text-success">int</i> <i class="text-warning">a</i> = <span class="text-danger">255</span>, <i class="text-success">int</i> <i class="text-warning">quality</i> = <span class="text-danger">40</span>)</h5>
+<p>Draws a sphere using polys. Note that backfaceculling applies to the inside.</p>
+<!-- util.request_script_host -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">request_script_host</span>(<i class="text-success">string|int</i> <i class="text-warning">script</i>)</h5>
+<!-- util.give_script_host -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">give_script_host</span>(<i class="text-success">string|int</i> <i class="text-warning">script</i>, <i class="text-success">int</i> <i class="text-warning">player</i>)</h5>
+<!-- util.register_file -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">register_file</span>(<i class="text-success">string</i> <i class="text-warning">path</i>)</h5>
+<p>Registers the given file in the game so it can be used with natives, e.g. <code>util.register_file(filesystem.resources_dir() .. "myscript.ytd")</code> will allow you to use "myscript" as a texture dict for GRAPHICS natives.</p>
+<!-- util.get_label_text -->
+<h5><i class="text-success">string</i> util.<span class="text-primary">get_label_text</span>(<i class="text-success">int|string</i> <i class="text-warning">label_key</i>)</h5>
+<p>Same as <code>HUD._GET_LABEL_TEXT</code> except it will bypass any replacements Stand might be making.</p>
+<!-- util.register_label -->
+<h5><i class="text-success">string</i> util.<span class="text-primary">register_label</span>(<i class="text-success">string</i> <i class="text-warning">text</i>)</h5>
+<p>Registers a label, such that it can be used with <code>HUD._GET_LABEL_TEXT</code> and other natives.</p>
+<!-- util.is_key_down -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_key_down</span>(<i class="text-success">int|string</i> <i class="text-warning">vk</i>)</h5>
+<p><code>vk</code> int values can be found at <a href="https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes" target="_blank" rel="noreferrer noopener">https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes</a></p>
+<p><code>vk</code> may also be a string, if it contains a single character and that character is A-Z, 0-9, or a space.</p>
+<!-- util.call_foreign_function -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">call_foreign_function</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>, <i class="text-success">int|userdata|string</i> <i class="text-danger">...</i>)</h5>
+<!-- util.get_rtti_name -->
+<h5><i class="text-success">string</i> util.<span class="text-primary">get_rtti_name</span>(<i class="text-success">int</i> <i class="text-warning">inst_addr</i>)</h5>
+<!-- util.get_rtti_hierarchy -->
+<h5><i class="text-success">string</i> util.<span class="text-primary">get_rtti_hierarchy</span>(<i class="text-success">int</i> <i class="text-warning">inst_addr</i>)</h5>
+<!-- util.set_particle_fx_asset -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">set_particle_fx_asset</span>(<i class="text-success">int|string</i> <i class="text-warning">hash</i>)</h5>
+<!-- util.blip_handle_to_pointer -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">blip_handle_to_pointer</span>(<i class="text-success">int</i> <i class="text-warning">blip_handle</i>)</h5>
+<!-- util.get_blip_display -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">get_blip_display</span>(<i class="text-success">int</i> <i class="text-warning">blip_handle</i>)</h5>
+<!-- util.teleport_2d -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">teleport_2d</span>(<i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>)</h5>
+<!-- util.is_interaction_menu_open -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_interaction_menu_open</span>()</h5>
+<!-- util.on_transition_finished -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">on_transition_finished</span>(<i class="text-success">function</i> <i class="text-warning">callback</i>)</h5>
+<!-- util.get_closest_hud_colour -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">get_closest_hud_colour</span>(<i class="text-success">int</i> <i class="text-warning">target_r</i>, <i class="text-success">int</i> <i class="text-warning">target_g</i>, <i class="text-success">int</i> <i class="text-warning">target_b</i>, <i class="text-success">int</i> <i class="text-warning">target_a</i> = <span class="text-danger">255</span>)</h5>
+<!-- util.is_soup_netintel_inited -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_soup_netintel_inited</span>()</h5>
+<!-- util.on_pad_shake -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">on_pad_shake</span>(<i class="text-success">function</i> <i class="text-warning">callback</i>)</h5>
+<pre><code class="language-pluto">util.on_pad_shake(function(light_duration, light_intensity, heavy_duration, heavy_intensity, delay_after_this_one)
+    -- Do stuff...
+end)</code></pre>
+<!-- util.request_model -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">request_model</span>(<i class="text-success">int|string</i> <i class="text-warning">model</i>, <i class="text-success">int</i> <i class="text-warning">timeout</i> = <span class="text-danger">2000</span>)</h5>
+<p>Attempts to load the given model within <code>timeout</code> milliseconds or throws an error.<br>
+<!-- util.open_folder -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">open_folder</span>(<i class="text-success">string</i> <i class="text-warning">path</i>)</h5>
+<!-- util.set_nullptr_preference -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">set_nullptr_preference</span>(<i class="text-success">bool</i> <i class="text-warning">use_nil</i> = <span class="text-danger">true</span>)</h5>
+<p>How Stand should behave when it has to return a nullptr to you.</p>
+<ul>
+    <li><code>false</code> is the old behaviour, which is just returning the int <code>0</code>.</li>
+    <li><code>true</code> is the new behaviour, which will return <code>nil</code> instead of an int, to simplify comparisons.</li>
+</ul>
+<p>This currently affects the following functions:</p>
+<ul>
+    <li>entities.get_user_vehicle_as_pointer</li>
+    <li>entities.handle_to_pointer</li>
+    <li>entities.handling_get_subhandling</li>
+    <li>entities.get_net_object</li>
+    <li>util.blip_handle_to_pointer</li>
+    <li>util.get_model_info</li>
+    <li>memory.script_global</li>
+    <li>memory.script_local</li>
+    <li>memory.scan</li>
+    <li>memory.scan_script</li>
+</ul>
+<p>Returns the previous value.</p>
+<!-- util.get_tps -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">get_tps</span>()</h5>
+<!-- util.get_session_code -->
+<h5><i class="text-success">bool, ?string</i> util.<span class="text-primary">get_session_code</span>()</h5>
+<pre><code class="language-pluto">local function get_session_code_for_user()
+    local applicable, code = util.get_session_code()
+    if applicable then
+        if code then
+            return code
+        end
+        return "Please wait..."
+    end
+    return "N/A"
+end</code></pre>
+<!-- util.stat_get_type -->
+<h5><i class="text-success">?int</i> util.<span class="text-primary">stat_get_type</span>(<i class="text-success">int|string</i> <i class="text-warning">stat</i>)</h5>
+<!-- util.stat_get_int64 -->
+<h5><i class="text-success">?int</i> util.<span class="text-primary">stat_get_int64</span>(<i class="text-success">int|string</i> <i class="text-warning">stat</i>)</h5>
+<!-- util.stat_set_int64 -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">stat_set_int64</span>(<i class="text-success">int|string</i> <i class="text-warning">stat</i>, <i class="text-success">int</i> <i class="text-warning">value</i>)</h5>
+<!-- util.new_toast_config -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">new_toast_config</span>(<i class="text-success">CommandRef</i> <i class="text-warning">list</i>, <i class="text-success">int</i> <i class="text-warning">bitflags</i> = <span class="text-danger">0</span>, <i class="text-success">table&lt;any, string&gt;</i> <i class="text-warning">command_names_prefix</i> = <span class="text-danger">{}</span>)</h5>
+<!-- util.toast_config_get_flags -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">toast_config_get_flags</span>(<i class="text-success">int</i> <i class="text-warning">tc</i>)</h5>
+<pre><code class="language-pluto">local tc
+menu.my_root():action("Show Notification", {}, "", function()
+    util.toast("Here is the notification!", util.toast_config_get_flags(tc))
+end)
+menu.my_root():divider(lang.find_builtin("Notifications"))
+tc = util.new_toast_config(menu.my_root(), TOAST_DEFAULT)</code></pre>
+<!-- util.get_model_info -->
+<h5><i class="text-success">int</i> util.<span class="text-primary">get_model_info</span>(<i class="text-success">int|string</i> <i class="text-warning">hash</i>)</h5>
+<p>Returns the address of the CModelInfo for the given hash or <code>0</code> if not loaded.</p>
+<!-- util.is_valid_file_name -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_valid_file_name</span>(<i class="text-success">string</i> <i class="text-warning">name</i>, <i class="text-success">bool</i> <i class="text-warning">allow_folder</i>)</h5>
+<!-- util.rgb2hsv -->
+<h5><i class="text-success">number, number, number</i> util.<span class="text-primary">rgb2hsv</span>(<i class="text-success">number</i> <i class="text-warning">r</i>, <i class="text-success">number</i> <i class="text-warning">g</i>, <i class="text-success">number</i> <i class="text-warning">b</i>)</h5>
+<!-- util.hsv2rgb -->
+<h5><i class="text-success">number, number, number</i> util.<span class="text-primary">hsv2rgb</span>(<i class="text-success">number</i> <i class="text-warning">h</i>, <i class="text-success">number</i> <i class="text-warning">s</i>, <i class="text-success">number</i> <i class="text-warning">v</i>)</h5>
+<!-- util.calculate_luminance -->
+<h5><i class="text-success">number</i> util.<span class="text-primary">calculate_luminance</span>(<i class="text-success">number</i> <i class="text-warning">r</i>, <i class="text-success">number</i> <i class="text-warning">g</i>, <i class="text-success">number</i> <i class="text-warning">b</i>)</h5>
+<!-- util.calculate_contrast -->
+<h5><i class="text-success">number</i> util.<span class="text-primary">calculate_contrast</span>(<i class="text-success">number</i> <i class="text-warning">r1</i>, <i class="text-success">number</i> <i class="text-warning">g1</i>, <i class="text-success">number</i> <i class="text-warning">b1</i>, <i class="text-success">number</i> <i class="text-warning">r2</i>, <i class="text-success">number</i> <i class="text-warning">g2</i>, <i class="text-success">number</i> <i class="text-warning">b2</i>)</h5>
+<!-- util.is_contrast_sufficient -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">is_contrast_sufficient</span>(<i class="text-success">number</i> <i class="text-warning">r1</i>, <i class="text-success">number</i> <i class="text-warning">g1</i>, <i class="text-success">number</i> <i class="text-warning">b1</i>, <i class="text-success">number</i> <i class="text-warning">r2</i>, <i class="text-success">number</i> <i class="text-warning">g2</i>, <i class="text-success">number</i> <i class="text-warning">b2</i>)</h5>
+<!-- util.set_waypoint -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">set_waypoint</span>(<i class="text-success">Vector3</i> <i class="text-warning">pos</i>)</h5>
+<p>An extended version of <code>HUD.SET_NEW_WAYPOINT</code> that includes the Z axis for features like Stand's AR Waypoint.</p>
+<!-- util.set_cam_quaternion -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">set_cam_quaternion</span>(<i class="text-success">int</i> <i class="text-warning">cam</i>, <i class="text-success">number</i> <i class="text-warning">x</i>, <i class="text-success">number</i> <i class="text-warning">y</i>, <i class="text-success">number</i> <i class="text-warning">z</i>, <i class="text-success">number</i> <i class="text-warning">w</i>)</h5>
+<!-- util.get_screen_coord_from_world_coord_no_adjustment -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">get_screen_coord_from_world_coord_no_adjustment</span>(<i class="text-success">number</i> <i class="text-warning">fWorldX</i>, <i class="text-success">number</i> <i class="text-warning">fWorldY</i>, <i class="text-success">number</i> <i class="text-warning">fWorldZ</i>, <i class="text-success">number</i> <i class="text-warning">pOutScreenX</i>, <i class="text-success">number</i> <i class="text-warning">pOutScreenY</i>)</h5>
+<p>Alternative to <code>GRAPHICS.GET_SCREEN_COORD_FROM_WORLD_COORD</code> that does not do adjustments for multihead monitor configs.</p>
+<pre><code class="language-pluto">util.require_natives()
+
+util.create_tick_handler(function()
+    local pos = ENTITY.GET_ENTITY_COORDS(players.user_ped())
+
+    local v2 = memory.alloc(8)
+    if util.get_screen_coord_from_world_coord_no_adjustment(pos.x, pos.y, pos.z, v2, v2 + 4) then
+        util.draw_debug_text(memory.read_float(v2) .. ", " .. memory.read_float(v2 + 4))
+    else
+        util.draw_debug_text("Off-screen!")
+    end
+end)</code></pre>
+<!-- util.utf8_to_utf16 -->
+<h5><i class="text-success">string</i> util.<span class="text-primary">utf8_to_utf16</span>(<i class="text-success">string</i> <i class="text-warning">utf8</i>)</h5>
+<!-- util.utf16_to_utf8 -->
+<h5><i class="text-success">string</i> util.<span class="text-primary">utf16_to_utf8</span>(<i class="text-success">string</i> <i class="text-warning">utf16</i>)</h5>
+<!-- util.get_gps_route -->
+<h5><i class="text-success">table&lt;int, table&gt;, bool</i> util.<span class="text-primary">get_gps_route</span>(<i class="text-success">int</i> <i class="text-warning">slot</i>)</h5>
+<p>Gets the GPS route information for the given slot. Slot 0 is waypoint.</p>
+<p>The first return value is an index-based table of tables. Each inner table contains <code>x</code>, <code>y</code>, <code>z</code> and <code>junction</code>. Junction nodes should be ignored when drawing a line to avoid jaggedness.</p>
+<p>The second return value indicates if the route is partial.</p>
+<!-- util.sc_is_blocked -->
+<h5><i class="text-success">bool</i> util.<span class="text-primary">sc_is_blocked</span>(<i class="text-success">int</i> <i class="text-warning">rockstar_id</i>)</h5>
+<p>The result of this may sometimes lag behind your actual Social Club block list. This seems to be a Social Club bug.</p>
+<!-- util.sc_block -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">sc_block</span>(<i class="text-success">int</i> <i class="text-warning">rockstar_id</i>)</h5>
+<p>May not succeed if called in bulk. Try to combine this with util.sc_is_blocked.</p>
+<!-- util.sc_unblock -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">sc_unblock</span>(<i class="text-success">int</i> <i class="text-warning">rockstar_id</i>)</h5>
+<p>May not succeed if called in bulk. Try to combine this with util.sc_is_blocked.</p>
+<!-- util.play_wav -->
+<h5><i class="text-success">thread</i> util.<span class="text-primary">play_wav</span>(<i class="text-success">string</i> <i class="text-warning">path</i>)</h5>
+<p>Spins up a new thread to play the sound. Once <code>util.is_scheduled_in</code> on the return value becomes false, the playback has finished.</p>
+<!-- util.ui3dscene_set_element_2d_position -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">ui3dscene_set_element_2d_position</span>(<i class="text-success">int</i> <i class="text-warning">slot</i>, <i class="text-success">float</i> <i class="text-warning">x</i>, <i class="text-success">float</i> <i class="text-warning">y</i>)</h5>
+<p>Note that this is in client coordinate space.</p>
+<!-- util.ui3dscene_set_element_2d_size -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">ui3dscene_set_element_2d_size</span>(<i class="text-success">int</i> <i class="text-warning">slot</i>, <i class="text-success">float</i> <i class="text-warning">width</i>, <i class="text-success">float</i> <i class="text-warning">height</i>)</h5>
+<p>Note that this is in client coordinate space.</p>
+<!-- util.ui3dscene_set_element_background_colour -->
+<h5><i class="text-success">void</i> util.<span class="text-primary">ui3dscene_set_element_background_colour</span>(<i class="text-success">int</i> <i class="text-warning">slot</i>, <i class="text-success">Colour</i> <i class="text-warning">colour</i>)</h5>
+<!-- util.ip_from_string -->
+<h5><i class="text-success">?int</i> util.<span class="text-primary">ip_from_string</span>(<i class="text-success">string</i> <i class="text-warning">str</i>)</h5>
+<!-- util.ip_to_string -->
+<h5><i class="text-success">string</i> util.<span class="text-primary">ip_to_string</span>(<i class="text-success">int</i> <i class="text-warning">ip</i>)</h5>
+<!-- util.ip_get_as -->
+<h5><i class="text-success">?table</i> util.<span class="text-primary">ip_get_as</span>(<i class="text-success">int</i> <i class="text-warning">ip</i>)</h5>
+<p>Returns a table containing <code>number</code>, <code>handle</code>, & <code>name</code>. Returns nil if netIntel is not inited yet or no such data is available for the given IP.</p>
+<!-- util.ip_get_location -->
+<h5><i class="text-success">?table</i> util.<span class="text-primary">ip_get_location</span>(<i class="text-success">int</i> <i class="text-warning">ip</i>)</h5>
+<p>Returns a table containing <code>country_code</code>, <code>state</code>, & <code>city</code>. Returns nil if netIntel is not inited yet or no such data is available for the given IP.</p>
+
+<h3><a name="v3-functions" href="#v3-functions">§</a> V3 Functions</h3>
+<!-- v3.new -->
+<h5><i class="text-success">userdata</i> v3.<span class="text-primary">new</span>(<i class="text-success">float</i> <i class="text-warning">x</i>, <i class="text-success">float</i> <i class="text-warning">y</i>, <i class="text-success">float</i> <i class="text-warning">z</i>)</h5>
+<h5><i class="text-success">userdata</i> v3.<span class="text-primary">new</span>(<i class="text-success">Vector3</i> <i class="text-warning">pos</i>)</h5>
+<h5><i class="text-success">userdata</i> v3.<span class="text-primary">new</span>()</h5>
+<p>Creates a new v3 instance, which can be used anywhere a <code>Vector3</code> or <code>Vector3*</code> is accepted.</p>
+<p>As an alternative to <code>v3.new(...)</code>, you can also use <code>v3(...)</code>.</p>
+<p>Furthermore, all following functions can be called on a v3 instance using the <code>:</code> syntax.</p>
+<!-- v3.get -->
+<h5><i class="text-success">float, float, float</i> v3.<span class="text-primary">get</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<!-- v3.getX -->
+<h5><i class="text-success">float</i> v3.<span class="text-primary">getX</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<!-- v3.getY -->
+<h5><i class="text-success">float</i> v3.<span class="text-primary">getY</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<!-- v3.getZ -->
+<h5><i class="text-success">float</i> v3.<span class="text-primary">getZ</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<!-- v3.getHeading -->
+<h5><i class="text-success">float</i> v3.<span class="text-primary">getHeading</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<!-- v3.set -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">set</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>, <i class="text-success">float</i> <i class="text-warning">x</i>, <i class="text-success">float</i> <i class="text-warning">y</i>, <i class="text-success">float</i> <i class="text-warning">z</i>)</h5>
+<!-- v3.setX -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">setX</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>, <i class="text-success">float</i> <i class="text-warning">x</i>)</h5>
+<!-- v3.setY -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">setY</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>, <i class="text-success">float</i> <i class="text-warning">y</i>)</h5>
+<!-- v3.setZ -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">setZ</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>, <i class="text-success">float</i> <i class="text-warning">z</i>)</h5>
+<!-- v3.reset -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">reset</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<!-- v3.add -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">add</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">userdata|int</i> <i class="text-warning">b</i>)</h5>
+<p>Adds <code>b</code> to <code>a</code>. Returns <code>a</code>.</p>
+<!-- v3.sub -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">sub</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">userdata|int</i> <i class="text-warning">b</i>)</h5>
+<p>Subtracts <code>b</code> from <code>a</code>. Returns <code>a</code>.</p>
+<!-- v3.mul -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">mul</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">number</i> <i class="text-warning">f</i>)</h5>
+<p>Multiplies <code>a</code> by <code>f</code>. Returns <code>a</code>.</p>
+<!-- v3.div -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">div</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">number</i> <i class="text-warning">f</i>)</h5>
+<p>Divides <code>a</code> by <code>f</code>. Returns <code>a</code>.</p>
+<!-- v3.addNew -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">addNew</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">userdata|int</i> <i class="text-warning">b</i>)</h5>
+<p>Returns a new instance with the result of <code>a + b</code>.</p>
+<!-- v3.subNew -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">subNew</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">userdata|int</i> <i class="text-warning">b</i>)</h5>
+<p>Returns a new instance with the result of <code>a - b</code>.</p>
+<!-- v3.mulNew -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">mulNew</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">number</i> <i class="text-warning">f</i>)</h5>
+<p>Returns a new instance with the result of <code>a * f</code>.</p>
+<!-- v3.divNew -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">divNew</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">number</i> <i class="text-warning">f</i>)</h5>
+<p>Returns a new instance with the result of <code>a / f</code>.</p>
+<!-- v3.eq -->
+<h5><i class="text-success">bool</i> v3.<span class="text-primary">eq</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">userdata|int</i> <i class="text-warning">b</i>)</h5>
+<!-- v3.magnitude -->
+<h5><i class="text-success">number</i> v3.<span class="text-primary">magnitude</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>)</h5>
+<p>Alternatively, you can use the <code>#</code> syntax on a v3 instance to get its magnitude.</p>
+<!-- v3.distance -->
+<h5><i class="text-success">number</i> v3.<span class="text-primary">distance</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">userdata|int</i> <i class="text-warning">b</i>)</h5>
+<!-- v3.abs -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">abs</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<p>Ensures that every axis is positive.</p>
+<!-- v3.sum -->
+<h5><i class="text-success">void</i> v3.<span class="text-primary">sum</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<!-- v3.min -->
+<h5><i class="text-success">float</i> v3.<span class="text-primary">min</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<p>Returns the value of the smallest axis.</p>
+<!-- v3.max -->
+<h5><i class="text-success">float</i> v3.<span class="text-primary">max</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<p>Returns the value of the biggest axis.</p>
+<!-- v3.dot -->
+<h5><i class="text-success">number</i> v3.<span class="text-primary">dot</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">int</i> <i class="text-warning">b</i>)</h5>
+<!-- v3.normalise -->
+<h5><i class="text-success">userdata|int</i> v3.<span class="text-primary">normalise</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<!-- v3.crossProduct -->
+<h5><i class="text-success">userdata</i> v3.<span class="text-primary">crossProduct</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">int</i> <i class="text-warning">b</i>)</h5>
+<p>The result is a new instance.</p>
+<!-- v3.toRot -->
+<h5><i class="text-success">userdata</i> v3.<span class="text-primary">toRot</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<p>The result is a new instance with rotation data.</p>
+<!-- v3.lookAt -->
+<h5><i class="text-success">userdata</i> v3.<span class="text-primary">lookAt</span>(<i class="text-success">userdata|int</i> <i class="text-warning">a</i>, <i class="text-success">int</i> <i class="text-warning">b</i>)</h5>
+<p>The result is a new instance with rotation data.</p>
+<!-- v3.toDir -->
+<h5><i class="text-success">userdata</i> v3.<span class="text-primary">toDir</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+<p>The result is a new instance with direction data. The direction vector will have a magnitude of 1 / it is a unit vector, so you can safely multiply it.</p>
+<p>Note that Stand expects/uses what is rotation order 2 for RAGE.</p>
+<!-- v3.toString -->
+<h5><i class="text-success">string</i> v3.<span class="text-primary">toString</span>(<i class="text-success">userdata|int</i> <i class="text-warning">addr</i>)</h5>
+
+<h3><a name="lang-functions" href="#lang-functions">§</a> Lang Functions</h3>
+<!-- lang.get_current -->
+<h5><i class="text-success">string</i> lang.<span class="text-primary">get_current</span>()</h5>
+<p>Returns the current menu language, which could be a 2-letter language code, <code>"en-us"</code>, <code>"sex"</code>, <code>"uwu"</code>, or <code>"hornyuwu"</code>.</p>
+<!-- lang.is_code_valid -->
+<h5><i class="text-success">bool</i> lang.<span class="text-primary">is_code_valid</span>(<i class="text-success">string</i> <i class="text-warning">lang_code</i>)</h5>
+<!-- lang.get_code_for_soup -->
+<h5><i class="text-success">string</i> lang.<span class="text-primary">get_code_for_soup</span>(<i class="text-success">string</i> <i class="text-warning">lang_code</i>)</h5>
+<!-- lang.is_automatically_translated -->
+<h5><i class="text-success">bool</i> lang.<span class="text-primary">is_automatically_translated</span>(<i class="text-success">string</i> <i class="text-warning">lang_code</i>)</h5>
+<!-- lang.is_english -->
+<h5><i class="text-success">bool</i> lang.<span class="text-primary">is_english</span>(<i class="text-success">string</i> <i class="text-warning">lang_code</i>)</h5>
+<!-- lang.register -->
+<h5><i class="text-success">int</i> lang.<span class="text-primary">register</span>(<i class="text-success">string</i> <i class="text-warning">text</i>)</h5>
+<!-- lang.set_translate -->
+<h5><i class="text-success">void</i> lang.<span class="text-primary">set_translate</span>(<i class="text-success">string</i> <i class="text-warning">lang_code</i>)</h5>
+<p>Starts the process of translating labels. <code>lang_code</code> must be a 2-letter language code or <code>"sex"</code>.</p>
+<!-- lang.translate -->
+<h5><i class="text-success">void</i> lang.<span class="text-primary">translate</span>(<i class="text-success">int</i> <i class="text-warning">label</i>, <i class="text-success">string</i> <i class="text-warning">text</i>)</h5>
+<!-- lang.find -->
+<h5><i class="text-success">int</i> lang.<span class="text-primary">find</span>(<i class="text-success">string</i> <i class="text-warning">text</i>, <i class="text-success">string</i> <i class="text-warning">lang_code</i> = <span class="text-danger">"en"</span>)</h5>
+<p>Finds an existing label using its text. Returns 0 if not found. <code>lang_code</code> must be a 2-letter language code or <code>"sex"</code>.</p>
+<p>Note that if there are multiple possible results, it is basically random which one is returned.</p>
+<!-- lang.find_builtin -->
+<h5><i class="text-success">int</i> lang.<span class="text-primary">find_builtin</span>(<i class="text-success">string</i> <i class="text-warning">text</i>, <i class="text-success">string</i> <i class="text-warning">lang_code</i> = <span class="text-danger">"en"</span>)</h5>
+<p>Similar to lang.find but limited to labels Stand has registered.</p>
+<!-- lang.find_registered -->
+<h5><i class="text-success">int</i> lang.<span class="text-primary">find_registered</span>(<i class="text-success">string</i> <i class="text-warning">text</i>, <i class="text-success">string</i> <i class="text-warning">lang_code</i> = <span class="text-danger">"en"</span>)</h5>
+<p>Similar to lang.find but limited to labels your script has registered.</p>
+<!-- lang.get_string -->
+<h5><i class="text-success">string</i> lang.<span class="text-primary">get_string</span>(<i class="text-success">Label</i> <i class="text-warning">label</i>, <i class="text-success">string</i> <i class="text-warning">lang_code</i> = <span class="text-danger">"en"</span>)</h5>
+<p><code>lang_code</code> must be a 2-letter language code, <code>"en-us"</code>, <code>"sex"</code>, <code>"uwu"</code>, or <code>"hornyuwu"</code>.</p>
+<!-- lang.get_localised -->
+<h5><i class="text-success">string</i> lang.<span class="text-primary">get_localised</span>(<i class="text-success">Label</i> <i class="text-warning">label</i>)</h5>
+<p>Similar to lang.get_string but always using the current menu language.</p>
+<!-- lang.is_mine -->
+<h5><i class="text-success">bool</i> lang.<span class="text-primary">is_mine</span>(<i class="text-success">int</i> <i class="text-warning">label</i>)</h5>
+<p>Returns true if the given label was registered by the calling script.</p>
+<!-- lang.is_builtin -->
+<h5><i class="text-success">bool</i> lang.<span class="text-primary">is_builtin</span>(<i class="text-success">int</i> <i class="text-warning">label</i>)</h5>
+<!-- lang.get_country_name -->
+<h5><i class="text-success">?string</i> lang.<span class="text-primary">get_country_name</span>(<i class="text-success">string</i> <i class="text-warning">country_code</i>, <i class="text-success">string</i> <i class="text-warning">lang_code</i>)</h5>
+
+<h3><a name="filesystem-functions" href="#filesystem-functions">§</a> Filesystem Functions</h3>
+<!-- filesystem.appdata_dir -->
+<h5><i class="text-success">string</i> filesystem.<span class="text-primary">appdata_dir</span>()</h5>
+<p>Possible return value: <code>C:\Users\John\AppData\Roaming\</code></p>
+<!-- filesystem.stand_dir -->
+<h5><i class="text-success">string</i> filesystem.<span class="text-primary">stand_dir</span>()</h5>
+<p>Possible return value: <code>C:\Users\John\AppData\Roaming\Stand\</code></p>
+<!-- filesystem.scripts_dir -->
+<h5><i class="text-success">string</i> filesystem.<span class="text-primary">scripts_dir</span>()</h5>
+<p>Possible return value: <code>C:\Users\John\AppData\Roaming\Stand\Lua Scripts\</code></p>
+<!-- filesystem.resources_dir -->
+<h5><i class="text-success">string</i> filesystem.<span class="text-primary">resources_dir</span>()</h5>
+<p>Possible return value: <code>C:\Users\John\AppData\Roaming\Stand\Lua Scripts\resources\</code></p>
+<p>That is the directory dedicated to static content for scripts, e.g. a logo.</p>
+<!-- filesystem.store_dir -->
+<h5><i class="text-success">string</i> filesystem.<span class="text-primary">store_dir</span>()</h5>
+<p>Possible return value: <code>C:\Users\John\AppData\Roaming\Stand\Lua Scripts\store\</code></p>
+<p>That is the directory dedicated to dynamic content for scripts, e.g. user configuration that can't be dealt with by proper usage of the state system.</p>
+<p>This function also creates the "store" directory if it doesn't exist.</p>
+<!-- filesystem.exists -->
+<h5><i class="text-success">bool</i> filesystem.<span class="text-primary">exists</span>(<i class="text-success">string</i> <i class="text-warning">path</i>)</h5>
+<!-- filesystem.is_regular_file -->
+<h5><i class="text-success">bool</i> filesystem.<span class="text-primary">is_regular_file</span>(<i class="text-success">string</i> <i class="text-warning">path</i>)</h5>
+<!-- filesystem.is_dir -->
+<h5><i class="text-success">bool</i> filesystem.<span class="text-primary">is_dir</span>(<i class="text-success">string</i> <i class="text-warning">path</i>)</h5>
+<!-- filesystem.mkdir -->
+<h5><i class="text-success">void</i> filesystem.<span class="text-primary">mkdir</span>(<i class="text-success">string</i> <i class="text-warning">path</i>)</h5>
+<!-- filesystem.mkdirs -->
+<h5><i class="text-success">void</i> filesystem.<span class="text-primary">mkdirs</span>(<i class="text-success">string</i> <i class="text-warning">path</i>)</h5>
+<!-- filesystem.scripts_dir -->
+<h5><i class="text-success">table&lt;int, string&gt;</i> filesystem.<span class="text-primary">list_files</span>(<i class="text-success">string</i> <i class="text-warning">path</i>)</h5>
+<p>Returns an index-based table with all files in the given directory.</p>
+<pre><code class="language-pluto">for filesystem.list_files(filesystem.scripts_dir()) as path do
+    util.log(path)
+end</code></pre>
+<p>Note that directories in the resulting table don't end on a <code>\</code>.</p>
+
+<h3><a name="async-http-functions" href="#async-http-functions">§</a> Async HTTP Functions</h3>
+<!-- async_http.have_access -->
+<h5><i class="text-success">bool</i> async_http.<span class="text-primary">have_access</span>()</h5>
+<!-- async_http.init -->
+<h5><i class="text-success">void</i> async_http.<span class="text-primary">init</span>(<i class="text-success">string</i> <i class="text-warning">host</i>, <i class="text-success">string</i> <i class="text-warning">?path</i> = <span class="text-danger">nil</span>, <i class="text-success">?function</i> <i class="text-warning">success_func</i> = <span class="text-danger">nil</span>, <i class="text-success">?function</i> <i class="text-warning">fail_func</i> = <span class="text-danger">nil</span>)</h5>
+<p>This will make a GET request unless you use <code>async_http.set_post</code> before calling <code>async_http.dispatch</code>.</p>
+<p>On success, your <code>success_func</code> will be called with <code>body, header_fields, status_code</code>.</p>
+<p>If the request failed to go through, your <code>fail_func</code> will be called with <code>reason</code> which is a string.</p>
+<p>Note that neither function will be called if your script stops before the request finishes as their lifetimes are independent.</p>
+<!-- async_http.dispatch -->
+<h5><i class="text-success">void</i> async_http.<span class="text-primary">dispatch</span>()</h5>
+<p>Finish building the async http request and carry it out in separate OS thread.</p>
+<!-- async_http.set_post -->
+<h5><i class="text-success">void</i> async_http.<span class="text-primary">set_post</span>(<i class="text-success">string</i> <i class="text-warning">content_type</i>, <i class="text-success">string</i> <i class="text-warning">payload</i>)</h5>
+<p>Changes the request method, adds <code>Content-Type</code> and <code>Content-Length</code> headers, and sets the payload.</p>
+<p>Examples of <code>content_type</code>:</p>
+<ul>
+    <li><code>application/json</code></li>
+    <li><code>application/x-www-form-urlencoded; charset=UTF-8</code></li>
+</ul>
+<!-- async_http.add_header -->
+<h5><i class="text-success">void</i> async_http.<span class="text-primary">add_header</span>(<i class="text-success">string</i> <i class="text-warning">key</i>, <i class="text-success">string</i> <i class="text-warning">value</i>)</h5>
+<!-- async_http.set_method -->
+<h5><i class="text-success">void</i> async_http.<span class="text-primary">set_method</span>(<i class="text-success">string</i> <i class="text-warning">method</i>)</h5>
+<!-- async_http.prefer_ipv6 -->
+<h5><i class="text-success">void</i> async_http.<span class="text-primary">prefer_ipv6</span>()</h5>
+
+<h3><a name="memory-functions" href="#memory-functions">§</a> Memory Functions</h3>
+<!-- memory.script_global -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">script_global</span>(<i class="text-success">int</i> <i class="text-warning">global</i>)</h5>
+<p>Returns the address of the given script global. Beware that script globals get reallocated upon "forcequit".</p>
+<!-- memory.script_local -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">script_local</span>(<i class="text-success">string|int</i> <i class="text-warning">script</i>, <i class="text-success">int</i> <i class="text-warning">local</i>)</h5>
+<p>Returns the address of the given script local or 0 if the script was not found.</p>
+<!-- memory.alloc -->
+<h5><i class="text-success">userdata</i> memory.<span class="text-primary">alloc</span>(<i class="text-success">int</i> <i class="text-warning">size</i> = <span class="text-danger">24</span>)</h5>
+<p>The default size is 24 so it can fit a Vector3.</p>
+<p>The returned userdata supports the following operations: <code>:readByte</code>, <code>:readUbyte</code>, <code>:readShort</code>, <code>:readUshort</code>, <code>:readInt</code>, <code>:readUint</code>, <code>:readLong</code>, <code>:readFloat</code>, <code>:readString</code>, <code>:readVector3</code>, <code>:readBinaryString</code>, <code>:writeByte</code>, <code>:writeUbyte</code>, <code>:writeShort</code>, <code>:writeUshort</code>, <code>:writeInt</code>, <code>:writeUint</code>, <code>:writeLong</code>, <code>:writeFloat</code>, <code>:writeString</code>, <code>:writeVector3</code>, <code>:writeBinaryString</code></p>
+<!-- memory.alloc_int -->
+<h5><i class="text-success">userdata</i> memory.<span class="text-primary">alloc_int</span>()</h5>
+<p>Alias for <code>memory.alloc(4)</code>.</p>
+<!-- memory.alloc_float -->
+<h5><i class="text-success">userdata</i> memory.<span class="text-primary">alloc_float</span>()</h5>
+<p>Alias for <code>memory.alloc(4)</code>.</p>
+<!-- memory.scan -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">scan</span>(<i class="text-success">string</i> <i class="text-warning">pattern</i>)</h5>
+<h5><i class="text-success">int</i> memory.<span class="text-primary">scan</span>(<i class="text-success">string</i> <i class="text-warning">module_name</i>, <i class="text-success">string</i> <i class="text-warning">pattern</i>)</h5>
+<p>Scans the game's memory for the given IDA-style pattern. This is an expensive call so ideally you'd only ever scan for a pattern once and then use the resulting address until your script finishes.</p>
+<!-- memory.scan_script -->
+<h5><i class="text-success">?int</i> memory.<span class="text-primary">scan_script</span>(<i class="text-success">string|int</i> <i class="text-warning">script</i>, <i class="text-success">string</i> <i class="text-warning">pattern</i>)</h5>
+<p>Scans the given script's code for the given IDA-style pattern. Returns no values if the script was not found.</p>
+<!-- memory.rip -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">rip</span>(<i class="text-success">int</i> <i class="text-warning">addr</i>)</h5>
+<p>Follows an offset from the instruction pointer ("RIP") at the given address.</p>
+<p>So, whereas in C++ you might do something like this:</p>
+<pre><code>memory::<span class="text-primary">scan</span>(<span class="text-warning">"4C 8D 05 ? ? ? ? 48 8D 15 ? ? ? ? 48 8B C8 E8 ? ? ? ? 48 8D 15 ? ? ? ? 48 8D 4C 24 20 E8"</span>).<span class="text-primary">add</span>(3).<span class="text-primary">rip</span>().<span class="text-primary">as</span>&lt;<i class="text-success">const char*</i>&gt;();</code></pre>
+<p>You'd do this in Lua (with a check for null-pointer because we're smart):</p>
+<pre><code><span class="text-danger">local</span> addr <span class="text-danger">=</span> memory.<span class="text-primary">scan</span>(<span class="text-warning">"4C 8D 05 ? ? ? ? 48 8D 15 ? ? ? ? 48 8B C8 E8 ? ? ? ? 48 8D 15 ? ? ? ? 48 8D 4C 24 20 E8"</span>)
+<span class="text-danger">if</span> addr <span class="text-danger">==</span> 0 <span class="text-danger">then</span>
+    util.<span class="text-primary">toast</span>(<span class="text-warning">"pattern scan failed"</span>)
+<span class="text-danger">else</span>
+    util.<span class="text-primary">toast</span>(memory.<span class="text-primary">read_string</span>(memory.<span class="text-primary">rip</span>(addr <span class="text-danger">+</span> 3)))
+<span class="text-danger">end</span></code></pre>
+<!-- memory.addrof -->
+<h5><i class="text-success">lightuserdata</i> memory.<span class="text-primary">addrof</span>(<i class="text-success">userdata</i> <i class="text-warning">ud</i>)</h5>
+<!-- memory.read_byte -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">read_byte</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>)</h5>
+<p>Reads an 8-bit integer at the given address.</p>
+<!-- memory.read_ubyte -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">read_ubyte</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>)</h5>
+<p>Reads an unsigned 8-bit integer at the given address.</p>
+<!-- memory.read_short -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">read_short</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>)</h5>
+<p>Reads a 16-bit integer at the given address.</p>
+<!-- memory.read_ushort -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">read_ushort</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>)</h5>
+<p>Reads an unsigned 16-bit integer at the given address.</p>
+<!-- memory.read_int -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">read_int</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>)</h5>
+<p>Reads a 32-bit integer at the given address.</p>
+<!-- memory.read_uint -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">read_uint</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>)</h5>
+<p>Reads an unsigned 32-bit integer at the given address.</p>
+<!-- memory.read_long  -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">read_long</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>)</h5>
+<p>Reads a 64-bit integer at the given address.</p>
+<!-- memory.read_float -->
+<h5><i class="text-success">number</i> memory.<span class="text-primary">read_float</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>)</h5>
+<!-- memory.read_string -->
+<h5><i class="text-success">string</i> memory.<span class="text-primary">read_string</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>)</h5>
+<!-- memory.read_vector3 -->
+<h5><i class="text-success">Vector3</i> memory.<span class="text-primary">read_vector3</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>)</h5>
+<!-- memory.read_binary_string -->
+<h5><i class="text-success">string</i> memory.<span class="text-primary">read_binary_string</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>, <i class="text-success">int</i> <i class="text-warning">size</i>)</h5>
+<!-- memory.write_byte -->
+<h5><i class="text-success">void</i> memory.<span class="text-primary">write_byte</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>, <i class="text-success">int</i> <i class="text-warning">value</i>)</h5>
+<p>Writes an 8-bit integer to the given address.</p>
+<!-- memory.write_ubyte -->
+<h5><i class="text-success">void</i> memory.<span class="text-primary">write_ubyte</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>, <i class="text-success">int</i> <i class="text-warning">value</i>)</h5>
+<p>Writes an unsigned 8-bit integer to the given address.</p>
+<!-- memory.write_short -->
+<h5><i class="text-success">void</i> memory.<span class="text-primary">write_short</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>, <i class="text-success">int</i> <i class="text-warning">value</i>)</h5>
+<p>Writes a 16-bit integer to the given address.</p>
+<!-- memory.write_ushort -->
+<h5><i class="text-success">void</i> memory.<span class="text-primary">write_ushort</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>, <i class="text-success">int</i> <i class="text-warning">value</i>)</h5>
+<p>Writes an unsigned 16-bit integer to the given address.</p>
+<!-- memory.write_int -->
+<h5><i class="text-success">void</i> memory.<span class="text-primary">write_int</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>, <i class="text-success">int</i> <i class="text-warning">value</i>)</h5>
+<p>Writes a 32-bit integer to the given address.</p>
+<!-- memory.write_uint -->
+<h5><i class="text-success">void</i> memory.<span class="text-primary">write_uint</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>, <i class="text-success">int</i> <i class="text-warning">value</i>)</h5>
+<p>Writes an unsigned 32-bit integer to the given address.</p>
+<!-- memory.write_long -->
+<h5><i class="text-success">void</i> memory.<span class="text-primary">write_long</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>, <i class="text-success">int</i> <i class="text-warning">value</i>)</h5>
+<p>Writes a 64-bit integer to the given address.</p>
+<!-- memory.write_float -->
+<h5><i class="text-success">void</i> memory.<span class="text-primary">write_float</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>, <i class="text-success">number</i> <i class="text-warning">value</i>)</h5>
+<!-- memory.write_string -->
+<h5><i class="text-success">void</i> memory.<span class="text-primary">write_string</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>, <i class="text-success">string</i> <i class="text-warning">value</i>)</h5>
+<!-- memory.write_vector3 -->
+<h5><i class="text-success">void</i> memory.<span class="text-primary">write_vector3</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>, <i class="text-success">Vector3</i> <i class="text-warning">value</i>)</h5>
+<!-- memory.write_binary_string -->
+<h5><i class="text-success">void</i> memory.<span class="text-primary">write_binary_string</span>(<i class="text-success">int|userdata</i> <i class="text-warning">addr</i>, <i class="text-success">string</i> <i class="text-warning">value</i>)</h5>
+<!-- memory.get_name_of_this_module -->
+<h5><i class="text-success">string</i> memory.<span class="text-primary">get_name_of_this_module</span>()</h5>
+<!-- memory.tunable -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">tunable</span>(<i class="text-success">int|string</i> <i class="text-warning">hash</i>)</h5>
+<p>Returns the address of the tunable with the given hash. The implementation of this function may call <code>util.yield</code>.</p>
+<p>This function returns the address of a script global — beware that script globals get reallocated upon "forcequit".</p>
+<!-- memory.tunable_offset -->
+<h5><i class="text-success">int</i> memory.<span class="text-primary">tunable_offset</span>(<i class="text-success">int|string</i> <i class="text-warning">hash</i>)</h5>
+<p>Returns the offset (the part after <code>.f_</code>) of the tunable with the given hash. The implementation of this function may call <code>util.yield</code>.</p>
+
+<h3><a name="profiling-functions" href="#profiling-functions">§</a> Profiling Functions</h3>
+<!-- profiling.once -->
+<h5><i class="text-success">void</i> profiling.<span class="text-primary">once</span>(<i class="text-success">string</i> <i class="text-warning">name</i>, <i class="text-success">function</i> <i class="text-warning">func</i>)</h5>
+<p>Executes the given function and prints the time it took to your log.</p>
+<!-- profiling.tick -->
+<h5><i class="text-success">void</i> profiling.<span class="text-primary">tick</span>(<i class="text-success">string</i> <i class="text-warning">name</i>, <i class="text-success">function</i> <i class="text-warning">func</i>)</h5>
+<p>Executes the given function and shows the time it took via the info text/debug text.</p>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

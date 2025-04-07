@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stand Command Box Documentation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+	<link href="/halfmoon-config.css" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+	<div class="page-wrapper with-navbar">
+		<nav class="navbar">
+			<div class="container-xl">
+				<a class="navbar-brand" href="/">Stand</a>
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="/account/">Account</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/help/">Help</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content-wrapper">
+			<div class="container-xl">
+				<div class="content">
+					<h1>Stand Command Box Documentation</h1>
+					<h2>How to access it</h2>
+					<ul>
+						<li><b>Stand Command Box.</b> The classic, accessed by pressing <kbd>U</kbd> in-game — this keybind can be changed with <b>Stand &gt; Settings &gt; Keyboard Input Scheme &gt; Command Box</b>.</li>
+						<li><b>Chat.</b> If you wanna flex to your teammates or even the whole session, you can use <b>Online &gt; Chat &gt; Commands</b> to have Stand listen to a specific prefix to execute a command — and even allow friends and strangers to use it!</li>
+						<li><b>Web.</b> You can use <b>Stand &gt; Open Web Interface</b> and find an everpresent command box at the top of the web interface.</li>
+					</ul>
+					<h2>Other Players</h2>
+					<p>Stand's command box is obviously very powerful, so in order to prevent your friends from trolling you by using <b>!unload</b>, every command knows what to do when someone else issued it, even if that is just refusing to operate. As for the commands that do operate for other players, you can find them by searching for "Can be used by other players" in the <a href="/help/command-list">Command List</a>.</p>
+					<h2>Processing</h2>
+					<h3>Multiple Commands</h3>
+					<p>Most commands have a limit on the amount of parameters they take, so when you run <kbd>aimbot off triggerbot on</kbd>, the <kbd>aimbot</kbd> command will take "off" as its only parameter, which means that <kbd>triggerbot on</kbd> gets treated as a separate command. However, if we just wanted to toggle aimbot and triggerbot, we would have to use a semicolon (<kbd>;</kbd>) to separate them like <kbd>aimbot; triggerbot</kbd>, as otherwise the <kbd>aimbot</kbd> command would think "triggerbot" is its parameter. Also note that while you're using semicolon-separation, any invalid commands will still allow valid commands to get executed.</p>
+					<h3>Automatic Completion</h3>
+					<p>Stand only needs the unambigious start of a command in order to execute it, as to allow you to be more creative with your usage of the command box. An example of this would be using <kbd>tpway</kbd> instead of <kbd>tpwaypoint</kbd>.</p>
+					<h3>Automatic Collapsing</h3>
+					<p>You may have noticed that there are some commands which have a similar functionality and the same prefix, specifically commands for players and weather commands. These commands support automatic collapsing.</p>
+					<p>To give you an example: <kbd>bounty all 10000</kbd> <i>would be</i> ambigious because multiple commands start with "bounty", but luckily for us, "bounty" uses automatic collapsing, which means that the would-be-parameter "all" is added to the command itself, such that it <i>collapses</i> into <kbd>bountyall 10000</kbd> and becomes an unambigious and valid command.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

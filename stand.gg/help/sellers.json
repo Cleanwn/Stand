@@ -1,0 +1,3550 @@
+{
+	"ezMod": {
+		"aliases": ["ezM"],
+		"basic": {
+			"pp": ["$13.30", "https://ezmod.vip/discord"],
+			"cc": ["$12.30", "https://ezmod.vip/product/stand-gta"],
+			"google": ["$12.30", "https://ezmod.vip/product/stand-gta"],
+			"apple": ["$12.30", "https://ezmod.vip/product/stand-gta"],
+			"europe": ["$12.30", "https://ezmod.vip/product/stand-gta"],
+			"btc": ["$12.30", "https://ezmod.vip/product/stand-gta"],
+			"ltc": ["$12.30", "https://ezmod.vip/product/stand-gta"],
+			"alipay": ["$12.30", "https://ezmod.vip/product/stand-gta"],
+			"wechat": ["$12.30", "https://ezmod.vip/product/stand-gta"]
+		},
+		"regular": {
+			"pp": ["$27.70", "https://ezmod.vip/discord"],
+			"cc": ["$26.70", "https://ezmod.vip/product/stand-gta"],
+			"google": ["$26.70", "https://ezmod.vip/product/stand-gta"],
+			"apple": ["$26.70", "https://ezmod.vip/product/stand-gta"],
+			"europe": ["$26.70", "https://ezmod.vip/product/stand-gta"],
+			"btc": ["$26.70", "https://ezmod.vip/product/stand-gta"],
+			"ltc": ["$26.70", "https://ezmod.vip/product/stand-gta"],
+			"alipay": ["$26.70", "https://ezmod.vip/product/stand-gta"],
+			"wechat": ["$26.70", "https://ezmod.vip/product/stand-gta"]
+		},
+		"ultimate": {
+			"pp": ["$53.45", "https://ezmod.vip/discord"],
+			"cc": ["$52.45", "https://ezmod.vip/product/stand-gta"],
+			"google": ["$52.45", "https://ezmod.vip/product/stand-gta"],
+			"apple": ["$52.45", "https://ezmod.vip/product/stand-gta"],
+			"europe": ["$52.45", "https://ezmod.vip/product/stand-gta"],
+			"btc": ["$52.45", "https://ezmod.vip/product/stand-gta"],
+			"ltc": ["$52.45", "https://ezmod.vip/product/stand-gta"],
+			"alipay": ["$52.45", "https://ezmod.vip/product/stand-gta"],
+			"wechat": ["$52.45", "https://ezmod.vip/product/stand-gta"]
+		},
+		"basic_to_regular": {
+			"pp": ["$14.15", "https://ezmod.vip/discord"],
+			"cc": ["$13.15", "https://ezmod.vip/product/stand-gta"],
+			"google": ["$13.15", "https://ezmod.vip/product/stand-gta"],
+			"apple": ["$13.15", "https://ezmod.vip/product/stand-gta"],
+			"europe": ["$13.15", "https://ezmod.vip/product/stand-gta"],
+			"btc": ["$13.15", "https://ezmod.vip/product/stand-gta"],
+			"ltc": ["$13.15", "https://ezmod.vip/product/stand-gta"],
+			"alipay": ["$13.15", "https://ezmod.vip/product/stand-gta"],
+			"wechat": ["$13.15", "https://ezmod.vip/product/stand-gta"]
+		},
+		"regular_to_ultimate": {
+			"pp": ["$27.85", "https://ezmod.vip/discord"],
+			"cc": ["$26.85", "https://ezmod.vip/product/stand-gta"],
+			"google": ["$26.85", "https://ezmod.vip/product/stand-gta"],
+			"apple": ["$26.85", "https://ezmod.vip/product/stand-gta"],
+			"europe": ["$26.85", "https://ezmod.vip/product/stand-gta"],
+			"btc": ["$26.85", "https://ezmod.vip/product/stand-gta"],
+			"ltc": ["$26.85", "https://ezmod.vip/product/stand-gta"],
+			"alipay": ["$26.85", "https://ezmod.vip/product/stand-gta"],
+			"wechat": ["$26.85", "https://ezmod.vip/product/stand-gta"]
+		},
+		"basic_to_ultimate": {
+			"pp": ["$41.25", "https://ezmod.vip/discord"],
+			"cc": ["$40.25", "https://ezmod.vip/product/stand-gta"],
+			"google": ["$40.25", "https://ezmod.vip/product/stand-gta"],
+			"apple": ["$40.25", "https://ezmod.vip/product/stand-gta"],
+			"europe": ["$40.25", "https://ezmod.vip/product/stand-gta"],
+			"btc": ["$40.25", "https://ezmod.vip/product/stand-gta"],
+			"ltc": ["$40.25", "https://ezmod.vip/product/stand-gta"],
+			"alipay": ["$40.25", "https://ezmod.vip/product/stand-gta"],
+			"wechat": ["$40.25", "https://ezmod.vip/product/stand-gta"]
+		}
+	},
+	"King of Cash": {
+		"basic": {
+			"cc": ["€9.99", "https://kingofcash.store/product/stand/"],
+			"europe": ["€9.99", "https://kingofcash.store/product/stand/"]
+		},
+		"regular": {
+			"cc": ["€24.99", "https://kingofcash.store/product/stand/"],
+			"europe": ["€24.99", "https://kingofcash.store/product/stand/"]
+		},
+		"ultimate": {
+			"cc": ["€46.99", "https://kingofcash.store/product/stand/"],
+			"europe": ["€46.99", "https://kingofcash.store/product/stand/"]
+		}
+	},
+	"DogeKeys": {
+		"aliases": ["Doge"],
+		"basic": {
+			"stock": -100,
+			"pp": ["€10", "https://k3ys.gg/index.php/?add-to-cart=130"],
+			"cc": ["€10", "https://k3ys.gg/index.php/?add-to-cart=130"],
+			"europe": ["€10", "https://k3ys.gg/index.php/?add-to-cart=130"]
+		},
+		"regular": {
+			"stock": -100,
+			"pp": ["€25", "https://k3ys.gg/index.php/?add-to-cart=16"],
+			"cc": ["€25", "https://k3ys.gg/index.php/?add-to-cart=16"],
+			"europe": ["€25", "https://k3ys.gg/index.php/?add-to-cart=16"]
+		},
+		"ultimate": {
+			"stock": -100,
+			"pp": ["€50", "https://k3ys.gg/index.php/?add-to-cart=131"],
+			"cc": ["€50", "https://k3ys.gg/index.php/?add-to-cart=131"],
+			"europe": ["€50", "https://k3ys.gg/index.php/?add-to-cart=131"]
+		}
+	},
+	"WiseModz": {
+		"aliases": ["Wise"],
+		"basic": {
+			"stock": -100,
+			"cc": ["€10", "https://wisemodz.com/product/stand-mod-menu/"],
+			"pp": ["€10", "https://wisemodz.com/product/stand-mod-menu/"],
+			"apple": ["€10", "https://wisemodz.com/product/stand-mod-menu/"],
+			"europe": ["€10", "https://wisemodz.com/product/stand-mod-menu/"]
+		},
+		"basic_to_regular": {
+			"stock": -100,
+			"cc": ["€16", "https://wisemodz.com/product/stand-mod-menu/"],
+			"pp": ["€16", "https://wisemodz.com/product/stand-mod-menu/"],
+			"apple": ["€16", "https://wisemodz.com/product/stand-mod-menu/"],
+			"europe": ["€16", "https://wisemodz.com/product/stand-mod-menu/"]
+		},
+		"basic_to_ultimate": {
+			"stock": -100,
+			"cc": ["€40", "https://wisemodz.com/product/stand-mod-menu/"],
+			"pp": ["€40", "https://wisemodz.com/product/stand-mod-menu/"],
+			"apple": ["€40", "https://wisemodz.com/product/stand-mod-menu/"],
+			"europe": ["€40", "https://wisemodz.com/product/stand-mod-menu/"]
+		},
+		"regular": {
+			"stock": -100,
+			"cc": ["€25", "https://wisemodz.com/product/stand-mod-menu/"],
+			"pp": ["€25", "https://wisemodz.com/product/stand-mod-menu/"],
+			"apple": ["€25", "https://wisemodz.com/product/stand-mod-menu/"],
+			"europe": ["€25", "https://wisemodz.com/product/stand-mod-menu/"]
+		},
+		"regular_to_ultimate": {
+			"stock": -100,
+			"cc": ["€25", "https://wisemodz.com/product/stand-mod-menu/"],
+			"pp": ["€25", "https://wisemodz.com/product/stand-mod-menu/"],
+			"apple": ["€25", "https://wisemodz.com/product/stand-mod-menu/"],
+			"europe": ["€25", "https://wisemodz.com/product/stand-mod-menu/"]
+		},
+		"ultimate": {
+			"stock": -100,
+			"cc": ["€50", "https://wisemodz.com/product/stand-mod-menu/"],
+			"pp": ["€50", "https://wisemodz.com/product/stand-mod-menu/"],
+			"apple": ["€50", "https://wisemodz.com/product/stand-mod-menu/"],
+			"europe": ["€50", "https://wisemodz.com/product/stand-mod-menu/"]
+		}
+	},
+	"AresModz": {
+		"aliases": ["Ares"],
+		"basic": {
+			"cc": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-license-key/"],
+			"pp": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-license-key/"],
+			"europe": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-license-key/"],
+			"apple": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-license-key/"],
+			"google": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-license-key/"],
+			"btc": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-license-key/"],
+			"ltc": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-license-key/"],
+			"eth": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-license-key/"],
+			"bch": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-license-key/"],
+			"crypto2": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-license-key/"],
+			"wechat": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-license-key/"]
+		},
+		"regular": {
+			"stock": -1,
+			"cc": ["€25", "https://aresmodz.com/product/stand-gta5-regular-license-key/"],
+			"pp": ["€25", "https://aresmodz.com/product/stand-gta5-regular-license-key/"],
+			"europe": ["€25", "https://aresmodz.com/product/stand-gta5-regular-license-key/"],
+			"apple": ["€25", "https://aresmodz.com/product/stand-gta5-regular-license-key/"],
+			"google": ["€25", "https://aresmodz.com/product/stand-gta5-regular-license-key/"],
+			"btc": ["€25", "https://aresmodz.com/product/stand-gta5-regular-license-key/"],
+			"ltc": ["€25", "https://aresmodz.com/product/stand-gta5-regular-license-key/"],
+			"eth": ["€25", "https://aresmodz.com/product/stand-gta5-regular-license-key/"],
+			"bch": ["€25", "https://aresmodz.com/product/stand-gta5-regular-license-key/"],
+			"crypto2": ["€25", "https://aresmodz.com/product/stand-gta5-regular-license-key/"],
+			"wechat": ["€25", "https://aresmodz.com/product/stand-gta5-regular-license-key/"]
+		},
+		"ultimate": {
+			"stock": -23,
+			"cc": ["€50", "https://aresmodz.com/product/stand-gta5-ultimate-license-key/"],
+			"pp": ["€50", "https://aresmodz.com/product/stand-gta5-ultimate-license-key/"],
+			"europe": ["€50", "https://aresmodz.com/product/stand-gta5-ultimate-license-key/"],
+			"apple": ["€50", "https://aresmodz.com/product/stand-gta5-ultimate-license-key/"],
+			"google": ["€50", "https://aresmodz.com/product/stand-gta5-ultimate-license-key/"],
+			"btc": ["€50", "https://aresmodz.com/product/stand-gta5-ultimate-license-key/"],
+			"ltc": ["€50", "https://aresmodz.com/product/stand-gta5-ultimate-license-key/"],
+			"eth": ["€50", "https://aresmodz.com/product/stand-gta5-ultimate-license-key/"],
+			"bch": ["€50", "https://aresmodz.com/product/stand-gta5-ultimate-license-key/"],
+			"crypto2": ["€50", "https://aresmodz.com/product/stand-gta5-ultimate-license-key/"],
+			"wechat": ["€50", "https://aresmodz.com/product/stand-gta5-ultimate-license-key/"]
+		},
+		"basic_to_regular": {
+			"cc": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-to-regular-upgrade-key/"],
+			"pp": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-to-regular-upgrade-key/"],
+			"europe": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-to-regular-upgrade-key/"],
+			"apple": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-to-regular-upgrade-key/"],
+			"google": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-to-regular-upgrade-key/"],
+			"btc": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-to-regular-upgrade-key/"],
+			"ltc": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-to-regular-upgrade-key/"],
+			"eth": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-to-regular-upgrade-key/"],
+			"bch": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-to-regular-upgrade-key/"],
+			"crypto2": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-to-regular-upgrade-key/"],
+			"wechat": ["€12.50", "https://aresmodz.com/product/stand-gta5-basic-to-regular-upgrade-key/"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["€25", "https://aresmodz.com/product/stand-gta5-regular-to-ultimate-upgrade-key/"],
+			"pp": ["€25", "https://aresmodz.com/product/stand-gta5-regular-to-ultimate-upgrade-key/"],
+			"europe": ["€25", "https://aresmodz.com/product/stand-gta5-regular-to-ultimate-upgrade-key/"],
+			"apple": ["€25", "https://aresmodz.com/product/stand-gta5-regular-to-ultimate-upgrade-key/"],
+			"google": ["€25", "https://aresmodz.com/product/stand-gta5-regular-to-ultimate-upgrade-key/"],
+			"btc": ["€25", "https://aresmodz.com/product/stand-gta5-regular-to-ultimate-upgrade-key/"],
+			"ltc": ["€25", "https://aresmodz.com/product/stand-gta5-regular-to-ultimate-upgrade-key/"],
+			"eth": ["€25", "https://aresmodz.com/product/stand-gta5-regular-to-ultimate-upgrade-key/"],
+			"bch": ["€25", "https://aresmodz.com/product/stand-gta5-regular-to-ultimate-upgrade-key/"],
+			"crypto2": ["€25", "https://aresmodz.com/product/stand-gta5-regular-to-ultimate-upgrade-key/"],
+			"wechat": ["€25", "https://aresmodz.com/product/stand-gta5-regular-to-ultimate-upgrade-key/"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["€37.50", "https://aresmodz.com/product/stand-gta5-basic-to-ultimate-upgrade-key/"],
+			"pp": ["€37.50", "https://aresmodz.com/product/stand-gta5-basic-to-ultimate-upgrade-key/"],
+			"europe": ["€37.50", "https://aresmodz.com/product/stand-gta5-basic-to-ultimate-upgrade-key/"],
+			"apple": ["€37.50", "https://aresmodz.com/product/stand-gta5-basic-to-ultimate-upgrade-key/"],
+			"google": ["€37.50", "https://aresmodz.com/product/stand-gta5-basic-to-ultimate-upgrade-key/"],
+			"btc": ["€37.50", "https://aresmodz.com/product/stand-gta5-basic-to-ultimate-upgrade-key/"],
+			"ltc": ["€37.50", "https://aresmodz.com/product/stand-gta5-basic-to-ultimate-upgrade-key/"],
+			"eth": ["€37.50", "https://aresmodz.com/product/stand-gta5-basic-to-ultimate-upgrade-key/"],
+			"bch": ["€37.50", "https://aresmodz.com/product/stand-gta5-basic-to-ultimate-upgrade-key/"],
+			"crypto2": ["€37.50", "https://aresmodz.com/product/stand-gta5-basic-to-ultimate-upgrade-key/"],
+			"wechat": ["€37.50", "https://aresmodz.com/product/stand-gta5-basic-to-ultimate-upgrade-key/"]
+		}
+	},
+	"RadiantCheats": {
+		"aliases": ["Radiant"],
+		"basic": {
+			"stock": -88,
+			"btc": ["£8.09", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=801&rewrite=stand-mod-menu&controller=product#/75-stand-basic"],
+			"ltc": ["£8.09", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=801&rewrite=stand-mod-menu&controller=product#/75-stand-basic"],
+			"eth": ["£8.09", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=801&rewrite=stand-mod-menu&controller=product#/75-stand-basic"],
+			"bnb": ["£8.09", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=801&rewrite=stand-mod-menu&controller=product#/75-stand-basic"],
+			"cc": ["£10.24", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=801&rewrite=stand-mod-menu&controller=product#/75-stand-basic"],
+			"google": ["£10.24", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=801&rewrite=stand-mod-menu&controller=product#/75-stand-basic"],
+			"apple": ["£10.24", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=801&rewrite=stand-mod-menu&controller=product#/75-stand-basic"],
+			"europe": ["£10.24", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=801&rewrite=stand-mod-menu&controller=product#/75-stand-basic"],
+			"pp": ["£17", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=801&rewrite=stand-mod-menu&controller=product#/75-stand-basic"]
+		},
+		"regular": {
+			"stock": -41,
+			"btc": ["£16.79", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=802&rewrite=stand-mod-menu&controller=product#/76-stand-regular"],
+			"ltc": ["£16.79", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=802&rewrite=stand-mod-menu&controller=product#/76-stand-regular"],
+			"eth": ["£16.79", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=802&rewrite=stand-mod-menu&controller=product#/76-stand-regular"],
+			"bnb": ["£16.79", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=802&rewrite=stand-mod-menu&controller=product#/76-stand-regular"],
+			"cc": ["£20.97", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=802&rewrite=stand-mod-menu&controller=product#/76-stand-regular"],
+			"google": ["£20.97", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=802&rewrite=stand-mod-menu&controller=product#/76-stand-regular"],
+			"apple": ["£20.97", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=802&rewrite=stand-mod-menu&controller=product#/76-stand-regular"],
+			"europe": ["£20.97", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=802&rewrite=stand-mod-menu&controller=product#/76-stand-regular"],
+			"pp": ["£27.5", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=802&rewrite=stand-mod-menu&controller=product#/76-stand-regular"]
+		},
+		"ultimate": {
+			"stock": -20,
+			"btc": ["£34.61", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=803&rewrite=stand-mod-menu&controller=product#/77-stand-ultimate"],
+			"ltc": ["£34.61", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=803&rewrite=stand-mod-menu&controller=product#/77-stand-ultimate"],
+			"eth": ["£34.61", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=803&rewrite=stand-mod-menu&controller=product#/77-stand-ultimate"],
+			"bnb": ["£34.61", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=803&rewrite=stand-mod-menu&controller=product#/77-stand-ultimate"],
+			"cc": ["£42.05", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=803&rewrite=stand-mod-menu&controller=product#/77-stand-ultimate"],
+			"google": ["£42.05", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=803&rewrite=stand-mod-menu&controller=product#/77-stand-ultimate"],
+			"apple": ["£42.05", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=803&rewrite=stand-mod-menu&controller=product#/77-stand-ultimate"],
+			"europe": ["£42.05", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=803&rewrite=stand-mod-menu&controller=product#/77-stand-ultimate"],
+			"pp": ["£47.5", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=803&rewrite=stand-mod-menu&controller=product#/77-stand-ultimate"]
+		},
+		"basic_to_regular": {
+			"stock": -15,
+			"btc": ["£8.50", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=804&rewrite=stand-mod-menu&controller=product#/78-stand-basic_to_sane_upgrade"],
+			"ltc": ["£8.50", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=804&rewrite=stand-mod-menu&controller=product#/78-stand-basic_to_sane_upgrade"],
+			"eth": ["£8.50", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=804&rewrite=stand-mod-menu&controller=product#/78-stand-basic_to_sane_upgrade"],
+			"bnb": ["£8.50", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=804&rewrite=stand-mod-menu&controller=product#/78-stand-basic_to_sane_upgrade"],
+			"cc": ["£10.99", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=804&rewrite=stand-mod-menu&controller=product#/78-stand-basic_to_sane_upgrade"],
+			"google": ["£10.99", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=804&rewrite=stand-mod-menu&controller=product#/78-stand-basic_to_sane_upgrade"],
+			"apple": ["£10.99", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=804&rewrite=stand-mod-menu&controller=product#/78-stand-basic_to_sane_upgrade"],
+			"europe": ["£10.99", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=804&rewrite=stand-mod-menu&controller=product#/78-stand-basic_to_sane_upgrade"],
+			"pp": ["£19.75", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=804&rewrite=stand-mod-menu&controller=product#/78-stand-basic_to_sane_upgrade"]
+		},
+		"regular_to_ultimate": {
+			"stock": -22,
+			"btc": ["£18.22", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=806&rewrite=stand-mod-menu&controller=product#/80-stand-sane_to_toxic_upgrade"],
+			"ltc": ["£18.22", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=806&rewrite=stand-mod-menu&controller=product#/80-stand-sane_to_toxic_upgrade"],
+			"eth": ["£18.22", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=806&rewrite=stand-mod-menu&controller=product#/80-stand-sane_to_toxic_upgrade"],
+			"bnb": ["£18.22", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=806&rewrite=stand-mod-menu&controller=product#/80-stand-sane_to_toxic_upgrade"],
+			"cc": ["£21.96", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=806&rewrite=stand-mod-menu&controller=product#/80-stand-sane_to_toxic_upgrade"],
+			"google": ["£21.96", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=806&rewrite=stand-mod-menu&controller=product#/80-stand-sane_to_toxic_upgrade"],
+			"apple": ["£21.96", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=806&rewrite=stand-mod-menu&controller=product#/80-stand-sane_to_toxic_upgrade"],
+			"europe": ["£21.96", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=806&rewrite=stand-mod-menu&controller=product#/80-stand-sane_to_toxic_upgrade"],
+			"pp": ["£27.5", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=806&rewrite=stand-mod-menu&controller=product#/80-stand-sane_to_toxic_upgrade"]
+		},
+		"basic_to_ultimate": {
+			"stock": -14,
+			"btc": ["£26.72", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=823&rewrite=stand-mod-menu&controller=product#/97-stand-basic_to_ultimate_upgrade"],
+			"ltc": ["£26.72", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=823&rewrite=stand-mod-menu&controller=product#/97-stand-basic_to_ultimate_upgrade"],
+			"eth": ["£26.72", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=823&rewrite=stand-mod-menu&controller=product#/97-stand-basic_to_ultimate_upgrade"],
+			"bnb": ["£26.72", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=823&rewrite=stand-mod-menu&controller=product#/97-stand-basic_to_ultimate_upgrade"],
+			"cc": ["£32.95", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=823&rewrite=stand-mod-menu&controller=product#/97-stand-basic_to_ultimate_upgrade"],
+			"google": ["£32.95", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=823&rewrite=stand-mod-menu&controller=product#/97-stand-basic_to_ultimate_upgrade"],
+			"apple": ["£32.95", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=823&rewrite=stand-mod-menu&controller=product#/97-stand-basic_to_ultimate_upgrade"],
+			"europe": ["£32.95", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=823&rewrite=stand-mod-menu&controller=product#/97-stand-basic_to_ultimate_upgrade"],
+			"pp": ["£39.85", "https://radiantcheats.net/index.php?id_product=61&id_product_attribute=823&rewrite=stand-mod-menu&controller=product#/97-stand-basic_to_ultimate_upgrade"]
+		}
+	},
+	"PhantomCheats": {
+		"aliases": ["Phantom"],
+		"note": "Removed due to service unavailable error.",
+		"basic": {
+			"stock": -1000,
+			"cc": ["€12.5", "https://phantomcheats.net/home/11-8-stand-mod-menu.html#/8-stand-basic"]
+		},
+		"regular": {
+			"stock": -1000,
+			"cc": ["€25", "https://phantomcheats.net/home/11-9-stand-mod-menu.html#/9-stand-regular"]
+		},
+		"ultimate": {
+			"stock": -1000,
+			"cc": ["€50", "https://phantomcheats.net/home/11-10-stand-mod-menu.html#/10-stand-ultimate"]
+		},
+		"basic_to_regular": {
+			"stock": -1000,
+			"cc": ["€12.5", "https://phantomcheats.net/home/11-11-stand-mod-menu.html#/11-stand-basic_to_regular_upgrade"]
+		},
+		"regular_to_ultimate": {
+			"stock": -1000,
+			"cc": ["€25", "https://phantomcheats.net/home/11-12-stand-mod-menu.html#/12-stand-regular_to_ultimate_upgrade"]
+		},
+		"basic_to_ultimate": {
+			"stock": -1000,
+			"cc": ["€37.5", "https://phantomcheats.net/home/11-13-stand-mod-menu.html#/13-stand-basic_to_ultimate_upgrade"]
+		}
+	},
+	"k 酱 の 温馨小店 (XkCheats)": {
+		"aliases": ["Xiao k", "xkmenu"],
+		"basic": {
+			"alipay": ["元90", "https://xkk.bar/"],
+			"wechat": ["元90", "https://xkk.bar/"],
+			"qq": ["元90", "https://xkk.bar/"],
+			"pp": ["元90", "https://xkk.bar/"],
+			"btc": ["元90", "https://xkk.bar/"],
+			"crypto2": ["元90", "https://xkk.bar/"]
+		},
+		"regular": {
+			"alipay": ["元180", "https://xkk.bar/"],
+			"wechat": ["元180", "https://xkk.bar/"],
+			"qq": ["元180", "https://xkk.bar/"],
+			"pp": ["元180", "https://xkk.bar/"],
+			"btc": ["元180", "https://xkk.bar/"],
+			"crypto2": ["元180", "https://xkk.bar/"]
+		},
+		"ultimate": {
+			"alipay": ["元360", "https://xkk.bar/"],
+			"wechat": ["元360", "https://xkk.bar/"],
+			"qq": ["元360", "https://xkk.bar/"],
+			"pp": ["元360", "https://xkk.bar/"],
+			"btc": ["元360", "https://xkk.bar/"],
+			"crypto2": ["元360", "https://xkk.bar/"]
+		},
+		"basic_to_regular": {
+			"alipay": ["元90", "https://xkk.bar/"],
+			"wechat": ["元90", "https://xkk.bar/"],
+			"qq": ["元90", "https://xkk.bar/"],
+			"pp": ["元90", "https://xkk.bar/"],
+			"btc": ["元90", "https://xkk.bar/"],
+			"crypto2": ["元90", "https://xkk.bar/"]
+		},
+		"regular_to_ultimate": {
+			"alipay": ["元180", "https://xkk.bar/"],
+			"wechat": ["元180", "https://xkk.bar/"],
+			"qq": ["元180", "https://xkk.bar/"],
+			"pp": ["元180", "https://xkk.bar/"],
+			"btc": ["元180", "https://xkk.bar/"],
+			"crypto2": ["元180", "https://xkk.bar/"]
+		},
+		"basic_to_ultimate": {
+			"alipay": ["元270", "https://xkk.bar/"],
+			"wechat": ["元270", "https://xkk.bar/"],
+			"qq": ["元270", "https://xkk.bar/"],
+			"pp": ["元270", "https://xkk.bar/"],
+			"btc": ["元270", "https://xkk.bar/"],
+			"crypto2": ["元270", "https://xkk.bar/"]
+		}
+	},
+	"猫软招牌店": {
+		"basic": {
+			"alipay": ["元80", "https://maoruan.online/p/rvlzpp9vi7lhm7p0r1ntn"],
+			"wechat": ["元80", "https://maoruan.online/p/rvlzpp9vi7lhm7p0r1ntn"]
+		},
+		"regular": {
+			"alipay": ["元190", "https://maoruan.online/p/4ll2vpq7b28hl16z2e4t7"],
+			"wechat": ["元190", "https://maoruan.online/p/4ll2vpq7b28hl16z2e4t7"]
+		},
+		"ultimate": {
+			"alipay": ["元380", "https://maoruan.online/p/1vv08j2dsjmax874z0ohz"],
+			"wechat": ["元380", "https://maoruan.online/p/1vv08j2dsjmax874z0ohz"]
+		},
+		"basic_to_regular": {
+			"alipay": ["元115", "https://maoruan.online/p/d462rn3maoxblgewodntr"],
+			"wechat": ["元115", "https://maoruan.online/p/d462rn3maoxblgewodntr"]
+		},
+		"regular_to_ultimate": {
+			"alipay": ["元205", "https://maoruan.online/p/2qm7w98wam2ujmlq082t6"],
+			"wechat": ["元205", "https://maoruan.online/p/2qm7w98wam2ujmlq082t6"]
+		}
+	},
+	"红中的小店": {
+		"aliases": ["HongZhong"],
+		"basic": {
+			"pp": ["元90", "https://hzi.simple.ink/"],
+			"btc": ["元90", "https://hzi.simple.ink/"],
+			"ltc": ["元90", "https://hzi.simple.ink/"],
+			"eth": ["元90", "https://hzi.simple.ink/"],
+			"bch": ["元90", "https://hzi.simple.ink/"],
+			"crypto2": ["元90", "https://hzi.simple.ink/"],
+			"apple": ["元90", "https://hzi.simple.ink/"],
+			"alipay": ["元90", "https://hzi.simple.ink/"],
+			"wechat": ["元90", "https://hzi.simple.ink/"],
+			"qq": ["元90", "https://hzi.simple.ink/"]
+		},
+		"regular": {
+			"pp": ["元180", "https://hzi.simple.ink/"],
+			"btc": ["元180", "https://hzi.simple.ink/"],
+			"ltc": ["元180", "https://hzi.simple.ink/"],
+			"eth": ["元180", "https://hzi.simple.ink/"],
+			"bch": ["元180", "https://hzi.simple.ink/"],
+			"crypto2": ["元180", "https://hzi.simple.ink/"],
+			"apple": ["元180", "https://hzi.simple.ink/"],
+			"alipay": ["元180", "https://hzi.simple.ink/"],
+			"wechat": ["元180", "https://hzi.simple.ink/"],
+			"qq": ["元180", "https://hzi.simple.ink/"]
+		},
+		"ultimate": {
+			"pp": ["元360", "https://hzi.simple.ink/"],
+			"btc": ["元360", "https://hzi.simple.ink/"],
+			"ltc": ["元360", "https://hzi.simple.ink/"],
+			"eth": ["元360", "https://hzi.simple.ink/"],
+			"bch": ["元360", "https://hzi.simple.ink/"],
+			"crypto2": ["元360", "https://hzi.simple.ink/"],
+			"apple": ["元360", "https://hzi.simple.ink/"],
+			"alipay": ["元360", "https://hzi.simple.ink/"],
+			"wechat": ["元360", "https://hzi.simple.ink/"],
+			"qq": ["元360", "https://hzi.simple.ink/"]
+		},
+		"basic_to_regular": {
+			"pp": ["元105", "https://hzi.simple.ink/"],
+			"btc": ["元105", "https://hzi.simple.ink/"],
+			"ltc": ["元105", "https://hzi.simple.ink/"],
+			"eth": ["元105", "https://hzi.simple.ink/"],
+			"bch": ["元105", "https://hzi.simple.ink/"],
+			"crypto2": ["元105", "https://hzi.simple.ink/"],
+			"apple": ["元105", "https://hzi.simple.ink/"],
+			"alipay": ["元105", "https://hzi.simple.ink/"],
+			"wechat": ["元105", "https://hzi.simple.ink/"],
+			"qq": ["元105", "https://hzi.simple.ink/"]
+		},
+		"regular_to_ultimate": {
+			"pp": ["元180", "https://hzi.simple.ink/"],
+			"btc": ["元180", "https://hzi.simple.ink/"],
+			"ltc": ["元180", "https://hzi.simple.ink/"],
+			"eth": ["元180", "https://hzi.simple.ink/"],
+			"bch": ["元180", "https://hzi.simple.ink/"],
+			"crypto2": ["元180", "https://hzi.simple.ink/"],
+			"apple": ["元180", "https://hzi.simple.ink/"],
+			"alipay": ["元180", "https://hzi.simple.ink/"],
+			"wechat": ["元180", "https://hzi.simple.ink/"],
+			"qq": ["元180", "https://hzi.simple.ink/"]
+		},
+		"basic_to_ultimate": {
+			"pp": ["元285", "https://hzi.simple.ink/"],
+			"btc": ["元285", "https://hzi.simple.ink/"],
+			"ltc": ["元285", "https://hzi.simple.ink/"],
+			"eth": ["元285", "https://hzi.simple.ink/"],
+			"bch": ["元285", "https://hzi.simple.ink/"],
+			"crypto2": ["元285", "https://hzi.simple.ink/"],
+			"apple": ["元285", "https://hzi.simple.ink/"],
+			"alipay": ["元285", "https://hzi.simple.ink/"],
+			"wechat": ["元285", "https://hzi.simple.ink/"],
+			"qq": ["元285", "https://hzi.simple.ink/"]
+		}
+	},
+	"西瓜小铺": {
+		"aliases": ["XiGua", "xgmenu"],
+		"basic": {
+			"alipay": ["元90", "https://xgmenu.love/"],
+			"wechat": ["元90", "https://xgmenu.love/"],
+			"qq": ["元90", "https://xgmenu.love/"]
+		},
+		"regular": {
+			"alipay": ["元180", "https://xgmenu.love/"],
+			"wechat": ["元180", "https://xgmenu.love/"],
+			"qq": ["元180", "https://xgmenu.love/"]
+		},
+		"ultimate": {
+			"alipay": ["元350", "https://xgmenu.love/"],
+			"wechat": ["元350", "https://xgmenu.love/"],
+			"qq": ["元350", "https://xgmenu.love/"]
+		},
+		"basic_to_regular": {
+			"alipay": ["元90", "https://xgmenu.love/"],
+			"wechat": ["元90", "https://xgmenu.love/"],
+			"qq": ["元90", "https://xgmenu.love/"]
+		},
+		"regular_to_ultimate": {
+			"alipay": ["元180", "https://xgmenu.love/"],
+			"wechat": ["元180", "https://xgmenu.love/"],
+			"qq": ["元180", "https://xgmenu.love/"]
+		},
+		"basic_to_ultimate": {
+			"alipay": ["元270", "https://xgmenu.love/"],
+			"wechat": ["元270", "https://xgmenu.love/"],
+			"qq": ["元270", "https://xgmenu.love/"]
+		}
+	},
+	"777shop": {
+		"basic": {
+			"alipay": ["元80", "https://777gta.vip/"],
+			"wechat": ["元80", "https://777gta.vip/"]
+		},
+		"regular": {
+			"alipay": ["元188", "https://777gta.vip/"],
+			"wechat": ["元188", "https://777gta.vip/"]
+		},
+		"ultimate": {
+			"alipay": ["元380", "https://777gta.vip/"],
+			"wechat": ["元380", "https://777gta.vip/"]
+		},
+		"basic_to_regular": {
+			"alipay": ["元115", "https://777gta.vip/"],
+			"wechat": ["元115", "https://777gta.vip/"]
+		},
+		"regular_to_ultimate": {
+			"alipay": ["元200", "https://777gta.vip/"],
+			"wechat": ["元200", "https://777gta.vip/"]
+		}
+	},
+	"AnonymModz": {
+		"aliases": ["Anon"],
+		"basic": {
+			"stock": -9,
+			"cc": ["$13.55", "https://anonymmodz.com/product/stand"],
+			"pp": ["$13.55", "https://anonymmodz.com/product/stand"]
+		},
+		"regular": {
+			"stock": -7,
+			"cc": ["$27", "https://anonymmodz.com/product/stand"],
+			"pp": ["$27", "https://anonymmodz.com/product/stand"]
+		},
+		"ultimate": {
+			"stock": -9,
+			"cc": ["$55", "https://anonymmodz.com/product/stand"],
+			"pp": ["$55", "https://anonymmodz.com/product/stand"]
+		},
+		"basic_to_regular": {
+			"stock": -9,
+			"cc": ["$13.55", "https://anonymmodz.com/product/stand"],
+			"pp": ["$13.55", "https://anonymmodz.com/product/stand"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["$27.55", "https://anonymmodz.com/product/stand"],
+			"pp": ["$27.55", "https://anonymmodz.com/product/stand"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["$41.50", "https://anonymmodz.com/product/stand"],
+			"pp": ["$41.50", "https://anonymmodz.com/product/stand"]
+		}
+	},
+	"Sigma Cheats": {
+		"basic": {
+			"pp": ["£8.60", "https://sigmacheats.com/product/stand-mod-menu/"]
+		},
+		"regular": {
+			"pp": ["£21.30", "https://sigmacheats.com/product/stand-mod-menu/"]
+		},
+		"ultimate": {
+			"pp": ["£44", "https://sigmacheats.com/product/stand-mod-menu/"]
+		},
+		"basic_to_regular": {
+			"pp": ["£13.30", "https://sigmacheats.com/product/stand-mod-menu/"]
+		},
+		"regular_to_ultimate": {
+			"pp": ["£25.30", "https://sigmacheats.com/product/stand-mod-menu/"]
+		}
+	},
+	"Aalia": {
+		"basic": {
+			"cc": ["£8.66", "https://shoppy.gg/product/F6QQ2LS"]
+		},
+		"regular": {
+			"cc": ["£22", "https://shoppy.gg/product/8BpvL3z"]
+		},
+		"ultimate": {
+			"cc": ["£42.50", "https://shoppy.gg/product/6U9QMLQ"]
+		},
+		"basic_to_regular": {
+			"cc": ["£13.20", "https://shoppy.gg/product/f33v8pB"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["£21.20", "https://shoppy.gg/product/7NjxWKF"]
+		}
+	},
+	"Silv3r": {
+		"basic": {
+			"cc": ["$13", "https://silv3rcommunity.net/product/stand/"]
+		},
+		"regular": {
+			"stock": -14,
+			"cc": ["$30", "https://silv3rcommunity.net/product/stand/"]
+		},
+		"ultimate": {
+			"stock": -3,
+			"cc": ["$60", "https://silv3rcommunity.net/product/stand/"]
+		},
+		"basic_to_regular": {
+			"cc": ["$17", "https://silv3rcommunity.net/product/stand/"]
+		},
+		"regular_to_ultimate": {
+			"stock": -3,
+			"cc": ["$30", "https://silv3rcommunity.net/product/stand/"]
+		}
+	},
+	"RecoverySimps.VIP": {
+		"basic": {
+			"cc": ["$10", "https://recoverysimps.vip/product/stand/?attribute_pa_stand1=sbasic"]
+		},
+		"regular": {
+			"cc": ["$29", "https://recoverysimps.vip/product/stand/?attribute_pa_stand1=sregular"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["$30", "https://recoverysimps.vip/product/stand/?attribute_pa_stand1=srupgrade"]
+		}
+	},
+	"Recovery Kings": {
+		"aliases": ["LuckyLuca", "Recovery King", "RecoveryKing"],
+		"note": "Verified they sell license keys on 2023-05-24, got license key e1x3, which belongs to RecoveryKing.",
+		"coinbase": true,
+		"basic": {
+			"stock": -1,
+			"cc": ["$12.50", "https://recoverykings.net/product/stand/"],
+			"btc": ["$12.50", "https://recoverykings.net/product/stand/"],
+			"ltc": ["$12.50", "https://recoverykings.net/product/stand/"],
+			"eth": ["$12.50", "https://recoverykings.net/product/stand/"],
+			"bch": ["$12.50", "https://recoverykings.net/product/stand/"],
+			"crypto2": ["$12.50", "https://recoverykings.net/product/stand/"],
+			"apple": ["$12.50", "https://recoverykings.net/product/stand/"],
+			"cashapp": ["$12.50", "https://recoverykings.net/discord"],
+			"amazongift": ["$12.50", "https://recoverykings.net/discord"],
+			"psc": ["$12.50", "https://recoverykings.net/discord"]
+		},
+		"regular": {
+			"stock": -12,
+			"cc": ["$31", "https://recoverykings.net/product/stand/"],
+			"btc": ["$31", "https://recoverykings.net/product/stand/"],
+			"ltc": ["$31", "https://recoverykings.net/product/stand/"],
+			"eth": ["$31", "https://recoverykings.net/product/stand/"],
+			"bch": ["$31", "https://recoverykings.net/product/stand/"],
+			"crypto2": ["$31", "https://recoverykings.net/product/stand/"],
+			"apple": ["$31", "https://recoverykings.net/product/stand/"],
+			"cashapp": ["$31", "https://recoverykings.net/discord"],
+			"amazongift": ["$31", "https://recoverykings.net/discord"],
+			"psc": ["$31", "https://recoverykings.net/discord"]
+		},
+		"ultimate": {
+			"cc": ["$60", "https://recoverykings.net/product/stand/"],
+			"btc": ["$60", "https://recoverykings.net/product/stand/"],
+			"ltc": ["$60", "https://recoverykings.net/product/stand/"],
+			"eth": ["$60", "https://recoverykings.net/product/stand/"],
+			"bch": ["$60", "https://recoverykings.net/product/stand/"],
+			"crypto2": ["$60", "https://recoverykings.net/product/stand/"],
+			"apple": ["$60", "https://recoverykings.net/product/stand/"],
+			"cashapp": ["$60", "https://recoverykings.net/discord"],
+			"amazongift": ["$60", "https://recoverykings.net/discord"],
+			"psc": ["$60", "https://recoverykings.net/discord"]
+		},
+		"basic_to_regular": {
+			"cc": ["$20", "https://recoverykings.net/product/stand/"],
+			"btc": ["$20", "https://recoverykings.net/product/stand/"],
+			"ltc": ["$20", "https://recoverykings.net/product/stand/"],
+			"eth": ["$20", "https://recoverykings.net/product/stand/"],
+			"bch": ["$20", "https://recoverykings.net/product/stand/"],
+			"crypto2": ["$20", "https://recoverykings.net/product/stand/"],
+			"apple": ["$20", "https://recoverykings.net/product/stand/"],
+			"cashapp": ["$20", "https://recoverykings.net/discord"],
+			"amazongift": ["$20", "https://recoverykings.net/discord"],
+			"psc": ["$20", "https://recoverykings.net/discord"]
+		},
+		"regular_to_ultimate": {
+			"stock": -2,
+			"cc": ["$30", "https://recoverykings.net/product/stand/"],
+			"btc": ["$30", "https://recoverykings.net/product/stand/"],
+			"ltc": ["$30", "https://recoverykings.net/product/stand/"],
+			"eth": ["$30", "https://recoverykings.net/product/stand/"],
+			"bch": ["$30", "https://recoverykings.net/product/stand/"],
+			"crypto2": ["$30", "https://recoverykings.net/product/stand/"],
+			"apple": ["$30", "https://recoverykings.net/product/stand/"],
+			"cashapp": ["$30", "https://recoverykings.net/discord"],
+			"amazongift": ["$30", "https://recoverykings.net/discord"],
+			"psc": ["$30", "https://recoverykings.net/discord"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["$42", "https://recoverykings.net/product/stand/"],
+			"btc": ["$42", "https://recoverykings.net/product/stand/"],
+			"ltc": ["$42", "https://recoverykings.net/product/stand/"],
+			"eth": ["$42", "https://recoverykings.net/product/stand/"],
+			"bch": ["$42", "https://recoverykings.net/product/stand/"],
+			"crypto2": ["$42", "https://recoverykings.net/product/stand/"],
+			"apple": ["$42", "https://recoverykings.net/product/stand/"],
+			"cashapp": ["$42", "https://recoverykings.net/discord"],
+			"amazongift": ["$42", "https://recoverykings.net/discord"],
+			"psc": ["$42", "https://recoverykings.net/discord"]
+		}
+	},
+	"LuckyKeys": {
+		"basic": {
+			"pp": ["$12.50", "https://luckykeys.net/product/stand/"]
+		},
+		"regular": {
+			"pp": ["$30", "https://luckykeys.net/product/stand/"]
+		},
+		"ultimate": {
+			"pp": ["$60", "https://luckykeys.net/product/stand/"]
+		}
+	},
+	"Paramods": {
+		"basic": {
+			"stock": -21,
+			"cc": ["$12", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"pp": ["$12", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"google": ["$12", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"apple": ["$12", "https://www.paramods.xyz/product/stand-mod-menu/"]
+		},
+		"basic_to_regular": {
+			"cc": ["$18", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"pp": ["$18", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"google": ["$18", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"apple": ["$18", "https://www.paramods.xyz/product/stand-mod-menu/"]
+		},
+		"regular": {
+			"stock": -1,
+			"cc": ["$28", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"pp": ["$28", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"google": ["$28", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"apple": ["$28", "https://www.paramods.xyz/product/stand-mod-menu/"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["$30", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"pp": ["$30", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"google": ["$30", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"apple": ["$30", "https://www.paramods.xyz/product/stand-mod-menu/"]
+		},
+		"ultimate": {
+			"cc": ["$59", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"pp": ["$59", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"google": ["$59", "https://www.paramods.xyz/product/stand-mod-menu/"],
+			"apple": ["$59", "https://www.paramods.xyz/product/stand-mod-menu/"]
+		}
+	},
+	"Elenium Store": {
+		"aliases": ["Elenium"],
+		"basic": {
+			"stock": -23,
+			"cc": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"google": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"apple": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"europe": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"btc": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"ltc": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"eth": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"bch": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"crypto2": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"wise": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"skrill": ["$13.49", "https://discord.gg/eleniummods"],
+			"psc": ["$13.49", "https://discord.gg/eleniummods"]
+		},
+		"regular": {
+			"stock": -18,
+			"cc": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"google": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"apple": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"europe": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"btc": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"ltc": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"eth": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"bch": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"crypto2": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"wise": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"skrill": ["$26.99", "https://discord.gg/eleniummods"],
+			"psc": ["$26.99", "https://discord.gg/eleniummods"]
+		},
+		"ultimate": {
+			"stock": -8,
+			"cc": ["$53.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"google": ["$53.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"apple": ["$53.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"europe": ["$53.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"btc": ["$53.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"ltc": ["$53.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"eth": ["$53.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"bch": ["$53.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"crypto2": ["$53.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"wise": ["$53.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"skrill": ["$53.99", "https://discord.gg/eleniummods"],
+			"psc": ["$53.99", "https://discord.gg/eleniummods"]
+		},
+		"basic_to_regular": {
+			"stock": -1,
+			"cc": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"google": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"apple": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"europe": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"btc": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"ltc": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"eth": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"bch": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"crypto2": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"wise": ["$13.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"skrill": ["$13.49", "https://discord.gg/eleniummods"],
+			"psc": ["$13.49", "https://discord.gg/eleniummods"]
+		},
+		"regular_to_ultimate": {
+			"stock": -1,
+			"cc": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"google": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"apple": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"europe": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"btc": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"ltc": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"eth": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"bch": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"crypto2": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"wise": ["$26.99", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"skrill": ["$26.99", "https://discord.gg/eleniummods"],
+			"psc": ["$26.99", "https://discord.gg/eleniummods"]
+		},
+		"basic_to_ultimate": {
+			"stock": -1,
+			"cc": ["$40.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"google": ["$40.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"apple": ["$40.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"europe": ["$40.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"btc": ["$40.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"ltc": ["$40.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"eth": ["$40.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"bch": ["$40.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"crypto2": ["$40.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"wise": ["$40.49", "https://eleniumstore.com/product/stand-mod-menu/"],
+			"skrill": ["$40.49", "https://discord.gg/eleniummods"],
+			"psc": ["$40.49", "https://discord.gg/eleniummods"]
+		}
+	},
+	"RevUnity": {
+		"basic": {
+			"stock": -7,
+			"cc": ["£10.15", "https://revunity.com/product/stand-mod-menu/"],
+			"pp": ["£10.15", "https://revunity.com/product/stand-mod-menu/"],
+			"cashapp": ["£10.15", "https://revunity.com/product/stand-mod-menu/"],
+			"klarna": ["£10.15", "https://revunity.com/product/stand-mod-menu/"],
+			"europe": ["£10.15", "https://revunity.com/product/stand-mod-menu/"],
+			"btc": ["£10.15", "https://revunity.com/product/stand-mod-menu/"],
+			"ltc": ["£10.15", "https://revunity.com/product/stand-mod-menu/"],
+			"eth": ["£10.15", "https://revunity.com/product/stand-mod-menu/"],
+			"bch": ["£10.15", "https://revunity.com/product/stand-mod-menu/"],
+			"crypto2": ["£10.15", "https://revunity.com/product/stand-mod-menu/"]
+		},
+		"regular": {
+			"stock": -6,
+			"cc": ["£20.89", "https://revunity.com/product/stand-mod-menu/"],
+			"pp": ["£20.89", "https://revunity.com/product/stand-mod-menu/"],
+			"cashapp": ["£20.89", "https://revunity.com/product/stand-mod-menu/"],
+			"klarna": ["£20.89", "https://revunity.com/product/stand-mod-menu/"],
+			"europe": ["£20.89", "https://revunity.com/product/stand-mod-menu/"],
+			"btc": ["£20.89", "https://revunity.com/product/stand-mod-menu/"],
+			"ltc": ["£20.89", "https://revunity.com/product/stand-mod-menu/"],
+			"eth": ["£20.89", "https://revunity.com/product/stand-mod-menu/"],
+			"bch": ["£20.89", "https://revunity.com/product/stand-mod-menu/"],
+			"crypto2": ["£20.89", "https://revunity.com/product/stand-mod-menu/"]
+		},
+		"ultimate": {
+			"stock": -3,
+			"cc": ["£41", "https://revunity.com/product/stand-mod-menu/"],
+			"pp": ["£41", "https://revunity.com/product/stand-mod-menu/"],
+			"cashapp": ["£41", "https://revunity.com/product/stand-mod-menu/"],
+			"klarna": ["£41", "https://revunity.com/product/stand-mod-menu/"],
+			"europe": ["£41", "https://revunity.com/product/stand-mod-menu/"],
+			"btc": ["£41", "https://revunity.com/product/stand-mod-menu/"],
+			"ltc": ["£41", "https://revunity.com/product/stand-mod-menu/"],
+			"eth": ["£41", "https://revunity.com/product/stand-mod-menu/"],
+			"bch": ["£41", "https://revunity.com/product/stand-mod-menu/"],
+			"crypto2": ["£41", "https://revunity.com/product/stand-mod-menu/"]
+		},
+		"basic_to_regular": {
+			"stock": -8,
+			"cc": ["£10.30", "https://revunity.com/product/stand-mod-menu/"],
+			"pp": ["£10.30", "https://revunity.com/product/stand-mod-menu/"],
+			"cashapp": ["£10.30", "https://revunity.com/product/stand-mod-menu/"],
+			"klarna": ["£10.30", "https://revunity.com/product/stand-mod-menu/"],
+			"europe": ["£10.30", "https://revunity.com/product/stand-mod-menu/"],
+			"btc": ["£10.30", "https://revunity.com/product/stand-mod-menu/"],
+			"ltc": ["£10.30", "https://revunity.com/product/stand-mod-menu/"],
+			"eth": ["£10.30", "https://revunity.com/product/stand-mod-menu/"],
+			"bch": ["£10.30", "https://revunity.com/product/stand-mod-menu/"],
+			"crypto2": ["£10.30", "https://revunity.com/product/stand-mod-menu/"]
+		},
+		"regular_to_ultimate": {
+			"stock": -5,
+			"cc": ["£21", "https://revunity.com/product/stand-mod-menu/"],
+			"pp": ["£21", "https://revunity.com/product/stand-mod-menu/"],
+			"cashapp": ["£21", "https://revunity.com/product/stand-mod-menu/"],
+			"klarna": ["£21", "https://revunity.com/product/stand-mod-menu/"],
+			"europe": ["£21", "https://revunity.com/product/stand-mod-menu/"],
+			"btc": ["£21", "https://revunity.com/product/stand-mod-menu/"],
+			"ltc": ["£21", "https://revunity.com/product/stand-mod-menu/"],
+			"eth": ["£21", "https://revunity.com/product/stand-mod-menu/"],
+			"bch": ["£21", "https://revunity.com/product/stand-mod-menu/"],
+			"crypto2": ["£21", "https://revunity.com/product/stand-mod-menu/"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["£31.45", "https://revunity.com/product/stand-mod-menu/"],
+			"pp": ["£31.45", "https://revunity.com/product/stand-mod-menu/"],
+			"cashapp": ["£31.45", "https://revunity.com/product/stand-mod-menu/"],
+			"klarna": ["£31.45", "https://revunity.com/product/stand-mod-menu/"],
+			"europe": ["£31.45", "https://revunity.com/product/stand-mod-menu/"],
+			"btc": ["£31.45", "https://revunity.com/product/stand-mod-menu/"],
+			"ltc": ["£31.45", "https://revunity.com/product/stand-mod-menu/"],
+			"eth": ["£31.45", "https://revunity.com/product/stand-mod-menu/"],
+			"bch": ["£31.45", "https://revunity.com/product/stand-mod-menu/"],
+			"crypto2": ["£31.45", "https://revunity.com/product/stand-mod-menu/"]
+		}
+	},
+	"PyroCorp": {
+		"aliases": ["Pyro"],
+		"basic": {
+			"cc": ["$11.50", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"cashapp": ["$12.15", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"venmo": ["$12.15", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"pp": ["$12.15", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"]
+		},
+		"regular": {
+			"cc": ["$28.50", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"cashapp": ["$31.35", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"venmo": ["$31.35", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"pp": ["$31.35", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"]
+		},
+		"ultimate": {
+			"stock": -1,
+			"cc": ["$57", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"cashapp": ["$62.7", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"venmo": ["$62.7", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"pp": ["$62.7", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["$28.50", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"cashapp": ["$31.35", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"venmo": ["$31.35", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"pp": ["$31.35", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["$50", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"cashapp": ["$55", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"venmo": ["$55", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"],
+			"pp": ["$55", "https://pyrocorp.net/collections/gta-mod-menu/products/stand-mod-menu"]
+		}
+	},
+	"WesleyMods": {
+		"aliases": ["Wesley"],
+		"basic": {
+			"_stock": 1,
+			"cc": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"pp": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"btc": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"ltc": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"eth": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"bch": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"boleto": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"latam": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"europe": ["R$65", "https://discord.gg/6HTutG65hG"]
+		},
+		"regular": {
+			"_stock": 1,
+			"cc": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"pp": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"btc": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"ltc": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"eth": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"bch": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"boleto": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"latam": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"europe": ["R$130", "https://discord.gg/6HTutG65hG"]
+		},
+		"ultimate": {
+			"_stock": 1,
+			"cc": ["R$270", "https://discord.gg/6HTutG65hG"],
+			"pp": ["R$270", "https://discord.gg/6HTutG65hG"],
+			"btc": ["R$270", "https://discord.gg/6HTutG65hG"],
+			"ltc": ["R$270", "https://discord.gg/6HTutG65hG"],
+			"eth": ["R$270", "https://discord.gg/6HTutG65hG"],
+			"bch": ["R$270", "https://discord.gg/6HTutG65hG"],
+			"boleto": ["R$270", "https://discord.gg/6HTutG65hG"],
+			"latam": ["R$270", "https://discord.gg/6HTutG65hG"],
+			"europe": ["R$270", "https://discord.gg/6HTutG65hG"]
+		},
+		"basic_to_regular": {
+			"_stock": 1,
+			"cc": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"pp": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"btc": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"ltc": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"eth": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"bch": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"boleto": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"latam": ["R$65", "https://discord.gg/6HTutG65hG"],
+			"europe": ["R$65", "https://discord.gg/6HTutG65hG"]
+		},
+		"regular_to_ultimate": {
+			"_stock": 1,
+			"cc": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"pp": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"btc": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"ltc": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"eth": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"bch": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"boleto": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"latam": ["R$130", "https://discord.gg/6HTutG65hG"],
+			"europe": ["R$130", "https://discord.gg/6HTutG65hG"]
+		},
+		"basic_to_ultimate": {
+			"_stock": 1,
+			"cc": ["€40", "https://discord.gg/6HTutG65hG"],
+			"pp": ["€40", "https://discord.gg/6HTutG65hG"],
+			"btc": ["€40", "https://discord.gg/6HTutG65hG"],
+			"ltc": ["€40", "https://discord.gg/6HTutG65hG"],
+			"eth": ["€40", "https://discord.gg/6HTutG65hG"],
+			"bch": ["€40", "https://discord.gg/6HTutG65hG"],
+			"boleto": ["€40", "https://discord.gg/6HTutG65hG"],
+			"latam": ["€40", "https://discord.gg/6HTutG65hG"],
+			"europe": ["€40", "https://discord.gg/6HTutG65hG"]
+		}
+	},
+	"ModMart": {
+		"basic": {
+			"_stock": 1,
+			"pp": ["€10", "https://discord.gg/gx7dpYrbEg"],
+			"cashapp": ["€10", "https://discord.gg/gx7dpYrbEg"],
+			"btc": ["€10", "https://discord.gg/gx7dpYrbEg"],
+			"ltc": ["€10", "https://discord.gg/gx7dpYrbEg"],
+			"eth": ["€10", "https://discord.gg/gx7dpYrbEg"],
+			"bch": ["€10", "https://discord.gg/gx7dpYrbEg"]
+		},
+		"regular": {
+			"_stock": 1,
+			"pp": ["€25", "https://discord.gg/gx7dpYrbEg"],
+			"cashapp": ["€25", "https://discord.gg/gx7dpYrbEg"],
+			"btc": ["€25", "https://discord.gg/gx7dpYrbEg"],
+			"ltc": ["€25", "https://discord.gg/gx7dpYrbEg"],
+			"eth": ["€25", "https://discord.gg/gx7dpYrbEg"],
+			"bch": ["€25", "https://discord.gg/gx7dpYrbEg"]
+		},
+		"ultimate": {
+			"_stock": 1,
+			"pp": ["€50", "https://discord.gg/gx7dpYrbEg"],
+			"cashapp": ["€50", "https://discord.gg/gx7dpYrbEg"],
+			"btc": ["€50", "https://discord.gg/gx7dpYrbEg"],
+			"ltc": ["€50", "https://discord.gg/gx7dpYrbEg"],
+			"eth": ["€50", "https://discord.gg/gx7dpYrbEg"],
+			"bch": ["€50", "https://discord.gg/gx7dpYrbEg"]
+		},
+		"basic_to_regular": {
+			"_stock": 1,
+			"pp": ["€15", "https://discord.gg/gx7dpYrbEg"],
+			"cashapp": ["€15", "https://discord.gg/gx7dpYrbEg"],
+			"btc": ["€15", "https://discord.gg/gx7dpYrbEg"],
+			"ltc": ["€15", "https://discord.gg/gx7dpYrbEg"],
+			"eth": ["€15", "https://discord.gg/gx7dpYrbEg"],
+			"bch": ["€15", "https://discord.gg/gx7dpYrbEg"]
+		},
+		"regular_to_ultimate": {
+			"_stock": 1,
+			"pp": ["€25", "https://discord.gg/gx7dpYrbEg"],
+			"cashapp": ["€25", "https://discord.gg/gx7dpYrbEg"],
+			"btc": ["€25", "https://discord.gg/gx7dpYrbEg"],
+			"ltc": ["€25", "https://discord.gg/gx7dpYrbEg"],
+			"eth": ["€25", "https://discord.gg/gx7dpYrbEg"],
+			"bch": ["€25", "https://discord.gg/gx7dpYrbEg"]
+		},
+		"basic_to_ultimate": {
+			"_stock": 1,
+			"pp": ["€40", "https://discord.gg/gx7dpYrbEg"],
+			"cashapp": ["€40", "https://discord.gg/gx7dpYrbEg"],
+			"btc": ["€40", "https://discord.gg/gx7dpYrbEg"],
+			"ltc": ["€40", "https://discord.gg/gx7dpYrbEg"],
+			"eth": ["€40", "https://discord.gg/gx7dpYrbEg"],
+			"bch": ["€40", "https://discord.gg/gx7dpYrbEg"]
+		}
+	},
+	"YURI": {
+		"stock": "Not been in touch with me for a while, seemingly selling keys from other resellers.",
+		"aliases": ["Yuri"],
+		"basic": {
+			"stock": -101,
+			"cc": ["£10.60", "https://yurimod.com/product/stand-mod-menu/"],
+			"google": ["£10.60", "https://yurimod.com/product/stand-mod-menu/"]
+		},
+		"regular": {
+			"stock": -100,
+			"cc": ["£20.92", "https://yurimod.com/product/stand-mod-menu/"],
+			"google": ["£20.92", "https://yurimod.com/product/stand-mod-menu/"]
+		},
+		"ultimate": {
+			"stock": -100,
+			"cc": ["£41.84", "https://yurimod.com/product/stand-mod-menu/"],
+			"google": ["£41.84", "https://yurimod.com/product/stand-mod-menu/"]
+		},
+		"basic_to_regular": {
+			"stock": -100,
+			"cc": ["£10.60", "https://yurimod.com/product/stand-mod-menu/"],
+			"google": ["£10.60", "https://yurimod.com/product/stand-mod-menu/"]
+		},
+		"regular_to_ultimate": {
+			"stock": -100,
+			"cc": ["£20.92", "https://yurimod.com/product/stand-mod-menu/"],
+			"google": ["£20.92", "https://yurimod.com/product/stand-mod-menu/"]
+		},
+		"basic_to_ultimate": {
+			"stock": -100,
+			"cc": ["£32.10", "https://yurimod.com/product/stand-mod-menu/"],
+			"google": ["£32.10", "https://yurimod.com/product/stand-mod-menu/"]
+		}
+	},
+	"Modding Palace": {
+		"aliases": ["Palace"],
+		"basic": {
+			"cc": ["$12.92", "https://moddingpalace.com/product/stand/"],
+			"cashap": ["$12.92", "https://moddingpalace.com/product/stand/"]
+		},
+		"regular": {
+			"cc": ["$25.28", "https://moddingpalace.com/product/stand/"],
+			"cashap": ["$25.28", "https://moddingpalace.com/product/stand/"]
+		},
+		"ultimate": {
+			"cc": ["$59.56", "https://moddingpalace.com/product/stand/"],
+			"cashap": ["$59.56", "https://moddingpalace.com/product/stand/"]
+		},
+		"basic_to_regular": {
+			"stock": -1,
+			"cc": ["$14.78", "https://moddingpalace.com/product/stand/"],
+			"cashap": ["$14.78", "https://moddingpalace.com/product/stand/"]
+		},
+		"regular_to_ultimate": {
+			"stock": -1,
+			"cc": ["$30", "https://moddingpalace.com/product/stand/"],
+			"cashap": ["$30", "https://moddingpalace.com/product/stand/"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["$43", "https://moddingpalace.com/product/stand/"],
+			"cashap": ["$43", "https://moddingpalace.com/product/stand/"]
+		}
+	},
+	"洛圣都联盟": {
+		"aliases": ["999"],
+		"basic": {
+			"alipay": ["元80", "https://999gta.vip/"],
+			"wechat": ["元80", "https://999gta.vip/"]
+		},
+		"regular": {
+			"alipay": ["元180", "https://999gta.vip/"],
+			"wechat": ["元180", "https://999gta.vip/"]
+		},
+		"ultimate": {
+			"alipay": ["元380", "https://999gta.vip/"],
+			"wechat": ["元380", "https://999gta.vip/"]
+		}
+	},
+	"WakeUpKentucky": {
+		"_aliases": ["DipperDan"],
+		"basic": {
+			"_stock": 1,
+			"cashapp": ["€12.50", "https://discord.gg/ZFeEBMuCH2"],
+			"btc": ["€12.50", "https://discord.gg/ZFeEBMuCH2"],
+			"ltc": ["€12.50", "https://discord.gg/ZFeEBMuCH2"],
+			"eth": ["€12.50", "https://discord.gg/ZFeEBMuCH2"],
+			"bch": ["€12.50", "https://discord.gg/ZFeEBMuCH2"]
+		},
+		"regular": {
+			"_stock": 1,
+			"cashapp": ["€25", "https://discord.gg/ZFeEBMuCH2"],
+			"btc": ["€25", "https://discord.gg/ZFeEBMuCH2"],
+			"ltc": ["€25", "https://discord.gg/ZFeEBMuCH2"],
+			"eth": ["€25", "https://discord.gg/ZFeEBMuCH2"],
+			"bch": ["€25", "https://discord.gg/ZFeEBMuCH2"]
+		},
+		"ultimate": {
+			"_stock": 1,
+			"cashapp": ["€50", "https://discord.gg/ZFeEBMuCH2"],
+			"btc": ["€50", "https://discord.gg/ZFeEBMuCH2"],
+			"ltc": ["€50", "https://discord.gg/ZFeEBMuCH2"],
+			"eth": ["€50", "https://discord.gg/ZFeEBMuCH2"],
+			"bch": ["€50", "https://discord.gg/ZFeEBMuCH2"]
+		},
+		"basic_to_regular": {
+			"_stock": 1,
+			"cashapp": ["€12.50", "https://discord.gg/ZFeEBMuCH2"],
+			"btc": ["€12.50", "https://discord.gg/ZFeEBMuCH2"],
+			"ltc": ["€12.50", "https://discord.gg/ZFeEBMuCH2"],
+			"eth": ["€12.50", "https://discord.gg/ZFeEBMuCH2"],
+			"bch": ["€12.50", "https://discord.gg/ZFeEBMuCH2"]
+		},
+		"regular_to_ultimate": {
+			"_stock": 1,
+			"cashapp": ["€25", "https://discord.gg/ZFeEBMuCH2"],
+			"btc": ["€25", "https://discord.gg/ZFeEBMuCH2"],
+			"ltc": ["€25", "https://discord.gg/ZFeEBMuCH2"],
+			"eth": ["€25", "https://discord.gg/ZFeEBMuCH2"],
+			"bch": ["€25", "https://discord.gg/ZFeEBMuCH2"]
+		},
+		"basic_to_ultimate": {
+			"_stock": 1,
+			"cashapp": ["€47.50", "https://discord.gg/ZFeEBMuCH2"],
+			"btc": ["€47.50", "https://discord.gg/ZFeEBMuCH2"],
+			"ltc": ["€47.50", "https://discord.gg/ZFeEBMuCH2"],
+			"eth": ["€47.50", "https://discord.gg/ZFeEBMuCH2"],
+			"bch": ["€47.50", "https://discord.gg/ZFeEBMuCH2"]
+		}
+	},
+	"TroopKeys": {
+		"aliases": ["Troop"],
+		"basic": {
+			"stock": -100,
+			"cc": ["$11.50", "https://troopkeys.com/product/stand/"],
+			"pp": ["$11.50", "https://troopkeys.com/product/stand/"],
+			"google": ["$11.50", "https://troopkeys.com/product/stand/"],
+			"btc": ["$11.50", "https://troopkeys.com/product/stand/"],
+			"ltc": ["$11.50", "https://troopkeys.com/product/stand/"],
+			"eth": ["$11.50", "https://troopkeys.com/product/stand/"],
+			"bch": ["$11.50", "https://troopkeys.com/product/stand/"],
+			"crypto2": ["$11.50", "https://troopkeys.com/product/stand/"]
+		}
+	},
+	"Fractised": {
+		"basic": {
+			"stock": -8,
+			"btc": ["$13.40", "https://fractisedshop.sellix.io/product/61ed7b58d0550"],
+			"ltc": ["$13.40", "https://fractisedshop.sellix.io/product/61ed7b58d0550"],
+			"eth": ["$13.40", "https://fractisedshop.sellix.io/product/61ed7b58d0550"],
+			"bch": ["$13.40", "https://fractisedshop.sellix.io/product/61ed7b58d0550"],
+			"cc": ["$13.40", "https://fractisedshop.sellix.io/product/61ed7b58d0550"],
+			"pp": ["$13.40", "https://fractisedshop.sellix.io/product/61ed7b58d0550"],
+			"europe": ["$13.40", "https://fractisedshop.sellix.io/product/61ed7b58d0550"]
+		}
+	},
+	"ZStore Brazil": {
+		"aliases": ["NickGamerZ"],
+		"basic": {
+			"stock": -100,
+			"pp": ["R$67.33", "https://www.zstorebrazil.com.br/products/stand-basic-lifetime"],
+			"boleto": ["R$67.33", "https://www.zstorebrazil.com.br/products/stand-basic-lifetime"],
+			"latam": ["R$67.33", "https://www.zstorebrazil.com.br/products/stand-basic-lifetime"]
+		},
+		"regular": {
+			"stock": -100,
+			"pp": ["R$134.67", "https://www.zstorebrazil.com.br/products/stand-regular-lifetime"],
+			"boleto": ["R$134.67", "https://www.zstorebrazil.com.br/products/stand-regular-lifetime"],
+			"latam": ["R$134.67", "https://www.zstorebrazil.com.br/products/stand-regular-lifetime"]
+		},
+		"ultimate": {
+			"stock": -100,
+			"pp": ["R$269.34", "https://www.zstorebrazil.com.br/products/stand-ultimate-lifetime"],
+			"boleto": ["R$269.34", "https://www.zstorebrazil.com.br/products/stand-ultimate-lifetime"],
+			"latam": ["R$269.34", "https://www.zstorebrazil.com.br/products/stand-ultimate-lifetime"]
+		},
+		"basic_to_regular": {
+			"stock": -100,
+			"pp": ["R$67.33", "https://www.zstorebrazil.com.br/products/basic-to-regular-precisa-ter-a-basic"],
+			"boleto": ["R$67.33", "https://www.zstorebrazil.com.br/products/basic-to-regular-precisa-ter-a-basic"],
+			"latam": ["R$67.33", "https://www.zstorebrazil.com.br/products/basic-to-regular-precisa-ter-a-basic"]
+		},
+		"regular_to_ultimate": {
+			"stock": -100,
+			"pp": ["R$134.67", "https://www.zstorebrazil.com.br/products/regular-to-ultimate-precisa-ter-a-regular"],
+			"boleto": ["R$134.67", "https://www.zstorebrazil.com.br/products/regular-to-ultimate-precisa-ter-a-regular"],
+			"latam": ["R$134.67", "https://www.zstorebrazil.com.br/products/regular-to-ultimate-precisa-ter-a-regulare"]
+		},
+		"basic_to_ultimate": {
+			"stock": -100,
+			"pp": ["R$202", "https://www.zstorebrazil.com.br/products/basic-to-ultimate-precisa-ter-a-basic"],
+			"boleto": ["R$202", "https://www.zstorebrazil.com.br/products/basic-to-ultimate-precisa-ter-a-basic"],
+			"latam": ["R$202", "https://www.zstorebrazil.com.br/products/basic-to-ultimate-precisa-ter-a-basic"]
+		}
+	},
+	"RevoltZ MODZ": {
+		"aliases": ["blaise"],
+		"basic": {
+			"cc": ["R$63.30", "https://discord.gg/z9d43UJqdY"],
+			"boleto": ["R$63.30", "https://discord.gg/z9d43UJqdY"],
+			"latam": ["R$63.30", "https://discord.gg/z9d43UJqdY"],
+			"btc": ["R$63.30", "https://discord.gg/z9d43UJqdY"],
+			"ltc": ["R$63.30", "https://discord.gg/z9d43UJqdY"],
+			"eth": ["R$63.30", "https://discord.gg/z9d43UJqdY"],
+			"bch": ["R$63.30", "https://discord.gg/z9d43UJqdY"]
+		},
+		"regular": {
+			"cc": ["R$139.90", "https://discord.gg/z9d43UJqdY"],
+			"boleto": ["R$139.90", "https://discord.gg/z9d43UJqdY"],
+			"latam": ["R$139.90", "https://discord.gg/z9d43UJqdY"],
+			"btc": ["R$139.90", "https://discord.gg/z9d43UJqdY"],
+			"ltc": ["R$139.90", "https://discord.gg/z9d43UJqdY"],
+			"eth": ["R$139.90", "https://discord.gg/z9d43UJqdY"],
+			"bch": ["R$139.90", "https://discord.gg/z9d43UJqdY"]
+		},
+		"ultimate": {
+			"cc": ["R$265", "https://discord.gg/z9d43UJqdY"],
+			"boleto": ["R$265", "https://discord.gg/z9d43UJqdY"],
+			"latam": ["R$265", "https://discord.gg/z9d43UJqdY"],
+			"btc": ["R$265", "https://discord.gg/z9d43UJqdY"],
+			"ltc": ["R$265", "https://discord.gg/z9d43UJqdY"],
+			"eth": ["R$265", "https://discord.gg/z9d43UJqdY"],
+			"bch": ["R$265", "https://discord.gg/z9d43UJqdY"]
+		},
+		"basic_to_regular": {
+			"cc": ["R$63.30", "https://discord.gg/z9d43UJqdY"],
+			"boleto": ["R$63.30", "https://discord.gg/z9d43UJqdY"],
+			"latam": ["R$63.30", "https://discord.gg/z9d43UJqdY"],
+			"btc": ["R$63.30", "https://discord.gg/z9d43UJqdY"],
+			"ltc": ["R$63.30", "https://discord.gg/z9d43UJqdY"],
+			"eth": ["R$63.30", "https://discord.gg/z9d43UJqdY"],
+			"bch": ["R$63.30", "https://discord.gg/z9d43UJqdY"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["R$190", "https://discord.gg/z9d43UJqdY"],
+			"boleto": ["R$190", "https://discord.gg/z9d43UJqdY"],
+			"latam": ["R$190", "https://discord.gg/z9d43UJqdY"],
+			"btc": ["R$190", "https://discord.gg/z9d43UJqdY"],
+			"ltc": ["R$190", "https://discord.gg/z9d43UJqdY"],
+			"eth": ["R$190", "https://discord.gg/z9d43UJqdY"],
+			"bch": ["R$190", "https://discord.gg/z9d43UJqdY"]
+		}
+	},
+	"ASAP": {
+		"basic": {
+			"pp": ["€10", "https://asap-gta.sellix.io/product/6145f04b939f3"],
+			"cc": ["€10", "https://asap-gta.sellix.io/product/6145f04b939f3"],
+			"google": ["€10", "https://asap-gta.sellix.io/product/6145f04b939f3"],
+			"europe": ["€10", "https://asap-gta.sellix.io/product/6145f04b939f3"],
+			"klarna": ["€10", "https://asap-gta.sellix.io/product/6145f04b939f3"]
+		},
+		"regular": {
+			"pp": ["€25", "https://asap-gta.sellix.io/product/6145f00081496"],
+			"cc": ["€25", "https://asap-gta.sellix.io/product/6145f00081496"],
+			"google": ["€25", "https://asap-gta.sellix.io/product/6145f00081496"],
+			"europe": ["€25", "https://asap-gta.sellix.io/product/6145f00081496"],
+			"klarna": ["€25", "https://asap-gta.sellix.io/product/6145f00081496"]
+		},
+		"ultimate": {
+			"pp": ["€50", "https://asap-gta.sellix.io/product/6145e1b16d630"],
+			"cc": ["€50", "https://asap-gta.sellix.io/product/6145e1b16d630"],
+			"google": ["€50", "https://asap-gta.sellix.io/product/6145e1b16d630"],
+			"europe": ["€50", "https://asap-gta.sellix.io/product/6145e1b16d630"],
+			"klarna": ["€50", "https://asap-gta.sellix.io/product/6145e1b16d630"]
+		},
+		"basic_to_regular": {
+			"pp": ["€15", "https://asap-gta.sellix.io/product/615a867251a13"],
+			"cc": ["€15", "https://asap-gta.sellix.io/product/615a867251a13"],
+			"google": ["€15", "https://asap-gta.sellix.io/product/615a867251a13"],
+			"europe": ["€15", "https://asap-gta.sellix.io/product/615a867251a13"],
+			"klarna": ["€15", "https://asap-gta.sellix.io/product/615a867251a13"]
+		},
+		"regular_to_ultimate": {
+			"pp": ["€25", "https://asap-gta.sellix.io/product/615a8626485f8"],
+			"cc": ["€25", "https://asap-gta.sellix.io/product/615a8626485f8"],
+			"google": ["€25", "https://asap-gta.sellix.io/product/615a8626485f8"],
+			"europe": ["€25", "https://asap-gta.sellix.io/product/615a8626485f8"],
+			"klarna": ["€25", "https://asap-gta.sellix.io/product/615a8626485f8"]
+		}
+	},
+	"NitroMods": {
+		"aliases": ["Kuky", "KUKY", "KUKYPLAY"],
+		"basic": {
+			"stock": -100,
+			"cc": ["€10", "https://shoppy.gg/product/RZVabvo"]
+		},
+		"regular": {
+			"stock": -100,
+			"cc": ["€25", "https://shoppy.gg/product/Kk3klss"]
+		},
+		"basic_to_regular": {
+			"stock": -100,
+			"cc": ["€15", "https://shoppy.gg/product/5JYPLXo"]
+		}
+	},
+	"KrispyMods": {
+		"aliases": ["Krispy", "Elechugas"],
+		"note": "Has fee at checkout!",
+		"binancepay": true,
+		"basic": {
+			"stock": -60,
+			"cc": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"pp": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"google": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"apple": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"perfect": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"europe": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"klarna": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"mercado": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"wechat": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"btc": ["£10.65", "https://krispymods.com/product/stand-mod-menu/"],
+			"ltc": ["£10.65", "https://krispymods.com/product/stand-mod-menu/"],
+			"eth": ["£10.65", "https://krispymods.com/product/stand-mod-menu/"],
+			"bch": ["£10.65", "https://krispymods.com/product/stand-mod-menu/"],
+			"crypto2": ["£10.65", "https://krispymods.com/product/stand-mod-menu/"],
+			"wise": ["£10.96", "https://krispymods.com/product/stand-mod-menu/"]
+		},
+		"regular": {
+			"stock": -57,
+			"cc": ["£22.11", "https://krispymods.com/product/stand-mod-menu/"],
+			"pp": ["£22.11", "https://krispymods.com/product/stand-mod-menu/"],
+			"google": ["£22.11", "https://krispymods.com/product/stand-mod-menu/"],
+			"apple": ["£22.11", "https://krispymods.com/product/stand-mod-menu/"],
+			"perfect": ["£22.11", "https://krispymods.com/product/stand-mod-menu/"],
+			"europe": ["£22.11", "https://krispymods.com/product/stand-mod-menu/"],
+			"klarna": ["£22.11", "https://krispymods.com/product/stand-mod-menu/"],
+			"mercado": ["£22.11", "https://krispymods.com/product/stand-mod-menu/"],
+			"wechat": ["£22.11", "https://krispymods.com/product/stand-mod-menu/"],
+			"btc": ["£21.21", "https://krispymods.com/product/stand-mod-menu/"],
+			"ltc": ["£21.21", "https://krispymods.com/product/stand-mod-menu/"],
+			"eth": ["£21.21", "https://krispymods.com/product/stand-mod-menu/"],
+			"bch": ["£21.21", "https://krispymods.com/product/stand-mod-menu/"],
+			"crypto2": ["£21.21", "https://krispymods.com/product/stand-mod-menu/"],
+			"wise": ["£21.84", "https://krispymods.com/product/stand-mod-menu/"]
+		},
+		"ultimate": {
+			"stock": -38,
+			"cc": ["£44.43", "https://krispymods.com/product/stand-mod-menu/"],
+			"pp": ["£44.43", "https://krispymods.com/product/stand-mod-menu/"],
+			"google": ["£44.43", "https://krispymods.com/product/stand-mod-menu/"],
+			"apple": ["£44.43", "https://krispymods.com/product/stand-mod-menu/"],
+			"perfect": ["£44.43", "https://krispymods.com/product/stand-mod-menu/"],
+			"europe": ["£44.43", "https://krispymods.com/product/stand-mod-menu/"],
+			"klarna": ["£44.43", "https://krispymods.com/product/stand-mod-menu/"],
+			"mercado": ["£44.43", "https://krispymods.com/product/stand-mod-menu/"],
+			"wechat": ["£44.43", "https://krispymods.com/product/stand-mod-menu/"],
+			"btc": ["£42.83", "https://krispymods.com/product/stand-mod-menu/"],
+			"ltc": ["£42.83", "https://krispymods.com/product/stand-mod-menu/"],
+			"eth": ["£42.83", "https://krispymods.com/product/stand-mod-menu/"],
+			"bch": ["£42.83", "https://krispymods.com/product/stand-mod-menu/"],
+			"crypto2": ["£42.83", "https://krispymods.com/product/stand-mod-menu/"],
+			"wise": ["£43.88", "https://krispymods.com/product/stand-mod-menu/"]
+		},
+		"basic_to_regular": {
+			"stock": -110,
+			"cc": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"pp": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"google": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"apple": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"perfect": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"europe": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"klarna": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"mercado": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"wechat": ["£11.00", "https://krispymods.com/product/stand-mod-menu/"],
+			"btc": ["£10.56", "https://krispymods.com/product/stand-mod-menu/"],
+			"ltc": ["£10.56", "https://krispymods.com/product/stand-mod-menu/"],
+			"eth": ["£10.56", "https://krispymods.com/product/stand-mod-menu/"],
+			"bch": ["£10.56", "https://krispymods.com/product/stand-mod-menu/"],
+			"crypto2": ["£10.56", "https://krispymods.com/product/stand-mod-menu/"],
+			"wise": ["£10.87", "https://krispymods.com/product/stand-mod-menu/"]
+		},
+		"regular_to_ultimate": {
+			"stock": -94,
+			"cc": ["£22.32", "https://krispymods.com/product/stand-mod-menu/"],
+			"pp": ["£22.32", "https://krispymods.com/product/stand-mod-menu/"],
+			"google": ["£22.32", "https://krispymods.com/product/stand-mod-menu/"],
+			"apple": ["£22.32", "https://krispymods.com/product/stand-mod-menu/"],
+			"perfect": ["£22.32", "https://krispymods.com/product/stand-mod-menu/"],
+			"europe": ["£22.32", "https://krispymods.com/product/stand-mod-menu/"],
+			"klarna": ["£22.32", "https://krispymods.com/product/stand-mod-menu/"],
+			"mercado": ["£22.32", "https://krispymods.com/product/stand-mod-menu/"],
+			"wechat": ["£22.32", "https://krispymods.com/product/stand-mod-menu/"],
+			"btc": ["£21.42", "https://krispymods.com/product/stand-mod-menu/"],
+			"ltc": ["£21.42", "https://krispymods.com/product/stand-mod-menu/"],
+			"eth": ["£21.42", "https://krispymods.com/product/stand-mod-menu/"],
+			"bch": ["£21.42", "https://krispymods.com/product/stand-mod-menu/"],
+			"crypto2": ["£21.42", "https://krispymods.com/product/stand-mod-menu/"],
+			"wise": ["£22.05", "https://krispymods.com/product/stand-mod-menu/"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["£33.33", "https://krispymods.com/product/stand-mod-menu/"],
+			"pp": ["£33.33", "https://krispymods.com/product/stand-mod-menu/"],
+			"google": ["£33.33", "https://krispymods.com/product/stand-mod-menu/"],
+			"apple": ["£33.33", "https://krispymods.com/product/stand-mod-menu/"],
+			"perfect": ["£33.33", "https://krispymods.com/product/stand-mod-menu/"],
+			"europe": ["£33.33", "https://krispymods.com/product/stand-mod-menu/"],
+			"klarna": ["£33.33", "https://krispymods.com/product/stand-mod-menu/"],
+			"mercado": ["£33.33", "https://krispymods.com/product/stand-mod-menu/"],
+			"wechat": ["£33.33", "https://krispymods.com/product/stand-mod-menu/"],
+			"btc": ["£31.97", "https://krispymods.com/product/stand-mod-menu/"],
+			"ltc": ["£31.97", "https://krispymods.com/product/stand-mod-menu/"],
+			"eth": ["£31.97", "https://krispymods.com/product/stand-mod-menu/"],
+			"bch": ["£31.97", "https://krispymods.com/product/stand-mod-menu/"],
+			"crypto2": ["£31.97", "https://krispymods.com/product/stand-mod-menu/"],
+			"wise": ["£32.92", "https://krispymods.com/product/stand-mod-menu/"]
+		}
+	},
+	"XelModShop": {
+		"aliases": ["Xelpmi", "XelpmiS"],
+		"basic": {
+			"stock": -10000,
+			"cashapp": ["$9.93", "https://xelmodshop.sellix.io/product/62e36ce7db431"],
+			"btc": ["$9.93", "https://xelmodshop.sellix.io/product/62e36ce7db431"]
+		},
+		"regular": {
+			"stock": -10000,
+			"cashapp": ["$24.87", "https://xelmodshop.sellix.io/product/62e36d3a8e987"],
+			"btc": ["$24.87", "https://xelmodshop.sellix.io/product/62e36d3a8e987"]
+		},
+		"ultimate": {
+			"stock": -10000,
+			"cashapp": ["$49.75", "https://xelmodshop.sellix.io/product/62e2f9f79c2e9"],
+			"btc": ["$49.75", "https://xelmodshop.sellix.io/product/62e2f9f79c2e9"]
+		},
+		"basic_to_regular": {
+			"stock": -10000,
+			"cashapp": ["$14.93", "https://xelmodshop.sellix.io/product/62f96bf40f0ee"],
+			"btc": ["$14.93", "https://xelmodshop.sellix.io/product/62f96bf40f0ee"]
+		},
+		"regular_to_ultimate": {
+			"stock": -10000,
+			"cashapp": ["$24.87", "https://xelmodshop.sellix.io/product/62f96cc7584e1"],
+			"btc": ["$24.87", "https://xelmodshop.sellix.io/product/62f96cc7584e1"]
+		},
+		"basic_to_ultimate": {
+			"stock": -10000,
+			"cashapp": ["$39.79", "https://xelmodshop.sellix.io/product/62f96cf9231e8"],
+			"btc": ["$39.79", "https://xelmodshop.sellix.io/product/62f96cf9231e8"]
+		}
+	},
+	"PremiumModz": {
+		"aliases": ["Chrizzy", "Octagonal", "Bartoyolo"],
+		"basic": {
+			"pp": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"cc": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"google": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"apple": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"europe": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"btc": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"ltc": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"eth": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"bch": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"]
+		},
+		"regular": {
+			"pp": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"cc": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"google": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"apple": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"europe": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"btc": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"ltc": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"eth": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"bch": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"]
+		},
+		"ultimate": {
+			"pp": ["€47.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"cc": ["€47.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"google": ["€47.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"apple": ["€47.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"europe": ["€47.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"btc": ["€47.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"ltc": ["€47.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"eth": ["€47.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"bch": ["€47.99", "https://premiummodz.com/products/Stand--mod-menu"]
+		},
+		"basic_to_regular": {
+			"stock": -4,
+			"pp": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"cc": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"google": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"apple": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"europe": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"btc": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"ltc": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"eth": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"bch": ["€11.99", "https://premiummodz.com/products/Stand--mod-menu"]
+		},
+		"regular_to_ultimate": {
+			"stock": -1,
+			"pp": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"cc": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"google": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"apple": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"europe": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"btc": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"ltc": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"eth": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"bch": ["€23.99", "https://premiummodz.com/products/Stand--mod-menu"]
+		},
+		"basic_to_ultimate": {
+			"pp": ["€35.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"cc": ["€35.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"google": ["€35.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"apple": ["€35.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"europe": ["€35.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"btc": ["€35.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"ltc": ["€35.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"eth": ["€35.99", "https://premiummodz.com/products/Stand--mod-menu"],
+			"bch": ["€35.99", "https://premiummodz.com/products/Stand--mod-menu"]
+		}
+	},
+	"JosMods": {
+		"note": "Bought from him on 2023-06-04 and got acct id rvth9d, but was later replaced with license key zp6y7v.",
+		"basic": {
+			"pp": ["€14", "https://josmods.shop/product/stand-mod-menu/"],
+			"cc": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"google": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"apple": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"cashapp": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"venmo": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"psc": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"amazongift": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"europe": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"klarna": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"btc": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"ltc": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"eth": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"bch": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"crypto2": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"]
+		},
+		"regular": {
+			"pp": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"cc": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"google": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"apple": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"cashapp": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"venmo": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"psc": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"amazongift": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"europe": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"klarna": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"btc": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"ltc": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"eth": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"bch": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"crypto2": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"]
+		},
+		"ultimate": {
+			"pp": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"cc": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"google": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"apple": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"cashapp": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"venmo": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"psc": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"amazongift": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"europe": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"klarna": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"btc": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"ltc": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"eth": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"bch": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"crypto2": ["€49.99", "https://josmods.shop/product/stand-mod-menu/"]
+		},
+		"basic_to_regular": {
+			"pp": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"cc": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"google": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"apple": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"cashapp": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"venmo": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"psc": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"amazongift": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"europe": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"klarna": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"btc": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"ltc": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"eth": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"bch": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"crypto2": ["€12.49", "https://josmods.shop/product/stand-mod-menu/"]
+		},
+		"regular_to_ultimate": {
+			"pp": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"cc": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"google": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"apple": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"cashapp": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"venmo": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"psc": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"amazongift": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"europe": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"klarna": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"btc": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"ltc": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"eth": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"bch": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"],
+			"crypto2": ["€24.99", "https://josmods.shop/product/stand-mod-menu/"]
+		},
+		"basic_to_ultimate": {
+			"pp": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"cc": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"google": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"apple": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"cashapp": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"venmo": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"psc": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"amazongift": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"europe": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"klarna": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"btc": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"ltc": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"eth": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"bch": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"],
+			"crypto2": ["€37.49", "https://josmods.shop/product/stand-mod-menu/"]
+		}
+	},
+	"KingdomMods": {
+		"aliases": ["KingXIIO"],
+		"note": "Verified they sell license keys on 23-02-2023, got license key t611 which belongs to RecoveryKing. KingXIIO apparently buys some keys from RecoveryKing sometimes.",
+		"basic": {
+			"stock": -100,
+			"cc": ["$12", "https://kingdommods.com/product/stand/"],
+			"pp": ["$12", "https://kingdommods.com/information/"],
+			"google": ["$12", "https://kingdommods.com/product/stand/"],
+			"apple": ["$12", "https://kingdommods.com/product/stand/"],
+			"cashapp": ["$12", "https://kingdommods.com/information/"],
+			"venmo": ["$12", "https://kingdommods.com/information/"],
+			"btc": ["$12", "https://kingdommods.com/information/"],
+			"eth": ["$12", "https://kingdommods.com/information/"],
+			"ltc": ["$12", "https://kingdommods.com/information/"]
+		},
+		"regular": {
+			"stock": -100,
+			"cc": ["$28", "https://kingdommods.com/product/stand/"],
+			"pp": ["$28", "https://kingdommods.com/information/"],
+			"google": ["$28", "https://kingdommods.com/product/stand/"],
+			"apple": ["$28", "https://kingdommods.com/product/stand/"],
+			"cashapp": ["$28", "https://kingdommods.com/information/"],
+			"venmo": ["$28", "https://kingdommods.com/information/"],
+			"btc": ["$28", "https://kingdommods.com/information/"],
+			"eth": ["$28", "https://kingdommods.com/information/"],
+			"ltc": ["$28", "https://kingdommods.com/information/"]
+		},
+		"ultimate": {
+			"stock": -100,
+			"cc": ["$55", "https://kingdommods.com/product/stand/"],
+			"pp": ["$55", "https://kingdommods.com/information/"],
+			"google": ["$55", "https://kingdommods.com/product/stand/"],
+			"apple": ["$55", "https://kingdommods.com/product/stand/"],
+			"cashapp": ["$55", "https://kingdommods.com/information/"],
+			"venmo": ["$55", "https://kingdommods.com/information/"],
+			"btc": ["$55", "https://kingdommods.com/information/"],
+			"eth": ["$55", "https://kingdommods.com/information/"],
+			"ltc": ["$55", "https://kingdommods.com/information/"]
+		}
+	},
+	"Cedara": {
+		"aliases": ["DS"],
+		"note": "Formerly 'math'",
+		"basic": {
+			"cc": ["£10", "https://cedara.cc/products/stand"],
+			"gocardless": ["£10", "https://cedara.cc/products/stand"],
+			"pp": ["£10", "https://cedara.cc/products/stand"],
+			"google": ["£10", "https://cedara.cc/products/stand"],
+			"apple": ["£10", "https://cedara.cc/products/stand"],
+			"btc": ["£10", "https://cedara.cc/products/stand"],
+			"ltc": ["£10", "https://cedara.cc/products/stand"],
+			"eth": ["£10", "https://cedara.cc/products/stand"],
+			"bch": ["£10", "https://cedara.cc/products/stand"],
+			"crypto2": ["£10", "https://cedara.cc/products/stand"]
+		},
+		"regular": {
+			"cc": ["£20.90", "https://cedara.cc/products/stand"],
+			"gocardless": ["£20.90", "https://cedara.cc/products/stand"],
+			"pp": ["£20.90", "https://cedara.cc/products/stand"],
+			"google": ["£20.90", "https://cedara.cc/products/stand"],
+			"apple": ["£20.90", "https://cedara.cc/products/stand"],
+			"btc": ["£20.90", "https://cedara.cc/products/stand"],
+			"ltc": ["£20.90", "https://cedara.cc/products/stand"],
+			"eth": ["£20.90", "https://cedara.cc/products/stand"],
+			"bch": ["£20.90", "https://cedara.cc/products/stand"],
+			"crypto2": ["£20.90", "https://cedara.cc/products/stand"]
+		},
+		"ultimate": {
+			"cc": ["£42", "https://cedara.cc/products/stand"],
+			"gocardless": ["£42", "https://cedara.cc/products/stand"],
+			"pp": ["£42", "https://cedara.cc/products/stand"],
+			"google": ["£42", "https://cedara.cc/products/stand"],
+			"apple": ["£42", "https://cedara.cc/products/stand"],
+			"btc": ["£42", "https://cedara.cc/products/stand"],
+			"ltc": ["£42", "https://cedara.cc/products/stand"],
+			"eth": ["£42", "https://cedara.cc/products/stand"],
+			"bch": ["£42", "https://cedara.cc/products/stand"],
+			"crypto2": ["£42", "https://cedara.cc/products/stand"]
+		},
+		"basic_to_regular": {
+			"cc": ["£10.90", "https://cedara.cc/products/stand"],
+			"gocardless": ["£10.90", "https://cedara.cc/products/stand"],
+			"pp": ["£10.90", "https://cedara.cc/products/stand"],
+			"google": ["£10.90", "https://cedara.cc/products/stand"],
+			"apple": ["£10.90", "https://cedara.cc/products/stand"],
+			"btc": ["£10.90", "https://cedara.cc/products/stand"],
+			"ltc": ["£10.90", "https://cedara.cc/products/stand"],
+			"eth": ["£10.90", "https://cedara.cc/products/stand"],
+			"bch": ["£10.90", "https://cedara.cc/products/stand"],
+			"crypto2": ["£10.90", "https://cedara.cc/products/stand"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["£21.10", "https://cedara.cc/products/stand"],
+			"gocardless": ["£21.10", "https://cedara.cc/products/stand"],
+			"pp": ["£21.10", "https://cedara.cc/products/stand"],
+			"google": ["£21.10", "https://cedara.cc/products/stand"],
+			"apple": ["£21.10", "https://cedara.cc/products/stand"],
+			"btc": ["£21.10", "https://cedara.cc/products/stand"],
+			"ltc": ["£21.10", "https://cedara.cc/products/stand"],
+			"eth": ["£21.10", "https://cedara.cc/products/stand"],
+			"bch": ["£21.10", "https://cedara.cc/products/stand"],
+			"crypto2": ["£21.10", "https://cedara.cc/products/stand"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["£32", "https://cedara.cc/products/stand"],
+			"gocardless": ["£32", "https://cedara.cc/products/stand"],
+			"pp": ["£32", "https://cedara.cc/products/stand"],
+			"google": ["£32", "https://cedara.cc/products/stand"],
+			"apple": ["£32", "https://cedara.cc/products/stand"],
+			"btc": ["£32", "https://cedara.cc/products/stand"],
+			"ltc": ["£32", "https://cedara.cc/products/stand"],
+			"eth": ["£32", "https://cedara.cc/products/stand"],
+			"bch": ["£32", "https://cedara.cc/products/stand"],
+			"crypto2": ["£32", "https://cedara.cc/products/stand"]
+		}
+	},
+	"Divine": {
+		"aliases": ["bloom"],
+		"note": "DM advertising on SC as infinitymods.cc.",
+		"basic": {
+			"stock": -1000,
+			"_stock": -33,
+			"cc": ["$12.99", "https://divinemods.com/shop/stand"],
+			"wechat": ["$12.99", "https://divinemods.com/shop/stand"],
+			"apple": ["$12.99", "https://divinemods.com/shop/stand"],
+			"google": ["$12.99", "https://divinemods.com/shop/stand"],
+			"europe": ["$12.99", "https://divinemods.com/shop/stand"],
+			"ltc": ["$12.99", "https://divinemods.com/shop/stand"],
+			"eth": ["$12.99", "https://divinemods.com/shop/stand"],
+			"bch": ["$12.99", "https://divinemods.com/shop/stand"],
+			"crypto2": ["$12.99", "https://divinemods.com/shop/stand"]
+		},
+		"regular": {
+			"stock": -1000,
+			"cc": ["$25.99", "https://divinemods.com/shop/stand"],
+			"wechat": ["$25.99", "https://divinemods.com/shop/stand"],
+			"apple": ["$25.99", "https://divinemods.com/shop/stand"],
+			"google": ["$25.99", "https://divinemods.com/shop/stand"],
+			"europe": ["$25.99", "https://divinemods.com/shop/stand"],
+			"ltc": ["$25.99", "https://divinemods.com/shop/stand"],
+			"eth": ["$25.99", "https://divinemods.com/shop/stand"],
+			"bch": ["$25.99", "https://divinemods.com/shop/stand"],
+			"crypto2": ["$25.99", "https://divinemods.com/shop/stand"]
+		},
+		"ultimate": {
+			"stock": -1000,
+			"cc": ["$51.99", "https://divinemods.com/shop/stand"],
+			"wechat": ["$51.99", "https://divinemods.com/shop/stand"],
+			"apple": ["$51.99", "https://divinemods.com/shop/stand"],
+			"google": ["$51.99", "https://divinemods.com/shop/stand"],
+			"europe": ["$51.99", "https://divinemods.com/shop/stand"],
+			"ltc": ["$51.99", "https://divinemods.com/shop/stand"],
+			"eth": ["$51.99", "https://divinemods.com/shop/stand"],
+			"bch": ["$51.99", "https://divinemods.com/shop/stand"],
+			"crypto2": ["$51.99", "https://divinemods.com/shop/stand"]
+		}
+	},
+	"UnityResell": {
+		"aliases": ["Abyss"],
+		"basic": {
+			"cc": ["€9.63", "https://unityresell.xyz/mod/stand-gta/"],
+			"pp": ["€9.63", "https://unityresell.xyz/mod/stand-gta/"],
+			"google": ["€9.63", "https://unityresell.xyz/mod/stand-gta/"],
+			"apple": ["€9.63", "https://unityresell.xyz/mod/stand-gta/"],
+			"europe": ["€9.63", "https://unityresell.xyz/mod/stand-gta/"]
+		},
+		"regular": {
+			"cc": ["€24.12", "https://unityresell.xyz/mod/stand-gta/"],
+			"pp": ["€24.12", "https://unityresell.xyz/mod/stand-gta/"],
+			"google": ["€24.12", "https://unityresell.xyz/mod/stand-gta/"],
+			"apple": ["€24.12", "https://unityresell.xyz/mod/stand-gta/"],
+			"europe": ["€24.12", "https://unityresell.xyz/mod/stand-gta/"]
+		},
+		"ultimate": {
+			"cc": ["€48.25", "https://unityresell.xyz/mod/stand-gta/"],
+			"pp": ["€48.25", "https://unityresell.xyz/mod/stand-gta/"],
+			"google": ["€48.25", "https://unityresell.xyz/mod/stand-gta/"],
+			"apple": ["€48.25", "https://unityresell.xyz/mod/stand-gta/"],
+			"europe": ["€48.25", "https://unityresell.xyz/mod/stand-gta/"]
+		},
+		"basic_to_regular": {
+			"cc": ["€14.35", "https://unityresell.xyz/mod/stand-gta/"],
+			"pp": ["€14.35", "https://unityresell.xyz/mod/stand-gta/"],
+			"google": ["€14.35", "https://unityresell.xyz/mod/stand-gta/"],
+			"apple": ["€14.35", "https://unityresell.xyz/mod/stand-gta/"],
+			"europe": ["€14.35", "https://unityresell.xyz/mod/stand-gta/"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["€24.12", "https://unityresell.xyz/mod/stand-gta/"],
+			"pp": ["€24.12", "https://unityresell.xyz/mod/stand-gta/"],
+			"google": ["€24.12", "https://unityresell.xyz/mod/stand-gta/"],
+			"apple": ["€24.12", "https://unityresell.xyz/mod/stand-gta/"],
+			"europe": ["€24.12", "https://unityresell.xyz/mod/stand-gta/"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["€38.48", "https://unityresell.xyz/mod/stand-gta/"],
+			"pp": ["€38.48", "https://unityresell.xyz/mod/stand-gta/"],
+			"google": ["€38.48", "https://unityresell.xyz/mod/stand-gta/"],
+			"apple": ["€38.48", "https://unityresell.xyz/mod/stand-gta/"],
+			"europe": ["€38.48", "https://unityresell.xyz/mod/stand-gta/"]
+		}
+	},
+	"gtaql": {
+		"note": "Removed for selling HeezyLua",
+		"basic": {
+			"stock": -10000,
+			"wechat": ["€12.50", "https://gtaql.me/"],
+			"alipay": ["€12.50", "https://gtaql.me/"]
+		}
+	},
+	"Recovery Gods": {
+		"aliases": ["LifeisAmazing"],
+		"note": "Verified they sell license keys on 2023-03-11, got license key v07nh.",
+		"basic": {
+			"stock": -1,
+			"cc": ["€12.50", "https://recoverygods.xyz/product/stand-basic-license-key/"],
+			"ltc": ["€12.50", "https://recoverygods.xyz/product/stand-basic-license-key/"],
+			"eth": ["€12.50", "https://recoverygods.xyz/product/stand-basic-license-key/"],
+			"bch": ["€12.50", "https://recoverygods.xyz/product/stand-basic-license-key/"],
+			"crypto2": ["€12.50", "https://recoverygods.xyz/product/stand-basic-license-key/"],
+			"psc": ["€12.50", "https://recoverygods.xyz/product/stand-basic-license-key/"],
+			"amazongift": ["€12.50", "https://recoverygods.xyz/product/stand-basic-license-key/"]
+		},
+		"regular": {
+			"cc": ["€25", "https://recoverygods.xyz/product/stand-regular-license-key/"],
+			"ltc": ["€25", "https://recoverygods.xyz/product/stand-regular-license-key/"],
+			"eth": ["€25", "https://recoverygods.xyz/product/stand-regular-license-key/"],
+			"bch": ["€25", "https://recoverygods.xyz/product/stand-regular-license-key/"],
+			"crypto2": ["€25", "https://recoverygods.xyz/product/stand-regular-license-key/"],
+			"psc": ["€25", "https://recoverygods.xyz/product/stand-regular-license-key/"],
+			"amazongift": ["€25", "https://recoverygods.xyz/product/stand-regular-license-key/"]
+		},
+		"ultimate": {
+			"cc": ["€50", "https://recoverygods.xyz/product/stand-ultimate-license-key/"],
+			"ltc": ["€50", "https://recoverygods.xyz/product/stand-ultimate-license-key/"],
+			"eth": ["€50", "https://recoverygods.xyz/product/stand-ultimate-license-key/"],
+			"bch": ["€50", "https://recoverygods.xyz/product/stand-ultimate-license-key/"],
+			"crypto2": ["€50", "https://recoverygods.xyz/product/stand-ultimate-license-key/"],
+			"psc": ["€50", "https://recoverygods.xyz/product/stand-ultimate-license-key/"],
+			"amazongift": ["€50", "https://recoverygods.xyz/product/stand-ultimate-license-key/"]
+		},
+		"basic_to_regular": {
+			"cc": ["€12.50", "https://recoverygods.xyz/product/stand-basic-to-regular-license-key/"],
+			"ltc": ["€12.50", "https://recoverygods.xyz/product/stand-basic-to-regular-license-key/"],
+			"eth": ["€12.50", "https://recoverygods.xyz/product/stand-basic-to-regular-license-key/"],
+			"bch": ["€12.50", "https://recoverygods.xyz/product/stand-basic-to-regular-license-key/"],
+			"crypto2": ["€12.50", "https://recoverygods.xyz/product/stand-basic-to-regular-license-key/"],
+			"psc": ["€12.50", "https://recoverygods.xyz/product/stand-basic-to-regular-license-key/"],
+			"amazongift": ["€12.50", "https://recoverygods.xyz/product/stand-basic-to-regular-license-key/"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["€25", "https://recoverygods.xyz/product/stand-regular-to-ultimate-license-key/"],
+			"ltc": ["€25", "https://recoverygods.xyz/product/stand-regular-to-ultimate-license-key/"],
+			"eth": ["€25", "https://recoverygods.xyz/product/stand-regular-to-ultimate-license-key/"],
+			"bch": ["€25", "https://recoverygods.xyz/product/stand-regular-to-ultimate-license-key/"],
+			"crypto2": ["€25", "https://recoverygods.xyz/product/stand-regular-to-ultimate-license-key/"],
+			"psc": ["€25", "https://recoverygods.xyz/product/stand-regular-to-ultimate-license-key/"],
+			"amazongift": ["€25", "https://recoverygods.xyz/product/stand-regular-to-ultimate-license-key/"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["€37.50", "https://recoverygods.xyz/product/stand-basic-to-ultimate-license-key/"],
+			"ltc": ["€37.50", "https://recoverygods.xyz/product/stand-basic-to-ultimate-license-key/"],
+			"eth": ["€37.50", "https://recoverygods.xyz/product/stand-basic-to-ultimate-license-key/"],
+			"bch": ["€37.50", "https://recoverygods.xyz/product/stand-basic-to-ultimate-license-key/"],
+			"crypto2": ["€37.50", "https://recoverygods.xyz/product/stand-basic-to-ultimate-license-key/"],
+			"psc": ["€37.50", "https://recoverygods.xyz/product/stand-basic-to-ultimate-license-key/"],
+			"amazongift": ["€37.50", "https://recoverygods.xyz/product/stand-basic-to-ultimate-license-key/"]
+		}
+	},
+	"国王の小店": {
+		"aliases": ["tkmenu"],
+		"basic": {
+			"alipay": ["元90", "https://www.theking7.baby/"],
+			"wechat": ["元90", "https://www.theking7.baby/"],
+			"qq": ["元90", "https://www.theking7.baby/"],
+			"btc": ["元90", "https://www.theking7.baby/"],
+			"ltc": ["元90", "https://www.theking7.baby/"],
+			"eth": ["元90", "https://www.theking7.baby/"],
+			"bch": ["元90", "https://www.theking7.baby/"],
+			"crypto2": ["元90", "https://www.theking7.baby/"]
+		},
+		"regular": {
+			"alipay": ["元180", "https://www.theking7.baby/"],
+			"wechat": ["元180", "https://www.theking7.baby/"],
+			"qq": ["元180", "https://www.theking7.baby/"],
+			"btc": ["元180", "https://www.theking7.baby/"],
+			"ltc": ["元180", "https://www.theking7.baby/"],
+			"eth": ["元180", "https://www.theking7.baby/"],
+			"bch": ["元180", "https://www.theking7.baby/"],
+			"crypto2": ["元180", "https://www.theking7.baby/"]
+		},
+		"ultimate": {
+			"alipay": ["元360", "https://www.theking7.baby/"],
+			"wechat": ["元360", "https://www.theking7.baby/"],
+			"qq": ["元360", "https://www.theking7.baby/"],
+			"btc": ["元360", "https://www.theking7.baby/"],
+			"ltc": ["元360", "https://www.theking7.baby/"],
+			"eth": ["元360", "https://www.theking7.baby/"],
+			"bch": ["元360", "https://www.theking7.baby/"],
+			"crypto2": ["元360", "https://www.theking7.baby/"]
+		}
+	},
+	"MoonMods": {
+		"aliases": ["Cowdan"],
+		"basic": {
+			"stock": -2,
+			"cc": ["$12.29", "https://moonmods.com/product/stand-mod-menu/"],
+			"pp": ["$12.29", "https://moonmods.com/product/stand-mod-menu/"],
+			"btc": ["$12.29", "https://moonmods.com/product/stand-mod-menu/"],
+			"ltc": ["$12.29", "https://moonmods.com/product/stand-mod-menu/"],
+			"eth": ["$12.29", "https://moonmods.com/product/stand-mod-menu/"],
+			"bch": ["$12.29", "https://moonmods.com/product/stand-mod-menu/"],
+			"crypto2": ["$12.29", "https://moonmods.com/product/stand-mod-menu/"],
+			"klarna": ["$12.29", "https://moonmods.com/product/stand-mod-menu/"]
+		},
+		"regular": {
+			"stock": -1,
+			"cc": ["$26", "https://moonmods.com/product/stand-mod-menu/"],
+			"pp": ["$26", "https://moonmods.com/product/stand-mod-menu/"],
+			"btc": ["$26", "https://moonmods.com/product/stand-mod-menu/"],
+			"ltc": ["$26", "https://moonmods.com/product/stand-mod-menu/"],
+			"eth": ["$26", "https://moonmods.com/product/stand-mod-menu/"],
+			"bch": ["$26", "https://moonmods.com/product/stand-mod-menu/"],
+			"crypto2": ["$26", "https://moonmods.com/product/stand-mod-menu/"],
+			"klarna": ["$26", "https://moonmods.com/product/stand-mod-menu/"]
+		},
+		"ultimate": {
+			"cc": ["$49.99", "https://moonmods.com/product/stand-mod-menu/"],
+			"pp": ["$49.99", "https://moonmods.com/product/stand-mod-menu/"],
+			"btc": ["$49.99", "https://moonmods.com/product/stand-mod-menu/"],
+			"ltc": ["$49.99", "https://moonmods.com/product/stand-mod-menu/"],
+			"eth": ["$49.99", "https://moonmods.com/product/stand-mod-menu/"],
+			"bch": ["$49.99", "https://moonmods.com/product/stand-mod-menu/"],
+			"crypto2": ["$49.99", "https://moonmods.com/product/stand-mod-menu/"],
+			"klarna": ["$49.99", "https://moonmods.com/product/stand-mod-menu/"]
+		}
+	},
+	"Sauucey": {
+		"basic": {
+			"pp": ["$12.50", "https://sauuceyy.sellix.io/product/635c67c0bb263"]
+		}
+	},
+	"ModCenter": {
+		"aliases": ["Richie1", "0xlad"],
+		"basic": {
+			"stock": -4,
+			"cc": ["€12.50", "https://modcenter.sellix.io/product/635f6f0de069a"],
+			"pp": ["€12.50", "https://modcenter.sellix.io/product/635f6f0de069a"],
+			"wise": ["€12.50", "https://modcenter.sellix.io/product/635f6f0de069a"],
+			"btc": ["€12.50", "https://modcenter.sellix.io/product/635f6f0de069a"],
+			"ltc": ["€12.50", "https://modcenter.sellix.io/product/635f6f0de069a"],
+			"eth": ["€12.50", "https://modcenter.sellix.io/product/635f6f0de069a"],
+			"bch": ["€12.50", "https://modcenter.sellix.io/product/635f6f0de069a"]
+		},
+		"regular": {
+			"cc": ["€24.99", "https://modcenter.sellix.io/product/635f70b77c1cb"],
+			"pp": ["€24.99", "https://modcenter.sellix.io/product/635f70b77c1cb"],
+			"wise": ["€24.99", "https://modcenter.sellix.io/product/635f70b77c1cb"],
+			"btc": ["€24.99", "https://modcenter.sellix.io/product/635f70b77c1cb"],
+			"ltc": ["€24.99", "https://modcenter.sellix.io/product/635f70b77c1cb"],
+			"eth": ["€24.99", "https://modcenter.sellix.io/product/635f70b77c1cb"],
+			"bch": ["€24.99", "https://modcenter.sellix.io/product/635f70b77c1cb"]
+		},
+		"ultimate": {
+			"stock": -3,
+			"cc": ["€49.99", "https://modcenter.sellix.io/product/635f714956379"],
+			"pp": ["€49.99", "https://modcenter.sellix.io/product/635f714956379"],
+			"wise": ["€49.99", "https://modcenter.sellix.io/product/635f714956379"],
+			"btc": ["€49.99", "https://modcenter.sellix.io/product/635f714956379"],
+			"ltc": ["€49.99", "https://modcenter.sellix.io/product/635f714956379"],
+			"eth": ["€49.99", "https://modcenter.sellix.io/product/635f714956379"],
+			"bch": ["€49.99", "https://modcenter.sellix.io/product/635f714956379"]
+		}
+	},
+	"GTAxMENU": {
+		"aliases": ["l1angth6"],
+		"basic": {
+			"alipay": ["€12.50", "https://hi.gtaxmenu.com/"],
+			"wechat": ["€12.50", "https://hi.gtaxmenu.com/"],
+			"qq": ["€12.50", "https://hi.gtaxmenu.com/"],
+			"btc": ["€12.50", "https://shoppy.gg/product/VKN0iRE"]
+		},
+		"regular": {
+			"alipay": ["€25", "https://hi.gtaxmenu.com/"],
+			"wechat": ["€25", "https://hi.gtaxmenu.com/"],
+			"qq": ["€25", "https://hi.gtaxmenu.com/"],
+			"btc": ["€25", "https://shoppy.gg/product/VQZano5"]
+		},
+		"ultimate": {
+			"alipay": ["$50", "https://hi.gtaxmenu.com/"],
+			"wechat": ["$50", "https://hi.gtaxmenu.com/"],
+			"qq": ["$50", "https://hi.gtaxmenu.com/"],
+			"btc": ["$50", "https://shoppy.gg/product/jZH2vBI"]
+		},
+		"basic_to_regular": {
+			"alipay": ["$12.50", "https://hi.gtaxmenu.com/"],
+			"wechat": ["$12.50", "https://hi.gtaxmenu.com/"],
+			"qq": ["$12.50", "https://hi.gtaxmenu.com/"],
+			"btc": ["$12.50", "https://shoppy.gg/product/XaITGRH"]
+		},
+		"regular_to_ultimate": {
+			"alipay": ["$25", "https://hi.gtaxmenu.com/"],
+			"wechat": ["$25", "https://hi.gtaxmenu.com/"],
+			"qq": ["$25", "https://hi.gtaxmenu.com/"],
+			"btc": ["$25", "https://shoppy.gg/product/181Yqg5"]
+		},
+		"basic_to_ultimate": {
+			"alipay": ["$37.50", "https://hi.gtaxmenu.com/"],
+			"wechat": ["$37.50", "https://hi.gtaxmenu.com/"],
+			"qq": ["$37.50", "https://hi.gtaxmenu.com/"],
+			"btc": ["$37.50", "https://shoppy.gg/product/LrfU80H"]
+		}
+	},
+	"Katsie Keys": {
+		"aliases": ["KatsieKeys"],
+		"note": "Links currently broken. Also saw a ticket of a user who bought there (https://katsiekeys.sell.app/?browse=products&cursor=) and got an account id.",
+		"basic": {
+			"stock": -1000,
+			"pp": ["£11.50", "https://discord.gg/katsiekeys"],
+			"cc": ["£11.50", "https://katsiekeys.net/product/stand/"],
+			"btc": ["£11.50", "https://katsiekeys.net/product/stand/"]
+		},
+		"regular": {
+			"stock": -1000,
+			"pp": ["£22.50", "https://discord.gg/katsiekeys"],
+			"cc": ["£22.50", "https://katsiekeys.net/product/stand/"],
+			"btc": ["£22.50", "https://katsiekeys.net/product/stand/"]
+		},
+		"ultimate": {
+			"stock": -1000,
+			"pp": ["£45.00", "https://discord.gg/katsiekeys"],
+			"cc": ["£45.00", "https://katsiekeys.net/product/stand/"],
+			"btc": ["£45.00", "https://katsiekeys.net/product/stand/"]
+		}
+	},
+	"Epicmoddz": {
+		"aliases": ["RGBist"],
+		"basic": {
+			"pp": ["€12", "https://shoppy.gg/product/TpkqizY"],
+			"btc": ["€12", "https://shoppy.gg/product/TpkqizY"],
+			"ltc": ["€12", "https://shoppy.gg/product/TpkqizY"],
+			"psc": ["€15", "https://discord.gg/mj4DHUeAxG"]
+		}
+	},
+	"FameKeys": {
+		"basic": {
+			"_stock": -9,
+			"stock": -1000,
+			"pp": ["$12.49", "https://famekeys.net/product/stand/"],
+			"cc": ["$12.49", "https://famekeys.net/product/stand/"],
+			"cashapp": ["$12.49", "https://famekeys.net/product/stand/"]
+		},
+		"regular": {
+			"_stock": -4,
+			"stock": -1000,
+			"pp": ["$29.99", "https://famekeys.net/product/stand/"],
+			"cc": ["$29.99", "https://famekeys.net/product/stand/"],
+			"cashapp": ["$29.99", "https://famekeys.net/product/stand/"]
+		},
+		"ultimate": {
+			"_stock": -2,
+			"stock": -1000,
+			"pp": ["$59.99", "https://famekeys.net/product/stand/"],
+			"cc": ["$59.99", "https://famekeys.net/product/stand/"],
+			"cashapp": ["$59.99", "https://famekeys.net/product/stand/"]
+		}
+	},
+	"Shadow Mods": {
+		"_aliases": ["Daryl"],
+		"basic": {
+			"stock": 0,
+			"cc": ["€12.50", "https://discord.gg/GzT5sXmYFx"],
+			"pp": ["€16", "https://discord.gg/GzT5sXmYFx"],
+			"mercado": ["€16", "https://discord.gg/GzT5sXmYFx"],
+			"btc": ["€11.50", "https://discord.gg/GzT5sXmYFx"],
+			"ltc": ["€11.50", "https://discord.gg/GzT5sXmYFx"],
+			"eth": ["€11.50", "https://discord.gg/GzT5sXmYFx"]
+		},
+		"regular": {
+			"stock": 0,
+			"cc": ["€25", "https://discord.gg/GzT5sXmYFx"],
+			"pp": ["€28", "https://discord.gg/GzT5sXmYFx"],
+			"mercado": ["€28", "https://discord.gg/GzT5sXmYFx"],
+			"btc": ["€24", "https://discord.gg/GzT5sXmYFx"],
+			"ltc": ["€24", "https://discord.gg/GzT5sXmYFx"],
+			"eth": ["€24", "https://discord.gg/GzT5sXmYFx"]
+		},
+		"ultimate": {
+			"stock": 0,
+			"cc": ["€50", "https://discord.gg/GzT5sXmYFx"],
+			"pp": ["€58", "https://discord.gg/GzT5sXmYFx"],
+			"mercado": ["€58", "https://discord.gg/GzT5sXmYFx"],
+			"btc": ["€48", "https://discord.gg/GzT5sXmYFx"],
+			"ltc": ["€48", "https://discord.gg/GzT5sXmYFx"],
+			"eth": ["€48", "https://discord.gg/GzT5sXmYFx"]
+		},
+		"basic_to_regular": {
+			"stock": 0,
+			"cc": ["€12.50", "https://discord.gg/GzT5sXmYFx"],
+			"pp": ["€16", "https://discord.gg/GzT5sXmYFx"],
+			"mercado": ["€16", "https://discord.gg/GzT5sXmYFx"],
+			"btc": ["€12.50", "https://discord.gg/GzT5sXmYFx"],
+			"ltc": ["€12.50", "https://discord.gg/GzT5sXmYFx"],
+			"eth": ["€12.50", "https://discord.gg/GzT5sXmYFx"]
+		},
+		"regular_to_ultimate": {
+			"stock": 0,
+			"cc": ["€25", "https://discord.gg/GzT5sXmYFx"],
+			"pp": ["€28", "https://discord.gg/GzT5sXmYFx"],
+			"mercado": ["€28", "https://discord.gg/GzT5sXmYFx"],
+			"btc": ["€24", "https://discord.gg/GzT5sXmYFx"],
+			"ltc": ["€24", "https://discord.gg/GzT5sXmYFx"],
+			"eth": ["€24", "https://discord.gg/GzT5sXmYFx"]
+		}
+	},
+	"AddictShop": {
+		"aliases": ["42 Eternal", "Eternal"],
+		"basic": {
+			"pp": ["€12.50", "https://discord.gg/HzJ4FkAGQH"],
+			"btc": ["€12.50", "https://discord.gg/HzJ4FkAGQH"],
+			"cc": ["€12.50", "https://discord.gg/HzJ4FkAGQH"],
+			"eth": ["€12.50", "https://discord.gg/HzJ4FkAGQH"],
+			"psc": ["€12.50", "https://discord.gg/HzJ4FkAGQH"],
+			"google": ["€12.50", "https://discord.gg/HzJ4FkAGQH"],
+			"europe": ["€12.50", "https://discord.gg/HzJ4FkAGQH"]
+		}
+	},
+	"张书记的小店": {
+		"aliases": ["gtazsj"],
+		"note": "Removed for selling a lua",
+		"basic": {
+			"stock": -10000,
+			"wechat": ["元90", "https://gtazsj.xyz/?code=YT0zJmI9ODc%3D"],
+			"alipay": ["元90", "https://gtazsj.xyz/?code=YT0zJmI9ODc%3D"]
+		}
+	},
+	"O Cria Modz": {
+		"aliases": ["ocriamodz"],
+		"basic": {
+			"pp": ["$12.50", "https://discord.gg/EgT9HSvmde"],
+			"btc": ["$12.50", "https://discord.gg/EgT9HSvmde"],
+			"latam": ["$12.50", "https://discord.gg/EgT9HSvmde"],
+			"mercado": ["$12.50", "https://discord.gg/EgT9HSvmde"]
+		}
+	},
+	"Paulo JR Modz": {
+		"aliases": ["PauloJr"],
+		"basic": {
+			"_stock": 1,
+			"pp": ["€12.50", "https://discord.gg/7WeeUMNQyj"],
+			"cc": ["€12.50", "https://discord.gg/7WeeUMNQyj"],
+			"btc": ["€12.50", "https://discord.gg/7WeeUMNQyj"],
+			"ltc": ["€12.50", "https://discord.gg/7WeeUMNQyj"],
+			"mercado": ["€12.50", "https://discord.gg/7WeeUMNQyj"],
+			"latam": ["€12.50", "https://discord.gg/7WeeUMNQyj"]
+		},
+		"regular": {
+			"_stock": 1,
+			"pp": ["€25", "https://discord.gg/7WeeUMNQyj"],
+			"cc": ["€25", "https://discord.gg/7WeeUMNQyj"],
+			"btc": ["€25", "https://discord.gg/7WeeUMNQyj"],
+			"ltc": ["€25", "https://discord.gg/7WeeUMNQyj"],
+			"mercado": ["€25", "https://discord.gg/7WeeUMNQyj"],
+			"latam": ["€25", "https://discord.gg/7WeeUMNQyj"]
+		},
+		"ultimate": {
+			"_stock": 1,
+			"pp": ["€50", "https://discord.gg/7WeeUMNQyj"],
+			"cc": ["€50", "https://discord.gg/7WeeUMNQyj"],
+			"btc": ["€50", "https://discord.gg/7WeeUMNQyj"],
+			"ltc": ["€50", "https://discord.gg/7WeeUMNQyj"],
+			"mercado": ["€50", "https://discord.gg/7WeeUMNQyj"],
+			"latam": ["€50", "https://discord.gg/7WeeUMNQyj"]
+		}
+	},
+	"风语菜单小店": {
+		"aliases": ["qings"],
+		"basic": {
+			"alipay": ["元90", "https://gta6soon.lol/"],
+			"wechat": ["元90", "https://gta6soon.lol/"],
+			"qq": ["元90", "https://gta6soon.lol/"],
+			"pp": ["元90", "https://gta6soon.lol/"]
+		},
+		"regular": {
+			"alipay": ["元180", "https://gta6soon.lol/"],
+			"wechat": ["元180", "https://gta6soon.lol/"],
+			"qq": ["元180", "https://gta6soon.lol/"],
+			"pp": ["元180", "https://gta6soon.lol/"]
+		},
+		"ultimate": {
+			"alipay": ["元360", "https://gta6soon.lol/"],
+			"wechat": ["元360", "https://gta6soon.lol/"],
+			"qq": ["元360", "https://gta6soon.lol/"],
+			"pp": ["元360", "https://gta6soon.lol/"]
+		}
+	},
+	"chinesebackwoodhack": {
+		"aliases": ["tifa"],
+		"basic": {
+			"btc": ["$12", "https://chinesebackwoodhack.sell.app/product/product-1717527122?quantity=1&data=undefined"],
+			"ltc": ["$12", "https://chinesebackwoodhack.sell.app/product/product-1717527122?quantity=1&data=undefined"],
+			"eth": ["$12", "https://chinesebackwoodhack.sell.app/product/product-1717527122?quantity=1&data=undefined"]
+		},
+		"regular": {
+			"btc": ["$27", "https://chinesebackwoodhack.sell.app/product/product-1717527122?quantity=1&data=undefined&variant=236963"],
+			"ltc": ["$27", "https://chinesebackwoodhack.sell.app/product/product-1717527122?quantity=1&data=undefined&variant=236963"],
+			"eth": ["$27", "https://chinesebackwoodhack.sell.app/product/product-1717527122?quantity=1&data=undefined&variant=236963"]
+		},
+		"ultimate": {
+			"btc": ["$54", "https://chinesebackwoodhack.sell.app/product/product-1717527122?quantity=1&data=undefined&variant=236964"],
+			"ltc": ["$54", "https://chinesebackwoodhack.sell.app/product/product-1717527122?quantity=1&data=undefined&variant=236964"],
+			"eth": ["$54", "https://chinesebackwoodhack.sell.app/product/product-1717527122?quantity=1&data=undefined&variant=236964"]
+		}
+	},
+	"蛋蛋商铺": {
+		"aliases": ["DBW210"],
+		"basic": {
+			"wechat": ["元90", "http://stand-cn.com/"],
+			"alipay": ["元90", "http://stand-cn.com/"],
+			"qq": ["元90", "http://stand-cn.com/"]
+		},
+		"regular": {
+			"wechat": ["元180", "http://stand-cn.com/"],
+			"alipay": ["元180", "http://stand-cn.com/"],
+			"qq": ["元180", "http://stand-cn.com/"]
+		},
+		"ultimate": {
+			"wechat": ["元360", "http://stand-cn.com/"],
+			"alipay": ["元360", "http://stand-cn.com/"],
+			"qq": ["元360", "http://stand-cn.com/"]
+		},
+		"basic_to_regular": {
+			"wechat": ["元90", "http://stand-cn.com/"],
+			"alipay": ["元90", "http://stand-cn.com/"],
+			"qq": ["元90", "http://stand-cn.com/"]
+		},
+		"regular_to_ultimate": {
+			"wechat": ["元180", "http://stand-cn.com/"],
+			"alipay": ["元180", "http://stand-cn.com/"],
+			"qq": ["元180", "http://stand-cn.com/"]
+		},
+		"basic_to_ultimate": {
+			"wechat": ["元270", "http://stand-cn.com/"],
+			"alipay": ["元270", "http://stand-cn.com/"],
+			"qq": ["元270", "http://stand-cn.com/"]
+		}
+	},
+	"风吹的小店": {
+		"aliases": ["fengchui"],
+		"basic": {
+			"alipay": ["元90", "https://fcshop.club/"],
+			"wechat": ["元90", "https://fcshop.club/"],
+			"qq": ["元90", "https://fcshop.club/"]
+		},
+		"regular": {
+			"alipay": ["元180", "https://fcshop.club/"],
+			"wechat": ["元180", "https://fcshop.club/"],
+			"qq": ["元180", "https://fcshop.club/"]
+		},
+		"ultimate": {
+			"alipay": ["元360", "https://fcshop.club/"],
+			"wechat": ["元360", "https://fcshop.club/"],
+			"qq": ["元360", "https://fcshop.club/"]
+		},
+		"basic_to_regular": {
+			"alipay": ["元90", "https://fcshop.club/"],
+			"wechat": ["元90", "https://fcshop.club/"],
+			"qq": ["元90", "https://fcshop.club/"]
+		},
+		"regular_to_ultimate": {
+			"alipay": ["元180", "https://fcshop.club/"],
+			"wechat": ["元180", "https://fcshop.club/"],
+			"qq": ["元180", "https://fcshop.club/"]
+		},
+		"basic_to_ultimate": {
+			"alipay": ["元270", "https://fcshop.club/"],
+			"wechat": ["元270", "https://fcshop.club/"],
+			"qq": ["元270", "https://fcshop.club/"]
+		}
+	},
+	"L.T团队": {
+		"aliases": ["ltmenu"],
+		"note": "Unofficial reselling",
+		"basic": {
+			"stock": -1000,
+			"wechat": ["元90", "https://xlmenu.love?code=YT0yJmI9MTM%3D"],
+			"alipay": ["元90", "https://xlmenu.love?code=YT0yJmI9MTM%3D"],
+			"qq": ["元90", "https://xlmenu.love?code=YT0yJmI9MTM%3D"]
+		},
+		"regular": {
+			"stock": -1000,
+			"wechat": ["元180", "https://xlmenu.love?code=YT0yJmI9MTM%3D"],
+			"alipay": ["元180", "https://xlmenu.love?code=YT0yJmI9MTM%3D"],
+			"qq": ["元180", "https://xlmenu.love?code=YT0yJmI9MTM%3D"]
+		}
+	},
+	"VortX": {
+		"aliases": ["KermitTheFroge"],
+		"basic": {
+			"btc": ["€13", "https://vortx.sellpass.io/products/Stand-Mod-Menu"],
+			"ltc": ["€13", "https://vortx.sellpass.io/products/Stand-Mod-Menu"],
+			"eth": ["€13", "https://vortx.sellpass.io/products/Stand-Mod-Menu"],
+			"bch": ["€13", "https://vortx.sellpass.io/products/Stand-Mod-Menu"],
+			"pp": ["€15", "https://vortx.sellpass.io/products/Stand-Mod-Menu"]
+		},
+		"basic_to_regular": {
+			"btc": ["€13", "https://vortx.sellpass.io/products/Stand-Mod-Menu"],
+			"ltc": ["€13", "https://vortx.sellpass.io/products/Stand-Mod-Menu"],
+			"eth": ["€13", "https://vortx.sellpass.io/products/Stand-Mod-Menu"],
+			"bch": ["€13", "https://vortx.sellpass.io/products/Stand-Mod-Menu"],
+			"pp": ["€15", "https://vortx.sellpass.io/products/Stand-Mod-Menu"]
+		}
+	},
+	"Dallas_main store": {
+		"aliases": ["Dallas"],
+		"basic": {
+			"pp": ["€12.50", "https://discord.gg/wX54KxHrw9"],
+			"btc": ["€12.50", "https://discord.gg/wX54KxHrw9"],
+			"ltc": ["€12.50", "https://discord.gg/wX54KxHrw9"],
+			"eth": ["€12.50", "https://discord.gg/wX54KxHrw9"],
+			"bch": ["€12.50", "https://discord.gg/wX54KxHrw9"],
+			"crypto2": ["€12.50", "https://discord.gg/wX54KxHrw9"]
+		}
+	},
+	"TGModz": {
+		"aliases": ["Tiger"],
+		"basic": {
+			"pp": ["£11.07", "https://tgmodz.com/shop/stand/"],
+			"psc": ["£11.07", "https://tgmodz.com/shop/stand/"],
+			"cashapp": ["£11.07", "https://tgmodz.com/shop/stand/"],
+			"cc": ["£11.07", "https://tgmodz.com/shop/stand/"],
+			"btc": ["£11.07", "https://tgmodz.com/shop/stand/"],
+			"ltc": ["£11.07", "https://tgmodz.com/shop/stand/"],
+			"eth": ["£11.07", "https://tgmodz.com/shop/stand/"],
+			"bch": ["£11.07", "https://tgmodz.com/shop/stand/"],
+			"amazongift": ["£11.07", "https://tgmodz.com/shop/stand/"],
+			"skrill": ["£11.07", "https://tgmodz.com/shop/stand/"],
+			"apple": ["£11.07", "https://tgmodz.com/shop/stand/"],
+			"google": ["£11.07", "https://tgmodz.com/shop/stand/"]
+		},
+		"regular": {
+			"pp": ["£22.14", "https://tgmodz.com/shop/stand/"],
+			"psc": ["£22.14", "https://tgmodz.com/shop/stand/"],
+			"cashapp": ["£22.14", "https://tgmodz.com/shop/stand/"],
+			"cc": ["£22.14", "https://tgmodz.com/shop/stand/"],
+			"btc": ["£22.14", "https://tgmodz.com/shop/stand/"],
+			"ltc": ["£22.14", "https://tgmodz.com/shop/stand/"],
+			"eth": ["£22.14", "https://tgmodz.com/shop/stand/"],
+			"bch": ["£22.14", "https://tgmodz.com/shop/stand/"],
+			"amazongift": ["£22.14", "https://tgmodz.com/shop/stand/"],
+			"skrill": ["£22.14", "https://tgmodz.com/shop/stand/"],
+			"apple": ["£22.14", "https://tgmodz.com/shop/stand/"],
+			"google": ["£22.14", "https://tgmodz.com/shop/stand/"]
+		},
+		"ultimate": {
+			"pp": ["£44.28", "https://tgmodz.com/shop/stand/"],
+			"psc": ["£44.28", "https://tgmodz.com/shop/stand/"],
+			"cashapp": ["£44.28", "https://tgmodz.com/shop/stand/"],
+			"cc": ["£44.28", "https://tgmodz.com/shop/stand/"],
+			"btc": ["£44.28", "https://tgmodz.com/shop/stand/"],
+			"ltc": ["£44.28", "https://tgmodz.com/shop/stand/"],
+			"eth": ["£44.28", "https://tgmodz.com/shop/stand/"],
+			"bch": ["£44.28", "https://tgmodz.com/shop/stand/"],
+			"amazongift": ["£44.28", "https://tgmodz.com/shop/stand/"],
+			"skrill": ["£44.28", "https://tgmodz.com/shop/stand/"],
+			"apple": ["£44.28", "https://tgmodz.com/shop/stand/"],
+			"google": ["£44.28", "https://tgmodz.com/shop/stand/"]
+		},
+		"basic_to_regular": {
+			"pp": ["£10.99", "https://tgmodz.com/shop/stand/"],
+			"psc": ["£10.99", "https://tgmodz.com/shop/stand/"],
+			"cashapp": ["£10.99", "https://tgmodz.com/shop/stand/"],
+			"cc": ["£10.99", "https://tgmodz.com/shop/stand/"],
+			"btc": ["£10.99", "https://tgmodz.com/shop/stand/"],
+			"ltc": ["£10.99", "https://tgmodz.com/shop/stand/"],
+			"eth": ["£10.99", "https://tgmodz.com/shop/stand/"],
+			"bch": ["£10.99", "https://tgmodz.com/shop/stand/"],
+			"amazongift": ["£10.99", "https://tgmodz.com/shop/stand/"],
+			"skrill": ["£10.99", "https://tgmodz.com/shop/stand/"],
+			"apple": ["£10.99", "https://tgmodz.com/shop/stand/"],
+			"google": ["£10.99", "https://tgmodz.com/shop/stand/"]
+		},
+		"regular_to_ultimate": {
+			"pp": ["£20.99", "https://tgmodz.com/shop/stand/"],
+			"psc": ["£20.99", "https://tgmodz.com/shop/stand/"],
+			"cashapp": ["£20.99", "https://tgmodz.com/shop/stand/"],
+			"cc": ["£20.99", "https://tgmodz.com/shop/stand/"],
+			"btc": ["£20.99", "https://tgmodz.com/shop/stand/"],
+			"ltc": ["£20.99", "https://tgmodz.com/shop/stand/"],
+			"eth": ["£20.99", "https://tgmodz.com/shop/stand/"],
+			"bch": ["£20.99", "https://tgmodz.com/shop/stand/"],
+			"amazongift": ["£20.99", "https://tgmodz.com/shop/stand/"],
+			"skrill": ["£20.99", "https://tgmodz.com/shop/stand/"],
+			"apple": ["£20.99", "https://tgmodz.com/shop/stand/"],
+			"google": ["£20.99", "https://tgmodz.com/shop/stand/"]
+		},
+		"basic_to_ultimate": {
+			"pp": ["£31.99", "https://tgmodz.com/shop/stand/"],
+			"psc": ["£31.99", "https://tgmodz.com/shop/stand/"],
+			"cashapp": ["£31.99", "https://tgmodz.com/shop/stand/"],
+			"cc": ["£31.99", "https://tgmodz.com/shop/stand/"],
+			"btc": ["£31.99", "https://tgmodz.com/shop/stand/"],
+			"ltc": ["£31.99", "https://tgmodz.com/shop/stand/"],
+			"eth": ["£31.99", "https://tgmodz.com/shop/stand/"],
+			"bch": ["£31.99", "https://tgmodz.com/shop/stand/"],
+			"amazongift": ["£31.99", "https://tgmodz.com/shop/stand/"],
+			"skrill": ["£31.99", "https://tgmodz.com/shop/stand/"],
+			"apple": ["£31.99", "https://tgmodz.com/shop/stand/"],
+			"google": ["£31.99", "https://tgmodz.com/shop/stand/"]
+		}
+	},
+	"Sokäch": {
+		"aliases": ["HuaGeneral"],
+		"regular": {
+			"wechat": ["元180", "https://ximenu.top?code=YT0xJmI9MTA3Ng%3D%3D"],
+			"alipay": ["元180", "https://ximenu.top?code=YT0xJmI9MTA3Ng%3D%3D"],
+			"qq": ["元180", "https://ximenu.top?code=YT0xJmI9MTA3Ng%3D%3D"],
+			"pp": ["元180", "https://ximenu.top?code=YT0xJmI9MTA3Ng%3D%3D"]
+		}
+	},
+	"Explosive Modz": {
+		"aliases": ["MrIndecisive"],
+		"basic": {
+			"pp": ["$14", "https://discord.gg/explosivemodz"],
+			"cashapp": ["$14", "https://discord.gg/explosivemodz"],
+			"btc": ["$14", "https://explosivemodz.mysellix.io/product/63f322a0d749d"],
+			"ltc": ["$14", "https://explosivemodz.mysellix.io/product/63f322a0d749d"],
+			"eth": ["$14", "https://explosivemodz.mysellix.io/product/63f322a0d749d"],
+			"cc": ["$14", "https://explosivemodz.mysellix.io/product/63f322a0d749d"],
+			"google": ["$14", "https://explosivemodz.mysellix.io/product/63f322a0d749d"],
+			"venmo": ["$14", "https://explosivemodz.mysellix.io/product/63f322a0d749d"],
+			"amazongift": ["$14", "https://explosivemodz.mysellix.io/product/63f322a0d749d"]
+		},
+		"regular": {
+			"pp": ["$28.13", "https://discord.gg/explosivemodz"],
+			"cashapp": ["$28.13", "https://discord.gg/explosivemodz"],
+			"btc": ["$28.13", "https://explosivemodz.mysellix.io/product/63f32337ad42e"],
+			"ltc": ["$28.13", "https://explosivemodz.mysellix.io/product/63f32337ad42e"],
+			"eth": ["$28.13", "https://explosivemodz.mysellix.io/product/63f32337ad42e"],
+			"cc": ["$28.13", "https://explosivemodz.mysellix.io/product/63f32337ad42e"],
+			"google": ["$28.13", "https://explosivemodz.mysellix.io/product/63f32337ad42e"],
+			"venmo": ["$28.13", "https://explosivemodz.mysellix.io/product/63f32337ad42e"],
+			"amazongift": ["$28.13", "https://explosivemodz.mysellix.io/product/63f32337ad42e"]
+		},
+		"ultimate": {
+			"pp": ["$57.32", "https://discord.gg/explosivemodz"],
+			"cashapp": ["$57.32", "https://discord.gg/explosivemodz"],
+			"btc": ["$57.32", "https://explosivemodz.mysellix.io/product/63f32c13566f3"],
+			"ltc": ["$57.32", "https://explosivemodz.mysellix.io/product/63f32c13566f3"],
+			"eth": ["$57.32", "https://explosivemodz.mysellix.io/product/63f32c13566f3"],
+			"cc": ["$57.32", "https://explosivemodz.mysellix.io/product/63f32c13566f3"],
+			"google": ["$57.32", "https://explosivemodz.mysellix.io/product/63f32c13566f3"],
+			"venmo": ["$57.32", "https://explosivemodz.mysellix.io/product/63f32c13566f3"],
+			"amazongift": ["$57.32", "https://explosivemodz.mysellix.io/product/63f32c13566f3"]
+		},
+		"basic_to_regular": {
+			"pp": ["$14.21", "https://discord.gg/explosivemodz"],
+			"cashapp": ["$14.21", "https://discord.gg/explosivemodz"],
+			"btc": ["$14.21", "https://explosivemodz.mysellix.io/product/63f5be1bb6548"],
+			"ltc": ["$14.21", "https://explosivemodz.mysellix.io/product/63f5be1bb6548"],
+			"eth": ["$14.21", "https://explosivemodz.mysellix.io/product/63f5be1bb6548"],
+			"cc": ["$14.21", "https://explosivemodz.mysellix.io/product/63f5be1bb6548"],
+			"google": ["$14.21", "https://explosivemodz.mysellix.io/product/63f5be1bb6548"],
+			"venmo": ["$14.21", "https://explosivemodz.mysellix.io/product/63f5be1bb6548"],
+			"amazongift": ["$14.21", "https://explosivemodz.mysellix.io/product/63f5be1bb6548"]
+		},
+		"regular_to_ultimate": {
+			"pp": ["$27.12", "https://discord.gg/explosivemodz"],
+			"cashapp": ["$27.12", "https://discord.gg/explosivemodz"],
+			"btc": ["$27.12", "https://explosivemodz.mysellix.io/product/63f5c3eeee221"],
+			"ltc": ["$27.12", "https://explosivemodz.mysellix.io/product/63f5c3eeee221"],
+			"eth": ["$27.12", "https://explosivemodz.mysellix.io/product/63f5c3eeee221"],
+			"cc": ["$27.12", "https://explosivemodz.mysellix.io/product/63f5c3eeee221"],
+			"google": ["$27.12", "https://explosivemodz.mysellix.io/product/63f5c3eeee221"],
+			"venmo": ["$27.12", "https://explosivemodz.mysellix.io/product/63f5c3eeee221"],
+			"amazongift": ["$27.12", "https://explosivemodz.mysellix.io/product/63f5c3eeee221"]
+		}
+	},
+	"Lubafi": {
+		"aliases": ["JuztLuis"],
+		"basic": {
+			"stock": -1000,
+			"cc": ["$13.69", "https://lubafi.com/products/gtav-online-stand-mod-menu"],
+			"cashapp": ["$13.69", "https://discord.gg/lubafi"],
+			"amazongift": ["$15", "https://discord.gg/lubafi"]
+		},
+		"regular": {
+			"stock": -1000,
+			"cc": ["$27.69", "https://lubafi.com/products/gtav-online-stand-mod-menu"],
+			"cashapp": ["$27.69", "https://discord.gg/lubafi"],
+			"amazongift": ["$30", "https://discord.gg/lubafi"]
+		},
+		"ultimate": {
+			"stock": -1000,
+			"cc": ["$55.69", "https://lubafi.com/products/gtav-online-stand-mod-menu"],
+			"cashapp": ["$55.69", "https://discord.gg/lubafi"],
+			"amazongift": ["$60", "https://discord.gg/lubafi"]
+		},
+		"basic_to_regular": {
+			"stock": -1000,
+			"cc": ["$19.99", "https://lubafi.com/products/gtav-online-stand-mod-menu"],
+			"cashapp": ["$19.99", "https://discord.gg/lubafi"]
+		},
+		"regular_to_ultimate": {
+			"stock": -1000,
+			"cc": ["$27.99", "https://lubafi.com/products/gtav-online-stand-mod-menu"],
+			"cashapp": ["$27.99", "https://discord.gg/lubafi"]
+		},
+		"basic_to_ultimate": {
+			"stock": -1000,
+			"cc": ["$41.99", "https://lubafi.com/products/gtav-online-stand-mod-menu"],
+			"cashapp": ["$41.99", "https://discord.gg/lubafi"]
+		}
+	},
+	"ShopCyberSuspect": {
+		"basic": {
+			"cc": ["$15", "https://shopcybersuspect.sellpass.io/products/Stand-Mod-Menu-GTA-V"],
+			"pp": ["$15", "https://shopcybersuspect.sellpass.io/products/Stand-Mod-Menu-GTA-V"],
+			"cashapp": ["$15", "https://discord.gg/WX32uYDgNR"]
+		},
+		"regular": {
+			"cc": ["$28", "https://shopcybersuspect.sellpass.io/products/Stand-Mod-Menu-GTA-V"],
+			"pp": ["$28", "https://shopcybersuspect.sellpass.io/products/Stand-Mod-Menu-GTA-V"],
+			"cashapp": ["$28", "https://discord.gg/WX32uYDgNR"]
+		},
+		"ultimate": {
+			"cc": ["$55", "https://shopcybersuspect.sellpass.io/products/Stand-Mod-Menu-GTA-V"],
+			"pp": ["$55", "https://shopcybersuspect.sellpass.io/products/Stand-Mod-Menu-GTA-V"],
+			"cashapp": ["$55", "https://discord.gg/WX32uYDgNR"]
+		}
+	},
+	"CT Market": {
+		"note": "Owned by Chickonion and Ties113",
+		"aliases": ["Chickonion", "CTMarket"],
+		"basic": {
+			"pp": ["€12.50", "https://discord.gg/CYtUAJA6Ns"],
+			"btc": ["€12.50", "https://discord.gg/CYtUAJA6Ns"],
+			"ltc": ["€12.50", "https://discord.gg/CYtUAJA6Ns"],
+			"eth": ["€12.50", "https://discord.gg/CYtUAJA6Ns"],
+			"bch": ["€12.50", "https://discord.gg/CYtUAJA6Ns"],
+			"crypto2": ["€12.50", "https://discord.gg/CYtUAJA6Ns"],
+			"skrill": ["€12.50", "https://discord.gg/CYtUAJA6Ns"],
+			"europe": ["€12.50", "https://discord.gg/CYtUAJA6Ns"]
+		},
+		"regular": {
+			"pp": ["€25", "https://discord.gg/CYtUAJA6Ns"],
+			"btc": ["€25", "https://discord.gg/CYtUAJA6Ns"],
+			"ltc": ["€25", "https://discord.gg/CYtUAJA6Ns"],
+			"eth": ["€25", "https://discord.gg/CYtUAJA6Ns"],
+			"bch": ["€25", "https://discord.gg/CYtUAJA6Ns"],
+			"crypto2": ["€25", "https://discord.gg/CYtUAJA6Ns"],
+			"skrill": ["€25", "https://discord.gg/CYtUAJA6Ns"],
+			"europe": ["€25", "https://discord.gg/CYtUAJA6Ns"]
+		},
+		"ultimate": {
+			"pp": ["€45", "https://discord.gg/CYtUAJA6Ns"],
+			"btc": ["€45", "https://discord.gg/CYtUAJA6Ns"],
+			"ltc": ["€45", "https://discord.gg/CYtUAJA6Ns"],
+			"eth": ["€45", "https://discord.gg/CYtUAJA6Ns"],
+			"bch": ["€45", "https://discord.gg/CYtUAJA6Ns"],
+			"crypto2": ["€45", "https://discord.gg/CYtUAJA6Ns"],
+			"skrill": ["€45", "https://discord.gg/CYtUAJA6Ns"],
+			"europe": ["€45", "https://discord.gg/CYtUAJA6Ns"]
+		}
+	},
+	"Vital Mods": {
+		"aliases": ["DannyVital"],
+		"basic": {
+			"stock": -4,
+			"cc": ["$12.99", "https://vitalmods.pro/home/38-79-stand.html#/48-stand_type-basic"],
+			"pp": ["$12.99", "https://vitalmods.pro/home/38-79-stand.html#/48-stand_type-basic"],
+			"cashapp": ["$12.99", "https://vitalmods.pro/home/38-79-stand.html#/48-stand_type-basic"],
+			"btc": ["$12.99", "https://vitalmods.pro/home/38-79-stand.html#/48-stand_type-basic"]
+		},
+		"regular": {
+			"stock": -4,
+			"cc": ["$25.99", "https://vitalmods.pro/home/38-80-stand.html#/49-stand_type-regular"],
+			"pp": ["$25.99", "https://vitalmods.pro/home/38-80-stand.html#/49-stand_type-regular"],
+			"cashapp": ["$25.99", "https://vitalmods.pro/home/38-80-stand.html#/49-stand_type-regular"],
+			"btc": ["$25.99", "https://vitalmods.pro/home/38-80-stand.html#/49-stand_type-regularc"]
+		},
+		"ultimate": {
+			"stock": -3,
+			"cc": ["$51.99", "https://vitalmods.pro/home/38-81-stand.html#/50-stand_type-ultimate"],
+			"pp": ["$51.99", "https://vitalmods.pro/home/38-81-stand.html#/50-stand_type-ultimate"],
+			"cashapp": ["$51.99", "https://vitalmods.pro/home/38-81-stand.html#/50-stand_type-ultimate"],
+			"btc": ["$51.99", "https://vitalmods.pro/home/38-81-stand.html#/50-stand_type-ultimate"]
+		}
+	},
+	"ezshop": {
+		"basic": {
+			"cc": ["$13.95", "https://ezshop.gg/products/Stand"],
+			"google": ["$13.95", "https://ezshop.gg/products/Stand"],
+			"apple": ["$13.95", "https://ezshop.gg/products/Stand"],
+			"europe": ["$13.95", "https://ezshop.gg/products/Stand"],
+			"btc": ["$13.95", "https://ezshop.gg/products/Stand"],
+			"ltc": ["$13.95", "https://ezshop.gg/products/Stand"]
+		},
+		"regular": {
+			"cc": ["$27.95", "https://ezshop.gg/products/Stand"],
+			"google": ["$27.95", "https://ezshop.gg/products/Stand"],
+			"apple": ["$27.95", "https://ezshop.gg/products/Stand"],
+			"europe": ["$27.95", "https://ezshop.gg/products/Stand"],
+			"btc": ["$27.95", "https://ezshop.gg/products/Stand"],
+			"ltc": ["$27.95", "https://ezshop.gg/products/Stand"]
+		},
+		"ultimate": {
+			"cc": ["$55.95", "https://ezshop.gg/products/Stand"],
+			"google": ["$55.95", "https://ezshop.gg/products/Stand"],
+			"apple": ["$55.95", "https://ezshop.gg/products/Stand"],
+			"europe": ["$55.95", "https://ezshop.gg/products/Stand"],
+			"btc": ["$55.95", "https://ezshop.gg/products/Stand"],
+			"ltc": ["$55.95", "https://ezshop.gg/products/Stand"]
+		}
+	},
+	"RoyaltyStarsInc": {
+		"aliases": ["Speedy"],
+		"basic": {
+			"cc": ["$12.37", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"google": ["$12.37", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"apple": ["$12.37", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"amazon": ["$12.37", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"btc": ["$12.37", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"ltc": ["$12.37", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"eth": ["$12.37", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"europe": ["$12.37", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"wechat": ["$12.37", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"klarna": ["$12.37", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"affirm": ["$12.37", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"gocardless": ["$12.37", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"pp": ["$12.37", "https://royaltystarsinc.com/discord/"],
+			"cashapp": ["$12.37", "https://royaltystarsinc.com/discord/"],
+			"venmo": ["$12.37", "https://royaltystarsinc.com/discord/"],
+			"psc": ["$12.37", "https://royaltystarsinc.com/discord/"],
+			"skrill": ["$12.37", "https://royaltystarsinc.com/discord/"]
+		},
+		"regular": {
+			"cc": ["$26.74", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"google": ["$26.74", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"apple": ["$26.74", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"amazon": ["$26.74", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"btc": ["$26.74", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"ltc": ["$26.74", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"eth": ["$26.74", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"europe": ["$26.74", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"wechat": ["$26.74", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"klarna": ["$26.74", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"affirm": ["$26.74", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"gocardless": ["$26.74", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"pp": ["$26.74", "https://royaltystarsinc.com/discord/"],
+			"cashapp": ["$26.74", "https://royaltystarsinc.com/discord/"],
+			"venmo": ["$26.74", "https://royaltystarsinc.com/discord/"],
+			"psc": ["$26.74", "https://royaltystarsinc.com/discord/"],
+			"skrill": ["$26.74", "https://royaltystarsinc.com/discord/"]
+		},
+		"ultimate": {
+			"cc": ["$52.47", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"google": ["$52.47", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"apple": ["$52.47", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"amazon": ["$52.47", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"btc": ["$52.47", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"ltc": ["$52.47", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"eth": ["$52.47", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"europe": ["$52.47", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"wechat": ["$52.47", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"klarna": ["$52.47", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"affirm": ["$52.47", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"gocardless": ["$52.47", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"pp": ["$52.47", "https://royaltystarsinc.com/discord/"],
+			"cashapp": ["$52.47", "https://royaltystarsinc.com/discord/"],
+			"venmo": ["$52.47", "https://royaltystarsinc.com/discord/"],
+			"psc": ["$52.47", "https://royaltystarsinc.com/discord/"],
+			"skrill": ["$52.47", "https://royaltystarsinc.com/discord/"]
+		},
+		"basic_to_regular": {
+			"cc": ["$13.10", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"google": ["$13.10", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"apple": ["$13.10", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"amazon": ["$13.10", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"btc": ["$13.10", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"ltc": ["$13.10", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"eth": ["$13.10", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"europe": ["$13.10", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"wechat": ["$13.10", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"klarna": ["$13.10", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"affirm": ["$13.10", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"gocardless": ["$13.10", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"pp": ["$13.10", "https://royaltystarsinc.com/discord/"],
+			"cashapp": ["$13.10", "https://royaltystarsinc.com/discord/"],
+			"venmo": ["$13.10", "https://royaltystarsinc.com/discord/"],
+			"psc": ["$13.10", "https://royaltystarsinc.com/discord/"],
+			"skrill": ["$13.10", "https://royaltystarsinc.com/discord/"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["$26.75", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"google": ["$26.75", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"apple": ["$26.75", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"amazon": ["$26.75", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"btc": ["$26.75", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"ltc": ["$26.75", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"eth": ["$26.75", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"europe": ["$26.75", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"wechat": ["$26.75", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"klarna": ["$26.75", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"affirm": ["$26.75", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"gocardless": ["$26.75", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"pp": ["$26.75", "https://royaltystarsinc.com/discord/"],
+			"cashapp": ["$26.75", "https://royaltystarsinc.com/discord/"],
+			"venmo": ["$26.75", "https://royaltystarsinc.com/discord/"],
+			"psc": ["$26.75", "https://royaltystarsinc.com/discord/"],
+			"skrill": ["$26.75", "https://royaltystarsinc.com/discord/"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["$40.20", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"google": ["$40.20", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"apple": ["$40.20", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"amazon": ["$40.20", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"btc": ["$40.20", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"ltc": ["$40.20", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"eth": ["$40.20", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"europe": ["$40.20", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"wechat": ["$40.20", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"klarna": ["$40.20", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"affirm": ["$40.20", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"gocardless": ["$40.20", "https://royaltystarsinc.com/product/stand-mod-menu/"],
+			"pp": ["$40.20", "https://royaltystarsinc.com/discord/"],
+			"cashapp": ["$40.20", "https://royaltystarsinc.com/discord/"],
+			"venmo": ["$40.20", "https://royaltystarsinc.com/discord/"],
+			"psc": ["$40.20", "https://royaltystarsinc.com/discord/"],
+			"skrill": ["$40.20", "https://royaltystarsinc.com/discord/"]
+		}
+	},
+	"Exclusive Inc": {
+		"aliases": ["Axel"],
+		"basic": {
+			"cc": ["€12.49", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Basic-Edition"],
+			"google": ["€12.49", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Basic-Edition"],
+			"apple": ["€12.49", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Basic-Edition"],
+			"pp": ["€12.49", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Basic-Edition"],
+			"india": ["€12.49", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Basic-Edition"],
+			"btc": ["€12.49", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Basic-Edition"],
+			"ltc": ["€12.49", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Basic-Edition"],
+			"eth": ["€12.49", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Basic-Edition"],
+			"bch": ["€12.49", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Basic-Edition"],
+			"crypto2": ["€12.49", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Basic-Edition"]
+		},
+		"regular": {
+			"cc": ["€24.99", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Regular-Edition"],
+			"google": ["€24.99", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Regular-Edition"],
+			"apple": ["€24.99", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Regular-Edition"],
+			"pp": ["€24.99", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Regular-Edition"],
+			"india": ["€24.99", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Regular-Edition"],
+			"btc": ["€24.99", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Regular-Edition"],
+			"ltc": ["€24.99", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Regular-Edition"],
+			"eth": ["€24.99", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Regular-Edition"],
+			"bch": ["€24.99", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Regular-Edition"],
+			"crypto2": ["€24.99", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Regular-Edition"]
+		},
+		"ultimate": {
+			"cc": ["€50", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Ultimate-Edition"],
+			"google": ["€50", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Ultimate-Edition"],
+			"apple": ["€50", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Ultimate-Edition"],
+			"pp": ["€50", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Ultimate-Edition"],
+			"india": ["€50", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Ultimate-Edition"],
+			"btc": ["€50", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Ultimate-Edition"],
+			"ltc": ["€50", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Ultimate-Edition"],
+			"eth": ["€50", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Ultimate-Edition"],
+			"bch": ["€50", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Ultimate-Edition"],
+			"crypto2": ["€50", "https://exclusiveinc.sellpass.io/products/Stand-Mod-Menu--Ultimate-Edition"]
+		}
+	},
+	"Lmarket": {
+		"aliases": ["lplacement"],
+		"basic": {
+			"stock": -3,
+			"pp": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic"],
+			"cc": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic"],
+			"btc": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic"],
+			"ltc": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic"],
+			"eth": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic"],
+			"bch": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic"],
+			"google": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic"],
+			"apple": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic"],
+			"psc": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic"],
+			"europe": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic"]
+		},
+		"regular": {
+			"stock": -2,
+			"pp": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular"],
+			"cc": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular"],
+			"btc": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular"],
+			"ltc": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular"],
+			"eth": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular"],
+			"bch": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular"],
+			"google": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular"],
+			"apple": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular"],
+			"psc": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular"],
+			"europe": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular"]
+		},
+		"ultimate": {
+			"stock": -1,
+			"pp": ["€49.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Ultimate"],
+			"cc": ["€49.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Ultimate"],
+			"btc": ["€49.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Ultimate"],
+			"ltc": ["€49.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Ultimate"],
+			"eth": ["€49.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Ultimate"],
+			"bch": ["€49.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Ultimate"],
+			"google": ["€49.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Ultimate"],
+			"apple": ["€49.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Ultimate"],
+			"psc": ["€49.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Ultimate"],
+			"europe": ["€49.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Ultimate"]
+		},
+		"regular_to_ultimate": {
+			"pp": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular%20to%20Ultimate"],
+			"cc": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular%20to%20Ultimate"],
+			"btc": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular%20to%20Ultimate"],
+			"ltc": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular%20to%20Ultimate"],
+			"eth": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular%20to%20Ultimate"],
+			"bch": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular%20to%20Ultimate"],
+			"google": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular%20to%20Ultimate"],
+			"apple": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular%20to%20Ultimate"],
+			"psc": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular%20to%20Ultimate"],
+			"europe": ["€24.99", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Regular%20to%20Ultimate"]
+		},
+		"basic_to_regular": {
+			"stock": -1,
+			"pp": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20Regular"],
+			"cc": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20Regular"],
+			"btc": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20Regular"],
+			"ltc": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20Regular"],
+			"eth": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20Regular"],
+			"bch": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20Regular"],
+			"google": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20Regular"],
+			"apple": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20Regular"],
+			"psc": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20Regular"],
+			"europe": ["€12.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20Regular"]
+		},
+		"basic_to_ultimate": {
+			"stock": -3,
+			"pp": ["€37.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20ultimate"],
+			"cc": ["€37.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20ultimate"],
+			"btc": ["€37.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20ultimate"],
+			"ltc": ["€37.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20ultimate"],
+			"eth": ["€37.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20ultimate"],
+			"bch": ["€37.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20ultimate"],
+			"google": ["€37.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20ultimate"],
+			"apple": ["€37.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20ultimate"],
+			"psc": ["€37.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20ultimate"],
+			"europe": ["€37.49", "https://lmarket.fr/product/stand-gtav-online/?attribute_duration=Basic%20to%20ultimate"]
+		}
+	},
+	"Acces Solutions": {
+		"aliases": ["Acces"],
+		"basic": {
+			"cc": ["$13.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"pp": ["$13.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"btc": ["$13.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"ltc": ["$13.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"eth": ["$13.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"]
+		},
+		"regular": {
+			"cc": ["$26.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"pp": ["$26.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"btc": ["$26.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"ltc": ["$26.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"eth": ["$26.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"]
+		},
+		"ultimate": {
+			"cc": ["$56.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"pp": ["$56.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"btc": ["$56.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"ltc": ["$56.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"eth": ["$56.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"]
+		},
+		"basic_to_regular": {
+			"cc": ["$13.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"pp": ["$13.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"btc": ["$13.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"ltc": ["$13.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"eth": ["$13.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["$26.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"pp": ["$26.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"btc": ["$26.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"ltc": ["$26.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"],
+			"eth": ["$26.99", "https://www.acces2solutions.com/en/product-page/stand-mod-menu-gta-v-lifetime"]
+		}
+	},
+	"brekihack.ru": {
+		"aliases": ["Breki"],
+		"basic": {
+			"stock": -9999,
+			"btc": ["$13.75", "https://brekihack.ru/store/"],
+			"ltc": ["$13.75", "https://brekihack.ru/store/"],
+			"xmr": ["$13.75", "https://brekihack.ru/store/"],
+			"cc": ["$13.75", "https://brekihack.ru/store/"],
+			"europe": ["$13.75", "https://brekihack.ru/store/"],
+			"klarna": ["$13.75", "https://brekihack.ru/store/"]
+		},
+		"regular": {
+			"stock": -9999,
+			"btc": ["$27", "https://brekihack.ru/store/"],
+			"ltc": ["$27", "https://brekihack.ru/store/"],
+			"xmr": ["$27", "https://brekihack.ru/store/"],
+			"cc": ["$27", "https://brekihack.ru/store/"],
+			"europe": ["$27", "https://brekihack.ru/store/"],
+			"klarna": ["$27", "https://brekihack.ru/store/"]
+		},
+		"ultimate": {
+			"stock": -9999,
+			"btc": ["$54", "https://brekihack.ru/store/"],
+			"ltc": ["$54", "https://brekihack.ru/store/"],
+			"xmr": ["$54", "https://brekihack.ru/store/"],
+			"cc": ["$54", "https://brekihack.ru/store/"],
+			"europe": ["$54", "https://brekihack.ru/store/"],
+			"klarna": ["$54", "https://brekihack.ru/store/"]
+		},
+		"basic_to_regular": {
+			"stock": -9999,
+			"btc": ["$13.75", "https://brekihack.ru/store/"],
+			"ltc": ["$13.75", "https://brekihack.ru/store/"],
+			"xmr": ["$13.75", "https://brekihack.ru/store/"],
+			"cc": ["$13.75", "https://brekihack.ru/store/"],
+			"europe": ["$13.75", "https://brekihack.ru/store/"],
+			"klarna": ["$13.75", "https://brekihack.ru/store/"]
+		},
+		"regular_to_ultimate": {
+			"stock": -9999,
+			"btc": ["$27", "https://brekihack.ru/store/"],
+			"ltc": ["$27", "https://brekihack.ru/store/"],
+			"xmr": ["$27", "https://brekihack.ru/store/"],
+			"cc": ["$27", "https://brekihack.ru/store/"],
+			"europe": ["$27", "https://brekihack.ru/store/"],
+			"klarna": ["$27", "https://brekihack.ru/store/"]
+		},
+		"basic_to_ultimate": {
+			"stock": -9999,
+			"btc": ["$40.75", "https://brekihack.ru/store/"],
+			"ltc": ["$40.75", "https://brekihack.ru/store/"],
+			"xmr": ["$40.75", "https://brekihack.ru/store/"],
+			"cc": ["$40.75", "https://brekihack.ru/store/"],
+			"europe": ["$40.75", "https://brekihack.ru/store/"],
+			"klarna": ["$40.75", "https://brekihack.ru/store/"]
+		}
+	},
+	"XeonMods": {
+		"basic": {
+			"cc": ["€12.75", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"btc": ["€12.75", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"ltc": ["€12.75", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"eth": ["€12.75", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"bch": ["€12.75", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"wechat": ["€12.75", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"]
+		},
+		"regular": {
+			"cc": ["€25.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"btc": ["€25.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"ltc": ["€25.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"eth": ["€25.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"bch": ["€25.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"wechat": ["€25.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"]
+		},
+		"ultimate": {
+			"cc": ["€51.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"btc": ["€51.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"ltc": ["€51.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"eth": ["€51.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"bch": ["€51.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"wechat": ["€51.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"]
+		},
+		"basic_to_regular": {
+			"cc": ["€13.25", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"btc": ["€13.25", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"ltc": ["€13.25", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"eth": ["€13.25", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"bch": ["€13.25", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"wechat": ["€13.25", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["€25.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"btc": ["€25.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"ltc": ["€25.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"eth": ["€25.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"bch": ["€25.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"wechat": ["€25.50", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["€37.99", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"btc": ["€37.99", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"ltc": ["€37.99", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"eth": ["€37.99", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"bch": ["€37.99", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"],
+			"wechat": ["€37.99", "https://xeonmods.com/shop/gta5-mod-menus/stand-mod-menu-gta-v/"]
+		}
+	},
+	"Linore Mods": {
+		"aliases": ["linvy"],
+		"basic": {
+			"korea": ["₩18000", "https://standkr.lol/"]
+		},
+		"regular": {
+			"korea": ["₩36000", "https://standkr.lol/"]
+		},
+		"ultimate": {
+			"korea": ["₩70000", "https://standkr.lol/"]
+		}
+	},
+	"UltimateMods": {
+		"aliases": ["Hillel"],
+		"basic": {
+			"pp": ["$13.5", "https://discord.gg/UJrVzdTbTZ"],
+			"ltc": ["$13", "https://discord.gg/UJrVzdTbTZ"]
+		}
+	},
+	"SafeMarket": {
+		"aliases": ["Phobia"],
+		"basic": {
+			"cc": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"pp": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"btc": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"cashapp": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"skrill": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"eth": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"ltc": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"bch": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"crypto2": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"psc": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"europe": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"wise": ["€12.49", "https://safemarket.vip/product/stand/"]
+		},
+		"regular": {
+			"cc": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"pp": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"btc": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"cashapp": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"skrill": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"eth": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"ltc": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"bch": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"crypto2": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"psc": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"europe": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"wise": ["€24.99", "https://safemarket.vip/product/stand/"]
+		},
+		"ultimate": {
+			"cc": ["€49.99", "https://safemarket.vip/product/stand/"],
+			"pp": ["€49.99", "https://safemarket.vip/product/stand/"],
+			"btc": ["€49.99", "https://safemarket.vip/product/stand/"],
+			"cashapp": ["€49.99", "https://safemarket.vip/product/stand/"],
+			"skrill": ["€49.99", "https://safemarket.vip/product/stand/"],
+			"eth": ["€49.99", "https://safemarket.vip/product/stand/"],
+			"ltc": ["€49.99", "https://safemarket.vip/product/stand/"],
+			"bch": ["€49.99", "https://safemarket.vip/product/stand/"],
+			"crypto2": ["€49.99", "https://safemarket.vip/product/stand/"],
+			"psc": ["€49.99", "https://safemarket.vip/product/stand/"],
+			"europe": ["€49.99", "https://safemarket.vip/product/stand/"],
+			"wise": ["€49.99", "https://safemarket.vip/product/stand/"]
+		},
+		"basic_to_regular": {
+			"cc": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"pp": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"btc": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"cashapp": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"skrill": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"eth": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"ltc": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"bch": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"crypto2": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"psc": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"europe": ["€12.49", "https://safemarket.vip/product/stand/"],
+			"wise": ["€12.49", "https://safemarket.vip/product/stand/"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["€37.49", "https://safemarket.vip/product/stand/"],
+			"pp": ["€37.49", "https://safemarket.vip/product/stand/"],
+			"btc": ["€37.49", "https://safemarket.vip/product/stand/"],
+			"cashapp": ["€37.49", "https://safemarket.vip/product/stand/"],
+			"skrill": ["€37.49", "https://safemarket.vip/product/stand/"],
+			"eth": ["€37.49", "https://safemarket.vip/product/stand/"],
+			"ltc": ["€37.49", "https://safemarket.vip/product/stand/"],
+			"bch": ["€37.49", "https://safemarket.vip/product/stand/"],
+			"crypto2": ["€37.49", "https://safemarket.vip/product/stand/"],
+			"psc": ["€37.49", "https://safemarket.vip/product/stand/"],
+			"europe": ["€37.49", "https://safemarket.vip/product/stand/"],
+			"wise": ["€37.49", "https://safemarket.vip/product/stand/"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"pp": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"btc": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"cashapp": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"skrill": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"eth": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"ltc": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"bch": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"crypto2": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"psc": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"europe": ["€24.99", "https://safemarket.vip/product/stand/"],
+			"wise": ["€24.99", "https://safemarket.vip/product/stand/"]
+		}
+	},
+	"Nivv": {
+		"aliases": ["Kamii"],
+		"regular": {
+			"russia": ["₽2699", "https://nivv.ru/products/gtav/stand"]
+		}
+	},
+	"WalterWhite Store": {
+		"aliases": ["GunnarThyne"],
+		"basic": {
+			"pp": ["R$89", "https://discord.gg/Rn3TDdJXP7"],
+			"cc": ["R$89", "https://discord.gg/Rn3TDdJXP7"],
+			"picpay": ["R$89", "https://discord.gg/Rn3TDdJXP7"],
+			"mercado": ["R$89", "https://discord.gg/Rn3TDdJXP7"],
+			"latam": ["R$89", "https://discord.gg/Rn3TDdJXP7"],
+			"boleto": ["R$89", "https://discord.gg/Rn3TDdJXP7"],
+			"ltc": ["R$89", "https://discord.gg/Rn3TDdJXP7"]
+		},
+		"regular": {
+			"pp": ["R$179", "https://discord.gg/Rn3TDdJXP7"],
+			"cc": ["R$179", "https://discord.gg/Rn3TDdJXP7"],
+			"picpay": ["R$179", "https://discord.gg/Rn3TDdJXP7"],
+			"mercado": ["R$179", "https://discord.gg/Rn3TDdJXP7"],
+			"latam": ["R$179", "https://discord.gg/Rn3TDdJXP7"],
+			"boleto": ["R$179", "https://discord.gg/Rn3TDdJXP7"],
+			"ltc": ["R$179", "https://discord.gg/Rn3TDdJXP7"]
+		},
+		"ultimate": {
+			"pp": ["R$289", "https://discord.gg/Rn3TDdJXP7"],
+			"cc": ["R$289", "https://discord.gg/Rn3TDdJXP7"],
+			"picpay": ["R$289", "https://discord.gg/Rn3TDdJXP7"],
+			"mercado": ["R$289", "https://discord.gg/Rn3TDdJXP7"],
+			"latam": ["R$289", "https://discord.gg/Rn3TDdJXP7"],
+			"boleto": ["R$289", "https://discord.gg/Rn3TDdJXP7"],
+			"ltc": ["R$289", "https://discord.gg/Rn3TDdJXP7"]
+		},
+		"basic_to_regular": {
+			"pp": ["R$99", "https://discord.gg/Rn3TDdJXP7"],
+			"cc": ["R$99", "https://discord.gg/Rn3TDdJXP7"],
+			"picpay": ["R$99", "https://discord.gg/Rn3TDdJXP7"],
+			"mercado": ["R$99", "https://discord.gg/Rn3TDdJXP7"],
+			"latam": ["R$99", "https://discord.gg/Rn3TDdJXP7"],
+			"boleto": ["R$99", "https://discord.gg/Rn3TDdJXP7"],
+			"ltc": ["R$99", "https://discord.gg/Rn3TDdJXP7"]
+		},
+		"basic_to_ultimate": {
+			"pp": ["R$209", "https://discord.gg/Rn3TDdJXP7"],
+			"cc": ["R$209", "https://discord.gg/Rn3TDdJXP7"],
+			"picpay": ["R$209", "https://discord.gg/Rn3TDdJXP7"],
+			"mercado": ["R$209", "https://discord.gg/Rn3TDdJXP7"],
+			"latam": ["R$209", "https://discord.gg/Rn3TDdJXP7"],
+			"boleto": ["R$209", "https://discord.gg/Rn3TDdJXP7"],
+			"ltc": ["R$209", "https://discord.gg/Rn3TDdJXP7"]
+		},
+		"regular_to_ultimate": {
+			"pp": ["R$119", "https://discord.gg/Rn3TDdJXP7"],
+			"cc": ["R$119", "https://discord.gg/Rn3TDdJXP7"],
+			"picpay": ["R$119", "https://discord.gg/Rn3TDdJXP7"],
+			"mercado": ["R$119", "https://discord.gg/Rn3TDdJXP7"],
+			"latam": ["R$119", "https://discord.gg/Rn3TDdJXP7"],
+			"boleto": ["R$119", "https://discord.gg/Rn3TDdJXP7"],
+			"ltc": ["R$119", "https://discord.gg/Rn3TDdJXP7"]
+		}
+	},
+	"AC Market": {
+		"aliases": ["AC"],
+		"basic": {
+			"btc": ["€12.49", "https://acmarket.mysellix.io/product/stand-gtav-online6657aa2552593"],
+			"ltc": ["€12.49", "https://acmarket.mysellix.io/product/stand-gtav-online6657aa2552593"],
+			"eth": ["€12.49", "https://acmarket.mysellix.io/product/stand-gtav-online6657aa2552593"],
+			"psc": ["€12.49", "https://discord.com/invite/acmarket"]
+		},
+		"regular": {
+			"btc": ["€24.99", "https://acmarket.mysellix.io/product/stand-gtav-online6657aa2552593"],
+			"ltc": ["€24.99", "https://acmarket.mysellix.io/product/stand-gtav-online6657aa2552593"],
+			"eth": ["€24.99", "https://acmarket.mysellix.io/product/stand-gtav-online6657aa2552593"],
+			"psc": ["€24.99", "https://discord.com/invite/acmarket"]
+		},
+		"ultimate": {
+			"btc": ["€49.99", "https://acmarket.mysellix.io/product/stand-gtav-online6657aa2552593"],
+			"ltc": ["€49.99", "https://acmarket.mysellix.io/product/stand-gtav-online6657aa2552593"],
+			"eth": ["€49.99", "https://acmarket.mysellix.io/product/stand-gtav-online6657aa2552593"],
+			"psc": ["€49.99", "https://discord.com/invite/acmarket"]
+		},
+		"basic_to_regular": {
+			"btc": ["€12.49", "https://acmarket.mysellix.io/product/stand-gtav-online6657aa2552593"],
+			"ltc": ["€12.49", "https://acmarket.mysellix.io/product/stand-gtav-online6657aa2552593"],
+			"eth": ["€12.49", "https://acmarket.mysellix.io/product/stand-gtav-online6657aa2552593"],
+			"psc": ["€12.49", "https://discord.com/invite/acmarket"]
+		}
+	},
+	"Oak & Rocks": {
+		"aliases": ["GaryOak"],
+		"basic": {
+			"cc": ["$21", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"],
+			"pp": ["$21", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"],
+			"btc": ["$21", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"],
+			"google": ["$21", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"],
+			"wechat": ["$21", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"]
+		},
+		"regular": {
+			"cc": ["$38", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"],
+			"pp": ["$38", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"],
+			"btc": ["$38", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"],
+			"google": ["$38", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"],
+			"wechat": ["$38", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"]
+		},
+		"ultimate": {
+			"cc": ["$76", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"],
+			"pp": ["$76", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"],
+			"btc": ["$76", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"],
+			"google": ["$76", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"],
+			"wechat": ["$76", "https://oakandrocks.com/buy-mod-menu/stand-gta5/"]
+		}
+	},
+	"QLM Shop": {
+		"aliases": ["Abdou"],
+		"basic": {
+			"cc": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"pp": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"btc": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"ltc": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"eth": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"crypto2": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"europe": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"psc": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"]
+		},
+		"regular": {
+			"cc": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"pp": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"btc": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"ltc": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"eth": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"crypto2": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"europe": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"psc": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"]
+		},
+		"ultimate": {
+			"cc": ["€49.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"pp": ["€49.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"btc": ["€49.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"ltc": ["€49.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"eth": ["€49.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"crypto2": ["€49.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"europe": ["€49.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"psc": ["€49.99", "https://qlmshop.com/product/stand-gtav-online/"]
+		},
+		"basic_to_regular": {
+			"cc": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"pp": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"btc": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"ltc": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"eth": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"crypto2": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"europe": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"psc": ["€12.49", "https://qlmshop.com/product/stand-gtav-online/"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"pp": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"btc": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"ltc": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"eth": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"crypto2": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"europe": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"],
+			"psc": ["€24.99", "https://qlmshop.com/product/stand-gtav-online/"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["€37.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"pp": ["€37.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"btc": ["€37.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"ltc": ["€37.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"eth": ["€37.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"crypto2": ["€37.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"europe": ["€37.49", "https://qlmshop.com/product/stand-gtav-online/"],
+			"psc": ["€37.49", "https://qlmshop.com/product/stand-gtav-online/"]
+		}
+	},
+	"Super Keys": {
+		"aliases": ["ModdingEra"],
+		"basic": {
+			"cc": ["$12.49", "https://superkeys.net/product/stand-mod-menu/"],
+			"pp": ["$12.49", "https://superkeys.net/product/stand-mod-menu/"],
+			"google": ["$12.49", "https://superkeys.net/product/stand-mod-menu/"],
+			"apple": ["$12.49", "https://superkeys.net/product/stand-mod-menu/"],
+			"cashapp": ["$12.49", "https://superkeys.net/product/stand-mod-menu/"],
+			"venmo": ["$12.49", "https://superkeys.net/product/stand-mod-menu/"],
+			"skrill": ["$12.49", "https://superkeys.net/product/stand-mod-menu/"],
+			"crypto2": ["$12.49", "https://superkeys.net/product/stand-mod-menu/"],
+			"wise": ["$12.49", "https://superkeys.net/product/stand-mod-menu/"],
+			"btc": ["$12.49", "https://superkeys.net/product/stand-mod-menu/"],
+			"eth": ["$12.49", "https://superkeys.net/product/stand-mod-menu/"],
+			"ltc": ["$12.49", "https://superkeys.net/product/stand-mod-menu/"]
+		},
+		"regular": {
+			"cc": ["$30.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"pp": ["$30.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"google": ["$30.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"apple": ["$30.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"cashapp": ["$30.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"venmo": ["$30.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"skrill": ["$30.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"crypto2": ["$30.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"wise": ["$30.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"btc": ["$30.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"eth": ["$30.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"ltc": ["$30.99", "https://superkeys.net/product/stand-mod-menu/"]
+		},
+		"ultimate": {
+			"cc": ["$59.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"pp": ["$59.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"google": ["$59.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"apple": ["$59.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"cashapp": ["$59.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"venmo": ["$59.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"skrill": ["$59.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"crypto2": ["$59.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"wise": ["$59.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"btc": ["$59.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"eth": ["$59.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"ltc": ["$59.99", "https://superkeys.net/product/stand-mod-menu/"]
+		},
+		"basic_to_regular": {
+			"cc": ["$19.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"pp": ["$19.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"google": ["$19.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"apple": ["$19.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"cashapp": ["$19.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"venmo": ["$19.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"skrill": ["$19.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"crypto2": ["$19.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"wise": ["$19.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"btc": ["$19.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"eth": ["$19.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"ltc": ["$19.99", "https://superkeys.net/product/stand-mod-menu/"]
+		},
+		"regular_to_ultimate": {
+			"cc": ["$29.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"pp": ["$29.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"google": ["$29.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"apple": ["$29.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"cashapp": ["$29.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"venmo": ["$29.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"skrill": ["$29.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"crypto2": ["$29.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"wise": ["$29.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"btc": ["$29.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"eth": ["$29.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"ltc": ["$29.99", "https://superkeys.net/product/stand-mod-menu/"]
+		},
+		"basic_to_ultimate": {
+			"cc": ["$41.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"pp": ["$41.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"google": ["$41.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"apple": ["$41.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"cashapp": ["$41.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"venmo": ["$41.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"skrill": ["$41.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"crypto2": ["$41.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"wise": ["$41.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"btc": ["$41.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"eth": ["$41.99", "https://superkeys.net/product/stand-mod-menu/"],
+			"ltc": ["$41.99", "https://superkeys.net/product/stand-mod-menu/"]
+		}
+	},
+	"猫软招牌店": {
+		"aliases": ["Anne"],
+		"basic": {
+			"alipay": ["元90", "https://www.maoruanx.com/?cid=2&mid=2"],
+			"wechat": ["元90", "https://www.maoruanx.com/?cid=2&mid=2"]
+		},
+		"regular": {
+			"alipay": ["元190", "https://www.maoruanx.com/?cid=2&mid=2"],
+			"wechat": ["元190", "https://www.maoruanx.com/?cid=2&mid=2"]
+		},
+		"ultimate": {
+			"alipay": ["元380", "https://www.maoruanx.com/?cid=2&mid=2"],
+			"wechat": ["元380", "https://www.maoruanx.com/?cid=2&mid=2"]
+		}
+	},
+	"OxydMod": {
+		"aliases": ["icetea"],
+		"basic": {
+			"pp": ["€12.50", "https://oxydmod.com/products/stand/?attribute_option=Basic"],
+			"cc": ["€12.50", "https://oxydmod.com/products/stand/?attribute_option=Basic"],
+			"google": ["€12.50", "https://oxydmod.com/products/stand/?attribute_option=Basic"],
+			"apple": ["€12.50", "https://oxydmod.com/products/stand/?attribute_option=Basic"],
+			"btc": ["€12.50", "https://oxydmod.com/products/stand/?attribute_option=Basic"],
+			"ltc": ["€12.50", "https://oxydmod.com/products/stand/?attribute_option=Basic"],
+			"eth": ["€12.50", "https://oxydmod.com/products/stand/?attribute_option=Basic"]
+		},
+		"regular": {
+			"pp": ["€24.99", "https://oxydmod.com/products/stand/?attribute_option=Regular"],
+			"cc": ["€24.99", "https://oxydmod.com/products/stand/?attribute_option=Regular"],
+			"google": ["€24.99", "https://oxydmod.com/products/stand/?attribute_option=Regular"],
+			"apple": ["€24.99", "https://oxydmod.com/products/stand/?attribute_option=Regular"],
+			"btc": ["€24.99", "https://oxydmod.com/products/stand/?attribute_option=Regular"],
+			"ltc": ["€24.99", "https://oxydmod.com/products/stand/?attribute_option=Regular"],
+			"eth": ["€24.99", "https://oxydmod.com/products/stand/?attribute_option=Regular"]
+		},
+		"ultimate": {
+			"pp": ["€49.99", "https://oxydmod.com/products/stand/?attribute_option=Ultimate"],
+			"cc": ["€49.99", "https://oxydmod.com/products/stand/?attribute_option=Ultimate"],
+			"google": ["€49.99", "https://oxydmod.com/products/stand/?attribute_option=Ultimate"],
+			"apple": ["€49.99", "https://oxydmod.com/products/stand/?attribute_option=Ultimate"],
+			"btc": ["€49.99", "https://oxydmod.com/products/stand/?attribute_option=Ultimate"],
+			"ltc": ["€49.99", "https://oxydmod.com/products/stand/?attribute_option=Ultimate"],
+			"eth": ["€49.99", "https://oxydmod.com/products/stand/?attribute_option=Ultimate"]
+		}
+	},
+	"OctaMods": {
+		"aliases": ["Mel"],
+		"regular": {
+			"pp": ["£20.59", "https://discord.gg/99Ub3Xy37c"],
+			"cc": ["£20.59", "https://octamods.com/product/stand-mod-menu/?attribute_stand=Regular+%2824.99%E2%82%AC%29"]
+		},
+		"ultimate": {
+			"pp": ["£42.10", "https://discord.gg/99Ub3Xy37c"],
+			"cc": ["£42.10", "https://octamods.com/product/stand-mod-menu/?attribute_stand=Ultimate+%2849.99%E2%82%AC%29"]
+		}
+	},
+	"KeyCheap": {
+		"aliases": ["VLN"],
+		"basic": {
+			"cc": ["£10.60", "https://key-cheap.com/en/grand-theft-auto-v/22-40-stand-gta5-mod-menu.html#/26-stand_type-basic"],
+			"pp": ["£10.60", "https://key-cheap.com/en/grand-theft-auto-v/22-40-stand-gta5-mod-menu.html#/26-stand_type-basic"]
+		},
+		"regular": {
+			"cc": ["£18.92", "https://key-cheap.com/en/grand-theft-auto-v/22-41-stand-gta5-mod-menu.html#/27-stand_type-regular"],
+			"pp": ["£18.92", "https://key-cheap.com/en/grand-theft-auto-v/22-41-stand-gta5-mod-menu.html#/27-stand_type-regular"]
+		},
+		"ultimate": {
+			"cc": ["£37.84", "https://key-cheap.com/en/grand-theft-auto-v/22-42-stand-gta5-mod-menu.html#/28-stand_type-ultimate"],
+			"pp": ["£37.84", "https://key-cheap.com/en/grand-theft-auto-v/22-42-stand-gta5-mod-menu.html#/28-stand_type-ultimate"]
+		}
+	}
+}

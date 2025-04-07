@@ -1,0 +1,14 @@
+=== License Keys ===
+
+1. Create your account at https://stand.sh/account/register
+2. Follow the instructions on the page (save your account id, etc.)
+3. Once you're on the account dashboard, you can press "Download Launchpad." Your anti-virus might be causing you some trouble there.
+4. Run the Launchpad. See https://stand.sh/help/troubleshooting if you're having trouble with that.
+5. Ensure GTA V is running then inject Stand using the Launchpad.
+6. Click on the activation key from the account dashboard to activate Stand.
+
+=== Upgrade Keys ===
+
+1. Go to https://stand.sh/account and ensure you're logged in
+2. Scroll down until you see "Use your upgrade key"
+3. Paste the upgrade key into the input box and press enter

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your New Account | Stand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+	<link href="/halfmoon-config.css" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+	<div class="container-xl">
+		<div class="content">
+			<h1>What is your account id?</h1>
+			<form onsubmit="submit_quiz();return false;" method="GET" action="/bad_browser.txt">
+				<p><input type="password" class="form-control" placeholder="Your account id" required pattern="[a-z0-9]{31}" title="Stand Account ID" /></p>
+				<p>
+					<input type="submit" class="btn btn-primary" value="Proceed" />
+					<a type="reset" class="btn btn-default" onclick="leave_allowed=true;location.href='created'" href="#">I don't have it</a>
+				</p>
+			</form>
+		</div>
+	</div>
+	<script>
+		let leave_allowed = false;
+
+		if(!localStorage.getItem("account_id"))
+		{
+			location.href=".";
+		}
+
+		function submit_quiz()
+		{
+			leave_allowed = true;
+			let account_id = document.querySelector("input[type='password']").value;
+			if(account_id == localStorage.getItem("account_id"))
+			{
+				if (localStorage.getItem("account_created_quiz_success") === "true")
+				{
+					location.href=".";
+				}
+				else
+				{
+					$.post("/api/created_quiz_success",{account_id}).always(function()
+					{
+						localStorage.setItem("account_created_quiz_success", true);
+						location.href=".";
+					});
+				}
+			}
+			else
+			{
+				location.href="created";
+			}
+		}
+
+		window.onbeforeunload = function(e)
+		{
+			if(!leave_allowed)
+			{
+				e.preventDefault();
+				e.returnValue = "You paid money for this. Don't lose it.";
+				return "You paid money for this. Don't lose it.";
+			}
+		};
+	</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>

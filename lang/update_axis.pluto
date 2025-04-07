@@ -1,0 +1,35 @@
+local base_url <const> = "https://distributions.crowdin.net/14624846fb7591edd5983f9ks6s"
+
+local { http, json } = require"*"
+
+io.makedir("flex")
+
+function table.back(t)
+	return t[#t]
+end
+
+local codes = {}
+
+print("Downloading manifest..." )
+local manifest = http.request($"{base_url}/manifest.json") |> json.decode
+for lang, files in manifest.content do
+	local file = files[1]
+	local filename = file:split("/"):back()
+	print($"Downloading {filename}...")
+	io.contents("flex/"..filename, http.request($"{base_url}{file}?timestamp={manifest.timestamp}"))
+	codes[#codes + 1] = filename:split(".")[1]
+end
+
+os.execute("cd flex && php ../src/langwiz.phar convert flex axis")
+
+for codes as code do
+	io.rename("flex/"..code..".axis", code..".axis")
+end
+
+os.execute("php update.php")
+
+for io.listdir("flex") as file do
+	if file:sub(-5) == ".axis" then
+		io.remove(file)
+	end
+end

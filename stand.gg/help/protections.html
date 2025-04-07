@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stand Protections Guide</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+	<link href="/halfmoon-config.css" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+	<div class="page-wrapper with-navbar">
+		<nav class="navbar">
+			<div class="container-xl">
+				<a class="navbar-brand" href="/">Stand</a>
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="/account/">Account</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/help/">Help</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content-wrapper">
+			<div class="container-xl">
+				<div class="content">
+					<h1>Stand Protections Guide</h1>
+					<p>This guide will help you understand Stand's protection settings and how to get the most out of them.</p>
+					<h2>Default Configuration</h2>
+					<p>Stand's default protections configuration blocks most things a modder might throw at you, as long as blocking them won't break missions.</p>
+					<p>Stand also detects, logs, and attempts to fix some bad states the game might be in — some of these behaviours can be configured, like the Script Error Recovery.</p>
+					<h2>For Your Consideration</h2>
+					<p>As mentioned above, Stand will not block events that are used in missions by default, but they might still be abused by modders. Here's some of these for your consideration:</p>
+					<ul>
+						<li><b>Online > Protections > Events > Apartment Invite</b> — Consider blocking when not doing missions.</li>
+						<li><b>Online > Protections > Events > Force Camera Forward</b> — Consider blocking when not doing missions.</li>
+						<li><b>Online > Protections > Events > Raw Network Events > PTFX</b> — Used for the orbital cannon's explosion in freemode or sparks on your drill in missions, but can also be abused by modders to fill your screen and make you lag. Stand has a fairly effective protection against modded PTFX events (<code>Online > Reactions > Particle Spam Reactions</code>), but due to the game's design on a very rare occasion they're not identifiable. So, if you want to fully block all PTFX events — including those which aren't malicious — then you can use this.</li>
+						<li><b>Online > Protections > Events > Raw Network Events > Play Sound</b> — Used for dozens of every-day, normal networked sounds, but can be abused by modders to violate your eardrums. Stand attempts to detect and block modded sounds, but due to the game's design they aren't always identifiable. Consider blocking (perhaps from strangers) if you personally feel like it's a worthy trade-off.</li>
+						<li><b>Game > Info Overlay > Who's Spectating Who</b> — Will detect both when a legit player or when a modder is spectating you or someone else. This is useful to detect stealthy trolling features.</li>
+					</ul>
+					<h3>Pool Sizes</h3>
+					<p>There are some crashes that rely on overflowing your pools. This is a very inelegant way of crashing the game, so it's very rare. Nevertheless, you might want to have <b>Game > Early Inject Enhancements > Game Pools Size Multiplier</b> set to <b>2.0</b>, which doesn't require you to modify the memory pool size. Just be sure to always early-inject Stand.</p>
+					<h2>On Raw Network Events</h2>
+					<p>This is, as the name implies, a very "raw" section, and it is really easy to break the game by blindly blocking everything. With that in mind, here's some things you should not touch, and why you shouldn't touch them.</p>
+					<ul>
+						<li><b>REQUEST_CONTROL_EVENT</b> — Blocking this will cause people around you to be unable to drive their vehicles, and if those people are modders, expect kicks and crashes coming your way. Take a look at <b>Events > Vehicle Takeover</b>, instead.</li>
+						<li><b>NETWORK_CHECK_EXE_SIZE_EVENT</b> — Blocking this will make you unable to join sessions.</li>
+						<li><b>KICK_VOTES_EVENT</b> — More intelligent reactions can be found in <b>Online > Reactions > Vote Kick Reactions</b>.</li>
+					</ul>
+					<p>And just in general, <b>don't block it if you don't understand the impact of it</b>. Instead, consider enabling notifications on it, seeing what it correlates with, and only when you fully grasp it and decide you don't want it, should you block it.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

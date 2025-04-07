@@ -1,0 +1,4162 @@
+Self — Command: t self
+	Movement
+		Levitation
+			Levitation — Command: levitate [on/off]
+			Presets
+				Levitation
+				No Clip
+			Movement Speed (0.01 to 10000.00) — Command: levitatespeed [0.01 to 10000.00]
+			Sprint Multiplier (0.01 to 10000.00) — How fast you go while you press [Space]. — Command: levitatesprintmultiplier [0.01 to 10000.00]
+			Acceleration (0.00 to 10.00) — Acceleration increases the speed of levitation the longer you move. Resets once you sprint or stop moving. — Command: levitateaccel [0.00 to 10.00]
+			Movement Ignores Pitch — Disables forward and backward movement affecting height depending on where you're looking. — Command: levitateignorepitch [on/off]
+			Keep Momentum — Command: keepmomentum [on/off]
+			Apply Pitch to Entity — Command: levitateapplypitch [on/off]
+			Only Rotate On Movement — Command: levitaterotate [on/off]
+			Show Button Instructions — Command: levitatebuttoninstructions [on/off]
+			Min Distance From Ground (-10000.00 to 10000.00) — Command: levitatepassivemin [-10000.00 to 10000.00]
+			Max Distance From Ground (-10000.00 to 10000.00) — Command: levitatepassivemax [-10000.00 to 10000.00]
+			Speed (0 to 1000000) — Command: levitatepassivespeed [0 to 1000000]
+			Upward Force (0.00 to 10000.00) — Command: levitateassistup [0.00 to 10000.00]
+			Downward Force (0.00 to 10000.00) — Command: levitateassistdown [0.00 to 10000.00]
+			Downward Deadzone (0 to 100000) — How far from the ground you have to be before the assistant stops trying to pull you down. — Command: levitateassistdeadzone [0 to 100000]
+			Snapping (0.00 to 10000.00) — Command: levitateassistsnap [0.00 to 10000.00]
+		Walk And Run Speed (-10000.00 to 10000.00) — Command: walkspeed [-10000.00 to 10000.00]
+		Increased Friction — Reduces the slipperiness when turning with a high walk/run speed. — Command: friction [on/off]
+		Graceful Landing — Command: gracefullanding [on/off]
+		Super Jump — You can hold the jump button to jump higher. — Command: superjump [on/off]
+		Super Flight
+			Super Flight (-10000.00 to 10000.00) — Command: superflight [-10000.00 to 10000.00]
+			Button Instructions: Super Jump To Flight (On/Off)
+			Button Instructions: Controls (On/Off)
+		Walk Underwater — Command: walkunderwater [on/off]
+		Swim Speed (-10000.00 to 10000.00) — Command: swimspeed [-10000.00 to 10000.00]
+		Super Run (-10000.00 to 10000.00) — Command: superrun [-10000.00 to 10000.00]
+		Total Freedom — Allows you to sprint, sneak, and jump in interiors. — Command: movefreedom [on/off]
+		Walk On Air — Command: walkonair [on/off]
+		Swim In Air — Command: swiminair [on/off]
+		Drunk Mode — Command: drunkmode [on/off]
+		Tennis Mode — Command: tennismode [on/off]
+		Floppy Mode
+			Floppy Mode — Command: floppy [on/off]
+			Movement Speed (0.01 to 10000.00) — Command: floppyspeed [0.01 to 10000.00]
+			Sprint Multiplier (0.01 to 5.00) — How fast you go while you press [Space]. — Command: floppysprint [0.01 to 5.00]
+			Show Button Instructions — Command: floppyinstructions [on/off]
+			Prioritise Syncing — Caps the speed and disables ascend, descend, and sprint to ensure this will sync. — Command: floppysynch [on/off]
+		Reduced Collision — Enables walking through walls and vehicles. — Command: reducedcollision [on/off]
+		No Collision — Command: nocollision [on/off]
+		Freeze (On/Off)
+	Appearance
+		Transform
+			Search — Allows you to find models to transform into using their name. — Command: findmodel [clue]
+			Playable Characters
+				<5 Options>
+			Ground Animals
+				<31 Options>
+			Water Animals
+				<7 Options>
+			Flying Animals
+				<5 Options>
+			NPCs
+				<1025 Options>
+		Outfit — Command: outfit
+			Wardrobe — Command: wardrobe
+				Save Outfit
+					Save Outfit — Command: saveoutfit [name]
+					<41 More Options>
+				Prefabricated Outfits
+					Current Model: Default — The Rockstar-defined default outfit for your current model. — Command: defaultoutfit
+					Current Model: Random — Command: randomoutfit
+					Online Female: Topless — Command: toplessfemale
+					Online Male: Cop — Command: copmale
+					Online Female: Cop — Command: copfemale
+				Open Folder
+				Search — Command: searchoutfit [clue]
+			Disable Outfit Restrictions — Allows you to save outfits with duffel bags, etc. — Command: nooutfitrestrictions [on/off]
+			Disable In-Vehicle Hair Scaling — Command: nohairscaling [on/off]
+			Lock Outfit — Disallows outfit changes outside of Stand which breaks the Casino Heist and possibly other missions. ⚠️ — Command: lockoutfit [on/off]
+			<36 More Options>
+		Animations
+			Cancel — Command: cancelanim
+			Scenarios — Command: scenarios
+				<34 Options>
+			Animations — Command: animations
+				Dances — Command: dances
+					<24 Options>
+				<77 More Options>
+			Object Animations — Command: objectanimations
+				<35 Options>
+			Partial Movement (On/Off) — Allows you to move while performing an animation, at the cost of the animation's fidelity.
+			Looped Animations (On/Off) — This does not apply to scenarios.
+			Automatically Cancel (On/Off) — Automatically cancels your current animation when you attempt to move.
+		PTFX Trails
+			Particle
+				<501 Options>
+			Interval (ms) (0 to 1000) — Command: trailinterval [0 to 1000]
+			Scale (0.10 to 10.00) — Command: trailscale [0.10 to 10.00]
+			Horizontal Offset (-10.00 to 10.00) — Command: trailoffset [-10.00 to 10.00]
+			Head (On/Off)
+			Neck (On/Off)
+			Right Elbow (On/Off)
+			Left Elbow (On/Off)
+			Right Hand (On/Off)
+			Left Hand (On/Off)
+			Pelvis (On/Off)
+			Right Calf (On/Off)
+			Left Calf (On/Off)
+			Right Foot (On/Off)
+			Left Foot (On/Off)
+		Walk Style — Command: walkstyle (value)
+			<56 Options>
+		Preserve Walk Style During Combat — Prevents your character from going into "combat mode" whenever violence is around you. — Command: preservewalkstyle [on/off]
+		Scale (-10000.00 to 10000.00) — Changes the height, width, and depth of your character *locally*. — Command: scale [-10000.00 to 10000.00]
+		Scale Affects Camera — Command: scalecam [on/off]
+		Scale Affects Speed — Command: scalespeed [on/off]
+		Visual Z Correction (-10000.00 to 10000.00) — Corrects your characters visual Z position, to be used with scale. — Command: visualz [-10000.00 to 10000.00]
+		No Blood — Keeps your character free of blood. — Command: noblood [on/off]
+		Set Wetness (0 to 1000) — Command: wetness [0 to 1000]
+		Lock Wetness — Command: lockwetness [on/off]
+		Invisibility — Note: When in a vehicle, other players will still be able to see you unless you also make your vehicle invisible. — Command: invisibility (value)
+			Disabled — Command: invisibility off
+			Locally Visible — Command: invisibility remote
+			Enabled — Command: invisibility on
+		Death Effect
+			<501 Options>
+		Respawn Effect
+			<501 Options>
+	Weapons
+		Get Weapons — Command: getgun
+			All Weapons — Command: allguns — Can be used by other players with the Friendly Commands permission.
+			<8 More Options>
+		Remove Weapons — Command: removegun
+			All Weapons — Command: noguns — Can be used by other players with the Rude Commands permission.
+			<8 More Options>
+		When Shooting...
+			Anonymous Explosion (On/Off)
+			Owned Explosion (On/Off)
+			Burn (On/Off)
+			Die (On/Off)
+			Disarm (On/Off) — Will leave them with nothing but their fists.
+			Freeze (On/Off)
+			Cower (On/Off)
+			Flee (On/Off)
+			Push Away (On/Off)
+			Drive — Command: drivegun [on/off]
+			Revive — Command: revivegun [on/off]
+			Ragdoll (On/Off)
+			Repair (On/Off)
+			Weaken (On/Off) — Reduces their health so they'll die easily.
+			Delete — Command: deletegun [on/off]
+			AR Marker (On/Off)
+			Show Model Name (On/Off)
+		When Aiming...
+			Anonymous Explosion (On/Off)
+			Owned Explosion (On/Off)
+			Burn (On/Off)
+			Die (On/Off)
+			Disarm (On/Off) — Will leave them with nothing but their fists.
+			Freeze (On/Off)
+			Cower (On/Off)
+			Flee (On/Off)
+			Push Away (On/Off)
+			Drive (On/Off)
+			Revive (On/Off)
+			Ragdoll (On/Off)
+			Repair (On/Off)
+			Weaken (On/Off) — Reduces their health so they'll die easily.
+			Delete (On/Off)
+			AR Marker (On/Off)
+			Show Model Name (On/Off)
+		Gravity Gun
+			Gravity Gun — Command: gravitygun [on/off]
+			Contrived Physics — Command: gravityguncontrivedphysics [on/off]
+			Force Multiplier (0.01 to 10.00) — Command: gravitygunforce [0.01 to 10.00]
+			Collision — Command: gravityguncollision [on/off]
+		Vehicle Gun — Makes your guns shoot vehicles. — Command: vehiclegun
+			Vehicle Gun — Makes your guns shoot vehicles. — Command: vehiclegun [on/off]
+			Vehicle
+				Random
+				Super
+					<57 Options>
+				Service
+					<13 Options>
+				Utility
+					<47 Options>
+				Helicopters
+					<29 Options>
+				Motorcycles
+					<59 Options>
+				SUVs
+					<46 Options>
+				Sports
+					<115 Options>
+				Planes
+					<33 Options>
+				Emergency
+					<27 Options>
+				Military
+					<17 Options>
+				Sports Classic
+					<47 Options>
+				Compacts
+					<18 Options>
+				Sedans
+					<42 Options>
+				Boats
+					<25 Options>
+				Commercial
+					<23 Options>
+				Off-Road
+					<67 Options>
+				Vans
+					<40 Options>
+				Muscle
+					<90 Options>
+				Cycles
+					<9 Options>
+				Industrial
+					<10 Options>
+				Coupes
+					<20 Options>
+				Open Wheel
+					<4 Options>
+			Speed (20 to 200) — Command: vehiclegunspeed [20 to 200]
+			Distance (10 to 30) — Command: vehiclegundistance [10 to 30]
+		Components — Allows you to view and modify what components your selected weapon has.
+		Lock Weapons
+			Lock Weapons — Command: lockweapons [on/off]
+			Loadouts — Command: lockweaponpresets
+				Save Loadout — Saves your currently-equipped weapons into a Command Box Script to easily apply the loadout to Lock Weapons. — Command: lockweaponpresetssave [name]
+			Only Remove Selected Weapons — Turns "Lock Weapons" into a "Blacklist Weapons", such that selected weapons will only be removed. — Command: invertlockweapons [on/off]
+			<8 More Options>
+		Current Weapon: Tint — Command: weapontint
+		Current Weapon: Tint: Rainbow Mode (0 to 1000) — Command: weapontintrainbow [0 to 1000]
+		Aimbot
+			Aimbot — Command: aimbot [on/off]
+			Target Selection
+				Players — Command: aimbotplayers [on/off]
+				Pedestrians — Command: aimbotpeds [on/off]
+				Vehicles — Command: aimbotvehicles [on/off]
+				Distance (0 to 30000) — Command: aimbotrange [0 to 30000]
+				Exclude Friends — Command: aimbotexcludefriends [on/off]
+				Exclude Crew Members — Command: aimbotexcludecrewmembers [on/off]
+				Exclude Stand Users — Command: aimbotexcludestandusers [on/off]
+				Exclude Organisation Members — Command: aimbotexcludeorgmembers [on/off]
+			Show Box — Command: aimbotbox [on/off]
+			Re-engage Time (ms) (0 to 10000) — How long the aimbot will stay disabled for after you've moved the camera. — Command: aimbotlockout [0 to 10000]
+			Smoothing (0 to 1000) — Command: aimbotsmoothing [0 to 1000]
+			Line-of-Sight Check — Command: aimbotloscheck [on/off]
+			Magic Bullets — Command: aimbotmagicbullets [on/off]
+			Target Bone — Command: aimbotbone (value)
+				Head
+				Neck
+				Right Elbow
+				Left Elbow
+				Right Hand
+				Left Hand
+				Pelvis
+				Right Calf
+				Left Calf
+				Right Foot
+				Left Foot
+		Triggerbot
+			Triggerbot — Command: triggerbot [on/off]
+			Magic Bullets — Makes sure the triggerbot never misses. — Command: magicbullets [on/off]
+			Players — Command: triggerbotplayers [on/off]
+			Pedestrians — Command: triggerbotpeds [on/off]
+			Vehicles — Command: triggerbotvehicles [on/off]
+			Distance (0 to 30000) — Command: triggerbotrange [0 to 30000]
+			Exclude Friends — Command: triggerbotexcludefriends [on/off]
+			Exclude Crew Members — Command: triggerbotexcludecrewmembers [on/off]
+			Exclude Stand Users — Command: triggerbotexcludestandusers [on/off]
+			Exclude Organisation Members — Command: triggerbotexcludeorgmembers [on/off]
+		Proximity Rockets
+			Proximity Rockets — Proximity rockets only work on other players. — Command: proxyrockets [on/off]
+			Range (0.50 to 5.00) — Command: proxyrange [0.50 to 5.00]
+		Fill All Ammo — Command: fillammo
+		Remove All Ammo — Command: removeammo
+		Infinite Ammo — Command: bottomless [on/off]
+		Skip Reloading — Command: noreload [on/off]
+		No Spread — Command: nospread [on/off]
+		No Recoil — Command: norecoil [on/off]
+		No Spooling — Removes the delay before firing from applicable weapons. — Command: nospooling [on/off]
+		Rapid Fire — Command: rapidfire [on/off]
+		Rapid Fire Vehicle Weapons — Command: vehiclerapidfire [on/off]
+		Damage Multiplier (0.00 to 10000.00) — Applies a multiplier to the damage dealt by your fists and guns. — Command: damagemultiplier [0.00 to 10000.00]
+		Range Multiplier (0.00 to 1.50) — Command: rangemultiplier [0.00 to 1.50]
+		Rocket Speed Multiplier (0.00 to 30.00) — Command: rocketspeedmultiplier [0.00 to 30.00]
+		Super Melee (0 to 10) — Slings NPCs and vehicles away from you after you melee-attack them. Will not work on other players. — Command: supermelee [0 to 10]
+		Bullets In Shotgun Batch (0 to 16) — Command: shotgunbatchsizemultiplier [0 to 16]
+		Instant Lock-On — Command: instantlockon [on/off]
+		Instant Proximity Mine Detonation — Command: instantproxy [on/off]
+		Explosive Hits — Command: explosivehits [on/off]
+		Explosion Type — Lets you select the explosion type of Explosive Hits. — Command: exptype (value)
+			<84 Options>
+		Impact Particles — Command: impactparticles [on/off]
+		Particle — Lets you select the particle to use for Impact Particles.
+			<500 Options>
+		Total Freedom — Allows you to use weapons in interiors and in passive mode. — Command: gunfreedom [on/off]
+		Increased Sticky Limit (On/Off) — This refers to the amount you can put into the world, not into your inventory.
+		Increased Flare Limit (On/Off) — This refers to the amount you can put into the world, not into your inventory.
+		Teleport Gun — Command: tpgun [on/off]
+		Laser Sights — Command: lasersights [on/off]
+	Bodyguards
+		Spawn
+			Spawn — Command: spawnbodyguards
+			Count (1 to 7) — Command: bodyguardcount [1 to 7]
+			Model — Command: bodyguardmodel (value)
+				Playable Characters
+					<6 Options>
+				Ground Animals
+					<31 Options>
+				Water Animals
+					<7 Options>
+				Flying Animals
+					<5 Options>
+				NPCs
+					<1025 Options>
+			Primary Weapon — Bodyguards will use their primary weapon whenever possible. Otherwise, they will try to use their secondary weapon. — Command: bodyguardprimary (value)
+				Melee Weapons
+					<20 Options>
+				Pistols
+					<21 Options>
+				Machine Guns
+					<13 Options>
+				Rifles
+					<14 Options>
+				Shotguns
+					<10 Options>
+				Sniper Rifles
+					<6 Options>
+				Heavy Weapons
+					<11 Options>
+			Secondary Weapon — Bodyguards will use their primary weapon whenever possible. Otherwise, they will try to use their secondary weapon. — Command: bodyguardsecondary (value)
+				Melee Weapons
+					<20 Options>
+				Pistols
+					<21 Options>
+				Machine Guns
+					<13 Options>
+				Rifles
+					<14 Options>
+				Shotguns
+					<10 Options>
+				Sniper Rifles
+					<6 Options>
+				Heavy Weapons
+					<11 Options>
+		Presets — Command: bodyguardpresets
+			Save Preset — Command: bodyguardpresetssave [name]
+		Behaviour
+			Formation — Command: bodyguardformation (value)
+				None — Command: bodyguardformation none
+				Line — Command: bodyguardformation line
+				Circle — Command: bodyguardformation circle
+				Alternative Circle — Command: bodyguardformation altcircle
+			Aggression — Command: bodyguardaggression (value)
+				Friendly — Defends you and others from AI attackers. Won't attack players. — Command: bodyguardaggression friendly
+				Defensive — Defends you from any hostile targets. — Command: bodyguardaggression defensive
+				Aggressive — Defends you from hostile targets, but often engages on sight. — Command: bodyguardaggression aggressive
+			Exclude Players — Prevents your bodyguards from attacking this demographic. — Command: bodyguardsignoreplayers [on/off]
+			Exclude Friends — Prevents your bodyguards from attacking this demographic. — Command: bodyguardsignorefriends [on/off]
+			Exclude Authorities — Prevents your bodyguards from attacking this demographic. — Command: bodyguardsignoreauthorities [on/off]
+			Exclude Crew Members — Prevents your bodyguards from attacking this demographic. — Command: bodyguardsignorecrewmembers [on/off]
+			Exclude Organisation Members — Prevents your bodyguards from attacking this demographic. — Command: bodyguardsignoreorganisationmembers [on/off]
+		Immortality — Command: bodyguardimmortality [on/off]
+		Teleport To Me — Command: tpbodyguards
+		Teleport When Far — Command: bodyguardsteleportwhenfar [on/off]
+		Delete All Bodyguards — Command: delbodyguards
+	Immortality — Makes your character unable to die. — Command: godmode [on/off]
+	Auto Heal — Keeps your character at maximum health and armour. — Command: demigodmode [on/off]
+	Maximum Health (200 to 15000) — Command: maxhealth [200 to 15000]
+	Gracefulness — Makes your character unable to fall over. — Command: grace [on/off]
+	Glued To Seats — Makes your character unable to fall off bikes. — Command: seatbelt [on/off]
+	Set Wanted Level (0 to 5) — Command: wanted [0 to 5] — Can be used by other players with the Neutral Commands permission.
+	Lock Wanted Level — Command: lockwantedlevel [on/off]
+	Fake Wanted Level (0 to 6) — Changes the number of wanted stars shown in the top-right corner. — Command: fakewantedlevel [0 to 6]
+	Infinite Stamina — Command: infstamina [on/off]
+	Lock Parachutes — Command: paralock (value)
+		Disabled — Command: paralock off
+		Full — Command: paralock full
+		Empty — Command: paralock empty
+	Clumsiness — Makes your character fall over more often. — Command: clumsiness [on/off]
+	No Combat Roll Cooldown — Command: norollcooldown [on/off]
+	Respawn At Place Of Death — Command: respawnrecall [on/off]
+	Respawn Delay (0.00 to 5.00) — Changes the respawn time in GTA Online to the given amount of seconds. — Command: respawndelay [0.00 to 5.00]
+	Regeneration Rate — Command: regenrate
+		Health (0.00 to 50.00) — Increases your health by this amount, per second. — Command: healthrate [0.00 to 50.00]
+		Armour (0.00 to 50.00) — Increases your armour by this amount, per second. — Command: armourrate [0.00 to 50.00]
+		Only In Cover — Command: regenonlyincover [on/off]
+	Refill Health — Command: refillhealth
+	Refill Armour — Command: refillarmour
+	Suicide — Command: ewo
+Vehicle — Command: t vehicle
+	Spawner — Command: spawner
+		Search — Command: findvehicle [clue]
+		DLCs
+			Bottom Dollar Bounties
+				<21 Options>
+			The Chop Shop
+				<33 Options>
+			San Andreas Mercenaries
+				<17 Options>
+			Drug Wars
+				<17 Options>
+			The Criminal Enterprises
+				<18 Options>
+			The Contract
+				<17 Options>
+			LS Tuners
+				<18 Options>
+			Cayo Perico Heist
+				<21 Options>
+			LS Summer Special
+				<15 Options>
+			Diamond Casino Heist
+				<20 Options>
+			Diamond Casino & Resort
+				<22 Options>
+			Arena War
+				<46 Options>
+			After Hours
+				<14 Options>
+			Southern SA Super Sport Series
+				<16 Options>
+			The Doomsday Heist
+				<30 Options>
+			Smuggler's Run
+				<19 Options>
+			Gunrunning Pack
+				<19 Options>
+			Special Vehicle Circuit
+				<4 Options>
+			Import/Export
+				<24 Options>
+			Bikers
+				<21 Options>
+			Cunning Stunts
+				<15 Options>
+			Further Adventures in Finance and Felony
+				<14 Options>
+			Lowriders: Custom Classics
+				<7 Options>
+			Be My Valentine
+				<One Option>
+			January 2016
+				<2 Options>
+			Festive Surprise 2015
+				<One Option>
+			Executives and Other Criminals
+				<25 Options>
+			Halloween Surprise
+				<2 Options>
+			Lowriders
+				<8 Options>
+			Ill-Gotten Gains Part 2
+				<6 Options>
+			Ill-Gotten Gains Part 1
+				<6 Options>
+			Heists DLC
+				<21 Options>
+			Festive Surprise 2014
+				<4 Options>
+			Next Gen Release
+				<13 Options>
+			Last Team Standing
+				<3 Options>
+			SA Flight School
+				<4 Options>
+			Independence Day
+				<2 Options>
+			I'm Not a Hipster
+				<7 Options>
+			High Life
+				<4 Options>
+			Business
+				<4 Options>
+			Valentine's Day Massacre
+				<One Option>
+			Beach Bum
+				<4 Options>
+			Game Launch
+				<298 Options>
+		Classes
+			Boats
+				<26 Options>
+			Commercial
+				<23 Options>
+			Compacts
+				<18 Options>
+			Coupes
+				<20 Options>
+			Cycles
+				<9 Options>
+			Emergency
+				<27 Options>
+			Helicopters
+				<29 Options>
+			Industrial
+				<11 Options>
+			Military
+				<17 Options>
+			Motorcycles
+				<59 Options>
+			Muscle
+				<90 Options>
+			Off-Road
+				<67 Options>
+			Open Wheel
+				<4 Options>
+			Planes
+				<44 Options>
+			SUVs
+				<46 Options>
+			Sedans
+				<42 Options>
+			Service
+				<13 Options>
+			Sports
+				<115 Options>
+			Sports Classic
+				<47 Options>
+			Super
+				<57 Options>
+			Trains
+				<10 Options>
+			Utility
+				<50 Options>
+			Vans
+				<40 Options>
+		List Of Spawned Vehicles — Command: listofspawnedvehicles
+		Input Model Name — The "expert mode" way of spawning vehicles. — Command: spawn [model name] — Can be used by other players with the Spawn Commands permission.
+		On Foot Behaviour
+			Drive Spawned Vehicles — Instantly puts you into the driver seat of vehicles that you spawn via Stand. — Command: footspawndrive [on/off]
+			Spawn Aircraft In The Air — Command: footspawnair [on/off]
+			Spawn In Front — Puts vehicles that you spawn via Stand a few metres in front of you. — Command: footspawnfront [on/off]
+			Spawn Like Personal Vehicle — Command: footlikepv [on/off]
+			Delete Previous Vehicle — Command: footspawndelete [on/off]
+		In Vehicle Behaviour
+			Drive Spawned Vehicles — Instantly puts you into the driver seat of vehicles that you spawn via Stand. — Command: vehspawndrive [on/off]
+			Spawn Aircraft In The Air — Command: vehspawnair [on/off]
+			Spawn In Front — Puts vehicles that you spawn via Stand a few metres in front of you. — Command: vehspawnfront [on/off]
+			Spawn Like Personal Vehicle — Command: vehlikepv [on/off]
+			Delete Previous Vehicle — Command: vehspawndelete [on/off]
+			Keep Velocity — Command: vehspawnvelocity [on/off]
+		Manufacturer Names (On/Off)
+		Make Spawned Vehicles Indestructible — Command: spawngod [on/off]
+		Tune Spawned Vehicles — Lets you select the tuning profile for vehicles spawned via Stand. — Command: spawntune (value)
+			Stock — Command: spawntune stock
+			Performance — Only upgrades Engine, Brakes, Transmission, Armour and Turbo. — Command: spawntune performance
+			Performance, Including Spoiler — Command: spawntune perfwithspoiler
+			Fully — Command: spawntune full
+		Spawned Vehicles License Plate — Command: spawnplate [text]
+		Colour Spawned Vehicles
+			Colour Spawned Vehicles (On/Off)
+			Primary Colour — Command: spawnprimarycolour
+			Secondary Colour — Command: spawnsecondarycolour
+		Blips On Spawned Vehicles
+			Blips On Spawned Vehicles — Command: blipsonspawnedvehicles [on/off]
+			Colour — Command: spawnedvehiclesblipcolour
+			Scale (0.20 to 2.00) — Command: spawnedvehiclesblipscale [0.20 to 2.00]
+			Only For Latest Vehicle (On/Off)
+			Remove Blips — Command: clearspawnedblips
+	Garage
+		Search — Command: findsaved [clue]
+		Save Vehicle — Command: savevehicle [name]
+		Open Folder
+	Personal Vehicles — Command: pvs
+		Search — Command: findpv [clue]
+		Sort By
+			Name
+			Slot
+		Save All To Garage — Saves the data of all your personal vehicles to Stand's garage. — Command: saveallpvs
+	Current Personal Vehicle — Command: personalvehicle
+		Teleport To Me & Drive — Command: callpersonalvehicle
+		Enter — Command: enterpersonalvehicle
+		Imani Tech Remote Control
+		Return To Storage — Command: returnpv
+	Last Vehicle — Command: lastvehicle
+		Teleport To Me & Drive — Command: calllastvehicle
+		Enter — Command: enterlastvehicle
+		Remote Control — Command: rc [on/off]
+		Follow Me — Command: vehfollow [on/off]
+	Los Santos Customs — Command: lsc
+		Performance
+			Armour — Command: armour
+			Brakes — Command: brakes
+			Engine — Command: engine
+			Spoilers — Command: spoilers
+			Transmission — Command: transmission
+			Turbo — Command: turbo [on/off]
+		Appearance
+			Primary Colour — Command: vehprimary
+				Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: vehprimaryrainbow [0 to 1000]
+				Finish — Command: vehprimaryfinish (value)
+					Normal
+					Metallic
+					Pearlescent
+					Matte
+					Metal
+					Chrome
+					Chameleon
+				LSC Colours — Command: vehprimarylsc
+					Search — Command: searchvehprimarylsc [clue]
+					Black
+					<160 More Options>
+			Secondary Colour — Command: vehsecondary
+				Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: vehsecondaryrainbow [0 to 1000]
+				Finish — Command: vehsecondaryfinish (value)
+					Normal
+					Metallic
+					Pearlescent
+					Matte
+					Metal
+					Chrome
+					Chameleon
+				LSC Colours — Command: vehsecondarylsc
+					Search — Command: searchvehsecondarylsc [clue]
+					Black
+					<160 More Options>
+				Copy Primary Colour
+			Pearlescent Colour — Command: vehpearlescent
+				Search — Command: searchvehpearlescent [clue]
+				Black
+				<160 More Options>
+			Interior Colour — Command: vehinteriorcolour
+				Search — Command: searchvehinteriorcolour [clue]
+				Black
+				<160 More Options>
+			Neon Lights
+				Colour — Command: neoncolour
+					Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: neoncolourrainbow [0 to 1000]
+				All — Command: vehneonall [on/off]
+				Front — Command: vehneonfront [on/off]
+				Back — Command: vehneonback [on/off]
+				Left — Command: vehneonleft [on/off]
+				Right — Command: vehneonright [on/off]
+			Wheels
+				Wheels Category — Command: wheeltype
+				Front Wheels — Command: frontwheels
+				Wheels Colour — Command: vehwheelcolour
+					Search — Command: searchvehwheelcolour [clue]
+					Black
+					<160 More Options>
+				Tyre Smoke Colour — Command: vehtire
+					Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: vehtirerainbow [0 to 1000]
+					Independence Day Tyre Smoke — Command: independencetiresmoke [on/off]
+					Copy Primary Colour
+				Drift Tyres — Command: drifttyres [on/off]
+				Bulletproof Tyres — Command: bulletprooftyres [on/off]
+			License Plate
+				Type — Command: platetype
+				Text — Command: plate [text]
+				Randomise — Command: platerandomise
+				Scrolling Text
+					Scrolling Text — Command: platescroll [on/off]
+					Text — Command: scrollplatetext [value]
+					Interval (ms) (0 to 60000) — Command: platescrolldelay [0 to 60000]
+				Speedometer — Command: platespeedometer [on/off]
+				Ticks Per Second — Equal to frames per second. — Command: platetps [on/off]
+				Lock License Plate Text — Command: lockplate [on/off]
+			Parachute
+				Enable Parachute — Doesn't have an effect on all vehicles, e.g. not on motorcycles. — Command: vehparachute (value)
+					Don't Override — Command: vehparachute default
+					Enabled — Command: vehparachute on
+					Disabled — Command: vehparachute off
+				Appearance — Note that after you have opened the vehicle's parachute, not all changes will apply.
+					Generic Parachute: Rainbow
+					Generic Parachute: Red
+					Generic Parachute: White, Blue, Yellow
+					Generic Parachute: Black, Red, White
+					Generic Parachute: Red, White, Blue
+					Generic Parachute: Blue
+					Generic Parachute: Black
+					Generic Parachute: Black, Yellow
+					Generic Parachute: Yellow, Blue, White
+					Generic Parachute: Orange
+					Generic Parachute: White
+					SecuroServ
+					Broken Parachute
+			Extras
+				<15 Options>
+			Scorched — Command: scorched [on/off]
+			Remove Turret — This will only affect your game. — Command: tonk [on/off]
+			Show Non-Applicable (On/Off)
+			Headlights — Command: headlights
+			Window Tint — Command: windowtint
+			Roof Livery — Command: rooflivery
+			Horns — Command: horns
+			Livery — Command: livery
+			Side Skirt — Command: sideskirt
+			Suspension — Command: suspension
+			Exhaust — Command: exhaust
+			Frame — Command: frame
+			Front Bumper / Countermeasures — Command: frontbumper
+			Rear Bumper — Command: rearbumper
+			Hood — Command: hood
+			Roof / Weapons — Command: roof
+			Fender — Command: fender
+			Right Fender — Command: rightfender
+			Grille — Command: grille
+			Plate Holders — Command: plateholders
+			Vanity Plates — Command: vanityplates
+			Trim Design — Command: trimdesign
+			Ornaments — Command: ornaments
+			Dashboard — Command: dashboard
+			Dial Design — Command: dialdesign
+			Seats — Command: seats
+			Door Speaker — Command: doorspeaker
+			Steering Wheel — Command: steeringwheel
+			Shift Lever — Command: shiftlever
+			Plaques — Command: plaques
+			Speakers — Command: speakers
+			Trunk — Command: trunk
+			Hydraulics — Command: hydraulics
+			Engine Block — Command: engineblock
+			Boost / Air Filter — Command: boostairfilter
+			Struts — Command: struts
+			Arch Cover — Command: archcover
+			Aerials — Command: aerials
+			Trim — Command: trim
+			Tank — Command: tank
+			Left Door — Command: leftdoor
+			Right Door — Command: rightdoor
+			Lightbar — Command: lightbar
+		Upgrade — Fully upgrades your current or last vehicle. — Command: tune
+		Performance Upgrade — Upgrades your current or last vehicle's EMS, Brakes, Transmission, Armour and Turbo. — Command: performance
+		Performance Upgrade, Including Spoiler — Command: perfwithspoiler
+		Random Upgrade — Command: randomtune
+		Downgrade — Resets your current or last vehicle to stock tuning. — Command: untune
+	Movement
+		Super Drive
+			Presets
+				Super Drive
+				Horn Boost
+			Super Drive — Command: superdrive [on/off]
+			Super Drive Uses Camera — Changes the definition of "forward" for Super Drive to be where you're looking instead of where your vehicle is going. — Command: superdrivecam [on/off]
+			Speed (-10000.00 to 10000.00) — Command: superdrivespeed [-10000.00 to 10000.00]
+			Controller Button — Command: superdrivecontrollerbutton (value)
+				<16 Options>
+		Super Handbrake — Command: superhandbrake [on/off]
+		Drive On Water — Command: driveonwater [on/off]
+		Drive Underwater — Command: waterwheels [on/off]
+		Speed Limit (KMH) (0 to 10000) — Sets the speed limit of vehicles that you pilot or drive. (Default: 540) — Command: speedlimit [0 to 10000]
+		Handling Editor
+			Base
+				<51 Options>
+			Bikes
+				<21 Options>
+			Boats
+				<28 Options>
+			Car
+				<12 Options>
+			Trailers
+				<9 Options>
+			Flying
+				<40 Options>
+			Vertical Flying
+				<40 Options>
+			Special Flight
+				<25 Options>
+			Seaplanes
+				<11 Options>
+			Submarines
+				<8 Options>
+			Show Non-Applicable (On/Off)
+			Presets — Command: handlingpreset
+				Save Preset — Command: handlingpresetsave [name]
+		Special Flight — Note that for vehicles other than the Deluxo, the "roof" input (Hold H or D-Pad Right) is used to toggle special flight.
+			Don't Override
+			Deluxo
+			Oppressor Mk II
+		Jump Ability — Note that if have both the jump and rocket boost ability, the game will move the boost to the secondary key. — Command: vehjump (value)
+			Don't Override — Command: vehjump default
+			Enabled — Command: vehjump on
+			Disabled — Command: vehjump off
+		Glide Ability — Command: vehglide (value)
+			Don't Override — Command: vehglide default
+			Enabled — Command: vehglide on
+			Disabled — Command: vehglide off
+		No Turbulence — Command: smoothflight [on/off]
+		Disable Heli Auto-Stabilisation — Originally inspired by Murten's BetterHeliMode script. — Command: heliautostabilisation [on/off]
+		Gravity Multiplier
+			Gravity Multiplier (-100.00 to 100.00) — Command: gravitymultiplier [-100.00 to 100.00]
+			Not In Aircraft — Command: gravitynotinaircraft [on/off]
+		Engine Power Multiplier (1.00 to 20.00) — Command: enginepowermult [1.00 to 20.00]
+		Custom Wings Behaviour — Allows you to customise the behaviour of the wings on the original oppressor.
+			Custom Wings Behaviour — Allows you to customise the behaviour of the wings on the original oppressor. — Command: wingsmod [on/off]
+			Min Position (-100000 to 100000) — Command: wingsmin [-100000 to 100000]
+			Max Position (-100000 to 100000) — Command: wingsmax [-100000 to 100000]
+			Speed (0 to 1000000) — Command: wingsspeed [0 to 1000000]
+			Set Speed Based On Max Position
+		Lessen Tyre Burnouts — Command: launchcontrol [on/off]
+		Smooth Coasting — Reduces the idle deacceleration of your vehicle to a more realistic pace. — Command: smoothcoasting [on/off]
+		Drift Mode — Our recreation of the drift tuning, which is only available for a handful of vehicles. Our version works for much more vehicles, but some vehicles will not feel as smooth as others. — Command: driftmode [on/off]
+	Rocket Boost
+		Override — Allows you to change whether the vehicles you drive have rocket boost. — Command: vehrocket (value)
+			Don't Override — Command: vehrocket default
+			Enabled — Command: vehrocket on
+			Disabled — Command: vehrocket off
+		Vertical Rocket Boost — Command: verticalboost (value)
+			Don't Override — Command: verticalboost default
+			Enabled — Command: verticalboost on
+			Disabled — Command: verticalboost off
+		Charge Behaviour — Command: boostcharge (value)
+			Normal — Command: boostcharge normal
+			Infinite — Makes the boost never end unless you crash. — Command: boostcharge infinite
+			Instant Refill — Refills the boost immediately after it runs out. — Command: boostcharge instantrefill
+			No Refill Time — Refills the boost immediately when its conditions are met. — Command: boostcharge norefilltime
+			Always Empty — Command: boostcharge empty
+		Auto Rocket Boost — Automatically uses the rocket boost when it's charged. — Command: autoboost [on/off]
+	Collisions
+		Ramp — Command: vehramp (value)
+			Don't Override — Command: vehramp default
+			Enabled — Command: vehramp on
+			Disabled — Command: vehramp off
+		Ramming Scoop — Command: vehscoop (value)
+			Don't Override — Command: vehscoop default
+			Enabled — Command: vehscoop on
+			Disabled — Command: vehscoop off
+		Increased Ramming Force — Command: increasedrammingforce (value)
+			Don't Override — Command: increasedrammingforce default
+			Enabled — Command: increasedrammingforce on
+			Disabled — Command: increasedrammingforce off
+		No Collision With Other Vehicles — Command: ghostvehicles [on/off]
+		No Collision With Peds — Command: nopedcollision [on/off]
+		No Collision With Objects — Note this excludes stationary map objects like trees. — Command: noobjcollision [on/off]
+		No Collision — Completely disables collision for your current vehicle (not recommended for non-flying vehicles). — Command: vehiclenocollision [on/off]
+	Open/Close Doors
+		All Doors — Command: openvehdoors [on/off]
+		Front Left (On/Off)
+		Front Right (On/Off)
+		Back Left (On/Off)
+		Back Right (On/Off)
+		Hood (On/Off)
+		Trunk (On/Off)
+		Back (On/Off)
+		Back 2 (On/Off)
+	Lock Doors
+		Lock Doors — Command: lockdoors [on/off]
+		Only When Vacant — Command: lockwhenvacant [on/off]
+		Exclude Other's Personal Vehicles — Command: excludeotherslock [on/off]
+		Exclude Friends (On/Off)
+		Exclude Crew Members (On/Off)
+		Exclude Stand Users (On/Off)
+		Exclude Organisation Members (On/Off)
+		Exclude Missions (On/Off)
+	AR Speedometer — Gives your character AR glasses running a speedometer app.
+		AR Speedometer — Gives your character AR glasses running a speedometer app. — Command: arspeedometer [on/off]
+		Colour — Command: arspeedhex
+			Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: arspeedrainbow [0 to 1000]
+		Native Rendering — Command: arspeednative [on/off]
+	Countermeasures — Command: countermeasures
+		Auto-Deploy — Command: autodeploy (value)
+			Disabled
+			Flares
+			Chaff
+			Both
+		Deploy Chaff — Command: deploychaff
+		Deploy Flares — Command: deployflares
+		Deploy Flares & Chaff — Command: deployboth
+		Count (1 to 10) — Command: cmcount [1 to 10]
+		Only In Aircraft — Command: onlyaircraft [on/off]
+		Pattern — Command: flarepattern (value)
+			Horizontal
+			Horizontal, Downwards
+			Horizontal, Upwards
+			Vertical
+			Vertical, Downwards
+			Random
+		Periodic Deployment — Command: periodiccm [on/off]
+		Periodic Deployment: Delay (1 to 10) — Command: periodiccmdelay [1 to 10]
+	Auto-Drive — Command: autodrive
+		Drive To... — Command: goto
+			Wherever The Wind Takes Us — Drives you around with no specific destination. — Command: goto none
+			Waypoint — Command: goto waypoint
+			Objective — Command: goto objective
+			Casino — Command: goto casino
+			Ammu-Nation — Command: goto ammunation
+			Clothes Store — Command: goto clothesstore
+			Tattoo Parlor — Command: goto tattooparlor
+			Barber Shop — Command: goto barber
+			Los Santos Customs — Command: goto lossantoscustoms
+			Movies — Command: goto movies
+			Store — Command: goto store
+			Motorcycle Gang Clubhouse — Command: goto mc
+			Facility — Command: goto facility
+			Agency — Command: goto agency
+			Office — Command: goto office
+			Hangar — Command: goto hangar
+		Cancel — Command: stopautodrive
+		Cruise Speed (0.00 to 80.00) — Command: autodrivespeed [0.00 to 80.00]
+		Driving Style — Command: autodrivestyle (value)
+			Lawful
+			Lawful, Ignore Stop Lights
+			Aggressive
+			Backwards
+		Show Destination Beacon — Command: showbeacon [on/off]
+		Cancel On Input — Automatically terminates when you attempt to control the vehicle. — Command: autodriveautocancel [on/off]
+		No Vehicle Collision While Auto-Driving — Disables collision with other vehicles while auto-driving. Helpful to compensate for poor path-finding while aggressively driving. — Command: noclipwhileautodrive [on/off]
+	Light Signals — Command: lightsignals
+		Turn Signal — Command: signal (value)
+			Off — Command: signal off
+			Left — Command: signal left
+			Right — Command: signal right
+			Hazard — Command: signal hazard
+		Automatically Disable Turn Signals — Command: autosignal [on/off]
+		Use Brake Lights When Stopped — Command: brakelights [on/off]
+		Mute Sirens — This will only affect your game. — Command: mutesirens [on/off]
+	Turn Vehicle Upright — Turns your current or last vehicle upright. — Command: flipvehicle
+	Fix Vehicle — Repairs your current or last vehicle. — Command: fixvehicle — Can be used by other players with the Friendly Commands permission.
+	Indestructible — Makes any vehicle that you pilot or drive unable to be damaged. — Command: vehgodmode [on/off]
+	Permanent Mint Condition — Keeps your vehicle free of dents and scratches. — Command: mint [on/off]
+	Invisibility — Command: vehinvisibility (value)
+		Disabled — Command: vehinvisibility off
+		Locally Visible — Command: vehinvisibility remote
+		Enabled — Command: vehinvisibility on
+	Headlights Intensity (0.00 to 10000.00) — *higher values are only reflected locally* — Command: headlightsintensity [0.00 to 10000.00]
+	Can't Be Locked On — Command: nolockon [on/off]
+	Can't Be Dragged Out — Command: nojacking [on/off]
+	Instantly Enter & Exit Vehicles — Skips your character walking to the vehicle, turning on the engine and getting out/off. — Command: instaseat [on/off]
+	Stop Vehicles When Exiting — Command: exitstop [on/off]
+	Leave Engine On When Exiting — Command: leaveengineon [on/off]
+	Auto Transform Submarine Cars
+		Auto Transform Submarine Cars (On/Off)
+		No Animation (On/Off)
+	Driveby In All Vehicles — Command: drivebyinall [on/off]
+	Driveby With All Weapons — Command: drivebywithall [on/off]
+	Weapon Wheel In Vehicles — Note that you can still use scroll wheel up to go through one-by-one, which you need to do to go through vehicle weapons. — Command: wheelonwheels [on/off]
+	Show Bomb Trajectory — Command: bombtrajectory [on/off]
+	Fly Through Windscreen — Throws you out of the vehicle on high-speed frontal collisions like in Story Mode. This overrides "Glued To Seats". — Command: flythroughwindscreen [on/off]
+	Lock On To All Vehicles — Allows you to lock onto Imani Tech vehicles. This also bypasses features like "Can't Be Locked On". — Command: bypassnolockon [on/off]
+	Set Vehicle Seat (-1 to 7) — Command: setseat [-1 to 7]
+	Set As Pegasus Vehicle — Allows you to put certain spawned aircraft in your hangar by making the game think it's a Pegasus vehicle. — Command: pegasus
+	Forge Model — Command: forgemodel [on/off]
+	Toggle Engine On/Off — Note that pressing forwards or backwards will cause your character to turn the engine back on in most vehicles. — Command: toggleengine
+	Destroy — Command: destroyvehicle
+	Delete — Deletes your current or last vehicle. — Command: deletevehicle
+Online — Command: t online
+	New Session — Command: go
+		Pit Stop At Character Selection (On/Off)
+		Create Public Session — Command: go solopublic
+		Create Invite Only Session — Command: go inviteonly
+		Create Closed Crew Session — Command: go closedcrew
+		Create Crew Session — Command: go crew
+		Create Closed Friend Session — Command: go closedfriend
+		Create Solo Session — Command: go solo
+		Join A Friend — Command: go joinafriend
+		Join Crew Members — Command: go joincrew
+		Find Public Session — Command: go public
+		Find New Public Session — Like "Find Public Session" but puts you in a fresh session first so you hopefully don't end up in the same session. — Command: go newpublic
+		Creator Mode — Command: go creatormode
+		Social Club TV — Command: go sctv
+	Transitions
+		Matchmaking
+			Region Override
+				Region Override — Command: regionoverride [on/off]
+				Region
+					Don't Filter
+					Australia
+					Europe
+					Asia
+					Japan
+					Latin America
+					North America
+					USA, East
+					USA, West
+			Asset Hashes
+				Fix Asset Hashes — Allows you to join sessions with modified assets, which would normally show an incompatible assets error. — Command: fixassethashes [on/off]
+				Set Asset Checksum — Allows you to input a custom asset checksum (up to 8 hex digits) to restrict your matchmaking and sessions. — Command: assetchecksum
+				Reset Asset Checksum — Command: resetassetchecksum
+				Override Extra Checksum — Command: extratoggle [on/off]
+				Extra Checksum — Allows you to input a custom extra checksum (up to 8 hex digits) to restrict your matchmaking and sessions. — Command: extravalue [value]
+				Extra Checksum: Presets
+					Stand
+					2Take1
+					Cherax
+			Pool Override
+				Pool Override — Command: mmpooltoggle [on/off]
+				Pool (-2147483648 to 2147483647) — Command: mmpoolslider [-2147483648 to 2147483647]
+			Player Count Preference (0 to 30) — Puts you in sessions with around the provided number of players. — Command: mmplayercount [0 to 30]
+			Disable — Disables matchmaking so that you no longer find preexisting public sessions. — Command: mmdisable [on/off]
+		Seamless Session Switching
+			Seamless Session Switching — Command: seamless [on/off]
+			World State Change
+				Disabled
+				Deferred
+				Deferred, Online Only
+				Deferred, Story Mode Only
+		Speed Up
+			Don't Wait For Data Broadcast — Command: skipbroadcast [on/off]
+			Don't Wait For Mission Launcher — Command: speedupfmmc [on/off]
+			Don't Ask For Permission To Spawn — Command: speedupspawn [on/off]
+		Session Hopper
+			Session Hopper — Command: sessionhopper [on/off]
+			Min Players (1 to 30) — Command: hopminplayers [1 to 30]
+		Unstuck — Command: unstuck
+		Join Group Override — Allows you to e.g. use a spectator slot to join an otherwise-full session without actually spectating. However, this may cause issues when joining jobs. ⚠️
+			Don't Override
+			Spectator
+			Freemoder
+		Skip Swoop Down — Skips the slow camera descent when joining a session. — Command: skipswoopdown [on/off]
+		Show Rockstar Support Message — Command: supportmessage [on/off]
+		Disable Spawn Activities — Prevents your character playing an animation after loading into a session. — Command: nospawnactivities [on/off]
+		Disable DLC Intro Movie — Command: nodlcintromovie [on/off]
+		Transition Helper — Ensures that you don't get stuck in the clouds. — Command: transitionhelper [on/off]
+		Show Transition State — Command: showtransitionstate [on/off]
+		Show Array Sync Progress (On/Off)
+	Session
+		Session Scripts
+			Run Script — Command: runscript
+				Freemode Activities
+					<10 Options>
+				Arcade Games
+					<6 Options>
+				Removed Freemode Activities
+					<6 Options>
+				Session Breaking
+					<10 Options>
+				Services
+					Airstrike
+					Ammo Drop
+					Helicopter Backup
+					Helicopter Backup (Cayo Perico)
+					Boat Pickup
+					Helicopter Pickup
+					Bull Shark Testosterone (BST)
+				Open Interaction Menu
+				Flight School
+				Lightning Strike For Random Player
+				Disable Passive Mode
+				Darts
+				Impromptu Deathmatch
+				Slasher
+				Cutscenes
+					<3 Options>
+				Uncategorised
+					<183 Options>
+		Session Code — Command: sessioncode
+			Session Code
+			Join Session Via Code — Command: codejoin [code]
+			Copy Invite Link
+		Block Joins
+			From Anyone — Command: blockjoins [on/off] — Exclusive to the Ultimate Edition
+			From Strangers — Blocks joins from people who are not your friend on Social Club. — Command: blockjoinsstrangers [on/off]
+			From Non-Whitelisted (On/Off) — Blocks joins from any players you have not specifically whitelisted.
+			From Known Advertisers (On/Off)
+			From Removed Players (On/Off) — Blocks joins from players you have kicked or crashed.
+			Message — This will only have an effect when you're the session host.
+				Not Intended Session — Failed to join intended GTA Online session.
+				Incompatible Assets — Failed to join session due to incompatible assets.
+				Ensure Latest Title Update — Please make sure all players have the latest Title Update.
+				Different Targeting Preference — The session you are trying to join is using a different targeting preference. You can change your preference in the Settings tab of the Pause Menu in Grand Theft Auto V. Joining a new GTA Online Session.
+				Your Account Has A Bad Reputation — Unable to join this session, your account has a bad reputation.
+				You Are A Cheater — You are classed as a cheat and can only play with other cheats until you are forgiven.
+				You Are A Bad Sport — The session you are trying to join is for people who are not Bad Sports or cheaters - you are a Bad Sport.
+				Incompatible Downloadable Content — Incompatible downloadable content. All players must have the latest compatibility pack.
+				Different Build Type — The session you are trying to join is a different build type.
+				Different Content — The session you are trying to join is not using the same content.
+				Bad Sports Only — The session you are trying to join is for Bad Sports only.
+				Cheaters Only — The session you are trying to join is for cheaters only.
+				Premium Race — Unable to Join. The session you are trying to join is a Premium Race. Joining and accepting invites is disabled for this mode.
+				Unable To Connect — Unable to connect to session. The session may no longer exist.
+				Private — The session you are trying to join is private. You will need to be invited to join this session.
+				Friends Only — The session you are trying to join is friends only.
+				You Were Already Voted Out — You have already been voted out of this game session.
+				Invites Disabled — Invites are currently disabled in the session.
+				No Longer Exists — The session you are trying to join no longer exists.
+			Removed Players — A list of players who are currently blocked from joining because you removed them.
+			Notifications
+				From Anyone
+					Notification (On/Off)
+					Write To Log File (On/Off)
+					Write To Console (On/Off)
+					Announce In Chat (On/Off)
+					Announce In Team Chat (On/Off)
+				From Strangers
+					Notification (On/Off)
+					Write To Log File (On/Off)
+					Write To Console (On/Off)
+					Announce In Chat (On/Off)
+					Announce In Team Chat (On/Off)
+				From Non-Whitelisted
+					Notification (On/Off)
+					Write To Log File (On/Off)
+					Write To Console (On/Off)
+					Announce In Chat (On/Off)
+					Announce In Team Chat (On/Off)
+				From Known Advertisers
+					Notification (On/Off)
+					Write To Log File (On/Off)
+					Write To Console (On/Off)
+					Announce In Chat (On/Off)
+					Announce In Team Chat (On/Off)
+				From Removed Players
+					Notification (On/Off)
+					Write To Log File (On/Off)
+					Write To Console (On/Off)
+					Announce In Chat (On/Off)
+					Announce In Team Chat (On/Off)
+				Player Join Reactions
+					Notification (On/Off)
+					Write To Log File (On/Off)
+					Write To Console (On/Off)
+					Announce In Chat (On/Off)
+					Announce In Team Chat (On/Off)
+		Player Bar
+			Player Bar — Command: playerbar [on/off] — Exclusive to the Regular Edition
+			Text Scale (1 to 32767) — Command: playerbarscale [1 to 32767]
+			Background Blur (0 to 100) — Note that higher values of this are extremely demanding of your GPU. — Command: playerbarblur [0 to 100]
+			Hide If
+				Disabled
+				Player List Is Visible
+				XP Bar Is Visible
+			Show Even If Alone — Command: playerbaralone [on/off]
+			Show Tags — Command: playerbartags [on/off]
+			Hide Players With No Tags — Command: playerbarhidenotags [on/off]
+			Default Colour — Command: playerbardefault
+			Self
+				Colour — Command: playerbarself
+				Use Colour (On/Off)
+			Friend
+				Colour — Command: playerbarfriend
+				Use Colour (On/Off)
+			Crew Member
+				Colour — Command: playerbarcrewmember
+				Use Colour (On/Off)
+			Organisation Member
+				Colour — Command: playerbarorganisationmember
+				Use Colour (On/Off)
+			In Timeout
+				Colour — Command: playerbarintimeout
+				Use Colour (On/Off)
+			Modder
+				Colour — Command: playerbarmodder
+				Use Colour (On/Off)
+			Admin
+				Colour — Command: playerbaradmin
+				Use Colour (On/Off)
+			Likely Modder
+				Colour — Command: playerbarlikelymodder
+				Use Colour (On/Off)
+			Attacked You
+				Colour — Command: playerbarattackedyou
+				Use Colour (On/Off)
+			Host
+				Colour — Command: playerbarhost
+				Use Colour (On/Off)
+			Next Host
+				Colour — Command: playerbarnexthost
+				Use Colour (On/Off)
+			Script Host
+				Colour — Command: playerbarscripthost
+				Use Colour (On/Off)
+			Invulnerable
+				Colour — Command: playerbarinvulnerable
+				Use Colour (On/Off)
+			Indestructible Vehicle
+				Colour — Command: playerbarindestructiblevehicle
+				Use Colour (On/Off)
+			In Vehicle
+				Colour — Command: playerbarinvehicle
+				Use Colour (On/Off)
+			RC Vehicle
+				Colour — Command: playerbarrcvehicle
+				Use Colour (On/Off)
+			Off The Radar
+				Colour — Command: playerbarofftheradar
+				Use Colour (On/Off)
+			In An Interior
+				Colour — Command: playerbarinaninterior
+				Use Colour (On/Off)
+			Spectating
+				Colour — Command: playerbarspectating
+				Use Colour (On/Off)
+			Typing
+				Colour — Command: playerbartyping
+				Use Colour (On/Off)
+			Dead
+				Colour — Command: playerbardead
+				Use Colour (On/Off)
+			Invisible
+				Colour — Command: playerbarinvisible
+				Use Colour (On/Off)
+			VPN
+				Colour — Command: playerbarvpn
+				Use Colour (On/Off)
+		Player Leave Reasons — Note that the conclusions Leave Reasons comes to may be inaccurate as this feature can not be implemented non-heuristically.
+			Notification — Command: lrnotify [on/off]
+			Write To Log File — Command: lrlog [on/off]
+			Write To Console — Command: lrconsole [on/off]
+			Announce In Chat — Command: lrchat [on/off]
+			Announce In Team Chat — Command: lrteamchat [on/off]
+			Show "Left Normally" — Command: lrnormal [on/off]
+			Show "Closed The Game" — Command: lrclose [on/off]
+			Show "Was Blocked From Joining" — Command: lrblocked [on/off]
+		Player Leave Notifications
+			Notification — Command: leavenotify [on/off]
+			Write To Log File — Command: leavelog [on/off]
+			Write To Console — Command: leaveconsole [on/off]
+			Announce In Chat — Command: leavechat [on/off]
+			Announce In Team Chat — Command: leaveteamchat [on/off]
+		Stand User Identification
+			Stand User Identification (SUI) (On/Off) — Identifies fellow Stand Users but also allows them to identify you.
+			HostShare™ (On/Off) — When you are the host, allows fellow Stand Users to leverage your host privileges, as long as both of you have S.U.I. enabled.
+			For Friends (On/Off)
+			For Crew Members (On/Off)
+			For Strangers (On/Off)
+		Custom Vote Kick Threshold
+			Custom Vote Kick Threshold — Command: customvotekick [on/off]
+			Threshold (1 to 32) — The amount of vote kicks required before you kick somebody. — Command: customvotekickthreshold [1 to 32]
+			Exclude Friends — Command: customvotekickexcludefriends [on/off]
+			Exclude Crew Members — Command: customvotekickexcludecrewmembers [on/off]
+			Exclude Stand Users — Command: customvotekickexcludestandusers [on/off]
+			Exclude Organisation Members — Command: customvotekickexcludeorgmembers [on/off]
+			Notification — Command: customvotekicknotify [on/off]
+			Write To Log File — Command: customvotekicklog [on/off]
+			Write To Console — Command: customvotekickconsole [on/off]
+			Announce In Chat — Command: customvotekickchat [on/off]
+			Announce In Team Chat — Command: customvotekickteamchat [on/off]
+		Automatically Rejoin Desynced Sessions
+			Automatically Rejoin Desynced Sessions — Automatically rejoin sessions which you have been desynced from. — Command: autorejoindesynced [on/off]
+			Notification (On/Off)
+			Write To Log File (On/Off)
+			Write To Console (On/Off)
+			Announce In Chat (On/Off)
+			Announce In Team Chat (On/Off)
+		Thunder Weather
+			Enable Request — Command: thunderon
+			Disable Request — Command: thunderoff
+			Notify On Request — Command: thundernotify [on/off]
+		Become Script Host — Command: scripthost
+		Restart Freemode Script — Command: restartfm
+		Rejoin Session — Command: rejoin
+		Be Alone — Makes you the only one in your current session without disrupting anyone else's experience. — Command: bealone
+		Player Magnet — This will accelerate how quickly your session becomes populated by other players. — Command: playermagnet [on/off] — Exclusive to the Regular Edition
+		Set Session Type — Command: setsessiontype
+			Solo — Command: setsessiontype solo
+			Invite Only — Command: setsessiontype inviteonly
+			Closed Friend — Command: setsessiontype closedfriend
+			Closed Crew — Command: setsessiontype closedcrew
+			Crew — Command: setsessiontype crew
+			Public — Command: setsessiontype public
+		Clear Blacklist — Allows people who were previously vote kicked to join again. — Command: clearblacklist
+	Player History — Command: history
+		Search — Allows you to find players in your history using name, Rockstar ID, and note. — Command: findplayer [clue]
+		Noted Players
+		Tracked Players — Exclusive to the Ultimate Edition
+		Meta
+			Add Player By Name — Command: historyadd [name]
+			Add Player By RID — Command: historyaddrid [rid]
+			Players With Join Reactions
+			Players With Whitelisted Join
+			Copying Session Info From
+			On Tracking Update...
+				Notification (On/Off)
+				Write To Log File (On/Off)
+				Write To Console (On/Off)
+				Announce In Chat (On/Off)
+				Announce In Team Chat (On/Off)
+			Show Online Tracked Players On Injection — Command: injecttrackedinfo [on/off]
+			Rockstar Admins
+				Add Missing — Command: adminsupdate
+				Set Note — Sets the note of every admin in your history. — Command: adminsnote [value]
+				Track All — Command: adminstrack — Exclusive to the Ultimate Edition
+				Untrack All — Command: adminsuntrack
+			Tracked Players
+				Untrack All — Command: untracktracked
+				Whitelist All — Command: whitelisttracked
+				Unwhitelist All — Command: unwhitelisttracked
+				Mark As Fake Friend — Command: fakefriendtracked
+				Unmark As Fake Friend — Command: unfakefriendtracked
+			SC Friends
+				Add Missing — Command: friendsupdate
+				Set Note — Command: friendsnote [value]
+				Track All — Command: friendstrack — Exclusive to the Ultimate Edition
+				Untrack All — Command: friendsuntrack — Exclusive to the Ultimate Edition
+				Whitelist All — Command: friendswhitelist
+				Unwhitelist All — Command: friendsunwhitelist
+			Clear History
+				Clear History
+				Keep Noted (On/Off)
+				Keep Tracked (On/Off)
+				Keep Whitelisted (On/Off)
+				Keep Players With Join Reactions (On/Off)
+	Session Browser — Exclusive to the Regular Edition
+		Min Players (0 to 30) — Command: browserminplayers [0 to 30]
+		Max Players (1 to 30) — Command: browsermaxplayers [1 to 30]
+		Region
+			Don't Filter
+			Don't Override
+			Australia
+			Europe
+			Asia
+			Japan
+			Latin America
+			North America
+			USA, East
+			USA, West
+		Free Aim
+			Don't Filter
+			Yes
+			No
+		More Filters
+			Hidden
+				Don't Filter
+				No
+				Yes
+			Bad Sport
+				Don't Filter
+				Yes
+				No
+			Asset Hashes (On/Off) — If enabled, only sessions matching your current asset hashes will be shown. You may spoof your checksums for a sort of "private matchmaking."
+			Not Hosted By Known Advertiser (On/Off)
+		Refresh
+	Enhancements
+		Remove "Transaction Pending" — Removes any active loading indicator at the bottom right of your screen. — Command: removeloader
+		Leave Current Interior — Command: leaveinterior
+		Force Cloud Save — Command: forcecloudsave
+		Disable Idle/AFK Kick — Command: noidlekick [on/off]
+		Thousands Separator For Money — Adds a thousands separator to money values shown in the top right. — Command: thousands [on/off]
+		All Players In Player List — Shows all players in the in-game player list, ignoring Cayo Perico state. — Command: fullplayerlist [on/off]
+		Freemode Banners To Notifications — Command: fmbanner2notify [on/off]
+		All Missions In Private Sessions — Command: sellinprivate [on/off]
+		Disable LSC Restrictions — Allows you to enter Los Santos Customs with all vehicles, including unowned ones, and fully modify them. — Command: nolscrestrictions [on/off]
+		Phone Animations (On/Off) — Gives your character animations when using the phone.
+		Speed Up Dialing — Command: speeddial [on/off]
+		Disable Death Barriers — Command: nodeathbarriers [on/off]
+		Disable Mechanic Cooldown — Command: nomechaniccooldown [on/off]
+		Disable Oppressor Mk II Cooldown — Command: nomk2cooldown [on/off]
+		Disable VIP Work Cooldown — Command: noworkcooldown [on/off]
+		Disable Suicide Cooldown — Command: noewocooldown [on/off]
+		Disable Passive Mode Cooldown — Command: nopassivecooldown [on/off]
+		Disable Orbital Cannon Cooldown — Command: noorbcooldown [on/off]
+		Disable Kosatka Missile Cooldown — Command: nokosatkamissilecooldown [on/off]
+		Disable Kosatka Missile Range Limit — Does not have an effect on already launched missiles. — Command: nokosatkamissilerangelimit [on/off]
+		Disable Nano Drone Range Limit — Command: nonanodronerangelimit [on/off]
+		Disable Nano Drone Ability Cooldown — Command: nonanodroneabilitycooldowns [on/off]
+		Disable Business Battle Music — Note that enabling this feature won't terminate offending audio that is already playing. — Command: nobusinessbattlemusic [on/off]
+		Disable Event End Countdown Audio — Note that enabling this feature won't terminate offending audio that is already playing. — Command: noeventendaudio [on/off]
+		Toggleable Big Map — Makes the minimap always behave like you're in a plane. — Command: toggleablebigmap [on/off]
+		Allow Pausing — Command: pausable [on/off]
+		Allow Weaponised Vehicles In Passive Mode — Command: passiweaponveh [on/off]
+		Remote Control Any Vehicle — Command: rcanyvehicle [on/off]
+		Disable Forced RC Perspective — Command: norcfirstperson [on/off]
+		Bypass Interior Restrictions — Deceives checks for some interiors like the foundry so you can be inside of them without being teleported out. — Command: nointeriorcheck [on/off]
+		Bypass Interaction Menu Barriers — Allows you to use most interaction menu options even when they're greyed out or unavailable. — Command: nopimenugrey [on/off]
+		Bypass Casino Region Lock — Command: nocasinoregionlock [on/off]
+		Bypass Time Trial Vehicle Suitability — Command: notimetrialsuitability [on/off]
+		Disable Dripfeeding — Allows you to spawn, drive, and buy new DLC vehicles before they're available to legit plebs. — Command: nodripfeeding [on/off]
+		Disable Empty Notifications — Command: noemptynotifications [on/off]
+		Notify On Commendation — Gives you a notification when someone commends you for being helpful or friendly. — Command: commendnotify [on/off]
+		Disable Daily Expenses — Command: nodailyexpenses [on/off]
+		Block Background Script — Blocks execution of the background script which Rockstar uses to tease new DLCs but also to cause complications for modders. — Command: nobgscript [on/off]
+		Ensure Clean Races — Ensures that opposing drivers in races play fair by ghosting them locally if they get too close. — Command: ghostnearbydrivers [on/off]
+	Protections — Command: protections
+		Events
+			Crash Event
+				Notification
+					Enabled — Includes friends, strangers, & yourself.
+					Friends & Strangers
+					Strangers
+					Disabled
+				Block
+					<4 Options>
+				Write To Log File
+					<4 Options>
+				Write To Console
+					<4 Options>
+				Announce In Chat
+					<4 Options>
+				Announce In Team Chat
+					<4 Options>
+				Kick
+					<3 Options>
+				Love Letter Kick — A discrete kick that won't tell the target who did it. Unblockable when you are the host.
+					<3 Options>
+				Blacklist Kick — Adds the player to the blacklist like they were vote kicked, but kicks them like a desync. This will only have an effect when you're the session host.
+					<3 Options>
+				Crash — Exclusive to the Ultimate Edition
+					<3 Options>
+				Timeout — Temporarily blocks most network traffic from and to this player.
+					<3 Options>
+				Block Their Network Events
+					<3 Options>
+				Block Incoming Syncs
+					<3 Options>
+				Block Outgoing Syncs
+					<3 Options>
+				Log Their Network Events
+					<3 Options>
+				Log Incoming Syncs
+					<3 Options>
+				Log Outgoing Syncs
+					<3 Options>
+				Notifications For Their Network Events
+					<3 Options>
+				Notifications For Incoming Syncs
+					<3 Options>
+				Notifications For Outgoing Syncs
+					<3 Options>
+			Kick Event
+				<21 Options>
+			Modded Event — Events that could only have been sent by a modder.
+				<21 Options>
+			Unusual Event — Events that may have been sent by a modder but could also happen legitimately under rare circumstances.
+				<17 Options>
+			Apartment Invite
+				<21 Options>
+			Force Camera Forward
+				<21 Options>
+			Trigger Business Raid
+				<17 Options>
+			Start Freemode Mission
+				<21 Options>
+			Start Freemode Mission (Not My Boss)
+				<21 Options>
+			Teleport To Interior
+				<21 Options>
+			Teleport To Interior (Not My Boss)
+				<21 Options>
+			Give Collectible
+				<21 Options>
+			Give Collectible (Not My Boss)
+				<21 Options>
+			CEO/MC Kick
+				<21 Options>
+			Infinite Loading Screen
+				<21 Options>
+			Infinite Phone Ringing
+				<21 Options>
+			Cayo Perico Invite
+				<21 Options>
+			Send To Job
+				<21 Options>
+			Vehicle Takeover — When someone tries to take control of a vehicle you're driving which could be used to teleport you.
+				<21 Options>
+			Disable Driving Vehicles
+				<21 Options>
+			Kick From Vehicle
+				<21 Options>
+			Kick From Interior
+				<21 Options>
+			Freeze
+				<21 Options>
+			Camera Shaking Event
+				<21 Options>
+			Explosion Spam — Applies when someone spams explosions on your character.
+				<21 Options>
+			Ragdoll Event
+				<21 Options>
+			Modded Damage Event
+				<21 Options>
+			Remove Weapon Event
+				<21 Options>
+			Raw Network Events
+				<85 Options>
+		Detections
+			Classifications
+				Any Classification
+					Notification
+						Enabled — Includes friends, strangers, & yourself.
+						Friends & Strangers
+						Strangers
+						Disabled
+					Write To Log File
+						<4 Options>
+					Write To Console
+						<4 Options>
+					Announce In Chat
+						<4 Options>
+					Announce In Team Chat
+						<4 Options>
+					Timeout — Temporarily blocks most network traffic from and to this player.
+						<3 Options>
+					Block Their Network Events
+						<3 Options>
+					Block Incoming Syncs
+						<3 Options>
+					Block Outgoing Syncs
+						<3 Options>
+					Log Their Network Events
+						<3 Options>
+					Log Incoming Syncs
+						<3 Options>
+					Log Outgoing Syncs
+						<3 Options>
+					Notifications For Their Network Events
+						<3 Options>
+					Notifications For Incoming Syncs
+						<3 Options>
+					Notifications For Outgoing Syncs
+						<3 Options>
+				Modder
+					<16 Options>
+				Admin
+					<16 Options>
+				Likely Modder
+					<16 Options>
+				Possible Modder
+					<16 Options>
+			Any Detection
+				Notification
+					Enabled — Includes friends, strangers, & yourself.
+					Friends & Strangers
+					Strangers
+					Disabled
+				Write To Log File
+					<4 Options>
+				Write To Console
+					<4 Options>
+				Announce In Chat
+					<4 Options>
+				Announce In Team Chat
+					<4 Options>
+				Block Their Network Events
+					<3 Options>
+				Block Incoming Syncs
+					<3 Options>
+				Block Outgoing Syncs
+					<3 Options>
+				Log Their Network Events
+					<3 Options>
+				Log Incoming Syncs
+					<3 Options>
+				Log Outgoing Syncs
+					<3 Options>
+				Notifications For Their Network Events
+					<3 Options>
+				Notifications For Incoming Syncs
+					<3 Options>
+				Notifications For Outgoing Syncs
+					<3 Options>
+			Stand User
+				<15 Options>
+			Stand User (Co-Loading)
+				<15 Options>
+			Other User Identifications
+				<15 Options>
+			Rockstar Anti Cheat
+				<15 Options>
+			Modded Health
+				<15 Options>
+			Dead For Too Long
+				<15 Options>
+			Off The Radar For Too Long
+				<15 Options>
+			Too Much Armour
+				<15 Options>
+			Presence Spoofing — Detects session spoofing as well as more subtle manipulation.
+				<15 Options>
+			Rockstar Employee RID
+				<15 Options>
+			Take-Two IP Address
+				<15 Options>
+			Spoofed Host Token (Aggressive)
+				<19 Options>
+			Spoofed Host Token (Sweet Spot)
+				<15 Options>
+			Spoofed Host Token (Handicap)
+				<15 Options>
+			Spoofed Host Token (Other)
+				<15 Options>
+			Modded Character Model
+				<15 Options>
+			Attacking While Invulnerable
+				<15 Options>
+			Damage Multiplier
+				<15 Options>
+			Super Jump
+				<15 Options>
+			Rockstar Developer Flag
+				<15 Options>
+			Rockstar QA Flag
+				<15 Options>
+			Cheater Flag
+				<15 Options>
+			Invalid Rank/RP
+				<15 Options>
+			RP-Rank Mismatch
+				<15 Options>
+			Spoofed Rank
+				<15 Options>
+			Blocked Network Event — Indicates that a player may've blocked essential network events, such as requesting control of an entity.
+				<15 Options>
+			Modded Driveby Weapon
+				<15 Options>
+			Chatting Without Typing
+				<15 Options>
+			Bounty Spam — Indicates that a player has placed bounties at an impossible rate, e.g. a bounty for everyone in the session.
+				<16 Options>
+			Modded Bounty — Indicates that a player has placed a bounty with an illegitimate value, e.g. 6969.
+				<16 Options>
+			Modded Explosion — Primarily detects when modders spawn explosions on people or use explosive ammo. Note that this may rarely also trigger for legit players.
+				<17 Options>
+			Modded Organisation Name
+				<16 Options>
+			Hidden From Player List
+				<15 Options>
+			Love Letter Lube
+				<15 Options>
+			Modded Data
+				<15 Options>
+		Anti-Detection
+			Invulnerable (On/Off)
+			Indestructible Vehicle (On/Off)
+			Spectating (On/Off) — Regardless of this, your camera position is always synced and you can still be detected spectating based on it.
+			Damage Multiplier (On/Off)
+			Modded Health (On/Off)
+		Syncs
+			Block Outgoing Syncs To Host (On/Off) — This helps you avoid BattlEye kicks as non-host, but also means the host won't be able to interact with you.
+			Custom Model Sync Reactions
+				Add Model — Command: addblacklistmodel [model name]
+			Cage — Other players can resync objects spawned by modders, so be aware of that.
+				<21 Options>
+			World Object Sync — Other players can resync objects spawned by modders, so be aware of that.
+				<21 Options>
+			Invalid Model Sync — Other players can resync objects spawned by modders, so be aware of that.
+				<21 Options>
+			Attachment Spam — Other players can resync objects spawned by modders, so be aware of that.
+				<21 Options>
+			Incoming
+				Any Incoming Sync
+					Notification
+						Enabled
+						Strangers
+						Disabled
+					Block
+						<3 Options>
+					Write To Log File
+						<3 Options>
+					Write To Console
+						<3 Options>
+				Clone Create
+					<4 Options>
+				Clone Update
+					<4 Options>
+				Clone Delete
+					<4 Options>
+				Acknowledge Clone Create
+					<4 Options>
+				Acknowledge Clone Update
+					<4 Options>
+				Acknowledge Clone Delete
+					<4 Options>
+			Outgoing
+				Clone Create
+					<4 Options>
+				Clone Update
+					<4 Options>
+				Clone Delete
+					<4 Options>
+		Text Messages
+			Any Message
+				Notification
+					Enabled
+					Strangers
+					Disabled
+				Block
+					<3 Options>
+				Write To Log File
+					<3 Options>
+				Write To Console
+					<3 Options>
+				Announce In Chat
+					<3 Options>
+				Announce In Team Chat
+					<3 Options>
+				Kick
+					<3 Options>
+				Love Letter Kick — A discrete kick that won't tell the target who did it. Unblockable when you are the host.
+					<3 Options>
+				Blacklist Kick — Adds the player to the blacklist like they were vote kicked, but kicks them like a desync. This will only have an effect when you're the session host.
+					<3 Options>
+				Crash — Exclusive to the Ultimate Edition
+					<3 Options>
+				Timeout — Temporarily blocks most network traffic from and to this player.
+					<3 Options>
+				Block Their Network Events
+					<3 Options>
+				Block Incoming Syncs
+					<3 Options>
+				Block Outgoing Syncs
+					<3 Options>
+				Log Their Network Events
+					<3 Options>
+				Log Incoming Syncs
+					<3 Options>
+				Log Outgoing Syncs
+					<3 Options>
+				Notifications For Their Network Events
+					<3 Options>
+				Notifications For Incoming Syncs
+					<3 Options>
+				Notifications For Outgoing Syncs
+					<3 Options>
+			Advertisement
+				<21 Options>
+			Bypassed Message Filter
+				<21 Options>
+		Session Script Start
+			Any Script
+				<4 Options>
+			Uncategorised
+				<4 Options>
+			Freemode Activity
+				<4 Options>
+			Arcade Game
+				Notification
+					Enabled — Includes friends, strangers, & yourself.
+					Friends & Strangers
+					Strangers
+					Disabled
+				Block
+					<4 Options>
+				Write To Log File
+					<4 Options>
+				Write To Console
+					<4 Options>
+				Announce In Chat
+					<4 Options>
+				Announce In Team Chat
+					<4 Options>
+				Kick
+					<3 Options>
+				Love Letter Kick — A discrete kick that won't tell the target who did it. Unblockable when you are the host.
+					<3 Options>
+				Blacklist Kick — Adds the player to the blacklist like they were vote kicked, but kicks them like a desync. This will only have an effect when you're the session host.
+					<3 Options>
+				Crash — Exclusive to the Ultimate Edition
+					<3 Options>
+				Timeout — Temporarily blocks most network traffic from and to this player.
+					<3 Options>
+				Block Their Network Events
+					<3 Options>
+				Block Incoming Syncs
+					<3 Options>
+				Block Outgoing Syncs
+					<3 Options>
+				Log Their Network Events
+					<3 Options>
+				Log Incoming Syncs
+					<3 Options>
+				Log Outgoing Syncs
+					<3 Options>
+				Notifications For Their Network Events
+					<3 Options>
+				Notifications For Incoming Syncs
+					<3 Options>
+				Notifications For Outgoing Syncs
+					<3 Options>
+			Removed Freemode Activity
+				<21 Options>
+			Session Breaking
+				<21 Options>
+			Service
+				<21 Options>
+			Open Interaction Menu
+				<21 Options>
+			Flight School
+				<21 Options>
+			Lightning Strike For Random Player
+				<21 Options>
+			Disable Passive Mode
+				<21 Options>
+			Darts
+				<21 Options>
+			Impromptu Deathmatch
+				<21 Options>
+			Slasher
+				<21 Options>
+			Cutscene
+				<21 Options>
+		Host-Controlled Kicks
+			Lessen Host Kicks — Lessens host kicks such that you only get a notification that a host kick has occurred and all players will appear to have left. — Command: lessenhostkicks [on/off]
+			Notification When Love Letter Kicked — Command: notifyloveletter [on/off]
+			Desync Kick Karma — Makes desync kick options of some other menus always backfire if used against you. — Command: desynckarma [on/off] — Exclusive to the Regular Edition
+			Love Letter Lube — Makes you a less likely candidate for when the host picks who to kick for Love Letter.
+				Disabled
+				Legit — Some modders may detect this, misguidedly.
+				Aggressive — This is the most effective option, but other modders can detect this.
+		Presence Events
+			Block Friend Stat Notifications — Blocks notifications like "...has collected all Letter Scraps." — Command: nofriendstatnotifications [on/off]
+			Block Job Invites — Command: nojobinvites [on/off]
+		Pickups
+			Any Pickup Collected
+				Notification (On/Off)
+				Block (On/Off)
+				Write To Log File (On/Off)
+				Write To Console (On/Off)
+				Announce In Chat (On/Off)
+				Announce In Team Chat (On/Off)
+			Cash Pickup Collected
+				<6 Options>
+			RP Pickup Collected
+				<6 Options>
+			Invalid Pickup Collected — What to do in the event that you collect an invalid pickup that would kick you from session.
+				<6 Options>
+		Co-Loading
+			Disable Crash Event (N1) When Co-Loading (On/Off)
+			Disable Crash Event (C1) When Co-Loading (On/Off)
+			Disable Crash Event (C3) When Co-Loading (On/Off)
+			Disable Crash Event (U1) When Co-Loading (On/Off)
+			Disable Crash Event (U2) When Co-Loading (On/Off)
+			Disable Crash Event (CS) When Co-Loading (On/Off)
+			Disable Crash Event (SR) When Co-Loading (On/Off)
+			Disable Crash Event (T6) When Co-Loading (On/Off)
+		Block Bailing
+			Player No Longer In Session (On/Off)
+			Switching Primary Crew (On/Off)
+			Spectating Related (On/Off) — Target left, etc.
+			Other Reasons (On/Off) — Timeouts and whatnot.
+		Protections Guide
+		Block Blaming — Makes you unable to damage others so that explosions blamed on you equally do no damage. Also makes other people unable to damage you. — Command: noblame [on/off]
+		Block Vote Kicks — Command: novotekicks (value)
+			Disabled — Command: novotekicks off
+			SCTV / Spectator Mode — Recommended — Command: novotekicks sctv
+			Freemode Mission 2 — Command: novotekicks mission2
+			Freemode Mission 4 — Command: novotekicks mission4
+			Freemode Mission 1 — Command: novotekicks mission1
+			Freemode Mission 3 — Command: novotekicks mission3
+		Block Join Karma — Detects when non-hosts try to block your join and removes them from the session, allowing you to join.
+			Block Join Karma — Detects when non-hosts try to block your join and removes them from the session, allowing you to join. — Command: blockjoinkarma [on/off] — Exclusive to the Regular Edition
+			Notification (On/Off)
+			Write To Log File (On/Off)
+			Write To Console (On/Off)
+			Announce In Chat (On/Off)
+			Announce In Team Chat (On/Off)
+		Block Entity Spam
+			Block Entity Spam — Command: blockentityspam [on/off]
+			Automatically Use Anti-Crash Cam (On/Off)
+		Prevent Renderer Working To Death — Stops the game from rendering so much that it crashes. — Command: drawpatch [on/off]
+		Delete Stale Objects — Deletes objects whose model info has been unloaded because this game is a flawless masterpiece.
+			Delete Stale Objects (On/Off) — Deletes objects whose model info has been unloaded because this game is a flawless masterpiece.
+			Notification (On/Off)
+			Write To Log File (On/Off)
+			Write To Console (On/Off)
+			Announce In Chat (On/Off)
+			Announce In Team Chat (On/Off)
+		Disable Turning Into Beast — Stops you being turned into the beast for the "Hunt The Beast" freemode event, which modders may use as a means to troll you. — Command: nobeast [on/off]
+		Delete Modded Pop Multiplier Areas — Deletes modded population multiplier areas so GTA Online won't look more barren than usual. — Command: nomodpop [on/off]
+		Script Error Recovery — Command: scripterrorrecovery (value)
+			Disabled — Command: scripterrorrecovery off
+			Only For Freemode — Command: scripterrorrecovery freemodeonly
+			Enabled — Command: scripterrorrecovery on
+		Block Player Model Swaps
+			Block Player Model Swaps (On/Off) — Locally blocks players transforming into models that are not normally playable. In principle, this is not needed because we patch all related crashes (that we know of).
+			Exclude Friends (On/Off)
+			Exclude Crew Members (On/Off)
+			Exclude Stand Users (On/Off)
+		Force Relay Connections — Command: forcerelayconnections [on/off]
+	Quick Progress — Aka. "Recoveries".
+		Unlocks — Command: unlocks
+			Unlock All — For when you want the unlocks below all at once. — Command: unlockall
+			Unlock Free Orbital Cannon Shot — Command: freeorbital
+			Unlock Gender Change — Allows you to change your character's gender using Style > Change Appearance in the interaction menu. — Command: unlockgenderchange
+			Unlock Exclusive Liveries — Command: unlockliveries
+			Unlock Bunker Research — Command: unlockresearch
+			Unlock Kosatka For Purchase — Command: unlockkosatka
+			Unlock Casino Heist Clothing — Command: unlockcasinoheistclothing
+			Unlock Arena War Clothing — Command: unlockarenawarclothing
+			Unlock Bunker Shooting Range Rewards — Unlocks the rewards for completing all 3 tiers of the shooting range including increased capacity for throwables. — Command: unlockshootingrangerewards
+			Unlock Awards — Gives you plenty of awards including clothing and tatoos they unlock. — Command: unlockawards
+			Unlock Vehicle Customisations — Command: unlockvehiclecustomisations
+			Unlock Ammu-Nation Tints — Unlocks the Army, Green, Orange, & LSPD tints for all applicable weapons. — Command: unlockweapontints
+			Max Character Stats — Maxes your Stamina, Strength, Shooting, Stealth, Flying, Driving, & Lung Capacity stats. — Command: unlockcharacterstats
+		Stat Editor — Command: stateditor
+			Popular Stats
+				<7 Options>
+			Raw Stats
+				Search — Command: statsearch [clue]
+				<27613 More Options>
+		LS Car Meet
+			Set Reputation Level — Note that you need to become a member of the LS Car Meet before you can earn reputation with them. — Command: setlscarmeetreplevel [1 to 1000]
+			Unlock Prize Ride — Command: unlockprizeride
+		Cayo Perico Heist — Command: cayoheist
+			Finish Setup Missions — Command: setupcayoheist
+			Set Target — Command: cayotarget
+				Sapphire Panther — Command: cayotarget panther
+				Madrazo Files — Command: cayotarget files
+				Pink Diamond — Command: cayotarget diamond
+				Bearer Bonds — Command: cayotarget bonds
+				Ruby Necklace — Command: cayotarget necklace
+				Tequila — Command: cayotarget tequila
+		Casino Heist — Command: casinoheist
+			Remove Repeat Cooldown — Make sure you're not inside of the arcade when using this. — Command: repeatcasinoheist
+			P.O.I. & Access Points
+				Scope — Only use this after having completed the initial scope out mission as otherwise it will softlock. — Command: scopecasino
+				Unscope — Command: unscopecasino
+			Set Vault Contents — Use this after paying for the heist but before scoping out the vault contents. — Command: casinovault
+				Diamonds — Command: casinovault diamonds
+				Art — Command: casinovault art
+				Gold — Command: casinovault gold
+				Cash — Command: casinovault cash
+			Finish First Board — Use this after paying for the heist and optionally setting the vault contents. — Command: casinoapproach
+				Silent & Sneaky — Command: casinoapproach silentandsneaky
+				Big Con — Command: casinoapproach bigcon
+				Aggressive — Command: casinoapproach aggressive
+			Finish Second Board — Command: casinosecondboard
+			Reset Crew — In case you made a poor choice for your crew that you'd like to change. — Command: casinoresetcrew
+		Casino
+			Lucky Wheel Reward — Command: rigluckywheel (value)
+				Don't Manipulate — Command: rigluckywheel off
+				Podium Vehicle — Command: rigluckywheel vehicle
+				Discount — Command: rigluckywheel discount
+				Chips — Command: rigluckywheel chips
+				Cash — Command: rigluckywheel cash
+				RP — Command: rigluckywheel rp
+				Clothing — Command: rigluckywheel clothing
+				Mystery: Vehicle — Command: rigluckywheel mysteryvehicle
+				Mystery: Business Supplies — Command: rigluckywheel supplies
+				Mystery: Snacks — Command: rigluckywheel snacks
+				Mystery: Chips — Command: rigluckywheel mysterychips
+				Mystery: Cash — Command: rigluckywheel mysterycash
+				Mystery: RP — Command: rigluckywheel mysteryrp
+				Mystery: Clothing — Command: rigluckywheel mysteryclothing
+			Slot Machines Outcome — Do not earn more than GTA$ 10,000,000 within 24 hours! Furthermore, this might not be safe if you have used or are using other menus on this account. — Command: rigslotmachines (value)
+				Don't Manipulate — Command: rigslotmachines off
+				Jackpot — Command: rigslotmachines jackpot
+				Loss — Command: rigslotmachines loss
+				Small Win — Command: rigslotmachines smallwin
+			Always Win Blackjack — Makes the dealer always bust. Other players can also benefit from this. — Command: rigblackjack [on/off]
+			Roulette Outcome (-1 to 37) — Other players can also benefit from this. — Command: rigroulette [-1 to 37]
+		Money Guide
+		Refill Snacks & Armour — Command: fillinventory
+		Finish Doomsday Heist Setups — Skips all setup missions for your current doomsday heist. — Command: setupdoomsdayheist
+		Finish Apartment Heist Setups — Skips all setup missions for your current apartment heist. — Command: setupapartmentheist
+		Set Rank — Command: setrank [1 to 8000]
+		Nightclub Popularity
+			Set Nightclub Popularity (0 to 100) — Command: clubpopularity [0 to 100]
+			Lock Nightclub Popularity — Command: locknightclubpopularity [on/off]
+		Fast Run Ability
+			Obtain
+			Unlearn
+		Bad Sport Status
+			Obtain
+			Relinquish
+	Chat
+		Commands — Process chat messages with the chosen prefix like commands for Stand's command box but note that most commands aren't available for other players.
+			Enabled For Me — Command: commandsforme [on/off]
+			For Friends
+				Enabled — Command: commandsforfriends [on/off]
+				Friendly Commands (On/Off)
+				Neutral Commands (On/Off)
+				Spawn Commands (On/Off)
+				Rude Commands (On/Off)
+				Aggressive Commands (On/Off)
+				Toxic Commands (On/Off)
+			For Crew Members
+				Enabled — Command: commandsforcrew [on/off]
+				Friendly Commands (On/Off)
+				Neutral Commands (On/Off)
+				Spawn Commands (On/Off)
+				Rude Commands (On/Off)
+				Aggressive Commands (On/Off)
+				Toxic Commands (On/Off)
+			For Team Chat — E.g., your CEO/MC members.
+				Enabled (On/Off)
+				Friendly Commands (On/Off)
+				Neutral Commands (On/Off)
+				Spawn Commands (On/Off)
+				Rude Commands (On/Off)
+				Aggressive Commands (On/Off)
+				Toxic Commands (On/Off)
+			For Strangers
+				Enabled — Command: commandsforstrangers [on/off]
+				Friendly Commands (On/Off)
+				Neutral Commands (On/Off)
+				Spawn Commands (On/Off)
+				Rude Commands (On/Off)
+				Aggressive Commands (On/Off)
+				Toxic Commands (On/Off)
+			Prefix
+				!
+				?
+				;
+				,
+				.
+				+
+				-
+				*
+				/
+				\
+				%
+				=
+				#
+				$
+				€
+			Reply Prefix
+				None
+				!
+				?
+				;
+				,
+				.
+				+
+				-
+				*
+				/
+				\
+				%
+				=
+				#
+				$
+				€
+			Reply Visibility
+				Everyone
+				Issuer & Me
+				Issuer
+				Me
+				Nobody
+			Command Box Documentation
+			Command List
+		Reactions
+			Any Message
+				<One Option>
+			Advertisement
+				Notification
+					Enabled
+					Strangers
+					Disabled
+				Block — Will prevent the message reaching you but others will still see it.
+					<3 Options>
+				Write To Log File
+					<3 Options>
+				Write To Console
+					<3 Options>
+				Announce In Chat
+					<3 Options>
+				Announce In Team Chat
+					<3 Options>
+				Kick
+					<3 Options>
+				Love Letter Kick — A discrete kick that won't tell the target who did it. Unblockable when you are the host.
+					<3 Options>
+				Blacklist Kick — Adds the player to the blacklist like they were vote kicked, but kicks them like a desync. This will only have an effect when you're the session host.
+					<3 Options>
+				Crash — Exclusive to the Ultimate Edition
+					<3 Options>
+				Timeout — Temporarily blocks most network traffic from and to this player.
+					<3 Options>
+				Block Their Network Events
+					<3 Options>
+				Block Incoming Syncs
+					<3 Options>
+				Block Outgoing Syncs
+					<3 Options>
+				Log Their Network Events
+					<3 Options>
+				Log Incoming Syncs
+					<3 Options>
+				Log Outgoing Syncs
+					<3 Options>
+				Notifications For Their Network Events
+					<3 Options>
+				Notifications For Incoming Syncs
+					<3 Options>
+				Notifications For Outgoing Syncs
+					<3 Options>
+			Bypassed Message Filter
+				<21 Options>
+			Chat Spam
+				<21 Options>
+		Log Chat Messages — Command: logchat
+			Chat.txt (On/Off)
+			Log.txt (On/Off)
+			Console (On/Off)
+		Typing Indicator — Shows a typing indicator like in Discord when other players are typing.
+			Typing Indicator — Shows a typing indicator like in Discord when other players are typing. — Command: typingindicator [on/off]
+			Closed Chat Position — Command: closedtypingpos
+				X — Command: closedtypingx
+				Y — Command: closedtypingy
+				Move With Mouse — Command: closedtypingmousemove [on/off]
+			Open Chat Position — Command: opentypingpos
+				X — Command: opentypingx
+				Y — Command: opentypingy
+				Move With Mouse — Command: opentypingmousemove [on/off]
+		Send Message
+			Send Message — Command: say [text]
+			Add To Local History — Command: saylocal [on/off]
+			In Team Chat — Command: sayteam [on/off]
+		Spam
+			Spam — Friendly reminder that our terms of service prohibit mass advertising, and engaging in such will result in a suspension of your account. — Command: spam [on/off] — Exclusive to the Ultimate Edition
+			Text — Command: spamtext [value]
+			Interval (ms) (100 to 60000) — Command: spaminterval [100 to 60000]
+			Add To Local History — In case you also want to be spamming on your end. — Command: spamlocal [on/off]
+		Send All Chat Messages (On/Off) — Turns the chat box into an interface for the "Send Message" command, making your messages network consistently.
+		Show All Chat Messages (On/Off) — Forces the game to show all received chat messages in the chat box, regardless of who sent it.
+		Type Out Player Names — Completes player names for you when you press the assigned hotkey whilst drafting a chat message. — Command: tabcomplete [on/off] — Exclusive to the Regular Edition
+		Paste In Chat Message — Pastes text from your clipboard when you press the assigned hotkey whilst drafting a chat message. — Command: chatpaste [on/off] — Exclusive to the Regular Edition
+		Bypass Profanity Filter — Allows you to swear in chat without it being censored for others. — Command: uncensored (value)
+			Disabled — Command: uncensored off
+			Enabled — Command: uncensored on
+			In Team Chat — Command: uncensored team
+		Bypass Character Filter — Allows you to use naughty characters like < and > in chat. — Command: html (value)
+			Disabled — Command: html off
+			Enabled — Command: html on
+			In Team Chat — Command: html team
+		No "Transaction Pending" When Chatting (On/Off) — Removes loading indicators while you have the chat open.
+		Open Chat When Scrolling (On/Off) — Fixes the fact that you can scroll the chat while it's closed by making it show up when scrolling.
+		Always Open — Command: chatalwaysopen [on/off]
+		Suppress Typing Indicator — Makes other players unable to see when you're drafting a chat message. — Command: hidetyping [on/off]
+		Timestamp In Messages — Command: chattimestamp [on/off]
+		OwO-ify My Chat Messages — OwO-ifies your outgoing messages. Note that you won't see a difference locally. — Command: owoifymychats [on/off]
+		Sing In Chat — Sings the song in your %appdata%/Stand/Song.lrc. — Command: singing [on/off] — Exclusive to the Regular Edition
+	Spoofing
+		Name Spoofing — This will only affect your game.
+			Name Spoofing — This will only affect your game. — Command: spoofname [on/off]
+			Spoofed Name — Command: spoofedname [value]
+			Get Random Name From Player History
+		Session Spoofing
+			Hide Session — Cloaks your session for anyone trying to track, join, or spectate you. — Command: spoofsession (value)
+				Disabled — Command: spoofsession off
+				Story Mode — Command: spoofsession storymode — Exclusive to the Regular Edition
+				Non-Existent Session — Command: spoofsession fake — Exclusive to the Ultimate Edition
+				Offline — Command: spoofsession offline — Exclusive to the Ultimate Edition
+			Session Type — The session type seen by anyone trying to track you. — Exclusive to the Ultimate Edition
+				Not Spoofed
+				Solo
+				Invite
+				Closed Friend
+				Closed Crew
+				Crew
+				Public
+				Invalid
+			Host
+				Host Spoofing — Command: spoofhost [on/off] — Exclusive to the Ultimate Edition
+				Spoofed Host - RID — Command: spoofedhostrid [rid]
+				Spoofed Host - Name — Command: spoofedhostname [value]
+				Spoofed Host: Presets
+					Youtubers
+						<32 Options>
+					You
+		Crew Spoofing
+			Crew Spoofing — Command: crew [on/off]
+			ID — This determines which emblem will be shown. Must be non-zero to show your crew tag. — Command: crewid [id]
+			Tag — Command: crewtag [tag]
+			Name — Command: crewname [name]
+			Motto — Command: crewmotto [motto]
+			Alternative Badge — Command: crewaltbadge [on/off]
+			Colour — Command: crewcolour
+			Presets
+				No Crew
+				Stand.sh < STD ]
+				Runs Dead [ DEAD ]
+				IGN Crew < IGN ]
+			Copy From My Crews
+		Rank Spoofing — Allows you to change the rank other players see on you in the player list.
+			Rank Spoofing — Allows you to change the rank other players see on you in the player list. — Command: spoofrank [on/off]
+			Spoofed Rank (-2147483648 to 2147483647) — Command: spoofedrank [-2147483648 to 2147483647]
+		K/D Spoofing
+			K/D Spoofing — Command: spoofkd [on/off]
+			Spoofed K/D (-21474836.48 to 21474836.47) — Command: spoofedkd [-21474836.48 to 21474836.47]
+		Position Spoofing
+			Position Spoofing — Command: spoofpos [on/off]
+			Spoofed Position — Command: spoofedposition [value]
+		Rockstar Developer Flag — Makes players unable to legitimately vote kick you. — Command: devflag [on/off]
+		Rockstar QA Flag — Only other modders will be able to see this. — Command: qaflag [on/off]
+		Cheater Flag — Only other modders will be able to see this. — Command: cheaterflag [on/off]
+		Spoof Other Players' Names — This will only affect your game. — Command: streamerspoof [on/off]
+		Hide From Player List — Hides you from the game's HUD player list. — Command: hidefromplayerlist [on/off]
+		Phone Mode Spoofing
+			Disabled
+			Not Using Phone
+			Calling
+			Texting
+			Recording
+	Reactions
+		Player Join Reactions
+			<16 Options>
+		RID Join Reactions
+			<21 Options>
+		Host Change Reactions
+			<16 Options>
+		Script Host Change Reactions
+			<16 Options>
+		Vote Kick Reactions
+			Voting To Kick Anyone
+				<20 Options>
+			Voting To Kick Me
+				<20 Options>
+		Love Letter Kick Reactions — This will only have an effect when you're the session host.
+			<17 Options>
+		Bounty Reactions — This doesn't apply when an NPC places a bounty on you.
+			<20 Options>
+		Particle Spam Reactions — Not always malicious, but can drop your FPS.
+			<21 Options>
+	Rockstar ID Tools
+		Join Session By Name — Command: join [name]
+		Invite To Session By Name — Command: invite [name]
+		Open Profile By Name — Command: nameprofile [name]
+		Join Session By RID — Command: ridjoin [rid]
+		Invite To Session By RID — Command: ridinvite [rid]
+		Open Profile By RID — Command: ridprofile [rid]
+	Social Club DM Notifications
+		Social Club Notification — Command: scdmscnotify [on/off]
+		Notification — Command: scdmnotify [on/off]
+		Write To Log File — Command: scdmlog [on/off]
+		Write To Console — Command: scdmconsole [on/off]
+		Announce In Chat — Command: scdmchat [on/off]
+		Announce In Team Chat — Command: scdmteamchat [on/off]
+	CEO/MC
+		Colour Slots — Command: ceocolours
+			0 — Command: ceocolour0
+			<9 More Options>
+		Register As A CEO/VIP — Command: ceostart
+		Start A Motorcycle Club — Command: mcstart
+		Name — Command: ceoname [value]
+		Change Type — Changes your organisation into a motorcycle club or vice-versa. — Command: ceotomc
+		Remove CEO/MC Ban — Command: ceoappeal
+	Mental State
+		Set Mental State (0 to 100) — Command: mentalstate [0 to 100]
+		Lock Mental State — Command: lockmentalstate [on/off]
+		Pulsating Mental State (On/Off) — Oscillates the mental state that is indicated by your blip colour.
+	ATM
+		Withdraw — Command: withdraw [value]
+		Auto Deposit Wallet (0 to 1000000) — Command: wallethopper [0 to 1000000]
+	Tunables — Allows you to enable some of the things Rockstar only enable for certain event weeks. — Command: tunables
+		Disable Insurance Payments — Prevents you having to pay for insurance when destroying others' personal vehicles. — Command: noinsurancepay [on/off]
+		Halloween Event — Command: halloween [on/off]
+		Peyote Plants — Command: peyotes [on/off]
+	Quit To Story Mode — Command: quittosp
+	Force Quit To Story Mode — Restarts all game systems, then loads you into story mode. — Command: forcequittosp
+	Request Services
+		Request Airstrike — Gives you a flare and spawns a Merryweather jet ready to bomb at the flare's location. — Command: airstrike
+		Request Ammo Drop — Command: requestammodrop
+		Request Boat Pickup — Command: boatpickup
+		Request Helicopter Pickup — Command: helipickup
+		Request Helicopter Backup — Command: helibackup
+		Request Nano Drone — Command: requestnanodrone
+	Off The Radar — Command: otr [on/off]
+	Bull Shark Testosterone (BST) — Command: bst [on/off]
+	Get BST — Command: bstonce
+	Remove Bounty — Command: removebounty
+	Reveal Off The Radar Players — Command: revealotr [on/off]
+	Reveal Invisible Players — Command: revealinvisible [on/off]
+	Become The Orbital Cannon — Sends everyone who you kill to the hospital and shows the orbital cannon kill message. — Command: becomeorbitalcannon [on/off]
+	View Report Stats — Command: reportstats
+	Set Targeting Mode — Command: targeting
+		Assisted Aim - Full — Command: targeting assisted
+		Assisted Aim - Partial — Command: targeting partialassist
+		Free Aim - Assisted — Command: targeting assistedfreeaim
+		Free Aim — Command: targeting freeaim
+	Rockstar Admin DLC — Unlocks exclusive clothing and Social Club TV. — Command: admindlc [on/off]
+	Player Tags On Blips — Command: bliptags [on/off]
+	Reset Ped Headshots — Fixes when the player list or notifications are having black squares instead of headshots. — Command: resetheadshots
+Players — Command: t players
+	Settings
+		Tags
+			Brackets
+				STD
+				[STD]
+				(STD)
+				{STD}
+				<STD>
+			Classification Tags On Self (On/Off)
+			Self
+				<106 Options>
+			Friend
+				<106 Options>
+			Crew Member
+				<106 Options>
+			Organisation Member
+				<106 Options>
+			In Timeout
+				<106 Options>
+			Modder
+				<106 Options>
+			Admin
+				<106 Options>
+			Likely Modder
+				<106 Options>
+			Attacked You
+				<106 Options>
+			Host
+				<106 Options>
+			Next Host
+				<106 Options>
+			Script Host
+				<106 Options>
+			Invulnerable
+				<106 Options>
+			Indestructible Vehicle
+				<106 Options>
+			In Vehicle
+				<106 Options>
+			RC Vehicle
+				<106 Options>
+			Off The Radar
+				<106 Options>
+			In An Interior
+				<106 Options>
+			Spectating
+				<106 Options>
+			Typing
+				<106 Options>
+			Dead
+				<106 Options>
+			Invisible
+				<106 Options>
+			VPN
+				<106 Options>
+		AR Beacon On Focused Players
+			In Player List (On/Off)
+			Within A Player's List (On/Off)
+			Exclude Me (On/Off)
+		When Entering Player's List...
+			Spectate Them
+				Disabled
+				Nuts Method
+				Legit Method
+		When Leaving Player's List...
+			Stop Spectating Them (On/Off)
+		Stop Spectating — Command: stopspectating
+		Sort By
+			Name
+			Distance
+			Rank
+			Money In Total
+			K/D Ratio
+			Discovery Time
+			Session Player ID / Slot
+			Host Queue Position
+		Reverse Order (On/Off)
+		Hoisted Tags — Players with hoisted tags will be placed above players without any hoisted tags.
+			Self (On/Off)
+			Friend (On/Off)
+			Crew Member (On/Off)
+			Organisation Member (On/Off)
+			In Timeout (On/Off)
+			Modder (On/Off)
+			Admin (On/Off)
+			Likely Modder (On/Off)
+			Attacked You (On/Off)
+			Host (On/Off)
+			Next Host (On/Off)
+			Script Host (On/Off)
+			Invulnerable (On/Off)
+			Indestructible Vehicle (On/Off)
+			In Vehicle (On/Off)
+			RC Vehicle (On/Off)
+			Off The Radar (On/Off)
+			In An Interior (On/Off)
+			Spectating (On/Off)
+			Typing (On/Off)
+			Dead (On/Off)
+			Invisible (On/Off)
+			VPN (On/Off)
+	All Players
+		Excludes
+			Exclude Friends (On/Off)
+			Exclude Crew Members (On/Off)
+			Exclude Stand Users (On/Off)
+			Exclude Organisation Members (On/Off)
+			Exclude Modders (On/Off)
+			Exclude Likely Modders (On/Off)
+		Teleport
+			Teleport To Me — Command: summonall — Can be used by other players with the Rude Commands permission.
+			Teleport To My Waypoint — Command: wpsummonall
+			Teleport To My Objective — Command: summonobjall
+			Teleport To Their Waypoint — Command: wptpall
+			Teleport To Apartment...
+				Near Me — Command: aptmeall — Can be used by other players with the Rude Commands permission.
+				Near My Waypoint — Command: aptwpall — Can be used by other players with the Rude Commands permission.
+				Eclipse Towers, Apt 31 — Command: apt1all — Can be used by other players with the Rude Commands permission.
+				<112 More Options>
+			Teleport To Casino — Command: casinotpall — Can be used by other players with the Aggressive Commands permission.
+		Friendly
+			Vehicle
+				Upgrade — Command: upgradevehall — Can be used by other players with the Friendly Commands permission.
+				Fix Vehicle — Command: repairvehall — Can be used by other players with the Friendly Commands permission.
+				Indestructible — Command: givevehgodall [on/off] — Can be used by other players with the Friendly Commands permission.
+				Can't Be Locked On — Command: givenolockonall [on/off] — Can be used by other players with the Friendly Commands permission.
+				Engine Power Multiplier (1.00 to 20.00) — Command: givepowerall [1.00 to 20.00] — Can be used by other players with the Friendly Commands permission.
+			Give Collectibles
+				All — Command: givecollectiblesall — Can be used by other players with the Neutral Commands permission.
+				Movie Props
+				Hidden Caches
+				Treasure Chests
+				Radio Antennas
+				Media USBs
+				Shipwrecks
+				Buried Stashes
+				Jack O' Lanterns
+				LD Organics Merchandise
+				Junk Energy Skydives
+				Snowmen
+				G's Cache
+				Los Santos Tags
+			CEO Money Loop — Gives associates and bodyguards some decent pay. The recipients don't have to be your associates or bodyguards. — Command: ceopayall [on/off] — Can be used by other players with the Neutral Commands permission.
+			Give RP — Gives the player a bunch of RP. Can be used multiple times. — Command: rpall — Can be used by other players with the Neutral Commands permission.
+			Drop Casino Figurines — Can be used to give RP and cash. — Command: figurinesall [on/off] — Can be used by other players with the Neutral Commands permission.
+			Drop Playing Cards — Can be used to give RP and casino chips. — Command: cardsall [on/off] — Can be used by other players with the Neutral Commands permission.
+			Auto Heal — Keeps their character at maximum health and armour. — Command: autohealall [on/off] — Can be used by other players with the Friendly Commands permission.
+			Never Wanted — Command: bailall [on/off] — Can be used by other players with the Friendly Commands permission.
+			Off The Radar — Command: giveotrall [on/off] — Can be used by other players with the Friendly Commands permission.
+			Drop P's & Q's — Command: snackall [on/off] — Can be used by other players with the Neutral Commands permission.
+			Explosive Hits — Works best in close proximity. — Command: explosiveammoall (value)
+				<85 Options>
+			Impact Particles — Works best in close proximity.
+				<501 Options>
+		Chat
+			Mock Chat Messages — HeRe'S sOmE tExT tO fEaSt YoUr EyEs UpOn — Command: chatmockall [on/off] — Can be used by other players with the Rude Commands permission.
+			OwO-ify Chat Messages — Hewe's some text to feast youw eyes upon — Command: chatowoall [on/off] — Can be used by other players with the Rude Commands permission.
+		Weapons
+			Give Weapons — Command: armall
+				Give All Weapons — Command: armallall — Can be used by other players with the Friendly Commands permission.
+				<8 More Options>
+			Give Ammo — Gives them ammo for their current weapon. — Command: ammoall — Can be used by other players with the Friendly Commands permission.
+			Give Parachute — Command: paragiveall — Can be used by other players with the Friendly Commands permission.
+			Disarm — Will leave them with nothing but their fists. — Command: disarmall [on/off] — Can be used by other players with the Rude Commands permission.
+		Trolling
+			Vehicle
+				Slippery Tyres — Takes some time to deactivate. — Command: slipperyall [on/off] — Can be used by other players with the Aggressive Commands permission.
+			Set Wanted Level (0 to 5) — Command: pwantedall [0 to 5] — Can be used by other players with the Rude Commands permission.
+			Freeze — Command: freezeall [on/off] — Can be used by other players with the Aggressive Commands permission.
+			Force Camera Forward — Can also disable a player's invulnerability under some circumstances. — Command: confuseall [on/off] — Can be used by other players with the Aggressive Commands permission.
+			Ragdoll — Command: ragdollall [on/off] — Can be used by other players with the Rude Commands permission.
+			Shake Camera — Command: shakecamall [on/off] — Can be used by other players with the Rude Commands permission.
+			Kill — Does not work with block blaming or if you're in passive mode. — Command: killall — Can be used by other players with the Aggressive Commands permission.
+			Cage — Command: cageall — Can be used by other players with the Aggressive Commands permission.
+			Explode — Command: explodeall — Can be used by other players with the Aggressive Commands permission.
+			Place Bounty — Command: bountyall [0 to 10000] — Can be used by other players with the Rude Commands permission.
+			Place Bounty On Self (On/Off) — Also place a bounty on yourself to avoid drawing suspicion.
+			Loop Bounty
+				Value (1000 to 10000) — Command: loopbountyvalueall [1000 to 10000]
+				Loop Bounty — Command: loopbountyall [on/off]
+				Place Bounty On Self (On/Off) — Also place a bounty on yourself to avoid drawing suspicion.
+			Send Notifications
+				Cash Removed — Command: notifyremovedall [-2147483648 to 2147483647] — Can be used by other players with the Rude Commands permission.
+				Cash Stolen — Command: notifystolenall [-2147483648 to 2147483647] — Can be used by other players with the Rude Commands permission.
+				Cash Banked — Command: notifybankedall [-2147483648 to 2147483647] — Can be used by other players with the Rude Commands permission.
+				Notification Spam — Command: notifyspamall [on/off] — Can be used by other players with the Rude Commands permission.
+			Send To Job
+				Severe Weather Patterns — Command: sendtojoball
+				Half-track Bully
+				Exit Strategy
+				Offshore Assets
+				Cover Blown
+				Mole Hunt
+				Data Breach
+				Work Dispute
+			Kick From Vehicle — Command: vehkickall — Can be used by other players with the Aggressive Commands permission.
+			Kick From Interior — Command: interiorkickall — Can be used by other players with the Aggressive Commands permission.
+			Disable Driving Vehicles — Puts them into a state where they can't drive vehicles among other things which can be fixed with an apartment invite. — Command: novehsall — Can be used by other players with the Rude Commands permission.
+			Infinite Loading Screen — Command: infiniteloadingall — Can be used by other players with the Aggressive Commands permission.
+			Infinite Phone Ringing — Command: ringall — Can be used by other players with the Aggressive Commands permission.
+			Force Into Freemode Mission — Forces targets into the freemode mission state, which means they can't be in passive mode or enter interiors. — Command: missionall — Can be used by other players with the Aggressive Commands permission.
+			Trigger Business Raid — Command: raidall — Can be used by other players with the Aggressive Commands permission.
+		Show Camera — Command: showcamall [on/off]
+		Issue Commands On Everyone's Behalf — Command: asall — Can be used by other players with the Neutral Commands permission.
+		Increment Commend/Report Stats
+			Helpful — Command: commendhelpfulall — Can be used by other players with the Neutral Commands permission.
+			Friendly — Command: commendfriendlyall — Can be used by other players with the Neutral Commands permission.
+			Griefing or Disruptive Gameplay — Command: reportgriefingall — Can be used by other players with the Aggressive Commands permission.
+			Cheating or Modding — Command: reportexploitsall — Can be used by other players with the Aggressive Commands permission.
+			Glitching or Abusing Game Features — Command: reportbugabuseall — Can be used by other players with the Aggressive Commands permission.
+			Text Chat: Annoying Me — Command: reportannoyingall — Can be used by other players with the Aggressive Commands permission.
+			Text Chat: Using Hate Speech — Command: reporthateall — Can be used by other players with the Aggressive Commands permission.
+			Voice Chat: Annoying Me — Command: reportvcannoyingall — Can be used by other players with the Aggressive Commands permission.
+			Voice Chat: Using Hate Speech — Command: reportvchateall — Can be used by other players with the Aggressive Commands permission.
+		Kick
+			Smart — Removes the player by any means necessary. — Command: kickall — Can be used by other players with the Aggressive Commands permission.
+			Pool's Closed — Blocked by popular menus. — Command: aidsall — Can be used by other players with the Aggressive Commands permission.
+			Blacklist — Adds the player to the blacklist like they were vote kicked, but kicks them like a desync. Only available when you are the host. — Command: blacklistall — Can be used by other players with the Aggressive Commands permission.
+			Host — Kicks the player using the vote kick mechanism. Unblockable when you are the host. — Command: hostkickall — Can be used by other players with the Aggressive Commands permission.
+			Non-Host — Blocked by most menus. — Command: nonhostkickall — Can be used by other players with the Aggressive Commands permission.
+		Crash
+			Elegant — Blocked by most menus. — Command: crashall — Can be used by other players with the Toxic Commands permission.
+		Outgoing Syncs
+			Block — Stops your position being updated for other players and can even prevent other players from knowing that you're in the session if joining with this enabled. — Command: desyncall [on/off]
+			Write To Log File — Command: syncoutlogall [on/off]
+			Write To Console (On/Off)
+			Notification (On/Off)
+	[Player] — Command: [player]
+		Information — Command: info[player]
+			Status
+				Distance
+				Health
+				Armour
+				Weapon
+				Vehicle
+				Language
+				Controller
+				Wanted Level
+				Mental State
+				Weapon Damage Multiplier
+				Melee Damage Multiplier
+				Apartment ID
+				Interior ID
+				Session Player ID / Slot
+				Type
+				Boss
+				Name
+			Connection
+				Ping
+				Connected Via
+				Relay IP
+				Relay Port
+				LAN IP
+				IP Address
+				Port
+				City
+				Region
+				Country
+				ISP
+			Stats
+				Rank
+				Money In Wallet
+				Money In Bank
+				Money In Total
+				Kills
+				Deaths
+				K/D Ratio
+				Favourite Vehicle
+				Favourite Weapon
+				Favourite Radio Station
+				Owns Bunker
+				Owns Facility
+				Owns Nightclub
+			Crew
+				ID
+				Name
+				Tag
+				Motto
+				Alternative Badge
+				Copy To Crew Spoofing
+			Name (Stand)
+			Name (Session)
+			Name (Social Club)
+			Rockstar ID
+			Discovered
+			Invulnerable For
+			Host Queue Position
+			Name Hash
+		Teleport
+			Teleport To Them — Command: tp[player] — Can be used by other players with the Neutral Commands permission.
+			Teleport Into Their Vehicle — Command: tpveh[player]
+			Teleport Into Their Apartment
+			Teleport To Me — Command: summon[player] — Can be used by other players with the Rude Commands permission.
+			Teleport To Player...
+			Teleport To My Waypoint — Command: wpsummon[player]
+			Teleport To My Objective — Command: summonobj[player]
+			Teleport To Their Waypoint — Command: wptp[player]
+			Teleport To Apartment...
+				Near Me — Command: aptme[player] — Can be used by other players with the Rude Commands permission.
+				Near My Waypoint — Command: aptwp[player] — Can be used by other players with the Rude Commands permission.
+				Eclipse Towers, Apt 31 — Command: apt1[player] — Can be used by other players with the Rude Commands permission.
+				<112 More Options>
+			Teleport To Casino — Command: casinotp[player] — Can be used by other players with the Aggressive Commands permission.
+		Friendly
+			Vehicle
+				Upgrade — Command: upgradeveh[player] — Can be used by other players with the Friendly Commands permission.
+				Fix Vehicle — Command: repairveh[player] — Can be used by other players with the Friendly Commands permission.
+				Indestructible — Command: givevehgod[player] [on/off] — Can be used by other players with the Friendly Commands permission.
+				Can't Be Locked On — Command: givenolockon[player] [on/off] — Can be used by other players with the Friendly Commands permission.
+				Engine Power Multiplier (1.00 to 20.00) — Command: givepower[player] [1.00 to 20.00] — Can be used by other players with the Friendly Commands permission.
+			Give Collectibles
+				All — Command: givecollectibles[player] — Can be used by other players with the Neutral Commands permission.
+				Movie Props
+				Hidden Caches
+				Treasure Chests
+				Radio Antennas
+				Media USBs
+				Shipwrecks
+				Buried Stashes
+				Jack O' Lanterns
+				LD Organics Merchandise
+				Junk Energy Skydives
+				Snowmen
+				G's Cache
+				Los Santos Tags
+			CEO Money Loop — Gives associates and bodyguards some decent pay. The recipients don't have to be your associates or bodyguards. — Command: ceopay[player] [on/off] — Can be used by other players with the Neutral Commands permission.
+			Give RP — Gives the player a bunch of RP. Can be used multiple times. — Command: rp[player] — Can be used by other players with the Neutral Commands permission.
+			Drop Casino Figurines — Can be used to give RP and cash. — Command: figurines[player] [on/off] — Can be used by other players with the Neutral Commands permission.
+			Drop Playing Cards — Can be used to give RP and casino chips. — Command: cards[player] [on/off] — Can be used by other players with the Neutral Commands permission.
+			Auto Heal — Keeps their character at maximum health and armour. — Command: autoheal[player] [on/off] — Can be used by other players with the Friendly Commands permission.
+			Never Wanted — Command: bail[player] [on/off] — Can be used by other players with the Friendly Commands permission.
+			Off The Radar — Command: giveotr[player] [on/off] — Can be used by other players with the Friendly Commands permission.
+			Drop P's & Q's — Command: snack[player] [on/off] — Can be used by other players with the Neutral Commands permission.
+			Explosive Hits — Works best in close proximity. — Command: explosiveammo[player] (value)
+				<85 Options>
+			Impact Particles — Works best in close proximity.
+				<501 Options>
+			Give Script Host — Command: givesh[player] — Can be used by other players with the Friendly Commands permission.
+		Chat
+			Mock Chat Messages — HeRe'S sOmE tExT tO fEaSt YoUr EyEs UpOn — Command: chatmock[player] [on/off] — Can be used by other players with the Rude Commands permission.
+			OwO-ify Chat Messages — Hewe's some text to feast youw eyes upon — Command: chatowo[player] [on/off] — Can be used by other players with the Rude Commands permission.
+			Send Private Message — Sends a chat message that only this player and you can see. — Command: sendpm[player] [text]
+		Weapons
+			Give Weapons — Command: arm[player]
+				Give All Weapons — Command: arm[player]all — Can be used by other players with the Friendly Commands permission.
+				<8 More Options>
+			Give Ammo — Gives them ammo for their current weapon. — Command: ammo[player] — Can be used by other players with the Friendly Commands permission.
+			Give Parachute — Command: paragive[player] — Can be used by other players with the Friendly Commands permission.
+			Disarm — Will leave them with nothing but their fists. — Command: disarm[player] [on/off] — Can be used by other players with the Rude Commands permission.
+		Trolling
+			Vehicle
+				Kill — Command: killveh[player] — Can be used by other players with the Aggressive Commands permission.
+				Flip — Command: flipveh[player] — Can be used by other players with the Aggressive Commands permission.
+				Spin — Command: spin[player] [on/off] — Can be used by other players with the Aggressive Commands permission.
+				EMP — Command: empveh[player] — Can be used by other players with the Aggressive Commands permission.
+				Ignite — Command: igniteveh[player] — Can be used by other players with the Aggressive Commands permission.
+				Delete — Command: delveh[player] — Can be used by other players with the Aggressive Commands permission.
+				Pop Tyres — Command: poptyres[player] — Can be used by other players with the Aggressive Commands permission.
+				Slingshot — Command: slingshot[player] — Can be used by other players with the Aggressive Commands permission.
+				Lock Doors — Command: lock[player] [on/off] — Can be used by other players with the Aggressive Commands permission.
+				Downgrade — Command: vehdowngrade[player] — Can be used by other players with the Aggressive Commands permission.
+				Turn Around — Command: turnaround[player] — Can be used by other players with the Aggressive Commands permission.
+				Detach Wing — Command: detachwing[player] — Can be used by other players with the Aggressive Commands permission.
+				Detach Wheel — Command: detachwheel[player] — Can be used by other players with the Aggressive Commands permission.
+				Slippery Tyres — Takes some time to deactivate. — Command: slippery[player] [on/off] — Can be used by other players with the Aggressive Commands permission.
+				Remove Doors — Command: removedoors[player] — Can be used by other players with the Aggressive Commands permission.
+				Destroy Propellers — Command: destroyprop[player] — Can be used by other players with the Aggressive Commands permission.
+				Break Off Tail Boom — Command: breakofftailboom[player] — Can be used by other players with the Aggressive Commands permission.
+			Attackers
+				Spawn
+					Spawn
+					Count (1 to 20)
+					Model
+						Playable Characters
+							<3 Options>
+						Ground Animals
+							<4 Options>
+						NPCs
+							<805 Options>
+					Vehicle
+						None
+						Random
+						Super
+							<57 Options>
+						Service
+							<13 Options>
+						Utility
+							<24 Options>
+						Helicopters
+							<29 Options>
+						Motorcycles
+							<59 Options>
+						SUVs
+							<46 Options>
+						Planes
+							<44 Options>
+						Sports
+							<115 Options>
+						Emergency
+							<27 Options>
+						Military
+							<17 Options>
+						Sports Classic
+							<47 Options>
+						Compacts
+							<18 Options>
+						Sedans
+							<42 Options>
+						Boats
+							<26 Options>
+						Commercial
+							<23 Options>
+						Off-Road
+							<67 Options>
+						Vans
+							<40 Options>
+						Muscle
+							<90 Options>
+						Cycles
+							<9 Options>
+						Industrial
+							<11 Options>
+						Coupes
+							<20 Options>
+						Open Wheel
+							<4 Options>
+					Weapon
+						Melee Weapons
+							<20 Options>
+						Pistols
+							<21 Options>
+						Machine Guns
+							<13 Options>
+						Rifles
+							<14 Options>
+						Shotguns
+							<10 Options>
+						Sniper Rifles
+							<6 Options>
+						Heavy Weapons
+							<11 Options>
+					Accuracy (0 to 100)
+				Presets — Command: presets[player]
+					Send Jets
+					Send Bikers
+					Send Clowns
+					Send Helicopters
+					Send BMX Gang
+					Send Farmers
+					Send Minitanks
+					Send Military (Combined Arms)
+					Send Spooky Phantoms
+				Immortality (On/Off)
+				Fill Vehicles (On/Off) — Instead of creating a new vehicle for each attacker, existing vehicles will be fully populated before a new one is created.
+				Delete All Attackers
+			Ram
+				Ram — Command: ram[player]
+				Speed (20 to 200) — Command: ramspeed[player] [20 to 200]
+				Vehicle
+					Random
+					Super
+						<57 Options>
+					Service
+						<13 Options>
+					Utility
+						<50 Options>
+					Helicopters
+						<29 Options>
+					Motorcycles
+						<59 Options>
+					SUVs
+						<46 Options>
+					Planes
+						<44 Options>
+					Sports
+						<115 Options>
+					Emergency
+						<27 Options>
+					Military
+						<17 Options>
+					Sports Classic
+						<47 Options>
+					Compacts
+						<18 Options>
+					Sedans
+						<42 Options>
+					Boats
+						<26 Options>
+					Commercial
+						<23 Options>
+					Off-Road
+						<67 Options>
+					Vans
+						<40 Options>
+					Muscle
+						<90 Options>
+					Cycles
+						<9 Options>
+					Industrial
+						<11 Options>
+					Trains
+						<10 Options>
+					Coupes
+						<20 Options>
+					Open Wheel
+						<4 Options>
+				Invisibility (On/Off)
+			Set Wanted Level (0 to 5) — Command: pwanted[player] [0 to 5] — Can be used by other players with the Rude Commands permission.
+			Freeze — Command: freeze[player] [on/off] — Can be used by other players with the Aggressive Commands permission.
+			Fake Money Drop — Command: fakemoneydrop[player] [on/off]
+			Block Passive Mode — Command: nopassivemode[player] [on/off]
+			Force Camera Forward — Can also disable a player's invulnerability under some circumstances. — Command: confuse[player] [on/off] — Can be used by other players with the Aggressive Commands permission.
+			Ragdoll — Command: ragdoll[player] [on/off] — Can be used by other players with the Rude Commands permission.
+			Sound Spam — Command: soundspam[player] [on/off] — Can be used by other players with the Aggressive Commands permission.
+			Shake Camera — Command: shakecam[player] [on/off] — Can be used by other players with the Rude Commands permission.
+			Gravitate NPCs — Command: gravitate[player] [on/off]
+			Aggressive NPCs — Command: aggressivenpcs[player] [on/off]
+			Mugger Loop — Command: mugloop[player] [on/off] — Can be used by other players with the Aggressive Commands permission. — Exclusive to the Ultimate Edition
+			Turn Into Beast — Command: beast[player] — Can be used by other players with the Neutral Commands permission. — Exclusive to the Ultimate Edition
+			Kill — Does not work with block blaming or if you're in passive mode. — Command: kill[player] — Can be used by other players with the Aggressive Commands permission.
+			Cage — Command: cage[player] — Can be used by other players with the Aggressive Commands permission.
+			Explode — Command: explode[player] — Can be used by other players with the Aggressive Commands permission.
+			Particle Spam
+				Particle Spam — Command: particlespam[player] [on/off]
+				Particle
+					<500 Options>
+				Scale (0.25 to 10.00) — Command: ptfxscale[player] [0.25 to 10.00]
+				Interval (ms) (0 to 1000) — Command: ptfxdelay[player] [0 to 1000]
+				Hide Locally (On/Off) — Prevents you from also being spammed by the particles.
+			Place Bounty — Command: bounty[player] [0 to 10000] — Can be used by other players with the Rude Commands permission.
+			Loop Bounty
+				Value (1000 to 10000) — Command: loopbountyvalue[player] [1000 to 10000]
+				Loop Bounty — Command: loopbounty[player] [on/off]
+			Send Notifications
+				Cash Removed — Command: notifyremoved[player] [-2147483648 to 2147483647] — Can be used by other players with the Rude Commands permission.
+				Cash Stolen — Command: notifystolen[player] [-2147483648 to 2147483647] — Can be used by other players with the Rude Commands permission.
+				Cash Banked — Command: notifybanked[player] [-2147483648 to 2147483647] — Can be used by other players with the Rude Commands permission.
+				Notification Spam — Command: notifyspam[player] [on/off] — Can be used by other players with the Rude Commands permission.
+			Send To Job
+				Severe Weather Patterns — Command: sendtojob[player]
+				Half-track Bully
+				Exit Strategy
+				Offshore Assets
+				Cover Blown
+				Mole Hunt
+				Data Breach
+				Work Dispute
+			Kick From Vehicle — Command: vehkick[player] — Can be used by other players with the Aggressive Commands permission.
+			Kick From Interior — Command: interiorkick[player] — Can be used by other players with the Aggressive Commands permission.
+			Disable Driving Vehicles — Puts them into a state where they can't drive vehicles among other things which can be fixed with an apartment invite. — Command: novehs[player] — Can be used by other players with the Rude Commands permission.
+			CEO/MC Kick — Command: ceokick[player] — Can be used by other players with the Aggressive Commands permission.
+			Infinite Loading Screen — Command: infiniteloading[player] — Can be used by other players with the Aggressive Commands permission.
+			Infinite Phone Ringing — Command: ring[player] — Can be used by other players with the Aggressive Commands permission.
+			Force Into Freemode Mission — Forces targets into the freemode mission state, which means they can't be in passive mode or enter interiors. — Command: mission[player] — Can be used by other players with the Aggressive Commands permission.
+			Trigger Business Raid — Command: raid[player] — Can be used by other players with the Aggressive Commands permission.
+		Waypoint — Command: wp[player] [on/off]
+		Copy Their Waypoint — Command: copywp[player]
+		Spectate
+			Nuts Method — Command: spectate[player] [on/off]
+			Legit Method (On/Off)
+		Show Camera — Command: showcam[player] [on/off]
+		Open Profile — Command: profile[player]
+		Send Friend Request — Command: befriend[player]
+		In Player History
+		Copy Outfit — Command: copyoutfit[player]
+		Copy Vehicle — Command: copyvehicle[player]
+		Issue Commands On Their Behalf — Command: as[player] — Can be used by other players with the Neutral Commands permission.
+		Join CEO/MC — Command: ceojoin[player] [on/off]
+		Invite To Pong — Command: pong[player]
+		Increment Commend/Report Stats
+			Helpful — Command: commendhelpful[player] — Can be used by other players with the Neutral Commands permission.
+			Friendly — Command: commendfriendly[player] — Can be used by other players with the Neutral Commands permission.
+			Griefing or Disruptive Gameplay — Command: reportgriefing[player] — Can be used by other players with the Aggressive Commands permission.
+			Cheating or Modding — Command: reportexploits[player] — Can be used by other players with the Aggressive Commands permission.
+			Glitching or Abusing Game Features — Command: reportbugabuse[player] — Can be used by other players with the Aggressive Commands permission.
+			Text Chat: Annoying Me — Command: reportannoying[player] — Can be used by other players with the Aggressive Commands permission.
+			Text Chat: Using Hate Speech — Command: reporthate[player] — Can be used by other players with the Aggressive Commands permission.
+			Voice Chat: Annoying Me — Command: reportvcannoying[player] — Can be used by other players with the Aggressive Commands permission.
+			Voice Chat: Using Hate Speech — Command: reportvchate[player] — Can be used by other players with the Aggressive Commands permission.
+		Kick
+			Smart — Removes the player by any means necessary. — Command: kick[player] — Can be used by other players with the Aggressive Commands permission.
+			Pool's Closed — Blocked by popular menus. — Command: aids[player] — Can be used by other players with the Aggressive Commands permission.
+			Love Letter — A discrete kick that won't tell the target who did it. Unblockable when you are the host. — Command: loveletterkick[player] — Can be used by other players with the Aggressive Commands permission.
+			Orgasm — Blocked by popular menus. — Command: orgasmkick[player] — Can be used by other players with the Aggressive Commands permission.
+			Blacklist — Adds the player to the blacklist like they were vote kicked, but kicks them like a desync. Only available when you are the host. — Command: blacklist[player] — Can be used by other players with the Aggressive Commands permission.
+			Host — Kicks the player using the vote kick mechanism. Unblockable when you are the host. — Command: hostkick[player] — Can be used by other players with the Aggressive Commands permission.
+			Non-Host — Blocked by most menus. — Command: nonhostkick[player] — Can be used by other players with the Aggressive Commands permission.
+			Invalid Pickup — Blocked by most menus. — Command: pickupkick[player] — Can be used by other players with the Aggressive Commands permission.
+		Crash
+			Elegant — Blocked by most menus. — Command: crash[player] — Can be used by other players with the Toxic Commands permission.
+			Burger King Foot Lettuce — Blocked by popular menus. — Command: footlettuce[player] — Can be used by other players with the Toxic Commands permission.
+			Vehicular Manslaughter — Blocked by popular menus. — Command: slaughter[player] — Can be used by other players with the Toxic Commands permission.
+			Steamroller — Note: This may also crash other players close to your target. — Command: steamroll[player] — Can be used by other players with the Toxic Commands permission.
+		Timeout — Temporarily blocks most network traffic from and to this player. — Command: timeout[player] [on/off]
+		Network Events
+			Block — Command: ignore[player] [on/off]
+			Write To Log File — Command: netlog[player] [on/off]
+			Write To Console (On/Off)
+			Notification (On/Off)
+		Incoming Syncs
+			Block — Command: blocksync[player] [on/off]
+			Write To Log File — Command: syncinlog[player] [on/off]
+			Write To Console (On/Off)
+			Notification (On/Off)
+		Outgoing Syncs
+			Block — Stops your position being updated for this player. — Command: desync[player] [on/off]
+			Write To Log File — Command: syncoutlog[player] [on/off]
+			Write To Console (On/Off)
+			Notification (On/Off)
+World — Command: t world
+	Places
+		Teleport To... — Command: tp
+			Waypoint — Command: tpwp — Can be used by other players with the Neutral Commands permission.
+			Objective — Command: tpobjective
+			Saved Places — You can save places in World > Places > Position.
+				Open Folder
+			Stores
+				Ammu-Nation — Command: tpammunation — Can be used by other players with the Neutral Commands permission.
+				Ammu-Nation with Range — Command: tpshootingrange — Can be used by other players with the Neutral Commands permission.
+				Barber Shop — Command: tpbarbershop — Can be used by other players with the Neutral Commands permission.
+				Clothes Store — Command: tpclothesstore — Can be used by other players with the Neutral Commands permission.
+				Los Santos Customs — Command: tplsc — Can be used by other players with the Neutral Commands permission.
+				Tattoo Parlor — Command: tptattooparlor — Can be used by other players with the Neutral Commands permission.
+			Landmarks
+				Los Santos International Airport — Command: tplsia — Can be used by other players with the Neutral Commands permission.
+				Maze Bank Tower Helipad — Command: tpmazehelipad — Can be used by other players with the Neutral Commands permission.
+				Fort Zancudo — Command: tpfortzancudo — Can be used by other players with the Neutral Commands permission.
+				Mount Chiliad — Command: tpmtchiliad — Can be used by other players with the Neutral Commands permission.
+				Cayo Perico — Ensure that the Cayo Perico world state or IPLs are enabled before teleporting to avoid ending up in water. — Command: tpcayoperico — Can be used by other players with the Neutral Commands permission.
+				Casino — Command: tpcasino — Can be used by other players with the Neutral Commands permission.
+			Very High Up — Command: tphigh — Can be used by other players with the Neutral Commands permission.
+			Position From Clipboard — Scans your clipboard for a 3D or 2D vector. — Command: pastepos
+			Auto Teleport To Waypoints — Automatically teleports you to any waypoint you set. — Command: autotpwp [on/off]
+			Teleport To Waypoints With Portals — Command: wpportals [on/off]
+		Repeat Last Teleport — Command: repeattp
+		Undo Teleport — Command: undoteleport
+		Waypoint On... — Command: wp
+			Objective — Command: wpobjective
+			Saved Places — You can save places in World > Places > Position.
+				Open Folder
+			Stores
+				Ammu-Nation — Command: wpammunation
+				Ammu-Nation with Range — Command: wpshootingrange
+				Barber Shop — Command: wpbarbershop
+				Clothes Store — Command: wpclothesstore
+				Los Santos Customs — Command: wplsc
+				Tattoo Parlor — Command: wptattooparlor
+			Landmarks
+				Los Santos International Airport — Command: wplsia
+				Maze Bank Tower Helipad — Command: wpmazehelipad
+				Fort Zancudo — Command: wpfortzancudo
+				Mount Chiliad — Command: wpmtchiliad
+				Cayo Perico — Ensure that the Cayo Perico world state or IPLs are enabled before teleporting to avoid ending up in water. — Command: wpcayoperico
+				Casino — Command: wpcasino
+			Position From Clipboard — Scans your clipboard for a 3D or 2D vector. — Command: wpclipboard
+		Position — Command: pos
+			Save My Position — Command: savepos [name]
+			Save Waypoint Position — Command: savewppos [name]
+			X — Command: posx
+			Y — Command: posy
+			Z (Altitude) — Command: posz
+			Copy Position To Clipboard — Command: copypos
+		Interiors
+			Bunker
+				Teleport — Command: tpbunker
+				Style — Command: bunkerstyle (value)
+					1 — Command: bunkerstyle 1
+					2 — Command: bunkerstyle 2
+					3 — Command: bunkerstyle 3
+				Security — Command: bunkersecurity [on/off]
+				Equipment Upgrade — Command: bunkerequipmentupgrade [on/off]
+				Gun Locker — Command: bunkergunlocker [on/off]
+				Personal Quarters — Command: bunkerpersonalquarters [on/off]
+				Gun Range — Command: bunkergunrange [on/off]
+			Vehicle Warehouse
+				Teleport — Command: tpvehware
+				Style — Command: vehwarestyle (value)
+					Branded — Command: vehwarestyle branded
+					Urban — Command: vehwarestyle urban
+					Basic (Colours 1) — Command: vehwarestyle basic1
+					Basic (Colours 2) — Command: vehwarestyle basic2
+					Basic (Colours 3) — Command: vehwarestyle basic3
+					Basic (Colours 4) — Command: vehwarestyle basic4
+			LS Car Meet — Teleporting here will ensure the Online world state which might make the game unresponsive shortly. — Command: tpcarmeet
+			IAA Facility — Teleporting here will ensure the Online world state which might make the game unresponsive shortly. — Command: tpfacility
+			Server Room — Teleporting here will ensure the Online world state which might make the game unresponsive shortly. — Command: tpserverroom
+			Bogdan's Submarine — Teleporting here will ensure the Online world state which might make the game unresponsive shortly. — Command: tpsubmarine
+			Humane Labs — Command: tphumanelabs
+			FIB (Bureau Raid) — Command: tpburntfib
+			FIB — Command: tpfib
+			IAA — Command: tpiaa
+			La Fuente Blanca — Command: tpranch
+			Split Sides West Comedy Club — Command: tpcomedy
+			Bahama Mamas — Command: tpbahamamamas
+			Torture Room — Command: tptortureroom
+			Motel Room — Command: tpmotelroom
+			Cinema — Command: tpcinema
+			Recycling Plant — Command: tprecyling
+			Omega's Garage — Command: tpomega
+			Lester's House — Command: tplester
+			Friedlander's Office — Command: tptherapy
+			Solomon's Office — Command: tpsolomon
+			Floyd's House — Command: tpfloyd
+			Janitor's House — Command: tpjanitor
+			Benny's Original Motor Works — Teleporting here will ensure the Online world state which might make the game unresponsive shortly. — Command: tpbenny
+			Hayes Autos — Command: tpchopshop
+			Tequi-La-La — Command: tprockclub
+			Foundry — Command: tpfoundry
+			Union Depository Garage — Command: tpcarpark
+			Epsilon Storage Room — Command: tpepsilonstorage
+			Character Creation Room
+			Mission End Carpark
+			Nightclub Garage — Teleporting here will ensure the Online world state which might make the game unresponsive shortly.
+			Weed Farm — Teleporting here will ensure the Online world state which might make the game unresponsive shortly. — Command: tpweedfarm
+			Stilt House — Teleporting here will ensure the Online world state which might make the game unresponsive shortly. — Command: tpstilthouse
+			High-End Apartment
+			Mid-End Apartment
+			Low-End Apartment
+			High-End Garage
+			Mid-End Garage
+			Low-End Garage
+			Large Warehouse — Teleporting here will ensure the Online world state which might make the game unresponsive shortly.
+			Medium Warehouse — Teleporting here will ensure the Online world state which might make the game unresponsive shortly.
+			Small Warehouse — Teleporting here will ensure the Online world state which might make the game unresponsive shortly.
+		IPLs — Allows you to load and unload parts of the world ("IPLs") *locally*. — Command: ipls
+			Teleport To IPLs — Will teleport you to IPLs when you enable them below. — Command: ipltp [on/off]
+			Cayo Perico — Enabling this IPL will ensure the Online world state which might make the game unresponsive shortly — Command: iplcayoperico [on/off]
+			North Yankton — Command: yank [on/off]
+			North Yankton Map & Radar — Command: yankmap [on/off]
+			Clucking Bell Factory — Command: cluckingbellfactory [on/off]
+			USS Luxington — Enabling this IPL will ensure the Online world state which might make the game unresponsive shortly — Command: ussluxington [on/off]
+			Morgue — Command: morgue [on/off]
+			Pillbox Hill Medical Center — Command: hospital [on/off]
+			Series A Heist Yacht — Enabling this IPL will ensure the Online world state which might make the game unresponsive shortly — Command: seriesayacht [on/off]
+			O'Neil Brothers Ranch — Command: ranch [on/off]
+			O'Neil Brothers Ranch Fire — Command: ranchfire [on/off]
+			Lost MC Clubhouse — Enabling this IPL will ensure the Online world state which might make the game unresponsive shortly — Command: lostmcclubhouse [on/off]
+			Lester's Factory — Command: lestersfactory [on/off]
+			Fame or Shame — Command: fameorshame [on/off]
+			Lifeinvader — Command: lifeinvader [on/off]
+			Vangelico Fine Jewelry — Command: vangelicofinejewelry [on/off]
+			Max Renda — Command: maxrenda [on/off]
+			Train Crash — Command: trainwreck [on/off]
+			Mount Chiliad UFO — Command: ufoeye [on/off]
+			Banham Canyon House — Command: banhamcanyonhouse [on/off]
+			Red Carpet — Command: redcarpet [on/off]
+			FIB Lobby — Command: fiblobby [on/off]
+			FIB Helicopter Crash — Command: fibhelicoptercrash [on/off]
+			FIB Rubble — Command: fibrubble [on/off]
+			Union Depository — Command: uniondepository [on/off]
+			Plane Crash Trench — Command: planecrashtrench [on/off]
+			Alamo Sea Triathlon — Command: alamoseatriathlon [on/off]
+			LSIA Triathlon — Command: lsiatriathlon [on/off]
+			Fort Zancudo Gates — Command: zancudogates [on/off]
+			Sandy Shores Airfield Boxes — Command: sandyshoresairfieldboxes [on/off]
+			Car Wash Spinners — Command: carwashspinners [on/off]
+			Maze Bank Billboard Graffiti — Command: mazebankbillboardgraffiti [on/off]
+			Ron Oil Billboard Graffiti — Command: ronoilbillboardgraffiti [on/off]
+			iFruit Billboard — Command: ifruitbillboard [on/off]
+			Meltdown Billboard 1 — Command: meltdownbillboard1 [on/off]
+			Meltdown Billboard 2 — Command: meltdownbillboard2 [on/off]
+			Hill Valley Church Grave — Enabling this IPL will ensure the Online world state which might make the game unresponsive shortly — Command: hillvalleychurchgrave [on/off]
+		Teleportation Effect
+			<501 Options>
+	Inhabitants
+		Clear Area
+			Clear Area — Command: cleararea
+			Proximity (0.00 to 1000.00) — Command: clearproximity [0.00 to 1000.00]
+			Vehicles — Command: clearvehicles [on/off]
+			Pedestrians — Command: clearpeds [on/off]
+			Objects — Command: clearobjects [on/off]
+			Cages — Command: clearcages [on/off]
+			Pickups — Command: clearpickups [on/off]
+			Ignore Mission Entities — Command: clearnomission [on/off]
+			No Delay — Command: clearnodelay [on/off]
+		Traffic
+			Traffic Colour
+				Traffic Colour — Command: colourtraffic [on/off]
+				Colour — Command: trafficcolour
+					Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: trafficcolourrainbow [0 to 1000]
+			Disable — Command: notraffic (value)
+				Disabled — Command: notraffic off
+				Enabled — Command: notraffic on
+				Enabled, Including Parked Cars
+			Potato Mode — Command: trafficpotato [on/off]
+			Glide Ability — Command: trafficglide (value)
+				Don't Override — Command: trafficglide default
+				Enabled — Command: trafficglide on
+				Disabled — Command: trafficglide off
+		Pedestrians
+			Disable — Command: nopedestrians [on/off]
+		NPC Existence Punishments — Command: existencepunishments
+			Anonymous Explosion (On/Off)
+			Owned Explosion (On/Off)
+			Burn (On/Off)
+			Die (On/Off)
+			Disarm (On/Off) — Will leave them with nothing but their fists.
+			Freeze (On/Off)
+			Cower (On/Off)
+			Flee (On/Off)
+			Push Away (On/Off)
+			Revive (On/Off)
+			Weaken (On/Off) — Reduces their health so they'll die easily.
+			AR Marker (On/Off)
+		NPC Proximity Punishments — Command: proximitypunishments
+			Proximity (0.00 to 1000.00) — Command: punishableproximity [0.00 to 1000.00]
+			Anonymous Explosion (On/Off)
+			Owned Explosion (On/Off)
+			Burn (On/Off)
+			Die (On/Off)
+			Disarm (On/Off) — Will leave them with nothing but their fists.
+			Freeze (On/Off)
+			Cower (On/Off)
+			Flee (On/Off)
+			Push Away (On/Off)
+			Revive (On/Off)
+			Ragdoll (On/Off)
+			Weaken (On/Off) — Reduces their health so they'll die easily.
+			Delete (On/Off)
+			AR Marker (On/Off)
+			Show Model Name (On/Off)
+		NPC Hostility Punishments — Command: hostilitypunishments
+			Include Everyone (On/Off) — Instead of only you, punishments will apply when this demographic is a target too.
+			Include Everyone, In Missions (On/Off) — Same as above, but only effective inside missions.
+			Include Friends (On/Off) — Instead of only you, punishments will apply when this demographic is a target too.
+			Include Passengers (On/Off) — Instead of only you, punishments will apply when this demographic is a target too.
+			Include Crew Members (On/Off) — Instead of only you, punishments will apply when this demographic is a target too.
+			Include Organisation Members (On/Off) — Instead of only you, punishments will apply when this demographic is a target too.
+			Anonymous Explosion (On/Off)
+			Owned Explosion (On/Off)
+			Burn (On/Off)
+			Die (On/Off)
+			Disarm (On/Off) — Will leave them with nothing but their fists.
+			Interrupt (On/Off)
+			Freeze (On/Off)
+			Cower (On/Off)
+			Flee (On/Off)
+			Push Away (On/Off)
+			Ragdoll (On/Off)
+			Weaken (On/Off) — Reduces their health so they'll die easily.
+			Delete (On/Off)
+			AR Marker (On/Off)
+			Show Model Name (On/Off)
+		NPC Aim Punishments — Punish NPCs for aiming in your area. — Command: aimpunishments
+			Punish Only If Aiming At Me (On/Off) — If disabled, NPCs will be punished for aiming in your area, regardless of who they're aiming at
+			Anonymous Explosion (On/Off)
+			Owned Explosion (On/Off)
+			Burn (On/Off)
+			Die (On/Off)
+			Disarm (On/Off) — Will leave them with nothing but their fists.
+			Interrupt (On/Off)
+			Freeze (On/Off)
+			Cower (On/Off)
+			Flee (On/Off)
+			Push Away (On/Off)
+			Revive (On/Off)
+			Ragdoll (On/Off)
+			Weaken (On/Off) — Reduces their health so they'll die easily.
+			Delete (On/Off)
+			AR Marker (On/Off)
+			Show Model Name (On/Off)
+		Player Aim Punishments — Punish players for aiming in your area. — Command: playeraimpunishments
+			Exclude Friends (On/Off)
+			Exclude Crew Members (On/Off)
+			Exclude Stand Users (On/Off)
+			Exclude Organisation Members (On/Off)
+			Punish Only If Aiming At Me (On/Off) — If disabled, players will be punished for aiming in your area, regardless of who they're aiming at
+			Anonymous Explosion (On/Off)
+			Owned Explosion (On/Off)
+			Burn (On/Off)
+			Die (On/Off)
+			Disarm (On/Off) — Will leave them with nothing but their fists.
+			Interrupt (On/Off)
+			Freeze (On/Off)
+			Ragdoll (On/Off)
+			AR Marker (On/Off)
+			Show Model Name (On/Off)
+		NPC ESP
+			Bone ESP — Command: npcboneesp (value)
+				Disabled
+				Low Latency Rendering
+				Legacy Rendering
+			Exclude Dead (On/Off)
+			Colour — Command: npcespcolour
+				Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: npcespcolourrainbow [0 to 1000]
+		Player ESP
+			Bone ESP — Command: playerboneesp (value)
+				Disabled
+				Low Latency Rendering
+				Legacy Rendering
+			Name ESP
+				Name ESP — Command: nameesp (value)
+					Disabled
+					Low Latency Rendering
+					Legacy Rendering
+				Max Distance (1 to 100000) — Command: esprange [1 to 100000]
+				Show Tags — Command: esptags [on/off]
+				Min Text Scale (1 to 10000) — Command: esptextmin [1 to 10000]
+				Max Text Scale (1 to 10000) — Command: esptextmax [1 to 10000]
+				Invert Text Scaling — Command: esptextinverse [on/off]
+			Box ESP
+				Box ESP — Command: boxesp (value)
+					Disabled
+					Low Latency Rendering
+					Legacy Rendering
+				Max Distance (1 to 100000) — Command: boxesprange [1 to 100000]
+			Line ESP
+				Line ESP — Command: lineesp [on/off]
+				Max Distance (1 to 100000) — Command: lineesprange [1 to 100000]
+			Default Colour — Command: defaultespcolour
+				Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: defaultespcolourrainbow [0 to 1000]
+			Tag Colours — Tags are sorted in this list by their display priority.
+				Friend
+					Colour — Command: espcolourfriend
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourfriendrainbow [0 to 1000]
+					Use Colour (On/Off)
+				Organisation Member
+					Colour — Command: espcolourorganisationmember
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourorganisationmemberrainbow [0 to 1000]
+					Use Colour (On/Off)
+				Modder
+					Colour — Command: espcolourmodder
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourmodderrainbow [0 to 1000]
+					Use Colour (On/Off)
+				Likely Modder
+					Colour — Command: espcolourlikelymodder
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourlikelymodderrainbow [0 to 1000]
+					Use Colour (On/Off)
+				Invulnerable
+					Colour — Command: espcolourinvulnerable
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourinvulnerablerainbow [0 to 1000]
+					Use Colour (On/Off)
+				Indestructible Vehicle
+					Colour — Command: espcolourindestructiblevehicle
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourindestructiblevehiclerainbow [0 to 1000]
+					Use Colour (On/Off)
+				Off The Radar
+					Colour — Command: espcolourofftheradar
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourofftheradarrainbow [0 to 1000]
+					Use Colour (On/Off)
+				Invisible
+					Colour — Command: espcolourinvisible
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourinvisiblerainbow [0 to 1000]
+					Use Colour (On/Off)
+				Crew Member
+					Colour — Command: espcolourcrewmember
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourcrewmemberrainbow [0 to 1000]
+					Use Colour (On/Off)
+				Dead
+					Colour — Command: espcolourdead
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourdeadrainbow [0 to 1000]
+					Use Colour (On/Off)
+				RC Vehicle
+					Colour — Command: espcolourrcvehicle
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourrcvehiclerainbow [0 to 1000]
+					Use Colour (On/Off)
+				Typing
+					Colour — Command: espcolourtyping
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourtypingrainbow [0 to 1000]
+					Use Colour (On/Off)
+				Spectating
+					Colour — Command: espcolourspectating
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourspectatingrainbow [0 to 1000]
+					Use Colour (On/Off)
+				In An Interior
+					Colour — Command: espcolourinaninterior
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourinaninteriorrainbow [0 to 1000]
+					Use Colour (On/Off)
+				Attacked You
+					Colour — Command: espcolourattackedyou
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourattackedyourainbow [0 to 1000]
+					Use Colour (On/Off)
+				VPN
+					Colour — Command: espcolourvpn
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourvpnrainbow [0 to 1000]
+					Use Colour (On/Off)
+				Host
+					Colour — Command: espcolourhost
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourhostrainbow [0 to 1000]
+					Use Colour (On/Off)
+				Next Host
+					Colour — Command: espcolournexthost
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolournexthostrainbow [0 to 1000]
+					Use Colour (On/Off)
+				Script Host
+					Colour — Command: espcolourscripthost
+						Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: espcolourscripthostrainbow [0 to 1000]
+					Use Colour (On/Off)
+		Delete All Ropes — Command: deleteropes
+	Atmosphere
+		Clock — This will only affect your game.
+			Use Session Time — Command: syncclock
+			Time — Command: time [value]
+			Lock Time — Command: locktime [on/off]
+			Use System Time — Command: systime [on/off]
+			Speed (1 to 3999) — Command: clockspeed [1 to 3999]
+			Smooth Transition — Command: timesmoothing [on/off]
+			Noon — Command: time 12
+			Morning — Command: time 6
+			Midnight — Command: time 0
+			Afternoon — Command: time 18
+		Override Weather — Overrides the weather *locally*. — Command: weather (value)
+			Don't Override — Command: weather normal
+			Extra Sunny — Command: weather extrasunny
+			Clear — Command: weather clear
+			Clouds — Command: weather clouds
+			Smog — Command: weather smog
+			Foggy — Command: weather foggy
+			Overcast — Command: weather overcast
+			Rain — Command: weather rain
+			Thunder — Command: weather thunder
+			Clearing — Command: weather clearing
+			Neutral — Command: weather neutral
+			Snow — Command: weather snow
+			Blizzard — Command: weather blizzard
+			Snowlight — Command: weather snowlight
+			Xmas — Command: weather xmas
+			Clear Halloween — Command: weather halloween
+			Rainy Halloween — Command: weather rainhalloween
+			Snowy Halloween — Command: weather snowhalloween
+		Clouds — This will only affect your game. — Command: clouds (value)
+			<21 Options>
+		Disable Skybox — This will only affect your game. — Command: nosky [on/off]
+	Editor — Command: editor
+		Spawner
+			Search — Command: findobject [clue]
+			Input Model Name — The "expert mode" way of spawning objects. — Command: spawnobject [model name]
+			Downtown
+				<130 Options>
+			<20224 More Options>
+		Tools
+			Freecam — Command: editorfreecam [on/off]
+			Teleport To Where I'm Looking — Command: editorteleport
+			Delete All Spawned — Command: editorclear
+	Water
+		Wave Behaviour — This will only affect your game. — Command: wavebehaviour (value)
+			Normal — Command: wavebehaviour normal
+			Smooth — Command: wavebehaviour smooth
+			Magnetic — Command: wavebehaviour magnet
+		Z Differential (-10000.00 to 10000.00) — This will only affect your game. — Command: waterheight [-10000.00 to 10000.00]
+		Only Apply Z Differential To Nearby Water (On/Off)
+		Strength Override (0.00 to 1000.00) — Command: waterstrength [0.00 to 1000.00]
+		Opacity Differential (-80 to 233) — Allows you to add and remove water opacity *locally*. — Command: wateropacity [-80 to 233]
+	Set World State — Note that changing the world state might make the game unresponsive shortly. — Command: worldstate
+		Story Mode — Command: worldstate storymode
+		Online — Command: worldstate online
+		Cayo Perico — Command: worldstate island
+	Enhanced Open World
+		Enhanced Open World — Opens the world up more and allows you to enter many interiors at your own leisure. — Command: doors [on/off]
+		Blips — Command: doorblips [on/off]
+	Watch_Dogs-Like World Hacking
+		Watch_Dogs-Like World Hacking — Command: dedsecmode [on/off]
+		Sticky Selection (0 to 2000) — Hacks are only deselected after the specified delay in milliseconds. This is helpful for controllers. — Command: dedsecsticky [0 to 2000]
+		When No Target Selected...
+			Show Reticle — Command: dedsecpassivereticle [on/off]
+			Show Line — Command: dedsecpassiveline [on/off]
+			Show Box — Command: dedsecpassivebox [on/off]
+		When Target Selected...
+			Show Reticle — Command: dedsecactivereticle [on/off]
+			Show Line — Command: dedsecactiveline [on/off]
+			Show Box — Command: dedsecactivebox [on/off]
+		Colour — Command: dedsechex
+			Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: dedsecrainbow [0 to 1000]
+		Phone Open Deadline (0 to 60000) — Allows you to open your phone despite having a hacking target if you release the key within the given amount of milliseconds. — Command: dedsecdelay [0 to 60000]
+		Hacks — Allows you to configure which hacks appear on your screen.
+			General Actions
+				Freeze (On/Off)
+				Unfreeze (On/Off)
+				Explode (On/Off)
+				Disarm (On/Off)
+				Delete (On/Off)
+			Vehicle Actions
+				Destroy (On/Off)
+				Drive (On/Off)
+				Enter (On/Off)
+				Empty (On/Off)
+				Ignite (On/Off)
+				Slingshot (On/Off)
+				In Stand (On/Off) — Applies if you're selecting a player inside of a vehicle.
+			NPC Actions
+				Burn (On/Off)
+				Flee (On/Off)
+				Cower (On/Off)
+				Revive (On/Off)
+			Player Actions
+				Kill (On/Off)
+				Cage (On/Off)
+				In Stand (On/Off) — Applies if you're selecting a player on foot.
+	GeoGuessr — How well do you know San Andreas?
+		GeoGuessr (On/Off)
+		View Target (On/Off)
+		Take Your Guess — Input a position by setting a waypoint, using freecam, or moving/teleporting your character.
+	Aesthetic Light
+		Aesthetic Light (On/Off)
+		Colour — Command: aestheticcolour
+		Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: aestheticrainbow [0 to 1000]
+		Placement
+			Character — A single light shining out of your character.
+			Camera — A single light shining out of the camera.
+			Oval Of Lights — 81 lights arranged in an oval around your character.
+		Range (0.00 to 10000.00) — Command: aestheticrange [0.00 to 10000.00]
+		Intensity (0.00 to 10000.00) — Command: aestheticintensity [0.00 to 10000.00]
+		Diffraction (-10000.00 to 10000.00) — Command: aestheticdiffraction [-10000.00 to 10000.00]
+	World Border
+		World Border (0 to 12000) — Shows the world border if you're within the specified amount of metres to it. — Command: worldborder [0 to 12000]
+		Colour — Command: worldborderhex
+			Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: worldborderrainbow [0 to 1000]
+	Blackout — This will only affect your game. — Command: blackout (value)
+		Disabled
+		Enabled
+		Enabled, Including Vehicles
+	I Like Trains — Makes trains much more common in the world. — Command: trains [on/off]
+	AR Waypoint — Places a beacon at your waypoints and gives you a way to see the height associated with some waypoints placed via Stand. — Command: arwaypoint [on/off]
+	AR GPS — Navigates you to your waypoints. — Command: argps [on/off]
+Game — Command: t game
+	Disables
+		Disable Game Inputs
+			Presets
+				Mouse — Disables most game inputs while Stand is opened.
+				Controller — Disables a few game inputs while Stand is opened.
+				Controller + Tabs — Same as "Controller" but also disables vehicle acceleration and brake inputs.
+				Numpad — Enables all game inputs.
+			Invert (On/Off)
+			<365 More Options>
+		Straight To Voicemail — Blocks all incoming phone calls. — Command: nophonespam [on/off]
+		Disable Camera Shake — Command: nocamshake [on/off]
+		Disable Stunt Jumps — Command: nostuntjumps [on/off]
+		Disable Cinematic Camera — Command: nocinematiccamera [on/off]
+		Disable Vehicle Focus Camera — Disables the hint camera when you press the cinematic camera button while in a vehicle near a friendly player, etc. — Command: nofocuscamera [on/off]
+		Disable Idle Camera — Command: noidlecam [on/off]
+		Disable Recordings — Disables your ability to capture Rockstar Editor clips. — Command: norecordings [on/off]
+		Disable Restricted Areas — This might cause you to have no weapons in missions or even cause you to fail to load into missions. ⚠️ — Command: norestrictedareas [on/off]
+		Disable Flight Music — Command: noflightmusic [on/off]
+		Disable Wanted Level Music — Command: nowantedlevelmusic [on/off]
+		Prevent Numpad 7 Opening Social Club (On/Off)
+	Camera
+		Freecam — Allows you to basically take the camera anywhere you want.
+			Freecam — Allows you to basically take the camera anywhere you want. — Command: freecam [on/off]
+			Movement Speed (0.01 to 10000.00) — Command: freecamspeed [0.01 to 10000.00]
+			Sprint Multiplier (0.01 to 10000.00) — How fast you go while you press [Space]. — Command: freecamsprintmultiplier [0.01 to 10000.00]
+			Teleport On Disable — Teleports your character to the camera's location when you turn freecam off. — Command: freecamtp [on/off]
+			Movement Ignores Pitch — Disables forward and backward movement affecting height depending on where you're looking. — Command: freecamignorepitch [on/off]
+			Minimap Follows Freecam — Command: freecamminmap [on/off]
+			Show Button Instructions — Command: freecambuttoninstructions [on/off]
+			Movement Controls — Switches your movement inputs between your freecam and character — Command: freecammovement [on/off]
+		Field of View
+			Third-Person, In Vehicle (-5 to 360) — Command: fovtpinveh [-5 to 360]
+			Third-Person, On Foot (-5 to 360) — Command: fovtponfoot [-5 to 360]
+			First-Person, In Vehicle (-5 to 360) — Command: fovfpinveh [-5 to 360]
+			First-Person, On Foot (-5 to 360) — Command: fovfponfoot [-5 to 360]
+			Aiming (-5 to 360) — Command: fovaiming [-5 to 360]
+			Sniping (-5 to 360) — Command: fovsniping [-5 to 360]
+		Camera Distance Multiplier (-10000.00 to 10000.00) — Command: cameradistance [-10000.00 to 10000.00]
+		Unrestrict Gameplay Camera — Allows you to move the gameplay camera in a full 360° circle. — Command: unrestrictcam [on/off]
+		2nd Person Perspective — Command: 2ndperson [on/off]
+		Lock Gameplay Camera Heading — Command: lockheading [on/off]
+		Anti-Crash Camera — Command: anticrashcamera [on/off]
+	Rendering
+		Visual Settings — Command: vis
+			<42 Options>
+		Night Vision — Command: nightvision [on/off]
+		Thermal Vision — Command: thermalvision [on/off]
+		Shader Override — Command: shader (value)
+			<958 Options>
+		Distance Scaling (0.00 to 200.00) — Command: lodscale [0.00 to 200.00]
+		Render HD Only (On/Off)
+		Potato Mode — Restores the game's original 2013 graphics. — Command: potatomode [on/off]
+		Mostly Disable Rendering — Command: norender [on/off]
+		Lock Streaming Focus
+			Lock Streaming Focus — Command: lockstreamingfocus [on/off]
+			Locked Position — Command: lockedstreamingpos [value]
+	Info Overlay — Command: hudinfo
+		In-Game Time — Command: infoclock [on/off]
+		Real-World Time — Command: infotime [on/off]
+		Speedometer — Command: infospeed [on/off]
+		Ticks Per Second — Equal to frames per second. — Command: infotps [on/off]
+		Draws Per Second — Command: infodps [on/off]
+		GPU Overhead (ms) — How many milliseconds your CPU is waiting for your GPU to finish the frame. — Command: infogpuoverhead [on/off]
+		Gear — Command: infogear [on/off]
+		RPM — Command: inforpm [on/off]
+		Players — Command: infoplayers [on/off]
+		Player Tags
+			Friend — Command: infofriend [on/off]
+			Crew Member — Command: infocrewmember [on/off]
+			Organisation Member — Command: infoorganisationmember [on/off]
+			In Timeout — Command: infointimeout [on/off]
+			Modder — Command: infomodder [on/off]
+			Admin — Command: infoadmin [on/off]
+			Likely Modder — Command: infolikelymodder [on/off]
+			Attacked You — Command: infoattackedyou [on/off]
+			Host — Command: infohost [on/off]
+			Next Host — Command: infonexthost [on/off]
+			Script Host — Command: infoscripthost [on/off]
+			Invulnerable — Command: infoinvulnerable [on/off]
+			Indestructible Vehicle — Command: infoindestructiblevehicle [on/off]
+			In Vehicle — Command: infoinvehicle [on/off]
+			RC Vehicle — Command: inforcvehicle [on/off]
+			Off The Radar — Command: infoofftheradar [on/off]
+			In An Interior — Command: infoinaninterior [on/off]
+			Spectating — Command: infospectating [on/off]
+			Typing — Command: infotyping [on/off]
+			Dead — Command: infodead [on/off]
+			Invisible — Command: infoinvisible [on/off]
+			VPN — Command: infovpn [on/off]
+		Host Queue Factor — Command: infohostqueue [on/off]
+		Who's Spectating Who — Command: infowhospectateswho [on/off]
+		Session Code — Command: infosessioncode [on/off]
+		Country Breakdown — Shows all countries of players in the session with the amount of players next to each country. — Command: infocountrybreakdown (value)
+			Disabled
+			Sort By Count
+			Sort By Country Name
+		Outgoing Network Events — Command: infonetworkevents [on/off]
+		Altitude — Command: infoaltitude [on/off]
+		Ground Distance — Command: infogrounddistance [on/off]
+		Position — Command: infoposition [on/off]
+		Rotation (Entity) — Command: inforotationentity [on/off]
+		Rotation (Camera) — Command: inforotationcamera [on/off]
+		Pedestrians — Command: infopeds [on/off]
+		Vehicles — Command: infovehicles [on/off]
+		Objects — Command: infoobjects [on/off]
+		Pickups — Command: infopickups [on/off]
+		Projectiles — Command: infoprojectiles [on/off]
+		Script Programs — Command: infoscriptprograms [on/off]
+		Script Threads — Command: infoscriptthreads [on/off]
+		Natives GTA Invoked Last Tick — Command: infogtanatives [on/off]
+		Natives Stand Invoked Last Tick — Command: infostandnatives [on/off]
+		Entity Handles Last Tick — Command: infoentityhandles [on/off]
+		Control Requests — Command: infocontrolrequests [on/off]
+		Fibers — Command: infofibers [on/off]
+		Script Tick Handlers — Command: infoscripttick [on/off]
+		Draw Handlers — Command: infodraw [on/off]
+		Keep-Alive Connections — Command: infokeepalive [on/off]
+	Edit HUD/UI Colours
+		<225 Options>
+	Edit Labels — Command: editlabels
+		Add Label — Adds a label to the list which will allow you to edit it. — Command: addlabel
+		Reveal Labels — Stops in-game text labels from being resolved and instead shows the label. — Command: reveallabels [on/off]
+		OwO-ify Labels — Command: owolabels [on/off]
+		Label List
+	Custom DLCs — Allows you to load custom DLCs such as add-on vehicles with ease.
+		Open Folder — Opens the "Custom DLCs" folder, which you can treat like GTA's "dlcpacks" folder, except registering and loading DLCs here is as easy as one click.
+		Fix Asset Hashes — Allows you to join sessions with modified assets, which would normally show an incompatible assets error. — Command: fixassethashes [on/off]
+		Spoof Models
+			Spoof Models (On/Off) — Spoofs models from custom DLCs to models that are actually in the game so that players without the custom DLC can still see something.
+			Vehicles — Command: spoofmodelveh (value)
+				Super
+					<57 Options>
+				Service
+					<13 Options>
+				Utility
+					<24 Options>
+				Motorcycles
+					<59 Options>
+				SUVs
+					<46 Options>
+				Sports
+					<115 Options>
+				Emergency
+					<27 Options>
+				Military
+					<17 Options>
+				Sports Classic
+					<47 Options>
+				Compacts
+					<18 Options>
+				Sedans
+					<42 Options>
+				Commercial
+					<23 Options>
+				Off-Road
+					<67 Options>
+				Vans
+					<40 Options>
+				Muscle
+					<90 Options>
+				Industrial
+					<11 Options>
+				Coupes
+					<20 Options>
+				Open Wheel
+					<4 Options>
+			Motorcycles — Command: spoofmodelmotorbike (value)
+				<59 Options>
+			Planes — Command: spoofmodelplane (value)
+				<44 Options>
+			Helicopters — Command: spoofmodelheli (value)
+				<29 Options>
+			Boats — Command: spoofmodelboat (value)
+				<26 Options>
+			Cycles — Command: spoofmodelcycle (value)
+				<9 Options>
+	Radio
+		Radio Stations
+			Blaine County Radio
+				Don't Override
+				Show
+				Hide
+			Blue Ark
+				<3 Options>
+			Worldwide FM
+				<3 Options>
+			FlyLo FM
+				<3 Options>
+			The Lowdown 91.1
+				<3 Options>
+			The Lab
+				<3 Options>
+			Radio Mirror Park
+				<3 Options>
+			Space 103.2
+				<3 Options>
+			Vinewood Boulevard Radio
+				<3 Options>
+			Blonded Los Santos 97.8 FM
+				<3 Options>
+			Los Santos Underground Radio
+				<3 Options>
+			iFruit Radio
+				<3 Options>
+			Self Radio
+				<3 Options>
+			Los Santos Rock Radio
+				<3 Options>
+			Non-Stop-Pop FM
+				<3 Options>
+			Radio Los Santos
+				<3 Options>
+			Channel X
+				<3 Options>
+			West Coast Talk Radio
+				<3 Options>
+			Rebel Radio
+				<3 Options>
+			Soulwax FM
+				<3 Options>
+			East Los FM
+				<3 Options>
+			West Coast Classics
+				<3 Options>
+			Media Player
+				<3 Options>
+			MOTOMAMI Los Santos
+				<3 Options>
+			The Music Locker
+				<3 Options>
+			Kult FM
+				<3 Options>
+			Still Slipping Los Santos
+				<3 Options>
+		Mobile Radio — Enables listening to the radio while on foot. — Command: ipod [on/off]
+		Lock Radio Station — Disallows any changes to the radio station by the game or other players. — Command: lockradio [on/off]
+	Unlocks
+		Set Story Mode Cash — Allow you to change how much money Michael, Franklin, & Trevor have.
+			Michael — Command: spcashmichael [0 to 2147483647]
+			Franklin — Command: spcashfranklin [0 to 2147483647]
+			Trevor — Command: spcashtrevor [0 to 2147483647]
+		Unlock GTA Online (Skip Prologue) — Command: skipprologue
+		Unlock All Achievements — Command: unlockachievements
+		Reveal Entire Map — Command: revealmap [on/off]
+		Override Pre-Order Bonus — Command: preorder (value)
+			Don't Override — Command: preorder default
+			On — Command: preorder on
+			Off — Command: preorder off
+	AR Notifications
+		AR Notifications — Command: arnotifs [on/off]
+		Debug Mode — Command: arnotifsdebug [on/off]
+		Dynamic Scale (0.00 to 1000.00) — Command: arnotifsdynamicscale [0.00 to 1000.00]
+		Static Scale (0.00 to 1000.00) — Command: arnotifsstaticscale [0.00 to 1000.00]
+		Dynamic Scaling — Command: arnotifsdynamicscaling [on/off]
+		Rotation Mode — Command: arnotifsrotation (value)
+			Entity
+			Entity, Including Pitch
+			Camera
+			Camera, Including Pitch
+		Horizontal Offset (-100.00 to 100.00) — Command: arnotifshorizontaloffset [-100.00 to 100.00]
+		Vertical Offset (-100.00 to 100.00) — Command: arnotifsverticaloffset [-100.00 to 100.00]
+		Depth Offset (-100.00 to 100.00) — Command: arnotifsdepthoffset [-100.00 to 100.00]
+		First Person Horizontal Offset (-100.00 to 100.00) — Command: arnotifsfphoriztonaloffset [-100.00 to 100.00]
+		First Person Vertical Offset (-100.00 to 100.00) — Command: arnotifsfpverticaloffset [-100.00 to 100.00]
+		First Person Depth Offset (-100.00 to 100.00) — Command: arnotifsfpdepthoffset [-100.00 to 100.00]
+		Reserved Top Space (0.00 to 1.00) — Command: arnotifsreservedtopspace [0.00 to 1.00]
+		Ensure Text Readability — Command: arnotifsbackface [on/off]
+	Minimap
+		Sleek Minimap — Command: sleekminimap [on/off]
+		Disable New Invites Indicator — Disables the new invites indicator next to the map and on the Job List app. — Command: noinviteindicator [on/off]
+	Remove Notifications Above Minimap — Command: clearnotifications
+	Skip Cutscene — Command: skipcutscene
+	Snake — Command: snake (value)
+		Disabled — Command: snake off
+		During Session Transition — Command: snake whilewaiting
+		Enabled — Command: snake on
+	Time Scale (0.00 to 1000.00) — Changes the speed of time itself *locally*. — Command: timescale [0.00 to 1000.00]
+	Aim Time Scale (0.00 to 1000.00) — Changes the speed of time itself *locally* while you're aiming. — Command: aimtimescale [0.00 to 1000.00]
+	Screenshot Mode — Command: screenshot [on/off]
+	Rewind Position — Go back in time by pressing the assigned hotkey or special ability on controller. — Command: rewind [on/off]
+	Set Game Language — Some languages have a different font which only gets loaded after a game restart. — Command: gamelang
+		Chinese (Simplified) - 简体中文 — Command: gamelang zh
+		Chinese (Traditional) - 繁體中文 — Command: gamelang zht
+		English (US) — Command: gamelang en
+		French - Français — Command: gamelang fr
+		German - Deutsch — Command: gamelang de
+		Italian - Italiana — Command: gamelang it
+		Japanese - 日本語 — Command: gamelang ja
+		Korean - 한국어 — Command: gamelang ko
+		Polish - Polski — Command: gamelang pl
+		Portuguese - Português — Command: gamelang pt
+		Russian - русский — Command: gamelang ru
+		Spanish - Español — Command: gamelang es
+		Spanish (Mexican) - Española (Mexicana) — Command: gamelang esmx
+	Fix Stuttering At High FPS — Fixes the stuttering that occurs when the game approaches 188 FPS. — Command: stutterfix [on/off]
+	Disable Keyboard Hook (On/Off) — Allows you to press the Windows key with GTA focused and stops game lag resulting in keystroke lag.
+	Override Debug Natives — Implements and overrides the debug natives which are still used in some of the game's scripts. — Command: debugnatives [on/off]
+	Patches
+		Projectile Pool (On/Off) — Instead of refusing to spawn new projectiles when the projectile pool is full, this patch will delete the oldest projectile.
+	Analogue Keyboard Support — If you have a supported analogue keyboard, this makes the game understand how strongly you are pressing your keys.
+		Analogue Keyboard Support — If you have a supported analogue keyboard, this makes the game understand how strongly you are pressing your keys. — Command: analogue [on/off]
+		Supported Keyboards
+		Pressure Subtrahend (0 to 255) — Command: analoguesubtrahend [0 to 255]
+		Pressure Divisor (1 to 255) — Command: analoguedivisor [1 to 255]
+		Device
+		Pressure
+	Early Inject Enhancements — Game enhancements that will be applied if Stand is injected as the game starts.
+		Game Pools Size Multiplier (1.00 to 7.00) — Multiplies the size of pools for entities, script resources, etc. Also increase memory pool size to avoid "out of memory" errors. Attempting to make a replay recording with modified game pools will crash the game. — Command: gamepoolmultiplier [1.00 to 7.00]
+		Memory Pool Size (MB) (488 to 2147) — Command: mempool [488 to 2147]
+		Set Game To High Priority (On/Off)
+		Speed Up Startup (On/Off)
+		Skip Intro & License (On/Off)
+	Use Script VM Reimplementation — Replaces the game's script runtime with a slightly more optimised version. — Command: svmreimpl [on/off]
+	YEET — Command: yeet
+Stand — Command: t stand
+	Settings — Command: settings
+		Appearance
+			Colours
+				Primary Colour — Command: primary
+					Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: rainbow [0 to 1000]
+				Focused Text Colour — Command: focustext
+				Focused Right-Bound Text Colour — Command: focusrighttext
+					Copy Focused Text Colour
+				Focused Texture Colour — Command: focustexture
+					Copy Focused Text Colour
+				Background Colour — Command: background
+				Unfocused Text Colour — Command: unfocusedtext
+				Unfocused Right-Bound Text Colour — Command: unfocusedrighttext
+					Copy Unfocused Text Colour
+				Unfocused Texture Colour — Command: unfocusedtexture
+					Copy Unfocused Text Colour
+				HUD Colour — Command: hud
+					Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: hudrainbow [0 to 1000]
+					Copy Primary Colour
+				AR Colour — Command: ar
+					Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: arrainbow [0 to 1000]
+					Copy Primary Colour
+				Minigame Colour — Command: minigame
+					Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: minigamerainbow [0 to 1000]
+					Copy Primary Colour
+			Position — Command: menupos
+				X — Command: menux
+				Y — Command: menuy
+				Move With Mouse — Command: menumousemove [on/off]
+			Header
+				Header — Command: header (value)
+					Be Gone — Command: header hide
+					Stand And Fight by TGP
+					A Tribute by Super Saiyan Ginger
+					Logo Concept 5 by Hollywood Collins
+					Minimalistic by PootisGodAnimations
+					Rockstar Admin Tools
+					Paragon by Denzy
+					Paragon (Purple) by Denzy
+					Paragon (Cyan) by Denzy
+					GlitchFav4 by SourGrapeApe
+					Quantum by Denzy
+					Amogus by boah
+					JoJo by Spicy
+					Shitty Attempt #2 by super saiyan ginger
+					Logo Concept 3 by Hollywood Collins
+					Stan by synn420
+					Take-Two Anti-Profit Tool
+					WillMa Techno by Cahya
+					Untitled (2) by moue
+					epic3dblenderrendernightmare by Thimo
+					Komp 1 by Cahya
+					Shitty Attempt #1 by super saiyan ginger
+					Shitty Attempt #3 by super saiyan ginger
+					Untitled Animated by moue
+					Custom — Command: header custom
+				Frame Interval (1 to 10000) — Command: headerinterval [1 to 10000]
+				Background Blur (On/Off) — Should only be enabled for headers with transparency because it would be a waste of resources to produce a visual effect that would be entirely hidden.
+				Open Folder
+			Address Bar
+				Address Bar — Command: addressbar [on/off]
+				Root Name
+					<28 Options>
+				Address Separator
+					Stand > Online
+					Stand>Online
+					Stand / Online
+					Stand/Online
+					Stand : Online
+					Stand:Online
+					Stand \ Online
+					Stand\Online
+				Show Current List Only (On/Off)
+				Width Affected By Scrollbar (On/Off)
+				Width Affected By Columns (On/Off)
+				Height (0 to 32767) — Command: addressbarheight [0 to 32767]
+				Text — Command: addressbartext
+					Scale (1 to 32767) — Command: addressbartextscale [1 to 32767]
+					X Offset (-15 to 15) — Command: addressbartextxoffset [-15 to 15]
+					Y Offset (-10 to 10) — Command: addressbartextyoffset [-10 to 10]
+				Show Cursor Position — Toggles the visibility of the cursor position indicator at the top-right of Stand's in-game UI. — Command: cursorpos [on/off]
+				Cursor Position Includes Dividers (On/Off)
+			Cursor
+				Scroll Gap (0 to 25) — Sets the minimum amount of commands you will see below or above your selection unless you're at the beginning or end of a list. — Command: cursorpadding [0 to 25]
+				Width (0 to 32767) — Command: cursorborderwidth [0 to 32767]
+				Rounded — Command: cursorborderrounded [on/off]
+				Colour — Command: cursorborder
+					Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: cursorborderrainbow [0 to 1000]
+			Tabs
+				Tabs — Command: tabs [on/off]
+				Width (1 to 32767) — Command: tabswidth [1 to 32767]
+				Height (1 to 32767) — Command: tabsheight [1 to 32767]
+				Position — Command: tabsposition (value)
+					Left — Command: tabsposition left
+					Right — Command: tabsposition right
+					Top — Command: tabsposition top
+					Bottom — Command: tabsposition bottom
+				Text — Command: tabstext
+					Scale (1 to 32767) — Command: tabstextscale [1 to 32767]
+					X Offset (-15 to 15) — Command: tabstextxoffset [-15 to 15]
+					Y Offset (-10 to 10) — Command: tabstextyoffset [-10 to 10]
+				Text Alignment — Command: tabsalignment (value)
+					Left — Command: tabsalignment left
+					Centre — Command: tabsalignment centre
+					Right — Command: tabsalignment right
+				Show Icon Left — Command: tabslefticon [on/off]
+				Show Name — Command: tabsname [on/off]
+				Show Icon Right — Command: tabsrighticon [on/off]
+				Icons Use Text Colour (On/Off)
+			Scrollbar
+				Scrollbar
+					Enabled
+					Enabled For Big Lists
+					Disabled
+				Width (1 to 32767) — Command: scrollbarwidth [1 to 32767]
+			Command Info Text
+				Position — Here's some text to feast your eyes upon — Command: commandinfotextposition (value)
+					Left — Command: commandinfotextposition left
+					Bottom — Command: commandinfotextposition bottom
+					Right — Command: commandinfotextposition right
+					Below Tabs — Command: commandinfotextposition belowtabs
+				Width (1 to 32767) — Command: infowidth [1 to 32767]
+				Padding (-100 to 100) — Command: infopadding [-100 to 100]
+				Show Help Text — Here's some text to feast your eyes upon — Command: showhelptext [on/off]
+				Show Command Syntax — Here's some text to feast your eyes upon — Command: showsyntax [on/off]
+				Indicate Slider Behaviour — Command: showsliderbehaviour [on/off]
+				Indicate If Usable By Other Players — Command: shownonuseronly [on/off]
+				Show Owning Script — Command: showowners [on/off]
+			Notifications
+				Type
+					Game
+					Stand, Next To Map
+					Stand, Custom Position
+				Custom Position — This will only take effect with type set to "Stand, Custom Position". — Command: notifypos
+					X — Command: notifyx
+					Y — Command: notifyy
+					Move With Mouse — Command: notifymousemove [on/off]
+				Invert Flow (On/Off) — This will only take effect with type set to "Stand, Custom Position".
+				Width (0 to 15000) — Command: notifywidth [0 to 15000]
+				Padding (0 to 15000) — Command: notifypadding [0 to 15000]
+				Border Colour — Command: notifyborder
+					Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: notifyborderrainbow [0 to 1000]
+					Copy Primary Colour
+				Flash Colour — Command: notifyflash
+					Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: notifyflashrainbow [0 to 1000]
+				Background Colour — Command: notifybg
+					Copy Background Colour
+				Flash Notification
+				Timing
+					Reading Speed (WPM) (0 to 1000) — Command: readspeed [0 to 1000]
+					Reading Start Delay (ms) (0 to 1000) — Command: readstartdelay [0 to 1000]
+					Min Duration (ms) (0 to 60000) — Command: notifyminduration [0 to 60000]
+					Max Duration (ms) (0 to 60000) — Command: notifymaxduration [0 to 60000]
+					Show Sample Notification
+						Small
+						Medium
+						Large
+			Commands
+				Text — Command: commandtext
+					Scale (1 to 32767) — Command: commandtextscale [1 to 32767]
+					X Offset (-15 to 15) — Command: commandtextxoffset [-15 to 15]
+					Y Offset (-10 to 10) — Command: commandtextyoffset [-10 to 10]
+				Colour Commands
+					Preview Colour In Texture (On/Off)
+					Preview Colour In List (On/Off)
+				Prefill Current Value For Command Box
+					Sliders (On/Off)
+					Text Inputs (On/Off)
+				Number Sliders
+					Selectable N/A Sliders — Command: selectablenasliders [on/off]
+					Rightbound Value — Command: slidersrightbound [on/off]
+				Selectable Dividers — Command: selectabledividers [on/off]
+			Border
+				Width (0 to 32767) — Command: borderwidth [0 to 32767]
+				Rounded — Command: borderrounded [on/off]
+				Colour — Command: border
+					Rainbow Mode (0 to 1000) — Cycles the colour's hue every x milliseconds but still allows you to change the saturation, value, and opacity. — Command: borderrainbow [0 to 1000]
+			Max Columns (1 to 50) — Command: columns [1 to 50]
+			Max Visible Commands (3 to 255) — Command: menuheight [3 to 255]
+			List Width (0 to 32767) — Command: listwidth [0 to 32767]
+			List Height (0 to 32767) — Command: listheight [0 to 32767]
+			Spacer Size (0 to 32767) — Command: spacersize [0 to 32767]
+			Smooth Scrolling (0 to 1000) — Command: smoothscroll [0 to 1000]
+			Background Blur (0 to 100) — Note that higher values of this are extremely demanding of your GPU. — Command: blur [0 to 100]
+			Open Theme Folder — Opens your %appdata%/Stand/Theme folder.
+			Font & Text
+				Set Font — Command: setfont
+				Use Preset Font — Command: presetfont
+					Microsoft YaHei — Stand's default font. — Command: presetfont yahei
+					Nanum Gothic — Stand's auxiliary font for Korean. — Command: presetfont nanumgothic
+					Be Vietnam Pro Light — Stand's auxiliary font for Vietnamese. — Command: presetfont bevietnamprolight
+				Reload Font — Command: reloadfont
+				Command Box Input Text — Command: commandboxinput
+					Scale (1 to 32767) — Command: commandboxinputscale [1 to 32767]
+					X Offset (-15 to 15) — Command: commandboxinputxoffset [-15 to 15]
+					Y Offset (-10 to 10) — Command: commandboxinputyoffset [-10 to 10]
+				Small Text — Command: smalltext
+					Scale (1 to 32767) — Command: smalltextscale [1 to 32767]
+					X Offset (-15 to 15) — Command: smalltextxoffset [-15 to 15]
+					Y Offset (-10 to 10) — Command: smalltextyoffset [-10 to 10]
+				Show Text Bounding Boxes — Command: showtextboundingboxes [on/off]
+			Textures
+				Leftbound — Command: lefttextures (value)
+					Disabled
+					All Commands
+					All Commands, Compact
+					Toggles Only
+					Toggles Only, Compact
+				Reload Textures — Command: reloadtextures
+			Stream-Proof Rendering — Prevents Stand being visible to streaming software, if it uses DirectX/game capture. — Command: streamproof [on/off]
+			Entity Previews
+				Disable Entity Previews — Command: disableentitypreviews [on/off]
+				Opaque — Command: previewopaque [on/off]
+				Rotation Speed (0.00 to 4.00) — Command: previewrotationspeed [0.00 to 4.00]
+				Additional Character Distance (0.00 to 5.00) — Command: previewpeddist [0.00 to 5.00]
+				Additional Object Distance (0.00 to 10.00) — Command: previewobjdist [0.00 to 10.00]
+				Additional Vehicle Distance (0.00 to 10.00) — Command: previewvehdist [0.00 to 10.00]
+		Input
+			Keyboard Input Scheme — Command: inputscheme
+				Presets — Command: inputpreset
+					Flexible — Command: inputpreset flexible
+					No Numpad — Command: inputpreset tkl
+					Numpad — Command: inputpreset full
+				Open/Close Menu
+				Previous Tab
+				Next Tab
+				Up
+				Down
+				Left
+				Right
+				Click
+				Back
+				Context Menu
+				Command Box
+			Context Option Hotkeys
+				Save State
+				Load State
+				Apply Default State
+				Apply Default State To Children
+				Set To Min Value
+				Set To Max Value
+			Mouse Support
+				Mouse Support — Note that this does not work with the "Windows" input method due to it constantly centring your cursor. — Command: mouse [on/off]
+				Set Cursor Position On Non-Mouse Navigation (On/Off)
+			Controller Support — Command: controller [on/off]
+			Controller Input Scheme
+				Open/Close Menu 1
+					<16 Options>
+				Open/Close Menu 2
+					<16 Options>
+				Previous Tab
+					<16 Options>
+				Next Tab
+					<16 Options>
+				Up
+					<16 Options>
+				Down
+					<16 Options>
+				Left
+					<16 Options>
+				Right
+					<16 Options>
+				Click
+					<16 Options>
+				Back
+					<16 Options>
+				Context Menu
+					<16 Options>
+				Command Box
+					<17 Options>
+			Back Resets Cursor — Puts the cursor at the top of the list when back is pressed while there's nothing to go back to. — Command: backreset [on/off]
+			Back Closes Menu — Allows Stand's in-game UI to be closed by pressing back when there's nothing to go back to. — Command: backclose [on/off]
+			Interrupt Holding On Wrap-Around (On/Off)
+			Keep Cursor When Revisiting
+				Tabs — Will make tabs like "Self" remember the cursor position you had when you last visited them. — Command: tabskeepcursor [on/off]
+				Lists — Will make lists like "Settings" remember the cursor position you had when you last visited them. — Command: listskeepcursor [on/off]
+				Lists: Reduced Effect For Huge Lists (On/Off)
+			Key Repeat Interval (0 to 10000) — The interval at which your keyboard input is repeated while you're holding a key down. — Command: keyrepeatinterval [0 to 10000]
+			Key Long-Hold Repeat Interval (0 to 10000) — The interval at which your keyboard input is repeated when you've held a key down for a while. — Command: keylongrepeatinterval [0 to 10000]
+			Key Repeat Interval For Tabs (0 to 10000) — Command: tabrepeatinterval [0 to 10000]
+			Disable Hotkeys — Command: disablehotkeys [on/off]
+			Modifier Key Matching — How ctrl, shift, & alt are handled.
+				Strict — No additional modifier keys may be pressed. So, pressing Ctrl+Shift+G would not trigger G nor Ctrl+G.
+				Smart — Strict if hotkey has modifier keys, lax otherwise. So, pressing Ctrl+Shift+G would trigger G but not Ctrl+G.
+				Lax — Additional modifier keys may be pressed. So, pressing Ctrl+Shift+G would trigger G and Ctrl+G.
+		Info Text
+			Position — Command: infotextpos
+				X — Command: infotextx
+				Y — Command: infotexty
+				Move With Mouse — Command: infotextmousemove [on/off]
+			Alignment — Command: infoalign (value)
+				Top Left — Command: infoalign topleft
+				Top Centre — Command: infoalign topcentre
+				Top Right — Command: infoalign topright
+				Centre Left — Command: infoalign centreleft
+				Centre — Command: infoalign centre
+				Centre Right — Command: infoalign centreright
+				Bottom Left — Command: infoalign bottomleft
+				Bottom Centre — Command: infoalign bottomcentre
+				Bottom Right — Command: infoalign bottomright
+			Scale (0 to 10000) — Command: infoscale [0 to 10000]
+			Drop Shadow (0 to 255) — Command: infodropshadow [0 to 255]
+		Warnings
+			Automatically Proceed On Warnings
+				Command Box — Includes the Stand Command Box, the command box on the web interface, and chat commands. — Command: commandsskipwarnings [on/off]
+				Hotkey — Command: hotkeysskipwarnings [on/off]
+			Force Me To Read Warnings (On/Off)
+			Skip Already-Accepted Warnings — Command: skiprepeatwarnings [on/off]
+		Hide Information — This can help you avoid showing sensitive information when screensharing Stand.
+			Hide Unspoofed Name — This refers to the name shown in the player information list and is unaffected by "Spoof Other Players' Names".
+				Disabled
+				Me
+				Friends & Me
+				Crew Members, Friends, & Me
+				Enabled
+			Hide Rockstar ID
+				Disabled
+				Me
+				Friends & Me
+				Crew Members, Friends, & Me
+				Enabled
+			Hide IP Address
+				Disabled
+				Me
+				Friends & Me
+				Crew Members, Friends, & Me
+				Enabled
+			Hide GeoIP
+				Disabled
+				Me
+				Friends & Me
+				Crew Members, Friends, & Me
+				Enabled
+		Notifications
+			Suppress Generic Responses — Suppress generic responses like "Command executed successfully".
+				Command Box — Includes the Stand Command Box, the command box on the web interface, and chat commands. — Command: suppressgenericresponses [on/off]
+				Hotkey (On/Off)
+		Command Box
+			Max Shown Matching Commands (1 to 1000) — Command: cbmaxshownmatching [1 to 1000]
+			Keep Draft When Closed — Command: cbkeepdraft [on/off]
+		Session Joining
+			Automatically Change Targeting Mode (On/Off) — This only applies when joining sessions via Stand. Join methods without dialogs always do this.
+			Check If Join Will Succeed (On/Off) — Aborts the join attempt if the host won't allow the join, e.g. because the session is full.
+		Language — If you're unable to comprehend the language in which this text was written, change this maybe. — Command: lang (value)
+			Chinese (Simplified) - 简体中文 — Command: lang zh
+			Dutch - Nederlands — Command: lang nl
+			English (UK) — Command: lang enuk
+			English (US) — Command: lang enus
+			French - Français — Command: lang fr
+			German - Deutsch — Command: lang de
+			Italian - Italiana — Command: lang it
+			Japanese - 日本語 — Command: lang ja
+			Korean - 한국어 — Command: lang ko
+			Lithuanian - Lietuvių — Command: lang lt
+			Polish - Polski — Command: lang pl
+			Portuguese - Português — This translation is currently unmaintained. Get in touch if you think you could update it. — Command: lang pt
+			Russian - русский — Command: lang ru
+			Spanish - Español — Command: lang es
+			Turkish - Türkçe — Command: lang tr
+			Vietnamese - Tiếng Việt — Command: lang vi
+			Horny English — Command: lang sex
+			Engwish — Command: lang uwu
+			Howny Engwish — Command: lang hornyuwu
+		Show Button Instructions — Command: showbuttoninstructions (value)
+			Enabled
+			Smart
+			Disabled
+		Open After Injection (On/Off)
+		Discord Rich Presence — Command: discordrichpresence [on/off]
+		Sound Effects — Command: sfx [on/off]
+		Menu Navigation Reminders (On/Off)
+	Profiles — Profiles allow you to save and load the state of all commands. — Command: profiles
+		Create Profile — Save the state of every command to a new profile. — Command: newprofile [name]
+		Open Folder
+	Lua Scripts — Allows you to run scripts that were written for Stand in Lua and/or Pluto. — Command: luascripts
+		Repository — The repository gives you easy access to a selection of lua scripts.
+		Open Folder
+		Settings
+			Presets
+				User
+				Developer
+			Warn Me Before Running Dangerous Scripts — Command: luaconfigwarndangerous [on/off]
+			Warn Me Before Running Money Scripts — Command: luaconfigwarnmoney [on/off]
+			Enforce Silent Start
+				No
+				Yes
+				Yes + Notify
+			Enforce Silent Stop
+				No
+				Yes
+				Yes + Notify
+			enable_warnings (On/Off)
+			notify_deprecated (On/Off)
+			notify_bad_practice (On/Off)
+			notify_missed_cleanup_blurrect (On/Off)
+			notify_missed_cleanup_arspinner (On/Off)
+			notify_missed_cleanup_graceland (On/Off)
+			notify_ref_by_path_upgrade (On/Off)
+			notify_get_value_fail (On/Off) — If menu.get_value does not support a command type, it will silently return 0. With this enabled, you will get a notification in that case.
+	ASI Mods — Allows you to use ASI mods with Stand's ScriptHookV implementation. — Command: asimods
+		Open ASI Mods Folder — Opens your %appdata%/Stand/ASI Mods folder.
+		Open GTA V Folder
+		Settings
+			Use Temp Folder (On/Off) — This allows you to restart ASI mods that don't support unloading, but might cause ASI mods to read/write configurations in the temp folder.
+			Deceive Online Checks (On/Off) — Allows you to use ASI mods that refuse to work when you're in Online.
+	Command Box Scripts
+		Open Folder
+		Command Box Documentation
+		Command List
+	Experiments
+		Run Network Diagnostics
+		Unbrick Account
+		Read All Org Chats (On/Off) — Players in an org will see you under their org in the player list, and if the script host has an org, creating an org of your own will not work flawlessly.
+		Chat Gadget — Command: chatgadget (value)
+			Disabled
+			Window
+			Direct
+		Been Playing Since The Game Came Out! — Irreversibly changes various stats related to your onboarding date. This doesn't improve or worsen safety as far as we know. Ideally we'd have a "stats editor".
+		Show Nav Mesh — Command: navmesh [on/off]
+		Show Nav Mesh Neighbors (On/Off)
+		Show Ped Tasks — Command: showpedtasks [on/off]
+		Show Apartments — Pos. ID -> Apt. ID(s) — Command: showapartments [on/off]
+		Show Interior ID — Command: showinteriorid [on/off]
+		Log Profanities — Best enjoyed in conjuction with a lapdance at the Vanilla Unicorn. — Command: dumpprofanities
+		Export Display Names
+		Abort Transition — Command: aborttransition
+		Quick Bail — Command: quickbail
+		Command Gallery
+			menu.list — Command: gallerylist
+			menu.action — Command: galleryaction
+			menu.toggle — Command: gallerytoggle [on/off]
+			menu.slider (-2147483648 to 2147483647) — Command: galleryslider [-2147483648 to 2147483647]
+			menu.slider_float (-21474836.48 to 21474836.47) — Command: gallerysliderfloat [-21474836.48 to 21474836.47]
+			menu.click_slider (-2147483648 to 2147483647) — Command: galleryclickslider [-2147483648 to 2147483647]
+			menu.click_slider_float (-21474836.48 to 21474836.47) — Command: galleryclicksliderfloat [-21474836.48 to 21474836.47]
+			menu.list_select — Command: gallerylistselect (value)
+				Uno — Command: gallerylistselect uno
+				Dos — Command: gallerylistselect dos
+				Tres — Command: gallerylistselect tres
+			menu.list_action — Command: gallerylistaction
+				Uno — Command: gallerylistaction uno
+				Dos — Command: gallerylistaction dos
+				Tres — Command: gallerylistaction tres
+			menu.textslider
+			menu.textslider_stateful
+	Credits — Command: credits
+		Pocakking — Created BigBaseV2, which was a great starting point.
+		QuickNET — Shared his knowledge of GTA and C++ and answered stupid questions.
+		Maestro-1337 — Helped keep the menu up-to-date by sharing crossmaps.
+		alloc8or — Maintains his Native DB and shared lots of useful data.
+		SirMestre — Created LittleInjector, which helped with creating the Launchpad.
+		Give-Two — Created a ScriptHookV implementation, which helped with DirectX rendering.
+		gir489 — Shared his knowledge of GTA and created bigbasev2-fix.
+		well-in-that-case — Created Pluto, the fork of Lua that we use.
+		C5Hackr — Helped with allowing you to use Stand despite BattlEye.
+		UPX — Allows the Stand DLL to be smaller than it actually is.
+		UnknownCheats — Diamonds in the mud.
+		StackOverflow — Naturally.
+		Thimo — Maintains Stand's Dutch translation.
+		moue — Maintains Stand's Lithuanian translation.
+		zzzz — Maintains Stand's Chinese translation.
+		IceDoomfist — Maintains Stand's Korean translation.
+		99Anvar99 — Maintains Stand's Russian translation.
+		Lancito01 — Maintains Stand's Spanish translation.
+		Itreax — Maintains Stand's French translation.
+		Emre — Maintains Stand's Turkish translation.
+		DumbBird — Maintains Stand's Polish translation.
+		Rem1ria — Maintains Stand's Japanese translation.
+		Nhất Linh — Maintains Stand's Vietnamese translation.
+		Il Mac — Maintains Stand's Italian translation.
+		... and you! — Yes, you get a participation trophy. But seriously, thank you for supporting Stand, reporting bugs, and suggesting features!
+	Find Command — Allows you to find commands in Stand by name and help text. — Command: search [clue]
+	Apply Default State — Resets all commands back to their default state. — Command: default
+	Commands With Non-Default State
+	Get Help With Stand
+	Saved Commands — Lists all commands you've saved using the respective option in the context menu.
+	Web Interface — The web interface allows you to use Stand from your browser, even on your smartphone.
+		Open Web Interface — Command: webinterface
+	Console — Command: console [on/off]
+	Open Stand Folder — Opens your %appdata%/Stand folder. — Command: openstandfolder
+	Clear Notifications — Clears Stand's notification system. — Command: clearstandnotifys
+	Empty Log.txt — Cleanses your %appdata%/Stand/Log.txt. — Command: emptylog
+	Generate Features (en).txt — Saves all currently available commands in %appdata%/Stand/Features (en).txt with their help text and syntax. — Command: featurelist
+	Tutorial
+		Repeat — Command: repeattutorial
+		Dismiss — Command: dismisstutorial
+	Unload Stand — Removes Stand from the game until you re-inject it. — Command: unload

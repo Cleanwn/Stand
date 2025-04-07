@@ -1,0 +1,11 @@
+# Line Endings
+*.cpp text eof=lf
+*.hpp text eof=lf
+*.php text eof=lf
+*.cs text eof=lf
+
+# Exclude vendored code from language stats
+Stand/lib/** linguist-vendored
+
+# Count .pluto files as Lua
+*.pluto linguist-language=Lua

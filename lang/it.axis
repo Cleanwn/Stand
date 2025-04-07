@@ -1,0 +1,5658 @@
+! Thanks for helping with the translation of Stand into your language!
+! Before you begin, I guess you need to know a little about the project so you can work efficiently.
+! Lines starting with "# LABEL=" need to be translated except for the "LABEL=" part and to indicate that it has been translated, you need to remove the "# ", which might be a bit annoying at first, but this will become practical for updating the translation.
+! There are some things that you shouldn't translate:
+! - The name "Stand"
+! - Pairs of curly brackets, e.g. {} or {player}
+! - Folders or files like %appdata%/Stand/Theme
+! - Emojis (unless there's a culturally different meaning)
+! - Technical Terms, i.e. anything that would make less sense if translated
+! Alright, I think you're ready to unleash your powers now! ;D
+
+!!!!!!!!!!!!!
+!! General !!
+!!!!!!!!!!!!!
+
+HI=Ora sei un [Utente Stand]! :D
+HI_TRCK=Bentornato su Stand!
+HI_TRCK_0=Nessuno dei giocatori da te tracciati è attualmente online.
+HI_TRCK_1={} è attualmente online.
+HI_TRCK_M={} sono attualmente online.
+
+HKFAIL=Una o più funzioni del gioco necessarie per {} non possono essere modificate presumibilmente a causa di un altro menu che stai utilizzando. :/
+WOT1=Nel mio percorso per soddisfare la tua richiesta più recente, ho compiuto le seguenti azioni:
+WOT2=• Niente
+WOT3=• Nada
+WOT4=• Assolutamente Niente
+WOT5=Tieni presente che questo elenco non è affatto una rappresentazione completa di tutto ciò che è accaduto.
+2FAST=Lo stai facendo troppo in fretta. Bevi un sorso d'acqua, e poi riprova.
+ARGNME=[nome]
+
+! E.g. Command: wanted [0 to 5]
+ARGRNGE=a
+
+ARGVAL=[valore]
+ARGVALOPT=(valore)
+NRML=Normale
+INVARG=Questo è un argomento non valido. :?
+GENWARN=Sei assolutamente sicuro di volerlo fare?
+IRREV=Questa azione è irreversibile.
+GENFAIL=Hmm, non ha funzionato. :/
+IPSUM=Eccoti del testo con cui rifarti gli occhi
+PRCD=Procedere
+ABRT=Interrompi
+SHW=Mostra
+HDE=Nascondi
+HIDE=Nascosto
+NONE=Nessuno
+JUSTON=On
+OFF=Off
+ON=Abilitato
+DOFF=Disabilitato
+DOFF2=Disabilita
+ALL=Tutti/e
+
+! Thousands separator, e.g. 1,000,000
+THSNDSEP=,
+
+! "Not Applicable"
+NA=N/A
+
+GEMINI=Aprendo il terzo occhio...
+RCMD=Raccomandato
+NRCMD=Non Raccomandato
+CPYF=Copia {}
+GENWAIT=Attendi prego...
+CMDLEN=Non può contenere più di {} caratteri.
+AND={} e {}
+
+! A more fancy way of saying "this is local"
+GEN_H_LOC=Questo influenzerà soltanto il tuo gioco.
+
+! When the user is seeing an empty list:
+ETYLST=Niente da vedere qua.
+
+NPHYS=[Il comando non ha nessuna forma fisica]
+
+! Repetitions in log:
+LOG_REP_S=+ ripetuto 1 volta
+LOG_REP_P=+ ripetuto {} volte
+
+IPNAM={ip} (visto in precedenza come {name})
+
+CHRCNT={cur}/{max} caratteri
+PLYCNT={cur}/{max} giocatori
+PTCCNT={cur}/{max} partecipanti
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Search Commands !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SRCH=Cerca
+ARGCLU=[indizio]
+SRCHNRES=Nessun risultato. :/
+
+!!!!!!!!!!!!!!!!!!!!
+!! Error Handling !!
+!!!!!!!!!!!!!!!!!!!!
+
+ERR_L_B=INIZIO INFORMAZIONI SULL'ERRORE
+ERR_L_E=FINE INFORMAZIONI SULL'ERRORE
+
+ERR_T_GEN=Trova più informazioni sull'errore in %appdata%/Stand/Log.txt
+ERR_T_CAU=Rilevata un'eccezione.
+ERR_T_GME=Il gioco ha riscontrato un errore fatale e potrebbe essere necessario un riavvio.
+ERR_T_OTH=Stand ha riscontrato un problema imprevisto.
+
+ERR_LUA=Nota: questo errore si è verificato durante l'esecuzione di uno script Lua.
+
+SVM=Recupero Errori Script
+4FMONLY=Solo Per Freemode
+
+SVM_ERR=Impedita la morte di {script} su {operation}.
+SVM_DIE=Script {script} è morto su {operation}.
+SVM_EXP=Rilevata un'eccezione eseguendo lo script {script}.
+
+SVM_BLM_S=Questo potrebbe essere stato causato da l'azione più recente di {player}.
+SVM_BLM_D=Questo potrebbe essere stato causato da l'evento ({event}) più recente di {player}.
+
+SVM_INVOP=Opcode invalido {opcode} in {script}; lo sopprimo invece che far crashare il gioco.
+SVM_FRZ=Lo script {script} sembra essere bloccato in un loop infinito; lo sopprimo invece che bloccare il gioco.
+
+!!!!!!!!!!
+!! Tabs !! These are to be on the left side of the menu which shouldn't be too wide so keep these as short as possible
+!!!!!!!!!!
+
+ACTVTE=Attiva
+TUT_ONE=Uno
+TUT_TWO=Due
+SLF=Io
+VEH=Veicolo
+Online=Online
+PLYLST=Giocatori
+WRLD=Mondo
+GME=Gioco
+
+!!!!!!!!!!!!!!!!
+!! References !!
+!!!!!!!!!!!!!!!!
+
+PLY=Giocatore
+
+STTNGS=Impostazioni
+
+KPCRSR=Mantieni il Cursore Durante La Rivisitazione
+
+TABS=Schede
+KPCRSRR_H=Farà in modo che le schede come "Io" ricordino la posizione del cursore che avevi l'ultima volta che le hai visitate.
+
+LSTS=Elenchi
+KPCRSRS_H=Farà in modo che elenchi come "Impostazioni" ricordino la posizione del cursore che avevi l'ultima volta che le hai visitate.
+
+KPCRSR_L_RDC=Elenchi: Effetto Ridotto Per Elenchi Ingenti
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Tutorial & Help !!
+!!!!!!!!!!!!!!!!!!!!!
+
+TUT=Tutorial
+TUT2=Tutorial di Stand
+
+RPT=Ripeti
+
+! Or "Skip"
+DISM=Congeda
+
+TUT_LD=Stand è iniettato. Carica il gioco per procedere.
+
+TUT_OPEN=Per attivare/disattivare la visibilità di Stand, usa {}.
+TUT_OPEN2=Per attivare/disattivare la visibilità di Stand, usa {numpad} o {alt} se non hai un tastierino numerico.
+TUT_USE=Premi {} per usare il comando evidenziato.
+TUT_BK=Premi {} per tornare indietro.
+TUT_DN2=Premi {} per andare giù.
+TUT_RUP=Per tornare su, premi {}.
+TUT_TABS=Navigazione eccellente. Preparati, abiliterò le schede ora!
+TUT_RNXT=Premi {} per navigare alla prossima scheda.
+TUT_RPRV=Premi {} per navigare alla scheda precedente.
+
+TUT_CMD2=Nota come dice "Comando: " qua. Questo vuol dire che puoi usare questa funziona attraverso la Command Box di Stand! Puoi aprire la Command Box in qualunque momento premendo {}.
+TUT_SLIDER=Usa {} e {} per manipolare i cursori.
+TUT_PROFILES=Se vuoi che Stand si ricordi lo stato dei comandi la prossima volta che lo inietti, puoi usare i profili (Stand > Profili).
+TUT_CTX2=Usa {} per aprire il menu contestuale, che ti consente di configurare tasti di scelta rapida, correlazioni e altro.
+
+TUT_HDE=Usa {} per nascondere Stand di nuovo.
+
+HLP_CTRLLR=Puoi aprire Stand usando il tuo controller con {}.
+
+HLP_CMDCHAIN=Puoi concatenare i comandi insieme usando un punto e virgola, e.s. "{}".
+
+!!!!!!!!!!!!!!
+!! Commands !!
+!!!!!!!!!!!!!!
+
+CMD=Comando
+B_CB=Command Box
+CMDPRMPT=Stand Command Box
+KB_CMDPRMPT=Apri Command Box
+
+CMDUNK=Scusa, "{}" non è un comando che conosco. :/
+CMDAMBIG=Scusa, "{}" potrebbe significare molte cose. :/
+CMDISS={} non è disponibile per gli altri giocatori. :/
+CMDPERM=Non ti è consentito utilizzare {}.
+MORE=... e {} altri.
+MANYMORE=... e molti altri.
+
+CMDONL=Questo comando è disponibile solo in GTA Online.
+CMDONLONC=Questo comando è disponibile solo dopo essere entrati in GTA Online.
+CMDNEEDHOST=Questo comando è disponibile soltanto quando sei l'host. :|
+CMDNH=Questo comando non è disponibile sull'host. :|
+CMDOTH=Questo comando non è disponibile su te stesso. :|
+CMDDISA=Questo comando è attualmente disattivato. Controlla i nostri annunci per altre informazioni.
+
+CMD_DR_S=Comando eseguito con successo. :)
+
+FRMTSEL_AVAIL=La formattazione del testo è disponibile qui. Premi {} per una selezione.
+FRMTSEL_H=Usa le freccette per navigare e {} per inserire il codice.
+FRMTSEL_H_R=Reimposta: Cancella la formattazione applicata.
+FRMTSEL_H_N=Nuova riga.
+
+B_CTX=Menu Contestuale
+CTX_MIN=Imposta A Valore Minimo
+CTX_MAX=Imposta A Valore Massimo
+
+CTX_UNAVAIL={option} non è disponibile su {command}.
+
+AUTOSTATE=Correla Lo Stato Con
+AUTOSTATE_OFF=Niente
+AUTOSTATE_OPN=Stand Aperto
+AUTOSTATE_OFT=Essere A Piedi
+AUTOSTATE_AIM=Mirare
+AUTOSTATE_FRE=Essere In Freeroam
+AUTOSTATE_CHT=Chiacchierando
+AUTOSTATE_HST=Essendo Host Della Sessione
+
+AUTOSTATEINV=Inverti Correlazione
+
+IVRT=Inverti
+
+AUTOSTATE_H=Correlazione: il {command} sarà allo {state} se {condition}.
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_ON=abilitato
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_OFF=disabilitato
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OPN=Stand è aperto
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OFT=sei a piedi
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_AIM=stai mirando
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_FRE=sei in una sessione freeroam
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_CHT=stai chiacchierando
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_HST=sei l'host della sessione
+
+CMDSTATE_L=Impostato {0} a {1}. :)
+CMDSTATE_L_E={0} è già {1}. :)
+
+CMDSTATE_LON=Abilitato {}. :)
+CMDSTATE_LOFF=Disabilitato {}. :)
+
+CMDSTATE_LON_E={} è gia abilitato. :)
+CMDSTATE_LOFF_E={} è già disabilitato. :)
+
+CMDSTATE_OON=Abilitato con successo. :)
+CMDSTATE_OOFF=Disbilitato con successo. :)
+
+CMDSTATE_OON_E=È già abilitato. :)
+CMDSTATE_OOFF_E=È già disabilitato. :)
+
+! E.g. "Freeze on Herobrine" or "Freeze on All Players". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A={command} su {player}
+
+! E.g. "WiriScript's Immortality on Herobrine". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A_LUA={command} di {script} su {player}
+
+SUPPGEN=Sopprimi Risposte Generiche
+SUPPGEN_H=Sopprimi risposte generiche come "Comando eseguito con successo".
+
+SUPPGEN_CB_H=Include la Command Box di Stand, la Command Box nell'interfaccia web, e i comandi in chat.
+
+WARNS=Avvertenze
+
+WARNAUTOPROC=Procedi Automaticamente Con Le Avvertenze
+
+WARNSKIPPROC=Salta Avvertenze Già Accettate
+
+WARNFRCERD=Obbligami a Leggere Le Avvertenze
+
+HOTKEY=Tasto di Scelta Rapida
+ARGHOTKEY=[tasto di scelta rapida]
+HOTKEYS=Tasti di Scelta Rapida
+HOTKEY_A=Aggiungi Tasto di Scelta Rapida
+HOTKEY_C2=Modifica Tasto di Scelta Rapida
+HOTKEY_R2=Rimuovi Tasto di Scelta Rapida
+HOTKEY_U=Premi il tasto che desideri utilizzare come tasto di scelta rapida per {}.
+HOTKEY_T=Tasti di scelta rapida di {} salvati in %appdata%/Stand/Hotkeys.txt. :)
+
+HOTKEY_HOLD=Modalità Tieni Premuto
+
+!!!!!!!!!!!!!!!!!!!
+!! Keyboard Keys !!
+!!!!!!!!!!!!!!!!!!!
+
+K_UNK=Tasto Sconosciuto
+
+K_R=Destra {}
+K_L=Sinistra {}
+
+K_SHFT=Shift
+K_ALT=Alt
+K_CTRL=Ctrl
+
+! E.g. "Hold W"
+K_HOLD=Tieni Premuto
+
+K_SPC=Spazio
+K_ISRT=Insert
+K_DEL=Canc
+K_HME=Home.
+K_END=End
+K_PGUP=Page Up
+K_PGDN=Page Down
+K_RET=Invio
+K_BACK=Backspace
+K_ESC=Escape
+K_A_U=Freccia Su
+K_A_L=Freccia Sinistra
+K_A_R=Freccia Destra
+K_A_D=Freccia Giù
+K_TAB=Tab
+K_LMB=Mouse Sinistro
+K_MMB=Mouse Centrale
+K_RMB=Mouse Destro
+K_X1=Mouse 4
+K_X2=Mouse 5
+K_MPP=Media Play/Pause
+K_MS=Media Stop
+K_NT=Prossima Traccia
+K_PT=Traccia Precedente
+K_CAPS=Bloc Maiusc
+
+HMB=Corrispondenza Tasto Modificatore
+HMB_H=Come ctrl, shift e alt sono maneggiati.
+STRCT=Rigoroso
+HMB_STRCT_H=Non è possibile premere alcun tasto modificatore. Quindi premendo Ctrl+Shift+G non si attiverebbe G né Ctrl+G.
+SMRT=Intelligente
+HMB_SMRT_H=Rigoroso se il tasto di scelta rapida ha tasti modificatori, Rilassato altrimenti. Quindi, premendo Ctrl+Shift+G si attiverebbe G ma non Ctrl+G.
+LAX=Rilassato
+HMB_LAX_H=È possibile premere ulteriori tasti modificatori. Quindi, premendo Ctrl+Shift+G si attiverebbero G e Ctrl+G.
+
+DHK=Disabilita Tasti di Scelta Rapida
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Controller Buttons !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+CK=Pulsante del Controller
+
+CK_LT=Grilletto Sinistro
+CK_RT=Grilletto Destro
+CK_LB=Bumper Sinistro
+CK_RB=Bumper Destro
+CK_LS=Leva Sinistra (L3)
+CK_RS=Leva Destra (R3)
+CK_D_U=Tasto Direzionale Su
+CK_D_D=Tasto Direzionale Giù
+CK_D_L=Tasto Direzionale Sinistro
+CK_D_R=Tasto Direzionale Destro
+CK_STRT=Start
+CK_BCK=Back
+
+!!!!!!!!!!!!!!!!!!!!
+!! Authentication !!
+!!!!!!!!!!!!!!!!!!!!
+
+UPDAVAIL=Stand {} è disponibile.
+
+FREE_T=Questo comando non è disponibile nella Edizione Gratuita di Stand. ;)
+CMDFULLSP=Per usare questo comando, vai in Modalità Storia o aggiorna alla Regular Edition di Stand.
+CMDNEDR=Questo comando è soltanto disponibile nella Regular Edition o successive.
+CMDNEDU=Questo comando è disponibile solamente nella Ultimate Edition di Stand.
+
+ACTVTE_H=Attiva Stand per accedere al menu completo, anche quando in GTA Online.
+ACTVTE_PSTE2=Incolla Chiave di Attivazione
+ACTVTE_RGST=Crea Un Account
+ACTVTE_ERR_F2=Il contenuto degli appunti non sembra corrispondere con il formato della chiave di attivazione di Stand. :?
+ACTVTE_STRT2=Convalida della tua chiave di attivazione in corso...
+ACTVTE_SUCC2=Stand è stato attivato con successo. :D
+
+ACTVTE_ERR_I2=La tua chiave di attivazione non è valida. :/
+ACTVTE_RGN=La tua chiave di attivazione è stata rigenerata.
+AUTHSHR2=La tua chiave di attivazione è utilizzata altrove. Rigenerala o prova più tardi.
+
+AUTH_X=La tua chiave di attivazione è scaduta.
+AUTH_CE=Si è verificato un errore di connessione.
+CONHELP=Se il tuo dispositivo è online, assicurati che nulla interferisca con le connessioni di Stand.
+
+TELEKOM_OFF=Bentornato Online! :D
+
+VER_UNSUPP=La tua versione di Stand non è più supportata.
+VER_UNSUPP_AUTHONLY=La tua versione di Stand non è più supportata e noi non ne supporteremo l'autenticazione ancora per molto.
+UPDHELP=Puoi aggiornare facilmente Stand arrestandolo, cliccando "Check For Updates" nel Launchpad, e infine re-iniettare nuovamente Stand.
+
+!!!!!!!!!!!!!!!!
+!! Filesystem !!
+!!!!!!!!!!!!!!!!
+
+FWERR=Impossibile aprire {} per la scrittura. :|
+
+WRDR=Guardaroba
+
+OPNFLD=Apri Cartella
+
+OPNSTND=Apri Cartella di Stand
+OPNSTND_H=Apre la tua cartella %appdata%/Stand.
+
+OPNASI=Apri Cartella Mod ASI
+OPNASI_H=Apre la tua cartella %appdata%/Stand/ASI Mods.
+
+OPNGTA=Apri Cartella GTA V
+
+OPNTHME=Apri Cartella Temi
+OPNTHME_H=Apre la tua cartella %appdata%/Stand/Themes.
+
+!!!!!!!!!!!!
+!! Colour !!
+!!!!!!!!!!!!
+
+C_H=Tinta
+C_S=Saturazione
+C_V=Valore
+
+CR_HSV=Rappresentazione HSV
+CR_RGB=Rappresentazione RGB
+
+OPCTY=Opacità
+
+C_R=Rosso
+C_G=Verde
+C_B=Blu
+
+CN_A=Arcobaleno
+CN_R=Rosso
+CN_R_WINE=Rosso Vino
+CN_G=Verde
+CN_G_D=Verde Scuro
+CN_G_LIME=Verde Lime
+CN_OLIVE=Oliva
+CN_MOSS=Muschio
+CN_TUR=Turchese
+CN_B=Blu
+CN_B_D=Blu Scuro
+CN_B_COOL=Blu Freddo
+CN_B_ROYAL=Blu Reale
+CN_C=Ciano
+CN_AQUA=Verde Acqua
+CN_PLUM=Prugna
+CN_Y=Giallo
+CN_Y_D=Giallo Scuro
+CN_P=Rosa
+CN_P_H=Rosa Caldo
+CN_SALMON=Salmone
+CN_U=Viola
+CN_U_D=Viola Scuro
+CN_M=Magenta
+CN_O=Arancione
+DN_O_L=Arancione Chiaro
+CN_O_RUST=Arancione Ruggine
+CN_BR=Marrone
+CN_BR_L=Marrone Paglia
+CN_EARTH=Terra
+CN_W=Bianco
+CN_L=Nero
+CN_GR=Grigio
+CN_GR_D=Grigio Scuro
+
+C_PAT={colour} 
+
+OTHR=Altro
+CLRHEX=Inserisci Codice HEX
+CURRCLRHEX=Colore Attuale (Hex)
+
+LGBT=Modalità Arcobaleno
+LGBT_H=Cambia la tonalità del colore ogni x millisecondi ma permette comunque di modificare saturazione, valore, e opacità.
+
+CLR=Colore
+
+LGBTQ={}: Modalità Arcobaleno
+
+! As in "colour finish"
+CLRFIN=Finitura
+
+! "LSC" is Los Santos Customs
+CLRSTD=Colori LSC
+
+CLRSTD_1=Grafite
+CLRSTD_2=Acciaio Nero
+CLRSTD_3=Acciaio Scuro
+CLRSTD_4=Argento
+CLRSTD_5=Argento Bluastro
+CLRSTD_6=Acciaio Laminato
+CLRSTD_7=Argento Ombrato
+CLRSTD_8=Argento Pietra
+CLRSTD_9=Argento Mezzanotte
+CLRSTD_10=Argento Ghisa
+CLRSTD_11=Nero Antracite
+CLRSTD_12=Nero Opaco
+CLRSTD_13=Grigio Opaco
+CLRSTD_14=Grigio Chiaro Opaco
+CLRSTD_15=Nero Util
+CLRSTD_16=Nero Polimero Util
+CLRSTD_17=Argento Scuro Util
+CLRSTD_18=Argento Util
+CLRSTD_19=Argento Ghisa Util
+CLRSTD_20=Argento Ombrato Util
+CLRSTD_21=Nero Consumato
+CLRSTD_22=Grafite Consumato
+CLRSTD_23=Grigio Argento Consumato
+CLRSTD_24=Argento Consumato
+CLRSTD_25=Argento Bluastro Consumato
+CLRSTD_26=Argento Ombrato Consumato
+CLRSTD_28=Rosso Torino
+CLRSTD_29=Rosso Formula
+CLRSTD_30=Rosso Fuoco
+CLRSTD_31=Rosso Grazioso
+CLRSTD_32=Rosso Granata
+CLRSTD_33=Rosso Tramonto
+CLRSTD_34=Rosso Cabernet
+CLRSTD_35=Rosso Caramella
+CLRSTD_36=Arancione Alba
+CLRSTD_37=Oro Classico
+CLRSTD_39=Rosso Opaco
+CLRSTD_40=Rosso Scuro Opaco
+CLRSTD_41=Arancione Opaco
+CLRSTD_42=Giallo Opaco
+CLRSTD_43=Rosso Util
+CLRSTD_44=Rosso Brillante Util
+CLRSTD_45=Rosso Granata Util
+CLRSTD_46=Rosso Consumato
+CLRSTD_47=Rosso Dorato Consumato
+CLRSTD_48=Rosso Scuro Consumato
+CLRSTD_50=Verde Racing
+CLRSTD_51=Verde Mare
+CLRSTD_52=Verde Oliva
+CLRSTD_53=Verde Brillante
+CLRSTD_54=Verde Benzina
+CLRSTD_55=Verde Lime Opaco
+CLRSTD_56=Verde Scuro Util
+CLRSTD_57=Verde Util
+CLRSTD_58=Verde Scuro Consumato
+CLRSTD_59=Verde Consumato
+CLRSTD_60=Blu Mare Consumato
+CLRSTD_61=Blu Galassia
+CLRSTD_63=Blu Di Sassonia
+CLRSTD_65=Blu Marina
+CLRSTD_66=Blu Portuale
+CLRSTD_67=Blu Diamante
+CLRSTD_68=Blu Surf
+CLRSTD_69=Blu Nautico
+CLRSTD_70=Blu Profondo
+CLRSTD_71=Viola Schafter
+CLRSTD_72=Viola Spinnaker
+CLRSTD_73=Blu Racing
+CLRSTD_74=Azzurro
+CLRSTD_75=Blu Scuro Util
+CLRSTD_76=Blu Mezzanotte Util
+CLRSTD_77=Blu Util
+CLRSTD_78=Blu Schiuma Di Mare Util
+CLRSTD_79=Blu Fulmine Util
+CLRSTD_80=Maui Blu Poli Util
+CLRSTD_81=Azzurro Util
+CLRSTD_82=Blu Scuro Opaco
+CLRSTD_83=Blu Opaco
+CLRSTD_84=Blu Mezzanotte Opaco
+CLRSTD_85=Blu Scuro Consumato
+CLRSTD_86=Blu Consumato
+CLRSTD_87=Azzurro Consumato
+CLRSTD_89=Giallo Racing
+CLRSTD_90=Bronzo
+CLRSTD_91=Giallo Montano
+CLRSTD_93=Champagne
+CLRSTD_94=Marrone Feltzer
+CLRSTD_95=Marrone Torrente
+CLRSTD_96=Marrone Cioccolato
+CLRSTD_97=Marrone Acero
+CLRSTD_98=Marrone Sella
+CLRSTD_99=Marrone Paglia
+CLRSTD_100=Marrone Muschio
+CLRSTD_101=Marrone Bisonte
+CLRSTD_102=Marrone Faggio
+CLRSTD_103=Marrone Legno di Faggio
+CLRSTD_104=Marrone Terra Di Siena
+CLRSTD_105=Marrone Sabbioso
+CLRSTD_106=Marrone Chiaro
+CLRSTD_107=Panna
+CLRSTD_108=Marrone Util
+CLRSTD_109=Marrone Medio Util
+CLRSTD_110=Marrone Chiaro Util
+CLRSTD_111=Bianco Ghiaccio
+CLRSTD_112=Bianco Neve
+CLRSTD_113=Beige Consumato
+CLRSTD_114=Marrone Consumato
+CLRSTD_115=Marrone Scuro Consumato
+CLRSTD_116=Beige Paglia Consumato
+CLRSTD_117=Acciaio Satinato
+CLRSTD_118=Acciaio Nero Satinato
+CLRSTD_119=Alluminio Satinato
+CLRSTD_120=Cromato
+CLRSTD_121=Panna Consumato
+CLRSTD_122=Panna Util
+CLRSTD_123=Arancione Consumato
+CLRSTD_124=Arancione Chiaro Consumato
+CLRSTD_125=Verde Pisello
+CLRSTD_126=Giallo Consumato
+CLRSTD_127=Blu Polizia Util
+CLRSTD_128=Verde Opaco
+CLRSTD_129=Marrone Opaco
+CLRSTD_130=Arancione Albicocca Consumato
+CLRSTD_131=Bianco Ghiaccio Util
+CLRSTD_132=Bianco Consumato
+CLRSTD_133=Verde Oliva Militare Consumato
+CLRSTD_134=Bianco Util
+CLRSTD_136=Rosa Salmone
+CLRSTD_137=Rosa Pfister
+CLRSTD_138=Arancione Brillante
+CLRSTD_140=Blu Brillante
+CLRSTD_141=Blu Mezzanotte
+CLRSTD_142=Viola Mezzanotte
+CLRSTD_144=Verde Cacciatore
+CLRSTD_145=Vilola Brillante
+CLRSTD_146=Viola Mezzanotte Metallizzato
+CLRSTD_147=Nero Carbonio
+CLRSTD_148=Viola Schafter Opaco
+CLRSTD_149=Viola Mezzanotte Opaco
+CLRSTD_150=Rosso Lava
+CLRSTD_151=Verde Foresta Opaco
+CLRSTD_152=Verde Oliva Opaco
+CLRSTD_153=Terra Scura Opaco
+CLRSTD_154=Marrone Deserto Opaco
+CLRSTD_155=Verde Fogliame Opaco
+CLRSTD_156=Colore Lega Predefinito
+CLRSTD_157=Blu Epsilon
+CLRSTD_158=Oro Puro
+CLRSTD_159=Oro Satinato
+CLRSTD_160=Oro
+
+CLRFR=Colore Primario
+
+CLRSEC=Colore Secondario
+
+CLRINT=Colore Degli Interni
+CLRPRL=Colore Perlescenza
+
+VEHMOD20=Fumo Pneumatici
+CLRTIRE=Colore Fumo Pneumatici
+TIREINDEP=Fumo Pneumatici del Giorno Dell'Indipendenza
+
+NEONLGHTS=Luci Neon
+
+APOS_F=Davanti
+APOS_B=Dietro
+
+CLRBR=Colore Sfondo
+
+CLRFT=Colore Testo Focalizzato
+CLRFRT=Colore Testo Focalizzato a Destra
+CLRFS=Colore Texture Focalizzata
+
+CLRBT=Colore Testo Non Focalizzato
+CLRBRT=Colore Testo Non Focalizzato a Destra
+CLRBS=Colore Texture Non Focalizzata
+
+CLRHU=Colore HUD
+
+CLRAR=Colore AR
+
+CLRMGME=Colore Minigiochi
+
+HAIR_V=Colore Capelli
+HAIRHI=Colore Capelli: Highlight
+HAIRR=Colore Capelli: Modalità Arcobaleno
+
+GUNTINT=Arma Corrente: Tinta
+GUNTINTR=Arma Corrente: Tinta: Modalità Arcobaleno
+
+WINTINT=Tinta Finestrini
+
+! "Livery" is VEHMOD48
+RFTLIV=Livrea Tettuccio
+
+!!!!!!!!!!!!!!!
+!! Collision !!
+!!!!!!!!!!!!!!!
+
+GHOST=Collisioni Ridotte
+GHOST_H=Permette di camminare attraverso muri e veicoli.
+
+COLSNS=Collisioni
+
+GHOSTVEHS=Nessuna Collisione Con Altri Veicoli
+
+NOCOLPED=Nessuna Collisione Con I Pedoni
+NOCOLOBJ=Nessuna Collisione Con Gli Oggetti
+NOCOLOBJ_H=Da notare che questo esclude oggetti stazionari nella mappa, per esempio gli alberi.
+
+GHOSTRIDE=Nessuna Collisione
+GHOSTRIDE_H=Disabilita completamente le collisioni per il tuo veicolo corrente (non consigliato per veicoli non-volanti).
+
+!!!!!!!!!!
+!! Self !!
+!!!!!!!!!!
+
+MVMNT=Movimento
+
+VIS=Aspetto
+
+OTFT=Outfit
+
+HEAD=Testa
+HEAD_V=Variazione Testa
+FACIALHAIR=Peli del Viso
+FACIALHAIR_V=Colore Peli del Viso
+MASK=Maschera
+MASK_V=Variazione Maschera
+HAIR=Capelli
+TOP1=Top
+TOP1_V=Variazione Top
+TOP2=Top 2
+TOP2_V=Variazione Top 2
+TOP3=Top 3
+TOP3_V=Variazione Top 3
+BAG=Zaino / Paracadute
+BAG_V=Variazione Zaino / Paracadute
+PCHUTE=Paracadute / Zaino
+PCHUTE_V=Variazione Paracadute / Zaino
+TORSO=Guanti / Torso
+TORSO_V=Variazioni Guanti / Torso
+GLOVES=Guanti
+GLOVES_V=Variazione Guanti
+PANTS=Pantaloni
+PANTS_V=Variazione Pantaloni
+SHOES=Scarpe
+SHOES_V=Variazione Scarpe
+ACCESSORIES=Accessori
+ACCESSORIES_V=Variazione Accessori
+DECALS=Decalcomanie
+DECALS_V=Variazione Decalcomanie
+HAT=Cappello
+HAT_V=Variazione Cappello
+GLASSES=Occhiali
+GLASSES_V=Variazione Occhiali
+EARWEAR=Auricolari
+EARWEAR_V=Variazione Auricolari
+WATCH=Orologio
+WATCH_V=Variazione Orologio
+BRACELET=Braccialetto
+BRACELET_V=Variazione Braccialetto
+
+SVEOTFT=Salva Outfit
+
+! Alternatively, "What Will Be Saved"
+SVESEL=Cosa Salvare
+
+BADFILE=Non posso salvare un file con un nome così. :/
+
+LDOTFT_E1=L'Outfit non ha specificato per quale modello è stata creata. :?
+LDOTFT_E2=L'Outfit è stato creato per un modello invalido. :?
+LDOTFT_E3=L'Outfit è stato creato per un modello differente. :?
+LDOTFT_TF=L'Outfit è stato creato per {}, vuoi trasformarti?
+
+DOTFTRESTR=Disabilita Restrizioni Outfit
+DOTFTRESTR_H=Ti permette di salvare outfit con borsoni, ecc.
+
+NVEHHAIRSCL=Disabilita Scaling dei Capelli nei Veicoli
+
+LKOTFT=Blocca Outfit
+LKOTFT_H=Non consente cambiamenti di outfit al di fuori di Stand! Ciò impedisce il funzionamento del Colpo al Casinò e possibilmente di altre missioni. ⚠️
+
+CHNGMDL=Trasformati
+
+PLYBLCHRS=Personaggi Giocabili
+GRNDANMLS=Animali Terrestri
+WTRANMLS=Animali Acquatici
+FLYNANMLS=Animali Volanti
+NPCS=NPCs
+
+ONLN_MALE=Maschio Online
+ONLN_FEMALE=Femmina Online
+
+CHNGMDL_W=Devi essere in acqua per trasformarti in un animale acquatico. :)
+
+MDL=Modello
+
+FNDMDL_H=Ti consente di trovare modelli in cui trasformarti utilizzando il loro nome.
+
+CURMDL=Modello Corrente
+
+OP=Outfits Prefabbricati
+
+OP_D=Modello Corrente: Default
+OP_D_H=L'outfit predefinito definito da Rockstar per il tuo modello attuale.
+
+OP_RNG=Modello Corrente: Casuale
+RNG=Casuale
+
+OP_0=Femmina Online: Topless
+
+OP_COP_M=Maschio Online: Poliziotto
+OP_COP_F=Femmina Online: Poliziotto
+
+WNTDLVL=Livello Ricercato
+
+WNTD=Imposta Livello Ricercato
+
+LKWNTD=Blocca Livello Ricercato
+
+FKWNTD=Finto Livello Ricercato
+FKWNTD_H=Modifica il numero di stelle ricercato mostrate nell'angolo in alto a destra.
+
+PTFXTRAIL=Scie Di Particelle
+BONES=Ossa
+
+WLKSTL=Stile di Camminata
+WLKSTL_1=Balistico
+WLKSTL_3=Tenendo La Spazzatura
+WLKSTL_4=Correndo
+WLKSTL_5=Franklin (Duro)
+WLKSTL_8=In Fuga
+WLKSTL_9=Impaurito
+WLKSTL_10=Sexy
+WLKSTL_12=Ferito
+WLKSTL_13=Lester (Bastone)
+WLKSTL_14=Borsa
+WLKSTL_15=Cauzione
+WLKSTL_16=Cauzione (Tazerato)
+WLKSTL_17=Coraggioso
+WLKSTL_18=Casual
+WLKSTL_19=Moderatamente Ubriaco
+WLKSTL_20=Moderatamente Ubriaco (Testa Su)
+WLKSTL_21=Leggermente Ubriaco
+WLKSTL_22=Molto Ubriaco
+WLKSTL_23=Duro
+WLKSTL_24=Gangster (Lento)
+WLKSTL_25=Gangster (Timido)
+WLKSTL_26=Gangster
+WLKSTL_27=Jogging
+WLKSTL_28=Guardia Carceraria
+WLKSTL_30=Franklin (Valigetta)
+WLKSTL_31=Michael (Pulizie)
+WLKSTL_32=Michael (Lento)
+WLKSTL_33=Secchio
+WLKSTL_34=Accovacciato
+WLKSTL_35=Mocio
+WLKSTL_36=Femme (Maschio)
+WLKSTL_37=Femme (Femmina)
+WLKSTL_38=Gangster (Maschio)
+WLKSTL_39=Gangster (Femmina)
+WLKSTL_40=Elegante (Maschio)
+WLKSTL_41=Elegante (Femmina)
+WLKSTL_42=Uomo Duro (Maschio)
+WLKSTL_43=Uomo Duro (Femmina)
+WLKSTL_44=Ronzato
+WLKSTL_45=Rilassato
+WLKSTL_46=Ammanettato
+WLKSTL_47=Triste
+WLKSTL_48=Impertinente (Maschio)
+WLKSTL_49=Impertinente (Femmina)
+WLKSTL_50=Arrogante
+WLKSTL_51=Fiducioso
+WLKSTL_52=Tacchi
+WLKSTL_53=Escursionismo
+WLKSTL_54=Spazzino
+WLKSTL_55=Losco
+WLKSTL_56=Hipster
+
+PRSVRWALK=Conserva Stile Camminata Durante Combattimenti
+PRSVRWALK_H=Impedisce al tuo personaggio di entrare in "modalità combattimento" ogni volta che c'è violenza intorno a te.
+
+WALKONAIR=Cammina In Aria
+
+AIRSWM=Nuota In Aria
+
+WTRWLK=Cammina Sott'acqua
+
+DRNKMODE=Modalità Ubriaco
+
+TNISMDE=Modalità Tennis
+
+FLOPPY=Modalità Floscio
+FLOPPY_SYNCH=Priorità Alla Sincronizzazione
+FLOPPY_SYNCH_H=Limita la velocità e disabilita la salita, la discesa e lo sprint per garantire la sincronizzazione.
+
+DEMIGOD=Guarigione Automatica
+DEMIGOD_H=Mantiene il tuo personaggio al massimo della salute e dell'armatura.
+DEMIGOD_H_O=Mantiene il loro personaggio al massimo della salute e dell'armatura.
+
+MXHLTH=Salute Massima
+
+CLUMSY=Goffaggine
+CLUMSY_H=Fa cadere il tuo personaggio più spesso.
+
+NOROLLCL=Nessun Tempo D'attesa Per La Capriola Tattica
+
+RESPWRCL=Respawn Al Punto Di Morte
+
+RESPWDLY=Ritardo Del Respawn
+RESPWDLY_H=Modifica il tempo impiegato per rigenerarti in GTA Online in base al numero di secondi specificato.
+
+EWO=Suicidio
+
+SPCSH=Imposta Denaro Modalità Storia
+SPCSH_H=Ti consente di modificare la quantità di denaro di Michael, Franklin e Trevor.
+
+SCHR_M=Michael
+SCHR_F=Franklin
+SCHR_T=Trevor
+
+HLTH=Salute
+ARMR=Armatura
+
+REGEN=Rateo di Rigenerazione
+REGEN_H_H=Aumenta la tua salute di questa quantità, al secondo.
+REGEN_A_H=Aumenta la tua armatura di questa quantità, al secondo.
+ONLYINCOVER=Solo Da Coperto
+
+RFHLT=Ricarica Salute
+RFARM=Ricarica Armatura
+
+GOD=Immortalità
+GOD_H=Rende il tuo personaggio incapace di morire.
+
+NRGDL=Graziosità
+NRGDL_H=Rende il tuo personaggio incapace di cadere.
+
+NO_GRACE=Pro Tip: Non abilitare Graziosità e {feature_name} simultaneamente. ;)
+
+SEATGLUE=Incollato Ai Sedili
+SEATGLUE_H=Rende il tuo personaggio incapace di cadere dalle biciclette e moto.
+
+INFSTAM=Stamina Infinita
+
+PARALCK=Blocca Paracaduti
+LCK_FULL=Pieno
+LCK_ETY=Vuoto
+
+WET=Imposta Umidità
+
+WETLCK=Blocca Umidità
+
+SCLE=Scala
+SCLE_H=Cambia l'altezza, la larghezza e la profondità del tuo personaggio *localmente*.
+
+SCLECAM=La Scala Influisce Sulla Fotocamera
+
+SCLESPD=Scala Influisce Velocità
+
+VISZ=Correzione Visiva Z
+VISZ_H=Corregge la posizione visiva Z del tuo personaggio, da utilizzare con la scala di esso.
+
+! {Self > Appearance > Invisibility} & {Vehicle > Invisibility}
+INVIS=Invisibilità
+INVIS_H=Nota: quando in un veicolo gli altri giocatori potranno comunque vederti a me no che tu non renda anche il veicolo invisibile
+
+! Player > Trolling > Ram > Invisibility
+RAM_INVIS=Invisibilità
+
+LOCVIS=Visibile Localmente
+
+LEV=Levitazione
+
+NOCLIP=No Clip
+
+LEV_AP=Applica Inclinazione All'Entità
+
+KPMOMNTM=Mantieni Lo Slancio
+
+MOVSPD=Velocità di Movimento
+
+! Used in button instructions to mean "go faster"
+SPRNT=Scatto
+
+SPRNTMUL=Moltiplicatore Scatto
+SPRNTMUL_H=Quanto veloce vai mentre premi {}.
+
+ACCEL=Accelerazione
+ACCEL_H=Accelerazione aumenta la velocità di levitazione man mano che ti muovi. Si ripristina quando scatti o smetti di muoverti.
+
+OROM=Ruota Solo In Movimento
+
+PASSMOV=Movimento Passivo
+
+PASSMOV_MIN=Distanza Minima Dal Terreno
+PASSMOV_MAX=Distanza Massima Dal Terreno
+SPD=Velocità
+
+MAXDIST=Distanza Massima
+
+ASS=Assistente
+
+FRC_U=Forza Verso l'Alto
+FRC_D=Forza Verso Il Basso
+
+ASS_D=Deadzone Verso Il Basso
+ASS_D_H=Quanto lontano devi essere da terra prima che l'assistente smetta di cercare di tirarti giù.
+
+SNAP=Snapping
+
+WLKSPD=Velocità Di Camminata e Corsa
+
+INCFRCT=Maggiore Attrito
+INCFRCT_H=Riduce la scivolosità durante le svolte ad alta velocità in camminata/corsa.
+
+SWMSPD=Velocità di Nuoto
+
+NOBLD=Niente Sangue
+NOBLD_H=Mantiene il tuo personaggio libero dal sangue.
+
+SONIC=Super Corsa
+
+FLY=Super Volo
+ASC=Ascendi
+DESC=Discendi
+FLY_LAND=Atterra
+
+BI_CLSMNU_MOV=Nascondi Stand per più opzioni di movimento
+
+SHWBI_JMP2FLY=Istruzioni Pulsanti: Super Salto Per Volare
+SHWBI_CTRLS=Istruzioni Pulsanti: Controlli
+
+FROG=Super Salto
+FROG_H=Puoi tenere premuto il pulsante per saltare per andare più in alto.
+
+GRCELND=Atterraggio Grazioso
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Animations !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+ANIM=Animazioni
+CANCL=Annulla
+SCENARIOS=Scenari
+LOOPED=Animazioni In Loop
+LOOPED_H=Questo non si applica agli scenari.
+PART_MVMT=Movimento Parziale
+PART_MVMT_H=Ti consente di muoverti durante l'esecuzione di un'animazione, a scapito della fedeltà di essa.
+AUTO_CANCL=Annulla Automaticamente
+AUTO_CANCL_H=Annulla automaticamente l'animazione corrente quando tenti di muoverti.
+
+ANIM1=Flex
+ANIM2=Fuma
+ANIM3=Dormi
+ANIM4=Applaudi
+ANIM5=Guardia
+ANIM6=Martello
+ANIM7=Poliziotto Inattivo
+ANIM8=Cerca nel Cestino
+ANIM9=Riprendi Scioccato
+ANIM10=Hangout
+ANIM11=Impaziente
+ANIM12=Messaggiando
+ANIM14=Tendendo a Morire
+ANIM15=Aspetta
+ANIM16=Pulisci
+ANIM17=Usa ATM
+ANIM18=Yoga
+ANIM19=Statua
+ANIM20=Salda
+ANIM21=Prendere il Sole
+ANIM22=Prendere il Sole Schiena
+ANIM23=Prostituta d'Alta Classe
+ANIM24=Prostituta di Bassa Classe
+ANIM25=Blocco Note
+ANIM26=Chinati
+ANIM27=Jogging
+ANIM28=Binocolo
+ANIM29=Barbone In Piedi
+ANIM30=Giardinaggio
+ANIM31=Siediti Per Terra
+ANIM32=Pesca In Piedi
+ANIM33=Naviga
+ANIM34=Siediti
+
+ANIM_DANCE=Danze
+
+ANIM35=Buttwiggle
+ANIM36=Danza Clown 1
+ANIM37=Danza Clown 2
+ANIM38=Danza 1
+ANIM39=Danza 2
+ANIM40=Danza 3
+ANIM41=Danza 4
+ANIM42=Danza 5
+ANIM43=Danza Lenta 1
+ANIM44=Danza Lenta 2
+ANIM45=Danza Lenta 3
+ANIM46=Danza sul Podio
+ANIM47=Danza Solo
+ANIM48=Danza Timida 1
+ANIM49=Danza Timida 2
+ANIM50=Danza Sciocca 1
+ANIM51=Danza Sciocca 2
+ANIM52=Danza Sciocca 3
+ANIM53=Danza Tao
+ANIM54=Il Woogie
+
+ANIM55=Bevi
+ANIM56=Bestia
+ANIM57=Chill
+ANIM58=Guardanuvole
+
+! To prone, as in to lie on your stomach
+ANIM59=A Prono
+
+ANIM60=Pull Over
+ANIM62=Ubriaco 1
+ANIM63=Ubriaco 2
+ANIM64=Ubriaco 3
+ANIM65=Air Guitar
+ANIM66=Air Synth
+ANIM67=Discuti 1
+ANIM68=Discuti 2
+ANIM69=Barista
+
+! Aka. Air Kiss
+ANIM70=Manda Un Bacio
+
+ANIM71=Sarcastico
+ANIM72=Fatti sotto
+ANIM73=Come At Me
+ANIM75=Usa Radio
+ANIM74=Braccia Incrociate 1
+ANIM76=Braccia Incrociate 2
+ANIM77=Braccia Incrociate 3
+
+! As in "damn it"
+ANIM78=Dannazione
+
+ANIM79=Rubare
+ANIM81=Facepalm 1
+ANIM82=Facepalm 2
+ANIM83=Cadere
+ANIM84=Addormentati
+ANIM85=Ispeziona
+ANIM86=Jumping Jacks
+ANIM88=Bussare
+ANIM89=Lap Dance 1
+ANIM90=Lap Dance 2
+ANIM91=Lap Dance 3
+ANIM92=Lap Dance 4
+ANIM93=Twerk
+ANIM94=Sporgiti
+ANIM95=Sporgiti Civettuolmente
+ANIM96=Meccanico
+ANIM97=Medita
+ANIM98=Senza Fiato
+ANIM99=Flessioni
+ANIM100=Conto alla Rovescia Inizio Gara
+ANIM101=Alzata di Spalle
+ANIM102=Posa Yoga
+ANIM103=Ridi
+ANIM104=Segno Gang
+ANIM105=Svieni
+ANIM106=Striscia
+ANIM107=Capriola 1
+ANIM108=Capriola 2
+ANIM109=Scivola 1
+ANIM110=Scivola 2
+ANIM111=CPR
+ANIM112=Stiracchiata
+ANIM113=Celebra
+ANIM114=Clown
+ANIM115=Nervoso 1
+ANIM127=Nervoso 2
+ANIM116=Namaste
+ANIM117=DJ
+
+! Being arrested
+ANIM118=Mani in Alto
+! Being arrested
+ANIM121=Arrenditi
+
+ANIM119=Fischia
+ANIM120=Sporgiti, Braccia Incrociate
+ANIM122=Scrivi Su Tastiera
+ANIM123=Accanto al Fuoco
+ANIM124=Pollice in Su
+
+! As in, bending your body towards someone to show respect.
+ANIM125=Inchino
+
+ANIM126=Supereroe
+ANIM128=Piegarsi
+ANIM129=Doccia
+ANIM130=Faccia pulita
+ANIM131=Karate
+ANIM132=Pugilato
+
+ANIM166=Shuffle 1
+ANIM167=Shuffle 1 (Lenta)
+ANIM168=Shuffle 2
+ANIM169=Shuffle 2 (Lenta)
+
+OBJANIM=Animazioni Oggetto
+
+ANIM133=Valigetta
+ANIM134=Bere una Birra
+ANIM135=Bere dalla Lattina
+
+! As in begging
+ANIM136=Elemosinare
+
+ANIM137=Suona il Bongo
+ANIM138=Leggi Un Libro
+ANIM139=Dai Dei Fiori
+ANIM140=Spazzare Con La Scopa
+ANIM141=Porta una Confezione di Birre
+ANIM142=Porta una Pizza
+ANIM143=Tieni lo Champagne
+ANIM144=Bevi il Caffè
+ANIM145=Borsellino Porta Monete
+ANIM146=Borsetta
+ANIM147=Suona la Chitarra
+
+! In this animation, the teddy bear known as "Mr. Raspberry" gets sexed
+ANIM148=Povero Mr.Rasberry
+
+ANIM149=Sedersi Su Una Sdraio (Femmina)
+ANIM150=Sedersi Su Una Sdraio (Maschio)
+ANIM151=Esamina Mappa
+ANIM152=Tieni La Fotocamera
+ANIM153=Tieni Il Microfono
+ANIM154=Camminare con un bastone
+ANIM155=Telefono 1
+ANIM156=Telefono 2
+ANIM157=Tenere un Cartello
+ANIM158=Tenere una Rosa
+ANIM159=Tenere un Cartello Autostradale
+ANIM160=Tenere un Cartello "Non Parcheggiare"
+ANIM161=Tenere un Ombrello
+ANIM162=Tenere un Bicchiere di Whisky
+ANIM163=Tenere una Bottiglia di Whisky
+ANIM164=Tenere un Bicchiere di Vino
+ANIM165=Tenere una Bottiglia di Vino
+ANIM170=Balla Con il Vino
+ANIM171=Balla Con la Birra
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Bodyguards !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+BDYGUARD=Guardie Del Corpo
+COUNT=Quantità
+WPN_SINGULAR=Arma
+BDYGUARD_DEL=Elimina Tutte Le Guardie Del Corpo
+BDYGUARD_TP=Teletrasporta Quando Lontane
+FORMATION=Formazione
+LINE=Linea
+CIRCLE=Cerchio
+ALT_CIRCLE=Cerchio Alternativo
+BEHVR=Comportamento
+PRIM_WEAP=Arma Primaria
+SCND_WEAP=Arma Secondaria
+WEAP_H=Le guardie del corpo utilizzeranno la loro arma primaria quando possibile. Altrimenti, proveranno a usare la loro arma secondaria.
+
+!!!!!!!!!!!!!!!!!!!!
+!! Self > Weapons !!
+!!!!!!!!!!!!!!!!!!!!
+
+WPN=Armi
+
+GETGNS=Ottieni Armi
+DELGNS=Rimuovi Armi
+ALLGNS=Tutte Le Armi
+
+GAIMPNSH=Quando Miri...
+GSHTPNSH=Quando Spari...
+
+GRTYGUN=Pistola Gravitazionale
+CTRVPHYS=Fisica Artificiosa
+FRCMUL=Moltiplicatore Di Forza
+COL=Collisione
+
+VEHGUN=Pistola a Veicoli
+VEHGUN_H=Fa sì che le tue armi sparino veicoli.
+
+WEAPCOMPS=Componenti
+WEAPCOMPS_H=Ti consente di visualizzare e modificare i componenti dell'arma selezionata.
+
+WEAPLOCK=Blocca Armi
+TINT=Tinta dell'Arma
+
+! "Livery" is VEHMOD48
+WEAPLIVTNT=Colore Livrea
+
+SVPRST=Salva Predefinito
+VWPRSTS=Visualizza Predefiniti
+
+LOADS=Equipaggiamento
+SVLOAD=Salva Equipaggiamento
+VWLOADS=Visualizza Equipaggiamento
+
+SVLOAD_H_WEAP=Salva le armi attualmente equipaggiate in uno Script della Command Box per applicare facilmente l'equipaggiamento e bloccare così le armi.
+
+WEAPLOCK_INV=Rimuovi Solo Armi Selezionate
+WEAPLOCK_INV_H=Rende "Blocca Armi" in una "Lista Nera di Armi", in modo che vengano rimosse solo le armi selezionate
+
+AIMBT=Aimbot
+
+AIMBT_LCKOUT=Tempo Di Reingaggio (ms)
+AIMBT_LCKOUT_H=Per quanto tempo l'aimbot rimarrà disabilitato dopo che hai mosso la telecamera.
+
+SMTHNG=Levigatura
+
+LOSCHECK=Controllo Linea di Mira
+
+TGTBONE=Osso Bersaglio
+NECK=Collo
+RELBOW=Gomito destro
+LELBOW=Gomito sinistro
+RHAND=Mano destra
+LHAND=Mano Sinistra
+PELVIS=Bacino
+RCALF=Polpaccio Destro
+LCALF=Polpaccio Sinistro
+RFOOT=Piede Destro
+LFOOT=Piede Sinistro
+
+TRIGBT=Triggerbot
+MAGICB=Proiettili Magici
+MAGICB_H=Assicura che il triggerbot non manchi mai il bersaglio.
+
+TRGSEL=Seleziona Target
+
+PROXYROCKET=Razzi di Prossimità
+PROXYROCKET_H=I razzi di prossimità funzionano solo su altri giocatori
+
+SPRMELEE=Super pugno
+SPRMELEE_H=Scaraventa lontano da te veicoli e npc dopo che li hai attaccati con un colpo ravvicinato. Non funzionerà su altri giocatori
+
+INSTAPROXY=Detonazione Istantanea Delle Mine Di Prossimità
+
+FILAMMO=Ricarica Tutte le Munizioni
+RMVAMMO=Rimuove Tutte le Munizioni
+INFAMMO=Munizioni Infinite
+
+SKPRLD=Salta la Ricarica
+
+NOSPOL=No Ritardo
+NOSPOL_H=Rimuove il ritardo prima di sparare dalle armi applicabili.
+
+NOSPRD=No Diffusione
+NORECL=No Rinculo
+
+RAPFRE=Fuoco Rapido
+
+RAPFREVEH=Fuoco Rapido delle Armi dei Veicoli
+
+DMG=Moltiplicatore Danno
+DMG_H=Applica un moltiplicatore al danno inflitto dai tuoi pugni e dalle tue pistole.
+
+RNGMUL=Moltiplicatore Raggio D'Azione
+
+RKSPDMUL=Moltiplicatore Velocità Razzo
+
+! Or "Bullets Per Shotgun Shot"
+SHTGNSZE=Proiettili in Canna del Fucile a Pompa
+
+INSTLKNON=Agganciamento Istantaneo
+
+EXPAMMO=Colpi Esplosivi
+
+EXPTYP=Tipo D'Esplosione
+EXPTYP_H=Ti permette di selezionare il tipo di esplosione dei colpi esplosivi.
+
+EXP_TAG_GRENADE=Granata
+EXP_TAG_GRENADELAUNCHER=Lanciagranate
+EXP_TAG_STICKYBOMB=Bomba Adesiva
+EXP_TAG_MOLOTOV=Molotov
+EXP_TAG_ROCKET=Razzo
+EXP_TAG_TANKSHELL=Colpo Di Carrarmato
+EXP_TAG_HI_OCTANE=Alto Numero Di Ottani
+EXP_TAG_CAR=Macchina
+EXP_TAG_PLANE=Aereo
+EXP_TAG_PETROL_PUMP=Pompa Di Benzina
+EXP_TAG_BIKE=Moto
+EXP_TAG_DIR_STEAM=Vapore
+EXP_TAG_DIR_FLAME=Fiamma
+EXP_TAG_DIR_WATER_HYDRANT=Idrante
+EXP_TAG_DIR_GAS_CANISTER=Fiamma Bombola Di Gas
+EXP_TAG_BOAT=Barca
+EXP_TAG_SHIP_DESTROY=Nave
+EXP_TAG_TRUCK=Camion
+EXP_TAG_BULLET=Proiettile
+EXP_TAG_SMOKEGRENADELAUNCHER=Lanciagranate Fumogene
+EXP_TAG_SMOKEGRENADE=Granata Fumogena
+EXP_TAG_BZGAS=Gas BZ
+EXP_TAG_FLARE=Flare
+EXP_TAG_GAS_CANISTER=Bombola Di Gas
+EXP_TAG_EXTINGUISHER=Estintore
+EXP_TAG_PROGRAMMABLEAR=AR Programmabile
+EXP_TAG_TRAIN=Treno
+EXP_TAG_BARREL=Barile
+EXP_TAG_PROPANE=Propano
+EXP_TAG_BLIMP=Dirigibile (Blu)
+EXP_TAG_DIR_FLAME_EXPLODE=Esplosione Fiamma
+EXP_TAG_TANKER=Cisterna
+EXP_TAG_PLANE_ROCKET=Razzo Degli Aerei
+EXP_TAG_VEHICLE_BULLET=Proiettile Veicoli
+EXP_TAG_GAS_TANK=Serbatoio Di Gas
+EXP_TAG_BIRD_CRAP=Guano D'Uccello
+EXP_TAG_RAILGUN=Cannone A Rotaia
+EXP_TAG_BLIMP2=Dirigibile (Rosso & Ciano)
+EXP_TAG_FIREWORK=Fuoco D'Artificio
+EXP_TAG_SNOWBALL=Palla Di Neve
+EXP_TAG_PROXMINE=Mina Di Prossimità
+EXP_TAG_VALKYRIE_CANNON=Cannone Valkyrie
+EXP_TAG_AIR_DEFENCE=Difesa Aerea
+EXP_TAG_PIPEBOMB=Tubo Bomba
+EXP_TAG_VEHICLEMINE=Mina Veicolo
+EXP_TAG_EXPLOSIVEAMMO=Munizioni Esplosive
+EXP_TAG_APCSHELL=Colpo Di APC
+EXP_TAG_BOMB_CLUSTER=Bomba A Grappolo
+EXP_TAG_BOMB_GAS=Bomba A Gas
+EXP_TAG_BOMB_INCENDIARY=Bomba Incendiaria
+EXP_TAG_BOMB_STANDARD=Bomba
+EXP_TAG_TORPEDO=Torpedo
+EXP_TAG_TORPEDO_UNDERWATER=Torpedo (Sottomarino)
+EXP_TAG_BOMBUSHKA_CANNON=Cannone Bombushka
+EXP_TAG_BOMB_CLUSTER_SECONDARY=Bomba A Grappolo (Secondaria)
+EXP_TAG_HUNTER_BARRAGE=Batteria Hunter
+EXP_TAG_HUNTER_CANNON=Cannone Hunter
+EXP_TAG_ROGUE_CANNON=Cannone Rogue
+EXP_TAG_MINE_UNDERWATER=Mina Sottomarina
+EXP_TAG_ORBITAL_CANNON=Cannone Orbitale
+EXP_TAG_BOMB_STANDARD_WIDE=Bomba (Larga)
+EXP_TAG_EXPLOSIVEAMMO_SHOTGUN=Munizioni Esplosive (Fucile a Pompa)
+EXP_TAG_OPPRESSOR2_CANNON=Cannone Oppressor Mk II
+EXP_TAG_MORTAR_KINETIC=Mortaio Cinetico
+EXP_TAG_VEHICLEMINE_KINETIC=Mina Cinetica Veicolo
+EXP_TAG_VEHICLEMINE_EMP=Mina EMP Veicolo
+EXP_TAG_VEHICLEMINE_SPIKE=Mina A Chiodi Veicolo
+EXP_TAG_VEHICLEMINE_SLICK=Mina Anti Tenuta Veicolo
+EXP_TAG_VEHICLEMINE_TAR=Mina Appiccicosa Veicolo
+EXP_TAG_SCRIPT_DRONE=Drone Script
+EXP_TAG_RAYGUN=Up-n-Atomizer (Raygun)
+EXP_TAG_BURIEDMINE=Mina Sepolta
+EXP_TAG_SCRIPT_MISSILE=Missile Script
+EXP_TAG_RCTANK_ROCKET=Razzo Carrarmato RC
+EXP_TAG_BOMB_WATER=Bomba Sott'Acqua
+EXP_TAG_BOMB_WATER_SECONDARY=Bomba Sott'Acqua (Secondaria)
+EXP_TAG_MINE_CNCSPIKE=Chiodi
+EXP_TAG_BZGAS_MK2=Gas BZ Mk II
+EXP_TAG_FLASHGRENADE=Granata Accecante
+EXP_TAG_STUNGRENADE=Granata Stordente
+EXP_TAG_CNC_KINETICRAM=Ariete Cinetico
+EXP_TAG_SCRIPT_MISSILE_LARGE=Missile Script (Largo)
+EXP_TAG_SUBMARINE_BIG=Sottomarino (Grande)
+EXP_TAG_EMPLAUNCHER_EMP=EMP Lanciagranate EMP
+EXP_TAG_RAILGUNXM3=Cannone A Rotaia (MP)
+EXP_TAG_BALANCED_CANNONS=Cannoni (F35)
+
+IMPPART=Particelle All'Impatto
+IMPPART_H=Consente di selezionare la particella applicata da Particelle All'Impatto.
+
+TTLFRDM=Libertà Totale
+TTLFRDM_H=Ti permette di utilizzare le armi in modalità passiva e all'interno dei locali.
+TTLFRDM_MOV_H=Ti permette di scattare, accovacciarti e saltare all'interno dei locali.
+
+TPGUN=Pistola Per Teletrasporto
+
+! "Sticky" as in "Sticky Bomb"
+INCSTICK=Aumenta Limite Delle Bombe Appiccicose
+INCFLARE=Aumenta Limite Dei Flare
+
+INCPROJ_H=Questo si riferisce alla quantità che puoi mettere nel mondo, non nel tuo inventario
+
+LASGUN=Mirino Laser
+
+!!!!!!!!!!!!!
+!! Vehicle !!
+!!!!!!!!!!!!!
+
+NOVEHFND=Prima metti il tuo culo dentro/su un veicolo per favore. :)
+VEHALRDIN=Sei già dentro/sopra :?
+VEHCTRL=Non è stato possibile ottenere il controllo del tuo veicolo. :|
+
+PVS=Veicoli Personali
+
+INSUR=Assicurazione
+ADDINSUR=Aggiungi L'Assicurazione
+DSTRYD=Distrutto
+UINSRD=Non Assicurato
+INSURCLM=Richiedi Risarcimento All'Assicurazione
+
+REQ=Richiedi
+REQNDRV=Richiedi & Guida Alla Posizione di Spawn
+REQNCALL=Richiedi & Guida Alla Mia Posizione
+
+PVRPLC=Sostituisci Con il Veicolo Attuale
+PVRPLC_H=Salva i dati del veicolo che stai attualmente guidando al posto di questo veicolo personale.
+
+PVSVE_H=Salva i dati di questo veicolo personale nel garage di Stand.
+PVSVEA=Salva Tutti Nel Garage
+PVSVEA_H=Salva i dati di tutti i tuoi veicoli personali nel garage di Stand.
+! "Garage" must use same translation as GRG. "Personal Vehicles" must stay as-is.
+PVSVEA_S=I tuoi veicoli personali sono stati salvati in Garage > Veicoli Personali. :D
+
+CURPV=Veicolo Personale Attuale
+PVEHNTFND=Non sono riuscito a trovare il tuo veicolo personale. :/
+
+LSTVEH=Ultimo Veicolo
+LSTVEHNTFND=Non sono riuscito a trovare il tuo ultimo veicolo. :/
+
+CALLVEH=Teletrasporta Da Me & Guida
+
+RC=Controllo Remoto
+RC_STCK=Premi {} se sei bloccato.
+
+GTARC=Controllo Remoto Imani Tech
+GTARC_E=Questo veicolo non supporta il controllo remoto Imani Tech e "Controlla a distanza qualsiasi veicolo" non è abilitato.
+
+RCANYVEH=Controlla A Distanza Qualsiasi Veicolo
+
+RETSTOR=Rimanda Al Garage
+
+VEHFOLLOW=Seguimi
+
+SPWNR=Generatore
+SPWND=Generato
+
+! The act of doing it, to spawn
+SPWN=Genera
+
+SPWNR_CLASSES=Classi
+
+VEH_CLASS=Classe
+VEH_SEATS=Sedili
+
+DLC=DLC
+DLCS=DLCs
+DLC_10=Rilascio Del Gioco
+DLC_60=Beach Bum
+DLC_100=Strage di San Valentino
+DLC_110=Business
+DLC_130=High Life
+DLC_140=Non Sono Un Hipster
+DLC_150=Independence Day
+DLC_160=SA Scuola di Volo
+DLC_170=Last Team Standing
+DLC_180=Rilascio Su Next Gen
+DLC_190=Sorpresa Festiva 2014
+DLC_210=DLC Rapine Organizzate
+DLC_270=Il Crimine Paga Parte 1
+DLC_280=Il Crimine Paga Parte 2
+DLC_300=Lowriders
+DLC_301=Sorpresa di Halloween
+DLC_310=Dirigenti e Altri criminali
+DLC_311=Sorpresa Festiva 2015
+DLC_320=Gennaio 2016
+DLC_321=Sii Il Mio Valentino
+DLC_330=Lowriders: Classici Personalizzati
+DLC_340=Ulteriori Avventure Nella Finanza e Nel Crimine
+DLC_350=Acrobazie Astute
+DLC_360=Centauri
+DLC_370=Import/Export
+DLC_380=Circuito per Veicoli Speciali
+DLC_400=Pacchetto Trafficanti D'Armi
+DLC_410=La Corsa dei Contrabbandieri
+DLC_420=Colpo Dell'Apocalisse
+DLC_430=Serie Southern SA Super Sport
+DLC_440=After Hours
+DLC_460=Arena War
+DLC_480=Diamond Casinò & Resort
+DLC_490=Rapina Diamond Casinò
+DLC_510=LS Speciale Estate
+DLC_520=Colpo a Cayo Perico
+DLC_570=LS Tuners
+DLC_580=Il Contratto
+DLC_610=Le Imprese Criminali
+DLC_640=Guerra Della Droga
+DLC_670=Mercenari di San Andreas
+DLC_680=The Chop Shop
+DLC_690=Bottom Dollar Bounties
+
+MANUFNS=Nomi Dei Produttori
+
+SPWNTUNE=Metti a Punto i Veicoli Generati
+SPWNTUNE_H=Ti consente di selezionare il profilo di ottimizzazione per i veicoli generati tramite Stand.
+TUNE_PRESETS=Ottimizzazioni Predefinite
+TUNE_STCK=Di Fabbrica
+TUNE_PERF=Prestazioni
+TUNE_PERF_H=Migliora solo il motore, i freni, la trasmissione, l'armatura e il turbo
+TUNE_PERFWSPL=Prestazioni, Incluso Lo Spoiler
+TUNE_FULL=Completamente
+
+SPWCLR=Colora i Veicoli Generati
+
+SPWPLATE=Targa Dei Veicoli Generati
+
+TUNE=Migliora
+TUNE_H=Migliora completamente il tuo veicolo corrente o il tuo ultimo veicolo.
+
+RTUNE=Miglioramento Casuale
+RTUNE_VIS=Solo Esteticamente
+RTUNE_PERF=Solo Prestazioni
+RTUNE_PERF_S=Solo Prestazioni & Spoiler
+
+PERF=Miglioramento Prestazioni
+PERF_H=Migliora l'EMS, i Freni, la Trasmissione, l'Armatura e il Turbo del tuo veicolo attuale o di quello precedente.
+PERF_T=Ho migliorato le prestazioni del tuo veicolo. :D
+PERF_E=Il tuo veicolo è già completamente migliorato, dal punto di vista delle prestazioni. :)
+
+PERFWSPL=Miglioramento Prestazioni, incluso lo Spoiler
+
+DNGRD=Declassa
+DNGRD_H=Ripristina le impostazioni originali di fabbrica del tuo veicolo attuale o precedente
+
+GRG=Garage
+SVEVEH=Salva Veicolo
+
+PARA=Paracadute
+PARA_GEN=Paracadute Generico
+PARA_BRK=Paracadute Rotto
+SECUROSERV=SecuroServ
+
+XTRA=Extra
+XTRAS=Extra
+XTRAS_N=Il tuo veicolo non ha extra
+
+PARAON=Abilita Paracadute
+PARAON_H=Non ha effetto su tutti i veicoli, ad es. non sulle moto.
+
+PARA_H_VIS=Tieni presente che dopo aver aperto il paracadute del veicolo, non tutte le modifiche verranno applicate.
+
+VEHFIN0=Classico
+VEHFIN1=Metallizzato
+VEHFIN2=Perlescente
+VEHFIN3=Opaco
+VEHFIN4=Metallico
+VEHFIN5=Cromato
+VEHFIN6=Camaleonte
+
+WHLS=Ruote
+WHLSCLR=Colore Ruote
+WHLTYP=Categorie Ruote
+VEHMOD23=Ruote Anteriori
+
+VEHMOD0=Spoilers
+VEHMOD1=Paraurti Anteriore / Contromisure
+VEHMOD2=Paraurti Posteriore
+VEHMOD3=Minigonne
+VEHMOD4=Scarico
+VEHMOD5=Telaio
+VEHMOD6=Griglia
+VEHMOD7=Cofano
+VEHMOD8=Parafango
+VEHMOD9=Parafango Destro
+VEHMOD10=Tettuccio / Armi
+VEHMOD11=Motore
+VEHMOD12=Freni
+VEHMOD13=Trasmissione
+VEHMOD14=Clacson
+VEHMOD15=Sospensioni
+VEHMOD16=Armatura
+VEHMOD18=Turbo
+VEHMOD24=Ruote Posteriori
+VEHMOD25=Porta Targa
+
+! Alternatively, "Benny's Plates"
+VEHMOD26=Targhe Di Benny
+
+VEHMOD27=Design Rifiniture
+VEHMOD28=Ornamenti
+VEHMOD29=Cruscotto
+VEHMOD30=Desing del Quadrante
+VEHMOD31=Altoparlanti Portiere
+VEHMOD32=Sedili
+VEHMOD33=Volante
+VEHMOD34=Leva Cambio
+VEHMOD35=Placchette
+VEHMOD36=Altoparlanti
+VEHMOD37=Bagagliaio
+VEHMOD38=Idraulica
+VEHMOD39=Blocco motore
+VEHMOD40=Boost / Filtro Dell'Aria
+VEHMOD41=Spuntoni
+VEHMOD42=Copertura Arcata
+VEHMOD43=Antenna
+VEHMOD44=Presa D'Aria
+VEHMOD45=Serbatoio
+VEHMOD46=Porta Sinistra
+VEHMOD47=Porta Destra
+VEHMOD48=Livrea
+VEHMOD49=Barra Luminosa
+
+VEHDRFTYR=Pneumatici da Drift
+
+VEHBPTYR=Pneumatici Antiproiettile
+
+SCRCHD=Bruciato
+
+TONK=Rimuovi Torretta
+
+BHVONFT=Comportamento a Piedi
+
+BHVINVEH=Comportamento In Un Veicolo
+
+SPWNDRVE=Guida Veicolo Generato
+SPWNDRVE_H=Ti mette istantaneamente sul sedile del guidatore del veicolo che hai generato via stand
+
+SPWNAIR=Genera Velivolo in Aria
+
+SPWNFRNT=Genera Davanti
+SPWNFRNT_H=Mette il veicolo che generi con Stand un po di metri davanti a te
+
+SPWLIKEPV=Genera Come Veicolo Personale
+
+SPWNDEL=Cancella Veicolo Precedente
+
+SPWNVEL=Mantieni Velocità
+
+INPTVEHMDL=Inserisci Nome Modello
+ARGMDLNME=[nome modello]
+INPTVEHMDL_H=La "modalità esperto" per generare veicoli
+INPTOBJMDL_H=La "modalità esperto" per generare oggetti
+INPTMDL_E=Sfortunatamente,{} non è un nome valido per il modello. :/
+INPTVEHMDL_E=Sfortunatamente, {} non è un nome valido per un veicolo.:/
+
+ARSPD=Tachimetro AR
+ARSPD_H=Da al tuo personaggio degli occhiali AR con l'app tachimetro avviata
+
+CM=Contromisure
+CM_AUTO=Attivazione Automatica
+CM_OF=Solo Nei Velivoli
+CM_PERIOD=Distribuzione Periodica
+CM_PERIOD_D=Distribuzione Periodica: Ritardo
+
+FLARE=Flares
+CHAFF=Chaff
+BOTH=Entrambi
+
+CM_FLARE=Dispiega Flares
+CM_CHAFF=Dispiega Chaff
+CM_BOTH=Dispiega Flares & Chaff
+
+CM_PT=Pattern
+CM_HOR=Orizzontale
+CM_HOR_UP=Orizzontale, Verso L'Alto
+CM_HOR_DOWN=Orizzontale, Verso Il Basso
+CM_VERT=Verticale
+CM_VERT_DOWN=Verticale, Verso Il Basso
+
+AUTODRIVE=Guida Automatica
+AUTODRIVE_C=Velocità Di Crociera
+AUTODRIVE_SDB=Mostra Segnale Per la Destinazione
+AUTODRIVE_ACOI=Cancella All'Input
+AUTODRIVE_ACOI_H=Termina automaticamente quando tu provi a controllare il veicolo
+AUTODRIVE_NOCLIP=Nessuna Collisione Durante Guida Automatica
+AUTODRIVE_NOCLIP_H=Disabilita collisione con altri veicoli quando la guida automatica è attiva. Aiuta a compensare il mancante path-finding mentre guida aggressiva è attiva.
+AUTODRIVE_STORE=Negozio
+AUTODRIVE_MOVIE=Cinema
+AUTODRIVE_CLUBHOUSE=Clubhouse della Gang di Motociclisti
+AUTODRIVE_FACILITY=Base Operativa
+AUTODRIVE_AGENCY=Agenzia
+AUTODRIVE_OFFICE=Ufficio
+AUTODRIVE_HANGAR=Hangar
+AUTODRIVE_ERR2=La guida automatica non è disponibile per questo tipo di veicolo.
+AUTODRIVE_ERR3=Impossibile trovare una destinazione adeguata, mi spiace. :(
+AUTODRIVE_ERR4=Sei già alla tua destinazione. :P
+AUTODRIVE_ARRIVE=Abbiamo raggiunto la tua destinazione. ^_^
+AUTODRIVE_DRIVE=Stile di Guida
+AUTODRIVE_LAW=Legittimo
+AUTODRIVE_NOTSOLAWFUL=Legittimo, Ignora i Semafori Rossi
+AUTODRIVE_BACK=Guida In Retromarcia
+AUTODRIVE_DEST=Guida Fino...
+AUTODRIVE_DEST_NONE=Ovunque Ci Porti il Vento
+AUTODRIVE_DEST_NONE_H=Ti scarrozza in giro senza una destinazione specifica.
+
+LGTSIGS=Segnali Luminosi
+TRNSIG=Segnale di Svolta
+TRNSIG_HAZ=Pericolo
+TRNSIG_AUTO=Disabilita Automaticamente Indicatori di Direzione
+BRAKELIGHTS=Utilizza Luci dei Freni Quando In Sosta
+MTESIRENS=Muta Sirene
+
+AUTORKTBST=Rocket Boost Automatico
+AUTORKTBST_H2=Utilizza automaticamente il rocket boost quando è carico
+
+RKTBST=Rocket Boost
+
+OVRD=Sovrascrivi
+RKTBST_H_OVRD=Ti consente di modificare i veicoli che guidi implementando il rocket boost anche se di base non lo hanno.
+
+VERTRKTBST=Rocket Boost Verticale
+
+CHRGBHV=Comportamento Ricarica
+RKTBST_NVREND=Infinito
+RKTBST_NVREND_H=Fa sì che il boost non finisca mai, a meno che non ti schianti.
+RKTBST_INSTRFLL=Ricarica Istantanea
+RKTBST_INSTRFLL_H=Ricarica il boost immediatamente dopo il suo esaurimento.
+RKTBST_NORFLL=Nessun Tempo di Ricarica
+RKTBST_NORFLL_H=Ricarica immediatamente il boost quando le sue condizioni vengono soddisfatte.
+RKTBST_EMPTY=Sempre vuoto
+
+RMP=Rampa
+RMMSCOOP=Speronatore (Wedge)
+INCRMMFRC=Incrementa Forza di Speronamento
+
+LSC=Los Santos Customs
+
+VDO=Apri/Chiudi Porte
+
+VEHDOOR_A=Tutte Le Porte
+VEHDOOR_0=Anteriore Sinistra
+VEHDOOR_1=Anteriore Destra
+VEHDOOR_2=Posteriore Sinistra
+VEHDOOR_3=Posteriore Destra
+VEHDOOR_4=Cofano
+VEHDOOR_5=Bagagliaio
+VEHDOOR_6=Dietro
+VEHDOOR_7=Dietro 2
+
+LOCKD=Blocca Le Porte
+LOCKD_O=Solo Quando Vacanti
+XCLUDEPVS=Escludi Veicoli Personali Degli Altri
+
+ENGTGL=Accendi/Spegni Il Motore
+ENGTGL_H=Tieni presente che premendo avanti o indietro il tuo personaggio riaccenderà il motore nella maggior parte dei veicoli.
+
+FLIPVEH=Rimetti Veicolo in Posizione Verticale
+FLIPVEH_H=Rimette il tuo ultimo veicolo o quello attuale in posizione verticale.
+
+ATRNSUBCAR=Trasforma Automaticamente Macchine Sottomarine
+NANIM=Nessuna Animazione
+
+DRBYINANY=Driveby In Tutti i Veicoli
+DRBYWITHANY=Driveby Con Tutte Le Armi
+
+WHEELONWHEELS=Ruota Delle Armi Nei Veicoli
+WHEELONWHEELS_H=Tieni presente che puoi comunque utilizzare la rotella del mouse verso l'alto per sfogliare le armi una per una, cosa che devi fare per sfogliare le armi dei veicoli.
+
+BMBTRJC=Mostra Traiettoria Delle Bombe
+
+FLYTHRUWND=Vola Attraverso il Parabrezza
+
+! "Glued To Seats" is SEATGLUE
+FLYTHRUWND_H=Ti lancia fuori dal veicolo in caso di collisioni frontali ad alta velocità come nella modalità Storia. Questo sovrascrive "Incollato Ai Sedili".
+
+ANTINLCKON=Aggancia Tutti I Veicoli
+
+! "Can't Be Locked On" is NLCKON
+ANTINLCKON_H=Ti permette di agganciarti ai veicoli Imani Tech. Ciò ignora anche funzionalità come "Non Agganciabile".
+
+SETSEAT=Imposta Sedile Veicolo
+DRV=Autista
+
+LVENGRUN=Lascia Motore Acceso Quando Esci
+
+NOJACK=Non Trascinabile Fuori
+
+PEG=Imposta Come Veicolo Pegasus
+PEG_H=Ti permette di mettere alcuni aerei generati nel tuo hangar facendo credere al gioco che siano veicoli Pegasus.
+
+DSTRY=Distruggi
+
+DELVEH_H=Elimina il tuo veicolo attuale o l'ultimo da te utilizzato.
+
+FIXVEH=Ripara Veicolo
+FIXVEH_H=Ripara il tuo veicolo attuale o l'ultimo da te utilizzato.
+
+VEHGOD=Indistruttibile
+VEHGOD_H=Rende qualsiasi veicolo che piloti o guidi incapace di essere danneggiato.
+
+SPWNGOD=Rende Indistruttibili i Veicoli Generati
+
+SPWNLIST=Elenco dei Veicoli Generati
+
+VEH_DRV=Guida
+VEH_ENT=Entra
+VEH_EMPTY=Svuota
+DEL=Elimina
+
+SPWNBLIP=Blimp Sui Veicoli Generati
+SPWNBLIP_TXT=Veicolo Generato
+CLRBLIP=Rimuovi Blips
+ONLYLTST=Solo Per L'Ultimo Veicolo
+
+MINT=Mantieni in Ottime Condizioni
+MINT_H=Mantiene il tuo veicolo senza alcuna ammaccatura o graffi.
+
+PLATE=Targa
+
+PLATESPEED=Tachimetro
+PLATESPEED_A=Tachimetro Sulla Targa
+
+CHARLIMIT=Non può superare i {number} caratteri. :|
+
+RNDISE=Rendi Casuale
+
+SCRLTXT=Testo Scorrevole
+
+LCKPLT=Salva Testo Della Targa
+
+BADCHAR="{}" non è un carattere valido. :|
+
+HORNBOOST=Clacson Boost
+
+SPRDRV=Super Velocità
+
+SPRDRVCAM=Super Velocità Cambia La Visuale
+SPRDRVCAM_H=Cambia la definizione di "in avanti" per la super velocità in modo che sia dove stai guardando invece che dove sta andando il tuo veicolo.
+
+SPRHBRK=Super Freno a Mano
+
+DRVONWTR=Guida Sull'Acqua
+
+DRVUNDWTR=Guida Sott'Acqua
+
+SPDLMT=Limite Di Velocità (KMH)
+SPDLMT_H=Imposta il limite di velocità dei veicoli che piloti o guidi. (Predefinito: 540)
+
+JMPABL=Abilità Di Salto
+JMPABL_H=Tieni presente che se disponi sia dell'abilità di salto che di rocket boost, il gioco sposterà il boost sul tasto secondario.
+
+GLDABL=Abilità Di Planata
+
+HEADLIT=Fari
+
+HEADLITMUL=Intensità Fari
+H_HILOCAL=*valori troppo elevati sono riflessi solo localmente*
+
+GRVTYMTPLY=Moltiplicatore Di Gravità
+
+NOTAIR=No, Quando In Un Velivolo
+
+HNEDIT=Editor Di Maneggiamento
+HNE_BASE=Base
+HNE_AIRCRAFT=Velivolo
+
+! Motorcycles and bicycles alike.
+HNE_BIKES=Moto/Bici
+
+HNE_FLYING=Volo
+HNE_VERTFLY=Volo Verticale
+HNE_SPECFLY=Volo Speciale
+HNE_SEAPLANE=Idrovolanti
+HNE_SUBMARINE=Sottomarini
+HNE_TRAILER=Rimorchi
+HNE_CAR=Auto
+
+SPECFLY_H=Tieni presente che per i veicoli diversi dalla Deluxo, l'input "tetto" (tieni premuto H o il tasto direzionale destro) viene utilizzato per attivare il volo speciale.
+
+DELUXO=Deluxo
+OPP2=Oppressor Mk II
+
+SHWNA=Mostra Non Applicabili
+
+HNE_VWSCR=Vedi Script Di Maneggiamento
+HNE_VWSCR_H=Visualizza gli script nella sotto-cartella "Handling" della cartella Command Box Scripts.
+
+HNE_NA=Questa categoria non è applicabile al tuo veicolo attuale.
+
+CSTWNGBVHR=Comportamento delle Ali Personalizzato
+CSTWNGBVHR_H=Permette di personalizzare il comportamento delle ali dell'oppressor originale.
+
+LESSENBURN=Launch Control
+
+SMTHCST=Rallentamento Omogeneo
+SMTHCST_H=Riduce la decelerazione al minimo del tuo veicolo per un andamento più realistico.
+
+DRFTMDE=Modalità Drift
+DRFTMDE_H=La nostra ricreazione dell'ottimizzazione drift, che è disponibile solo per una manciata di veicoli. La nostra versione funziona per un numero molto maggiore di veicoli ma alcuni di essi non saranno così fluidi come altri.
+
+MINPOS=Posizione Minima
+MAXPOS=Posizione Massima
+CSTWNGBVHR_SPD=Velocità
+MAXPOS2SPD=Imposta la Velocità in Base alla Posizione Massima
+
+SMTHFLY=Nessuna Turbolenza
+
+HELIAUTOSTAB=Disattiva L'Autostabilizzazione Degli Elicotteri
+HELIAUTOSTAB_H=Originalmente inspirato dallo script BetterHeliMode di Murten.
+
+NLCKON=Non Può Essere Bersagliato Con Missili Guidati
+
+INSTASEAT=Entra ed Esci Dai Veicoli Istantaneamente
+INSTASEAT_H=Salta le animazioni del personaggio che cammina verso il veicolo, avvia il motore e sale e/o scende dal veicolo.
+
+EXITSTOP=Ferma Il Veicolo Quando Esci
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Vehicle Classes !!
+!!!!!!!!!!!!!!!!!!!!!
+
+off_road=Fuoristrada
+sport_classic=Sportive classiche
+Military=Militare
+Compacts=Compatte
+sport=Sportive
+Muscle=Muscle
+motorcycle=Moto
+open_wheel=Ruote scoperte
+Super=Super
+van=Furgoni
+suv=SUVs
+Commercial=Commerciali
+plane=Aerei
+sedan=Berline
+Service=Di Servizio
+Industrial=Industriali
+helicopter=Elicotteri
+boat=Barche
+Utility=Servizio
+Emergency=Emergenza
+cycle=Biciclette
+coupe=Coupé
+rail=Treni
+
+!!!!!!!!!!!
+!! World !!
+!!!!!!!!!!!
+
+PLCS=Luoghi
+INHAB=Abitanti
+ATMO=Atmosfera
+
+DWNTWN=Centro
+
+! GTA calls a point on the map a "blip"
+BLIPS=Blips
+BLIPNFND=Non sono riuscito a trovare un punto equivalente sulla mappa. :/
+
+TP=Teletrasporto
+
+DEDFX=Effetto Alla Morte
+RESPFX=Effetto Al Respawn
+TPFX=Effetto Teletrasporto
+
+TPS=Teletrasporto a...
+TPWAIT=Preparazione Teletrasporto...
+
+WP=Waypoint
+WPS=Waypoint Su...
+OBJCTV=Obbiettivo
+TP_MP=Il teletrasporto qui garantirà lo stato del mondo online e potrebbe far sì che il gioco non risponda a breve.
+TP_CAYO=Assicurati che lo stato del mondo sia impostato su Cayo Perico o che il suo IPL sia abilitato prima del teletrasporto per evitare di finire in acqua.
+
+RPLTP=Ripeti L'Ultimo Teletrasporto
+RP_E=Non c'è nulla da ripetere. :?
+
+UNDOTP=Annulla Teletrasporto
+UNDOTP_E=Niente Da Annullare. :?
+
+STORS=Negozi
+
+AMMUNAT=Ammu-Nation
+SHTNGRNGE=Ammu-Nation con Poligono di Tiro
+BARBR=Barbieri
+CLTHST=Negozi Di Vestiti
+TATTOO=Studio Di Tatuaggi
+
+LNDMRKS=Punti Di Riferimento
+
+LSIA=Aeroporto Internazionale Di Los Santos
+FRTZNC=Fort Zancudo
+MTCHIL=Monte Chilliad
+
+CAYO=Cayo Perico
+
+CSNO=Casinò
+
+! Translate "Tower" & "Helipad"
+MAZEHELIPAD=Eliporto Maze Bank Tower
+
+HIGHPLACE=Molto In Alto
+
+AUTOTPWP=Auto-Teletrasporto Ai Waypoint
+AUTOTPWP_H=Ti teletrasporta automaticamente a qualsiasi waypoint tu metti.
+AUTOTPWP_T=Sei stato teletrasportato automaticamente alla tua meta. :)
+
+WPORTAL=Teletrasportati Alla Meta Tramite Portali
+
+CBPOS=Posizione Dagli Appunti
+CBPOS_H=Scannerizza i tuoi appunti per un vettore 2D/3D.
+CBPOS_T=Non sono stato in grado di trovare un vettore 2D/3D nei tuoi appunti. :?
+
+POS=Posizione
+
+! Stand > Settings > Appearance > Position
+MNUPOS=Posizione
+
+! World > Places > Position
+MYPOS=Posizione
+
+POS_Z=Z (Altezza)
+
+SVDPLCS=Luoghi Salvati
+SVDPLCS_H=Puoi salvare i luoghi in {}.
+
+SVPLC_M=Salva La Mia Posizione
+SVPLC_W=Salva La Posizione Del Waypoint
+
+CPPOS=Copia Posizione Negli Appunti
+
+CPSUCC=La copia negli appunti è riuscita. :D
+CPERR=La copia negli appunti è fallita. :|
+
+IPLS=IPLs
+IPLS_H=Ti permette di caricare e scaricare parti del mondo ("IPL") *localmente*.
+
+IPLTP=Teletrasporto Agli IPL
+IPLTP_H=Ti teletrasporterà agli IPL quando li abiliterai qua sotto.
+IPL_MP=L'abilitazione di questo IPL garantirà lo stato del mondo online e potrebbe far sì che il gioco non risponda a breve
+
+TRFC=Traffico
+
+TRFCLR=Colore Del Traffico
+
+DPEDS_A=Disabilita Pedoni
+
+DTRFC_A=Disabilita Traffico
+DTRFC_2=Abilitato, Incluse Auto Parcheggiate
+
+SWRLDST=Imposta Stato Del Mondo
+SWRLDST_H=Tenere presente che la modifica dello stato del mondo potrebbe rendere il gioco non reattivo per poco.
+
+SP=Modalità Storia
+
+S_SP=SP
+S_MP=MP
+
+INT=Interno
+INTS=Interni
+
+INT_BKR=Bunker
+STYL=Stile
+SECTY=Sicurezza
+EQUIPUPGR=Migliora Equipaggiamento
+GUNLKR=Armadietto Delle Armi
+PSNLQRTS=Alloggio
+GUNRNGE=Poligono di tiro
+
+INT_VW=Magazzino Veicoli
+INT_VW_2=Sponsorizzato
+INT_VW_1=Urbano
+INT_VW_0_1=Di Base (Colore 1)
+INT_VW_0_2=Di Base (Colore 2)
+INT_VW_0_3=Di Base (Colore 3)
+INT_VW_0_4=Di Base (Colore 4)
+
+INT_IF=Base Operativa IAA
+INT_SR=Stanza dei Server
+INT_BS=Sottomarino di Bodgan
+INT_HL=Laboratori Humane
+INT_FR=FIB (Assalto all'Ufficio)
+INT_LFB=La Fluente Blanca
+INT_SSWCC=Split Sides West Comedy Club
+INT_BM=Bahama Mamas
+INT_TR=Stanza Delle Torture
+INT_MR=Stanza D'Hotel
+INT_OG=Garage Omega
+INT_CIN=Cinema
+INT_RCYL=Impianto Di Riciclaggio
+
+INT_PYSC=Ufficio Di Friedlander
+INT_SOL=Ufficio Di Solomon
+
+INT_FH=Casa Di Floyd
+INT_JH=Casa Dell'Inserviente
+INT_LH=Casa Di Lester
+
+INT_BENNY=Benny's Original Motor Works
+INT_HAYES=Hayes Autos
+INT_TEQ=Tequi-La-La
+INT_FDRY=Fonderia
+INT_UDG=Garage Dell'Union Depository
+INT_ESR=Ricettacolo Degli Epsilon
+INT_CC=Stanza Della Creazione Dei Personaggi
+INT_ME=Parcheggio Di Fine Missione
+INT_NG=Parcheggio Del Nightclub
+INT_WEED=Coltivazione Di Marijuana
+INT_STILT=Palafitta
+
+INT_A_H=Appartamento Di Lusso
+INT_A_M=Appartamento Di Fascia Media
+INT_A_L=Appartamento Economico
+
+INT_G_H=Garage Di Lusso
+INT_G_M=Garage Di Fascia Media
+INT_G_L=Garage Economico
+
+INT_W_L=Magazzino Grande
+INT_W_M=Magazzino Medio
+INT_W_S=Magazzino Piccolo
+
+YANK=North Yankton
+YANKMAPRDR=North Yankton Mappa & Radar
+IPL_USSLUX=USS Luxington
+IPL_HOSPITAL=Ospedale Di Pillbox Hill
+FMEORSHME=Fame or Shame
+FCEBK=Lifeinvader
+IPL_JEWEL=Gioielleria Vangelico
+IPL_MXRD=Max Renda
+IPL_UFOEYE=UFO Del Monte Chiliad
+IPL_FINBANK=Union Depository
+IPL_PLNCRSH=Fosso Dell'Incidente Aereo
+
+! Translate "Factory"
+IPL_CLKNBLLFCTRY=Fabbrica Clucking Bell
+IPL_LSTRFCTRY=Fabbrica Di Lester
+
+! Translate "Morgue"
+IPL_MORGUE=Obitorio
+
+! Translate "Heist" and "Yacht"
+IPL_AYACHT=Series A Colpo Allo Yacht
+
+! Translate "Ranch" and "Fire"
+IPL_RANCH=O'Neil Brothers Ranch
+IPL_RANCH_LIT=O'Neil Brothers Ranch Incendiato
+
+! Translate "Clubhouse"
+IPL_LOSTHOUSE=Clubhouse Dei Lost Mc
+
+! Translate "House"
+IPL_BCHOUSE=Casa Del Banham Canyon
+
+IPL_TRNWRCK=Incidente Ferroviario
+IPL_REDCRPT=Tappeto Rosso
+
+! Translate anything but "FIB"
+IPL_FIBLBBY=Ingresso FIB
+! Translate anything but "FIB"
+IPL_FIBHELI=Schianto Dell'Elicottero FIB
+! Translate anything but "FIB"
+IPL_FIBRBBL=Macerie Del FIB
+
+! Translate "Triathlon"
+IPL_TRIA2=Triathlon Dell'Alamo Sea
+! Translate "Triathlon"
+IPL_TIRA1=Triathlon LSIA
+
+! Translate "Gates"
+IPL_ZGATES=Cancelli Di Fort Zancudo
+
+! Translate "Airfield" and "Boxes"
+IPL_BOXES=Scatole Dell'Aeroporto Di Sandy Shores
+
+IPL_SPNN=Autolavaggio Spinners
+
+! Translate "Billboard" and "Graffiti"
+IPL_MAZEGRFF=Graffiti Sul Cartellone Pubblicitario Della Maze Bank
+! Translate "Billboard" and "Graffiti"
+IPL_OILGRFF=Graffiti Sul Cartellone Pubblicitario Di Ron OIl
+! Translate "Billboard" and "Graffiti"
+IPL_FRUITBB=Cartellone Pubblicitario IFruit
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL1=Cartellone Pubblicitario Meltdown 1
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL2=Cartellone Pubblicitario Meltdown 2
+
+! Translate "Church" and "Grave"
+IPL_GRVE=Tomba Della Chiesa A Hill Valley
+
+XSTPNSH=Punizioni Per L'Esistenza Degli NPC
+NPRXPNSH=Punizioni Per La Vicinanza Degli NPC
+PRX=Prossimità
+NAIMPNSH=Punizioni Per NPC Che Ti Mirano
+NAIMPNSH_H=Punisci gli NPC che mirano nella tua area.
+NHOSPNSH=Punizioni Per L'Ostilità Degli NPC
+INCLUDE_EVERYONE=Includi Tutti
+INCLUDE_EVERYONE_M=Includi Tutti, Nelle Missioni
+INCLUDE_FRIEND=Includi Amici
+INCLUDE_PASS=Includi Passeggeri
+INCLUDE_CREW=Includi Membri Della Crew
+INCLUDE_ORG=Includi Membri Dell'Organizzazione
+INCLUDE_H1=Invece che solo per te, le punizioni verranno applicate anche quando questo gruppo demografico è un bersaglio.
+INCLUDE_H2=Come sopra, ma efficace solo all'interno delle missioni.
+PAIMPNSH=Punizioni Per I Giocatori Che Ti Mirano
+PAIMPNSH_H=Punisci i giocatori che mirano nella tua area.
+AIMME=Punisci Solo Se MIrano A Me
+AIMMEN=Se disabilitato, gli NPC verranno puniti se mirano nella tua area, indipendentemente da chi stanno mirando
+AIMMEP=Se disabilitato, i giocatori verranno puniti se mirano nella tua area, indipendentemente da chi stanno mirando
+PNSH_EXPANON=Esplosione Anonima
+PNSH_EXP=Esplosione A Tuo Nome
+PNSH_BRN=Incendia
+PNSH_DIE=Uccidi
+PNSH_REV=Rianima
+PNSH_UNRM=Disarma
+PNSH_UNRM_H=Li farà rimanere con nient'altro che i loro pugni.
+PNSH_INTRP=Interrompi
+PNSH_CWR=Spaventa
+PNSH_FLEE=Fai Fuggire
+PNSH_PSH=Spingi Via
+PNSH_MRK=Marcatore RA
+PNSH_SHWMDLNME=Mostra Nome Del Modello
+PSNH_FIX=Ripara
+PSNH_WEKN=Indebolisci
+PSNH_WEKN_H=Riduce la loro vita così che muoiano più facilmente
+
+! "ESP" as in "Extra Sensory Perception"
+NESP=ESP NPC
+! "ESP" as in "Extra Sensory Perception"
+PESP=ESP Giocatori
+
+! "ESP" as in "Extra Sensory Perception"
+BONESP=ESP Ossa
+XCLDED=Escludi Morti
+
+! "ESP" as in "Extra Sensory Perception"
+BOXESP=Box ESP
+
+RNDR_LWLTCY=Renderizzazione A Bassa Latenza
+RNDR_LGCY=Renderizzazione Originale
+RNDR_NTV=Renderizzazione Nativa
+
+! "ESP" as in "Extra Sensory Perception"
+NAMESP=ESP Nome
+
+MINTXTSCL=Scala Minima Del Testo
+MAXTXTSCL=Scala Massima Del Testo
+INVTXTSCL=Invertire La Scala Del Testo
+
+! "ESP" as in "Extra Sensory Perception"
+LINESP=ESP Linee
+
+ESPTAGS_H=I tag sono ordinati in questo elenco in base alla loro priorità di visualizzazione.
+
+CLRARE=Libera l'Area
+IGMISSENT=Ignora Le Entità Della Missione
+NDLY=Nessun Ritardo
+
+DELROPES=Elimina Tutte Le Ropes
+
+DOORS=Migliora Mondo Aperto
+DOORS_H=Espande il mondo aperto e permette di entrare in molti interni a proprio piacimento.
+
+DOORS_ENT=Premi {input} per entrare {interior}
+DOORS_EXT=Premi {} per uscire.
+
+DEDSEC=Hacking Del Mondo Come In Watch_Dogs
+
+DEDSEC_HACK=Hacks
+DEDSEC_HACK_H=Ti consente di configurare quali hacks appariranno su schermo
+
+DEDSEC_GENAC=Azioni Generali
+DEDSEC_VEHAC=Azioni Del Veicolo
+DEDSEC_VEHAC_H=Si applica se si seleziona un giocatore all'interno di un veicolo.
+DEDSEC_NPCAC=Azioni Degli NPC
+DEDSEC_PLRAC_H=Si applica se si seleziona un giocatore a piedi.
+
+DEDSEC_TUT_ESP=Guarda in direzione generale di un giocatore, di un NPC o di un veicolo.
+DEDSEC_TUT_OPT=Usa {} per visualizzare le opzioni di hacking per l'obiettivo corrente.
+DEDSEC_TUT_OPTMSE=La rotella del mouse o {}
+DEDSEC_TUT_SEL=Muovi la visuale per selezionare un'opzione e rilascia il pulsante per utilizzarla.
+
+DEDSEC_OPT_FRZ=Congela
+DEDSEC_OPT_UFRZ=Scongela
+DEDSEC_OPT_EXP=Esplodi
+DEDSEC_OPT_UNRM=Disarma
+DEDSEC_OPT_DEL=Elimina
+
+DEDSEC_OPT_DSTRY=Distruggi
+DEDSEC_OPT_DRV=Guida
+DEDSEC_OPT_ENT=Entra
+DEDSEC_OPT_EMPTY=Svuota
+DEDSEC_OPT_IGNITE=Appicca a Fuoco
+DEDSEC_OPT_SLINGSHOT=Fionda
+
+DEDSEC_OPT_BRN=Brucia
+DEDSEC_OPT_FLEE=Fai Fuggire
+DEDSEC_OPT_CWR=Spaventa
+DEDSEC_OPT_REV=Rianima
+
+DEDSEC_OPT_KLL=Uccidi
+DEDSEC_OPT_CGE=Ingabbia
+DEDSEC_OPT_MNU=In Stand
+
+DEDSEC_STICKY=Selezione Appiccicosa
+DEDSEC_STICKY_H=Le hack verranno deselezionate soltanto dopo l'ammontare di tempo specificato in millisecondi. Questo può essere utile per i controller.
+DEDSEC_PASSIVE=Quando Nessun Target È Stato Selezionato...
+DEDSEC_ACTIVE=Quando Un Target È Selezionato...
+
+SHWRETCL=Mostra Reticolo
+DRWLINE=Mostra Linea
+DRWBOX=Mostra Box ESP
+
+DEDSECDELAY=Tempo D'Inattività Del Telefono
+DEDSECDELAY_H=Ti consente di aprire il tuo telefono nonostante tu stia hackerando un obbiettivo se rilasci il tasto entro un determinato numero di millisecondi.
+
+GGSR=GeoGuessr
+GGSR_H=Quanto conosci bene San Andreas?
+GGSR_VIEW=Vedi Target
+GGSR_SBMT=Tira Ad'Indovinare
+GGSR_SBMT_H=Immetti una posizione impostando una meta, utilizzando la camera libera o spostando/trasportando il personaggio.
+GGSR_WIN=Hai Indovinato!
+GGSR_OFF=La tua scelta è a {} metri dal bersaglio.
+
+ARWP=Waypoint AR
+ARWP_H=Posiziona un segnalatore sui waypoint e consente di vedere l'altezza associata ad alcuni waypoint posizionati tramite Stand.
+
+ARGPS=GPS AR
+ARGPS_H=Ti porta ai tuoi waypoints.
+
+ARBCNPLY=Segnalatore AR Sui Giocatori Focalizzati
+ARBCNPLY_P=Nell'Elenco Giocatori
+ARBCNPLY_S=All'interno Di Un Elenco Giocatori
+
+WHNENTPLY=Quando Entri Nell'Elenco Giocatori...
+SPCPLY=Guardali
+
+WHNLVEPLY=Quando Esci Dall'Elenco Giocatori...
+STPSPECPLY=Smetti Di Guardarli
+
+STPSPEC=Smetti Di Guardare
+
+SRT=Ordinamento
+SRTBY=Ordina Per
+SRTREV=Inverti L'Ordine
+
+! Or "Raised Tags"
+HOISTFLGS=Tags Priorizzati
+HOISTFLGS_H=I giocatori con i tag priorizzati saranno visualizzati per primi nell'elenco giocatori.
+
+NME=Nome
+SRTBY_SLT=Slot
+
+SPID2=ID Del Giocatore / Slot
+
+LANG_EN=Inglese
+LANG_FR=Francese
+LANG_DE=Tedesco
+LANG_IT=Italiano
+LANG_ES=Spagnolo (Spagna)
+LANG_BR=Portoghese
+LANG_PL=Polacco
+LANG_RU=Russo
+LANG_KR=Coreano
+LANG_TW=Cinese Tradizionale
+LANG_JP=Giapponese
+LANG_MX=Spagnolo (Messico)
+LANG_CN=Cinese Semplificato
+
+DSCVYTME=Tempo della scoperta
+
+CTOS=Blackout
+CTOS_2=Abilitato, Inclusi I Veicoli
+
+NOSKY=Disabilita Cielo
+
+OVRDWTR=Sovrascrivi Meteo
+OVRDWTR_H=Sovrascrive il meteo *localmente*
+OVRDOFF=Non Sovrascrivere
+WTR_EXTRASUNNY=Estremamente Soleggiato
+WTR_CLEAR=Sereno
+WTR_CLOUDS=Nuvole
+WTR_SMOG=Smog
+WTR_FOGGY=Nebbioso
+WTR_OVERCAST=Nuvoloso
+WTR_RAIN=Pioggia
+WTR_THUNDER=Tuoni
+WTR_CLEARING=Schiarendosi
+WTR_NEUTRAL=Neutrale
+WTR_SNOW=Neve
+WTR_BLIZZARD=Bufera Di Neve
+WTR_SNOWLIGHT=Nevicata leggera
+WTR_XMAS=Natale
+WTR_HALLOWEEN=Halloween Sereno
+WTR_RAIN_HALLOWEEN=Halloween Piovoso
+WTR_SNOW_HALLOWEEN=Halloween Nevoso
+
+AESLGHT=Luce Estetica
+PLCMNT=Posizionamento
+PLCMNT_CHR=Personaggio
+PLCMNT_CHR_H=Una singola luce che risplende fuori dal tuo personaggio.
+PLCMNT_CAM=Camera
+PLCMNT_CAM_H=Una singola luce che risplende fuori dalla camera
+PLCMNT_OVL=Ovale Di Luci
+PLCMNT_OVL_H=81 luci posizionate a forma di ovale attorno al tuo personaggio.
+RNGE=Portata
+ITNST=Intensità
+
+! Might also be called "falloff" or "edge gradient", I'm no expert on lights
+DFFRCTN=Diffrazione
+
+WRLDBDR=Bordo Del Mondo
+WRLDBDR_H=Mostra il bordo del mondo se sei nell'ammontare di metri specificato.
+
+WAT=Acqua
+
+WVEBHV=Comportamento Delle Onde
+SMTH=Morbido
+MGNT=Magnetico
+
+ZDIFF=Differenziale Z
+WATZDIFFLOC=Applica Differenziale Z Solo All'Acqua Vicina
+
+STROVR=Sovrascrivi Forza
+
+OPCDIF=Differenziale D'Opacità
+WATOD_H=Consente di aumentare o diminuire l'opacità dell'acqua *localmente*.
+
+TRAINS=Mi Piacciono I Treni
+TRAINS_H=Rende la comparsa dei treni molto più comune nel mondo.
+
+CLK=Orologio
+
+TIME=Ora
+
+CLKSYNC=Usa L'Ora Della Sessione
+
+LKTIME=Blocca L'Ora
+
+SYSTIME=Usa L'Ora Del Sistema
+
+SMTHTRNS=Transizione Graduale
+
+CLKPRST_12=Mezzogiorno
+CLKPRST_6=Mattino
+CLKPRST_0=Mezzanotte
+CLKPRST_18=Pomeriggio
+
+!!!!!!!!!!!!!
+!! Players !!
+!!!!!!!!!!!!!
+
+ALLPLY=Tutti i Giocatori
+
+XCLDS=Escludi
+
+XCLDF=Escludi Amici
+XCLDM=Escludimi
+XCLDCM=Escludi Membri Della Crew
+XCLDSU=Escludi Altri Utenti Stand
+XCLDPR=Escludi Giocatori
+XCLDOG=Escludi Membri Dell'Organizzazione
+XCLD50=Escludi Autorità
+XCLDMIS=Escludi Missioni
+XCLDMDR=Escludi Modders
+XCLDLMDR=Escludi Probabili Modders
+
+XCLD_GRD=Previene che le tue guardie del corpo attacchino questo gruppo demografico.
+
+PS_ON_H=Include amici, sconosciuti, & te stesso.
+PS_F_S=Amici & Sconosciuti
+PS_S=Sconosciuti
+
+PSC_M=Me
+PSC_FM=Amici & Me
+PSC_CFM=Membri Della Crew, Amici, & Me
+
+PLYFTRLST=[Giocatore]
+
+SLFHRM=Sei sicuro di volerlo fare a te stesso?
+
+FLAGS=Tags
+FLAGS_A=Tag Dei Giocatori
+
+BRCKTS=Parentesi
+
+FLAG_SELF=Te Stesso
+FLAG_FRIEND=Amico
+FLAG_CREW=Membro Della Crew
+FLAG_ATTACKED=Ti Ha Attaccato
+FLAG_HOST=Host
+FLAG_SCRIPT_HOST=Script Host
+FLAG_SPEC=Spettatore
+FLAG_GOD=Invulnerabile
+FLAG_VEHGOD=Veicolo Indistruttibile
+FLAG_INVEH=In Un Veicolo
+FLAG_RC=Veicolo RC
+FLAG_OTR=Nascosto Al Radar
+FLAG_INT=In Un Interno
+FLAG_TYPING=Sta Scrivendo
+FLAG_DEAD=Morto
+FLAG_VPN=VPN
+FLAG_INVISIBLE=Invisibile
+FLAG_ORG_MEMBER=Membro Dell'Organizzazione
+
+NXTHST=Prossimo Host
+
+! Plural version of FLAG_FRIEND
+FLAG_FRIEND_P=Amici
+
+! Plural version of FLAG_CREW
+FLAG_CREW_P=Membri Della Crew
+
+! Plural version of FLAG_MOD
+FLAG_MOD_P=Modders
+
+! Plural version of FLAG_ATTACKED
+FLAG_ATTACKED_P=Ti Ha Attaccato
+
+PLYTP=Teletrasportati Da Loro
+PLYTP_A=Teletrasporto a {}
+
+PLYTPVEH=Teletrasportati Nel Suo Veicolo
+PLYNVEH={} Non è un veicolo. :/
+
+PLYAPT=Teletrasporta All'Appartamento
+
+OFFICE_GARAGE={office}, Garage {num}
+
+NEAR_ME=Vicino A Me
+NEAR_WP=Vicino Alla Mia Meta
+
+APTID=ID Appartamento
+INTID=ID Interno
+
+PLY_VISIT=Teletrasportati Nel Suo Appartamento
+
+PLYSMMN_D=Teletrasportali/Convocali
+
+PLYSMMN=Teletrasporta Da Me
+PLYSMMNPLY=Teletrasporta Dal Giocatore...
+PLYSMMNWP2=Teletrasporta Alla Mia Meta
+PLYSMMNOBJ=Teletrasporta Al Mio Obbiettivo
+
+PLYWPTP=Teletraporta Alla Sua Meta
+PLYWPTP_N={} Non ha alcuna meta selezionata
+
+COPYWP=Copia La Sua Meta
+
+PLYNAPT={} Non è in un appartamento. :/
+
+PLYCASINOTP=Teletrasporta Al Casinò
+
+PLYFRND=Invia Richiesta D'Amicizia
+
+PLYINHIST=Nello Storico Giocatori
+
+PLYENGMULT=Moltiplica La Potenza Del Motore
+
+PLYGIFT=Regala Il Veicolo Generato
+PLYGIFT_H=Permette loro di mettere qualsiasi veicolo nel proprio garage, indipendentemente dal valore.
+PLYGIFT_W=Una volta che avrai proceduto, {} potrà mettere il veicolo in cui si trovano attualmente nel loro garage. Tuttavia, affinché ciò abbia l'effetto desiderato, non devono avere fuori alcun veicolo personale e devono mettere il veicolo in un garage pieno, ad es. tutto pieno di auto di NPC di fascia bassa, in modo tale che possano scegliere "sostituisci".
+PLYGIFT_T=Se tutto è stato fatto correttamente, {} ora può mettere il veicolo nel suo garage. :)
+PLYVEHNCTRL=Impossibile prendere il controllo del veicolo di {}. :|
+
+FRGMDL=Forgia Modello
+FRGMDL_W=Utilizza solo il veicolo forgiato per guidarlo nel tuo garage poiché qualsiasi altra azione potrebbe facilmente mandare in crash il gioco.
+
+! "Wanted" as in "Wanted Level", we don't want our ~~poor~~ criminals to be forever alone
+PLYBAIL=Mai Ricercato
+
+PLYBEAST=Trasforma Nella Bestia
+
+PLYGRVNPC=Gravita Gli NPC
+PLYAGRNPC=NPCs Aggressivi
+
+PARTICLE=Particelle
+PLRPTFXSPM=Spam Di Particelle
+
+HDELCL=Nascondi Localmente
+HDELCL_H=Previene che tu riceva lo stesso spam di particelle.
+
+PLYMUGLOP=Rapinatori In Loop
+
+PLYRAGDOLL=Ragdoll
+
+PLYSHAKECAM=Scuoti Camera
+
+GIVESH=Dai Script Host
+
+PLYARM=Dona Tutte Le Armi
+PLYARM_P=Dona Armi
+
+PLYAMMO=Dona Munizioni
+PLYAMMO_H=Dona loro le munizioni per l'arma che hanno equipaggiato.
+PLYAMMO_T={} al momento non ha alcuna arma equipaggiata per la quale io possa fornirgli munizioni. :/
+
+PLYPARA=Dona Paracadute
+
+BNTY=Piazza Taglia
+BNTY_T=La taglia deve essere compresa tra 0$ e 10.000$, inclusi. :)
+
+BNTYSLF=Piazza Taglia Su Te Stesso
+BNTYSLF_H=Piazza una taglia anche su te stesso così da evitare di destare sospetti.
+
+LOOPBNTY=Loop Di Taglie
+
+FRNDLY=Amichevole
+
+TROLL=Trolling
+
+RAM=Investi
+
+PLYBLME=Colpevolizza Per L'Uccisione...
+
+PLY_NOTIFY=Manda Notifiche
+
+PLY_NOTIFY_REMO=Contanti Rimossi
+PLY_NOTIFY_STOL=Contanti Rubati
+PLY_NOTIFY_BANK=Contanti Depositati
+
+PLY_NOTIFY_SPAM=Spam Di Notifiche
+
+CPOTFT=Copia Outfit
+
+CPVEH=Copia Veicolo
+
+CMDBHLF=Impartisci Comandi Per Suo Conto
+CMDBHLFALL=Impartisci Comandi Per Conto Di Tutti
+
+PLYCHTMCK=Imita I Suoi Messaggi Di Chat
+
+PLYCHTOWO=OwO-ifica I Messaggi Di Chat
+
+SHWCAM=Mostra Camera
+
+SMS=Invia Messaggio Di Testo
+
+SMS2=Messaggio Di Testo
+SMSS=Messaggi Di Testo
+
+DTS=Rilevazioni
+DT_ANY=Qualsiasi Rilevazione
+
+ADT=Anti-Rilevazione
+
+ADT_SPEC_H=Indipendentemente da ciò, la posizione della tua camera è sempre sincronizzata e potresti comunque essere rilevato come spettatore in base a essa.
+
+CLSFN=Classificazione
+CLSFNS=Classificazioni
+CLSFN_ANY=Qualsiasi Classificazione
+
+DT_T={player} Ha innescato un rilevamento: {reason}
+CLSFN_T={player} È ora classificato come {classification}
+DT_CLSFN={player} Ha innescato un rilevamento: ({reason}) E ora è classificato come {classification}
+
+REACT_T={toast} — applicando reazione {reaction}
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_K=espelli
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_C=crash
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_T=timeout
+
+CLSFN_N_H=Questo giocatore non ha innescato nessuna detenzione come modder o admin.
+CLSFN_PM=Possibile Modder
+CLSFN_LM=Probabile Modder
+FLAG_MOD=Modder
+FLAG_MODAMN=Modder o Admin
+CLSFN_MA_H=Stand sta investigando su questo giocatore se è un modder o un admin di Rockstar.
+FLAG_AMN=Admin
+
+! Plural version of CLSFN_LM
+CLSFN_LM_P=Probabili Modders
+
+! Plural version of FLAG_AMN
+FLAG_AMN_P=Admins
+
+CLSFNTAGSLF=Tags Di Classificazione Su Te Stesso
+
+MDDRDT_H=Clicca per rimuovere questa detenzione.
+MDDRDT_H_LUA=Questa detenzione è stata aggiunta da {}. Clicca per rimuoverla.
+
+DT_H_PREMPT=Questa è una rilevazione preventiva.
+
+C2C=Clicca per copiare il valore.
+C2CN=Clicca per copiare il nome.
+C2OL=Clicca per aprire {link}
+
+C2IN=Clicca per inserire un valore.
+C2APPLY=Clicca per applicare il valore.
+C2SEL=Clicca per selezionare un valore.
+
+MDDRDT_SUI=Identificazione Utente Stand
+SUI=Identificazione Utente Stand (IUS)
+MDDRDT_SUI_H=Identifica gli altri utenti Stand, ma permette anche a loro d'identificarti.
+
+DT_SU=Utente Stand
+DT_SU_C=Utente Stand (Co-Loading)
+CLNG=Co-Loading
+
+CMDSUI=Questo comando richiede che l'Identificazione Utente Stand sia abilitata.
+
+CMDSTAND=Questo comando è disponibile solo per gli Utenti Stand che hanno abilitato l'identificazione Utente Stand.
+
+HS=Condivisione Host™
+HS_H=Quando si è host, consente agli altri Utenti Stand di sfruttare i privilegi di host, purché entrambi abbiano il I.U.S abilitato.
+
+MDDRDT_SID=Identificazione Di Altri Utenti
+MDDRDT_SID_T={} Utente
+
+MDDRDT_RAC=Anti Cheat Di Rockstar
+
+MDDRDT_HLTH=PS Modificati
+
+MDDRDT_LNGDED=Morto Per Troppo Tempo
+
+MDDRDT_LNGOTR=Nascosto Al Radar Per Troppo Tempo
+
+MDDRDT_ARMR=Troppa Armatura
+
+MDDRDT_PRES=Presenza Dissimulata
+MDDRDT_PRES_H=Rileva alterazioni della sessione e altre manipolazioni più sottili.
+
+NMECHNG=Ho già visto {newname} prima come {oldname}. :O
+
+MDDRDT_RID3=RID Dipendente Rockstar
+
+MDDRDT_T2IP=Indirizzo IP Di Take-Two
+
+DT_HT_2=Host Token Alterato (Aggressivo)
+DT_HT_1=Host Token Alterato (Dolce)
+DT_HT_0=Host Token Alterato (Handicap)
+DT_HT_3=Host Token Alterato (Altro)
+
+MDDRDT_TRFRM=Modello Personaggio Modificato
+
+MDDRDT_GODATK=Attacco Mentre Invulnerabile
+
+MDDRDT_RSDEV=Flag Sviluppatore Rockstar
+MDDRDT_RSDEV_H=Rende i giocatori incapaci di votarti legittimamente per un espulsione.
+
+MDDRDT_RSQA=Flag Rockstar QA
+MDDRDT_CHEAT=Flag Cheater
+
+SPF_H_FLAG=Solo altri modder potranno vederlo.
+
+MDDRDT_RP2=Livello/RP Invalidi
+MDDRDT_RP3=RP-Livelli Non Corrispondenti
+MDDRDT_RP4=Livello Alterato
+
+MDDRT_NONET=Evento Di Rete Bloccato
+MDDRT_NONET_H=Indica che un giocatore potrebbe aver bloccato eventi di rete essenziali, come la richiesta di controllo di un'entità.
+
+MDDRT_DRIVEB=Arma Driveby Modificata
+
+MDDRT_SILENTCHAT=Sta Chattando Senza Digitare
+
+MDDRT_BOUNTYSPAM=Spam Di Taglie
+MDDRT_BOUNTYSPAM_H=Indica che un giocatore ha piazzato taglie a un ritmo impossibile, ad esempio una taglia per tutti i partecipanti alla sessione.
+
+MDDRT_SUSSYBOUNTY=Taglia Moddata
+MDDRT_SUSSYBOUNTY_H=Indica che un giocatore ha piazzato una taglia con un valore illegittimo, per esempio 6969.
+
+MDDRT_EXPBLAME=Esplosioni Incolpate
+MDDRT_EXPBLAME_H=Tieni presente che questo può anche rilevare quando un modder dà a qualcuno le munizioni esplosive.
+
+MDDRT_EXPL=Esplosione Moddata
+MDDRT_EXPL_B=Impedisce la sincronizzazione dell'esplosione con l'utente. Non aiuta gli altri.
+MDDRT_EXPL_H=Rileva principalmente quando i modder fanno esplodere persone o usano munizioni esplosive. Tieni presente che raramente può attivarsi anche per i giocatori legittimi.
+
+VICTIM=Vittima: {}
+
+MOD_ORGNAME=Nome Organizzazione Moddato
+
+MDDRT_CAYO=Nascosto Dall'Elenco Giocatori
+
+MDDRT_MISC=Dati Moddati
+
+ATTKRS=Attaccanti
+ATTRKS_PRE_1=Manda I Jets
+ATTRKS_PRE_2=Manda I Motociclisti
+ATTRKS_PRE_3=Manda I Clowns
+ATTRKS_PRE_4=Manda Gli Elicotteri
+ATTRKS_PRE_5=Manda Gang Con BMX
+ATTRKS_PRE_6=Manda I Contadini
+ATTRKS_PRE_7=Manda I MInitank
+ATTRKS_PRE_8=Manda I Militari (Armi Combinate)
+ATTRKS_PRE_9=Manda Fantasmi Spaventosi
+
+ACCURACY=Accuratezza
+
+AGGR=Aggressione
+AGGR1=Amichevole
+AGGR1_H=Difende te e gli altri dagli attacchi dell'IA. Non attacca i giocatori.
+AGGR2=Difensivo
+AGGR2_H=Ti difende da eventuali bersagli ostili.
+AGGR3_H=Ti difende da bersagli ostili, ma al contempo spesso ingaggia a vista.
+DEL_ATTKRS=Elimina Tutti Gli Attaccanti
+FILL_VEH=Riempi Veicoli
+FILL_VEH_H=Invece di creare un nuovo veicolo per ogni attaccante, i veicoli esistenti saranno completamente riempiti prima di crearne uno nuovo.
+
+! As in "Kill the engine"
+KLL=Distruggi Motore
+! The "EMP" projectile in-game that turns your car off. 
+EMP=EMP
+FLIPPLRVEH=Capovolgi
+SPINVEH=Fai Ruotare
+POP_TYRES=Buca Gomme
+DETACH_AIR=Stacca Ala
+DETROIT=Stacca Ruote
+SLIPPERY=Gomme Scivolose
+SLIPPERY_H=La disattivazione richiede un po' di tempo.
+DEL_DOORS=Rimuovi Portiere
+IGNITE=Appicca a fuoco
+TURNAROUND=Gira Nel Senso Opposto
+DSTRYPROP=Distruggi Propulsori
+BREAKBOOM=Rompi la Coda
+
+SLINGSHOT=Fionda
+
+V_F=In Avanti
+V_B=Indietro
+
+PLYDDVEH=Disabilita La Guida Dei Veicoli
+PLYDDVEH_H=Li mette in uno stato in cui non possono guidare i veicoli, tra le altre cose può essere risolto con un invito all'appartamento.
+
+INFLOAD=Caricamento Infinito
+
+INFRING=Squillo Infinito Del Telefono
+
+FRZ=Immobilizza
+
+FAKEDROP=Money Drop Fasullo
+
+NOPSSVE=Blocca La Modalità Passiva
+
+! Putting someone in a cage
+PLYCGE=Ingabbia
+
+PLYCAGE_TINY=Gabbia Piccola
+PLYCAGE_GOLD=Gabbia Media
+PLYCAGE_FNCE=Gabbia Grande
+PLYCAGE_STNT=Tubo Da Stunt
+
+! Being put in a cage
+CGE=Tentativo D'Ingabbiamento
+
+PLYKLL=Uccidi
+
+PLYEXP=Esplodi
+
+! For reference: Block Blaming is PTX_PSV
+PLYKLL_H=Non funziona con il blocca colpevolizzazione o se si è in modalità passiva.
+
+CGES=Gabbie
+
+PLYKCK=Espelli
+
+PLYKCK_T_H=Troppo Facile. ;P
+! Single target version of PLYKCK_T_C.
+PLYKCK_T_C=Cercherò di convincerlo ad andarsene. :)
+! Multiple targets version of PLYKCK_T_C_M.
+PLYKCK_T_C_M=Cercherò di convincerli ad andarsene. :)
+
+PLYKCK_SMRT=Intelligente
+PLYKCK_SMRT_A=Espulsione "Intelligente"
+PLYKCK_SMRT_H2=Rimuove il giocatore con ogni mezzo necessario.
+
+PLYKCK_BL=Lista Nera
+PLYKCK_BL_A=Espulsione "Lista Nera"
+PLYKCK_BL_H=Aggiunge il giocatore alla lista nera come se fosse stato votato fuori, ma lo espelle come una desincronizzazione.
+
+PLYKCK_H=Host
+PLYKCK_H_H=Espelle in giocatore usando il meccanismo di espulsione con i voti.
+
+PLYKCK_NH=Non-Host
+
+PLYKCK_PC=Pool Chiusa
+
+PLYKCK_B=Rottura
+PLYKCK_B_G=Espulsione "Rottura"
+
+BRKUR=Reazioni A Espulsioni "Rottura"
+BRKUR_H=Questo avrà effetto solo per le espulsioni "rottura" usati contro altre persone.
+
+KBKR=Reazioni A Espulsioni "Rottura Contraffatta"
+KBRK_E=Espulsione "Rottura Contraffatta"
+
+GEN_H_HOST=Questo avrà effetto solo quando si è l'host della sessione.
+GEN_H_NHOST=Questo avrà effetto solo quando non si è l'host della sessione.
+
+PLYBAN=Bandire
+
+PLYKCK_O=Orgasmo
+
+PLYKCK_L=Lettera D'Amore
+PLYKCK_L_G=Espulsione "Lettera D'Amore"
+
+PLYKCK_H_DSCRT=Un'espulsione discreta che non dirà al bersaglio chi è stato a farlo.
+
+PLYKCK_H_B_H=Imbloccabile quando sei l'host.
+PLYKCK_H_HO=Disponibile solo quando sei l'host.
+PLYKCK_H_B_P=Bloccato dai menu più popolari.
+PLYKCK_H_B_M=Bloccato dalla maggior parte dei menu.
+
+BE_K=Espulsione "BattlEye"
+BE_B=Ban BattlEye
+BE_B_H=Fa in modo che i riceventi diventino incapacitati ad accedere a GTA Online fino a quando non riavviano il gioco.
+
+PLYCRSH=Crash
+SUI_ET=La possibilità che questo funzioni su un altro Utente Stand è molto bassa. Ma chi sono io per mettere in dubbio l'utente divino? :^)
+
+PLYCRSH_H_AOE2=Nota: questa operazione può far crashare anche altri giocatori vicini al bersaglio.
+
+PLYCRSH_E=Elegante
+PLYCRSH_G=Burger King Foot Lettuce
+PLYCRSH_V=Omicidio Stradale Colposo
+PLYCRSH_T=Schiacciasassi
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T=Prevenuto un crash ({type}).
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T_BLM=Prevenuto un crash ({type}), Probabilmente causato da {player}.
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_TRNLOOP=Loop Di Treni
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_ATTLOOP=Loop Di Accessori
+
+! Buffer overruns cause memory corruption, which could go unnoticed, but could also crash the game.
+! Type may be a codename such as XA, or a human-readable name, such as "Ped Outfit Texture".
+BU_T=Impedito un sovraccarico del buffer ({type}).
+
+! To be used within BU_T
+BU_TEX=Texture Dell'Outfit Ped
+
+BU_VEHLIT=Luci Veicolo
+
+INVTASK=Un NPC sta eseguendo un'attività non valida, la interrompo.
+
+TIMEOUT=Timeout
+FLAG_TIMEOUT=In Timeout
+TIMEOUT_H=Blocca temporaneamente la maggior parte del traffico di rete da e verso questo giocatore.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Player > Information !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+INFO=Informazioni
+
+NME_S=Nome (Stand)
+NME_H=Nome (Sessione)
+NME_R=Nome (Social Club)
+
+STUS=Stato
+
+DMG_WEAP=Moltiplicatore Danni Armi
+DMG_MELEE=Moltiplicatore Danni Corpo a Corpo
+
+ORG=Organizzazione
+
+ORGT_SV=SecuroServ
+ORGT_MC=Motorcycle Club
+
+BOSS=Capo
+
+STS=Statistiche
+
+NDATA=Nessun Dato
+
+CHAR1=Personaggio 1
+CHAR2=Personaggio 2
+CHAR1_ACT=Personaggio 1 (Attivo)
+CHAR2_ACT=Personaggio 2 (Attivo)
+
+CNNTN=Connessione
+
+IP=Indirizzo IP
+RLYIP=IP Relè
+LANIP=IP LAN
+PRT=Porta
+RLYPRT=Porta Relè
+
+CONVIA=Connesso Via
+CONVIA_P2P=P2P
+CONVIA_RLY=Relè
+CONVIA_RLY_S=Connesso via relè
+CONVIA_PLY_S=Connesso via {}
+
+PING=Ping
+MS=ms
+
+MNY_W=Soldi Nel Portafoglio
+MNY_B=Soldi In Banca
+MNY_A=Soldi In Totale
+
+DIST=Distanza
+
+KLLS=Uccisioni
+DTHS=Morti
+KD=Rateo U/M
+
+FAVVEH=Veicolo Preferito
+FAVWEAP=Arma Preferita
+FAVRDSTAT=Stazione Radio Preferita
+
+OWNBKR=Possiede Un Bunker
+OWNFAC=Possiede Base Operativa
+OWNCLB=Possiede Un Nightclub
+
+HOSTKN=Host Token
+
+HOSTQPOS=Posizione In Coda Per Diventare Host
+
+HQSA_NH=Hash Del Nome
+
+GIP_Q=Richiesta In Sospeso
+GIP_P=Esecuzione Della Richiesta
+GIP_F=Richiesta Fallita
+
+CT=Città
+RGION=Regione
+CTRY=Nazione
+
+! E.g. "Discovered: 10 seconds ago"
+DSCVAGO=Scoperto
+
+! E.g. "Invulnerable For: 10 seconds"
+GODTIME=Invulnerabile Da
+
+CRW=Crew
+CRWTG=Tag
+MOTTO=Motto
+ALTBDG=Logo Alternativo
+
+!!!!!!!!!!!!!!!
+!! Durations !!
+!!!!!!!!!!!!!!!
+
+DUR_AGO={} fa
+
+DUR_S=secondo
+DUR_S_P=secondi
+DUR_M=minuto
+DUR_M_P=minuti
+DUR_H=ora
+DUR_H_P=ore
+DUR_D=giorno
+DUR_D_P=giorni
+
+!!!!!!!!!!!!
+!! Online !!
+!!!!!!!!!!!!
+
+SESS=Sessione
+NWSESS=Nuova Sessione
+
+NWSESS_CHAR=Pit Stop Alla Selezione Personaggio
+
+NWSESS_SP=Crea Sessione Pubblica
+NWSESS_IO=Crea Una Sessione Solo Inviti
+NWSESS_CC=Crea Sessione Crew Chiusa
+NWSESS_C=Crea Nuova Sessione
+NWSESS_CF=Crea Una Sessione Solo Amici
+NWSESS_S=Crea Sessione In Solitaria
+NWSESS_FF=Unisciti A Un Amico
+NWSESS_FC=Unisciti A Membri Della Crew
+NWSESS_FP=Trova Una Sessione Pubblica
+NWSESS_NP=Trova Una Nuova Sessione Pubblica
+NWSESS_NP_H=Come "Trova Una Sessione Pubblica" solo che ti mette in una sessione nuova, cosicché tu non finisca nella stessa sessione.
+NWSESS_CTOR=Modalità Creatore
+NWSESS_SCTV=Social Club TV
+
+TRK=Tracciamento
+TRKD=Tracciato
+HISTTRK=Giocatori Tracciati
+HIST_KEEP_TRA=Mantieni Quelli Tracciati
+
+TRK_H=Fornisce notifiche quando il giocatore cambia sessione, si connette o va offline.
+
+TRK_T_CNF=Dopo L'Aggiornamento Del Tracciamento...
+
+INJTRKINFO=Mostra Giocatori Tracciati Online All'Iniezione
+
+META=Meta
+
+RSADMINS=Admin Rockstar
+
+! SC = Social Club
+SCFRIENDS=Amici SC
+
+ADDMISS=Aggiungi Mancanti
+PLYNOTESET=Metti Una Nota
+PLYNOTESET_H_A=Mette una nota su ogni admin nel tuo storico giocatori.
+TRCKALL=Traccia Tutti
+UTRCKALL=Non Tracciare Nessuno
+WHTLALL=Metti In Whitelist Tutti
+UWHTLALL=Togli Dalla Whitelist Tutti
+HIST_DNG=Zona Di Pericolo
+HIST_CLR=Ripulisci Storico
+
+ONLSTS=Stato Online
+ONLSTS_O2=Offline
+ONLSTS_S=Nella Modalità Storia
+ONLSTS_H=Hostando {}
+ONLSTS_C=In {session_type}
+ONLSTS_CH=In {session_type} hostata da {host}
+
+TRK_T={name} sta ora {activity}.
+
+ONLSTS_TRK_O=offline
+ONLSTS_TRK_S=Nella Modalità Storia
+ONLSTS_TRK_H=hostando {}
+ONLSTS_TRK_C=in {}
+ONLSTS_TRK_CH=in {session_type} hostata da {host}
+
+ST_S=Sessione Solitaria
+ST_I=in una sessione solo inviti
+ST_F2=in una sessione solo amici
+ST_CC=in una sessione solo crew
+ST_C=in una sessione crew
+ST_P=in una sessione pubblica
+ST_O=in una sessione di tipo sconosciuto
+
+! Short online statuses:
+SHTONLSTS_O2=Offline
+SHTONLSTS_S=Modalità Storia
+SHTONLSTS_ST_S=Solitario
+SHTONLSTS_ST_I=Invito
+SHTONLSTS_ST_CF=Chiusa Amici
+SHTONLSTS_ST_CC=Chiusa Crew
+SHTONLSTS_ST_C2=Crew
+SHTONLSTS_ST_P=Pubblica
+SHTONLSTS_ST_O=Altro
+
+PTX=Protezioni
+PTX_W=Disabilitare le protezioni di Stand non renderà il co-load più stabile. Disabilitando le protezioni si disabilitano solo le protezioni.
+
+! Alternatively, "Protections Help Page"
+PTXGDE=Guida Alle Protezioni
+
+COLOAD=Co-Loading
+COLOAD_DPTX=Disabilita {} Quando In Co-Loading
+
+PTX_CRSHE=Evento Crash
+
+PTX_KICK=Evento Di Espulsione
+PTX_KICK_SH=Espulsione Script Host
+
+PTX_INV=Evento Moddato
+PTX_INV_H=Eventi che potrebbero essere stati causati solo da un modder.
+
+PTX_WEIRD=Evento Inusuale
+PTX_WEIRD_H=Eventi che potrebbero essere stati causati solo da un modder ma che possono accadere anche legittimamente in base alle circostanze.
+
+VEHKICK=Espelli Dal Veicolo
+
+INTKICK=Espelli Dall'Interno
+
+TRIGDEFD=Innesca Assalto Ai Business
+
+PLYFRCECAMFRNT=Forza La Camera In Avanti
+PLYFRCECAMFRNT_H=Può anche disattivare l'invulnerabilità del giocatore in alcune circostanze.
+
+PLYMISSION=Forza In Freemode
+PLYMISSION_H=Forza i bersagli nello stato di missione freemode, il che significa che non possono essere in modalità passiva o entrare negli interni.
+
+! Forces the recipient into a mission start screen
+SND2JB=Manda A Un'Attività
+
+SND2JB_0=Forti Precipitazioni
+SND2JB_1=Half-track Alla Riscossa
+SND2JB_2=Strategia D'Uscita
+SND2JB_3=Risorse Alla Deriva
+SND2JB_4=Copertura Saltata
+SND2JB_5=Caccia Alla Talpa
+SND2JB_6=Breccia Nel Sistema
+SND2JB_7=Disputa Lavorativa
+
+PTX_BAIL=Rimuovi Livello Ricercato
+
+PTX_EVTS=Eventi
+PTX_NET=Eventi Di Rete
+PTX_NET_ANY=Qualsiasi Evento
+
+PTX_RAWNET=Eventi Di Rete Grezzi
+PTX_RAWSYNC=Sincronizzazioni Grezze
+
+PTX_RAW_W=Questo è per gli utenti avanzati. Se non sai cosa stai facendo, per favore non farlo, in modo tale da evitare di bloccare tutto.
+
+PTX_NET_R_B_W=Ricordi quando ti ho detto "evita di bloccare tutto"...? Solo perché puoi farlo, non significa che devi farlo. Soprattutto se non si ha una buona ragione per farlo.
+
+PTX_APUP=Qualsiasi Oggetto Collezionabile Raccolto
+PTX_APUP_T=Hai raccolto un oggetto collezionabile di tipo {}
+PTX_APUP_L=Hai raccolto un oggetto collezionabile
+
+PTX_CASHPUP=Hai Raccolto Dei Contanti
+PTX_CASHPUP_T=Hai raccolto dei contanti
+
+PTX_RPPUP=Hai Raccolto PE
+PTX_RPPUP_T=Hai raccolto un oggetto che dà PE
+
+PLYKCK_IPUP=Un Oggetto Collezionabile Invalido
+
+PTX_IPUP=Hai Raccolto Un Oggetto Collezionabile Invalido
+PTX_IPUP_H=Cosa fare nel caso in cui si raccolga oggetto collezionabile non valido che vi farebbe espellere dalla sessione.
+PTX_IPUP_T=Hai raccolto un oggetto collezionabile non valido
+
+PTX_APT=Invito All'Appartamento
+
+PTX_CAYO=Invito A Cayo Perico
+
+PTX_DRVCTRL=Tentata Acquisizione Del Veicolo
+PTX_DRVCTRL_H=Quando qualcuno tenta di prendere il controllo del veicolo che stai guidando e che potrebbe essere usato per teletrasportarti.
+
+SE=Evento Script
+
+GIVE_WEAPON_EVENT=Evento Di Donazione Armi
+REMOVE_WEAPON_EVENT=Evento Di Rimozione Arma
+REMOVE_ALL_WEAPONS_EVENT=Evento Di Rimozione Armi
+FIRE_EVENT=Fuoco
+EXPLOSION_EVENT=Esplosione
+NETWORK_PTFX_EVENT=Effetti Particellari
+NETWORK_PLAY_SOUND_EVENT=Riproduci Suono
+
+RCT_T=Notifica
+RCT_L_F=Scrivi Nel File Di Log
+RCT_L_C=Scrivi In Console
+RCT_C=Annuncia In Chat
+RCT_C_T=Annuncia Nella Chat Del Team
+
+RTC_PLY=Azioni Del Giocatore
+
+RCT_N_B=Blocca I Suoi Eventi Di Rete
+RCT_BIS=Blocca Sincronizzazioni In Entrata
+RCT_BOS=Blocca Sincronizzazioni In Uscita
+RCT_N_L=Registra I Suoi Eventi Di Rete
+RCT_SI_L=Registra Sincronizzazioni In Entrata
+RCT_SO_L=Registra Sincronizzazioni In Uscita
+RCT_N_T=Notifiche Per I Suoi Eventi DI Rete
+RCT_SI_T=Notifiche Sincronizzazioni In Entrata
+RCT_SO_T=Notifiche Sincronizzazioni In Uscita
+
+RCT_T_OUT={event} a {player}
+PTX_NET_R_T_T={event} da {player}
+RCT_T_AGAINST={event} da {sender} contro {target}
+
+PTX_NET_R_B=Blocca
+
+! What "Block" does for chat messages
+PTX_NET_R_B_H_C=Impedirà che il messaggio ti arrivi ma gli altri lo vedranno comunque.
+
+
+PTX_S=Sincronizzazioni
+PTX_INC=In Entrata
+PTX_OUT=In Uscita
+PTX_SI=Sincronizzazioni In Entrata
+PTX_SO=Sincronizzazioni In Uscita
+PTX_SI_ANY=Qualsiasi Sincronizzazione In Entrata
+
+OUTSBH=Blocca Le Sincronizzazioni In Uscita Verso L'Host
+OUTSBH_H=Questo ti aiuta a evitare di venire espulso da BattlEye quando non sei host, ma significa anche che l'host non sarà in grado d'interagire con te.
+
+PTX_CSB=Reazioni Alle Sincronizzazioni Dei Modelli Personalizzati
+ADDMDL=Aggiungi Modello
+PTX_CSB_T=Sincronizzazione modello da {player} con {hash}
+
+PTX_IMS=Sincronizzazione Modello Invalida
+PTX_IMS_T=Sincronizzazione modello invalida da {player} con {hash} come {type}
+
+PTX_WOS=Sincronizzazione Oggetto Del Mondo
+
+PTX_ATTACH=Spam Di Effetti
+
+PTX_BEWARE_RESYNCH=Gli altri giocatori possono risincronizzare oggetti generati dai modder, quindi tienine conto.
+
+PTX_S_CC=Crea Clone
+PTX_S_CU=Aggiorna Clone
+PTX_S_CD=Elimina Clone
+PTX_S_ACC=Riconoscere La Creazione Di Cloni
+PTX_S_ACU=Riconoscere L'Aggiornamento Di Cloni
+PTX_S_ACD=Riconoscere L'Eliminazione Di Cloni
+
+PLY_BOS_H_A=Interrompe l'aggiornamento della tua posizione per gli altri giocatori e può anche impedire che gli altri giocatori sappiano che si è nella sessione se ci si unisce con questa opzione già attiva.
+PLY_BOS_H_1=Interrompe l'aggiornamento della tua posizione per questo giocatore.
+
+MYSLF=Me Stesso
+SOMELS=Qualcun'altro
+
+KARMA=Karma
+
+LLKT=Notifica Quando Espulso Con "Lettera D'Amore"
+LLKT_T=Sei Stato Espulso Con Una "Lettera D'Amore".
+
+DSKK=Karma Desincronizzazione
+DSKK_H2=Le opzioni di espulsione "desync" si ritorceranno sempre contro l'utilizzatore se usate contro di te.
+
+LLLUBE=Lubrificante "Lettera D'Amore"
+LLLUBE_H=Ti rende un candidato meno probabile quando l'host sceglie chi espellere con la "Lettera d'amore".
+LLLUBE_1=Legittimo
+LLLUBE_1_H=Alcuni modder potrebbero rilevarlo erroneamente.
+LLLUBE_0_H=Questa è l'opzione più efficace, ma altri modder potrebbero rilevarlo.
+
+CAMSHAKE=Evento Scuotimento Camera
+
+EXPSPAM=Spam Di Esplosioni
+EXPSPAM_H=Si applica quando qualcuno spamma esplosioni sul tuo personaggio.
+
+RAGDOLLEVT=Evento di Ragdoll
+
+SNDSPM=Spam Di Suoni
+
+MODDMGEVT=Evento Danno Moddato
+
+PRESES=Eventi Di Presenza
+
+BFSTN=Blocca Notifiche Sulle Statistiche Degli Amici
+BFSTN_H=Blocca notifiche come "...ha raccolto tutti i ritagli di lettere".
+
+BJI=Blocca Inviti Alle Attività
+
+PTX_VK=Blocca Votazioni Per Espulsioni
+PTX_VK_T=Bloccata Un Espulsione A Voti. :)
+
+MAGIC=Magia
+PTX_VK_SP=SCTV / Modalità Spettatore
+PTX_VK_F1=Missione Freemode 1
+PTX_VK_F2=Missione Freemode 2
+PTX_VK_F3=Missione Freemode 3
+PTX_VK_F4=Missione Freemode 4
+
+PTX_BJ=Karma Per Negata Entrata
+PTX_BJ_H=Rileva quando qualcuno che non è host prova a bloccare il tuo ingresso e li rimuove dalla sessione, permettendoti di entrare.
+PTX_BJ_T2={} sta bloccando il tuo ingresso, proverò a rimuoverlo dalla sessione.
+
+PTX_NB=Blocca Abbandono
+PTX_NB_1=Il Giocatore Non è Più In Sessione
+PTX_NB_2=Cambio Crew Principale
+
+PTX_NB_SPC=Relazionato Con Lo Spettatore
+PTX_NB_SPC_H=L'Obbiettivo ha abbandonato, ecc.
+
+PTX_NB_O=Altre Ragioni
+PTX_NB_O_H=Timeouts e cose simili.
+
+PTX_NB_T=Il gioco vorrebbe uscire ({a1}, {a2}, {a3}); {action}.
+PTX_NB_T_A=consentito
+PTX_NB_T_B=bloccato
+
+PTX_HCK=Espulsioni Controllate Dall'Host
+
+PTX_HKK=Karma Espulsione Dall'Host
+PTX_HKK_H=Espelle l'host in risposta all'espulsione dell'host. Tenere presente che verrai comunque espulso dalla sessione.
+
+PTX_HK=Diminuisci Le Espulsioni Degli Host
+PTX_HK_H=Riduce l'espulsione dell'host, in modo tale da ricevere solo una notifica che indica che si è verificato un espulsione dell'host e tutti i giocatori sembreranno essere usciti.
+PTX_HK_T=Qualcuno ha usato un espulsione "host" su di te ({method}), probabilmente {player}.
+
+HKI=L'Host sta per espellerti.
+HKI_BS=Suggerisco di bloccare le sincronizzazioni con loro.
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_V=Espulsione "A Voti"
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_N=Errore Di Rete
+
+PTX_PSV=Blocca Colpevolizzazioni
+PTX_PSV_H2=Ti rende incapace di danneggiare gli altri in modo che le esplosioni imputate a te non causino danni e rende anche le altre persone incapaci di danneggiarti.
+PTX_PSV_W=Nel caso in cui tu non abbia letto il testo d'aiuto, lasciami ribadire: non sarai in grado di fare alcun danno con questa opzione abilitata. Invece di semplicemente abilitarlo potresti preferire l'utilizzo del menu contestuale per configurare una correlazione di mira invertita.
+
+PTX_ENTSPAM=Blocca Lo Spam DI Entità
+PTX_ENTSPAM_STATUS={count} istanze di {name}
+PTX_ENTSPAM_NEW=Sembra che ci siano troppe istanze di {}. Ci sto lavorando.
+PTX_ENTSPAM_CALM=La situazione {} è stata risolta. :)
+
+VEHPARTS=parti di veicoli rotte
+
+ACCAM=Camera Anti-Crash
+PTX_ENTSPAM_USECAM=Utilizza Automaticamente La Camera Anti-Crash
+PTX_ENTSPAM_CAM=Mi dispiace bloccare qui la tua camera, ma il rendering non gestirà questo problema ancora per molto. L'uso di "tp lsia" o "tp mtchil" potrebbe risolvere il problema più rapidamente.
+
+PTX_DRAW=Evita Che Il Renderer Funzioni Fino A Morire
+PTX_DRAW_H=Impedisce al gioco di renderizzare a tal punto da farlo crashare.
+PTX_DRAW_T=Il Renderer è sovraccarico di lavoro.
+
+PTX_DELSTALE=Elimina Gli Oggetti Obsoleti
+PTX_DELSTALE_H=Elimina gli oggetti le cui informazioni sul modello sono state eliminate perché questo gioco è un capolavoro impeccabile.
+PTX_DELSTALE_T=Eliminazione di un oggetto con modello {} in cui le informazioni sul modello sono state eliminate.
+PTX_DELSTALE_T_2=Eliminazione frammento di un oggetto con modello {} in cui le informazioni sul modello del frammento sono state eliminate.
+
+NOMODPOP=Elimina Le Aree Con Moltiplicatore Di Popolazione Moddato
+NOMODPOP_H=Elimina le aree con moltiplicatore di popolazione modificato in modo che GTA Online non sembri più sterile del solito.
+NOMODPOP_T=Eliminata un'area con moltiplicatore di popolazione modificata. :)
+
+NOBEAST=Disabilita La Trasformazione In Bestia
+NOBEAST_H=Impedisce che tu venga trasformato nella bestia dall'evento freemode "Caccia Alla Bestia", che i modder potrebbero utilizzare come mezzo per trollarti.
+NOBEAST_T=Ho impedito la trasformazione in bestia facendo decadere lo script, che è stato ospitato da {}.
+
+NPLYMDLSWP=Blocca Scambi Di Modelli Del Giocatore
+NPLYMDLSWP_H=Blocca localmente la trasformazione dei giocatori in modelli che normalmente non sono giocabili. In principio, questo non sarebbe nemmeno necessario perché risolviamo tutti i crash correlati ai modelli (di cui siamo a conoscenza).
+
+FRCRLY=Forza Connessione Tramite Relè
+
+LOWFPSTIMEOUT_T=Rilevati FPS bassi: inserimento di {} in timeout.
+
+REVOTR=Rivela Giocatori Nascosti Al Radar
+
+REVINV=Rivela Giocatori Invisibili
+
+BEORB=Diventa Il Cannone Orbitale
+BEORB_H=Manda tutti quelli che uccidi all'ospedale e mostra il messaggio di uccisione del cannone orbitale.
+
+BESCRHST=Diventa Script Host
+
+BESCRHSTKLEPTO=Diventa Uno Scrip Host Cleptomane
+BESCRHSTKLEPTO_H=Può essercene solo uno e questo è per coloro che vogliono davvero esserlo in ogni momento, senza compromessi.
+
+BJS=Blocca Entrate
+
+BJ_ALL=Di Chiunque
+BJ_ALL_A=Blocca Entrate Di Chiunque
+
+BJ_STR=Di Sconosciuti
+BJ_STR_A=Blocca Entrate Di Sconosciuti
+BJ_STR_H=Blocca le entrate di persone che non sono tue amiche sul Social Club.
+
+BJ_ADS=D'Inserzionisti Noti
+BJ_ADS_A=Blocca Entrate D'Inserzionisti Noti
+
+BJ_REM=Di Giocatori Rimossi
+BJ_REM_A=Blocca Entrate Dei Giocatori Rimossi
+BJ_REM_H=Blocca le entrate di giocatori che hai espulso o fatto crashare.
+
+BJ_REMOVED=Giocatori Rimossi
+BJ_REMOVED_H=Un elenco di giocatori a cui è attualmente impedito di unirsi perché li hai rimossi.
+BJ_KICKEDP_H=Clicca per rimuovere questo giocatore.
+
+BJ_WHT=Di Giocatori Non Inseriti Nella Whitelist
+BJ_WHT_H=Blocca le entrate di tutti i giocatori che non hai specificamente inserito nella whitelist.
+BJ_WHT_A=Blocca Entrate Di Giocatori Non Inseriti Nella Whitelist
+
+BJ=Blocca Entrata
+BJ_H=Le entrate posso essere bloccate solo quando si è host della sessione. Quando non sarete host della sessione Stand tenterà di espellerli.
+BJ_T2=Impedito a {player} di unirsi a causa di {feature}
+
+MSG=Messaggio
+
+BJMSG_ASS=Risorse Incompatibili
+BJMSG_TU=Assicurati Di Avere L'Ultimo Aggiornamento Del Gioco
+BJMSG_TAR=Preferenza Di Puntamento Diversa
+BJMSG_BAR=Il Tuo Account Ha Una Brutta Reputazione
+BJMSG_C=Sei Un Cheater
+BJMSG_BS=Sei Un Antisportivo
+BJMSG_DLC=Contenuto Scaricabile Incompatibile
+BJMSG_BT=Versione Differente
+BJMSG_CONT=Contenuto Differente
+BJMSG_BSO=Solo Antisportivi
+BJMSG_CO=Solo Cheater
+BJMSG_PR=Gara Premium
+BJMSG_CON=Impossibile Connettersi
+BJMSG_PRIV=Priavato
+BJMSG_F=Solo Amici
+BJMSG_VK=Sei Già Stato Espulso
+BJMSG_ID=Inviti Disabilitati
+BJMSG_POOF=Non Esiste Più
+BJMSG_BUG=Non è La Sessione Prevista
+
+LSCM=LS Car Meet
+
+SETREPLVL=Imposta Il Livello Di Reputazione
+SETREPLVL_H=Tieni presente che è necessario diventare membri del LS Car Meet prima di poter guadagnare reputazione con loro.
+SETREPLVL_T=La modifica del livello di reputazione è in corso; (ri)entra ora nel LS Car Meet per finalizzarla.
+
+UNLKPRIZRID=Sblocca Veicolo Ricompensa
+UNLKPRIZRID_T=È tutto tuo! Richiedilo semplicemente nel menu d'interazione all'interno di LS Car Meet. :)
+
+H3=Colpo Al Casinò
+
+H3_RPT=Rimuovi Il Tempo D'Attesa Per Ripeterlo
+H3_RPT_H=Assicurati di non essere all'interno della sala giochi quando lo usi.
+H3_RPT_T=Il tempo d'attesa dice addio. :D
+
+H3_POIACC=P.O.I. & Punti D'Accesso
+
+SCOP=Esplora
+H3_SCOP_H=Usalo solo dopo aver completato la missione iniziale di ricognizione, altrimenti rimarrà bloccato.
+
+USCOP=Annulla Esplorazione
+
+H3_VLT=Imposta Il Contenuto Del Vault
+H3_VLT_H=Usalo dopo aver pagato il setup della rapina ma prima di effettuare la ricognizione per il contenuto del caveau.
+H3_VLT_3=Diamanti
+H3_VLT_2=Opere D'Arte
+H3_VLT_1=Oro
+H3_VLT_0=Contanti
+H3_VLT_T=Mi chiedo cosa ci sarà nel caveau. :^)
+
+H3_FNSH1=Completa La Prima Lavagna
+H3_FNSH1_H=Utilizza questo dopo aver pagato il setup della rapina e, facoltativamente, impostato il contenuto del caveau.
+H3_FNSH1_1=Nell'Ombra
+H3_FNSH1_2=L'Imbroglio
+H3_FNSH1_3=Aggressivo
+H3_FNSH1_T=E una lavagna è andata. :D
+
+H3_FNSH2=Completa La Seconda Lavagna
+H3_FNSH2_T=E due lavagne sono andate. :D
+
+H3_RSTCRW=Reimposta equipaggio
+H3_RSTCRW_H=Nel caso in cui tu abbia fatto una scelta sbagliata per il tuo equipaggio, e vorresti cambiare.
+H3_RSTCRW_T=Ripristino dell'equipaggio. Dovrai rientrare nella sala giochi affinché la modifica sia visibile. :)
+
+H_FNSH_W=IL completamento delle missioni di preparazione questo modo non conterà per le sfide "D'elite" e "Criminal Mastermind".
+
+H_FNSH=Completa Le Missioni Di Preparazione
+H_TRGT=Imposta Obbiettivo
+
+H4=Colpo A Cayo Perico
+H4_FNSH_T=Tutto fatto. Dovrai rientrare nel tuo Kosatka affinché la modifica sia visibile. :)
+
+H4_TRGT_0=Tequila
+H4_TRGT_1=Collier di Rubini
+H4_TRGT_2=Obbligazioni
+H4_TRGT_3=Diamante Rosa
+H4_TRGT_4=Dossier Sui Madrazo
+H4_TRGT_5=Pantera Nera
+
+H2_FNSH=Completa Le Missioni Di Preparazione Per Il Colpo Dell'Apocalisse
+H2_FNSH_H=Ti fa saltare tutte le missioni di preparazione per il tuo attuale colpo dell'apocalisse.
+H2_FNSH_T=Configurazioni eseguite. Dovrai rientrare nella tua base operativa affinché la modifica sia visibile. :)
+
+H1_FNSH=Completa Le Missioni Di Preparazione Per I Colpi D'Appartamento
+H1_FNSH_H=Ti fa saltare tutte le missioni di preparazione per la tua attuale colpo dell'appartamento.
+H1_FNSH_T=Preparazioni eseguite. Dovrai rientrare nel tuo appartamento affinché la modifica sia visibile. :)
+
+RIGOFF=Non Manipolare
+
+WHEEL=Ricompensa Ruota Della Fortuna
+WHEEL_1=Veicolo Sul Podio
+WHEEL_2=Sconto
+WHEEL_3=Fiches
+WHEEL_4=Contanti
+WHEEL_6=Vestiario
+WHEEL_7=Misterioso: Veicolo
+WHEEL_8=Misterioso: Rifornimenti Business
+WHEEL_9=Misterioso: Snacks
+WHEEL_10=Misterioso: Fishes
+WHEEL_11=Misterioso: Contanti
+WHEEL_12=Misterioso: PE
+WHEEL_13=Misterioso: Vestiario
+
+MONEYLINK2=Guida Per Fare Soldi
+
+SLOTS2=Risultato Delle Slot Machines
+SLOTS_H=Non guadagnare più di {} GTA$ in 24 ore! Inoltre, questo potrebbe essere non sicuro se hai usato o stai usando altri menu su questo account.
+SLOTS_WJ=Jackpot
+SLOTS_WS=Piccola Vittoria
+SLOTS_L=Perdi
+
+ROULETTE=Risultato Della Roulette
+CSNO_H_OPB=Anche gli altri giocatori possono trarne vantaggio.
+
+CSNO_BJ=Vinci Sempre Al Blackjack
+CSNO_BJ_H=Fa sempre "sballare" il dealer.
+
+SNKSNARMR=Ricarica Snack & Armatura
+SNKSNARMR_T=Ecco qua, completamente rifornito. :D
+
+ENHNCMTS=Miglioramenti
+
+NOAFK=Disabilita Tempo D'Inattività
+
+NOMECHCDLN=Disabilita Tempo D'Attesa Del Meccanico
+
+NOMKIICLDN=Disabilita Tempo D'Attesa Dell'Oppressor Mk II
+
+NOEWOCLDN=Disabilita Tempo D'Attesa Per Suicidarti
+
+NOGTARCFP=Disabilita Prospettiva Forzata Del RC
+
+NODTHBAR=Disabilita Barriere Di Morte
+
+NOPSSVCLDN=Disabilita Tempo D'Attesa Modalità Passiva
+
+NOORBCLDN=Rimuovi Il Tempo D'Attesa Del Cannone Orbitale
+
+NOSUBMSLCLDN=Rimuovi Il Tempo D'Attesa Per Missile Kosatka
+
+NOSUBMSLMAXRNGE=Rimuovi Limiti Di Portata Dei Missili Kosatka
+NOSUBMSLMAXRNGE_H=Non ha effetto sui missili già lanciati.
+
+NONANOMAXRNGE=Disabilta Limite Di Portata Del Nano Drone
+NONANOCLDNS=Rimuovi Il Tempo D'Attesa Per Le Abilità Del Nano-Drone
+
+! "Business Battle" is SCR_FE_BB
+NOFMBTLMSC=Disabilita Music Lotta Tra Business
+NOFMBTLMSC_H=Tieni presente che l'abilitazione di questa funzione non interromperà l'audio già in riproduzione.
+
+NFMEVTENDAUD=Disabilita Countdown Di Fine Evento
+
+TGGLEMAP=Mini-mappa Grande Attivabile
+TGGLEMAP_H=Fa sì che la minimappa si comporti sempre come se fossi su un aereo.
+
+PAWS=Consenti Pausa
+
+NOINTCHK=Bypassa Restrizioni Interni
+NOINTCHK_H=Inganna i controlli per alcuni interni come la fonderia in modo tale che tu possa essere al loro interno senza essere teletrasportato fuori.
+
+PASSIWPNVEH=Consenti Veicoli Armati In Modalità Passiva
+
+NWRKCLD=Rimuovi Il Tempo D'Attesa Dei Lavori VIP
+
+SLLINPRV=Tutte Le Missioni In Sessioni Private
+
+GHSTNRBYDR=Assicura Gare Pulite
+GHSTNRBYDR_H=Garantisce che i piloti avversari nelle gare giochino correttamente, facendoli diventare fantasmi localmente se si avvicinano troppo.
+
+ALLPICLK=Bypassa Barriere Del Menu Interazione
+ALLPICLK_H=Ti consente di utilizzare la maggior parte delle opzioni del menu d'interazione anche quando sono disattivate o non disponibili.
+
+UNKLCSNO=Bypassa Blocco Regionale Del Casinò
+
+AMTTSUIT=Bypassa Idoneità Veicolo Per Le Prove A Tempo
+
+NODRIPFEED=Disabilita Tempo D'Attesa Per I DLCs
+NODRIPFEED_H=Ti consente di generare, guidare e acquistare nuovi veicoli DLC prima che siano disponibili per i comuni plebei.
+
+NEMTYNTFY=Disabilita Notifiche Vuote
+EMTYNTFY=Notifica Vuota
+
+BST=Testosterone Bull Shark (TBS)
+
+GETBST=Ottieni TBS
+
+RMBNTY=Rimuovi Taglia
+
+QWQPROG=Progresso Rapido
+
+! Don't translate this if it doesn't help the user recognise the option; I assume most menu users know it as Recoveries.
+QWQPROG_H=Alias "Recuperi".
+
+GIVECOLL=Dona Collezionabili
+GIVECOLL_0=Oggetti Di Scena
+GIVECOLL_1=Scorte Nascoste
+GIVECOLL_2=Casse Del Tesoro
+GIVECOLL_3=Antenne Radio
+GIVECOLL_4=Chiavette USB
+GIVECOLL_5=Relitti
+GIVECOLL_6=Forzieri Nascosti
+GIVECOLL_8=Zucche Di Halloween
+GIVECOLL_9=Merchandise LD Organics
+GIVECOLL_10=Paracadutismo Junk Energy
+GIVECOLL_16=Pupazzi Di Neve
+GIVECOLL_17=Scorte Di Gerald
+! Tags as in graffiti
+GIVECOLL_19=Manifesti Di Los Santos
+
+GIVECOLLE=Dona Collezionabile
+GIVECOLLE_NCEO=Dona Collezionabile (Non Il Mio Capo)
+
+CEOPAY=Paga CEO In Loop
+CEOPAY_H2=Dà agli associati e guardie del corpo una paga decente. I destinatari non devono essere per forza tuoi associati o guardie del corpo.
+
+PLYRP=Dona PE
+PLYRP_H=Dà al giocatore un po' di PE. Può essere utilizzato più volte.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCFIG=Drop Statuette Del Casinò
+PLYCFIG_H=Può essere usato per dare PE e contanti.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCRDS=Drop Carte Da Gioco
+PLYCRDS_H=Può essere utilizzato per dare PE e fiches del casinò.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYSNK=Drop Di P's & Q's
+
+PLYEXPAMMO_H=Funziona meglio a distanza ravvicinata.
+
+OTR=Nascosto Al Radar
+
+MNTLS=Stato Mentale
+
+MNTL=Imposta Stato Mentale
+MNTL_T=Il tuo stato mentale ora è a {}. :)
+
+LCKMNTL=Blocca Stato Mentale
+
+MNTLPULS=Stato Mentale Pulsante
+MNTLPULS_H=Fa oscillare lo stato mentale indicato dal colore del tuo blip.
+
+CLUBPOP=Imposta La Popolarità Del Nightclub
+CLUBPOP_P=Popolarità Del Nightclub
+CLUBPOP_L=Blocca Popolarità Del Nightclub
+
+RNK=Livello
+
+SETLVL=Imposta Livello
+GEN_T_NEWSESS=Dovrai unirti a una nuova sessione affinché la modifica venga applicata. :)
+
+! Refering to any number of possible targets.
+GEN_T_NEWSESS_O=Dovranno unirsi a una nuova sessione affinché la modifica venga applicata. :)
+
+FSTRUN=Abilità Di Corsa Veloce
+ABILOPT=Ottieni
+ABILUNL=Rimuovi
+
+BADSPORT=Stato Antisportivo
+RELINQ=Abbandona
+
+UNLKS=Sblocca
+
+STATEDIT=Editor Delle Statistiche
+STAT_STR_LABEL=Ciò richiede un tag.
+STAT_STR_RID=Ciò richiede un ID Rockstar.
+STAT_KD=Editor U/M
+STAT_POP=Statistiche Popolari
+STAT_RAW=Statistiche Grezze
+STAT_WARN=Non giocare con i valori qui presenti a meno che tu non sia sicuro di cosa siano e di averli impostati correttamente.
+
+STAT_YEAR=Anno
+STAT_MONTH=Mese
+STAT_DAY=Giorno
+STAT_HOUR=Ora
+STAT_MINUTE=Minuto
+STAT_SECOND=Secondo
+STAT_MILLISECOND=Millisecondo
+
+KDEDIT=U/M
+KDEDIT_H=L'algoritmo utilizzato da R* per questo scopo è diverso in alcune aree del gioco, quindi il valore potrebbe essere leggermente diverso a seconda di dove guardi.
+
+TOTAL_RACES_WON=Gare Vinte
+TOTAL_RACES_LOST=Gare Perse
+TOTAL_DEATHMATCH_WON=Deathmatch Vinti
+TOTAL_DEATHMATCH_LOST=Deathmatch Persi
+TOTAL_TDEATHMATCH_WON=Team Death Matches Vinti
+TOTAL_TDEATHMATCH_LOST=Team Death Matches Persi
+
+STAT_WAIT=Caricando le statistiche, attendi prego...
+
+UNLKALL=Sblocca Tutto
+UNLKALL_H=Per quando vuoi le cose sbloccabili riportati di seguito tutte in una volta.
+
+UNLKONL=Sblocca GTA Online (Salta Il Prologo)
+
+UNLKALLACHIV=Sblocca Tutti Gli Obiettivi
+
+RVLMAP=Rivela L'Intera Mappa
+
+OVRDPROBNS=Sovrascrivi Il Bonus Pre-ordine
+
+FREEORB=Sblocca Un Colpo Di Cannone Orbitale Gratuito
+
+GNDRCHNG=Sblocca Il Cambio Di Genere
+GNDRCHNG_H=Ti consente di cambiare il sesso del tuo personaggio utilizzando Stile > Cambia aspetto nel menu d'interazione.
+GNDRCHNG_T=Ora puoi utilizzare Stile > Cambia aspetto nel menu d'interazione per finalizzare la transizione. :D
+
+LVRIES=Blocca Livree Esclusive
+LVRIES_T=Le livree esclusive sono state sbloccate. :D
+
+RSRCH=Sblocca Le Ricerche Del Bunker
+RSRCH_T=Le ricerche del bunker sono state sbloccate. :)
+
+UNLKOSA=Sblocca Kosatka Per L'Acquisto
+
+H3CLTH=Sblocca L'Abbigliamento Per Il Colpo Al Casinò
+AWCLTH=Sblocca L'Abbigliamento Dell'Arena War
+CLTH_T=L'Abbigliamento è stato sbloccato. :)
+
+UNLKSR=Sblocca Le Ricompense Del Poligono Di Tiro Del Bunker
+UNLKSR_H=Sblocca le ricompense per il completamento di tutti e tre i livelli del poligono di tiro, inclusa una maggiore capacità di lancio.
+UNLKSR_T=Le ricompense del poligono di tiro del bunker sono state sbloccate. :D
+
+AWDS=Sblocca Ricompense
+AWDS_H=Ti dà molte ricompense inclusi i vestiti e i tatuaggi che sbloccano.
+
+VEHCUST=Sblocca Personalizzazioni Del Veicolo
+
+UNLKAMUTINTS=Sblocca Le Tinte Ammu-Nation
+UNLKAMUTINTS_H=Sblocca le tinte Army, Green, Orange e LSPD per tutte le armi a cui sono applicabili.
+
+FLLSTATS=Massimizza Le Statistiche Personaggio
+FLLSTATS_H=Massimizza le tue statistiche di resistenza, mira, forza, furtività, volo, guida e apnea.
+
+VWRPTSTAT=Visualizza Le Statistiche Dei Report
+
+CMEND=Raccomandazione
+
+CMENDT=Notifica In Caso Di Raccomandazione
+CMENDT_H=Ti invia una notifica quando qualcuno ti elogia per essere stato utile o amichevole.
+CMENDT_T={player} ti ha elogiato per {reason}. :D
+ESTAT_0=essere stato utile
+ESTAT_1=essere stato amichevole
+
+PLYISE=Incrementa Statistiche Raccomandazione/Report
+
+ISE_H=Utile
+ISE_F=Amichevole
+
+RPRPT=Report
+
+ISE_G2=Gameplay Molesto o Distruttivo
+ISE_X2=Cheating o Modding
+ISE_B2=Abuso di Glitch o Funzioni Di Gioco
+ISE_TC_A=Chat Di Testo: Mi dà fastidio
+ISE_TC_H=Chat Di Testo: Incitamento All'Odio
+ISE_VC_A=Chat Vocale: Mi dà fastidio
+ISE_VC_H=Chat Vocale: Incitamento All'Odio
+ISE_VG=Contenuti Violenti o Cruenti
+ISE_ONC=Nome del Giocatore o Contenuto Offensivi
+
+STAT_OFFENSIVE_LANGUAGE=Linguaggio Offensivo
+STAT_OFFENSIVE_TAGPLATE=Tagplate Offensiva
+STAT_OFFENSIVE_UGC=Contenuto Offensivo
+STAT_BAD_CREW_NAME=Nome Della Crew Inappropriato
+STAT_BAD_CREW_MOTTO=Motto Della Crew Inappropriato
+STAT_BAD_CREW_STATUS=Stato Della Crew Inappropriato
+STAT_BAD_CREW_EMBLEM=Emblema Della Crew Inappropriato
+
+STAT_IS_CHEATER=È Un Cheater
+STAT_WAS_I_BAD_SPORT=È Stato Antisportivo
+STAT_IS_HIGH_EARNER=Guadagni Elevati
+
+YES=Si
+NO=No
+
+PLYHIST=Storico Giocatori
+
+PYLFND_H2=Ti consente di trovare giocatori nella tua cronologia utilizzando nome, ID Rockstar e note.
+
+PLYNOTE=Note
+PLYNOTE_T=La nota resta invariata.
+PLYNOTED=Giocatori Con Note
+HIST_KEEP_NTE=Mantieni Quelli Con Note
+
+AGGREGS=Aggregazioni
+
+1SEEN=Visto La Prima Volta
+
+LSEEN=Visto L'Ultima Volta
+
+CPYNME=Copia Nome
+CPYRID=Copia ID Rockstar
+
+PLYHIST_DEL_E=Non posso impedire l'entrata di un giocatore che è attualmente nella tua sessione.
+
+CONFAIL=Connessione fallita.
+
+SPF=Falsifica Dati
+
+NSPFD=Non Alterato
+
+SPFUPD=Dovrai rientrare nuovamente alla sessione o entrare in una nuova sessione affinché gli altri possano vedere la modifica. :)
+
+SPFNME_D=Altera Nome
+SPFDNME=Nome Alterato
+
+HRD=Duro
+SFT=Molle
+
+SPFNMEFRMHST=Ottieni Nome Casuale Dallo Storico Giocatori
+
+SPFPRST=Preimpostazioni Per Modifica Nome e RID
+YTRS=Youtubers
+RSEMPS=Dipendenti Rockstar
+
+SPFHT_D=Modifica Token Host
+SPFHT_H=Ti consente di modificare il token host. Valori più bassi migliorano la tua posizione nella coda per l'host.
+SPFHT_W=Tieni presente che qualsiasi token host può essere utilizzato solo da un giocatore in qualsiasi sessione e valori troppo bassi potrebbero essere rilevati da altri modder.
+
+SPFDHT=Token Host Alterato
+
+SPFDHTPRST_0=Handicap
+SPFDHTPRST_1=Dolce
+SPFDHTPRST_2=Aggressivo
+
+AKCKHST=Espelle L'Host Quando Ti Unisci E Sei Il Successivo In Coda
+
+SPFSESS=Altera Sessione
+
+HDESESS=Nascondi Sessione
+HDESESS_H=Nasconde la tua sessione per chiunque cerchi di seguirti, partecipare od osservarti.
+HDESESS_H_CPY=Nota: attualmente hai abilitato "Copia informazioni sessione" che ha la precedenza su "Nascondi sessione". Controlla le aggregazioni nello storico dei giocatori.
+HDESESS_NX=Sessione Non Esistente
+
+FF=Falso Amico
+TRK_FF=Abilitato + Falso Amico
+TRK_FF_H=Aggiunge questo giocatore anche all'elenco degli amici del gioco.
+
+MARKASFF=Segna Come Falso Amico
+UMARKASFF=Deseleziona Come Falso Amico
+
+CPYSESS=Copia Informazioni Sessione
+CPYSESS_H=Ti fa effettivamente fungere da reindirizzamento a questa persona per chiunque cerchi di seguirti, unirsi od osservarti.
+CPYSESS_F=Copia Le Informazioni Della Sessione Da
+
+WHTJOIN=Membro Della Whitelist
+
+! For reference, "Block Joins From Anyone" is BJ_ALL_A
+WHTJOIN_H=Questo consentirà loro di aggirare qualsiasi meccanismo di blocco delle entrate che hai in atto, escluso "Blocca le entrate di chiunque" e le reazioni specifiche del giocatore.
+
+SESSTYP=Tipo Di Sessione
+SESSTYP_H=Il tipo di sessione visto da chiunque cerchi di tracciarti.
+NVLD=Invalido
+
+SPFHST=Altera Host
+SPFDHST=Host Alterato
+YOU=Tu
+
+SPFCRW=Altera Crew
+
+SPFCRW_ID_H=Questo determina quale emblema verrà mostrato. Deve essere diverso da zero per mostrare il tag della crew.
+
+NCRW=Senza Crew
+
+CPY2SPFCRW=Copia In Altera Crew
+
+SPFCRWMINE=Copia Dalle Mie Crew
+
+SPFRNK_D=Altera Livello
+SPFRNK_H=Ti permette di cambiare il livello che gli altri giocatori vedono su di te nell'elenco dei giocatori.
+SPFDRNK=Livello Alterato
+
+SPFKD=Altera Rapporto U/M
+SPFDKD=U/M Alterato
+
+SPFPOS=Posizione Dissimulata
+SPFDPOS=Posizione Alterata
+
+PLYMGNT=Calamita Per Giocatori
+PLYMGNT_H=Questo farà accelerare la velocità con cui la sessione si popolerà di altri giocatori.
+
+STRMSPF=Altera il Nome Degli Altri Giocatori
+
+HIDEPLIST=Nascondi Dall'Elenco dei Giocatori
+HIDEPLIST_H=Ti nasconde dall'elenco dei giocatori dell'HUD del gioco.
+
+PHNSPF=Modalità Telefono Falsificata
+PHNSPF_0=Telefono Non Utilizzato
+PHNSPF_1=Chiamando
+PHNSPF_2=Messaggiando
+PHNSPF_3=Registrando
+
+RIDTOOLS=Strumenti Rockstar ID
+
+N2R_I=È un nome non valido. :?
+N2R_Q=Alla ricerca del RID di quel giocatore...
+N2R_E=Impossibile trovare un RID per quel nome. :?
+
+R2N_Q=Sto cercando il nome di quel giocatore...
+R2N_E=Impossibile trovare un nome per quel RID. :?
+
+PLYINV=Invita In sessione
+INV_N=Invita In Sessione Con Nome
+INV_R=Invita In Sessione Con RID
+PLYINV_E=Non è possibile inviare inviti per questo tipo di sessione. :/
+
+PLYPRFL=Apri Profilo
+PRFL_N=Apri Profilo Con Nome
+PRFL_R=Apri Profilo Con RID
+
+JOIN2=Unisciti
+JOIN_N=Unisciti Alla Sessione Tramite Nome
+JOIN_R=Unisciti Alla Sessione Tramite RID
+
+! Join methods
+JM_N=Metodo Ninja
+JM_F=Metodo Amico
+JM_M=Metodo Matchmaking
+
+! I mean "Nuts" as a covert way of saying crazy, just translate it as "Crazy" if you can't be sly.
+JM_NUTS=Metodo Folle
+
+JOIN_T_A=Sei già in questa sessione.
+
+JOIN_T_N=Questo giocatore non è attualmente in una sessione di GTA Online. :/
+PLYOFFLINE=Questo giocatore è attualmente offline. :/
+
+PLYSPEC=Guarda
+SPEC=Guarda Giocatore
+SPEC_N=Guarda Giocatore Con Nome
+SPEC_R=Guarda Giocatore Con RID
+
+NAMKICK=Espelli Tramite Nome
+RIDKICK=Espelli Tramite RID
+
+LGTM=Metodo Legittimo
+
+RCTS=Reazioni
+
+JOINR=Reazioni All'Entrata Del Giocatore
+JOINT={} Si sta unendo
+
+HISTWJOINR=Giocatori Con Reazioni All'Entrata
+HIST_KEEP_JRE=Mantieni Giocatori Con Reazioni All'Entrata
+
+HISTWWHT=Giocatori In Whitelist
+HIST_KEEP_WHT=Mantieni Quelli In Whitelist
+
+HISTADD2=Aggiungi Giocatore
+HISTADD=Aggiungi Giocatore Tramite Nome
+HISTADDRID=Aggiungi Giocatore Tramite RID
+
+HOSTR=Reazioni Al Cambiamento Dell'Host
+HOSTR_T={} È l'host ora
+
+SHR=Reazioni Al Cambiamento Dello Script Host
+SHR_T={} È lo script host ora
+
+VKR=Reazioni Al Voto Espulsione
+VKR_A=Votando Per Espellere Chiunque
+VKR_M=Votando Per Espellere Me
+VKR_T={player} sta votando per espellere {target}
+
+LLKR=Reazioni Alle Espulsioni Lettere D'Amore
+LLKR_T={player} sta espellendo con una lettera d'amore {target}
+
+BOUNTYR=Reazioni Alle Taglie
+BOUNTYR_P={} ha piazzato una taglia su di te di {}$.
+BOUNTYR_H=Questo non si applica quando un NPC ti mette una taglia.
+
+PTFXSPAMR=Reazioni Agli Spam Di Particelle
+PTFXSPAMR_H=Non sempre dannoso, ma può ridurre i tuoi FPS.
+
+LEAVET=Notifiche Abbandono Giocatore
+LOGLEAVE_T={} ha abbandonato
+
+LR=Motivi Di Abbandono Del Giocatore
+LR_H=Tieni presente che le conclusioni a cui arriva "Motivi Di Abbandono Del Giocatore" potrebbero essere imprecise poiché questa funzionalità non può essere implementata in modo non euristico.
+
+LR_WHERE=Dove
+LR_WHAT=Cosa
+
+LR_N={player} ha abbandonato normalmente
+LR_SN=Mostra "Abbandonato Normalmente"
+
+LR_Q={player} ha chiuso il gioco
+LR_SQ=Mostra "Chiuso Il Gioco"
+
+LR_B={player} è stato bloccato dall'unirsi
+LR_SB=Mostra "È Stato Bloccato Dall'Unirsi"
+
+LR_T={player} ha perso la connessione
+LR_DL={player} connessione persa nel tentativo di espellere desincronizzando {other}
+LR_VK={player} è stato espluso con i voti
+LR_HK={player} è stato espulso dall'host {other}
+LR_SHK={player} è stato espulso dallo script host {other}
+LR_LL={player} è stato espulso con una lettera d'amore da {other}
+LR_K_B={player} è stato espluso con "rottura" da {other}
+LR_K_O={player} è stato espulso con "orgasmo"
+LR_FMD={player} ha abbandonato a causa della morte della freemode
+LR_FMDC={player} è crashato dopo la morte della freemode
+! "Quit To Story Mode" is QTSP
+LR_MOD={player} ha usato le mods per andare in modalità storia
+LR_BAN={player} è stato bandito da GTA Online
+LR_U={player} ha abbandonato a causa di una ragione sconosciuta ({id})
+
+! The only substitute for {reason} is NETWORK_BAIL as of now
+LR_E={player} ha abbandonato a causa di {reason}
+
+AIM_MODE=Imposta Modalità Di Targeting
+AIM_MODE_0=Mira Assistita - Totale
+AIM_MODE_1=Mira Assistita - Parziale
+AIM_MODE_2=Mira Libera - Assistita
+AIM_MODE_3=Mira Libera
+
+RMLDR=Rimuovi "Transazione in sospeso"
+RMLDR_H=Rimuove qualsiasi indicatore di caricamento attivo nella parte inferiore destra dello schermo.
+
+CHTRMLDR=Nessuna "Transazione in Sospeso" Durante La Chat
+CHTRMLDR_H=Rimuove qualsiasi indicatore di caricamento mentre hai la chat aperta.
+
+LVINT=Abbandona Interno Corrente
+
+FRCSVE=Forza Salvataggio Cloud
+
+THDR=Clima Temporalesco
+THDR_ON=Abilita Richiesta
+THDR_OFF=Disbilita Richiesta
+THDR_N=Notifica Su Richiesta
+THDR_N_T={} ha richiesto un tuono.
+
+RSTFM=Riavvia Lo Script Freemode
+
+RJNSESS=Rientra In Sessione
+
+SLFDS=Stai Da Solo
+SLFDS_H=Ti rende l'unico nella sessione corrente senza rovinare l'esperienza di nessun altro.
+
+SLR_N=Nessuna Ragione Per Abbandonare
+SLR_C=Abbandonato a Causa di Cheating
+
+HSTTLS=Strumenti Dell'Host
+
+SETSESSTYP=Imposta Tipo di Sessione
+
+CLRBLKLST=Cancella Lista Nera
+CLRBLKLST_H=Consente alle persone che in precedenza erano state espulse con voto di unirsi nuovamente.
+
+SESSTYP_S=Solo
+SESSTYP_I=Solo Invito
+SESSTYP_F=Chiusa Amici
+SESSTYP_CC=Chiusa Crew
+SESSTYP_C=Crew
+SESSTYP_P=Pubblica
+
+CSTMVK=Soglia Espulsione Con Voto Personalizzata
+CSTMVK_H=La quantità di voti necessari prima di espellere qualcuno.
+
+! For reference: "I'll try to convince them to leave." is PLYKCK_T_C
+CSTMVK_MSG={} ha superato la tua soglia per l'espulsione con voto. Cercherò di convincerlo ad andarsene.
+
+THRESHOLD=Soglia
+
+AUTOREJOIN=Rientra Automaticamente Nelle Sessioni Desincronizzate
+AUTOREJOIN_H=Rientra automaticamente nelle sessioni da cui sei stato desincronizzato.
+AUTOREJOIN_MSG=Rilevata una desincronizzazione della sessione, tentativo di riconnettersi...
+AUTOREJOIN_FAIL=Impossibile rientrare nell'ultima sessione. :(
+
+QTSP=Vai Alla Modalità Storia
+
+QTSPF=Vai Forzatamente Alla Modalità Storia
+QTSPF_H=Riavvia tutti i sistemi di gioco, quindi ti fa rientrare in modalità storia.
+
+NDLYXPS=Disabilita Le Spese Giornaliere
+
+OCWS=Apri La Chat Quando Scorri
+OCWS_H=Risolve il problema che era possibile scorrere la chat mentre era chiusa facendola apparire durante lo scorrimento.
+
+CHATAO=Sempre Aperta
+
+BBGS=Blocca Script in Background
+BBGS_H=Blocca l'esecuzione dello script in background che Rockstar utilizza per anticipare nuovi DLC ma anche per causare complicazioni ai modder.
+
+ADMDLC=DLC Rockstar Admin
+ADMDLC_H2=Sblocca abbigliamento esclusivo e la Social Club TV.
+
+HUDTS=Separatore di Migliaia Per i Soldi
+HUDTS_H=Aggiunge un separatore delle migliaia ai valori monetari mostrati in alto a destra.
+
+FLLPLYLST=Tutti i Giocatori Nell'Elenco Giocatori
+FLLPLYLST_H=Mostra tutti i giocatori nell'elenco del gioco, ignorando lo stato di Cayo Perico.
+
+FMBNR2T=Banner Freemode Nelle Notifiche
+
+PHNANIM=Animazioni Telefono
+PHNANIM_H2=Fornisce animazioni per il tuo personaggio quando usa il telefono.
+
+SPDUPDIAL=Composizione Più Veloce
+
+NLSCBAR=Disabilita Restrizioni LSC
+NLSCBAR_H=Ti permette di entrare nei Los Santos Customs con tutti i veicoli, compresi quelli senza proprietario, e modificarli completamente.
+
+BLIPTAGS=Tag Giocatore Sui Blips
+
+RSTHDSHT=Ripristina Foto Segnaletiche Giocatori
+RSTHDSHT_H=Risolve il problema di quando l'elenco dei giocatori o le notifiche presentano quadrati neri invece delle foto segnaletiche.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+TRNSS=Transizioni
+
+SESSHOP=Salto Di Sessione
+MINPLYS=Giocatori Minimi
+MAXPLYS=Giocatori Massimi
+
+SSS=Cambio Sessione Senza Interruzioni
+
+WRLDSTCNG=Cambiamento Stato Del Mondo
+WRLDSTCNG_1=Differito
+WRLDSTCNG_2=Differito, Solo Online
+WRLDSTCNG_3=Differito, Solo Modalità Storia
+WRLDSTCNG_T=Cambiando lo stato del mondo in {}...
+
+SPDUP=Velocizzazioni
+
+TRNS_SPDUP_BRDCST=Non Aspettare la Trasmissione Dati
+TRNS_SPDUP_FMMC=Non Aspettare il Launcher Delle Missioni
+TRNS_SPDUP_SPWN=Non Chiedere il Permesso Per Spawnare
+
+TRNS_SPDUP_BESCRHST_H=Questo può aiutarti a velocizzare la tua partecipazione, ma lascerà la sessione in uno stato guasto, impedendo a tutti di partecipare dopo di te.
+
+JGRPOVRD=Ignora Unisciti Al Gruppo
+JGRPOVRD_H=Ti consente ad esempio di usare uno slot spettatore per partecipare a una sessione altrimenti completa senza effettivamente assistere. Tuttavia, ciò potrebbe causare problemi durante l'unione alle attività. ⚠️
+JGRPOVRD_0=Spettatore
+JGRPOVRD_1=Freemoder
+
+SSWPD=Salta Swoop Down
+SSWPD_H=Salta la discesa lenta della telecamera quando si entra in una sessione.
+
+TRNSHLP=Aiutante Della Transizione
+TRNSHLP_H=Ti assicura di non rimanere bloccato tra le nuvole.
+
+UNSTK=Sblocca
+
+NSPWNACTY=Disabilita Attività Allo Spawn
+NSPWNACTY_H=Impedisce al tuo personaggio di riprodurre un'animazione dopo l'entrata in una sessione.
+
+NDLCITRO=Disabilita Filmato Introduttivo Dei DLC
+
+SHWTRNSTT=Mostra Stato Della Transizione
+
+SHWARRSYNC=Mostra L'Avanzamento Sincronizzazione Dell'Array
+SHWARRSYNC_T=Freemode sincronizzata {}/{} arrays ({}%)
+
+SHWRSMSG=Mostra Messaggio di Supporto Rockstar
+
+GTAOSTUS_O=Il servizio di GTA Online è attualmente {}
+GTAOSTUS_O_L=Limitato
+GTAOSTUS_O_D=Inattivo
+GTAOSTUS_M=L'Assistenza Rockstar Dice "{}"
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions > Matchmaking !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+MM=Matchmaking
+
+MMREGION2=Sovrascrizione Regione
+MMREGION=Regione
+
+Australia=Oceania
+Europe=Europa
+Asia=Asia
+Japan=Giappone
+LATAM=America Latina
+REGION_NA=Nord America
+USA_East=USA, Est
+USA_West=USA, Ovest
+
+MMPOOLOVRD=Sovrascrivi Pool
+MMPOOL=Pool
+
+MMPOOL_NRM=Normale
+MMPOOL_CHEAT=Cheater
+MMPOOL_BADBOY=Antisportiva
+
+MMMGNT=Preferenza Numero Di Giocatori
+MMMGNT_H=Ti mette in sessioni con il numero di giocatori indicato.
+
+MMOFF_H=Disabilita il matchmaking in modo da non trovare più sessioni pubbliche preesistenti.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session > Session Code !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSCODE=Codice Sessione
+SESSCODE_T_X=Questo invito alla sessione è scaduto.
+
+CODEJOIN=Unisciti Alla Sessione Tramite Codice
+CODESPEC=Osserva Sessione Tramite Codice
+ARGCODE=[codice]
+
+CPYINVL=Copia Link D'Invito
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Session Scripts !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SESSSCRS=Script Della Sessione
+
+RUNSCR=Esegui Script
+RUNSCR_PREP=Preparazione dell'esecuzione remota dello script in corso...
+RUNSCR_RUN=Esecuzione dello script {}...
+
+RUNSCRS=Scripts In Esecuzione
+
+PRTCPTS=Partecipanti
+
+STRTINST=Inizia Subito
+
+SESSSCRSTRT=Avvia Script Della Sessione
+SESSSCRSTRT_T={player} ha avviato lo script {script}.
+
+SESSSCRSTRT_ANY=Qualsiasi Script
+
+SCRCAT_GRIEF=Comprometti Sessione
+NOCAT=Senza Categoria
+
+SCRCAT_FA=Attività Freemode
+SCRCAT_AG=Gioco Arcade
+SCRCAT_RFA=Attività Freemode Rimosse
+SCRCAT_SERV=Servizi
+SCRCAT_CUT=Filmato
+
+SCRCAT_FA_P=Attività Freemode
+SCRCAT_AG_P=Giochi Arcade
+SCRCAT_RFA_P=Attività Freemode Rimosse
+SCRCAT_SERV_P=Servizi
+SCRCAT_CUT_P=Filmati
+SCRCAT_MISS_P=Missioni
+
+SCR_FRCEPI=Apri Menu Interazione
+SCR_PS=Scuola Di Volo
+SCR_STRIKE=Colpo Di Fulmine Per Giocatore Casuale
+SCR_DPSSV=Disattiva Modalità Passiva
+SCR_DARTS=Freccette
+SCR_IMPDM=Deathmatch Improvvisato
+SCR_SLASHER=Slasher
+
+!! Session Scripts: Freemode Activities
+
+SCR_FE_BB=Lotta Tra Business
+SCR_FE_KL=Lista Nera
+SCR_FE_CPC=Colleziona Checkpoint
+SCR_FE_C=Sfide
+SCR_FE_PI=Sotto La Cupola
+SCR_FE_PI_CI=In Gabbia
+SCR_FE_PTP=Ultimo A Bordo
+SCR_FE_HP=Possesso
+SCR_FE_KOTC=Re Del Castello
+SCR_FE_CD=Danno Criminale
+SCR_FE_HTB=Caccia Alla Bestia
+
+!! Session Scripts: Challenges - Types
+SCR_FE_C_0=Salto Più Lungo
+SCR_FE_C_1=Caduta Libera Più Lunga
+SCR_FE_C_2=Massima Velocità
+SCR_FE_C_3=Stoppie Più Lungo
+SCR_FE_C_4=Impennata Più Lunga
+SCR_FE_C_5=Senza Incidenti
+SCR_FE_C_6=Paracadute Aperto All'Ultimo
+SCR_FE_C_7=Veicoli Rubati
+SCR_FE_C_8=Quasi Incidenti
+SCR_FE_C_9=Guida In Retromarcia
+SCR_FE_C_10=Caduta Più Lunga
+SCR_FE_C_11=Volo Basso
+SCR_FE_C_12=Volo Sottosopra
+SCR_FE_C_13=Distanza Più Lunga Uscito Dal Veicolo
+SCR_FE_C_14=Vola Sotto I Ponti
+SCR_FE_C_15=Uccisioni In Headshot
+SCR_FE_C_16=Driveby
+SCR_FE_C_17=Corpo a Corpo
+SCR_FE_C_18=Uccisioni Con Il Cecchino
+
+!! Session Scripts: Arcade Games
+
+SCR_AG_BRII=Badlands Revenge II
+SCR_AG_CAM=Camhedz
+SCR_AG_PUZ=QUB3D
+SCR_AG_RAC=Race and Chase
+SCR_AG_SM3=Space Monkey 3
+SCR_AG_TWR=The Wizard's Ruin
+
+!! Session Scripts: Removed Freemode Activities
+
+SCR_FE_DD=Consegna Letale
+SCR_RFA_HT=Bersaglio Mobile
+SCR_OFM_PT=Abbattimento Aerei
+SCR_OFM_DC=Distrai La Polizia
+SCR_OFM_DV=Distruggi Veicoli
+
+!! Session Scripts: Session Breaking
+
+SCR_FMINTRO=Introduzione GTA Online
+
+!! Session Scripts: Services
+
+SCR_SERV_A=Attacco Aereo
+SCR_SERV_AD=Rifornimento di Munizioni
+SCR_SERV_BH=Elicottero Di Supporto
+SCR_SERV_IBH=Elicottero Di Supporto (Cayo Perico)
+SCR_SERV_BT=Prelievo In Barca
+SCR_SERV_HT=Prelievo In Elicottero
+
+!! Session Scripts: Options on running scripts
+
+SCORE=Punteggio
+
+!!!!!!!!!!!!!!!!
+!! Player Bar !!
+!!!!!!!!!!!!!!!!
+
+PBAR=Barra Giocatori
+
+HDEIF=Nascondi Se
+PBAR_HI_1=L'Elenco Giocatori È Visibile
+PBAR_HI_2=La Barra PE È Visibile
+
+PBAR_ALNE=Mostra Anche Se Da Solo
+
+SHWTGS=Mostra Tags
+
+HDEPNTG=Nascondi Giocatori Senza Tags
+
+DFLTCLR=Colore Predefinito
+
+TGCLRS=Colori Tag
+
+UCLR=Usa Colore
+
+!!!!!!!!!!!!!!!!!!!
+!! Online > Chat !!
+!!!!!!!!!!!!!!!!!!!
+
+CHT=Chat
+
+PRFNTY=Bypassa Filtro Profanità
+PRFNTY_H=Ti permette d'imprecare in chat senza che gli altri lo vedano censurato.
+
+HTML=Bypassa Filtro Caratteri
+HTML_H=Ti consente di utilizzare caratteri come < e > nella chat.
+
+ONLYTEAM=In Chat Del Team
+
+MSGFILTBP=Filtro Messaggi Bypassato
+
+CHTSPM=Spamma In Chat
+
+CHTLG=Registra Messaggi Della Chat
+
+TBCMPLT=Digita Nomi Dei Giocatori
+TBCMPLT_H=Durante la stesura di un messaggio in chat questa funzione completa i nomi dei giocatori per te quando premi il tasto di scelta rapida assegnato.
+
+PSTE=Incolla Nella Chat Messaggi
+PSTE_H=Durante la stesura di un messaggio di chat questa funziona incolla il testo dagli appunti quando premi il tasto di scelta rapida assegnato.
+
+TPNGIDCTR2=Indicatore "Sta Scrivendo"
+TPNGIDCTR_H=Mostra un indicatore "sta scrivendo" come in Discord quando altri giocatori stanno digitando.
+TPNGIDCTR_1={a} sta scrivendo...
+TPNGIDCTR_M={} stanno scrivendo...
+
+TPNGPOS_C=Posizione Della Chat Chiusa
+TPNGPOS_O=Posizione Della Chat Aperta
+
+SNDMSG=Manda Messaggio
+
+ITEAMCHT=In Chat Del Team
+
+TEXT=Testo
+ARGTXT=[testo]
+
+SPAM=Spam
+SPAM_H=Ti ricordiamo che i nostri termini di servizio vietano la pubblicità di massa e che impegnarsi in tale attività comporterà la sospensione del tuo account.
+
+INTVAL_MS=Intervallo (ms)
+
+LOCHIST=Aggiungi Alla Storia Locale
+LOCHIST_H_SPAM=Nel caso in cui tu voglia vedere ciò che spammi.
+
+FRCSEND=Invia Tutti i Messaggi di Chat
+FRCSEND_H=Trasforma la finestra di chat in un'interfaccia per il comando "Invia messaggio", rendendo i tuoi messaggi coerenti in rete.
+
+FRCRECV=Mostra Tutti i Messaggi in Chat
+FRCRECV_H2=Forza il gioco a mostrare tutti i messaggi ricevuti nella finestra della chat, indipendentemente da chi li ha inviati.
+
+TIMESTAMP_MS=Orario Dei Messaggi
+
+OWOMYMSGS=OwO-ifica I Mie Messaggi Di Chat
+OWOMYMSGS_H=OwO-ifica i tuoi messaggi in uscita. Tieni presente che non vedrai alcuna differenza a livello locale.
+
+SENDPM=Invia Messaggio Privato
+SENDPM_H=Invia un messaggio di chat che solo tu e questo giocatore potete vedere.
+
+CHATSING=Canta In Chat
+CHATSING_H=Canta la canzone in %appdata%/Stand/Song.lrc.
+
+NTPNGIDCTR=Sopprimi L'Indicatore "Sta Scrivendo"
+NTPNGIDCTR_H=Impedisce agli altri giocatori di vedere quando stai scrivendo un messaggio di chat.
+
+PTX_TYPNGSTRT=Evento D'Inizio Digitazione
+PTX_TYPNGSTOP=Evento Di Fine Digitazione
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Commands !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CMDS=Comandi
+CMDS_H=Elabora i messaggi di chat con il prefisso scelto come comandi per la command box di Stand, ma tieni presente che la maggior parte dei comandi non sono disponibili per gli altri giocatori.
+
+PFX=Prefisso
+
+REPLPFX=Prefisso Della Risposta
+
+REPLYVIS=Visibilità Risposta
+EVERYONE=Tutti
+ISSUER_N_ME=Emittente e io
+ISSUER=Emittente
+NOONE=Nessuno
+
+ON4M=Abilitato Per Me
+
+4F=Per Amici
+
+4C=Per Membri Della Crew
+
+4T=Per La Chat Del Team
+4T_H=Ad esempio, i membri del tuo CEO/MC.
+
+4S=Per Sconosciuti
+
+! When a friend or stranger tries to kick or crash the Stand user
+SLFHRM_O=Non mordere la mano che ti nutre. ;)
+
+CMDBXDCS=Documentazione Per La Command Box
+
+CMDLST=Lista Dei Comandi
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Reactions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CHT_ANY=Qualsiasi Messaggio
+CHT_ANY_G=Messaggio Di Chat
+
+CHT_SPF=Messaggio Alterato
+CHT_AD=Annuncio Pubblicitario
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session Browser !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSBRWS=Browser Della Sessione
+
+NFLTR=Non Filtrare
+
+MREFLTR=Più Filtri
+
+SESSBRWS_FLTR_AST_H=Se abilitato, verranno mostrate solo le sessioni che corrispondono agli hash delle risorse correnti. Si può anche falsificare il proprio checksum per ottenere come risultato una sorta di "matchmaking privato".
+
+NHKNADS=Non Hostata Da Un Inserzionista Noto
+
+RFRSH=Ricarica
+
+SESSS=Sessioni
+
+HSTPRF=Mostra Profilo Dell'Host
+
+LSESSDETS=Acquisizione dei dettagli della sessione...
+
+RM_PROMPT=Richiedi Elenco Membri
+RM_CONFIRMED=Richiesta dell'elenco dei membri...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Request Services !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+REQSRV=Richiedi Servizi
+
+AIRSTRK=Richiedi Attacco Aereo
+AIRSTRK_H=Ti dà un segnalatore e genera un jet Merryweather pronto a bombardare sulla posizione del razzo.
+
+AM_AMMO_DROP=Richiedi Rifornimento Di Munizioni
+
+AM_BOAT_TAXI=Richiedi Prelievo In Barca
+
+AM_HELI_TAXI=Richiedi Prelievo In Elicottero
+AM_HELI_TAXI_0=Maverick
+AM_HELI_TAXI_1=Supervolito
+
+AM_BACKUP_HELI=Richiedi Elicottero Di Supporto
+
+REQNANO=Richiedi Nano-Drone
+
+!!!!!!!!!!!!!!!!!!
+!! Online > ATM !!
+!!!!!!!!!!!!!!!!!!
+
+ATM=ATM
+
+AUTODEPO=Deposito Portafoglio Automatico
+WLTHPPR_T=Trasferiti {}$ dal tuo portafoglio alla banca. :)
+
+WTHDRW=Preleva
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! SC DM Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SCDMT=Notifiche DM del Social Club
+SCDMT_T=DM SC da {sender}: {text}
+
+! Those thingies in the top-right corner of the screen.
+SCNOTIF=Notifiche Del Social Club
+
+!!!!!!!!!!!!
+!! CEO/MC !!
+!!!!!!!!!!!!
+
+CEO=CEO/MC
+
+NOCEO={} non è in un organizzazione o un motorcycle club.
+CMDNBOSS=Questo comando è disponibile solo se sei un VIP, CEO o presidente.
+GEN_H_BOSS=Questo avrà effetto solo quando sarai VIP, CEO o presidente.
+
+CEOKICK=Espelli Dal CEO/MC
+CEOKICK_E=Spiacente, è possibile soltanto espellere i membri di un CEO/MC.
+
+MISSIONEVT=Avvia Missione Freemode
+MISSIONEVT_NCEO=Avvia Missione Freemode (Non Il Mio Capo)
+
+INTTPEVT=Teletrasporto In Un Interno
+INTTPEVT_NCEO=Teletrasporto In Un Interno (Non Il Mio Capo)
+
+CEOAPPEAL=Rimuovi Ban CEO/MC
+
+CEOJOIN=Unisciti Al CEO/MC
+CEOJOIN_T=Tentativo di entrare graziosamente...
+CEOJOIN_E=Ricorro all'unione forzata.
+
+CEOTYP=Cambia Tipo
+CEOTYP_H=Trasforma la tua organizzazione in un motorcycle club o viceversa.
+
+CEOCAP=Disabilita Limite Membri
+
+CEOCOL=Colore Slots
+CEOCOL_H=Assegnato all'organizzazione di {}.
+
+ORGCR_S=Registrati Come CEO/VIP
+ORGCR_M=Avvia Un Motorcycle Club
+
+!!!!!!!!!!
+!! Game !!
+!!!!!!!!!!
+
+! "Snake" refers to the classic game
+SNAKE=Snake
+SNAKE_1=Durante La Transizione Tra Sessioni
+
+SNAKE_C=Chiudi Stand per poter giocare a Snake con i tasti di navigazione del menu
+
+PONG_C=Chiudi Stand in modo da poter controllare Pong con i tasti di navigazione del menu
+
+INVSEND_PONG=Invita a Giocare Pong
+
+INVRECV_PONG=Accetta Invito Per Pong
+INVRECV_PONG_T={player} ti ha invitato a giocare a pong. Usa Giocatori > {player} > Accetta Invito Per Pong per accettare.
+
+INVSENT=In attesa che {} accetti il ​​tuo invito
+
+CNLINV=Cancella Invito
+
+CNLGME_PONG=Annulla La Partita Di Pong
+
+GETREADY=Preparati!
+
+PLYGMECNCLT={} ha annullato la partita.
+
+T_M_C=Rimuovi Notifiche Sopra La Minimappa
+
+SKPCTSCN=Salta Filmato
+
+TMSCL=Scala Temporale
+TMSCL_H=Cambia la velocità del tempo stesso *localmente*.
+
+AIMTMSCL=Scala Temporale Mirata
+AIMTMSCL_H=Cambia la velocità del tempo stesso *localmente* mentre miri.
+
+SCRNSHT=Modalità Screenshot
+
+RWND=Riavvolgi Posizione
+RWND_H2=Torna indietro nel tempo premendo il tasto di scelta rapida assegnato o l'abilità speciale sul controller.
+
+UNRSTRCAM=Telecamera di Gioco Senza Restrizioni
+UNRSTRCAM_H=Ti consente di spostare la telecamera di gioco in un cerchio completo di 360°.
+
+FC=Camera Libera
+FC_H=Ti consente praticamente di portare la camera ovunque tu voglia.
+
+FC_DTP=Teletrasporto Alla Disattivazione
+FC_DTP_H=Teletrasporta il tuo personaggio nella posizione della camera quando disattivi la camera libera.
+
+FC_NZ=Movimento Ignora Altezza Camera
+FC_NZ_H=Disabilita il movimento in avanti e all'indietro che influisce sull'altezza a seconda di dove stai guardando.
+
+FC_MF=Minimappa Segue La Camera Libera
+
+MOVCTRL=Controlli Di Movimento
+MOVCTRL_FC=Cambia i tuoi input di movimento tra la tua camera libera e il personaggio
+
+EDTHCLR=Modifica Colori HUD/UI
+
+EDTLB=Modifica Etichette
+
+ADDLB=Aggiungi Etichetta
+ADDLB_H=Aggiunge un'etichetta all'elenco che ti consentirà di modificarla.
+ADDLB_E=Sfortunatamente {} non è un'etichetta valida. :/
+
+RVLLB=Rivela Etichette
+RVLLB_H=Impedisce che le etichette di testo nel gioco vengano risolte e te le mostra.
+
+OWOLB=OwO-Ifica Etichette
+
+LBLST=Elenco Etichette
+
+EDIT=Edita
+
+! {} should be at the end as it could be very long
+RESET=Ripristina a {}
+
+REMOVE=Rimuovi
+
+FOV=Campo Visivo
+
+FOV_TP_VEH=Terza Persona, In Un Veicolo
+FOV_TP_ONF=Terza Persona, A Piedi
+FOV_FP_VEH=Prima Persona, In Un Veicolo
+FOV_FP_ONF=Prima Persona, A Piedi
+FOV_AIM=Mira
+FOV_SNIP=Campo Visivo Del Cecchino
+
+CAMDIST=Moltiplicatore Distanza Della Camera
+
+2PRSN=Prospettiva in Seconda Persona
+
+! "Heading" as in the rotation
+CAMPUKE=Blocca Direzione Della Camera di Gioco
+
+RDRG=Rendering
+
+VISSTTNGS=Impostazioni Visive
+
+NITEV=Visione Notturna
+
+THERV=Visione Termica
+
+SHDR=Sovrascrivi Shader
+
+DSTSCLMUL=Scala Della Distanza
+
+RDRHDOLY=Renderizza Solo HD
+
+POTAT=Modalità Patata
+POTAT_H=Ripristina la grafica originale del gioco del 2013.
+
+BLKALLDRW=Disabilita Rendering In Grande Parte
+
+LKSTRMFCS=Blocca Focus Dello Streaming
+LKDPOS=Posizione Bloccata
+SELPOS_T=Una volta selezionata una posizione, premi {} per confermarla.
+
+SGMELNG=Imposta Lingua Di Gioco
+SGMELNG_H=Alcune lingue hanno un carattere diverso che viene caricato solo dopo il riavvio del gioco.
+
+STUTFIX=Correggi Lo Stuttering Ad Alti FPS
+STUTFIX_H=Corregge lo stuttering che avviene quando il gioco si avvicina agli 188 FPS
+
+NKBDHK=Disabilita Blocco Della Tastiera
+NKBDHK_H=Ti consente di premere il tasto Windows con GTA in primo piano e interrompe il lag del gioco e conseguente ritardo nella battitura.
+
+DBGNTVS=Sovrascrivi Debug Nativi
+DBGNTVS_H=Implementa e sovrascrive i debug nativi che sono ancora utilizzati in alcuni script del gioco.
+
+! As in "Software Patch"
+PTCHS=Patches
+
+PRJTPOOL=Pool Proiettili
+PTCH_PRJTPOOL_H=Invece di rifiutarsi di generare nuovi proiettili quando il pool di proiettili è pieno, questa patch eliminerà il proiettile più vecchio.
+
+ANAL=Supporto Tastiera Analogica
+ANAL_H=Se hai una tastiera analogica supportata, questo rende possibile per il gioco capire quanto forte stai premendo i tasti.
+ANAL_L=Tastiere Supportate
+
+PRSRSUB=Sottraendo Di Pressione
+PRSRDIV=Divisore Di Pressione
+
+DEV=Dispositivo
+PRSR=Pressione
+
+EJ=Miglioramenti Dell'Iniezione Anticipata
+EJ_H=Miglioramenti di gioco che verranno applicati se Stand viene iniettato all'avvio del gioco.
+
+GMEPOOL=Moltiplicatore Delle Dimensioni Dei Pool Di Gioco
+GMEPOOL_H=Moltiplica la dimensione dei pool per entità, risorse degli script, ecc. Aumenta anche la dimensione del pool di memoria per evitare errori di "memoria insufficiente". Il tentativo di effettuare una registrazione di replay con pool di giochi modificati causerà un crash del gioco.
+
+MEMPOOL=Dimensioni Pool Di Memoria
+
+SETHIPRIO2=Imposta Il Gioco Su Priorità Alta
+SPDUPSTRUP=Velocizza L'Avvio
+SKPGMEITR2=Salta Intro e Licenze
+
+SVMR=Utilizza Reimplementazione Script VM
+SVMR_H=Rimpiazza il tempo dell'esecuzione dello script del gioco con una versione leggermente più ottimizzata.
+
+! Legacy as in "the old way"
+LGCY=Antico
+
+YEET_W=Per chiarire, questo manderà in crash il tuo gioco.
+
+!!!!!!!!!!!!!!!!!!
+!! Game > Radio !!
+!!!!!!!!!!!!!!!!!!
+
+RD=Radio
+
+MBLRD=Radio Mobile
+MBLRD_H=Permette di ascoltare la radio mentre si è a piedi.
+
+LKRD=Blocca Stazione Radio
+LKRD_H=Impedisce qualsiasi modifica alla stazione radio da parte del gioco o di altri giocatori.
+
+RDSTS=Stazioni Radio
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Game > Disables !!
+!!!!!!!!!!!!!!!!!!!!!
+
+DBLES=Disabilitazioni
+
+DGMEINPT=Disabilita Input Di Gioco
+! Preset for Disable Game Inputs
+JUSTMOUSE=Mouse
+DGMEINPT_H_MOUSE=Disabilita la maggior parte degli input di gioco mentre Stand è aperto.
+! Preset for Disable Game Inputs
+CTRLLR=Controller
+DGMEINPT_H_CTRLLR=Disabilita alcuni input di gioco mentre Stand è aperto.
+! Preset for Disable Game Inputs
+CTRLLR_N_TABS=Controller + Schede
+DGMEINPT_H_CTRLLR_N_TABS=Uguale a "Controller" ma disabilita anche gli input dell'accelerazione del veicolo e dei freni.
+DGMEINPT_H_NUMPAD=Abilita tutti gli input di gioco.
+
+DGMEINPT_P=Ti piacerebbe usare il preset {preset} per {disable_game_inputs_path} disattivare gli input di gioco in conflitto mentre stand è aperto?
+
+DSBLPHNE=Non Disturbare
+DSBLPHNE_H=Blocca tutte le telefonate in arrivo.
+
+NCAMSHK=Disabilita Scuotimento Camera
+
+NSTNTJMP=Disabilita Salti Acrobatici
+
+DSBLREC=Disabilita Registrazioni
+DSBLREC_H=Disabilita la possibilità di acquisire clip con l'editor Rockstar.
+
+NCINCAM=Disabilita Camera Cinematografica
+
+NVEHFCSCAM=Disabilita Camera Messa a Fuoco Sui Veicoli
+NVEHFCSCAM_H=Disabilita suggerimento per la camera quando premi il pulsante della camera cinematografica mentre sei in un veicolo vicino a un giocatore amico, ecc.
+
+NIDLECAM=Disabilita Camera Inattività
+
+DSBLRESTRAR=Disabilita Aree Riservate
+DSBLRESTRAR_H=Ciò potrebbe farti non avere armi nelle missioni o addirittura impedirti di unirti alle missioni. ⚠️
+
+NFLTMSC=Disabilita Musica In Volo
+NWNTMSC=Disabilita Musica Livello Ricercato
+
+PRVNUM7SCO=Impedisci Apertura Social Club Con Tastierino Numerico 7
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > Info Overlay !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+HUDINFO=Overlay D'Informazioni
+
+IGTIME=Ora In Gioco
+
+RWTIME=Ora Del Mondo Reale
+
+DPS=Draws Per Secondo
+
+GPUOVHD=Sovraccarico GPU (ms)
+GPUOVHD_H=Quanti millisecondi la tua CPU attende affinché la tua GPU finisca il frame.
+
+TS=Tick Per Secondo
+TS_H=Uguale a fotogrammi al secondo. (FPS)
+
+GEAR=Marcia
+GEAR_R=Retromarcia
+
+RPM=RPM
+
+HQSA=Fattore Di Coda Per L'Host
+HQSA_0=Rockstar ID Più Basso
+HQSA_1=Rockstar ID Più Alto
+HQSA_2=Hash Del Nome Più Basso
+HQSA_3=Hash Del Nome Più Alto
+
+WSPCW=Chi Sta Guardando Chi
+WSPCW_T={spectator} sta guardando {spectatee}
+
+CTRYBRKDWN=Organizza Per Paese
+CTRYBRKDWN_H=Mostra tutti i paesi dei giocatori nella sessione con il numero di giocatori accanto a ciascun paese.
+
+NEPOOL=Eventi Di Rete In Uscita
+
+SRTBYCTRYNME=Ordina Per Nome Paese
+SRTBYCNT=Ordina Per Quantità
+
+ALTDE=Altezza
+GRNDIST=Distanza Dal Terreno
+
+ROT_ENT=Rotazione (Entità)
+ROT_CAM=Rotazione (Camera)
+ROT_X=Inclinazione
+ROT_Y=Rotazione
+ROT_Z=Imbardata (Movimento)
+
+PEDS=Pedoni
+
+VEHS=Veicoli
+
+OBJS=Oggetti
+
+PUPS=Collezionabili
+
+PROJ=Proiettili
+
+SCPROG=Programmi Di Script
+
+SCTHDS=Thread Di Script
+
+EHLT=Entità Manipolate Nell'Ultimo Tick
+
+NGILT=Native Invocate Da GTA Nell'Ultimo Tick
+
+NSILT=Native Invocate Da Stand Nell'Ultimo Tick
+
+CTRLREQS=Richiesta Di Controllo
+
+FIBS=Fibre
+
+STH=Gestori di Tick Script
+
+PRSNTHDLS=Disegna Gestori
+
+! "Keep-Alive" may be kept as-is, as it's a rather technical term/concept.
+KACONS=Connessioni Keep-Alive
+
+!!!!!!!!!!!!!!!!!!!!
+!! Game > Minimap !!
+!!!!!!!!!!!!!!!!!!!!
+
+MINIMAP=Minimappa
+
+SLEEK=Minimappa Elegante
+
+DNWINVI=Disabilita L'Indicatore Nuovi Inviti
+DNWINVI_H=Disabilita l'indicatore dei nuovi inviti accanto alla mappa e sull'app elenco lavori.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > AR Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ARNOTIFS=Notifiche AR
+
+DBGMODE=Modalità Debug
+
+STATSCLE=Scala Statica
+DYNSCLE=Scala Dinamica
+DYNSCLG=Scalatura Dinamica
+
+HOROFF=Scostamento Orizzontale
+VERTOFF=Scostamento Verticale
+DPHOFF=Scostamento Profondità
+
+FPHOROFF=Scostamento Orizzontale In Prima Persona
+FPVERTOFF=Scostamento Verticale In Prima Persona
+FPDPHOFF=Scostamento Profondità In Prima Persona
+
+RESVRDTOPSPC=Spazio Superiore Riservato
+
+ROTMODE=Modalità di Rotazione
+ARNOTIFS_ROTMODE_0=Entità
+ARNOTIFS_ROTMODE_1=Entità, Includendo Inclinazione
+ARNOTIFS_ROTMODE_2=Camera
+ARNOTIFS_ROTMODE_3=Camera, Includendo Inclinazione
+
+ENSTXTREAD=Garantisci Leggibilità Del Testo
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Credits !!
+!!!!!!!!!!!!!!!!!!!!!
+
+CRED=Crediti
+
+CRED_Pocakking=Ha creato BigBaseV2, che è stato un ottimo punto di partenza.
+CRED_QuickNET=Ha condiviso la sua conoscenza di GTA e C++ e ha risposto a domande stupide.
+CRED_UPD=Ha aiutato a mantenere aggiornato il menu condividendo mappe incrociate.
+CRED_alloc8or=Mantiene il suo DB nativo e condivide molti dati utili.
+CRED_SirMestre=Ha creato LittleInjector, che ha aiutato nella creazione del Launchpad.
+CRED_Give-Two=Ha creato ScriptHookV un'implementazione, che ha aiutato con il rendering di DirectX.
+CRED_gir489=Ha condiviso la sua conoscenza di GTA e ha creato bigbasev2-fix.
+
+! Check the "Languages" section at https://en.wikipedia.org/wiki/Fork_(software_development)
+CRED_Ryan=Ha creato Pluto, la diramazione di Lua che noi usiamo.
+
+CRED_BE=Ha aiutato a rendere possibile l'utilizzo di Stand nonostante BattlEye.
+
+CRED_UPX=Consente alla DLL Stand di essere più piccola di quanto non sia in realtà.
+CRED_UnknownCheats=Diamanti nel fango.
+CRED_StackOverflow=Naturalmente.
+
+CRED_LANG=Traduttori
+
+CRED_Thimo=Mantiene la traduzione Olandese di Stand.
+CRED_moue=Mantiene la traduzione Lituana di Stand.
+CRED_aeronyx=Mantiene la traduzione Portoghese di Stand.
+CRED_zzzz=Mantiene la traduzione Cinese di Stand.
+CRED_IceDoomfist=Mantiene la traduzione Coreana di Stand.
+CRED_99Anvar99=Mantiene la traduzione Russa di Stand.
+CRED_Lancito01=Mantiene la traduzione Spagnola di Stand.
+CRED_Itreax=Mantiene la traduzione Francese di Stand.
+CRED_Emre=Mantiene la traduzione Turca di Stand.
+CRED_DumbBird=Mantiene la traduzione Polacca di Stand.
+CRED_JA=Mantiene la traduzione Giapponese di Stand.
+CRED_VI=Mantiene la traduzione Vietnamita di Stand.
+CRED_IT=Mantiene la traduzione Italiana di Stand.
+
+MISC=Varie
+
+CRED_YOU=... e tu!
+CRED_YOU_H=Sì, ricevi un trofeo di partecipazione. Ma sul serio, grazie per il supporto a Stand, la segnalazione dei bug e i suggerimenti di nuove funzionalità!
+
+!!!!!!!!!!!
+!! Stand !!
+!!!!!!!!!!!
+
+CMDSCRPT=Scripts Della Command Box
+
+ASI=Mods ASI
+ASI_H=Ti consente di utilizzare le mod ASI con l'implementazione dello ScriptHookV di Stand.
+ASICE=Sembra che questa mod ASI non sia compatibile o abbia appena terminato il suo lavoro molto rapidamente.
+ASI_D_T=Sembra che questa mod ASI non sia stata arrestata correttamente.
+
+ASI_TMP=Usa Cartella Temp
+ASI_TMP_H=Ciò consente di riavviare le mod ASI che non supportano il loro arresto, ma potrebbe far sì che le mod ASI leggano/scrivano configurazioni nella cartella "temp".
+
+ASI_DOC=Inganna Controlli Online
+ASI_DOC_H=Ti consente di utilizzare mod ASI che si rifiutano di funzionare quando sei online.
+
+LUA=Scripts Lua
+LUA_H=Ti consente di eseguire script scritti per Stand in Lua e/o Pluto.
+
+LUA_RNNG2=Eseguendo {}
+LUA_START=Avvia Script
+LUA_STOP=Arresta Script
+
+CMPTLY=Livello Di Compatibilità
+CMPTLYS=Livelli Di Compatibilità
+
+RESTRCS=Restrizioni
+
+LUA_REPODEV=Stai modificando uno script che è stato installato tramite la repository, quindi fai attenzione perché le tue modifiche verranno sovrascritte dal prossimo aggiornamento dello script.
+
+FILEGON=Il file non esiste più.
+
+LUACFGPRST_0=Utente
+
+! Currently unused.
+LUACFGPRST_1=Utente Facilmente Infastidito
+
+LUACFGPRST_2=Sviluppatore
+
+DEVHINT=Sembra che tu stia sviluppando uno script Lua. Prendi in considerazione l'utilizzo del preset "sviluppatore" in Script Lua > Impostazioni in modo da conoscere potenziali problemi.
+
+DISINACC=Disabilita Accesso Internet
+
+FRCSILNTSTRT=Forza Avvio Silenzioso
+FRCSILNTSTP=Forza Arresto Silenzioso
+ENFRCSILNTSTRT=Applica Avvio Silenzioso
+ENFRCSILNTSTP=Applica Arresto Silenzioso
+
+YES_NOTIFY=Si + Notifica
+
+WRNOS=Avvisami prima di eseguire script pericolosi
+LUA_W_OS=Questo script contiene codice che richiede l'accesso diretto al tuo sistema. Non procedere se non ti fidi della sua fonte.
+
+WRNMNY=Avvisami prima di eseguire Money Scripts
+LUA_W_MNY=Questo script è legato al denaro. Non possiamo garantire che il tuo account non verrà bannato qualche tempo dopo aver utilizzato questo script (perché i ban sono ritardati nel tempo) poiché non eseguiamo test di sicurezza sui contenuti generati dagli utenti.
+
+LUA_SCAM=Se hai pagato per questo script, SEI STATO TRUFFATO! Il 99% dei contenuti è disponibile gratuitamente nel nostro repository o su Discord. Hai pagato truffatori che lo rubano, non forniscono ulteriore valore e non pagano i creatori originali.
+
+4DEV=Per Gli Sviluppatori
+
+REPO=Repository
+REPO_H_LUA=La repository ti offre un facile accesso a una selezione di script lua.
+
+REPO_P_H=L'hai installato dalla repository. Stand lo manterrà aggiornato.
+
+REPO_MISNGLCL=Nel pacchetto {} mancano file locali, è in corso un aggiornamento sperando di risolvere il problema.
+REPO_DLFAIL=Impossibile scaricare {file} per il pacchetto {package}
+
+SECCONT_NCRED=Per accedere a questo contenuto protetto, Stand deve essere attivato.
+SECCONT_NAVAIL=Impossibile accedere a questo contenuto protetto.
+
+VER=Versione
+ATR=Autore
+
+DEPS=Dipendenze
+DEP_M_O=Dipendenza impostata come installata manualmente.
+DEP_M_F=La dipendenza non è più contrassegnata come installata manualmente.
+
+HELP=Ottieni Aiuto Per Stand
+
+WEB2=Interfaccia Web
+WEB2_H=L'interfaccia web ti permette di utilizzare Stand dal tuo browser e anche dal tuo smartphone.
+WEB=Apri Interfaccia Web
+WEB_T=Stai utilizzando l'interfaccia web ora. :O
+WEB_T_L=Non stai più utilizzando l'interfaccia web.
+
+RELAY_C=Connessione a {}...
+RELAY_E=Impossibile connettersi al relè ({}).
+RELAY_L=Connessione al relè interrotta.
+
+TESTS=Esperimenti
+
+CLRNOTIFS=Cancella Notifiche
+CLRNOTIFS_H=Ripulisce il sistema di notifica di Stand.
+
+EMPTYLOG=Svuota Log.txt
+EMPTYLOG_H=Pulisce il tuo %appdata%/Stand/Log.txt.
+EMPTYLOG_T=Log svuotato :)
+
+FNDCMD=Trova Comando
+FNDCMD_H=Ti consente di trovare i comandi in Stand usando nome e testo d'aiuto.
+
+CTXSTAR=Salva
+CTXSTAR_H=Salva questo comando in modo da poterlo trovare in {}.
+
+CMDSTARS=Comandi Salvati
+CMDSTARS_H=Elenca tutti i comandi che hai salvato utilizzando la rispettiva opzione nel menu contestuale.
+
+CON=Console
+
+LNDFT=Comandi Con Stato Non Predefinito
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST=Genera Funzionalità (it).txt
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_H=Salva tutti i comandi attualmente disponibili in %appdata%/Stand/Features (it).txt con il loro testo d'aiuto e la sintassi.
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_T=Elenco delle funzionalità salvate in %appdata%/Stand/Features (it).txt :D
+
+FTRLST_1OPTN=Un Opzione
+FTRLST_OPTNS={} Opzioni
+FTRLST_MOPTNS={} Più Opzioni
+
+PERMS=Permessi
+FTRLST_OTHP=Può essere utilizzato da altri giocatori con l'autorizzazione {}.
+FTRLST_R=Esclusivo per l'Edizione Regolare
+FTRLST_U=Esclusivo per l'Edizione Ultimate
+
+PERM_F=Comandi Amichevoli
+PERM_N=Comandi Neutrali
+PERM_S=Comandi Di Spawn
+PERM_R=Comandi Rudi
+PERM_A=Comandi Aggressivi
+PERM_T=Comandi Tossici
+
+UNLD=Arresta Stand
+UNLD_H=Rimuove Stand dal gioco finché non lo re-innietti.
+UNLD_T=Il tuo Stand scompare.
+
+BADBOY=Hai appena provato a espellere un altro Utente Stand che non ha fatto nulla per meritarselo. Per favore, tratta le altre persone come vorresti essere trattato tu. Il tuo Stand sarà nuovamente disponibile in pochi secondi.
+
+NWOOM=La rete non ha memoria sufficiente per un peer. Rimuovi la persona che sta tentando di espellerti o abbandona la sessione.
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! State & Profiles !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+PRFLS=Profili
+PRFLS_H=I profili consentono di salvare e caricare lo stato di tutti i comandi.
+
+NEWPRFL=Crea Profilo
+NEWPRFL_H=Salva lo stato di ogni comando in un nuovo profilo.
+
+DELPRFL_S=Eliminazione del profilo {} riuscita.
+DELPRFL_F=Impossibile eliminare il profilo {}. Prova a eliminare il file manualmente.
+
+LOAD=Carica
+LSTATE=Carica Stato
+LSTATE_H_CTX2=Applica lo stato del tuo profilo attivo a questo comando.
+LSTATE_H2=Applica lo stato di questo profilo per ogni comando.
+LSTATE_T2=Stato applicato dal profilo {}. :)
+LSTATE_T_CTX2=Stato applicato dal profilo {profile} a {command}. :)
+
+SAVE=Salva
+SSTATE=Salva Stato
+SSTATE_H_CTX2=Salva lo stato di questo comando nel tuo profilo attivo.
+SSTATE_H2=Salva lo stato di ogni comando in questo profilo.
+SSTATE_T2=Stato salvato nel profilo {}. :)
+SSTATE_T_CTX=Stato di {command} salvato nel profilo {profile}. :)
+
+AUTOLOAD=Carica All'Iniezione
+
+AUTOSAVE2=Salva Automaticamente
+AUTOSAVE2_H=Mantiene aggiornato questo profilo mentre usi Stand.
+AUTOSAVE2_H_T=Il salvataggio automatico verrà riattivato la prossima volta che inietterai Stand.
+AUTOSAVE2_T=Non è necessario, questo profilo viene salvato automaticamente. :)
+
+GODFLT=Applica Stato Predefinito
+GODFLT_H=Ripristina tutti i comandi al loro stato predefinito.
+GODFLT_T=Stato predefinito applicato. :)
+GODFLT_CTX=Stato predefinito applicato a {}. :)
+
+RGODFLT=Applica Configurazione Predefinita Alle Sottocategorie
+RGODFLT_CTX=Stato predefinito applicato alle sottocategorie di {}. :)
+
+PRFL_H_ACTV=Questo è il tuo profilo attivo.
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Appearance !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+STTNGS_TXT=Carattere & Testo
+
+STFNT=Imposta Carattere
+
+CMBINTXT=Testo D'Input Casella di Comando
+TXT_S=Testo Piccolo
+
+TXTSCL=Scala del Testo
+
+OFF_X=Scostamento X
+OFF_Y=Scostamento Y
+
+TXTBOX=Mostra Riquadri Delimitazione Testo
+
+FNTPRST=Usa Carattere Predefinito
+FNTPRST_H_YAHEI=Il carattere predefinito di Stand.
+FNTPRST_H_NANUMGOTHIC=Carattere ausiliario di Stand per il Coreano.
+FNTPRST_H_BEVIETNAM=Carattere ausiliario di Stand per il Vietnamita.
+
+RLDFNT=Ricarica Carattere
+
+SPRS=Textures
+
+LFTBND=Rilegatura A Sinistra
+LFTBND_1=Solo Attivabili/Disattivabili
+LFTBND_1C=Solo Attivabili/Disattivabili, Compatto
+LFTBND_2=Tutti i Comandi
+LFTBND_2C=Tutti i Comandi, Compatto
+
+RLDSPR=Ricarica Textures
+
+HDR=Banner
+2HIDE=Vattene
+CUS=Personalizzato
+
+FRMINT=Intervallo Fotogrammi
+
+SCRLBR=Barra di Scorrimento
+SCRLBR_1=Abilitato Per Elenchi Lunghi
+
+LSTWDT=Larghezza Elenco
+LSTHHT=Lunghezza Elenco
+
+WDT=Larghezza
+HHT=Altezza
+
+SPCSZE=Dimensione del Distanziatore
+
+LERP=Scorrimento Fluido
+
+BGBLR=Sfocatura Dello Sfondo
+BGBLR_H=Tieni presente che valori più alti sono estremamente impegnativi per la tua GPU.
+HDR_BGBLR_H=Dovrebbe essere abilitato solo per i banner con trasparenza perché sarebbe uno spreco di risorse produrre un effetto visivo che sarebbe completamente nascosto.
+
+INFOTXT=Testo Informativo
+
+ALGN=Allineamento
+TA=Allineamento Testo
+
+ALIGN_TL=A Sinistra in Alto
+ALIGN_TC=In Alto al Centro
+ALIGN_TR=In Alto a Destra
+ALIGN_CL=In Centro a Sinistra
+ALIGN_CC=In Centro
+ALIGN_CR=In Centro a Destra
+ALIGN_BL=In Basso a Sinistra
+ALIGN_BC=In Basso al Centro
+ALIGN_BR=In Basso A Destra
+
+DRPSHDW=Ombreggiatura Del Testo
+
+SHWNME=Mostra Nome
+SHWLICON=Mostra Icone a Sinistra
+SHWRICON=Mostra Icone a Destra
+
+ICUTXTCLR=Icone Utilizzano Colore del Testo
+
+ADDRBAR=Barra Degli Indirizzi
+
+SHWCRLSTNLY=Mostra Solo L'Elenco Corrente
+
+ADDRSEP=Separatore D'Indirizzi
+
+WDTAFFBSCRLBR=Larghezza Influenzata Dalla Barra di Scorrimento
+
+WDTAFFBCLMNS=Larghezza Influenzata Dalle Colonne
+
+CTX_ADDR=Copia Indirizzo
+CTX_ADDR_0=Mio Formato
+CTX_ADDR_1=Formato Predefinito
+CTX_ADDR_2=Formato API
+CTX_ADDR_3=Collegamento Focus
+
+BRD=Bordo
+
+RNDD=Arrotondato
+
+MAXCLMNS=Colonne Massime
+
+MNUHGT=Comandi Massimi Visibili
+
+CRS=Cursore
+
+SCRLGP=Spazio Di Scorrimento
+CRSPAD_H=Imposta il numero minimo di comandi che vedrai sotto o sopra la tua selezione a meno che tu non sia all'inizio o alla fine di un elenco.
+
+CMDINFOTXT=Testo Informazioni Comandi
+
+BLWTBS=Sotto Schede
+
+RPOS_L=Sinistra
+RPOS_B=Sotto
+RPOS_R=Destra
+RPOS_T=Sopra
+
+! As in the distance between menu components
+PDDGN=Spaziatura
+
+SHWHLPTXT=Mostra Testo D'Aiuto
+
+SHWSYNTX=Mostra Sintassi Dei Comandi
+
+SHWSLDBHV=Indica Comportamento del Cursore di Scorrimento
+
+SHWOTHP=Indica Se Altri Giocatori Possono Usarlo
+
+SHWCMDOWNR=Mostra Proprietari Degli Script
+SHWCMDOWNR_T=Questo comando è stato aggiunto da {}.
+
+NOTFS=Notifiche
+
+TYP=Tipo
+STNDNTF_M=Stand, Vicino Alla Minimappa
+STNDNTF_C=Stand, Posizione Personalizzata
+
+CUSTPOS=Posizione Personalizzata
+CUSTPOS_H=Questo avrà effetto solo con il tipo impostato su "Stand, posizione personalizzata".
+
+INVFLOW=Inverti Flusso
+
+BRDCLR=Colore Bordo
+
+FLSHCLR=Flash Colore
+
+FLSHNTF=Flash Notifica
+
+TIMNG=Timing
+READSPD=Velocità Di Lettura (WPM)
+READSTRT=Ritardo Avvio Lettura
+MINDUR=Durata Minima (ms)
+MAXDUR=Durata Massima (ms)
+SAMPNOT=Mostra Un Esempio Di Notifica
+
+SIZE_S=Piccola
+SIZE_M=Media
+SIZE_L=Larga
+
+MAXSHWMCHCMD=Numero Massimo di Comandi Corrispondenti Visualizzati
+
+KPDRFCLS=Mantieni Le Bozze Quando Chiuso
+
+SHWBI=Mostra Le istruzioni Per i Pulsanti
+
+SHWCRSPOS=Mostra Posizione Cursore
+SHWCRSPOS_H=Attiva/disattiva la visibilità dell'indicatore di posizione del cursore nell'angolo in alto a destra dell'interfaccia utente di gioco di Stand.
+
+CRSPOSIDIV=Posizione Del Cursore Include i Divisori
+
+! Root as in the root of the command tree, which in this context is the text that reads "Stand 0.69 (Regular)" etc.
+RN=Nome Dell'Intestazione
+
+RN_RNDBOOL=Rappresenta la squadra alla quale il tuo account Stand è stato casualmente assegnato.
+RN_100=Per gli utenti di Stand 100(.x).
+RN_EA=Per essere stato utente prima di Stand 100.
+RN_U=Per essere un utente della Ultimate Edition.
+RN_EU=Per aver sprecato 100 euro sulla prima Ultimate/Toxic Edition.
+
+BKRST=Indietro Reimposta Il Cursore
+BKRST_H=Posiziona il cursore in cima all'elenco quando si preme Indietro mentre non c'è nulla a cui tornare.
+
+BKCLS=Indietro Chiude Il Menu
+BKCLS_H=Consente di chiudere l'interfaccia utente di gioco di Stand premendo Indietro quando non c'è nulla a cui tornare.
+
+INJOPEN2=Apri Dopo L'Inniezione
+
+PRFILVAL=Precompilare il Valore Corrente Per la Casella di Comando
+
+CMDTP_S=Cursori Di Scorrimento
+CMDTP_S_N=Cursori Numerici
+CMDTP_AV=Inputs Di Testo
+
+SELDIV=Divisori Selezionabili
+SELNA=Cursori N/A Selezionabili
+
+RHTBNDVAL=Valore Verso Destra
+
+LANG=Lingua
+LANG_H=Se non riesci a capire la lingua in cui è stato scritto questo testo, magari cambiala.
+LANG_H2=Questa traduzione attualmente non è mantenuta. Contattaci se pensi di poterlo aggiornare.
+
+STRMPRF=Rendering a Prova di Streaming
+STRMPRF_H=Impedisce che Stand sia visibile al software di streaming, se si utilizza DirectX/acquisizione di giochi.
+
+ENTPREVS=Anteprime Delle Entità
+DENTPREVS=Disabilita Anteprime Delle Entità
+OPQ=Opache
+ENTPREVROTSPD=Velocità Di Rotazione
+ADDPREVDISTP=Distanza Personaggio Aggiuntiva
+ADDPREVDISTO=Distanza Oggetto Aggiuntiva
+ADDPREVDISTV=Distanza Veicolo Aggiuntiva
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+CLRS=Colori
+
+KSPD=Intervallo Ripetizione Tasti
+KSPD_H=L'intervallo in cui viene ripetuto l'input da tastiera mentre tieni premuto un tasto.
+
+KHSPD=Intervallo di Ripetizione Alla Pressione Prolungata Del Tasto
+KHSPD_H=L'intervallo con il quale l'input da tastiera viene ripetuto quando tieni premuto un tasto per un po'.
+
+TKSPD=Intervallo Ripetizione Tasti Per Le Schede
+
+WRPINTHLD=Intervallo Prima Di Ricominciare Lo Scorrimento Elenco
+
+IPT=Input
+
+KSCHM=Schema D'Input Tastiera
+PRSTS=Predefiniti
+KSCHM_A=Flessibile
+KSCHM_0=No Tastierino Numerico
+KSCHM_1=Tastierino Numerico
+KSCHM_1_E=Per favore premi prima un tasto qualsiasi sul tastierino numerico per dimostrare di averne uno. :?
+
+QWQCTX=Tasti Rapidi Del Menu Contestuale
+
+MOUSE=Supporto Mouse
+MOUSE_H=Tieni presente che questo non funziona con il metodo d'input "Windows" poiché esso centra costantemente il cursore.
+
+MOUSEFOCUS=Imposta Posizione Del Cursore Sulla Navigazione Senza Mouse
+
+MOVWTHMSE=Muovi Con Mouse
+
+CTRLLRSPPRT=Supporto Controller
+
+CTRLLRSCHM=Schema D'Input Controller
+
+HDENFO=Nascondi Informazioni
+HDENFO_H=Questo può aiutarti nel evitare di mostrare informazioni sensibili mentre condividi su schermo Stand.
+
+RDCTD=[Nascosto]
+
+HDENME=Nascondi Nome Non Alterato
+HDENME_H=Questo si riferisce al nome mostrato nell'elenco delle informazioni sui giocatori e non è influenzato da "Altera il Nome Degli Altri Giocatori".
+
+HDERID=Nascondi ID Rockstar
+HDEIP=Nascondi Indirizzo IP
+HDEGIP=Nascondi GeoIP
+
+B_OC=Apri/Chiudi Menu
+B_OC_1=Apri/Chiudi Menu 1
+B_OC_2=Apri/Chiudi Menu 2
+B_RU=Scheda Precedente
+B_RD=Scheda Successiva
+B_MU=Su
+B_MD=Giù
+B_ML=Sinistra
+B_MR=Destra
+B_MC=Clic
+B_MB=Indietro
+
+DISCRP=Discord Rich Presence
+
+CLRCMDS=Colore Comandi
+PRVWCLRTXR=Anteprima Colore Nella Texture
+PRCWCLRLST=Anteprima Colore In Lista
+
+SFX=Effetti Sonori
+
+MNUNVRMD=Promemoria Per la Navigazione del Menu
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings > Session Joining !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSJNG=Unione Alla Sessione
+
+SPCUCON=Connessioni Speculative
+SPCUCON_H=Tenta di velocizzare l'unione alle sessioni tramite Stand connettendosi speculativamente agli host e memorizzando nella cache alcuni dati.
+
+AUTOCHNGTRGT=Cambia Automaticamente Modalità di Mira
+AUTOCHNGTRGT_H=Questo si applica solo quando ci si unisce alle sessioni tramite Stand. I metodi di join senza finestre di dialogo lo fanno sempre.
+AUTOCHNGTRGT_T=Modalità di mira cambiata in {}.
+AUTOCHNGTRGT_T_0=mira assistita
+AUTOCHNGTRGT_T_1=Mira Libera
+
+REJBLK=Controlla Se l'Unione Avrebbe Successo
+REJBLK_H=Interrompe il tentativo di unione se l'host non consente l'unione, ad es. perché la sessione è piena.
+REJBLK_T=Sembra che l'host non ti consenta di unirti in questo momento.
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Tunables !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+TNBL=Regolazioni
+TNBL_H=Ti consente di abilitare alcune delle cose che Rockstar abilita solo per determinate settimane di eventi.
+
+NINSURPAY=Disabilita Pagamenti All'Assicurazione
+NINSURPAY_H=Evita di dover pagare l'assicurazione quando distruggi i veicoli personali di altri.
+
+TNBL_HLWN=Evento di Halloween
+
+TNBL_PYTE=Piante Di Peyote
+
+!!!!!!!!!!!!!!!!!!!!
+!! World > Editor !!
+!!!!!!!!!!!!!!!!!!!!
+
+EDTR=Editor
+
+ROT_L=Ruota a Sinistra
+ROT_R=Ruota a Destra
+
+TOOLS=Strumenti
+
+TP2LKAT=Teletrasportami Dove Sto Guardando
+DELSPWD=Elimina Tutto il Generato
+
+FCSIMNU=Focus In Stand
+
+!!!!!!!!!!!!!!!!!!
+!! Asset Hashes !!
+!!!!!!!!!!!!!!!!!!
+
+AST=Hash Delle Risorse
+
+ASTFIX=Correggi Hash Delle Risorse
+ASTFIX_H=Ti consente di partecipare a sessioni con risorse modificate, che normalmente mostrerebbero un errore di risorse incompatibili.
+
+ASTCRC=Checksum Risorse
+
+ASTSET=Imposta Checksum Risorse
+ASTSET_H=Ti consente d'inserire un checksum delle risorse personalizzato (fino a 8 cifre esadecimali) per limitare il matchmaking e le sessioni.
+ASTSET_T=Impostato il checksum delle risorse su {}.
+
+ASTRST=Reimposta il Checksum delle Risorse
+
+OVRXTR=Sostituisci checksum Aggiuntivo
+
+XTRCRC=Checksum Aggiuntivo
+XTRCRC_H=Ti consente d'inserire un checksum aggiuntivo personalizzato (fino a 8 cifre esadecimali) per limitare il matchmaking e le sessioni.
+
+XTRCRC_PRSTS=Checksum Aggiuntivo: Predefiniti
+
+!!!!!!!!!!!!!!!!!
+!! Custom DLCs !!
+!!!!!!!!!!!!!!!!!
+
+CUSTDLC=DLCs Personalizzati
+CUSTDLC_H=Ti consente di caricare facilmente DLC personalizzati come veicoli aggiuntivi.
+
+! Don't translate the folder names
+CUSTDLCS_OPNFLD=Apre la cartella "Custom DLCs", che puoi trattare come la cartella "dlcpacks" di GTA, tranne che la registrazione e il caricamento dei DLC qui sono facili come un clic.
+
+CUSTDLC_ETY=Il DLC è stato caricato, ma non è stato trovato alcun contenuto generabile.
+
+CUSTDLC_SPF=Altera Modelli
+CUSTDLC_SPF_H=Copia i modelli dai DLC personalizzati ai modelli effettivamente presenti nel gioco in modo che i giocatori senza il DLC personalizzato possano comunque vedere qualcosa.

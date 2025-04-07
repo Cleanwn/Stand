@@ -1,0 +1,65 @@
+local { base64, crypto } = require "*"; dofile("u64_dyn.lua");
+local ints = {}; local bools = {};
+local function decl_int(name, value) ints:insert({ hash = crypto.joaat(name), value = value }) end
+local function decl_bool(name, value) bools:insert({ hash = crypto.joaat(name), value = (value ? 1 : 0) }) end
+
+decl_int("slots threshold help text", 10_000_000) -- 50_000_000
+decl_int("slots threshold", 10_000_000) -- 50_000_000 - 2_500_000
+decl_int("MAX_INTERIOR_ID", 171)
+--decl_bool("DISABLE_LUAS", false)
+--decl_bool("DISABLE_ASIS", false)
+--decl_bool("DISABLE_SESSION_SPOOFING", false)
+--decl_bool("DISABLE_BLACKJACK", false)
+--decl_bool("DISABLE_ROULETTE", false)
+--decl_bool("CHAIR_AXE", false)
+--decl_bool("ALLOW_OBF_COMMA_NUMBERS", false)
+--decl_bool("ALLOW_OOB_WHEELS", false)
+--decl_bool("DISABLE_SLOTS", false)
+decl_bool("spawn.try_same_thread", true)
+--decl_bool("spawn.randomise_order", false)
+decl_bool("ffi_warning_required.gta5.special", true)
+--decl_bool("ffi_warning_required.gta5", false)
+decl_bool("ffi_warning_required.other", true)
+decl_bool("lua.memory.disallow_write_in_game_process", false)
+decl_bool("gh-via-jsdelivr", true)
+--decl_bool("nat_open_as_host.others", false)
+--decl_bool("block CROAMING_JOIN_BUBBLE_ACK_MSG outright", false)
+decl_bool("ignore_stand_for_classification", false)
+decl_bool("scripts can pop all detections", true)
+decl_bool("handshake can be pending for aggressive action", true) -- disable faulty logic in 24.8.6
+
+local data = "\x00" -- ints are stored here for 24.8.1 and below
+--[[local data = pack_u64_dyn(#ints)
+for ints as int do
+	data ..= string.pack("I4", int.hash)
+	data ..= string.pack("i8", int.value)
+end]]
+data ..= pack_u64_dyn(#bools)
+for i = 1, #bools do
+	if (i - 1) % 8 == 0 then
+		local flag = 0
+		for j = 0, 7 do
+			flag <<= 1
+			if i + j <= #bools then
+				flag |= bools[i + j].value
+			end
+		end
+		data ..= string.pack("I1", flag)
+	end
+	data ..= string.pack("I4", bools[i].hash)
+end
+data ..= pack_u64_dyn(#ints)
+for ints as int do
+	data ..= string.pack("I4", int.hash)
+	data ..= pack_i64_dyn(int.value)
+end
+
+data = base64.encode(data, false)
+io.contents("../stand.gg/api/blobfish.txt", data)
+io.contents("../Stand/blobfish_builtin.hpp", [[#pragma once
+
+namespace Stand
+{
+	inline const char blobfish_builtin[] = "]]..data..[[";
+}
+]])

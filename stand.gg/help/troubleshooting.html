@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Troubleshooting Stand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+	<link href="/halfmoon-config.css" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+	<div class="page-wrapper with-navbar">
+		<nav class="navbar">
+			<div class="container-xl">
+				<a class="navbar-brand" href="/">Stand</a>
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="/account/">Account</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/help/">Help</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content-wrapper">
+			<div class="container-xl">
+				<div class="content">
+					<h1>Troubleshooting Stand</h1>
+					<h3>The Launchpad doesn't open</h3>
+					<ul>
+						<li>
+							"This app can't run on your PC"
+							<ul>
+								<li>If an antivirus tampered with it, it will likely be an empty file, causing Windows to show this error.</li>
+							</ul>
+						</li>
+						<li>
+							It never opened before
+							<ul>
+								<li>Make sure you have the <a href="https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-web-installer" target="_blank" rel="noreferrer noopener">.NET Framework 4.7.2 Runtime</a> installed.</li>
+								<li>Right-click the Launchpad and click "Troubleshoot compatibility."</li>
+							</ul>
+						</li>
+						<li>
+							It opened before
+							<ul>
+								<li>An abrupt shutdown like a BSOD might've corrupted its configuration. Deleting the "Stand Launchpad" folders in your <code>%localappdata%\Calamity,_Inc</code> folder will reset the configuration, hopefully fixing this problem.</li>
+							</ul>
+						</li>
+					</ul>
+					<h3>Injecting Stand has no effect</h3>
+					<ul>
+						<li>Click "Open Stand Folder" in the Launchpad, open the "Bin" folder, delete the Stand DLL in there, then try again.</li>
+						<li>Make sure you have the <a href="https://aka.ms/vs/16/release/vc_redist.x64.exe" target="_blank" rel="noreferrer noopener">Visual C++ Redistributables</a> installed.</li>
+						<li>Make sure you have the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48234" target="_blank" rel="noreferrer noopener">Universal CRT Runtime</a> installed.</li>
+					</ul>
+					<h3>My issue was not addressed</h3>
+					<ul>
+						<li>Disable your antivirus and see if it works. If it does, set up exclusions such that it continues working when your AV is enabled.</li>
+						<li><a href="/account" target="_blank" rel="noreferrer noopener">Join us on Discord or Guilded</a> and find help in a support channel.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

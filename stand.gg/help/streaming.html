@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Streaming With Stand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+	<link href="/halfmoon-config.css" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+	<div class="page-wrapper with-navbar">
+		<nav class="navbar">
+			<div class="container-xl">
+				<a class="navbar-brand" href="/">Stand</a>
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="/account/">Account</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/help/">Help</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content-wrapper">
+			<div class="container-xl">
+				<div class="content">
+					<h1>Streaming With Stand</h1>
+					<p>We understand that GTA Online's community is rotten, and unfortunately most software similar to ours is poorly made, thus giving you the choice between being protected or playing the game. Here at Stand, we strive to create high-quality software with reasonable defaults such that it is viable for an enhanced yet legitimate experience.</p>
+					<p>However, we also understand that our software is controversial and likely prohibited by a contract you have agreed to, and while we are confident in the quality of what we have created, you'd still be taking a risk, even with all the options we've added that can make Stand <a href="https://www.youtube.com/watch?v=MqjpqJqNXDg" target="_blank" rel="noreferrer noopener">completely invisible to viewers</a>.</p>
+					<h2>Making Stand Invisible</h2>
+					<p>Once you've got Stand all set up and completed the tutorial, you'll want to head over to <b>Stand &gt; Settings &gt; Appearance &gt; Stream-Proof Rendering</b> and enable it to make sure our stream-proof DirectX hook works for you.</p>
+					<p>While Stream-Proof Rendering makes the most noticeable difference, there still are many small things that are enabled by default that may be noticed; for that, we have created a <a href="/dl/profiles/Streaming.txt" download>streaming profile</a> that disables all of these things. To use it, drop it into your Profile folder, load it, and make sure to set it as your active profile, so it is automatically loaded the next time you inject Stand.</p>
+					<p>Some of the things that are disabled with it:</p>
+					<ul>
+						<li>Stopping the game from bailing when you've been in the clouds for 60 seconds (Online > Protections > Block Bailing > Other Reasons)</li>
+						<li>Hiding chat advertisements locally (Online > Chat > Reactions > Advertisement)</li>
+						<li>Menu navigation sounds (Stand > Settings > Sound Effects)</li>
+					</ul>
+					<h2>Covert Injection</h2>
+					<p>We can only recommend to not use desktop capture, as there's little we can do to hide Stand from it. However, you might find some use in checking out <a href="alternative-injection">alternative injection methods</a>, for example using the DLL so you don't need to have the Launchpad on your PC, if you don't have a place to hide it. Stand itself will store itself in <code>%appdata%\Stand</code> and not be noticeable in your game folder, unless you use the auto-inject DLL.</p>
+					<h2>On using Stand while streaming</h2>
+					<p>Obviously, you want to ignore that it's there and just let it enhance the game, block kicks and crashes, etc.</p>
+					<p>Putting your attention on something that's not the game or the chat might be noticeable, unless there's a distraction like a cutscene.</p>
+					<p>Even if you do have a distraction, you'll want to stay away from most features, as most things are noticeable. With some notable exceptions being:</p>
+					<ul>
+						<li>Protections / Event Reactions</li>
+						<li>Player Bar</li>
+						<li>Info Overlay</li>
+						<li>Anything another modder in session may have reasonably done to you.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

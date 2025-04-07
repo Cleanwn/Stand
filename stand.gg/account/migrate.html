@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Migrate License Key | Stand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+	<link href="/halfmoon-config.css" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+	<div class="page-wrapper with-navbar">
+		<nav class="navbar">
+			<div class="container-xl">
+				<a class="navbar-brand" href="/">Stand</a>
+				<ul class="navbar-nav">
+					<li class="nav-item active"><a class="nav-link" href="/account/">Account</a></li>
+					<li class="nav-item"><a class="nav-link" href="/help/">Help</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content-wrapper">
+			<div class="container-xl">
+				<div class="content">
+					<h1>Migrate Stand License Key</h1>
+					<p>Please enter the license key that you got from your reseller.</p>
+					<form onsubmit="submit_migrate();return false;" method="GET" action="/bad_browser.txt">
+						<p><input id="ogkey" type="text" class="form-control" placeholder="Original license key" required pattern="(STAND|Stand-|Stand-Activate-)?[a-z0-9]{30,31}" title="Stand License Key" /></p>
+						<div id="key2" class="d-none">
+							<p>Please enter your current license key, found in <code>%appdata%\Stand\License Key.txt</code>.</p>
+							<p><input type="text" class="form-control" placeholder="Current license key" pattern="(STAND|Stand-|Stand-Activate-)?[a-z0-9]{31}" title="Stand Legacy License Key" /></p>
+						</div>
+						<p><input type="submit" class="btn btn-primary" value="Proceed" /></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/common.js"></script>
+	<script>
+		if(typeof localStorage.getItem("account_id")=="string")
+		{
+			location.href=".";
+		}
+
+		let migrate_pending = false;
+		function submit_migrate()
+		{
+			if(migrate_pending)
+			{
+				return;
+			}
+			migrate_pending = true;
+			let license_key = simplify_key(document.querySelector("#ogkey").value);
+			if(license_key.length!=31)
+			{
+				if(license_key.length==30)
+				{
+					location.href="register";
+				}
+				return;
+			}
+			$.post("/api/migrate",{
+				license_key,
+				license_key_2: simplify_key(document.querySelector("#key2 input[type='text']").value),
+			}).done(function(data)
+			{
+				if(data.error)
+				{
+					if(data.error=="need2")
+					{
+						document.querySelector("#key2 input[type='text']").setAttribute("required", "required");
+						document.querySelector("#key2").classList.remove("d-none");
+						document.querySelector("#key2 input[type='text']").focus();
+					}
+					else
+					{
+						alert(data.error);
+					}
+					return;
+				}
+				store_account_data(data);
+				location.href="created";
+			}).fail(function()
+			{
+				alert("Unforseen error");
+			}).always(function()
+			{
+				migrate_pending = false;
+			});
+		}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>

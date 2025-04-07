@@ -1,0 +1,19 @@
+util.require_natives("2944b")
+
+menu.action(menu.my_root(), "Bullet Damage", {}, "", function ()
+    local end_str = "\n"
+
+    for util.get_weapons() as weapon do
+        local hash = weapon.hash
+        local damage = WEAPON.GET_WEAPON_DAMAGE(hash, 0)
+        local weapon_name = util.reverse_joaat(hash)
+
+        assert(weapon_name ~= "", $"weapon_name is undefined. {hash}, {weapon.label_key}")
+
+        if damage ~= 0.0 then
+            end_str ..= '{ ATSTRINGHASH("' .. util.reverse_joaat(hash) .. '"), ' .. damage .. "f },\n"
+        end
+    end
+
+    util.toast(end_str, TOAST_LOGGER)
+end)

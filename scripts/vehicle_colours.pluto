@@ -1,0 +1,10 @@
+local json = require("json")
+local clrs = io.open("./vehicleColors.json", "r"):read("*a") |> json.decode -- Change to HTTP in 0.9.0, vehicleColours is from DurtyFree
+
+local output = ""
+
+for clrs.PrimarySecondaryColors as colour do
+	output ..= $'\{ {colour.Index}, "{colour.ColorName}" },\n'
+end
+
+output |> print

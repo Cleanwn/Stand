@@ -1,0 +1,5658 @@
+! Thanks for helping with the translation of Stand into your language!
+! Before you begin, I guess you need to know a little about the project so you can work efficiently.
+! Lines starting with "# LABEL=" need to be translated except for the "LABEL=" part and to indicate that it has been translated, you need to remove the "# ", which might be a bit annoying at first, but this will become practical for updating the translation.
+! There are some things that you shouldn't translate:
+! - The name "Stand"
+! - Pairs of curly brackets, e.g. {} or {player}
+! - Folders or files like %appdata%/Stand/Theme
+! - Emojis (unless there's a culturally different meaning)
+! - Technical Terms, i.e. anything that would make less sense if translated
+! Alright, I think you're ready to unleash your powers now! ;D
+
+!!!!!!!!!!!!!
+!! General !!
+!!!!!!!!!!!!!
+
+HI=Artık bir [Stand Kullanıcısı]'sın! :D
+HI_TRCK=Stand'a tekrar hoşgeldin!
+HI_TRCK_0=Takip ettiğin kimse şuanda çevrimiçi değil.
+HI_TRCK_1={} şuanda çevrimiçi.
+HI_TRCK_M={} şuanda çevrimiçi.
+
+HKFAIL={} için gerekli bir ya da birden fazla oyun işlevi muhtemelen kullandığın başka bir menu yüzünden değiştirilemedi. :/
+WOT1=Son isteğini gerçekleştirmek için çıktığım yolculukta, bu seçenekleri kullandım:
+WOT2=• Asla
+WOT3=• Hiçbir şey
+WOT4=• Yapmadım
+WOT5=Lütfen bu listenin hiçbir şekilde yaşanan her şeyin tam listesi olmadığını not et.
+2FAST=Çok hızlı yapıyorsun. Lütfen kahveni yudumla ve tekrar dene.
+ARGNME=[isim]
+
+! E.g. Command: wanted [0 to 5]
+ARGRNGE=ile
+
+ARGVAL=[değer]
+ARGVALOPT=(değer)
+NRML=Normal
+INVARG=Bu geçersiz bir deneme. :?
+GENWARN=Bunu yapmak istemen son kararın mı?
+IRREV=Bu işlem geri alınamaz.
+GENFAIL=Hmm, maalesef olmadı. :/
+IPSUM=Al bakalım sana gözlerini şenlendirecek bir metin.
+PRCD=Devam
+ABRT=İptal
+SHW=Göster
+HDE=Gizle
+HIDE=Gizli
+NONE=Yok
+JUSTON=Açık
+OFF=Kapalı
+ON=Aktif
+DOFF=Devredışı
+DOFF2=Devredışı Bırak
+ALL=Hepsi
+
+! Thousands separator, e.g. 1,000,000
+THSNDSEP=,
+
+! "Not Applicable"
+NA=Uygulanamaz
+
+GEMINI=Üçüncü göz açılıyor...
+RCMD=Önerilir
+NRCMD=Önerilmez
+CPYF=Kopyala {}
+GENWAIT=Lütfen bekleyin...
+CMDLEN={} karakterden fazla olamaz.
+AND={} ve {}
+
+! A more fancy way of saying "this is local"
+GEN_H_LOC=Bu sadece senin oyununu etkiler.
+
+! When the user is seeing an empty list:
+ETYLST=Burada görülecek hiçbir şey yok.
+
+NPHYS=[Komutun fiziksel boyutu yoktur]
+
+! Repetitions in log:
+LOG_REP_S=+ kez tekrarlandı
+LOG_REP_P=+ {} kez tekrarlandı
+
+IPNAM={ip} (önceden {name} olarak görüldü)
+
+CHRCNT={cur}/{max} karakter sayısı
+PLYCNT={cur}/{max} oyuncu
+PTCCNT={cur}/{max} katılımcı
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Search Commands !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SRCH=Ara
+ARGCLU=[ipucu]
+SRCHNRES=Sonuç bulunamadı. :/
+
+!!!!!!!!!!!!!!!!!!!!
+!! Error Handling !!
+!!!!!!!!!!!!!!!!!!!!
+
+ERR_L_B=HATA BİLGİSİ BAŞLANGICI.
+ERR_L_E=ERROR INFORMATION ENDS
+
+ERR_T_GEN=%appdata%/Stand/Log.txt 'dan hata bilgisini bulabilirsin.
+ERR_T_CAU=Bir hata yakalandı.
+ERR_T_GME=Oyun fatal error verdi, yeniden başlatılıyor.
+ERR_T_OTH=Stand beklenmedik bir hata ile karşılaştı.
+
+ERR_LUA=Not: Bu hata bir Lua scripti başlatılırken yaşandı.
+
+SVM=Script Recovery Hatası
+4FMONLY=Sadece Freemode için
+
+SVM_ERR={operation} 'da {script} scriptinin ölümü engellendi.
+SVM_DIE={operation} 'da {script} scripti öldü.
+SVM_EXP={script} scriptini uygularken bir hata ile karşılaşıldı.
+
+SVM_BLM_S=Bu, {player} oyuncusunun son yaptığından dolayı olmuş olabilir.
+SVM_BLM_D=Bu, {player} oyuncusunun son yaptığından dolayı ({event}) olmuş olabilir.
+
+SVM_INVOP={script} scriptinde geçersiz {opcode} yakalandı ; Oyunu crashlemek yerine script kapatılıyor.
+SVM_FRZ={} scripti sonsuz döngüye girmiş gibi, oyunu dondurmasın diye script kapatılıyor.
+
+!!!!!!!!!!
+!! Tabs !! These are to be on the left side of the menu which shouldn't be too wide so keep these as short as possible
+!!!!!!!!!!
+
+ACTVTE=Aktifleştir
+TUT_ONE=Bir
+TUT_TWO=İki
+SLF=Oyuncu
+VEH=Araba
+Online=Online
+PLYLST=Oyuncular
+WRLD=Dünya
+GME=Oyun
+
+!!!!!!!!!!!!!!!!
+!! References !!
+!!!!!!!!!!!!!!!!
+
+PLY=Oyuncu
+
+STTNGS=Ayarlar
+
+KPCRSR=Geri Gelirken İmleci Tut
+
+TABS=Sekmeler
+KPCRSRR_H="Oyuncu (Sen)" gibi sekmelerin onları kullandığın son zamandaki imleç pozisyonunu hatırlatmasını sağlar.
+
+LSTS=Listeler
+KPCRSRS_H="Ayarlar" gibi sekmelerin onları kullandığın son zamandaki imleç pozisyonunu hatırlatmasını sağlar.
+
+KPCRSR_L_RDC=Lists: Devasa listeler için etki azaltması
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Tutorial & Help !!
+!!!!!!!!!!!!!!!!!!!!!
+
+TUT=Öğretici
+TUT2=Stand Öğreticisi
+
+RPT=Tekrarla
+
+! Or "Skip"
+DISM=Geç
+
+TUT_LD=Stand injectlendi. Devam etmek için oyunu açın.
+
+TUT_OPEN=Stand'i açıp kapamak için {} tuşuna bas.
+TUT_OPEN2=Stand'i açıp kapamak için {numpad} tuşuna, numpad'in yoksa {alt} tuşuna bas.
+TUT_USE=Seçtiğin komutu kullanmak için {} tuşuna bas.
+TUT_BK=Geri dönmek için {} tuşuna bas.
+TUT_DN2=Aşağı inmek için {} tuşuna bas.
+TUT_RUP=Geri yukarı çıkmak için {} tuşuna bas.
+TUT_TABS=Navigasyona bak be. Neyse hazırlan, sekmeleri açıyorum!
+TUT_RNXT=Diğer sekmeye gitmek için {} tuşuna bas.
+TUT_RPRV=Önceki sekmeye dönmek için {} tuşuna bas.
+
+TUT_CMD2=Buradaki "Komut" yazısını fark ettin mi? {} tuşuna basıp komut kutusuna o komudu yazarak hızlıca kullanabilirsin.
+TUT_SLIDER=Kaydırıcıları {} ve {} tuşlarıyla kullanabilirsin.
+TUT_PROFILES=Eğer Stand ayarlarını kaydetmek istiyorsan, profiller kısmına gidebilirsin. (Stand > Profiller).
+TUT_CTX2={} tuşuyla içerik menüsünü açabilirsin. İçerik menüsünde kısayolları, bağlantıları vs. ayarlayabilirsin
+
+TUT_HDE=Stand'ini gizlemek için {} tuşuna bas.
+
+HLP_CTRLLR=Stand'i controllerında açmak için {} tuşuna basabilirsin.
+
+HLP_CMDCHAIN=Küme parantezi kullanarak zincirleme komut kullanabilirsin, örneğin: "{}".
+
+!!!!!!!!!!!!!!
+!! Commands !!
+!!!!!!!!!!!!!!
+
+CMD=Komut
+B_CB=Komut Kutusu
+CMDPRMPT=Stand Komut Kutusu
+KB_CMDPRMPT=Komut Kutusunu Aç
+
+CMDUNK=Üzgünüm, "{}" diye bir komut bilmiyorum. :/
+CMDAMBIG=Üzgünüm, "{}" komutu çok şey anlamına gelebilir. :/
+CMDISS={} komutu diğer kullanıcılar için geçerli değil. :/
+CMDPERM={} komutunu kullanma iznin yok.
+MORE=... {} daha
+MANYMORE=... ve çok daha.
+
+CMDONL=Bu komutu sadece GTA Online'da kullanabilirsin.
+CMDONLONC=Bu komutu sadece GTA Online'a girdikten sonra kullanabilirsin.
+CMDNEEDHOST=Bu komutu sadece host iken kullanabilirsin. :|
+CMDNH=Bu komutu hostun üzerinde kullanamazsın. :|
+CMDOTH=Bu komutu kendi üzerinde kullanamazsın. :|
+CMDDISA=Bu komut şuanlık devredışı. Daha fazla bilgi için duyurular kanalımızı takip et.
+
+CMD_DR_S=Komut başarıyla uygulandı. :)
+
+FRMTSEL_AVAIL=Text formatting burada destekleniyor. Seçim yapmak için {} tuşuna bas.
+FRMTSEL_H=Yönlendirme yapmak için yön tuşlarını kullan ve kodu uygulamak için {} tuşuna bas.
+FRMTSEL_H_R=Reset: Uygulanan Text Formatting'i siler.
+FRMTSEL_H_N=Yeni satır.
+
+B_CTX=İçerik Menüsü
+CTX_MIN=Minimum değere al
+CTX_MAX=Maksimum değere al
+
+CTX_UNAVAIL={option}, {command} komutunda kullanılamaz.
+
+AUTOSTATE=Seçenekler ile Komutları İlişkilendir
+AUTOSTATE_OFF=Hiçbir Şey
+AUTOSTATE_OPN=Stand Açıkken
+AUTOSTATE_OFT=Yürürken
+AUTOSTATE_AIM=Nişan Alırken
+AUTOSTATE_FRE=Freeroamdayken
+AUTOSTATE_CHT=Sohbete Yazarken
+AUTOSTATE_HST=Sunucu Hostu Olmak
+
+AUTOSTATEINV=İlişkiyi tersine çevir
+
+IVRT=Invert
+
+AUTOSTATE_H=Correlation: {command}, {condition} iken {state} hale gelecek.
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_ON=aktif
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_OFF=devredışı
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OPN=Stand açık
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OFT=sen yürürken
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_AIM=sen nişan alırken
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_FRE=Sen freeroam sunucudayken
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_CHT=sen sohbete yazarken
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_HST=sunucu hostusun
+
+CMDSTATE_L={0} ayarını {1} olarak değiştir. :)
+CMDSTATE_L_E={0} ayarı zaten {1}. :)
+
+CMDSTATE_LON={} aktif edildi. :)
+CMDSTATE_LOFF={} devredışı bırakıldı. :)
+
+CMDSTATE_LON_E={} zaten aktif. :)
+CMDSTATE_LOFF_E={} zaten devredışı. :)
+
+CMDSTATE_OON=Başarıyla aktifleştirildi. :)
+CMDSTATE_OOFF=Başarıyla devredışı bırakıldı. :)
+
+CMDSTATE_OON_E=Zaten aktif. :)
+CMDSTATE_OOFF_E=Zaten devre dışı. :)
+
+! E.g. "Freeze on Herobrine" or "Freeze on All Players". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A={player}'a {command} Komutunu Uygula
+
+! E.g. "WiriScript's Immortality on Herobrine". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A_LUA={script} scriptinin {player} üzerindeki {command} komutu
+
+SUPPGEN=Genel Cevapları Sustur
+SUPPGEN_H="Komut başarıyla uygulandı" gibi genel cevapları sustur.
+
+SUPPGEN_CB_H=Stand Komut Kutusu'nu, web interfacedeki komut kutusunu ve chat komutlarını kapsar
+
+WARNS=Uyarılar
+
+WARNAUTOPROC=Uyarı Verildiğinde Otomatik Devam Et
+
+WARNSKIPPROC=Halihazırda Kabul Edilmiş Uyarıları Geç.
+
+WARNFRCERD=Uyarıları Okumam İçin Beni Zorla
+
+HOTKEY=Kısayol
+ARGHOTKEY=[kısayol]
+HOTKEYS=Kısayollar
+HOTKEY_A=Kısayol Ekle
+HOTKEY_C2=Kısayolu Değiştir
+HOTKEY_R2=Kısayolu Kaldır
+HOTKEY_U={} için kısayol oluşturacağın tuşa bas.
+HOTKEY_T={}'ın kısayolunu %appdata%/Stand/Hotkeys.txt dosyasına kaydettim. :)
+
+HOTKEY_HOLD=Basılı Tutunca
+
+!!!!!!!!!!!!!!!!!!!
+!! Keyboard Keys !!
+!!!!!!!!!!!!!!!!!!!
+
+K_UNK=Bilinmeyen Tuş
+
+K_R=Sağ {}
+K_L=Sol {}
+
+K_SHFT=Shift
+K_ALT=Alt
+K_CTRL=Ctrl
+
+! E.g. "Hold W"
+K_HOLD=Basılı Tut
+
+K_SPC=Boşluk
+K_ISRT=Insert
+K_DEL=Delete
+K_HME=Home
+K_END=End
+K_PGUP=Page Up
+K_PGDN=Page Down
+K_RET=Enter
+K_BACK=Backspace
+K_ESC=ESC
+K_A_U=Yukarı Ok
+K_A_L=Sol Ok
+K_A_R=Sağ Ok
+K_A_D=Aşağı Ok
+K_TAB=Tab
+K_LMB=Sol click
+K_MMB=Mouse tekerlek
+K_RMB=Sağ click
+K_X1=Mouse 4
+K_X2=Mouse 5
+K_MPP=Media Oynat/Durdur
+K_MS=Media Durdur
+K_NT=Sonraki Şarkı Tuşu
+K_PT=Önceki Şarkı Tuşu
+K_CAPS=Caps Lock
+
+HMB=Modifier Tuş Eşleştirme
+HMB_H=How ctrl, shift, & alt are handled.
+STRCT=Sıkı
+HMB_STRCT_H=Ekstra tuş eşleştirilemez. Yani, Ctrl+Shift+G'ye basmak G'yi ya da Ctrl+G'yi tetiklemez.
+SMRT=Zeki
+HMB_SMRT_H=Kısayol tuşu modifier tuşlara sahipse sıkı, aksi takdirde gevşektir. Bu nedenle, Ctrl+Shift+G tuşlarına basmak G'yi tetikler ancak Ctrl+G'yi tetiklemez.
+LAX=Gevşek
+HMB_LAX_H=Ekstra tuşlara basılabilir. Yani, Ctrl+Shift+G'ye basarsan G de tetiklenir Ctrl+G de tetiklenir.
+
+DHK=Kısayolları Devredışı Bırak
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Controller Buttons !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+CK=Controller Tuşları
+
+CK_LT=Sol Trigger (L2)
+CK_RT=Sağ Trigger (R2)
+CK_LB=Sol Bumper (L1)
+CK_RB=Sağ Bumper (R1)
+CK_LS=Sol Analog (L3)
+CK_RS=Sağ Analog (R3)
+CK_D_U=D-Pad Yukarı
+CK_D_D=D-Pad Aşağı
+CK_D_L=D-Pad Sol
+CK_D_R=D-Pad Sağ
+CK_STRT=Start
+CK_BCK=Back
+
+!!!!!!!!!!!!!!!!!!!!
+!! Authentication !!
+!!!!!!!!!!!!!!!!!!!!
+
+UPDAVAIL=Stand {} indirilebilir.
+
+FREE_T=Bu komut Stand'in ücretsiz sürümünde kullanılamaz. ;)
+CMDFULLSP=Bu komutu kullanabilmek için ya Story Mode'a dön, ya da Stand'ini Regular sürüme yükselt.
+CMDNEDR=Bu komut sadece Stand'in Regular sürümünde veya yukarısında kullanılabilir.
+CMDNEDU=Bu komut sadece Stand'in Ultimate sürümünde kullanılabilir.
+
+ACTVTE_H=Hileye Online'da bile erişebilmek için Stand'i aktifleştirin.
+ACTVTE_PSTE2=Aktivasyon Key'ini yapıştır
+ACTVTE_RGST=Hesap oluştur
+ACTVTE_ERR_F2=Kopyaladığın şey bir Stand anahtarının dizilimine uymuyor. :?
+ACTVTE_STRT2=Aktivasyon keyin onaylanıyor...
+ACTVTE_SUCC2=Stand başarıyla aktifleştirildi. :D
+
+ACTVTE_ERR_I2=Aktivasyon keyin geçersiz. :/
+ACTVTE_RGN=Aktivasyon keyin yeniden oluşturuldu.
+AUTHSHR2=Aktivasyon keyin başka bir yerde kullanılıyor. Siteden yeniden oluştur ya da sonradan tekrar dene.
+
+AUTH_X=Aktivasyon keyinin süresi dolmuş.
+AUTH_CE=Bir bağlantı hatası oluştu.
+CONHELP=Eğer cihazınız internete bağlıysa, lütfen Stand'in internete bağlanmasını engelleyen bir şey olmadığından emin olun.
+
+TELEKOM_OFF=Tekrar çevrimiçisin, hoşgeldin! :D
+
+VER_UNSUPP=Stand versiyonunuz artık desteklenmiyor.
+VER_UNSUPP_AUTHONLY=Stand versiyonunuz artık desteklenmiyor ve yakınz zamanda bu versiyonu geçersiz kılacağız.
+UPDHELP=Stand'i kapatarak ve Launchpad'den "Check For Updates"e basarak Stand'i güncelleyebilirsiniz.
+
+!!!!!!!!!!!!!!!!
+!! Filesystem !!
+!!!!!!!!!!!!!!!!
+
+FWERR=Yazma işlemi için {} açılamadı. :|
+
+WRDR=Gardrop
+
+OPNFLD=Dosyayı Aç
+
+OPNSTND=Stand Dosyasını Aç
+OPNSTND_H=%appdata%/Stand dosyanı açar.
+
+OPNASI=ASI Mods Dosyasını Aç
+OPNASI_H=%appdata%/Stand/ASI Mods dosyanı açar.
+
+OPNGTA=GTA V Dosyasını Aç
+
+OPNTHME=Tema Dosyasını Aç
+OPNTHME_H=%appdata%/Stand/Theme dosyanı açar.
+
+!!!!!!!!!!!!
+!! Colour !!
+!!!!!!!!!!!!
+
+C_H=Renk Tonu
+C_S=Doygunluk
+C_V=Değer
+
+CR_HSV=HSV Renk Modeli
+CR_RGB=RGB Renk Modeli
+
+OPCTY=Opaklık
+
+C_R=Kırmızı
+C_G=Yeşil
+C_B=Mavi
+
+CN_A=Gökkuşağı
+CN_R=Kırmızı
+CN_R_WINE=Şarap Kırmızısı
+CN_G=Yeşil
+CN_G_D=Koyu Yeşil
+CN_G_LIME=Lime Yeşili
+CN_OLIVE=Zeytin Rengi
+CN_MOSS=Yosun Rengi
+CN_TUR=Turkuaz
+CN_B=Mavi
+CN_B_D=Lacivert
+CN_B_COOL=Soğuk Mavi
+CN_B_ROYAL=Kraliyet Mavisi
+CN_C=Turkuaz
+CN_AQUA=Deniz Mavisi
+CN_PLUM=Kırmızı Erik
+CN_Y=Sarı
+CN_Y_D=Koyu Sarı
+CN_P=Pembe
+CN_P_H=Canlı Pembe
+CN_SALMON=Somon Pembesi
+CN_U=Mor
+CN_U_D=Koyu Mor
+CN_M=Macenta
+CN_O=Turuncu
+DN_O_L=Açık Turuncu
+CN_O_RUST=Pas Turuncusu
+CN_BR=Kahverengi
+CN_BR_L=Açık Kahve
+CN_EARTH=Toprak
+CN_W=Beyaz
+CN_L=Siyah
+CN_GR=Gri
+CN_GR_D=Koyu Gri
+
+C_PAT={colour} Pattern
+
+OTHR=Diğer
+CLRHEX=Renk Hex Kodu Gir
+CURRCLRHEX=Şuanki Renk (Hex)
+
+LGBT=Gökkuşağı Modu
+LGBT_H=Her x milisaniyede bir rengin tonunu değiştirirken sana hala doygunluk, değer ve opaklığı değiştirme imkanı sunar.
+
+CLR=Renk
+
+LGBTQ={}: Gökkuşağı Modu
+
+! As in "colour finish"
+CLRFIN=Renk Tipi
+
+! "LSC" is Los Santos Customs
+CLRSTD=Modifiyeci Renkleri
+
+CLRSTD_1=Graphite
+CLRSTD_2=Black Steel
+CLRSTD_3=Dark Steel
+CLRSTD_4=Silver
+CLRSTD_5=Bluish Silver
+CLRSTD_6=Rolled Steel
+CLRSTD_7=Shadow Silver
+CLRSTD_8=Stone Silver
+CLRSTD_9=Midnight Silver
+CLRSTD_10=Cast Iron Silver
+CLRSTD_11=Anthracite Black
+CLRSTD_12=Matte Black
+CLRSTD_13=Matte Grey
+CLRSTD_14=Matte Light Grey
+CLRSTD_15=Util Black
+CLRSTD_16=Util Black Poly
+CLRSTD_17=Util Dark Silver
+CLRSTD_18=Util Silver
+CLRSTD_19=Util Cast Iron Silver
+CLRSTD_20=Util Shadow Silver
+CLRSTD_21=Worn Black
+CLRSTD_22=Worn Graphite
+CLRSTD_23=Worn Silver Grey
+CLRSTD_24=Worn Silver
+CLRSTD_25=Worn Bluish Silver
+CLRSTD_26=Worn Shadow Silver
+CLRSTD_28=Torino Red
+CLRSTD_29=Formula Red
+CLRSTD_30=Blaze Red
+CLRSTD_31=Grace Red
+CLRSTD_32=Garnet Red
+CLRSTD_33=Sunset Red
+CLRSTD_34=Cabernet Red
+CLRSTD_35=Candy Red
+CLRSTD_36=Sunrise Orange
+CLRSTD_37=Classic Gold
+CLRSTD_39=Matte Red
+CLRSTD_40=Matte Dark Red
+CLRSTD_41=Matte Orange
+CLRSTD_42=Matte Yellow
+CLRSTD_43=Util Red
+CLRSTD_44=Util Bright Red
+CLRSTD_45=Util Garnet Red
+CLRSTD_46=Worn Red
+CLRSTD_47=Worn Golden Red
+CLRSTD_48=Worn Dark Red
+CLRSTD_50=Racing Green
+CLRSTD_51=Sea Green
+CLRSTD_52=Olive Green
+CLRSTD_53=Bright Green
+CLRSTD_54=Gasoline Green
+CLRSTD_55=Matte Lime Green
+CLRSTD_56=Util Dark Green
+CLRSTD_57=Util Green
+CLRSTD_58=Worn Dark Green
+CLRSTD_59=Worn Green
+CLRSTD_60=Worn Sea Wash
+CLRSTD_61=Galaxy Blue
+CLRSTD_63=Saxon Blue
+CLRSTD_65=Mariner Blue
+CLRSTD_66=Harbor Blue
+CLRSTD_67=Diamond Blue
+CLRSTD_68=Surf Blue
+CLRSTD_69=Nautical Blue
+CLRSTD_70=Ultra Blue
+CLRSTD_71=Schafter Purple
+CLRSTD_72=Spinnaker Purple
+CLRSTD_73=Racing Blue
+CLRSTD_74=Light Blue
+CLRSTD_75=Util Dark Blue
+CLRSTD_76=Util Midnight Blue
+CLRSTD_77=Util Blue
+CLRSTD_78=Util Sea Foam Blue
+CLRSTD_79=Util Lightning Blue
+CLRSTD_80=Util Maui Blue Poly
+CLRSTD_81=Util Light Blue
+CLRSTD_82=Matte Dark Blue
+CLRSTD_83=Matte Blue
+CLRSTD_84=Matte Midnight Blue
+CLRSTD_85=Worn Dark Blue
+CLRSTD_86=Worn Blue
+CLRSTD_87=Worn Light Blue
+CLRSTD_89=Race Yellow
+CLRSTD_90=Bronze
+CLRSTD_91=Dew Yellow
+CLRSTD_93=Champagne
+CLRSTD_94=Feltzer Brown
+CLRSTD_95=Creek Brown
+CLRSTD_96=Chocolate Brown
+CLRSTD_97=Maple Brown
+CLRSTD_98=Saddle Brown
+CLRSTD_99=Straw Brown
+CLRSTD_100=Moss Brown
+CLRSTD_101=Bison Brown
+CLRSTD_102=Woodbeech Brown
+CLRSTD_103=Beechwood Brown
+CLRSTD_104=Sienna Brown
+CLRSTD_105=Sandy Brown
+CLRSTD_106=Bleached Brown
+CLRSTD_107=Cream
+CLRSTD_108=Util Brown
+CLRSTD_109=Util Medium Brown
+CLRSTD_110=Util Light Brown
+CLRSTD_111=Ice White
+CLRSTD_112=Frost White
+CLRSTD_113=Worn Honey Beige
+CLRSTD_114=Worn Brown
+CLRSTD_115=Worn Dark Brown
+CLRSTD_116=Worn Straw Beige
+CLRSTD_117=Brushed Steel
+CLRSTD_118=Brushed Black Steel
+CLRSTD_119=Brushed Aluminium
+CLRSTD_120=Chrome
+CLRSTD_121=Worn Cream
+CLRSTD_122=Util Cream
+CLRSTD_123=Worn Orange
+CLRSTD_124=Worn Light Orange
+CLRSTD_125=Pea Green
+CLRSTD_126=Worn Yellow
+CLRSTD_127=Police Car Blue
+CLRSTD_128=Matte Green
+CLRSTD_129=Matte Brown
+CLRSTD_130=Worn Orange
+CLRSTD_131=Matte Ice White
+CLRSTD_132=Worn White
+CLRSTD_133=Worn Olive Green
+CLRSTD_134=Util White
+CLRSTD_136=Salmon Pink
+CLRSTD_137=Pfister Pink
+CLRSTD_138=Bright Orange
+CLRSTD_140=Bright Blue
+CLRSTD_141=Midnight Blue
+CLRSTD_142=Midnight Purple
+CLRSTD_144=Hunter Green
+CLRSTD_145=Bright Purple
+CLRSTD_146=Metallic Midnight Purple
+CLRSTD_147=Carbon Black
+CLRSTD_148=Matte Schafter Purple
+CLRSTD_149=Matte Midnight Purple
+CLRSTD_150=Lava Red
+CLRSTD_151=Matte Forest Green
+CLRSTD_152=Matte Olive Drab
+CLRSTD_153=Matte Dark Earth
+CLRSTD_154=Matte Desert Tan
+CLRSTD_155=Matte Foliage Green
+CLRSTD_156=Default Alloy Color
+CLRSTD_157=Epsilon Blue
+CLRSTD_158=Pure Gold
+CLRSTD_159=Brushed Gold
+CLRSTD_160=Gold
+
+CLRFR=Birinci Renk
+
+CLRSEC=İkinci Renk
+
+CLRINT=İç Renk
+CLRPRL=Sedef Rengi
+
+VEHMOD20=Lastik Dumanı
+CLRTIRE=Lastik Duman Rengi
+TIREINDEP=Independence Day Lastik Dumanı
+
+NEONLGHTS=Neon Işık
+
+APOS_F=Ön
+APOS_B=Arka
+
+CLRBR=Arkaplan Rengi
+
+CLRFT=Odaklı Metin Rengi
+CLRFRT=Sağa-Dayalı Odaklı Metin Rengi
+CLRFS=Odaklı Texture Rengi
+
+CLRBT=Odaksız Metin Rengi
+CLRBRT=Sağa-Dayalı odaksız Metin Rengi
+CLRBS=Odaksız Texture Rengi
+
+CLRHU=HUD Rengi
+
+CLRAR=AR Rengi
+
+CLRMGME=Minigame Rengi
+
+HAIR_V=Saç Rengi
+HAIRHI=Saç Rengi: Highlight
+HAIRR=Saç Rengi: Gökkuşağı
+
+GUNTINT=Silah Rengi
+GUNTINTR=Gökkuşağı Silah Rengi
+
+WINTINT=Cam Filmi
+
+! "Livery" is VEHMOD48
+RFTLIV=Tavan Liverysi
+
+!!!!!!!!!!!!!!!
+!! Collision !!
+!!!!!!!!!!!!!!!
+
+GHOST=Düşük Çarpma
+GHOST_H=Arabaların ve duvarların içinden geçmeyi aktifleştirir.
+
+COLSNS=Çarpma
+
+GHOSTVEHS=Diğer Arabalara Çarpılmaz
+
+NOCOLPED=Canlılara Çarpma Yok
+NOCOLOBJ=Objelere Çarpma Yok
+NOCOLOBJ_H=Bu, ağaç vs. hareketsiz objelerde işe yaramaz.
+
+GHOSTRIDE=Çarpma Yok
+GHOSTRIDE_H=Çarpmayı şuanki aracın için tamamen devre dışı bırakır (uçmayan araçlar için önerilmez).
+
+!!!!!!!!!!
+!! Self !!
+!!!!!!!!!!
+
+MVMNT=Hareket
+
+VIS=Görünüş
+
+OTFT=Kıyafet
+
+HEAD=Yüz
+HEAD_V=Yüz Tipi
+FACIALHAIR=Sakal/Bıyık
+FACIALHAIR_V=Sakal/Bıyık Rengi
+MASK=Maske
+MASK_V=Maske Tipi
+HAIR=Saç
+TOP1=Üst
+TOP1_V=Üst Tipi
+TOP2=Üst 2
+TOP2_V=Üst 2 Tipi
+TOP3=Üst 3
+TOP3_V=Üst 3 Tipi
+BAG=Bag / Paraşüt
+BAG_V=Bag / Paraşüt Tipi
+PCHUTE=Parachute / Çanta
+PCHUTE_V=Parachute / Çanta Tipi
+TORSO=Eldivenler / Gövde
+TORSO_V=Eldiven / Gövde Tipi
+GLOVES=Eldivenler
+GLOVES_V=Eldiven Tipi
+PANTS=Pantolonlar
+PANTS_V=Pantolon Tipi
+SHOES=Ayakkabılar
+SHOES_V=Ayakkabı Tipi
+ACCESSORIES=Aksesuar
+ACCESSORIES_V=Aksesuar Tipi
+DECALS=Çıkartmalar
+DECALS_V=Çıkartma Tipi
+HAT=Şapka
+HAT_V=Şapka Tipi
+GLASSES=Gözlük
+GLASSES_V=Gözlük Tipi
+EARWEAR=Kulaklık
+EARWEAR_V=Kulaklık Tipi
+WATCH=Saat
+WATCH_V=Saat Tipi
+BRACELET=Bileklik
+BRACELET_V=Bileklik Tipi
+
+SVEOTFT=Kıyafeti Kaydet
+
+! Alternatively, "What Will Be Saved"
+SVESEL=Kaydedilecekler
+
+BADFILE=Böyle isimli bir dosyayı kaydedemem. :/
+
+LDOTFT_E1=Bu Kıyafet hangi model için yapıldığını belirtmedi. :?
+LDOTFT_E2=Kıyafet geçersiz bir model için yapılmış: {}
+LDOTFT_E3=Kıyafet farklı bir model için yapılmış. :?
+LDOTFT_TF=Bu kıyafet {} için yapılmış, ona dönüşmek ister misin?
+
+DOTFTRESTR=Kıyafet Kısıtlamalarını Kaldır
+DOTFTRESTR_H=Çantalı vs. kıyafetleri kaydedebilmeni sağlar.
+
+NVEHHAIRSCL=Araç İçinde Saçın Kısalmasını Kaldır
+
+LKOTFT=Kıyafeti Kilitle
+LKOTFT_H=Stand harici kıyafet değiştirmeyi yasaklar ama bu Casino Heist ve muhtemelen diğer görevleri bozabilir. ⚠️
+
+CHNGMDL=Dönüş
+
+PLYBLCHRS=Oynanabilir Karakterler
+GRNDANMLS=Kara Hayvanları
+WTRANMLS=Su Hayvanları
+FLYNANMLS=Uçan Hayvanlar
+NPCS=NPCler
+
+ONLN_MALE=Online Erkek
+ONLN_FEMALE=Online Kadın
+
+CHNGMDL_W=Bir su hayvanına dönüşebilmek için suda olman gerek. :)
+
+MDL=Model
+
+FNDMDL_H=İsimlerini kullanarak ona dönüşebileceğin modelleri bulur.
+
+CURMDL=Şuanki Model
+
+OP=Hazır Kıyafetler
+
+OP_D=Şuanki Model: Varsayılan
+OP_D_H=Şuanki modelin için Rockstar tarafından yapılmış kıyafet.
+
+OP_RNG=Şuanki Model: Rastgele
+RNG=Rastgele
+
+OP_0=Online Kadın: Üstsüz
+
+OP_COP_M=Online Erkek: Polis
+OP_COP_F=Online Kadın: Polis
+
+WNTDLVL=Aranma Seviyesi
+
+WNTD=Aranma Seviyeni Ayarla
+
+LKWNTD=Aranma Seviyesini Kilitle
+
+FKWNTD=Sahte Aranma Seviyesi
+FKWNTD_H=Sağ üst köşede gözüken aranma yıldızların sayısını değiştirir.
+
+PTFXTRAIL=Parçacık İzleri
+BONES=Kemikler
+
+WLKSTL=Yürüyüş Tarzı
+WLKSTL_1=Balistik
+WLKSTL_3=Çöp Tutar Şekilde
+WLKSTL_4=Koşarak
+WLKSTL_5=Franklin (Sert)
+WLKSTL_8=Kaçış
+WLKSTL_9=Korkmuş
+WLKSTL_10=Seksi
+WLKSTL_12=Yaralı
+WLKSTL_13=Lester (Baston)
+WLKSTL_14=Çanta
+WLKSTL_15=Mahkum
+WLKSTL_16=Mahkum (Elektroşoklanmış)
+WLKSTL_17=Cesur
+WLKSTL_18=Rahat
+WLKSTL_19=Orta Düzey Sarhoş
+WLKSTL_20=Orta Düzey Sarhoş (Kafa Yukarıda)
+WLKSTL_21=Biraz Sarhoş
+WLKSTL_22=Çok Sarhoş
+WLKSTL_23=Sert
+WLKSTL_24=Gangster (Yavaş)
+WLKSTL_25=Gangster (Utangaç)
+WLKSTL_26=Gangster
+WLKSTL_27=Koşucu
+WLKSTL_28=Gardiyan
+WLKSTL_30=Franklin (Çanta)
+WLKSTL_31=Michael (Hademe)
+WLKSTL_32=Michael (Yavaş)
+WLKSTL_33=Asi
+WLKSTL_34=Eğilmiş
+WLKSTL_35=Süpür
+WLKSTL_36=Kadınsı (Erkek)
+WLKSTL_37=Kadınsı (Kadın)
+WLKSTL_38=Gangster (Erkek)
+WLKSTL_39=Gangster (Kadın)
+WLKSTL_40=Posh (Erkek)
+WLKSTL_41=Posh (Kadın)
+WLKSTL_42=Sert Herif (Erkek)
+WLKSTL_43=Sert Herif (Kadın)
+WLKSTL_44=Kafası Güzel
+WLKSTL_45=Sakin
+WLKSTL_46=Kelepçeli
+WLKSTL_47=Üzgün
+WLKSTL_48=Şımarık (Erkek)
+WLKSTL_49=Şımarık (Kadın)
+WLKSTL_50=Küstah
+WLKSTL_51=Özgüvenli
+WLKSTL_52=Topuklu Ayakkabı
+WLKSTL_53=Dağ Yürüyüşü
+WLKSTL_54=Çöpçü
+WLKSTL_55=Şüpheli
+WLKSTL_56=Hipster
+
+PRSVRWALK=Çatışma Sırasında Yürüyüş Stilini Tut
+PRSVRWALK_H=Yakınında çatışma varken karakterinin yürüyüş tarzının "çatışma modu"na geçmesini engeller.
+
+WALKONAIR=Havada Yürü
+
+AIRSWM=Havada Yüz
+
+WTRWLK=Su Altında Yürü
+
+DRNKMODE=Sarhoş Modu
+
+TNISMDE=Tenis Modu
+
+FLOPPY=Disket Modu
+FLOPPY_SYNCH=Senkronizasyon Önemini Arttır
+FLOPPY_SYNCH_H=Hızı sınırlar ve bunun senkronize etmek için için yükselme, alçalma ve koşmayı devredışı bırakır.
+
+DEMIGOD=Oto Can Yenileme
+DEMIGOD_H=Karakterini maksimum can ve zırhta tutar.
+DEMIGOD_H_O=Onun karakterini maksimum can ve zırhta tutar.
+
+MXHLTH=Maksimum Sağlık
+
+CLUMSY=Sakar
+CLUMSY_H=Karakterinin daha kolay yere düşmesini sağlar.
+
+NOROLLCL=Nişan Alırken Takla Beklemesi Yok
+
+RESPWRCL=Öldüğün Yerde Yeniden Doğ
+
+RESPWDLY=Yeniden Doğma Süresi
+RESPWDLY_H=CGTA Online'da ölünce belirttiğin saniye kadar sonra yeniden doğarsın.
+
+EWO=İntihar
+
+SPCSH=Story Mode Parasını Ayarla
+SPCSH_H=Michael, Trevor ve Franklin'in sahip olduğu parayı ayarlamanı sağalar.
+
+SCHR_M=Michael
+SCHR_F=Franklin
+SCHR_T=Trevor
+
+HLTH=Sağlık
+ARMR=Zırh
+
+REGEN=Yenilenme Oranı
+REGEN_H_H=Saniyede girdiğin değer kadar canını yeniler.
+REGEN_A_H=Saniyede girdiğin değer kadar zırhını yeniler.
+ONLYINCOVER=Sadece siper Alırken
+
+RFHLT=Can Bas
+RFARM=Zırh Bas
+
+GOD=Ölümsüzlük
+GOD_H=Karakterinin ölmesini engeller.
+
+NRGDL=Zarafet
+NRGDL_H=Karakterini yere düşmez yapar.
+
+NO_GRACE=Tavsiye: Zarafet modunu ve {feature_name} modunu aynı anda çalıştırmayın. ;)
+
+SEATGLUE=Koltuğa Yapışık
+SEATGLUE_H=Karakterin motorlardan asla düşmez.
+
+INFSTAM=Sınırsız Stamina
+
+PARALCK=Paraşütleri Kilitle
+LCK_FULL=Dolu
+LCK_ETY=Boş
+
+WET=Islaklığı Ayarla
+
+WETLCK=Islaklığı Kilitle
+
+SCLE=Boyut
+SCLE_H=Karakterinin boyutunu değiştirir. *Sadece sen görebilirsin*.
+
+SCLECAM=Boyut Kamerayı Etkiler
+
+SCLESPD=Boyut Hızı Etkiler
+
+VISZ=Karakter Yükseklik Düzeltici
+VISZ_H=Boyut ile kullanılır, karakterinin yükseliğini değiştirir.
+
+! {Self > Appearance > Invisibility} & {Vehicle > Invisibility}
+INVIS=Görünmezlik
+INVIS_H=Not: Araçtayken, aracınızı görünmez yapmazsanız, diğer oyuncular sizi görebilecek.
+
+! Player > Trolling > Ram > Invisibility
+RAM_INVIS=Görünmezlik
+
+LOCVIS=Görünmezlik (Yerel)
+
+LEV=No-Clip
+
+NOCLIP=No-Clip
+
+LEV_AP=Varlığa Eğim Uygula
+
+KPMOMNTM=Momentumu Koru
+
+MOVSPD=Hareket Hızı
+
+! Used in button instructions to mean "go faster"
+SPRNT=Koşma
+
+SPRNTMUL=Koşma Hızı
+SPRNTMUL_H={} tuşuna basarken ne kadar hızlı gidişin.
+
+ACCEL=Hızlanma
+ACCEL_H=Hızlanma, sen hareket ettikçe seni hızlandırır. Koşunca veya hareket etmeyi bırakınca sıfırlanır.
+
+OROM=Sadece Hareket Sırasında Dön
+
+PASSMOV=Pasif Hareket
+
+PASSMOV_MIN=Yerden Minimum Uzaklık
+PASSMOV_MAX=Yerden Maksimum Uzaklık
+SPD=Hız
+
+MAXDIST=Maksimum Mesafe
+
+ASS=Asistan
+
+FRC_U=Yukarı Kuvvet
+FRC_D=Aşağı Kuvvet
+
+ASS_D=Aşağı Deadzone
+ASS_D_H=Asistanın seni aşağı çekmeyi denemesi için gereken yükseklik.
+
+SNAP=Snapping
+
+WLKSPD=Yürüme ve Koşma Hızı
+
+INCFRCT=Fazla Sürtünme
+INCFRCT_H=Yüksek yürüme/koşma hızında dönerken kayganlığı azaltır.
+
+SWMSPD=Yüzme Hızı
+
+NOBLD=Sıfır Kan
+NOBLD_H=Karakterinde kan olmaz.
+
+SONIC=Süper Koşu
+
+FLY=Süper Uçuş
+ASC=Yüksel
+DESC=Alçal
+FLY_LAND=İniş Yap
+
+BI_CLSMNU_MOV=Daha fazla hareket ayarı için Stand'ini gizle
+
+SHWBI_JMP2FLY=Tuş Talimatları: Uçmak için Süper Zıplama
+SHWBI_CTRLS=Tuş Talimatları: Kontroller
+
+FROG=Süper Zıplama
+FROG_H=Daha yükseğe zıplamak için zıplama tuşuna basılı tutabilirsin.
+
+GRCELND=Zarif İniş
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Animations !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+ANIM=Animasyonlar
+CANCL=İptal Et
+SCENARIOS=Senaryolar
+LOOPED=Döngülü Animasyon
+LOOPED_H=Bu, senaryolara uygulanamaz.
+PART_MVMT=Kısmi Hareket
+PART_MVMT_H=Animasyona sadık kalarak hareket edebilmeni sağlar.
+AUTO_CANCL=Otomatik İptal
+AUTO_CANCL_H=Hareket edince animasyonunu otomatik olarak iptal eder.
+
+ANIM1=Flex
+ANIM2=Sigara
+ANIM3=Uyu
+ANIM4=Alkış
+ANIM5=Koruma
+ANIM6=Çekiç
+ANIM7=Müsait Polis
+ANIM8=Çöp Ara
+ANIM9=Şaşkın Kamera
+ANIM10=Takıl
+ANIM11=Sabırsız
+ANIM12=Mesajlaş
+ANIM14=Ölü Taklidi
+ANIM15=Bekle
+ANIM16=Temizle
+ANIM17=ATM Kullan
+ANIM18=Yoga
+ANIM19=Heykel
+ANIM20=Kaynak
+ANIM21=Güneşlen
+ANIM22=Yüzüstü Güneşlen
+ANIM23=Pahalı Fahişe
+ANIM24=Ucuz Fahişe
+ANIM25=Not
+ANIM26=Eğil
+ANIM27=Koş
+ANIM28=Dürbün
+ANIM29=Ayakta Keko
+ANIM30=Bahçeci
+ANIM31=Yere Otur
+ANIM32=Dur ve Balık Tut
+ANIM33=Araştır
+ANIM34=Otur
+
+ANIM_DANCE=Danslar
+
+ANIM35=Kıvırt
+ANIM36=Palyaço Dansı 1
+ANIM37=Palyaço Dansı 2
+ANIM38=Dans 1
+ANIM39=Dans 2
+ANIM40=Dans 3
+ANIM41=Dans 4
+ANIM42=Dans 5
+ANIM43=Slow Dans 1
+ANIM44=Slow Dans 2
+ANIM45=Slow Dans 3
+ANIM46=Podyum Dansı
+ANIM47=Solo Dans
+ANIM48=Utangaç Dans 1
+ANIM49=Utangaç Dans 2
+ANIM50=Şapşal Dans 1
+ANIM51=Şapşal Dans 2
+ANIM52=Şapşal Dans 3
+ANIM53=Apaçi Dansı
+ANIM54=TikTok Akımı
+
+ANIM55=İç
+ANIM56=Canavar
+ANIM57=Chill
+ANIM58=Gökyüzü İzleyen
+
+! To prone, as in to lie on your stomach
+ANIM59=Yüzüstü Yat
+
+ANIM60=Sağa Çek
+ANIM62=Sarhoş 1
+ANIM63=Sarhoş 2
+ANIM64=Sarhoş 3
+ANIM65=Hayali Gitar
+ANIM66=Hayali Piyano
+ANIM67=Tartoş 1
+ANIM68=Tartoş 2
+ANIM69=Barmen
+
+! Aka. Air Kiss
+ANIM70=Öpücük Yolla
+
+ANIM71=Şakacı
+ANIM72=Bırakın Gelsin
+ANIM73=E Geeel
+ANIM75=Radyo Kullan
+ANIM74=Kollar Bağlı 1
+ANIM76=Kollar Bağlı 2
+ANIM77=Kollar Bağlı 3
+
+! As in "damn it"
+ANIM78=Kahretsin
+
+ANIM79=Hırsızlık
+ANIM81=Utan 1
+ANIM82=Utan 2
+ANIM83=Yere Düş
+ANIM84=Uyuyakal
+ANIM85=İncele
+ANIM86=Isın
+ANIM88=Tıklat
+ANIM89=Kucak Dansı 1
+ANIM90=Kucak Dansı 2
+ANIM91=Kucak Dansı 3
+ANIM92=Kucak Dansı 4
+ANIM93=Twerk
+ANIM94=Yaslan
+ANIM95=Flörtöz Yaslan
+ANIM96=Tornacı
+ANIM97=Meditasyon
+ANIM98=Nefes Nefese
+ANIM99=Şınav
+ANIM100=Yarış Gerisayımı
+ANIM101=Omuz Silk
+ANIM102=Yoga Hareketi
+ANIM103=Gül
+ANIM104=Gang Sign
+ANIM105=Bayıl
+ANIM106=Emekle
+ANIM107=Takla 1
+ANIM108=Takla 2
+ANIM109=Kay 1
+ANIM110=Kay 2
+ANIM111=Kalp Masajı
+ANIM112=Esne
+ANIM113=Kutla
+ANIM114=Palyaço
+ANIM115=Endişeli 1
+ANIM127=Endişeli 2
+ANIM116=Namaste
+ANIM117=DJ
+
+! Being arrested
+ANIM118=Eller Yukarı
+! Being arrested
+ANIM121=Teslim Ol
+
+ANIM119=Islık Çal
+ANIM120=Kollar Bağlı Yaslan
+ANIM122=Klavyede Yazı Yaz
+ANIM123=Ateşin Başında Dur
+ANIM124=Baş Parmak
+
+! As in, bending your body towards someone to show respect.
+ANIM125=Hürmetkâr
+
+ANIM126=Süper Kahraman
+ANIM128=Öne Eğil
+ANIM129=Duş Al
+ANIM130=Yüzünü Temizle
+ANIM131=Karate
+ANIM132=Boks
+
+ANIM166=Shuffle 1
+ANIM167=Shuffle 1 (Alçak)
+ANIM168=Shuffle 2
+ANIM169=Shuffle 2 (Alçak)
+
+OBJANIM=Cisim Animasyonları
+
+ANIM133=Evrak Çantası
+ANIM134=Bira İç
+ANIM135=Şişeden İç
+
+! As in begging
+ANIM136=Dilen
+
+ANIM137=Bongo Çal
+ANIM138=Kitap Oku
+ANIM139=Çiçek Ver
+ANIM140=Süpür
+ANIM141=Kasa Bira Taşı
+ANIM142=Pizza Taşı
+ANIM143=Şampanya Taşı
+ANIM144=Kahve İç
+ANIM145=Küçük Spor Çantası
+ANIM146=El Çantası
+ANIM147=Gitar Çal
+
+! In this animation, the teddy bear known as "Mr. Raspberry" gets sexed
+ANIM148=Fil Necati
+
+ANIM149=Sandalyede Otur (Kadın)
+ANIM150=Saldalyede Otur (Erkek)
+ANIM151=Harita İncele
+ANIM152=Kamera Tut
+ANIM153=Mikrofon Tut
+ANIM154=Baston
+ANIM155=Telefon 1
+ANIM156=Telefon 2
+ANIM157=Tabela Tut
+ANIM158=Gül Tut
+ANIM159=Otoban Tabelası Tut
+ANIM160="Park Yasak" Tabelası Tut
+ANIM161=Şemsiye Tut
+ANIM162=Viski Bardağı Tut
+ANIM163=Viski Şişesi Tut
+ANIM164=Şarap Bardağı Tut
+ANIM165=Şarap Şişesi Tut
+ANIM170=Şarapla Dans Et
+ANIM171=Birayla Dans Et
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Bodyguards !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+BDYGUARD=Bodyguardlar
+COUNT=Miktar
+WPN_SINGULAR=Silah
+BDYGUARD_DEL=Tüm Bodyguardları Sil
+BDYGUARD_TP=Uzaklaşınca Işınlansınlar
+FORMATION=Pozisyon
+LINE=Tek Sıra
+CIRCLE=Çember
+ALT_CIRCLE=Alternatif Çember
+BEHVR=Davranış
+PRIM_WEAP=Ana Silah
+SCND_WEAP=İkincil Silah
+WEAP_H=Bodyguardlar mümkün olduğu sürece ana silahı kullanırlar. Aksi takdirde, ikincil silahlarını kullanmaya çalışacaklar.
+
+!!!!!!!!!!!!!!!!!!!!
+!! Self > Weapons !!
+!!!!!!!!!!!!!!!!!!!!
+
+WPN=Silahlar
+
+GETGNS=Silah Ver
+DELGNS=Silah Sil
+ALLGNS=Tüm Silahlar
+
+GAIMPNSH=Nişan Alırken...
+GSHTPNSH=Sıkarken...
+
+GRTYGUN=Gravity Gun
+CTRVPHYS=Uyduruk Fizik
+FRCMUL=Kuvvet Arttırıcı
+COL=Çarpma
+
+VEHGUN=Araç Silahı
+VEHGUN_H=Silahların mermi yerine araç sıkar.
+
+WEAPCOMPS=Parçalar
+WEAPCOMPS_H=Silahının sahip olduğu modifiyeleri görmeni ve değiştirmeni sağlar.
+
+WEAPLOCK=Silahları Kilitle
+TINT=Silah Rengi
+
+! "Livery" is VEHMOD48
+WEAPLIVTNT=Silah Çıkartmaları
+
+SVPRST=Ayarı Kaydet
+VWPRSTS=Kayıtlı Olanları Gör
+
+LOADS=Cephanelik
+SVLOAD=Cephaneliği Kaydet
+VWLOADS=Cephanelikleri Gör
+
+SVLOAD_H_WEAP=Silahlarını kitlemek için güncel silahlarını komut kutusu scriptine yazar.
+
+WEAPLOCK_INV=Sadece Seçili Silahları Kaldır
+WEAPLOCK_INV_H="Kilitli Silahları", "Karaliste Silahlarına" dönüştürür, yani sadece seçilen silahlar kaldırılır.
+
+AIMBT=Aimbot
+
+AIMBT_LCKOUT=Zamanı Yeniden Ayarla (ms)
+AIMBT_LCKOUT_H=Kamerayı döndürünce aimbotun devredışı olma süresi.
+
+SMTHNG=Yumuşatma
+
+LOSCHECK=Görüş Çizgisini Kontrol Et
+
+TGTBONE=Hedef Kemik
+NECK=Boğaz
+RELBOW=Sağ Dirsek
+LELBOW=Sol Dirsek
+RHAND=Sağ El
+LHAND=Sol El
+PELVIS=Kalça
+RCALF=Sağ Bacak
+LCALF=Sol Bacak
+RFOOT=Sağ Ayak
+LFOOT=Sol Ayak
+
+TRIGBT=Triggerbot
+MAGICB=Sihirli Mermiler
+MAGICB_H=Triggerbot'un asla mermiyi kaçırmamasını önler.
+
+TRGSEL=Hedef Seçme
+
+PROXYROCKET=Yakınlık Roketi
+PROXYROCKET_H=Yakınlık roketleri sadece diğer kullanıcılarda çalışır.
+
+SPRMELEE=Süper Dövüş Silahları
+SPRMELEE_H=NPC'lere ve arabalara yakın dövüş silahlarıyla vurunca onları uzağa uçurur. Diğer oyuncular üzerinde çalışmaz
+
+INSTAPROXY=Proximity Mine Anında Patlar
+
+FILAMMO=Tüm Mermileri Doldur
+RMVAMMO=Tüm Mermileri Sil
+INFAMMO=Sınırsız Mermi
+
+SKPRLD=Şarjör Değiştirme Yok
+
+NOSPOL=Bekleme Yok
+NOSPOL_H=Uygulanabilir silahlarda sıktığın an merminin ateşlenmesini sağlar.
+
+NOSPRD=Saçılma Yok
+NORECL=Sekme Yok
+
+RAPFRE=Seri Ateş
+
+RAPFREVEH=Araç Silahlarında Seri Ateş
+
+DMG=Hasar Arttırıcı
+DMG_H=Yumrukların ve silahlarının yaptığı hasarı arttıran efekt uygular.
+
+RNGMUL=Mesafe Arttırıcı
+
+RKSPDMUL=Roket Hızı Arttırıcı
+
+! Or "Bullets Per Shotgun Shot"
+SHTGNSZE=Pompalı Tüfeğin Saçtığı Mermi Sayısı
+
+INSTLKNON=Hızlı Kitlenme
+
+EXPAMMO=Patlayıcı Mermi
+
+EXPTYP=Patlama Türü
+EXPTYP_H=Patlayıcı Hasarının Yarattığı Patlama Türünü Seçer.
+
+EXP_TAG_GRENADE=Grenade
+EXP_TAG_GRENADELAUNCHER=Grenade Launcher
+EXP_TAG_STICKYBOMB=Sticky Bomb
+EXP_TAG_MOLOTOV=Molotov
+EXP_TAG_ROCKET=Rocket
+EXP_TAG_TANKSHELL=Tank Shell
+EXP_TAG_HI_OCTANE=High Octane
+EXP_TAG_CAR=Car
+EXP_TAG_PLANE=Plane
+EXP_TAG_PETROL_PUMP=Petrol Pump
+EXP_TAG_BIKE=Bike
+EXP_TAG_DIR_STEAM=Steam
+EXP_TAG_DIR_FLAME=Flame
+EXP_TAG_DIR_WATER_HYDRANT=Water Hydrant
+EXP_TAG_DIR_GAS_CANISTER=Gas Canister Flame
+EXP_TAG_BOAT=Boat
+EXP_TAG_SHIP_DESTROY=Ship
+EXP_TAG_TRUCK=Truck
+EXP_TAG_BULLET=Bullet
+EXP_TAG_SMOKEGRENADELAUNCHER=Smoke Grenade Launcher
+EXP_TAG_SMOKEGRENADE=Smoke Grenade
+EXP_TAG_BZGAS=BZ Gas
+EXP_TAG_FLARE=Flare
+EXP_TAG_GAS_CANISTER=Gas Canister
+EXP_TAG_EXTINGUISHER=Extinguisher
+EXP_TAG_PROGRAMMABLEAR=Programmable AR
+EXP_TAG_TRAIN=Train
+EXP_TAG_BARREL=Barrel
+EXP_TAG_PROPANE=Propane
+EXP_TAG_BLIMP=Blimp (Blue)
+EXP_TAG_DIR_FLAME_EXPLODE=Flame Explode
+EXP_TAG_TANKER=Tanker
+EXP_TAG_PLANE_ROCKET=Plane Rocket
+EXP_TAG_VEHICLE_BULLET=Vehicle Bullet
+EXP_TAG_GAS_TANK=Gas Tank
+EXP_TAG_BIRD_CRAP=Bird Crap
+EXP_TAG_RAILGUN=Railgun
+EXP_TAG_BLIMP2=Blimp (Red & Cyan)
+EXP_TAG_FIREWORK=Firework
+EXP_TAG_SNOWBALL=Snowball
+EXP_TAG_PROXMINE=Proximity Mine
+EXP_TAG_VALKYRIE_CANNON=Valkyrie Cannon
+EXP_TAG_AIR_DEFENCE=Air Defense
+EXP_TAG_PIPEBOMB=Pipe Bomb
+EXP_TAG_VEHICLEMINE=Vehicle Mine
+EXP_TAG_EXPLOSIVEAMMO=Explosive Ammo
+EXP_TAG_APCSHELL=APC Shell
+EXP_TAG_BOMB_CLUSTER=Cluster Bomb
+EXP_TAG_BOMB_GAS=Gas Bomb
+EXP_TAG_BOMB_INCENDIARY=Incendiary Bomb
+EXP_TAG_BOMB_STANDARD=Bomb
+EXP_TAG_TORPEDO=Torpedo
+EXP_TAG_TORPEDO_UNDERWATER=Torpedo (Denizaltı)
+EXP_TAG_BOMBUSHKA_CANNON=Bombushka Cannon
+EXP_TAG_BOMB_CLUSTER_SECONDARY=Cluster Bomb (İkincil)
+EXP_TAG_HUNTER_BARRAGE=Hunter Barrage
+EXP_TAG_HUNTER_CANNON=Hunter Cannon
+EXP_TAG_ROGUE_CANNON=Rogue Cannon
+EXP_TAG_MINE_UNDERWATER=Underwater Mine
+EXP_TAG_ORBITAL_CANNON=Orbital Cannon
+EXP_TAG_BOMB_STANDARD_WIDE=Bomb (Geniş)
+EXP_TAG_EXPLOSIVEAMMO_SHOTGUN=Explosive Ammo (Shotgun)
+EXP_TAG_OPPRESSOR2_CANNON=Oppressor Mk II Cannon
+EXP_TAG_MORTAR_KINETIC=Kinetic Mortar
+EXP_TAG_VEHICLEMINE_KINETIC=Kinetic Vehicle Mine
+EXP_TAG_VEHICLEMINE_EMP=EMP Vehicle Mine
+EXP_TAG_VEHICLEMINE_SPIKE=Spike Vehicle Mine
+EXP_TAG_VEHICLEMINE_SLICK=Slick Vehicle Mine
+EXP_TAG_VEHICLEMINE_TAR=Tar Vehicle Mine
+EXP_TAG_SCRIPT_DRONE=Script Drone
+EXP_TAG_RAYGUN=Up-n-Atomizer (Raygun)
+EXP_TAG_BURIEDMINE=Buried Mine
+EXP_TAG_SCRIPT_MISSILE=Script Missile
+EXP_TAG_RCTANK_ROCKET=RC Tank Rocket
+EXP_TAG_BOMB_WATER=Water Bomb
+EXP_TAG_BOMB_WATER_SECONDARY=Water Bomb (İkincil)
+EXP_TAG_MINE_CNCSPIKE=Spikes
+EXP_TAG_BZGAS_MK2=BZ Gas Mk II
+EXP_TAG_FLASHGRENADE=Flash Grenade
+EXP_TAG_STUNGRENADE=Stun Grenade
+EXP_TAG_CNC_KINETICRAM=Kinetic Ram
+EXP_TAG_SCRIPT_MISSILE_LARGE=Script Missile (Large)
+EXP_TAG_SUBMARINE_BIG=Submarine (Büyük)
+EXP_TAG_EMPLAUNCHER_EMP=EMP Launcher EMP
+EXP_TAG_RAILGUNXM3=Railgun (MP)
+EXP_TAG_BALANCED_CANNONS=Balanced Cannons (F35)
+
+IMPPART=Hasar Parçacıkları
+IMPPART_H=Hasarın için kullanabileceğin parçacıkları seçmene yarar.
+
+TTLFRDM=Özgürlük
+TTLFRDM_H=Binaların içinde ve pasif modda silah kullanmana izin verir.
+TTLFRDM_MOV_H=Binaların içinde koşmana, zıplamana ve eğilmene izin verir.
+
+TPGUN=Işınlanma Silahı
+
+! "Sticky" as in "Sticky Bomb"
+INCSTICK=Sticky Limitini Arttır
+INCFLARE=Flare Limitini Arttır
+
+INCPROJ_H=Bu dünyaya yerleştirebileceğin miktarla oynama yapar, envanter sınırınla yapmaz.
+
+LASGUN=Lazer
+
+!!!!!!!!!!!!!
+!! Vehicle !!
+!!!!!!!!!!!!!
+
+NOVEHFND=Lütfen kıçını bi' arabaya yasla önce. :)
+VEHALRDIN=E zaten arabadasın. :?
+VEHCTRL=Aracının kontrolü alınamadı. :|
+
+PVS=Personal Vehiclelar
+
+INSUR=Sigorta (Mors Mutual)
+ADDINSUR=Sigorta ekle
+DSTRYD=Patlamış
+UINSRD=Sigortasız
+INSURCLM=Mors Mutual'dan Geri Getir
+
+REQ=Getir
+REQNDRV=Spawn Yerine Getir ve Sür
+REQNCALL=Olduğum Yere Getir ve Sür
+
+PVRPLC=Şuanki Araçla Değiştir
+PVRPLC_H=Bu personal vehicle yerine şu anda sürmekte olduğunuz aracın verilerini kaydeder.
+
+PVSVE_H=Bu personal vehicle'ın verilerini Stand'in garajına kaydeder.
+PVSVEA=Hepsini Garaja Kaydet
+PVSVEA_H=Bütün personal vehicle'larının verilerini Stand'in garajına kaydeder.
+! "Garage" must use same translation as GRG. "Personal Vehicles" must stay as-is.
+PVSVEA_S=Personal Vehicle'ların Garaj > Personal Vehiclelar kısmına kaydedildi. :D
+
+CURPV=Şuanki Personal Vehicle
+PVEHNTFND=Personal Vehicle'ını bulamadım. :/
+
+LSTVEH=Son Araç
+LSTVEHNTFND=Son aracını bulamadım. :/
+
+CALLVEH=Aracı Bana Işınla ve Sür
+
+RC=Uzaktan Kontrol
+RC_STCK=Takılı kaldıysan {} tuşuna bas.
+
+GTARC=Imani Tech Remote Control
+GTARC_E=Bu araç Imani Tech Remote Control'u desteklemiyor ve "Bütün Araçları Uzaktan Kontrol Et" seçeneği açık değil.
+
+RCANYVEH=Bütün Araçları Uzaktan Kontrol Et
+
+RETSTOR=Garaja Yolla
+
+VEHFOLLOW=Beni Takip Et
+
+SPWNR=Araç Spawner
+SPWND=Spawnlandı
+
+! The act of doing it, to spawn
+SPWN=Spawnla
+
+SPWNR_CLASSES=Araç Türleri
+
+VEH_CLASS=Tür
+VEH_SEATS=Koltuk Sayısı
+
+DLC=DLC
+DLCS=DLCler
+DLC_10=Oyun Çıkışından Beri Varolan Araçlar
+DLC_60=Beach Bum
+DLC_100=Valentine's Day Massacre
+DLC_110=Business
+DLC_130=High Life
+DLC_140=I'm Not a Hipster
+DLC_150=Independence Day
+DLC_160=SA Flight School
+DLC_170=Last Team Standing
+DLC_180=Next Gen Release
+DLC_190=Festive Surprise 2014
+DLC_210=Heists DLC
+DLC_270=Ill-Gotten Gains Part 1
+DLC_280=Ill-Gotten Gains Part 2
+DLC_300=Lowriders
+DLC_301=Halloween Surprise
+DLC_310=Executives and Other Criminals
+DLC_311=Festive Surprise 2015
+DLC_320=January 2016
+DLC_321=Be My Valentine
+DLC_330=Lowriders: Custom Classics
+DLC_340=Further Adventures in Finance and Felony
+DLC_350=Cunning Stunts
+DLC_360=Bikers
+DLC_370=Import/Export
+DLC_380=Special Vehicle Circuit
+DLC_400=Gunrunning Pack
+DLC_410=Smuggler's Run
+DLC_420=The Doomsday Heist
+DLC_430=Southern SA Super Sport Series
+DLC_440=After Hours
+DLC_460=Arena War
+DLC_480=Diamond Casino & Resort
+DLC_490=Diamond Casino Heist
+DLC_510=LS Summer Special
+DLC_520=Cayo Perico Heist
+DLC_570=LS Tuners
+DLC_580=The Contract
+DLC_610=The Criminal Enterprises
+DLC_640=Drug Wars
+DLC_670=San Andreas Mercenaries
+DLC_680=The Chop Shop
+DLC_690=Bottom Dollar Bounties
+
+MANUFNS=Marka İsimleri
+
+SPWNTUNE=Aracı
+SPWNTUNE_H=Stand ile spawnladığın araçları modifiyeli çıkarıp çıkarmamana izin verir.
+TUNE_PRESETS=Hazır Ayarlar
+TUNE_STCK=Modifiyesiz Çıkar
+TUNE_PERF=Performans Modifiyeli Çıkar
+TUNE_PERF_H=Sadece Engine, Brakes, Transmission, Armour ve Turbo modifiyeli çıkar.
+TUNE_PERFWSPL=Performans, Spoiler Dahil
+TUNE_FULL=Tamamen Modifiyeli Çıkar
+
+SPWCLR=Aracı Renkli Çıkar
+
+SPWPLATE=Çıkarılan Araçların Plakası
+
+TUNE=Modifiye
+TUNE_H=Şuanki ya da son aracını fuller.
+
+RTUNE=Rastgele Modifiye
+RTUNE_VIS=Sadece Görsel
+RTUNE_PERF=Sadece Performans
+RTUNE_PERF_S=Sadece Performans & Spoiler
+
+PERF=Performans Modifiyesi
+PERF_H=Şuanki ya da son aracının EMS, Brakes, Transmission, Armour and Turbo özelliklerini fuller.
+PERF_T=Aracına bir performans ayarı çektim. :D
+PERF_E=Aracın zaten performans açısından mükemmel. :)
+
+PERFWSPL=Performans Modifiyesi, Spoiler Dahil
+
+DNGRD=Modifiyeyi Kaldır
+DNGRD_H=Şuanki ya da son aracının modifiyelerini kaldırır.
+
+GRG=Garaj
+SVEVEH=Aracı Kaydet
+
+PARA=Paraşüt
+PARA_GEN=Normal Paraşüt
+PARA_BRK=Bozuk Paraşüt
+SECUROSERV=SecuroServ
+
+XTRA=Ekstra
+XTRAS=Ekstralar
+XTRAS_N=Aracının ekstra modifiyesi yok.
+
+PARAON=Paraşütü Etkinleştir
+PARAON_H=Her araçta etki göstermez, Ör: Motorlar.
+
+PARA_H_VIS=Lütfen bu aracın paraşütünü açtığınız zaman bütün değişikliklerin uygulanmayacağını not edin.
+
+VEHFIN0=Normal
+VEHFIN1=Metalik
+VEHFIN2=Sedef Rengi(Yansıma)
+VEHFIN3=Mat
+VEHFIN4=Metal
+VEHFIN5=Krom
+VEHFIN6=Bukalemun
+
+WHLS=Tekerler
+WHLSCLR=Teker Rengi
+WHLTYP=Teker Kategorisi
+VEHMOD23=Ön Tekerler
+
+VEHMOD0=Spoilerlar
+VEHMOD1=Ön Tampon / Countermeasurelar
+VEHMOD2=Arka Tampon
+VEHMOD3=Yan Etekler
+VEHMOD4=Egzoz
+VEHMOD5=Frame
+VEHMOD6=Izgaralar
+VEHMOD7=Kaput
+VEHMOD8=Fender
+VEHMOD9=Sağ Fender
+VEHMOD10=Çatı / Silahlar
+VEHMOD11=Motor
+VEHMOD12=Frenler
+VEHMOD13=Kalkma Hızı
+VEHMOD14=Kornalar
+VEHMOD15=Süspansiyon
+VEHMOD16=Zırh
+VEHMOD18=Turbo
+VEHMOD24=Arka Tekerler
+VEHMOD25=Plaka Tutucular
+
+! Alternatively, "Benny's Plates"
+VEHMOD26=Benny's Plakaları
+
+VEHMOD27=İç Dizayn
+VEHMOD28=Araç Süsleri
+VEHMOD29=Gösterge Paneli
+VEHMOD30=Dial Tasarımı
+VEHMOD31=Kapı Hoparlörü
+VEHMOD32=Koltuklar
+VEHMOD33=Direksiyon
+VEHMOD34=Vites Kolu
+VEHMOD35=Plaques
+VEHMOD36=Hoparlörler
+VEHMOD37=Bagaj
+VEHMOD38=Hidrolik
+VEHMOD39=Motor Kapağı
+VEHMOD40=Boost / Hava Filtresi
+VEHMOD41=Strutlar
+VEHMOD42=Arch Cover
+VEHMOD43=Antenler
+VEHMOD44=İç
+VEHMOD45=Tank
+VEHMOD46=Sol Kapı
+VEHMOD47=Sağ Kapı
+VEHMOD48=Livery
+VEHMOD49=Çakarlar
+
+VEHDRFTYR=Drift Lastikleri
+
+VEHBPTYR=Kurşungeçirmez Lastik
+
+SCRCHD=Alazlanmış
+
+TONK=Turret'ı kaldır
+
+BHVONFT=Yürürken Yapılacaklar
+
+BHVINVEH=Araçtayken Yapılacaklar
+
+SPWNDRVE=Spawnlanan Araçları Sür
+SPWNDRVE_H=Stand ile çıkardığın araçların direkt sürücü koltuğuna oturmanı sağlar.
+
+SPWNAIR=Uçan Araçları Havada Çıkar
+
+SPWNFRNT=Önünde Spawnla
+SPWNFRNT_H=Stand ile çıkardığın araçları birkaç metre önünde çıkarır.
+
+SPWLIKEPV=Personal Vehicle Gibi Spawnla
+
+SPWNDEL=Önceki Aracı Sil
+
+SPWNVEL=Hızı Sabit Tut
+
+INPTVEHMDL=Model Adı Gir
+ARGMDLNME=[model adı]
+INPTVEHMDL_H=Araç spawnlamanın "pro 360 modu".
+INPTOBJMDL_H=Obje spawnlamanın "pro 360 modu".
+INPTMDL_E=Maalesef {} geçerli bir model adı değil. :/
+INPTVEHMDL_E=Maalesef {} geçerli bir araba modeli adı değil. :/
+
+ARSPD=AR Hız Göstergesi
+ARSPD_H=Karakterine hız göstergesi uygulaması açtıran AR gözlük verir.
+
+CM=Countermeasurelar
+CM_AUTO=Oto-Ateşle
+CM_OF=Sadece Uçan Araçlarda
+CM_PERIOD=Zamanlamalı Ateşle
+CM_PERIOD_D=Zamanlamalı Ateşle: Gecikme
+
+FLARE=Flare
+CHAFF=Chaff
+BOTH=İkisi de
+
+CM_FLARE=Flare Ateşle
+CM_CHAFF=Chaff Ateşle
+CM_BOTH=Chaff ve Flare Ateşle
+
+CM_PT=Örüntü
+CM_HOR=Yatay
+CM_HOR_UP=Yukarı Yatay
+CM_HOR_DOWN=Aşağı Yatay
+CM_VERT=Dikey
+CM_VERT_DOWN=Aşağı Dikey
+
+AUTODRIVE=Oto Sürüş
+AUTODRIVE_C=Rahat Sürüş
+AUTODRIVE_SDB=Bitiş Feneri Göster
+AUTODRIVE_ACOI=Tuşa Basınca İptal Et
+AUTODRIVE_ACOI_H=Aracı kontrol etmeye çalışınca otomatik olarak durur.
+AUTODRIVE_NOCLIP=Oto Sürüş Sırasında Çarpışma Yok
+AUTODRIVE_NOCLIP_H=Oto sürüş sırasında diğer araçlarla çarpışamazsın. Agresif sürüş esnasında navigasyon zor olduğundan işe yarayabilir.
+AUTODRIVE_STORE=Mağaza
+AUTODRIVE_MOVIE=Sinema
+AUTODRIVE_CLUBHOUSE=Motor Çetesi Clubhouse
+AUTODRIVE_FACILITY=Facility
+AUTODRIVE_AGENCY=Agency
+AUTODRIVE_OFFICE=Office
+AUTODRIVE_HANGAR=Hangar
+AUTODRIVE_ERR2=Oto sürüş bu araç için geçerli değil.
+AUTODRIVE_ERR3=Uygun bir yol bulamadım, üzgünüm. :(
+AUTODRIVE_ERR4=Zaten istediğin yerdesin. :P
+AUTODRIVE_ARRIVE=Yolculuk sona erdi. ^_^
+AUTODRIVE_DRIVE=Sürüş Biçimi
+AUTODRIVE_LAW=Yasalar Çerçevesinde
+AUTODRIVE_NOTSOLAWFUL=Yasalar Çerçevesinde, Kırmızı Işıkta Geç
+AUTODRIVE_BACK=Geri
+AUTODRIVE_DEST=Şuraya Sür...
+AUTODRIVE_DEST_NONE=Yol Bizi Nereye Götürürse
+AUTODRIVE_DEST_NONE_H=Seni rastgele dolaştırır.
+
+LGTSIGS=Trafik Işıkları
+TRNSIG=Dönüş Sinyalleri
+TRNSIG_HAZ=Dörtlüler
+TRNSIG_AUTO=Dönerken sinyalleri devredışı bırak
+BRAKELIGHTS=Durmuşken fren ışıklarını aç
+MTESIRENS=Çakarları Sustur
+
+AUTORKTBST=Otomatik Roket Boost
+AUTORKTBST_H2=Rocket boost yeniden dolduğunda otomatik yeniden kullanır.
+
+RKTBST=Roket Boost
+
+OVRD=Değişiklik
+RKTBST_H_OVRD=Sürdüğün araçların roket boostu olup olmadığını ayarlar.
+
+VERTRKTBST=Dikey Roket Boost
+
+CHRGBHV=Boost Dolum Şekli
+RKTBST_NVREND=Sınırsız
+RKTBST_NVREND_H=Kaza yapana kadar boostun bitmez.
+RKTBST_INSTRFLL=Yeniden Dolum
+RKTBST_INSTRFLL_H=Boostun biter bitmez boostun yeniden dolar.
+RKTBST_NORFLL=Sıfır Dolum Süresi
+RKTBST_NORFLL_H=Şartlar karşılandığı an boostun yeniden dolar.
+RKTBST_EMPTY=Hep Boş
+
+RMP=Rampa
+RMMSCOOP=Ram Scoopu
+INCRMMFRC=Arttırılmış Ramming Force
+
+LSC=Los Santos Customs
+
+VDO=Kapıları Aç/Kapa
+
+VEHDOOR_A=Tüm Kapılar
+VEHDOOR_0=Sol Ön
+VEHDOOR_1=Sağ Ön
+VEHDOOR_2=Sol Arka
+VEHDOOR_3=Sağ Arka
+VEHDOOR_4=Kaput
+VEHDOOR_5=Bagaj
+VEHDOOR_6=Arka
+VEHDOOR_7=Arka 2
+
+LOCKD=Kapıları Kilitle
+LOCKD_O=Sadece Boşken
+XCLUDEPVS=Diğerlerinin Personal Vehicle'ını Dahil Etme
+
+ENGTGL=Motoru Aç/Kapa
+ENGTGL_H=Çoğu arabada ileri ya da geri tuşuna basmanın motoru çalışır duruma getireceğini unutmayın.
+
+FLIPVEH=Aracı Tersdüz Et
+FLIPVEH_H=Aracını tersdüz eder.
+
+ATRNSUBCAR=Denizde Giden Araçları Otomatik Dönüştür
+NANIM=Animasyonsuz Şekilde
+
+DRBYINANY=Tüm Arabalardan Ateş Edebilme
+DRBYWITHANY=Tüm Silahlarla Arabadan Ateş Edebilme
+
+WHEELONWHEELS=Arabadayken Silah Çemberi
+WHEELONWHEELS_H=Teker teker gidebilmek için mouse tekerleğiyle silah değiştirmeniz gerektiğini, araba silahları için bunun gerekli olduğunu unutmayın.
+
+BMBTRJC=Bomba İzlerini Göster
+
+FLYTHRUWND=Ön Camdan Uç
+
+! "Glued To Seats" is SEATGLUE
+FLYTHRUWND_H=Story Mode'daki gibi yüksek hızlı kazalarda aracın önünden uçmanı sağlar. Bu komut, "Koltuğa Yapışık" komutunu devredışı bırakır.
+
+ANTINLCKON=Tüm Araçlara Kitlen
+
+! "Can't Be Locked On" is NLCKON
+ANTINLCKON_H=Imani Tech araçlarına kitlenebilmeni sağlar. Bu, aynı zamanda "Kitlenilemez" gibi özelliklerin önüne geçer.
+
+SETSEAT=Koltukları Ayarla
+DRV=Sürücü
+
+LVENGRUN=Çıkarken Motoru Açık Bırak
+
+NOJACK=Araçtan Çıkarılamaz
+
+PEG=Pegasus Aracı Olarak Ayarla
+PEG_H=Bazı hava araçlarını pegasus aracı olarak ayarlayarak hangarına sokmana izin verir.
+
+DSTRY=Patlat
+
+DELVEH_H=Şuanki ya da en son aracını siler.
+
+FIXVEH=Tamir Et
+FIXVEH_H=Şuanki ya da en son aracını tamir eder.
+
+VEHGOD=Patlatılamaz
+VEHGOD_H=Sürdüğün ya da uçurduğun hiçbir araç hasar almaz.
+
+SPWNGOD=Spawnlanan Araçlar Patlatılamaz Çıkar
+
+SPWNLIST=Spawnlanan Araç Listesi
+
+VEH_DRV=Sür
+VEH_ENT=Bin
+VEH_EMPTY=Boş
+DEL=Sil
+
+SPWNBLIP=Spawlnanan Araçlara Harita İkonu
+SPWNBLIP_TXT=Spawnlanmış Araba ({})
+CLRBLIP=İkonları Kaldır
+ONLYLTST=Sadece Son Spawnlanan İçin
+
+MINT=Sonsuza Kadar Cilalı
+MINT_H=Aracın asla çizilmez.
+
+PLATE=Plaka
+
+PLATESPEED=Hız Göstergesi
+PLATESPEED_A=Hız Göstergeli Plaka
+
+CHARLIMIT={number} karakter sayısını aşamayız. :|
+
+RNDISE=Rastgele
+
+SCRLTXT=Kayan Yazı
+
+LCKPLT=Plakayı Kilitle
+
+BADCHAR="{}" bunun için geçerli bir karakter değil. :|
+
+HORNBOOST=Kornayla Boost
+
+SPRDRV=Süper Sürüş
+
+SPRDRVCAM=Süper Sürüş Kameraya Göre Etkilensin
+SPRDRVCAM_H=Boost aracın önüne değil, kameranın baktığı yere doğru uygulanır.
+
+SPRHBRK=Süper Fren
+
+DRVONWTR=Suda Sür
+
+DRVUNDWTR=Sualtında Sür
+
+SPDLMT=Hız Limiti (Km/s)
+SPDLMT_H=Sürdüğün ya da uçurduğun araçların hız limitini ayarlamanı sağlar. (Normal: 540)
+
+JMPABL=Zıplama Yeteneği
+JMPABL_H=Aracınızda hem zıplama hem de roket boost özelliği varsa, özelliklerden biri ikinci tuşa (E-X) aktarılır.
+
+GLDABL=Süzülme Yeteneği
+
+HEADLIT=Farlar
+
+HEADLITMUL=Far Yoğunluğu
+H_HILOCAL=*Yüksek değerler sadece sende gözükür*
+
+GRVTYMTPLY=Yerçekimi Arttırıcı
+
+NOTAIR=Hava Aracında Değil
+
+HNEDIT=Yol Tutuşu Editörü
+HNE_BASE=Kara
+HNE_AIRCRAFT=Uçan
+
+! Motorcycles and bicycles alike.
+HNE_BIKES=Çift Teker
+
+HNE_FLYING=Uçan
+HNE_VERTFLY=Dikey Uçuş
+HNE_SPECFLY=Özel Uçuş
+HNE_SEAPLANE=Deniz Uçakları
+HNE_SUBMARINE=Denizaltılar
+HNE_TRAILER=Romörk
+HNE_CAR=Araba
+
+SPECFLY_H=Deluxo hariç araçlarda tavan tuşunun (Hold H or D-Pad Right) özel uçuş için kullanıldığını unutmayın.
+
+DELUXO=Deluxo
+OPP2=Oppressor Mk II
+
+SHWNA=Uygulanamaz Olanları Göster
+
+HNE_VWSCR=Yol Tutuşu Scriptlerini Göster
+HNE_VWSCR_H=Command Box Scripts dosyasındaki "Handling" alt dosyasını açar.
+
+HNE_NA=Bu kategori şuanki aracına uygulanamaz.
+
+CSTWNGBVHR=Özel Kanat Ayarları
+CSTWNGBVHR_H=Opressor 1'in kanatlarının uzunluğunu ve açılış hızını ayarlamanı sağlar.
+
+LESSENBURN=Lastik Yanmasını Azalt
+
+SMTHCST=Sakin Sürüklen
+SMTHCST_H=Gaza basmıyorken aracının hızının azalmasını daha gerçekçi hale getirir.
+
+DRFTMDE=Drift Modu
+DRFTMDE_H=Bayağı araçta işe yarayan, bizim drift modumuz. Bizim modumuz çok daha fazla araçta işe yarıyor, ama bazı araçlar diğerleri gibi sakin hissettirmeyebilir.
+
+MINPOS=Minimum Uzunluk
+MAXPOS=Maksimum Uzunluk
+CSTWNGBVHR_SPD=Hız
+MAXPOS2SPD=Hızı maksimum uzunluğa göre ayarla
+
+SMTHFLY=Sıfır Türbülans
+
+HELIAUTOSTAB=Helikopter Oto-Stabilleştirmeyi Devredışı Bırak
+HELIAUTOSTAB_H=Murten'ın BetterHeliMode scriptinden esinlenildi.
+
+NLCKON=Roketler Kitlenemez
+
+INSTASEAT=Araçlara Beklemeden Gir/Çık
+INSTASEAT_H=Karakterinin araca yürüme, motoru açıp/kapatma animasyonlarını geçer.
+
+EXITSTOP=Araçtan İnerken Aracı Durdur.
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Vehicle Classes !!
+!!!!!!!!!!!!!!!!!!!!!
+
+off_road=Off-Road
+sport_classic=Klasik Spor Araçlar
+Military=Ordu Araçları
+Compacts=Compactlar
+sport=Spor Araçlar
+Muscle=Muscle
+motorcycle=Motorsikletler
+open_wheel=Open Wheel
+Super=Super
+van=Vanlar
+suv=SUVlar
+Commercial=Commercial
+plane=Uçaklar
+sedan=Sedanlar
+Service=Servis Araçları
+Industrial=Endüstriyel Araçlar
+helicopter=Helikopterler
+boat=Gemiler
+Utility=Utility
+Emergency=Acil Servis Araçları
+cycle=Bisikletler
+coupe=Coupelar
+rail=Trenler
+
+!!!!!!!!!!!
+!! World !!
+!!!!!!!!!!!
+
+PLCS=Yerler
+INHAB=Vatandaşlar
+ATMO=Atmosfer
+
+DWNTWN=Şehir Merkezi
+
+! GTA calls a point on the map a "blip"
+BLIPS=Blipler
+BLIPNFND=Böyle bir blip bulamadım. :/
+
+TP=Işınlan
+
+DEDFX=Ölüm Efekti
+RESPFX=Respawn Efekti
+TPFX=Işınlanma Efekti
+
+TPS=Işınlanma Yerleri...
+TPWAIT=Hazırlanıyor...
+
+WP=Waypoint
+WPS=Waypoint Koy...
+OBJCTV=Görev
+TP_MP=Buraya ışınlanmak, oyunu kısa süre içinde tepkisiz hale getirebilecek Online Dünya Durumunu sağlayabilir..
+TP_CAYO=Bomboş bir suya ışınlanmamak için bunu seçmeden önce Cayo Perico Dünya Durumu seçeneğini ya da IPL'leri aktif etmeyi unutmayın.
+
+RPLTP=Son Işınlanılan Yer
+RP_E=Öyle bir yer yok. :?
+
+UNDOTP=Geri Işınlan
+UNDOTP_E=Geri ışınlanacak yer yok. :?
+
+STORS=Mağazalar
+
+AMMUNAT=Silahçı
+SHTNGRNGE=Poligonlu Silahçı
+BARBR=Berber
+CLTHST=Kıyafet Mağazası
+TATTOO=Dövmeci
+
+LNDMRKS=Önemli Yerler
+
+LSIA=Los Santos Havalimanı
+FRTZNC=Fort Zancudo Askeri Üssü
+MTCHIL=Mount Chiliad
+
+CAYO=Cayo Perico Adası
+
+CSNO=Casino
+
+! Translate "Tower" & "Helipad"
+MAZEHELIPAD=Maze Bank Binası Helikopter Pisti
+
+HIGHPLACE=Gökyüzü
+
+AUTOTPWP=Waypointlere Otomatik Işınlan
+AUTOTPWP_H=Koyduğun yer waypointe seni otomatik ışınlar.
+AUTOTPWP_T=Otomatik olarak waypointine ışınlandın. :)
+
+WPORTAL=Waypointlere Portallar ile Işınlan
+
+CBPOS=Kopyaladığın Koordinatlara Işınlan
+CBPOS_H=Kopyaladığın şeyi 3D veya 2D vektör mü diye kontrol eder.
+CBPOS_T=Kopyalamanda 3D veya 2D vektör bulamadım. :?
+
+POS=Koordinat
+
+! Stand > Settings > Appearance > Position
+MNUPOS=Koordinat
+
+! World > Places > Position
+MYPOS=Koordinat
+
+POS_Z=Z (Yükseklik)
+
+SVDPLCS=Kayıtlı Yerler
+SVDPLCS_H=Bu yeri {} tuşuyla kaydedebilirsin.
+
+SVPLC_M=Koordinatlarımı Kaydet
+SVPLC_W=Waypoint Koordinatlarını Kaydet
+
+CPPOS=Koordinatları Koypala
+
+CPSUCC=Koordinatlarını başarıyla kopyaladım. :D
+CPERR=Koordinatlarını kopyalayamadım. :|
+
+IPLS=IPL'ler
+IPLS_H=Oyundaki yüklenmeyen yerleri yüklemeni sağlar *Sadece Senin İçin*.
+
+IPLTP=IPL'lere ışınlan
+IPLTP_H=Aşağıdaki IPL'leri aktifleştirdiğinde seni oraya ışınlar.
+IPL_MP=Bu IPL'i aktifleştirmek Online Dünyasını değiştireceğinden oyun biraz cevapsız kalabilir
+
+TRFC=Trafik
+
+TRFCLR=Trafik Rengi
+
+DPEDS_A=Yayaları Kaldır
+
+DTRFC_A=Trafiği Kaldır
+DTRFC_2=Park Halindekiler Dahil Aktif
+
+SWRLDST=Dünya Modunu Değiştir
+SWRLDST_H=Dünya modunu değiştirmenin oyunu biraz cevapsız bırakabileceğini not edin.
+
+SP=Story Mode
+
+S_SP=Single Player
+S_MP=Online
+
+INT=Bina İçleri
+INTS=Bina İçleri
+
+INT_BKR=Bunker
+STYL=Style
+SECTY=Security Upgrade
+EQUIPUPGR=Equipment Upgrade
+GUNLKR=Gun Locker
+PSNLQRTS=Personal Quarters
+GUNRNGE=Poligon
+
+INT_VW=Vehicle Warehouse
+INT_VW_2=Branded
+INT_VW_1=Urban
+INT_VW_0_1=Basic (Renk 1)
+INT_VW_0_2=Basic (Renk 2)
+INT_VW_0_3=Basic (Renk 3)
+INT_VW_0_4=Basic (Renk 4)
+
+INT_IF=IAA Facility
+INT_SR=Server Odası
+INT_BS=Bogdan'ın Denizaltı
+INT_HL=Humane Labs
+INT_FR=FIB (Büro Soygunu)
+INT_LFB=La Fuente Blanca
+INT_SSWCC=Split Sides West Comedy Club
+INT_BM=Bahama Mamas
+INT_TR=İşkence Odası
+INT_MR=Motel Odası
+INT_OG=Omega'nın Garajı
+INT_CIN=Sinema
+INT_RCYL=Geri Dönüşüm Merkezi
+
+INT_PYSC=Friedlander'ın Ofisi
+INT_SOL=Solomon'ın Ofisi
+
+INT_FH=Floyd'un Evi
+INT_JH=Hademe'nin Evi
+INT_LH=Lester'ın Evi
+
+INT_BENNY=Benny's Original Motor Works
+INT_HAYES=Hayes Autos
+INT_TEQ=Tequi-La-La
+INT_FDRY=Dökümhane
+INT_UDG=Union Depository Garajı
+INT_ESR=Epsilon Deposu
+INT_CC=Karakter Oluşturma Odası
+INT_ME=Bölüm Bitimi Otoparkı
+INT_NG=Nightclub Garajı
+INT_WEED=Kenevir Tarlası
+INT_STILT=Lüks Dağ Evi
+
+INT_A_H=High-End Apartment
+INT_A_M=Mid-End Apartment
+INT_A_L=Low-End Apartment
+
+INT_G_H=High-End Garaj
+INT_G_M=Mid-End Garaj
+INT_G_L=Low-End Garaj
+
+INT_W_L=Büyük Warehouse
+INT_W_M=Orta Boy Warehouse
+INT_W_S=Küçük Warehouse
+
+YANK=North Yankton
+YANKMAPRDR=North Yankton Harita & Radar
+IPL_USSLUX=USS Luxington
+IPL_HOSPITAL=Pillbox Hill Sağlık Merkezi
+FMEORSHME=Fame or Shame
+FCEBK=Lifeinvader
+IPL_JEWEL=Vangelico Kaliteli Mücevherler
+IPL_MXRD=Max Renda
+IPL_UFOEYE=Mount Chiliad UFO
+IPL_FINBANK=Union Depository
+IPL_PLNCRSH=Uçak Kazası
+
+! Translate "Factory"
+IPL_CLKNBLLFCTRY=Clucking Bell Fabrikası
+IPL_LSTRFCTRY=Lester'ın Fabrikası
+
+! Translate "Morgue"
+IPL_MORGUE=Morg
+
+! Translate "Heist" and "Yacht"
+IPL_AYACHT=Series A Soygunu Yatı
+
+! Translate "Ranch" and "Fire"
+IPL_RANCH=O'Neil Brothers Çiftliği
+IPL_RANCH_LIT=O'Neil Brothers Çiftliği (Yangın)
+
+! Translate "Clubhouse"
+IPL_LOSTHOUSE=Lost MC Motor Kulübü
+
+! Translate "House"
+IPL_BCHOUSE=Banham Canyon Evi
+
+IPL_TRNWRCK=Tren Kazası
+IPL_REDCRPT=Kırmızı Halı
+
+! Translate anything but "FIB"
+IPL_FIBLBBY=FIB Binası Lobisi
+! Translate anything but "FIB"
+IPL_FIBHELI=FIB Helikopter Kazası
+! Translate anything but "FIB"
+IPL_FIBRBBL=FIB Moloz
+
+! Translate "Triathlon"
+IPL_TRIA2=Alamo Sea Triatlonu
+! Translate "Triathlon"
+IPL_TIRA1=LSIA Triarlonu
+
+! Translate "Gates"
+IPL_ZGATES=Fort Zancudo Kapıları
+
+! Translate "Airfield" and "Boxes"
+IPL_BOXES=Sandy Shores Havaalanı Kutuları
+
+IPL_SPNN=Oto Yıkama
+
+! Translate "Billboard" and "Graffiti"
+IPL_MAZEGRFF=Maze Bank Billboardu Graffitisi
+! Translate "Billboard" and "Graffiti"
+IPL_OILGRFF=Ron Oil Billboardu Graffitisi
+! Translate "Billboard" and "Graffiti"
+IPL_FRUITBB=iFruit Billboardu
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL1=Meltdown Billboardu 1
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL2=Meltdown Billboardu 2
+
+! Translate "Church" and "Grave"
+IPL_GRVE=Hill Valley Kilisesi Mezarlığı
+
+XSTPNSH=NPC Varolma Cezası
+NPRXPNSH=NPC Yakın Olma Cezası
+PRX=Yakınlık
+NAIMPNSH=NPC Nişan Alma Cezası
+NAIMPNSH_H=Alanında bulunan NPC'leri nişan aldıkları için cezalandır.
+NHOSPNSH=NPC Düşmanlık Cezaları
+INCLUDE_EVERYONE=Herkesi İçer
+INCLUDE_EVERYONE_M=Görevlerde Herkesi İçer
+INCLUDE_FRIEND=Arkadaşları İçer
+INCLUDE_PASS=Araçtakileri İçer
+INCLUDE_CREW=Crew Üyelerini İçer
+INCLUDE_ORG=Organizasyon Üyelerini İçer
+INCLUDE_H1=Sadece seni içermek yerine, yanındaki kişi de önemliyse hepsi onun için de geçerli olur.
+INCLUDE_H2=Üsttekinin aynısı ama sadece görevlerde çalışır.
+PAIMPNSH=Oyuncu Nişan Alma Cezası
+PAIMPNSH_H=Alanında bulunan oyuncuları nişan aldıkları için cezalandır.
+AIMME=Sadece Bana Nişan Alanları Cezalandır
+AIMMEN=Devredışı bırakıldığında, NPC'ler kime nişan aldıkları fark etmeksizin nişan aldıkları için cezalandırılacaklar.
+AIMMEP=Devredışı bırakıldığında, oyuncularr kime nişan aldıkları fark etmeksizin nişan aldıkları için cezalandırılacaklar.
+PNSH_EXPANON=İsimsiz Patlama
+PNSH_EXP=Normal Patlama
+PNSH_BRN=Yanma
+PNSH_DIE=Öldür
+PNSH_REV=Canlandır
+PNSH_UNRM=Silahını Al
+PNSH_UNRM_H=Yumrukları hariç hiçbir şeyleri kalmaz.
+PNSH_INTRP=İzin Verme
+PNSH_CWR=Korkut
+PNSH_FLEE=Korkudan Koşarlar
+PNSH_PSH=Uzağa İt
+PNSH_MRK=AR İşaretçi
+PNSH_SHWMDLNME=Model İsmini Göster
+PSNH_FIX=Tamir Et
+PSNH_WEKN=Zayıflat
+PSNH_WEKN_H=Kolayca ölebilsinler diye canlarını azaltır.
+
+! "ESP" as in "Extra Sensory Perception"
+NESP=NPC ESP
+! "ESP" as in "Extra Sensory Perception"
+PESP=Player ESP
+
+! "ESP" as in "Extra Sensory Perception"
+BONESP=Bone ESP
+XCLDED=Ölüler Hariç
+
+! "ESP" as in "Extra Sensory Perception"
+BOXESP=Kutu ESP
+
+RNDR_LWLTCY=Düşük Gecikmeli Render
+RNDR_LGCY=Yavaş Render
+RNDR_NTV=Native Render
+
+! "ESP" as in "Extra Sensory Perception"
+NAMESP=İsim ESP
+
+MINTXTSCL=Minimum Yazı Boyutu
+MAXTXTSCL=Maksimum Yazı Boyutu
+INVTXTSCL=Yazı Boyutlandırmayı Ters Çevir
+
+! "ESP" as in "Extra Sensory Perception"
+LINESP=Çizgi ESP
+
+ESPTAGS_H=Etiketler gösterim önceliğine göre bu listede sıralanır.
+
+CLRARE=Alanı Temizle
+IGMISSENT=Görev Varlıklarını Yoksay
+NDLY=Gecikmesiz
+
+DELROPES=Tüm İpleri Sil
+
+DOORS=Gelişmiş Açık Dünya
+DOORS_H=Dünyayı daha geniş hale getirip içine girebileceğin binaları gösterir.
+
+DOORS_ENT={interior}'a girmek için lütfen {input} tuşuna bas.
+DOORS_EXT=Çıkmak için {} tuşuna bas.
+
+DEDSEC=Watch_Dogs-Gibi Dünya Hackleme
+
+DEDSEC_HACK=Hileler
+DEDSEC_HACK_H=Ekranında hangi hilelerin gözüktüğünü ayarlaman gerekir.
+
+DEDSEC_GENAC=Genel Seçenekler
+DEDSEC_VEHAC=Araba Seçenekleri
+DEDSEC_VEHAC_H=Bir aracın içindeki oyuncuyu seçiyorsan uygulanır.
+DEDSEC_NPCAC=NPC Seçenekleri
+DEDSEC_PLRAC_H=Yaya bir oyuncuyu seçiyorsan uygulanır.
+
+DEDSEC_TUT_ESP=Bir oyuncuya, arabaya ya da NPC'ye doğru bak.
+DEDSEC_TUT_OPT=Şuanki hedefin için seçeneklerini görmek için {} tuşuna bas.
+DEDSEC_TUT_OPTMSE=Mouse tekerleği ya da {} tuşu
+DEDSEC_TUT_SEL=Seçeneklerin üzerine gelmek için kameranı hareket ettir ve tuşu bırakarak seç.
+
+DEDSEC_OPT_FRZ=Dondur
+DEDSEC_OPT_UFRZ=Dondurmayı Kaldır
+DEDSEC_OPT_EXP=Patlat
+DEDSEC_OPT_UNRM=Silahını Al
+DEDSEC_OPT_DEL=Sil
+
+DEDSEC_OPT_DSTRY=Patlat
+DEDSEC_OPT_DRV=Sür
+DEDSEC_OPT_ENT=Bin
+DEDSEC_OPT_EMPTY=Boşalt
+DEDSEC_OPT_IGNITE=Ateşe Ver
+DEDSEC_OPT_SLINGSHOT=Sapanla
+
+DEDSEC_OPT_BRN=Yak
+DEDSEC_OPT_FLEE=Korkut ve Koştur
+DEDSEC_OPT_CWR=Korkut
+DEDSEC_OPT_REV=Canlandır
+
+DEDSEC_OPT_KLL=Öldür
+DEDSEC_OPT_CGE=Kafesle
+DEDSEC_OPT_MNU=Stand'de
+
+DEDSEC_STICKY=Yapışkan Bomba Seçimi
+DEDSEC_STICKY_H=Milisaniye olarak belirtilen milisaniyeler kullanılarak gecikme sağlanır. Kontrolcü için yardımcı olabilir
+DEDSEC_PASSIVE=Hedef Seçili Değilken...
+DEDSEC_ACTIVE=Hedef Seçiliyken...
+
+SHWRETCL=Nişangah Göster
+DRWLINE=Çizgi Göster
+DRWBOX=Kutu Göster
+
+DEDSECDELAY=Telefon Açma Süresi
+DEDSECDELAY_H=Hack kurbanın varken bile belirtilen milisaniyede tuşa basmayı bırakınca telefonu açmana yarar.
+
+GGSR=GeoGuessr
+GGSR_H=San Andreas'ı ne kadar iyi biliyorsun?
+GGSR_VIEW=Hedefi Gör
+GGSR_SBMT=Tahminini Et
+GGSR_SBMT_H=Freecam kullanarak, yürüyerek/ışınlanarak ya da waypoint koyarak bir koordinat seç.
+GGSR_WIN=Başardın!
+GGSR_OFF=Tahminin, hedefetn {} metre uzakta.
+
+ARWP=AR Waypoint
+ARWP_H=Waypointinin olduğu yere gökyüzüne sinyal ışığı koyup Stand sayesinde bazı waypointlerinin yüksekliğini görmeni sağlar.
+
+ARGPS=AR GPS
+ARGPS_H=Waypointlerine doğru seni yönlendirir.
+
+ARBCNPLY=Focuslanan Oyunculara AR Sinyal Işığı Koy
+ARBCNPLY_P=Oyuncu Listesinde
+ARBCNPLY_S=Bir Oyuncunun Listesinde
+
+WHNENTPLY=Oyuncunun Listesine Girerken...
+SPCPLY=Onları İzle
+
+WHNLVEPLY=Bir Oyuncunun Listesinden Çıkarken...
+STPSPECPLY=Onları Spectate Etmeyi Bırak
+
+STPSPEC=İzlemeyi Bırak
+
+SRT=Sıralama
+SRTBY=Sıralama Şekli
+SRTREV=Tersten Başla
+
+! Or "Raised Tags"
+HOISTFLGS=Etiket Sayısı
+HOISTFLGS_H=Etiketi olan oyuncular etiketsiz oyunculardan üstte gelirler.
+
+NME=İsim
+SRTBY_SLT=Slot
+
+SPID2=Session Oyuncu ID'si / Slotu
+
+LANG_EN=İngilizce
+LANG_FR=Fransızca
+LANG_DE=Almanca
+LANG_IT=İtalyanca
+LANG_ES=İspanyolca
+LANG_BR=Portekizce
+LANG_PL=Lehçe
+LANG_RU=Rusça
+LANG_KR=Korece
+LANG_TW=Geleneksel Çince
+LANG_JP=Japonca
+LANG_MX=İspanyolca (Meksika)
+LANG_CN=Basitleştirilmiş Çince
+
+DSCVYTME=Keşfediliş Zamanı
+
+CTOS=Elektrik Kesintisi
+CTOS_2=Aktif, Araçlar Dahil
+
+NOSKY=Gökyüzünü Kapat
+
+OVRDWTR=Havayı Değiştir
+OVRDWTR_H=Havayı Değiştirir *Sadece Sende*.
+OVRDOFF=Değiştirilmemiş
+WTR_EXTRASUNNY=Ekstra Güneşli
+WTR_CLEAR=Açık
+WTR_CLOUDS=Bulutlu
+WTR_SMOG=Dumanlı
+WTR_FOGGY=Sisli
+WTR_OVERCAST=Kapalı
+WTR_RAIN=Yağmurlu
+WTR_THUNDER=Gök Gürültülü Sağanak Yağış
+WTR_CLEARING=Parçalı Bulutlu
+WTR_NEUTRAL=Nötr
+WTR_SNOW=Karlı
+WTR_BLIZZARD=Kar Fırtınası
+WTR_SNOWLIGHT=Kar Işığı
+WTR_XMAS=Yılbaşı
+WTR_HALLOWEEN=Açık Cadılar Bayramı
+WTR_RAIN_HALLOWEEN=Yağmurlu Cadılar Bayramı
+WTR_SNOW_HALLOWEEN=Karlı Cadılar Bayramı
+
+AESLGHT=Estetik Işık
+PLCMNT=Uygulanma Yeri
+PLCMNT_CHR=Karakter
+PLCMNT_CHR_H=Karakterinden parlayan tek bir ışık.
+PLCMNT_CAM=Kamera
+PLCMNT_CAM_H=A Kameradan parlayan tek bir ışık.
+PLCMNT_OVL=Işık Ovali
+PLCMNT_OVL_H=Karakterinin etrafına yerleştirilmiş 81 tane ışıktan oluşan oval.
+RNGE=Mesafe
+ITNST=Yoğunluk
+
+! Might also be called "falloff" or "edge gradient", I'm no expert on lights
+DFFRCTN=Işık Kırılımı
+
+WRLDBDR=Dünya Sınırı
+WRLDBDR_H=Eğer ona verdiğin metre kadar yakınındaysan dünya sınırını gösterir.
+
+WAT=Su
+
+WVEBHV=Dalga Hareketleri
+SMTH=Düz
+MGNT=Manyetik
+
+ZDIFF=Z Değişikliği
+WATZDIFFLOC=Z Değişikliğini Sadece Yakındaki Sulara Uygula
+
+STROVR=Suyun Gücü
+
+OPCDIF=Opaklık
+WATOD_H=Suya opaklık ekleyip kaldırmana yarar *Sadece Sende*.
+
+TRAINS=Trenleri Severim
+TRAINS_H=Trenleri çok daha yaygın hale getirir.
+
+CLK=Saat
+
+TIME=Zaman
+
+CLKSYNC=Oyun Saatini Kullan
+
+LKTIME=Zaman Akmasın
+
+SYSTIME=Bilgisayar Saatini Kullan
+
+SMTHTRNS=Pürüzsüz Geçiş
+
+CLKPRST_12=Öğlen
+CLKPRST_6=Sabah
+CLKPRST_0=Gece
+CLKPRST_18=Akşam
+
+!!!!!!!!!!!!!
+!! Players !!
+!!!!!!!!!!!!!
+
+ALLPLY=Bütün Oyuncular
+
+XCLDS=Uygulanmayacak Kişiler
+
+XCLDF=Arkadaşlarım Hariç
+XCLDM=Ben Hariç
+XCLDCM=Crew Üyeleri Hariç
+XCLDSU=Stand Kullanıcıları Hariç
+XCLDPR=Oyuncular Hariç
+XCLDOG=Organizasyon Üyeleri Hariç
+XCLD50=Polisler Hariç
+XCLDMIS=Görevler Hariç
+XCLDMDR=Hileciler Hariç
+XCLDLMDR=Muhtemel Hileciler Hariç
+
+XCLD_GRD=Bodyguardlarını bu seçeneklere saldırmayacak şekilde ayarlar.
+
+PS_ON_H=Arkadaşlar, Yabancılar ve Sen Dahil.
+PS_F_S=Arkadaşlar & Yabancılar
+PS_S=Yabancılar
+
+PSC_M=Ben
+PSC_FM=Arkadaşlarım & Ben
+PSC_CFM=Crew Üyeleri, Arkadaşlarım, & Ben
+
+PLYFTRLST=[Oyuncu]
+
+SLFHRM=Bunu Kendine Yapmak İstediğinden Emin Misin?
+
+FLAGS=Etiketler
+FLAGS_A=Oyuncu Etiketleri
+
+BRCKTS=Parantezler
+
+FLAG_SELF=Sen
+FLAG_FRIEND=Arkadaş
+FLAG_CREW=Crew Üyesi
+FLAG_ATTACKED=Sana Saldırdı
+FLAG_HOST=Host
+FLAG_SCRIPT_HOST=Script Host
+FLAG_SPEC=İzleyici
+FLAG_GOD=Ölümsüz
+FLAG_VEHGOD=Patlatılamaz Araba
+FLAG_INVEH=Araç İçinde
+FLAG_RC=RC Araba
+FLAG_OTR=Off The Radar
+FLAG_INT=Bir Binanın İçinde
+FLAG_TYPING=Yazıyor...
+FLAG_DEAD=Ölü
+FLAG_VPN=VPN
+FLAG_INVISIBLE=Görünmez
+FLAG_ORG_MEMBER=Organizasyon Üyesi
+
+NXTHST=Sonraki Host
+
+! Plural version of FLAG_FRIEND
+FLAG_FRIEND_P=Arkadaşlar
+
+! Plural version of FLAG_CREW
+FLAG_CREW_P=Crew Üyeleri
+
+! Plural version of FLAG_MOD
+FLAG_MOD_P=Modder
+
+! Plural version of FLAG_ATTACKED
+FLAG_ATTACKED_P=Sana Saldıran
+
+PLYTP=Ona Işınlan
+PLYTP_A={} Kişisine Işınlan
+
+PLYTPVEH=Aracına Işınlan
+PLYNVEH={} bir araçta değil. :/
+
+PLYAPT=Eve Işınla...
+
+OFFICE_GARAGE={office}, Garaj {num}
+
+NEAR_ME=Yakınımdaki
+NEAR_WP=Waypointimin Yakınındaki
+
+APTID=Apartment ID
+INTID=Bina İçi ID'si
+
+PLY_VISIT=Onun Evine Işınlan
+
+PLYSMMN_D=Onu Işınla
+
+PLYSMMN=Bana Işınla
+PLYSMMNPLY=... Oyuncusuna Işınlan
+PLYSMMNWP2=Waypointime Işınla
+PLYSMMNOBJ=Görev Waypointime Işınla
+
+PLYWPTP=Onun Waypointine Işınla
+PLYWPTP_N={} waypoint koymamış.
+
+COPYWP=Onun Waypointini Kopyala
+
+PLYNAPT={} bir evde değil. :/
+
+PLYCASINOTP=Casino'ya Işınla
+
+PLYFRND=Arkadaşlık İsteği Gönder
+
+PLYINHIST=Oyuncu Geçmişi Listesinde
+
+PLYENGMULT=Motor Güçlendirici
+
+PLYGIFT=Spawnlanan Aracı Hediye Et
+PLYGIFT_H=Değeri fark etmeksizin aracı garajlarına koymalarını sağlar.
+PLYGIFT_W=Devam ettiğinde, {} şuanki sürdüğü aracı garajına koyabilecek. Ama, bunun çalışabilmesi için dışarıda personal arabaları olmamalı ve tamamen dolu bir garaja koymalılar(Tercihen NPC Arabalarıyla doldurulmuş) ve garaja sürünce "replace" tuşuna basıp oradan bu araba için feda edecekleri arabayı seçmeliler.
+PLYGIFT_T=Eğer her şey doğru yapıldıysa, {} artık bu aracı garajına sürebilir. :)
+PLYVEHNCTRL={} oyuncusunun aracının kontrolünü sağlayamadım. :|
+
+FRGMDL=Sahte Araba
+FRGMDL_W=Lütfen sahteleştirdiğiniz arabayı sadece garaja girmek için kullanın çünkü diğer şeyler oyununuzu crashleyebilir.
+
+! "Wanted" as in "Wanted Level", we don't want our ~~poor~~ criminals to be forever alone
+PLYBAIL=Asla Aranmaz(Polis Yok)
+
+PLYBEAST=Beast'e Dönüştür
+
+PLYGRVNPC=NPCleri Yerçekimselleştir
+PLYAGRNPC=Agresif NPCler
+
+PARTICLE=Parçacık
+PLRPTFXSPM=Parçacık Spamı
+
+HDELCL=Yerel Olarak Gizle
+HDELCL_H=Parçacık spamına uğramanı engeller.
+
+PLYMUGLOP=Mugger Döngüsü
+
+PLYRAGDOLL=Ragdoll
+
+PLYSHAKECAM=Kamerasını Döndür
+
+GIVESH=Script Host Yap
+
+PLYARM=Tüm Silahları Ver
+PLYARM_P=Silah Ver
+
+PLYAMMO=Mermi Ver
+PLYAMMO_H=Gives them ammo for their current weapon.
+PLYAMMO_T={} onlara mermi verebileceğim bir silahı ellerinde tutmuyor. :/
+
+PLYPARA=Paraşüt Ver
+
+BNTY=Bounty Koy
+BNTY_T=Bounty $0 ve $10000 arasında olmak zorundadır. :)
+
+BNTYSLF=Kendine Bounty Yerleştir
+BNTYSLF_H=Şüpheden Kaçınmak için Kendine de Bounty Yerleştir.
+
+LOOPBNTY=Bounty Döngüsü
+
+FRNDLY=Dostane
+
+TROLL=Troll
+
+RAM=Çarp
+
+PLYBLME=Onun Adına Şu Kişiyi Öldür
+
+PLY_NOTIFY=Bildirim Yolla
+
+PLY_NOTIFY_REMO=Para Silindi
+PLY_NOTIFY_STOL=Para Çalındı
+PLY_NOTIFY_BANK=Para Bankaya Yatırıldı
+
+PLY_NOTIFY_SPAM=Bildirim Spamlama
+
+CPOTFT=Kıyafetini Kopyala
+
+CPVEH=Aracını Kopyala
+
+CMDBHLF=Onun Adına Komut Yaz
+CMDBHLFALL=Herkesin Adına Komut Yaz
+
+PLYCHTMCK=Chat Mesajlarıyla Dalga Geç
+
+PLYCHTOWO=Chat Mesajlarını OwO'la
+
+SHWCAM=Kamerasını Göster
+
+SMS=Telefondan Mesaj Yolla
+
+SMS2=Telefon Mesajı
+SMSS=Telefon Mesajları
+
+DTS=Tespitler (Detectionlar)
+DT_ANY=Herhangi Bir Tespit
+
+ADT=Anti Tespit
+
+ADT_SPEC_H=Bu olsun olmasın, kamera pozisyonunuz senkronize çalışacaktır ve izleyici olarak tespit edilebilirsiniz.
+
+CLSFN=Sınıflandırma
+CLSFNS=Sınıflandırmalar
+CLSFN_ANY=Herhangi Bir Sınıflandırma
+
+DT_T={player} oyuncusunun {reason} yapışı tespit edildi
+CLSFN_T={player} kişisi artık {classification} olarak sınıflandırılıyor
+DT_CLSFN={player} oyuncusunun ({reason}) yapışı tespit edildi ve artık {classification} olarak sınıflandırılıyor
+
+REACT_T={toast} — {reaction} tepkisi uygulanıyor.
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_K=kick
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_C=crash
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_T=zamanaşımı
+
+CLSFN_N_H=Bu oyuncu hiçbir modder ya da adminsel bir şey tetiklemedi.
+CLSFN_PM=Modder Olabilir
+CLSFN_LM=Muhtemel Modder
+FLAG_MOD=Modder
+FLAG_MODAMN=Modder ya da Admin
+CLSFN_MA_H=Stand bu oyuncunun Rockstar admini mi modder mı olduğunu ayırt ediyor.
+FLAG_AMN=Admin
+
+! Plural version of CLSFN_LM
+CLSFN_LM_P=Muhtemel Modderlar
+
+! Plural version of FLAG_AMN
+FLAG_AMN_P=Adminler
+
+CLSFNTAGSLF=Kendinde Sınıf Etiketleri
+
+MDDRDT_H=Bu tespiti kaldırmak için tıkla.
+MDDRDT_H_LUA=Bu tespit {} tarafından eklendi. Kaldırmak için tıkla.
+
+DT_H_PREMPT=Bu bir önleyici tespittir.
+
+C2C=Değeri kopyalamak için tıkla.
+C2CN=Kopyalamak için tıkla.
+C2OL={link} bağlantısını açmak için tıkla
+
+C2IN=Değer girmek için tıkla.
+C2APPLY=Değer uygulamak için tıkla.
+C2SEL=Değer seçmek için tıkla.
+
+MDDRDT_SUI=Stand Kullanıcısı Dedektörü
+SUI=Stand Kullanıcısı Dedektörü (SKD)
+MDDRDT_SUI_H=Diğer Stand kullanıcılarını bulur ama onların da seni bulmalarına yol açar.
+
+DT_SU=Stand Kullanıcısı
+DT_SU_C=Stand Kullanıcısı (Yükleme Ekranında)
+CLNG=İki Menü Kullanıyor
+
+CMDSUI=Bu komutu kullanabilmek için Stand Kullanıcısı Dedektörü seçeneğini açmalısınız.
+
+CMDSTAND=Bu komut sadece Stand Kullanıcısı Dedektörü seçeneğini aktif etmiş kişilerde kullanılabilir.
+
+HS=HostPaylaşımı™
+HS_H=Sen hostken, ikinizin de SKD'si açıksa, diğer Stand kullanıcıları da senin sayende host özelliklerine erişebilmesini sağlar.
+
+MDDRDT_SID=Diğer Kullanıcı Dedektörleri
+MDDRDT_SID_T={} Kullanıcısı
+
+MDDRDT_RAC=Rockstar Anti Cheat
+
+MDDRDT_HLTH=Modlanmış Can Barı
+
+MDDRDT_LNGDED=Çok Uzun Süredir Ölü
+
+MDDRDT_LNGOTR=Uzun Süredir Radarda Görünmüyor
+
+MDDRDT_ARMR=Çok Fazla Zırh
+
+MDDRDT_PRES=Aktivite Spooflama
+MDDRDT_PRES_H=Sunucu spooflama ve bazı manipülasyonları yakalar.
+
+NMECHNG={newname} oyuncusunu önceden {oldname} olarak görmüştüm. :O
+
+MDDRDT_RID3=Rockstar Çalışanı RID
+
+MDDRDT_T2IP=Take-Two IP Adresi
+
+DT_HT_2=Spooflanmış Host Token (Aggressive)
+DT_HT_1=Spooflanmış Host Token (Sweet Spot)
+DT_HT_0=Spooflanmış Host Token (Handicap)
+DT_HT_3=Spooflanmış Host Token (Diğer)
+
+MDDRDT_TRFRM=Modlanmış Karakter Modeli
+
+MDDRDT_GODATK=Ölümsüzken Ateş Etmek
+
+MDDRDT_RSDEV=Rockstar Developer Uyarısı
+MDDRDT_RSDEV_H=Kullanıcılar seni hilesiz şekilde oylayarak kickleyemez.
+
+MDDRDT_RSQA=Rockstar QA Uyarısı
+MDDRDT_CHEAT=Hileci Uyarısı
+
+SPF_H_FLAG=Bunu sadece diğer hileciler görebilecek.
+
+MDDRDT_RP2=Geçersiz Seviye/RP
+MDDRDT_RP3=RP/Seviye Uyumsuzluğu
+MDDRDT_RP4=Spooflu Seviye
+
+MDDRT_NONET=İnternet Aktivitesini Engelle
+MDDRT_NONET_H=Bir kullandıcının internet aktivitesini engellemiş olduğunu belirtir, örneğin birinin kontrolünü almak gibi.
+
+MDDRT_DRIVEB=Modlanmış Araba Silahı
+
+MDDRT_SILENTCHAT=Yazı Yazmadan Sohbete Yazmak
+
+MDDRT_BOUNTYSPAM=Bounty Spam
+MDDRT_BOUNTYSPAM_H=Oyuncunun imkansız sıklıklarla bounty yerleştirdiğini ifade eder. Örneğin, sunucudaki herkese bounty koymak gibi.
+
+MDDRT_SUSSYBOUNTY=Modlu Bounty
+MDDRT_SUSSYBOUNTY_H=Oyuncuya normalde konulamaz miktarda bounty konduğunu ifade eder, Ör: "3131".
+
+MDDRT_EXPBLAME=Patlamalı Suç Atma
+MDDRT_EXPBLAME_H=Bir hileci başkasına patlayıcı yumruk özelliğini verdiğinde suç atmış gibi gözükebilir.
+
+MDDRT_EXPL=Hileli Patlama
+MDDRT_EXPL_B=Patlamanın sana etki etmemesini sağlar, bu diğer kişileri etkilemez.
+MDDRT_EXPL_H=Hilecilerin insanları patlatmasını ve patlayıcı mermi kullanmasını tespit eder. Bunun nadiren hilesiz oyunculara da etki edebileceğini unutmayın.
+
+VICTIM=Kurban: {}
+
+MOD_ORGNAME=Modlu Şirket Adı
+
+MDDRT_CAYO=Oyuncu Listesinden Gizle
+
+MDDRT_MISC=Modlanmış Data
+
+ATTKRS=Saldıranlar
+ATTRKS_PRE_1=Jet Yolla
+ATTRKS_PRE_2=Motorcu Yolla
+ATTRKS_PRE_3=Palyaço Yolla
+ATTRKS_PRE_4=Helikopter Yolla
+ATTRKS_PRE_5=BMX Çetesi Yolla
+ATTRKS_PRE_6=Çiftçi Yolla
+ATTRKS_PRE_7=Minitank Yolla
+ATTRKS_PRE_8=Ordu Yolla (Karışık Birimler)
+ATTRKS_PRE_9=Hayalet Sürücü Yolla
+
+ACCURACY=Doğruluk Payı
+
+AGGR=Agresif
+AGGR1=Dostane
+AGGR1_H=Seni ve diğerlerini NPC'lerden korur. Oyunculara dokunmaz.
+AGGR2=Savunma
+AGGR2_H=Seni tüm düşman hedeflerden korur.
+AGGR3_H=Seni tüm düşman hedeflerden korur, ama çoğu zaman görüş açındayken korumaya başlar.
+DEL_ATTKRS=Sana Tüm Saldıranları Sil
+FILL_VEH=Araçları Doldur
+FILL_VEH_H=Her saldırgan için araba çıkarmaktansa bir araba saldırganlarla dolana kadar yenisi çıkarılmaz.
+
+! As in "Kill the engine"
+KLL=Boz
+! The "EMP" projectile in-game that turns your car off. 
+EMP=Motoru Kapat
+FLIPPLRVEH=Döndür
+SPINVEH=Çevir
+POP_TYRES=Lastikleri Patlat
+DETACH_AIR=Kanadı Çıkar
+DETROIT=Tekeri Kaldır
+SLIPPERY=Kaygan Lastikler
+SLIPPERY_H=Kapanması biraz zaman alır.
+DEL_DOORS=Kapıları Kaldır
+IGNITE=Ateşe Ver
+TURNAROUND=Geriye Döndür
+DSTRYPROP=Pervaneleri Boz
+BREAKBOOM=Kuyruk Pervanesini Kır
+
+SLINGSHOT=Sapanla
+
+V_F=İleri
+V_B=Geri
+
+PLYDDVEH=Araba Sürmeyi Engelle
+PLYDDVEH_H=Apartment daveti kullanmadan düzelemeyecekleri ve içinde araba sürememek gibi şeyler olan bir duruma girerler.
+
+INFLOAD=Sonsuz Yükleme Ekranı
+
+INFRING=Hep Telefon Çalar
+
+FRZ=Dondur
+
+FAKEDROP=Sahte Para Yağmuru
+
+NOPSSVE=Pasif Modu Engelle
+
+! Putting someone in a cage
+PLYCGE=Kafese Koy
+
+PLYCAGE_TINY=Küçük Kafes
+PLYCAGE_GOLD=Altın Kafes
+PLYCAGE_FNCE=Çit Kafes
+PLYCAGE_STNT=Ralli Tübü
+
+! Being put in a cage
+CGE=Kafeslenmek
+
+PLYKLL=Öldür
+
+PLYEXP=Patlat
+
+! For reference: Block Blaming is PTX_PSV
+PLYKLL_H=Suç Atmayı Kaldır seçeneği açıksa veya pasif moddaysanız çalışmaz.
+
+CGES=Kafesler
+
+PLYKCK=Kick
+
+PLYKCK_T_H=Kolaydı. ;P
+! Single target version of PLYKCK_T_C.
+PLYKCK_T_C=Onu sunucudan çıkmaya ikna etmeye çalışacağım. :)
+! Multiple targets version of PLYKCK_T_C_M.
+PLYKCK_T_C_M=Onları sunucudan çıkmaya ikna etmeye çalışacağım. :)
+
+PLYKCK_SMRT=Zeki
+PLYKCK_SMRT_A=Smart Kick
+PLYKCK_SMRT_H2=Oyuncuyu ne olursa olsun atar.
+
+PLYKCK_BL=Blacklist
+PLYKCK_BL_A=Blacklist Kick
+PLYKCK_BL_H=Kullanıcıyı oylanarak atılmış gibi kara listeye alır, ama desync yöntemiyle alar.
+
+PLYKCK_H=Host
+PLYKCK_H_H=Vote-Kick mekanizmasını kullanarak kişiyi sunucudan atar.
+
+PLYKCK_NH=Non-Host
+
+PLYKCK_PC=Zafer Turizm
+
+PLYKCK_B=Breakup
+PLYKCK_B_G=Breakup Kick
+
+BRKUR=Breakup Kick Tepkileri
+BRKUR_H=Bu sadece sen sunucu hostuyken ve kick sana atılmaya çalışılmıyorsa başarılı olur.
+
+KBKR=Çakma Breakup Kick Önlemleri
+KBRK_E=Çakma Breakup Kick
+
+GEN_H_HOST=Bu sadece sen sunucu hostuyken çalışır.
+GEN_H_NHOST=Bu sadece sen sunucu hostu değilken çalışır.
+
+PLYBAN=Ban
+
+PLYKCK_O=Orgasm
+
+PLYKCK_L=Love Letter
+PLYKCK_L_G=Love Letter Kick
+
+PLYKCK_H_DSCRT=Kurbana onu kimin attığını söylemeyen bir kick yöntemi.
+
+PLYKCK_H_B_H=Sen host iken engellenemez.
+PLYKCK_H_HO=Sadece host iken kullanılabilir.
+PLYKCK_H_B_P=Popüler menüler tarafından engellenebilir.
+PLYKCK_H_B_M=Çoğu menü tarafından engellenebilir.
+
+BE_K=BattlEye Kick
+BE_B=BattlEye Ban
+BE_B_H=Kurbanların oyunu yeniden başlatana kadar GTA Online'a girememelerini sağlar.
+
+PLYCRSH=Crash
+SUI_ET=Bunun yoldaşlarımız Stand kullanıcılarında çalışmasının ihtimali aşırı düşük, ama ben kimim ki seni sorgulayacağım? :^)
+
+PLYCRSH_H_AOE2=Not: Bu, kurbanına yakın kişileri de crashleyebilir.
+
+PLYCRSH_E=Elegant
+PLYCRSH_G=Burger King Foot Lettuce
+PLYCRSH_V=Vehicular Manslaughter
+PLYCRSH_T=Steamroller
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T=({type}) crashi önlendi.
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T_BLM=({type}) crashi önlendi, bunu muhtemelen {player} denedi.
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_TRNLOOP=Tren Döngüsü
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_ATTLOOP=Bağlama Büyüsü
+
+! Buffer overruns cause memory corruption, which could go unnoticed, but could also crash the game.
+! Type may be a codename such as XA, or a human-readable name, such as "Ped Outfit Texture".
+BU_T=({type}) arabellek taşması önlendi.
+
+! To be used within BU_T
+BU_TEX=Ped Outfit Dokusu
+
+BU_VEHLIT=Araba Işıkları
+
+INVTASK=Bir NPC geçersiz bir görev yürütülüyor, önüne geçiliyor.
+
+TIMEOUT=Timeout
+FLAG_TIMEOUT=Timeoutta
+TIMEOUT_H=Bu kullanıcıdan gelen ve ona gelen internet trafiğinin çoğunu engeller.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Player > Information !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+INFO=Bilgi
+
+NME_S=İsim (Stand)
+NME_H=İsim (Session)
+NME_R=İsim (Social Club)
+
+STUS=Durum
+
+DMG_WEAP=Silah Hasarı Arttırıcı
+DMG_MELEE=Yakın Dövüş Hasarı Arttırıcı
+
+ORG=Şirket
+
+ORGT_SV=SecuroServ
+ORGT_MC=Motorcycle Club
+
+BOSS=Boss
+
+STS=İstatistikler
+
+NDATA=Veri Yok
+
+CHAR1=1. Karakter
+CHAR2=2. Karakter
+CHAR1_ACT=1. Karakter (Aktif)
+CHAR2_ACT=2. Karakter (Aktif)
+
+CNNTN=Bağlantı
+
+IP=IP Adresi
+RLYIP=Relay IP
+LANIP=LAN IP
+PRT=Port
+RLYPRT=Relay Port
+
+CONVIA=Bağlantı Sağlayıcısı
+CONVIA_P2P=P2P
+CONVIA_RLY=Relay
+CONVIA_RLY_S=Relay ile Bağlandı
+CONVIA_PLY_S={} ile Bağlandı
+
+PING=Ping
+MS=ms
+
+MNY_W=Cüzdanındaki Para
+MNY_B=Bankasındaki Para
+MNY_A=Toplam Para
+
+DIST=Mesafe
+
+KLLS=Öldürme
+DTHS=Ölüm
+KD=K/D Oranı
+
+FAVVEH=Favori Araç
+FAVWEAP=Favori Silah
+FAVRDSTAT=Favori Radyo İstasyonu
+
+OWNBKR=Bunker'ı Var
+OWNFAC=Facility'si Var
+OWNCLB=Nightclub'ı Var
+
+HOSTKN=Host Token
+
+HOSTQPOS=Host Sırası
+
+HQSA_NH=İsim Hashi
+
+GIP_Q=İstek Gönderildi
+GIP_P=İstek Gerçekleştiriliyor
+GIP_F=İstek başarısız Oldu
+
+CT=Şehir
+RGION=Bölge
+CTRY=Ülke
+
+! E.g. "Discovered: 10 seconds ago"
+DSCVAGO=Keşfedilme Süresi
+
+! E.g. "Invulnerable For: 10 seconds"
+GODTIME=Ölümsüzlük Süresi
+
+CRW=Crew
+CRWTG=Tag
+MOTTO=Motto
+ALTBDG=Alternatif Badge
+
+!!!!!!!!!!!!!!!
+!! Durations !!
+!!!!!!!!!!!!!!!
+
+DUR_AGO={} önce
+
+DUR_S=saniye
+DUR_S_P=saniye
+DUR_M=dakika
+DUR_M_P=dakika
+DUR_H=saat
+DUR_H_P=saat
+DUR_D=gün
+DUR_D_P=gün
+
+!!!!!!!!!!!!
+!! Online !!
+!!!!!!!!!!!!
+
+SESS=Session
+NWSESS=Yeni Session
+
+NWSESS_CHAR=Karakter Seçme Ekranında Dur
+
+NWSESS_SP=Herkese Açık Session Oluştur
+NWSESS_IO=Invite Only Session Oluştur
+NWSESS_CC=Closed Crew Session Oluştur
+NWSESS_C=Crew Session Oluştur
+NWSESS_CF=Closed Friend Session Oluştur
+NWSESS_S=Solo Session Oluştur
+NWSESS_FF=Arkadaşına Katıl
+NWSESS_FC=Crew Üyelerine Katıl
+NWSESS_FP=Herkese Açık Session Bul
+NWSESS_NP=Yeni Herkese Açık Session Bul
+NWSESS_NP_H="Find Public Session" gibi ama seni başka sunucuya koyar ve az önce olduğun sunucuda olmazsın.
+NWSESS_CTOR=Creator Mode
+NWSESS_SCTV=Social Club TV
+
+TRK=Takip
+TRKD=Takip Edildi
+HISTTRK=Takip Edilen Oyuncular
+HIST_KEEP_TRA=Takipte Tut
+
+TRK_H=Bu oyuncu session değiştirdiğinde ya da online/offline olduğunda sana bildirim verir.
+
+TRK_T_CNF=Takip Edilen Oyuncu Aktivitesinde...
+
+INJTRKINFO=Hileyi Açınca Takip Edilen Online Oyuncuları Göster
+
+META=Meta
+
+RSADMINS=Rockstar Adminleri
+
+! SC = Social Club
+SCFRIENDS=SC Arkadaşları
+
+ADDMISS=Eksik Olanları Ekle
+PLYNOTESET=Not Bırak
+PLYNOTESET_H_A=Geçmişindeki her admin için not bırakır.
+TRCKALL=Hepsini Takibe Al
+UTRCKALL=Hepsini Takip Etmeyi Bırak
+WHTLALL=Hepsini Whitelistle
+UWHTLALL=Hepsinin Whitelist'ini Kaldır
+HIST_DNG=Tehlike Alanı
+HIST_CLR=Geçmişi Sil
+
+ONLSTS=Online Durumu
+ONLSTS_O2=Çevrimdışı
+ONLSTS_S=Story Mode'da
+ONLSTS_H={} Hostluyor
+ONLSTS_C={session_type} bir sunucuda
+ONLSTS_CH={host} tarafından hostlanan {session_type} sunucusunda
+
+TRK_T={name} artık {activity}.
+
+ONLSTS_TRK_O=Çevrimdışı
+ONLSTS_TRK_S=Story Mode'da
+ONLSTS_TRK_H={} Hostluyor
+ONLSTS_TRK_C={} sunucusunda
+ONLSTS_TRK_CH={host} tarafından hostlanan bir {session_type}
+
+ST_S=Solo sunucuda
+ST_I=Invite-Only sunucuda
+ST_F2=Arkadaş sunucusunda
+ST_CC=Closed-Crew sunucusunda
+ST_C=Crew sunucusunda
+ST_P=Herkese Açık sunucuda
+ST_O=Bilinmeyen türde bir sunucuda
+
+! Short online statuses:
+SHTONLSTS_O2=Çevrimdışı
+SHTONLSTS_S=Story Mode
+SHTONLSTS_ST_S=Solo
+SHTONLSTS_ST_I=Invite
+SHTONLSTS_ST_CF=Arkadaş
+SHTONLSTS_ST_CC=Closed-Crew
+SHTONLSTS_ST_C2=Crew
+SHTONLSTS_ST_P=Herkese Açık
+SHTONLSTS_ST_O=Diğer
+
+PTX=Korumalar
+PTX_W=Stand korumalarını devredışı bırakman yükleme ekranını daha stabil yapmaz. Korumaları devredışı bırakman sadece korumaları devredışı bırakır.
+
+! Alternatively, "Protections Help Page"
+PTXGDE=Koruma Bilgi Sayfası
+
+COLOAD=Yükleniyor
+COLOAD_DPTX=Yükleme Ekranındayken {} seçeneğini devredışı bırak
+
+PTX_CRSHE=Crash Event
+
+PTX_KICK=Kick Event
+PTX_KICK_SH=Script Host Kick
+
+PTX_INV=Modlu Event
+PTX_INV_H=Sadece bir modderın yapabileceği şeyler.
+
+PTX_WEIRD=Alışılmadık Event
+PTX_WEIRD_H=Modder tarafından gerçekleştirilmiş olabilecek ama bazı nadir durumlarda gerçekten de olabilecek eventlerdir.
+
+VEHKICK=Araçtan At
+
+INTKICK=Binadan At
+
+TRIGDEFD=Business Raid Yolla
+
+PLYFRCECAMFRNT=Kamerayı Öne Bakmaya Zorla
+PLYFRCECAMFRNT_H=Bazı durumlarda kişinin ölümsüzlüğünü de kaldırabilir
+
+PLYMISSION=Freemode Görevi Yapmaya Zorla
+PLYMISSION_H=Kurbanı Freemode görev moduna sokar, ki bu da onların pasife geçmesini veya binalara girmelerini engeller.
+
+! Forces the recipient into a mission start screen
+SND2JB=Göreve Yolla
+
+SND2JB_0=Severe Weather Patterns
+SND2JB_1=Half-track Bully
+SND2JB_2=Exit Strategy
+SND2JB_3=Offshore Assets
+SND2JB_4=Cover Blown
+SND2JB_5=Mole Hunt
+SND2JB_6=Data Breach
+SND2JB_7=Work Dispute
+
+PTX_BAIL=Aranma Seviyesini Kaldır
+
+PTX_EVTS=Eventler
+PTX_NET=Network Eventleri
+PTX_NET_ANY=Herhangi Event
+
+PTX_RAWNET=Raw Network Eventleri
+PTX_RAWSYNC=Raw Senkronizasyonları
+
+PTX_RAW_W=Bu uzman kullanıcılar içindir, eğer ne yaptığınızı bilmiyorsanız, lütfen kullanmayın. Özellikle içeri girip rastgele her şeyi bloklamayın..
+
+PTX_NET_R_B_W=İçeri girip rastgele her şeyi bloklama demiştim, hatırladın mı? Yapabiliyor olman yapmak zorunda olduğun anlamına gelmez, özellikle bir nedenin yoksa.
+
+PTX_APUP=Herhangi bir Pickup Toplandı
+PTX_APUP_T={} tipinde bir pickup topladın!
+PTX_APUP_L=Bir pickup topladın!
+
+PTX_CASHPUP=Para Pickup'ı Toplandı
+PTX_CASHPUP_T=Bir para pickup'ı topladın!
+
+PTX_RPPUP=RP Pickup'ı Toplandı
+PTX_RPPUP_T=Bir RP pickupı topladın!
+
+PLYKCK_IPUP=Geçersiz Pickup
+
+PTX_IPUP=Geçersiz Bir Pickup Toplandı
+PTX_IPUP_H=Seni sunucudan attıracak bir geçersiz pickup toplandığında yapılacak olan işlem.
+PTX_IPUP_T=Geçersiz bir pickup topladın!
+
+PTX_APT=Apartment Daveti
+
+PTX_CAYO=Cayo Perico Daveti
+
+PTX_DRVCTRL=Aracının Kontrolü Alındığında
+PTX_DRVCTRL_H=Birinin seni ışınlamak için kullanabileceği bir şey olan, aracının kontrolünü alınması çalışıldığında yapılacak olan işlem.
+
+SE=Script Event
+
+GIVE_WEAPON_EVENT=Silah Verme Eventi
+REMOVE_WEAPON_EVENT=Silah Silme Eventi
+REMOVE_ALL_WEAPONS_EVENT=Tüm Silahları Silme Eventi
+FIRE_EVENT=Ateş
+EXPLOSION_EVENT=Patlama
+NETWORK_PTFX_EVENT=PTFX
+NETWORK_PLAY_SOUND_EVENT=Ses Çal
+
+RCT_T=Bildirim
+RCT_L_F=Log Dosyasına Yaz
+RCT_L_C=Konsola Yaz
+RCT_C=Chatte Anons Et
+RCT_C_T=Takım Chatinde Anons Et
+
+RTC_PLY=Oyuncu İşlemleri
+
+RCT_N_B=İnternet Eventlerini Engelle
+RCT_BIS=Gelen İnternet Synclerini Engelle
+RCT_BOS=Giden İnternet Synclerini Engelle
+RCT_N_L=İnternet Eventlerini Logla
+RCT_SI_L=Gelen Syncleri Logla
+RCT_SO_L=Giden Syncleri Logla
+RCT_N_T=İnternet Eventleri için Bildirim Ver
+RCT_SI_T=Gelen İnternet Syncleri için Bildirim Ver
+RCT_SO_T=Giden İnternet Syncleri için Bildirim Ver
+
+RCT_T_OUT={player} kişisine {event} yapıldı
+PTX_NET_R_T_T={player} tarafından {event} gerçekleştirildi
+RCT_T_AGAINST={sender} tarafından {target} kişisine {event} gerçekleştirildi
+
+PTX_NET_R_B=Engelle
+
+! What "Block" does for chat messages
+PTX_NET_R_B_H_C=Mesajın sana gelmesini engeller ama diğerleri hala görebilir.
+
+
+PTX_S=Syncler
+PTX_INC=Gelen
+PTX_OUT=Giden
+PTX_SI=Gelen Sync
+PTX_SO=Giden Sync
+PTX_SI_ANY=Herhangi Gelen Sync
+
+OUTSBH=Hosta Giden İnternet Synclerini Engelle
+OUTSBH_H=Bu seçenek Host değilken BattlEye kicklerinden kaçınmana yardımcı olur, ama host da senle etkileşime geçemez
+
+PTX_CSB=Özel Model Sync için Tepki
+ADDMDL=Model Ekle
+PTX_CSB_T={player} kişisinden {hash} kodlu model sync'i
+
+PTX_IMS=Geçersiz Model Sync'i
+PTX_IMS_T={player} kişisinden {type} tipli {hash} kodlu model
+
+PTX_WOS=Dünya Obje Sync'i
+
+PTX_ATTACH=Parça Spamla
+
+PTX_BEWARE_RESYNCH=Diğer oyuncular modderların spawnladığı objeleri görebilir, yani buna dikkat edin.
+
+PTX_S_CC=Klon Yaratıldı
+PTX_S_CU=Klon Güncellendi
+PTX_S_CD=Klon Silindi
+PTX_S_ACC=Klon Yaratılması Onaylandı
+PTX_S_ACU=Klon Güncellenmedi Onaylandı
+PTX_S_ACD=Klon Silinmesi Onaylandı
+
+PLY_BOS_H_A=Diğer oyuncular için mapteki yerin görünmez hatta eğer sunucuya bu seçenek açık girdiysen sunucuda olduğunu bile bilmezler.
+PLY_BOS_H_1=Bu oyuncu için mapteki yerin görünmez.
+
+MYSLF=Ben
+SOMELS=Başkası
+
+KARMA=Karma
+
+LLKT=Love Letter Kicklendiğin zaman Bildirim
+LLKT_T=Love Letter kick yedin.
+
+DSKK=Desync Kick Karma
+DSKK_H2=Bazı menülerdeki Desync Kickler sana karşı denenirse kendileri kicklenir.
+
+LLLUBE=Love Letter Kayganlaştırıcısı
+LLLUBE_H=Host kimi Love Letter Kick ile atar diye düşünürken seni daha az belirgin yapar.
+LLLUBE_1=Gerçekçi
+LLLUBE_1_H=Bazı hileciler bunu yanlışlıkla tespit edebilir.
+LLLUBE_0_H=Bu en etkili yöntemdir, ama diğer hileciler bunu tespit edebilirler.
+
+CAMSHAKE=Kamera Sallama Event
+
+EXPSPAM=Patlama Spamı
+EXPSPAM_H=Birisi karakterine patlama spamı yaptığında etki eder.
+
+RAGDOLLEVT=Ragdoll Eventi
+
+SNDSPM=Ses Spamı
+
+MODDMGEVT=Modlu Hasar Eventi
+
+PRESES=Durum Aktiviteleri
+
+BFSTN=Arkadaşların İstatistik Bildirimlerini Engelle
+BFSTN_H="...has collected all Letter Scraps." gibi bildirimleri engeller
+
+BJI=Görev Davetlerini Engelle
+
+PTX_VK=Oylamalı Kickleri Blokla
+PTX_VK_T=Oylama Kicki blokladım. :)
+
+MAGIC=Sihir
+PTX_VK_SP=SCTV / İzleyici Modu
+PTX_VK_F1=Freemode Görevi 1
+PTX_VK_F2=Freemode Görevi 2
+PTX_VK_F3=Freemode Görevi 3
+PTX_VK_F4=Freemode Görevi 4
+
+PTX_BJ=Giriş Engelleme Karması
+PTX_BJ_H=Host olmayanlar sunucuya girmeni engellemeye çalıştığında girmene izin verir.
+PTX_BJ_T2={} girişini engellemeye çalışıyor, bu yüzden onu sunucudan atmaya çalışacağım.
+
+PTX_NB=Kaçmayı Engelle
+PTX_NB_1=Kullanıcı Artık Sunucuda Değil
+PTX_NB_2=Ana Crew'a Geçiliyor
+
+PTX_NB_SPC=Spectate ile Alakalı
+PTX_NB_SPC_H=Kurban çıktı, vs.
+
+PTX_NB_O=Diğer Nedenler
+PTX_NB_O_H=Timeoutlar vesaire.
+
+PTX_NB_T=Oyun kaçmak istiyor ({a1}, {a2}, {a3}); {action}.
+PTX_NB_T_A=İzin Verildi
+PTX_NB_T_B=Engellendi
+
+PTX_HCK=Host-Kontrollü Kickler
+
+PTX_HKK=Host Kick Karması
+PTX_HKK_H=Host'u onun host kick'ine cevap olarak kickler. Sunucudan yine de kickleneceğini unutma.
+
+PTX_HK=Host Kickleri Azalt
+PTX_HK_H=Host Kickleri o kadar azaltır ki sadece bir host kick yaşandığıyla ilgili bildirim gelir ve bütün oyuncular çıktı olarak gözükür.
+PTX_HK_T=Birisi sana ({method}) host kickini uygulamaya çalıştı, bu oyuncu muhtemelen {player}.
+
+HKI=Host birazdan seni kickleyecek.
+HKI_BS=Host ile internet synclerini engellemeni öneririm.
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_V=Oylamalı Kick
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_N=İnternet Hatası
+
+PTX_PSV=Suç Atmayı Engelle
+PTX_PSV_H2=Kimseye hasar verememeni sağlar, bu yüzden sana atılan suçlardaki patlama kimseye etki etmez. Bununla beraber dışarıdan hasar da almazsın.
+PTX_PSV_W=Yardım metnini okumadıysan yine söylüyorum bak: Bu açıkken hiçbir şekilde diğer oyunculara zarar veremeyeceksin. Bunu açmak yerine, içerik menüsünden Ters Çevrilmiş Nişan Almayı Aç.
+
+PTX_ENTSPAM=Entity Spamını Engelle
+PTX_ENTSPAM_STATUS={count} tane {name} var.
+PTX_ENTSPAM_NEW=Görünüşe göre {}'den çok fazla var. Üzerinde çalışılıyor.
+PTX_ENTSPAM_CALM={} sorunu çözüldü. :)
+
+VEHPARTS=Kırık Araç Parçaları
+
+ACCAM=Anti-Crash Kamera
+PTX_ENTSPAM_USECAM=Crash Kamerasını Otomatik Kullan
+PTX_ENTSPAM_CAM=Kameranı buraya kitlediğim için üzgünüm, ama oyun bunu daha fazla kaldıramayacak. "tp lsia" ya da "tp mtchil" komutlarını kullanmak bu sorunu hızlıca çözebilir.
+
+PTX_DRAW=Renderer'a Ekstra Mesai Yaptırma
+PTX_DRAW_H=Oyunun aşırı fazla render alıp crashlenmesini önler.
+PTX_DRAW_T=Renderer fazla çalışıyor
+
+PTX_DELSTALE=Eski Objeleri Sil
+PTX_DELSTALE_H=GTA muhteşem bir oyun olduğu için model bilgisini sildikleri objeleri Stand sizin için siler.
+PTX_DELSTALE_T=Modeli {} olan ve model bilgisi yüklenmeyen bir obje siliniyor.
+PTX_DELSTALE_T_2=Modeli {} olan ve araç model bilgisi yüklenmeyen bir araç objesi siliniyor.
+
+NOMODPOP=Modlu Kalabalık Arttırıcı Alanlarını Sil
+NOMODPOP_H=GTA Online yavan durmasın diye hileli kalabalık arttırıcı alanlarını siler.
+NOMODPOP_T=Kalabalık Arttırıcı Alanı Silindi. :)
+
+NOBEAST=Beast'e Dönüşmeyi Serbest Bırak
+NOBEAST_H="Hunt The Beast" eventi başladığında senin beast olmanı engeller, bazı hileciler seni trollemek için beast de yapamaz.
+NOBEAST_T={}'in açtığı event yüzünden beast olmanı scripti kapatarak engelledim.
+
+NPLYMDLSWP=Oyuncu Model Değişimini Engelle
+NPLYMDLSWP_H=Oyuncuların oynanamayan karakterlere dönüşmelerini sadece senin göremeyeceğin şekilde engelle. Teknik olarak bunu engellemen gereksiz çünkü dönüşmeli crashleri biz engelliyoruz (en azından bildiklerimizi).
+
+FRCRLY=Relay Bağlantısını Zorla
+
+LOWFPSTIMEOUT_T=Düşük FPS tespit edildi — {} zamanaşımına uğratılıyor.
+
+REVOTR=Radarda Gözükmeyen Oyuncuları Göster
+
+REVINV=Görünmez Kullanıcıları Göster
+
+BEORB=Orbital Cannon Ol
+BEORB_H=Öldürdüğün herkesi hastaneye götürür ve orbital cannonla ölmüş gibi mesaj gösterir.
+
+BESCRHST=Script Hostu Ol
+
+BESCRHSTKLEPTO=Script Host Manyağı Ol
+BESCRHSTKLEPTO_H=Bundan sadece bir tane olabilir, ve sadece karşılığında her şeyi yapacak kişi olabilir.
+
+BJS=Girişleri Engelle
+
+BJ_ALL=Herkesin
+BJ_ALL_A=Herkesin Girişini Engelle
+
+BJ_STR=Yabancılardan
+BJ_STR_A=Yabancıların Sana Katılmasını Engelle
+BJ_STR_H=Social Club'da arkadaşın olmayan kişilerin katılmasını engeller.
+
+BJ_ADS=Bilinen Reklamcıların
+BJ_ADS_A=Bilinen Reklamcıların Girişini Engelle
+
+BJ_REM=Kaldırılmış Kullanıcılardan
+BJ_REM_A=Kaldırılmış Kullanıcılardan Girişi Engeller
+BJ_REM_H=Kicklediğin ya da crashlediğin kullanıcılardan girişi engeller.
+
+BJ_REMOVED=Kaldırılmış Kullanıcılar
+BJ_REMOVED_H=A Onları kaldırdığın için sana giriş yapamayan kullanıcıların listesi.
+BJ_KICKEDP_H=Bu oyuncuyu kaldırmak için tıkla.
+
+BJ_WHT=Whitelistsiz Oyuncular
+BJ_WHT_H=Girişine özellikle izin vermediğin (Whitelistlemediğin) oyuncuların girişini engeller.
+BJ_WHT_A=Whitelistsizlerin girişini engeller
+
+BJ=Girişini Engelle
+BJ_H=Girişler sadece sunucu hostu olarak engellenebilir. Stand, host değilsen gelenleri atmaya çalışacaktır.
+BJ_T2={player} oyuncusunu {feature} ayarından dolayı sunucuya girişini engelledim
+
+MSG=Mesaj
+
+BJMSG_ASS=Uyumsuz Varlıklar
+BJMSG_TU=Son Ana Güncellemeyi Kullanmayı Zorla
+BJMSG_TAR=Farklı Targeting Mode Seçimi
+BJMSG_BAR=Hesabının Kötü Bir Repütasyonu Var
+BJMSG_C=Hilecisin
+BJMSG_BS=Bad Sport'sun
+BJMSG_DLC=Uyumsuz İndirilebilir İçerik
+BJMSG_BT=Farklı Oyun Sürümü
+BJMSG_CONT=Farklı İÇerik
+BJMSG_BSO=Sadece Bad Sportlar
+BJMSG_CO=Sadece Hileciler
+BJMSG_PR=Premium Yarış
+BJMSG_CON=Bağlanılamadı
+BJMSG_PRIV=Özel
+BJMSG_F=Sadece Arkadaşlar
+BJMSG_VK=Halihazırda Oylamayla Atıldın
+BJMSG_ID=Davet Etme Devredışı
+BJMSG_POOF=Artık Geçersiz
+BJMSG_BUG=Amaçlanmamış Sunucu
+
+LSCM=LS Car Meet
+
+SETREPLVL=Rep Seviyeni Ayarla
+SETREPLVL_H=Rep seviyeni ayarlayabilmen için LS Car Meet üyesi olman gerektiğini unutma.
+SETREPLVL_T=Rep seviyenin değiştiriliyor; uygulamak için Car Meet'e tekrardan gir.
+
+UNLKPRIZRID=Prize Ride'ı Al
+UNLKPRIZRID_T=Al senin olsun! Car Meet'te "M" tuşuna basıp "LS Car Meet"'i seçip aracını devral. :)
+
+H3=Casino Soygunu
+
+H3_RPT=Tekrar Başlatma Süresini Kaldır
+H3_RPT_H=Bunu yaparken Arcade'in içinde olmadığına emin ol.
+H3_RPT_T=Bekleme süresi görüşürüz diyor. :D
+
+H3_POIACC=Scope Görevleri ve Giriş Noktaları
+
+SCOP=Scope Görevini Yap
+H3_SCOP_H=Bunu sadece genel scope görevini yaptıktan sonra kullan yoksa görev kitlenir.
+
+USCOP=Scope Görevini Geri Al
+
+H3_VLT=Soyulacak Eşyayı Seç
+H3_VLT_H=Bunu soygun parasını ödedikten sonra seç ve de vault contents görevini yapmadan önce ayarla.
+H3_VLT_3=Elmas
+H3_VLT_2=Tablo
+H3_VLT_1=Altın
+H3_VLT_0=Para
+H3_VLT_T=Acaba kasanın içinde ne olacak. :^)
+
+H3_FNSH1=İlk Tahtadaki Görevleri Bitir
+H3_FNSH1_H=Bunu sadece soygun parasını ödedikten sonra ve isteğe bağlı soyulacak eşyayı seçtikten sonra seç.
+H3_FNSH1_1=Silent & Sneaky
+H3_FNSH1_2=Big Con
+H3_FNSH1_3=Aggressive
+H3_FNSH1_T=İlk tahta bitti. :D
+
+H3_FNSH2=İkinci Tahtadaki Görevleri Bitir
+H3_FNSH2_T=İkinci tahta da bitti. :D
+
+H3_RSTCRW=Soygun Ekibini Sıfırla
+H3_RSTCRW_H=Eğer ekipte yanlış bir seçim yaptıysan buna basıp ekibi sıfırlayabilirsin.
+H3_RSTCRW_T=Ekip sıfırlandı. Arcade'den çıkıp girince tamamlanacak :)
+
+H_FNSH_W=Setup görevlerini böyle bitirmek "All In Order" ve "Criminal Mastermind" görevlerine etki etmez.
+
+H_FNSH=Setup Görevlerini Bitir
+H_TRGT=Hedefi Seç
+
+H4=Cayo Perico Soygunu
+H4_FNSH_T=Her şey hazır. Kosatka'ya tekrar girdiğin an tamamlanacak. :)
+
+H4_TRGT_0=Tekila
+H4_TRGT_1=Yakut Kolye
+H4_TRGT_2=Çek Senet
+H4_TRGT_3=Pembe Elmas
+H4_TRGT_4=Madrazo Dosyaları
+H4_TRGT_5=Safir Panter
+
+H2_FNSH=Doomsday Soygunu Setuplarını Bitir
+H2_FNSH_H=Şuanki Doomsday Soygunundaki setupları bitirir.
+H2_FNSH_T=Setuplar tamam. Facility'ne tekrar girdiğin an etki edecek. :)
+
+H1_FNSH=Apartment Soygunu Setuplarını Bitir
+H1_FNSH_H=Şuanki Apartment Soygunundaki setupları bitirir.
+H1_FNSH_T=Setuplar tamam. Evine tekrar girdiğin an etki edecek. :)
+
+RIGOFF=Değiştirme
+
+WHEEL=Casino Çarkıfelek Ödülü
+WHEEL_1=Ödül Aracı
+WHEEL_2=İndirim
+WHEEL_3=Kumarhane Çipi
+WHEEL_4=Para
+WHEEL_6=Kıyafet
+WHEEL_7=Gizemli Hediye: Araba
+WHEEL_8=Gizemli Hediye: İşletme Supply'ı
+WHEEL_9=Gizemli Hediye: Çikolata
+WHEEL_10=Gizemli Hediye: Kumarhane Çipi
+WHEEL_11=Gizemli Hediye: Para
+WHEEL_12=Gizemli Hediye: RP
+WHEEL_13=Gizemli Hediye: Kıyafet
+
+MONEYLINK2=Para Rehberi
+
+SLOTS2=Slot Makinesi Sonucu
+SLOTS_H=24 saat içerisinde {}'dan fazla GTA$ kazanmayın! Dahası, bu seçenek eğer ki bu hesapta başka hileler kullandıysanız/kullanıyorsanız güvenli olmayabilir.
+SLOTS_WJ=Büyük Ödül
+SLOTS_WS=Küçük Ödül
+SLOTS_L=Kaybet
+
+ROULETTE=Rulet Sonucu
+CSNO_H_OPB=Diğer oyuncular da bundan yararlanabilir.
+
+CSNO_BJ=Hep Blackjack'te Kazan
+CSNO_BJ_H=Krupiye her zaman kaybeder.
+
+SNKSNARMR=Snack ve Armorları Doldur
+SNKSNARMR_T=Al bakalım, ağzında kadar doldurdum. :D
+
+ENHNCMTS=Geliştirmeler
+
+NOAFK=AFK Korumasını Kaldır
+
+NOMECHCDLN=Mekanik Süresini Kaldır
+
+NOMKIICLDN=Oppressor Mk II Süresini Kaldır
+
+NOEWOCLDN=İntihar Süresini Kaldır
+
+NOGTARCFP=Zorunlu RC Perspektifini Kaldır
+
+NODTHBAR=Dokununca Ölünen Duvarları Kaldır
+
+NOPSSVCLDN=Pasif Mod Süresini Kaldır
+
+NOORBCLDN=Orbital Cannon Süresini Kaldır
+
+NOSUBMSLCLDN=Kosatka Roket Bekleme Süresini Kaldır
+
+NOSUBMSLMAXRNGE=Kosatka Roket Menzilini Kaldır
+NOSUBMSLMAXRNGE_H=Halihazırda attığın roketlerde işe yaramaz.
+
+NONANOMAXRNGE=Nano Drone Mesafe Sınırını Devredışı Bırak
+NONANOCLDNS=Nano Drone'un Yetenek Bekleme Süresini Kaldır
+
+! "Business Battle" is SCR_FE_BB
+NOFMBTLMSC=Business Battle Müziğini Devredışı Bırak
+NOFMBTLMSC_H=Bu özelliğin açılması halihazırda çalan müziği durdurmayacağını not edin.
+
+NFMEVTENDAUD=Etkinlik Sonu Geri Sayım Müziğini Kapat
+
+TGGLEMAP=Sabit Büyük Harita
+TGGLEMAP_H=Minimap'i her zaman uçaktaymışsın gibi yapar.
+
+PAWS=Durdurmaya İzin Ver
+
+NOINTCHK=Bina İçi Kısıtlamalarını Kaldır
+NOINTCHK_H=Dökümhane gibi mekanlardaki kısıtlamayı kaldırır ki dışarı ışınlanmadan içini gezebilesin.
+
+PASSIWPNVEH=Pasif Modda Silahlı Araç Kullan
+
+NWRKCLD=VIP Görevi Süresini Kaldır
+
+SLLINPRV=Her Sunucuda Görev Yapabil
+
+GHSTNRBYDR=Temiz Yarışmalarını Sağla
+GHSTNRBYDR_H=Rakip sürücüler arabana çok yaklaştığında sadece sende görülecek şekilde hayalet araba olursun.
+
+ALLPICLK="M" Menüdeki Bütün Seçeneklere Eriş
+ALLPICLK_H=Menüdeki çoğu seçeneği gri olsalar bile kullanabilmeni sağlar.
+
+UNKLCSNO=Casino Bölge Kilidini Kaldır
+
+AMTTSUIT=Time Trial'da Zorunlu Araç Türünü Kaldır
+
+NODRIPFEED=Güncelleme Kısıtlamalarını Kaldır
+NODRIPFEED_H=Güncelleme geldiği an hilesiz köylülerin göremediği arabaları, kıyafetleri vs. satın alabilirsin.
+
+NEMTYNTFY=Boş Bildirimleri Kaldır
+EMTYNTFY=Boş Bildirim
+
+BST=Sonsuz Bull Shark Testosterone (BST)
+
+GETBST=Bir Tane BST
+
+RMBNTY=Bounty'i Kaldır
+
+QWQPROG=Hızlı İlerleme
+
+! Don't translate this if it doesn't help the user recognise the option; I assume most menu users know it as Recoveries.
+QWQPROG_H=Nam-ı Diğer "Recoveries".
+
+GIVECOLL=Collectible Ver
+GIVECOLL_0=Movie Props
+GIVECOLL_1=Hidden Caches
+GIVECOLL_2=Hazine Sandığı
+GIVECOLL_3=Radio Antennas
+GIVECOLL_4=Media USBs
+GIVECOLL_5=Shipwrecks
+GIVECOLL_6=Buried Stashes
+GIVECOLL_8=Jack O' Lanterns
+GIVECOLL_9=LD Organics Merchandise
+GIVECOLL_10=Junk Energy Skydives
+GIVECOLL_16=Snowmen
+GIVECOLL_17=G's Cache
+! Tags as in graffiti
+GIVECOLL_19=Los Santos Graffitileri
+
+GIVECOLLE=Collectible Ver
+GIVECOLLE_NCEO=Collectible Ver (Benim Patronum Değil)
+
+CEOPAY=CEO Maaş Döngüsü
+CEOPAY_H2=CEO işçilerine maaşlarını verir. Alıcılar senin işçilerin olmak zorunda değiller.
+
+PLYRP=RP Ver
+PLYRP_H=Oyuncuya bayağı bir RP verir.Birden fazla kere kullanılabilir.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCFIG=Casino Figürleri Yağdır
+PLYCFIG_H=RP ve para vermek için kullanılabilir.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCRDS=Oyun Kartı Yağdır
+PLYCRDS_H=RP ve casino chipi vermek için kullanılabilir.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYSNK=P's & Q's Çikolata Ver
+
+PLYEXPAMMO_H=Yakın mesafede en iyi şekilde çalışır.
+
+OTR=Off The Radar
+
+MNTLS=Mental State (Haritadaki Renk)
+
+MNTL=Mental State'i Ayarla
+MNTL_T=Mental State'in artık {}. :)
+
+LCKMNTL=Mental State'i Kilitle
+
+MNTLPULS=Titrek Mental State
+MNTLPULS_H=Haritadaki rengini gösteren mental state düzeyini düzensiz hale getirir.
+
+CLUBPOP=Nightclub Popülerliğini Ayarla
+CLUBPOP_P=Nightclub Popülerliği
+CLUBPOP_L=Nightclub Popülerliğini Dondur
+
+RNK=Seviye
+
+SETLVL=Seviyeni Ayarla
+GEN_T_NEWSESS=Değişikliklerin uygulanması için yeni bir sunucuya girmelisin. :)
+
+! Refering to any number of possible targets.
+GEN_T_NEWSESS_O=Değişikliklerin uygulanması için yeni bir sunucuya girmeliler. :)
+
+FSTRUN=Hızlı Koşma Yeteneği
+ABILOPT=Aktifleştir
+ABILUNL=Pasifleştir
+
+BADSPORT=Bad Sport Durumu
+RELINQ=Pasifleştir
+
+UNLKS=Kilidi Açılacaklar
+
+STATEDIT=Stat Düzenleyici
+STAT_STR_LABEL=Buraya label yaz.
+STAT_STR_RID=Buraya Rockstar ID yaz.
+STAT_KD=K/D Düzenleyici
+STAT_POP=Popüler Statlar
+STAT_RAW=Raw Statlar
+STAT_WARN=Buradaki değerlerin ne olduğundan emin değilseniz onlarla sakın ama sakın oynamayın.
+
+STAT_YEAR=Yıl
+STAT_MONTH=Ay
+STAT_DAY=Gün
+STAT_HOUR=Saat
+STAT_MINUTE=Dakika
+STAT_SECOND=Saniye
+STAT_MILLISECOND=Milisaniye
+
+KDEDIT=K/D
+KDEDIT_H=Rockstar'ın bunun için kullandığı algoritma oyunun bazı alanlarında farklıdır, dolayısıyla değer, nereye baktığınıza bağlı olarak biraz farklı olabilir.
+
+TOTAL_RACES_WON=Kazanılan Yarış
+TOTAL_RACES_LOST=Kaybedilen Yarış
+TOTAL_DEATHMATCH_WON=Kazanılan Deathmatch
+TOTAL_DEATHMATCH_LOST=Kaybedilen Deathmatch
+TOTAL_TDEATHMATCH_WON=Kazanılan Takımlı Deathmatch
+TOTAL_TDEATHMATCH_LOST=Kaybedilen Takımlı Deathmatch
+
+STAT_WAIT=İstatistikler yükleniyor, lütfen bekleyin...
+
+UNLKALL=Her Şeyi Aç
+UNLKALL_H=Aşağıdaki her şeyi açmak istediğinde kullan.
+
+UNLKONL=GTA Online'ı Aç (İlk Görevi Geç)
+
+UNLKALLACHIV=Bütün Başarımları Aç
+
+RVLMAP=Bütün Haritayı Aç
+
+OVRDPROBNS=Erken Sipariş Bonusunu Değiştir
+
+FREEORB=Ücretsiz Orbital Mermisi Aç
+
+GNDRCHNG=Cinsiyet Değiştirmeyi Aç
+GNDRCHNG_H="M" Menüden Style > Change Appareance'a basarak cinsiyetini değiştirmene yarar.
+GNDRCHNG_T=Cinsiyet ameliyatını Style > Change Appareance kısmından artık tamamlayabilirsin. :D
+
+LVRIES=Özel Livery'leri Aç
+LVRIES_T=Özel Liveryler Açıldı. :D
+
+RSRCH=Bunker Araştırmalarını Aç
+RSRCH_T=Bunker araştırmaları açıldı. :D
+
+UNLKOSA=Kosatka'yı Satın Alıma Aç
+
+H3CLTH=Casino Soygunu Kıyafetlerini Aç
+AWCLTH=Arena War Kıyafetlerini Aç
+CLTH_T=Kıyafetler açıldı. :D
+
+UNLKSR=Bunker Poligonu Ödüllerini Aç
+UNLKSR_H=Poligondaki 3 seviyeyi de geçtikten sonra daha fazla bomba taşıyabilmeni sağlayan ödülü açar.
+UNLKSR_T=Bunker Poligon ödülleri açıldı. :D
+
+AWDS=Ödülleri Aç
+AWDS_H=Dövme ve kıyafet dahil bayağı bir şeyi açar.
+
+VEHCUST=Araba Modifiyelerini Aç
+
+UNLKAMUTINTS=Silah Renklerini Aç
+UNLKAMUTINTS_H=Kamuflaj, yeşil, turuncu, altın gibi renkleri silahlarına uygulayabilmeni sağlar.
+
+FLLSTATS=Karakter İstatistiklerini Fulle
+FLLSTATS_H=Dayanıklılık, Güç, Ateş Etme, Gizlilik, Uçma, Sürme ve Ciğer Kapasitesi istatistiklerini fuller.
+
+VWRPTSTAT=Raporlarını Görüntüle
+
+CMEND=Övgü
+
+CMENDT=Övgü Verildiğinde Bildirim Yolla
+CMENDT_H=Biri sana yardımsever ya da dostane olarak övgü verdiğinde sana bildirim verir.
+CMENDT_T={player} oyuncusu seni {reason} olduğun için övdü. :D
+ESTAT_0=Yardımsever
+ESTAT_1=Dostane
+
+PLYISE=Övgü/Rapor Sayısını Arttır
+
+ISE_H=Yardımsever
+ISE_F=Dostane
+
+RPRPT=Raporla
+
+ISE_G2=Rahatsız Edici Oyun Şekli
+ISE_X2=Hile
+ISE_B2=Oyun Hatasından Yararlanmak
+ISE_TC_A=Yazılı Sohbet: Sinirlendiriyor
+ISE_TC_H=Yazılı Sohbet: Nefret Söylemi
+ISE_VC_A=Sesli Sohbet: Sinirlendiriyor
+ISE_VC_H=Sesli Sohbet: Nefret Söylemi
+ISE_VG=Şiddet/Kanlı İçerik
+ISE_ONC=Tetikleyici Oyuncu İsmi veya İçerik
+
+STAT_OFFENSIVE_LANGUAGE=Rahatsız Edici Dil
+STAT_OFFENSIVE_TAGPLATE=Rahatsız Edici Plaka
+STAT_OFFENSIVE_UGC=Rahatsız Edici İçerik
+STAT_BAD_CREW_NAME=Kötü Crew Adı
+STAT_BAD_CREW_MOTTO=Kötü Crew Mottosu
+STAT_BAD_CREW_STATUS=Kötü Crew Durumu
+STAT_BAD_CREW_EMBLEM=Kötü Crew Amblemi
+
+STAT_IS_CHEATER=Hileci
+STAT_WAS_I_BAD_SPORT=Bad Sport'tu
+STAT_IS_HIGH_EARNER=High Earner
+
+YES=Evet
+NO=Hayır
+
+PLYHIST=Oyuncu Geçmişi
+
+PYLFND_H2=Geçmişindeki oyuncuları nota, Rockstar ID'ye ve isme göre arayabilmeni sağlar.
+
+PLYNOTE=Not
+PLYNOTE_T=Not değişmemiş gibi duruyor.
+PLYNOTED=Not Edilmiş Oyuncular
+HIST_KEEP_NTE=Notlu Tut
+
+AGGREGS=Agregasyonlar
+
+1SEEN=İlk Görülme
+
+LSEEN=Son Görülme
+
+CPYNME=İsmi Kopyala
+CPYRID=Rockstar ID'sini Kopyala
+
+PLYHIST_DEL_E=Halihazırda sunucunda olan bir oyuncunun girişini engelleyemem.
+
+CONFAIL=Bağlanılamadı
+
+SPF=Spooflama
+
+NSPFD=Spoofsuz
+
+SPFUPD=Diğerlerinin bu değişikliğini görmeleri için sunucu değiştirmelisin. :)
+
+SPFNME_D=İsim Spooflama
+SPFDNME=Spooflanmış İsim
+
+HRD=Hard
+SFT=Soft
+
+SPFNMEFRMHST=Oyuncu Geçmişinden Rastgele İsim Seç
+
+SPFPRST=Hazır İsim ve RID Spoofları
+YTRS=Youtuberlar
+RSEMPS=Rockstar Personelleri
+
+SPFHT_D=Host Token Spooflama
+SPFHT_H=Host tokenini değiştirmeni sağlar. Daha küçük değerler seni host sırasında daha öne atar.
+SPFHT_W=Verilen tokenin sadece bir kişi tarafından kullanılabileceğini unutmayın, ve çok küçük tokenler diğer modderlar tarafından anlaşılabilir.
+
+SPFDHT=Spooflu Host Token
+
+SPFDHTPRST_0=Handicap
+SPFDHTPRST_1=Sweet Spot
+SPFDHTPRST_2=Aggressive
+
+AKCKHST=Katılırken Sıradaki Host Sensen Hostu Kickle
+
+SPFSESS=Sunucu Spooflama
+
+HDESESS=Sessionu Gizle
+HDESESS_H=Seni takip etmeye çalışan, izlemeye çalışan veya sana katılmaya çalışan herkes için sunucunu gizler.
+HDESESS_H_CPY=Note: Şuanda "Sunucu Bilgisini Kopyala" seçeneği açık, ki bu "Sessionu Gizle" seçeneği ile çakışıyor. Lütfen "Oyuncu Geçmişi Tepkileri" kısmını kontrol edin.
+HDESESS_NX=Varolmayan Sunucu
+
+FF=Sahte Arkadaş
+TRK_FF=Aktif + Sahte Arkadaş
+TRK_FF_H=BU oyuncuyu oyun-içi arkadaşlar listesine de ekler.
+
+MARKASFF=Sahte Arkadaş Olarak İşaretle
+UMARKASFF=Sahte Arkadaş İşaretini Kaldır
+
+CPYSESS=Sunucu Bilgisini Kopyala
+CPYSESS_H=Seni takip etmeye çalışan, izlemeye çalışan veya sana katılmaya çalışan herkes bu sunucuya yönlendirilir.
+CPYSESS_F={player}'ın sunucu bilgileri kopyalanıyor
+
+WHTJOIN=Whitelistle Giriş
+
+! For reference, "Block Joins From Anyone" is BJ_ALL_A
+WHTJOIN_H=Bunu seçmek, hazırda bulundurduğun "Sunucuya Girişi Engelle" gibi korumaları devre dışı bırakır. Kişiye özel tepkiler ve 'Herkesin Girişini Engelle' komutları buna dahil değildir.
+
+SESSTYP=Sunucu Tipi
+SESSTYP_H=Seni takip etmeye çalışan kişilerin gördüğü sunucu tipi.
+NVLD=Geçersiz
+
+SPFHST=Host Spooflama
+SPFDHST=Spooflu Host
+YOU=Sen
+
+SPFCRW=Crew Spooflama
+
+SPFCRW_ID_H=Hangi Crew Ambleminin gözükeceğini belirler. Gözükmesi için bu değer sıfırdan farklı olmalı
+
+NCRW=Crew Yok
+
+CPY2SPFCRW=Crew Spooflamaya Kopyala
+
+SPFCRWMINE=Kendi Crewlarımdan Kopyala
+
+SPFRNK_D=Seviye Spooflama
+SPFRNK_H=Oyuncu listesinde diğer kişilerin gördüğü seviyeni değiştirmene yarar.
+SPFDRNK=Spooflu Seviye
+
+SPFKD=K/D Spooflama
+SPFDKD=Spooflu K/D
+
+SPFPOS=Pozisyon Spooflama
+SPFDPOS=Spooflu Pozisyon
+
+PLYMGNT=Oyuncu Mıknatısı
+PLYMGNT_H=Bu seçenek sunucunun ne kadar hızlı dolacağını arttırır.
+
+STRMSPF=Diğer Kullanıcıların İsimlerini Gizle
+
+HIDEPLIST=Oyuncu Listesinden Gizle
+HIDEPLIST_H=Seni oyunun oyuncu listesinden gizler.
+
+PHNSPF=Telefon Durumu Spooflama
+PHNSPF_0=Telefon Kullanmıyor
+PHNSPF_1=Arıyor
+PHNSPF_2=Yazıyor
+PHNSPF_3=Kayıt Alıyor
+
+RIDTOOLS=Rockstar ID Araçları
+
+N2R_I=Bu geçersiz bir isim. :?
+N2R_Q=Oyuncunun RID'sine bakılıyor...
+N2R_E=Böyle bir ismin RID'sini bulamadım. :?
+
+R2N_Q=Oyuncunun ismine bakılıyor...
+R2N_E=Böyle bir RID'nin ismini bulamadım. :?
+
+PLYINV=Sunucuya Davet Et
+INV_N=İsme Göre Davet Et
+INV_R=RID'ye Göre Davet Et
+PLYINV_E=Bu tür bir sunucu için davet yollamak mümkün değil. :/
+
+PLYPRFL=Profili Aç
+PRFL_N=İsimle Profil Aç
+PRFL_R=RID ile Profil Aç
+
+JOIN2=Katıl
+JOIN_N=İsme Göre Katıl
+JOIN_R=RID'ye Göre Katıl
+
+! Join methods
+JM_N=Ninja Yöntemi
+JM_F=Arkadaş Yöntemi
+JM_M=Sunucu Bulma Yöntemi
+
+! I mean "Nuts" as a covert way of saying crazy, just translate it as "Crazy" if you can't be sly.
+JM_NUTS=Deli YÖntemi
+
+JOIN_T_A=Zaten halihazırda bu sunucudasın.
+
+JOIN_T_N=Bu oyuncu şuanda bir GTA Online sunucusunda değil. :/
+PLYOFFLINE=Bu oyuncu şuanda offline. :/
+
+PLYSPEC=Spectate
+SPEC=Oyuncuyu Spectatele
+SPEC_N=İsmi Spectatele
+SPEC_R=RID'yi Spectatele
+
+NAMKICK=İsme Göre Kick
+RIDKICK=RID'ye Göre Kick
+
+LGTM=İnandırıcı Yöntem
+
+RCTS=Tepkiler
+
+JOINR=Oyuncu Katılma Tepkileri
+JOINT={} sunucuya katılıyor
+
+HISTWJOINR=Katılım Tepkili Oyuncular
+HIST_KEEP_JRE=Katılım Tepkili Oyuncuları Hatırla
+
+HISTWWHT=Whitelistli Oyuncular
+HIST_KEEP_WHT=Whitelistte Tut
+
+HISTADD2=Oyuncu Ekle
+HISTADD=İsimle Oyuncu Ekle
+HISTADDRID=RID ile Oyuncu Ekle
+
+HOSTR=Host Değişme Tepkileri
+HOSTR_T={} artık host
+
+SHR=Script Host Değişme Tepkileri
+SHR_T={} artık script host
+
+VKR=Oylamalı Kick Tepkileri
+VKR_A=Herhangi Birini Oylamak
+VKR_M=Beni Oylamaları
+VKR_T={player}, {target} oyuncusunu atma oylaması yapıyor
+
+LLKR=Love Letter Kick Tepkileri
+LLKR_T={player}, {target} oyuncusunu love letter yöntemiyle atıyor
+
+BOUNTYR=Bounty Tepkileri
+BOUNTYR_P={} sana ${} miktarında bounty koydu.
+BOUNTYR_H=Bu bir NPC sana bounty koyduğunda etki göstermez.
+
+PTFXSPAMR=Parçacık Spam Tepkileri
+PTFXSPAMR_H=Hep zararlı değildir, ama FPS'ini düşürebilir.
+
+LEAVET=Oyuncu Çıkma Tepkileri
+LOGLEAVE_T={} çıktı
+
+LR=Oyuncu Çıkma Nedenleri
+LR_H=Bu bilgiyi kendimiz tespit ettiğimiz için, bazen hatalı bildirim verebileceğimizi unutmayın.
+
+LR_WHERE=Nereye
+LR_WHAT=Ne
+
+LR_N={player} normal şekilde çıktı
+LR_SN=Normal Çıkanları Da Göster
+
+LR_Q={player} oyunu kapattı
+LR_SQ="Oyunu Kapattı" Yazısını Göster
+
+LR_B={player} oyuncusunun girişi engellendi
+LR_SB="Girişi engellendi" yazısını göster
+
+LR_T={player} oyuncusunun bağlantısı koptu
+LR_DL={player}, {other} oyuncusunu desync yöntemiyle atmaya çalışırken bağlantısı koptu
+LR_VK={player} oylamayla atıldı
+LR_HK={player}, {other} tarafından host yöntemiyle atıldı
+LR_SHK={player}, {other} tarafından script host yöntemiyle atıldı
+LR_LL={player}, {other} tarafından love letter yöntemiyle atıldı
+LR_K_B={player}, {other} tarafından breakup yöntemiyle atıldı
+LR_K_O={player} orgasm kick yedi
+LR_FMD={player} freemode ölümü nedeniyle çıktı
+LR_FMDC={player} freemode ölümü sonrası crashlendi
+! "Quit To Story Mode" is QTSP
+LR_MOD={player} story mode'a geçmek için hile kullandı
+LR_BAN={player} GTA Online'dan ban yedi
+LR_U={player} bilinmeyen bir nedenden dolayı çıktı ({id})
+
+! The only substitute for {reason} is NETWORK_BAIL as of now
+LR_E={player} {reason} dolayısıyla çıktı
+
+AIM_MODE=Hedef Modunu Seç
+AIM_MODE_0=Assisted Aim - Full
+AIM_MODE_1=Assisted Aim - Partial
+AIM_MODE_2=Free Aim - Assisted
+AIM_MODE_3=Free Aim
+
+RMLDR="Transaction Pending" Uyarısını Kaldır
+RMLDR_H=Sağ alttaki yükleme simgesini kaldırır.
+
+CHTRMLDR=Chatte konuşurken "Transaction Pending" Olmasın
+CHTRMLDR_H=Chat açıkken yükleme simgelerini kaldırır.
+
+LVINT=Şuanki Binadan Ayrıl
+
+FRCSVE=Bulut Kayıta Zorla
+
+THDR=Gök Gürültülü Hava
+THDR_ON=İsteği Aktifleştir
+THDR_OFF=İsteği Pasifleştir
+THDR_N=İstek Olunca Bildir
+THDR_N_T={} gök gürültüsü rica etti.
+
+RSTFM=Freemode Script'i Yeniden Başlat
+
+RJNSESS=Sunucuya Yeniden Gir
+
+SLFDS=Yalnız Kal
+SLFDS_H=Kimsenin zevkini bozmadan sunucuda yalnız kalmanı sağlar.
+
+SLR_N=Çıkış Nedeni Yok
+SLR_C=Hile Yaptığı İçin Çıktı
+
+HSTTLS=Host Araçları
+
+SETSESSTYP=Sunucu Tipini Ayarla
+
+CLRBLKLST=Karalisteyi Temizle
+CLRBLKLST_H=Geçmişte oylamayla atılan oyuncuların yeniden katılabilmesine izin verir.
+
+SESSTYP_S=Solo
+SESSTYP_I=Invite Only
+SESSTYP_F=Closed Friend
+SESSTYP_CC=Closed Crew
+SESSTYP_C=Crew
+SESSTYP_P=Public
+
+CSTMVK=Özel Oylamalı Kick Sınırı
+CSTMVK_H=Birini kicklemek için gereken oy sayısını ayarla.
+
+! For reference: "I'll try to convince them to leave." is PLYKCK_T_C
+CSTMVK_MSG={} senin oylama sınırını değiştirmeye çalıştı. Onu atmaya çalışacağım.
+
+THRESHOLD=Sınır
+
+AUTOREJOIN=Desynclendiğin Sunuculara Otomatik Geri Gir
+AUTOREJOIN_H=Desynclendiğin sunuculara otomatik geri girer.
+AUTOREJOIN_MSG=Sunucu desynci tespit edildi, geri giriliyor...
+AUTOREJOIN_FAIL=Son sunucuna girilemedi. :(
+
+QTSP=Story Mode'a Çık
+
+QTSPF=Story Mode'a Çıkmaya Zorla
+QTSPF_H=Bütün oyun sistemlerini yeniden başlatır, sonrasında seni Story Mode'a yollar.
+
+NDLYXPS=Günlük Giderleri Kaldır
+
+OCWS=Kaydırırken Chati Aç
+OCWS_H=Chat kapalıyken bile kaydırabilme sıkıntısını kaydırınca chati açarak çözer.
+
+CHATAO=Hep Açık
+
+BBGS=Arkaplan Scriptlerini Engelle
+BBGS_H=Rockstar'ın yeni DLC'leri tanıtmak için kullandığı ama modderların kafasını karıştıran scriptleri engelle.
+
+ADMDLC=Rockstar Admin DLC
+ADMDLC_H2=Özel kıyafet ve Social Club TV kilidini açar.
+
+HUDTS=Para İçin Ondalık Virgülü
+HUDTS_H=Sağ üstte gözüken paran için ondalık virgülü-noktası ekler.
+
+FLLPLYLST=Oyuncu Listesindeki Herkes
+FLLPLYLST_H=Oyun içindeki oyuncu listesindeki herkesi gösterir, Cayo Perico'da olanlar hariç.
+
+FMBNR2T=Freemode Bannerlar'ı Bildirimlere Yolla
+
+PHNANIM=Telefon Animasyonları
+PHNANIM_H2=Telefonu kullanırken karakterine animasyonlar yükler.
+
+SPDUPDIAL=Telefonla Aramayı Hızlandır
+
+NLSCBAR=Modifiye Kısıtlamalarını Kaldır
+NLSCBAR_H=Modifiyecilere her arabayla (sahip olmadıklarını bile) katılabilmeni ve tamamen modifiye edebilmeni sağlar.
+
+BLIPTAGS=Haritada Oyuncu Etiketlerini Göster
+
+RSTHDSHT=Oyuncu Fotoğraflarını Düzelt
+RSTHDSHT_H=Oyuncu listesinde ya da bildirimlerde yüzü siyah kare olarak gözüken oyuncuların fotoğrafları düzeltir.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+TRNSS=Geçişler
+
+SESSHOP=Sunucu Seçici
+MINPLYS=Minimum Oyuncu
+MAXPLYS=Maksimum Oyuncu
+
+SSS=Sorunsuz Sunucu Değiştirme
+
+WRLDSTCNG=Dünya Durumu Değişikliği
+WRLDSTCNG_1=Erteli
+WRLDSTCNG_2=Erteli, Sadece Online
+WRLDSTCNG_3=Erteli, Sadece Story
+WRLDSTCNG_T={} içinde sunucu durumu değiştirilecek
+
+SPDUP=Hızlandır
+
+TRNS_SPDUP_BRDCST=Veri Yayını Bekleme
+TRNS_SPDUP_FMMC=Görev Başlatıcısını Bekleme
+TRNS_SPDUP_SPWN=Spawnlanmak İçin İzin İsteme
+
+TRNS_SPDUP_BESCRHST_H=Bu sunucuya bağlanmanı hızlandırabilir ama sunucu bozulacak ve senden başka kimse sunucuya katılamayacak.
+
+JGRPOVRD=Giriş Havuzu Değiştirme
+JGRPOVRD_H=Seni spectator gibi gösterip normalde dolu olan bir sunucuya katılabilmeni sağlar. Lakin, bu özellik görevlere katılırken sorunlara yol açabilir. ⚠️
+JGRPOVRD_0=İzleyici
+JGRPOVRD_1=Freemoder
+
+SSWPD=Kamera Efektini Kaldır
+SSWPD_H=Sunucuya girerken kameranın yavaşça aşağı inme efektini kaldırır.
+
+TRNSHLP=Geçiş Yardımcısı
+TRNSHLP_H=Bulutlarda takılı kalmamanı sağlar.
+
+UNSTK=Takılı Kalmayı Düzelt
+
+NSPWNACTY=Spawn Aktivitelerini Devredışı Bırak
+NSPWNACTY_H=Sunucuya ilk girdiğinde karakterinin animasyona girmesini engeller.
+
+NDLCITRO=DLC Introsunu Kaldır
+
+SHWTRNSTT=Geçiş Durumunu Göster
+
+SHWARRSYNC=Array Senkronizasyonu İlerlemesini Göster
+SHWARRSYNC_T=Freemode scripti {}/{} arraylerini senkronize etti ({}%)
+
+SHWRSMSG=Rockstar Destek Mesajını Göster
+
+GTAOSTUS_O=GTA Online hizmeti şuanlık {}
+GTAOSTUS_O_L=kısıtlı
+GTAOSTUS_O_D=çökmüş
+GTAOSTUS_M=Rockstar Destek "{}" diyor
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions > Matchmaking !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+MM=Sunucu Bulma
+
+MMREGION2=Bölge Seçici
+MMREGION=Bölge
+
+Australia=Avusturalya
+Europe=Avrupa
+Asia=Asya
+Japan=Japonya
+LATAM=Latin Amerika
+REGION_NA=Kuzey Amerika
+USA_East=Doğu Amerika
+USA_West=Batı Amerika
+
+MMPOOLOVRD=Serverları Manipüle Et
+MMPOOL=Server
+
+MMPOOL_NRM=Normal
+MMPOOL_CHEAT=Hileci
+MMPOOL_BADBOY=Bad Sport
+
+MMMGNT=Oyuncu Sayısı Seçeneği
+MMMGNT_H=Verilen sayı civarında oyuncu olan sunuculara girersin.
+
+MMOFF_H=Sunucu bulmayı kapatır, yeni sunucuları sen açarsın.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session > Session Code !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSCODE=Sunucu Kodu
+SESSCODE_T_X=Bu davet kodunun süresi geçmiş.
+
+CODEJOIN=Kod ile Sunucuya Katıl
+CODESPEC=Kod İle Snucuyu İzle
+ARGCODE=[kod]
+
+CPYINVL=Davet Linkini Kopyala
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Session Scripts !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SESSSCRS=Sunucu Scriptleri
+
+RUNSCR=Script Kullan
+RUNSCR_PREP=Uzaktan Script Kullanma Hazırlanıyor...
+RUNSCR_RUN={} scripti kullanılıyor...
+
+RUNSCRS=Kullanılan Scriptler
+
+PRTCPTS=Katılımcılar
+
+STRTINST=Hemen Başlat
+
+SESSSCRSTRT=Sunucuda Script Kullanma
+SESSSCRSTRT_T={player} oyuncusu {script} scriptini kullandı.
+
+SESSSCRSTRT_ANY=Herhangi Script
+
+SCRCAT_GRIEF=Sunucu Bozma
+NOCAT=Kategorileştirilmemiş
+
+SCRCAT_FA=Freemode Aktivitesi
+SCRCAT_AG=Arcade Oyunu
+SCRCAT_RFA=Kaldırılmış Freemode Aktivitesi
+SCRCAT_SERV=Hizmet
+SCRCAT_CUT=Ara Sahne
+
+SCRCAT_FA_P=Freemode Aktiviteleri
+SCRCAT_AG_P=Arcade Oyunları
+SCRCAT_RFA_P=Kaldırılmış Freemode Aktiviteleri
+SCRCAT_SERV_P=Hizmetler
+SCRCAT_CUT_P=Ara Sahneler
+SCRCAT_MISS_P=Görevler
+
+SCR_FRCEPI="M" Menüyü Aç
+SCR_PS=Uçuş Okulu
+SCR_STRIKE=Rastgele Oyuncuya Şimşek Çarpması
+SCR_DPSSV=Pasif Modu Deaktive Et
+SCR_DARTS=Dart
+SCR_IMPDM=Impromptu Deathmatch
+SCR_SLASHER=Slasher
+
+!! Session Scripts: Freemode Activities
+
+SCR_FE_BB=Business Battle
+SCR_FE_KL=Kill List
+SCR_FE_CPC=Checkpoint Collection
+SCR_FE_C=Challenges
+SCR_FE_PI=Penned In
+SCR_FE_PI_CI=Caged In
+SCR_FE_PTP=Hold the Wheel
+SCR_FE_HP=Hot Property
+SCR_FE_KOTC=King of the Castle
+SCR_FE_CD=Criminal Damage
+SCR_FE_HTB=Hunt the Beast
+
+!! Session Scripts: Challenges - Types
+SCR_FE_C_0=En Yüksek Atlama
+SCR_FE_C_1=En Yüksek Düşüş
+SCR_FE_C_2=En Yüksek Hız
+SCR_FE_C_3=En Uzun Ön Tekerle Durma
+SCR_FE_C_4=En Uzun Tek Teker
+SCR_FE_C_5=Sıfır Kaza
+SCR_FE_C_6=En Düşük Paraşüt
+SCR_FE_C_7=Çalınan Araba
+SCR_FE_C_8=Kıl Payı Geçme
+SCR_FE_C_9=Geri Viteste Sürme
+SCR_FE_C_10=En Uzun Düşüşte Hayatta Kalma
+SCR_FE_C_11=Alçak Uçuş
+SCR_FE_C_12=Ters Uçuş
+SCR_FE_C_13=Araçtan En Uzun Atlama
+SCR_FE_C_14=Köprü Altından Uç
+SCR_FE_C_15=Headshot ile Öldürme
+SCR_FE_C_16=Arabadan Öldürme
+SCR_FE_C_17=Yakın Dövüşte Öldürme
+SCR_FE_C_18=Sniperla Öldürme
+
+!! Session Scripts: Arcade Games
+
+SCR_AG_BRII=Badlands Revenge II
+SCR_AG_CAM=Camhedz
+SCR_AG_PUZ=QUB3D
+SCR_AG_RAC=Race and Chase
+SCR_AG_SM3=Space Monkey 3
+SCR_AG_TWR=The Wizard's Ruin
+
+!! Session Scripts: Removed Freemode Activities
+
+SCR_FE_DD=Dead Drop
+SCR_RFA_HT=Hareketli Hedef
+SCR_OFM_PT=Uçak Düşür
+SCR_OFM_DC=Polislerin Dikkatini Dağıt
+SCR_OFM_DV=Arabaları Patlat
+
+!! Session Scripts: Session Breaking
+
+SCR_FMINTRO=GTA Online Intro
+
+!! Session Scripts: Services
+
+SCR_SERV_A=Airstrike
+SCR_SERV_AD=Ammo Drop
+SCR_SERV_BH=Helicopter Backup
+SCR_SERV_IBH=Helicopter Backup (Cayo Perico)
+SCR_SERV_BT=Boat Pickup
+SCR_SERV_HT=Helicopter Pickup
+
+!! Session Scripts: Options on running scripts
+
+SCORE=Skor
+
+!!!!!!!!!!!!!!!!
+!! Player Bar !!
+!!!!!!!!!!!!!!!!
+
+PBAR=Oyuncu Barı
+
+HDEIF=Gizleme Filtreleri
+PBAR_HI_1=Oyuncu Listesi Gözüküyorsa
+PBAR_HI_2=XP Bar Görünüyorsa
+
+PBAR_ALNE=Yalnızken Bile Göster
+
+SHWTGS=Etiketleri Göster
+
+HDEPNTG=Etiketsiz Oyuncuları Gizle
+
+DFLTCLR=Normal Renk
+
+TGCLRS=Etiket Renkleri
+
+UCLR=Renk Kullan
+
+!!!!!!!!!!!!!!!!!!!
+!! Online > Chat !!
+!!!!!!!!!!!!!!!!!!!
+
+CHT=Chat
+
+PRFNTY=Küfür Filtresini Kaldır
+PRFNTY_H=Kimsede sansürlenmeden şekilde mesaj göndermene izin verir.
+
+HTML=Harf Filtresini Kaldır
+HTML_H="< ve >" gibi harfleri chatte kullanmana yarar.
+
+ONLYTEAM=Sadece Takım Chatinde
+
+MSGFILTBP=Kaldırılmış Mesaj Filtresi
+
+CHTSPM=Chat Spam
+
+CHTLG=Chat Mesajlarını Logla
+
+TBCMPLT=Oyuncu İsimlerini Yaz
+TBCMPLT_H=Chat Mesajı yazarken seçtiğin tuşa basınca oyuncu isimlerini yazar.
+
+PSTE=Chate Yapıştırmayı Aktif Et
+PSTE_H=Seçtiğin tuşa basınca chate kopyaladığın şey yapıştırılır.
+
+TPNGIDCTR2=Yazıyor İşareti
+TPNGIDCTR_H=Diğerleri yazarken Discord'daki gibi yazıyor işareti çıkar.
+TPNGIDCTR_1={a} yazıyor...
+TPNGIDCTR_M={} yazıyor...
+
+TPNGPOS_C=Kapalı Chat Pozisyonu
+TPNGPOS_O=Açık Chat Pozisyonu
+
+SNDMSG=Mesaj Gönder
+
+ITEAMCHT=Takım Sohbetine
+
+TEXT=Yazı
+ARGTXT=[yazı]
+
+SPAM=Spam
+SPAM_H=Stand kuralları çerçevesince reklam yapmak yasaktır, bunu umursamayan oyuncuların Stand hesaplarının silineceğini unutmayınız.
+
+INTVAL_MS=Gecikme (ms)
+
+LOCHIST=Yerel Geçmişe Yaz
+LOCHIST_H_SPAM=Spamın kendi geçmişinde de olmasını istiyorsan diye.
+
+FRCSEND=Tüm Sohbet Mesajlarını Gönder
+FRCSEND_H=Sohbet kutusunun "Mesaj Gönder" komutu olarak çalışmasını sağlar, bu sayede tüm mesajların gönderilir.
+
+FRCRECV=Tüm Chat Mesajlarını Göster
+FRCRECV_H2=Kimin gönderdiğine bakılmaksızın yazılan tüm chat mesajlarını görmeni sağlar.
+
+TIMESTAMP_MS=Mesajların Atıldığı Saat
+
+OWOMYMSGS=Chat Mesajlarımı OwO'la
+OWOMYMSGS_H=Giden mesajlarını OwO'lar. Senin tarafında değişiklik olmayacağını unutma.
+
+SENDPM=Özel Mesaj Gönder
+SENDPM_H=Sadece onun ve senin görebileceği bir chat mesajı gönder.
+
+CHATSING=Şarkı Söyle
+CHATSING_H=%appdata%/Stand/Song.lrc. dosyasındaki şarkını söyler.
+
+NTPNGIDCTR=Yazıyor İşaretini Kaldır
+NTPNGIDCTR_H=Diğer oyuncular chate yazma işaretini göremezler.
+
+PTX_TYPNGSTRT=Yazma İşlemini Başlat
+PTX_TYPNGSTOP=Yazma İşlemini Durdur
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Commands !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CMDS=Komutlar
+CMDS_H=Seçilen prefix ile chat mesajlarını işler. Stand'in komut kutusu gibi çalışır ama çoğu komutu diğer kullanıcıların kullanamadığını unutma.
+
+PFX=Prefix
+
+REPLPFX=Cevabın Başına Gelecek Ön Ek
+
+REPLYVIS=Cevabı Görebilecekler
+EVERYONE=Herkes
+ISSUER_N_ME=Komut Sahibi & Ben
+ISSUER=Komut Sahibi
+NOONE=Kimse
+
+ON4M=Benim İçin Etkin
+
+4F=Arkadaşlar İçin
+
+4C=Crew Üyeleri İçin
+
+4T=Takım Üyeleri İçin
+4T_H=Ör: CEO/MC Üyeleri.
+
+4S=Yabancılar İçin
+
+! When a friend or stranger tries to kick or crash the Stand user
+SLFHRM_O=Seni besleyen kaba pisleme. ;)
+
+CMDBXDCS=Komut Kutusu Belgesi
+
+CMDLST=Komut Listesi
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Reactions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CHT_ANY=Herhangi Bir Mesaj
+CHT_ANY_G=Chat Mesajı
+
+CHT_SPF=Spooflu Mesaj
+CHT_AD=Reklam
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session Browser !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSBRWS=Sunucu Tarayıcısı
+
+NFLTR=Filtreleme
+
+MREFLTR=Daha Çok Filtre
+
+SESSBRWS_FLTR_AST_H=Eğer açıksa, şuanki asset hashlerinle uyuşan sunucular gözükür. "Gizlice sunucu aramak" için verilerini spooflayabilirsin.
+
+NHKNADS=Bilinen bir Reklamcı Tarafından Hostlanmıyor
+
+RFRSH=Yenile
+
+SESSS=Sunucular
+
+HSTPRF=Host'un Profili
+
+LSESSDETS=Sunucu Detayları Alınıyor...
+
+RM_PROMPT=Oyuncu Listesini Al
+RM_CONFIRMED=Oyuncu listesi alınıyor...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Request Services !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+REQSRV=Hizmet Talep Et
+
+AIRSTRK=Airstrike Talep Et
+AIRSTRK_H=Sana bir flare verir ve flareı attığın yeri Merryweather uçağı bombalar.
+
+AM_AMMO_DROP=Mermi Talep Et
+
+AM_BOAT_TAXI=Boat Pickup Talep Et
+
+AM_HELI_TAXI=Helicopter Pickup Talep Et
+AM_HELI_TAXI_0=Maverick
+AM_HELI_TAXI_1=Supervolito
+
+AM_BACKUP_HELI=Helicopter Backup Talep Et
+
+REQNANO=Nano Drone Talep Et
+
+!!!!!!!!!!!!!!!!!!
+!! Online > ATM !!
+!!!!!!!!!!!!!!!!!!
+
+ATM=ATM
+
+AUTODEPO=Cüzdandakileri Otomatik Bankaya Yatır
+WLTHPPR_T=Cüzdanından ${} dolar bankana yatırdım. :)
+
+WTHDRW=Para Çek
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! SC DM Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SCDMT=Social Club DM Bildirimleri
+SCDMT_T={sender} kullanıcısından SC DM'i: {text}
+
+! Those thingies in the top-right corner of the screen.
+SCNOTIF=Social Club Bildirimi
+
+!!!!!!!!!!!!
+!! CEO/MC !!
+!!!!!!!!!!!!
+
+CEO=CEO/MC
+
+NOCEO={} bir şirkette veya motor kulübünde değil.
+CMDNBOSS=Bu komut sadece VIP, CEO ya da Motorcycle Club President olduğunda kullanılabilir.
+GEN_H_BOSS=Bu sadece sen VIP, CEO ya da Motorcycle Club President olduğunda etki edecek.
+
+CEOKICK=CEO/MC Kick
+CEOKICK_E=Üzgünüm, sadece CEO/MC üyelerini atabilirsin.
+
+MISSIONEVT=Freemode Görevi Başlat
+MISSIONEVT_NCEO=Freemode Görevi Başlat (Benim Patronum Hariç)
+
+INTTPEVT=Bina İçerisine Işınla
+INTTPEVT_NCEO=Bina İçerisine Işınla (Benim Şirketim Değil)
+
+CEOAPPEAL=CEO/MC Banını Kaldır
+
+CEOJOIN=CEO/MC'ye Katıl
+CEOJOIN_T=Zarif şekilde girilmeye çalışılıyor...
+CEOJOIN_E=Zorla girilmeye dönülüyor.
+
+CEOTYP=Türü Değiştir
+CEOTYP_H=Şirketini motor kulübüne ya da MC'yi şirket olarak değiştir.
+
+CEOCAP=Üye Sınırını Kaldır
+
+CEOCOL=Renk Slotları
+CEOCOL_H={} oyuncusunun topluluğuna verildi.
+
+ORGCR_S=CEO/VIP Olarak Şirketini Başlat
+ORGCR_M=Motorcycle Club Oluştur
+
+!!!!!!!!!!
+!! Game !!
+!!!!!!!!!!
+
+! "Snake" refers to the classic game
+SNAKE=Yılan Oyna
+SNAKE_1=Sunucu Değiştirirken
+
+SNAKE_C=Yön tuşlarınla Yılan oynamak için Stand'i gizle
+
+PONG_C=Yön tuşlarınla Pong oynamak için Stand'i gizle
+
+INVSEND_PONG=Pong'a Davet Et
+
+INVRECV_PONG=Pong Davetini Kabul Et
+INVRECV_PONG_T={player} seni Pong'a davet etti. Oyuncular > {player} > Pong Davetini Kabul Et.
+
+INVSENT={} oyuncusunun davetini kabul etmesi bekleniyor
+
+CNLINV=Daveti İptal Et
+
+CNLGME_PONG=Pong'u İptal Et
+
+GETREADY=Hazırlan!
+
+PLYGMECNCLT={} oyunu iptal etti.
+
+T_M_C=Haritanın Üzerindeki Bildirimleri Kaldır
+
+SKPCTSCN=Ara Sahneyi Geç
+
+TMSCL=Zaman Ölçüsü
+TMSCL_H=Zamanın akış hızını değiştirir *Yerel*.
+
+AIMTMSCL=Nişan Alırken Zaman Ölçüsü
+AIMTMSCL_H=Nişan alırken zamanın akış hızını değiştirir *Yerel*.
+
+SCRNSHT=Ekran Görüntüsü Modu
+
+RWND=Pozisyonu Geri Al
+RWND_H2=Atanmış tuşa basarak ya da kontrolcüde özel yetenek tuşlarına basarak zamanda geriye git.
+
+UNRSTRCAM=Oynanış Kamerasının Sınırını Kaldır
+UNRSTRCAM_H=Oynanış kamerasını 360° döndürmeni sağlar.
+
+FC=Serbest Kamera
+FC_H=Kamerayı her yere çekmene izin verir.
+
+FC_DTP=Kapanınca Işınla
+FC_DTP_H=Serbset kamerayı kapatınca karakterini kameranın lokasyonuna ışınlar.
+
+FC_NZ=Hareket Açıyı Yok Sayar
+FC_NZ_H=Baktığın yere göre sağ sol hareketlerin kameranın yükseklik açısını değiştirmesini engeller.
+
+FC_MF=Minimap Kamerayla Birlikte İlerler
+
+MOVCTRL=Hareket Kontrolleri
+MOVCTRL_FC=Hareket tuşlarını serbest kamera ve karakter arasında değiştirir
+
+EDTHCLR=HUD/UI Renklerini Düzenle
+
+EDTLB=Yazıları Düzenle
+
+ADDLB=Yazı Ekle
+ADDLB_H=Listeye düzenleyebileceğin bir etiket ekler.
+ADDLB_E=Maalesef ki {} uygun bir yazı değil. :/
+
+RVLLB=Yazıları Göster
+RVLLB_H=Oyun içi yazıların yerine bu yazıyı gösterir.
+
+OWOLB=Yazıları OwO'la
+
+LBLST=Yazı Listesi
+
+EDIT=Düzenle
+
+! {} should be at the end as it could be very long
+RESET=Sıfırlanan Düzey: {}
+
+REMOVE=Kaldır
+
+FOV=Bakış Açısı
+
+FOV_TP_VEH=Third-Person, Arabada
+FOV_TP_ONF=Third-Person, Yaya
+FOV_FP_VEH=First-Person, Arabada
+FOV_FP_ONF=First-Person, Yaya
+FOV_AIM=Nişan Alıyor
+FOV_SNIP=Keskin Nişancı Kullanıyor
+
+CAMDIST=Kamera Uzaklığı Arttırıcı
+
+2PRSN=İkinci Kişi Bakış Açısı
+
+! "Heading" as in the rotation
+CAMPUKE=Kamerayı Döndürmeyi Kilitle
+
+RDRG=Görüş
+
+VISSTTNGS=Görsel Ayarlar
+
+NITEV=Gece Görüşü
+
+THERV=Termal Görüş
+
+SHDR=Shader Değişimi
+
+DSTSCLMUL=Mesafe Ölçüsü
+
+RDRHDOLY=Sadece HD Render Al
+
+POTAT=Tost Makinesi Modu
+POTAT_H=Oyunu 2013 orijinal grafiklerine döndürür.
+
+BLKALLDRW=Renderlamanın Çoğunu Kapat
+
+LKSTRMFCS=Lens Odağını Kilitle
+LKDPOS=Kilitli Odak Koordinatı
+SELPOS_T=Koordinat seçtiğinde, uygulamak için {} tuşuna bas.
+
+SGMELNG=Oyun Dilini Ayarla
+SGMELNG_H=Bazı diller kendi fontunu kullandığı için o diller restarttan sonra kullanılabilir.
+
+STUTFIX=Yüksek FPS'te Takılmaları Düzelt
+STUTFIX_H=Oyun 188 FPS'e yaklaşınca yaşanan takılmaları düzeltir.
+
+NKBDHK=Klavye Bağlantısını Kaldır
+NKBDHK_H=GTA ekrandayken Windows tuşuna basınca oyun lagının klavyenizi etkilememesini sağlar.
+
+DBGNTVS=Debug Native'leri Değiştir
+DBGNTVS_H=Oyunun bazı scriptlerinde hala bulunan Debug Native'leri değiştirip daha iyi hale getirir
+
+! As in "Software Patch"
+PTCHS=Patchler
+
+PRJTPOOL=Bomba Havuzu
+PTCH_PRJTPOOL_H=Bomba havuzu doluyken bomba atmayı reddetmek yerine, bu seçenek eski bombayı silip onun yerine yenisini atmanızı sağlayabilecektir.
+
+ANAL=Analog Klavye Desteği
+ANAL_H=Eğer analog destekli bir klavyen varsa bu özellik oyunun tuşlara ne kadar sert bastığını anlamasını sağlar.
+ANAL_L=Desteklenen Klavyeler
+
+PRSRSUB=Basınç Çıkarımı
+PRSRDIV=Basınç Bölme
+
+DEV=Cihaz
+PRSR=Basınç
+
+EJ=Erken Inject Geliştirmeleri
+EJ_H=Stand oyun başladığı an injectlendiyse uygulanacak değişiklikler.
+
+GMEPOOL=Sunucu Kapasitesi Arttırıcı
+GMEPOOL_H=Entityler, scriptler için sunucu kapasitesini arttırır, bu sayede yetersiz hafıza hatası almazsınız. Bu ayar açıkken Rockstar Creator'dan klip almak oyununuzu crashleyecektir.
+
+MEMPOOL=Sunucu Hafızası (MB)
+
+SETHIPRIO2=Oyunu Yüksek Önceliğe Al
+SPDUPSTRUP=Başlamayı Hızlandır
+SKPGMEITR2=Intro ve Lisans'ı Geç
+
+SVMR=Script Runtime'ı Sanal Makineyle Düzelt
+SVMR_H=Oyunun kendi script runtime'ının daha temiz çalışmasını sağlar.
+
+! Legacy as in "the old way"
+LGCY=Geleneksel
+
+YEET_W=Açıklamak gerekirse, bu seçenek oyununu crashler.
+
+!!!!!!!!!!!!!!!!!!
+!! Game > Radio !!
+!!!!!!!!!!!!!!!!!!
+
+RD=Radyo
+
+MBLRD=Mobil Radyo
+MBLRD_H=Yürürken radyo dinleyebilmeni sağlar.
+
+LKRD=Radyo İstasyonunu Kilitle
+LKRD_H=Radyo istasyonuna oyunculardan ya da oyundan gelen herhangi bir değişikliği yok sayar.
+
+RDSTS=Radyo İstasyonları
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Game > Disables !!
+!!!!!!!!!!!!!!!!!!!!!
+
+DBLES=Devredışı Bırakılabilecekler
+
+DGMEINPT=Oyun Tuşlarını Devredışı Bırak
+! Preset for Disable Game Inputs
+JUSTMOUSE=Mouse
+DGMEINPT_H_MOUSE=Stand açıkken çoğu mouse tuşlarını devredışı bırakır.
+! Preset for Disable Game Inputs
+CTRLLR=Kontrolcü
+DGMEINPT_H_CTRLLR=Stand açıkken bazı kontrolcü tuşlarını devredışı bırakır.
+! Preset for Disable Game Inputs
+CTRLLR_N_TABS=Kontrolcü + L2&R2
+DGMEINPT_H_CTRLLR_N_TABS=Kontrolcü ile aynı ama fren ve gaz tuşlarını da devredışı bırakır.
+DGMEINPT_H_NUMPAD=Bütün tuşları aktive eder.
+
+DGMEINPT_P=Stand açıkkan çakışan oyun tuşlarını düzeltmek için {disable_game_inputs_path} seçeneğinin {preset} kısayolunu oluşturmak ister misin?
+
+DSBLPHNE=Sesli Mesaja Yolla
+DSBLPHNE_H=Gelen bütün telefon aramalarını engeller.
+
+NCAMSHK=Kamera Sallanmasını Devredışı Bırak
+
+NSTNTJMP=Stunt Jump'ları Devredışı Bırak
+
+DSBLREC=Kaydı Devredışı Bırak
+DSBLREC_H=Rockstar Editor kliplerini çekebilme özelliğini kaldırır.
+
+NCINCAM=Sinematik Kamerayı Devredışı Bırak
+
+NVEHFCSCAM=Araba Odak Kamerasını Devredışı Bırak
+NVEHFCSCAM_H=Sinematik Kamerada arabadayken ve arkadaş-oyuncunun yanındayken gelen ipucunu devredışı bırakır
+
+NIDLECAM=AFK Kamerasını Devredışı Bırak
+
+DSBLRESTRAR=Yasaklı Bölgelere Girememeyi Devredışı Bırak
+DSBLRESTRAR_H=Bu seçenek bazı görevlerde silahınızın olmamasına hatta görevleri açamamanıza neden olabilir. ⚠️
+
+NFLTMSC=Uçuş Müziğini Devredışı Bırak
+NWNTMSC=Aranma Seviyesi Müziğini Devredışı Bırak
+
+PRVNUM7SCO=Numpad 7'nin Social Club'ı Açmasını Devredışı Bırak
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > Info Overlay !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+HUDINFO=Bilgi Yazıları
+
+IGTIME=Oyun İçi Saat
+
+RWTIME=Gerçek Saat
+
+DPS=Saniye Başı Draw
+
+GPUOVHD=GPU Overhead (ms)
+GPUOVHD_H=İşlemcin ekran kartının kareyi bitirmesi için gereken süreyi ayarlar.
+
+TS=Saniye Başı Tick
+TS_H=FPS ile Aynı Şey.
+
+GEAR=Vites
+GEAR_R=Geri
+
+RPM=RPM
+
+HQSA=Host Sırası Faktörü
+HQSA_0=En düşük Rockstar ID
+HQSA_1=En Yüksek Rockstar ID
+HQSA_2=En Düşük İsim Hashi
+HQSA_3=En Yüksek İsim Hashi
+
+WSPCW=Kim Kimi İzliyor
+WSPCW_T={spectator} oyuncusu {spectatee} oyuncusunu izliyor
+
+CTRYBRKDWN=Ülke Listesi
+CTRYBRKDWN_H=Ülke başına oyuncu sayısı yanında yazılıp sunucudaki oyuncuların ülkelerini listeler.
+
+NEPOOL=Giden İnternet Eventleri
+
+SRTBYCTRYNME=Ülke Adıyla Sırala
+SRTBYCNT=Sayıyla Sırala
+
+ALTDE=İrtifa
+GRNDIST=Yerden Yukarı Mesafe
+
+ROT_ENT=Döndürme (Varlık)
+ROT_CAM=Döndürme (Kamera)
+ROT_X=Genişlik
+ROT_Y=Yükseklik
+ROT_Z=Derinlik
+
+PEDS=Yayalar
+
+VEHS=Arabalar
+
+OBJS=Objeler
+
+PUPS=Pickuplar
+
+PROJ=Roketler
+
+SCPROG=Script Programları
+
+SCTHDS=Script Threadleri
+
+EHLT=Son Tikteki Varlık İşleyicileri
+
+NGILT=Son Tick'te GTA'nın Getirdiği Nativeler
+
+NSILT=Son Tick'de Stand'in Getirdiği Nativeler
+
+CTRLREQS=Control Requests
+
+FIBS=Fiberler
+
+STH=Script Tick İşleyicileri
+
+PRSNTHDLS=Draw İşleyicileri
+
+! "Keep-Alive" may be kept as-is, as it's a rather technical term/concept.
+KACONS=Keep-Alive Bağlantıları
+
+!!!!!!!!!!!!!!!!!!!!
+!! Game > Minimap !!
+!!!!!!!!!!!!!!!!!!!!
+
+MINIMAP=Minimap
+
+SLEEK=Temiz Minimap
+
+DNWINVI=Yeni Davet Simgesini Devredışı Bırak
+DNWINVI_H=Job List uygulamasındaki ve haritanın üzerindeki yeni görev daveti simgesini devredışı bırak.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > AR Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ARNOTIFS=AR Bildirim
+
+DBGMODE=Debug Modu
+
+STATSCLE=Durağan Ölçek
+DYNSCLE=Hareketli Ölçek
+DYNSCLG=Hareketli Ölçekleme
+
+HOROFF=Yatay Ofset
+VERTOFF=Düşey Ofset
+DPHOFF=Derinlik Ofseti
+
+FPHOROFF=First Person Yatay Ofseti
+FPVERTOFF=First Person Düşey Ofseti
+FPDPHOFF=First Person Derinlik Ofseti
+
+RESVRDTOPSPC=Ekranın Üstüne Ayrılan Alan
+
+ROTMODE=Dönüş Modu
+ARNOTIFS_ROTMODE_0=Varlık
+ARNOTIFS_ROTMODE_1=Varlık, Eğimli
+ARNOTIFS_ROTMODE_2=Kamera
+ARNOTIFS_ROTMODE_3=Kamera, Eğimli
+
+ENSTXTREAD=Okunulabilirlikten Emin Ol
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Credits !!
+!!!!!!!!!!!!!!!!!!!!!
+
+CRED=Emeği Geçenler
+
+CRED_Pocakking=Muhteşem bir başlangıç noktası olan BigBaseV2'yu yarattı.
+CRED_QuickNET=GTA ve C++ hakkında bilgilerini paylaşıp aptalca soruları cevapladı.
+CRED_UPD=Crossmapleri paylaşıp menüyü güncel tuttu.
+CRED_alloc8or=Native DB'sinden sorumlu ve çok fazla veri paylaştı.
+CRED_SirMestre=Launchpad'i kurmada yardımcı olan LittleInjector'ü kurdu.
+CRED_Give-Two=DirectX Renderlanmasında yardımcı olan ScriptHookV'i dahil etti.
+CRED_gir489=GTA üzerindeki bilgisini paylaşıp bigbasev2-fix'i yarattı.
+
+! Check the "Languages" section at https://en.wikipedia.org/wiki/Fork_(software_development)
+CRED_Ryan=Pluto'yu, kullandığımız Lua Fork'unu, yarattı.
+
+CRED_BE=BattlEye'a rağmen Stand'i kullanabilmene yardımcı oldu.
+
+CRED_UPX=Stand DLL'ini olduğundan daha küçük yapmamızı sağladı.
+CRED_UnknownCheats=Samanlıkta iğne.
+CRED_StackOverflow=E doğal olarak.
+
+CRED_LANG=Çevirmenler
+
+CRED_Thimo=Stand'in Flemenkçe çevirisini sağlıyor.
+CRED_moue=Stand'in Letonca çevirisini sağlıyor.
+CRED_aeronyx=Stand'in Portekizce çevirisini sağlıyor.
+CRED_zzzz=Stand'in Çince çevirisini sağlıyor.
+CRED_IceDoomfist=Stand'in Korece çevirisini sağlıyor.
+CRED_99Anvar99=Stand'in Rusça çevirisini sağlıyor.
+CRED_Lancito01=Stand'in İspanyolca çevirisini sağlıyor.
+CRED_Itreax=Stand'in Fransızca çevirisini sağlıyor.
+CRED_Emre=Stand'in Türkçe çevirisini sağlıyor.
+CRED_DumbBird=Stand'in Lehçe çevirisini sağlıyor.
+CRED_JA=Stand'ın Japonca çevirisini sağlıyor.
+CRED_VI=Stand'ın Vietnamca çevirisini sağlıyor.
+CRED_IT=Stand'in İtalyanca çevirisini sağlıyor.
+
+MISC=Diğer
+
+CRED_YOU=... ve de sen!
+CRED_YOU_H=Evet, al sana katılımcı ödülü. Neyse cidden, Stand'i desteklediğin, hataları bildirdiğin ve özellik önerdiğin için teşekkürler!
+
+!!!!!!!!!!!
+!! Stand !!
+!!!!!!!!!!!
+
+CMDSCRPT=Komut Kutusu Scriptleri
+
+ASI=ASI Modları
+ASI_H=Stand'in ScriptHookV işlemcisi ile ASI Modlarını kullanabilmeni sağlar.
+ASICE=Görünüşe göre bu ASI Modu uyumlu değil ya da işini çabucak bitirdi.
+ASI_D_T=Görünüşe göre bu ASI Modu uygun şekilde kapanmadı.
+
+ASI_TMP=Geçici Dosya Kullan
+ASI_TMP_H=Bu seçenek kapatılamayan ASI modlarını sorunsuz açmanızı sağlar, ancak seçtiğiniz seçenekler sonraki kullanışınızda silinebilir.
+
+ASI_DOC=Online Kontrolünü Kandır
+ASI_DOC_H=Online modda çalışmayı reddeden modları çalıştırmanı sağlar.
+
+LUA=Lua Scriptleri
+LUA_H=Stand için Lua/Pluto dili ile yazılmış scriptleri çalıştırmanı sağlar.
+
+LUA_RNNG2={} scripti çalıştırılıyor
+LUA_START=Scripti Çalıştır
+LUA_STOP=Scripti Durdur
+
+CMPTLY=Uyumluluk Katmanı
+CMPTLYS=Uyumluluk Katmanları
+
+RESTRCS=Kısıtlamalar
+
+LUA_REPODEV=Repodan indirdiğin bir lua'yı düzenliyorsun. Yani lua'nın sonraki güncellemesinde düzenlemelerinin kaybolacağını unutma.
+
+FILEGON=Dosya bulunamadı.
+
+LUACFGPRST_0=Kullanıcı
+
+! Currently unused.
+LUACFGPRST_1=Hemen Sinirlenen Kullanıcı
+
+LUACFGPRST_2=Geliştirici
+
+DEVHINT=Bir Lua scripti geliştiriyorsun gibi gözüküyor. Lua Scriptleri > Ayarlar kısmından geliştirici önayarlarını açmayı bir gözden geçir, ki potansiyel bugları görebilesin.
+
+DISINACC=İnternet Erişimini Kes
+
+FRCSILNTSTRT=Sessiz Başlat
+FRCSILNTSTP=Sessiz Durdurt
+ENFRCSILNTSTRT=Sessiz Başlamaya Zorla
+ENFRCSILNTSTP=Sessiz Durdurmaya Zorla
+
+YES_NOTIFY=Evet + Bildir
+
+WRNOS=Tehlikeli script kullanmadan önce beni uyar
+LUA_W_OS=Bu script bilgisayarına direkt erişim isteyen kod içeriyor. Kaynağa güvenmiyorsanız devam etmeyin.
+
+WRNMNY=Para scripti kullanmadan önce beni uyar
+LUA_W_MNY=Bu script para ile alakalı. Bu scripti kullanınca hesabınızın banlanmayacağını garantileyemeyiz (çünkü banlar anında atılmıyor) çünkü kullanıcı yapımı şeyleri test etmiyoruz.
+
+LUA_SCAM=Eğer bu scripte para verdiyseniz, TEBRİKLER, DOLANDIRILDINIZ! Bu scriptin %99'u Discord'umuzda ücretsiz şekilde paylaşılan scriptlerde var zaten. Kod çalan, koda katkı sağlamayan ve orijinal yaratıcılarına para vermeyen hırsızlara para verdiniz.
+
+4DEV=Geliştiriciler İçin
+
+REPO=Repository
+REPO_H_LUA=Repository LUA Scripti bulman için sana kolaylık sağlar.
+
+REPO_P_H=Repository'den bunu yüklediniz. Stand onu güncel tutacak.
+
+REPO_MISNGLCL={} paketinin ihtiyaç duyduğu yerel dosyalar yok, güncelleme yapmak umarız bunu düzeltecektir.
+REPO_DLFAIL={package} paketi için {file} dosyası indirilemedi
+
+SECCONT_NCRED=Bu içeriğe erişmek için Stand'i aktifleştirmek zorundasınız.
+SECCONT_NAVAIL=Bu seçeneğe erişilemedi.
+
+VER=Sürüm
+ATR=Yapımcı
+
+DEPS=Dependencyler
+DEP_M_O=Dependency manuel kurulmuş olarak ayarlandı.
+DEP_M_F=Dependency artık manuel kurulmuş olarak ayarlı değil.
+
+HELP=Stand Hakkında Yardım Al
+
+WEB2=Web Paneli
+WEB2_H=Web Paneli Stand'i internetten yönlendirmeni sağlar, telefonundan bile!.
+WEB=Web Panelini Aç
+WEB_T=Artık Web Panelini kullanıyorsun. :O
+WEB_T_L=Web panelini artık kullanmıyorsun.
+
+RELAY_C={}'a bağlanılıyor...
+RELAY_E=({})'a bağlanılamadı.
+RELAY_L=VPN ile bağlantı kesildi.
+
+TESTS=Deneyler
+
+CLRNOTIFS=Bildirimleri Temizle
+CLRNOTIFS_H=Stand'in bildirimlerini temizler.
+
+EMPTYLOG=Log.txt'yi Temizle
+EMPTYLOG_H=%appdata%/Stand/Log.txt. dosyanı temizler.
+EMPTYLOG_T=Log temizlendi :)
+
+FNDCMD=Komut Bul
+FNDCMD_H=Stand'deki komutları isim ve yardım metniyle bulmanı sağlar.
+
+CTXSTAR=Kaydet
+CTXSTAR_H=Komutu {} sekmesinde bulabilmen için kaydeder.
+
+CMDSTARS=Kayıtlı Komutlar
+CMDSTARS_H=İçerik menüsünde kaydettiğin komutları listeler.
+
+CON=Konsol
+
+LNDFT=Değişikliğe Uğramış Komutlar
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST=Features (tr).txt Dosyasını Oluştur
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_H=Şuan kullanılabilir olan tüm komutları noktalamalar ve yardım metinleri ile beraber %appdata%/Stand/Features (tr).txt dosyasına kaydeder
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_T=Özellik listesini %appdata%/Stand/Features (tr).txt dosyasına kaydettim :D
+
+FTRLST_1OPTN=Bir Seçenek
+FTRLST_OPTNS={} Seçenek
+FTRLST_MOPTNS={} Seçenek Daha
+
+PERMS=İzinler
+FTRLST_OTHP={} izni olan diğer kişiler tarafından kullanılabilir.
+FTRLST_R=Regular Edition Sürümüne Özel
+FTRLST_U=Ultimate Edition Sürümüne Özel
+
+PERM_F=Dostane Komutlar
+PERM_N=Nötr Komutlar
+PERM_S=Spawn Komutları
+PERM_R=Kaba Komutlar
+PERM_A=Agresif Komutlar
+PERM_T=Toksik Komutlar
+
+UNLD=Stand'i Kapat
+UNLD_H=Stand'i yeniden injectleyene kadar oyundan kapatır.
+UNLD_T=Stand'in yok oldu.
+
+BADBOY=Bunu hak edecek hiçbir şey yapmayan bir Stand kullanıcısını kicklemeye çalıştın. Lütfen insanlara sana nasıl davranılmasını istiyorsan öyle davran. Stand'ini birkaç saniye içinde tekrar kullanabileceksin.
+
+NWOOM=Ağın hafızasını birisi tüketiyor. Seni kicklemeye çalışan kişiyi sunucudan at ya da sunucudan çık.
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! State & Profiles !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+PRFLS=Profiller
+PRFLS_H=Profiller komutların durumunu kaydetmene yarar.
+
+NEWPRFL=Profil Oluştur
+NEWPRFL_H=Her komutun durumunu yeni profilde kaydeder.
+
+DELPRFL_S={} profili başarıyla silindi.
+DELPRFL_F={} profili silinemedi. Lütfen manuel silmeyi deneyin.
+
+LOAD=Yükle
+LSTATE=Durumu Yükle
+LSTATE_H_CTX2=Aktif profilindeki durumu bu komuta uygular.
+LSTATE_H2=Bu profildeki durumu her komuta uygular.
+LSTATE_T2={} profilinin durumlarını uyguladım. :)
+LSTATE_T_CTX2={profile} profilinden {command} komutunun durumunu değiştirdim. :)
+
+SAVE=Kaydet
+SSTATE=Ayarları Kaydet
+SSTATE_H_CTX2=Bu komutun ayarlarını aktif profiline kaydeder.
+SSTATE_H2=Her komutun durumunu bu profile kaydeder.
+SSTATE_T2=Ayarlar {} profiline kaydedildi. :)
+SSTATE_T_CTX={command} komutunun ayarları {profile} profiline kaydedildi. :)
+
+AUTOLOAD=Injectlenirken Yükle
+
+AUTOSAVE2=Oto Kayıt
+AUTOSAVE2_H=Stand'i kullanırken bu profili güncel tutar.
+AUTOSAVE2_H_T=Oto kayıt Stand'i injectlediğinde yeniden aktif olacak.
+AUTOSAVE2_T=Gerek yok, bu profil otomatik olarak kaydediliyor. :)
+
+GODFLT=Normal Duruma Getir
+GODFLT_H=Bütün komutları normal durumlarına geri getirir.
+GODFLT_T=Normal duruma getirildi. :)
+GODFLT_CTX={}'i normal duruma getirdim. :)
+
+RGODFLT=Alt Kategorileri Normal Duruma Getir
+RGODFLT_CTX=Ap{} seçeneğinin alt kategorileri normale getirildi. :)
+
+PRFL_H_ACTV=Şuanda kullandığın profil.
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Appearance !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+STTNGS_TXT=Font & Yazı
+
+STFNT=Font Ayarla
+
+CMBINTXT=Komut Kutusu Giriş Yazısı
+TXT_S=Küçük Yazı
+
+TXTSCL=Yazı Ölçüsü
+
+OFF_X=X Ofseti
+OFF_Y=Y Ofseti
+
+TXTBOX=Yazı Sınırlama Kutularını Göster
+
+FNTPRST=Hazır Font Kullan
+FNTPRST_H_YAHEI=Stand'in normal fontu.
+FNTPRST_H_NANUMGOTHIC=Stand'in Korece için ek fontu.
+FNTPRST_H_BEVIETNAM=Stand'in Vietnamca için ek fontu.
+
+RLDFNT=Fontu Yeniden Yükle
+
+SPRS=Texturelar
+
+LFTBND=Sola Bitişik
+LFTBND_1=Sadece Aç/Kapalar
+LFTBND_1C=Sadece Aç/Kapalar, Kompakt
+LFTBND_2=Tüm Komutlar
+LFTBND_2C=Tüm Komutlar, Kompakt
+
+RLDSPR=Textureları Yeniden Yükle
+
+HDR=Başlık
+2HIDE=Kaybol
+CUS=Özel
+
+FRMINT=Çerçeve Aralığı
+
+SCRLBR=Kaydırma Çubuğu
+SCRLBR_1=Büyük Listeler için Aktif
+
+LSTWDT=Liste Genişliği
+LSTHHT=Liste Yüksekliği
+
+WDT=Genişlik
+HHT=Uzunluk
+
+SPCSZE=Aralık Boyutu
+
+LERP=Sakin Kaydırma
+
+BGBLR=Arkaplan Bulanıklandırması
+BGBLR_H=Bu seçeneğin yüksek değerlerinin ekran kartını aşırı yoracağını not et.
+HDR_BGBLR_H=Transparan başlıklar için kullanılmalıdır aksi takdirde gözükmeyen bir şey için fazladan kaynak kullanmış olunur.
+
+INFOTXT=Bilgilendirme Yazısı
+
+ALGN=Hizalama
+TA=Yazı Hizalama
+
+ALIGN_TL=Sol Üst
+ALIGN_TC=Üst Orta
+ALIGN_TR=Sağ Üst
+ALIGN_CL=Sol Orta
+ALIGN_CC=Orta
+ALIGN_CR=Sağ Orta
+ALIGN_BL=Sol Alt
+ALIGN_BC=Orta Alt
+ALIGN_BR=Sağ Alt
+
+DRPSHDW=Gölge Bırak
+
+SHWNME=İsmi Göster
+SHWLICON=İkonu Solda Göster
+SHWRICON=İkonu Sağda Göster
+
+ICUTXTCLR=İkonlar Yazı Rengini Kullansın
+
+ADDRBAR=Adres Çubuğu
+
+SHWCRLSTNLY=Sadece Şuanki Seçeneği Göster
+
+ADDRSEP=Adres Bölücü
+
+WDTAFFBSCRLBR=Genişlik Kaydırma Çubuğundan Etkilenir
+
+WDTAFFBCLMNS=Genişlik Sütunlardan Etkilenir
+
+CTX_ADDR=Adresi Kopyala
+CTX_ADDR_0=Benim Formatım
+CTX_ADDR_1=Normal Format
+CTX_ADDR_2=API Formatı
+CTX_ADDR_3=Focus Link
+
+BRD=Sınır
+
+RNDD=Yuvarlak
+
+MAXCLMNS=Maksimum Sütun
+
+MNUHGT=En Fazla Görünür Komut
+
+CRS=İmleç
+
+SCRLGP=Kaydırma Boşluğu
+CRSPAD_H=Listenin başında ya da sonunda değilsen seçtiğin seçeneğin altında/üstünde göreceğin komut sayısını belirler.
+
+CMDINFOTXT=Komut Bilgi Metni
+
+BLWTBS=Sekme Altında
+
+RPOS_L=Sol
+RPOS_B=Alt
+RPOS_R=Sağ
+RPOS_T=Üst
+
+! As in the distance between menu components
+PDDGN=Parça Boşluk Miktarı
+
+SHWHLPTXT=Yardım Yazısını Göster
+
+SHWSYNTX=Komut Sentaksını Göster
+
+SHWSLDBHV=Kaydırıcı Davranışını Değiştir
+
+SHWOTHP=Diğer Oyuncular Tarafından Kullanılıyorsa Değiştir
+
+SHWCMDOWNR=Ait Olduğu Scripti Göster
+SHWCMDOWNR_T=Bu komut {} tarafından eklendi.
+
+NOTFS=Bildirimler
+
+TYP=Tür
+STNDNTF_M=Stand, Haritanın Yanında
+STNDNTF_C=Stand, Özel Konum
+
+CUSTPOS=Özel Konum
+CUSTPOS_H=Bu sadece "Stand, Özel Konum" türü ile çalışır.
+
+INVFLOW=Akışı Tersine Çevir
+
+BRDCLR=Sınır Rengi
+
+FLSHCLR=Yanıp Sönen Renk
+
+FLSHNTF=Yanıp Sönen Bildirim
+
+TIMNG=Zamanlama
+READSPD=Okuma Hızı (Dakikada)
+READSTRT=Okuma Başlama Gecikmesi (ms)
+MINDUR=Minimum Süre (ms)
+MAXDUR=Maksimum Süre (ms)
+SAMPNOT=Örnek Bildirim Göster
+
+SIZE_S=Küçük
+SIZE_M=Orta
+SIZE_L=Büyük
+
+MAXSHWMCHCMD=Gösterilen Maksimum Eşleşen Komutlar
+
+KPDRFCLS=Kapatıldığında Taslağı Tut
+
+SHWBI=Tuş Talimatlarını Göster
+
+SHWCRSPOS=İmleç Konumunu Göster
+SHWCRSPOS_H=Stand'in oyun içi UI'ındayken imlecin sağ üst köşede gözükür.
+
+CRSPOSIDIV=İmleç Konumuna Ayraçlar da Dahil
+
+! Root as in the root of the command tree, which in this context is the text that reads "Stand 0.69 (Regular)" etc.
+RN=Root Adı
+
+RN_RNDBOOL=Stand hesabınızın rastgele atandığı takımı belirtin.
+RN_100=Stand 100(.x) kullanıcı içindir.
+RN_EA=Stand 100'den önce kullanıcı olduğun için.
+RN_U=Ultimate Edition kullanıcısı olduğun için.
+RN_EU=Eski Ultimate/Toxic versiyona 100 euro harcadığın için.
+
+BKRST=Geri Tuşu İmleci Sıfırlar
+BKRST_H=Geri dönecek bir şey olmadığında geri tuşuna basıldığında imleci listenin en üstüne götürür.
+
+BKCLS=Geri Tuşu Menüyü Gizler
+BKCLS_H=Geriye gidilecek bir şey kalmadığında geri tuşu(0) menüyü gizlemeni sağlar.
+
+INJOPEN2=Injectledikten Sonra Açıl
+
+PRFILVAL=Komut Kutusunda Şuanki Değeri Önceden Gir
+
+CMDTP_S=Kaydıraçlar
+CMDTP_S_N=Sayı Kaydıraçları
+CMDTP_AV=Metin Girdileri
+
+SELDIV=Seçilebilir Kaydıraçlar
+SELNA=Seçielbilir N/A Kaydıraçları
+
+RHTBNDVAL=Sağa Dayalı Değer
+
+LANG=Dil
+LANG_H=Eğer bu yazının yazıldığı dili bilmiyorsan bunu değiştirebilirsin, sana kalmış gerçi.
+LANG_H2=Bu çeviri şuanlık güncel değil. Güncelleyebileceğini düşünüyorsan iletişime geç.
+
+STRMPRF=Yayın-Geçirmez Render
+STRMPRF_H=DirectX/Game Capture kullanan yayın sekmeleri Stand'i görmez.
+
+ENTPREVS=Varlık Önizlemeleri
+DENTPREVS=Varlık Önizlemelerini Kaldır
+OPQ=Opak
+ENTPREVROTSPD=Dönme Hızı
+ADDPREVDISTP=Ek Karakter Uzaklığı
+ADDPREVDISTO=Ek Obje Uzaklığı
+ADDPREVDISTV=Ek Araç Uzaklığı
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+CLRS=Renkler
+
+KSPD=Tuş Tekrarı Aralığı
+KSPD_H=Tuşa basılı tutarken klavyenin tuşu yazmada tekrar etme aralığı.
+
+KHSPD=Tuşa Uzun Basma Aralığı
+KHSPD_H=Bir tuşa bir süredir basılı tutarken klavyenin tuşu yazmada tekrar etme aralığı.
+
+TKSPD=Sekmeler İçin Tuş Tekrarı Aralığı
+
+WRPINTHLD=Kaplama Durumunda Basılı Tutmayı Engelle
+
+IPT=Tuş Girdileri
+
+KSCHM=Klavye Girdi Şeması
+PRSTS=Hazır Ayarlar
+KSCHM_A=Esnek
+KSCHM_0=Numpadsiz
+KSCHM_1=Numpad
+KSCHM_1_E=Önce numpad tuşunun olduğunu kanıtlamak için numpad tuşlarına bas bakalım. :?
+
+QWQCTX=İçerik Seçeneği Kısayolları
+
+MOUSE=Fare Desteği
+MOUSE_H=Bunun "Windows" girdi seçeneğiyle çalışmayacağını, çünkü mousenuzun her zaman ortalanır, not edin.
+
+MOUSEFOCUS=Faresiz Yönlendirmede İmleç Konumunu Ayarla
+
+MOVWTHMSE=Fareyle Hareket Et
+
+CTRLLRSPPRT=Kontrolcü Desteği
+
+CTRLLRSCHM=Kontrolcü Girdi Şeması
+
+HDENFO=Bilgileri Gizle
+HDENFO_H=Stand ile ekran kaydı alırken hassas bilgileri gizlemenize yardımcı olur.
+
+RDCTD=[Gizli]
+
+HDENME=Gizlenmemiş İsimleri Gizle
+HDENME_H=Bu Oyuncu bilgi listesinde gözüken ve "Diğer Kullanıcıların İsimlerini Gizle" seçeneğinden etkilenmeyen oyuncuları kapsar.
+
+HDERID=Rockstar ID'yi Gizle
+HDEIP=IP Adresini Gizle
+HDEGIP=GeoIP'yi Gizle
+
+B_OC=Menüyü Aç/Kapat
+B_OC_1=Menüyü Aç/Kapat 1
+B_OC_2=Menüyü Aç/Kapat 2
+B_RU=Önceki Sekme
+B_RD=Sonraki Sekme
+B_MU=Yukarı
+B_MD=Aşağı
+B_ML=Sol
+B_MR=Sağ
+B_MC=Tıkla
+B_MB=Geri
+
+DISCRP=Discord Rich Presence
+
+CLRCMDS=Renk Komutları
+PRVWCLRTXR=Rengi Dokuda Önizle
+PRCWCLRLST=Rengi Listede Önizle
+
+SFX=Ses Efektleri
+
+MNUNVRMD=Menü Yönlendirme Yardımcıları
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings > Session Joining !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSJNG=Sunucu Girişleri
+
+SPCUCON=Çarpık Gİriş
+SPCUCON_H=Stand'i kullanarak sunuculara çarpıtılmış bir şekilde girip host'tan veri toplayıp girişinin hızlandırılması amaçlanır.
+
+AUTOCHNGTRGT=Target Modunu Otomatik Değiştir
+AUTOCHNGTRGT_H=Bu sadece Stand'i kullanıp sunuculara girerken işe yarar. Diyalogsuz giriş yöntemleri her zaman bunu kullanır.
+AUTOCHNGTRGT_T=Target modu {} olarak belirlendi.
+AUTOCHNGTRGT_T_0=assisted aim
+AUTOCHNGTRGT_T_1=free aim
+
+REJBLK=Giriş Başarısını Kontrol Et
+REJBLK_H=Host sunucuya girmeni engellerse girmekten vazgeçer, örneğin sunucu dolu olduğunda
+REJBLK_T=Host şuanda seni sunucuya almıyor gibi.
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Tunables !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+TNBL=Kutlamalar
+TNBL_H=Rockstar'ın bazı haftalar kutlama için getirdiği şeyleri açıp kapamanı sağlar.
+
+NINSURPAY=Sigorta Ücretini Kapat
+NINSURPAY_H=Diğer kişilerin araçlarını patlatınca gelen sigorta ücretini kaldırır.
+
+TNBL_HLWN=Cadılar Bayramı Kutlaması
+
+TNBL_PYTE=Peyote Bitkileri
+
+!!!!!!!!!!!!!!!!!!!!
+!! World > Editor !!
+!!!!!!!!!!!!!!!!!!!!
+
+EDTR=Editör
+
+ROT_L=Sola Dön
+ROT_R=Sağa Dön
+
+TOOLS=Araçlar
+
+TP2LKAT=Baktığım Yere Işınlan
+DELSPWD=Çıkarılan Tüm Araçları Sil
+
+FCSIMNU=Stand'e Odaklan
+
+!!!!!!!!!!!!!!!!!!
+!! Asset Hashes !!
+!!!!!!!!!!!!!!!!!!
+
+AST=Asset Hashleri
+
+ASTFIX=Asset Hashlerini Düzelt
+ASTFIX_H=Değiştirilmiş assetli sunuculara katılmanı sağlar, bu tür sunucularda normalde geçersiz varlık hatası alırsın.
+
+ASTCRC=Asset Checksumları
+
+ASTSET=Asset Checksum Ayarla
+ASTSET_H=Sunucu bulmanı kısıtlamak için özel bir asset checksum ayarlamanı sağlar (8 hex karaktere kadar).
+ASTSET_T=Asset Checksum'ın {} olarak ayarlandı.
+
+ASTRST=Asset Checksum'ını Sıfırla
+
+OVRXTR=Fazladan Checksum'ın Üzerine Yaz
+
+XTRCRC=Fazladan Checksum
+XTRCRC_H=Sunucu bulmanı kısıtlamak için özel bir fazladan checksum girmeni sağlar (8 hex karaktere kadar).
+
+XTRCRC_PRSTS=Fazladan Checksum: Hazır Ayarlar
+
+!!!!!!!!!!!!!!!!!
+!! Custom DLCs !!
+!!!!!!!!!!!!!!!!!
+
+CUSTDLC=Özel DLCler
+CUSTDLC_H=Modlu araba gibi dlc paketlerini kolaylıkla oyuna eklemeni sağlar.
+
+! Don't translate the folder names
+CUSTDLCS_OPNFLD="Custom DLCs" dosyasını açar, bu dosyaya GTA'nın "dlcpacks" dosyası gibi davranabilirsin, ama GTA dosyasının aksine diğer programlarla değer girmene gerek kalmaz.
+
+CUSTDLC_ETY=DLC yüklendi ama spawn edilebilir bir şey bulunamadı.
+
+CUSTDLC_SPF=Modelleri Spoofla
+CUSTDLC_SPF_H=Özel DLC'lerdeki içeriği oyundaki bir şey olarak gösterir, bu da DLC yüklü olmayan kullanıcıların sorunsuz bir şekilde seni görmesini sağlar.

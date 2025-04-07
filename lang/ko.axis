@@ -1,0 +1,5658 @@
+! Thanks for helping with the translation of Stand into your language!
+! Before you begin, I guess you need to know a little about the project so you can work efficiently.
+! Lines starting with "# LABEL=" need to be translated except for the "LABEL=" part and to indicate that it has been translated, you need to remove the "# ", which might be a bit annoying at first, but this will become practical for updating the translation.
+! There are some things that you shouldn't translate:
+! - The name "Stand"
+! - Pairs of curly brackets, e.g. {} or {player}
+! - Folders or files like %appdata%/Stand/Theme
+! - Emojis (unless there's a culturally different meaning)
+! - Technical Terms, i.e. anything that would make less sense if translated
+! Alright, I think you're ready to unleash your powers now! ;D
+
+!!!!!!!!!!!!!
+!! General !!
+!!!!!!!!!!!!!
+
+HI=[Stand User] 가 되었습니다! :D
+HI_TRCK=Stand에 돌아오신 것을 환영합니다!
+HI_TRCK_0=현재 트랙된 플레이어 중 온라인 상태인 플레이어는 없습니다.
+HI_TRCK_1={} 이/가 현재 온라인 상태입니다.
+HI_TRCK_M={} 이/가 현재 온라인 상태입니다.
+
+HKFAIL=사용 중인 다른 메뉴 때문에 {} 에(서) 필요한 게임 기능들을 변경할 수 없습니다. :/
+WOT1=최근 요청을 하기 위해 Stand가 작동했지만
+WOT2=• 아무 것도 없거나
+WOT3=• 아무 것도 아니거나
+WOT4=• 전혀 없기 때문에
+WOT5=실제로는 Stand가 아무 것도 하지 않았습니다. 참고로, 이 목록은 아무 것도 하지 않은 모든 이유를 나타내는 것은 아닙니다.
+2FAST=이 작업을 너무 빠르게 하고 있습니다. 잠시 후, 다시 시도해주세요.
+ARGNME=[이름]
+
+! E.g. Command: wanted [0 to 5]
+ARGRNGE=에(서)
+
+ARGVAL=[값]
+ARGVALOPT=(값)
+NRML=일반
+INVARG=유효하지 않은 명령어입니다. :?
+GENWARN=정말 하실건가요?
+IRREV=이 행동은 끝날 수 없습니다.
+GENFAIL=작동하지 않습니다. :/
+IPSUM=표시될 글자의 예시를 보여주는 중입니다.
+PRCD=진행
+ABRT=중단
+SHW=나타남
+HDE=숨겨짐
+HIDE=숨겨짐
+NONE=N/A
+JUSTON=켜기
+OFF=끄기
+ON=활성화
+DOFF=비활성화
+DOFF2=비활성화
+ALL=모든 옵션
+
+! Thousands separator, e.g. 1,000,000
+THSNDSEP=,
+
+! "Not Applicable"
+NA=N/A
+
+GEMINI=제 3의 눈 개방 중...
+RCMD=추천됨
+NRCMD=추천하지 않음
+CPYF={} 복사
+GENWAIT=기다려주세요...
+CMDLEN={} 자 보다 많을 수 없습니다.
+AND={} 와/과 {}
+
+! A more fancy way of saying "this is local"
+GEN_H_LOC=이 기능은 자신의 게임에서만 적용됩니다.
+
+! When the user is seeing an empty list:
+ETYLST=목록이 비었습니다.
+
+NPHYS=[명령어가 형식을 가지고 있지 않음]
+
+! Repetitions in log:
+LOG_REP_S=+ 1 번 반복
+LOG_REP_P=+ {} 번 반복
+
+IPNAM={ip} ({name} 으(로) 본 적 있음)
+
+CHRCNT={cur}/{max} 자
+PLYCNT={cur}/{max} 플레이어
+PTCCNT={cur}/{max} 참가자
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Search Commands !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SRCH=검색
+ARGCLU=[관련된 단어]
+SRCHNRES=검색 결과가 없습니다. :/
+
+!!!!!!!!!!!!!!!!!!!!
+!! Error Handling !!
+!!!!!!!!!!!!!!!!!!!!
+
+ERR_L_B=오류 정보 시작
+ERR_L_E=오류 정보 끝
+
+ERR_T_GEN=%appdata%/Stand/Log.txt 에서 오류를 찾을 수 있습니다.
+ERR_T_CAU=오류가 발생하였습니다.
+ERR_T_GME=게임에 치명적인 오류가 발생하여 지금 다시 시작해야합니다.
+ERR_T_OTH=Stand에서 예상하지 못한 오류가 발생했습니다.
+
+ERR_LUA=참고: 이 오류는 Lua 스크립트를 실행하는 중에 발생하였습니다.
+
+SVM=스크립트 오류 복구
+4FMONLY=자유 모드 전용
+
+SVM_ERR={operation} 에(서) {script} 스크립트의 손상을 막았습니다.
+SVM_DIE={operation} 에(서) {script} 스크립트가 손상되었습니다.
+SVM_EXP={script} 스크립트를 실행하면서 오류가 발생하였습니다.
+
+SVM_BLM_S=이 문제는 {player} 의 최근 이벤트로 인해 발생 했을 수 있습니다.
+SVM_BLM_D=이 문제는 {player} 의 최신 이벤트 ({event}) (으)로 인해 발생했을 수 있습니다.
+
+SVM_INVOP={script} 스크립트의 {opcode} 이/가 잘못되었습니다. 게임이 튕기는 것을 방지하기 위해 코드를 제거합니다.
+SVM_FRZ={} 스크립트가 무한 반복을 하는 것 같습니다; 게임이 멈추는 것을 방지하기 위해 해당 스크립트의 실행을 멈췄습니다..
+
+!!!!!!!!!!
+!! Tabs !! These are to be on the left side of the menu which shouldn't be too wide so keep these as short as possible
+!!!!!!!!!!
+
+ACTVTE=활성화
+TUT_ONE=탭 1
+TUT_TWO=탭 2
+SLF=셀프
+VEH=차량
+Online=온라인
+PLYLST=플레이어
+WRLD=월드
+GME=게임
+
+!!!!!!!!!!!!!!!!
+!! References !!
+!!!!!!!!!!!!!!!!
+
+PLY=플레이어
+
+STTNGS=설정
+
+KPCRSR=다시 열 때 커서 유지
+
+TABS=탭
+KPCRSRR_H="셀프" 와 같은 탭의 커서 위치를 기억합니다.
+
+LSTS=목록
+KPCRSRS_H="설정" 과 같은 탭의 커서 위치를 기억합니다.
+
+KPCRSR_L_RDC=목록: 큰 목록에는 효과 줄이기
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Tutorial & Help !!
+!!!!!!!!!!!!!!!!!!!!!
+
+TUT=튜토리얼
+TUT2=Stand 튜토리얼
+
+RPT=반복 (다시하기)
+
+! Or "Skip"
+DISM=무시 (건너뛰기)
+
+TUT_LD=Stand가 인젝되었습니다. 계속하기 위해 Stand 메뉴를 숨기고 게임을 불러오세요.
+
+TUT_OPEN=Stand를 켜고 끄기 위해서는, {} 키를 사용하세요.
+TUT_OPEN2=Stand를 켜고 끄기 위해서는, 만약 넘버 패드 (텐키) 가 없다면, {numpad} 또는 {alt} 키를 사용하세요.
+TUT_USE=명령어를 강조하려면 {} 키를 누르세요.
+TUT_BK=뒤로 가려면 {} 키를 누르세요.
+TUT_DN2=아래로 가기 위해서는 {} 키를 누르세요.
+TUT_RUP=뒤로 가려면, {} 키를 누르세요.
+TUT_TABS=잘했습니다, 이제 탭을 활성화해볼게요!
+TUT_RNXT=다음 탭으로 가기 위해서는 {} 키를 누르세요.
+TUT_RPRV=이전 탭으로 가기 위해서는 {} 키를 누르세요.
+
+TUT_CMD2="명령어: " 가 무엇을 뜻하는지 알아차리셔야 합니다. 그것이 뜻하는 바는 Stand의 명령어 상자를 이용해 이 기능을 사용할 수 있다는 겁니다! {} 키를 눌러 언제든지 명령어 상자를 열 수 있습니다.
+TUT_SLIDER={} 또는 {} 키를 눌러 슬라이더를 조작하세요.
+TUT_PROFILES=Stand를 다음에 인젝트한 후에도 명령어들의 설정 값을 기억하고 싶다면, 프로필을 사용할 수 있습니다 (Stand > 프로필).
+TUT_CTX2={} 키를 사용해 컨텍스트 메뉴를 여세요, 컨텍스트 메뉴는 핫키, 상관 관계 등등을 설정할 수 있도록 해줍니다.
+
+TUT_HDE=Stand를 다시 숨기려면 {} 키를 누르세요.
+
+HLP_CTRLLR=Stand를 컨트롤러의 {} 키를 사용하여 켤 수 있습니다.
+
+HLP_CMDCHAIN=명령어를 세미콜론(;) 을 이용해 묶을 수도 있습니다, 예시: "{}".
+
+!!!!!!!!!!!!!!
+!! Commands !!
+!!!!!!!!!!!!!!
+
+CMD=명령어
+B_CB=명령어 상자
+CMDPRMPT=Stand 명령어 상자
+KB_CMDPRMPT=명령어 상자 열기
+
+CMDUNK="{}" 명령어는 없는 명령어입니다. :/
+CMDAMBIG="{}" 명령어는 여러 의미를 포함합니다. :/
+CMDISS={} 명령어는 다른 플레이어에게 쓸 수 없습니다. :/
+CMDPERM={} 명령어를 사용할 수 없습니다.
+MORE=... 및 {} 이/가 더 있습니다.
+MANYMORE=... 및 기타 명령어가 셀 수 없을 정도로 많습니다.
+
+CMDONL=이 명령어는 GTA 온라인에서만 사용 가능합니다.
+CMDONLONC=이 명령어는 GTA 온라인을 한 번이라도 진입 한 후에 사용 가능합니다.
+CMDNEEDHOST=이 명령어는 자신이 호스트일 때만 사용 가능합니다. :|
+CMDNH=이 명령어는 호스트에게 사용 불가능합니다. :|
+CMDOTH=이 명령어는 자신에게 사용 불가능합니다. :|
+CMDDISA=현재 이 명령어는 비활성화되었습니다. 더 자세한 정보는 Stand의 공지 사항을 확인해주세요.
+
+CMD_DR_S=명령어 실행이 성공적으로 완료되었습니다 :)
+
+FRMTSEL_AVAIL={} 키를 눌러 글자 형식을 선택하세요.
+FRMTSEL_H=탭 간 이동을 위해 화살표 키를 사용하고 코드를 입력하기 위해 {} 키를 사용하세요.
+FRMTSEL_H_R=초기화: 저장된 형식을 지웁니다.
+FRMTSEL_H_N=새로운 줄
+
+B_CTX=콘텍스트 메뉴
+CTX_MIN=최솟값 설정
+CTX_MAX=최댓값 설정
+
+CTX_UNAVAIL={option} 이/가 {command} 에(서) 가능하지 않습니다.
+
+AUTOSTATE=상관 관계
+AUTOSTATE_OFF=설정 안함
+AUTOSTATE_OPN=Stand 메뉴 열림 유지 시
+AUTOSTATE_OFT=도보 시
+AUTOSTATE_AIM=조준 시
+AUTOSTATE_FRE=자유 모드에 있을 시
+AUTOSTATE_CHT=채팅 시
+AUTOSTATE_HST=호스트 시
+
+AUTOSTATEINV=반대 상태로 전환
+
+IVRT=전환
+
+AUTOSTATE_H=상관 관계: {command} 이/가 {state} 인 동안 {condition} 이/가 됩니다.
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_ON=활성화
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_OFF=비활성화
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OPN=Stand가 열린 상태
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OFT=도보인 상태
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_AIM=조준 중인 상태
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_FRE=자유 모드 세션에 있는 상태
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_CHT=채팅 중인 상태
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_HST=호스트인 상태
+
+CMDSTATE_L={0} 을/를 {1} (으)로 설정 했습니다. :)
+CMDSTATE_L_E={0} 이/가 이미 {1} 입니다. :)
+
+CMDSTATE_LON={} 을/를 활성화 했습니다. :)
+CMDSTATE_LOFF={} 을/를 비활성화 했습니다. :)
+
+CMDSTATE_LON_E={} 이/가 이미 켜졌습니다. :)
+CMDSTATE_LOFF_E={} 이/가 이미 꺼졌습니다. :)
+
+CMDSTATE_OON=성공적으로 활성화됨. :)
+CMDSTATE_OOFF=성공적으로 비활성화됨. :)
+
+CMDSTATE_OON_E=이미 활성화됨. :)
+CMDSTATE_OOFF_E=이미 비활성화됨. :)
+
+! E.g. "Freeze on Herobrine" or "Freeze on All Players". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A={command} 명령어를 {player} 에(게) 사용합니다.
+
+! E.g. "WiriScript's Immortality on Herobrine". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A_LUA={script}의 플레이어 {player} 명령어 {command}
+
+SUPPGEN=일반적인 응답 줄이기
+SUPPGEN_H="명령어가 성공적으로 실행됨" 과 같이 일반적인 응답을 줄입니다.
+
+SUPPGEN_CB_H=Stand 명령어 상자를 포함하여, 명령어 상자와 채팅 명령어가 웹 인터페이스와 같아집니다.
+
+WARNS=경고
+
+WARNAUTOPROC=자동 경고 진행
+
+WARNSKIPPROC=이미 수락한 경고 건너뛰기
+
+WARNFRCERD=명령어를 강제로 읽게 만들기
+
+HOTKEY=핫키
+ARGHOTKEY=[핫키]
+HOTKEYS=핫키
+HOTKEY_A=핫키 추가
+HOTKEY_C2=핫키 변경
+HOTKEY_R2=핫키 제거
+HOTKEY_U=핫키로 지정할 {} 키를 누르세요.
+HOTKEY_T={} 의 핫키를 %appdata%/Stand/Hotkeys.txt 에 저장했습니다 :)
+
+HOTKEY_HOLD=걔속 누르기 모드
+
+!!!!!!!!!!!!!!!!!!!
+!! Keyboard Keys !!
+!!!!!!!!!!!!!!!!!!!
+
+K_UNK=빈 키
+
+K_R=오른쪽 {}
+K_L=왼쪽 {}
+
+K_SHFT=Shift
+K_ALT=Alt
+K_CTRL=Ctrl
+
+! E.g. "Hold W"
+K_HOLD=계속 누르기:
+
+K_SPC=Space
+K_ISRT=Insert
+K_DEL=Delete
+K_HME=Home
+K_END=End
+K_PGUP=Page Up
+K_PGDN=Page Down
+K_RET=Enter
+K_BACK=Backspace
+K_ESC=ESC
+K_A_U=위쪽 화살표
+K_A_L=왼쪽 화살표
+K_A_R=오른쪽 화살표
+K_A_D=아래쪽 화살표
+K_TAB=Tab
+K_LMB=마우스 좌클릭
+K_MMB=마우스 중간 클릭
+K_RMB=마우스 우클릭
+K_X1=Mouse 4
+K_X2=Mouse 5
+K_MPP=미디어 재생/일시 중단
+K_MS=미디어 중단
+K_NT=다음 트랙
+K_PT=이전 트랙
+K_CAPS=캡스 락
+
+HMB=키 중복 알림
+HMB_H=Ctrl, Shift 및 Alt 키 처리 방법
+STRCT=제한적
+HMB_STRCT_H=어떠한 추가적인 수정된 키가 눌리지 않을 것입니다. 그래서, Ctrl+Shift+G를 누르는 것은 G와 Ctrl+G 모두 작동시키지 않을 것입니다.
+SMRT=스마트
+HMB_SMRT_H=핫키가 수정된 키를 가지고 있으면 강하게, 다른 키들은 약하게 처리합니다. 그래서, Ctrl+Shift+G를 누르는 것은 G를 작동시키지만 Ctrl+G를 작동시키지는 않을 것입니다.
+LAX=느슨함
+HMB_LAX_H=추가적인 수정된 키가 눌릴 것입니다. 그래서, Ctrl+Shift+G를 누르는 것은 G와 Ctrl+G 모두 작동시킬 것입니다.
+
+DHK=핫키 비활성화
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Controller Buttons !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+CK=컨트롤러 버튼
+
+CK_LT=왼쪽 Trigger
+CK_RT=오른쪽 Trigger
+CK_LB=왼쪽 범퍼
+CK_RB=오른쪽 범퍼
+CK_LS=왼쪽 스틱 (L3)
+CK_RS=오른쪽 스틱 (R3)
+CK_D_U=D-패드 위쪽
+CK_D_D=D-패드 아래쪽
+CK_D_L=D-패드 왼쪽
+CK_D_R=D-패드 오른쪽
+CK_STRT=Start
+CK_BCK=Back
+
+!!!!!!!!!!!!!!!!!!!!
+!! Authentication !!
+!!!!!!!!!!!!!!!!!!!!
+
+UPDAVAIL=Stand {} 이/가 사용 가능합니다.
+
+FREE_T=이 명령어는 Stand Free (무료) 버전에서는 사용이 불가능합니다. ;)
+CMDFULLSP=이 명령어를 사용하기 위해서는, 스토리 모드로 가거나 Stand의 레귤러 버전으로 업그레이드하세요.
+CMDNEDR=이 명령어는 Regular (레귤러) 이상 버전에서만 사용이 가능합니다.
+CMDNEDU=이 명령어는 Ultimate (얼티메이트) 이상 버전에서만 사용이 가능합니다.
+
+ACTVTE_H=GTA 온라인에서도 메뉴의 모든 기능을 사용할 수 있도록 Stand를 활성화시키세요.
+ACTVTE_PSTE2=활성화 키 붙여넣기
+ACTVTE_RGST=계정 만들기
+ACTVTE_ERR_F2=클립보드에 있는 글자가 Stand 활성화 키 형식과 맞지 않습니다. (번역가 주: 클립보드에 있는 Stand 키가 Stand-Activate-XXXXX 형식인지 다시 한 번 더 확인하세요.)
+ACTVTE_STRT2=활성화 키 유효성 확인 중...
+ACTVTE_SUCC2=Stand가 성공적으로 활성화되었습니다. :D
+
+ACTVTE_ERR_I2=활성화 키가 유효하지 않습니다. :/
+ACTVTE_RGN=활성화 키가 재생성되었습니다.
+AUTHSHR2=활성화 키가 어딘가에 쓰이고 있는 중입니다. 재생성하시거나 다음에 다시 시도하세요.
+
+AUTH_X=활성화 키가 만료되었습니다.
+AUTH_CE=연결 오류가 발생했습니다.
+CONHELP=인터넷이 연결되었다면, Stand의 연결을 막는 요소가 있는지 확인하세요. (번역가 주: 대부분의 경우, 이 오류는 백신이 Stand 서버와의 연결을 막고 있기 때문입니다.)
+
+TELEKOM_OFF=온라인이 된 것을 환영합니다! :D
+
+VER_UNSUPP=현재 Stand 버전이 더 이상 지원되지 않습니다.
+VER_UNSUPP_AUTHONLY=현재 Stand 버전이 더 이상 지원되지 않을 것이며 곧 인증도 지원 중단될 예정입니다.
+UPDHELP=언로드하고, 런치패드에서 "Check For Update" 를 누르고, Stand를 다시 인젝트하여 쉽게 Stand를 업데이트할 수 있습니다.
+
+!!!!!!!!!!!!!!!!
+!! Filesystem !!
+!!!!!!!!!!!!!!!!
+
+FWERR=사용할 {} 을/를 열지 못했습니다 :|
+
+WRDR=의상 목록
+
+OPNFLD=폴더 열기
+
+OPNSTND=Stand 폴더 열기
+OPNSTND_H=%appdata%/Stand/ 폴더를 엽니다.
+
+OPNASI=ASI 모드 폴더 열기
+OPNASI_H=%appdata%/Stand/ASI Mods 폴더를 엽니다.
+
+OPNGTA=GTA V 폴더 열기
+
+OPNTHME=테마 폴더 열기
+OPNTHME_H=%appdata%/Stand/Theme 폴더를 엽니다.
+
+!!!!!!!!!!!!
+!! Colour !!
+!!!!!!!!!!!!
+
+C_H=색
+C_S=포화도
+C_V=값
+
+CR_HSV=HSV 표현
+CR_RGB=RGB 표현
+
+OPCTY=불투명도
+
+C_R=빨강
+C_G=초록
+C_B=파랑
+
+CN_A=무지개색
+CN_R=빨강색
+CN_R_WINE=포도주색
+CN_G=초록색
+CN_G_D=진한 녹색
+CN_G_LIME=라임빛 녹색
+CN_OLIVE=올리브색
+CN_MOSS=이끼색
+CN_TUR=청록색
+CN_B=파랑색
+CN_B_D=짙은 청색
+CN_B_COOL=시원한 청색
+CN_B_ROYAL=감청색
+CN_C=청록색
+CN_AQUA=아쿠아색
+CN_PLUM=자두색
+CN_Y=노랑색
+CN_Y_D=진한 옐로우색
+CN_P=분홍색
+CN_P_H=진한 분홍색
+CN_SALMON=연어색
+CN_U=보라색
+CN_U_D=포도색
+CN_M=자홍색
+CN_O=주황색
+DN_O_L=연한 오렌지색
+CN_O_RUST=러스트 오렌지색
+CN_BR=갈색
+CN_BR_L=연한 갈색
+CN_EARTH=지구
+CN_W=하얀색
+CN_L=검은색
+CN_GR=회색
+CN_GR_D=진한 회색
+
+C_PAT={colour} 패턴
+
+OTHR=기타
+CLRHEX=Hex 코드 입력
+CURRCLRHEX=현재 색상 (Hex)
+
+LGBT=무지개 모드
+LGBT_H=색깔을 x초마다 순환시키고 채도, 값 및 불투명도를 변경할 수 있습니다.
+
+CLR=색
+
+LGBTQ={}: 무지개 모드
+
+! As in "colour finish"
+CLRFIN=색상 그룹
+
+! "LSC" is Los Santos Customs
+CLRSTD=로스 산토스 커스텀 색상
+
+CLRSTD_1=Graphite
+CLRSTD_2=Black Steel
+CLRSTD_3=Dark Steel
+CLRSTD_4=Silver
+CLRSTD_5=Bluish Silver
+CLRSTD_6=Rolled Steel
+CLRSTD_7=Shadow Silver
+CLRSTD_8=Stone Silver
+CLRSTD_9=Midnight Silver
+CLRSTD_10=Cast Iron Silver
+CLRSTD_11=Anthracite Black
+CLRSTD_12=Matte Black
+CLRSTD_13=Matte Grey
+CLRSTD_14=Matte Light Grey
+CLRSTD_15=Util Black
+CLRSTD_16=Util Black Poly
+CLRSTD_17=Util Dark Silver
+CLRSTD_18=Util Silver
+CLRSTD_19=Util Cast Iron Silver
+CLRSTD_20=Util Shadow Silver
+CLRSTD_21=Worn Black
+CLRSTD_22=Worn Graphite
+CLRSTD_23=Worn Silver Grey
+CLRSTD_24=Worn Silver
+CLRSTD_25=Worn Bluish Silver
+CLRSTD_26=Worn Shadow Silver
+CLRSTD_28=Torino Red
+CLRSTD_29=Formula Red
+CLRSTD_30=Blaze Red
+CLRSTD_31=Grace Red
+CLRSTD_32=Garnet Red
+CLRSTD_33=Sunset Red
+CLRSTD_34=Cabernet Red
+CLRSTD_35=Candy Red
+CLRSTD_36=Sunrise Orange
+CLRSTD_37=Classic Gold
+CLRSTD_39=Matte Red
+CLRSTD_40=Matte Dark Red
+CLRSTD_41=Matte Orange
+CLRSTD_42=Matte Yellow
+CLRSTD_43=Util Red
+CLRSTD_44=Util Bright Red
+CLRSTD_45=Util Garnet Red
+CLRSTD_46=Worn Red
+CLRSTD_47=Worn Golden Red
+CLRSTD_48=Worn Dark Red
+CLRSTD_50=Racing Green
+CLRSTD_51=Sea Green
+CLRSTD_52=Olive Green
+CLRSTD_53=Bright Green
+CLRSTD_54=Gasoline Green
+CLRSTD_55=Matte Lime Green
+CLRSTD_56=Util Dark Green
+CLRSTD_57=Util Green
+CLRSTD_58=Worn Dark Green
+CLRSTD_59=Worn Green
+CLRSTD_60=Worn Sea Wash
+CLRSTD_61=Galaxy Blue
+CLRSTD_63=Saxon Blue
+CLRSTD_65=Mariner Blue
+CLRSTD_66=Harbor Blue
+CLRSTD_67=Diamond Blue
+CLRSTD_68=Surf Blue
+CLRSTD_69=Nautical Blue
+CLRSTD_70=Ultra Blue
+CLRSTD_71=Schafter Purple
+CLRSTD_72=Spinnaker Purple
+CLRSTD_73=Racing Blue
+CLRSTD_74=Light Blue
+CLRSTD_75=Util Dark Blue
+CLRSTD_76=Util Midnight Blue
+CLRSTD_77=Util Blue
+CLRSTD_78=Util Sea Foam Blue
+CLRSTD_79=Util Lightning Blue
+CLRSTD_80=Util Maui Blue Poly
+CLRSTD_81=Util Light Blue
+CLRSTD_82=Matte Dark Blue
+CLRSTD_83=Matte Blue
+CLRSTD_84=Matte Midnight Blue
+CLRSTD_85=Worn Dark Blue
+CLRSTD_86=Worn Blue
+CLRSTD_87=Worn Light Blue
+CLRSTD_89=Race Yellow
+CLRSTD_90=Bronze
+CLRSTD_91=Dew Yellow
+CLRSTD_93=Champagne
+CLRSTD_94=Feltzer Brown
+CLRSTD_95=Creek Brown
+CLRSTD_96=Chocolate Brown
+CLRSTD_97=Maple Brown
+CLRSTD_98=Saddle Brown
+CLRSTD_99=Straw Brown
+CLRSTD_100=Moss Brown
+CLRSTD_101=Bison Brown
+CLRSTD_102=Woodbeech Brown
+CLRSTD_103=Beechwood Brown
+CLRSTD_104=Sienna Brown
+CLRSTD_105=Sandy Brown
+CLRSTD_106=Bleached Brown
+CLRSTD_107=Cream
+CLRSTD_108=Util Brown
+CLRSTD_109=Util Medium Brown
+CLRSTD_110=Util Light Brown
+CLRSTD_111=Ice White
+CLRSTD_112=Frost White
+CLRSTD_113=Worn Honey Beige
+CLRSTD_114=Worn Brown
+CLRSTD_115=Worn Dark Brown
+CLRSTD_116=Worn Straw Beige
+CLRSTD_117=Brushed Steel
+CLRSTD_118=Brushed Black Steel
+CLRSTD_119=Brushed Aluminium
+CLRSTD_120=Chrome
+CLRSTD_121=Worn Cream
+CLRSTD_122=Util Cream
+CLRSTD_123=Worn Orange
+CLRSTD_124=Worn Light Orange
+CLRSTD_125=Pea Green
+CLRSTD_126=Worn Yellow
+CLRSTD_127=Police Car Blue
+CLRSTD_128=Matte Green
+CLRSTD_129=Matte Brown
+CLRSTD_130=Worn Orange
+CLRSTD_131=Matte Ice White
+CLRSTD_132=Worn White
+CLRSTD_133=Worn Olive Green
+CLRSTD_134=Util White
+CLRSTD_136=Salmon Pink
+CLRSTD_137=Pfister Pink
+CLRSTD_138=Bright Orange
+CLRSTD_140=Bright Blue
+CLRSTD_141=Midnight Blue
+CLRSTD_142=Midnight Purple
+CLRSTD_144=Hunter Green
+CLRSTD_145=Bright Purple
+CLRSTD_146=Metallic Midnight Purple
+CLRSTD_147=Carbon Black
+CLRSTD_148=Matte Schafter Purple
+CLRSTD_149=Matte Midnight Purple
+CLRSTD_150=Lava Red
+CLRSTD_151=Matte Forest Green
+CLRSTD_152=Matte Olive Drab
+CLRSTD_153=Matte Dark Earth
+CLRSTD_154=Matte Desert Tan
+CLRSTD_155=Matte Foliage Green
+CLRSTD_156=Default Alloy Color
+CLRSTD_157=Epsilon Blue
+CLRSTD_158=Pure Gold
+CLRSTD_159=Brushed Gold
+CLRSTD_160=Gold
+
+CLRFR=1차 색상
+
+CLRSEC=2차 색상
+
+CLRINT=실내 색상
+CLRPRL=무지개 색상
+
+VEHMOD20=타이어 연기
+CLRTIRE=타이어 연기 색
+TIREINDEP=독립 기념일 타이어 연기
+
+NEONLGHTS=네온 라이트
+
+APOS_F=전면
+APOS_B=후면
+
+CLRBR=배경 색
+
+CLRFT=중심 글자 색
+CLRFRT=중심 글자의 오른쪽 경계 글자 색
+CLRFS=중심 질감 색
+
+CLRBT=비중심 글자 색
+CLRBRT=비중심 글자의 오른쪽 경계 글자 색
+CLRBS=비중심 질감 색
+
+CLRHU=HUD 색
+
+CLRAR=AR 색
+
+CLRMGME=미니 게임 색
+
+HAIR_V=머리카락 색
+HAIRHI=머리카락 색: 하이라이트
+HAIRR=머리카락 색: 무지개 모드
+
+GUNTINT=현재 무기: 틴트
+GUNTINTR=현재 무기: 틴트: 무지개 모드
+
+WINTINT=창문 틴트
+
+! "Livery" is VEHMOD48
+RFTLIV=지붕 상징
+
+!!!!!!!!!!!!!!!
+!! Collision !!
+!!!!!!!!!!!!!!!
+
+GHOST=충돌 감소
+GHOST_H=차량 및 벽을 통과할 수 있습니다.
+
+COLSNS=충돌
+
+GHOSTVEHS=다른 차량과의 충돌 없음
+
+NOCOLPED=NPC와 충돌 없음
+NOCOLOBJ=오브젝트와 충돌 없음
+NOCOLOBJ_H=참고로 이것은 나무 같은 정적인 맵 오브젝트들은 제외합니다.
+
+GHOSTRIDE=충돌 없음
+GHOSTRIDE_H=차량이 충돌하지 않습니다. (공중 이동 수단이 아니면 추천 안함)
+
+!!!!!!!!!!
+!! Self !!
+!!!!!!!!!!
+
+MVMNT=움직임
+
+VIS=외모
+
+OTFT=아웃핏 수정/변경
+
+HEAD=머리
+HEAD_V=머리 변화
+FACIALHAIR=얼굴 머리카락 색
+FACIALHAIR_V=얼굴 머리카락 색
+MASK=마스크
+MASK_V=마스크 변화
+HAIR=머리카락
+TOP1=상의
+TOP1_V=상의 변화
+TOP2=상의 2
+TOP2_V=상의 2 변화
+TOP3=상의 3 변화
+TOP3_V=상의 3 변화
+BAG=가방 / 낙하산
+BAG_V=가방 / 낙하산 변화
+PCHUTE=낙하산 / 가방
+PCHUTE_V=낙하산 / 가방 변화
+TORSO=장갑 / 몸통
+TORSO_V=장갑 / 몸통 변화
+GLOVES=장갑
+GLOVES_V=장갑 변화
+PANTS=바지
+PANTS_V=바지 변화
+SHOES=신발
+SHOES_V=신발 변화
+ACCESSORIES=액세서리
+ACCESSORIES_V=액세서리 변화
+DECALS=의상 그림
+DECALS_V=의상 그림 변화
+HAT=모자
+HAT_V=모자 변화
+GLASSES=안경
+GLASSES_V=안경 변화
+EARWEAR=귀걸이
+EARWEAR_V=귀걸이 변화
+WATCH=시계
+WATCH_V=시계 변화
+BRACELET=팔찌
+BRACELET_V=팔찌 변화
+
+SVEOTFT=아웃핏 저장
+
+! Alternatively, "What Will Be Saved"
+SVESEL=저장 해야할 목록
+
+BADFILE=해당 이름을 가진 파일로 저장할 수 없습니다. :/
+
+LDOTFT_E1=의상이 어떤 모델로 만들었는지 적혀 있지 않습니다. :?
+LDOTFT_E2=아웃핏이 유효하지 않은 모델로 만들어짐: {}
+LDOTFT_E3=아웃핏이 다른 모델로 만들어졌습니다. :?
+LDOTFT_TF=이 아웃핏은 {} (으)로 만들어졌습니다, 변경하고 싶으신가요?
+
+DOTFTRESTR=아웃핏 제한 비활성화
+DOTFTRESTR_H=더플 백 등의 아웃핏을 저장할 수 있도록 해줍니다.
+
+NVEHHAIRSCL=차량 내부에서 머리카락 스케일링 비활성화
+
+LKOTFT=아웃핏 잠금
+LKOTFT_H=카지노 습격과 다른 미션 등에서 Stand를 제외하고는 의상 변경을 할 수 없게 합니다. ⚠️
+
+CHNGMDL=모델 변경
+
+PLYBLCHRS=플레이할 수 있는 캐릭터
+GRNDANMLS=지상 동물
+WTRANMLS=해양 동물
+FLYNANMLS=조류
+NPCS=NPC
+
+ONLN_MALE=온라인 남성 모델
+ONLN_FEMALE=온라인 여성 모델
+
+CHNGMDL_W=해양 동물로 바꾸기 위해서는 물 속에 있어야 합니다. :)
+
+MDL=모델
+
+FNDMDL_H=모델의 이름으로 변신할 모델을 검색할 수 있습니다.
+
+CURMDL=현재 모델
+
+OP=아웃핏 조합
+
+OP_D=현재 모델: 기본
+OP_D_H=현재 모델의 락스타 기본 아웃핏으로 변경하였습니다.
+
+OP_RNG=현재 모델: 랜덤
+RNG=랜덤
+
+OP_0=온라인 여성 모델: 상반신 노출
+
+OP_COP_M=온라인 남성 모델: 경찰
+OP_COP_F=온라인 여성 모델: 경찰
+
+WNTDLVL=지명 수배 레벨
+
+WNTD=지명 수배 레벨 설정
+
+LKWNTD=지명 수배 레벨 잠금
+
+FKWNTD=가짜 지명 수배 레벨
+FKWNTD_H=오른쪽 위의 지명 수배 레벨을 가짜로 변경합니다.
+
+PTFXTRAIL=PTFX 자국
+BONES=뼈
+
+WLKSTL=걷기 스타일
+WLKSTL_1=미사일
+WLKSTL_3=쓰레기를 주움
+WLKSTL_4=달리기
+WLKSTL_5=프랭클린 (강인한)
+WLKSTL_8=도망자
+WLKSTL_9=겁쟁이
+WLKSTL_10=섹시
+WLKSTL_12=부상자
+WLKSTL_13=레스터 (지팡이)
+WLKSTL_14=가방
+WLKSTL_15=보석금으로 석방됨
+WLKSTL_16=보석금으로 석방됨 (테이저)
+WLKSTL_17=용감한 자
+WLKSTL_18=캐주얼
+WLKSTL_19=적당히 술에 취함
+WLKSTL_20=적당히 술에 취함 (고개를 든)
+WLKSTL_21=살짝 술에 취함
+WLKSTL_22=매우 술에 취함
+WLKSTL_23=강인함
+WLKSTL_24=갱스터 (느린)
+WLKSTL_25=갱스터 (부끄러움)
+WLKSTL_26=갱스터
+WLKSTL_27=조깅
+WLKSTL_28=교도소 경비
+WLKSTL_30=프랭클린 (서류가방)
+WLKSTL_31=마이클 (경비병)
+WLKSTL_32=마이클 (느린)
+WLKSTL_33=양동이를 든
+WLKSTL_34=쭈그림
+WLKSTL_35=대걸레를 든
+WLKSTL_36=동성애자 (남성)
+WLKSTL_37=동성애자 (여성)
+WLKSTL_38=갱스터 (남성)
+WLKSTL_39=갱스터 (여성)
+WLKSTL_40=우아함 (남성)
+WLKSTL_41=우아함 (여성)
+WLKSTL_42=강인한 사람 (남성)
+WLKSTL_43=강인한 사람 (여성)
+WLKSTL_44=윙윙 거림
+WLKSTL_45=편안함
+WLKSTL_46=수갑을 채움
+WLKSTL_47=슬픔
+WLKSTL_48=건방지게 (남성)
+WLKSTL_49=건방지게 (여성)
+WLKSTL_50=오만하게
+WLKSTL_51=자신있게
+WLKSTL_52=한쪽으로 기울어서
+WLKSTL_53=산행
+WLKSTL_54=환경미화원
+WLKSTL_55=그늘이 드리워짐
+WLKSTL_56=힙스터
+
+PRSVRWALK=전투 중일 때도 걷기 스타일 유지
+PRSVRWALK_H=폭력이 자신의 근처에서 일어나도 캐릭터가 "전투 모드" 로 변경 되는 것을 항상 막습니다.
+
+WALKONAIR=하늘 걷기
+
+AIRSWM=공중 수영
+
+WTRWLK=물 속 걷기
+
+DRNKMODE=음주 모드
+
+TNISMDE=테니스 모드
+
+FLOPPY=플로피 모드
+FLOPPY_SYNCH=우선 연동
+FLOPPY_SYNCH_H=속도를 늘리고 연동을 확실시 하기 위해서 속도 올림, 내림 및 전력 질주를 비활성화합니다
+
+DEMIGOD=자동 체력 회복
+DEMIGOD_H=자신 캐릭터의 방탄복과 체력을 최대로 유지합니다.
+DEMIGOD_H_O=해당 플레이어의 방탄복과 체력을 최대로 유지합니다.
+
+MXHLTH=최대 체력
+
+CLUMSY=투박함
+CLUMSY_H=캐릭터를 자주 넘어뜨립니다.
+
+NOROLLCL=컴뱃 롤 쿨타임 없음
+
+RESPWRCL=죽은 장소에 리스폰
+
+RESPWDLY=리스폰 시간
+RESPWDLY_H=GTA 온라인에서 주어진 리스폰 시간을 변경합니다.
+
+EWO=자살
+
+SPCSH=스토리 모드 돈 설정
+SPCSH_H=마이클, 프랭클린, 트레버의 돈을 조회하고 돈 액수를 바꿀 수 있게 합니다.
+
+SCHR_M=마이클
+SCHR_F=프랭클린
+SCHR_T=트레버
+
+HLTH=체력
+ARMR=방탄복
+
+REGEN=재 생성 비율
+REGEN_H_H=이 양을 조절해 초당 체력을 증가시키세요.
+REGEN_A_H=이 양을 조절해 초당 방탄복을 증가시키세요.
+ONLYINCOVER=겉에만
+
+RFHLT=체력 충전
+RFARM=방탄복 충전
+
+GOD=무적
+GOD_H=캐릭터를 죽지 않게 만듭니다.
+
+NRGDL=우아함
+NRGDL_H=캐릭터를 넘어뜨릴 수 없게 만듭니다.
+
+NO_GRACE=프로 팁: 우아함과 {feature_name} 을/를 동시에 활성화 하지 마세요. ;)
+
+SEATGLUE=안전 벨트
+SEATGLUE_H=캐릭터가 오토바이에서 떨어질 수 없도록 설정합니다.
+
+INFSTAM=기력 무제한
+
+PARALCK=낙하산 잠금
+LCK_FULL=착용
+LCK_ETY=착용 안함
+
+WET=젖음
+
+WETLCK=젖음 상태 잠금
+
+SCLE=크기
+SCLE_H=캐릭터의 높이, 너비 및 깊이를 변경합니다. (자신만 적용)
+
+SCLECAM=캐릭터의 크기가 카메라 시점에 영향을 주는지 여부
+
+SCLESPD=크기가 속도에 영향을 주는지
+
+VISZ=캐릭터 높이 수정
+VISZ_H=캐릭터의 높이를 수정합니다.
+
+! {Self > Appearance > Invisibility} & {Vehicle > Invisibility}
+INVIS=투명
+INVIS_H=참고: 차량에 탑승한 상태에서도 다른 플레이어는 자신의 차량을 보이지 않게 설정하지 않는 한 여전히 플레이어를 볼 수 있습니다.
+
+! Player > Trolling > Ram > Invisibility
+RAM_INVIS=투명
+
+LOCVIS=나에게만 보임
+
+LEV=공중 부양
+
+NOCLIP=노 클립
+
+LEV_AP=Pitch를 엔티티에 적용
+
+KPMOMNTM=가속도 유지
+
+MOVSPD=움직임 속도
+
+! Used in button instructions to mean "go faster"
+SPRNT=빠르게
+
+SPRNTMUL=빠른 자유 시점
+SPRNTMUL_H=빠른 자유 시점 키: {}
+
+ACCEL=가속
+ACCEL_H=가속은 오래 움직일수록 공중부양 속도가 증가합니다. 전력 질주하거나 움직임을 멈추면 초기화됩니다.
+
+OROM=오직 움직임에만 회전
+
+PASSMOV=패시브 모드시 움직임
+
+PASSMOV_MIN=지상에서의 거리: 최소
+PASSMOV_MAX=지상에서의 거리: 최대
+SPD=속도
+
+MAXDIST=거리: 최대
+
+ASS=도우미
+
+FRC_U=업워드 포스
+FRC_D=다운워드 포스
+
+ASS_D=다운워드 데드존
+ASS_D_H=조수석의 플레이어가 자신을 끌어내리려 하기 전에 자신이 얼마나 땅으로부터 떨어져야 하는지를 뜻합니다.
+
+SNAP=스냅핑
+
+WLKSPD=달리기 속도
+
+INCFRCT=마찰 증가
+INCFRCT_H=빠른 속도의 걷기/달리기 상태일 때 미끄러움을 줄여주니다.
+
+SWMSPD=수영 속도
+
+NOBLD=피를 흘리지 않음
+NOBLD_H=캐릭터가 피를 흘리지 않습니다.
+
+SONIC=슈퍼 런
+
+FLY=슈퍼 플라이트
+ASC=증가
+DESC=감소
+FLY_LAND=착지
+
+BI_CLSMNU_MOV=더 많은 움직임 옵션을 위해서는 Stand를 숨기세요.
+
+SHWBI_JMP2FLY=버튼 설명서: 슈퍼 점프 - 비행
+SHWBI_CTRLS=버튼 설명서: 컨트롤
+
+FROG=슈퍼 점프
+FROG_H=더 높게 점프하기 위해 점프 버튼을 계속 누를 수 있습니다.
+
+GRCELND=우아한 착지
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Animations !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+ANIM=애니메이션
+CANCL=취소
+SCENARIOS=시나리오
+LOOPED=애니메이션 반복
+LOOPED_H=시나리오에 적용되지 않습니다.
+PART_MVMT=움직임 허용
+PART_MVMT_H=애니메이션이 진행 중임에도 움직일 수 있게 해줍니다.
+AUTO_CANCL=자동 취소
+AUTO_CANCL_H=움직이려고 할 시 현재 진행 중인 애니메이션을 자동으로 취소시킵니다.
+
+ANIM1=플렉스
+ANIM2=담배 피기
+ANIM3=수면
+ANIM4=박수
+ANIM5=가드
+ANIM6=망치질
+ANIM7=가만히 있는 콥
+ANIM8=쓰레기통 뒤지는 중
+ANIM9=영화 상영 중 충격 받음
+ANIM10=많은 시간을 보냄
+ANIM11=짜증남
+ANIM12=문자 메시지 전송 중
+ANIM14=자살
+ANIM15=기다림
+ANIM16=깔끔히 함
+ANIM17=ATM 사용
+ANIM18=요가
+ANIM19=조각상
+ANIM20=용접
+ANIM21=일광욕
+ANIM22=뒤로 일광욕
+ANIM23=상급 매춘부
+ANIM24=하급 매춘부
+ANIM25=노트패드
+ANIM26=무릎 꿇음
+ANIM27=산책
+ANIM28=쌍안경
+ANIM29=엉덩이 들기
+ANIM30=정원 손질
+ANIM31=땅에 앉기
+ANIM32=서서 낚시
+ANIM33=찾기
+ANIM34=앉기
+
+ANIM_DANCE=춤 추기
+
+ANIM35=버트위글
+ANIM36=광대 춤 추기 1
+ANIM37=광대 춤 추기 2
+ANIM38=춤 추기 1
+ANIM39=춤 추기 2
+ANIM40=춤 추기 3
+ANIM41=춤 추기 4
+ANIM42=춤 추기 5
+ANIM43=느린 춤 추기 1
+ANIM44=느린 춤 추기 2
+ANIM45=느린 춤 추기 3
+ANIM46=포디움 춤 추기
+ANIM47=솔로 춤 추기
+ANIM48=부끄러운 춤 추기 1
+ANIM49=부끄러운 춤 추기 2
+ANIM50=우스꽝스러운 춤 추기 1
+ANIM51=우스꽝스러운 춤 추기 2
+ANIM52=우스꽝스러운 춤 추기 3
+ANIM53=타오 춤 추기
+ANIM54=우기 춤 추기
+
+ANIM55=시음
+ANIM56=야수
+ANIM57=아주 추움
+ANIM58=구름 응시 중
+
+! To prone, as in to lie on your stomach
+ANIM59=엎어져 있음
+
+ANIM60=풀 오버
+ANIM62=만취 1
+ANIM63=만취 2
+ANIM64=만취 3
+ANIM65=공중 기타
+ANIM66=공중 신시사이저
+ANIM67=말 싸움 1
+ANIM68=말 싸움 2
+ANIM69=바텐더
+
+! Aka. Air Kiss
+ANIM70=공중 키스
+
+ANIM71=비꼬기
+ANIM72=의기양양함 1
+ANIM73=의기양양함 2
+ANIM75=라디오 사용
+ANIM74=팔짱 끼기 1
+ANIM76=팔짱 끼기 2
+ANIM77=팔짱 끼기 3
+
+! As in "damn it"
+ANIM78=제길
+
+ANIM79=약탈
+ANIM81=안면 창백 1
+ANIM82=안면 창백 2
+ANIM83=걸려 넘어짐
+ANIM84=잠 들기
+ANIM85=점검
+ANIM86=팔 벌려 뛰기
+ANIM88=노크
+ANIM89=랩 춤 추기 1
+ANIM90=랩 춤 추기 2
+ANIM91=랩 춤 추기 3
+ANIM92=랩 춤 추기 4
+ANIM93=트월킹
+ANIM94=기대기 1
+ANIM95=기대기 2
+ANIM96=수리공
+ANIM97=명상
+ANIM98=숨이 가쁨
+ANIM99=팔 굽혀 펴기
+ANIM100=레이스 시작 카운트다운
+ANIM101=으르렁거리기
+ANIM102=요가 포즈
+ANIM103=웃기
+ANIM104=갱 표시
+ANIM105=실신함
+ANIM106=기어가기
+ANIM107=뒤집기 1
+ANIM108=뒤집기 2
+ANIM109=슬라이딩 1
+ANIM110=슬라이딩 2
+ANIM111=심폐소생술
+ANIM112=스트레칭
+ANIM113=축하
+ANIM114=광대
+ANIM115=불안 1
+ANIM127=불안 2
+ANIM116=나마스테
+ANIM117=DJ
+
+! Being arrested
+ANIM118=체포됨
+! Being arrested
+ANIM121=항복
+
+ANIM119=휘슬
+ANIM120=기대고 팔짱 끼기
+ANIM122=키보드에 타이핑
+ANIM123=모닥불 쬐기
+ANIM124=따봉
+
+! As in, bending your body towards someone to show respect.
+ANIM125=공손하게 인사
+
+ANIM126=슈퍼 히어로
+ANIM128=앞으로 구부리기
+ANIM129=샤워
+ANIM130=세수
+ANIM131=카라테
+ANIM132=복싱
+
+ANIM166=발 끌며 걷기 1
+ANIM167=발 끌며 걷기 1 (낮음)
+ANIM168=발 끌며 걷기 2
+ANIM169=발 끌며 걷기 2 (낮음)
+
+OBJANIM=오브젝트 애니메이션
+
+ANIM133=서류 가방
+ANIM134=맥주 마시기
+ANIM135=캔 마시기
+
+! As in begging
+ANIM136=구걸
+
+ANIM137=봉고 연주
+ANIM138=책 읽기
+ANIM139=꽃 주기
+ANIM140=빗자루로 쓸기
+ANIM141=맥주 한 박스 옮기기
+ANIM142=피자 옮기기
+ANIM143=샴페인 들기
+ANIM144=커피 마시기
+ANIM145=작은 더플 백
+ANIM146=핸드 백
+ANIM147=기타 연주
+
+! In this animation, the teddy bear known as "Mr. Raspberry" gets sexed
+ANIM148=곰 인형 강간
+
+ANIM149=접이식 의자에 앉기 (여성)
+ANIM150=접이식 의자에 앉기 (남성)
+ANIM151=맵 조사
+ANIM152=카메라 들기
+ANIM153=전자레인지 들기
+ANIM154=지팡이 짚기
+ANIM155=휴대폰 1
+ANIM156=휴대폰 2
+ANIM157=표지판 들기
+ANIM158=장미 들기
+ANIM159=고속도로 표지판 들기
+ANIM160="주차 금지" 표지판 들기
+ANIM161=우산 들기
+ANIM162=위스키 유리병 들기
+ANIM163=위스키 병 들기
+ANIM164=와인 유리병 들기
+ANIM165=와인 병 들기
+ANIM170=와인 들고 춤추기
+ANIM171=맥주 들고 춤추기
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Bodyguards !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+BDYGUARD=보디 가드
+COUNT=수
+WPN_SINGULAR=무기
+BDYGUARD_DEL=모든 보디 가드 제거
+BDYGUARD_TP=멀 때 순간 이동
+FORMATION=대열 모양
+LINE=선
+CIRCLE=원
+ALT_CIRCLE=대안 원
+BEHVR=행동
+PRIM_WEAP=주요 무기
+SCND_WEAP=보조 무기
+WEAP_H=보디 가드는 가능하다면 주요 무기를 사용하겠지만, 불가능하다면 보조 무기를 사용하려고 노력할 것입니다.
+
+!!!!!!!!!!!!!!!!!!!!
+!! Self > Weapons !!
+!!!!!!!!!!!!!!!!!!!!
+
+WPN=무기
+
+GETGNS=무기 얻기
+DELGNS=무기 제거
+ALLGNS=모든 무기
+
+GAIMPNSH=조준할 때...
+GSHTPNSH=총을 발사 할 때...
+
+GRTYGUN=중력 총
+CTRVPHYS=부자연스러운 중력
+FRCMUL=중력 강도
+COL=충돌
+
+VEHGUN=차량 총
+VEHGUN_H=자신의 총으로 차량을 쏠 수 있도록 만듭니다.
+
+WEAPCOMPS=무기 파츠
+WEAPCOMPS_H=자신이 선택한 무기가 가지고 있는 파츠를 확인하고 수정할 수 있도록 해줍니다.
+
+WEAPLOCK=무기 잠금
+TINT=무기 틴트
+
+! "Livery" is VEHMOD48
+WEAPLIVTNT=도색 틴트
+
+SVPRST=설정 값 저장
+VWPRSTS=설정 값 보기
+
+LOADS=로드 아웃
+SVLOAD=로드 아웃 저장
+VWLOADS=로드 아웃 보기
+
+SVLOAD_H_WEAP=현재 자신의 장비된 무기를 쉽게 로드아웃에 적용하기 위해 무기 잠금에 명령어 상자 스크립트로 저장합니다.
+
+WEAPLOCK_INV=선택된 무기만 제거
+WEAPLOCK_INV_H=선택된 무기만 제거되도록 "무기 잠금" 을 "블랙리스트 무기" 로 바꿉니다.
+
+AIMBT=에임봇
+
+AIMBT_LCKOUT=재 조준 시간 (ms)
+AIMBT_LCKOUT_H=카메라가 움직인 뒤 얼마 동안 비활성화될지를 정합니다.
+
+SMTHNG=부드러움
+
+LOSCHECK=시선 기반 선 확인
+
+TGTBONE=뼈 목표
+NECK=목
+RELBOW=오른쪽 팔꿈치
+LELBOW=왼쪽 팔꿈치
+RHAND=오른쪽 손
+LHAND=왼쪽 손
+PELVIS=골반
+RCALF=오른쪽 종아리
+LCALF=왼쪽 종아리
+RFOOT=오른쪽 발
+LFOOT=왼쪽 발
+
+TRIGBT=트리거 봇
+MAGICB=매직 총알
+MAGICB_H=트리거 봇이 항상 빗나가지 않도록 만듭니다.
+
+TRGSEL=목표 선택
+
+PROXYROCKET=근접 로켓
+PROXYROCKET_H=근접 로켓은 오직 다른 플레이어에게만 작동합니다.
+
+SPRMELEE=슈퍼 근접 무기
+SPRMELEE_H=근접 공격 후 NPC와 차량을 멀리 떨어뜨립니다. 다른 플레이어에게는 작동하지 않을 것입니다.
+
+INSTAPROXY=즉시 근접 폭탄 폭파
+
+FILAMMO=모든 탄약 채우기
+RMVAMMO=모든 탄약 지우기
+INFAMMO=탄약 무제한
+
+SKPRLD=재장전 없음
+
+NOSPOL=지연 시간 없음
+NOSPOL_H=적용 가능한 총이면 발사 전 지연 시간을 없앱니다.
+
+NOSPRD=퍼짐 없음
+NORECL=반동 없음
+
+RAPFRE=빠른 무기 발사
+
+RAPFREVEH=빠른 차량 무기 발사
+
+DMG=데미지 수정
+DMG_H=주먹과 총으로 줄 데미지가 증가하거나 하락하는 값을 지정합니다.
+
+RNGMUL=범위 수정
+
+RKSPDMUL=로켓 속도 증가
+
+! Or "Bullets Per Shotgun Shot"
+SHTGNSZE=샷건 발사 당 총알
+
+INSTLKNON=즉시 락온
+
+EXPAMMO=폭발 적용
+
+EXPTYP=폭발 종류
+EXPTYP_H=무기 발사 시 폭발시킬 폭발의 종류를 선택합니다.
+
+EXP_TAG_GRENADE=Grenade
+EXP_TAG_GRENADELAUNCHER=Grenade Launcher
+EXP_TAG_STICKYBOMB=Sticky Bomb
+EXP_TAG_MOLOTOV=Molotov
+EXP_TAG_ROCKET=Rocket
+EXP_TAG_TANKSHELL=Tank Shell
+EXP_TAG_HI_OCTANE=High Octane
+EXP_TAG_CAR=Car
+EXP_TAG_PLANE=Plane
+EXP_TAG_PETROL_PUMP=Petrol Pump
+EXP_TAG_BIKE=Bike
+EXP_TAG_DIR_STEAM=Steam
+EXP_TAG_DIR_FLAME=Flame
+EXP_TAG_DIR_WATER_HYDRANT=Water Hydrant
+EXP_TAG_DIR_GAS_CANISTER=Gas Canister Flame
+EXP_TAG_BOAT=Boat
+EXP_TAG_SHIP_DESTROY=Ship
+EXP_TAG_TRUCK=Truck
+EXP_TAG_BULLET=Bullet
+EXP_TAG_SMOKEGRENADELAUNCHER=Smoke Grenade Launcher
+EXP_TAG_SMOKEGRENADE=Smoke Grenade
+EXP_TAG_BZGAS=BZ Gas
+EXP_TAG_FLARE=Flare
+EXP_TAG_GAS_CANISTER=Gas Canister
+EXP_TAG_EXTINGUISHER=Extinguisher
+EXP_TAG_PROGRAMMABLEAR=Programmable AR
+EXP_TAG_TRAIN=Train
+EXP_TAG_BARREL=Barrel
+EXP_TAG_PROPANE=Propane
+EXP_TAG_BLIMP=Blimp (Blue)
+EXP_TAG_DIR_FLAME_EXPLODE=Flame Explode
+EXP_TAG_TANKER=Tanker
+EXP_TAG_PLANE_ROCKET=Plane Rocket
+EXP_TAG_VEHICLE_BULLET=Vehicle Bullet
+EXP_TAG_GAS_TANK=Gas Tank
+EXP_TAG_BIRD_CRAP=Bird Crap
+EXP_TAG_RAILGUN=Railgun
+EXP_TAG_BLIMP2=Blimp (Red & Cyan)
+EXP_TAG_FIREWORK=Firework
+EXP_TAG_SNOWBALL=Snowball
+EXP_TAG_PROXMINE=Proximity Mine
+EXP_TAG_VALKYRIE_CANNON=Valkyrie Cannon
+EXP_TAG_AIR_DEFENCE=Air Defense
+EXP_TAG_PIPEBOMB=Pipe Bomb
+EXP_TAG_VEHICLEMINE=Vehicle Mine
+EXP_TAG_EXPLOSIVEAMMO=Explosive Ammo
+EXP_TAG_APCSHELL=APC Shell
+EXP_TAG_BOMB_CLUSTER=Cluster Bomb
+EXP_TAG_BOMB_GAS=Gas Bomb
+EXP_TAG_BOMB_INCENDIARY=Incendiary Bomb
+EXP_TAG_BOMB_STANDARD=Bomb
+EXP_TAG_TORPEDO=Torpedo
+EXP_TAG_TORPEDO_UNDERWATER=Torpedo (Underwater)
+EXP_TAG_BOMBUSHKA_CANNON=Bombushka Cannon
+EXP_TAG_BOMB_CLUSTER_SECONDARY=Cluster Bomb (Secondary)
+EXP_TAG_HUNTER_BARRAGE=Hunter Barrage
+EXP_TAG_HUNTER_CANNON=Hunter Cannon
+EXP_TAG_ROGUE_CANNON=Rogue Cannon
+EXP_TAG_MINE_UNDERWATER=Underwater Mine
+EXP_TAG_ORBITAL_CANNON=Orbital Cannon
+EXP_TAG_BOMB_STANDARD_WIDE=Bomb (Wide)
+EXP_TAG_EXPLOSIVEAMMO_SHOTGUN=Explosive Ammo (Shotgun)
+EXP_TAG_OPPRESSOR2_CANNON=Oppressor Mk II Cannon
+EXP_TAG_MORTAR_KINETIC=Kinetic Mortar
+EXP_TAG_VEHICLEMINE_KINETIC=Kinetic Vehicle Mine
+EXP_TAG_VEHICLEMINE_EMP=EMP Vehicle Mine
+EXP_TAG_VEHICLEMINE_SPIKE=Spike Vehicle Mine
+EXP_TAG_VEHICLEMINE_SLICK=Slick Vehicle Mine
+EXP_TAG_VEHICLEMINE_TAR=Tar Vehicle Mine
+EXP_TAG_SCRIPT_DRONE=Script Drone
+EXP_TAG_RAYGUN=Up-n-Atomizer (Raygun)
+EXP_TAG_BURIEDMINE=Buried Mine
+EXP_TAG_SCRIPT_MISSILE=Script Missile
+EXP_TAG_RCTANK_ROCKET=RC Tank Rocket
+EXP_TAG_BOMB_WATER=Water Bomb
+EXP_TAG_BOMB_WATER_SECONDARY=Water Bomb (Secondary)
+EXP_TAG_MINE_CNCSPIKE=Spikes
+EXP_TAG_BZGAS_MK2=BZ Gas Mk II
+EXP_TAG_FLASHGRENADE=Flash Grenade
+EXP_TAG_STUNGRENADE=Stun Grenade
+EXP_TAG_CNC_KINETICRAM=Kinetic Ram
+EXP_TAG_SCRIPT_MISSILE_LARGE=Script Missile (Large)
+EXP_TAG_SUBMARINE_BIG=Submarine (Big)
+EXP_TAG_EMPLAUNCHER_EMP=EMP Launcher EMP
+EXP_TAG_RAILGUNXM3=Railgun (MP)
+EXP_TAG_BALANCED_CANNONS=Balanced Cannons (F35)
+
+IMPPART=폭발 효과
+IMPPART_H=폭발 효과를 위한 파티클 종류를 선택할 수 있게 해줍니다.
+
+TTLFRDM=무기 자유롭게 사용
+TTLFRDM_H=건물 내부와 패시브 모드에서도 무기 사용이 가능합니다.
+TTLFRDM_MOV_H=실내에서 전력 질주, 은신, 점프할 수 있게 해줍니다.
+
+TPGUN=순간 이동 총
+
+! "Sticky" as in "Sticky Bomb"
+INCSTICK=증가한 점착 폭탄 개수 제한
+INCFLARE=증가한 플레어 개수 제한
+
+INCPROJ_H=이 기능은 월드에 부착할 수 있는 양이 증가한다는 것을 뜻하는 것이며, 자신의 인벤토리에 저장 가능한 양이 증가한다는 것을 뜻하는 것이 아닙니다.
+
+LASGUN=레이저 사이트
+
+!!!!!!!!!!!!!
+!! Vehicle !!
+!!!!!!!!!!!!!
+
+NOVEHFND=먼저 차에 탑승하세요. :)
+VEHALRDIN=이미 차 안에 위치합니다. :?
+VEHCTRL=차량 제어에 실패하였습니다. :|
+
+PVS=개인 차량
+
+INSUR=보험
+ADDINSUR=보험 추가
+DSTRYD=삭제됨
+UINSRD=무보험 상태
+INSURCLM=보험 처리 요청
+
+REQ=요청
+REQNDRV=소환된 위치로 요청 & 운전
+REQNCALL=자신의 위치로 요청 & 운전
+
+PVRPLC=현재 차량 교체
+PVRPLC_H=이 개인 차량 대신 현재 주행 중인 차량의 정보를 저장합니다.
+
+PVSVE_H=이 개인 차량의 정보를 Stand의 차고에 저장합니다.
+PVSVEA=차고에 모두 저장
+PVSVEA_H=모든 자신의 개인 차량의 데이터를 Stand의 차고에 저장합니다.
+! "Garage" must use same translation as GRG. "Personal Vehicles" must stay as-is.
+PVSVEA_S=개인 차량들이 차고 > Personal Vehicles 에 저장되었습니다. :D
+
+CURPV=현재 개인 차량
+PVEHNTFND=개인 차량을 찾지 못했습니다. :/
+
+LSTVEH=마지막 차량
+LSTVEHNTFND=마지막 차량을 찾지 못했습니다 :/
+
+CALLVEH=나에게 순간 이동 & 운전
+
+RC=원격 조종
+RC_STCK=만약 갇혔다면 {} 키를 누르세요.
+
+GTARC=이마니 테크 원격 조종
+GTARC_E=이 차량은 이마니 테크 원격 조종을 지원하지 않거나 "모든 차량이던 원격 조종 가능" 기능이 활성화되어있지 않습니다.
+
+RCANYVEH=모든 차량 원격 조종 가능
+
+RETSTOR=저장소로 돌려보내기
+
+VEHFOLLOW=자신 따라오기
+
+SPWNR=생성기
+SPWND=소환됨
+
+! The act of doing it, to spawn
+SPWN=소환
+
+SPWNR_CLASSES=차량 종류
+
+VEH_CLASS=차량 종류
+VEH_SEATS=정원
+
+DLC=DLC
+DLCS=DLC 목록
+DLC_10=게임 출시
+DLC_60=해변 족
+DLC_100=발렌타인 데이 학살 스페셜
+DLC_110=비즈니스
+DLC_130=잘 나가는 인생
+DLC_140=난 힙스터가 아니야
+DLC_150=독립기념일
+DLC_160=비행 학교
+DLC_170=라스트 팀 스탠딩
+DLC_180=다음 세대 출시
+DLC_190=페스티벌 서프라이즈 2014
+DLC_210=습격 목록
+DLC_270=부당 이득 업데이트 파트 1
+DLC_280=부당 이득 업데이트 파트 2
+DLC_300=로우라이더
+DLC_301=할로윈 서프라이즈
+DLC_310=VIP와 수행원
+DLC_311=페스티벌 서프라이즈 2015
+DLC_320=2016년 1월 업데이트
+DLC_321=마이 발렌타인
+DLC_330=로우라이더: 커스텀 스페셜
+DLC_340=부와 범죄의 심연
+DLC_350=교활한 스턴트
+DLC_360=바이커
+DLC_370=반입/반출
+DLC_380=특수 차량 서킷
+DLC_400=무기 밀매
+DLC_410=밀수 작전
+DLC_420=심판의 날 습격
+DLC_430=SA 슈퍼 스포츠 시리즈
+DLC_440=심야 영업
+DLC_460=아레나 워
+DLC_480=다이아몬드 카지노 & 리조트
+DLC_490=다이아몬드 습격
+DLC_510=로스 산토스 여름 스페셜
+DLC_520=카요 페리코 습격
+DLC_570=LS 튜너
+DLC_580=청부 계약
+DLC_610=범죄 조직
+DLC_640=마약 전쟁
+DLC_670=산 안드레아스 용병들
+DLC_680=불법 정비소
+DLC_690=바텀 달러 바운티스
+
+MANUFNS=제조사 이름
+
+SPWNTUNE=차량 소환 시 개조
+SPWNTUNE_H=Stand를 통해 생성된 차량의 개조 상태를 설정 가능합니다.
+TUNE_PRESETS=설정된 튜닝 값
+TUNE_STCK=기본 개조
+TUNE_PERF=성능 개조
+TUNE_PERF_H=엔진, 브레이크, 트랜스미션, 내구력 및 터보만 개조합니다.
+TUNE_PERFWSPL=성능 개조, 스포일러 포함
+TUNE_FULL=최대 개조
+
+SPWCLR=소환 차량 색상
+
+SPWPLATE=소환된 차량 번호판
+
+TUNE=업그레이드
+TUNE_H=현재 차량이나 마지막 차량이 최대로 업그레이드됩니다.
+
+RTUNE=랜덤 업그레이드
+RTUNE_VIS=외관만
+RTUNE_PERF=성능만
+RTUNE_PERF_S=성능 및 스포일러만
+
+PERF=성능 개조
+PERF_H=현재 차량이나 마지막 차량이 엔진, 브레이크, 트랜스미션, 내구력 및 터보만 업그레이드됩니다.
+PERF_T=차량 성능 개조만 하였습니다. :D
+PERF_E=차량이 이미 성능 개조가 완료되었습니다. :)
+
+PERFWSPL=스포일러를 포함한 성능 업그레이드
+
+DNGRD=다운그레이드
+DNGRD_H=현재 차량이나 마지막 차량이 기본 개조 상태로 바뀝니다.
+
+GRG=차고
+SVEVEH=차량 저장
+
+PARA=낙하산
+PARA_GEN=일반 낙하산
+PARA_BRK=부서진 낙하산
+SECUROSERV=시큐어 에이전시
+
+XTRA=엑스트라
+XTRAS=엑스트라
+XTRAS_N=타고 있는 차량은 엑스트라를 가지고 있지 않습니다.
+
+PARAON=낙하산 활성화
+PARAON_H=오토바이와 같은 차량에게는 불가능합니다.
+
+PARA_H_VIS=차량의 낙하산을 펼친 후에는 일부 변경 사항이 적용되지 않습니다.
+
+VEHFIN0=클래식
+VEHFIN1=메탈릭
+VEHFIN2=펄 광택
+VEHFIN3=무광
+VEHFIN4=메탈
+VEHFIN5=크롬
+VEHFIN6=카멜레온
+
+WHLS=휠
+WHLSCLR=휠 색상
+WHLTYP=휠 카테고리
+VEHMOD23=전면 휠
+
+VEHMOD0=스포일러
+VEHMOD1=앞 범퍼
+VEHMOD2=뒷 범퍼
+VEHMOD3=사이드 스커트
+VEHMOD4=머플러
+VEHMOD5=프레임
+VEHMOD6=그릴
+VEHMOD7=후드
+VEHMOD8=휀더
+VEHMOD9=오른쪽 휀더
+VEHMOD10=지붕 / 무기
+VEHMOD11=엔진
+VEHMOD12=브레이크
+VEHMOD13=트랜스미션
+VEHMOD14=경적
+VEHMOD15=서스펜션
+VEHMOD16=내구성
+VEHMOD18=터보
+VEHMOD24=뒤쪽 휠
+VEHMOD25=창문 플레이트
+
+! Alternatively, "Benny's Plates"
+VEHMOD26=베니즈 번호판
+
+VEHMOD27=트림 디자인
+VEHMOD28=장식품
+VEHMOD29=대시보드
+VEHMOD30=다이얼 디자인
+VEHMOD31=문 스피커
+VEHMOD32=좌석
+VEHMOD33=스티어링 휠
+VEHMOD34=쉬프트 레버
+VEHMOD35=플라크
+VEHMOD36=스피커
+VEHMOD37=트렁크
+VEHMOD38=하이드롤릭스
+VEHMOD39=엔진 덮개
+VEHMOD40=부스트
+VEHMOD41=지지대
+VEHMOD42=아치 덮개
+VEHMOD43=에어리얼
+VEHMOD44=트림
+VEHMOD45=탱크
+VEHMOD46=좌측 문
+VEHMOD47=우측 문
+VEHMOD48=상징
+VEHMOD49=라이트바
+
+VEHDRFTYR=드리프트 타이어
+
+VEHBPTYR=방탄 타이어
+
+SCRCHD=그을림
+
+TONK=포탑 제거
+
+BHVONFT=도보 상태에서 소환 시 액션
+
+BHVINVEH=차량 소환 시 액션
+
+SPWNDRVE=소환된 차량 바로 운전
+SPWNDRVE_H=Stand로 소환한 차량의 운전석에 앉은 상태로 소환합니다.
+
+SPWNAIR=공중에 항공기 소환
+
+SPWNFRNT=앞에 소환
+SPWNFRNT_H=차량을 자신 앞에 소환합니다.
+
+SPWLIKEPV=개인 차랑처럼 소환
+
+SPWNDEL=이전 차량 삭제
+
+SPWNVEL=속도 유지
+
+INPTVEHMDL=모델 이름 입력
+ARGMDLNME=[모델 이름]
+INPTVEHMDL_H=차량을 "전문가 모드" 로 소환합니다.
+INPTOBJMDL_H="전문가 모드" 는 오브젝트를 소환하는 방법 중 하나입니다.
+INPTMDL_E=운이 좋지 않게도, {} 은/는 유효한 모델명이 아닙니다. :/
+INPTVEHMDL_E={} 은/는 유효한 모델명이 아닙니다. :/
+
+ARSPD=AR 속도계
+ARSPD_H=캐릭터 앞에 AR 속도계가 보이게 됩니다.
+
+CM=공격 대항
+CM_AUTO=자동 발사
+CM_OF=항공기만
+CM_PERIOD=주기적으로 배치
+CM_PERIOD_D=주기적으로 배치: 지연 시간
+
+FLARE=플레어
+CHAFF=채프
+BOTH=둘 다
+
+CM_FLARE=플레어 발사
+CM_CHAFF=채프 발사
+CM_BOTH=플레어 & 채프 발사
+
+CM_PT=패턴
+CM_HOR=수평
+CM_HOR_UP=수평, 위로
+CM_HOR_DOWN=수평, 아래로
+CM_VERT=수직, 위로
+CM_VERT_DOWN=수직, 위로
+
+AUTODRIVE=자동 운전
+AUTODRIVE_C=크루즈 속도
+AUTODRIVE_SDB=목적지 비컨 표시
+AUTODRIVE_ACOI=입력 시 취소
+AUTODRIVE_ACOI_H=차량을 조종하려고 시도할 때 자동으로 제거합니다.
+AUTODRIVE_NOCLIP=자동 운전 시 차량 충돌 없음
+AUTODRIVE_NOCLIP_H=자동 운전 중에 다른 차량과의 충돌을 비활성화합니다. 공격적이게 운전 중이고 길 찾기가 좋지 않을 때 보상 받기 위해서는 도움이 될 것입니다.
+AUTODRIVE_STORE=상점
+AUTODRIVE_MOVIE=영화
+AUTODRIVE_CLUBHOUSE=MC 갱 클럽하우스
+AUTODRIVE_FACILITY=시설
+AUTODRIVE_AGENCY=사무소
+AUTODRIVE_OFFICE=오피스
+AUTODRIVE_HANGAR=격납고
+AUTODRIVE_ERR2=자동 운전은 해당 차량 종류에서는 가능하지 않습니다.
+AUTODRIVE_ERR3=올바른 목적지를 찾을 수 없습니다. :(
+AUTODRIVE_ERR4=이미 설정한 목적지에 있습니다. :P
+AUTODRIVE_ARRIVE=목적지에 도착했습니다. ^_^
+AUTODRIVE_DRIVE=운전 스타일
+AUTODRIVE_LAW=법규 준수
+AUTODRIVE_NOTSOLAWFUL=법규 준수, 하지만 정지 신호등은 무시
+AUTODRIVE_BACK=뒤로
+AUTODRIVE_DEST=(으)로 운전...
+AUTODRIVE_DEST_NONE=어디든지
+AUTODRIVE_DEST_NONE_H=특정한 목적지 없이 주변을 계속 돌며 운전합니다.
+
+LGTSIGS=지시등
+TRNSIG=방향 지시등
+TRNSIG_HAZ=비상등
+TRNSIG_AUTO=방향 지시등 자동 비활성화
+BRAKELIGHTS=멈췄을 때 브레이크 등 사용
+MTESIRENS=사이렌 음소거
+
+AUTORKTBST=자동 로켓 부스트
+AUTORKTBST_H2=로켓 부스트가 충전되면 자동으로 사용합니다.
+
+RKTBST=로켓 부스트
+
+OVRD=부스트 변경
+RKTBST_H_OVRD=운전하고 있는 차량이 로켓 부스트를 가지고 있을 때 변경할 수 있도록 합니다.
+
+VERTRKTBST=수직 로켓 부스트
+
+CHRGBHV=로켓 부스트 액션
+RKTBST_NVREND=무한
+RKTBST_NVREND_H=부스트가 끝나지 않게 설정할 경우 차량에 부딪칠 때까지 계속됩니다.
+RKTBST_INSTRFLL=즉시 부스트 재충전
+RKTBST_INSTRFLL_H=부스트를 다 사용하면 부스트를 즉시 재충전합니다.
+RKTBST_NORFLL=재충전 시간 없음
+RKTBST_NORFLL_H=조건이 충족되면 부스트를 즉시 재충전합니다.
+RKTBST_EMPTY=부스트 충전이 항상 비어 있음
+
+RMP=램프
+RMMSCOOP=충돌 시 들어올림
+INCRMMFRC=충돌 강도 증가
+
+LSC=로스 산토스 커스텀
+
+VDO=문 열기/닫기
+
+VEHDOOR_A=모든 문
+VEHDOOR_0=앞의 왼쪽 문
+VEHDOOR_1=앞의 오른쪽 문
+VEHDOOR_2=뒤의 왼쪽 문
+VEHDOOR_3=뒤의 오른쪽 문
+VEHDOOR_4=후드
+VEHDOOR_5=트렁크
+VEHDOOR_6=후면 문
+VEHDOOR_7=후면 문 2
+
+LOCKD=문 잠금
+LOCKD_O=오직 비어있을 때만
+XCLUDEPVS=다른 개인 차량 제외
+
+ENGTGL=엔진 켜고 끄기 잠금
+ENGTGL_H=참고로 앞으로나 뒤로 가는 키를 누르면 대부분의 차량에서 엔진을 다시 켜게 합니다.
+
+FLIPVEH=차량을 똑바른 위치로 회전
+FLIPVEH_H=현재의 차량이나 마지막 차량을 똑바른 위치로 회전합니다.
+
+ATRNSUBCAR=잠수함 자동차 자동 변형
+NANIM=애니메이션 없음
+
+DRBYINANY=모든 차량 운전 중 총기 발사
+DRBYWITHANY=차량 운전 중 모든 무기로 총기 발사
+
+WHEELONWHEELS=차량에서도 무기 선택창 표시
+WHEELONWHEELS_H=스크롤 휠을 위로 올리면 차량 무기를 하나씩 사용할 수 있으며, 차량 무기를 사용하려면 스크롤 휠을 위로 올려야 합니다.
+
+BMBTRJC=폭탄 궤도 표시
+
+FLYTHRUWND=앞 유리를 통해 날기
+
+! "Glued To Seats" is SEATGLUE
+FLYTHRUWND_H=스토리 모드에서 높은 속도에서 전면 충돌 시 차량 밖으로 던져버립니다. "안전 벨트" 를 중단시킵니다.
+
+ANTINLCKON=모든 차량에 락온
+
+! "Can't Be Locked On" is NLCKON
+ANTINLCKON_H=이마니 테크 차량에 락온을 허용합니다. "락온될 수 없음" 같은 기능들도 우회합니다.
+
+SETSEAT=차량 좌석 설정
+DRV=운전자
+
+LVENGRUN=차량에서 내릴 때 엔진 켜두기
+
+NOJACK=끌어내릴 수 없게 하기
+
+PEG=페가수스 차량으로 설정
+PEG_H=게임이 페가수스 차량이라고 생각하게 함으로써 생성된 특정 항공기를 격납고에 넣을 수 있습니다.
+
+DSTRY=삭제 (폭발)
+
+DELVEH_H=현재 차량이나 마지막 차량을 삭제합니다.
+
+FIXVEH=차량 수리
+FIXVEH_H=현재 차량이나 마지막 차량을 수리합니다.
+
+VEHGOD=차량 무적
+VEHGOD_H=자신이 운전자인 차량이 피해를 입지 않도록 합니다.
+
+SPWNGOD=무적인 차량 소환
+
+SPWNLIST=소환된 차량 목록
+
+VEH_DRV=운전
+VEH_ENT=탑승
+VEH_EMPTY=빈
+DEL=삭제
+
+SPWNBLIP=소환된 차량에 맵 아이콘 표시
+SPWNBLIP_TXT=소환된 차량: ({})
+CLRBLIP=맵 아이콘 지우기
+ONLYLTST=가장 최근 차량만
+
+MINT=자동 수리
+MINT_H=흠집이 생기지 않는 차량으로 만듭니다.
+
+PLATE=번호판
+
+PLATESPEED=속도계
+PLATESPEED_A=번호판 속도계
+
+CHARLIMIT={number} 개의 글자 수를 초과할 수 없습니다. :|
+
+RNDISE=무작위화
+
+SCRLTXT=움직이는 번호판 글자
+
+LCKPLT=번호판 글자 잠금
+
+BADCHAR="{}" 은/는 유효한 글자가 아닙니다. :|
+
+HORNBOOST=경적 부스트
+
+SPRDRV=슈퍼 드라이브
+
+SPRDRVCAM=슈퍼 드라이브 카메라 사용
+SPRDRVCAM_H=차량 전진 시 슈퍼 드라이브 카메라를 차량의 주행 위치가 아닌 원하는 위치로 변경합니다.
+
+SPRHBRK=슈퍼 핸드 브레이크
+
+DRVONWTR=물에서 운전
+
+DRVUNDWTR=수중 운전
+
+SPDLMT=속도 제한 (KM/H)
+SPDLMT_H=운전하는 차량의 속도 제한을 설정합니다. (기본값: 540)
+
+JMPABL=점프 능력
+JMPABL_H=점프와 로켓 부스트 능력을 동시에 가지고 있다면, 게임이 로켓 부스트를 보조 키로 이동합니다.
+
+GLDABL=활강 능력
+
+HEADLIT=헤드라이트
+
+HEADLITMUL=헤드라이트 가시 거리
+H_HILOCAL=* 더 높은 헤드라이트 값은 자신에게만 반사됩니다. *
+
+GRVTYMTPLY=중력 수정
+
+NOTAIR=항공기에 있지 않음
+
+HNEDIT=핸들링 수정기
+HNE_BASE=베이스
+HNE_AIRCRAFT=항공기
+
+! Motorcycles and bicycles alike.
+HNE_BIKES=오토바이
+
+HNE_FLYING=항공기
+HNE_VERTFLY=수직 상승 항공기
+HNE_SPECFLY=특별 항공기
+HNE_SEAPLANE=수상 항공기
+HNE_SUBMARINE=잠수함
+HNE_TRAILER=트레일러
+HNE_CAR=차
+
+SPECFLY_H=디럭소를 제외한 나머지 차들에게 참고할 만한 정보는, "지붕" 입력 (H 또는 패드 오른쪽 누르기) 은 특별 비행을 켜고 끄기 위해 쓰입니다.
+
+DELUXO=디럭소
+OPP2=오프레서 Mk II
+
+SHWNA=적용할 수 없는 옵션도 표시
+
+HNE_VWSCR=핸들링 스크립트 표시
+HNE_VWSCR_H=자신의 명령어 박스 스크립트 폴더의 "Handling" 세부 폴더 안의 스크립트를 표시합니다.
+
+HNE_NA=이 카테고리는 현재 차량에 적용할 수 없습니다.
+
+CSTWNGBVHR=커스텀 날개
+CSTWNGBVHR_H=오프레서 날개를 커스터마이징할 수 있게 합니다.
+
+LESSENBURN=타이어 번아웃 줄이기
+
+SMTHCST=매끄러운 코스팅
+SMTHCST_H=차량 감속 속도를 줄여 더 현실적이게 변합니다.
+
+DRFTMDE=드리프트 모드
+DRFTMDE_H=Stand가 새로 만든 드리프트 튜닝이며, 몇 안되는 차량에서 사용 가능합니다. Stand가 새로 만든 기능은 더욱 더 많은 차량에서 작동하긴 하겠지만 몇몇 차량은 다른 차량들만큼 부드럽지 않을겁니다.
+
+MINPOS=최소 위치
+MAXPOS=최대 위치
+CSTWNGBVHR_SPD=속도
+MAXPOS2SPD=최대 위치를 기반으로 하여 속도 설정
+
+SMTHFLY=난기류 없음
+
+HELIAUTOSTAB=헬기 자동 고정 비활성화
+HELIAUTOSTAB_H=Murten의 BetterHeliMode 스크립트에서 영감을 받았습니다.
+
+NLCKON=락온 당하지 않음
+
+INSTASEAT=즉시 차량 타기 & 내리기
+INSTASEAT_H=캐릭터가 차량으로 걸어가고, 엔진을 켜고, 내리는 것 등을 건너뜁니다.
+
+EXITSTOP=내릴 때 차량 멈춤
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Vehicle Classes !!
+!!!!!!!!!!!!!!!!!!!!!
+
+off_road=오프로드
+sport_classic=스포츠 클래식
+Military=군용
+Compacts=콤팩트
+sport=스포츠카
+Muscle=머슬카
+motorcycle=오토바이
+open_wheel=오픈 휠
+Super=슈퍼카
+van=밴
+suv=SUV
+Commercial=상업용
+plane=비행기
+sedan=세단
+Service=서비스
+Industrial=산업용
+helicopter=헬리콥터
+boat=보트
+Utility=다목적
+Emergency=긴급
+cycle=자전거
+coupe=쿠페
+rail=기차
+
+!!!!!!!!!!!
+!! World !!
+!!!!!!!!!!!
+
+PLCS=장소
+INHAB=NPC
+ATMO=대기
+
+DWNTWN=도심
+
+! GTA calls a point on the map a "blip"
+BLIPS=맵 아이콘
+BLIPNFND=올바른 맵 아이콘을 찾을 수 없습니다. :/
+
+TP=순간 이동
+
+DEDFX=죽음 효과
+RESPFX=리스폰 효과
+TPFX=순간 이동 효과
+
+TPS=순간 이동 옵션 목록
+TPWAIT=순간 이동 준비 중...
+
+WP=목적지
+WPS=목적지 이동 옵션 목록
+OBJCTV=목표지
+TP_MP=이 위치에서 순간 이동하면 온라인 월드 상태가 유지되어 게임이 멈출 수 있습니다.
+TP_CAYO=물에 빠지지 않도록 순간 이동 전에 카요 페리코 월드 상태 또는 IPL이 활성화되었는지 확인하세요.
+
+RPLTP=마지막 순간 이동 반복
+RP_E=반복할 것이 없습니다. :?
+
+UNDOTP=순간 이동 되돌리기
+UNDOTP_E=되돌릴 것이 없습니다. :?
+
+STORS=상점
+
+AMMUNAT=아뮤네이션
+SHTNGRNGE=사격장이 있는 아뮤네이션
+BARBR=이발소
+CLTHST=의상점
+TATTOO=타투샵
+
+LNDMRKS=랜드마크
+
+LSIA=로스 산토스 국제 공항
+FRTZNC=포트 잔쿠도
+MTCHIL=마운트 칠라아드
+
+CAYO=카요 페리코
+
+CSNO=카지노
+
+! Translate "Tower" & "Helipad"
+MAZEHELIPAD=메이즈 뱅크 타워 헬기장
+
+HIGHPLACE=높게 올라가기
+
+AUTOTPWP=목적지 자동 순간 이동
+AUTOTPWP_H=설정한 어느 지점이든 자동으로 순간 이동합니다.
+AUTOTPWP_T=목적지로 자동 순간 이동이 되었습니다. :)
+
+WPORTAL=포털 사용하여 목적지로 순간 이동
+
+CBPOS=클립보드에서 위치 불러오기
+CBPOS_H=2D나 3D 좌표를 클립보드에서 찾습니다.
+CBPOS_T=2D나 3D 좌표를 클립보드에서 찾을 수 없습니다. :?
+
+POS=위치 (좌표)
+
+! Stand > Settings > Appearance > Position
+MNUPOS=위치 (좌표)
+
+! World > Places > Position
+MYPOS=위치 (좌표)
+
+POS_Z=Z (고도)
+
+SVDPLCS=저장된 장소
+SVDPLCS_H=이 기능을 이용해서도 장소를 저장할 수 있습니다: {}.
+
+SVPLC_M=자신의 현재 위치 저장
+SVPLC_W=목적지 지정 위치 저장
+
+CPPOS=위치 클립보드 복사
+
+CPSUCC=클립보드에 복사하는 것을 성공했습니다. :D
+CPERR=클립보드에 복사하는 것을 실패했습니다. :|
+
+IPLS=IPL
+IPLS_H=IPL을 불러오거나 및 불러오기 해제할 수 있습니다. (본인만 적용)
+
+IPLTP=IPL로 순간 이동
+IPLTP_H=IPL로 순간 이동을 활성화하면 IPL로 순간 이동합니다.
+IPL_MP=이 IPL을 활성화하면 온라인 월드 상태가 유지되어 곧 게임이 멈출 수 있습니다.
+
+TRFC=트래픽
+
+TRFCLR=트래픽 색상
+
+DPEDS_A=행인 비활성화
+
+DTRFC_A=트래픽 비활성화
+DTRFC_2=활성화, 주차된 차량 포함
+
+SWRLDST=월드 상태 설정
+SWRLDST_H=참고로 월드 상태를 변경하면 곧 게임이 멈출 수 있습니다.
+
+SP=스토리 모드
+
+S_SP=싱글 플레이
+S_MP=멀티 플레이
+
+INT=실내
+INTS=실내
+
+INT_BKR=벙커
+STYL=벙커 스타일
+SECTY=보안
+EQUIPUPGR=장비 업그레이드
+GUNLKR=무기 캐비닛
+PSNLQRTS=개인 골프 캐디
+GUNRNGE=무기 사격장
+
+INT_VW=차량 차고
+INT_VW_2=브랜드
+INT_VW_1=어반
+INT_VW_0_1=베이직 (색상 1)
+INT_VW_0_2=베이직 (색상 2)
+INT_VW_0_3=베이직 (색상 3)
+INT_VW_0_4=베이직 (색상 4)
+
+INT_IF=IAA 시설
+INT_SR=서버 번
+INT_BS=보그단의 잠수함
+INT_HL=휴메인 연구소
+INT_FR=FIB (사무실 습격)
+INT_LFB=La Fluente Blanca
+INT_SSWCC=Split Sides West Comedy Club
+INT_BM=Bahama Mamas
+INT_TR=Torture Room
+INT_MR=모텔 방
+INT_OG=오메가의 차고
+INT_CIN=영화관
+INT_RCYL=재활용 공장
+
+INT_PYSC=프리드랜더의 사무실
+INT_SOL=솔로몬의 사무실
+
+INT_FH=플로이드의 집
+INT_JH=관리인의 집
+INT_LH=레스터의 집
+
+INT_BENNY=베니의 오리지날 정비소
+INT_HAYES=Hayes Autos
+INT_TEQ=테킬라
+INT_FDRY=주물 공장
+INT_UDG=노동 조합 은행 차고
+INT_ESR=엡실론 저장 방
+INT_CC=캐릭터 생성 방
+INT_ME=미션 후 차고
+INT_NG=나이트클럽 차고
+INT_WEED=마리화나 농장
+INT_STILT=스틸트 집
+
+INT_A_H=고급 아파트
+INT_A_M=중급 아파트
+INT_A_L=저급 아파트
+
+INT_G_H=고급 차고
+INT_G_M=중급 차고
+INT_G_L=저급 차고
+
+INT_W_L=대형 창고
+INT_W_M=중형 창고
+INT_W_S=소형 창고
+
+YANK=북쪽 양크턴
+YANKMAPRDR=북쪽 양크턴 맵 & 레이더
+IPL_USSLUX=USS 럭싱턴
+IPL_HOSPITAL=필박스 병원
+FMEORSHME=Fame or Shame
+FCEBK=라이프 인베이더
+IPL_JEWEL=Vangelico Fine Jewelry
+IPL_MXRD=맥스 렌다
+IPL_UFOEYE=마운트 칠리야드 UFO
+IPL_FINBANK=노동 조합 은행
+IPL_PLNCRSH=비행기 충돌 구멍
+
+! Translate "Factory"
+IPL_CLKNBLLFCTRY=Clucking Bell 공장
+IPL_LSTRFCTRY=레스터의 공장
+
+! Translate "Morgue"
+IPL_MORGUE=시체 안치소
+
+! Translate "Heist" and "Yacht"
+IPL_AYACHT=시리즈 A 습격 요트
+
+! Translate "Ranch" and "Fire"
+IPL_RANCH=O'Neil Brothers 목장
+IPL_RANCH_LIT=O'Neil Brothers 목장 사고
+
+! Translate "Clubhouse"
+IPL_LOSTHOUSE=로스트 MC 클럽하우스
+
+! Translate "House"
+IPL_BCHOUSE=Banham Canyon 집
+
+IPL_TRNWRCK=기차 크래쉬
+IPL_REDCRPT=빨강 카펫
+
+! Translate anything but "FIB"
+IPL_FIBLBBY=FIB 로비
+! Translate anything but "FIB"
+IPL_FIBHELI=FIB 헬리콥터 사고
+! Translate anything but "FIB"
+IPL_FIBRBBL=부서진 FIB 건물
+
+! Translate "Triathlon"
+IPL_TRIA2=Alamo Sea 트라이애슬론
+! Translate "Triathlon"
+IPL_TIRA1=LSIA 트라이애슬론
+
+! Translate "Gates"
+IPL_ZGATES=포트 잔쿠도 군사 기지
+
+! Translate "Airfield" and "Boxes"
+IPL_BOXES=센디 쇼어 비행장 초소
+
+IPL_SPNN=세차용 스피너
+
+! Translate "Billboard" and "Graffiti"
+IPL_MAZEGRFF=메이즈 뱅크 광고판 낙서
+! Translate "Billboard" and "Graffiti"
+IPL_OILGRFF=Ron Oil 광고판 낙서
+! Translate "Billboard" and "Graffiti"
+IPL_FRUITBB=iFruit 광고판
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL1=Meltdown 광고판 (1)
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL2=Meltdown 광고판 (2)
+
+! Translate "Church" and "Grave"
+IPL_GRVE=Hill Valley 교회 무덤
+
+XSTPNSH=NPC 처벌
+NPRXPNSH=NPC가 다가오면 처벌
+PRX=다가오면
+NAIMPNSH=NPC가 조준하면 처벌
+NAIMPNSH_H=자신의 근처 구역에서 NPC가 조준하면 처벌합니다.
+NHOSPNSH=적대 NPC 처벌
+INCLUDE_EVERYONE=모두 포함
+INCLUDE_EVERYONE_M=모두 포함, 미션 및 습격에서만
+INCLUDE_FRIEND=친구 포함
+INCLUDE_PASS=탑승객 포함
+INCLUDE_CREW=조직 멤버 포함
+INCLUDE_ORG=조직 멤버 포함
+INCLUDE_H1=본인만 처벌받는 것이 아니라 해당 종류도 표적이 될 경우 처벌이 적용됩니다.
+INCLUDE_H2=위와 같지만 미션에서 더 효과적입니다.
+PAIMPNSH=플레이어가 조준 시 처벌
+PAIMPNSH_H=자신의 근처 구역에서 플레이어가 조준 시 처벌합니다.
+AIMME=나에게 조준 시에만 처벌
+AIMMEN=비활성화한다면 NPC는 누구를 조준하던지 상관없이, 자신의 구역을 조준했기에 처벌합니다.
+AIMMEP=비활성화한다면 플레이어는 누구를 조준하던지 상관없이, 자신의 구역을 조준했기에 처벌합니다.
+PNSH_EXPANON=익명의 폭발
+PNSH_EXP=자신의 폭발
+PNSH_BRN=불 타기
+PNSH_DIE=죽기
+PNSH_REV=부활
+PNSH_UNRM=무장 해제
+PNSH_UNRM_H=무기 무장을 해제합니다.
+PNSH_INTRP=방해
+PNSH_CWR=겁 먹이기
+PNSH_FLEE=겁 먹이기 (달아남)
+PNSH_PSH=밀기
+PNSH_MRK=AR 마커
+PNSH_SHWMDLNME=모델 이름 표시
+PSNH_FIX=수리
+PSNH_WEKN=약함
+PSNH_WEKN_H=체력을 줄여 쉽게 죽을 것입니다.
+
+! "ESP" as in "Extra Sensory Perception"
+NESP=NPC ESP
+! "ESP" as in "Extra Sensory Perception"
+PESP=플레이어 ESP
+
+! "ESP" as in "Extra Sensory Perception"
+BONESP=뼈 ESP
+XCLDED=죽은 NPC 제외
+
+! "ESP" as in "Extra Sensory Perception"
+BOXESP=상자 ESP
+
+RNDR_LWLTCY=낮은 지연 렌더링
+RNDR_LGCY=일반 렌더링
+RNDR_NTV=Native 렌더링
+
+! "ESP" as in "Extra Sensory Perception"
+NAMESP=닉네임 ESP
+
+MINTXTSCL=최소 글자 크기
+MAXTXTSCL=최대 글자 크기
+INVTXTSCL=글자 크기 전환
+
+! "ESP" as in "Extra Sensory Perception"
+LINESP=선 ESP
+
+ESPTAGS_H=태그들은 태그들의 시각적 우선 순위에 따라 이 목록에 정렬됩니다.
+
+CLRARE=구역 정리
+IGMISSENT=미션 엔티티 무시
+NDLY=지연 없음
+
+DELROPES=모든 로프 삭제
+
+DOORS=향상된 오픈 월드
+DOORS_H=월드를 더 넓게 보여주며 여유롭게 인테리어를 즐길 수 있습니다.
+
+DOORS_ENT={interior} 에 들어가기 위해 {input} 키를 누르세요.
+DOORS_EXT=떠나기 위해 {} 키를 누르세요.
+
+DEDSEC=워치 독스 해킹
+
+DEDSEC_HACK=해킹
+DEDSEC_HACK_H=화면에 어떤 치트가 보일지 설정할 수 있도록 해줍니다.
+
+DEDSEC_GENAC=일반 액션
+DEDSEC_VEHAC=차량 액션
+DEDSEC_VEHAC_H=차량 안에 있는 플레이어를 선택 중일 때 적용됩니다.
+DEDSEC_NPCAC=NPC 액션
+DEDSEC_PLRAC_H=도보 중 플레이어를 선택 중일 때 적용됩니다.
+
+DEDSEC_TUT_ESP=Look in the general direction of a player, NPC, or vehicle.
+DEDSEC_TUT_OPT=Use {} to show hacking options for your current target.
+DEDSEC_TUT_OPTMSE=the middle mouse button or {}
+DEDSEC_TUT_SEL=Move your camera to select an option and release the button to use it.
+
+DEDSEC_OPT_FRZ=Freeze
+DEDSEC_OPT_UFRZ=Unfreeze
+DEDSEC_OPT_EXP=Explode
+DEDSEC_OPT_UNRM=Disarm
+DEDSEC_OPT_DEL=Delete
+
+DEDSEC_OPT_DSTRY=Destroy
+DEDSEC_OPT_DRV=Drive
+DEDSEC_OPT_ENT=Enter
+DEDSEC_OPT_EMPTY=Empty
+DEDSEC_OPT_IGNITE=Ignite
+DEDSEC_OPT_SLINGSHOT=Slingshot
+
+DEDSEC_OPT_BRN=Burn
+DEDSEC_OPT_FLEE=Flee
+DEDSEC_OPT_CWR=Cower
+DEDSEC_OPT_REV=Revive
+
+DEDSEC_OPT_KLL=Kill
+DEDSEC_OPT_CGE=Cage
+DEDSEC_OPT_MNU=In Stand
+
+DEDSEC_STICKY=점착 선택
+DEDSEC_STICKY_H=해킹들은 오직 명시된 ms 후에 선택 해제됩니다. 컨트롤러 유저에게 유용합니다.
+DEDSEC_PASSIVE=어떤 목표도 선택되지 않았을 때...
+DEDSEC_ACTIVE=목표가 선택되었을 때...
+
+SHWRETCL=십자선 표시
+DRWLINE=선 표시
+DRWBOX=상자 표시
+
+DEDSECDELAY=휴대폰 열기 제한 시간
+DEDSECDELAY_H=해당 시간 (ms) 내에 키를 놓으면 해킹 대상이 있더라도 휴대폰을 열 수 있습니다.
+
+GGSR=GeoGuessr
+GGSR_H=산 안드레아스에 대해 얼마나 잘 아시나요?
+GGSR_VIEW=목표 보기
+GGSR_SBMT=정답 확인
+GGSR_SBMT_H=목적지를 설정하거나, 자유 시점을 사용하거나, 캐릭터를 움직이거나/순간 이동하여 위치를 입력하세요.
+GGSR_WIN=맞췄습니다!
+GGSR_OFF=목표에서 {} 미터 떨어져 있습니다.
+
+ARWP=AR 목적지
+ARWP_H=목적지에 비컨을 배치하여 Stand를 통해 일부 목적지와의 거리를 확인할 수 있습니다.
+
+ARGPS=AR GPS
+ARGPS_H=목적지로 안내합니다.
+
+ARBCNPLY=지정된 플레이어에게 AR 비컨 지급
+ARBCNPLY_P=플레이어 목록에 있는 유저
+ARBCNPLY_S=플레이어 목록 이내에 있는 유저
+
+WHNENTPLY=플레이어 목록에 들어갈 때...
+SPCPLY=해당 플레이어 관전
+
+WHNLVEPLY=플레이어 목록을 떠날 때...
+STPSPECPLY=플레이어 관전 중단
+
+STPSPEC=관전 중단
+
+SRT=정렬
+SRTBY=정렬
+SRTREV=역순 정렬
+
+! Or "Raised Tags"
+HOISTFLGS=우선 순위 태그
+HOISTFLGS_H=우선 순위 태그인 플레이어는 우선 순위 태그를 가지고 있지 않은 다른 플레이어보다 상단에 위치할 것입니다.
+
+NME=이름 / 닉네임
+SRTBY_SLT=슬롯
+
+SPID2=세션 플레이어 ID / 슬롯
+
+LANG_EN=영어
+LANG_FR=프랑스어
+LANG_DE=독일어
+LANG_IT=이탈리아어
+LANG_ES=스페인어 (스페인)
+LANG_BR=포르투갈어
+LANG_PL=폴란드어
+LANG_RU=러시아어
+LANG_KR=한국어
+LANG_TW=중국어 (간체)
+LANG_JP=일본어
+LANG_MX=스페인어 (멕시코)
+LANG_CN=중국어 (번체)
+
+DSCVYTME=검색 시간
+
+CTOS=정전
+CTOS_2=활성화, 차량 포함
+
+NOSKY=하늘 비활성화
+
+OVRDWTR=날씨 변경
+OVRDWTR_H=날씨를 무시합니다. (본인만 적용)
+OVRDOFF=기본값
+WTR_EXTRASUNNY=매우 맑음
+WTR_CLEAR=맑음
+WTR_CLOUDS=구름
+WTR_SMOG=스모그
+WTR_FOGGY=안개
+WTR_OVERCAST=흐림
+WTR_RAIN=비
+WTR_THUNDER=번개
+WTR_CLEARING=클리어
+WTR_NEUTRAL=평범한
+WTR_SNOW=눈
+WTR_BLIZZARD=눈보라
+WTR_SNOWLIGHT=약한 눈
+WTR_XMAS=크리스마스
+WTR_HALLOWEEN=맑은 할로윈
+WTR_RAIN_HALLOWEEN=비 오는 할로윈
+WTR_SNOW_HALLOWEEN=눈 오는 할로윈
+
+AESLGHT=미적 불빛
+PLCMNT=배치
+PLCMNT_CHR=캐릭터
+PLCMNT_CHR_H=자신의 캐릭터에서 한 개의 빛이 납니다.
+PLCMNT_CAM=카메라
+PLCMNT_CAM_H=카메라에서 한 개의 빛이 납니다.
+PLCMNT_OVL=타원형의 빛
+PLCMNT_OVL_H=81개의 빛이 캐릭터 주위에 타원형으로 배치됩니다.
+RNGE=범위
+ITNST=가시거리
+
+! Might also be called "falloff" or "edge gradient", I'm no expert on lights
+DFFRCTN=모서리 경사도
+
+WRLDBDR=월드 경계
+WRLDBDR_H=지정된 거리 이내인 경우 월드 경계를 표시합니다.
+
+WAT=물
+
+WVEBHV=파도 움직임
+SMTH=부드러움
+MGNT=자석
+
+ZDIFF=Z 좌표 차이
+WATZDIFFLOC=주변 물에 Z 좌표 차이만 적용
+
+STROVR=강도
+
+OPCDIF=불투명도
+WATOD_H=물의 불투명도를 변경할 수 있습니다. (본인만 적용)
+
+TRAINS=더 많은 기차 생성
+TRAINS_H=월드에 더 많은 기차가 생성됩니다.
+
+CLK=시간
+
+TIME=시간
+
+CLKSYNC=세션 내 시간 사용
+
+LKTIME=시간 잠금
+
+SYSTIME=시스템 시간 사용
+
+SMTHTRNS=부드러운 시간 흐름
+
+CLKPRST_12=정오
+CLKPRST_6=아침
+CLKPRST_0=새벽
+CLKPRST_18=점심
+
+!!!!!!!!!!!!!
+!! Players !!
+!!!!!!!!!!!!!
+
+ALLPLY=모든 플레이어
+
+XCLDS=제외 목록
+
+XCLDF=친구 제외
+XCLDM=자신 제외
+XCLDCM=조직 멤버 제외
+XCLDSU=Stand 유저 제외
+XCLDPR=플레이어 제외
+XCLDOG=CEO/MC 멤버 제외
+XCLD50=경찰 제외
+XCLDMIS=미션 제외
+XCLDMDR=모더 제외
+XCLDLMDR=모더 같은 제외
+
+XCLD_GRD=보디 가드가 이 종류의 플레이어들을 공격하는 것을 방지합니다.
+
+PS_ON_H=친구, 모르는 플레이어 및 자신을 포함합니다.
+PS_F_S=친구 및 모르는 플레이어
+PS_S=모르는 플레이어
+
+PSC_M=자신
+PSC_FM=친구 & 자신
+PSC_CFM=조직 멤버, 친구 & 자신
+
+PLYFTRLST=[플레이어]
+
+SLFHRM=정말로 그 액션을 자신에게 하고 싶은가요?
+
+FLAGS=태그
+FLAGS_A=플레이어 태그
+
+BRCKTS=괄호
+
+FLAG_SELF=셀프
+FLAG_FRIEND=친구
+FLAG_CREW=조직 멤버
+FLAG_ATTACKED=공격한 유저
+FLAG_HOST=호스트
+FLAG_SCRIPT_HOST=스크립트 호스트
+FLAG_SPEC=관전 중
+FLAG_GOD=무적
+FLAG_VEHGOD=파괴할 수 없는 차량
+FLAG_INVEH=차량 안
+FLAG_RC=RC 차량 사용
+FLAG_OTR=레이더 숨기기
+FLAG_INT=실내
+FLAG_TYPING=채팅 입력 중
+FLAG_DEAD=죽음
+FLAG_VPN=VPN
+FLAG_INVISIBLE=투명
+FLAG_ORG_MEMBER=CEO/MC 멤버
+
+NXTHST=다음 호스트
+
+! Plural version of FLAG_FRIEND
+FLAG_FRIEND_P=친구
+
+! Plural version of FLAG_CREW
+FLAG_CREW_P=조직 멤버
+
+! Plural version of FLAG_MOD
+FLAG_MOD_P=모더
+
+! Plural version of FLAG_ATTACKED
+FLAG_ATTACKED_P=공격한 유저
+
+PLYTP=플레이어에게 순간 이동
+PLYTP_A={} 에/게 순간 이동
+
+PLYTPVEH=플레이어의 차량으로 순간 이동
+PLYNVEH={} 이/가 차량에 있지 않습니다 :/
+
+PLYAPT=순간 이동할 장소 목록
+
+OFFICE_GARAGE={office}, 차고 {num}
+
+NEAR_ME=자신의 근처
+NEAR_WP=자신의 목적지 근처
+
+APTID=아파트 ID
+INTID=실내 ID
+
+PLY_VISIT=플레이어의 아파트 안으로 순간 이동
+
+PLYSMMN_D=플레이어 순간 이동/소환
+
+PLYSMMN=자신에게 순간 이동
+PLYSMMNPLY=플레이어에게 순간 이동...
+PLYSMMNWP2=자신의 목적지로 순간 이동
+PLYSMMNOBJ=자신의 목표지로 순간 이동
+
+PLYWPTP=해당 플레이어의 목적지로 순간 이동
+PLYWPTP_N={} 은/는 설정한 목적지가 없습니다.
+
+COPYWP=해당 플레이어의 목적지 복사
+
+PLYNAPT={} 이/가 아파트에 있지 않습니다 :/
+
+PLYCASINOTP=카지노로 순간 이동
+
+PLYFRND=친구 요청 보내기
+
+PLYINHIST=플레이어 기록에 넣기
+
+PLYENGMULT=엔진 파워 수정
+
+PLYGIFT=소환된 차량 선물
+PLYGIFT_H=플레이어가 차량 가치에 상관없이 모든 차량을 차고에 넣을 수 있습니다.
+PLYGIFT_W=계속 하면 {} 의 현재 차량을 모두 차고에 넣을 수 있습니다. 그러나, 해당 플레이어는 어떠한 개인 차량도 내보내지 말아야 하며, 플레이어가 교체할 수 있도록, 예를 들어, 값 싼 NPC 자동차들로 가득찬 차고에 차량을 넣어야 합니다.
+PLYGIFT_T=올바르게 했다면, 이제 {} 이/가 차량을 타고 정비소에 들어갈 수 있습니다. :)
+PLYVEHNCTRL={} 의 차량을 제어하지 못했습니다. :|
+
+FRGMDL=차량 모델 위조
+FRGMDL_W=게임이 쉽게 튕길 수 있으므로 다른 액션을 하지 말고 차량 위조 모델이 장착된 차량만 사용하여 차고로 운전하세요.
+
+! "Wanted" as in "Wanted Level", we don't want our ~~poor~~ criminals to be forever alone
+PLYBAIL=지명 수배 되지 않음
+
+PLYBEAST=야수로 변신
+
+PLYGRVNPC=중력에 끌리는 NPC
+PLYAGRNPC=적대적인 NPC
+
+PARTICLE=입자 효과
+PLRPTFXSPM=입자 효과 스팸
+
+HDELCL=본인에게만 숨기기
+HDELCL_H=입자 효과에 의해 도배되는 것을 방지합니다.
+
+PLYMUGLOP=강도 보내기 반복
+
+PLYRAGDOLL=레그돌
+
+PLYSHAKECAM=카메라 흔들기
+
+GIVESH=스크립트 호스트 주기
+
+PLYARM=모든 무기 지급
+PLYARM_P=무기 지급
+
+PLYAMMO=탄약 지급
+PLYAMMO_H=해당 플레이어의 현재 무기에 탄약을 지급합니다.
+PLYAMMO_T={} 은/는 현재 무기를 들고 있지 않습니다. :/
+
+PLYPARA=낙하산 지급
+
+BNTY=현상금 수배
+BNTY_T=현상금은 0$ 에서 10,000$ 사이로 지정해야합니다. :)
+
+BNTYSLF=자신에게 현상금 수배
+BNTYSLF_H=다른 플레이어에게 의심을 받지 않기 위해 자신에게 현상금을 걸기도 합니다.
+
+LOOPBNTY=현상금 반복
+
+FRNDLY=친절함
+
+TROLL=트롤링
+
+RAM=부딪치기
+
+PLYBLME=누명 킬
+
+PLY_NOTIFY=알림 보내기
+
+PLY_NOTIFY_REMO=현금이 지워짐
+PLY_NOTIFY_STOL=현금이 도난 당함
+PLY_NOTIFY_BANK=현금이 계좌에 임금됨
+
+PLY_NOTIFY_SPAM=알림 도배
+
+CPOTFT=아웃핏 복사
+
+CPVEH=차량 복사
+
+CMDBHLF=해당 플레이어로 명령어 사용
+CMDBHLFALL=모든 플레이어를 대신하여 명령어 사용
+
+PLYCHTMCK=채팅 따라하기
+
+PLYCHTOWO=채팅 메시지 OwO화
+
+SHWCAM=카메라 표시
+
+SMS=메시지 보내기
+
+SMS2=텍스트 메시지
+SMSS=텍스트 메시지
+
+DTS=모더 감지
+DT_ANY=모든 감지
+
+ADT=모더 감지 방지
+
+ADT_SPEC_H=이 기능과 관계 없이, 카메라 위치는 항상 동기화되기 때문에 관전 관련으로 감지될 수도 있습니다.
+
+CLSFN=분류
+CLSFNS=분류
+CLSFN_ANY=모든 분류
+
+DT_T={player} 이/가 {reason} 인 이유로 모더로서 감지되었습니다.
+CLSFN_T={player} 이/가 {classification} (으)로 분류되었습니다.
+DT_CLSFN={player} 이/가 ({reason}) 인 이유로 감지되었으며 {classification} (으)로 분류되었습니다.
+
+REACT_T={toast} — 리액션 {reaction} 을/를 적용 중입니다.
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_K=킥
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_C=크래쉬
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_T=연결 시간 초과
+
+CLSFN_N_H=이 플레이어는 모더나 어드민으로서 감지된 것이 없습니다.
+CLSFN_PM=모더일 수 있는
+CLSFN_LM=모더 같음
+FLAG_MOD=모더
+FLAG_MODAMN=모더나 락스타 어드민
+CLSFN_MA_H=Stand는 이 플레이어가 모더인지 락스타 어드민인지 조사 중입니다.
+FLAG_AMN=락스타 어드민
+
+! Plural version of CLSFN_LM
+CLSFN_LM_P=모더 같음
+
+! Plural version of FLAG_AMN
+FLAG_AMN_P=어드민
+
+CLSFNTAGSLF=자신의 분류 태그
+
+MDDRDT_H=클릭 시 이 모더 감지 옵션을 없앱니다.
+MDDRDT_H_LUA=이 감지는 {} 에 의해 추가되었습니다. 클릭하여 제거하세요.
+
+DT_H_PREMPT=이것은 선제적인 모더 감지입니다.
+
+C2C=클릭해서 값을 복사하세요.
+C2CN=클릭해서 닉네임을 복사하세요.
+C2OL=클릭해서 열기: {link}
+
+C2IN=클릭해서 값을 입력하세요.
+C2APPLY=클릭해서 값을 저장하세요.
+C2SEL=클릭해서 값을 선택하세요.
+
+MDDRDT_SUI=Stand 유저 감지
+SUI=Stand 유저 감지 (SUI)
+MDDRDT_SUI_H=다른 Stand 유저를 감지하지만 그 유저가 자신을 감지할 수도 있습니다.
+
+DT_SU=Stand 유저
+DT_SU_C=Stand 유저 (코로딩)
+CLNG=코로딩
+
+CMDSUI=이 명령어를 사용하려면 Stand 유저 감지를 사용하도록 설정해야 합니다.
+
+CMDSTAND=이 명령어는 Stand 유저 감지를 사용하도록 설정된 다른 Stand 유저에게만 사용할 수 있습니다.
+
+HS=호스트쉐어™
+HS_H=자신이 호스트인 경우, 두 사람 모두 S.U.I. (Stand 유저 감지) 를 사용 설정한 경우 동료 스탠드 사용자가 호스트 권한을 활용할 수 있도록 허용합니다.
+
+MDDRDT_SID=다른 메뉴 유저 감지
+MDDRDT_SID_T={} 유저
+
+MDDRDT_RAC=락스타 안티 치트 (RAC)
+
+MDDRDT_HLTH=모드 사용 체력
+
+MDDRDT_LNGDED=오랜 시간 동안 죽어 있음
+
+MDDRDT_LNGOTR=오랜 시간 동안 레이더 은신 사용
+
+MDDRDT_ARMR=방탄복이 많음
+
+MDDRDT_PRES=프리센스 스푸핑
+MDDRDT_PRES_H=세션 스푸핑 뿐만 아니라 기타 미세한 스푸핑까지 감지합니다.
+
+NMECHNG=이전에 {newname} 을/를 {oldname} (으)로 본 적이 있습니다. :O
+
+MDDRDT_RID3=락스타 직원 RID
+
+MDDRDT_T2IP=Take-Two IP 주소
+
+DT_HT_2=스푸핑된 호스트 토큰 (강함)
+DT_HT_1=스푸핑된 호스트 토큰 (중간)
+DT_HT_0=스푸핑된 호스트 토큰 (약함)
+DT_HT_3=스푸핑된 호스트 토큰 (기타)
+
+MDDRDT_TRFRM=유효하지 않은 모델
+
+MDDRDT_GODATK=무적인 상태에서 공격
+
+MDDRDT_RSDEV=락스타 개발자
+MDDRDT_RSDEV_H=플레이어들이 일반적인 투표로 추방하는 방법을 이용해 킥할 수 없도록 만듭니다.
+
+MDDRDT_RSQA=락스타 게임 테스터 표시
+MDDRDT_CHEAT=치트 사용자 표시
+
+SPF_H_FLAG=오직 다른 모더들만 이것을 볼 수 있습니다.
+
+MDDRDT_RP2=유효하지 않은 랭크/RP
+MDDRDT_RP3=올바르지 않은 RP
+MDDRDT_RP4=스푸핑된 랭크
+
+MDDRT_NONET=차단된 네트워크 이벤트
+MDDRT_NONET_H=필수적인 네트워크 이벤트인 엔티티의 컨트롤 등을 막았을 지도 모르는 플레이어를 나타냅니다.
+
+MDDRT_DRIVEB=치트 사용한 차량 내 무기 사용
+
+MDDRT_SILENTCHAT=타이핑 없이 채팅
+
+MDDRT_BOUNTYSPAM=현상금 수배 스팸
+MDDRT_BOUNTYSPAM_H=세션의 모든 플레이어에게 현상금을 수배하는 것과 같이, 일반적인 플레이어가 불가능한 현상금 수배를 나타냅니다.
+
+MDDRT_SUSSYBOUNTY=치트 사용 현상금
+MDDRT_SUSSYBOUNTY_H=$6969 같은, 일반적인 플레이어가 불가능한 액수의 현상금 수배를 하는 것을 나타냅니다.
+
+MDDRT_EXPBLAME=폭발 누명
+MDDRT_EXPBLAME_H=참고로 또한 이 기능은 다른 모더가 타 플레이어을 폭발시킬 때에도 감지합니다.
+
+MDDRT_EXPL=치트 사용 폭발
+MDDRT_EXPL_B=폭발이 자신에게 영향이 미치지 않도록 해줍니다. 이 기능은 다른 플레이어를 도와주진 않습니다.
+MDDRT_EXPL_H=주로 모더들이 플레이어들에게 폭발을 일으키거나 폭발탄을 사용할 때 감지합니다. 참고로 가끔 일반적인 유저를 모더로 감지할 수도 있습니다.
+
+VICTIM=피해자: {}
+
+MOD_ORGNAME=치트 사용 조직 이름
+
+MDDRT_CAYO=플레이어 목록으로부터 숨겨짐
+
+MDDRT_MISC=치트 사용된 데이터
+
+ATTKRS=공격자
+ATTRKS_PRE_1=제트키 보내기
+ATTRKS_PRE_2=바이커 보내기
+ATTRKS_PRE_3=광대 보내기
+ATTRKS_PRE_4=헬리콥터 보내기
+ATTRKS_PRE_5=BMX 갱 보내기
+ATTRKS_PRE_6=농부 보내기
+ATTRKS_PRE_7=미니 탱크 보내기
+ATTRKS_PRE_8=군대 보내기 (결합된 무기)
+ATTRKS_PRE_9=스푸키 팬텀 보내기
+
+ACCURACY=정확도
+
+AGGR=공격
+AGGR1=친절함
+AGGR1_H=자신과 다른 플레이어를 AI 공격자로부터 보호합니다. 플레이어들을 공격하지 않을 것입니다.
+AGGR2=방어
+AGGR2_H=적대적인 목표로부터 자신을 보호합니다.
+AGGR3_H=적대적인 목표로부터 자신을 보호하며, 보통 적대적인 목표를 발견하자마자 사로 잡습니다.
+DEL_ATTKRS=모든 공격자 삭제
+FILL_VEH=차량 채우기
+FILL_VEH_H=각각의 공격자를 위한 새로운 차량을 만드는 것 대신에, 있던 차량에 먼저 공격자를 가득 채울 것입니다.
+
+! As in "Kill the engine"
+KLL=고장
+! The "EMP" projectile in-game that turns your car off. 
+EMP=EMP
+FLIPPLRVEH=뒤집기
+SPINVEH=돌리기
+POP_TYRES=타이어 터뜨리기
+DETACH_AIR=날개 떼기
+DETROIT=휠 떼어내기
+SLIPPERY=미끄러운 타이어
+SLIPPERY_H=비활성화하기 위해서는 조금의 시간이 필요합니다.
+DEL_DOORS=문 제거
+IGNITE=불에 태우기
+TURNAROUND=주변 돌기
+DSTRYPROP=프로펠러 제거
+BREAKBOOM=꼬리 날개 분리시키기
+
+SLINGSHOT=슬링 샷
+
+V_F=앞으로
+V_B=뒤로
+
+PLYDDVEH=차량 운전 비활성화
+PLYDDVEH_H=아파트 초대로 해결할 수 있는 것들 중에서 차량을 운전할 수 없는 상태로 만듭니다.
+
+INFLOAD=무한 로딩
+
+INFRING=무한 휴대폰 전화 울림
+
+FRZ=얼리기
+
+FAKEDROP=가짜 돈 지급
+
+NOPSSVE=패시브 모드 차단
+
+! Putting someone in a cage
+PLYCGE=케이지에 가두기
+
+PLYCAGE_TINY=작은 케이지
+PLYCAGE_GOLD=골드 케이지
+PLYCAGE_FNCE=펜스 케이지
+PLYCAGE_STNT=스턴트 튜브
+
+! Being put in a cage
+CGE=케이지에 가둘 시
+
+PLYKLL=죽이기
+
+PLYEXP=폭발
+
+! For reference: Block Blaming is PTX_PSV
+PLYKLL_H='누명 킬 차단' 기능을 사용하였거나 패시브 모드 상태이면 작동하지 않습니다.
+
+CGES=케이지
+
+PLYKCK=킥
+
+PLYKCK_T_H=Easy.
+! Single target version of PLYKCK_T_C.
+PLYKCK_T_C=해당 플레이어를 떠나도록 해볼게. :)
+! Multiple targets version of PLYKCK_T_C_M.
+PLYKCK_T_C_M=해당 플레이어들이 떠나도록 해볼게. :)
+
+PLYKCK_SMRT=스마트
+PLYKCK_SMRT_A=스마트 킥
+PLYKCK_SMRT_H2=모든 킥을 이용해 세션에서 킥합니다.
+
+PLYKCK_BL=블랙리스트
+PLYKCK_BL_A=블랙리스트 킥
+PLYKCK_BL_H=투표 킥을 당한 것 같이 해당 플레이어를 블랙리스트에 추가하고, 그렇지만 해당 플레이어에게는 디싱크 킥과 비슷하게 킥 당합니다.
+
+PLYKCK_H=호스트 킥
+PLYKCK_H_H=투표 킥 메커니즘을 이용하여 플레이어를 킥합니다.
+
+PLYKCK_NH=논-호스트 킥
+
+PLYKCK_PC=참수
+
+PLYKCK_B=브레이크 업
+PLYKCK_B_G=브레이크 업 킥
+
+BRKUR=브레이크 업 킥 액션
+BRKUR_H=자신이 세션 호스트일 때와 해당 브레이크 업 킥이 자신에게 날라온 게 아니라면 작동합니다.
+
+KBKR=가짜 브레이크 업 킥
+KBRK_E=가짜 브레이크 업 킥
+
+GEN_H_HOST=이것은 자신이 세션 호스트일 때만 작용합니다.
+GEN_H_NHOST=이것은 자신이 세션 호스트가 아닐 때만 작용합니다.
+
+PLYBAN=밴
+
+PLYKCK_O=오르가즘
+
+PLYKCK_L=러브 레터
+PLYKCK_L_G=러브 레터 킥
+
+PLYKCK_H_DSCRT=킥 할 플레이어는 누가 자신을 킥 했는지 알 수 없는 별개의 킥입니다.
+
+PLYKCK_H_B_H=만약 자신이 호스트라면, 다른 플레이어는 이 킥을 막을 수 없습니다.
+PLYKCK_H_HO=자신이 호스트일 때만 사용 가능합니다.
+PLYKCK_H_B_P=유명한 메뉴는 이 킥/크래쉬를 막습니다.
+PLYKCK_H_B_M=대부분의 메뉴는 이 킥/크래쉬를 막습니다.
+
+BE_K=배틀아이 킥
+BE_B=배틀아이 밴
+BE_B_H=킥을 받는 당사자가 게임을 재시작할 때까지 GTA 온라인에 들어올 수 없도록 합니다.
+
+PLYCRSH=크래쉬
+SUI_ET=크래쉬는 Stand 유저에게 제대로 작동할 가능성은 거의 없는데도 사용할건가요? :^)
+
+PLYCRSH_H_AOE2=참고: 목표 플레이어 근처에 있는 플레이어들도 크래쉬 당할 수도 있습니다.
+
+PLYCRSH_E=엘레강트
+PLYCRSH_G=양상추
+PLYCRSH_V=차량
+PLYCRSH_T=스팀롤러
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T=크래쉬 ({type}) 을/를 막았습니다.
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T_BLM=크래쉬 ({type}) 을/를 막았고, {player} 이/가 해당 크래쉬를 유발한 것 같습니다.
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_TRNLOOP=기차 반복
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_ATTLOOP=부착 반복
+
+! Buffer overruns cause memory corruption, which could go unnoticed, but could also crash the game.
+! Type may be a codename such as XA, or a human-readable name, such as "Ped Outfit Texture".
+BU_T=크래쉬를 유발하는 버퍼 오버런 ({type}) 을/를 방지했습니다.
+
+! To be used within BU_T
+BU_TEX=NPC 아웃핏 텍스처
+
+BU_VEHLIT=차량 라이트
+
+INVTASK=한 NPC가 유효하지 않은 작업을 작동 중이라 중단시키는 중입니다.
+
+TIMEOUT=연결 시간 초과
+FLAG_TIMEOUT=연결 시간 초과 상태
+TIMEOUT_H=임시적으로 해당 플레이어가 보내는 대부분의 네트워크 이벤트들을 막습니다.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Player > Information !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+INFO=정보
+
+NME_S=플레이어 닉네임 (Stand)
+NME_H=플레이어 닉네임 (세션 내)
+NME_R=플레이어 닉네임 (소셜 클럽)
+
+STUS=상태
+
+DMG_WEAP=무기 데미지 변경
+DMG_MELEE=근접 무기 데미지 변경
+
+ORG=조직
+
+ORGT_SV=CEO
+ORGT_MC=MC
+
+BOSS=두목
+
+STS=통계
+
+NDATA=데이터 없음
+
+CHAR1=캐릭터 1
+CHAR2=캐릭터 2
+CHAR1_ACT=캐릭터 1 (활성화)
+CHAR2_ACT=캐릭터 2 (활성화)
+
+CNNTN=연결
+
+IP=IP 주소
+RLYIP=실질적 IP
+LANIP=랜 IP
+PRT=포트
+RLYPRT=실질적 포트
+
+CONVIA=이 방식을 이용해 연결됨:
+CONVIA_P2P=P2P
+CONVIA_RLY=릴레이
+CONVIA_RLY_S=릴레이를 이용해 연결됨
+CONVIA_PLY_S={} 을/를 이용해 연결됨
+
+PING=핑
+MS=ms
+
+MNY_W=지갑 돈
+MNY_B=은행 돈
+MNY_A=돈 합계
+
+DIST=거리
+
+KLLS=사살
+DTHS=사망
+KD=K/D 수치
+
+FAVVEH=가장 좋아하는 차량
+FAVWEAP=가장 좋아하는 무기
+FAVRDSTAT=즐겨 찾는 라디오
+
+OWNBKR=자신의 벙커
+OWNFAC=자신의 시설
+OWNCLB=자신의 나이트클럽
+
+HOSTKN=호스트 토큰
+
+HOSTQPOS=호스트 우선 순위
+
+HQSA_NH=닉네임 Hash
+
+GIP_Q=요청 보류 중
+GIP_P=요청 실행 중
+GIP_F=요청 실패
+
+CT=도시
+RGION=지역
+CTRY=국가
+
+! E.g. "Discovered: 10 seconds ago"
+DSCVAGO=만난 후 시간
+
+! E.g. "Invulnerable For: 10 seconds"
+GODTIME=무적인 시간
+
+CRW=조직
+CRWTG=태그
+MOTTO=조직 좌우명
+ALTBDG=배지
+
+!!!!!!!!!!!!!!!
+!! Durations !!
+!!!!!!!!!!!!!!!
+
+DUR_AGO={} 전
+
+DUR_S=초
+DUR_S_P=초
+DUR_M=분
+DUR_M_P=분
+DUR_H=시간
+DUR_H_P=시간
+DUR_D=일
+DUR_D_P=일
+
+!!!!!!!!!!!!
+!! Online !!
+!!!!!!!!!!!!
+
+SESS=세션
+NWSESS=새로운 세션 생성
+
+NWSESS_CHAR=캐릭터 선택 창에서 멈추기
+
+NWSESS_SP=공개 세션 생성
+NWSESS_IO=초대 전용 세션 생성
+NWSESS_CC=비공개 조직 세션 생성
+NWSESS_C=조직 세션 생성
+NWSESS_CF=비공개 친구 세션 생성
+NWSESS_S=솔로 세션 생성
+NWSESS_FF=친구가 있는 세션에 조인
+NWSESS_FC=조직 멤버가 있는 세션에 조인
+NWSESS_FP=공개 세션 찾기
+NWSESS_NP=새로운 공개 세션 찾기
+NWSESS_NP_H="새로운 공개 세션 찾기" 는, 동일한 세션이 계속 되지 않도록 먼저 새 세션을 시작합니다.
+NWSESS_CTOR=크리에이터 모드
+NWSESS_SCTV=SCTV
+
+TRK=트랙
+TRKD=트랙됨
+HISTTRK=트랙된 플레이어
+HIST_KEEP_TRA=트랙된 플레이어 유지
+
+TRK_H=해당 플레이어가 세션을 바꾸거나, 온라인, 오프라인이 되면 알려줍니다.
+
+TRK_T_CNF=트랙 상태가 업데이트 되었을 때...
+
+INJTRKINFO=인젝 시에 온라인 상태인 트랙된 플레이어 표시
+
+META=메타
+
+RSADMINS=락스타 어드민
+
+! SC = Social Club
+SCFRIENDS=소셜 클럽 친구
+
+ADDMISS=놓친 플레이어
+PLYNOTESET=노트 설정
+PLYNOTESET_H_A=플레이어 기록에서 모든 어드민의 노트를 설정합니다.
+TRCKALL=모두 트랙
+UTRCKALL=모두 트랙 해제
+WHTLALL=모두 화이트 리스트
+UWHTLALL=모두 화이트 리스트 해제
+HIST_DNG=위험 구역
+HIST_CLR=플레이어 기록 초기화
+
+ONLSTS=온라인 상태
+ONLSTS_O2=오프라인 상태
+ONLSTS_S=스토리 모드
+ONLSTS_H={} 호스트 중
+ONLSTS_C={session_type} 에 위치함
+ONLSTS_CH={host} 이/가 호스트 중인 {session_type} 에 위치함
+
+TRK_T={name} 이/가 {activity} 상태입니다.
+
+ONLSTS_TRK_O=오프라인인
+ONLSTS_TRK_S=스토리 모드인
+ONLSTS_TRK_H={} 호스트 중인
+ONLSTS_TRK_C={} 내에 위치한
+ONLSTS_TRK_CH={host} 이/가 호스트 중인 {session_type} 에 위치한
+
+ST_S=솔로 세션
+ST_I=초대 전용 세션
+ST_F2=비공개 친구 세션
+ST_CC=비공개 조직 세션
+ST_C=조직 세션
+ST_P=공개 세션
+ST_O=유효하지 않은 세션
+
+! Short online statuses:
+SHTONLSTS_O2=오프라인
+SHTONLSTS_S=스토리 모드
+SHTONLSTS_ST_S=솔로 세션
+SHTONLSTS_ST_I=초대 전용 세션
+SHTONLSTS_ST_CF=비공개 친구 세션
+SHTONLSTS_ST_CC=비공개 조직 세션
+SHTONLSTS_ST_C2=조직 세션
+SHTONLSTS_ST_P=공개 세션
+SHTONLSTS_ST_O=기타 세션
+
+PTX=프로텍션
+PTX_W=Stand의 프로텍션을 비활성화해도 코로딩이 더 안정적이게 되진 않습니다. 프로텍션을 비활성화하는 것은 단지 프로텍션 기능만 비활성화 하는 것입니다.
+
+! Alternatively, "Protections Help Page"
+PTXGDE=프로텍션 설정 도움 페이지
+
+COLOAD=코로딩
+COLOAD_DPTX=코로딩할 때 {} 비활성화
+
+PTX_CRSHE=크래쉬 이벤트
+
+PTX_KICK=킥 이벤트
+PTX_KICK_SH=스크립트 호스트 킥
+
+PTX_INV=유효하지 않은 이벤트
+PTX_INV_H=유효하지 않은 이벤트: 모더만 보낼 수 있는 이벤트
+
+PTX_WEIRD=일반적이지 않은 이벤트
+PTX_WEIRD_H=모더에 의해 보내졌을지도 모르지만 또한 적은 상황에서 일반적인 유저가 보냈을 가능성도 있습니다.
+
+VEHKICK=차량에서 내보내기
+
+INTKICK=실내에서 내보내기
+
+TRIGDEFD=비즈니스 배틀 걸기
+
+PLYFRCECAMFRNT=시선 위치 강제 조종
+PLYFRCECAMFRNT_H=일부 플레이어의 무적을 해제할 수도 있습니다.
+
+PLYMISSION=강제 자유 모드 미션
+PLYMISSION_H=강제로 목표 플레이어를 자유 모드 미션 참가 상태로 만듭니다. 그러면, 패시브 모드를 하거나 건물 내에 들어갈 수 없게 됩니다.
+
+! Forces the recipient into a mission start screen
+SND2JB=강제 작업 보내기
+
+SND2JB_0=시비 붙은 메리웨더
+SND2JB_1=하프트랙 훔치기
+SND2JB_2=탈출 전략
+SND2JB_3=숨겨진 자금
+SND2JB_4=탄로난 정체
+SND2JB_5=두더지 잡기
+SND2JB_6=데이터 브리치
+SND2JB_7=알력 싸움
+
+PTX_BAIL=지명 수배 지우기
+
+PTX_EVTS=이벤트
+PTX_NET=네트워크 이벤트
+PTX_NET_ANY=모든 이벤트
+
+PTX_RAWNET=모든 네트워크 이벤트
+PTX_RAWSYNC=로우 싱크
+
+PTX_RAW_W=이 기능은 고급 유저들은 위한 것입니다. 해당 기능이 뭘 뜻하는지 모른다면, 값을 바꾸지 말고, 특히, 모든 것을 차단하지 마세요.
+
+PTX_NET_R_B_W=꼭 해야할 이유가 있지 않다면, 모든 옵션을 차단하지 마세요.
+
+PTX_APUP=어떤 픽업을 주울 시
+PTX_APUP_T={} 종류의 픽업을 주웠습니다.
+PTX_APUP_L=픽업을 주웠습니다.
+
+PTX_CASHPUP=현금을 주울 시
+PTX_CASHPUP_T=현금을 주웠습니다.
+
+PTX_RPPUP=RP를 주울 시
+PTX_RPPUP_T=RP를 주웠습니다.
+
+PLYKCK_IPUP=유효하지 않은 픽업 킥
+
+PTX_IPUP=유효하지 않은 픽업을 주울 시
+PTX_IPUP_H=세션에서 킥 당하게 하는 유효하지 않은 픽업을 줍는 경우의 액션을 뜻합니다.
+PTX_IPUP_T=유효하지 않는 픽업을 주웠습니다.
+
+PTX_APT=아파트 초대
+
+PTX_CAYO=카요 페리코 초대
+
+PTX_DRVCTRL=차량 인수
+PTX_DRVCTRL_H=운전 중일 때 어떤 플레이어가 차량 제어권을 획득하려고 할 때 순간 이동으로 사용할 수 있습니다.
+
+SE=스크립트 이벤트
+
+GIVE_WEAPON_EVENT=무기 지급 이벤트
+REMOVE_WEAPON_EVENT=무기 제거 이벤트
+REMOVE_ALL_WEAPONS_EVENT=모든 무기 제거 이벤트
+FIRE_EVENT=화염
+EXPLOSION_EVENT=폭발
+NETWORK_PTFX_EVENT=PTFX
+NETWORK_PLAY_SOUND_EVENT=소리 재생
+
+RCT_T=알림
+RCT_L_F=로그 파일에 적기
+RCT_L_C=콘솔에 적기
+RCT_C=채팅에 방송
+RCT_C_T=팀 채팅에 방송
+
+RTC_PLY=플레이어 액션
+
+RCT_N_B=플레이어의 네트워크 이벤트 차단
+RCT_BIS=플레이어의 들어오는 싱크 차단
+RCT_BOS=플레이어의 나가는 싱크 차단
+RCT_N_L=플레이어의 네트워크 이벤트 기록
+RCT_SI_L=플레이어의 들어오는 싱크 기록
+RCT_SO_L=플레이어의 나가는 싱크 기록
+RCT_N_T=플레이어의 네트워크 이벤트 알림
+RCT_SI_T=플레이어의 들어오는 싱크 알림
+RCT_SO_T=플레이어의 나가는 싱크 알림
+
+RCT_T_OUT={event} 이/가 {player} 에(게) 보내졌습니다.
+PTX_NET_R_T_T={event} 을/를 {player} 이/가 보냈습니다.
+RCT_T_AGAINST={sender} 이/가 {event} 을/를 {target} 에(게) 보냈습니다.
+
+PTX_NET_R_B=차단
+
+! What "Block" does for chat messages
+PTX_NET_R_B_H_C=자신은 채팅 메시지를 볼 수 없도록 막지만, 다른 플레이어는 채팅 메시지를 볼 수 있습니다.
+
+
+PTX_S=싱크
+PTX_INC=들어오는
+PTX_OUT=나가는
+PTX_SI=들어오는 싱크
+PTX_SO=나가는 싱크
+PTX_SI_ANY=모든 들어오는 싱크
+
+OUTSBH=호스트로 가는 나가는 싱크 차단
+OUTSBH_H=이렇게 하면 호스트가 아닌 플레이어는 배틀아이 킥을 피할 수 있지만, 호스트는 플레이어와 상호작용할 수 없게 됩니다.
+
+PTX_CSB=커스텀 모델 싱크 반응
+ADDMDL=모델 추가
+PTX_CSB_T={player} 이/가 {hash} 모델 싱크를 보냈습니다.
+
+PTX_IMS=유효하지 않은 모델 싱크
+PTX_IMS_T={player} 이/가 {hash} (Hash 값) {type} (종류) 인 유효하지 않은 모델 싱크를 보냈습니다.
+
+PTX_WOS=월드 오브젝트 싱크
+
+PTX_ATTACH=부착물 스팸
+
+PTX_BEWARE_RESYNCH=모더가 소환한 오브젝트에 다른 플레이어가 재 연동될 수 있으므로, 그것을 조심하세요.
+
+PTX_S_CC=클론 생성
+PTX_S_CU=클론 업데이트
+PTX_S_CD=클론
+PTX_S_ACC=클론 생성 알림
+PTX_S_ACU=클론 업데이트 알림
+PTX_S_ACD=클론 삭제 알림
+
+PLY_BOS_H_A=다른 플레이어에게 자신의 위치를 업데이트하지 않으므로 이 기능을 사용하도록 설정한 경우 자신이 조인 중임을 알 수 없도록 할 수도 있습니다.
+PLY_BOS_H_1=이 플레이어에게 자신의 위치 업데이트를 중지합니다.
+
+MYSLF=자신에게
+SOMELS=다른 플레이어에게
+
+KARMA=반사
+
+LLKT=러브 레터 킥 당했을 때 알림
+LLKT_T=러브 레터 킥에 의해 킥 당했습니다.
+
+DSKK=디싱크 킥 반사
+DSKK_H2=일부 다른 메뉴의 디싱크 킥 옵션은 자신에게 역효과를 냅니다.
+
+LLLUBE=러브 레터 루브
+LLLUBE_H=호스트가 러브레터에 킥할 플레이어를 고를 때 자신이 표적이 될 가능성이 낮아집니다.
+LLLUBE_1=일반 유저가 사용
+LLLUBE_1_H=몇몇 모더가 잘못 알고 이것을 감지할지도 모릅니다.
+LLLUBE_0_H=이것은 가장 효과적인 옵션이나, 다른 모더들이 이것을 감지할 수 있습니다.
+
+CAMSHAKE=카메라 흔들기 이벤트
+
+EXPSPAM=폭발 스팸
+EXPSPAM_H=누군가가 자신의 캐릭터에 폭발을 스팸할 때 적용됩니다.
+
+RAGDOLLEVT=레그돌 이벤트
+
+SNDSPM=소리 스팸
+
+MODDMGEVT=모드 사용한 데미지 이벤트
+
+PRESES=프리센스 이벤트
+
+BFSTN=친구 Stat 알림 차단
+BFSTN_H="특정 플레이어가 특정 이벤트를 완료했습니다." 와 같은 알림을 차단합니다.
+
+BJI=작업 초대 차단
+
+PTX_VK=추방 투표 차단
+PTX_VK_T=추방 투표를 차단했습니다. :)
+
+MAGIC=마법
+PTX_VK_SP=SCTV / 관전 모드
+PTX_VK_F1=자유 모드 미션 1
+PTX_VK_F2=자유 모드 미션 2
+PTX_VK_F3=자유 모드 미션 3
+PTX_VK_F4=자유 모드 미션 4
+
+PTX_BJ=조인 차단 반사
+PTX_BJ_H=호스트가 아닌 플레이어가 자신의 세션 조인을 차단하는 것을 감지해 해당 유저를 세션에서 제거해버리고, 조인할 수 있도록 합니다.
+PTX_BJ_T2={} 이/가 조인을 막고 있으므로, 세션에서 나가게 하도록 노력해보겠습니다.
+
+PTX_NB=세션 연결 끊기 차단
+PTX_NB_1="플레이어가 세션에 없습니다"
+PTX_NB_2=주요 조직 바꾸기
+
+PTX_NB_SPC=관전 관련
+PTX_NB_SPC_H=목표 플레이어가 떠난 것 등을 뜻합니다.
+
+PTX_NB_O=기타 사유
+PTX_NB_O_H=시간 초과 등의 사유를 뜻합니다.
+
+PTX_NB_T=게임이 세션 연결을 끊으려던 것을 ({a1}, {a2}, {a3}); {action}.
+PTX_NB_T_A=허용했습니다
+PTX_NB_T_B=차단했습니다
+
+PTX_HCK=호스트가 제어하는 킥
+
+PTX_HKK=호스트 킥 반사
+PTX_HKK_H=해당 플레이어의 호스트 킥에 반응하기 위해 호스트를 킥합니다. 참고로 자신도 세션에서 킥된 상태가 될 것입니다.
+
+PTX_HK=호스트 킥 강도 줄이기
+PTX_HK_H=호스트 킥을 당했을 때 1인 세션이 되며 알림을 표시하는 방식으로 호스트 킥 강도를 줄입니다.
+PTX_HK_T=누군가가 ({method}) 방법으로 호스트 킥을 사용했으며, {player} 일 가능성이 높습니다.
+
+HKI=호스트가 곧 자신을 킥할 것입니다.
+HKI_BS=해당 플레이어와 싱크를 차단하는 것을 제안드립니다.
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_V=추방 투표
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_N=네트워크 오류
+
+PTX_PSV=누명 킬 차단
+PTX_PSV_H2=다른 플레이어를 데미지를 입히지 못하게 만들어 다른 플레이어도 본인을 데미지 입힐 수 없게 만듭니다.
+PTX_PSV_W=다시 한 번 더 강조합니다. 이 기능을 활성화한 상태에서는 어떤 플레이어에게도 데미지를 입힐 수 없습니다. 이 옵션을 활성화하는 대신 상황에 맞게 메뉴를 사용하여 반전 조준 상관 관계를 설정할 수도 있습니다.
+
+PTX_ENTSPAM=엔티티 스팸 차단
+PTX_ENTSPAM_STATUS={name} 이/가 {count} 개의 엔티티 스팸 보냄
+PTX_ENTSPAM_NEW={} 의 엔티티 개수가 너무 많습니다. 처리 중입니다...
+PTX_ENTSPAM_CALM={} 상황이 해결되었습니다. :)
+
+VEHPARTS=차량 부품 분리
+
+ACCAM=크래쉬 방지 카메라
+PTX_ENTSPAM_USECAM=크래쉬 방지 카메라 자동 사용
+PTX_ENTSPAM_CAM=카메라 시점이 이렇게 변경된 것에 대해선 죄송하지만, 더 이상 렌더링이 매끄럽지 않을겁니다. "tp lsia" 나 "tp mtchil" 명령어를 사용하는 것이 이 상황을 빠르게 해결할 수 있게 할 것입니다.
+
+PTX_DRAW=죽음을 유발하는 렌더링 방지
+PTX_DRAW_H=크래쉬를 유발하는 과도한 렌더링을 멈춥니다.
+PTX_DRAW_T=과도한 렌더링이 발생하였습니다.
+
+PTX_DELSTALE=쓸모 없는 오브젝트 삭제
+PTX_DELSTALE_H=오브젝트의 모델 정보가 언로드된 오브젝트를 삭제시킵니다.
+PTX_DELSTALE_T=오브젝트 모델이 {} 이며 모델 정보가 언로드된 오브젝트를 삭제 중입니다.
+PTX_DELSTALE_T_2=파편 오브젝트 모델이 {} 이며 모델 정보가 언로드된 파편 오브젝트를 삭제 중입니다.
+
+NOMODPOP=치트 사용 팝 증가 구역 삭제
+NOMODPOP_H=치트 사용 인구 증가 구역을 삭제하여 GTA 온라인이 일반적인 때보다 더 황량해 보이지 않도록 만듭니다.
+NOMODPOP_T=치트 사용 인구 증가 구역을 삭제했습니다. :)
+
+NOBEAST=야수로 변하기 비활성화
+NOBEAST_H=자유 모드 이벤트 중 "야수 사냥" 이벤트에서 야수로 변하는 것을 막으며, 모더들이 자신을 트롤링하려고 쓸 수도 있습니다.
+NOBEAST_T=스크립트를 시작하면서 자신이 야수로 변하는 것을 방지했으며, {} 에 의해 시작되었습니다.
+
+NPLYMDLSWP=플레이어 모델 스왑 차단
+NPLYMDLSWP_H=본인에게만 플레이어들이 일반적으로 플레이할 수 없는 모델로 변형되는 것을 차단합니다. 원칙적으로는, 이것은 필요없는데, 그 이유로는 모든 크래쉬들을 패치했기 때문입니다.
+
+FRCRLY=강제 릴레이 연결
+
+LOWFPSTIMEOUT_T=낮은 FPS 감지됨 — {} 을/를 타임아웃 하는 중입니다.
+
+REVOTR=레이더 은신 플레이어 보이기
+
+REVINV=투명화된 플레이어 보이게 하기
+
+BEORB=오비탈 캐넌 되기
+BEORB_H=자신이 죽인 모든 플레이어를 병원으로 보내고 오비탈 캐넌 메시지를 표시합니다.
+
+BESCRHST=스크립트 호스트 되기
+
+BESCRHSTKLEPTO=자동 스크립트 호스트 되기
+BESCRHSTKLEPTO_H=자동으로 자신이 스크립트 호스트가 됩니다.
+
+BJS=세션 조인 차단
+
+BJ_ALL=모든 플레이어 차단
+BJ_ALL_A=모든 플레이어 세션 조인 차단
+
+BJ_STR=모르는 플레이어
+BJ_STR_A=모르는 플레이어 세션 조인 차단
+BJ_STR_H=소셜 클럽에서 친구가 아닌 플레이어가 세션에 조인하는 것을 차단합니다.
+
+BJ_ADS=알려진 광고하는 플레이어 차단
+BJ_ADS_A=알려진 광고하는 플레이어 세션 조인 차단
+
+BJ_REM=사라진 플레이어
+BJ_REM_A=사라진 플레이어 세션 조인 차단
+BJ_REM_H=킥하거나 크래쉬한 플레이어가 세션에 조인하는 것을 차단합니다.
+
+BJ_REMOVED=사라진 플레이어
+BJ_REMOVED_H=자신에게 크래쉬나 킥을 당해 세션 조인하는 것을 차단 당한 플레이어 목록입니다.
+BJ_KICKEDP_H=해당 플레이어를 지우기 위해 클릭하세요.
+
+BJ_WHT=화이트리스트 안된 모든 플레이어
+BJ_WHT_H=화이트리스트를 하지 않은 모든 플레이어가 세션에 조인하는 것을 차단합니다.
+BJ_WHT_A=화이트리스트 안된 모든 플레이어 세션 조인 차단
+
+BJ=조인 차단
+BJ_H=조인은 세션 호스트로만 차단될 수 있습니다. 자신이 호스트가 아닐 때 Stand는 해당 플레이어를 킥하는 것을 시도할 것입니다.
+BJ_T2={player} 이/가 세션에 조인하려는 것을 차단했습니다. 차단한 기능: {feature}
+
+MSG=메시지
+
+BJMSG_ASS=호환이 가능하지 않은 에셋
+BJMSG_TU=최신 GTA 온라인 업데이트 설치 확인
+BJMSG_TAR=타 목표 모드 선호
+BJMSG_BAR=계정이 나쁜 평판을 가지고 있음
+BJMSG_C=치트 사용자
+BJMSG_BS=비매너 유저
+BJMSG_DLC=호환이 가능하지 않은 다운로드 가능한 콘텐츠
+BJMSG_BT=타 빌드 종류
+BJMSG_CONT=타 컨텐츠
+BJMSG_BSO=비매너 유저 전용
+BJMSG_CO=치트 사용자 전용
+BJMSG_PR=프리미엄 레이스
+BJMSG_CON=연결이 불가능함
+BJMSG_PRIV=비밀 세션
+BJMSG_F=친구 전용 세션
+BJMSG_VK=투표 킥을 당함
+BJMSG_ID=초대가 비활성화됨
+BJMSG_POOF=더 이상 존재하지 않음
+BJMSG_BUG=의도한 세션이 아님
+
+LSCM=LS 차량 모임
+
+SETREPLVL=평판 레벨 설정
+SETREPLVL_H=참고로 평판을 쌓기 전에 LS 차량 모임의 멤버가 될 필요가 있습니다.
+SETREPLVL_T=평판 레벨 변경은 보류 중입니다. 지금 LS 차량 모임에 다시 들어가 완료하세요.
+
+UNLKPRIZRID=차량 상품 잠금 해제
+UNLKPRIZRID_T=다 네 거야! LS 차량 모임 내 상호 작용 메뉴에서 얻으면 됩니다. :)
+
+H3=카지노 습격
+
+H3_RPT=습격 쿨타임 제거
+H3_RPT_H=이 기능을 사용할 때는 아케이드 안에 있지 마세요.
+H3_RPT_T=쿨타임이 사라졌습니다. :D
+
+H3_POIACC=접근 지점
+
+SCOP=조사 완료
+H3_SCOP_H=최초 카지노 조사 임무를 완전히 완료한 후에만 사용하세요. 그렇지 않으면 심각한 오류에 걸릴겁니다.
+
+USCOP=조사 미완료
+
+H3_VLT=금고 목표물 선택
+H3_VLT_H=습격 비용을 지불하며 금고 목표물을 지정하기 전에 이 기능을 사용할 수 있습니다.
+H3_VLT_3=다이아몬드
+H3_VLT_2=예술품
+H3_VLT_1=금괴
+H3_VLT_0=현금
+H3_VLT_T=목표물 랜덤 :^)
+
+H3_FNSH1=첫 번째 준비 보드
+H3_FNSH1_H=습격 준비 비용을 지불한 상태에서 금고 목표물을 선택하고 이 기능을 선택적으로 사용할 수 있습니다.
+H3_FNSH1_1=비밀 작전
+H3_FNSH1_2=대 사기극
+H3_FNSH1_3=공격 전술
+H3_FNSH1_T=첫 번째 준비 보드가 끝났습니다. :D
+
+H3_FNSH2=두 번째 준비 보드
+H3_FNSH2_T=두 번째의 준비 보드가 완료되었습니다. :D
+
+H3_RSTCRW=조직원 초기화
+H3_RSTCRW_H=조직원을 잘못 선택해서 바꾸고 싶은 경우에 사용할 수 있습니다.
+H3_RSTCRW_T=조직원이 초기화 되었습니다. 아케이드에 다시 들어가면 조직원이 초기화되었을겁니다. :)
+
+H_FNSH_W=준비 작업을 끝내는 것은 이 습격과 관련된 도전 과제를 깨는 데 도움을 주지 않습니다.
+
+H_FNSH=준비 작업 끝내기
+H_TRGT=주요 목표물 설정
+
+H4=카요 페리코 습격
+H4_FNSH_T=준비 작업이 끝났습니다. 코사트카에 다시 들어가면 준비 작업이 완료되었을겁니다. :)
+
+H4_TRGT_0=테킬라
+H4_TRGT_1=루비 목걸이
+H4_TRGT_2=무기명 채권
+H4_TRGT_3=핑크 다이아몬드
+H4_TRGT_4=마드라조 파일
+H4_TRGT_5=사파이어 팬서
+
+H2_FNSH=심판의 날 습격 준비 작업 완료
+H2_FNSH_H=현재 진행 중인 심판의 날 습격의 모든 준비 작업을 끝냅니다.
+H2_FNSH_T=준비 작업이 끝났습니다. 시설에 다시 들어가면 준비 작업이 완료되었을겁니다. :)
+
+H1_FNSH=아파트 습격 준비 작업 완료
+H1_FNSH_H=현재 진행 중인 아파트 습격의 모든 준비 작업을 끝냅니다.
+H1_FNSH_T=준비 작업이 끝났습니다. 아파트에 다시 들어가면 준비 작업이 완료되었을겁니다. :)
+
+RIGOFF=끄기
+
+WHEEL=럭키 휠 보상
+WHEEL_1=포디움 차량
+WHEEL_2=할인
+WHEEL_3=칩
+WHEEL_4=현금
+WHEEL_6=의상
+WHEEL_7=랜덤 상자: 차량
+WHEEL_8=랜덤 상자: 비즈니스 보급품
+WHEEL_9=랜덤 상자: 스낵
+WHEEL_10=랜덤 상자: 칩
+WHEEL_11=랜덤 상자: 현금
+WHEEL_12=랜덤 상자: RP
+WHEEL_13=랜덤 상자: 의상
+
+MONEYLINK2=돈 버는 법
+
+SLOTS2=슬롯 머신 결과
+SLOTS_H=24시간 이내에 GTA$ {} 보다 더 많이 벌지 마세요! 더욱이, 이 계정에 다른 메뉴를 써왔거나 사용 중인 경우에는 안전하지 않을 것입니다.
+SLOTS_WJ=잭팟
+SLOTS_WS=작은 승리
+SLOTS_L=패배
+
+ROULETTE=룰렛 결과
+CSNO_H_OPB=이 기능을 사용하면 다른 플레이어도 이득을 취할 수 있습니다.
+
+CSNO_BJ=결과: 항상 블랙잭
+CSNO_BJ_H=항상 딜러가 고장난 상태로 만듭니다.
+
+SNKSNARMR=방탄복 & 스낵 다시 채우기
+SNKSNARMR_T=모든 것이 다시 채워졌습니다. :D
+
+ENHNCMTS=경험 향상
+
+NOAFK=잠수 추방 비활성화
+
+NOMECHCDLN=정비공 쿨타임 비활성화
+
+NOMKIICLDN=오프레서 Mk II 쿨타임 비활성화
+
+NOEWOCLDN=자살 쿨타임 비활성화
+
+NOGTARCFP=강제 원격 조종 시점 비활성화
+
+NODTHBAR=월드 이탈로 인한 사망 방지
+
+NOPSSVCLDN=패시브 모드 쿨타임 비활성화
+
+NOORBCLDN=무한 오비탈 캐넌 발사
+
+NOSUBMSLCLDN=코사트카 미사일 쿨타임 비활성화
+
+NOSUBMSLMAXRNGE=코사트카 미사일 범위 제한 비활성화
+NOSUBMSLMAXRNGE_H=발사된 미사일에는 적용되지 않습니다.
+
+NONANOMAXRNGE=나노 드론 범위 제한 비활성화
+NONANOCLDNS=나노 드론 활동 쿨타임 비활성화
+
+! "Business Battle" is SCR_FE_BB
+NOFMBTLMSC=비즈니스 배틀 음악 비활성화
+NOFMBTLMSC_H=참고로 이 기능을 활성화하는 것은 이미 재생 중인 음악을 중지시키지는 않습니다.
+
+NFMEVTENDAUD=자유 모드 이벤트 카운트 다운 음악 비활성화
+
+TGGLEMAP=켜고 끌 수 있는 확장된 맵
+TGGLEMAP_H=비행기에 탄 것처럼 미니 맵의 크기를 크게 만듭니다.
+
+PAWS=일시 중지 메뉴에서 게임 중지
+
+NOINTCHK=내부 건물 제한 우회
+NOINTCHK_H=공장 같은 건물 내부에 들어갈 때 다른 곳으로 순간 이동되는 현상 없이 들어갈 수 있습니다.
+
+PASSIWPNVEH=패시브 모드에서 무기화 차량 탑승 가능
+
+NWRKCLD=VIP 수 제한 비활성화
+
+SLLINPRV=모든 미션을 비밀 세션에서 진행
+
+GHSTNRBYDR=클린 레이스 보장
+GHSTNRBYDR_H=만약 레이스에서 상대 드라이버 플레이어들이 가까이 오면 본인에게만 고스트 모드가 되도록하여 공정하게 플레이하도록 보장합니다.
+
+ALLPICLK=비활성화된 상호 작용 메뉴 기능 사용
+ALLPICLK_H=상호 작용 메뉴에서 회색으로 칠해져 있거나 사용이 불가능한 기능을 사용할 수 있도록 합니다.
+
+UNKLCSNO=카지노 지역 잠금 해제
+
+AMTTSUIT=타임 트라이얼 시간 제한 우회
+
+NODRIPFEED=빠른 새로운 차량 체험 비활성화
+NODRIPFEED_H=모든 DLC의 새 차량을 일반적인 유저가 구입하기 전에 소환, 운전 및 구입할 수 있게 됩니다.
+
+NEMTYNTFY=비어 있는 알림 비활성화
+EMTYNTFY=비어 있는 알림
+
+BST=불 샤크 테스토스테론
+
+GETBST=불 샤크 테스토스테론 얻기
+
+RMBNTY=현상금 제거
+
+QWQPROG=빠른 진행
+
+! Don't translate this if it doesn't help the user recognise the option; I assume most menu users know it as Recoveries.
+QWQPROG_H="리커버리" 라고도 불립니다.
+
+GIVECOLL=수집품 지급
+GIVECOLL_0=영화 소품
+GIVECOLL_1=숨겨진 캐시
+GIVECOLL_2=보물 상자
+GIVECOLL_3=라디오 안테나
+GIVECOLL_4=미디어 USB
+GIVECOLL_5=난파선
+GIVECOLL_6=파묻힌 물품
+GIVECOLL_8=잭 오 랜턴
+GIVECOLL_9=LD 유기농 제품
+GIVECOLL_10=정크 에너지 스카이다이브
+GIVECOLL_16=눈 사람
+GIVECOLL_17=제랄드의 캐시
+! Tags as in graffiti
+GIVECOLL_19=로스 산토스 태그
+
+GIVECOLLE=수집품 지급
+GIVECOLLE_NCEO=수집품 지급 (내 CEO가 아닐 때)
+
+CEOPAY=CEO 돈 반복
+CEOPAY_H2=직원에게 상당한 보수를 지급합니다. 받는 사람이 자신의 직원이 될 필요는 없습니다.
+
+PLYRP=RP 지급
+PLYRP_H=해당 플레이어에게 RP를 지급합니다. 여러 번 쓰일 수 있습니다.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCFIG=카지노 피규어 지급
+PLYCFIG_H=RP와 현금을 주기 위해 쓰일 수 있습니다.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCRDS=트럼프 카드 지급
+PLYCRDS_H=RP와 카지노 칩을 주기 위해 쓰일 수 있습니다.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYSNK=스낵 지급
+
+PLYEXPAMMO_H=거리 상으로 가까울 때 가장 잘 작동합니다.
+
+OTR=레이더 은신 지급
+
+MNTLS=사이코 수치
+
+MNTL=사이코 수치 설정
+MNTL_T=사이코 수치가 {} (으)로 설정되었습니다. :)
+
+LCKMNTL=사이코 수치 잠금
+
+MNTLPULS=계속해서 변화하는 사이코 수치
+MNTLPULS_H=맵 아이콘에 표시되는 사이코 수치 색상을 계속해서 변화시킵니다.
+
+CLUBPOP=나이트클럽 인기도 설정
+CLUBPOP_P=나이트클럽 인기도
+CLUBPOP_L=나이트클럽 인기도 잠금
+
+RNK=랭크
+
+SETLVL=랭크 설정
+GEN_T_NEWSESS=설정한 값이 적용되기 위해서는 세션을 변경해야 합니다. :)
+
+! Refering to any number of possible targets.
+GEN_T_NEWSESS_O=적용하기 위해서는 해당 플레이어가 세션을 바꿔야 합니다. :)
+
+FSTRUN=빠른 달리기
+ABILOPT=활성화
+ABILUNL=비활성화
+
+BADSPORT=비매너 유저 상태
+RELINQ=제거
+
+UNLKS=잠금 해제
+
+STATEDIT=Stat 수정기
+STAT_STR_LABEL=이것은 Label을 예상합니다.
+STAT_STR_RID=이것은 락스타 ID를 예상합니다.
+STAT_KD=K/D 수정기
+STAT_POP=인기 있는 Stat
+STAT_RAW=로우 Stat
+STAT_WARN=그게 무엇이며 무엇을 설정하고 있는지 알지 못하면 값을 바꾸지 마세요.
+
+STAT_YEAR=년
+STAT_MONTH=달
+STAT_DAY=일
+STAT_HOUR=시간
+STAT_MINUTE=분
+STAT_SECOND=초
+STAT_MILLISECOND=밀리초
+
+KDEDIT=K/D
+KDEDIT_H=이것을 위해 락스타가 사용하는 알고리즘은 게임의 몇몇 곳에서는 다르기에 그래서 자신이 어디에 보고 있는지에 따라 값이 조금씩 바뀔 수 있습니다.
+
+TOTAL_RACES_WON=이긴 레이스
+TOTAL_RACES_LOST=진 레이스
+TOTAL_DEATHMATCH_WON=이긴 데스메치
+TOTAL_DEATHMATCH_LOST=진 데스메치
+TOTAL_TDEATHMATCH_WON=이긴 팀 데스메치
+TOTAL_TDEATHMATCH_LOST=진 팀 데스메치
+
+STAT_WAIT=Stat을 불러오는 중입니다...
+
+UNLKALL=모두 잠금 해제
+UNLKALL_H=한 번의 클릭으로 모든 것을 잠금 해제하고 싶을 때 사용하세요.
+
+UNLKONL=GTA 온라인 잠금 해제 (프롤로그 건너뛰기)
+
+UNLKALLACHIV=모든 도전 과제 잠금 해제
+
+RVLMAP=전체 지도 표시
+
+OVRDPROBNS=미리 GTA5를 구매한 보너스 얻기
+
+FREEORB=무료 오비탈 캐넌 발사 잠금 해제
+
+GNDRCHNG=성별 변경 잠금 해제
+GNDRCHNG_H=상호 작용 메뉴, 스타일 > 외모 변경 에서 캐릭터의 성별 변경이 가능합니다.
+GNDRCHNG_T=이제 상호 작용 메뉴, 스타일 > 외모 변경을 사용하여 성별 변경을 할 수 있습니다. :D
+
+LVRIES=전용 상징 잠금 해제
+LVRIES_T=전용 상징이 잠금 해제 되었습니다. :D
+
+RSRCH=벙커 연구 잠금 해제
+RSRCH_T=벙커 연구가 잠금 해제 되었습니다. :D
+
+UNLKOSA=코사트카 구매 잠금 해제
+
+H3CLTH=카지노 습격 의상 잠금 해제
+AWCLTH=아레나 워 의상 잠금 해제
+CLTH_T=의상이 잠금 해제 되었습니다. :D
+
+UNLKSR=벙커 사격장 보상 잠금 해제
+UNLKSR_H=사격장에서 3개 티어의 사격을 모두 완료하여 보상을 잠금 해제합니다.
+UNLKSR_T=벙커 사격장 보상이 잠금 해제 되었습니다. :D
+
+AWDS=보상 잠금 해제
+AWDS_H=의상 및 타투 같은 많은 보상 잠금 해제를 포함합니다.
+
+VEHCUST=차량 커스터마이징 잠금 해제
+
+UNLKAMUTINTS=아뮤네이션 무기 틴트 잠금 해제
+UNLKAMUTINTS_H=가능한 모든 무기의 군대, 녹색, 주황색, LSPD 계열의 틴트를 잠금 해제합니다.
+
+FLLSTATS=캐릭터 능력치 최대
+FLLSTATS_H=기력, 힘, 사격, 은신, 비행, 운전, 폐활량 능력치를 최대로 채웁니다.
+
+VWRPTSTAT=신고 목록 보기
+
+CMEND=칭찬
+
+CMENDT=칭찬 알림
+CMENDT_H=도움을 주거나 우호적인 사유로 칭찬을 받았을 경우 알림을 받습니다.
+CMENDT_T={player} 이/가 {reason} 사유로 자신을 칭찬하였습니다. :D
+ESTAT_0=우호적임
+ESTAT_1=도움을 줌
+
+PLYISE=칭찬/신고
+
+ISE_H=우호적임
+ISE_F=친절함
+
+RPRPT=신고
+
+ISE_G2=게임 플레이 중 괴롭힘
+ISE_X2=치트 또는 모드 사용
+ISE_B2=게임 기능 악용
+ISE_TC_A=텍스트 채팅: 괴롭힘
+ISE_TC_H=텍스트 채팅: 욕설 사용
+ISE_VC_A=보이스 채팅: 괴롭힘
+ISE_VC_H=보이스 채팅: 욕설 사용
+ISE_VG=폭력적인 내용
+ISE_ONC=폭력적인 플레이어 이름 또는 내용
+
+STAT_OFFENSIVE_LANGUAGE=욕설 사용
+STAT_OFFENSIVE_TAGPLATE=번호판에 욕설 사용
+STAT_OFFENSIVE_UGC=컨텐츠에 욕설 사용
+STAT_BAD_CREW_NAME=조직 이름
+STAT_BAD_CREW_MOTTO=욕설이 적힌 조직 이름
+STAT_BAD_CREW_STATUS=욕설이 적힌 좌우명
+STAT_BAD_CREW_EMBLEM=욕설이 적힌 상징
+
+STAT_IS_CHEATER=치트 사용자
+STAT_WAS_I_BAD_SPORT=비매너 유저
+STAT_IS_HIGH_EARNER=돈이 너무 많음
+
+YES=예
+NO=아니오
+
+PLYHIST=플레이어 기록
+
+PYLFND_H2=플레이어들을 닉네임, 락스타 ID, 메모를 이용해 찾을 수 있게 해줍니다.
+
+PLYNOTE=메모
+PLYNOTE_T=메모는 변경되지 않은 상태로 유지됩니다.
+PLYNOTED=메모된 플레이어
+HIST_KEEP_NTE=메모된 플레이어 유지
+
+AGGREGS=기타 기능
+
+1SEEN=처음으로 본 시간
+
+LSEEN=마지막으로 본 시간
+
+CPYNME=닉네임 복사
+CPYRID=RID 복사
+
+PLYHIST_DEL_E=현재 같은 세션에 있는 플레이어를 삭제할 수 없습니다.
+
+CONFAIL=연결에 실패했습니다.
+
+SPF=스푸핑
+
+NSPFD=스푸핑하지 않음
+
+SPFUPD=바꾼 것을 적용하기 위해, 세션을 변경해야 합니다. :)
+
+SPFNME_D=닉네임 스푸핑
+SPFDNME=스푸핑 할 닉네임
+
+HRD=강한 RID 스푸핑
+SFT=약한 RID 스푸핑
+
+SPFNMEFRMHST=플레이어 기록에서 랜덤 닉네임 얻기
+
+SPFPRST=설정된 닉네임 & RID 스푸핑 값
+YTRS=유튜버 목록
+RSEMPS=락스타 직원 목록
+
+SPFHT_D=호스트 토큰 스푸핑
+SPFHT_H=낮은 값으로 호스트 토큰을 변경하여 호스트 대기열의 순위를 낮출 수 있습니다.
+SPFHT_W=지정된 호스트 토큰은 모든 세션에서 자신만 사용할 수 있으며 너무 낮은 값은 다른 메뉴에서 모더로 감지될 수 있습니다.
+
+SPFDHT=스푸핑 할 호스트 토큰
+
+SPFDHTPRST_0=매우 낮음
+SPFDHTPRST_1=일반인보단 높음
+SPFDHTPRST_2=높음/공격적
+
+AKCKHST=대기열 순위가 호스트 다음일 때 호스트를 킥
+
+SPFSESS=세션 스푸핑
+
+HDESESS=세션 숨기기
+HDESESS_H=자신을 트랙, 조인, 관전하려는 모든 플레이어에게 세션을 숨깁니다.
+HDESESS_H_CPY=참고: "세션 정보 복사" 기능이 활성화 되어있습니다. "세션 옮기기" 보다 우선 순위가 더 높습니다. 플레이어 기록의 기타 기능을 확인하세요.
+HDESESS_NX=존재하지 않는 세션
+
+FF=가짜 친구
+TRK_FF=활성화 + 가짜 친구
+TRK_FF_H=또한 이 플레이어를 인게임 친구 목록 (ESC 키) 에 추가시킵니다.
+
+MARKASFF=가짜 친구 마킹
+UMARKASFF=가짜 친구 마킹 해제
+
+CPYSESS=재연결
+CPYSESS_H=자신을 트랙, 조인, 관전하려는 모든 플레이어가 해당 플레이어에게 재연결됩니다.
+CPYSESS_F=재연결 할 플레이어
+
+WHTJOIN=조인 화이트리스트
+
+! For reference, "Block Joins From Anyone" is BJ_ALL_A
+WHTJOIN_H=플레이어 지정 리액션 및 '모든 플레이어 세션 조인 차단' 기능이 켜져 있지 않은 이상 해당 유저가 세션에 조인할 수 있도록 합니다.
+
+SESSTYP=세션 종류
+SESSTYP_H=자신을 트랙하는 플레이어에게 이 세션 종류가 표시될 것입니다.
+NVLD=유효하지 않은 세션
+
+SPFHST=호스트 스푸핑
+SPFDHST=호스트 스푸핑
+YOU=자신
+
+SPFCRW=조직 스푸핑
+
+SPFCRW_ID_H=이것은 엠블럼이 표시되면 결정됩니다. 조직 태그에는 절대 아무 것도 없으면 안됩니다.
+
+NCRW=조직 없음
+
+CPY2SPFCRW=조직 스푸핑에 복사
+
+SPFCRWMINE=자신의 조직으로부터 복사
+
+SPFRNK_D=랭크 스푸핑
+SPFRNK_H=플레이어 목록에서 다른 플레이어가 볼 수 있는 랭크를 변경할 수 있습니다.
+SPFDRNK=스푸핑 할 랭크
+
+SPFKD=K/D 스푸핑
+SPFDKD=스푸핑 할 K/D
+
+SPFPOS=위치 스푸핑
+SPFDPOS=스푸핑된 위치
+
+PLYMGNT=플레이어 자석
+PLYMGNT_H=이것은 자신의 세션이 빠르게 다른 플레이어에 의해 붐벼지는 것을 가속화할 것입니다.
+
+STRMSPF=스트리머 모드
+
+HIDEPLIST=플레이어 목록에서 지우기
+HIDEPLIST_H=게임의 HUD 플레이어 목록에서 자신을 지웁니다.
+
+PHNSPF=폰 모드 스푸핑
+PHNSPF_0=폰을 사용하지 않음
+PHNSPF_1=전화 거는
+PHNSPF_2=문자 하는
+PHNSPF_3=녹화 중인
+
+RIDTOOLS=RID 도구
+
+N2R_I=유효하지 않은 닉네임입니다. :?
+N2R_Q=해당 플레이어의 RID 찾는 중...
+N2R_E=그 닉네임의 RID를 찾는 것을 실패했습니다. :?
+
+R2N_Q=해당 플레이어의 닉네임을 찾는 중입니다...
+R2N_E=그 RID과 일치하는 닉네임을 찾기 위해 노력했지만 실패했습니다. :?
+
+PLYINV=세션에 초대
+INV_N=닉네임으로 세션에 초대
+INV_R=RID로 세션에 초대
+PLYINV_E=이 종류의 세션에 초대를 보내는 것은 불가능합니다. :/
+
+PLYPRFL=프로필 열기
+PRFL_N=닉네임으로 프로필 열기
+PRFL_R=RID로 프로필 열기
+
+JOIN2=조인
+JOIN_N=닉네임으로 세션 조인
+JOIN_R=RID로 세션 조인
+
+! Join methods
+JM_N=방법 - 닌자
+JM_F=방법 - 친구
+JM_M=방법 - 매치메이킹
+
+! I mean "Nuts" as a covert way of saying crazy, just translate it as "Crazy" if you can't be sly.
+JM_NUTS=방법 - 넛츠
+
+JOIN_T_A=이미 이 세션에 있습니다.
+
+JOIN_T_N=이 플레이어는 현재 GTA 온라인 세션에 있지 않습니다. :/
+PLYOFFLINE=이 플레이어는 현재 오프라인입니다. :/
+
+PLYSPEC=관전
+SPEC=플레이어 관전
+SPEC_N=닉네임으로 플레이어 관전
+SPEC_R=RID로 플레이어 관전
+
+NAMKICK=닉네임으로 킥
+RIDKICK=RID로 킥
+
+LGTM=방법 - 일반 유저
+
+RCTS=액션
+
+JOINR=플레이어가 세션에 들어올 시 액션
+JOINT={} 이/가 세션에 들어오는 중입니다.
+
+HISTWJOINR=세션 조인 시 액션 할 플레이어
+HIST_KEEP_JRE=조인 액션을 유지할 플레이어
+
+HISTWWHT=조인 화이트리스트된 플레이어
+HIST_KEEP_WHT=화이트 리스트된 플레이어 유지
+
+HISTADD2=플레이어 추가
+HISTADD=닉네임으로 추가
+HISTADDRID=RID로 추가
+
+HOSTR=호스트가 바뀔 시 액션
+HOSTR_T={} 이/가 호스트로 변경되었습니다.
+
+SHR=스크립트 호스트가 바뀔 시 액션
+SHR_T={} 이/가 스크립트 호스트로 변경되었습니다.
+
+VKR=킥 투표 시 액션
+VKR_A=누군가에게 킥 투표
+VKR_M=나에게 킥 투표
+VKR_T={player} 이/가 {target} 에/게 킥 투표를 했습니다.
+
+LLKR=러브 레터 킥 시 액션
+LLKR_T={player} 이/가 {target} 을/를 러브 레터 킥 하는 중입니다.
+
+BOUNTYR=현상금 수배 시 액션
+BOUNTYR_P={} 이/가 자신을 ${} 에 현상금 수배했습니다.
+BOUNTYR_H=NPC가 자신에게 현상금 수배 시에는 적용되지 않습니다.
+
+PTFXSPAMR=입자 효과 스팸 시 액션
+PTFXSPAMR_H=항상 위험한 것은 아니지만, 게임의 프레임을 낮출 수 있습니다.
+
+LEAVET=플레이어가 세션을 나갈 때 알림
+LOGLEAVE_T={} 이/가 세션을 나갔습니다.
+
+LR=플레이어가 세션을 나간 사유
+LR_H=참고로 이 기능은 비휴리스틱 방식으로 구현할 수 없으므로 플레이어가 세션을 나간 사유가 내린 결론이 정확하지 않을 수도 있습니다.
+
+LR_WHERE=어디서
+LR_WHAT=무엇을
+
+LR_N={player} 이/가 일반적인 사유로 세션을 나갔습니다.
+LR_SN="일반적인 사유로 나감" 알림 표시
+
+LR_Q={player} 이/가 게임을 종료했습니다.
+LR_SQ="게임을 종료함" 알림 표시
+
+LR_B={player} 이/가 조인하려는 것을 차단당했습니다.
+LR_SB="조인하려는 것을 차단했습니다" 알림 표시
+
+LR_T={player} 이/가 연결 시간 초과로 인해 세션을 나갔습니다.
+LR_DL={player} 은/는 {other} 을/를 디싱크 킥을 시도하다 연결 시간 초과로 인해 세션을 나갔습니다.
+LR_VK={player} 이/가 투표 추방으로 인해 세션을 나갔습니다.
+LR_HK={player} 은/는 {other} 이/가 보낸 호스트 킥으로 인해 세션을 나갔습니다.
+LR_SHK={player} 은/는 {other} 이/가 보낸 스크립트 호스트 킥으로 인해 세션을 나갔습니다.
+LR_LL={player} 은/는 {other} 이/가 보낸 러브 레터 킥으로 인해 세션을 나갔습니다.
+LR_K_B={player} 은/는 {other} 이/가 보낸 브레이크 업 킥으로 인해 세션을 나갔습니다.
+LR_K_O={player} 은/는 오르가즘 킥으로 인해 세션을 나갔습니다.
+LR_FMD={player} 이/가 자유 모드 죽음으로 인해 세션을 나갔습니다.
+LR_FMDC={player} 이/가 자유 모드 죽음 뒤에 크래쉬를 당해 세션을 나갔습니다.
+! "Quit To Story Mode" is QTSP
+LR_MOD={player} 은/는 세션 연결 끊고 스토리 모드 가기 위해 모드를 사용했습니다.
+LR_BAN={player} 은/는 GTA 온라인에서 밴되었습니다.
+LR_U={player} 이/가 알려지지 않은 사유로 세션을 나갔습니다: ({id})
+
+! The only substitute for {reason} is NETWORK_BAIL as of now
+LR_E={player} 이/가 {reason} 인 사유로 세션을 나갔습니다.
+
+AIM_MODE=목표 지정 모드 설정
+AIM_MODE_0=에임 도움 - 최대
+AIM_MODE_1=에임 도움 - 부분적
+AIM_MODE_2=자유 에임 - 도움
+AIM_MODE_3=자유 에임
+
+RMLDR=표시기 지우기
+RMLDR_H=화면 오른쪽 아래에 있는 로딩 표시기를 제거합니다.
+
+CHTRMLDR=채팅 입력할 때 "처리 중" 없음
+CHTRMLDR_H=인게임 채팅창이 열려 있을 때 "처리 중" 표시기를 지웁니다.
+
+LVINT=현재 건물 떠나기
+
+FRCSVE=클라우드 강제 저장
+
+THDR=번개 날씨
+THDR_ON=요청 활성화
+THDR_OFF=요청 비활성화
+THDR_N=요청 시 알림
+THDR_N_T={} 이/가 번개를 요청했습니다.
+
+RSTFM=자유 모드 스크립트 재시작
+
+RJNSESS=세션 재 조인
+
+SLFDS=1인 세션 만들기
+SLFDS_H=자신을 현재 세션에서 유일한 플레이어로 만듭니다.
+
+SLR_N=떠난 사유 없음
+SLR_C=치트 사용으로 인해 떠남
+
+HSTTLS=호스트 도구
+
+SETSESSTYP=세션 종류 설정
+
+CLRBLKLST=블랙리스트 초기화
+CLRBLKLST_H=이전에 투표가 킥된 사람이 다시 조인할 수 있도록 허용합니다.
+
+SESSTYP_S=솔로
+SESSTYP_I=초대 전용
+SESSTYP_F=비공개 친구
+SESSTYP_CC=비공개 조직
+SESSTYP_C=조직
+SESSTYP_P=공개
+
+CSTMVK=커스텀 투표 킥 한계점
+CSTMVK_H=자신이 누군가를 킥하기 전에 요구되는 투표 킥의 수
+
+! For reference: "I'll try to convince them to leave." is PLYKCK_T_C
+CSTMVK_MSG={} 이/가 투표 킥 한계점을 초과했습니다. 해당 플레이어를 세션에서 나가도록 해보겠습니다.
+
+THRESHOLD=한계점
+
+AUTOREJOIN=디싱크된 세션 자동 조인
+AUTOREJOIN_H=자신이 디싱크된 세션을 자동으로 조인합니다.
+AUTOREJOIN_MSG=Detected a session desync, attempting to rejoin... 세션 디싱크를 감지하여 다시 조인하는 것을 시도하는 중입니다...
+AUTOREJOIN_FAIL=자신의 마지막 세션에 조인하는 것을 실패했습니다. :(
+
+QTSP=세션 연결 끊고 스토리 모드 가기
+
+QTSPF=세션 강제로 연결 끊고 스토리 모드 가기
+QTSPF_H=모든 게임 시스템을 재 시작하여 스토리 모드를 불러오도록 만듭니다.
+
+NDLYXPS=공과금 지불 없음
+
+OCWS=스크롤 중일 때는 채팅 열기
+OCWS_H=스크롤 중일 때는 채팅이 보이게 해서 스크롤을 할 수 있게 고쳐줍니다.
+
+CHATAO=항상 열림
+
+BBGS=백그라운드 스크립트 차단
+BBGS_H=락스타가 새 DLC를 적용하는 데 사용하는 백그라운드 스크립트의 실행을 차단하며 이 백그라운드 스크립트가 활성화되면 모더에게 문제를 일으킵니다.
+
+ADMDLC=락스타 어드민 DLC
+ADMDLC_H2=잠금 해제할 수 없는 의상을 잠금 해제하며, SCTV도 사용 가능하게 해줍니다.
+
+HUDTS=돈 액수 구분기
+HUDTS_H=화면 위 오른쪽에 보이는 돈의 액수를 천 단위로 끊어 읽을 수 있게 만듭니다.
+
+FLLPLYLST=플레이어 목록에 모든 플레이어 표시
+FLLPLYLST_H=인게임 플레이어 목록에 있는 모든 플레이어를 표시하며, 카요 페리코 상태인 플레이어는 표시하지 않습니다.
+
+FMBNR2T=자유 모드 배너를 알림으로 표시
+
+PHNANIM=휴대폰 애니메이션
+PHNANIM_H2=자신의 캐릭터가 휴대폰을 사용할 때 애니메이션을 하도록 합니다.
+
+SPDUPDIAL=휴대폰 통화 연결음 건너뛰기
+
+NLSCBAR=로스 산토스 커스텀 제한 비활성화
+NLSCBAR_H=로스 산토스 커스텀에 모든 차량들로 들어갈 수 있도록 만듭니다: 소유하지 않은 차량과 다 수정된 차량도 포함됩니다.
+
+BLIPTAGS=맵 아이콘에 플레이어 태그
+
+RSTHDSHT=NPC 헤드샷 초기화
+RSTHDSHT_H=플레이어 목록이나 알림이 빈 검은색일 때 헤드샷 대신에 고정시킵니다.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+TRNSS=로딩 도움 기능
+
+SESSHOP=세션 파인더
+MINPLYS=최소 플레이어
+MAXPLYS=최대 플레이어
+
+SSS=매끄러운 세션 변경
+
+WRLDSTCNG=월드 상태 변경
+WRLDSTCNG_1=연기됨
+WRLDSTCNG_2=연기됨, 온라인만
+WRLDSTCNG_3=연기됨, 스토리 모드만
+WRLDSTCNG_T=월드 상태를 {} (으)로 바꾸는 중...
+
+SPDUP=속도 올리기
+
+TRNS_SPDUP_BRDCST=데이터 전송 받는 것 기다리지 않음
+TRNS_SPDUP_FMMC=미션 런쳐를 위해 기다리지 않음
+TRNS_SPDUP_SPWN=소환하기 위한 권한 묻지 않음
+
+TRNS_SPDUP_BESCRHST_H=조인을 빠르게 할 수 있도록 도울 수 있으나, 고장난 세션 상태로 만들 것이며, 자신이 조인한 후에 해당 세션에 아무도 조인할 수 없도록 만듭니다.
+
+JGRPOVRD=플레이어로 가득찬 세션 조인
+JGRPOVRD_H=관전 슬롯을 이용해 실제로 관전하지 않고 가득찬 세션을 조인할 수 있도록 합니다. 하지만, 이것은 작업을 조인할 때 문제될 수 있습니다.
+JGRPOVRD_0=관전
+JGRPOVRD_1=자유 모드
+
+SSWPD=위에서 보는 카메라 건너뛰기
+SSWPD_H=세션을 조인할 때 위에서 내려오는 슬로우 카메라 모션을 건너뜁니다.
+
+TRNSHLP=로딩 도우미
+TRNSHLP_H=구름 속에 갇히지 않도록 합니다.
+
+UNSTK=세션 탈출
+
+NSPWNACTY=소환 활동 비활성화
+NSPWNACTY_H=세션 접속 및 로딩이 다 된 후 자신의 캐릭터가 애니메이션 하는 것을 방지합니다.
+
+NDLCITRO=DLC 인트로 영상 비활성화
+
+SHWTRNSTT=로딩 상태 표시
+
+SHWARRSYNC=어레이 연동 상태 표시
+SHWARRSYNC_T=자유 모드가 연동했습니다: {}/{}, 어레이: ({}%)
+
+SHWRSMSG=락스타 서포트 메시지 표시
+
+GTAOSTUS_O=GTA 온라인 서비스가 {} 상태입니다.
+GTAOSTUS_O_L=제한된
+GTAOSTUS_O_D=다운된
+GTAOSTUS_M=락스타 서포트가 말하길, "{}" (이)라고 말합니다.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions > Matchmaking !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+MM=매치메이킹
+
+MMREGION2=지역 변경
+MMREGION=지역
+
+Australia=오스트레일리아
+Europe=유럽
+Asia=아시아
+Japan=일본
+LATAM=라틴 아메리카
+REGION_NA=북 아메리카
+USA_East=미국, 동쪽
+USA_West=미국, 서쪽
+
+MMPOOLOVRD=풀 변경
+MMPOOL=풀
+
+MMPOOL_NRM=보통
+MMPOOL_CHEAT=치트 사용자
+MMPOOL_BADBOY=비매너 유저
+
+MMMGNT=플레이어 수 선호도
+MMMGNT_H=설정된 플레이어 수와 비슷한 세션을 매칭시킵니다.
+
+MMOFF_H=매치메이킹을 비활성화시켜 존재하는 공개 세션을 찾을 일이 없도록 만듭니다.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session > Session Code !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSCODE=세션 코드
+SESSCODE_T_X=세션 초대 코드가 만료되었습니다.
+
+CODEJOIN=코드로 세션 조인
+CODESPEC=코드로 세션 관전
+ARGCODE=[코드]
+
+CPYINVL=초대 링크 복사
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Session Scripts !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SESSSCRS=세션 스크립트
+
+RUNSCR=스크립트 시작
+RUNSCR_PREP=원격 스크립트 실행 준비 중...
+RUNSCR_RUN={} 스크립트 시작 중...
+
+RUNSCRS=시작 중인 스크립트
+
+PRTCPTS=참가자
+
+STRTINST=즉시 시작
+
+SESSSCRSTRT=세션 스크립트 시작
+SESSSCRSTRT_T={player} 이/가 {script} 스크립트를 시작했습니다.
+
+SESSSCRSTRT_ANY=모든 세션 스크립트 이벤트
+
+SCRCAT_GRIEF=세션 고장
+NOCAT=카테고리에 없는 이벤트
+
+SCRCAT_FA=자유 모드 활동
+SCRCAT_AG=아케이드 게임
+SCRCAT_RFA=사라진 자유 모드 활동
+SCRCAT_SERV=서비스
+SCRCAT_CUT=컷씬
+
+SCRCAT_FA_P=자유 모드 활동
+SCRCAT_AG_P=아케이드 게임
+SCRCAT_RFA_P=사라진 자유 모드 활동
+SCRCAT_SERV_P=서비스
+SCRCAT_CUT_P=컷씬
+SCRCAT_MISS_P=미션
+
+SCR_FRCEPI=상호 작용 메뉴 열기
+SCR_PS=비행 학교
+SCR_STRIKE=랜덤 플레이어에게 번개 치기
+SCR_DPSSV=패시브 모드 비활성화
+SCR_DARTS=다트
+SCR_IMPDM=즉석 데스메치
+SCR_SLASHER=로스 산토스 슬래셔 추적
+
+!! Session Scripts: Freemode Activities
+
+SCR_FE_BB=비즈니스 배틀
+SCR_FE_KL=살생부
+SCR_FE_CPC=체크포인트 수집
+SCR_FE_C=도전
+SCR_FE_PI=구역 사수
+SCR_FE_PI_CI=구역 사수
+SCR_FE_PTP=차량 쟁취
+SCR_FE_HP=서류 가방
+SCR_FE_KOTC=킹 오브 더 캐슬
+SCR_FE_CD=파괴의 군단
+SCR_FE_HTB=야수 사냥
+
+!! Session Scripts: Challenges - Types
+SCR_FE_C_0=최장 점프
+SCR_FE_C_1=최장 자유 낙하
+SCR_FE_C_2=가장 높은 속도
+SCR_FE_C_3=최장 뒷 바퀴 들기
+SCR_FE_C_4=최장 앞 바퀴 들기
+SCR_FE_C_5=충돌 없음
+SCR_FE_C_6=최단 고도에서 낙하산 펴기
+SCR_FE_C_7=차량 강탈
+SCR_FE_C_8=일촉즉발
+SCR_FE_C_9=반대로 운전
+SCR_FE_C_10=최장 낙하 후 생존
+SCR_FE_C_11=낮게 날기
+SCR_FE_C_12=거꾸로 날기
+SCR_FE_C_13=최장 베일
+SCR_FE_C_14=다리 밑으로 날기
+SCR_FE_C_15=헤드샷 킬
+SCR_FE_C_16=근처로 운전
+SCR_FE_C_17=근접 무기
+SCR_FE_C_18=스나이퍼 킬
+
+!! Session Scripts: Arcade Games
+
+SCR_AG_BRII=Badlands Revenge II
+SCR_AG_CAM=Camhedz
+SCR_AG_PUZ=QUB3D
+SCR_AG_RAC=Race and Chase
+SCR_AG_SM3=Space Monkey 3
+SCR_AG_TWR=The Wizard's Ruin
+
+!! Session Scripts: Removed Freemode Activities
+
+SCR_FE_DD=비밀 접선
+SCR_RFA_HT=달리는 표적
+SCR_OFM_PT=밀수업자의 비행기 격추
+SCR_OFM_DC=경찰 유인
+SCR_OFM_DV=목표 차량 파괴
+
+!! Session Scripts: Session Breaking
+
+SCR_FMINTRO=GTA 온라인 인트로
+
+!! Session Scripts: Services
+
+SCR_SERV_A=공습
+SCR_SERV_AD=탄약 투하
+SCR_SERV_BH=헬리콥터 지원
+SCR_SERV_IBH=헬리콥터 지원 (카요 페리코)
+SCR_SERV_BT=보트 지원
+SCR_SERV_HT=헬리콥터 픽업
+
+!! Session Scripts: Options on running scripts
+
+SCORE=점수
+
+!!!!!!!!!!!!!!!!
+!! Player Bar !!
+!!!!!!!!!!!!!!!!
+
+PBAR=플레이어 바
+
+HDEIF=해당 상황에선 숨기기
+PBAR_HI_1=플레이어 목록이 보인다면
+PBAR_HI_2=XP 바가 보인다면
+
+PBAR_ALNE=세션에 혼자 있어도 표시
+
+SHWTGS=태그 표시
+
+HDEPNTG=태그가 없는 플레이어 숨기기
+
+DFLTCLR=기본 색상
+
+TGCLRS=태그 색상
+
+UCLR=색상 사용
+
+!!!!!!!!!!!!!!!!!!!
+!! Online > Chat !!
+!!!!!!!!!!!!!!!!!!!
+
+CHT=채팅
+
+PRFNTY=욕설 필터링 무시
+PRFNTY_H=욕설을 해도 다른 플레이어들이 필터링을 거치지 않은 욕설을 볼 수 있습니다.
+
+HTML=글자 필터링 무시
+HTML_H=채팅에서 < 과 > 같은 특이한 글자를 사용 가능하게 합니다.
+
+ONLYTEAM=팀 채팅
+
+MSGFILTBP=메시지 필터링 우회
+
+CHTSPM=채팅 도배
+
+CHTLG=채팅 메시지 기록
+
+TBCMPLT=플레이어 닉네임 자동 완성
+TBCMPLT_H=채팅을 적는 중에 할당된 핫키를 누르면 플레이어 닉네임을 완성합니다.
+
+PSTE=채팅 붙여넣기 가능
+PSTE_H=채팅을 적는 중에 할당된 핫키를 누르면 클립보드의 텍스트를 붙여넣습니다.
+
+TPNGIDCTR2=채팅 상태 표시기
+TPNGIDCTR_H=디스코드와 비슷하게 채팅을 작성 중인 플레이어를 표시해줍니다.
+TPNGIDCTR_1={a} 이/가 채팅 작성 중입니다...
+TPNGIDCTR_M={} 이/가 채팅 작성 중입니다...
+
+TPNGPOS_C=채팅이 닫혀 있을 때의 위치
+TPNGPOS_O=채팅이 열려 있을 때의 위치
+
+SNDMSG=채팅 보내기
+
+ITEAMCHT=팀 채팅
+
+TEXT=텍스트
+ARGTXT=[텍스트]
+
+SPAM=채팅 도배
+SPAM_H=참고로 Stand 약관에서 광고하는 것은 금지하고 있으며 그런 행동을 하는 것은 계정 정지라는 결과를 초래할 것입니다.
+
+INTVAL_MS=채팅 쿨타임 (ms)
+
+LOCHIST=본인에게도 표시
+LOCHIST_H_SPAM=채팅 도배 중인 텍스트를 보고 싶은 경우에 활성화하세요.
+
+FRCSEND=모든 채팅 메시지 보내기
+FRCSEND_H=채팅 상자를 "메시지 전송" 기능을 위한 한 인터페이스에 지속적으로 자신의 메시지가 다른 플레이어에게 전송되도록 만듭니다.
+
+FRCRECV=모든 채팅 메시지 표시
+FRCRECV_H2=누가 보냈는지 상관 없이 게임을 강제로 변경하여 받은 모든 채팅을 표시합니다.
+
+TIMESTAMP_MS=메시지에 타임스탬프
+
+OWOMYMSGS=자신의 채팅 메시지 OwO화
+OWOMYMSGS_H=자신의 채팅 메시지를 OwO화합니다. 참고로 자신은 차이점을 알 수 없습니다.
+
+SENDPM=비밀 메시지 보내기
+SENDPM_H=해당 플레이어와 자신만 볼 수 있는 메시지를 보냅니다.
+
+CHATSING=채팅에서 노래부르기
+CHATSING_H=채팅에서 노래 부를 노래를 %appdata%/Stand/Song.lrc 에서 커스텀할 수 있습니다.
+
+NTPNGIDCTR=채팅 표시기 끄기
+NTPNGIDCTR_H=다른 플레이어가 자신이 채팅을 작성 중일 때 채팅 입력 중 표시를 볼 수 없도록 합니다.
+
+PTX_TYPNGSTRT=채팅 입력 이벤트 시작
+PTX_TYPNGSTOP=채팅 입력 이벤트 중단
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Commands !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CMDS=명령어
+CMDS_H=Stand의 명령어 상자는 선택된 명령어로 채팅 메시지를 처리하지만 대부분의 명령어는 다른 플레이어에게 사용할 수 없습니다.
+
+PFX=설정된 명령어
+
+REPLPFX=답장 시 표식
+
+REPLYVIS=답장을 볼 수 있는 사람
+EVERYONE=모두
+ISSUER_N_ME=명령어를 입력한 사람 및 자신
+ISSUER=명령어를 입력한 사람
+NOONE=아무도 아님
+
+ON4M=나에게 활성화
+
+4F=친구에게 활성화
+
+4C=조직 멤버
+
+4T=자신의 팀
+4T_H=예를 들면, 자신의 CEO/MC 멤버를 뜻합니다.
+
+4S=모르는 플레이어에게 활성화
+
+! When a friend or stranger tries to kick or crash the Stand user
+SLFHRM_O=Stand 유저를 괴롭히지 마세요. ;)
+
+CMDBXDCS=명령어 상자 목록
+
+CMDLST=명령어 목록
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Reactions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CHT_ANY=모든 메시지
+CHT_ANY_G=채팅 메시지
+
+CHT_SPF=스푸핑된 메시지
+CHT_AD=광고
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session Browser !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSBRWS=세션 브라우저
+
+NFLTR=필터링하지 않음
+
+MREFLTR=추가 필터링
+
+SESSBRWS_FLTR_AST_H=활성화하면 현재 에셋 해시와 일치하는 세션만 표시됩니다. 일종의 "비공개 매치메이킹"을 위해 체크섬을 스푸핑할 수 있습니다.
+
+NHKNADS=알려진 광고하는 플레이어에 의해 호스트 되지 않은
+
+RFRSH=새로 고침
+
+SESSS=세션
+
+HSTPRF=호스트의 프로필 보기
+
+LSESSDETS=세션 정보 얻는 중...
+
+RM_PROMPT=플레이어 목록 요청
+RM_CONFIRMED=플레이어 목록 요청 중...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Request Services !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+REQSRV=서비스 요청
+
+AIRSTRK=폭격 요청
+AIRSTRK_H=플레어가 지급되며 플레어의 위치에 메리웨더 제트기가 소환되며 폭탄을 그 위치에 투하할 것입니다.
+
+AM_AMMO_DROP=탄약 투하 요청
+
+AM_BOAT_TAXI=보트 픽업 요청
+
+AM_HELI_TAXI=헬리콥터 픽업 요청
+AM_HELI_TAXI_0=메버릭
+AM_HELI_TAXI_1=슈퍼 볼리토
+
+AM_BACKUP_HELI=헬리콥터 지원 요청
+
+REQNANO=나노 드론 요청
+
+!!!!!!!!!!!!!!!!!!
+!! Online > ATM !!
+!!!!!!!!!!!!!!!!!!
+
+ATM=ATM
+
+AUTODEPO=현금을 은행으로 자동 전송
+WLTHPPR_T=지갑에 있던 ${} 돈이 은행으로 옮겨졌습니다. :)
+
+WTHDRW=현금 인출
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! SC DM Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SCDMT=소셜 클럽 개인 메시지 알림
+SCDMT_T=소셜 클럽 개인 메시지가 {sender} 에(게)서 왔습니다: {text}
+
+! Those thingies in the top-right corner of the screen.
+SCNOTIF=소셜 클럽 알림
+
+!!!!!!!!!!!!
+!! CEO/MC !!
+!!!!!!!!!!!!
+
+CEO=CEO/MC
+
+NOCEO={} 이/가 CEO 또는 MC에 가입해있지 않습니다.
+CMDNBOSS=이 명령어는 자신이 VIP, CEO 또는 MC 두목일 때만 사용 가능합니다.
+GEN_H_BOSS=이 기능은 자신이 VIP, CEO 또는 MC 두목일 때만 적용됩니다.
+
+CEOKICK=CEO/MC 킥
+CEOKICK_E=죄송하지만, CEO/MC의 멤버만 킥할 수 있습니다.
+
+MISSIONEVT=자유 모드 미션 시작
+MISSIONEVT_NCEO=자유 모드 미션 시작 (자신의 두목이 아닐 때)
+
+INTTPEVT=실내로 순간 이동
+INTTPEVT_NCEO=실내로 순간 이동 (자신의 두목이 아닐 때)
+
+CEOAPPEAL=CEO/MC 밴 지우기
+
+CEOJOIN=CEO/MC 가입
+CEOJOIN_T=가입을 시도 중입니다...
+CEOJOIN_E=가입에 실패했습니다.
+
+CEOTYP=종류 변경
+CEOTYP_H=조직을 MC 또는 그 반대로 변경합니다.
+
+CEOCAP=조직원 제한 비활성화
+
+CEOCOL=색 슬롯
+CEOCOL_H={} 조직에 할당되었습니다.
+
+ORGCR_S=CEO/VIP 가입
+ORGCR_M=모터사이클 클럽 시작
+
+!!!!!!!!!!
+!! Game !!
+!!!!!!!!!!
+
+! "Snake" refers to the classic game
+SNAKE=뱀과 놀기
+SNAKE_1=세션 로딩 중에만
+
+SNAKE_C=Stand 메뉴를 닫아서 뱀이랑 함께 노세요!
+
+PONG_C=Stand 메뉴를 닫아서 탁구를 실행하세요!
+
+INVSEND_PONG=탁구 초대
+
+INVRECV_PONG=탁구 초대 수락
+INVRECV_PONG_T={player} 이/가 탁구에 초대했습니다. 플레이어 > {player} > 탁구 초대 수락 을 하면 초대를 받을 수 있습니다.
+
+INVSENT={} 이/가 초대 수락을 기다리는 중
+
+CNLINV=초대 취소
+
+CNLGME_PONG=탁구 게임 취소
+
+GETREADY=준비 완료!
+
+PLYGMECNCLT={} 이/가 게임 초대를 취소했습니다.
+
+T_M_C=맵 위의 알림 지우기
+
+SKPCTSCN=컷씬 건너뛰기
+
+TMSCL=시간 조절
+TMSCL_H=시간의 속도를 변경합니다. (본인만 적용)
+
+AIMTMSCL=무기 조준 시간 조절
+AIMTMSCL_H=무기를 조준 할 때 무기 조준 시간을 변경합니다. (본인만 적용)
+
+SCRNSHT=스크린샷 모드
+
+RWND=위치 되감기
+RWND_H2=핫키를 누르거나 컨트롤러에서 특별한 활동을 해서 시간을 되돌립니다.
+
+UNRSTRCAM=게임 플레이 카메라 제한 없음
+UNRSTRCAM_H=360° 전부 게임 플레이 카메라를 돌릴 수 있도록 합니다.
+
+FC=자유 시점
+FC_H=원하는 어느 곳이든 시점을 바꿀 수 있도록 합니다.
+
+FC_DTP=원래 시점 위치로 순간 이동 비활성화
+FC_DTP_H=자유 시점을 끌 때 원래 시점의 위치로 순간 이동하는 것을 활성화 / 비활성화합니다.
+
+FC_NZ=움직임이 높이 차이를 무시함
+FC_NZ_H=보는 시점에 따라 높이에 영향을 미치는 전방이나 후방의 이동을 비활성화합니다.
+
+FC_MF=미니맵이 자유 시점을 따라감
+
+MOVCTRL=이동 제어
+MOVCTRL_FC=자유 시점용 키를 입력할 때 자신의 캐릭터도 그 키에 반응하는지 여부
+
+EDTHCLR=HUD/UI 색 편집
+
+EDTLB=레이블 편집
+
+ADDLB=레이블 추가
+ADDLB_H=편집할 수 있는 레이블을 목록에 추가합니다.
+ADDLB_E={} 은/는 유효한 레이블이 아닙니다. :/
+
+RVLLB=레이블 표시
+RVLLB_H=게임 내 레이블을 확인하고 레이블 이름을 표시합니다.
+
+OWOLB=레이블 OwO화
+
+LBLST=레이블 목록
+
+EDIT=편집
+
+! {} should be at the end as it could be very long
+RESET=값: {}
+
+REMOVE=삭제
+
+FOV=시야
+
+FOV_TP_VEH=3인칭, 차량 안
+FOV_TP_ONF=3인칭, 도보
+FOV_FP_VEH=1인칭, 차량 안
+FOV_FP_ONF=1인칭, 도보
+FOV_AIM=일반 총 조준
+FOV_SNIP=스나이퍼 총 조준
+
+CAMDIST=카메라 거리 확대/축소기
+
+2PRSN=2인칭 시점
+
+! "Heading" as in the rotation
+CAMPUKE=게임 플레이 카메라 회전 잠금
+
+RDRG=렌더링
+
+VISSTTNGS=시각 설정
+
+NITEV=야광 투시
+
+THERV=열 감지 투시
+
+SHDR=쉐이더 변경
+
+DSTSCLMUL=거리 축척
+
+RDRHDOLY=HD 렌더링만 불러오기
+
+POTAT=그래픽이 뭉개지는 모드
+POTAT_H=2013년의 게임 초기 출시 그래픽으로 되돌립니다.
+
+BLKALLDRW=대부분의 렌더링 비활성화
+
+LKSTRMFCS=스트리밍 초점 잠금
+LKDPOS=잠금된 위치
+SELPOS_T=위치를 선택했으면 {} 을/를 눌러 확인하세요.
+
+SGMELNG=게임 언어 설정
+SGMELNG_H=몇몇 언어는 다른 폰트를 사용하기에 게임 재시작 후에만 해당 언어로 사용 가능합니다. (번역가 주: 영어에서 한국어로 변경할 경우 유용하게 쓰일 수 있지만 영어에서 한국어로 변경할 경우 다른 폰트를 불러와야하기에 변경해도 폰트가 깨지기에 의미가 없습니다.)
+
+STUTFIX=높은 FPS에서 스터터링 고치기
+STUTFIX_H=게임이 188FPS에 도달할 때 발생하는 스터터링을 고칩니다.
+
+NKBDHK=키보드 후킹 비활성화
+NKBDHK_H=전체 화면으로 게임 중, 게임 창이 최소화된 상태일 때의 인게임 키보드 입력을 비활성화 시켜 불필요한 성능 저하를 없앱니다.
+
+DBGNTVS=디버그 불러오기
+DBGNTVS_H=게임의 일부 스크립트에서 여전히 사용되는 원래의 디버그를 구현합니다.
+
+! As in "Software Patch"
+PTCHS=패치
+
+PRJTPOOL=발사 무기 Pool
+PTCH_PRJTPOOL_H=발사 무기 Pool이 가득찼을 때 소환을 거부하는 것 대신에, 이 패치는 발사된지 가장 오래된 발사 무기를 삭제할 것입니다.
+
+ANAL=아날로그 키보드 지원
+ANAL_H=만약 지원되는 아날로그 키보드를 가지고 있다면, 이렇게 하면 게임에서 키를 얼마나 세게 누르고 있는지 파악할 수 있습니다.
+ANAL_L=지원되는 키보드
+
+PRSRSUB=압력 빼는 수
+PRSRDIV=압력 나눗수
+
+DEV=디바이스
+PRSR=압력
+
+EJ=게임 시작 전 인젝트: 향상
+EJ_H=Stand가 게임이 시작된 것처럼 인젝트되도록 적용됩니다.
+
+GMEPOOL=게임 Pool 크기 조정
+GMEPOOL_H=엔티티 및 게임 스크립트를 위한 풀 크기를 조정합니다. "게임 메모리가 부족합니다" 오류를 방지하기 위해서는 메모리 풀 크기를 증가시키세요. Attempting to make a replay recording with modified game pools will crash the game.
+
+MEMPOOL=메모리 Pool 크기 조정 (MB)
+
+SETHIPRIO2=게임을 높은 우선 순위로 설정
+SPDUPSTRUP=빠른 게임 시작
+SKPGMEITR2=인트로 및 라이센스 건너뛰기
+
+SVMR=스크립트 가상 머신 시스템 사용
+SVMR_H=게임의 스크립트 런타임을 살짝 더 향상된 버전으로 대체합니다.
+
+! Legacy as in "the old way"
+LGCY=레이거시
+
+YEET_W=GTAV를 종료할 때 사용합니다
+
+!!!!!!!!!!!!!!!!!!
+!! Game > Radio !!
+!!!!!!!!!!!!!!!!!!
+
+RD=라디오
+
+MBLRD=모바일 라디오
+MBLRD_H=걸을 때에도 라디오를 활성화 할 수 있습니다.
+
+LKRD=라디오 방송국 잠금
+LKRD_H=게임이나 다른 플레이어에 의해 라디오 방송국이 바뀔 수 없게 합니다.
+
+RDSTS=라디오 방송국 목록
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Game > Disables !!
+!!!!!!!!!!!!!!!!!!!!!
+
+DBLES=비활성화 목록
+
+DGMEINPT=게임 입력 비활성화
+! Preset for Disable Game Inputs
+JUSTMOUSE=마우스
+DGMEINPT_H_MOUSE=Stand가 열려 있는 동안 가장 많은 게임 입력을 비활성화합니다.
+! Preset for Disable Game Inputs
+CTRLLR=컨트롤러
+DGMEINPT_H_CTRLLR=Stand가 열려 있는 동안 적은 게임 입력을 비활성화합니다.
+! Preset for Disable Game Inputs
+CTRLLR_N_TABS=컨트롤러 + 탭
+DGMEINPT_H_CTRLLR_N_TABS="컨트롤러" 와 동일하지만 차량 가속 및 브레이크 입력을 비활성화합니다.
+DGMEINPT_H_NUMPAD=모든 게임 입력을 활성화합니다.
+
+DGMEINPT_P=Stand가 열려 있는 동안 {disable_game_inputs_path} 에 대해 {preset} 의 설정을 사용하여 중복하는 게임 입력을 사용하지 않도록 설정하실건가요?
+
+DSBLPHNE=전화 차단
+DSBLPHNE_H=핸드폰에 걸려오는 모든 전화를 차단합니다.
+
+NCAMSHK=카메라 흔들기 비활성화
+
+NSTNTJMP=스턴트 점프 비활성화
+
+DSBLREC=녹화 비활성화
+DSBLREC_H=락스타 에디터 클립에 자신의 활동이 캡쳐되는 것을 비활성화합니다.
+
+NCINCAM=시네마틱 카메라 비활성화
+
+NVEHFCSCAM=차량 카메라 비활성화
+NVEHFCSCAM_H=차량 내에서 친한 플레이어 등의 근처에 있을 때 시네마 카메라 버튼을 누르면 카메라를 비활성화합니다.
+
+NIDLECAM=잠수 카메라 비활성화
+
+DSBLRESTRAR=지역 제한 비활성화
+DSBLRESTRAR_H=이 기능으로 인해 습격에 무기가 없거나 불러오는 것을 실패하는 원인이 될 수도 있습니다. ⚠️
+
+NFLTMSC=비행 음악 비활성화
+NWNTMSC=지명 수배 레벨 음악 비활성화
+
+PRVNUM7SCO=넘버패드 7번 키가 소셜 클럽 창 여는 것 방지
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > Info Overlay !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+HUDINFO=오버레이 정보
+
+IGTIME=게임 내 시간
+
+RWTIME=실제 시간 (컴퓨터 시간)
+
+DPS=DPS
+
+GPUOVHD=GPU 오버헤드 (ms)
+GPUOVHD_H=CPU가 얼마나 많은 ms 동안 GPU가 그 프레임을 끝내기 위해 기다리는지를 뜻합니다.
+
+TS=TPS
+TS_H=초당 프레임 (FPS)
+
+GEAR=기어
+GEAR_R=R
+
+RPM=RPM
+
+HQSA=호스트 순위 요인
+HQSA_0=가장 낮은 락스타 ID
+HQSA_1=가장 높은 락스타 ID
+HQSA_2=가장 낮은 닉네임 Hash
+HQSA_3=가장 높은 닉네임 Hash
+
+WSPCW=누가 누구를 관전 중인지
+WSPCW_T={spectator} 이/가 {spectatee} 을/를 관전 중
+
+CTRYBRKDWN=국가 순 정렬
+CTRYBRKDWN_H=세션 플레이어가 속한 국가의 수를 국가 옆에 보여줍니다.
+
+NEPOOL=나가는 네트워크 이벤트
+
+SRTBYCTRYNME=국가 이름
+SRTBYCNT=국가 수
+
+ALTDE=고도
+GRNDIST=땅과의 거리
+
+ROT_ENT=회전 (엔티티)
+ROT_CAM=회전 (카메라)
+ROT_X=Pitch
+ROT_Y=Roll
+ROT_Z=Yaw
+
+PEDS=NPC
+
+VEHS=차량
+
+OBJS=오브젝트
+
+PUPS=픽업
+
+PROJ=Projectiles
+
+SCPROG=Script Programs
+
+SCTHDS=Script Threads
+
+EHLT=Entity Handles Last Tick
+
+NGILT=Natives GTA Invoked Last Tick
+
+NSILT=Natives Stand Invoked Last Tick
+
+CTRLREQS=Control Requests
+
+FIBS=Fibers
+
+STH=Script Tick Handlers
+
+PRSNTHDLS=Draw Handlers
+
+! "Keep-Alive" may be kept as-is, as it's a rather technical term/concept.
+KACONS=연결 계속 유지
+
+!!!!!!!!!!!!!!!!!!!!
+!! Game > Minimap !!
+!!!!!!!!!!!!!!!!!!!!
+
+MINIMAP=미니 맵
+
+SLEEK=모양이 매끈한 미니 맵
+
+DNWINVI=새로운 초대 표시기 비활성화
+DNWINVI_H=맵 옆과 작업 목록 앱에 뜨는 새로운 초대 표시기를 비활성화합니다.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > AR Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ARNOTIFS=AR 알림
+
+DBGMODE=디버그 모드
+
+STATSCLE=정적 스케일
+DYNSCLE=동적 스케일
+DYNSCLG=동적 스케일링
+
+HOROFF=수평 오프셋
+VERTOFF=수직 오프셋
+DPHOFF=깊이 오프셋
+
+FPHOROFF=1인칭 수평 오프셋
+FPVERTOFF=1인칭 수직 오프셋
+FPDPHOFF=1인칭 깊이 오프셋
+
+RESVRDTOPSPC=반대 상태인 가장 높은 공간
+
+ROTMODE=회전 모드
+ARNOTIFS_ROTMODE_0=엔티티
+ARNOTIFS_ROTMODE_1=엔티티, Pitch 포함
+ARNOTIFS_ROTMODE_2=카메라
+ARNOTIFS_ROTMODE_3=카메라, Pitch 포함
+
+ENSTXTREAD=글자 가독성 보장
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Credits !!
+!!!!!!!!!!!!!!!!!!!!!
+
+CRED=고마운 사람
+
+CRED_Pocakking=BigBaseV2를 만듦
+CRED_QuickNET=GTA와 C++에 대한 지식을 공유하고 질문에 답을 함
+CRED_UPD=크로스맵을 공유하며 메뉴의 빠른 업데이트를 도움
+CRED_alloc8or=기본 DB 및 유용한 데이터 공유 유지
+CRED_SirMestre=작은 인젝터를 만들었으며, 런치패드를 만들 때 도움을 준 사람
+CRED_Give-Two=DirectX 렌더링을 지원하는 ScriptHookV을 구현하고 생성
+CRED_gir489=GTA에 대한 지식을 공유하고 bigbasev2-fix 구축
+
+! Check the "Languages" section at https://en.wikipedia.org/wiki/Fork_(software_development)
+CRED_Ryan=Stand가 사용하는 다른 버전의 Lua 프로그래밍 언어인 Pluto를 창작함
+
+CRED_BE=배틀아이에도 불구하고 스탠드를 사용할 수 있도록 도와줬습니다.
+
+CRED_UPX=Stand의 DLL 파일 크기를 작게 만듦
+CRED_UnknownCheats=행운의 커뮤니티
+CRED_StackOverflow=자연스럽게 합류
+
+CRED_LANG=번역가
+
+CRED_Thimo=Stand 독일어 번역 유지
+CRED_moue=Stand 리투아니아어 번역 유지
+CRED_aeronyx=Stand 포르투갈어 번역 유지
+CRED_zzzz=Stand 중국어 번역 유지
+CRED_IceDoomfist=Stand 한국어 번역 유지
+CRED_99Anvar99=Stand 러시아어 번역 유지
+CRED_Lancito01=Stand 스페인어 번역 유지
+CRED_Itreax=Stand 프랑스어 번역 유지
+CRED_Emre=Stand 터키어 번역 유지
+CRED_DumbBird=Stand 폴란드어 번역 유지
+CRED_JA=Stand 일본어 번역 유지
+CRED_VI=Stand의 베트남어 번역 유지
+CRED_IT=Stand 이탈리아어 번역 유지
+
+MISC=기타
+
+CRED_YOU=그리고... 지금 Stand를 사용 중이신 분!
+CRED_YOU_H=Stand를 사용하는 누구나 이 상을 받습니다. Stand를 지원하며 버그를 알려주고 기능을 제안해주셔서 감사합니다.
+
+!!!!!!!!!!!
+!! Stand !!
+!!!!!!!!!!!
+
+CMDSCRPT=명령어 스크립트 상자
+
+ASI=ASI 모드
+ASI_H=Stand의 ScriptHookV와 ASI 모드를 함께 실행합니다.
+ASICE=이 ASI 모드는 호환이 되지 않거나 방금 실행을 끝낸 것 같습니다.
+ASI_D_T=이 ASI 모드가 제대로 언로드되지 않은 것 같습니다.
+
+ASI_TMP=임시 폴더 사용
+ASI_TMP_H=이 기능은 언로드를 지원하지 않는 ASI 모드를 언로드할 수 있게 하지만, 임시 폴더에 ASI 모드가 설정 파일을 읽고 쓰는 경우를 유발할 수 있습니다.
+
+ASI_DOC=온라인 상태임을 속이기
+ASI_DOC_H=온라인에서 ASI 모드를 사용하면 작동이 안될 수도 있는 것을 속여서 작동하게 합니다.
+
+LUA=Lua 스크립트
+LUA_H=Lua 또는 Pluto 프로그래밍 언어로 코딩된 Stand용 스크립트를 실행시킬 수 있도록 해줍니다.
+
+LUA_RNNG2={} 을/를 실행 중입니다..
+LUA_START=스크립트 시작
+LUA_STOP=실행 중단
+
+CMPTLY=호환 레이어
+CMPTLYS=호환 레이어
+
+RESTRCS=제한 사항
+
+LUA_REPODEV=저장소에서 설치한 스크립트를 수정 중이니, 해당 스크립트의 다음 업데이트 때 덮어씌어질 수 있다는 점에 유의하세요.
+
+FILEGON=파일이 더 이상 존재하지 않습니다.
+
+LUACFGPRST_0=유저
+
+! Currently unused.
+LUACFGPRST_1=쉽게 짜증나는 유저
+
+LUACFGPRST_2=개발자
+
+DEVHINT=Lua 스크립트를 개발하고 있는 것 같습니다. Lua 스크립트 > 설정에서 개발자 설정을 활성화 해보는 것을 고려해보세요. 잠재적인 문제들에 대해 알려줄지도 모릅니다.
+
+DISINACC=인터넷 접속 비활성화
+
+FRCSILNTSTRT=강제 조용한 시작
+FRCSILNTSTP=강제 조용한 중단
+ENFRCSILNTSTRT=조용한 시작 강요
+ENFRCSILNTSTP=조용한 중단 강요
+
+YES_NOTIFY=예 + 알림
+
+WRNOS=위험한 스크립트를 실행할 때 알림
+LUA_W_OS=해당 스크립트는 자신의 시스템에 직접적으로 접근해 요청하는 코드를 포함합니다. 해당 스크립트를 신뢰하지 못할 경우 더 이상 진행하지 마세요.
+
+WRNMNY=돈 관련 스크립트를 실행할 때 알림
+LUA_W_MNY=해당 스크립트는 돈과 관련되어 있습니다. Stand는 해당 스크립트를 사용하고 나서 자신의 계정이 밴이 되지 않는다는 것을 보장하지 않으며 사용 후 때로는 밴을 당할 수도 있습니다. (밴은 지연되기 때문) Stand는 유저가 만든 컨텐츠의 안전성을 테스트하진 않습니다.
+
+LUA_SCAM=만약에 이 스크립트를 사용하기 위해 유료로 구매했다면, 사기 당한 것입니다! 99%의 컨텐츠는 무료로 Stand Lua 스크립트 저장소 또는 Stand 디스코드에서 사용 가능합니다. 유료로 구매한 사람들은 바가지에 당한 것이며, 더 이상 해당 Lua 스크립트의 개발자에게 돈을 지불하지 마세요.
+
+4DEV=개발자용
+
+REPO=저장소
+REPO_H_LUA=이 저장소는 Lua 스크립트를 쉽게 선택 & 접근할 수 있게 만듭니다.
+
+REPO_P_H=저장소로부터 해당 Lua 스크립트를 설치하였습니다. Stand가 자동으로 업데이트합니다.
+
+REPO_MISNGLCL=패키지 {} 이/가 로컬 파일을 못 찾았으니, 업데이트하는 것이 이 문제를 해결할 수 있길 바랍니다.
+REPO_DLFAIL=패키지 {package} 를 위한 파일 {file} 다운로드에 실패했습니다.
+
+SECCONT_NCRED=이 암호화된 컨텐츠에 액세스하기 위해, Stand가 활성화 돼야합니다.
+SECCONT_NAVAIL=이 암호화된 컨텐츠에 액세스하는 것을 실패했습니다.
+
+VER=버전
+ATR=만든 이
+
+DEPS=필수 요소
+DEP_M_O=필수 요소를 수동 설치 방식으로 설정하였습니다.
+DEP_M_F=필수 요소 설치 방식을 수동 설치 방법으로 더 이상 설치하지 않는다고 설정하였습니다.
+
+HELP=Stand 사용 시에 도움이 필요하다면?
+
+WEB2=웹 인터페이스
+WEB2_H=웹 인터페이스는 Stand를 웹 브라우저에서 사용할 수 있도록 해주며, 스마트폰에서도 가능합니다.
+WEB=웹 인터페이스 열기
+WEB_T=웹 인터페이스를 사용하고 있습니다. :O
+WEB_T_L=더 이상 웹 인터페이스를 사용하지 않습니다.
+
+RELAY_C={} 에(게) 연결 중...
+RELAY_E=릴레이 (실질적 IP) ({}) 에(게) 연결하는 것을 실패했습니다.
+RELAY_L=릴레이 (실질적 IP) 연결이 끊어졌습니다.
+
+TESTS=실험적인 기능
+
+CLRNOTIFS=알림 청소
+CLRNOTIFS_H=Stand의 알림 시스템이 띄운 알림들을 청소합니다.
+
+EMPTYLOG=Stand 로그 비우기
+EMPTYLOG_H=%appdata%/Stand/Log.txt 를 비웁니다.
+EMPTYLOG_T=로그가 비워졌습니다 :)
+
+FNDCMD=명령어 검색
+FNDCMD_H=이름 및 도움말 텍스트에 있는 Stand 명령어를 찾을 수 있습니다.
+
+CTXSTAR=저장
+CTXSTAR_H=이 명령어를 {} (으)로 찾을 수 있게 저장합니다.
+
+CMDSTARS=저장된 명령어
+CMDSTARS_H=컨텍스트 메뉴에서 해당 옵션을 사용하여 저장한 모든 명령어의 목록을 표시합니다.
+
+CON=콘솔
+
+LNDFT=기본 값이 아닌 명령어
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST=Stand 기능 목록 텍스트 파일 생성
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_H=사용 가능한 모든 명령어를 포함하여 '%appdata%/Stand/Features (ko).txt' 에 텍스트와 구문에 대한 도움말을 저장합니다.
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_T=Stand의 기능 목록을 '%appdata%/Stand/Features (ko).txt' 에 저장했습니다 :D
+
+FTRLST_1OPTN=1 개의 옵션
+FTRLST_OPTNS={} 개의 옵션
+FTRLST_MOPTNS={} 개 외의 더 많은 옵션
+
+PERMS=권한
+FTRLST_OTHP={} 사용 권한을 가진 다른 플레이어가 사용할 수 있습니다.
+FTRLST_R=Regular 버전 전용
+FTRLST_U=Ultimate 버전 전용
+
+PERM_F=친절한 명령어
+PERM_N=일반적인 명령어
+PERM_S=소환 명령어
+PERM_R=무례한 명령어
+PERM_A=폭력적인 명령어
+PERM_T=Toxic 명령어
+
+UNLD=Stand 언로드
+UNLD_H=Stand를 다시 인젝트 할 때까지 Stand를 게임에서 지웁니다.
+UNLD_T=Stand를 언로드 했습니다.
+
+BADBOY=아무 것도 하지 않아 킥을 맞을 이유가 없는 다른 Stand 유저를 킥 하려고 시도했습니다. 다른 플레이어들이 자신을 대해주는 것처럼 자신도 그렇게 대해주세요. 몇 초 안에 Stand가 사용 가능해지도록 변경될 것입니다.
+
+NWOOM=네트워크 피어 (Peer) 에 대한 메모리가 부족합니다. 자신을 쫓아내려는 사람을 킥하거나 세션에서 나가세요.
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! State & Profiles !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+PRFLS=프로필
+PRFLS_H=프로필은 모든 명령어의 설정을 저장하고 불러올 수 있게 합니다.
+
+NEWPRFL=프로필 만들기
+NEWPRFL_H=새로운 프로필을 만들어 Stand 설정 값을 저장합니다.
+
+DELPRFL_S={} 프로필을 성공적으로 삭제했습니다.
+DELPRFL_F={} 프로필을 삭제하는 것을 실패했습니다. 파일을 수동으로 삭제하세요.
+
+LOAD=불러오기
+LSTATE=설정 불러오기
+LSTATE_H_CTX2=저장된 설정 값을 해당 옵션에 적용합니다.
+LSTATE_H2=프로필에 저장된 설정 값을 모든 옵션에 적용합니다.
+LSTATE_T2={} 프로필에 저장된 설정 값을 적용했습니다. :)
+LSTATE_T_CTX2={profile} 프로필에 저장된 설정 값을 {command} 에 적용했습니다. :)
+
+SAVE=저장
+SSTATE=설정 저장
+SSTATE_H_CTX2=해당 옵션의 설정 값을 활성화된 프로필에 저장합니다.
+SSTATE_H2=이 프로필에 Stand 설정 값을 저장합니다.
+SSTATE_T2=설정 값을 {} 프로필에 저장했습니다. :)
+SSTATE_T_CTX=저장된 {command} 의 설정 값을 {profile} 프로필에 저장했습니다. :)
+
+AUTOLOAD=인젝트 시 불러오기
+
+AUTOSAVE2=자동 저장
+AUTOSAVE2_H=Stand를 사용할 때 이 프로필을 자동으로 업데이트합니다.
+AUTOSAVE2_H_T=다음에 Stand를 인젝트할 때 자동 저장이 다시 활성화될 것입니다.
+AUTOSAVE2_T=이 프로필은 자동으로 저장되기 때문에, 필요 없습니다. :)
+
+GODFLT=기본 설정 불러오기
+GODFLT_H=모든 명령어를 기본값으로 초기화합니다.
+GODFLT_T=기본 설정을 불러왔습니다. :)
+GODFLT_CTX={} 을/를 기본 설정으로 저장했습니다. :)
+
+RGODFLT=하위 기능에 기본 설정 적용
+RGODFLT_CTX={} 의 하위 기능에 기본 설정을 적용했습니다. :)
+
+PRFL_H_ACTV=이 프로필은 활성화된 프로필입니다.
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Appearance !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+STTNGS_TXT=폰트 & 글자
+
+STFNT=폰트 설정
+
+CMBINTXT=명령어 상자 입력 글자
+TXT_S=작은 텍스트
+
+TXTSCL=텍스트 크기
+
+OFF_X=X 오프셋
+OFF_Y=Y 오프셋
+
+TXTBOX=텍스트 경계 상자 표시
+
+FNTPRST=설정된 폰트 사용
+FNTPRST_H_YAHEI=Stand의 기본 폰트입니다.
+FNTPRST_H_NANUMGOTHIC=Stand의 한국어를 위한 보조 글꼴입니다.
+FNTPRST_H_BEVIETNAM=Stand의 베트남어를 위한 보조 글꼴입니다.
+
+RLDFNT=폰트 다시 불러오기
+
+SPRS=텍스처
+
+LFTBND=왼쪽 경계선
+LFTBND_1=버튼만
+LFTBND_1C=버튼만, 컴팩트
+LFTBND_2=모든 명령어
+LFTBND_2C=모든 명령어, 컴팩트
+
+RLDSPR=텍스처 다시 불러오기
+
+HDR=헤더
+2HIDE=숨겨짐
+CUS=커스텀
+
+FRMINT=프레임 간격
+
+SCRLBR=스크롤 막대
+SCRLBR_1=큰 목록
+
+LSTWDT=목록 너비
+LSTHHT=목록 높이
+
+WDT=너비
+HHT=높이
+
+SPCSZE=간격 크기
+
+LERP=부드러운 스크롤
+
+BGBLR=배경 블러 처리
+BGBLR_H=더 높은 값은 GPU의 요구 사항을 매우 높히게 됩니다.
+HDR_BGBLR_H=헤더의 투명도를 위해서 활성화 되어야만 합니다. 블러 처리를 위해 쓸모 없는 리소스가 낭비되는데, 그 블러 처리는 전체적으로 숨겨집니다.
+
+INFOTXT=정보 텍스트
+
+ALGN=정렬
+TA=텍스트 정렬
+
+ALIGN_TL=왼쪽 위
+ALIGN_TC=위의 중간
+ALIGN_TR=위의 오른쪽
+ALIGN_CL=왼쪽 중간
+ALIGN_CC=중간
+ALIGN_CR=오른쪽 중간
+ALIGN_BL=중간
+ALIGN_BC=아래쪽 중간
+ALIGN_BR=아래쪽 오른쪽
+
+DRPSHDW=Drop Shadow
+
+SHWNME=이름 표시기
+SHWLICON=왼쪽 아이콘 표시
+SHWRICON=오른쪽 아이콘 표시
+
+ICUTXTCLR=아이콘이 글자 색상 사용
+
+ADDRBAR=위치 바
+
+SHWCRLSTNLY=현재 목록만 표시
+
+ADDRSEP=위치 구분 기호
+
+WDTAFFBSCRLBR=너비가 스크롤 막대의 영향을 받음
+
+WDTAFFBCLMNS=너비가 세로단의 영향을 받음
+
+CTX_ADDR=기능 위치 복사
+CTX_ADDR_0=내 형식
+CTX_ADDR_1=기본 형식
+CTX_ADDR_2=API 형식
+CTX_ADDR_3=포커스 링크
+
+BRD=경계
+
+RNDD=둥근
+
+MAXCLMNS=최대 세로단
+
+MNUHGT=표시되는 최대 명령어 수
+
+CRS=커서
+
+SCRLGP=스크롤 간격
+CRSPAD_H=목록의 시작 또는 끝에 있지 않은 경우 선택 항목 아래 또는 위에 표시되는 명령어의 최소 양을 설정합니다.
+
+CMDINFOTXT=명령어 정보 텍스트
+
+BLWTBS=아래쪽 탭
+
+RPOS_L=왼쪽
+RPOS_B=아래쪽
+RPOS_R=오른쪽
+RPOS_T=위
+
+! As in the distance between menu components
+PDDGN=간격
+
+SHWHLPTXT=도움말 표시
+
+SHWSYNTX=명령어 구문 표시
+
+SHWSLDBHV=슬라이더 동작 표시
+
+SHWOTHP=다른 플레이어가 사용 가능한지 표시
+
+SHWCMDOWNR=소유 중인 스크립트 표시
+SHWCMDOWNR_T=이 명령어는 {} 에 의해 추가되었습니디.
+
+NOTFS=알림
+
+TYP=종류
+STNDNTF_M=Stand, 맵 옆
+STNDNTF_C=Stand, 커스텀 위치
+
+CUSTPOS=커스텀 위치
+CUSTPOS_H="Stand, 커스텀" 으로 설정된 경우에만 적용될 것입니다.
+
+INVFLOW=반대로 차오르기
+
+BRDCLR=경계 색상
+
+FLSHCLR=번쩍이는 색상
+
+FLSHNTF=번쩍이는 알림
+
+TIMNG=타이밍
+READSPD=읽기 속도 (WPM)
+READSTRT=읽기 시작 지연 (ms)
+MINDUR=최소 기간 (ms)
+MAXDUR=최대 기간 (ms)
+SAMPNOT=샘플 알림 표시
+
+SIZE_S=소
+SIZE_M=중
+SIZE_L=대
+
+MAXSHWMCHCMD=일치하는 명령어 중 최대 표시 수
+
+KPDRFCLS=닫기 전 값 유지
+
+SHWBI=버튼 사용 설명서 표시
+
+SHWCRSPOS=커서 위치 표시
+SHWCRSPOS_H=Stand의 게임 내 GUI 오른쪽 상단에 있는 커서 위치 표시기의 가시성을 변경합니다.
+
+CRSPOSIDIV=구분선 포함 커서 위치
+
+! Root as in the root of the command tree, which in this context is the text that reads "Stand 0.69 (Regular)" etc.
+RN=메뉴 이름
+
+RN_RNDBOOL=자신의 Stand 계정이 무작위로 할당된 팀을 대표합니다.
+RN_100=Stand 100(.x) 유저 전용.
+RN_EA=Stand 100 이전에 Stand 유저가 된 유저 전용.
+RN_U=Ultimate 버전 전용
+RN_EU=일찍 Ultimate/Toxic 버전을 사서 100€를 버린 유저 전용
+
+BKRST=뒤로 가기로 커서 초기화
+BKRST_H=뒤로 가봤자 아무 것도 없을 때 뒤로 가기 키를 누르면 커서를 현재 리스트의 가장 윗쪽으로 위치시킵니다.
+
+BKCLS=메뉴 뒤로 닫기
+BKCLS_H=뒤로 갈 내용이 없을 때 뒤로 가기를 눌러 Stand의 게임 내 GUI를 닫을 수 있습니다.
+
+INJOPEN2=인젝트 후 메뉴 열기
+
+PRFILVAL=현재 값 명령어 상자에 미리 채우기
+
+CMDTP_S=슬라이더
+CMDTP_S_N=숫자 슬라이더
+CMDTP_AV=글자 입력
+
+SELDIV=선택 가능한 분할
+SELNA=선택 가능한 N/A 슬라이더
+
+RHTBNDVAL=오른쪽 경계선 값
+
+LANG=언어
+LANG_H=Stand 메뉴의 언어를 변경하여 더욱 편리하게 사용하세요.
+LANG_H2=이 언어의 번역은 유지되지 않고 있습니다. 업데이트를 할 수 있다고 생각하면 연락해 보세요.
+
+STRMPRF=스트리머 전용 렌더링
+STRMPRF_H=Stand가 DirectX/게임 캡처를 사용하는 스트리밍 소프트웨어에 보이는 것을 방지합니다.
+
+ENTPREVS=엔티티 미리 보기
+DENTPREVS=엔티티 미리 보기 비활성화
+OPQ=불투명
+ENTPREVROTSPD=회전 속도
+ADDPREVDISTP=추가적인 캐릭터 거리
+ADDPREVDISTO=추가적인 오브젝트 거리
+ADDPREVDISTV=추가적인 차량 거리
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+CLRS=색
+
+KSPD=키 반복 간격
+KSPD_H=키를 누른 상태에서 키보드 입력이 반복되는 간격
+
+KHSPD=누른 키 반복 간격
+KHSPD_H=키를 잠시 누른 상태에서 키보드 입력이 반복되는 간격
+
+TKSPD=탭에 대한 키 반복 간격
+
+WRPINTHLD=커서 위로 올릴 시 지연 시간 주기
+
+IPT=메뉴 입력
+
+KSCHM=키보드 입력 방식
+PRSTS=설정된 설정값
+KSCHM_A=유연함
+KSCHM_0=텐키리스
+KSCHM_1=숫자 패드
+KSCHM_1_E=먼저 숫자 패드의 어떠한 키든 눌러 작동하는지 확인해 보세요. :?
+
+QWQCTX=컨텍스트 옵션 핫키
+
+MOUSE=마우스 지원
+MOUSE_H="Windows" 입력 방식에서는 커서가 계속 중앙에 위치하기 때문에 이 방법이 작동하지 않는다는 점에 유의하세요.
+
+MOUSEFOCUS=마우스가 아닌 탐색 커서 위치로 설정
+
+MOVWTHMSE=마우스로 조정
+
+CTRLLRSPPRT=컨트롤러 지원
+
+CTRLLRSCHM=컨트롤러 지원 키 목록
+
+HDENFO=정보 숨기기
+HDENFO_H=Stand를 화면 공유할 때 민감한 정보들이 표시되는 것을 방지합니다.
+
+RDCTD=[숨겨짐]
+
+HDENME=스푸핑되지 않은 닉네임 숨기기
+HDENME_H=플레이어 정보 목록에 표시된 닉네임을 의미하며 "다른 플레이어의 닉네임으로 스푸핑" 기능은 영향을 받지 않습니다.
+
+HDERID=RID 숨기기
+HDEIP=IP 주소 숨기기
+HDEGIP=GeoIP 숨기기
+
+B_OC=메뉴 열기/닫기
+B_OC_1=메뉴 열기/닫기 (1)
+B_OC_2=메뉴 열기/닫기 (2)
+B_RU=이전 탭
+B_RD=다음 탭
+B_MU=위로
+B_MD=아래로
+B_ML=왼쪽으로
+B_MR=오른쪽으로
+B_MC=클릭
+B_MB=뒤로
+
+DISCRP=디스코드 게임 상태 표시 (Stand)
+
+CLRCMDS=색 명령어
+PRVWCLRTXR=색상의 텍스처 미리 보기
+PRCWCLRLST=목록의 색상 미리 보기
+
+SFX=소리 효과
+
+MNUNVRMD=메뉴 탐색 미리 알림
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings > Session Joining !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSJNG=세션 조인
+
+SPCUCON=세션 연결 추측
+SPCUCON_H=Stand를 이용해 호스트에 추측하여 연결하고 데이터를 캐싱하여 세션 조인을 빠르게 합니다.
+
+AUTOCHNGTRGT=자동 목표 모드 변경
+AUTOCHNGTRGT_H=이것은 오직 Stand를 통해 세션을 조인할 때만 적용됩니다. 대화 상자가 없는 조인 방법을 항상 이것을 합니다.
+AUTOCHNGTRGT_T=목표 모드가 {} (으)로 변경되었습니다.
+AUTOCHNGTRGT_T_0=보조 에임
+AUTOCHNGTRGT_T_1=자유 에임
+
+REJBLK=조인이 성공할지 확인
+REJBLK_H=만약 호스트가 조인을 허용해주지 않을 것 같다면 조인 시도를 중단합니다. 예시: 세션이 가득참
+REJBLK_T=해당 세션의 호스트가 지금 당신이 조인하는 것을 허용해줄 것처럼 보이질 않습니다.
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Tunables !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+TNBL=꾸미기
+TNBL_H=락스타가 특정 이벤트 주간에만 활성화 하는 기능 중 일부를 활성화할 수 있습니다.
+
+NINSURPAY=보험금 지급 비활성화
+NINSURPAY_H=다른 사람의 개인 차량을 파손할 때 보험료를 지불하지 않도록 합니다.
+
+TNBL_HLWN=할로윈 이벤트
+
+TNBL_PYTE=환각 선인장
+
+!!!!!!!!!!!!!!!!!!!!
+!! World > Editor !!
+!!!!!!!!!!!!!!!!!!!!
+
+EDTR=에디터
+
+ROT_L=왼쪽으로 회전
+ROT_R=오른쪽으로 회전
+
+TOOLS=도구
+
+TP2LKAT=자신이 보고 있는 곳으로 순간 이동
+DELSPWD=소환된 모든 오브젝트 삭제
+
+FCSIMNU=Stand에 집중
+
+!!!!!!!!!!!!!!!!!!
+!! Asset Hashes !!
+!!!!!!!!!!!!!!!!!!
+
+AST=에셋 해시
+
+ASTFIX=에셋 해시 고치기
+ASTFIX_H=보통 수정된 에셋을 이용하면 호환되지 않는 에셋 오류가 뜨지만, 이 기능을 사용하면 수정된 에셋을 이용해 세션을 조인할 수 있도록 해줍니다.
+
+ASTCRC=에셋 Checksum
+
+ASTSET=에셋 Checksum 설정
+ASTSET_H=메치메이킹과 세션을 제한하기 위해서 커스텀 에셋 Checksum을 입력할 수 있도록 해줍니다. (최대 Hex 8글자)
+ASTSET_T=에셋 Checksum을 {} 으(로) 설정했습니다.
+
+ASTRST=에셋 Checksum 초기화
+
+OVRXTR=추가 Checksum 설정
+
+XTRCRC=추가 Checksum
+XTRCRC_H=메치메이킹과 세션을 제한하기 위해서 추가 Checksum을 입력할 수 있도록 해줍니다. (최대 Hex 8글자)
+
+XTRCRC_PRSTS=추가 Checksum: 설정된 설정값
+
+!!!!!!!!!!!!!!!!!
+!! Custom DLCs !!
+!!!!!!!!!!!!!!!!!
+
+CUSTDLC=커스텀 DLC
+CUSTDLC_H=에드온 차량과 같은 것을 쉽게 불러올 수 있도록 해줍니다.
+
+! Don't translate the folder names
+CUSTDLCS_OPNFLD="Custom DLCs" 폴더를 열고, GTA의 "dlcpacks" 폴더는 Stand처럼 쉽게 한 번만에 DLC를 등록하고 불러올 수 없지만, Stand는 할 수 있도록 해줍니다.
+
+CUSTDLC_ETY=DLC가 불러와졌지만, 소환 가능한 컨텐츠를 찾을 수 없습니다.
+
+CUSTDLC_SPF=모델 스푸핑
+CUSTDLC_SPF_H=커스텀 DLC의 모델을 실제로 게임에 있는 모델로 스푸핑하여 플레이어들이 커스텀 DLC 없이 다른 차량을 볼 수 있도록 해줍니다.

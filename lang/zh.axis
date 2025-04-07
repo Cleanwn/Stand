@@ -1,0 +1,5658 @@
+! Thanks for helping with the translation of Stand into your language!
+! Before you begin, I guess you need to know a little about the project so you can work efficiently.
+! Lines starting with "# LABEL=" need to be translated except for the "LABEL=" part and to indicate that it has been translated, you need to remove the "# ", which might be a bit annoying at first, but this will become practical for updating the translation.
+! There are some things that you shouldn't translate:
+! - The name "Stand"
+! - Pairs of curly brackets, e.g. {} or {player}
+! - Folders or files like %appdata%/Stand/Theme
+! - Emojis (unless there's a culturally different meaning)
+! - Technical Terms, i.e. anything that would make less sense if translated
+! Alright, I think you're ready to unleash your powers now! ;D
+
+!!!!!!!!!!!!!
+!! General !!
+!!!!!!!!!!!!!
+
+HI=您现在是 [Stand 用户] 了! :D
+HI_TRCK=欢迎回到Stand!
+HI_TRCK_0=您追踪的玩家目前都没有在线.
+HI_TRCK_1={} 目前在线.
+HI_TRCK_M={} 目前在线.
+
+HKFAIL={} 所需的一个或多个游戏功能无法更改,大概是因为您正在使用的另一个菜单. :/
+WOT1=什么都没发生.
+WOT2=什么都没发生.
+WOT3=什么都没发生.
+WOT4=什么都没发生.
+WOT5=什么都没发生.
+2FAST=您操作太快了,深呼吸,然后再试一次.
+ARGNME=[名称]
+
+! E.g. Command: wanted [0 to 5]
+ARGRNGE=到
+
+ARGVAL=[数值]
+ARGVALOPT=(数值)
+NRML=正常
+INVARG=那是一个无效的数值. :?
+GENWARN=您真的确定要这样做吗?
+IRREV=此操作无法撤消.
+GENFAIL=Hmm,不可用. :/
+IPSUM=这是一些文字
+PRCD=继续
+ABRT=取消
+SHW=显示
+HDE=隐藏
+HIDE=隐藏
+NONE=无
+JUSTON=开启
+OFF=关闭
+ON=启用
+DOFF=关闭
+DOFF2=禁用
+ALL=所有
+
+! Thousands separator, e.g. 1,000,000
+THSNDSEP=,
+
+! "Not Applicable"
+NA=不可用
+
+GEMINI=开启第三只眼...
+RCMD=建议
+NRCMD=不建议
+CPYF=复制 {}
+GENWAIT=请稍等...
+CMDLEN=不能超过 {} 个字符.
+AND={} 和 {}
+
+! A more fancy way of saying "this is local"
+GEN_H_LOC=*仅本地更改*
+
+! When the user is seeing an empty list:
+ETYLST=这里什么都没有.
+
+NPHYS=[命令没有实际形式]
+
+! Repetitions in log:
+LOG_REP_S=+ 重复1次
+LOG_REP_P=+ 重复 {} 次
+
+IPNAM={ip} (之前的名称是 {name})
+
+CHRCNT={cur}/{max} 字符
+PLYCNT={cur}/{max} 玩家
+PTCCNT={cur}/{max} 参与者
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Search Commands !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SRCH=搜索
+ARGCLU=[关键词]
+SRCHNRES=未找到任何结果. :/
+
+!!!!!!!!!!!!!!!!!!!!
+!! Error Handling !!
+!!!!!!!!!!!!!!!!!!!!
+
+ERR_L_B=错误信息开头
+ERR_L_E=错误信息结尾
+
+ERR_T_GEN=可在 %appdata%/Stand/Log.txt 文件中查看错误信息.
+ERR_T_CAU=捕获到一个异常.
+ERR_T_GME=游戏出现致命错误,现在可能需要重新启动.
+ERR_T_OTH=Stand遇到了一个意外的问题.
+
+ERR_LUA=警告: 执行一个Lua脚本时出现了此错误.
+
+SVM=脚本错误恢复
+4FMONLY=仅用于自由模式
+
+SVM_ERR=阻止了 {script} 脚本在 {operation} 时死亡.
+SVM_DIE={script} 脚本在 {operation} 时死亡.
+SVM_EXP=执行 {script} 脚本时捕获到异常.
+
+SVM_BLM_S=这可能是由 {player} 最近的事件引起的.
+SVM_BLM_D=这可能是由 {player} 最近的事件 ({event}) 引起的.
+
+SVM_INVOP={script} 脚本中的操作码 {opcode} 无效; 杀死了它而不是使游戏崩溃.
+SVM_FRZ={} 脚本似乎陷入了无限循环; 杀死了它而不是让其冻结游戏.
+
+!!!!!!!!!!
+!! Tabs !! These are to be on the left side of the menu which shouldn't be too wide so keep these as short as possible
+!!!!!!!!!!
+
+ACTVTE=激活
+TUT_ONE=一
+TUT_TWO=二
+SLF=自我
+VEH=载具
+Online=线上
+PLYLST=玩家
+WRLD=世界
+GME=游戏
+
+!!!!!!!!!!!!!!!!
+!! References !!
+!!!!!!!!!!!!!!!!
+
+PLY=玩家
+
+STTNGS=设置
+
+KPCRSR=重新访问时保持光标
+
+TABS=页签
+KPCRSRR_H=将使"自我"之类的选项记住您上次访问它们时的光标位置.
+
+LSTS=列表
+KPCRSRS_H=将使"设置"之类的列表记住您上次访问它们时的光标位置.
+
+KPCRSR_L_RDC=列表: 减少对大列表的效果
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Tutorial & Help !!
+!!!!!!!!!!!!!!!!!!!!!
+
+TUT=教程
+TUT2=Stand 教程
+
+RPT=重复
+
+! Or "Skip"
+DISM=跳过
+
+TUT_LD=Stand 已注入. 加载游戏以继续.
+
+TUT_OPEN=要显示或隐藏您的Stand, 请按 {}.
+TUT_OPEN2=要显示或隐藏您的Stand, 请按 {numpad} 或者 {alt} 如果您没有数字键盘.
+TUT_USE=按 {} 进入已选择选项的子菜单.
+TUT_BK=按 {} 来返回到上个页面.
+TUT_DN2=按 {} 来向下移动.
+TUT_RUP=要回到上一个选项,请按 {}.
+TUT_TABS=出色的操作. 打起精神来, 我现在要启用页签了!
+TUT_RNXT=按 {} 移动到下一个页签.
+TUT_RPRV=按 {} 返回到上一个页签.
+
+TUT_CMD2=注意它这里的 "命令: " 是什么,几乎每个选项都有它独有的命令. 这意味着您可以通过Stand的命令框使用这些功能! 您可以在任何时候按 {} 来打开命令框.
+TUT_SLIDER=使用 {} 和 {} 来操控滑块.
+TUT_PROFILES=如果您想让Stand在下次注入时记住设置的状态, 您可以使用配置文件 (Stand > 配置文件).
+TUT_CTX2=按 {} 来打开上下文菜单, 它允许您为选项添加快捷键,关联性,以及更多内容.
+
+TUT_HDE=再次按 {} 来隐藏您的Stand.
+
+HLP_CTRLLR=您可以使用控制器的 {} 键来打开Stand.
+
+HLP_CMDCHAIN=您可以使用分号将命令链接在一起,例如. "{}".
+
+!!!!!!!!!!!!!!
+!! Commands !!
+!!!!!!!!!!!!!!
+
+CMD=命令
+B_CB=命令框
+CMDPRMPT=Stand 命令框
+KB_CMDPRMPT=打开命令框
+
+CMDUNK=抱歉, "{}" 这不是我所知道的命令. :/
+CMDAMBIG=抱歉, "{}" 可能意味着多件事. :/
+CMDISS={} 不适用于其他玩家. :/
+CMDPERM=您不可以使用 {}.
+MORE=... 还有 {} 个.
+MANYMORE=... 还有很多.
+
+CMDONL=此功能只能在GTA在线模式中使用.
+CMDONLONC=加入GTA在线模式后才可使用此功能.
+CMDNEEDHOST=此功能只在您是战局主机时可用. :|
+CMDNH=此功能不可对主机使用. :|
+CMDOTH=此功能不可对您自己使用. :|
+CMDDISA=此功能目前已禁用. 请查看我们的公告以获取更多信息.
+
+CMD_DR_S=命令执行成功. :)
+
+FRMTSEL_AVAIL=这里支持文本格式化. 按 {} 来选择.
+FRMTSEL_H=使用方向键移动. 按下 {} 插入代码.
+FRMTSEL_H_R=重置: 清除应用的格式化.
+FRMTSEL_H_N=换行.
+
+B_CTX=上下文菜单
+CTX_MIN=设置为最小值
+CTX_MAX=设置为最大值
+
+CTX_UNAVAIL={option} 不可用于 {command}.
+
+AUTOSTATE=关联状态
+AUTOSTATE_OFF=无
+AUTOSTATE_OPN=当Stand打开时
+AUTOSTATE_OFT=步行时
+AUTOSTATE_AIM=瞄准时
+AUTOSTATE_FRE=处于自由模式里时
+AUTOSTATE_CHT=聊天时
+AUTOSTATE_HST=为战局主机时
+
+AUTOSTATEINV=反转关联状态
+
+IVRT=反转
+
+AUTOSTATE_H=关联状态: {command} 会在 {condition} {state}.
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_ON=启用.
+
+! This will be used to substitute {state} in AUTOSTATE_H
+AUTOSTATE_H_OFF=关闭.
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OPN=Stand打开时
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_OFT=您步行时
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_AIM=您瞄准时
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_FRE=您处于一个自由模式战局里时
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_CHT=您聊天时
+
+! This will be used to substitute {condition} in AUTOSTATE_H
+AUTOSTATE_H_HST=您为战局主机时
+
+CMDSTATE_L=设置 {0} 到 {1}. :)
+CMDSTATE_L_E={0} 已经是 {1}. :)
+
+CMDSTATE_LON=已启用 {}. :)
+CMDSTATE_LOFF=已关闭 {}. :)
+
+CMDSTATE_LON_E={} 已经开启. :)
+CMDSTATE_LOFF_E={} 已经关闭. :)
+
+CMDSTATE_OON=已成功启用. :)
+CMDSTATE_OOFF=已成功关闭. :)
+
+CMDSTATE_OON_E=它已经启用了. :)
+CMDSTATE_OOFF_E=它已经关闭了. :)
+
+! E.g. "Freeze on Herobrine" or "Freeze on All Players". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A={command} 到 {player}
+
+! E.g. "WiriScript's Immortality on Herobrine". Used for command box completion hints and state notifications like CMDSTATE_LON.
+PLY_A_LUA={script}的 {command} 对 {player}
+
+SUPPGEN=禁止通用回复
+SUPPGEN_H=禁止显示"命令执行成功"之类的常规响应.
+
+SUPPGEN_CB_H=包括Stand命令框, 网页界面上的命令框和聊天命令.
+
+WARNS=警告
+
+WARNAUTOPROC=警告时自动继续
+
+WARNSKIPPROC=跳过已经接受的警告
+
+WARNFRCERD=强制我阅读警告
+
+HOTKEY=快捷键
+ARGHOTKEY=[快捷键]
+HOTKEYS=快捷键
+HOTKEY_A=添加快捷键
+HOTKEY_C2=更改快捷键
+HOTKEY_R2=删除快捷键
+HOTKEY_U=请按下您想为 {} 功能设置的快捷键.
+HOTKEY_T=已保存 {} 的快捷键到 %appdata%/Stand/Hotkeys.txt :)
+
+HOTKEY_HOLD=按住模式
+
+!!!!!!!!!!!!!!!!!!!
+!! Keyboard Keys !!
+!!!!!!!!!!!!!!!!!!!
+
+K_UNK=未知按键
+
+K_R=右 {}
+K_L=左 {}
+
+K_SHFT=Shift
+K_ALT=Alt
+K_CTRL=Ctrl
+
+! E.g. "Hold W"
+K_HOLD=按住
+
+K_SPC=空格
+K_ISRT=Insert
+K_DEL=Delete
+K_HME=Home
+K_END=End
+K_PGUP=Page Up
+K_PGDN=Page Down
+K_RET=回车
+K_BACK=退格
+K_ESC=Esc
+K_A_U=方向键上
+K_A_L=方向键左
+K_A_R=方向键右
+K_A_D=方向键下
+K_TAB=Tab
+K_LMB=鼠标左键
+K_MMB=鼠标中键
+K_RMB=鼠标右键
+K_X1=鼠标 4
+K_X2=鼠标 5
+K_MPP=媒体 播放/暂停
+K_MS=媒体 停止
+K_NT=下一首曲目
+K_PT=上一首曲目
+K_CAPS=Caps Lock
+
+HMB=修改键匹配
+HMB_H=如何处理Ctrl, Shift和Alt.
+STRCT=严格
+HMB_STRCT_H=不能按其他辅助键. 因此, 按 Ctrl+Shift+G 不会触发 G 也不会触发 Ctrl+G.
+SMRT=智能
+HMB_SMRT_H=如果快捷键中有辅助键,则为严格,否则为宽松. 因此, 按 Ctrl+Shift+G 会触发 G, 但不会触发 Ctrl+G.
+LAX=宽松
+HMB_LAX_H=还可以按下其他辅助键. 因此, 按 Ctrl+Shift+G 将触发 G 和 Ctrl+G.
+
+DHK=禁用快捷键
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Controller Buttons !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+CK=控制器按键
+
+CK_LT=左扳机
+CK_RT=右扳机
+CK_LB=LB
+CK_RB=RB
+CK_LS=左操纵杆 (L3)
+CK_RS=右操纵杆 (R3)
+CK_D_U=方向键 上
+CK_D_D=方向键 下
+CK_D_L=方向键 左
+CK_D_R=方向键 右
+CK_STRT=Start
+CK_BCK=Back
+
+!!!!!!!!!!!!!!!!!!!!
+!! Authentication !!
+!!!!!!!!!!!!!!!!!!!!
+
+UPDAVAIL=Stand 新版本 {} 已发布.
+
+FREE_T=此功能在Stand的免费版本中不可用. ;)
+CMDFULLSP=要使用此功能,请进入故事模式或升级到Regular版本的Stand.
+CMDNEDR=此功能只能在Regular或更高的版本中使用..
+CMDNEDU=此功能只能在Ultimate版本中使用.
+
+ACTVTE_H=激活Stand以访问完整的菜单,即使在GTA线上中.
+ACTVTE_PSTE2=粘贴激活码
+ACTVTE_RGST=创建一个账户
+ACTVTE_ERR_F2=您剪贴板中的内容与Stand激活码的格式不一致. :?
+ACTVTE_STRT2=正在验证您的激活码...
+ACTVTE_SUCC2=Stand已成功激活. :D
+
+ACTVTE_ERR_I2=您的激活码无效. :/
+ACTVTE_RGN=您的激活码已被重新生成.
+AUTHSHR2=您的激活码正在其他地方使用. 重新生成它或者稍后再试.
+
+AUTH_X=您的激活已经过期.
+AUTH_CE=发生了连接错误.
+CONHELP=如果您的设备连接上了网络,请确保没有其他东西干扰Stand的连接.
+
+TELEKOM_OFF=已重新连接上服务器! :D
+
+VER_UNSUPP=您 Stand 的版本已不再受支持.
+VER_UNSUPP_AUTHONLY=您 Stand 的版本已不再受支持, 并且我们将不再支持该版本的身份验证.
+UPDHELP=您可以通过在菜单上卸载 Stand, 然后在启动器上点击 “Check For Updates”, 最后再次注入 Stand 即可轻松更新 Stand.
+
+!!!!!!!!!!!!!!!!
+!! Filesystem !!
+!!!!!!!!!!!!!!!!
+
+FWERR=无法打开 {} 进行写入. :|
+
+WRDR=衣柜
+
+OPNFLD=打开文件夹
+
+OPNSTND=打开Stand文件夹
+OPNSTND_H=打开您的 %appdata%/Stand/ 文件夹.
+
+OPNASI=打开ASI文件夹
+OPNASI_H=打开您的 %appdata%/Stand/ASI Mods 文件夹.
+
+OPNGTA=打开GTA5文件夹
+
+OPNTHME=打开主题文件夹
+OPNTHME_H=打开您的 %appdata%/Stand/Theme 文件夹.
+
+!!!!!!!!!!!!
+!! Colour !!
+!!!!!!!!!!!!
+
+C_H=色调
+C_S=饱和度
+C_V=数值
+
+CR_HSV=HSV表示
+CR_RGB=RGB表示
+
+OPCTY=不透明度
+
+C_R=红
+C_G=绿
+C_B=蓝
+
+CN_A=彩虹
+CN_R=红色
+CN_R_WINE=红酒色
+CN_G=绿色
+CN_G_D=深绿色
+CN_G_LIME=青柠色
+CN_OLIVE=橄榄色
+CN_MOSS=苔绿色
+CN_TUR=绿松色
+CN_B=蓝色
+CN_B_D=深蓝色
+CN_B_COOL=浅蓝色
+CN_B_ROYAL=皇家蓝
+CN_C=青色
+CN_AQUA=水绿色
+CN_PLUM=紫红色
+CN_Y=黄色
+CN_Y_D=深黄色
+CN_P=粉色
+CN_P_H=亮粉色
+CN_SALMON=三文鱼色
+CN_U=紫色
+CN_U_D=深紫色
+CN_M=洋红色
+CN_O=橙色
+DN_O_L=浅橙色
+CN_O_RUST=绣橙色
+CN_BR=棕色
+CN_BR_L=浅棕色
+CN_EARTH=大地色
+CN_W=白色
+CN_L=黑色
+CN_GR=灰色
+CN_GR_D=深灰色
+
+C_PAT={colour} 图案
+
+OTHR=其他
+CLRHEX=输入十六进制代码
+CURRCLRHEX=当前颜色(十六进制)
+
+LGBT=彩虹模式
+LGBT_H=每x毫秒循环一次颜色的色调,但仍然允许您更改饱和度, 值和不透明度.
+
+CLR=颜色
+
+LGBTQ={}: 彩虹模式
+
+! As in "colour finish"
+CLRFIN=预设
+
+! "LSC" is Los Santos Customs
+CLRSTD=洛圣都改车王颜色
+
+CLRSTD_1=石墨
+CLRSTD_2=黑钢
+CLRSTD_3=深钢黑
+CLRSTD_4=银
+CLRSTD_5=蓝银
+CLRSTD_6=轧钢银
+CLRSTD_7=阴影银
+CLRSTD_8=石银
+CLRSTD_9=午夜银
+CLRSTD_10=铸铁银
+CLRSTD_11=无烟煤黑
+CLRSTD_12=哑光黑
+CLRSTD_13=哑光灰
+CLRSTD_14=哑光浅灰
+CLRSTD_15=实用黑
+CLRSTD_16=实用黑聚合
+CLRSTD_17=实用深银
+CLRSTD_18=实用银
+CLRSTD_19=实用铸铁银
+CLRSTD_20=实用阴影银
+CLRSTD_21=磨损黑
+CLRSTD_22=磨损石墨
+CLRSTD_23=磨损银灰
+CLRSTD_24=磨损银
+CLRSTD_25=磨损蓝银
+CLRSTD_26=磨损阴影银
+CLRSTD_28=都灵红
+CLRSTD_29=公式红
+CLRSTD_30=火焰红
+CLRSTD_31=优雅红
+CLRSTD_32=石榴红
+CLRSTD_33=日落红
+CLRSTD_34=红酒红
+CLRSTD_35=糖果红
+CLRSTD_36=日出橙
+CLRSTD_37=经典金
+CLRSTD_39=哑光红
+CLRSTD_40=哑光深红
+CLRSTD_41=哑光橙
+CLRSTD_42=哑光黄
+CLRSTD_43=实用红
+CLRSTD_44=实用亮红
+CLRSTD_45=实用石榴红
+CLRSTD_46=磨损红
+CLRSTD_47=磨损金红
+CLRSTD_48=磨损深红
+CLRSTD_50=赛车绿
+CLRSTD_51=海绿
+CLRSTD_52=橄榄绿
+CLRSTD_53=亮绿
+CLRSTD_54=汽油绿
+CLRSTD_55=哑光酸橙绿
+CLRSTD_56=实用深绿
+CLRSTD_57=实用绿
+CLRSTD_58=磨损深绿
+CLRSTD_59=磨损绿
+CLRSTD_60=磨损海洗
+CLRSTD_61=银河蓝
+CLRSTD_63=撒克逊蓝
+CLRSTD_65=水手蓝
+CLRSTD_66=港湾蓝
+CLRSTD_67=钻石蓝
+CLRSTD_68=冲浪蓝
+CLRSTD_69=航海蓝
+CLRSTD_70=极蓝
+CLRSTD_71=沙弗特紫
+CLRSTD_72=信风紫
+CLRSTD_73=赛车蓝
+CLRSTD_74=淡蓝
+CLRSTD_75=实用深蓝
+CLRSTD_76=实用午夜蓝
+CLRSTD_77=实用蓝
+CLRSTD_78=实用海泡蓝
+CLRSTD_79=实用闪电蓝
+CLRSTD_80=实用毛伊蓝聚合
+CLRSTD_81=实用淡蓝
+CLRSTD_82=哑光深蓝
+CLRSTD_83=哑光蓝
+CLRSTD_84=哑光午夜蓝
+CLRSTD_85=磨损深蓝
+CLRSTD_86=磨损蓝
+CLRSTD_87=磨损淡蓝
+CLRSTD_89=赛车黄
+CLRSTD_90=青铜
+CLRSTD_91=露珠黄
+CLRSTD_93=香槟
+CLRSTD_94=菲尔泽棕
+CLRSTD_95=溪流棕
+CLRSTD_96=巧克力棕
+CLRSTD_97=枫木棕
+CLRSTD_98=马鞍棕
+CLRSTD_99=稻草棕
+CLRSTD_100=苔藓棕
+CLRSTD_101=野牛棕
+CLRSTD_102=山毛榉棕
+CLRSTD_103=山毛榉木棕
+CLRSTD_104=赭色棕
+CLRSTD_105=沙棕
+CLRSTD_106=漂白棕
+CLRSTD_107=奶油
+CLRSTD_108=实用棕
+CLRSTD_109=实用中棕
+CLRSTD_110=实用淡棕
+CLRSTD_111=冰白
+CLRSTD_112=霜白
+CLRSTD_113=磨损蜂蜜米
+CLRSTD_114=磨损棕
+CLRSTD_115=磨损深棕
+CLRSTD_116=磨损稻草米
+CLRSTD_117=拉丝钢
+CLRSTD_118=拉丝黑钢
+CLRSTD_119=拉丝铝
+CLRSTD_120=铬
+CLRSTD_121=磨损奶油
+CLRSTD_122=实用奶油
+CLRSTD_123=磨损橙
+CLRSTD_124=磨损淡橙
+CLRSTD_125=豌豆绿
+CLRSTD_126=磨损黄
+CLRSTD_127=警车蓝
+CLRSTD_128=哑光绿
+CLRSTD_129=哑光棕
+CLRSTD_130=磨损橙
+CLRSTD_131=哑光冰白
+CLRSTD_132=磨损白
+CLRSTD_133=磨损橄榄绿
+CLRSTD_134=实用白
+CLRSTD_136=鲑鱼粉
+CLRSTD_137=菲斯特粉
+CLRSTD_138=亮橙
+CLRSTD_140=亮蓝
+CLRSTD_141=午夜蓝
+CLRSTD_142=午夜紫
+CLRSTD_144=猎人绿
+CLRSTD_145=亮紫
+CLRSTD_146=金属午夜紫
+CLRSTD_147=碳黑
+CLRSTD_148=哑光沙弗特紫
+CLRSTD_149=哑光午夜紫
+CLRSTD_150=熔岩红
+CLRSTD_151=哑光森林绿
+CLRSTD_152=哑光橄榄绿
+CLRSTD_153=哑光暗土
+CLRSTD_154=哑光沙漠棕褐
+CLRSTD_155=哑光叶绿
+CLRSTD_156=默认合金
+CLRSTD_157=伊普西龙蓝
+CLRSTD_158=纯金
+CLRSTD_159=拉丝金
+CLRSTD_160=金
+
+CLRFR=主色调
+
+CLRSEC=副色调
+
+CLRINT=内饰颜色
+CLRPRL=珠光颜色
+
+VEHMOD20=轮胎烟雾
+CLRTIRE=轮胎烟雾颜色
+TIREINDEP=独立日轮胎烟雾
+
+NEONLGHTS=霓虹灯
+
+APOS_F=前
+APOS_B=后
+
+CLRBR=背景颜色
+
+CLRFT=选中文本颜色
+CLRFRT=选中文本数值颜色
+CLRFS=选中贴图颜色
+
+CLRBT=未选中文本颜色
+CLRBRT=未选中文本数值颜色
+CLRBS=未选中贴图颜色
+
+CLRHU=屏幕元素颜色
+
+CLRAR=AR颜色
+
+CLRMGME=小游戏颜色
+
+HAIR_V=头发颜色
+HAIRHI=头发颜色: 高光
+HAIRR=头发颜色: 彩虹模式
+
+GUNTINT=当前武器: 色调
+GUNTINTR=当前武器: 色调: 彩虹模式
+
+WINTINT=车窗色调
+
+! "Livery" is VEHMOD48
+RFTLIV=车顶涂装
+
+!!!!!!!!!!!!!!!
+!! Collision !!
+!!!!!!!!!!!!!!!
+
+GHOST=穿墙
+GHOST_H=能够穿过墙壁和载具.
+
+COLSNS=碰撞选项
+
+GHOSTVEHS=与其他载具无碰撞
+
+NOCOLPED=与Ped无碰撞
+NOCOLOBJ=与物体无碰撞
+NOCOLOBJ_H=注意: 这不包括树木等固定的地图物体.
+
+GHOSTRIDE=无碰撞
+GHOSTRIDE_H=完全禁用当前载具的碰撞(不建议用于非飞行载具).
+
+!!!!!!!!!!
+!! Self !!
+!!!!!!!!!!
+
+MVMNT=移动选项
+
+VIS=外观选项
+
+OTFT=服装选项
+
+HEAD=头部
+HEAD_V=头部变化
+FACIALHAIR=面部毛发
+FACIALHAIR_V=面部毛发颜色
+MASK=面具
+MASK_V=面具变化
+HAIR=发型
+TOP1=上身
+TOP1_V=上身变化
+TOP2=上身2
+TOP2_V=上身2变化
+TOP3=上身3
+TOP3_V=上身3变化
+BAG=背包 / 降落伞
+BAG_V=背包 / 降落伞变化
+PCHUTE=降落伞 / 背包
+PCHUTE_V=降落伞 / 背包变化
+TORSO=手套 / 躯干
+TORSO_V=手套 / 躯干变化
+GLOVES=手套
+GLOVES_V=手套变化
+PANTS=裤子
+PANTS_V=裤子变化
+SHOES=鞋子
+SHOES_V=鞋子变化
+ACCESSORIES=配件
+ACCESSORIES_V=配件变化
+DECALS=贴花
+DECALS_V=贴花变化
+HAT=帽子 / 头盔
+HAT_V=帽子 / 头盔变化
+GLASSES=眼镜
+GLASSES_V=眼镜变化
+EARWEAR=耳饰
+EARWEAR_V=耳饰变化
+WATCH=手表
+WATCH_V=手表变化
+BRACELET=手链
+BRACELET_V=手链变化
+
+SVEOTFT=保存服装
+
+! Alternatively, "What Will Be Saved"
+SVESEL=要保存的服饰
+
+BADFILE=我不能用这样的名称保存到文件. :/
+
+LDOTFT_E1=服装没有说明是哪个模型制作的. :?
+LDOTFT_E2=服装是为一个无效的模型制作的: {}
+LDOTFT_E3=服装是为其他模型制作的. :?
+LDOTFT_TF={} 才能使用该服装,您想改变模型吗?
+
+DOTFTRESTR=移除服装限制
+DOTFTRESTR_H=允许您保存行李袋到服装中,等等.
+
+NVEHHAIRSCL=禁用在载具内时毛发缩放
+
+LKOTFT=锁定服装
+LKOTFT_H=不允许除了Stand之外更换您的服装,这可能会破坏赌场抢劫和其他的任务. ⚠️
+
+CHNGMDL=更改模型
+
+PLYBLCHRS=默认人物
+GRNDANMLS=地面动物
+WTRANMLS=水下动物
+FLYNANMLS=飞行动物
+NPCS=NPC
+
+ONLN_MALE=线上默认模型男
+ONLN_FEMALE=线上默认模型女
+
+CHNGMDL_W=您需要在水里才能变成水下动物. :)
+
+MDL=模型
+
+FNDMDL_H=允许您使用模型的名称查找模型,并转换为对应的模型.
+
+CURMDL=当前模型
+
+OP=预设服装
+
+OP_D=当前服装: 默认
+OP_D_H=R星为您当前模型预设的默认服装.
+
+OP_RNG=当前服装: 随机
+RNG=随机
+
+OP_0=线上女性: 乳贴
+
+OP_COP_M=线上男性: 警察
+OP_COP_F=线上女性: 警察
+
+WNTDLVL=通缉等级
+
+WNTD=设置通缉等级
+
+LKWNTD=锁定通缉等级
+
+FKWNTD=假通缉等级
+FKWNTD_H=更改右上角想要显示的星星数量(不会有警察追您).
+
+PTFXTRAIL=粒子效果轨迹
+BONES=骨骼
+
+WLKSTL=行走风格
+WLKSTL_1=拉胯
+WLKSTL_3=拿着垃圾
+WLKSTL_4=跑步
+WLKSTL_5=富兰克林 (狂野)
+WLKSTL_8=逃跑
+WLKSTL_9=害怕
+WLKSTL_10=性感
+WLKSTL_12=受伤
+WLKSTL_13=莱斯特 (拐子)
+WLKSTL_14=小醉
+WLKSTL_15=开始醉了
+WLKSTL_16=醉的不行
+WLKSTL_17=气势汹汹
+WLKSTL_18=漫不经心
+WLKSTL_19=中度醉酒
+WLKSTL_20=中度醉酒 (抬头)
+WLKSTL_21=有点醉
+WLKSTL_22=非常醉
+WLKSTL_23=恶棍
+WLKSTL_24=歹徒 (慢)
+WLKSTL_25=歹徒 (害羞)
+WLKSTL_26=歹徒
+WLKSTL_27=慢跑
+WLKSTL_28=狱警
+WLKSTL_30=富兰克林 (公文包)
+WLKSTL_31=麦克 (清洁工)
+WLKSTL_32=麦克 (慢)
+WLKSTL_33=水桶
+WLKSTL_34=蹲伏
+WLKSTL_35=拖把
+WLKSTL_36=妇女 (男)
+WLKSTL_37=妇女 (女)
+WLKSTL_38=流氓 (男)
+WLKSTL_39=流氓 (女)
+WLKSTL_40=时髦 (男)
+WLKSTL_41=时髦 (女)
+WLKSTL_42=硬汉 (男)
+WLKSTL_43=硬汉 (女)
+WLKSTL_44=陶醉
+WLKSTL_45=放松
+WLKSTL_46=戴手铐
+WLKSTL_47=伤心
+WLKSTL_48=野蛮 (男)
+WLKSTL_49=野蛮 (女)
+WLKSTL_50=傲慢
+WLKSTL_51=自信
+WLKSTL_52=高跟鞋
+WLKSTL_53=登山
+WLKSTL_54=垃圾佬
+WLKSTL_55=痞子
+WLKSTL_56=潮人
+
+PRSVRWALK=战斗时保持行走风格
+PRSVRWALK_H=防止您的人物在周围出现暴力时自动进入"战斗模式".
+
+WALKONAIR=空中行走
+
+AIRSWM=空中游泳
+
+WTRWLK=水下行走
+
+DRNKMODE=醉酒模式
+
+TNISMDE=网球模式
+
+FLOPPY=软趴趴模式
+FLOPPY_SYNCH=优先同步
+FLOPPY_SYNCH_H=限制速度并禁用上升,下降和加速以确保同步.
+
+DEMIGOD=自动恢复
+DEMIGOD_H=使您的人物保持最大的血量和护甲.
+DEMIGOD_H_O=一直给TA加血加护甲(半无敌).
+
+MXHLTH=最大生命值
+
+CLUMSY=老太太
+CLUMSY_H=使您的人物更容易摔倒.
+
+NOROLLCL=无瞄准滚动冷却
+
+RESPWRCL=在死亡地点复活
+
+RESPWDLY=复活延迟
+RESPWDLY_H=将GTA在线模式中的复活时间更改为您设定的秒数.
+
+EWO=自杀
+
+SPCSH=故事模式刷钱
+SPCSH_H=让您更改麦克,富兰克林和崔佛拥有的金钱.
+
+SCHR_M=麦克
+SCHR_F=富兰克林
+SCHR_T=崔佛
+
+HLTH=生命值
+ARMR=护甲
+
+REGEN=恢复速率
+REGEN_H_H=每秒增加此数量的生命值.
+REGEN_A_H=每秒增加此数量的护甲值.
+ONLYINCOVER=只在掩体内时生效
+
+RFHLT=补满生命值
+RFARM=补满护甲值
+
+GOD=无敌
+GOD_H=使您的人物无法死亡.
+
+NRGDL=不会摔倒
+NRGDL_H=让您的人物不会摔倒.
+
+NO_GRACE=专家提示: 不要同时启用 不会摔倒 和 {feature_name}. ;)
+
+SEATGLUE=粘在座位上
+SEATGLUE_H=使您的人物不会从自行车和摩托车上摔下来.
+
+INFSTAM=无限耐力
+
+PARALCK=锁定降落伞
+LCK_FULL=满
+LCK_ETY=无
+
+WET=设定湿度
+
+WETLCK=锁定湿度
+
+SCLE=比例
+SCLE_H=改变您角色的高度,宽度和深度. *仅本地显示*
+
+SCLECAM=比例影响画面大小
+
+SCLESPD=比例影响移动速度
+
+VISZ=画面纵向矫正
+VISZ_H=校正角色的镜头纵向位置,以配合缩放.
+
+! {Self > Appearance > Invisibility} & {Vehicle > Invisibility}
+INVIS=不可见
+INVIS_H=注意: 当你在载具内时,其他玩家仍然能看到你,除非你也启用了载具内的不可见选项.
+
+! Player > Trolling > Ram > Invisibility
+RAM_INVIS=不可见
+
+LOCVIS=本地可见
+
+LEV=悬浮模式
+
+NOCLIP=无碰撞
+
+LEV_AP=应用倾斜数据到实体
+
+KPMOMNTM=保持冲力
+
+MOVSPD=移动速度
+
+! Used in button instructions to mean "go faster"
+SPRNT=加速
+
+SPRNTMUL=冲刺倍速
+SPRNTMUL_H=按下 {} 时的移动速度.
+
+ACCEL=加速度
+ACCEL_H=移动的时间越长,加速度就越大. 一旦冲刺或停止移动就会重置.
+
+OROM=仅在移动时旋转
+
+PASSMOV=被动移动
+
+PASSMOV_MIN=最小. 离地面的距离
+PASSMOV_MAX=最大. 离地面的距离
+SPD=速度
+
+MAXDIST=最大距离
+
+ASS=助手
+
+FRC_U=向上力度
+FRC_D=向下力度
+
+ASS_D=下拉距离
+ASS_D_H=在助手停止把您拉下来之前,您离地面有多远.
+
+SNAP=拉断
+
+WLKSPD=行走和奔跑速度
+
+INCFRCT=增加摩擦
+INCFRCT_H=减少当高速步行或跑步转弯的时候打滑的情况.
+
+SWMSPD=游泳速度
+
+NOBLD=没有血
+NOBLD_H=让您的人物不沾血.
+
+SONIC=超级跑
+
+FLY=超级飞
+ASC=上升
+DESC=下降
+FLY_LAND=降落
+
+BI_CLSMNU_MOV=隐藏您的Stand以获得更多移动选项
+
+SHWBI_JMP2FLY=按钮说明: 超级跳到超级飞
+SHWBI_CTRLS=按钮说明: 提示
+
+FROG=超级跳
+FROG_H=您可以按住跳跃按键来跳得更高.
+
+GRCELND=优雅着陆
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Animations !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+ANIM=动画
+CANCL=取消
+SCENARIOS=场景
+LOOPED=循环动画
+LOOPED_H=这不适用于场景.
+PART_MVMT=允许移动
+PART_MVMT_H=允许您在执行动画时移动,但会牺牲动画的准确性.
+AUTO_CANCL=自动取消
+AUTO_CANCL_H=当您尝试移动人物时自动取消当前动画.
+
+ANIM1=秀肌肉
+ANIM2=烟雾
+ANIM3=睡觉
+ANIM4=欢呼
+ANIM5=守卫
+ANIM6=锤子
+ANIM7=空闲警察
+ANIM8=翻箱子
+ANIM9=震惊拍摄
+ANIM10=闲聊
+ANIM11=不耐烦
+ANIM12=发短信
+ANIM14=检查死者
+ANIM15=等待
+ANIM16=清洁
+ANIM17=使用ATM
+ANIM18=瑜伽
+ANIM19=雕像
+ANIM20=焊接
+ANIM21=日光浴
+ANIM22=背部日光浴
+ANIM23=高级妓女
+ANIM24=低级妓女
+ANIM25=记事本
+ANIM26=单膝跪
+ANIM27=慢跑
+ANIM28=双筒望远镜
+ANIM29=站着的流浪汉
+ANIM30=园艺工人
+ANIM31=坐地上
+ANIM32=站着钓鱼
+ANIM33=浏览
+ANIM34=坐下
+
+ANIM_DANCE=舞蹈
+
+ANIM35=屁股扭动
+ANIM36=小丑舞 1
+ANIM37=小丑舞 2
+ANIM38=舞蹈 1
+ANIM39=舞蹈 2
+ANIM40=舞蹈 3
+ANIM41=舞蹈 4
+ANIM42=舞蹈 5
+ANIM43=慢舞 1
+ANIM44=慢舞 2
+ANIM45=慢舞 3
+ANIM46=指挥台舞
+ANIM47=独舞
+ANIM48=羞涩舞 1
+ANIM49=羞涩舞 2
+ANIM50=傻舞 1
+ANIM51=傻舞 2
+ANIM52=傻舞 3
+ANIM53=淘气舞
+ANIM54=胡戈舞
+
+ANIM55=喝
+ANIM56=野兽
+ANIM57=放松
+ANIM58=躺着看云
+
+! To prone, as in to lie on your stomach
+ANIM59=趴着
+
+ANIM60=拉过来
+ANIM62=喝醉 1
+ANIM63=喝醉 2
+ANIM64=喝醉 3
+ANIM65=空气吉他
+ANIM66=空气合成器
+ANIM67=争吵 1
+ANIM68=争吵 2
+ANIM69=酒保
+
+! Aka. Air Kiss
+ANIM70=飞吻
+
+ANIM71=讽刺
+ANIM72=开始吧
+ANIM73=来啊
+ANIM75=使用对讲机
+ANIM74=双臂交叉 1
+ANIM76=双臂交叉 2
+ANIM77=双臂交叉 3
+
+! As in "damn it"
+ANIM78=妈的
+
+ANIM79=偷窃
+ANIM81=捂脸 1
+ANIM82=捂脸 2
+ANIM83=摔倒
+ANIM84=睡着
+ANIM85=查看
+ANIM86=开合跳
+ANIM88=敲门
+ANIM89=膝上舞 1
+ANIM90=膝上舞 2
+ANIM91=膝上舞 3
+ANIM92=膝上舞 4
+ANIM93=电臀舞
+ANIM94=倚靠
+ANIM95=翘屁股
+ANIM96=技工
+ANIM97=打坐
+ANIM98=气喘吁吁
+ANIM99=俯卧撑
+ANIM100=比赛开始倒计时
+ANIM101=咋了
+ANIM102=瑜伽姿势
+ANIM103=笑死啦
+ANIM104=帮派手势
+ANIM105=昏倒
+ANIM106=爬行
+ANIM107=空翻 1
+ANIM108=空翻 2
+ANIM109=滑跪 1
+ANIM110=滑跪 2
+ANIM111=心跳复苏
+ANIM112=拉伸
+ANIM113=庆祝
+ANIM114=小丑
+ANIM115=紧张 1
+ANIM127=紧张 2
+ANIM116=拜神
+ANIM117=DJ
+
+! Being arrested
+ANIM118=被抓投降
+! Being arrested
+ANIM121=投降
+
+ANIM119=吹口哨
+ANIM120=依靠双臂交叉
+ANIM122=键盘打字
+ANIM123=站在火堆旁
+ANIM124=牛的
+
+! As in, bending your body towards someone to show respect.
+ANIM125=请
+
+ANIM126=超级英雄
+ANIM128=弯腰
+ANIM129=淋浴
+ANIM130=洗脸
+ANIM131=空手道
+ANIM132=拳击
+
+ANIM166=动次打次 1
+ANIM167=动次打次 1 (弯腰)
+ANIM168=动次打次 2
+ANIM169=动次打次 2 (弯腰)
+
+OBJANIM=物体动画
+
+ANIM133=公文包
+ANIM134=喝啤酒
+ANIM135=喝罐装饮料
+
+! As in begging
+ANIM136=乞讨
+
+ANIM137=演奏邦戈鼓
+ANIM138=阅读书籍
+ANIM139=献花
+ANIM140=扫把扫地
+ANIM141=拿着 一箱啤酒
+ANIM142=拿着 披萨
+ANIM143=拿着 香槟
+ANIM144=喝咖啡
+ANIM145=拿着 旅行袋
+ANIM146=拿着 袋子
+ANIM147=弹吉他
+
+! In this animation, the teddy bear known as "Mr. Raspberry" gets sexed
+ANIM148=操小熊
+
+ANIM149=坐在草坪椅上 (女)
+ANIM150=坐在草坪椅上 (男)
+ANIM151=查看地图
+ANIM152=扛着摄影机
+ANIM153=拿着 麦克风
+ANIM154=拿着 拐杖走路
+ANIM155=听电话 1
+ANIM156=听电话 2
+ANIM157=拿着 标语牌
+ANIM158=拿着 玫瑰
+ANIM159=高速公路标志
+ANIM160="禁止停车" 标语牌
+ANIM161=雨伞
+ANIM162=威士忌酒杯
+ANIM163=威士忌瓶子
+ANIM164=红酒杯
+ANIM165=酒瓶
+ANIM170=酒杯跳舞
+ANIM171=啤酒跳舞
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Self > Bodyguards !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+BDYGUARD=保镖选项
+COUNT=数量
+WPN_SINGULAR=武器
+BDYGUARD_DEL=删除所有保镖
+BDYGUARD_TP=距离过远时自动传送到身边
+FORMATION=队形
+LINE=直线
+CIRCLE=圆形
+ALT_CIRCLE=交替圆形
+BEHVR=特性
+PRIM_WEAP=主武器
+SCND_WEAP=副武器
+WEAP_H=保镖们将尽可能使用他们的主武器. 否则,他们将尝试使用他们的副武器.
+
+!!!!!!!!!!!!!!!!!!!!
+!! Self > Weapons !!
+!!!!!!!!!!!!!!!!!!!!
+
+WPN=武器选项
+
+GETGNS=给予武器
+DELGNS=移除武器
+ALLGNS=所有武器
+
+GAIMPNSH=瞄准时...
+GSHTPNSH=射击时...
+
+GRTYGUN=重力枪
+CTRVPHYS=人为物理
+FRCMUL=力度修改
+COL=碰撞
+
+VEHGUN=载具枪
+VEHGUN_H=使您的枪射出载具.
+
+WEAPCOMPS=配件
+WEAPCOMPS_H=允许您查看和修改您选择的武器的配件.
+
+WEAPLOCK=锁定武器
+TINT=武器色调
+
+! "Livery" is VEHMOD48
+WEAPLIVTNT=涂装色调
+
+SVPRST=保存预设
+VWPRSTS=查看预设
+
+LOADS=加载
+SVLOAD=保存加载
+VWLOADS=查看加载
+
+SVLOAD_H_WEAP=将当前装备的武器保存到命令框脚本中,以便轻松地加载指定的武器配置到锁定武器.
+
+WEAPLOCK_INV=只移除选择的武器
+WEAPLOCK_INV_H=将 "锁定武器" 变为 "黑名单武器",您选择的武器将会被移除.
+
+AIMBT=自瞄
+
+AIMBT_LCKOUT=重新触发时间 (毫秒)
+AIMBT_LCKOUT_H=在您移动镜头后,自瞄将保持禁用多长时间.
+
+SMTHNG=平滑
+
+LOSCHECK=视线检查
+
+TGTBONE=目标骨骼
+NECK=脖子
+RELBOW=右肘
+LELBOW=左肘
+RHAND=右手
+LHAND=左手
+PELVIS=骨盆
+RCALF=右膝盖
+LCALF=左膝盖
+RFOOT=右脚
+LFOOT=左脚
+
+TRIGBT=瞄准自动射击
+MAGICB=魔法子弹
+MAGICB_H=确保瞄准自动射击不会错过目标.
+
+TRGSEL=目标选择
+
+PROXYROCKET=接近火箭
+PROXYROCKET_H=接近火箭只对其他玩家生效.
+
+SPRMELEE=超级近战
+SPRMELEE_H=当您近战攻击NPC或载具后将其击飞. 对其他玩家无效.
+
+INSTAPROXY=接近地雷瞬间引爆
+
+FILAMMO=补充所有弹药
+RMVAMMO=移除所有弹药
+INFAMMO=无限子弹
+
+SKPRLD=无需装弹
+
+NOSPOL=没有前摇
+NOSPOL_H=移除某些武器开火前的延迟(加特林,寡妇制造者等).
+
+NOSPRD=无子弹散布
+NORECL=无后坐力
+
+RAPFRE=快速射击
+
+RAPFREVEH=载具武器快速射击
+
+DMG=伤害修改
+DMG_H=增加拳头和枪支造成的伤害倍数.
+
+RNGMUL=范围修改
+
+RKSPDMUL=火箭速度修改
+
+! Or "Bullets Per Shotgun Shot"
+SHTGNSZE=霰弹枪射击子弹数
+
+INSTLKNON=瞬间锁定
+
+EXPAMMO=爆炸枪
+
+EXPTYP=爆炸类型
+EXPTYP_H=可让您选择爆炸命中的爆炸类型.
+
+EXP_TAG_GRENADE=手榴弹
+EXP_TAG_GRENADELAUNCHER=榴弹发射器
+EXP_TAG_STICKYBOMB=黏弹
+EXP_TAG_MOLOTOV=汽油弹
+EXP_TAG_ROCKET=火箭炮
+EXP_TAG_TANKSHELL=坦克炮弹
+EXP_TAG_HI_OCTANE=高辛烷
+EXP_TAG_CAR=车辆
+EXP_TAG_PLANE=飞机
+EXP_TAG_PETROL_PUMP=加油泵
+EXP_TAG_BIKE=摩托
+EXP_TAG_DIR_STEAM=水柱
+EXP_TAG_DIR_FLAME=火柱
+EXP_TAG_DIR_WATER_HYDRANT=消火栓
+EXP_TAG_DIR_GAS_CANISTER=油罐火焰
+EXP_TAG_BOAT=船
+EXP_TAG_SHIP_DESTROY=轮船
+EXP_TAG_TRUCK=卡车
+EXP_TAG_BULLET=子弹
+EXP_TAG_SMOKEGRENADELAUNCHER=催泪瓦斯发射器
+EXP_TAG_SMOKEGRENADE=烟雾弹
+EXP_TAG_BZGAS=毕兹毒剂
+EXP_TAG_FLARE=信号弹
+EXP_TAG_GAS_CANISTER=气罐
+EXP_TAG_EXTINGUISHER=灭火器
+EXP_TAG_PROGRAMMABLEAR=可编程AR
+EXP_TAG_TRAIN=火车
+EXP_TAG_BARREL=桶
+EXP_TAG_PROPANE=丙烷
+EXP_TAG_BLIMP=飞艇 (蓝)
+EXP_TAG_DIR_FLAME_EXPLODE=火焰爆炸
+EXP_TAG_TANKER=油罐车
+EXP_TAG_PLANE_ROCKET=飞机火箭炮
+EXP_TAG_VEHICLE_BULLET=载具弹药
+EXP_TAG_GAS_TANK=油箱
+EXP_TAG_BIRD_CRAP=鸟屎
+EXP_TAG_RAILGUN=电磁步枪
+EXP_TAG_BLIMP2=飞艇 (红&青)
+EXP_TAG_FIREWORK=烟花发射器
+EXP_TAG_SNOWBALL=雪球
+EXP_TAG_PROXMINE=感应地雷
+EXP_TAG_VALKYRIE_CANNON=女武神炮弹
+EXP_TAG_AIR_DEFENCE=防空炮弹
+EXP_TAG_PIPEBOMB=土制炸弹
+EXP_TAG_VEHICLEMINE=粘弹 载具地雷
+EXP_TAG_EXPLOSIVEAMMO=爆炸弹药
+EXP_TAG_APCSHELL=APC炮弹
+EXP_TAG_BOMB_CLUSTER=集束弹
+EXP_TAG_BOMB_GAS=毒气弹
+EXP_TAG_BOMB_INCENDIARY=燃烧弹
+EXP_TAG_BOMB_STANDARD=投弹
+EXP_TAG_TORPEDO=鱼雷
+EXP_TAG_TORPEDO_UNDERWATER=鱼雷 (水下)
+EXP_TAG_BOMBUSHKA_CANNON=邦布什卡大炮
+EXP_TAG_BOMB_CLUSTER_SECONDARY=集束炸弹 (次级)
+EXP_TAG_HUNTER_BARRAGE=猎杀者 齐射
+EXP_TAG_HUNTER_CANNON=猎杀者 机枪
+EXP_TAG_ROGUE_CANNON=恶徒 机枪
+EXP_TAG_MINE_UNDERWATER=水下地雷
+EXP_TAG_ORBITAL_CANNON=天基炮
+EXP_TAG_BOMB_STANDARD_WIDE=炸弹 (宽)
+EXP_TAG_EXPLOSIVEAMMO_SHOTGUN=爆炸子弹 (霰弹)
+EXP_TAG_OPPRESSOR2_CANNON=暴君Mk2 机枪
+EXP_TAG_MORTAR_KINETIC=力场 迫击炮
+EXP_TAG_VEHICLEMINE_KINETIC=力场 载具地雷
+EXP_TAG_VEHICLEMINE_EMP=电磁脉冲 载具地雷
+EXP_TAG_VEHICLEMINE_SPIKE=尖刺 载具地雷
+EXP_TAG_VEHICLEMINE_SLICK=滑油 载具地雷
+EXP_TAG_VEHICLEMINE_TAR=滑油2 载具地雷
+EXP_TAG_SCRIPT_DRONE=脚本无人机
+EXP_TAG_RAYGUN=原子能枪
+EXP_TAG_BURIEDMINE=埋下的地雷
+EXP_TAG_SCRIPT_MISSILE=脚本导弹
+EXP_TAG_RCTANK_ROCKET=RC坦克 火箭炮
+EXP_TAG_BOMB_WATER=水炸弹
+EXP_TAG_BOMB_WATER_SECONDARY=水炸弹 (次要)
+EXP_TAG_MINE_CNCSPIKE=尖刺
+EXP_TAG_BZGAS_MK2=毕兹毒剂 Mk II
+EXP_TAG_FLASHGRENADE=闪光手榴弹
+EXP_TAG_STUNGRENADE=电击手榴弹
+EXP_TAG_CNC_KINETICRAM=动能冲撞
+EXP_TAG_SCRIPT_MISSILE_LARGE=脚本导弹 (大)
+EXP_TAG_SUBMARINE_BIG=潜艇 (大)
+EXP_TAG_EMPLAUNCHER_EMP=电磁脉冲发射器
+EXP_TAG_RAILGUNXM3=电磁步枪 (线上)
+EXP_TAG_BALANCED_CANNONS=被削弱的机枪 (F35)
+
+IMPPART=碰撞粒子
+IMPPART_H=让您选择用于碰撞粒子的粒子效果.
+
+TTLFRDM=完全自由
+TTLFRDM_H=允许您在室内和被动模式下使用武器.
+TTLFRDM_MOV_H=允许您在室内冲刺,潜行和跳跃.
+
+TPGUN=传送枪
+
+! "Sticky" as in "Sticky Bomb"
+INCSTICK=增加黏性炸弹限制
+INCFLARE=增加信号弹限制
+
+INCPROJ_H=这指的是增加您可投掷入世界中的数量,而不是拥有的库存数量.
+
+LASGUN=激光瞄准
+
+!!!!!!!!!!!!!
+!! Vehicle !!
+!!!!!!!!!!!!!
+
+NOVEHFND=请先进入载具. :)
+VEHALRDIN=您已经在里面了. :?
+VEHCTRL=无法控制您的载具. :|
+
+PVS=个人载具
+
+INSUR=保险
+ADDINSUR=添加保险
+DSTRYD=已损毁
+UINSRD=未投保
+INSURCLM=提出索赔
+
+REQ=请求
+REQNDRV=请求并在生成的位置驾驶
+REQNCALL=请求并在当前位置驾驶
+
+PVRPLC=替换为当前载具
+PVRPLC_H=将当前驾驶的车辆数据替换到该个人载具.
+
+PVSVE_H=将这辆个人载具保存到Stand的车库选项中.
+PVSVEA=保存所有载具到车库
+PVSVEA_H=保存您所有的个人载具到Stand的车库中.
+! "Garage" must use same translation as GRG. "Personal Vehicles" must stay as-is.
+PVSVEA_S=您的个人载具已被保存到 车库 > Personal Vehicles. :D
+
+CURPV=当前个人载具
+PVEHNTFND=我找不到您的个人载具. :/
+
+LSTVEH=最后载具
+LSTVEHNTFND=我找不到您最后驾驶的载具. :/
+
+CALLVEH=传送到我并驾驶
+
+RC=远程控制
+RC_STCK=如果您卡住了,请按 {}.
+
+GTARC=伊玛尼远程控制
+GTARC_E=当前载具不支持伊玛尼远程控制并且未启用增强选项中的"远程控制任何载具".
+
+RCANYVEH=远程控制任何载具
+
+RETSTOR=送回车库
+
+VEHFOLLOW=跟着我
+
+SPWNR=生成
+SPWND=已生成
+
+! The act of doing it, to spawn
+SPWN=生成
+
+SPWNR_CLASSES=载具分类
+
+VEH_CLASS=类别
+VEH_SEATS=座位
+
+DLC=DLC
+DLCS=DLC分类
+DLC_10=游戏发布
+DLC_60=沙滩游乐包
+DLC_100=情人节大屠杀
+DLC_110=商业
+DLC_130=上流生活
+DLC_140=自以为潮
+DLC_150=独立纪念日
+DLC_160=圣安地列斯飞行学校
+DLC_170=团队生存游戏
+DLC_180=次世代发布
+DLC_190=节庆惊喜 2014
+DLC_210=公寓抢劫DLC
+DLC_270=不义之财 1
+DLC_280=不义之财 2
+DLC_300=古惑跳跳车
+DLC_301=万圣节闹鬼趴
+DLC_310=高管和其他罪犯
+DLC_311=节庆惊喜 2015
+DLC_320=2016年 1月
+DLC_321=亡命鸳鸯
+DLC_330=古惑跳跳车: 改装经典
+DLC_340=富贵险中求
+DLC_350=炫炮特技
+DLC_360=狂野飙客
+DLC_370=进出口大亨
+DLC_380=特殊载具巡回赛
+DLC_400=军火霸业
+DLC_410=走私贩大进击
+DLC_420=末日豪劫
+DLC_430=南圣安地列斯超级系列赛
+DLC_440=不夜城
+DLC_460=竞技场之战
+DLC_480=名钻假日赌场
+DLC_490=名钻赌场豪劫
+DLC_510=洛圣都夏日特辑
+DLC_520=佩里科海岛抢劫
+DLC_570=洛圣都改装车
+DLC_580=合约
+DLC_610=犯罪集团
+DLC_640=洛圣都毒品战
+DLC_670=圣安地列斯雇佣兵
+DLC_680=赃车店
+DLC_690=油水榨干赏金生意
+
+MANUFNS=制造商名称
+
+SPWNTUNE=生成的载具配置
+SPWNTUNE_H=修改通过Stand生成的载具配置.
+TUNE_PRESETS=预设调校
+TUNE_STCK=原厂
+TUNE_PERF=性能
+TUNE_PERF_H=只升级引擎, 刹车, 变速箱, 防御和涡轮增压.
+TUNE_PERFWSPL=性能,包括尾翼
+TUNE_FULL=满配
+
+SPWCLR=生成的载具颜色
+
+SPWPLATE=生成的载具车牌
+
+TUNE=升级
+TUNE_H=全面升级您当前或上一辆载具.
+
+RTUNE=随机升级
+RTUNE_VIS=仅外观
+RTUNE_PERF=仅性能
+RTUNE_PERF_S=仅性能和尾翼
+
+PERF=性能升级
+PERF_H=升级当前或上一辆载具的引擎,刹车,变速箱,防御和涡轮增压.
+PERF_T=已对载具进行了性能升级. :D
+PERF_E=性能方面已经完成升级了. :)
+
+PERFWSPL=性能升级(包括尾翼)
+
+DNGRD=降级
+DNGRD_H=将当前或上一辆载具重置为原厂配置.
+
+GRG=车库
+SVEVEH=保存载具
+
+PARA=降落伞
+PARA_GEN=通用降落伞
+PARA_BRK=破损降落伞
+SECUROSERV=保镖事务所
+
+XTRA=额外
+XTRAS=额外
+XTRAS_N=您的载具没有额外的改装.
+
+PARAON=启用降落伞
+PARAON_H=并非所有载具都会生效,例如:摩托车.
+
+PARA_H_VIS=注意: 在您的载具打开降落伞之后,并非所有更改都会生效.
+
+VEHFIN0=正常
+VEHFIN1=金属质感
+VEHFIN2=珠光
+VEHFIN3=哑光
+VEHFIN4=金属
+VEHFIN5=铝合金
+VEHFIN6=变色龙
+
+WHLS=车轮
+WHLSCLR=车轮颜色
+WHLTYP=车轮类别
+VEHMOD23=车轮
+
+VEHMOD0=尾翼
+VEHMOD1=前保险杠 / 反制系统
+VEHMOD2=后保险杠
+VEHMOD3=侧裙
+VEHMOD4=排气管
+VEHMOD5=防滚架
+VEHMOD6=中网 / 百叶窗 / 反制系统
+VEHMOD7=引擎盖
+VEHMOD8=左翼子板
+VEHMOD9=右翼子板 / 地雷
+VEHMOD10=车顶 / 武器
+VEHMOD11=引擎
+VEHMOD12=刹车
+VEHMOD13=变速箱
+VEHMOD14=喇叭
+VEHMOD15=悬挂系统
+VEHMOD16=防御
+VEHMOD18=涡轮增压
+VEHMOD24=后轮
+VEHMOD25=车牌架
+
+! Alternatively, "Benny's Plates"
+VEHMOD26=本尼车牌 / 前铲
+
+VEHMOD27=内饰设计
+VEHMOD28=玩偶 / 防滚架
+VEHMOD29=仪表盘
+VEHMOD30=仪表盘设计
+VEHMOD31=座椅
+VEHMOD32=座位
+VEHMOD33=方向盘
+VEHMOD34=排挡头
+VEHMOD35=装饰牌
+VEHMOD36=防翘杆
+VEHMOD37=后备箱
+VEHMOD38=液压系统
+VEHMOD39=引擎缸体 / 前铲
+VEHMOD40=空气滤清器 / 侧撞加速
+VEHMOD41=引擎配件 / 垂直跳跃
+VEHMOD42=防滚架 / 冲撞武器
+VEHMOD43=天线
+VEHMOD44=外饰
+VEHMOD45=后视镜 / 武器
+VEHMOD46=左门
+VEHMOD47=右门
+VEHMOD48=涂装
+VEHMOD49=灯条
+
+VEHDRFTYR=漂移轮胎
+
+VEHBPTYR=防弹轮胎
+
+SCRCHD=烧焦
+
+TONK=移除炮台
+
+BHVONFT=步行时生成载具
+
+BHVINVEH=载具内生成载具
+
+SPWNDRVE=生成后在载具内
+SPWNDRVE_H=通过Stand生成载具后立刻驾驶载具.
+
+SPWNAIR=在空中生成飞机
+
+SPWNFRNT=在前面生成
+SPWNFRNT_H=将您生成的载具放置在您前方几米的位置.
+
+SPWLIKEPV=像个人载具一样生成
+
+SPWNDEL=删除上一辆载具
+
+SPWNVEL=保持速度
+
+INPTVEHMDL=输入模型名称或哈希
+ARGMDLNME=[模型名称]
+INPTVEHMDL_H=生成载具的"专家"方式.
+INPTOBJMDL_H=生成物体的"专家"方式.
+INPTMDL_E={} 不是一个有效的物体模型名称. :/
+INPTVEHMDL_E={} 不是一个有效的载具模型名称. :/
+
+ARSPD=AR速度计
+ARSPD_H=在您的人物上显示一个速度计.
+
+CM=反制系统
+CM_AUTO=自动部署
+CM_OF=只在飞机内时生效
+CM_PERIOD=定期部署
+CM_PERIOD_D=定期部署: 延迟
+
+FLARE=热诱弹
+CHAFF=干扰箔
+BOTH=两者
+
+CM_FLARE=部署 热诱弹
+CM_CHAFF=部署 干扰箔
+CM_BOTH=部署 干扰箔和热诱弹
+
+CM_PT=样式
+CM_HOR=水平
+CM_HOR_UP=水平, 向上
+CM_HOR_DOWN=水平, 向下
+CM_VERT=垂直
+CM_VERT_DOWN=垂直, 向下
+
+AUTODRIVE=自动驾驶
+AUTODRIVE_C=驾驶速度
+AUTODRIVE_SDB=显示目的地灯塔
+AUTODRIVE_ACOI=控制时取消
+AUTODRIVE_ACOI_H=当您试图控制载具时自动终止.
+AUTODRIVE_NOCLIP=自动驾驶时禁用载具碰撞
+AUTODRIVE_NOCLIP_H=自动驾驶时禁止与其他载具发生碰撞. 在激进驾驶方式时有助于弥补路径搜寻不佳的情况.
+AUTODRIVE_STORE=商店
+AUTODRIVE_MOVIE=电影院
+AUTODRIVE_CLUBHOUSE=摩托帮会所
+AUTODRIVE_FACILITY=设施
+AUTODRIVE_AGENCY=事务所
+AUTODRIVE_OFFICE=办公室
+AUTODRIVE_HANGAR=机库
+AUTODRIVE_ERR2=自动驾驶不适用于此载具类型.
+AUTODRIVE_ERR3=我找不到一个合适的目的地,抱歉. :(
+AUTODRIVE_ERR4=您已经到达了您的目的地. :P
+AUTODRIVE_ARRIVE=我们已经到达您的目的地. ^_^
+AUTODRIVE_DRIVE=驾驶风格
+AUTODRIVE_LAW=合法
+AUTODRIVE_NOTSOLAWFUL=合法, 忽略红灯
+AUTODRIVE_BACK=倒行
+AUTODRIVE_DEST=驾驶到...
+AUTODRIVE_DEST_NONE=到处闲逛
+AUTODRIVE_DEST_NONE_H=带着您到处闲逛,没有特定的目的地.
+
+LGTSIGS=灯光信号
+TRNSIG=转向灯
+TRNSIG_HAZ=双闪
+TRNSIG_AUTO=自动禁用转向灯
+BRAKELIGHTS=停车时亮起刹车灯
+MTESIRENS=静音警报器
+
+AUTORKTBST=自动火箭推进
+AUTORKTBST_H2=充能结束后自动使用火箭推进器.
+
+RKTBST=火箭推进
+
+OVRD=覆盖
+RKTBST_H_OVRD=允许您修改您驾驶的载具是否拥有火箭推进器.
+
+VERTRKTBST=垂直火箭推进
+
+CHRGBHV=充能时间
+RKTBST_NVREND=无限
+RKTBST_NVREND_H=如果您不撞车,推进就不会停止.
+RKTBST_INSTRFLL=即时填满
+RKTBST_INSTRFLL_H=充能用完后立即重新充能.
+RKTBST_NORFLL=无充能时间
+RKTBST_NORFLL_H=满足条件后立即重新充能.
+RKTBST_EMPTY=充能总是空的
+
+RMP=斜坡
+RMMSCOOP=铲子
+INCRMMFRC=增加撞击力量
+
+LSC=洛圣都改车王
+
+VDO=开关车门
+
+VEHDOOR_A=所有门
+VEHDOOR_0=左前门
+VEHDOOR_1=右前门
+VEHDOOR_2=左后门
+VEHDOOR_3=右后门
+VEHDOOR_4=引擎盖
+VEHDOOR_5=后备箱
+VEHDOOR_6=后门
+VEHDOOR_7=后门 2
+
+LOCKD=锁定车门
+LOCKD_O=只在载具没任何人时锁定
+XCLUDEPVS=排除其他人的个人载具
+
+ENGTGL=切换引擎 开/关
+ENGTGL_H=注意: 在大多数载具中,按前或后会导致您的人物重新打开引擎.
+
+FLIPVEH=平放载具
+FLIPVEH_H=平放当前或上一辆载具.
+
+ATRNSUBCAR=自动转换潜艇载具
+NANIM=无动画
+
+DRBYINANY=驾驶坦克等载具时允许使用武器
+DRBYWITHANY=驾驶时允许使用所有武器
+
+WHEELONWHEELS=载具内使用武器轮盘
+WHEELONWHEELS_H=注意: 启用后如需切换载具自带的武器,请向上滚动鼠标滑轮.
+
+BMBTRJC=显示炸弹运动轨迹
+
+FLYTHRUWND=飞出挡风玻璃
+
+! "Glued To Seats" is SEATGLUE
+FLYTHRUWND_H=当高速的正面碰撞时会像故事模式里一样将您抛出车外. 该选项优先于"粘在座位上".
+
+ANTINLCKON=锁定所有载具
+
+! "Can't Be Locked On" is NLCKON
+ANTINLCKON_H=允许您使用导弹等武器锁定伊玛尼技术载具. 这也可以绕过"无法被导弹锁定"等功能.
+
+SETSEAT=设置载具座位
+DRV=驾驶位
+
+LVENGRUN=退出时保持引擎开启
+
+NOJACK=无法被拖出
+
+PEG=设置为珀加索斯载具
+PEG_H=将飞机伪装成珀加索斯载具,使您可以把某些生成的飞机保存到您的机库里,让游戏认为它是珀加索斯载具.
+
+DSTRY=摧毁
+
+DELVEH_H=删除当前或上一辆载具.
+
+FIXVEH=修复载具
+FIXVEH_H=修理您当前或上一辆载具.
+
+VEHGOD=载具无敌
+VEHGOD_H=使您驾驶过的任何载具都不会被摧毁.
+
+SPWNGOD=生成的载具无敌
+
+SPWNLIST=已生成的载具列表
+
+VEH_DRV=驾驶
+VEH_ENT=进入
+VEH_EMPTY=清空
+DEL=删除
+
+SPWNBLIP=生成的载具上显示光标
+SPWNBLIP_TXT=生成的载具 ({})
+CLRBLIP=移除光标
+ONLYLTST=仅适用于最新载具
+
+MINT=自动修理
+MINT_H=使您的载具无凹痕和划痕.
+
+PLATE=车牌
+
+PLATESPEED=速度表
+PLATESPEED_A=车牌显示车速表
+
+CHARLIMIT=不能超过 {number} 个字符. :|
+
+RNDISE=随机
+
+SCRLTXT=滚动文本
+
+LCKPLT=锁定车牌文本
+
+BADCHAR="{}" 不是一个有效字符. :|
+
+HORNBOOST=喇叭加速
+
+SPRDRV=载具加速
+
+SPRDRVCAM=载具加速方向
+SPRDRVCAM_H=将载具加速的"前进"定义改为您在看的方向,而不是载具要开的方向.
+
+SPRHBRK=超级手刹
+
+DRVONWTR=水上驾驶
+
+DRVUNDWTR=水下驾驶
+
+SPDLMT=速度限制 (公里/时)
+SPDLMT_H=设置您驾驶载具的最高速度. (默认: 540)
+
+JMPABL=跳跃能力
+JMPABL_H=注意: 如果同时具有跳跃和火箭助推能力,游戏会将加速移至辅助键.
+
+GLDABL=滑行能力
+
+HEADLIT=前车灯
+
+HEADLITMUL=前车灯强度
+H_HILOCAL=*较高的值只能在本地显示*
+
+GRVTYMTPLY=重力倍数
+
+NOTAIR=不应用于飞机
+
+HNEDIT=操控编辑器
+HNE_BASE=基础
+HNE_AIRCRAFT=飞机
+
+! Motorcycles and bicycles alike.
+HNE_BIKES=摩托车/自行车
+
+HNE_FLYING=飞行
+HNE_VERTFLY=垂直飞行
+HNE_SPECFLY=特殊飞行
+HNE_SEAPLANE=水上飞行
+HNE_SUBMARINE=潜艇
+HNE_TRAILER=拖车
+HNE_CAR=车辆
+
+SPECFLY_H=注意: 对于德罗索以外的载具, 按住 H 或 十字键右键 来切换特殊飞行.
+
+DELUXO=德罗索
+OPP2=暴君 Mk II
+
+SHWNA=显示不可用
+
+HNE_VWSCR=查看操控脚本
+HNE_VWSCR_H=查看存放的操控数据(Handling)文件夹.
+
+HNE_NA=此类别不适用于您当前的载具.
+
+CSTWNGBVHR=自定义侧翼特性
+CSTWNGBVHR_H=允许您自定义暴君MK1载具的侧翼特性.
+
+LESSENBURN=减少轮胎磨损
+
+SMTHCST=平稳滑行
+SMTHCST_H=将载具的怠速减速降至更真实的速度.
+
+DRFTMDE=漂移模式
+DRFTMDE_H=我们重新调教了漂移参数,使其适用于更多载具,但有些载具可能会感觉不如其他载具那么平稳.
+
+MINPOS=未展开长度
+MAXPOS=展开长度
+CSTWNGBVHR_SPD=速度
+MAXPOS2SPD=根据展开长度设置速度
+
+SMTHFLY=无湍流
+
+HELIAUTOSTAB=禁用直升机自动稳定
+HELIAUTOSTAB_H=灵感来自 Murten 的 BetterHeliMode 脚本.
+
+NLCKON=无法被导弹锁定
+
+INSTASEAT=瞬间进出载具
+INSTASEAT_H=跳过人物步行到载具>进入>打开引擎/下车的过程.
+
+EXITSTOP=下车时停止载具
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Vehicle Classes !!
+!!!!!!!!!!!!!!!!!!!!!
+
+off_road=越野车
+sport_classic=经典跑车
+Military=军用车
+Compacts=小型汽车
+sport=跑车
+Muscle=肌肉车
+motorcycle=摩托车
+open_wheel=开轮式
+Super=超级跑车
+van=厢型车
+suv=SUV
+Commercial=商用车
+plane=飞机
+sedan=轿车
+Service=服务用车
+Industrial=工业用车
+helicopter=直升机
+boat=船
+Utility=公共事业用车
+Emergency=特种车
+cycle=自行车
+coupe=轿跑车
+rail=火车
+
+!!!!!!!!!!!
+!! World !!
+!!!!!!!!!!!
+
+PLCS=地点
+INHAB=居民
+ATMO=气象
+
+DWNTWN=市区
+
+! GTA calls a point on the map a "blip"
+BLIPS=光标
+BLIPNFND=我找不到标记点. :/
+
+TP=传送
+
+DEDFX=死亡特效
+RESPFX=复活特效
+TPFX=传送特效
+
+TPS=传送到...
+TPWAIT=准备远距离传送...
+
+WP=标记点
+WPS=标记到...
+OBJCTV=任务点
+TP_MP=传送到这里前会自动切换世界状态为线上,可能游戏会很快冻结数秒.(不会崩溃游戏)
+TP_CAYO=在进行传送之前,请确保已启用佩里科海岛世界状态或特殊地点,以避免直接掉到水里.
+
+RPLTP=传送到最后传送点
+RP_E=您没有进行过任何传送. :?
+
+UNDOTP=撤消传送
+UNDOTP_E=没什么可撤消的. :?
+
+STORS=商店
+
+AMMUNAT=武装国度
+SHTNGRNGE=武装国度(有靶场)
+BARBR=理发店
+CLTHST=服装店
+TATTOO=纹身店
+
+LNDMRKS=地标
+
+LSIA=洛圣都国际机场
+FRTZNC=桑库多堡垒
+MTCHIL=乞力耶德山
+
+CAYO=佩里科海岛
+
+CSNO=赌场
+
+! Translate "Tower" & "Helipad"
+MAZEHELIPAD=花园银行塔停机坪
+
+HIGHPLACE=非常高的空中
+
+AUTOTPWP=自动传送到标记点
+AUTOTPWP_H=自动将您传送到您设置的任何标记点.
+AUTOTPWP_T=已自动传送到您的标记点. :)
+
+WPORTAL=踩点后自动传送到标记点
+
+CBPOS=从剪贴板粘贴位置信息
+CBPOS_H=扫描剪贴板中的3D或2D矢量.
+CBPOS_T=我在您的剪贴板中找不到3D或2D矢量. :?
+
+POS=位置
+
+! Stand > Settings > Appearance > Position
+MNUPOS=位置
+
+! World > Places > Position
+MYPOS=位置
+
+POS_Z=Z (高度)
+
+SVDPLCS=保存的位置
+SVDPLCS_H=您可以在 {} 保存位置 .
+
+SVPLC_M=保存当前位置
+SVPLC_W=保存标记点位置
+
+CPPOS=复制当前坐标信息到剪贴板
+
+CPSUCC=复制到剪贴板成功. :D
+CPERR=复制到剪贴板失败. :|
+
+IPLS=特殊地点
+IPLS_H=允许您加载和取消加载世界的部分("特殊地点"). *仅本地更改*
+
+IPLTP=传送到特殊地点
+IPLTP_H=当您启用下面的特殊地点时,会自动传送到对应的特殊地点.
+IPL_MP=启用此特殊地点将自动切换在线世界的状态,这可能会使游戏很快无响应数秒.(不会崩溃游戏)
+
+TRFC=交通
+
+TRFCLR=交通颜色
+
+DPEDS_A=禁用行人
+
+DTRFC_A=禁用交通
+DTRFC_2=启用,包括路边停放的车辆
+
+SWRLDST=设置世界状态
+SWRLDST_H=注意: 更改世界状态可能会使游戏很快无响应数秒.(不会崩溃游戏)
+
+SP=故事模式
+
+S_SP=故事
+S_MP=线上
+
+INT=室内
+INTS=室内
+
+INT_BKR=地堡
+STYL=风格
+SECTY=安保人员
+EQUIPUPGR=设备升级
+GUNLKR=武器库
+PSNLQRTS=个人空间
+GUNRNGE=靶场
+
+INT_VW=载具仓库
+INT_VW_2=品牌
+INT_VW_1=都市
+INT_VW_0_1=基础 (颜色 1)
+INT_VW_0_2=基础 (颜色 2)
+INT_VW_0_3=基础 (颜色 3)
+INT_VW_0_4=基础 (颜色 4)
+
+INT_IF=IAA设施
+INT_SR=服务器机房
+INT_BS=博格丹的潜艇
+INT_HL=人道实验室
+INT_FR=FIB大楼 (突袭FIB)
+INT_LFB=杜根房子
+INT_SSWCC=Split Sides喜剧俱乐部
+INT_BM=巴哈马酒吧
+INT_TR=酷刑室
+INT_MR=汽车旅馆
+INT_OG=欧米茄的车库
+INT_CIN=电影院
+INT_RCYL=回收厂
+
+INT_PYSC=心里医生的办公室
+INT_SOL=所罗门的办公室
+
+INT_FH=弗洛伊德的家
+INT_JH=门卫的家
+INT_LH=莱斯特的家
+
+INT_BENNY=本尼原创汽车工作坊
+INT_HAYES=海耶斯汽车店
+INT_TEQ=龙舌兰兰酒吧
+INT_FDRY=铸造厂
+INT_UDG=联合储蓄车库
+INT_ESR=埃普西隆的仓库
+INT_CC=线上角色创建房子
+INT_ME=任务结束时的停车场
+INT_NG=夜总会车库
+INT_WEED=大麻制造厂
+INT_STILT=架高式房子
+
+INT_A_H=高端公寓
+INT_A_M=中端公寓
+INT_A_L=低端公寓
+
+INT_G_H=高端车库
+INT_G_M=中端车库
+INT_G_L=低端车库
+
+INT_W_L=大型仓库
+INT_W_M=中等仓库
+INT_W_S=小型仓库
+
+YANK=北杨克顿
+YANKMAPRDR=雷达显示北杨克顿地图
+IPL_USSLUX=航空母舰
+IPL_HOSPITAL=圆堡山医疗中心
+FMEORSHME=出名或出丑
+FCEBK=全都露社群
+IPL_JEWEL=珠宝店
+IPL_MXRD=化妆品公司
+IPL_UFOEYE=C山 UFO
+IPL_FINBANK=联合储蓄
+IPL_PLNCRSH=飞机坠毁的沟渠
+
+! Translate "Factory"
+IPL_CLKNBLLFCTRY=当当钟农场
+IPL_LSTRFCTRY=莱斯特的工厂
+
+! Translate "Morgue"
+IPL_MORGUE=停尸房
+
+! Translate "Heist" and "Yacht"
+IPL_AYACHT=抢劫游艇
+
+! Translate "Ranch" and "Fire"
+IPL_RANCH=欧尼尔兄弟农场
+IPL_RANCH_LIT=欧尼尔兄弟农场着火
+
+! Translate "Clubhouse"
+IPL_LOSTHOUSE=失落摩托帮俱乐部
+
+! Translate "House"
+IPL_BCHOUSE=房子
+
+IPL_TRNWRCK=火车撞车
+IPL_REDCRPT=红地毯
+
+! Translate anything but "FIB"
+IPL_FIBLBBY=FIB大厅
+! Translate anything but "FIB"
+IPL_FIBHELI=FIB直升机坠毁
+! Translate anything but "FIB"
+IPL_FIBRBBL=FIB 碎石
+
+! Translate "Triathlon"
+IPL_TRIA2=阿拉莫海铁人三项
+! Translate "Triathlon"
+IPL_TIRA1=洛圣都机场铁人三项
+
+! Translate "Gates"
+IPL_ZGATES=桑库多堡垒大门
+
+! Translate "Airfield" and "Boxes"
+IPL_BOXES=塞诺拉大沙漠箱子
+
+IPL_SPNN=洗车行
+
+! Translate "Billboard" and "Graffiti"
+IPL_MAZEGRFF=花园银行 广告牌涂鸦
+! Translate "Billboard" and "Graffiti"
+IPL_OILGRFF=Ron Oil 广告牌涂鸦
+! Translate "Billboard" and "Graffiti"
+IPL_FRUITBB=iFruit 广告牌涂鸦
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL1=Meltdown 广告牌 1
+! Translate "Billboard" and "Graffiti"
+IPL_MBILL2=Meltdown 广告牌 2
+
+! Translate "Church" and "Grave"
+IPL_GRVE=Hill Valley 教堂坟墓
+
+XSTPNSH=NPC 存在惩罚
+NPRXPNSH=NPC 接近惩罚
+PRX=范围
+NAIMPNSH=NPC 瞄准惩罚
+NAIMPNSH_H=惩罚在您区域内瞄准您的NPC.
+NHOSPNSH=NPC 敌意惩罚
+INCLUDE_EVERYONE=包括 所有人
+INCLUDE_EVERYONE_M=包括 所有人 任务里
+INCLUDE_FRIEND=包括 好友
+INCLUDE_PASS=包括 乘客
+INCLUDE_CREW=包括 帮会成员
+INCLUDE_ORG=包括 组织成员
+INCLUDE_H1=不仅仅是您,当这个人群也是NPC的目标时也将适用于它们.
+INCLUDE_H2=同上,但只在任务里时才生效.
+PAIMPNSH=玩家 瞄准惩罚
+PAIMPNSH_H=惩罚在您区域内瞄准您的玩家.
+AIMME=只有瞄准我才惩罚
+AIMMEN=如果禁用,NPC在您的区域内进行瞄准将受到惩罚,无论它们瞄准的是谁.
+AIMMEP=如果禁用,玩家在您的区域内进行瞄准将受到惩罚,无论它们瞄准的是谁.
+PNSH_EXPANON=匿名爆炸
+PNSH_EXP=署名爆炸
+PNSH_BRN=火烧
+PNSH_DIE=死亡
+PNSH_REV=复活
+PNSH_UNRM=移除所有武器
+PNSH_UNRM_H=只能使用拳头.
+PNSH_INTRP=中断
+PNSH_CWR=害怕
+PNSH_FLEE=逃跑
+PNSH_PSH=推开
+PNSH_MRK=AR标记
+PNSH_SHWMDLNME=显示模型名称
+PSNH_FIX=修复
+PSNH_WEKN=削弱
+PSNH_WEKN_H=降低它们的生命值, 使它们很容易就死亡.
+
+! "ESP" as in "Extra Sensory Perception"
+NESP=NPC透视
+! "ESP" as in "Extra Sensory Perception"
+PESP=玩家透视
+
+! "ESP" as in "Extra Sensory Perception"
+BONESP=骨骼透视
+XCLDED=排除死亡
+
+! "ESP" as in "Extra Sensory Perception"
+BOXESP=方框透视
+
+RNDR_LWLTCY=低延迟渲染
+RNDR_LGCY=旧版渲染
+RNDR_NTV=原生渲染
+
+! "ESP" as in "Extra Sensory Perception"
+NAMESP=名称透视
+
+MINTXTSCL=最小.文字比例
+MAXTXTSCL=最大.文字比例
+INVTXTSCL=反转文字缩放
+
+! "ESP" as in "Extra Sensory Perception"
+LINESP=透视线
+
+ESPTAGS_H=标签在此列表中按其显示优先级排序.
+
+CLRARE=清除区域
+IGMISSENT=排除任务实体
+NDLY=无延迟
+
+DELROPES=删除所有绳索
+
+DOORS=增强的开放世界
+DOORS_H=更加开放的游戏世界,让您可以在闲暇时间进入许多特殊的室内地点.
+
+DOORS_ENT=按 {input} 进入 {interior}.
+DOORS_EXT=按 {} 离开.
+
+DEDSEC=看门狗模式
+
+DEDSEC_HACK=入侵
+DEDSEC_HACK_H=允许您设置入侵时哪些入侵选项出现在您的屏幕上.
+
+DEDSEC_GENAC=通用反应
+DEDSEC_VEHAC=载具反应
+DEDSEC_VEHAC_H=适用于当您选择一个在载具的玩家.
+DEDSEC_NPCAC=NPC反应
+DEDSEC_PLRAC_H=适用于当您选择一个正在步行的玩家.
+
+DEDSEC_TUT_ESP=看着玩家,NPC或载具的方向.
+DEDSEC_TUT_OPT=使用 {} 来显示当前目标的黑客选项.
+DEDSEC_TUT_OPTMSE=鼠标中键或 {}
+DEDSEC_TUT_SEL=移动游戏画面选择一个选项,松开按钮即可使用.
+
+DEDSEC_OPT_FRZ=冻结
+DEDSEC_OPT_UFRZ=解除冻结
+DEDSEC_OPT_EXP=爆炸
+DEDSEC_OPT_UNRM=解除武装
+DEDSEC_OPT_DEL=删除
+
+DEDSEC_OPT_DSTRY=摧毁
+DEDSEC_OPT_DRV=驾驶
+DEDSEC_OPT_ENT=进入
+DEDSEC_OPT_EMPTY=踢出
+DEDSEC_OPT_IGNITE=点燃
+DEDSEC_OPT_SLINGSHOT=发射
+
+DEDSEC_OPT_BRN=着火
+DEDSEC_OPT_FLEE=逃跑
+DEDSEC_OPT_CWR=畏缩
+DEDSEC_OPT_REV=复活
+
+DEDSEC_OPT_KLL=击杀
+DEDSEC_OPT_CGE=关笼子
+DEDSEC_OPT_MNU=玩家选项
+
+DEDSEC_STICKY=粘性选择
+DEDSEC_STICKY_H=只有在指定的延迟(毫秒)后,入侵子选项才会被取消选择. 这对控制器(手柄之类)来说很有用.
+DEDSEC_PASSIVE=未选择目标时...
+DEDSEC_ACTIVE=选择目标时...
+
+SHWRETCL=显示准星
+DRWLINE=显示直线
+DRWBOX=显示方框
+
+DEDSECDELAY=打开手机延迟
+DEDSECDELAY_H=如果您在设定的毫秒内松开按键,允许您在有黑客目标的情况下打开手机.
+
+GGSR=地理猜测
+GGSR_H=您对圣安地列斯了解多少?
+GGSR_VIEW=查看目标
+GGSR_SBMT=猜猜看
+GGSR_SBMT_H=通过设置标记点,使用自由视野或移动/传送您的角色来输入位置.
+GGSR_WIN=您猜对了!
+GGSR_OFF=您的猜测离目标有{}米.
+
+ARWP=AR标记点
+ARWP_H=在标记点处放置一个灯塔形状的标志.
+
+ARGPS=AR导航
+ARGPS_H=导航到您的标记点.
+
+ARBCNPLY=玩家AR灯塔
+ARBCNPLY_P=玩家列表中选中时
+ARBCNPLY_S=在一名玩家的列表中
+
+WHNENTPLY=当进入玩家列表时...
+SPCPLY=观看
+
+WHNLVEPLY=当离开玩家列表时...
+STPSPECPLY=停止观看
+
+STPSPEC=停止观看
+
+SRT=排序
+SRTBY=排序方式
+SRTREV=倒序
+
+! Or "Raised Tags"
+HOISTFLGS=提升标签
+HOISTFLGS_H=带有提升标签的玩家将被放到没有提升标签的玩家上面.
+
+NME=名称
+SRTBY_SLT=槽位
+
+SPID2=战局玩家ID / 槽位
+
+LANG_EN=英语
+LANG_FR=法语
+LANG_DE=德语
+LANG_IT=意大利语
+LANG_ES=西班牙语 (西班牙)
+LANG_BR=葡萄牙语
+LANG_PL=波兰语
+LANG_RU=俄语
+LANG_KR=韩语
+LANG_TW=繁体中文
+LANG_JP=日语
+LANG_MX=西班牙语 (墨西哥)
+LANG_CN=简体中文
+
+DSCVYTME=发现时间
+
+CTOS=停电
+CTOS_2=启用(包括载具)
+
+NOSKY=移除天空
+
+OVRDWTR=天气
+OVRDWTR_H=*仅本地更改*
+OVRDOFF=不更改
+WTR_EXTRASUNNY=阳光明媚
+WTR_CLEAR=晴朗
+WTR_CLOUDS=云
+WTR_SMOG=环境污染
+WTR_FOGGY=雾天
+WTR_OVERCAST=阴天
+WTR_RAIN=雨天
+WTR_THUNDER=雷雨天
+WTR_CLEARING=雨晴天
+WTR_NEUTRAL=温室天气
+WTR_SNOW=雪天
+WTR_BLIZZARD=暴风雪
+WTR_SNOWLIGHT=雪雾天
+WTR_XMAS=圣诞节
+WTR_HALLOWEEN=晴朗万圣节
+WTR_RAIN_HALLOWEEN=雨天万圣节
+WTR_SNOW_HALLOWEEN=雪天万圣节
+
+AESLGHT=追光灯
+PLCMNT=放置
+PLCMNT_CHR=人物
+PLCMNT_CHR_H=一道光照耀着您的人物.
+PLCMNT_CAM=画面
+PLCMNT_CAM_H=一束光从画面中射出.
+PLCMNT_OVL=椭圆形的灯
+PLCMNT_OVL_H=在人物周围以椭圆形排列的81盏灯.
+RNGE=范围
+ITNST=强度
+
+! Might also be called "falloff" or "edge gradient", I'm no expert on lights
+DFFRCTN=边缘渐变
+
+WRLDBDR=世界边界
+WRLDBDR_H=如果您在指定的米数范围内,就会显示世界边界.
+
+WAT=水
+
+WVEBHV=波浪特性
+SMTH=平稳
+MGNT=磁性
+
+ZDIFF=高度差异化
+WATZDIFFLOC=只将高度差异化应用于附近的水
+
+STROVR=强度
+
+OPCDIF=透明度
+WATOD_H=允许您修改水的透明度. *仅本地更改*
+
+TRAINS=我喜欢火车
+TRAINS_H=使火车在世界范围内更加常见.
+
+CLK=时间
+
+TIME=时间
+
+CLKSYNC=同步为战局时间
+
+LKTIME=锁定时间
+
+SYSTIME=使用系统时间
+
+SMTHTRNS=平滑过渡
+
+CLKPRST_12=中午
+CLKPRST_6=清晨
+CLKPRST_0=午夜
+CLKPRST_18=傍晚
+
+!!!!!!!!!!!!!
+!! Players !!
+!!!!!!!!!!!!!
+
+ALLPLY=所有玩家
+
+XCLDS=排除
+
+XCLDF=排除好友
+XCLDM=排除自己
+XCLDCM=排除帮会成员
+XCLDSU=排除Stand用户
+XCLDPR=排除玩家
+XCLDOG=排除组织成员
+XCLD50=排除警察
+XCLDMIS=排除任务
+XCLDMDR=排除作弊者
+XCLDLMDR=排除很可能是作弊者
+
+XCLD_GRD=防止您的保镖们攻击这个人群.
+
+PS_ON_H=包括好友,陌生人和您自己.
+PS_F_S=好友和陌生人
+PS_S=陌生人
+
+PSC_M=我
+PSC_FM=好友和我
+PSC_CFM=帮会成员,好友和我
+
+PLYFTRLST=[玩家]
+
+SLFHRM=您确定要对自己这样做吗?
+
+FLAGS=标签
+FLAGS_A=玩家标签
+
+BRCKTS=括号
+
+FLAG_SELF=自己
+FLAG_FRIEND=好友
+FLAG_CREW=帮会成员
+FLAG_ATTACKED=攻击过你
+FLAG_HOST=主机
+FLAG_SCRIPT_HOST=脚本主机
+FLAG_SPEC=正在观看
+FLAG_GOD=无敌
+FLAG_VEHGOD=载具无敌
+FLAG_INVEH=在载具里
+FLAG_RC=遥控载具
+FLAG_OTR=人间蒸发
+FLAG_INT=室内
+FLAG_TYPING=正在打字
+FLAG_DEAD=死亡
+FLAG_VPN=VPN
+FLAG_INVISIBLE=不可见
+FLAG_ORG_MEMBER=组织成员
+
+NXTHST=下位主机
+
+! Plural version of FLAG_FRIEND
+FLAG_FRIEND_P=好友
+
+! Plural version of FLAG_CREW
+FLAG_CREW_P=帮会成员
+
+! Plural version of FLAG_MOD
+FLAG_MOD_P=作弊者
+
+! Plural version of FLAG_ATTACKED
+FLAG_ATTACKED_P=攻击过你
+
+PLYTP=传送到 玩家
+PLYTP_A=传送到 {}
+
+PLYTPVEH=传送到 玩家的载具里
+PLYNVEH={} 不在载具里. :/
+
+PLYAPT=传送到 公寓...
+
+OFFICE_GARAGE={office}, 车库 {num}
+
+NEAR_ME=最靠近我
+NEAR_WP=最靠近我的标记点
+
+APTID=公寓ID
+INTID=室内ID
+
+PLY_VISIT=传送别人进其公寓
+
+PLYSMMN_D=传送/召唤玩家
+
+PLYSMMN=传送到 我
+PLYSMMNPLY=传送到 玩家...
+PLYSMMNWP2=传送到 我的标记点
+PLYSMMNOBJ=传送到 我的任务点
+
+PLYWPTP=传送到 玩家的标记点
+PLYWPTP_N={} 没有设置标记点.
+
+COPYWP=复制TA的标记点
+
+PLYNAPT={} 不在公寓里. :/
+
+PLYCASINOTP=传送到 赌场
+
+PLYFRND=发送好友请求
+
+PLYINHIST=进入历史玩家选项
+
+PLYENGMULT=引擎功率倍数
+
+PLYGIFT=赠送生成的载具
+PLYGIFT_H=允许TA将大部分的载具放进自己的车库,无论其是否值钱.
+PLYGIFT_W=一旦您继续, {} 可以把TA正在驾驶的载具开进车库里. 然而,为了达到预期的效果,TA必须把载具开到一个已经停满车的公寓车库里(可以让TA去网站购买一些免费车). 并且地图上不能有任何属于TA的个人载具, 然后当TA把车开进去的时候选择"替换"车辆,再替换掉任意一辆车即可看到效果. 车辆将是一辆属于TA且未购买保险的个人载具.
+PLYGIFT_T=如果一切操作正确,{} 现在可以将载具开进车库里. :)
+PLYVEHNCTRL=未能获得 {} 的控制权. :|
+
+FRGMDL=伪造模型
+FRGMDL_W=当开启此选项后请不要开不能保存的载具进入洛圣都改车王(例如警车等等),因为很容易导致游戏崩溃. 使用方法: 1.打开伪造模型选项 2.进入任意洛圣都改车王 3.进入"防丢防盗"子菜单 4.关闭"伪造模型"选项 5.购买追踪器 -完成(如有需要,重新登录游戏后将它们开到改车王购买保险)
+
+! "Wanted" as in "Wanted Level", we don't want our ~~poor~~ criminals to be forever alone
+PLYBAIL=永不通缉
+
+PLYBEAST=变成野兽
+
+PLYGRVNPC=磁吸NPC
+PLYAGRNPC=敌意NPC
+
+PARTICLE=粒子
+PLRPTFXSPM=粒子轰炸
+
+HDELCL=本地隐藏
+HDELCL_H=防止您也受到粒子效果的影响.
+
+PLYMUGLOP=抢劫循环
+
+PLYRAGDOLL=摔倒
+
+PLYSHAKECAM=抖动画面
+
+GIVESH=给予脚本主机
+
+PLYARM=给予所有武器
+PLYARM_P=给予武器
+
+PLYAMMO=给予子弹
+PLYAMMO_H=给TA当前武器的弹药.
+PLYAMMO_T={} 目前没有我可以给TA弹药的武器. :/
+
+PLYPARA=给予降落伞
+
+BNTY=给予悬赏
+BNTY_T=悬赏必须在$0到10000之间. :)
+
+BNTYSLF=给予自己悬赏
+BNTYSLF_H=同时给自己一笔悬赏以避免引起怀疑.
+
+LOOPBNTY=循环悬赏
+
+FRNDLY=友好
+
+TROLL=恶搞选项
+
+RAM=撞击
+
+PLYBLME=栽赃击杀...
+
+PLY_NOTIFY=发送通知
+
+PLY_NOTIFY_REMO=已删除现金
+PLY_NOTIFY_STOL=窃取现金
+PLY_NOTIFY_BANK=银行存入现金
+
+PLY_NOTIFY_SPAM=通知轰炸
+
+CPOTFT=复制服装
+
+CPVEH=复制载具
+
+CMDBHLF=代表玩家发送命令
+CMDBHLFALL=代表所有人发送命令
+
+PLYCHTMCK=嘲笑他们的信息
+
+PLYCHTOWO=OwO-可爱化聊天信息
+
+SHWCAM=显示画面朝向
+
+SMS=发送手机短信
+
+SMS2=手机短信
+SMSS=手机短信
+
+DTS=检测
+DT_ANY=任何检测
+
+ADT=绕过检测
+
+ADT_SPEC_H=无论如何您的画面位置都会同步给其他人,别人仍然可以根据它检测到您在观看.
+
+CLSFN=类别
+CLSFNS=分类
+CLSFN_ANY=任何分类
+
+DT_T={player} 触发了检测: {reason}
+CLSFN_T={player} 现在被分类为 {classification}
+DT_CLSFN={player} 触发了检测 ({reason}) 并现在被分类为 {classification}
+
+REACT_T={toast} - 应用 {reaction} 反应.
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_K=踢出战局
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_C=崩溃
+
+! Substitute for {reaction} in REACT_T.
+REACT_T_T=超时
+
+CLSFN_N_H=该玩家尚未触发任何作弊者或管理员检测.
+CLSFN_PM=可能是作弊者
+CLSFN_LM=很可能是作弊者
+FLAG_MOD=作弊者
+FLAG_MODAMN=作弊者或管理员
+CLSFN_MA_H=Stand正在调查此玩家是作弊者还是R星管理员.
+FLAG_AMN=管理员
+
+! Plural version of CLSFN_LM
+CLSFN_LM_P=很可能是作弊者
+
+! Plural version of FLAG_AMN
+FLAG_AMN_P=管理员
+
+CLSFNTAGSLF=分类标签也对自己生效
+
+MDDRDT_H=点击以移除检测.
+MDDRDT_H_LUA=这个检测是由 {} 添加的. 点击以移除检测.
+
+DT_H_PREMPT=这是一种先发制人的检测.
+
+C2C=点击复制数值.
+C2CN=点击复制名称.
+C2OL=点击打开 {link}.
+
+C2IN=点击输入数值.
+C2APPLY=点击应用数值.
+C2SEL=点击选择一个数值.
+
+MDDRDT_SUI=Stand 用户识别
+SUI=Stand 用户识别 (SUI)
+MDDRDT_SUI_H=识别其他Stand用户,但也允许他们识别您.
+
+DT_SU=Stand用户
+DT_SU_C=Stand用户 (多开)
+CLNG=多开
+
+CMDSUI=此功能要求启用Stand用户识别.
+
+CMDSTAND=该功能仅可对启用了"Stand用户标识"的其他Stand用户使用.
+
+HS=主机共享™
+HS_H=当您为战局的主机时,只要双方都启用了Stand用户识别,其他Stand用户就可以利用您的主机特权.
+
+MDDRDT_SID=自我识别
+MDDRDT_SID_T={} 用户
+
+MDDRDT_RAC=R星反作弊检测
+
+MDDRDT_HLTH=非法生命值
+
+MDDRDT_LNGDED=死亡时间过长
+
+MDDRDT_LNGOTR=人间蒸发时间过长
+
+MDDRDT_ARMR=子弹过多
+
+MDDRDT_PRES=状态欺骗
+MDDRDT_PRES_H=检测虚假战局以及更细微的操纵行为.
+
+NMECHNG=我看到过 {newname}, TA之前的名称是: {oldname}. :O
+
+MDDRDT_RID3=R星员工ID
+
+MDDRDT_T2IP=Take-Two IP地址
+
+DT_HT_2=优先主机 (高)
+DT_HT_1=优先主机 (中)
+DT_HT_0=优先主机 (低)
+DT_HT_3=虚假主机令牌 (其他)
+
+MDDRDT_TRFRM=作弊者人物模型
+
+MDDRDT_GODATK=无敌
+
+MDDRDT_RSDEV=R*开发人员标志
+MDDRDT_RSDEV_H=使其他玩家无法使用合法的方式投票踢您.
+
+MDDRDT_RSQA=R*QA标志 (测试员)
+MDDRDT_CHEAT=作弊者标志
+
+SPF_H_FLAG=只有作弊者才能看到这个.
+
+MDDRDT_RP2=无效 等级/经验
+MDDRDT_RP3=经验与等级 不匹配
+MDDRDT_RP4=虚假等级
+
+MDDRT_NONET=阻止了网络事件
+MDDRT_NONET_H=表明玩家可能已经阻止了重要的网络事件,例如请求控制一个实体.
+
+MDDRT_DRIVEB=非法驾驶武器
+
+MDDRT_SILENTCHAT=不打字聊天
+
+MDDRT_BOUNTYSPAM=悬赏轰炸
+MDDRT_BOUNTYSPAM_H=表示玩家以不可能的速度给予悬赏,例如在战局中同时给所有人悬赏.
+
+MDDRT_SUSSYBOUNTY=非法悬赏
+MDDRT_SUSSYBOUNTY_H=表示玩家给予了不正常的悬赏, 例如: 6969.
+
+MDDRT_EXPBLAME=爆炸栽赃
+MDDRT_EXPBLAME_H=注意: 当一个作弊者在爆炸某个人时也可能会触发此检测.
+
+MDDRT_EXPL=非法爆炸
+MDDRT_EXPL_B=防止爆炸同步给您. 这不会帮助其他人.
+MDDRT_EXPL_H=主要用于检测作弊者在玩家身上产生爆炸或使用爆炸子弹. 注意有时候也可能会对合法玩家触发检测.
+
+VICTIM=受害者: {}
+
+MOD_ORGNAME=非法的组织名称
+
+MDDRT_CAYO=在玩家列表中隐藏了
+
+MDDRT_MISC=非法数据
+
+ATTKRS=攻击者
+ATTRKS_PRE_1=发送 B-11突击部队
+ATTRKS_PRE_2=发送 摩托者
+ATTRKS_PRE_3=发送 小丑
+ATTRKS_PRE_4=发送 直升机
+ATTRKS_PRE_5=发送 单车党
+ATTRKS_PRE_6=发送 农民
+ATTRKS_PRE_7=发送 迷你坦克
+ATTRKS_PRE_8=发送 军队 (联合武装)
+ATTRKS_PRE_9=发送 诡异幽灵
+
+ACCURACY=精准度
+
+AGGR=攻击性
+AGGR1=友好
+AGGR1_H=保护您和他人免受AI攻击者的攻击.不会攻击玩家.
+AGGR2=防守
+AGGR2_H=保护您免受任何敌对目标的攻击.
+AGGR3_H=保护您免受敌对目标的攻击,但往往是见人就打.
+DEL_ATTKRS=删除所有攻击者
+FILL_VEH=填充载具
+FILL_VEH_H=不是为每个攻击者创建一辆新的载具,而是在创建新的载具之前,现有的载具将被完全填充.
+
+! As in "Kill the engine"
+KLL=破坏引擎
+! The "EMP" projectile in-game that turns your car off. 
+EMP=电磁脉冲
+FLIPPLRVEH=翻转
+SPINVEH=旋转
+POP_TYRES=爆胎
+DETACH_AIR=分离机翼
+DETROIT=分离车轮
+SLIPPERY=湿滑的轮胎
+SLIPPERY_H=需要一点时间才能消除.
+DEL_DOORS=移除车门
+IGNITE=点燃
+TURNAROUND=转向
+DSTRYPROP=摧毁螺旋桨
+BREAKBOOM=折断尾臂
+
+SLINGSHOT=发射
+
+V_F=向前
+V_B=向后
+
+PLYDDVEH=禁止驾驶载具
+PLYDDVEH_H=使他们处于无法驾驶载具的状态,可以通过公寓邀请来恢复.
+
+INFLOAD=无限加载屏幕
+
+INFRING=无限手机铃声
+
+FRZ=冻结
+
+FAKEDROP=假掉钱袋
+
+NOPSSVE=阻止被动模式
+
+! Putting someone in a cage
+PLYCGE=笼子
+
+PLYCAGE_TINY=小笼子
+PLYCAGE_GOLD=中笼子
+PLYCAGE_FNCE=栅栏笼子
+PLYCAGE_STNT=特技管道
+
+! Being put in a cage
+CGE=笼子
+
+PLYKLL=击杀
+
+PLYEXP=爆炸
+
+! For reference: Block Blaming is PTX_PSV
+PLYKLL_H=如果您启用了阻止栽赃或者被动模式将不起作用.
+
+CGES=笼子
+
+PLYKCK=踢出战局
+
+PLYKCK_T_H=非常简单. ;P
+! Single target version of PLYKCK_T_C.
+PLYKCK_T_C=我会设法让TA离开这里的. :)
+! Multiple targets version of PLYKCK_T_C_M.
+PLYKCK_T_C_M=我会设法让他们离开这里的. :)
+
+PLYKCK_SMRT=智能
+PLYKCK_SMRT_A=智能踢
+PLYKCK_SMRT_H2=以任何必要的方式移除玩家.
+
+PLYKCK_BL=黑名单
+PLYKCK_BL_A=黑名单踢
+PLYKCK_BL_H=添加玩家到战局黑名单让他们像是被投票踢出,但像不同步踢一样踢他们.
+
+PLYKCK_H=主机
+PLYKCK_H_H=使用投票踢机制踢出玩家.
+
+PLYKCK_NH=非主机
+
+PLYKCK_PC=自由模式结束
+
+PLYKCK_B=分离
+PLYKCK_B_G=分离踢
+
+BRKUR=分离踢反应
+BRKUR_H=只有当您是战局主机并且分离踢不是针对您使用时才会有效果.
+
+KBKR=仿制的分离踢反应
+KBRK_E=仿制的分离踢
+
+GEN_H_HOST=这只会在您是战局主机时才生效.
+GEN_H_NHOST=这只会在您不是战局主机时才生效.
+
+PLYBAN=封号
+
+PLYKCK_O=高潮
+
+PLYKCK_L=情书
+PLYKCK_L_G=情书踢
+
+PLYKCK_H_DSCRT=一个离散的踢,不会告诉目标是谁干的.
+
+PLYKCK_H_B_H=当您是战局主机时目标将无法阻挡.
+PLYKCK_H_HO=只在您是战局主机时可用.
+PLYKCK_H_B_P=已被部分主流菜单阻挡.
+PLYKCK_H_B_M=已被大部分菜单阻挡.
+
+BE_K=BattlEye 踢
+BE_B=BattlEye 封禁
+BE_B_H=导致目标无法加入GTA线上, 直到他们重启游戏.
+
+PLYCRSH=崩溃玩家
+SUI_ET=这对其他Stand用户起作用的概率非常小. 但我有什么资格质疑神圣的用户呢? :^)
+
+PLYCRSH_H_AOE2=注意: 这可能也会使目标附近的其他玩家崩溃.
+
+PLYCRSH_E=优雅
+PLYCRSH_G=无效物体
+PLYCRSH_V=载具临时动作
+PLYCRSH_T=无效火车轨道
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T=防止了一个崩溃 ({type}).
+
+! Type may be a codename such as XA, or a human-readable name, such as "Attachment Loop".
+CRSH_T_BLM=防止了一个崩溃 ({type}), 可能是来自 {player}.
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_TRNLOOP=火车循环
+
+! To be used within CRSH_T and CRSH_T_BLM
+CRSH_ATTLOOP=附加物循环
+
+! Buffer overruns cause memory corruption, which could go unnoticed, but could also crash the game.
+! Type may be a codename such as XA, or a human-readable name, such as "Ped Outfit Texture".
+BU_T=防止了一个缓冲区溢出 ({type}).
+
+! To be used within BU_T
+BU_TEX=Ped服装纹理
+
+BU_VEHLIT=载具灯光
+
+INVTASK=一个NPC正在运行一个无效task,正在中断它.
+
+TIMEOUT=超时
+FLAG_TIMEOUT=超时中
+TIMEOUT_H=暂时阻止与该玩家之间的大部分网络通信.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Player > Information !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+INFO=信息
+
+NME_S=玩家名称 (Stand)
+NME_H=玩家名称 (战局)
+NME_R=玩家名称 (Social Club)
+
+STUS=状态
+
+DMG_WEAP=武器伤害乘数
+DMG_MELEE=近战伤害乘数
+
+ORG=组织
+
+ORGT_SV=保镖事务所
+ORGT_MC=摩托帮
+
+BOSS=老大
+
+STS=统计
+
+NDATA=没有数据
+
+CHAR1=角色 1
+CHAR2=角色 2
+CHAR1_ACT=角色 1 (游玩)
+CHAR2_ACT=角色 2 (游玩)
+
+CNNTN=连接
+
+IP=IP地址
+RLYIP=中继IP
+LANIP=局域网IP
+PRT=端口
+RLYPRT=中继端口
+
+CONVIA=连接方式
+CONVIA_P2P=P2P
+CONVIA_RLY=中继
+CONVIA_RLY_S=通过中继连接
+CONVIA_PLY_S=通过 {} 连接
+
+PING=延迟
+MS=ms
+
+MNY_W=现金
+MNY_B=银行存款
+MNY_A=存款总计
+
+DIST=距离
+
+KLLS=击杀
+DTHS=死亡
+KD=击杀/死亡 比
+
+FAVVEH=最喜欢的载具
+FAVWEAP=最喜欢的武器
+FAVRDSTAT=最喜欢的电台
+
+OWNBKR=拥有地堡
+OWNFAC=拥有设施
+OWNCLB=拥有夜总会
+
+HOSTKN=主机令牌
+
+HOSTQPOS=主机队列位置
+
+HQSA_NH=名称哈希
+
+GIP_Q=请求等待执行
+GIP_P=执行请求中
+GIP_F=请求执行失败
+
+CT=城市
+RGION=地区
+CTRY=国家
+
+! E.g. "Discovered: 10 seconds ago"
+DSCVAGO=发现
+
+! E.g. "Invulnerable For: 10 seconds"
+GODTIME=无敌
+
+CRW=帮会
+CRWTG=标志
+MOTTO=座右铭
+ALTBDG=替代徽章
+
+!!!!!!!!!!!!!!!
+!! Durations !!
+!!!!!!!!!!!!!!!
+
+DUR_AGO={} 前
+
+DUR_S=秒
+DUR_S_P=秒
+DUR_M=分钟
+DUR_M_P=分钟
+DUR_H=小时
+DUR_H_P=小时
+DUR_D=天
+DUR_D_P=天
+
+!!!!!!!!!!!!
+!! Online !!
+!!!!!!!!!!!!
+
+SESS=战局选项
+NWSESS=新的战局
+
+NWSESS_CHAR=切换战局时选择角色
+
+NWSESS_SP=创建 公开单人战局
+NWSESS_IO=创建 非公开仅邀请战局
+NWSESS_CC=创建 非公开帮会战局
+NWSESS_C=创建 帮会战局
+NWSESS_CF=创建 非公开好友战局
+NWSESS_S=创建 非公开单人战局
+NWSESS_FF=加入 好友的战局
+NWSESS_FC=加入 帮会成员的战局
+NWSESS_FP=寻找 公开战局
+NWSESS_NP=寻找 新的公开战局
+NWSESS_NP_H=类似于"寻找公开战局",但会首先加入一个新的单人公开战局中,用于避免循环加入相同的战局.
+NWSESS_CTOR=制作器模式
+NWSESS_SCTV=观看模式
+
+TRK=追踪
+TRKD=已开启追踪
+HISTTRK=追踪的玩家
+HIST_KEEP_TRA=保留追踪
+
+TRK_H=当此玩家切换战局,上线或者离线的时候会通知您.
+
+TRK_T_CNF=追踪更新时...
+
+INJTRKINFO=注入后显示追踪的玩家状态
+
+META=变化
+
+RSADMINS=Rockstar 管理员
+
+! SC = Social Club
+SCFRIENDS=SC 好友
+
+ADDMISS=添加缺少的
+PLYNOTESET=设置备注
+PLYNOTESET_H_A=设置历史玩家中所有管理员的备注.
+TRCKALL=追踪所有
+UTRCKALL=取消追踪所有
+WHTLALL=白名单所有
+UWHTLALL=取消白名单所有
+HIST_DNG=危险区
+HIST_CLR=清空历史
+
+ONLSTS=在线状态
+ONLSTS_O2=离线
+ONLSTS_S=在故事模式
+ONLSTS_H=在{} 为战局主机
+ONLSTS_C=在 {session_type}
+ONLSTS_CH=在{session_type} 战局主机: {host}
+
+TRK_T={name} 目前{activity}.
+
+ONLSTS_TRK_O=已离线
+ONLSTS_TRK_S=在故事模式
+ONLSTS_TRK_H=在 {} 为战局主机
+ONLSTS_TRK_C=在 {}
+ONLSTS_TRK_CH=在{session_type} 战局主机: {host}
+
+ST_S=单人战局
+ST_I=仅邀请战局
+ST_F2=仅好友战局
+ST_CC=仅帮会战局
+ST_C=帮会战局中
+ST_P=公开战局
+ST_O=未知类型的战局中
+
+! Short online statuses:
+SHTONLSTS_O2=离线
+SHTONLSTS_S=故事模式
+SHTONLSTS_ST_S=单人
+SHTONLSTS_ST_I=仅邀请
+SHTONLSTS_ST_CF=仅好友
+SHTONLSTS_ST_CC=仅帮会
+SHTONLSTS_ST_C2=帮会
+SHTONLSTS_ST_P=公开
+SHTONLSTS_ST_O=其他
+
+PTX=保护选项
+PTX_W=注意: 多开时禁用Stand的保护并不会让您的更稳定.禁用保护只会让保护失效.
+
+! Alternatively, "Protections Help Page"
+PTXGDE=保护指南
+
+COLOAD=多开时
+COLOAD_DPTX=多开时不检测和阻止 {}
+
+PTX_CRSHE=崩溃事件
+
+PTX_KICK=踢出事件
+PTX_KICK_SH=脚本主机踢
+
+PTX_INV=作弊者事件
+PTX_INV_H=只会由作弊者才会发送的一些事件.
+
+PTX_WEIRD=异常事件
+PTX_WEIRD_H=可能是由作弊者发送的事件,但在罕见情况下也可能合法地发生.
+
+VEHKICK=踢出载具
+
+INTKICK=踢出室内
+
+TRIGDEFD=触发产业突袭
+
+PLYFRCECAMFRNT=强制画面向前
+PLYFRCECAMFRNT_H=在某些情况下也可以让玩家的无敌失效.
+
+PLYMISSION=强制进入自由模式任务
+PLYMISSION_H=强制目标进入自由模式任务状态,让目标不能启用被动模式或进入室内.
+
+! Forces the recipient into a mission start screen
+SND2JB=发送到差事
+
+SND2JB_0=恶劣天气型态
+SND2JB_1=恶霸半履战车
+SND2JB_2=撤退策略
+SND2JB_3=离岸之财
+SND2JB_4=行迹败露
+SND2JB_5=猎杀叛徒
+SND2JB_6=数据泄露
+SND2JB_7=工作纠纷
+
+PTX_BAIL=清除通缉等级
+
+PTX_EVTS=事件
+PTX_NET=网络事件
+PTX_NET_ANY=任何事件
+
+PTX_RAWNET=原生网络事件
+PTX_RAWSYNC=原生同步
+
+PTX_RAW_W=这是为高级用户准备的.如果您不知道自己在做什么,请不要动,特别是不要去随便阻止一切事件.
+
+PTX_NET_R_B_W=还记得告诉过您"不要去阻止所有东西"吗？ 即使您可以阻止,并不意味着您必须这样做. 特别是如果您没有充分的理由这样做的时候.
+
+PTX_APUP=任何拾取物
+PTX_APUP_T=您捡到了一个类型为 {}的可拾取物
+PTX_APUP_L=您捡到了一个可拾取物
+
+PTX_CASHPUP=金钱拾取物
+PTX_CASHPUP_T=您捡到了金钱拾取物
+
+PTX_RPPUP=经验拾取物
+PTX_RPPUP_T=您捡到了经验拾取物
+
+PLYKCK_IPUP=无效拾取物
+
+PTX_IPUP=无效拾取物
+PTX_IPUP_H=万一您捡到了会把您踢出战局的无效拾取物,该怎么办.
+PTX_IPUP_T=捡到了无效拾取物
+
+PTX_APT=公寓邀请
+
+PTX_CAYO=强制传送到佩里科海岛
+
+PTX_DRVCTRL=载具接管
+PTX_DRVCTRL_H=可以防止别人控制您的载具并把您传送到任何位置.
+
+SE=脚本事件
+
+GIVE_WEAPON_EVENT=给予武器
+REMOVE_WEAPON_EVENT=移除武器
+REMOVE_ALL_WEAPONS_EVENT=移除所有武器
+FIRE_EVENT=火
+EXPLOSION_EVENT=爆炸
+NETWORK_PTFX_EVENT=粒子效果
+NETWORK_PLAY_SOUND_EVENT=播放声音
+
+RCT_T=通知
+RCT_L_F=写入到日志文件
+RCT_L_C=写入到控制台
+RCT_C=在战局聊天中通知
+RCT_C_T=在团队聊天中通知
+
+RTC_PLY=玩家反应
+
+RCT_N_B=阻止TA的网络事件
+RCT_BIS=阻止传进的同步信息
+RCT_BOS=阻止传出的同步信息
+RCT_N_L=记录TA的网络事件
+RCT_SI_L=记录TA传进的同步信息
+RCT_SO_L=记录TA传出的同步信息
+RCT_N_T=通知TA的网络事件
+RCT_SI_T=通知TA传进的同步信息
+RCT_SO_T=通知TA传出的同步信息
+
+RCT_T_OUT={event} 发送到 {player}
+PTX_NET_R_T_T={event} 来自 {player}
+RCT_T_AGAINST={sender} 对 {target} 使用了 {event}
+
+PTX_NET_R_B=阻止
+
+! What "Block" does for chat messages
+PTX_NET_R_B_H_C=将阻止触发的聊天信息在本地显示,但其他人仍然能看到它.
+
+
+PTX_S=同步信息
+PTX_INC=传入
+PTX_OUT=传出
+PTX_SI=传入的同步信息
+PTX_SO=传出的同步信息
+PTX_SI_ANY=任何传入的同步信息
+
+OUTSBH=阻止向主机传出同步
+OUTSBH_H=这可以帮助您避免为非主机身份时被 BattlEye 踢出, 但也意味着战局主机将无法与您互动.
+
+PTX_CSB=自定义模型同步反应
+ADDMDL=添加模型
+PTX_CSB_T=模型同步 {hash} 来自 {player}
+
+PTX_IMS=无效模型同步
+PTX_IMS_T=无效模型同步来自:{player} 类型: {type} 哈希: {hash}
+
+PTX_WOS=世界物体同步
+
+PTX_ATTACH=附加物轰炸
+
+PTX_BEWARE_RESYNCH=其他玩家可以重新同步作弊者生成的物体,因此请注意这一点.
+
+PTX_S_CC=克隆创建
+PTX_S_CU=克隆更新
+PTX_S_CD=克隆删除
+PTX_S_ACC=确认克隆创建
+PTX_S_ACU=确认克隆更新
+PTX_S_ACD=确认克隆删除
+
+PLY_BOS_H_A=阻止您的位置被其他玩家更新.如果加入前这个已经启用,甚至可以阻止其他玩家知道您在战局中.
+PLY_BOS_H_1=停止更新您的位置信息到该玩家.
+
+MYSLF=对我
+SOMELS=对其他人
+
+KARMA=反弹
+
+LLKT=被情书踢时通知
+LLKT_T=您被情书踢了.
+
+DSKK=反弹不同步踢
+DSKK_H2=使其他一些菜单的不同步踢选项在对您使用时总是适得其反.
+
+LLLUBE=情书踢改善
+LLLUBE_H=当战局主机选择谁去使用情书踢时, 使您不太可能成为候选人
+LLLUBE_1=合法
+LLLUBE_1_H=一些作弊者可能会误导性的检测到这个.
+LLLUBE_0_H=这是最有效的方法, 但其他作弊者可以检测到这个.
+
+CAMSHAKE=抖动画面事件
+
+EXPSPAM=爆炸轰炸
+EXPSPAM_H=当有人循环爆炸您的人物时触发.
+
+RAGDOLLEVT=摔倒事件
+
+SNDSPM=声音轰炸
+
+MODDMGEVT=非法伤害事件
+
+PRESES=呈现事件
+
+BFSTN=阻止好友统计通知
+BFSTN_H=阻止例如"...已收集所有信件碎片."的通知
+
+BJI=阻止差事邀请
+
+PTX_VK=阻止投票踢
+PTX_VK_T=阻止了一次投票踢. :)
+
+MAGIC=魔法
+PTX_VK_SP=SCTV / 观看模式
+PTX_VK_F1=自由模式任务 1
+PTX_VK_F2=自由模式任务 2
+PTX_VK_F3=自由模式任务 3
+PTX_VK_F4=自由模式任务 4
+
+PTX_BJ=反弹阻止加入
+PTX_BJ_H=检测是否有非主机试图阻止您的加入并将其从战局中移除,从而允许您加入到战局中.
+PTX_BJ_T2={} 正在阻止您加入, 我会尝试将TA从战局中移除.
+
+PTX_NB=阻止跳出战局
+PTX_NB_1=玩家已不在战局中
+PTX_NB_2=更改活跃帮会
+
+PTX_NB_SPC=观看相关
+PTX_NB_SPC_H=目标离开,等等.
+
+PTX_NB_O=其他原因
+PTX_NB_O_H=超时或其他.
+
+PTX_NB_T=游戏似乎准备要跳出战局 ({a1}, {a2}, {a3}); {action}.
+PTX_NB_T_A=已允许
+PTX_NB_T_B=已阻止
+
+PTX_HCK=由主机控制的踢
+
+PTX_HKK=反弹主机踢
+PTX_HKK_H=当您被主机踢时也将主机一起踢出. 注意:您仍然会被踢出战局.
+
+PTX_HK=减少主机踢
+PTX_HK_H=当您被主机踢时,只会收到被主机踢的通知,而不会强制您更换战局.
+PTX_HK_T=有人对您使用了主机踢 ({method}), 可能来自 {player}.
+
+HKI=主机很快就要踢你了.
+HKI_BS=我建议阻止与TA的同步.
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_V=投票踢
+
+! To be used as a substitute for {method} in PTX_HK_T.
+PTX_HK_M_N=网络错误
+
+PTX_PSV=阻止栽赃
+PTX_PSV_H2=使您无法伤害任何人,所以当有人尝试栽赃您的时候属于您的爆炸不会造成任何伤害.也会让其他人无法伤害您.
+PTX_PSV_W=如果您没有阅读帮助文本,让我重申一下:启用这个功能后,您将无法对任何人造成任何伤害.与其简单的启用这个功能,您可能更喜欢开启该功能上下文菜单中的"关联瞄准时"状态,并启用反转关联状态选项,这样会在您瞄准别人时暂时关闭防栽赃保护.
+
+PTX_ENTSPAM=阻止实体轰炸
+PTX_ENTSPAM_STATUS={count}个 {name} 实体
+PTX_ENTSPAM_NEW=似乎有过多 {}. 努力清理中.
+PTX_ENTSPAM_CALM={} 已清理. :)
+
+VEHPARTS=掉落的载具部件
+
+ACCAM=防崩镜头
+PTX_ENTSPAM_USECAM=自动使用防崩镜头
+PTX_ENTSPAM_CAM=很抱歉把画面锁在这里,但是在很长一段时间内渲染不会优雅地处理这个问题. 使用"传送到海岛" 或 "传送到乞力耶德山" 可能会更快处理该问题.
+
+PTX_DRAW=防止渲染器渲染到卡死
+PTX_DRAW_H=阻止游戏因渲染太多导致崩溃.
+PTX_DRAW_T=渲染器已过载
+
+PTX_DELSTALE=删除过时物体
+PTX_DELSTALE_H=删除模型信息已被卸载的物体,因为这个游戏是一个完美无瑕的杰作.
+PTX_DELSTALE_T=正在删除物体 {} 因其模型信息已被卸载.
+PTX_DELSTALE_T_2=正在删除一个分段物体,模型 {} 因其分段模型信息已被卸载.
+
+NOMODPOP=删除修改过的人口倍增区域
+NOMODPOP_H=删除修改过的人口倍增区域,使GTA在线模式看起来不会比平时更荒凉.
+NOMODPOP_T=已删除一个修改过的人口倍增区域. :)
+
+NOBEAST=禁用变成野兽
+NOBEAST_H=防止您在自由模式的活动"猎杀野兽"中变成野兽, 其他作弊者可能会利用该活动来恶搞您.
+NOBEAST_T=防止了您变成野兽,已停止该脚本,该脚本的主机是 {}.
+
+NPLYMDLSWP=阻止玩家模型切换
+NPLYMDLSWP_H=在本地阻止玩家们将他们模型转换为通常来说无法玩的模型. 原则上这是不需要启用的,因为我们已经修补了所有相关的已知崩溃 (我们知道的).
+
+FRCRLY=强制中继连接
+
+LOWFPSTIMEOUT_T=检测到FPS过低 - 设置 {} 为超时状态.
+
+REVOTR=显示人间蒸发的玩家
+
+REVINV=显示不可见的玩家
+
+BEORB=变成天基炮
+BEORB_H=把所有被您杀死的人送到医院门口复活,并显示TA被您的天基炮杀死信息.
+
+BESCRHST=成为战局脚本主机
+
+BESCRHSTKLEPTO=自动获得脚本主机
+BESCRHSTKLEPTO_H=自动成为战局的脚本主机.
+
+BJS=阻止加入
+
+BJ_ALL=所有人
+BJ_ALL_A=阻止所有人加入
+
+BJ_STR=陌生人
+BJ_STR_A=阻止陌生人加入
+BJ_STR_H=阻止不是您Social Club好友的玩家加入.
+
+BJ_ADS=已知的广告机
+BJ_ADS_A=阻止已知的广告机加入
+
+BJ_REM=已移除的玩家
+BJ_REM_A=阻止已被移除玩家的加入
+BJ_REM_H=阻止已被您踢出或崩溃的玩家加入.
+
+BJ_REMOVED=已移除的玩家
+BJ_REMOVED_H=目前已被阻止加入的玩家列表,因为您移除了他们.
+BJ_KICKEDP_H=点击以移除玩家.
+
+BJ_WHT=非白名单
+BJ_WHT_H=阻止您未列入白名单的任何玩家加入.
+BJ_WHT_A=阻止非白名单的玩家加入
+
+BJ=阻止加入
+BJ_H=只有当您为战局主机时加入才会被阻止. 当您是非主机时, Stand 会尝试将其踢出.
+BJ_T2=阻止了 {player} 加入战局,原因: {feature}.
+
+MSG=信息
+
+BJMSG_ASS=不兼容的游戏内容
+BJMSG_TU=确保最新的游戏更新
+BJMSG_TAR=不同的瞄准偏好
+BJMSG_BAR=你账号的声誉不佳
+BJMSG_C=你是作弊者
+BJMSG_BS=你是恶劣玩家
+BJMSG_DLC=可下载内容不兼容
+BJMSG_BT=不同的版本类型
+BJMSG_CONT=不同的内容
+BJMSG_BSO=恶意玩家战局
+BJMSG_CO=作弊者战局
+BJMSG_PR=付费竞速
+BJMSG_CON=无法连接
+BJMSG_PRIV=私人战局
+BJMSG_F=好友战局
+BJMSG_VK=你已被投票踢出
+BJMSG_ID=已停用邀请
+BJMSG_POOF=战局已不存在
+BJMSG_BUG=无法加入非计划战局
+
+LSCM=洛圣都车友会
+
+SETREPLVL=设置声望值等级
+SETREPLVL_H=注意: 您需要成为车友会会员才能使新的等级生效.
+SETREPLVL_T=您的声望值等级已更改,重新进入洛圣都车友会后生效.(如没有效果,请确认是否购买了车会友会员)
+
+UNLKPRIZRID=完成奖品载具挑战
+UNLKPRIZRID_T=奖品已经是您的了! 现在只需进入互动菜单领取即可. :)
+
+H3=赌场抢劫
+
+H3_RPT=移除重复抢劫冷却时间
+H3_RPT_H=使用时请确保您不在游戏厅内.
+H3_RPT_T=冷却说再见. :D
+
+H3_POIACC=兴趣点 & 出入口
+
+SCOP=解锁所有
+H3_SCOP_H=只能在完成侦察任务后再使用它,否则可能会导致软锁.
+
+USCOP=取消解锁
+
+H3_VLT=设置抢劫目标
+H3_VLT_H=支付抢劫费用后,在确定金库财物之前使用此功能.
+H3_VLT_3=钻石
+H3_VLT_2=艺术品
+H3_VLT_1=黄金
+H3_VLT_0=现金
+H3_VLT_T=我不知道金库里会有什么. :^)
+
+H3_FNSH1=完成第一块面板
+H3_FNSH1_H=在支付抢劫费用并设置抢劫目标后使用此功能.
+H3_FNSH1_1=隐迹潜踪
+H3_FNSH1_2=兵不厌诈
+H3_FNSH1_3=气势汹汹
+H3_FNSH1_T=就差一块面板了. :D
+
+H3_FNSH2=完成第二块面板
+H3_FNSH2_T=完成两块面板了. :D
+
+H3_RSTCRW=重置支援队伍
+H3_RSTCRW_H=万一您选错了支援队伍的成员,您想改变.
+H3_RSTCRW_T=支援队伍已重置. 您需要重新进入游戏厅才会生效. :)
+
+H_FNSH_W=以这种方式完成前置任务不会计入"按部就班"和"犯罪之神"的成就挑战.
+
+H_FNSH=完成所有前置任务
+H_TRGT=设置抢劫目标
+
+H4=佩里科海岛抢劫
+H4_FNSH_T=已跳过所有前置. 您需要重新进入虎鲸才能看到效果. :)
+
+H4_TRGT_0=西西米托龙舌兰
+H4_TRGT_1=红宝石项链
+H4_TRGT_2=不记名债券
+H4_TRGT_3=粉钻
+H4_TRGT_4=玛德拉索文件
+H4_TRGT_5=猎豹雕像
+
+H2_FNSH=完成末日豪劫前置任务
+H2_FNSH_H=跳过当前末日豪劫的所有前置任务.
+H2_FNSH_T=已跳过前置. 您需要重新进入设施才能看到效果. :)
+
+H1_FNSH=完成公寓抢劫前置任务
+H1_FNSH_H=跳过当前公寓抢劫的所有前置任务.
+H1_FNSH_T=已跳过前置. 您需要重新进入公寓才能看到效果. :)
+
+RIGOFF=不控制
+
+WHEEL=幸运转盘奖品
+WHEEL_1=展台载具
+WHEEL_2=载具折扣
+WHEEL_3=筹码
+WHEEL_4=现金
+WHEEL_6=服装
+WHEEL_7=神秘奖品: 载具
+WHEEL_8=神秘奖品: 地堡补给
+WHEEL_9=神秘奖品: 零食
+WHEEL_10=神秘奖品: 筹码
+WHEEL_11=神秘奖品: 现金
+WHEEL_12=神秘奖品: 经验
+WHEEL_13=神秘奖品: 服装
+
+MONEYLINK2=赚钱指南
+
+SLOTS2=老虎机结果
+SLOTS_H=不要在24小时内赚取超过GTA$ {} ! 此外, 如果您的当前账号曾经或正在使用过其他菜单, 这可能不安全.
+SLOTS_WJ=头彩
+SLOTS_WS=小赢
+SLOTS_L=输
+
+ROULETTE=轮盘结果
+CSNO_H_OPB=其他玩家也可以从中受益.
+
+CSNO_BJ=必赢 21点
+CSNO_BJ_H=使庄家总是爆牌. (当手牌<=11时,您可以双倍下注. 当手牌>=11时,您可以保证获胜选择不加倍或冒险加倍但可能会爆牌).
+
+SNKSNARMR=补满零食和防弹衣
+SNKSNARMR_T=好了,都补满了. :D
+
+ENHNCMTS=增强选项
+
+NOAFK=挂机防踢
+
+NOMECHCDLN=移除技工冷却
+
+NOMKIICLDN=移除暴君MK2冷却
+
+NOEWOCLDN=移除自杀冷却
+
+NOGTARCFP=移除远程遥控载具时锁定游戏视角
+
+NODTHBAR=移除部分地图杀
+
+NOPSSVCLDN=移除被动模式冷却
+
+NOORBCLDN=移除天基炮冷却
+
+NOSUBMSLCLDN=禁用虎鲸导弹冷却时间
+
+NOSUBMSLMAXRNGE=禁用虎鲸导弹射程限制
+NOSUBMSLMAXRNGE_H=不会影响已发射的导弹.
+
+NONANOMAXRNGE=禁用纳米无人机范围限制
+NONANOCLDNS=禁用纳米无人机冷却
+
+! "Business Battle" is SCR_FE_BB
+NOFMBTLMSC=禁用商战音乐
+NOFMBTLMSC_H=注意: 启用此功能不会停止已经在播放的违规音频.
+
+NFMEVTENDAUD=禁用事件结束倒计时声音
+
+TGGLEMAP=可切换大地图
+TGGLEMAP_H=让小地图总是像您在飞机上一样.
+
+PAWS=允许暂停
+
+NOINTCHK=绕过室内限制
+NOINTCHK_H=绕过部分室内的检查,例如铸钢厂,防止被游戏强制传送出去.
+
+PASSIWPNVEH=允许驾驶武装载具时启用被动模式(MK2等)
+
+NWRKCLD=移除VIP工作冷却
+
+SLLINPRV=在私人战局中的执行所有任务
+
+GHSTNRBYDR=确保干净的竞速
+GHSTNRBYDR_H=确保比赛中的对手们公平的竞速,如果他们靠得太近,就会在本地变成幽灵,移除彼此的碰撞.
+
+ALLPICLK=绕过互动菜单限制
+ALLPICLK_H=允许您使用大部分互动菜单中的选项,即使它们为灰色或不可用状态.
+
+UNKLCSNO=绕过赌场国家/区域限制
+
+AMTTSUIT=绕过计时赛的载具限制
+
+NODRIPFEED=移除载具限制
+NODRIPFEED_H=允许在正式开放之前生成,驾驶和购买所有新的DLC载具以及恢复一些已下架载具的购买权限.
+
+NEMTYNTFY=禁用空通知
+EMTYNTFY=禁用空通知
+
+BST=牛鲨睾酮
+
+GETBST=获得牛鲨睾酮
+
+RMBNTY=移除悬赏
+
+QWQPROG=恢复选项
+
+! Don't translate this if it doesn't help the user recognise the option; I assume most menu users know it as Recoveries.
+QWQPROG_H=又名: "代练选项"
+
+GIVECOLL=给予收藏品
+GIVECOLL_0=电影道具
+GIVECOLL_1=隐藏包裹
+GIVECOLL_2=藏宝箱
+GIVECOLL_3=电台天线
+GIVECOLL_4=媒体记忆棒
+GIVECOLL_5=沉船
+GIVECOLL_6=藏匿品
+GIVECOLL_8=给糖或捣乱
+GIVECOLL_9=拉玛的有机坊产品
+GIVECOLL_10=拉机能量高空跳伞
+GIVECOLL_16=雪人
+GIVECOLL_17=杰拉德的包裹
+! Tags as in graffiti
+GIVECOLL_19=洛圣都涂鸦
+
+GIVECOLLE=给予收藏品
+GIVECOLLE_NCEO=给予收藏品(不是我的老大)
+
+CEOPAY=CEO成员奖励金循环
+CEOPAY_H2=给组织的成员和保镖一些体面的报酬.不一定需要是您的保镖或组织成员.
+
+PLYRP=给予经验
+PLYRP_H=为玩家提供大量经验. 可多次使用.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCFIG=掉落手办
+PLYCFIG_H=可以用来给予经验和现金.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYCRDS=掉落纸牌
+PLYCRDS_H=可以用来给予经验和赌场筹码.
+
+! "Drop" as in "drop it on the floor so that they may pick it up", might just be best translated like "give"
+PLYSNK=掉落PQ豆
+
+PLYEXPAMMO_H=当您近距离靠近目标时效果最好.
+
+OTR=人间蒸发
+
+MNTLS=精神状态
+
+MNTL=设置精神状态
+MNTL_T=您现在的精神状态为 {}. :)
+
+LCKMNTL=锁定精神状态
+
+MNTLPULS=渐变的精神状态
+MNTLPULS_H=渐变由您精神状态颜色表示的玩家光标.
+
+CLUBPOP=设置夜总会人气值
+CLUBPOP_P=夜总会人气值
+CLUBPOP_L=锁定夜总会人气值
+
+RNK=等级
+
+SETLVL=设置等级
+GEN_T_NEWSESS=您需要更换一个新的战局,才会生效. :)
+
+! Refering to any number of possible targets.
+GEN_T_NEWSESS_O=他们需要加入一个新的战局才能应用更改. :)
+
+FSTRUN=快速奔跑
+ABILOPT=解锁
+ABILUNL=还原
+
+BADSPORT=恶劣玩家
+RELINQ=移除
+
+UNLKS=解锁
+
+STATEDIT=统计编辑器
+STAT_STR_LABEL=这需要一个标签.
+STAT_STR_RID=这需要一个Rockstar ID.
+STAT_KD=K/D 编辑器
+STAT_POP=常用统计
+STAT_RAW=原生统计
+STAT_WARN=警告: 除非您明确了解这些数值的含义以及您确信正在正确地设置它们,否则不要对这些数值进行操作.
+
+STAT_YEAR=年
+STAT_MONTH=月
+STAT_DAY=日
+STAT_HOUR=小时
+STAT_MINUTE=分钟
+STAT_SECOND=秒
+STAT_MILLISECOND=毫秒
+
+KDEDIT=K/D
+KDEDIT_H=在游戏的某些区域,R*使用的算法会有所不同,因此该数值可能会略有偏差,具体取决于您查看的位置.
+
+TOTAL_RACES_WON=竞赛 胜利
+TOTAL_RACES_LOST=竞赛 失利
+TOTAL_DEATHMATCH_WON=死斗 胜利
+TOTAL_DEATHMATCH_LOST=死斗 失利
+TOTAL_TDEATHMATCH_WON=团队生存 胜利
+TOTAL_TDEATHMATCH_LOST=团队生存 失利
+
+STAT_WAIT=加载统计数据中,请稍等...
+
+UNLKALL=解锁所有
+UNLKALL_H=一次性解锁下面所有内容.
+
+UNLKONL=解锁GTA在线模式 (跳过故事模式序章)
+
+UNLKALLACHIV=解锁所有成就
+
+RVLMAP=去除地图迷雾(故事模式)
+
+OVRDPROBNS=覆盖预购奖励
+
+FREEORB=解锁免费天基炮射击
+
+GNDRCHNG=解锁性别变化
+GNDRCHNG_H=允许您按M>外貌>更改外貌 来更改角色的性别.
+GNDRCHNG_T=现在,您可以按M > 移动到"风格" > "更改外貌" 来完成性别转换 :D
+
+LVRIES=解锁限定涂装
+LVRIES_T=限定涂装已解锁.现在您可以购买载具和武器的限定涂装. :D
+
+RSRCH=解锁地堡研究
+RSRCH_T=地堡研究已解锁. :D
+
+UNLKOSA=解锁购买虎鲸
+
+H3CLTH=解锁赌场抢劫服装
+AWCLTH=解锁竞技场之战服装
+CLTH_T=服装已解锁. :D
+
+UNLKSR=解锁地堡靶场奖励
+UNLKSR_H=解锁完成地堡靶场的所有3级奖励(特殊服饰,MK2武器配色),还可以解锁增加投掷物品的可携带数量.
+UNLKSR_T=地堡靶场奖励已解锁. :D
+
+AWDS=解锁奖章
+AWDS_H=解锁很多奖励,包括衣服和纹身.
+
+VEHCUST=解锁载具改装配件
+
+UNLKAMUTINTS=解锁武装国度色调
+UNLKAMUTINTS_H=解锁所有适用武器的军用色调,绿色调,橙色调和洛圣都警局色调.
+
+FLLSTATS=角色满属性
+FLLSTATS_H=最大化您的耐力,力量,射击,潜行,飞行,驾驶和肺活量统计.
+
+VWRPTSTAT=查看报告统计信息
+
+CMEND=称赞
+
+CMENDT=称赞时通知
+CMENDT_H=当有人称赞您乐于助人或友好时,通知您.
+CMENDT_T={player} 称赞了您 {reason}. :D
+ESTAT_0=乐于助人
+ESTAT_1=友方
+
+PLYISE=称赞 / 举报
+
+ISE_H=乐于助人
+ISE_F=友方
+
+RPRPT=举报
+
+ISE_G2=恶意或破坏性行为
+ISE_X2=作弊或修改
+ISE_B2=阻碍或滥用游戏功能
+ISE_TC_A=文字聊天: 骚扰我
+ISE_TC_H=文字聊天: 使用仇恨言论
+ISE_VC_A=语音聊天: 骚扰我
+ISE_VC_H=语音聊天: 使用仇恨言论
+ISE_VG=辱骂性通信
+ISE_ONC=冒犯性的玩家名称或内容
+
+STAT_OFFENSIVE_LANGUAGE=侮辱性语言
+STAT_OFFENSIVE_TAGPLATE=攻击性标签牌
+STAT_OFFENSIVE_UGC=攻击性内容
+STAT_BAD_CREW_NAME=不善的帮会名称
+STAT_BAD_CREW_MOTTO=不善的帮会座右铭
+STAT_BAD_CREW_STATUS=不善的帮会状态
+STAT_BAD_CREW_EMBLEM=不善的帮会徽章
+
+STAT_IS_CHEATER=是作弊者
+STAT_WAS_I_BAD_SPORT=曾是恶劣玩家
+STAT_IS_HIGH_EARNER=收入过高
+
+YES=是
+NO=否
+
+PLYHIST=历史玩家
+
+PYLFND_H2=允许您使用名称,Rockstar ID和备注在您的历史中查找玩家.
+
+PLYNOTE=保存
+PLYNOTE_T=备注未进行任何更改.
+PLYNOTED=保存的玩家
+HIST_KEEP_NTE=保留备注
+
+AGGREGS=汇总
+
+1SEEN=首次遇见
+
+LSEEN=最后遇见
+
+CPYNME=复制名称
+CPYRID=复制R*ID
+
+PLYHIST_DEL_E=无法删除当前在您战局中的玩家条目.
+
+CONFAIL=连接失败.
+
+SPF=虚假信息
+
+NSPFD=关闭
+
+SPFUPD=您需要更换新的战局才会生效. :)
+
+SPFNME_D=虚假名称
+SPFDNME=虚假名称
+
+HRD=强力
+SFT=普通
+
+SPFNMEFRMHST=从历史玩家中获取随机名称
+
+SPFPRST=虚假名称 & RID 预设
+YTRS=油管博主(Youtubers)
+RSEMPS=R星员工
+
+SPFHT_D=虚假主机令牌
+SPFHT_H=允许您更改主机令牌为较低的值,以提高您在主机队列中的位置.
+SPFHT_W=注意: 任何主机令牌的值在任何战局中只能由一个玩家使用,数值过低可能会被其他菜单检测到.
+
+SPFDHT=虚假主机令牌
+
+SPFDHTPRST_0=最低
+SPFDHTPRST_1=最佳
+SPFDHTPRST_2=激进
+
+AKCKHST=加入时如在队列中是下位主机自动踢当前主机
+
+SPFSESS=虚假战局
+
+HDESESS=隐藏战局
+HDESESS_H=为任何试图追踪、加入或观看您的人隐藏您的战局信息.
+HDESESS_H_CPY=注意: 您目前启用了"复制战局信息",它优先级高于"隐藏战局".请检查您的历史玩家汇总.
+HDESESS_NX=不存在的战局
+
+FF=假好友
+TRK_FF=启用 + 假好友
+TRK_FF_H=还将此玩家添加到游戏内的好友列表中.
+
+MARKASFF=标记为假好友
+UMARKASFF=取消标记为假好友
+
+CPYSESS=复制战局信息
+CPYSESS_H=当有人尝试追踪、加入或观看您时,将会重定向到此人.
+CPYSESS_F=复制战局信息从
+
+WHTJOIN=白名单加入
+
+! For reference, "Block Joins From Anyone" is BJ_ALL_A
+WHTJOIN_H=这将允许他们绕过您所设置的任何阻止加入机制,但不包括'阻止所有人加入'和特定玩家的玩家反应.
+
+SESSTYP=战局类型
+SESSTYP_H=试图追踪您的人将看到的战局类型.
+NVLD=无效
+
+SPFHST=启用虚假主机
+SPFDHST=虚假主机
+YOU=你
+
+SPFCRW=虚假帮会
+
+SPFCRW_ID_H=这将决定显示哪个徽章,数值必须非0才能显示您的帮会标志.
+
+NCRW=没有帮会
+
+CPY2SPFCRW=复制到虚假帮会
+
+SPFCRWMINE=从我的帮会中复制
+
+SPFRNK_D=虚假等级
+SPFRNK_H=更改其他玩家在玩家列表中看到的您的等级.
+SPFDRNK=虚假等级
+
+SPFKD=虚假K/D
+SPFDKD=K/D比 数值
+
+SPFPOS=虚假位置
+SPFDPOS=虚假位置
+
+PLYMGNT=玩家磁铁
+PLYMGNT_H=使您的战局匹配进更多的玩家.
+
+STRMSPF=修改其他玩家的名称
+
+HIDEPLIST=在玩家列表中隐藏
+HIDEPLIST_H=在游戏的HUD玩家列表中隐藏您.
+
+PHNSPF=手机模式欺骗
+PHNSPF_0=未使用手机
+PHNSPF_1=通话中
+PHNSPF_2=看手机中
+PHNSPF_3=自拍中
+
+RIDTOOLS=R*ID工具
+
+N2R_I=那是个无效的名称. :?
+N2R_Q=正在查询该玩家的RID...
+N2R_E=找不到该名称对应的RID. :?
+
+R2N_Q=正在查询该玩家的名称...
+R2N_E=无法找到该RID对应的玩家名称. :?
+
+PLYINV=邀请到战局
+INV_N=通过 名称 邀请到战局
+INV_R=通过 RID 邀请到战局
+PLYINV_E=不能为当前类型的战局发送邀请. :/
+
+PLYPRFL=打开玩家档案
+PRFL_N=通过 名称 打开玩家档案
+PRFL_R=通过 RID 打开玩家档案
+
+JOIN2=加入
+JOIN_N=通过 名称 加入战局
+JOIN_R=通过 RID 加入战局
+
+! Join methods
+JM_N=忍者方法
+JM_F=好友方法
+JM_M=匹配方法
+
+! I mean "Nuts" as a covert way of saying crazy, just translate it as "Crazy" if you can't be sly.
+JM_NUTS=疯狂方法
+
+JOIN_T_A=您已经在此战局了.
+
+JOIN_T_N=该玩家目前不在GTA在线模式战局中. :/
+PLYOFFLINE=该玩家目前离线. :/
+
+PLYSPEC=观看玩家
+SPEC=观看玩家
+SPEC_N=通过 名称 观看玩家
+SPEC_R=通过 RID 观看玩家
+
+NAMKICK=通过 名称 踢出玩家
+RIDKICK=通过 RID 踢出玩家
+
+LGTM=正当方法
+
+RCTS=反应选项
+
+JOINR=玩家加入反应
+JOINT={} 正在加入
+
+HISTWJOINR=玩家加入反应
+HIST_KEEP_JRE=保留玩家加入反应
+
+HISTWWHT=已加入白名单的玩家
+HIST_KEEP_WHT=保留白名单
+
+HISTADD2=添加玩家
+HISTADD=通过名称添加玩家
+HISTADDRID=通过RID添加玩家
+
+HOSTR=主机变更反应
+HOSTR_T=主机现在是 {}
+
+SHR=脚本主机变更反应
+SHR_T=脚本主机现在是 {}
+
+VKR=投票踢反应
+VKR_A=投票踢其他人
+VKR_M=投票踢我
+VKR_T={player} 正在投票踢 {target}
+
+LLKR=情书踢反应
+LLKR_T={player} 正在情书踢 {target}
+
+BOUNTYR=悬赏反应
+BOUNTYR_P={} 悬赏了 ${} 赏金到您身上.
+BOUNTYR_H=当NPC悬赏您时,此功能不可用.
+
+PTFXSPAMR=粒子轰炸反应
+PTFXSPAMR_H=不一定都是恶意的,但会降低您游戏的FPS.
+
+LEAVET=玩家离开通知
+LOGLEAVE_T={} 离开战局
+
+LR=玩家离开原因
+LR_H=注意: 由于此功能无法以非启发式方法实现,因此离开原因得出的结论可能不准确.
+
+LR_WHERE=通知/记录
+LR_WHAT=显示
+
+LR_N={player} 正常离开
+LR_SN=显示 "正常离开"
+
+LR_Q={player} 关闭了游戏
+LR_SQ=显示 "关闭了游戏"
+
+LR_B={player} 已被阻止加入
+LR_SB=显示 "已被阻止加入"
+
+LR_T={player} 已超时
+LR_DL={player} 尝试不同步踢 {other} 时超时
+LR_VK={player} 被投票踢出战局
+LR_HK={player} 已被主机: {other} 踢出战局
+LR_SHK={player} 已被脚本主机: {other} 踢出战局
+LR_LL={player} 已被 {other} 情书踢 踢出战局
+LR_K_B={player} 已被 {other} 分离踢 踢出战局
+LR_K_O={player} 已被 高潮踢 踢出战局
+LR_FMD={player} 因自由模式的死亡后离开
+LR_FMDC={player} 因自由模式的死亡后崩溃
+! "Quit To Story Mode" is QTSP
+LR_MOD={player} 使用了外挂退出到故事模式
+LR_BAN={player} 已被禁止进入GTA在线模式
+LR_U={player} 因未知原因离开 ({id})
+
+! The only substitute for {reason} is NETWORK_BAIL as of now
+LR_E={player} 由于 {reason} 而离开
+
+AIM_MODE=设置瞄准模式
+AIM_MODE_0=全辅助瞄准
+AIM_MODE_1=半辅助瞄准
+AIM_MODE_2=半自由瞄准
+AIM_MODE_3=自由瞄准
+
+RMLDR=移除"交易处理中"
+RMLDR_H=删除屏幕右下方任何活动的加载指示图标.
+
+CHTRMLDR=聊天时移除 "交易处理中" 提示
+CHTRMLDR_H=当您聊天时,移除右下角的"交易处理中"提示.
+
+LVINT=离开当前室内
+
+FRCSVE=强制云保存
+
+THDR=雷雨天气
+THDR_ON=启用请求
+THDR_OFF=禁用请求
+THDR_N=请求时通知
+THDR_N_T={} 请求了雷雨天气.
+
+RSTFM=重新启动自由模式脚本
+
+RJNSESS=重新加入当前战局
+
+SLFDS=卡单人战局
+SLFDS_H=使战局留下您一个人,不会影响其他人.
+
+SLR_N=没有离开原因
+SLR_C=因作弊而离开
+
+HSTTLS=主机工具
+
+SETSESSTYP=设置战局类型
+
+CLRBLKLST=清除黑名单
+CLRBLKLST_H=允许之前被投票踢出的人再次加入.
+
+SESSTYP_S=单人
+SESSTYP_I=仅邀请
+SESSTYP_F=仅好友
+SESSTYP_CC=仅帮会
+SESSTYP_C=帮会
+SESSTYP_P=公开
+
+CSTMVK=自定义投票踢阈值
+CSTMVK_H=当某人被投票踢的数量超过了您设定的数值时将其踢出战局.
+
+! For reference: "I'll try to convince them to leave." is PLYKCK_T_C
+CSTMVK_MSG={} 已超过您设定的投票踢阈值. 我将努力让TA离开.
+
+THRESHOLD=阈值
+
+AUTOREJOIN=自动重新加入不同步的战局
+AUTOREJOIN_H=自动重新加入你已不同步的战局.
+AUTOREJOIN_MSG=检测到与一个战局不同步, 正在尝试重新加入...
+AUTOREJOIN_FAIL=无法重新加入您最后的战局. :(
+
+QTSP=退到故事模式
+
+QTSPF=强制退到故事模式
+QTSPF_H=重新加载所有游戏内容,然后将您加载到故事模式.
+
+NDLYXPS=禁用日常开支
+
+OCWS=滚动时打开聊天窗
+OCWS_H=修复了在关闭时可以滚动聊天窗的问题,使其在显示聊天窗后才能进行滚动.
+
+CHATAO=始终开启
+
+BBGS=阻止后台脚本
+BBGS_H=阻止游戏后台脚本执行,R星用它来预告即将到来的新DLC,但也可能会给作弊者们带来麻烦.
+
+ADMDLC=R*管理员DLC (开发者模式)
+ADMDLC_H2=解锁专属衣服和允许您观看Social Club TV.
+
+HUDTS=钱千位分隔符
+HUDTS_H=在右上方显示的金钱数量中增加千位分隔符号.
+
+FLLPLYLST=玩家列表显示所有玩家
+FLLPLYLST_H=在游戏的玩家列表中显示所有玩家,忽略佩里科海岛状态.
+
+FMBNR2T=自由模式横幅转到通知显示
+
+PHNANIM=手机动画
+PHNANIM_H2=当使用手机的时候给您的人物提供动画效果..
+
+SPDUPDIAL=快速拨号
+
+NLSCBAR=移除洛圣都改车王限制
+NLSCBAR_H=允许您驾驶任何载具进入洛圣都改车王(包括未拥有的载具), 并对其任意改装.
+
+BLIPTAGS=光标上显示玩家标签
+
+RSTHDSHT=重置玩家头像
+RSTHDSHT_H=修复当玩家列表或通知中的玩家头像变成黑色方块的问题.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+TRNSS=过渡选项
+
+SESSHOP=战局寻找
+MINPLYS=最小玩家数
+MAXPLYS=最大玩家数
+
+SSS=无缝战局切换
+
+WRLDSTCNG=世界状态修改
+WRLDSTCNG_1=延迟
+WRLDSTCNG_2=延迟, 仅线上
+WRLDSTCNG_3=延迟, 仅故事模式
+WRLDSTCNG_T=准备更改世界状态在 {} 秒内...
+
+SPDUP=加快
+
+TRNS_SPDUP_BRDCST=不要等待数据广播
+TRNS_SPDUP_FMMC=不要等待任务启动器
+TRNS_SPDUP_SPWN=不要询问生成许可
+
+TRNS_SPDUP_BESCRHST_H=这有助于加快您的加入速度,但会使战局处于中断状态,使任何人都无法在您加入之后加入.
+
+JGRPOVRD=加入组覆盖
+JGRPOVRD_H=例如允许您使用一个观看者槽位来加入其他[玩家已满]的战局,而不需要实际去观看. 但是, 这可能会导致加入差事时出现问题. ⚠️
+JGRPOVRD_0=观看者
+JGRPOVRD_1=自由者
+
+SSWPD=跳过画面下降
+SSWPD_H=跳过加入战局时游戏画面的下降过程.
+
+TRNSHLP=过渡助手
+TRNSHLP_H=防止您在加入战局时卡云.
+
+UNSTK=解除卡住
+
+NSPWNACTY=禁用生成活动
+NSPWNACTY_H=防止您的人物在加载进战局后播放动画.
+
+NDLCITRO=禁用DLC简介电影
+
+SHWTRNSTT=显示过渡状态
+
+SHWARRSYNC=显示数组同步进度
+SHWARRSYNC_T=自由模式已同步 {}/{} 个数组 ({}%)
+
+SHWRSMSG=显示Rockstar支持信息
+
+GTAOSTUS_O=GTA在线模式目前的服务器状态为 {}
+GTAOSTUS_O_L=受限
+GTAOSTUS_O_D=关闭
+GTAOSTUS_M=Rockstar支持说 "{}"
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Transitions > Matchmaking !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+MM=匹配
+
+MMREGION2=地区覆盖
+MMREGION=地区
+
+Australia=澳大利亚
+Europe=欧洲
+Asia=亚洲
+Japan=日本
+LATAM=拉丁美洲
+REGION_NA=北美洲
+USA_East=美国, 东部
+USA_West=美国, 西部
+
+MMPOOLOVRD=池覆盖
+MMPOOL=池
+
+MMPOOL_NRM=正常
+MMPOOL_CHEAT=作弊者
+MMPOOL_BADBOY=恶劣玩家
+
+MMMGNT=玩家数量偏好
+MMMGNT_H=将您匹配到大约人数的战局中.
+
+MMOFF_H=禁用匹配,所以当您加入公开战局时将无法匹配到其他玩家(注意:您可能仍然会加入帮会成员或好友的战局).
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session > Session Code !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSCODE=战局代码
+SESSCODE_T_X=该战局的邀请代码已过期.
+
+CODEJOIN=通过代码加入战局
+CODESPEC=通过代码观看战局
+ARGCODE=[代码]
+
+CPYINVL=复制邀请链接
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Session Scripts !!
+!!!!!!!!!!!!!!!!!!!!!
+
+SESSSCRS=战局脚本
+
+RUNSCR=运行脚本
+RUNSCR_PREP=准备执行远程脚本...
+RUNSCR_RUN=正在运行 {} 脚本...
+
+RUNSCRS=正在运行的脚本
+
+PRTCPTS=参与者
+
+STRTINST=立即开始
+
+SESSSCRSTRT=战局脚本启动
+SESSSCRSTRT_T={player} 启动了 {script} 脚本.
+
+SESSSCRSTRT_ANY=任何脚本
+
+SCRCAT_GRIEF=破坏战局
+NOCAT=未分类
+
+SCRCAT_FA=自由模式活动
+SCRCAT_AG=街机游戏
+SCRCAT_RFA=已被删除的自由模式活动
+SCRCAT_SERV=服务
+SCRCAT_CUT=过场动画
+
+SCRCAT_FA_P=自由模式活动
+SCRCAT_AG_P=街机游戏
+SCRCAT_RFA_P=已被删除的自由模式活动
+SCRCAT_SERV_P=服务
+SCRCAT_CUT_P=过场动画
+SCRCAT_MISS_P=任务
+
+SCR_FRCEPI=强制打开交互菜单
+SCR_PS=飞行学校
+SCR_STRIKE=随机玩家出现天空雷鸣
+SCR_DPSSV=禁用被动模式
+SCR_DARTS=飞镖
+SCR_IMPDM=1vs1死斗
+SCR_SLASHER=万圣节杀人狂
+
+!! Session Scripts: Freemode Activities
+
+SCR_FE_BB=商战
+SCR_FE_KL=杀戮名单
+SCR_FE_CPC=检查点
+SCR_FE_C=挑战
+SCR_FE_PI=载具卡位战
+SCR_FE_PI_CI=摩托车卡位战
+SCR_FE_PTP=方向盘之争
+SCR_FE_HP=抢手货公文包
+SCR_FE_KOTC=城堡之王
+SCR_FE_CD=刑事损坏
+SCR_FE_HTB=猎杀野兽
+
+!! Session Scripts: Challenges - Types
+SCR_FE_C_0=最长跳跃
+SCR_FE_C_1=最长自由落体
+SCR_FE_C_2=最高速度
+SCR_FE_C_3=最长急刹翘尾
+SCR_FE_C_4=最长后轮行驶
+SCR_FE_C_5=最长无碰撞行驶
+SCR_FE_C_6=最低跳伞
+SCR_FE_C_7=窃得载具
+SCR_FE_C_8=最多有惊无险
+SCR_FE_C_9=最长无碰撞逆行
+SCR_FE_C_10=下落最长距离
+SCR_FE_C_11=低空飞行
+SCR_FE_C_12=倒置低空飞行
+SCR_FE_C_13=跳出载具距离
+SCR_FE_C_14=桥洞飞行
+SCR_FE_C_15=玩家爆头击杀
+SCR_FE_C_16=玩家驾车射击
+SCR_FE_C_17=玩家近身击杀
+SCR_FE_C_18=玩家狙击击杀
+
+!! Session Scripts: Arcade Games
+
+SCR_AG_BRII=荒地复仇 2
+SCR_AG_CAM=猎头
+SCR_AG_PUZ=QUB3D
+SCR_AG_RAC=竞速与追逐: 街头狂飙
+SCR_AG_SM3=太空猴3: 香蕉坏了
+SCR_AG_TWR=断袖诅咒
+
+!! Session Scripts: Removed Freemode Activities
+
+SCR_FE_DD=死亡快递
+SCR_RFA_HT=移动目标
+SCR_OFM_PT=击落走私飞机
+SCR_OFM_DC=分散警察注意力
+SCR_OFM_DV=摧毁载具
+
+!! Session Scripts: Session Breaking
+
+SCR_FMINTRO=GTA线上模式介绍
+
+!! Session Scripts: Services
+
+SCR_SERV_A=空袭
+SCR_SERV_AD=弹药补给
+SCR_SERV_BH=直升机支援
+SCR_SERV_IBH=直升机支援 (佩里科海岛)
+SCR_SERV_BT=船只接送
+SCR_SERV_HT=直升机接送
+
+!! Session Scripts: Options on running scripts
+
+SCORE=得分
+
+!!!!!!!!!!!!!!!!
+!! Player Bar !!
+!!!!!!!!!!!!!!!!
+
+PBAR=玩家栏
+
+HDEIF=如果隐藏
+PBAR_HI_1=玩家列表可见时
+PBAR_HI_2=经验栏可见时
+
+PBAR_ALNE=战局仅自己仍然显示
+
+SHWTGS=显示标签
+
+HDEPNTG=隐藏没有标签的玩家
+
+DFLTCLR=默认颜色
+
+TGCLRS=标签颜色
+
+UCLR=使用颜色
+
+!!!!!!!!!!!!!!!!!!!
+!! Online > Chat !!
+!!!!!!!!!!!!!!!!!!!
+
+CHT=聊天选项
+
+PRFNTY=绕过敏感词过滤
+PRFNTY_H=允许您在聊天时骂人(英语)
+
+HTML=绕过字符过滤
+HTML_H=允许您在打字时使用<和>之类的字符.
+
+ONLYTEAM=在团队聊天
+
+MSGFILTBP=绕过了信息过滤器
+
+CHTSPM=聊天轰炸
+
+CHTLG=记录战局聊天信息
+
+TBCMPLT=自动匹配玩家名称
+TBCMPLT_H=当您在打字时输入某个玩家名称的前缀再按分配的热键,会自动帮您输入对应完整的玩家名称.
+
+PSTE=粘贴聊天信息
+PSTE_H=允许您打字时按CTRL+V粘贴复制的文本信息.
+
+TPNGIDCTR2=显示输入状态
+TPNGIDCTR_H=当其他玩家在打字时,显示一个类似于Discord的输入提示.
+TPNGIDCTR_1={a} 正在打字...
+TPNGIDCTR_M={} 正在打字...
+
+TPNGPOS_C=关闭聊天框时显示位置
+TPNGPOS_O=打开聊天框时显示位置
+
+SNDMSG=发送聊天信息
+
+ITEAMCHT=发送到团队聊天
+
+TEXT=文本
+ARGTXT=[文本]
+
+SPAM=信息轰炸
+SPAM_H=友情提醒: 我们的服务条款禁止进行大规模的散布广告,并且进行此类行为将导致您的账户被暂停.
+
+INTVAL_MS=延迟(ms)
+
+LOCHIST=本地可见
+LOCHIST_H_SPAM=如果您发送时自己也想看到.
+
+FRCSEND=发送所有聊天信息
+FRCSEND_H=将聊天框变成"发送聊天信息"的接口, 使您的信息网络保持一致.
+
+FRCRECV=显示所有聊天信息
+FRCRECV_H2=强制游戏的聊天框中显示所有收到的聊天信息,不管是谁发送的.
+
+TIMESTAMP_MS=聊天信息中显示时间
+
+OWOMYMSGS=OwO-可爱化聊天信息
+OWOMYMSGS_H=可爱化您发送的聊天信息. 注意:您不会在本地看到差异.
+
+SENDPM=发送私人信息
+SENDPM_H=发送一条只有您和该玩家才能看到的聊天信息.
+
+CHATSING=在战局聊天里唱歌
+CHATSING_H=演唱 %appdata%/Stand/Song.lrc 中的歌曲.
+
+NTPNGIDCTR=隐藏输入状态
+NTPNGIDCTR_H=让其他玩家看不到您在打字.
+
+PTX_TYPNGSTRT=开始输入事件
+PTX_TYPNGSTOP=停止输入事件
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Commands !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CMDS=命令
+CMDS_H=处理带有所选前缀的聊天信息,例如Stand命令框的命令,但请注意,大多数命令不适用于其他玩家.
+
+PFX=前缀
+
+REPLPFX=回复前缀
+
+REPLYVIS=回复可见性
+EVERYONE=所有人
+ISSUER_N_ME=发送者和我
+ISSUER=发送者
+NOONE=没有人
+
+ON4M=对自己生效
+
+4F=对于好友
+
+4C=对于帮会成员
+
+4T=对于团队聊天
+4T_H=例如您的CEO/摩托帮成员.
+
+4S=对于陌生人
+
+! When a friend or stranger tries to kick or crash the Stand user
+SLFHRM_O=不要咬住喂您的手. ;)
+
+CMDBXDCS=命令框文档
+
+CMDLST=命令列表
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Chat > Reactions !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CHT_ANY=任何信息
+CHT_ANY_G=聊天信息
+
+CHT_SPF=虚假信息
+CHT_AD=广告信息
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Session Browser !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSBRWS=战局浏览器
+
+NFLTR=不过滤
+
+MREFLTR=更多过滤
+
+SESSBRWS_FLTR_AST_H=如果启用, 则仅显示与您当前资产哈希匹配的战局. 您可以欺骗校验和, 以进行某种"私人匹配".
+
+NHKNADS=不是由已知的广告机主持
+
+RFRSH=刷新
+
+SESSS=战局
+
+HSTPRF=显示主机的玩家档案
+
+LSESSDETS=获取战局详细信息中...
+
+RM_PROMPT=请求成员列表
+RM_CONFIRMED=请求成员列表中...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Request Services !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+REQSRV=请求服务
+
+AIRSTRK=请求空袭
+AIRSTRK_H=给您一个信号弹,并生成一架喷气式飞机准备轰炸您发射信号弹的位置.
+
+AM_AMMO_DROP=请求弹药空投
+
+AM_BOAT_TAXI=请求船只接送
+
+AM_HELI_TAXI=请求直升机接送
+AM_HELI_TAXI_0=小蛮牛
+AM_HELI_TAXI_1=超级沃利托
+
+AM_BACKUP_HELI=请求直升机支援
+
+REQNANO=请求纳米无人机
+
+!!!!!!!!!!!!!!!!!!
+!! Online > ATM !!
+!!!!!!!!!!!!!!!!!!
+
+ATM=存款取款
+
+AUTODEPO=自动存款
+WLTHPPR_T=已转移 ${} 现金到银行. :)
+
+WTHDRW=取款
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! SC DM Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SCDMT=Social Club 私聊通知
+SCDMT_T=SC 私聊来自 {sender}: {text}
+
+! Those thingies in the top-right corner of the screen.
+SCNOTIF=Social Club 通知
+
+!!!!!!!!!!!!
+!! CEO/MC !!
+!!!!!!!!!!!!
+
+CEO=CEO/摩托帮
+
+NOCEO={} 不在组织或摩托帮里.
+CMDNBOSS=此功能仅在您是VIP,CEO或摩托帮首领时可用.
+GEN_H_BOSS=只会在您是VIP,CEO或摩托帮首领时生效.
+
+CEOKICK=踢出CEO/摩托帮
+CEOKICK_E=抱歉,只能踢CEO/摩托帮的成员.
+
+MISSIONEVT=开始自由模式任务
+MISSIONEVT_NCEO=开始自由模式任务(不是我的老大)
+
+INTTPEVT=传送到室内
+INTTPEVT_NCEO=传送到室内(不是我的老大)
+
+CEOAPPEAL=移除禁止注册 CEO/摩托帮惩罚
+
+CEOJOIN=加入其 CEO/摩托帮
+CEOJOIN_T=尝试优雅地加入中...
+CEOJOIN_E=失败了,返回到强制加入.
+
+CEOTYP=更改类型
+CEOTYP_H=将您的组织更改为摩托帮或相反.
+
+CEOCAP=禁用成员限制
+
+CEOCOL=颜色槽位
+CEOCOL_H=分配给 {} 的组织.
+
+ORGCR_S=注册为CEO/VIP
+ORGCR_M=成为摩托帮首领
+
+!!!!!!!!!!
+!! Game !!
+!!!!!!!!!!
+
+! "Snake" refers to the classic game
+SNAKE=贪吃蛇
+SNAKE_1=加载战局的时候
+
+SNAKE_C=请隐藏Stand,然后使用菜单控制键来游玩贪吃蛇
+
+PONG_C=请隐藏Stand,然后使用菜单控制键来游玩乒乓球
+
+INVSEND_PONG=邀请打兵乓球
+
+INVRECV_PONG=接受兵乓球邀请
+INVRECV_PONG_T={player} 邀请您打乒乓球.进入 (玩家 > {player} > 接受兵乓球邀请) 以接受.
+
+INVSENT=正在等待{}接受您的邀请
+
+CNLINV=取消邀请
+
+CNLGME_PONG=退出乒乓球游戏
+
+GETREADY=做好准备!
+
+PLYGMECNCLT={} 已取消游戏.
+
+T_M_C=清除小地图上方的通知信息
+
+SKPCTSCN=跳过过场动画
+
+TMSCL=慢动作
+TMSCL_H=修改时间本身的速度 *仅本地更改*
+
+AIMTMSCL=死亡之眼
+AIMTMSCL_H=修改瞄准的速度 *仅本地更改*
+
+SCRNSHT=截图模式
+
+RWND=倒带位置
+RWND_H2=通过按指定的快捷键或控制器上的按键使用特殊能力回到过去.
+
+UNRSTRCAM=不受限制的游戏画面
+UNRSTRCAM_H=允许您360°的范围内移动游戏画面.
+
+FC=自由视野
+FC_H=可以让您把镜头带到任何您想去的地方.
+
+FC_DTP=传送到目的地
+FC_DTP_H=关闭自由视野时,将您传送到最后到达的位置.
+
+FC_NZ=禁用上下
+FC_NZ_H=禁止通过鼠标移动高度.
+
+FC_MF=小地图实时更新位置
+
+MOVCTRL=移动控制
+MOVCTRL_FC=切换移动游戏镜头还是人物.
+
+EDTHCLR=编辑 HUD/UI 颜色
+
+EDTLB=编辑标签
+
+ADDLB=添加标签
+ADDLB_H=向列表中添加一个允许您编辑的标签.
+ADDLB_E=抱歉, {} 不是有效标签. :/
+
+RVLLB=显示标签
+RVLLB_H=停止解析游戏中的标签文本信息,而是仅显示标签信息.
+
+OWOLB=OwO可爱标签
+
+LBLST=标签列表
+
+EDIT=编辑
+
+! {} should be at the end as it could be very long
+RESET=重置为 {}
+
+REMOVE=移除
+
+FOV=视野缩放
+
+FOV_TP_VEH=第三人称, 载具内
+FOV_TP_ONF=第三人称, 步行
+FOV_FP_VEH=第一人称, 载具内
+FOV_FP_ONF=第一人称, 步行
+FOV_AIM=瞄准时
+FOV_SNIP=狙击时
+
+CAMDIST=画面距离修改
+
+2PRSN=第二人称视角
+
+! "Heading" as in the rotation
+CAMPUKE=锁定游戏画面
+
+RDRG=渲染
+
+VISSTTNGS=视觉设置
+
+NITEV=夜视仪
+
+THERV=热成像
+
+SHDR=屏幕效果
+
+DSTSCLMUL=距离比例
+
+RDRHDOLY=仅渲染高清
+
+POTAT=土豆模式
+POTAT_H=降低画质.
+
+BLKALLDRW=禁用大部分渲染
+
+LKSTRMFCS=锁定流媒体焦点
+LKDPOS=锁定的位置
+SELPOS_T=一旦您选择了一个位置, 按 {} 来提交它.
+
+SGMELNG=设置游戏语言
+SGMELNG_H=有些语言有不同的字体,只有在游戏重新启动后才会被加载.
+
+STUTFIX=修复高 FPS 时的卡顿
+STUTFIX_H=修复游戏接近188 FPS时出现的卡顿现象.
+
+NKBDHK=禁用键盘Hook
+NKBDHK_H=允许您在GTA游戏里的时候按Windows键,并阻止游戏卡顿导致的按键延迟.
+
+DBGNTVS=显示调试Native
+DBGNTVS_H=实现并显示仍在游戏某些脚本中使用的调试Native.
+
+! As in "Software Patch"
+PTCHS=软件补丁
+
+PRJTPOOL=投掷物池
+PTCH_PRJTPOOL_H=当投掷物池已满时,该补丁将使游戏不会拒绝生成新的投掷物,而是删除掉最久之前的投掷物.
+
+ANAL=模拟键盘支持
+ANAL_H=如果您有一个受支持的模拟键盘, 这会让游戏了解您的按键力度.
+ANAL_L=支持的键盘
+
+PRSRSUB=压力减数
+PRSRDIV=压力除数
+
+DEV=设备
+PRSR=压力
+
+EJ=提前注入增强
+EJ_H=如果在游戏启动时注入Stand将应用的游戏增强功能.
+
+GMEPOOL=游戏池大小倍数
+GMEPOOL_H=乘以实体、脚本资源等的池大小.同时需要您增加内存池大小以避免"内存不足"的错误.试图用修改过的游戏池进行"动作回放"会导致游戏崩溃.
+
+MEMPOOL=内存池大小 (MB)
+
+SETHIPRIO2=将游戏设置为高优先级
+SPDUPSTRUP=加速启动
+SKPGMEITR2=跳过警灯动画和许可证
+
+SVMR=使用脚本VM重新实现
+SVMR_H=用稍微优化过的版本取代游戏的脚本运行时.
+
+! Legacy as in "the old way"
+LGCY=旧方法
+
+YEET_W=确定吗? 这会崩溃您的游戏...
+
+!!!!!!!!!!!!!!!!!!
+!! Game > Radio !!
+!!!!!!!!!!!!!!!!!!
+
+RD=电台
+
+MBLRD=移动电台
+MBLRD_H=让您步行的时候也可以听电台.
+
+LKRD=锁定电台频道
+LKRD_H=禁止游戏或其他玩家更改电台.
+
+RDSTS=广播电台
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Game > Disables !!
+!!!!!!!!!!!!!!!!!!!!!
+
+DBLES=禁用
+
+DGMEINPT=禁用游戏输入
+! Preset for Disable Game Inputs
+JUSTMOUSE=鼠标
+DGMEINPT_H_MOUSE=当Stand打开时禁用大多数游戏输入.
+! Preset for Disable Game Inputs
+CTRLLR=控制器
+DGMEINPT_H_CTRLLR=当Stand打开时禁用一些游戏输入.
+! Preset for Disable Game Inputs
+CTRLLR_N_TABS=控制器 + 标签
+DGMEINPT_H_CTRLLR_N_TABS=与"控制器"相同,但也禁用车辆加速和破坏输入.
+DGMEINPT_H_NUMPAD=启用所有游戏输入
+
+DGMEINPT_P=您想使用 {preset} 预设的 {disable_game_inputs_path} 来禁用Stand打开时冲突的游戏输入吗?
+
+DSBLPHNE=阻止所有来电电话
+DSBLPHNE_H=阻止所有来电电话.
+
+NCAMSHK=禁用抖动画面
+
+NSTNTJMP=禁用特技跳跃
+
+DSBLREC=禁用录制
+DSBLREC_H=禁用游戏内置的录制功能(默认F1).
+
+NCINCAM=禁用电影镜头
+
+NVEHFCSCAM=禁用视野集中镜头
+NVEHFCSCAM_H=当您在友好玩家附近的载具中按下电影摄影机按钮时,禁用提示摄像机,等等.
+
+NIDLECAM=禁用挂机镜头
+
+DSBLRESTRAR=禁用限制区域
+DSBLRESTRAR_H=这可能会导致您在任务中没有任何武器,甚至会导致您无法加载到任务中. ⚠️
+
+NFLTMSC=禁用飞行音乐
+NWNTMSC=禁用警察通缉音乐
+
+PRVNUM7SCO=防止数字键盘7键打开Social Club
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > Info Overlay !!
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+HUDINFO=信息显示
+
+IGTIME=游戏内时间
+
+RWTIME=现实世界时间
+
+DPS=每秒绘制次数
+
+GPUOVHD=GPU开销 (毫秒)
+GPUOVHD_H=您的CPU等待GPU完成帧的时间是多少毫秒.
+
+TS=每秒刻数
+TS_H=相当于每秒的帧数.
+
+GEAR=挡位
+GEAR_R=倒挡
+
+RPM=发动机引擎转速
+
+HQSA=主机队列因素
+HQSA_0=最低 Rockstar ID
+HQSA_1=最高 Rockstar ID
+HQSA_2=最低 名称哈希
+HQSA_3=最高 名称哈希
+
+WSPCW=谁在观看谁
+WSPCW_T={spectator} 正在观看 {spectatee}
+
+CTRYBRKDWN=国家分类
+CTRYBRKDWN_H=显示战局中有哪些国家的玩家以及每个国家对应的玩家数量.
+
+NEPOOL=传出网络事件数量
+
+SRTBYCTRYNME=按国家名称排序
+SRTBYCNT=按玩家数量排序
+
+ALTDE=高度
+GRNDIST=地面距离
+
+ROT_ENT=旋转 (实体)
+ROT_CAM=旋转 (镜头)
+ROT_X=Pitch
+ROT_Y=Roll
+ROT_Z=Yaw
+
+PEDS=NPC
+
+VEHS=载具
+
+OBJS=物体
+
+PUPS=可拾取物
+
+PROJ=投掷物
+
+SCPROG=脚本程序
+
+SCTHDS=脚本线程
+
+EHLT=最后一帧的实体句柄
+
+NGILT=最后一帧GTA调用的Native
+
+NSILT=最后一帧Stand调用的Native
+
+CTRLREQS=控制请求
+
+FIBS=光纤
+
+STH=脚本记号处理程序
+
+PRSNTHDLS=绘制处理器
+
+! "Keep-Alive" may be kept as-is, as it's a rather technical term/concept.
+KACONS=Keep-Alive 连接
+
+!!!!!!!!!!!!!!!!!!!!
+!! Game > Minimap !!
+!!!!!!!!!!!!!!!!!!!!
+
+MINIMAP=小地图
+
+SLEEK=精致的小地图
+
+DNWINVI=禁用新邀请数字标记
+DNWINVI_H=禁用小地图旁边和手机差事清单app上的新邀请标记.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Game > AR Notifications !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ARNOTIFS=AR通知
+
+DBGMODE=调试模式
+
+STATSCLE=静态比例
+DYNSCLE=动态比例
+DYNSCLG=动态缩放
+
+HOROFF=水平偏移
+VERTOFF=垂直偏移
+DPHOFF=深度偏移
+
+FPHOROFF=第一人称水平偏移
+FPVERTOFF=第一人称垂直偏移
+FPDPHOFF=第一人称深度偏移
+
+RESVRDTOPSPC=保留顶部空间
+
+ROTMODE=旋转模式
+ARNOTIFS_ROTMODE_0=实体
+ARNOTIFS_ROTMODE_1=实体,包括间距
+ARNOTIFS_ROTMODE_2=画面
+ARNOTIFS_ROTMODE_3=画面,包括间距
+
+ENSTXTREAD=确保文本可读性
+
+!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Credits !!
+!!!!!!!!!!!!!!!!!!!!!
+
+CRED=鸣谢
+
+CRED_Pocakking=创建了BigBaseV2,这是一个很好的开端.
+CRED_QuickNET=分享了TA对GTA和C++的知识还回答了一些愚蠢的问题.
+CRED_UPD=通过分享交叉图帮助保持菜单的最新状态.
+CRED_alloc8or=维护TA的Native数据库,并分享了很多有用的数据.
+CRED_SirMestre=创建了LittleInjector,这有助于创建Launchpad.
+CRED_Give-Two=创建了一个ScriptHookV的实现,这有助于DirectX的渲染.
+CRED_gir489=分享了TA的GTA知识,并创建了bigbasev2-fix.
+
+! Check the "Languages" section at https://en.wikipedia.org/wiki/Fork_(software_development)
+CRED_Ryan=创建了Pluto,我们使用的Lua的分支.
+
+CRED_BE=帮助您使用Stand, 尽管有BattlEye.
+
+CRED_UPX=允许Stand DLL小于实际大小.
+CRED_UnknownCheats=泥土中的钻石.
+CRED_StackOverflow=自然.
+
+CRED_LANG=翻译人员
+
+CRED_Thimo=维护Stand的荷兰语翻译.
+CRED_moue=维护Stand的立陶宛语翻译.
+CRED_aeronyx=维护Stand的葡萄牙语翻译.
+CRED_zzzz=维护Stand的简体中文翻译.
+CRED_IceDoomfist=维护Stand的韩语翻译.
+CRED_99Anvar99=维护Stand的俄语翻译.
+CRED_Lancito01=维护Stand的西班牙语翻译.
+CRED_Itreax=维护Stand的法语翻译.
+CRED_Emre=维护Stand的土耳其语翻译.
+CRED_DumbBird=维护Stand的波兰语翻译.
+CRED_JA=维护Stand的日语翻译.
+CRED_VI=维护Stand的越南语翻译.
+CRED_IT=维护Stand的意大利语翻译.
+
+MISC=其他
+
+CRED_YOU=... 和您!
+CRED_YOU_H=是的,您会获得一个参与奖. 但是说真的,谢谢您支持Stand,反馈BUG和建议功能!
+
+!!!!!!!!!!!
+!! Stand !!
+!!!!!!!!!!!
+
+CMDSCRPT=命令框脚本
+
+ASI=ASI插件
+ASI_H=允许您实现将ASI插件与Stand的ScriptHookV一起使用.
+ASICE=看来不兼容这个ASI插件,或者说是很快就完成了它的工作.
+ASI_D_T=似乎这个ASI插件未能正确卸载.
+
+ASI_TMP=使用Temp文件夹
+ASI_TMP_H=这允许您重新运行不支持卸载的ASI插件,但可能会导致ASI插件读取/写入Temp文件夹中的配置.
+
+ASI_DOC=欺骗线上检查
+ASI_DOC_H=允许您在GTA线上使用某些不允许在线上使用的ASI插件.
+
+LUA=Lua脚本
+LUA_H=允许您运行用 Lua 和/或 Pluto 为Stand编写的脚本.
+
+LUA_RNNG2=正在运行 {}
+LUA_START=启动脚本
+LUA_STOP=停止脚本
+
+CMPTLY=兼容层
+CMPTLYS=兼容层
+
+RESTRCS=限制
+
+LUA_REPODEV=您正在修改通过仓库安装的脚本,因此请注意,您所做的更改将在脚本的下一次更新时覆盖.
+
+FILEGON=文件已经不存在.
+
+LUACFGPRST_0=用户
+
+! Currently unused.
+LUACFGPRST_1=容易生气的用户
+
+LUACFGPRST_2=开发者
+
+DEVHINT=看起来您正在开发一个Lua脚本. 考虑在 Lua脚本 > 设置 中使用开发者预设以让您了解潜在的问题.
+
+DISINACC=禁止访问互联网
+
+FRCSILNTSTRT=强制启动静音
+FRCSILNTSTP=强制停止静音
+ENFRCSILNTSTRT=实行启动静音
+ENFRCSILNTSTP=实行停止静音
+
+YES_NOTIFY=是 + 通知
+
+WRNOS=在运行危险脚本之前警告我
+LUA_W_OS=此脚本包含请求直接访问您系统的代码.如果您不信任其来源,请不要继续.
+
+WRNMNY=在运行金钱脚本之前警告我
+LUA_W_MNY=这个脚本与金钱有关. 我们不能保证您的账号在使用此脚本一段时间后不会被封禁(封号会有延迟),因为我们不会对用户制作的内容进行安全测试.
+
+LUA_SCAM=如果你为这个脚本付费了,你就被骗了！ 99%的内容都可以在我们的仓库或Discord上免费获得. 你付钱给骗子,然后他们骗取了它,不提供任何进一步的价值,也不会支付给原始创作者们一分钱.
+
+4DEV=对于开发者
+
+REPO=仓库
+REPO_H_LUA=该仓库使您可以轻松访问一些lua脚本.
+
+REPO_P_H=您从仓库安装了它. Stand将使其保持为最新状态.
+
+REPO_MISNGLCL=软件包 {} 缺少本地文件, 正在执行更新有望修复此问题.
+REPO_DLFAIL=下载软件包 {package} 的 {file} 失败了
+
+SECCONT_NCRED=如需访问此安全内容,需要先激活Stand.
+SECCONT_NAVAIL=访问此安全内容失败.
+
+VER=版本
+ATR=作者
+
+DEPS=依赖
+DEP_M_O=依赖已设置为手动安装.
+DEP_M_F=依赖不再被标记为手动安装.
+
+HELP=获得有关Stand的帮助
+
+WEB2=网页界面
+WEB2_H=网络界面允许您在浏览器中使用Stand,甚至在您的智能手机上.
+WEB=打开网页界面
+WEB_T=您现在正在使用网页界面 :O
+WEB_T_L=您已关闭了网页界面.
+
+RELAY_C=正在连接到 {}...
+RELAY_E=连接到中继失败了 ({}).
+RELAY_L=与中继的连接丢失了.
+
+TESTS=实验功能
+
+CLRNOTIFS=清除通知
+CLRNOTIFS_H=清除Stand的通知系统.
+
+EMPTYLOG=清空 Log.txt
+EMPTYLOG_H=清空您的 %appdata%/Stand/Log.txt 文件.
+EMPTYLOG_T=已清空日志 :)
+
+FNDCMD=寻找功能
+FNDCMD_H=允许您使用功能名称或帮助文本内容来搜索功能.
+
+CTXSTAR=保存
+CTXSTAR_H=保存这个功能,所以您就可以在 {} 里面找到它.
+
+CMDSTARS=已保存的功能
+CMDSTARS_H=列出您在上下文菜单中保存的所有功能.
+
+CON=控制台
+
+LNDFT=非默认保存的功能
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST=生成功能列表
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_H=将所有当前可用的功能及其帮助文本和语法保存在 %appdata%/Stand/Features (en).txt 中.
+
+! In this case the file name actually changes per language, such that for German, it would be "Features (de).txt", etc.
+FTRLST_T=已保存功能列表到 %appdata%/Stand/Features (en).txt :D
+
+FTRLST_1OPTN=1个选项
+FTRLST_OPTNS={} 个选项
+FTRLST_MOPTNS={} 个以上选项
+
+PERMS=权限
+FTRLST_OTHP=可由其他拥有 {} 权限的玩家使用.
+FTRLST_R=Regular版本专属
+FTRLST_U=Ultimate版本专属
+
+PERM_F=友好命令
+PERM_N=中性命令
+PERM_S=生成命令
+PERM_R=暴力命令
+PERM_A=挑衅命令
+PERM_T=有毒命令
+
+UNLD=卸载 Stand
+UNLD_H=将Stand从游戏中移除,直到您重新注入.
+UNLD_T=您的Stand消失了.
+
+BADBOY=您刚刚试图踢出一位没有做任何事且不值得被踢的Stand用户. 请像您希望别人如何对待您一样对待他人. 您的Stand将在几秒后再次可用.
+
+NWOOM=一个网络对等节点内存不足. 移除尝试踢你的人或者离开战局.
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! State & Profiles !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+PRFLS=配置文件
+PRFLS_H=配置文件使您可以保存和加载所有功能的状态.
+
+NEWPRFL=创建新的配置文件
+NEWPRFL_H=将每个功能的状态保存到新的配置文件中.
+
+DELPRFL_S=已成功删除 {} 配置文件.
+DELPRFL_F=删除 {} 配置文件失败了. 请尝试手动删除配置文件.
+
+LOAD=加载
+LSTATE=加载状态
+LSTATE_H_CTX2=将默认加载的配置文件中的状态应用于此功能
+LSTATE_H2=将此配置文件中的状态应用于每个功能.
+LSTATE_T2=已从 {} 配置文件应用了状态. :)
+LSTATE_T_CTX2=已应用状态从 {profile} 配置文件到 {command}. :)
+
+SAVE=保存
+SSTATE=保存设置
+SSTATE_H_CTX2=将此功能的状态保存到您默认加载的配置文件中.
+SSTATE_H2=将每个功能的状态保存到此配置文件.
+SSTATE_T2=已保存状态到 {} 配置文件. :)
+SSTATE_T_CTX=已保存 {command} 的状态到 {profile} 配置文件. :)
+
+AUTOLOAD=注入时加载
+
+AUTOSAVE2=自动保存
+AUTOSAVE2_H=在您使用Stand的时候,使此配置文件保持为最新状态.
+AUTOSAVE2_H_T=下次注入Stand时将重新启用自动保存.
+AUTOSAVE2_T=不需要,这个配置文件会自动保存. :)
+
+GODFLT=重置为默认状态
+GODFLT_H=将菜单中所有设置的状态重置为默认状态.
+GODFLT_T=菜单已恢复为默认状态. :)
+GODFLT_CTX=已应用 {} 的默认状态. :)
+
+RGODFLT=应用默认状态到子项
+RGODFLT_CTX=已应用 {} 的默认状态到所有子项. :)
+
+PRFL_H_ACTV=这是您当前激活的配置.
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Appearance !!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+STTNGS_TXT=字体 & 文本
+
+STFNT=设置字体
+
+CMBINTXT=命令框输入文本
+TXT_S=小文本
+
+TXTSCL=文字比例
+
+OFF_X=横向位置
+OFF_Y=纵向位置
+
+TXTBOX=显示文本背景
+
+FNTPRST=使用预设字体
+FNTPRST_H_YAHEI=Stand的默认字体.
+FNTPRST_H_NANUMGOTHIC=Stand的韩语辅助字体.
+FNTPRST_H_BEVIETNAM=Stand的越南语辅助字体
+
+RLDFNT=重新加载字体
+
+SPRS=贴图
+
+LFTBND=左对齐
+LFTBND_1=仅切换框
+LFTBND_1C=仅切换框, 紧凑
+LFTBND_2=所有命令
+LFTBND_2C=所有命令, 紧凑
+
+RLDSPR=重新加载贴图
+
+HDR=标题
+2HIDE=隐藏
+CUS=自定义
+
+FRMINT=帧数
+
+SCRLBR=滚动条
+SCRLBR_1=大列表中启用
+
+LSTWDT=列表宽度
+LSTHHT=列表高度
+
+WDT=宽度
+HHT=高度
+
+SPCSZE=间隔大小
+
+LERP=平滑滚动
+
+BGBLR=背景模糊
+BGBLR_H=注意: 较高的值对显卡的要求极高.
+HDR_BGBLR_H=应该只对有透明度的标题启用,因为产生完全透明的视觉效果是一种资源的浪费.
+
+INFOTXT=信息文本
+
+ALGN=文本对齐
+TA=文本对齐
+
+ALIGN_TL=左上方
+ALIGN_TC=顶部中心
+ALIGN_TR=右上方
+ALIGN_CL=左中
+ALIGN_CC=居中
+ALIGN_CR=右中
+ALIGN_BL=左下方
+ALIGN_BC=底部中心
+ALIGN_BR=右下方
+
+DRPSHDW=阴影
+
+SHWNME=显示名称
+SHWLICON=左侧显示图标
+SHWRICON=右侧显示图标
+
+ICUTXTCLR=图标使用文本颜色
+
+ADDRBAR=位置栏
+
+SHWCRLSTNLY=仅显示当前列表
+
+ADDRSEP=位置分隔符
+
+WDTAFFBSCRLBR=宽度受滚动条影响
+
+WDTAFFBCLMNS=宽度受列数影响
+
+CTX_ADDR=复制选项位置
+CTX_ADDR_0=我的格式
+CTX_ADDR_1=默认格式
+CTX_ADDR_2=API格式
+CTX_ADDR_3=焦点链接
+
+BRD=边框
+
+RNDD=圆角
+
+MAXCLMNS=最大列数
+
+MNUHGT=选项显示最大值
+
+CRS=光标
+
+SCRLGP=滚动间隙
+CRSPAD_H=设置在您的选择下面或上面看到的选项最小数量,除非您在列表的开头或结尾.
+
+CMDINFOTXT=功能帮助文本
+
+BLWTBS=页签下面
+
+RPOS_L=左
+RPOS_B=底部
+RPOS_R=右
+RPOS_T=顶部
+
+! As in the distance between menu components
+PDDGN=大小
+
+SHWHLPTXT=显示帮助文本
+
+SHWSYNTX=显示命令语法
+
+SHWSLDBHV=滑块提示
+
+SHWOTHP=提示其他玩家是否可用
+
+SHWCMDOWNR=显示命令归属脚本
+SHWCMDOWNR_T=此命令由 {} 添加.
+
+NOTFS=通知
+
+TYP=类型
+STNDNTF_M=Stand,靠近小地图
+STNDNTF_C=Stand,自定义显示位置
+
+CUSTPOS=自定义显示位置
+CUSTPOS_H=这只会在类型设置为"Stand,自定义显示位置"时生效.
+
+INVFLOW=逆向
+
+BRDCLR=边框颜色
+
+FLSHCLR=闪烁颜色
+
+FLSHNTF=闪烁通知
+
+TIMNG=计时
+READSPD=阅读速度 (每分钟词数)
+READSTRT=阅读开始延迟 (毫秒)
+MINDUR=最短持续时间 (毫秒)
+MAXDUR=最长持续时间 (毫秒)
+SAMPNOT=显示示例通知
+
+SIZE_S=小
+SIZE_M=中
+SIZE_L=大
+
+MAXSHWMCHCMD=可显示的最大匹配命令
+
+KPDRFCLS=关闭时保持草稿
+
+SHWBI=显示按钮说明
+
+SHWCRSPOS=显示选项位置
+SHWCRSPOS_H=控制是否在Stand菜单右上角显示当前的选项位置和选项总数.
+
+CRSPOSIDIV=光标位置包括分隔线
+
+! Root as in the root of the command tree, which in this context is the text that reads "Stand 0.69 (Regular)" etc.
+RN=版本名称
+
+RN_RNDBOOL=代表您的 Stand 帐户被随机分配到的团队.
+RN_100=Stand 100(.x) 的用户专属.
+RN_EA=Stand 100 之前的用户专属.
+RN_U=Ultimate版本专属.
+RN_EU=因为在早期的 Ultimate / 有毒版上浪费了100欧元.
+
+BKRST=返回重置光标
+BKRST_H=当没有内容可返回时按下返回键将会把光标放到列表顶部.
+
+BKCLS=返回关闭菜单
+BKCLS_H=当没有可返回的页面时,按0或退格将隐藏菜单.
+
+INJOPEN2=注入后显示菜单
+
+PRFILVAL=预先填充命令框的当前值
+
+CMDTP_S=滑块
+CMDTP_S_N=数字滑块
+CMDTP_AV=文本输入
+
+SELDIV=可选中分隔符
+SELNA=可选中不可选的滑块
+
+RHTBNDVAL=右对齐数值
+
+LANG=语言
+LANG_H=切换Stand的菜单语言.
+LANG_H2=此翻译目前无人维护,如果您认为您可以更新它,请与我们联系.
+
+STRMPRF=防流媒体渲染
+STRMPRF_H=如果视频录制软件使用DirectX / 游戏捕捉方式录制,将防止它们捕捉到Stand.
+
+ENTPREVS=实体预览
+DENTPREVS=禁用实体预览
+OPQ=不透明
+ENTPREVROTSPD=旋转速度
+ADDPREVDISTP=显示人物距离
+ADDPREVDISTO=显示物体距离
+ADDPREVDISTV=显示载具距离
+
+!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings !!
+!!!!!!!!!!!!!!!!!!!!!!
+
+CLRS=颜色
+
+KSPD=按键重复间隔
+KSPD_H=当您按下一个键时键盘输入重复的间隔.
+
+KHSPD=长按键重复间隔
+KHSPD_H=当您按住一个键一段时间后,键盘输入重复的间隔.
+
+TKSPD=页签的按键重复间隔
+
+WRPINTHLD=到达列表末端时稍微停顿
+
+IPT=输入
+
+KSCHM=键盘输入方案
+PRSTS=预设
+KSCHM_A=灵活
+KSCHM_0=没有数字键盘
+KSCHM_1=数字键盘
+KSCHM_1_E=请随便按一下数字键盘上的任意一个键,证明您有数字键盘. :?
+
+QWQCTX=上下文选项快捷键
+
+MOUSE=鼠标控制
+MOUSE_H=注意: 这不适用于"Windows"输入方法,因为它会不断地将光标居中.
+
+MOUSEFOCUS=使用键盘移动选项时鼠标移动到对应位置
+
+MOVWTHMSE=使用鼠标移动
+
+CTRLLRSPPRT=控制器支持
+
+CTRLLRSCHM=控制器输入方案
+
+HDENFO=隐藏信息
+HDENFO_H=这可以帮助您在屏幕共享时, 避免 Stand 显示敏感信息.
+
+RDCTD=[隐藏]
+
+HDENME=隐藏未欺骗的名称
+HDENME_H=这指的是 玩家>信息 列表中显示的名称,不受 "欺骗其他玩家的名称"的影响.
+
+HDERID=隐藏R*ID
+HDEIP=隐藏IP地址
+HDEGIP=隐藏GeoIP
+
+B_OC=显示/隐藏 菜单
+B_OC_1=显示/隐藏 1
+B_OC_2=显示/隐藏 2
+B_RU=上一个页签
+B_RD=下一个页签
+B_MU=上
+B_MD=下
+B_ML=左
+B_MR=右
+B_MC=点击
+B_MB=返回
+
+DISCRP=Discord的Stand状态
+
+CLRCMDS=颜色功能
+PRVWCLRTXR=贴图预览颜色
+PRCWCLRLST=列表里预览颜色
+
+SFX=声音效果
+
+MNUNVRMD=菜单操作提示
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Stand > Settings > Session Joining !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SESSJNG=战局加入
+
+SPCUCON=推测性连接
+SPCUCON_H=试图通过推测连接到主机并缓存一些数据来加快通过Stand加入战局的速度.
+
+AUTOCHNGTRGT=自动更改瞄准模式
+AUTOCHNGTRGT_H=这只在使用Stand加入战局时适用. 没有对话框的加入方法总是会这样做.
+AUTOCHNGTRGT_T=更改了瞄准模式为 {}.
+AUTOCHNGTRGT_T_0=辅助瞄准
+AUTOCHNGTRGT_T_1=自由瞄准
+
+REJBLK=检查加入是否会成功
+REJBLK_H=如果主机不允许加入,则中断加入尝试,例如战局已满.
+REJBLK_T=主机现在似乎不允许您加入.
+
+!!!!!!!!!!!!!!!!!!!!!!!
+!! Online > Tunables !!
+!!!!!!!!!!!!!!!!!!!!!!!
+
+TNBL=可调整项
+TNBL_H=允许您启用R*仅在某些活动周开放的某些游戏内容.
+
+NINSURPAY=禁用保险赔付
+NINSURPAY_H=防止您毁坏别人的个人载具后将不得不赔偿保险费.
+
+TNBL_HLWN=万圣节活动
+
+TNBL_PYTE=迷幻仙人掌
+
+!!!!!!!!!!!!!!!!!!!!
+!! World > Editor !!
+!!!!!!!!!!!!!!!!!!!!
+
+EDTR=编辑器
+
+ROT_L=左旋转
+ROT_R=右旋转
+
+TOOLS=工具
+
+TP2LKAT=传送到我正在观看的地方
+DELSPWD=删除所有已生成的物体
+
+FCSIMNU=转到该物体选项
+
+!!!!!!!!!!!!!!!!!!
+!! Asset Hashes !!
+!!!!!!!!!!!!!!!!!!
+
+AST=资产哈希
+
+ASTFIX=修复资产哈希
+ASTFIX_H=允许您用修改过的资产加入战局,这通常会显示资产不兼容的错误.
+
+ASTCRC=资产校验和
+
+ASTSET=设置资产校验和
+ASTSET_H=允许您输入一个自定义的资产校验和(最多8个十六进制数字),以限制您的匹配和战局.
+ASTSET_T=已设置您的资产校验和为 {}.
+
+ASTRST=重置资产校验和
+
+OVRXTR=覆盖额外校验和
+
+XTRCRC=额外校验和
+XTRCRC_H=允许您输入一个自定义的额外校验和(最多8个十六进制数字),以限制您的匹配和战局.
+
+XTRCRC_PRSTS=额外校验和: 预设
+
+!!!!!!!!!!!!!!!!!
+!! Custom DLCs !!
+!!!!!!!!!!!!!!!!!
+
+CUSTDLC=自定义 DLC
+CUSTDLC_H=允许您轻松加载自定义DLC,如 Add-on载具.
+
+! Don't translate the folder names
+CUSTDLCS_OPNFLD=打开 "Custom DLCs" 文件夹, 您可以像对待GTA的 "dlcpacks" 文件夹一样对待它, 除了在这里注册和加载DLC就像点击一样简单.
+
+CUSTDLC_ETY=DLC已加载, 但没有找到可生成的内容.
+
+CUSTDLC_SPF=欺骗模型
+CUSTDLC_SPF_H=将自定义DLC中的模型伪装成游戏中实际存在的模型,以便让没有自定义DLC的玩家仍然可以看到一些东西.

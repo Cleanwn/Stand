@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your New Account | Stand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+	<link href="/halfmoon-config.css" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+	<div class="container-xl">
+		<div id="main">
+			<div class="content">
+				<h1>Your account id: <u></u></h1>
+				<ul>
+					<li>
+						Store this in a safe place. If you lose it, we can not help you recover it!
+						<ul>
+							<li>Store it in your password manager. <span id="pw-check"> <span class="badge badge-primary">Recommended</span></span></li>
+							<li><a href="#" onclick="doEmail();">Get it via email.</a><span id="email-check"> <span class="badge badge-primary">Recommended</span></span></li>
+							<li><a href="#" onclick="doDownload();">Download as text file.</a><span id="download-check"></span></li>
+						</ul>
+					</li>
+					<li>Don't share this with anyone.</li>
+				</ul>
+				<button id="proceed-btn" onclick="doProceed();" class="btn btn-primary" disabled title="Follow the instructions above to proceed.">Proceed</button>
+			</div>
+		</div>
+		<div id="email-progress" class="d-none">
+			<div class="content">
+				<h1>Email delivery is in progress...</h1>
+				<p>Note that this can take up to 20 seconds, depending on your provider.</p>
+			</div>
+		</div>
+		<div id="email-sent" class="d-none">
+			<div class="content">
+				<h1>Email sent!</h1>
+				<a href="#" onclick="sentBack();" class="btn btn-primary">Alright</a>
+			</div>
+			<div class="content">
+				<p>This is the exchange we had with your provider:</p>
+				<pre></pre>
+			</div>
+		</div>
+	</div>
+	<script src="/common.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script>
+		let account_id=location.hash.toString().replace("#",""), leave_allowed = false;
+		if(!account_id)
+		{
+			account_id = localStorage.getItem("account_id");
+		}
+		if(!account_id)
+		{
+			location.href=".";
+		}
+		else
+		{
+			if(localStorage.getItem("account_id") !== account_id)
+			{
+				forget_account_data();
+				localStorage.setItem("account_id", account_id);
+			}
+
+			document.querySelector("u").textContent = account_id;
+
+			function isCompleted(name)
+			{
+				return document.getElementById(name+"-check").textContent==" ✔";
+			}
+
+			function completeStep(name)
+			{
+				document.getElementById(name+"-check").textContent=" ✔";
+				document.getElementById("proceed-btn").removeAttribute("disabled");
+				document.getElementById("proceed-btn").removeAttribute("title");
+				leave_allowed = true;
+			}
+
+			document.addEventListener("copy", function()
+			{
+				if(document.getSelection().toString().indexOf(account_id)!==-1)
+				{
+					completeStep("pw");
+				}
+			});
+
+			function doDownload()
+			{
+				if(isCompleted("download"))
+				{
+					return;
+				}
+				completeStep("download");
+				let blob = new Blob([account_id], {type: "octet/stream"});
+				let blob_url = window.URL.createObjectURL(blob);
+				let a = document.createElement("a");
+				a.href = blob_url;
+				a.download = "Stand Account ID.txt";
+				a.click();
+			}
+
+			function doEmail()
+			{
+				if(isCompleted("email"))
+				{
+					return;
+				}
+				let email=prompt("What's your email address?");
+				if(email!==null&&email.indexOf("@")!==-1&&email.indexOf(".")!==-1)
+				{
+					document.getElementById("main").classList.add("d-none");
+					document.getElementById("email-progress").classList.remove("d-none");
+					$.post("/api/brain_replacement", {
+						account_id,
+						email
+					}).done(function(data)
+					{
+						document.querySelector("pre").textContent=data;
+						document.getElementById("email-progress").classList.add("d-none");
+						document.getElementById("email-sent").classList.remove("d-none");
+						completeStep("email");
+					}).fail(function()
+					{
+						document.getElementById("email-progress").classList.add("d-none");
+						document.getElementById("main").classList.remove("d-none");
+						alert("Email delivery failed. Note that we only send 1 email per account.");
+					})
+				}
+			}
+
+			function sentBack()
+			{
+				document.getElementById("email-sent").classList.add("d-none");
+				document.getElementById("main").classList.remove("d-none");	
+			}
+
+			function doProceed()
+			{
+				copy_to_clipboard(":)");
+				location.href="created-quiz";
+			}
+
+			window.onbeforeunload = function(e)
+			{
+				if(!leave_allowed)
+				{
+					e.preventDefault();
+					e.returnValue = "You paid money for this. Don't lose it.";
+					return "You paid money for this. Don't lose it.";
+				}
+			};
+		}
+	</script>
+</body>
+</html>

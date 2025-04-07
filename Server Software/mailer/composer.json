@@ -1,0 +1,5 @@
+{
+    "require": {
+        "hell-sh/mail-transfer": "dev-senpai"
+    }
+}

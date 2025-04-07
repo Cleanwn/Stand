@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Session Invite | Stand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" crossorigin="anonymous" />
+</head>
+<body style="height:100vh;background-color:#111">
+	<div class="uk-position-center">
+		<div class="uk-card uk-card-primary">
+			<div class="uk-card-body uk-text-center">
+				<h3>Session Invite</h3>
+				<div id="wait">
+					<p>Please wait...</p>
+				</div>
+				<div id="bad-req" class="uk-hidden">
+					<p>It seems like you opened the wrong link. Try copying it.</p>
+				</div>
+				<div id="all-set" class="uk-hidden">
+					<p>What would you like to do?</p>
+					<span>
+						<button onclick="doJoin();" class="uk-button uk-button-primary">Join</button>
+						<!--<button onclick="doSpectate();" class="uk-button uk-button-default">Spectate</button>-->
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/common.js"></script>
+	<script>
+		let hash = location.hash.toString().replace("#", "");
+
+		if(hash)
+		{
+			function doJoin()
+			{
+				copy_to_clipboard("Stand-Join-"+hash);
+			}
+
+			function doSpectate()
+			{
+				copy_to_clipboard("Stand-Spectate-"+hash);
+			}
+
+			document.getElementById("wait").classList.add("uk-hidden");
+			document.getElementById("all-set").classList.remove("uk-hidden");
+		}
+		else
+		{
+			document.getElementById("wait").classList.add("uk-hidden");
+			document.getElementById("bad-req").classList.remove("uk-hidden");
+		}
+	</script>
+</body>
+</html>

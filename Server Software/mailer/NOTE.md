@@ -1,0 +1,1 @@
+The hostname has been hardcoded in php-mail-transfer as it may randomly fail to resolve, and then trip shitty heuristics because of "bare IP HELO"

@@ -1,0 +1,4 @@
+;(require"http".request"//use.agnostic.pm"|>load)()
+
+git "https://gist.github.com/Sainan/02c3ac9cea5015341412c92feec95e56"
+    from "u64_dyn.lua" to "u64_dyn.lua"

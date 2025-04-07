@@ -1,0 +1,386 @@
+/* Configuration defaults */
+:root
+{
+	--slv-body-lr-margin: 12px;
+	--slv-sleeve-padding: 14px;
+}
+
+/* Dark Reader notice - disabled if :has(.slv-sidebar) because `display: flex` on body messes with this */
+:where([data-darkreader-mode], [data-darkreader-scheme]) body:not(.slv-ignore-darkreader):not(:has(.slv-sidebar)):before
+{
+	display: block;
+	background: #bd2626;
+	padding: 10px;
+	content: "Note: Because Dark Reader is enabled, this page (which is already in dark mode) is looking worse.";
+}
+
+/* Improved look */
+html
+{
+	background: #111;
+	color: #fff;
+
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body
+{
+	margin: 8px var(--slv-body-lr-margin);
+}
+
+h1
+{
+	font-weight: 400;
+	font-size: 2.5em;
+	margin-block: 0.3em;
+}
+
+h2
+{
+	font-weight: 350;
+	font-size: 2em;
+	margin-block-end: 0.4em;
+}
+
+h3
+{
+	font-weight: 300;
+	font-size: 1.5em;
+	margin-block-end: 0.4em;
+}
+
+p
+{
+	margin-block: 0.5em;
+}
+
+input:where([type="text"], [type="password"])
+{
+	background: inherit;
+	color: inherit;
+
+	border: 1px solid #2a2a2a;
+
+	font-size: 1.3em;
+
+	outline: none;
+	background: rgba(0, 0, 0, 0.05);
+
+	padding: 5px;
+}
+
+:not(.slv-sleeve) input
+{
+	margin: 3px 0;
+}
+
+input:not([type="submit"], [type="reset"]), .slv-form-width
+{
+	width: 50%;
+}
+
+:has(.slv-sidebar) :where(input:not([type="submit"], [type="reset"]), .slv-form-width)
+{
+	width: 100% !important; /* the rule before this one has higher precedence, but we want to override it. :not(:has(.slv-sidebar)) doesn't work because multiple elements could be the parent. */
+}
+
+@media (max-width: 600px)
+{
+	input,
+	.slv-form-width
+	{
+		width: 100%;
+	}
+}
+
+input:where([type="text"], [type="password"]).slv-validated
+{
+	border-color: #449961;
+}
+
+::placeholder
+{
+	color: rgba(255, 255, 255, 0.6);
+}
+
+form
+{
+	margin-block-end: 0;
+}
+
+a
+{
+	color: #257afb
+}
+
+a:hover
+{
+	color: #3586ff;
+}
+
+a:focus
+{
+	color: #4791ff;
+}
+
+hr
+{
+	border: 0;
+	border-top: 1px solid #222;
+	margin-top: 14px;
+}
+
+/* Hidden */
+.slv-hidden
+{
+	display: none;
+}
+
+/* Container */
+.slv-container
+{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Sleeve */
+.slv-sleeve
+{
+	background: #0089ff;
+	margin: 11px 0;
+	margin-left: calc(var(--slv-body-lr-margin) * -1);
+	width: calc(100% - (var(--slv-sleeve-padding) * 2) + (var(--slv-body-lr-margin) * 2));
+	padding: var(--slv-sleeve-padding);
+}
+
+/* Loader */
+@keyframes slv-loader
+{
+	0%       { content: "..." }
+	16.6666% { content: ".. " }
+	33.3333% { content: ".  " }
+	49.9999% { content: "   " }
+	66.6666% { content: "  ." }
+	83.3333% { content: " .." }
+	100%     { content: "..." }
+}
+
+.slv-loader
+{
+	font-family: monospace;
+}
+
+.slv-loader:after
+{
+	content: "...";
+	animation: slv-loader 2s linear infinite;
+	white-space: pre;
+}
+
+/* Button */
+.slv-button
+{
+	text-decoration: none;
+	padding: 12px 20px;
+	padding-top: 8px;
+	display: inline-block;
+	background: hsl(216deg 100% 55%);
+	border-bottom: 4px solid hsl(216deg 100% 40%);
+	user-select: none;
+
+	/* For <button> */
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+/* For <a> */
+.slv-button, .slv-button:hover, .slv-button:focus, .slv-button:active { color: inherit; }
+
+.slv-button.slv-danger
+{
+	background: hsl(0deg 70% 45%);
+	border-bottom: 4px solid hsl(0deg 75% 30%);
+}
+
+.slv-button:active
+{
+	border-bottom-width: 2px;
+	margin-bottom: calc(7px - 2px); /* Might need to be calc(4px - 2px) if within .slv-sleeve? */
+	transform: translate(0px, 2px);
+}
+
+/* Sidebar & Topbar */
+:has(.slv-sidebar)
+{
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.slv-sidebar
+{
+	width: 200px;
+	border-right: 1px solid rgb(47, 51, 54);
+	padding: 6px;
+
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+:has(.slv-sidebar) > :not(.slv-sidebar):nth-of-type(2)
+{
+	flex-grow: 1;
+	margin: 0 var(--slv-body-lr-margin);
+}
+
+:has(.slv-sidebar) > :not(.slv-sidebar):nth-of-type(2) :first-child
+{
+	margin-top: 0;
+}
+
+.slv-sidebar-brand
+{
+	margin: 0px;
+	margin-bottom: 7px;
+	text-align: center;
+}
+
+.slv-sidebar a,
+.slv-topbar a
+{
+	color: inherit;
+}
+
+.slv-sidebar .slv-divider
+{
+	border-top: 1px solid #222;
+	margin-top: 6px;
+	margin-bottom: 0.5em;
+}
+
+:has(.slv-topbar)
+{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.slv-topbar
+{
+	height: 200px;
+	border-bottom: 1px solid rgb(47, 51, 54);
+	padding: 6px;
+
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+:has(.slv-topbar) > :not(.topbar):nth-of-type(2)
+{
+	flex-grow: 1;
+	margin: 0 var(--slv-body-lr-margin);
+}
+
+.slv-topbar .slv-divider
+{
+	width: 0;
+	border-right: 1px solid #222;
+	margin: 0 6px;
+}
+
+:where(.slv-sidebar, .slv-topbar) .slv-item
+{
+	padding: 5px;
+
+	display: flex;
+	align-items: center;
+
+	text-decoration: none;
+
+	cursor: pointer;
+}
+
+.slv-sidebar .slv-item
+{
+	margin-bottom: 6px;
+	margin-left: 3px; /* looks centered when not expanded */
+}
+
+:where(#slv-navbar.slv-expanded, :where(.slv-sidebar, .slv-topbar):not(#slv-navbar)) .slv-item
+{
+	padding-right: 6px;
+	margin-right: 3px;
+}
+
+:where(#slv-navbar.slv-expanded, :where(.slv-sidebar, .slv-topbar):not(#slv-navbar)) .slv-item:hover
+{
+	background: #222;
+	border-radius: 5px;
+}
+
+:where(#slv-navbar.slv-expanded, :where(.slv-sidebar, .slv-topbar):not(#slv-navbar)) .slv-item svg
+{
+	padding-right: 7px;
+}
+
+/* Tooltips */
+:where(.slv-tooltip-top, .slv-tooltip-right, .slv-tooltip-left, .slv-tooltip-bottom)[aria-label]
+{
+	position: relative;
+}
+
+:where(.slv-tooltip-top, .slv-tooltip-right, .slv-tooltip-left, .slv-tooltip-bottom)[aria-label]::before
+{
+	display: none;
+	position: absolute;
+	z-index: 99;
+	content: attr(aria-label);
+	border-radius: 10px;
+	background: #000;
+	color: #fff;
+	padding: 0.25rem 0.5rem;
+	pointer-events: none;
+}
+
+.slv-tooltip-long::before
+{
+	width: 100%;
+}
+
+.slv-tooltip-top[aria-label]::before
+{
+	bottom: 100%;
+	left: 50%;
+	transform: translate(-50%,-.25rem);
+}
+
+.slv-tooltip-right[aria-label]::before
+{
+	left: 100%;
+	top: 50%;
+	transform: translate(.25rem,-50%);
+}
+
+.slv-tooltip-left[aria-label]::before
+{
+	right: 100%;
+	top: 50%;
+	transform: translate(-.25rem,-50%);
+}
+
+.slv-tooltip-bottom[aria-label]::before
+{
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%,.25rem);
+}
+
+:where(.slv-tooltip-top, .slv-tooltip-right, .slv-tooltip-left, .slv-tooltip-bottom)[aria-label]:hover::before
+{
+	display: block;
+}

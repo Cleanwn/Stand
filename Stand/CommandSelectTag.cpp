@@ -1,0 +1,131 @@
+#include "CommandSelectTag.hpp"
+
+#include <soup/unicode.hpp>
+
+#include "CommandPlayer.hpp"
+#include "UnicodePrivateUse.hpp"
+
+namespace Stand
+{
+	CommandSelectTag::CommandSelectTag(CommandList* const parent, Label&& menu_name, playerflag_t flag)
+		: CommandListSelect(parent, std::move(menu_name), {}, NOLABEL, {
+			{0, LOC("HIDE")},
+			{L'A', LIT(1, 'A')},
+			{L'B', LIT(1, 'B')},
+			{L'C', LIT(1, 'C')},
+			{L'D', LIT(1, 'D')},
+			{L'E', LIT(1, 'E')},
+			{L'F', LIT(1, 'F')},
+			{L'G', LIT(1, 'G')},
+			{L'H', LIT(1, 'H')},
+			{L'I', LIT(1, 'I')},
+			{L'J', LIT(1, 'J')},
+			{L'K', LIT(1, 'K')},
+			{L'L', LIT(1, 'L')},
+			{L'M', LIT(1, 'M')},
+			{L'N', LIT(1, 'N')},
+			{L'O', LIT(1, 'O')},
+			{L'P', LIT(1, 'P')},
+			{L'Q', LIT(1, 'Q')},
+			{L'R', LIT(1, 'R')},
+			{L'S', LIT(1, 'S')},
+			{L'T', LIT(1, 'T')},
+			{L'U', LIT(1, 'U')},
+			{L'V', LIT(1, 'V')},
+			{L'W', LIT(1, 'W')},
+			{L'X', LIT(1, 'X')},
+			{L'Y', LIT(1, 'Y')},
+			{L'Z', LIT(1, 'Z')},
+			{L'0', LIT(1, '0')},
+			{L'1', LIT(1, '1')},
+			{L'2', LIT(1, '2')},
+			{L'3', LIT(1, '3')},
+			{L'4', LIT(1, '4')},
+			{L'5', LIT(1, '5')},
+			{L'6', LIT(1, '6')},
+			{L'7', LIT(1, '7')},
+			{L'8', LIT(1, '8')},
+			{L'9', LIT(1, '9')},
+			{L'!', LIT(1, '!')},
+			{L'?', LIT(1, '?')},
+			{L';', LIT(1, ';')},
+			{L',', LIT(1, ',')},
+			{L'.', LIT(1, '.')},
+			{L'+', LIT(1, '+')},
+			{L'-', LIT(1, '-')},
+			{L'*', LIT(1, '*')},
+			{L'/', LIT(1, '/')},
+			{L'\\', LIT(1, '\\') },
+			{L'_', LIT(1, '_')},
+			{L'%', LIT(1, '%')},
+			{L'=', LIT(1, '=')},
+			{L'$', LIT(1, '$')},
+			{L'#', LIT(1, '#')},
+			{L'>', LIT(1, '>')},
+			{L'<', LIT(1, '<')},
+
+			{0x26A0, LIT(soup::unicode::utf32_to_utf8(0x26A0))},
+			{0x2728, LIT(soup::unicode::utf32_to_utf8(0x2728))},
+			{0x2764, LIT(soup::unicode::utf32_to_utf8(0x2764))},
+			{0x1F4AF, LIT(soup::unicode::utf32_to_utf8(0x1F4AF))},
+			{0x1F60A, LIT(soup::unicode::utf32_to_utf8(0x1F60A))},
+			{0x1F480, LIT(soup::unicode::utf32_to_utf8(0x1F480))},
+			{0x1F525, LIT(soup::unicode::utf32_to_utf8(0x1F525))},
+			{0x1F602, LIT(soup::unicode::utf32_to_utf8(0x1F602))},
+			{0x1F629, LIT(soup::unicode::utf32_to_utf8(0x1F629))},
+			{0x1F633, LIT(soup::unicode::utf32_to_utf8(0x1F633))},
+
+			{UnicodePrivateUse::rs[0], LIT(UnicodePrivateUse::rs)},
+			{UnicodePrivateUse::wanted_star[0], LIT(UnicodePrivateUse::wanted_star)},
+			{UnicodePrivateUse::lock[0], LIT(UnicodePrivateUse::lock)},
+			{UnicodePrivateUse::reset[0], LIT(UnicodePrivateUse::reset)},
+
+			{UnicodePrivateUse::tab_self[0], LIT(UnicodePrivateUse::tab_self)},
+			{UnicodePrivateUse::tab_vehicle[0], LIT(UnicodePrivateUse::tab_vehicle)},
+			{UnicodePrivateUse::tab_online[0], LIT(UnicodePrivateUse::tab_online)},
+			{UnicodePrivateUse::tab_players[0], LIT(UnicodePrivateUse::tab_players)},
+			{UnicodePrivateUse::tab_world[0], LIT(UnicodePrivateUse::tab_world)},
+			{UnicodePrivateUse::tab_game[0], LIT(UnicodePrivateUse::tab_game)},
+
+			{UnicodePrivateUse::custom_00[0], LIT(UnicodePrivateUse::custom_00), {}, Label::combineWithSpace(LOC("CUS"), LIT("00"))},
+			{UnicodePrivateUse::custom_01[0], LIT(UnicodePrivateUse::custom_01), {}, Label::combineWithSpace(LOC("CUS"), LIT("01"))},
+			{UnicodePrivateUse::custom_02[0], LIT(UnicodePrivateUse::custom_02), {}, Label::combineWithSpace(LOC("CUS"), LIT("02"))},
+			{UnicodePrivateUse::custom_03[0], LIT(UnicodePrivateUse::custom_03), {}, Label::combineWithSpace(LOC("CUS"), LIT("03"))},
+			{UnicodePrivateUse::custom_04[0], LIT(UnicodePrivateUse::custom_04), {}, Label::combineWithSpace(LOC("CUS"), LIT("04"))},
+			{UnicodePrivateUse::custom_05[0], LIT(UnicodePrivateUse::custom_05), {}, Label::combineWithSpace(LOC("CUS"), LIT("05"))},
+			{UnicodePrivateUse::custom_06[0], LIT(UnicodePrivateUse::custom_06), {}, Label::combineWithSpace(LOC("CUS"), LIT("06"))},
+			{UnicodePrivateUse::custom_07[0], LIT(UnicodePrivateUse::custom_07), {}, Label::combineWithSpace(LOC("CUS"), LIT("07"))},
+			{UnicodePrivateUse::custom_08[0], LIT(UnicodePrivateUse::custom_08), {}, Label::combineWithSpace(LOC("CUS"), LIT("08"))},
+			{UnicodePrivateUse::custom_09[0], LIT(UnicodePrivateUse::custom_09), {}, Label::combineWithSpace(LOC("CUS"), LIT("09"))},
+			{UnicodePrivateUse::custom_0A[0], LIT(UnicodePrivateUse::custom_0A), {}, Label::combineWithSpace(LOC("CUS"), LIT("0A"))},
+			{UnicodePrivateUse::custom_0B[0], LIT(UnicodePrivateUse::custom_0B), {}, Label::combineWithSpace(LOC("CUS"), LIT("0B"))},
+			{UnicodePrivateUse::custom_0C[0], LIT(UnicodePrivateUse::custom_0C), {}, Label::combineWithSpace(LOC("CUS"), LIT("0C"))},
+			{UnicodePrivateUse::custom_0D[0], LIT(UnicodePrivateUse::custom_0D), {}, Label::combineWithSpace(LOC("CUS"), LIT("0D"))},
+			{UnicodePrivateUse::custom_0E[0], LIT(UnicodePrivateUse::custom_0E), {}, Label::combineWithSpace(LOC("CUS"), LIT("0E"))},
+			{UnicodePrivateUse::custom_0F[0], LIT(UnicodePrivateUse::custom_0F), {}, Label::combineWithSpace(LOC("CUS"), LIT("0F"))},
+			{UnicodePrivateUse::custom_10[0], LIT(UnicodePrivateUse::custom_10), {}, Label::combineWithSpace(LOC("CUS"), LIT("10"))},
+			{UnicodePrivateUse::custom_11[0], LIT(UnicodePrivateUse::custom_11), {}, Label::combineWithSpace(LOC("CUS"), LIT("11"))},
+			{UnicodePrivateUse::custom_12[0], LIT(UnicodePrivateUse::custom_12), {}, Label::combineWithSpace(LOC("CUS"), LIT("12"))},
+			{UnicodePrivateUse::custom_13[0], LIT(UnicodePrivateUse::custom_13), {}, Label::combineWithSpace(LOC("CUS"), LIT("13"))},
+			{UnicodePrivateUse::custom_14[0], LIT(UnicodePrivateUse::custom_14), {}, Label::combineWithSpace(LOC("CUS"), LIT("14"))},
+			{UnicodePrivateUse::custom_15[0], LIT(UnicodePrivateUse::custom_15), {}, Label::combineWithSpace(LOC("CUS"), LIT("15"))},
+			{UnicodePrivateUse::custom_16[0], LIT(UnicodePrivateUse::custom_16), {}, Label::combineWithSpace(LOC("CUS"), LIT("16"))},
+			{UnicodePrivateUse::custom_17[0], LIT(UnicodePrivateUse::custom_17), {}, Label::combineWithSpace(LOC("CUS"), LIT("17"))},
+			{UnicodePrivateUse::custom_18[0], LIT(UnicodePrivateUse::custom_18), {}, Label::combineWithSpace(LOC("CUS"), LIT("18"))},
+			{UnicodePrivateUse::custom_19[0], LIT(UnicodePrivateUse::custom_19), {}, Label::combineWithSpace(LOC("CUS"), LIT("19"))},
+			{UnicodePrivateUse::custom_1A[0], LIT(UnicodePrivateUse::custom_1A), {}, Label::combineWithSpace(LOC("CUS"), LIT("1A"))},
+			{UnicodePrivateUse::custom_1B[0], LIT(UnicodePrivateUse::custom_1B), {}, Label::combineWithSpace(LOC("CUS"), LIT("1B"))},
+			{UnicodePrivateUse::custom_1C[0], LIT(UnicodePrivateUse::custom_1C), {}, Label::combineWithSpace(LOC("CUS"), LIT("1C"))},
+			{UnicodePrivateUse::custom_1D[0], LIT(UnicodePrivateUse::custom_1D), {}, Label::combineWithSpace(LOC("CUS"), LIT("1D"))},
+			{UnicodePrivateUse::custom_1E[0], LIT(UnicodePrivateUse::custom_1E), {}, Label::combineWithSpace(LOC("CUS"), LIT("1E"))},
+			{UnicodePrivateUse::custom_1F[0], LIT(UnicodePrivateUse::custom_1F), {}, Label::combineWithSpace(LOC("CUS"), LIT("1F"))},
+		}, CommandPlayer::flag_chars[flag], CMDFLAGS_LIST_SELECT, CMDFLAG_FEATURELIST_FINISHLIST), flag(flag)
+	{
+	}
+
+	void CommandSelectTag::onChange(Click& click, long long prev_value)
+	{
+		CommandPlayer::flag_chars[flag] = (char32_t)value;
+		CommandPlayer::force_flag_update = true;
+	}
+}

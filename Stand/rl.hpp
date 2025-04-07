@@ -1,0 +1,39 @@
+#pragma once
+
+#include "gta_player.hpp"
+
+#define RL_MAX_GAMERS_PER_SESSION MAX_PLAYERS
+
+#define RL_MAX_NAME_BUF_SIZE 17
+
+#define RL_MAX_SESSION_USER_DATA_SIZE 256
+#define RL_MAX_SESSION_DATA_MINE_SIZE 128
+
+#define RL_MAX_MATCHING_FILTER_NAME_LENGTH 24
+#define RL_MAX_MATCHING_ATTRS 8
+#define RL_MAX_MATCHING_ATTR_NAME_LENGTH 24
+#define RL_MAX_MATCHING_CONDITIONS 32
+
+namespace rage
+{
+	enum rlNetworkMode
+	{
+		RL_NETMODE_INVALID = -1,
+		RL_NETMODE_OFFLINE,
+		RL_NETMODE_ONLINE,
+		RL_NETMODE_LAN,
+
+		RL_NETMODE_NUM_MODES
+	};
+
+	enum rlSlotType
+	{
+		RL_SLOT_INVALID = -1,
+		RL_SLOT_PUBLIC,
+		RL_SLOT_PRIVATE,
+
+		RL_SLOT_NUM_TYPES
+	};
+}
+
+using enum rage::rlNetworkMode;

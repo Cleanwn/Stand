@@ -1,0 +1,39 @@
+# Trash
+.vs/
+bin/
+_bin/
+int/
+Debug/
+obj/
+stand.gg/src/vendor/
+*.asi
+*.lib
+*.lnk
+*.log
+*.obj
+*.pch
+*.recipe
+*.tlog
+*.exe
+*.map
+composer.lock
+.apm_cache/
+
+# Script-Generated Trash
+lang/flex/
+lang/translations.json
+Stand/bin.*pp
+Stand/font_*
+Stand/lang_*.cpp
+Stand/xormagics.hpp
+stand.gg/lang/
+vehicle_items generator/vehicles.json
+
+# DLLs
+*.dll
+
+# Tools
+Virtualizer/
+
+# Misc
+Changelog.md

@@ -1,0 +1,34 @@
+local json = require("json")
+local file = io.open(filesystem.scripts_dir() .. "/weapons.json", "r"):read("*a")
+local weapons = {}
+
+local function isValidName(name)
+	return !name:contains("VEHICLE_") and name:contains("WEAPON_")
+end
+
+local function parseLiveries(liveries)
+	local str = "{"
+
+	for liveries as livery do
+		str ..= $'\{ "{livery.Name}", "{livery.TranslatedLabel.Name}", "{util.get_label_text(livery.TranslatedLabel.Name)}" },'
+	end
+	str = str:rstrip(",")
+	str ..= " }"
+
+	return str
+end
+
+for json.decode(file) as weapon do
+	if #weapon.Liveries > 0 and isValidName(weapon.Name) then
+		weapons[weapon.Name] = parseLiveries(weapon.Liveries)
+	end
+end
+
+local str = ""
+
+for key, value in weapons do
+	str ..= $' \{ ATSTRINGHASH("{key}"), ' .. value .. " },\n"
+end
+
+print(str)
+util.copy_to_clipboard(str)

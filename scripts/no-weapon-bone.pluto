@@ -1,0 +1,17 @@
+util.require_natives()
+
+local pos = ENTITY.GET_ENTITY_COORDS(players.user_ped(), true)
+pos.x = pos.x + 2
+pos.z = pos.z + 5
+local models  = {"cs_taostranslator","cs_taostranslator2","cs_tenniscoach","cs_beverly","a_c_poodle","A_C_Dolphin","A_C_HumpBack","A_C_KillerWhale","A_C_SharkHammer","A_C_Stingray"}
+for models as model do
+    STREAMING.REQUEST_MODEL(util.joaat(model))
+    while not STREAMING.HAS_MODEL_LOADED(util.joaat(model)) do util.yield() end
+end
+local ped = entities.create_ped(26, util.joaat(models[math.random(1,#models)]), pos, 0.0,true,false)
+entities.set_can_migrate(ped,false)
+WEAPON.GIVE_WEAPON_TO_PED(ped, util.joaat("WEAPON_RPG"), 10, true, true)
+util.yield(1000)
+ENTITY.SET_ENTITY_HEALTH(ped,0,0)
+util.yield(2000)
+entities.delete(ped)

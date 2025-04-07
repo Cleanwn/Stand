@@ -1,0 +1,24 @@
+#pragma once
+
+namespace Stand
+{
+	enum SessionType : int
+	{
+		FIND_PUBLIC = 0,
+		NEW_PUBLIC = 1,
+		CLOSED_CREW = 2,
+		CREW = 3,
+		CLOSED_FRIEND = 6,
+		JOIN_A_FRIEND = 9,
+		SOLO = 10,
+		INVITE_ONLY = 11,
+		JOIN_CREW = 12,
+
+		STAND_NEW_PUBLIC = -1,
+		STAND_QUIT_TO_SP = -1,
+		STAND_SCTV = -2,
+		STAND_CHARACTER_SELECTION = -3,
+		STAND_CREATOR_MODE = -4,
+		STAND_NEW_PUBLIC_AS_SPECTATOR = -5,
+	};
+}

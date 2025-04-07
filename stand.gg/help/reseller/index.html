@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reseller Information | Stand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+	<link href="/halfmoon-config.css" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+	<div class="page-wrapper with-navbar">
+		<nav class="navbar">
+			<div class="container-xl">
+				<a class="navbar-brand" href="/">Stand</a>
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="/account/">Account</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/help/">Help</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content-wrapper">
+			<div class="container-xl">
+				<div class="content">
+					<h1>Stand Reseller Information</h1>
+					<p>All information relevant to resellers. We recommend you read this page in its entirety.</p>
+
+					<h2>Price Calculator & Ordering</h2>
+					<div class="w-400">
+						<div class="input-group">
+							<input class="form-control" type="number" id="qty-basic" value="0" min="0" />
+							<div class="input-group-append">
+								<span class="input-group-text">Basic (<span id="price-basic"></span>€)</p></span>
+							</div>
+						</div>
+						<div class="input-group">
+							<input class="form-control" type="number" id="qty-regular" value="0" min="0" />
+							<div class="input-group-append">
+								<span class="input-group-text">Regular (<span id="price-regular"></span>€)</span>
+							</div>
+						</div>
+						<div class="input-group">
+							<input class="form-control" type="number" id="qty-ultimate" value="0" min="0" />
+							<div class="input-group-append">
+								<span class="input-group-text">Ultimate (<span id="price-ultimate"></span>€)</span>
+							</div>
+						</div>
+						<div class="input-group">
+							<input class="form-control" type="number" id="qty-basictoregular" value="0" min="0" />
+							<div class="input-group-append">
+								<span class="input-group-text">Basic To Regular (<span id="price-basictoregular"></span>€)</span>
+							</div>
+						</div>
+						<div class="input-group">
+							<input class="form-control" type="number" id="qty-regulartoultimate" value="0" min="0" />
+							<div class="input-group-append">
+								<span class="input-group-text">Regular To Ultimate (<span id="price-regulartoultimate"></span>€)</span>
+							</div>
+						</div>
+						<div class="input-group">
+							<input class="form-control" type="number" id="qty-basictoultimate" value="0" min="0" />
+							<div class="input-group-append">
+								<span class="input-group-text">Basic To Ultimate (<span id="price-basictoultimate"></span>€)</span>
+							</div>
+						</div>
+					</div>
+					<p>
+						Subtotal: <b><span id="total"></span>€</b><br>
+						Discount: <b><span id="discount"></span>%</b> (+0.1% Per Extra Key; Max. 16%)<br>
+						Total: <b><span id="total-discounted"></span>€</b>
+					</p>
+					<p id="place-order-text">To submit your order, message our reseller contact (stand_contact on Discord).</p>
+					<input id="compact" class="form-control w-400" type="text" placeholder="Compact order format" />
+					<p>If it can't be implied, also be sure to mention how you want to pay. We accept Bitcoin, Litecoin, Ethereum, and Tether USD on the Ethereum network.</p>
+
+					<h2>Recommended Selling Prices</h2>
+					<ul>
+						<li>Basic: 12,50€</li>
+						<li>Regular: 25€</li>
+						<li>Ultimate: 50€</li>
+						<li>Basic to Regular: 12,50€</li>
+						<li>Regular to Ultimate: 25€</li>
+						<li>Basic to Ultimate: 37,50€</li>
+					</ul>
+
+					<h2>Get listed on our website</h2>
+					<p>To get listed on our seller pages, message our reseller contact on Discord. Getting listed is free, but you need to have keys in stock.</p>
+					<p>Please also notify us for price changes or link updates.</p>
+					<p>Our ranking algorithm is based on price and stock. However, there is no benefit to selling more than 1 cent below the recommended price.</p>
+
+					<h2>How do customers redeem these keys?</h2>
+					<p>You can find our redeem instructions <a href="redeem-instructions.txt">here</a>. Feel free to modify them to fit your needs.</p>
+					<p>Note that bad redeem instructions can cause confused customers, which will lead to wasted support time, so just giving your customers a link to https://stand.sh/account/ is better than writing out a long checklist.</p>
+
+					<h2>When was this key redeemed? / Can you revoke this key?</h2>
+					<p>To get information about your keys, or revoke keys in case of a chargeback or customer issue, message our reseller contact on Discord.</p>
+
+					<h2>Where can I get branding materials?</h2>
+					<p>In our <a href="/branding.zip">branding.zip</a>.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		prices = {
+			basic: (12.50 * 0.75),
+			regular: (25.00 * 0.75),
+			ultimate: (50.00 * 0.75),
+			basictoregular: (12.50 * 0.75),
+			regulartoultimate: (25.00 * 0.75),
+			basictoultimate: (37.50 * 0.75),
+		};
+		formatter = new Intl.NumberFormat('en-US', {
+			style: 'currency',
+			currency: 'EUR',
+		});
+
+		class Order
+		{
+			qty = {};
+
+			fromInputs()
+			{
+				Object.keys(prices).forEach(item => {
+					this.qty[item] = document.getElementById("qty-" + item).value ? parseInt(document.getElementById("qty-" + item).value) : 0;
+				});
+			}
+
+			toCompact()
+			{
+				let i = 0, j = 0;
+				Object.keys(prices).forEach(item => {
+					++j;
+					if (this.qty[item] != 0)
+					{
+						i = j;
+					}
+				});
+
+				j = 0;
+				let arr = [];
+				Object.keys(prices).forEach(item => {
+					++j;
+					if (j <= i)
+					{
+						arr.push(this.qty[item]);
+					}
+				});
+				return arr.join(" ");
+			}
+
+			getTotalQty()
+			{
+				let total_qty = 0;
+				Object.keys(prices).forEach(item => {
+					total_qty += this.qty[item];
+				});
+				return total_qty;
+			}
+
+			getBulkDiscount()
+			{
+				let discount = (this.getTotalQty() - 1) / 10 * 0.01;
+				if(discount > 0.16)
+				{
+					discount = 0.16;
+				}
+				else if(discount < 0.0)
+				{
+					discount = 0.0;
+				}
+				return discount;
+			}
+		}
+
+		order = new Order();
+		function formatEuro(v)
+		{
+			return formatter.format(v).substr(1);
+		}
+		function formatDiscount(v)
+		{
+			let a=v.toString().split("."),
+			s=a[0]+".";
+			if(a.length>1)
+			{
+				s+=a[1].substr(0,1);
+			}
+			else
+			{
+				s+="0"; 
+			}
+			return s;
+		}
+		function updateTotal()
+		{
+			let discount = order.getBulkDiscount();
+			document.getElementById("discount").textContent = formatDiscount(discount * 100);
+			let price_mul = 1.0 - discount;
+			let total = 0;
+			Object.keys(prices).forEach(item => {
+				document.getElementById("price-" + item).textContent = formatEuro(prices[item] * price_mul);
+				total += order.qty[item] * prices[item];
+			});
+			document.getElementById("total").textContent = formatEuro(total);
+			document.getElementById("total-discounted").textContent = formatEuro(total * price_mul);
+
+			if (order.getTotalQty() == 0)
+			{
+				document.getElementById("place-order-text").textContent = "To submit your order, message our reseller contact (stand_contact on Discord).";
+			}
+			else
+			{
+				document.getElementById("place-order-text").textContent = "To submit your order, message our reseller contact (stand_contact on Discord) with the following:";
+			}
+		}
+		function onQtyChange()
+		{
+			order.fromInputs();
+			document.getElementById("compact").value = order.toCompact();
+			updateTotal();
+		}
+		Object.keys(prices).forEach(item => {
+			document.getElementById("qty-" + item).oninput = onQtyChange;
+		});
+		onQtyChange();
+		document.getElementById("compact").onfocus = function()
+		{
+			this.select();
+		};
+		document.getElementById("compact").oninput = function()
+		{
+			let arr = this.value.split(" ");
+			let i = 0;
+			Object.keys(prices).forEach(item => {
+				document.getElementById("qty-" + item).value = arr[i] ? arr[i] : 0;
+				++i;
+			});
+			order.fromInputs();
+			updateTotal();
+		};
+	</script>
+</body>
+</html>

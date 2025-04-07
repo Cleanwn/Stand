@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account Login | Stand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+	<link href="/halfmoon-config.css" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+	<div class="page-wrapper with-navbar">
+		<nav class="navbar">
+			<div class="container-xl">
+				<a class="navbar-brand" href="/">Stand</a>
+				<ul class="navbar-nav">
+					<li class="nav-item active"><a class="nav-link" href="/account/">Account</a></li>
+					<li class="nav-item"><a class="nav-link" href="/help/">Help</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content-wrapper">
+			<div class="container-xl">
+				<div class="content">
+					<h1>Stand Account Login</h1>
+					<form onsubmit="submit_login();return false;" method="GET" action="/bad_browser.txt">
+						<div class="input-group">
+							<input id="acctid" type="password" class="form-control" placeholder="Your account id" required pattern="[a-z0-9]{31}" title="Stand Account ID" />
+							<div class="input-group-append">
+								<a id="reveal" href="#" class="btn">Reveal</a>
+							</div>
+						</div>
+						<p><input type="submit" class="btn btn-primary" value="Login" /></p>
+					</form>
+				</div>
+				<div class="content">
+					<h3 class="font-weight-lighter">Where to find your account id</h3>
+					<ul>
+						<li>In your password manager</li>
+						<li>In your email archive (search for <kbd style="user-select:all">your-brain-replacement@stand.sh</kbd> or <kbd style="user-select:all">you-brain-replacement@stand.gg</kbd>)</li>
+						<li>On your PC (search for <kbd style="user-select:all">Stand Account ID.txt</kbd>)</li>
+					</ul>
+					<p>Between April 26 and September 5 in 2024, there was also an option to save it via your phone number on the Respire platform. If you used that option, you can still <a href="https://respire.gg/run/rnz7uzwqnz" target="_blank">visit the account id saver</a> to fetch your account id, but you are advised to save it in another place, ideally something secure and stable like a password manager.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/common.js"></script>
+	<script>
+		function on_logged_in()
+		{
+			if(location.hash.substr(0,5)=="#for:")
+			{
+				location.href=location.hash.substr(5);
+			}
+			else
+			{
+				location.href=".";
+			}
+		}
+
+		if(typeof localStorage.getItem("account_id")=="string")
+		{
+			on_logged_in();
+		}
+
+		let login_pending = false;
+		function submit_login()
+		{
+			if(login_pending)
+			{
+				return;
+			}
+			login_pending = true;
+			let account_id = document.getElementById("acctid").value;
+			$.post("/api/basic_account_info", {
+				account_id
+			}).done(function(data)
+			{
+				if (data == "bad")
+				{
+					alert("There is no account matching the exact id you provided. If you handwrote it, check characters like 0/o, l/i/1, etc.");
+				}
+				else if (data == "ratelimit")
+				{
+					alert("You're doing this too much. Try again later.");
+				}
+				else
+				{
+					data.account_id = account_id;
+					store_account_data(data);
+					on_logged_in();
+				}
+			}).fail(function()
+			{
+				alert("Connection error");
+			}).always(function()
+			{
+				login_pending = false;
+			});
+		}
+
+		document.getElementById("reveal").onclick = function()
+		{
+			if (this.textContent == "Reveal")
+			{
+				this.textContent = "Conceal";
+				document.getElementById("acctid").type = "text";
+			}
+			else
+			{
+				this.textContent = "Reveal";
+				document.getElementById("acctid").type = "password";
+			}
+		}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>

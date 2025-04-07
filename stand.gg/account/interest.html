@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Interest in PinkEye™ V5</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/halfmoon-variables.min.css" crossorigin="anonymous" rel="stylesheet" />
+	<link href="/halfmoon-config.css" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+	<div class="container-xl">
+		<div class="content">
+			<h1>Register Interest in PinkEye™ V5</h1>
+			<div id="interested-false">
+				<p>Here you can register your interest in PinkEye™ V5. We will get in touch with you via Discord if you are selected.</p>
+				<button class="btn btn-primary">Register Interest</button>
+			</div>
+			<div id="interested-true" class="d-none">
+				<p>Your interest in PinkEye™ V5 has been registered. We will get in touch with you via Discord if you are selected.</p>
+				<button class="btn btn-danger">Unregister Interest</button>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script>
+		if (!localStorage.getItem("account_id"))
+		{
+			location.href=".";
+		}
+		else
+		{
+			if (!localStorage.getItem("account_interested"))
+			{
+				localStorage.setItem("account_interested", "false");
+			}
+
+			if (localStorage.getItem("account_interested") == "true")
+			{
+				$("#interested-false").addClass("d-none");
+				$("#interested-true").removeClass("d-none");
+			}
+
+			window.did_clicky = false;
+			$("button").on("click", function()
+			{
+				if (did_clicky)
+				{
+					return;
+				}
+				did_clicky = true;
+				$.post("/api/simple_update", {
+					account_id: localStorage.getItem("account_id"),
+					interested: localStorage.getItem("account_interested") != "false" ? 0 : 1
+				}).done(function(data)
+				{
+					store_account_data(data);
+					location.reload();
+				});
+			});
+		}
+	</script>
+	<script src="/common.js"></script>
+</body>
+</html>

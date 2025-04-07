@@ -1,0 +1,2864 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev Build|x64">
+      <Configuration>Dev Build</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BAF9F07A-2664-A5F1-6FA2-5697DB4B8346}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Stand</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Stand</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <OutDir>bin\Release\</OutDir>
+    <IntDir>bin\int\Release\</IntDir>
+    <TargetName>Stand</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+    <GenerateManifest>false</GenerateManifest>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <OutDir>bin\Release\</OutDir>
+    <IntDir>bin\int\Dev Build\</IntDir>
+    <TargetName>Stand</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+    <GenerateManifest>false</GenerateManifest>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <OutDir>bin\Debug\</OutDir>
+    <IntDir>bin\int\Debug\</IntDir>
+    <TargetName>Stand</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>common.hpp</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4305;4530;4541;26812;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;_CRT_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x601;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\Soup\;lib\DirectXTK\;lib\discord-rpc\include\;lib\fmt\;lib\StackWalker\;lib\rapidjson 28c59ab\;lib\MinHook 423d1e4\include\;lib\Pluto\;..\..\Soup-Lua-Bindings\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>common.hpp</ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>/utf-8 /Zc:__cplusplus /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <CallingConvention>FastCall</CallingConvention>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>bin\Release\Stand.lib</ImportLibrary>
+      <GenerateMapFile>true</GenerateMapFile>
+      <AdditionalDependencies>..\..\Soup\bin\$(Configuration)DLL $(Platform)\Soup.lib;lib\_bin\$(Configuration)\Third-Party Libraries.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalOptions>"/pdbaltpath:*notices your IDA* OwO" /base:0x1337694200000000</AdditionalOptions>
+      <EnableUAC>false</EnableUAC>
+      <MapExports>true</MapExports>
+      <ForceSymbolReferences>
+      </ForceSymbolReferences>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PreBuildEvent>
+      <Command>cd .. &amp;&amp; cd lang &amp;&amp; php update.php</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>cd .. &amp;&amp; php xormagics.php &amp;&amp; move /Y Stand\bin\Release\Stand.dll Stand\bin\Release\Stand_unprotected.dll &amp;&amp;  move /Y Stand\bin\Release\Stand.map Stand\bin\Release\Stand_unprotected.map &amp;&amp; ISaidNoRTTI\bin\ISaidNoRTTI.exe Stand\bin\Release\Stand_unprotected.dll &amp;&amp; "Virtualizer\Virtualizer.exe" /protect Stand.cv /shareconsole &amp;&amp; vanitysec.exe Stand\bin\Release\Stand_uncompressed.dll .Stand &amp;&amp; upx.exe Stand\bin\Release\Stand_uncompressed.dll -o Stand\bin\Release\Stand.dll -9 --overlay=strip --compress-exports=0 &amp;&amp; vanitysec.exe Stand\bin\Release\Stand.dll .Stand</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>common.hpp</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4305;4530;4541;26812;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>STAND_DEV;_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;_CRT_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x601;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\Soup\;lib\DirectXTK\;lib\discord-rpc\include\;lib\fmt\;lib\StackWalker\;lib\rapidjson 28c59ab\;lib\MinHook 423d1e4\include\;lib\Pluto\;..\..\Soup-Lua-Bindings\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>common.hpp</ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>/utf-8 /Zc:__cplusplus /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <CallingConvention>FastCall</CallingConvention>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>bin\Release\Stand.lib</ImportLibrary>
+      <GenerateMapFile>true</GenerateMapFile>
+      <AdditionalDependencies>..\..\Soup\bin\ReleaseDLL $(Platform)\Soup.lib;lib\_bin\Release\Third-Party Libraries.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalOptions>"/pdbaltpath:*notices your IDA* OwO" /base:0x1337694200000000</AdditionalOptions>
+      <EnableUAC>false</EnableUAC>
+      <MapExports>true</MapExports>
+      <ForceSymbolReferences>
+      </ForceSymbolReferences>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>cd .. &amp;&amp; move /Y Stand\bin\Release\Stand.dll Stand\bin\Release\Stand_unprotected.dll &amp;&amp;  move /Y Stand\bin\Release\Stand.map Stand\bin\Release\Stand_unprotected.map &amp;&amp; ISaidNoRTTI\bin\ISaidNoRTTI.exe Stand\bin\Release\Stand_unprotected.dll &amp;&amp; "Virtualizer\Virtualizer.exe" /protect Stand.cv /shareconsole &amp;&amp; vanitysec.exe Stand\bin\Release\Stand_uncompressed.dll .Stand &amp;&amp; upx.exe Stand\bin\Release\Stand_uncompressed.dll -o Stand\bin\Release\Stand.dll -9 --overlay=strip --compress-exports=0 &amp;&amp; vanitysec.exe Stand\bin\Release\Stand.dll .Stand</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>common.hpp</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4305;4530;4541;26812;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>STAND_DEBUG;STAND_DEV;_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;_CRT_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x601;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\Soup\;lib\DirectXTK\;lib\discord-rpc\include\;lib\fmt\;lib\StackWalker\;lib\rapidjson 28c59ab\;lib\MinHook 423d1e4\include\;lib\Pluto\;..\..\Soup-Lua-Bindings\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>common.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>/utf-8 /Zc:__cplusplus /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <CallingConvention>FastCall</CallingConvention>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <Optimization>MaxSpeed</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SupportJustMyCode>false</SupportJustMyCode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>bin\Debug\Stand.lib</ImportLibrary>
+      <GenerateMapFile>false</GenerateMapFile>
+      <AdditionalDependencies>..\..\Soup\bin\ReleaseDLL $(Platform)\Soup.lib;lib\_bin\$(Configuration)\Third-Party Libraries.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalOptions>/base:0x1337694200000000</AdditionalOptions>
+      <ForceSymbolReferences>
+      </ForceSymbolReferences>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>cd .. &amp;&amp; ISaidNoRTTI\bin\ISaidNoRTTI.exe Stand\bin\Debug\Stand.dll</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractEntity.hpp" />
+    <ClInclude Include="AbstractModel.hpp" />
+    <ClInclude Include="AbstractPlayer.hpp" />
+    <ClInclude Include="AbstractRenderer.hpp" />
+    <ClInclude Include="AcThingData.hpp" />
+    <ClInclude Include="actionscript.hpp" />
+    <ClInclude Include="AddressGamers.hpp" />
+    <ClInclude Include="aiTaskTree.hpp" />
+    <ClInclude Include="Alignment.hpp" />
+    <ClInclude Include="AllEntitiesEveryTick.hpp" />
+    <ClInclude Include="alphanum.hpp" />
+    <ClInclude Include="Animations.hpp" />
+    <ClInclude Include="AntiAntiCheat.hpp" />
+    <ClInclude Include="AntiDbg.hpp" />
+    <ClInclude Include="AntiEntitySpam.hpp" />
+    <ClInclude Include="apply_spoofed_name.hpp" />
+    <ClInclude Include="AptHelper.hpp" />
+    <ClInclude Include="ArchetypeFlags.hpp" />
+    <ClInclude Include="assetstore.hpp" />
+    <ClInclude Include="atDelegate.hpp" />
+    <ClInclude Include="atFixedArray.hpp" />
+    <ClInclude Include="atMap.hpp" />
+    <ClInclude Include="atSpanArray.hpp" />
+    <ClInclude Include="atString.hpp" />
+    <ClInclude Include="AttackerMgr.hpp" />
+    <ClInclude Include="BattlEyeServer.hpp" />
+    <ClInclude Include="be_client.hpp" />
+    <ClInclude Include="be_delegate.hpp" />
+    <ClInclude Include="be_packet.hpp" />
+    <ClInclude Include="BgScript.hpp" />
+    <ClInclude Include="BlipCapture.hpp" />
+    <ClInclude Include="blobfish_builtin.hpp" />
+    <ClInclude Include="CClearAreaEvent.hpp" />
+    <ClInclude Include="CFire.hpp" />
+    <ClInclude Include="CGiveWeaponEvent.hpp" />
+    <ClInclude Include="CGpsSlot.hpp" />
+    <ClInclude Include="ChainedVehicleMgr.hpp" />
+    <ClInclude Include="CHandlingDataMgr.hpp" />
+    <ClInclude Include="ChatHistory.hpp" />
+    <ClInclude Include="CLightEntity.hpp" />
+    <ClInclude Include="CNetFXIdentifier.hpp" />
+    <ClInclude Include="CNetworkPtFXWorldStateData.hpp" />
+    <ClInclude Include="CNetworkVoice.hpp" />
+    <ClInclude Include="CodeIntegrity.hpp" />
+    <ClInclude Include="CommandAddressbarWidthAffectedByColumns.hpp" />
+    <ClInclude Include="CommandAttackerPresets.hpp" />
+    <ClInclude Include="CommandAutoDeployCountermeasures.hpp" />
+    <ClInclude Include="CommandBombTrajectory.hpp" />
+    <ClInclude Include="CommandCheatEngineForGlobals.hpp" />
+    <ClInclude Include="CommandClearBlacklist.hpp" />
+    <ClInclude Include="CommandCurrentCustomColourHex.hpp" />
+    <ClInclude Include="CommandDisableNanoDroneAbilityCooldowns.hpp" />
+    <ClInclude Include="CommandDisableNanoDroneRangeLimit.hpp" />
+    <ClInclude Include="CommandDisableRestrictedAreas.hpp" />
+    <ClInclude Include="CommandDriftMode.hpp" />
+    <ClInclude Include="CommandDriveOnWater.hpp" />
+    <ClInclude Include="CommandDummy.hpp" />
+    <ClInclude Include="CommandEspBase.hpp" />
+    <ClInclude Include="CommandEspTags.hpp" />
+    <ClInclude Include="CommandEspTagsItem.hpp" />
+    <ClInclude Include="CommandFlyThroughWindscreen.hpp" />
+    <ClInclude Include="CommandStutterFix.hpp" />
+    <ClInclude Include="CommandFullPlayerList.hpp" />
+    <ClInclude Include="CommandGravitateNPCs.hpp" />
+    <ClInclude Include="CommandHandlingFlag.hpp" />
+    <ClInclude Include="CommandInfoDropShadow.hpp" />
+    <ClInclude Include="CommandInteriorColour.hpp" />
+    <ClInclude Include="CommandLeftbound.hpp" />
+    <ClInclude Include="CommandLevitationPresets.hpp" />
+    <ClInclude Include="CommandListAnalogue.hpp" />
+    <ClInclude Include="CommandListSessionCode.hpp" />
+    <ClInclude Include="CommandLockWeaponsLivery.hpp" />
+    <ClInclude Include="CommandLockWeaponsLiveryTint.hpp" />
+    <ClInclude Include="CommandLoveLetterLube.hpp" />
+    <ClInclude Include="CommandLuaCompatLayer.hpp" />
+    <ClInclude Include="CommandMaxHealth.hpp" />
+    <ClInclude Include="CommandMuteEmergencySirens.hpp" />
+    <ClInclude Include="CommandName.hpp" />
+    <ClInclude Include="CommandNoBeast.hpp" />
+    <ClInclude Include="CommandNoBusinessBattleMusic.hpp" />
+    <ClInclude Include="CommandNoLscBarriers.hpp" />
+    <ClInclude Include="CommandPhoneModeSpoof.hpp" />
+    <ClInclude Include="CommandPlayerKickHostType.hpp" />
+    <ClInclude Include="CommandPlayerSoundSpam.hpp" />
+    <ClInclude Include="CommandPlayerVehDetachWing.hpp" />
+    <ClInclude Include="CommandEntityPreviews.hpp" />
+    <ClInclude Include="CommandPlayerVehDowngrade.hpp" />
+    <ClInclude Include="CommandPlayerVehicleSliderText.hpp" />
+    <ClInclude Include="CommandProfileAutoload.hpp" />
+    <ClInclude Include="CommandSampleToast.hpp" />
+    <ClInclude Include="CommandDisableHeliAutoStabilisation.hpp" />
+    <ClInclude Include="CommandSaveAllPersonalVehicles.hpp" />
+    <ClInclude Include="CommandPlayerMagnet.hpp" />
+    <ClInclude Include="CommandSliderNamedValue.hpp" />
+    <ClInclude Include="CommandSmoothCoasting.hpp" />
+    <ClInclude Include="CommandKdEditor.hpp" />
+    <ClInclude Include="CommandLessenTyreBurnouts.hpp" />
+    <ClInclude Include="CommandListActionItemWithEntityPreview.hpp" />
+    <ClInclude Include="CommandListOfSpawnedVehicles.hpp" />
+    <ClInclude Include="CommandListStatEditor.hpp" />
+    <ClInclude Include="CommandLockOnToAllVehicles.hpp" />
+    <ClInclude Include="CommandLockPlate.hpp" />
+    <ClInclude Include="CommandOnCurrentVehicle.hpp" />
+    <ClInclude Include="CommandPlayerTpToMyObjective.hpp" />
+    <ClInclude Include="CommandPlayerVehFlip.hpp" />
+    <ClInclude Include="CommandPlayerVehLockDoors.hpp" />
+    <ClInclude Include="CommandPlayerVehSpin.hpp" />
+    <ClInclude Include="CommandQuickCtxRDefault.hpp" />
+    <ClInclude Include="CommandRequestNanoDrone.hpp" />
+    <ClInclude Include="CommandShotgunBatchSize.hpp" />
+    <ClInclude Include="CommandDisableKosatkaMissileCooldown.hpp" />
+    <ClInclude Include="CommandColourHex.hpp" />
+    <ClInclude Include="CommandDeathParticle.hpp" />
+    <ClInclude Include="CommandDisableKosatkaMissileRangeLimit.hpp" />
+    <ClInclude Include="CommandForceRelay.hpp" />
+    <ClInclude Include="CommandHistoricPlayerStats.hpp" />
+    <ClInclude Include="CommandListLockWeapon.hpp" />
+    <ClInclude Include="CommandLockWeaponsPresets.hpp" />
+    <ClInclude Include="CommandLockWeaponsSavePreset.hpp" />
+    <ClInclude Include="CommandListCommandBoxPresets.hpp" />
+    <ClInclude Include="CommandOnlyRemoveSelectedWeapons.hpp" />
+    <ClInclude Include="CommandPlayerLoopBounty.hpp" />
+    <ClInclude Include="CommandPlayerSlider.hpp" />
+    <ClInclude Include="CommandPlayerTpToPlayer.hpp" />
+    <ClInclude Include="CommandSaveBodyguardPreset.hpp" />
+    <ClInclude Include="CommandSaveCommandBoxPreset.hpp" />
+    <ClInclude Include="CommandSpawnedVehicleEntry.hpp" />
+    <ClInclude Include="CommandStandardGameVehicleColour.hpp" />
+    <ClInclude Include="CommandStandardGameVehicleColourItem.hpp" />
+    <ClInclude Include="CommandStatBase.hpp" />
+    <ClInclude Include="CommandStatBoolSlider.hpp" />
+    <ClInclude Include="CommandStatDate.hpp" />
+    <ClInclude Include="CommandStatDateField.hpp" />
+    <ClInclude Include="CommandStatFloatSlider.hpp" />
+    <ClInclude Include="CommandStatIntSlider.hpp" />
+    <ClInclude Include="CommandStatPos.hpp" />
+    <ClInclude Include="CommandStatPosField.hpp" />
+    <ClInclude Include="CommandStatProfileSetting.hpp" />
+    <ClInclude Include="CommandStatSlider.hpp" />
+    <ClInclude Include="CommandStatString.hpp" />
+    <ClInclude Include="CommandSuperDrivePresets.hpp" />
+    <ClInclude Include="CommandSuperMelee.hpp" />
+    <ClInclude Include="CommandToggleWeaponComponent.hpp" />
+    <ClInclude Include="CommandListSelectBone.hpp" />
+    <ClInclude Include="CommandListSelectBonePointer.hpp" />
+    <ClInclude Include="CommandNoRollCooldown.hpp" />
+    <ClInclude Include="CommandPlayerCopyWaypoint.hpp" />
+    <ClInclude Include="CommandFlags.hpp" />
+    <ClInclude Include="CommandPlayerVehTurnAround.hpp" />
+    <ClInclude Include="CommandPtfxTrail.hpp" />
+    <ClInclude Include="CommandPtfxTrailParticle.hpp" />
+    <ClInclude Include="CommandRedirectToList.hpp" />
+    <ClInclude Include="CommandHeliTaxi.hpp" />
+    <ClInclude Include="CommandAutoDrive.hpp" />
+    <ClInclude Include="CommandAutoDriveAction.hpp" />
+    <ClInclude Include="CommandNpcHostilityPunishment.hpp" />
+    <ClInclude Include="CommandQuickCtx.hpp" />
+    <ClInclude Include="CommandQuickCtxDefault.hpp" />
+    <ClInclude Include="CommandQuickCtxLoad.hpp" />
+    <ClInclude Include="CommandQuickCtxMax.hpp" />
+    <ClInclude Include="CommandQuickCtxMin.hpp" />
+    <ClInclude Include="CommandQuickCtxSave.hpp" />
+    <ClInclude Include="CommandShowArraySynchProgress.hpp" />
+    <ClInclude Include="CommandSliderFloatOverride.hpp" />
+    <ClInclude Include="CommandClubPopLock.hpp" />
+    <ClInclude Include="CommandCountermeasures.hpp" />
+    <ClInclude Include="CommandCtxAddress.hpp" />
+    <ClInclude Include="CommandCustomVoteKick.hpp" />
+    <ClInclude Include="CommandDrunkMode.hpp" />
+    <ClInclude Include="CommandFireCountermeasure.hpp" />
+    <ClInclude Include="CommandFloppyMode.hpp" />
+    <ClInclude Include="CommandGhostNearbyDrivers.hpp" />
+    <ClInclude Include="CommandHairHighlight.hpp" />
+    <ClInclude Include="CommandHideFromPlayerList.hpp" />
+    <ClInclude Include="CommandInputTextLimitChars.hpp" />
+    <ClInclude Include="CommandJoinDesynced.hpp" />
+    <ClInclude Include="CommandListSelectDrivingMode.hpp" />
+    <ClInclude Include="CommandLockDoors.hpp" />
+    <ClInclude Include="CommandLuaPlayerListPlayersShortcut.hpp" />
+    <ClInclude Include="CommandLuaStart.hpp" />
+    <ClInclude Include="CommandMoveFreedom.hpp" />
+    <ClInclude Include="CommandNoModPop.hpp" />
+    <ClInclude Include="CommandPlateRandomise.hpp" />
+    <ClInclude Include="CommandPlateTps.hpp" />
+    <ClInclude Include="CommandPlayerFakeMoneyDrop.hpp" />
+    <ClInclude Include="CommandPlayerRamSpeed.hpp" />
+    <ClInclude Include="CommandPlayerVehicleNoLockon.hpp" />
+    <ClInclude Include="CommandPlayerVehRepair.hpp" />
+    <ClInclude Include="CommandPlayerVehSlipperyTyres.hpp" />
+    <ClInclude Include="CommandProjectileMgr.hpp" />
+    <ClInclude Include="CommandRegenerationRate.hpp" />
+    <ClInclude Include="CommandShowCmdOwners.hpp" />
+    <ClInclude Include="CommandSliderRegenerationRate.hpp" />
+    <ClInclude Include="CommandRespawnDelay.hpp" />
+    <ClInclude Include="CommandCustomVoteKickToggle.hpp" />
+    <ClInclude Include="CommandSpecialFlight.hpp" />
+    <ClInclude Include="CommandTeleport.hpp" />
+    <ClInclude Include="CommandThousandsSep.hpp" />
+    <ClInclude Include="CommandTogglePointerDuplex.hpp" />
+    <ClInclude Include="CommandTurnSignal.hpp" />
+    <ClInclude Include="CommandLightSignals.hpp" />
+    <ClInclude Include="CommandUseBrakelights.hpp" />
+    <ClInclude Include="CommandVehicleGunToggle.hpp" />
+    <ClInclude Include="CommandVehicleNoObjectCollision.hpp" />
+    <ClInclude Include="CommandVehicleNoPedCollision.hpp" />
+    <ClInclude Include="CommandVehRoofLivery.hpp" />
+    <ClInclude Include="CommandWaypoint.hpp" />
+    <ClInclude Include="CommandWheelOnWheels.hpp" />
+    <ClInclude Include="CommandAnalogueInput.hpp" />
+    <ClInclude Include="CommandWootingAnalog.hpp" />
+    <ClInclude Include="ComponentGpu.hpp" />
+    <ClInclude Include="ComponentOverflowPatch.hpp" />
+    <ClInclude Include="CPedModelInfo.hpp" />
+    <ClInclude Include="CPropellerCollisionProcessor.hpp" />
+    <ClInclude Include="CScaleformStore.hpp" />
+    <ClInclude Include="CStartProjectileEvent.hpp" />
+    <ClInclude Include="CVehicleFlags.hpp" />
+    <ClInclude Include="CViewportManager.hpp" />
+    <ClInclude Include="CWeather.hpp" />
+    <ClInclude Include="Date.hpp" />
+    <ClInclude Include="datRef.hpp" />
+    <ClInclude Include="DebugString.hpp" />
+    <ClInclude Include="DoVehicleLightsAsync.hpp" />
+    <ClInclude Include="eAircraftSections.hpp" />
+    <ClInclude Include="eCarLockState.hpp" />
+    <ClInclude Include="eCommandApplyForceTypes.hpp" />
+    <ClInclude Include="eDrivingFlags.hpp" />
+    <ClInclude Include="eHomingLockOnState.hpp" />
+    <ClInclude Include="eMigrationType.hpp" />
+    <ClInclude Include="eOutOfSightFlags.hpp" />
+    <ClInclude Include="ePedVarComp.hpp" />
+    <ClInclude Include="eScriptTaskStatus.hpp" />
+    <ClInclude Include="eSCRIPT_HUD_COMPONENT.hpp" />
+    <ClInclude Include="eTaskCombatPedFlags.hpp" />
+    <ClInclude Include="eTaskThreatResponseFlags.hpp" />
+    <ClInclude Include="evtFlowEventDoneEvent.hpp" />
+    <ClInclude Include="evtForceQuitting.hpp" />
+    <ClInclude Include="font_bevietnamprolight.hpp" />
+    <ClInclude Include="fragCacheEntry.hpp" />
+    <ClInclude Include="fwAltSkeletonExtension.hpp" />
+    <ClInclude Include="fwInteriorLocation.hpp" />
+    <ClInclude Include="fwRegdRef.hpp" />
+    <ClInclude Include="fwRenderThreadInterface.hpp" />
+    <ClInclude Include="fwStepAllocator.hpp" />
+    <ClInclude Include="GarbageCollector.hpp" />
+    <ClInclude Include="IsolatedText.hpp" />
+    <ClInclude Include="lua_runtime.pluto" />
+    <ClInclude Include="AssociatedWhitelist.hpp" />
+    <ClInclude Include="Offset.hpp" />
+    <ClInclude Include="PlaceWaypoint.hpp" />
+    <ClInclude Include="players_interface.hpp" />
+    <ClInclude Include="PubSubClient.hpp" />
+    <ClInclude Include="rlpresence.hpp" />
+    <ClInclude Include="ScUtil.hpp" />
+    <ClInclude Include="set_aim_mode.hpp" />
+    <ClInclude Include="SpinlockBase.hpp" />
+    <ClInclude Include="SpinlockHolder.hpp" />
+    <ClInclude Include="StatCache.hpp" />
+    <ClInclude Include="Tunables.hpp" />
+    <ClInclude Include="tunneler.hpp" />
+    <ClInclude Include="ScaleformMovieStruct.hpp" />
+    <ClInclude Include="HeistIslandTravelBitset.hpp" />
+    <ClInclude Include="IceQueen.hpp" />
+    <ClInclude Include="LuaScriptData.hpp" />
+    <ClInclude Include="lua_commons.hpp" />
+    <ClInclude Include="Mat34V.hpp" />
+    <ClInclude Include="Matrix34.hpp" />
+    <ClInclude Include="MsvcStdString.hpp" />
+    <ClInclude Include="mthRandom.hpp" />
+    <ClInclude Include="ice_messages.hpp" />
+    <ClInclude Include="NetInterface.hpp" />
+    <ClInclude Include="Package.hpp" />
+    <ClInclude Include="PackageInstallTask.hpp" />
+    <ClInclude Include="PackageRepository.hpp" />
+    <ClInclude Include="PackageRepositoryFetchTask.hpp" />
+    <ClInclude Include="PedProps.hpp" />
+    <ClInclude Include="PedVariationDS.hpp" />
+    <ClInclude Include="CommandLockedMentalState.hpp" />
+    <ClInclude Include="CommandListLockWeapons.hpp" />
+    <ClInclude Include="CommandListMental.hpp" />
+    <ClInclude Include="CommandLockMentalState.hpp" />
+    <ClInclude Include="CommandPreserveWalkStyleDuringCombat.hpp" />
+    <ClInclude Include="CommandToggleLockWeapons.hpp" />
+    <ClInclude Include="CommandToggleLockWeapon.hpp" />
+    <ClInclude Include="CRemoveWeaponEvent.hpp" />
+    <ClInclude Include="phConstraint.hpp" />
+    <ClInclude Include="PopCycle.hpp" />
+    <ClInclude Include="PopMultiplierAreas.hpp" />
+    <ClInclude Include="ProjectileMgr.hpp" />
+    <ClInclude Include="RemoteStats.hpp" />
+    <ClInclude Include="ResourceMgr.hpp" />
+    <ClInclude Include="rlprofilestatscommon.hpp" />
+    <ClInclude Include="rmptfx.hpp" />
+    <ClInclude Include="ropemanager.hpp" />
+    <ClInclude Include="scaleform_gfx.hpp" />
+    <ClInclude Include="sgnParseState.hpp" />
+    <ClInclude Include="sgnStackVar.hpp" />
+    <ClInclude Include="SharedNativeHooks.hpp" />
+    <ClInclude Include="NetworkedSound.hpp" />
+    <ClInclude Include="SpawnedVehicleMgr.hpp" />
+    <ClInclude Include="BodyguardMgr.hpp" />
+    <ClInclude Include="CExplosionEvent.hpp" />
+    <ClInclude Include="CExtraContentManager.hpp" />
+    <ClInclude Include="cloth.hpp" />
+    <ClInclude Include="CloudEvent.hpp" />
+    <ClInclude Include="CNetGamePlayerDataMsg.hpp" />
+    <ClInclude Include="CNetworkAssetVerifier.hpp" />
+    <ClInclude Include="CNetworkPtFXEvent.hpp" />
+    <ClInclude Include="Codename.hpp" />
+    <ClInclude Include="CollectablesGiver.hpp" />
+    <ClInclude Include="eCombatAttributes.hpp" />
+    <ClInclude Include="CommandAggressiveNPCs.hpp" />
+    <ClInclude Include="CommandAnimation.hpp" />
+    <ClInclude Include="CommandAutoCancelAnim.hpp" />
+    <ClInclude Include="CommandBjMessage.hpp" />
+    <ClInclude Include="CommandBlipTags.hpp" />
+    <ClInclude Include="CommandBlockJoinsStrangers.hpp" />
+    <ClInclude Include="CommandBodyguardMember.hpp" />
+    <ClInclude Include="CommandCanvas.hpp" />
+    <ClInclude Include="CommandChatAlwaysOpen.hpp" />
+    <ClInclude Include="CommandChatGadget.hpp" />
+    <ClInclude Include="CommandClockSys.hpp" />
+    <ClInclude Include="CommandDismissTutorials.hpp" />
+    <ClInclude Include="CommandDlcpack.hpp" />
+    <ClInclude Include="CommandDlcpacks.hpp" />
+    <ClInclude Include="CommandDontJackMe.hpp" />
+    <ClInclude Include="CommandExtraCrcPresets.hpp" />
+    <ClInclude Include="CommandFixAssetHashes.hpp" />
+    <ClInclude Include="CommandHandlingEditorSave.hpp" />
+    <ClInclude Include="CommandHistoricPlayerSession.hpp" />
+    <ClInclude Include="CommandHistoryTransInvite.hpp" />
+    <ClInclude Include="CommandHoistTag.hpp" />
+    <ClInclude Include="CommandLaserSights.hpp" />
+    <ClInclude Include="CommandListAssetHashes.hpp" />
+    <ClInclude Include="CommandListSelectUnlessFriend.hpp" />
+    <ClInclude Include="CommandListSelectVehicleModel.hpp" />
+    <ClInclude Include="CommandListSession.hpp" />
+    <ClInclude Include="CommandListSessionMember.hpp" />
+    <ClInclude Include="CommandListSessionMemberAction.hpp" />
+    <ClInclude Include="CommandListSessionMemberOrgasm.hpp" />
+    <ClInclude Include="CommandListTutorial.hpp" />
+    <ClInclude Include="CommandListWeaponComponents.hpp" />
+    <ClInclude Include="CommandLuaSliderBase.hpp" />
+    <ClInclude Include="CommandMentalPulse.hpp" />
+    <ClInclude Include="CommandNameKick.hpp" />
+    <ClInclude Include="CommandNoCamShake.hpp" />
+    <ClInclude Include="CommandNotifyInvertFlow.hpp" />
+    <ClInclude Include="CommandOpenChatWhenScrolling.hpp" />
+    <ClInclude Include="CommandPlayerBlockPassiveMode.hpp" />
+    <ClInclude Include="CommandPlayerImpactParticles.hpp" />
+    <ClInclude Include="CommandPlayerParticleSpamDelay.hpp" />
+    <ClInclude Include="CommandPlayerParticleSpamScale.hpp" />
+    <ClInclude Include="CommandPlayerVehBreakTailBoom.hpp" />
+    <ClInclude Include="CommandPlayerCeoKick.hpp" />
+    <ClInclude Include="CommandPlayerCrashTask.hpp" />
+    <ClInclude Include="CommandPlayerDropCards.hpp" />
+    <ClInclude Include="CommandPlayerExplosiveHits.hpp" />
+    <ClInclude Include="CommandPlayerInteriorKick.hpp" />
+    <ClInclude Include="CommandPlayerKickPoolsClosed.hpp" />
+    <ClInclude Include="CommandPlayerKill.hpp" />
+    <ClInclude Include="CommandPlayerObtainFastRun.hpp" />
+    <ClInclude Include="CommandPlayerRagdoll.hpp" />
+    <ClInclude Include="CommandPlayerRam.hpp" />
+    <ClInclude Include="CommandPlayerRelinquishFastRun.hpp" />
+    <ClInclude Include="CommandPlayerSetRank.hpp" />
+    <ClInclude Include="CommandPlayerSetWantedLevel.hpp" />
+    <ClInclude Include="CommandPlayerShakeCam.hpp" />
+    <ClInclude Include="CommandPlayerTriggerDefend.hpp" />
+    <ClInclude Include="CommandPlayerVehDetachWheel.hpp" />
+    <ClInclude Include="CommandPlayerVehicleUpgrade.hpp" />
+    <ClInclude Include="CommandPlayerVehEnginePowerMultiplier.hpp" />
+    <ClInclude Include="CommandRemoveBounty.hpp" />
+    <ClInclude Include="CommandPlayerVehEMP.hpp" />
+    <ClInclude Include="CommandRespawnParticle.hpp" />
+    <ClInclude Include="CommandRevealInvisible.hpp" />
+    <ClInclude Include="CommandRidKick.hpp" />
+    <ClInclude Include="CommandRidTools.hpp" />
+    <ClInclude Include="CommandRocketSpeed.hpp" />
+    <ClInclude Include="CommandChatLogConsole.hpp" />
+    <ClInclude Include="CommandChatLogMainfile.hpp" />
+    <ClInclude Include="CommandClearHistory.hpp" />
+    <ClInclude Include="CommandDisableInVehicleHairScale.hpp" />
+    <ClInclude Include="CommandDisableSpawnActivity.hpp" />
+    <ClInclude Include="CommandHistoryDelete.hpp" />
+    <ClInclude Include="CommandHistoryIp.hpp" />
+    <ClInclude Include="CommandHistoryAction.hpp" />
+    <ClInclude Include="CommandImpactParticles.hpp" />
+    <ClInclude Include="CommandJoinGroupOverride.hpp" />
+    <ClInclude Include="CommandLambdaListSelectWeapons.hpp" />
+    <ClInclude Include="CommandLeaveEngineRunning.hpp" />
+    <ClInclude Include="CommandListActionCategory.hpp" />
+    <ClInclude Include="CommandListAnimations.hpp" />
+    <ClInclude Include="CommandListPatches.hpp" />
+    <ClInclude Include="CommandListSelectParticle.hpp" />
+    <ClInclude Include="CommandListSelectPedModels.hpp" />
+    <ClInclude Include="CommandListSelectWeapons.hpp" />
+    <ClInclude Include="CommandLuaConfigEnforceSilentStop.hpp" />
+    <ClInclude Include="CommandNoFmEventEndAudio.hpp" />
+    <ClInclude Include="CommandNoRecoil.hpp" />
+    <ClInclude Include="CommandNoSpooling.hpp" />
+    <ClInclude Include="CommandNoSpread.hpp" />
+    <ClInclude Include="CommandOnPlayerVehicle.hpp" />
+    <ClInclude Include="CommandPedMoreFlares.hpp" />
+    <ClInclude Include="CommandPedMoreStickies.hpp" />
+    <ClInclude Include="CommandPlayerAsAll.hpp" />
+    <ClInclude Include="CommandPlayerAttackers.hpp" />
+    <ClInclude Include="CommandPlayerCasinoTp.hpp" />
+    <ClInclude Include="CommandPlayerCrashOutfit.hpp" />
+    <ClInclude Include="CommandPlayerCrashTrain.hpp" />
+    <ClInclude Include="CommandPlayerMuggerLoop.hpp" />
+    <ClInclude Include="CommandPlayerParticleSpam.hpp" />
+    <ClInclude Include="CommandPlayerSendPM.hpp" />
+    <ClInclude Include="CommandPlayerVehDestroyProp.hpp" />
+    <ClInclude Include="CommandPlayerTpToTheirWp.hpp" />
+    <ClInclude Include="CommandPlayerVehicleGodmode.hpp" />
+    <ClInclude Include="CommandQuickProgress.hpp" />
+    <ClInclude Include="CommandRandomTune.hpp" />
+    <ClInclude Include="CommandRestartfm.hpp" />
+    <ClInclude Include="CommandSavedata.hpp" />
+    <ClInclude Include="CommandScenarios.hpp" />
+    <ClInclude Include="CommandSessionCodeSpectate.hpp" />
+    <ClInclude Include="CommandSessionScriptChallengesScore.hpp" />
+    <ClInclude Include="CommandSessionScriptCriminalDamageScore.hpp" />
+    <ClInclude Include="CommandSetAssetChecksum.hpp" />
+    <ClInclude Include="CommandSetGameLanguage.hpp" />
+    <ClInclude Include="CommandSpoofedExtraCrc.hpp" />
+    <ClInclude Include="CommandSpoofedPosition.hpp" />
+    <ClInclude Include="CommandStopSpectating.hpp" />
+    <ClInclude Include="CommandTeleportParticle.hpp" />
+    <ClInclude Include="CommandTestAdFilter.hpp" />
+    <ClInclude Include="CommandVehicleDlc.hpp" />
+    <ClInclude Include="CommandVehicleEnginePowerMultiplier.hpp" />
+    <ClInclude Include="CommandTrnsSpdupBroadcast.hpp" />
+    <ClInclude Include="CommandTrnsSpdupFmmc.hpp" />
+    <ClInclude Include="CommandTrnsSpdupSpawn.hpp" />
+    <ClInclude Include="CommandToggleEngine.hpp" />
+    <ClInclude Include="CommandUncensored.hpp" />
+    <ClInclude Include="CommandVector3.hpp" />
+    <ClInclude Include="CommandVehicleGun.hpp" />
+    <ClInclude Include="CommandVehicleSeat.hpp" />
+    <ClInclude Include="CommandWeaponComponent.hpp" />
+    <ClInclude Include="CommandWhosSpectatingWho.hpp" />
+    <ClInclude Include="common.hpp" />
+    <ClInclude Include="ComponentCrash.hpp" />
+    <ClInclude Include="CNetworkPlaySoundEvent.hpp" />
+    <ClInclude Include="conf_netcode.hpp" />
+    <ClInclude Include="CrossState.hpp" />
+    <ClInclude Include="CustomDlcMgr.hpp" />
+    <ClInclude Include="ComponentDrawPatch.hpp" />
+    <ClInclude Include="ComponentSavedata.hpp" />
+    <ClInclude Include="ComponentSpoofPos.hpp" />
+    <ClInclude Include="conf_classifier.hpp" />
+    <ClInclude Include="ConsoleLogger.hpp" />
+    <ClInclude Include="CPedIntelligence.hpp" />
+    <ClInclude Include="CProfileSettings.hpp" />
+    <ClInclude Include="CProjectile.hpp" />
+    <ClInclude Include="crSkeleton.hpp" />
+    <ClInclude Include="CStatsDataMgr.hpp" />
+    <ClInclude Include="CTunables.hpp" />
+    <ClInclude Include="CWeaponDamageEvent.hpp" />
+    <ClInclude Include="CWeaponInfoManager.hpp" />
+    <ClInclude Include="DrivebyCommons.hpp" />
+    <ClInclude Include="eBailReason.hpp" />
+    <ClInclude Include="eCombatAbility.hpp" />
+    <ClInclude Include="eCombatRange.hpp" />
+    <ClInclude Include="eDamageFlags.hpp" />
+    <ClInclude Include="eJoinResponseCode.hpp" />
+    <ClInclude Include="eMenuPref.hpp" />
+    <ClInclude Include="eMpMission.hpp" />
+    <ClInclude Include="ePedConfigFlags.hpp" />
+    <ClInclude Include="ePedResetFlags.hpp" />
+    <ClInclude Include="evtPadShakeEvent.hpp" />
+    <ClInclude Include="ExecCtx.hpp" />
+    <ClInclude Include="explosion.hpp" />
+    <ClInclude Include="FeatureCanvas.hpp" />
+    <ClInclude Include="FeatureCanvasDirect.hpp" />
+    <ClInclude Include="FeatureCanvasWindow.hpp" />
+    <ClInclude Include="fiPackfile.hpp" />
+    <ClInclude Include="FriendsReaderTask.hpp" />
+    <ClInclude Include="fwFactory.hpp" />
+    <ClInclude Include="fwModelId.hpp" />
+    <ClInclude Include="fwPool.hpp" />
+    <ClInclude Include="fwScriptGuid.hpp" />
+    <ClInclude Include="conf_antianticheat.hpp" />
+    <ClInclude Include="grcViewport.hpp" />
+    <ClInclude Include="gta_textchat.hpp" />
+    <ClInclude Include="inlist.hpp" />
+    <ClInclude Include="inmap.hpp" />
+    <ClInclude Include="JoinMethod.hpp" />
+    <ClInclude Include="LangBuiltins.hpp" />
+    <ClInclude Include="Logger.hpp" />
+    <ClInclude Include="NativeTableHooksBuiltin.hpp" />
+    <ClInclude Include="net.hpp" />
+    <ClInclude Include="netAddress.hpp" />
+    <ClInclude Include="netConnection.hpp" />
+    <ClInclude Include="netConnectionManager.hpp" />
+    <ClInclude Include="netEndpoint.hpp" />
+    <ClInclude Include="netEvent.hpp" />
+    <ClInclude Include="netTaskStatus.hpp" />
+    <ClInclude Include="nettypes.hpp" />
+    <ClInclude Include="NetworkSessionMessages.hpp" />
+    <ClInclude Include="NetworkSessionUtils.hpp" />
+    <ClInclude Include="net_array.hpp" />
+    <ClInclude Include="netRelayToken.hpp" />
+    <ClInclude Include="NetScriptWorldStateTypes.hpp" />
+    <ClInclude Include="netTimeSync.hpp" />
+    <ClInclude Include="OrgHelper.hpp" />
+    <ClInclude Include="Particles.hpp" />
+    <ClInclude Include="peercert.hpp" />
+    <ClInclude Include="PointerNames.hpp" />
+    <ClInclude Include="ReactionExemption.hpp" />
+    <ClInclude Include="RemoteGamerConnector.hpp" />
+    <ClInclude Include="RemoteGlobalWriter.hpp" />
+    <ClInclude Include="rtti_shim.hpp" />
+    <ClInclude Include="ScriptHostUtil.hpp" />
+    <ClInclude Include="scrOpcodes.hpp" />
+    <ClInclude Include="ped_inventory.hpp" />
+    <ClInclude Include="PlayerExcludes.hpp" />
+    <ClInclude Include="rl.hpp" />
+    <ClInclude Include="rgsc_common.hpp" />
+    <ClInclude Include="rgsc_profiles.hpp" />
+    <ClInclude Include="rlPc.hpp" />
+    <ClInclude Include="rlScAccountInfo.hpp" />
+    <ClInclude Include="rlSessionConfig.hpp" />
+    <ClInclude Include="rlSessionDetail.hpp" />
+    <ClInclude Include="RageConnector.hpp" />
+    <ClInclude Include="scrValue.hpp" />
+    <ClInclude Include="Snippets.hpp" />
+    <ClInclude Include="spdAABB.hpp" />
+    <ClInclude Include="Stat.hpp" />
+    <ClInclude Include="Stats.hpp" />
+    <ClInclude Include="String2Hash.hpp" />
+    <ClInclude Include="sysDependency.hpp" />
+    <ClInclude Include="sysLanguage.hpp" />
+    <ClInclude Include="sysObfuscated.hpp" />
+    <ClInclude Include="sysThreadType.hpp" />
+    <ClInclude Include="TabCompletionProvider.hpp" />
+    <ClInclude Include="CTaskJump.hpp" />
+    <ClInclude Include="tbArSpinner.hpp" />
+    <ClInclude Include="AsiDirectory.hpp" />
+    <ClInclude Include="AsiMod.hpp" />
+    <ClInclude Include="asi_api.hpp" />
+    <ClInclude Include="asi_decl.hpp" />
+    <ClInclude Include="as_fraction.hpp" />
+    <ClInclude Include="atArray.hpp" />
+    <ClInclude Include="atoffset.hpp" />
+    <ClInclude Include="AtomicString.hpp" />
+    <ClInclude Include="AtomicVector.hpp" />
+    <ClInclude Include="Auth.hpp" />
+    <ClInclude Include="BackgroundBlur.hpp" />
+    <ClInclude Include="bin.hpp" />
+    <ClInclude Include="BinaryBlob.hpp" />
+    <ClInclude Include="BinaryStream.hpp" />
+    <ClInclude Include="BiString.hpp" />
+    <ClInclude Include="Blacklist.hpp" />
+    <ClInclude Include="Blamer.hpp" />
+    <ClInclude Include="BlipUtil.hpp" />
+    <ClInclude Include="tbBlockVisionSounds.hpp" />
+    <ClInclude Include="Box.hpp" />
+    <ClInclude Include="ButtonInstructions.hpp" />
+    <ClInclude Include="CDrivebyWeaponGroup.hpp" />
+    <ClInclude Include="CommandDisablePassiveCooldown.hpp" />
+    <ClInclude Include="CommandHistoryFriendsNote.hpp" />
+    <ClInclude Include="CommandKeyboardHook.hpp" />
+    <ClInclude Include="CommandRemovedPlayers.hpp" />
+    <ClInclude Include="CommandListHandling.hpp" />
+    <ClInclude Include="CommandListQrcode.hpp" />
+    <ClInclude Include="CommandPersonalVehiclesSearch.hpp" />
+    <ClInclude Include="CommandPlayerKickConfusion.hpp" />
+    <ClInclude Include="CommandSelfFreeze.hpp" />
+    <ClInclude Include="CommandSessionThunder.hpp" />
+    <ClInclude Include="CommandSpeedupDial.hpp" />
+    <ClInclude Include="CommandStress.hpp" />
+    <ClInclude Include="CommandVehicleHandling.hpp" />
+    <ClInclude Include="CommandWeb.hpp" />
+    <ClInclude Include="CommandPlayerCage.hpp" />
+    <ClInclude Include="CommandPlayerVehDelete.hpp" />
+    <ClInclude Include="CommandPlayerVehRemoveDoors.hpp" />
+    <ClInclude Include="CommandPlayerVehKill.hpp" />
+    <ClInclude Include="CommandPlayerVehPopTyres.hpp" />
+    <ClInclude Include="CommandPlayerVehIgnite.hpp" />
+    <ClInclude Include="CommandPlayerVehSlingshot.hpp" />
+    <ClInclude Include="CommandProfileDelete.hpp" />
+    <ClInclude Include="CommandRefillArmour.hpp" />
+    <ClInclude Include="CommandRefillHealth.hpp" />
+    <ClInclude Include="CommandUndoRemoved.hpp" />
+    <ClInclude Include="CommandBlockJoinsNonWhitelisted.hpp" />
+    <ClInclude Include="CommandCasinoRoulette.hpp" />
+    <ClInclude Include="CommandClearArea.hpp" />
+    <ClInclude Include="CommandDrivebyInAny.hpp" />
+    <ClInclude Include="CommandDrivebyWithAny.hpp" />
+    <ClInclude Include="CommandGallery.hpp" />
+    <ClInclude Include="CommandHistoricPlayerWhitelist.hpp" />
+    <ClInclude Include="CommandHistoryAdminsNote.hpp" />
+    <ClInclude Include="CommandListVisualSettings.hpp" />
+    <ClInclude Include="CommandLuaConfigPresets.hpp" />
+    <ClInclude Include="CommandLuaConfigToggle.hpp" />
+    <ClInclude Include="CommandLuaTextsliderStateful.hpp" />
+    <ClInclude Include="CommandMmPool.hpp" />
+    <ClInclude Include="CommandPlayerBeast.hpp" />
+    <ClInclude Include="CommandPlayerFurry.hpp" />
+    <ClInclude Include="CommandPlayerGiveCollectibles.hpp" />
+    <ClInclude Include="CommandPlayerGiveSh.hpp" />
+    <ClInclude Include="CommandPlayerInfiniteRing.hpp" />
+    <ClInclude Include="CommandCasinoBlackjack.hpp" />
+    <ClInclude Include="CommandSessionScriptCriminalDamage.hpp" />
+    <ClInclude Include="CommandSessionType.hpp" />
+    <ClInclude Include="CommandTextsliderStateful.hpp" />
+    <ClInclude Include="CommandAntiEntitySpam.hpp" />
+    <ClInclude Include="CommandVisualSetting.hpp" />
+    <ClInclude Include="CommandWhitelistedPlayers.hpp" />
+    <ClInclude Include="Component.hpp" />
+    <ClInclude Include="ComponentCrashPatch.hpp" />
+    <ClInclude Include="ComponentImpl.hpp" />
+    <ClInclude Include="ComponentNetcode.hpp" />
+    <ClInclude Include="Components.hpp" />
+    <ClInclude Include="CPedDrawHandler.hpp" />
+    <ClInclude Include="tbCustomFov.hpp" />
+    <ClInclude Include="CVehicleDrawHandler.hpp" />
+    <ClInclude Include="GeoIpField.hpp" />
+    <ClInclude Include="get_appdata_path.hpp" />
+    <ClInclude Include="GlobalsWatcher.hpp" />
+    <ClInclude Include="GridItemQrcode.hpp" />
+    <ClInclude Include="gta_vehicle_layout.hpp" />
+    <ClInclude Include="NativeFingerprinter.hpp" />
+    <ClInclude Include="NodeCommonDataOperations.hpp" />
+    <ClInclude Include="gta_sync_data.hpp" />
+    <ClInclude Include="SpectateMgr.hpp" />
+    <ClInclude Include="CVehicleMetadataMgr.hpp" />
+    <ClInclude Include="phBoundComposite.hpp" />
+    <ClInclude Include="RenderTarget.hpp" />
+    <ClInclude Include="rlFriend.hpp" />
+    <ClInclude Include="rlRosGeoLocInfo.hpp" />
+    <ClInclude Include="RootMgr.hpp" />
+    <ClInclude Include="scriptHandlerMgr.hpp" />
+    <ClInclude Include="SessionScriptMgr.hpp" />
+    <ClInclude Include="PlateDj.hpp" />
+    <ClInclude Include="TextboxInterface.hpp" />
+    <ClInclude Include="TreeReader.hpp" />
+    <ClInclude Include="tse.hpp" />
+    <ClInclude Include="TunablesParser.hpp" />
+    <ClInclude Include="Tutorial.hpp" />
+    <ClInclude Include="TutorialGrid.hpp" />
+    <ClInclude Include="UI3DDrawManager.hpp" />
+    <ClInclude Include="VehicleGadgets.hpp" />
+    <ClInclude Include="VehicleType.hpp" />
+    <ClInclude Include="grcTexture.hpp" />
+    <ClInclude Include="gta_cam.hpp" />
+    <ClInclude Include="Camgr.hpp" />
+    <ClInclude Include="CBaseModelInfo.hpp" />
+    <ClInclude Include="CMiniMapBlip.hpp" />
+    <ClInclude Include="eEventType.hpp" />
+    <ClInclude Include="CHandlingData.hpp" />
+    <ClInclude Include="Chat.hpp" />
+    <ClInclude Include="CMultiplayerChat.hpp" />
+    <ClInclude Include="ChatCommandsCommon.hpp" />
+    <ClInclude Include="evtChatEvent.hpp" />
+    <ClInclude Include="cidr.hpp" />
+    <ClInclude Include="rlclancommon.hpp" />
+    <ClInclude Include="rlClanClient.hpp" />
+    <ClInclude Include="scrClanDesc.hpp" />
+    <ClInclude Include="CleanupHelper.hpp" />
+    <ClInclude Include="Click.hpp" />
+    <ClInclude Include="ClickType.hpp" />
+    <ClInclude Include="CMsgTextMessage.hpp" />
+    <ClInclude Include="CNetGamePlayer.hpp" />
+    <ClInclude Include="CNetworkPlayerMgr.hpp" />
+    <ClInclude Include="CNetworkSession.hpp" />
+    <ClInclude Include="CObject.hpp" />
+    <ClInclude Include="ColonsAndTabs.hpp" />
+    <ClInclude Include="ColonsVehicleCustomisationIo.hpp" />
+    <ClInclude Include="Colour.hpp" />
+    <ClInclude Include="ColourUtil.hpp" />
+    <ClInclude Include="Command.hpp" />
+    <ClInclude Include="Command2ndPerson.hpp" />
+    <ClInclude Include="CommandAction.hpp" />
+    <ClInclude Include="CommandActionModel.hpp" />
+    <ClInclude Include="CommandActionName.hpp" />
+    <ClInclude Include="CommandActionOnlineGlobal.hpp" />
+    <ClInclude Include="CommandActionScript.hpp" />
+    <ClInclude Include="CommandTextslider.hpp" />
+    <ClInclude Include="CommandTextsliderData.hpp" />
+    <ClInclude Include="CommandTextsliderJoin.hpp" />
+    <ClInclude Include="CommandActionSliderJoinLambda.hpp" />
+    <ClInclude Include="CommandActionSuffix.hpp" />
+    <ClInclude Include="CommandActionSuffixLambda.hpp" />
+    <ClInclude Include="CommandInput.hpp" />
+    <ClInclude Include="CommandInputText.hpp" />
+    <ClInclude Include="CommandAddLabel.hpp" />
+    <ClInclude Include="CommandAddressbarWidthAffectedByScrollbar.hpp" />
+    <ClInclude Include="CommandAddressCurrentListOnly.hpp" />
+    <ClInclude Include="CommandAddressSeparator.hpp" />
+    <ClInclude Include="CommandAdminDlc.hpp" />
+    <ClInclude Include="CommandAestheticLight.hpp" />
+    <ClInclude Include="CommandAestheticLightPlacement.hpp" />
+    <ClInclude Include="CommandAestheticRainbow.hpp" />
+    <ClInclude Include="CommandAimbot.hpp" />
+    <ClInclude Include="CommandAimMode.hpp" />
+    <ClInclude Include="CommandAimTimescale.hpp" />
+    <ClInclude Include="CommandAirSwim.hpp" />
+    <ClInclude Include="CommandAirwalk.hpp" />
+    <ClInclude Include="CommandAllPlayers.hpp" />
+    <ClInclude Include="CommandAnyVehRc.hpp" />
+    <ClInclude Include="CommandApartments.hpp" />
+    <ClInclude Include="CommandLuaList.hpp" />
+    <ClInclude Include="CommandArGps.hpp" />
+    <ClInclude Include="CommandArNotifications.hpp" />
+    <ClInclude Include="CommandArSpeed.hpp" />
+    <ClInclude Include="CommandArWaypoint.hpp" />
+    <ClInclude Include="CommandAsiMod.hpp" />
+    <ClInclude Include="CommandAsiMods.hpp" />
+    <ClInclude Include="CommandAsiToggle.hpp" />
+    <ClInclude Include="CommandAutoBoost.hpp" />
+    <ClInclude Include="CommandAutoHeal.hpp" />
+    <ClInclude Include="CommandAutoKickHost.hpp" />
+    <ClInclude Include="CommandAutoOpen.hpp" />
+    <ClInclude Include="CommandAutoProceedWarningsForCommands.hpp" />
+    <ClInclude Include="CommandAutoTpWp.hpp" />
+    <ClInclude Include="CommandBackClose.hpp" />
+    <ClInclude Include="CommandBackgroundColour.hpp" />
+    <ClInclude Include="CommandBanBypass.hpp" />
+    <ClInclude Include="CommandBeAlone.hpp" />
+    <ClInclude Include="CommandBecomeOrbitalCannon.hpp" />
+    <ClInclude Include="CommandBlackout.hpp" />
+    <ClInclude Include="CommandBlockBlame.hpp" />
+    <ClInclude Include="CommandBlockBlockJoin.hpp" />
+    <ClInclude Include="CommandBlockJoinsAdvertisers.hpp" />
+    <ClInclude Include="CommandBlockJoinsAnyone.hpp" />
+    <ClInclude Include="CommandBlockJoinsRemoved.hpp" />
+    <ClInclude Include="CommandBlurRightTextColour.hpp" />
+    <ClInclude Include="CommandBlurSpriteColour.hpp" />
+    <ClInclude Include="CommandBlurTextColour.hpp" />
+    <ClInclude Include="CommandBoneEsp.hpp" />
+    <ClInclude Include="CommandBoostMod.hpp" />
+    <ClInclude Include="Commandbox.hpp" />
+    <ClInclude Include="CommandboxGrid.hpp" />
+    <ClInclude Include="CommandBst.hpp" />
+    <ClInclude Include="CommandBstOnce.hpp" />
+    <ClInclude Include="CommandBuilder.hpp" />
+    <ClInclude Include="CommandButtonInstructions.hpp" />
+    <ClInclude Include="CommandBypassInteriorRestrictions.hpp" />
+    <ClInclude Include="CommandBypassPiMenuGreyedOut.hpp" />
+    <ClInclude Include="CommandBypassTimeTrialUnsuitable.hpp" />
+    <ClInclude Include="CommandCall.hpp" />
+    <ClInclude Include="CommandCeoColourSlot.hpp" />
+    <ClInclude Include="CommandCeoDisableCap.hpp" />
+    <ClInclude Include="CommandCeoName.hpp" />
+    <ClInclude Include="CommandCeoType.hpp" />
+    <ClInclude Include="CommandChatCommandsCrew.hpp" />
+    <ClInclude Include="CommandChatCommandsFriends.hpp" />
+    <ClInclude Include="CommandChatCommandsSelf.hpp" />
+    <ClInclude Include="CommandChatCommandsStrangers.hpp" />
+    <ClInclude Include="CommandChatCommandsTeam.hpp" />
+    <ClInclude Include="CommandChatLogAuxfile.hpp" />
+    <ClInclude Include="CommandChatSing.hpp" />
+    <ClInclude Include="CommandChatSpam.hpp" />
+    <ClInclude Include="CommandClock.hpp" />
+    <ClInclude Include="CommandClockLock.hpp" />
+    <ClInclude Include="CommandClockPreset.hpp" />
+    <ClInclude Include="CommandClockSpeed.hpp" />
+    <ClInclude Include="CommandClockSync.hpp" />
+    <ClInclude Include="CommandClockTime.hpp" />
+    <ClInclude Include="CommandClouds.hpp" />
+    <ClInclude Include="CommandClubPop.hpp" />
+    <ClInclude Include="CommandClumsiness.hpp" />
+    <ClInclude Include="CommandColour.hpp" />
+    <ClInclude Include="CommandColourCustom.hpp" />
+    <ClInclude Include="CommandColourPointer.hpp" />
+    <ClInclude Include="CommandColourPointerDirectx.hpp" />
+    <ClInclude Include="CommandColourSlider.hpp" />
+    <ClInclude Include="CommandCommendToast.hpp" />
+    <ClInclude Include="CommandConsole.hpp" />
+    <ClInclude Include="CommandControllerKeyPointer.hpp" />
+    <ClInclude Include="CommandControllerSupport.hpp" />
+    <ClInclude Include="CommandCountryBreakdown.hpp" />
+    <ClInclude Include="CommandCtxHotkey.hpp" />
+    <ClInclude Include="CommandCtxHotkeyHoldMode.hpp" />
+    <ClInclude Include="CommandCtxHotkeyRemove.hpp" />
+    <ClInclude Include="CommandCtxHotkeys.hpp" />
+    <ClInclude Include="CommandCtxStar.hpp" />
+    <ClInclude Include="CommandCtxToggleCorrelation.hpp" />
+    <ClInclude Include="CommandCtxToggleCorrelationInvert.hpp" />
+    <ClInclude Include="CommandCursorPadding.hpp" />
+    <ClInclude Include="CommandCursorPos.hpp" />
+    <ClInclude Include="CommandCursorPosIncludesDividers.hpp" />
+    <ClInclude Include="CommandCustomGlider.hpp" />
+    <ClInclude Include="CommandCustomGliderSetspeed.hpp" />
+    <ClInclude Include="CommandCustomGliderToggle.hpp" />
+    <ClInclude Include="CommandCustoms.hpp" />
+    <ClInclude Include="CommandCustomsShowNa.hpp" />
+    <ClInclude Include="CommandDamage.hpp" />
+    <ClInclude Include="CommandDebugNatives.hpp" />
+    <ClInclude Include="CommandDedsec.hpp" />
+    <ClInclude Include="CommandDedsecColour.hpp" />
+    <ClInclude Include="CommandDefault.hpp" />
+    <ClInclude Include="CommandDelete.hpp" />
+    <ClInclude Include="CommandDesyncKickKarma.hpp" />
+    <ClInclude Include="CommandDevFlag.hpp" />
+    <ClInclude Include="CommandDisableDeathbarriers.hpp" />
+    <ClInclude Include="CommandDisableDripfeed.hpp" />
+    <ClInclude Include="CommandDisableEmptyNotifications.hpp" />
+    <ClInclude Include="CommandDisableFlightMusic.hpp" />
+    <ClInclude Include="CommandDisableInputs.hpp" />
+    <ClInclude Include="CommandDisableInsurancePay.hpp" />
+    <ClInclude Include="CommandDisableMechanicCooldown.hpp" />
+    <ClInclude Include="CommandDisableOutfitRestrictions.hpp" />
+    <ClInclude Include="CommandDisablePeds.hpp" />
+    <ClInclude Include="CommandDisablePhone.hpp" />
+    <ClInclude Include="CommandDisableSkybox.hpp" />
+    <ClInclude Include="CommandDisableVehicleFocus.hpp" />
+    <ClInclude Include="CommandDiscord.hpp" />
+    <ClInclude Include="CommandDivider.hpp" />
+    <ClInclude Include="CommandEditLabel.hpp" />
+    <ClInclude Include="CommandEditLabels.hpp" />
+    <ClInclude Include="CommandEnter.hpp" />
+    <ClInclude Include="CommandEntityPosition.hpp" />
+    <ClInclude Include="CommandBirender.hpp" />
+    <ClInclude Include="CommandExistencePunishment.hpp" />
+    <ClInclude Include="CommandExitStop.hpp" />
+    <ClInclude Include="CommandExportDisplayNames.hpp" />
+    <ClInclude Include="CommandExtraInfo.hpp" />
+    <ClInclude Include="CommandFakeWanted.hpp" />
+    <ClInclude Include="CommandFeatureList.hpp" />
+    <ClInclude Include="CommandFillAmmo.hpp" />
+    <ClInclude Include="CommandFindModel.hpp" />
+    <ClInclude Include="CommandFindObject.hpp" />
+    <ClInclude Include="CommandFindVehicle.hpp" />
+    <ClInclude Include="CommandFinishApartmentHeistSetups.hpp" />
+    <ClInclude Include="CommandFinishDoomsdayHeistSetups.hpp" />
+    <ClInclude Include="CommandFixVehicle.hpp" />
+    <ClInclude Include="CommandFlip.hpp" />
+    <ClInclude Include="CommandFlowEvent.hpp" />
+    <ClInclude Include="CommandFlowEventGlobal.hpp" />
+    <ClInclude Include="CommandFlowEventReaction2.hpp" />
+    <ClInclude Include="CommandFlowEventReaction3.hpp" />
+    <ClInclude Include="CommandFlowEventReaction4.hpp" />
+    <ClInclude Include="CommandFmBanner2Notify.hpp" />
+    <ClInclude Include="CommandFocusPlayerBeaconExcludeMe.hpp" />
+    <ClInclude Include="CommandFocusPlayerBeaconPlural.hpp" />
+    <ClInclude Include="CommandFocusPlayerBeaconSingular.hpp" />
+    <ClInclude Include="CommandFocusRightTextColour.hpp" />
+    <ClInclude Include="CommandFocusSpriteColour.hpp" />
+    <ClInclude Include="CommandFocusTextColour.hpp" />
+    <ClInclude Include="CommandForceWarningRead.hpp" />
+    <ClInclude Include="CommandForgeModel.hpp" />
+    <ClInclude Include="CommandFov.hpp" />
+    <ClInclude Include="CommandFreecam.hpp" />
+    <ClInclude Include="CommandGunFreedom.hpp" />
+    <ClInclude Include="CommandFriction.hpp" />
+    <ClInclude Include="CommandGamer.hpp" />
+    <ClInclude Include="CommandInputGamerName.hpp" />
+    <ClInclude Include="CommandGamerPreset.hpp" />
+    <ClInclude Include="CommandGamerPresets.hpp" />
+    <ClInclude Include="CommandGamerRid.hpp" />
+    <ClInclude Include="CommandGarage.hpp" />
+    <ClInclude Include="CommandGeoGuessr.hpp" />
+    <ClInclude Include="CommandGeoGuessrMain.hpp" />
+    <ClInclude Include="CommandGeoGuessrScout.hpp" />
+    <ClInclude Include="CommandGeoGuessrSubmit.hpp" />
+    <ClInclude Include="CommandGetGuns.hpp" />
+    <ClInclude Include="CommandGhostVehicles.hpp" />
+    <ClInclude Include="CommandGod.hpp" />
+    <ClInclude Include="CommandGrace.hpp" />
+    <ClInclude Include="CommandGracefulLanding.hpp" />
+    <ClInclude Include="CommandGravityGun.hpp" />
+    <ClInclude Include="CommandGsinfoJoin.hpp" />
+    <ClInclude Include="CommandGtaRcFreecam.hpp" />
+    <ClInclude Include="CommandHalloween.hpp" />
+    <ClInclude Include="CommandHeader.hpp" />
+    <ClInclude Include="CommandHeaderAnimationSpeed.hpp" />
+    <ClInclude Include="CommandHeadlights.hpp" />
+    <ClInclude Include="CommandHelpPos.hpp" />
+    <ClInclude Include="CommandHelpText.hpp" />
+    <ClInclude Include="CommandHideSession.hpp" />
+    <ClInclude Include="CommandHideTyping.hpp" />
+    <ClInclude Include="CommandHistoricPlayer.hpp" />
+    <ClInclude Include="CommandHistoricPlayerCopy.hpp" />
+    <ClInclude Include="CommandHistoricPlayerJoinReactions.hpp" />
+    <ClInclude Include="CommandHistoricPlayerNote.hpp" />
+    <ClInclude Include="CommandHistoricPlayerTime.hpp" />
+    <ClInclude Include="CommandHistoricPlayerTrack.hpp" />
+    <ClInclude Include="CommandHistoryAddName.hpp" />
+    <ClInclude Include="CommandHistoryAddRid.hpp" />
+    <ClInclude Include="CommandHistoryCopy.hpp" />
+    <ClInclude Include="CommandHostKickKarma.hpp" />
+    <ClInclude Include="CommandHostTokenPresets.hpp" />
+    <ClInclude Include="CommandHotkeyAdd.hpp" />
+    <ClInclude Include="CommandHotkeyModkeyBehaviour.hpp" />
+    <ClInclude Include="CommandHotkeyRemove.hpp" />
+    <ClInclude Include="CommandHtml.hpp" />
+    <ClInclude Include="CommandHudColourEditor.hpp" />
+    <ClInclude Include="CommandIndependenceTires.hpp" />
+    <ClInclude Include="CommandInfiniteAmmo.hpp" />
+    <ClInclude Include="CommandInfiniteStamina.hpp" />
+    <ClInclude Include="CommandInfoAlign.hpp" />
+    <ClInclude Include="CommandInfoPos.hpp" />
+    <ClInclude Include="CommandInfoScale.hpp" />
+    <ClInclude Include="CommandInfoTextPadding.hpp" />
+    <ClInclude Include="CommandInputIpAddress.hpp" />
+    <ClInclude Include="CommandInputScheme.hpp" />
+    <ClInclude Include="CommandInputScrollingText.hpp" />
+    <ClInclude Include="CommandInstantLockon.hpp" />
+    <ClInclude Include="CommandInstaSeat.hpp" />
+    <ClInclude Include="CommandInteractionMenuClick.hpp" />
+    <ClInclude Include="CommandInterior.hpp" />
+    <ClInclude Include="CommandInteriorBunker.hpp" />
+    <ClInclude Include="CommandInteriorCustomisable.hpp" />
+    <ClInclude Include="CommandInteriorVehware.hpp" />
+    <ClInclude Include="CommandInvisibility.hpp" />
+    <ClInclude Include="CommandIpl.hpp" />
+    <ClInclude Include="CommandIssuable.hpp" />
+    <ClInclude Include="CommandKeepCursorBack.hpp" />
+    <ClInclude Include="CommandKeepCursorRoot.hpp" />
+    <ClInclude Include="CommandKeepOnlineGlobalAtZero.hpp" />
+    <ClInclude Include="CommandLabel.hpp" />
+    <ClInclude Include="CommandLambdaAction.hpp" />
+    <ClInclude Include="CommandLambdaActionScript.hpp" />
+    <ClInclude Include="CommandLambdaActionScriptBasic.hpp" />
+    <ClInclude Include="CommandLambdaListSelect.hpp" />
+    <ClInclude Include="CommandLambdaSlider.hpp" />
+    <ClInclude Include="CommandLambdaSliderScript.hpp" />
+    <ClInclude Include="CommandLambdaToggle.hpp" />
+    <ClInclude Include="CommandLambdaToggleScriptTick.hpp" />
+    <ClInclude Include="CommandLang.hpp" />
+    <ClInclude Include="CommandLevitate.hpp" />
+    <ClInclude Include="CommandLink.hpp" />
+    <ClInclude Include="CommandList.hpp" />
+    <ClInclude Include="CommandListAction.hpp" />
+    <ClInclude Include="CommandListActionItem.hpp" />
+    <ClInclude Include="CommandListActionItemData.hpp" />
+    <ClInclude Include="CommandListActionLambda.hpp" />
+    <ClInclude Include="CommandListConcealer.hpp" />
+    <ClInclude Include="CommandListDisables.hpp" />
+    <ClInclude Include="CommandListFolder.hpp" />
+    <ClInclude Include="CommandListFolderItemData.hpp" />
+    <ClInclude Include="CommandListHistoricPlayers.hpp" />
+    <ClInclude Include="CommandListInfoOverlay.hpp" />
+    <ClInclude Include="CommandListInteriors.hpp" />
+    <ClInclude Include="CommandListMillion.hpp" />
+    <ClInclude Include="CommandListMyVehicle.hpp" />
+    <ClInclude Include="CommandListNameshare.hpp" />
+    <ClInclude Include="CommandListNonDefaults.hpp" />
+    <ClInclude Include="CommandListNotifySettings.hpp" />
+    <ClInclude Include="CommandListPlaces.hpp" />
+    <ClInclude Include="CommandListPlayer.hpp" />
+    <ClInclude Include="CommandPlayerHistory.hpp" />
+    <ClInclude Include="CommandListProtections.hpp" />
+    <ClInclude Include="CommandListRadio.hpp" />
+    <ClInclude Include="CommandListRadioStations.hpp" />
+    <ClInclude Include="CommandListReadonly.hpp" />
+    <ClInclude Include="CommandListRefreshable.hpp" />
+    <ClInclude Include="CommandListSave.hpp" />
+    <ClInclude Include="CommandListSaveAction.hpp" />
+    <ClInclude Include="CommandListSavedPlaces.hpp" />
+    <ClInclude Include="CommandListSelect.hpp" />
+    <ClInclude Include="CommandListSelectPointer.hpp" />
+    <ClInclude Include="CommandListSessionScripts.hpp" />
+    <ClInclude Include="CommandListSessionSpoof.hpp" />
+    <ClInclude Include="CommandListSpoofing.hpp" />
+    <ClInclude Include="CommandListStarred.hpp" />
+    <ClInclude Include="CommandListTextSettings.hpp" />
+    <ClInclude Include="CommandListTransform.hpp" />
+    <ClInclude Include="CommandListUnlocks.hpp" />
+    <ClInclude Include="CommandListUserkv.hpp" />
+    <ClInclude Include="CommandListVehicleExtras.hpp" />
+    <ClInclude Include="CommandListViewport.hpp" />
+    <ClInclude Include="CommandListWarning.hpp" />
+    <ClInclude Include="CommandListWeapons.hpp" />
+    <ClInclude Include="CommandListWithOnTickAsActiveList.hpp" />
+    <ClInclude Include="CommandLockGameplayCamHeading.hpp" />
+    <ClInclude Include="CommandLockOutfit.hpp" />
+    <ClInclude Include="CommandLockRadio.hpp" />
+    <ClInclude Include="CommandLodscale.hpp" />
+    <ClInclude Include="CommandLua.hpp" />
+    <ClInclude Include="CommandLuaAction.hpp" />
+    <ClInclude Include="CommandLuaTextslider.hpp" />
+    <ClInclude Include="CommandLuaColour.hpp" />
+    <ClInclude Include="CommandLuaListAction.hpp" />
+    <ClInclude Include="CommandLuaListSelect.hpp" />
+    <ClInclude Include="CommandLuaScript.hpp" />
+    <ClInclude Include="CommandLuaScripts.hpp" />
+    <ClInclude Include="CommandLuaSlider.hpp" />
+    <ClInclude Include="CommandLuaSliderClick.hpp" />
+    <ClInclude Include="CommandLuaTextInput.hpp" />
+    <ClInclude Include="CommandLuaToggle.hpp" />
+    <ClInclude Include="CommandManufacturerNames.hpp" />
+    <ClInclude Include="CommandMarkedPlayers.hpp" />
+    <ClInclude Include="CommandMental.hpp" />
+    <ClInclude Include="CommandMenuHeight.hpp" />
+    <ClInclude Include="CommandMenuPosition.hpp" />
+    <ClInclude Include="CommandMenuRainbow.hpp" />
+    <ClInclude Include="CommandMint.hpp" />
+    <ClInclude Include="CommandMmMagnet.hpp" />
+    <ClInclude Include="CommandMmOff.hpp" />
+    <ClInclude Include="CommandMmRegion.hpp" />
+    <ClInclude Include="CommandMmRegionSelect.hpp" />
+    <ClInclude Include="CommandMmRegionToggle.hpp" />
+    <ClInclude Include="CommandMobileRadio.hpp" />
+    <ClInclude Include="CommandModelBlacklist.hpp" />
+    <ClInclude Include="CommandModelBlacklistAdd.hpp" />
+    <ClInclude Include="CommandModelBlacklistItem.hpp" />
+    <ClInclude Include="CommandMoist.hpp" />
+    <ClInclude Include="CommandMoistLock.hpp" />
+    <ClInclude Include="CommandMouse.hpp" />
+    <ClInclude Include="CommandMyPosition.hpp" />
+    <ClInclude Include="CommandNameInvite.hpp" />
+    <ClInclude Include="CommandNameJoin.hpp" />
+    <ClInclude Include="CommandNameProfile.hpp" />
+    <ClInclude Include="CommandNameSpectate.hpp" />
+    <ClInclude Include="CommandNeonLight.hpp" />
+    <ClInclude Include="CommandNewSession.hpp" />
+    <ClInclude Include="CommandNightVision.hpp" />
+    <ClInclude Include="CommandNoBlood.hpp" />
+    <ClInclude Include="CommandNoCinematicCam.hpp" />
+    <ClInclude Include="CommandNoCollision.hpp" />
+    <ClInclude Include="CommandNoDailyExpenses.hpp" />
+    <ClInclude Include="CommandNoDlcIntro.hpp" />
+    <ClInclude Include="CommandNoExtraClear.hpp" />
+    <ClInclude Include="CommandNoIdleCam.hpp" />
+    <ClInclude Include="CommandNoLockon.hpp" />
+    <ClInclude Include="CommandNoOrbCooldown.hpp" />
+    <ClInclude Include="CommandNoReload.hpp" />
+    <ClInclude Include="CommandNorthYanktonMap.hpp" />
+    <ClInclude Include="CommandNoStuntJumps.hpp" />
+    <ClInclude Include="CommandNotifyBgColour.hpp" />
+    <ClInclude Include="CommandNotifyBorderColour.hpp" />
+    <ClInclude Include="CommandNotifyFlashColour.hpp" />
+    <ClInclude Include="CommandNotifyPosition.hpp" />
+    <ClInclude Include="CommandNotifyType.hpp" />
+    <ClInclude Include="CommandNoTurbulence.hpp" />
+    <ClInclude Include="CommandNoVoteKick.hpp" />
+    <ClInclude Include="CommandNoWorkCooldown.hpp" />
+    <ClInclude Include="CommandNpcAimPunishment.hpp" />
+    <ClInclude Include="CommandNpcBoneEsp.hpp" />
+    <ClInclude Include="CommandNpcNeedsToAimAtUser.hpp" />
+    <ClInclude Include="CommandNpcProximityPunishment.hpp" />
+    <ClInclude Include="CommandObjectSpawner.hpp" />
+    <ClInclude Include="CommandOnlinePhoneAnims.hpp" />
+    <ClInclude Include="CommandOnPlayer.hpp" />
+    <ClInclude Include="CommandOtr.hpp" />
+    <ClInclude Include="CommandOutfit.hpp" />
+    <ClInclude Include="CommandOutfitComponent.hpp" />
+    <ClInclude Include="CommandOutfitComponentVariation.hpp" />
+    <ClInclude Include="CommandOutfitPreset.hpp" />
+    <ClInclude Include="CommandOutfitProp.hpp" />
+    <ClInclude Include="CommandOutfitPropVariation.hpp" />
+    <ClInclude Include="CommandOverrideWeather.hpp" />
+    <ClInclude Include="CommandPackage.hpp" />
+    <ClInclude Include="CommandPackages.hpp" />
+    <ClInclude Include="CommandParalock.hpp" />
+    <ClInclude Include="CommandPassiveWeaponizedVehicles.hpp" />
+    <ClInclude Include="CommandPaste.hpp" />
+    <ClInclude Include="CommandPausable.hpp" />
+    <ClInclude Include="CommandPegasus.hpp" />
+    <ClInclude Include="CommandPerf.hpp" />
+    <ClInclude Include="CommandPerfWithSpoiler.hpp" />
+    <ClInclude Include="CommandPerm.hpp" />
+    <ClInclude Include="CommandPersonalVehicle.hpp" />
+    <ClInclude Include="CommandPersonalVehicleInsurance.hpp" />
+    <ClInclude Include="CommandPersonalVehicles.hpp" />
+    <ClInclude Include="CommandPersonalVehiclesSort.hpp" />
+    <ClInclude Include="CommandPeyotes.hpp" />
+    <ClInclude Include="CommandPhysical.hpp" />
+    <ClInclude Include="CommandPlace.hpp" />
+    <ClInclude Include="CommandPlate.hpp" />
+    <ClInclude Include="CommandPlateSpeed.hpp" />
+    <ClInclude Include="CommandPlateType.hpp" />
+    <ClInclude Include="CommandPlayer.hpp" />
+    <ClInclude Include="CommandPlayerAction.hpp" />
+    <ClInclude Include="CommandPlayerActionAggressive.hpp" />
+    <ClInclude Include="CommandPlayerActionAggressiveCustom.hpp" />
+    <ClInclude Include="CommandPlayerActionValue.hpp" />
+    <ClInclude Include="CommandPlayerAimPunishment.hpp" />
+    <ClInclude Include="CommandPlayerAmmo.hpp" />
+    <ClInclude Include="CommandPlayerApt.hpp" />
+    <ClInclude Include="CommandPlayerAptList.hpp" />
+    <ClInclude Include="CommandPlayerAptMe.hpp" />
+    <ClInclude Include="CommandPlayerAptWp.hpp" />
+    <ClInclude Include="CommandPlayerArm.hpp" />
+    <ClInclude Include="CommandPlayerAs.hpp" />
+    <ClInclude Include="CommandPlayerAutoheal.hpp" />
+    <ClInclude Include="CommandPlayerBail.hpp" />
+    <ClInclude Include="CommandPlayerbar.hpp" />
+    <ClInclude Include="CommandPlayerbarMain.hpp" />
+    <ClInclude Include="CommandPlayerBefriend.hpp" />
+    <ClInclude Include="CommandPlayerBlame.hpp" />
+    <ClInclude Include="CommandPlayerBoneEsp.hpp" />
+    <ClInclude Include="CommandPlayerBounty.hpp" />
+    <ClInclude Include="CommandPlayerCeoJoin.hpp" />
+    <ClInclude Include="CommandPlayerCeopay.hpp" />
+    <ClInclude Include="CommandPlayerChatMock.hpp" />
+    <ClInclude Include="CommandPlayerChatOwoify.hpp" />
+    <ClInclude Include="CommandPlayerClassifier.hpp" />
+    <ClInclude Include="CommandPlayerClassifierDetection.hpp" />
+    <ClInclude Include="CommandPlayerCopyOutfit.hpp" />
+    <ClInclude Include="CommandPlayerCopyVehicle.hpp" />
+    <ClInclude Include="CommandPlayerCrash.hpp" />
+    <ClInclude Include="CommandPlayerCrashElegant.hpp" />
+    <ClInclude Include="CommandPlayerCrashFootlettuce.hpp" />
+    <ClInclude Include="CommandPlayerCrashVehicle.hpp" />
+    <ClInclude Include="CommandPlayerDisableDrivingVehicles.hpp" />
+    <ClInclude Include="CommandPlayerDisarm.hpp" />
+    <ClInclude Include="CommandBirenderPlayerEsp.hpp" />
+    <ClInclude Include="CommandPlayerEsp.hpp" />
+    <ClInclude Include="CommandPlayerExplode.hpp" />
+    <ClInclude Include="CommandPlayerFlowEventReaction.hpp" />
+    <ClInclude Include="CommandPlayerForceCamFront.hpp" />
+    <ClInclude Include="CommandPlayerForceFmMission.hpp" />
+    <ClInclude Include="CommandPlayerFreeze.hpp" />
+    <ClInclude Include="CommandPlayerGift.hpp" />
+    <ClInclude Include="CommandPlayerIncrementStatAggressive.hpp" />
+    <ClInclude Include="CommandPlayerIncrementStatNeutral.hpp" />
+    <ClInclude Include="CommandPlayerInfiniteLoading.hpp" />
+    <ClInclude Include="CommandPlayerInfo.hpp" />
+    <ClInclude Include="CommandPlayerInhistory.hpp" />
+    <ClInclude Include="CommandPlayerIntel.hpp" />
+    <ClInclude Include="CommandPlayerIntelLambda.hpp" />
+    <ClInclude Include="CommandPlayerKickBlacklist.hpp" />
+    <ClInclude Include="CommandPlayerKickBreakup.hpp" />
+    <ClInclude Include="CommandPlayerKickHost.hpp" />
+    <ClInclude Include="CommandPlayerKickLoveLetter.hpp" />
+    <ClInclude Include="CommandPlayerKickNonHost.hpp" />
+    <ClInclude Include="CommandPlayerKickOrgasm.hpp" />
+    <ClInclude Include="CommandPlayerKickPickup.hpp" />
+    <ClInclude Include="CommandPlayerKickSmart.hpp" />
+    <ClInclude Include="CommandPlayerLineEsp.hpp" />
+    <ClInclude Include="CommandPlayerListPlayers.hpp" />
+    <ClInclude Include="CommandPlayerListPlayersShortcut.hpp" />
+    <ClInclude Include="CommandPlayerListSort.hpp" />
+    <ClInclude Include="CommandPlayerListSortReverse.hpp" />
+    <ClInclude Include="CommandPlayerNameEsp.hpp" />
+    <ClInclude Include="CommandPlayerNeedsToAimAtUser.hpp" />
+    <ClInclude Include="CommandPlayerNotify.hpp" />
+    <ClInclude Include="CommandPlayerNotifyBanked.hpp" />
+    <ClInclude Include="CommandPlayerNotifyRemoved.hpp" />
+    <ClInclude Include="CommandPlayerNotifySpam.hpp" />
+    <ClInclude Include="CommandPlayerNotifyStolen.hpp" />
+    <ClInclude Include="CommandPlayerOtr.hpp" />
+    <ClInclude Include="CommandPlayerParachute.hpp" />
+    <ClInclude Include="CommandPlayerPong.hpp" />
+    <ClInclude Include="CommandPlayerProfile.hpp" />
+    <ClInclude Include="CommandPlayerDropFigurines.hpp" />
+    <ClInclude Include="CommandPlayerScope.hpp" />
+    <ClInclude Include="CommandPlayerScopePointer.hpp" />
+    <ClInclude Include="CommandPlayerSendtojob.hpp" />
+    <ClInclude Include="CommandPlayerShowcam.hpp" />
+    <ClInclude Include="CommandPlayersListSortReverse.hpp" />
+    <ClInclude Include="CommandPlayerSmsSend.hpp" />
+    <ClInclude Include="CommandPlayerSmsSpam.hpp" />
+    <ClInclude Include="CommandPlayerSmsText.hpp" />
+    <ClInclude Include="CommandPlayerSnack.hpp" />
+    <ClInclude Include="CommandPlayerSpectate.hpp" />
+    <ClInclude Include="CommandPlayerSpectateLegit.hpp" />
+    <ClInclude Include="CommandPlayerSpectateNinja.hpp" />
+    <ClInclude Include="CommandPlayerTeleport.hpp" />
+    <ClInclude Include="CommandPlayerTeleportIntoVeh.hpp" />
+    <ClInclude Include="CommandPlayerTimeout.hpp" />
+    <ClInclude Include="CommandPlayerToggle.hpp" />
+    <ClInclude Include="CommandPlayerToggleBatch.hpp" />
+    <ClInclude Include="CommandPlayerTransactionError.hpp" />
+    <ClInclude Include="CommandPlayerVehicleAction.hpp" />
+    <ClInclude Include="CommandPlayerTpToMe.hpp" />
+    <ClInclude Include="CommandPlayerTpToMyWp.hpp" />
+    <ClInclude Include="CommandPlayerVehKick.hpp" />
+    <ClInclude Include="CommandPlayerVisit.hpp" />
+    <ClInclude Include="CommandPlayerWaypoint.hpp" />
+    <ClInclude Include="CommandPosition2d.hpp" />
+    <ClInclude Include="CommandPosition2dMouse.hpp" />
+    <ClInclude Include="CommandPosition3d.hpp" />
+    <ClInclude Include="CommandVector3Copy.hpp" />
+    <ClInclude Include="CommandVector3Slider.hpp" />
+    <ClInclude Include="CommandPositionSelection.hpp" />
+    <ClInclude Include="CommandPotato.hpp" />
+    <ClInclude Include="CommandPreOrderBonusOverride.hpp" />
+    <ClInclude Include="CommandPresetFont.hpp" />
+    <ClInclude Include="CommandPreviewColourInList.hpp" />
+    <ClInclude Include="CommandPreviewColourInSprite.hpp" />
+    <ClInclude Include="CommandPrimaryColour.hpp" />
+    <ClInclude Include="CommandProfile.hpp" />
+    <ClInclude Include="CommandProfileAutosave.hpp" />
+    <ClInclude Include="CommandProfileLoad.hpp" />
+    <ClInclude Include="CommandProfiles.hpp" />
+    <ClInclude Include="CommandProfileSave.hpp" />
+    <ClInclude Include="CommandProfilesCreate.hpp" />
+    <ClInclude Include="CommandPunishableProximity.hpp" />
+    <ClInclude Include="CommandPunishment.hpp" />
+    <ClInclude Include="CommandRabbitHole.hpp" />
+    <ClInclude Include="CommandRainbow.hpp" />
+    <ClInclude Include="CommandRapidFire.hpp" />
+    <ClInclude Include="CommandRapidFireVeh.hpp" />
+    <ClInclude Include="CommandRc.hpp" />
+    <ClInclude Include="CommandReadonlyLink.hpp" />
+    <ClInclude Include="CommandReadonlyName.hpp" />
+    <ClInclude Include="CommandReadonlyValue.hpp" />
+    <ClInclude Include="CommandReadonlyValueCopy.hpp" />
+    <ClInclude Include="CommandReadonlyValueLambda.hpp" />
+    <ClInclude Include="CommandReducedCollision.hpp" />
+    <ClInclude Include="CommandRejoin.hpp" />
+    <ClInclude Include="CommandRemoveAmmo.hpp" />
+    <ClInclude Include="CommandRemoveGuns.hpp" />
+    <ClInclude Include="CommandRenderHdOnly.hpp" />
+    <ClInclude Include="CommandRepeatTeleport.hpp" />
+    <ClInclude Include="CommandRepeatTutorial.hpp" />
+    <ClInclude Include="CommandReportStats.hpp" />
+    <ClInclude Include="CommandRespawnRecall.hpp" />
+    <ClInclude Include="CommandRevealLabels.hpp" />
+    <ClInclude Include="CommandRevealMap.hpp" />
+    <ClInclude Include="CommandRevealOtr.hpp" />
+    <ClInclude Include="CommandRewind.hpp" />
+    <ClInclude Include="CommandInputRid.hpp" />
+    <ClInclude Include="CommandRidInvite.hpp" />
+    <ClInclude Include="CommandRidJoin.hpp" />
+    <ClInclude Include="CommandRidProfile.hpp" />
+    <ClInclude Include="CommandRidSpectate.hpp" />
+    <ClInclude Include="CommandRootName.hpp" />
+    <ClInclude Include="CommandSavedPlace.hpp" />
+    <ClInclude Include="CommandSavedVehicle.hpp" />
+    <ClInclude Include="CommandSaveOutfit.hpp" />
+    <ClInclude Include="CommandSavePos.hpp" />
+    <ClInclude Include="CommandSavePosMe.hpp" />
+    <ClInclude Include="CommandSavePosWp.hpp" />
+    <ClInclude Include="CommandSavePv.hpp" />
+    <ClInclude Include="CommandSaveVehicle.hpp" />
+    <ClInclude Include="CommandScaleCam.hpp" />
+    <ClInclude Include="CommandScaleSpeed.hpp" />
+    <ClInclude Include="CommandSchemeKey.hpp" />
+    <ClInclude Include="CommandScorched.hpp" />
+    <ClInclude Include="CommandScreenshotMode.hpp" />
+    <ClInclude Include="CommandScript.hpp" />
+    <ClInclude Include="CommandScriptErrorRecovery.hpp" />
+    <ClInclude Include="CommandScriptHost.hpp" />
+    <ClInclude Include="CommandScriptHostLoop.hpp" />
+    <ClInclude Include="CommandScripts.hpp" />
+    <ClInclude Include="CommandScrollbar.hpp" />
+    <ClInclude Include="CommandScrollingPlateText.hpp" />
+    <ClInclude Include="CommandSeamless.hpp" />
+    <ClInclude Include="CommandSearch.hpp" />
+    <ClInclude Include="CommandSearchMenu.hpp" />
+    <ClInclude Include="CommandSearchPlayer.hpp" />
+    <ClInclude Include="CommandSeatglue.hpp" />
+    <ClInclude Include="CommandSelectBrackets.hpp" />
+    <ClInclude Include="CommandSelectControllerKey.hpp" />
+    <ClInclude Include="CommandSelectTag.hpp" />
+    <ClInclude Include="CommandSelfChatCommandsFriendsPerms.hpp" />
+    <ClInclude Include="CommandSellInPrivate.hpp" />
+    <ClInclude Include="CommandSendChatMessage.hpp" />
+    <ClInclude Include="CommandSessionBrowser.hpp" />
+    <ClInclude Include="CommandSessionBrowserRefresh.hpp" />
+    <ClInclude Include="CommandSessionBrowserSession.hpp" />
+    <ClInclude Include="CommandSessionCode.hpp" />
+    <ClInclude Include="CommandSessionCodeLink.hpp" />
+    <ClInclude Include="CommandSessionCodeJoin.hpp" />
+    <ClInclude Include="CommandSessionCodeView.hpp" />
+    <ClInclude Include="CommandSessionHopper.hpp" />
+    <ClInclude Include="CommandSessionScript.hpp" />
+    <ClInclude Include="CommandSessionScriptBb.hpp" />
+    <ClInclude Include="CommandSessionScriptBb2.hpp" />
+    <ClInclude Include="CommandSessionScriptBeast.hpp" />
+    <ClInclude Include="CommandSessionScriptChallenges.hpp" />
+    <ClInclude Include="CommandSessionScriptChallengesType.hpp" />
+    <ClInclude Include="CommandSessionScriptCpCollection.hpp" />
+    <ClInclude Include="CommandSessionScriptFmintro.hpp" />
+    <ClInclude Include="CommandSessionScriptPennedin.hpp" />
+    <ClInclude Include="CommandSessionScriptPennedinCagedin.hpp" />
+    <ClInclude Include="CommandSetCarClubRepLevel.hpp" />
+    <ClInclude Include="CommandSetFont.hpp" />
+    <ClInclude Include="CommandSetRank.hpp" />
+    <ClInclude Include="CommandShimnlObjectMgr.hpp" />
+    <ClInclude Include="CommandShimnlScriptHandlerMgr.hpp" />
+    <ClInclude Include="CommandShowAddressbar.hpp" />
+    <ClInclude Include="CommandShowInt.hpp" />
+    <ClInclude Include="CommandShowNavMesh.hpp" />
+    <ClInclude Include="CommandShowNavMeshNeighbors.hpp" />
+    <ClInclude Include="CommandShowNonuseronly.hpp" />
+    <ClInclude Include="CommandShowPedTasks.hpp" />
+    <ClInclude Include="CommandShowSliderBehaviour.hpp" />
+    <ClInclude Include="CommandShowTabLicon.hpp" />
+    <ClInclude Include="CommandShowTabName.hpp" />
+    <ClInclude Include="CommandShowTabRicon.hpp" />
+    <ClInclude Include="CommandShowTransitionState.hpp" />
+    <ClInclude Include="CommandShowTyping.hpp" />
+    <ClInclude Include="CommandSkipCutscene.hpp" />
+    <ClInclude Include="CommandSkipSwoop.hpp" />
+    <ClInclude Include="CommandSleekMinimap.hpp" />
+    <ClInclude Include="CommandSlider.hpp" />
+    <ClInclude Include="CommandSliderDynamic.hpp" />
+    <ClInclude Include="CommandSliderFloat.hpp" />
+    <ClInclude Include="CommandSliderPointer.hpp" />
+    <ClInclude Include="CommandSliderProximity.hpp" />
+    <ClInclude Include="CommandSliderRainbow.hpp" />
+    <ClInclude Include="CommandSliderScriptTick.hpp" />
+    <ClInclude Include="CommandCasinoSlots.hpp" />
+    <ClInclude Include="CommandSnake.hpp" />
+    <ClInclude Include="CommandSpawnAnyObject.hpp" />
+    <ClInclude Include="CommandSpawnedObject.hpp" />
+    <ClInclude Include="CommandSpawnObject.hpp" />
+    <ClInclude Include="CommandSpawnObjectBase.hpp" />
+    <ClInclude Include="CommandSpawnVehicle.hpp" />
+    <ClInclude Include="CommandSpCash.hpp" />
+    <ClInclude Include="CommandSpeedLimit.hpp" />
+    <ClInclude Include="CommandSpoof.hpp" />
+    <ClInclude Include="CommandSpoofClan.hpp" />
+    <ClInclude Include="CommandSpoofClanAlt.hpp" />
+    <ClInclude Include="CommandSpoofClanColour.hpp" />
+    <ClInclude Include="CommandSpoofClanId.hpp" />
+    <ClInclude Include="CommandSpoofClanMine.hpp" />
+    <ClInclude Include="CommandSpoofClanMotto.hpp" />
+    <ClInclude Include="CommandSpoofClanName.hpp" />
+    <ClInclude Include="CommandSpoofClanPreset.hpp" />
+    <ClInclude Include="CommandSpoofClanTag.hpp" />
+    <ClInclude Include="CommandSpoofClanToggle.hpp" />
+    <ClInclude Include="CommandSpoofedHost.hpp" />
+    <ClInclude Include="CommandSpoofedHostToken.hpp" />
+    <ClInclude Include="CommandSpoofedName.hpp" />
+    <ClInclude Include="CommandSpoofedNameFromHistory.hpp" />
+    <ClInclude Include="CommandSpoofHost.hpp" />
+    <ClInclude Include="CommandSpoofHostToken.hpp" />
+    <ClInclude Include="CommandSpoofKd.hpp" />
+    <ClInclude Include="CommandSpoofName.hpp" />
+    <ClInclude Include="CommandSpoofPresets.hpp" />
+    <ClInclude Include="CommandSpoofRank.hpp" />
+    <ClInclude Include="CommandSpoofSessionType.hpp" />
+    <ClInclude Include="CommandSpoofSlider.hpp" />
+    <ClInclude Include="CommandSpoofToggle.hpp" />
+    <ClInclude Include="CommandStandUserIdentification.hpp" />
+    <ClInclude Include="CommandStarredPlayers.hpp" />
+    <ClInclude Include="CommandStartSessionScript.hpp" />
+    <ClInclude Include="CommandStreamerSpoof.hpp" />
+    <ClInclude Include="CommandStreamingPos.hpp" />
+    <ClInclude Include="CommandStreamproof.hpp" />
+    <ClInclude Include="CommandSubCarAutoSwitch.hpp" />
+    <ClInclude Include="CommandSuperDrive.hpp" />
+    <ClInclude Include="CommandSuperFlight.hpp" />
+    <ClInclude Include="CommandSuperhandbrake.hpp" />
+    <ClInclude Include="CommandSuperJump.hpp" />
+    <ClInclude Include="CommandSuperRun.hpp" />
+    <ClInclude Include="CommandSuppressGenericResponsesCommandBox.hpp" />
+    <ClInclude Include="CommandSuppressGenericResponsesHotkey.hpp" />
+    <ClInclude Include="CommandSuppressNumpad7Messages.hpp" />
+    <ClInclude Include="CommandSvmBpOptim.hpp" />
+    <ClInclude Include="CommandSyntax.hpp" />
+    <ClInclude Include="CommandTab.hpp" />
+    <ClInclude Include="CommandTabComplete.hpp" />
+    <ClInclude Include="CommandTabGame.hpp" />
+    <ClInclude Include="CommandTabOnline.hpp" />
+    <ClInclude Include="CommandTabPlayers.hpp" />
+    <ClInclude Include="CommandTabs.hpp" />
+    <ClInclude Include="CommandTabsAlignment.hpp" />
+    <ClInclude Include="CommandTabSelf.hpp" />
+    <ClInclude Include="CommandTabsPos.hpp" />
+    <ClInclude Include="CommandTabStand.hpp" />
+    <ClInclude Include="CommandTabVehicle.hpp" />
+    <ClInclude Include="CommandTabWorld.hpp" />
+    <ClInclude Include="CommandTennisMode.hpp" />
+    <ClInclude Include="CommandTextBoxes.hpp" />
+    <ClInclude Include="CommandThermalVision.hpp" />
+    <ClInclude Include="CommandTimecycleMod.hpp" />
+    <ClInclude Include="CommandTimescale.hpp" />
+    <ClInclude Include="CommandTogglableBigmap.hpp" />
+    <ClInclude Include="CommandToggle.hpp" />
+    <ClInclude Include="CommandToggleableBehaviourScript.hpp" />
+    <ClInclude Include="CommandToggleAll.hpp" />
+    <ClInclude Include="CommandToggleBitflag.hpp" />
+    <ClInclude Include="CommandToggleBitPointer.hpp" />
+    <ClInclude Include="CommandToggleCustom.hpp" />
+    <ClInclude Include="CommandToggleEditionbound.hpp" />
+    <ClInclude Include="CommandToggleNoCorrelation.hpp" />
+    <ClInclude Include="CommandTogglePointer.hpp" />
+    <ClInclude Include="CommandToggleRegular.hpp" />
+    <ClInclude Include="CommandToggleRegularSp.hpp" />
+    <ClInclude Include="CommandToggleUltimate.hpp" />
+    <ClInclude Include="CommandTonk.hpp" />
+    <ClInclude Include="CommandTpGun.hpp" />
+    <ClInclude Include="CommandTrackedPlayers.hpp" />
+    <ClInclude Include="CommandTrafficColour.hpp" />
+    <ClInclude Include="CommandTrafficColourMain.hpp" />
+    <ClInclude Include="CommandTrafficDisable.hpp" />
+    <ClInclude Include="CommandTrafficLod.hpp" />
+    <ClInclude Include="CommandTrafficModelFlag.hpp" />
+    <ClInclude Include="CommandTrains.hpp" />
+    <ClInclude Include="CommandTransformModel.hpp" />
+    <ClInclude Include="CommandTransitionHelper.hpp" />
+    <ClInclude Include="CommandTriggerBot.hpp" />
+    <ClInclude Include="CommandTriggerRac2.hpp" />
+    <ClInclude Include="CommandTune.hpp" />
+    <ClInclude Include="CommandTypingPosClosed.hpp" />
+    <ClInclude Include="CommandTypingPosOpen.hpp" />
+    <ClInclude Include="CommandUndoTp.hpp" />
+    <ClInclude Include="CommandUnload.hpp" />
+    <ClInclude Include="CommandUnlockCasino.hpp" />
+    <ClInclude Include="CommandUnrestrictCam.hpp" />
+    <ClInclude Include="CommandUntune.hpp" />
+    <ClInclude Include="CommandVehBulletproofTyres.hpp" />
+    <ClInclude Include="CommandVehcolour.hpp" />
+    <ClInclude Include="CommandVehcolourNeons.hpp" />
+    <ClInclude Include="CommandVehcolourPrimary.hpp" />
+    <ClInclude Include="CommandVehcolourSecondary.hpp" />
+    <ClInclude Include="CommandVehcolourTire.hpp" />
+    <ClInclude Include="CommandVehDoorOpen.hpp" />
+    <ClInclude Include="CommandVehDriftTyres.hpp" />
+    <ClInclude Include="CommandVehfinish.hpp" />
+    <ClInclude Include="CommandVehFollow.hpp" />
+    <ClInclude Include="CommandVehGod.hpp" />
+    <ClInclude Include="CommandVehicle.hpp" />
+    <ClInclude Include="CommandVehicleDestroy.hpp" />
+    <ClInclude Include="CommandVehicleExtra.hpp" />
+    <ClInclude Include="CommandVehicleGravityMultiplier.hpp" />
+    <ClInclude Include="CommandVehicleHeadlightsIntensity.hpp" />
+    <ClInclude Include="CommandVehicleModelFlag.hpp" />
+    <ClInclude Include="CommandVehicleNoCollision.hpp" />
+    <ClInclude Include="CommandVehicleParachuteModel.hpp" />
+    <ClInclude Include="CommandVehInvisibility.hpp" />
+    <ClInclude Include="CommandVehmodBool.hpp" />
+    <ClInclude Include="CommandVehmodInt.hpp" />
+    <ClInclude Include="CommandVisualZCorrection.hpp" />
+    <ClInclude Include="CommandWait.hpp" />
+    <ClInclude Include="CommandWalkStyle.hpp" />
+    <ClInclude Include="CommandWalletHopper.hpp" />
+    <ClInclude Include="CommandWanted.hpp" />
+    <ClInclude Include="CommandWantedLock.hpp" />
+    <ClInclude Include="CommandWardrobe.hpp" />
+    <ClInclude Include="CommandWaterHeight.hpp" />
+    <ClInclude Include="CommandWaterOpacityDifferential.hpp" />
+    <ClInclude Include="CommandWaterStrengthOverride.hpp" />
+    <ClInclude Include="CommandWaterWalk.hpp" />
+    <ClInclude Include="CommandWaterWaveBehaviour.hpp" />
+    <ClInclude Include="CommandWaterwheels.hpp" />
+    <ClInclude Include="CommandWaypointPortal.hpp" />
+    <ClInclude Include="CommandWeaponRange.hpp" />
+    <ClInclude Include="CommandWeaponTint.hpp" />
+    <ClInclude Include="CommandWebOpen.hpp" />
+    <ClInclude Include="CommandCasinoWheel.hpp" />
+    <ClInclude Include="CommandWheelType.hpp" />
+    <ClInclude Include="CommandWindowTint.hpp" />
+    <ClInclude Include="CommandWithdraw.hpp" />
+    <ClInclude Include="CommandWithEntityPreview.hpp" />
+    <ClInclude Include="CommandWithOnTickFocused.hpp" />
+    <ClInclude Include="CommandWorldBorder.hpp" />
+    <ClInclude Include="CommandWorldDoors.hpp" />
+    <ClInclude Include="CommandWorldEditor.hpp" />
+    <ClInclude Include="CommandWorldEditorFreecam.hpp" />
+    <ClInclude Include="CommandWorldState.hpp" />
+    <ClInclude Include="CommandYeet.hpp" />
+    <ClInclude Include="Config.hpp" />
+    <ClInclude Include="ConfigHotkeys.hpp" />
+    <ClInclude Include="ConfigMetaState.hpp" />
+    <ClInclude Include="ConfigSimple.hpp" />
+    <ClInclude Include="ConfigState.hpp" />
+    <ClInclude Include="ConfigTree.hpp" />
+    <ClInclude Include="ConfigTreeSimple.hpp" />
+    <ClInclude Include="conf.hpp" />
+    <ClInclude Include="ContextMenu.hpp" />
+    <ClInclude Include="ControllerInputConfig.hpp" />
+    <ClInclude Include="ControlMgr.hpp" />
+    <ClInclude Include="CPathFind.hpp" />
+    <ClInclude Include="CPedHeadBlendData.hpp" />
+    <ClInclude Include="CPickup.hpp" />
+    <ClInclude Include="CPlayerInfo.hpp" />
+    <ClInclude Include="create_colour_with_rainbow.hpp" />
+    <ClInclude Include="create_rainbow.hpp" />
+    <ClInclude Include="crossmap.hpp" />
+    <ClInclude Include="CustomisationData.hpp" />
+    <ClInclude Include="CustomisationIo.hpp" />
+    <ClInclude Include="CVehicleFactory.hpp" />
+    <ClInclude Include="CVehicleModelInfo.hpp" />
+    <ClInclude Include="CWeaponModelInfo.hpp" />
+    <ClInclude Include="datBase.hpp" />
+    <ClInclude Include="datBitBuffer.hpp" />
+    <ClInclude Include="tbDeceiveInteriorChecks.hpp" />
+    <ClInclude Include="dedsec_hacks.hpp" />
+    <ClInclude Include="DetourHook.hpp" />
+    <ClInclude Include="Direction.hpp" />
+    <ClInclude Include="DirectPacket.hpp" />
+    <ClInclude Include="tbDisableDeathbarriers.hpp" />
+    <ClInclude Include="DisableDripfeed.hpp" />
+    <ClInclude Include="distance_sort.hpp" />
+    <ClInclude Include="DlcMgr.hpp" />
+    <ClInclude Include="dlDrawListMgr.hpp" />
+    <ClInclude Include="drawDebugText.hpp" />
+    <ClInclude Include="DrawUtil3d.hpp" />
+    <ClInclude Include="DrivingStyle.hpp" />
+    <ClInclude Include="dx_common.hpp" />
+    <ClInclude Include="eBlip.hpp" />
+    <ClInclude Include="eExplosionTag.hpp" />
+    <ClInclude Include="netMessageId.hpp" />
+    <ClInclude Include="ensure_folder.hpp" />
+    <ClInclude Include="EntityType.hpp" />
+    <ClInclude Include="ErrorCommons.hpp" />
+    <ClInclude Include="evtEvent.hpp" />
+    <ClInclude Include="EventAggregation.hpp" />
+    <ClInclude Include="EventDispatcher.hpp" />
+    <ClInclude Include="EventLabel.hpp" />
+    <ClInclude Include="EventTally.hpp" />
+    <ClInclude Include="Exceptional.hpp" />
+    <ClInclude Include="gta_extensible.hpp" />
+    <ClInclude Include="extract_delimited_string_with_escaping.hpp" />
+    <ClInclude Include="FiberPool.hpp" />
+    <ClInclude Include="Firemangr.hpp" />
+    <ClInclude Include="FixedVector.hpp" />
+    <ClInclude Include="FlowEvent.hpp" />
+    <ClInclude Include="FlowEventReaction.hpp" />
+    <ClInclude Include="FmBanner.hpp" />
+    <ClInclude Include="fmt_arg.hpp" />
+    <ClInclude Include="font_nanumgothic.hpp" />
+    <ClInclude Include="font_yahei.hpp" />
+    <ClInclude Include="force_door_open.hpp" />
+    <ClInclude Include="format_duration.hpp" />
+    <ClInclude Include="format_time_since_1970_for_user_locale.hpp" />
+    <ClInclude Include="tbFreecam.hpp" />
+    <ClInclude Include="free_movement.hpp" />
+    <ClInclude Include="function_types.hpp" />
+    <ClInclude Include="fwddecl.hpp" />
+    <ClInclude Include="GamerIdentifier.hpp" />
+    <ClInclude Include="gameSkeleton.hpp" />
+    <ClInclude Include="GameToaster.hpp" />
+    <ClInclude Include="get_current_time_millis.hpp" />
+    <ClInclude Include="get_display_names.hpp" />
+    <ClInclude Include="get_ground_z.hpp" />
+    <ClInclude Include="get_next_arg.hpp" />
+    <ClInclude Include="get_root_list.hpp" />
+    <ClInclude Include="get_seconds_since_unix_epoch.hpp" />
+    <ClInclude Include="get_vehicle_display_name.hpp" />
+    <ClInclude Include="Grid.hpp" />
+    <ClInclude Include="GridItem.hpp" />
+    <ClInclude Include="GridItemAddressbar.hpp" />
+    <ClInclude Include="GridItemColourBox.hpp" />
+    <ClInclude Include="GridItemColourBoxBordered.hpp" />
+    <ClInclude Include="GridItemHeader.hpp" />
+    <ClInclude Include="GridItemHeaderAnimation.hpp" />
+    <ClInclude Include="GridItemHeaderLoading.hpp" />
+    <ClInclude Include="GridItemList.hpp" />
+    <ClInclude Include="GridItemNotify.hpp" />
+    <ClInclude Include="GridItemPrimaryText.hpp" />
+    <ClInclude Include="GridItemScrollbar.hpp" />
+    <ClInclude Include="GridItemTabsHorizontal.hpp" />
+    <ClInclude Include="GridItemTabsVertical.hpp" />
+    <ClInclude Include="GridItemText.hpp" />
+    <ClInclude Include="GridItemCommandboxInput.hpp" />
+    <ClInclude Include="GridItemTextBigCentre.hpp" />
+    <ClInclude Include="GridItemTextBigCentreBordered.hpp" />
+    <ClInclude Include="GridItemType.hpp" />
+    <ClInclude Include="GridToaster.hpp" />
+    <ClInclude Include="grmShaderGroup.hpp" />
+    <ClInclude Include="gsType.hpp" />
+    <ClInclude Include="gta_cards.hpp" />
+    <ClInclude Include="gta_custom_shader_effect.hpp" />
+    <ClInclude Include="gta_draw_handler.hpp" />
+    <ClInclude Include="gta_entity.hpp" />
+    <ClInclude Include="gta_event.hpp" />
+    <ClInclude Include="gta_fwddecl.hpp" />
+    <ClInclude Include="snet_messages.hpp" />
+    <ClInclude Include="gta_http.hpp" />
+    <ClInclude Include="gta_input.hpp" />
+    <ClInclude Include="gta_matchmaking.hpp" />
+    <ClInclude Include="gta_metrics.hpp" />
+    <ClInclude Include="gta_net_game_event.hpp" />
+    <ClInclude Include="gta_net_object_mgr.hpp" />
+    <ClInclude Include="gta_node_list.hpp" />
+    <ClInclude Include="gta_nonphysicalplayerdata.hpp" />
+    <ClInclude Include="gta_ped.hpp" />
+    <ClInclude Include="gta_player.hpp" />
+    <ClInclude Include="gta_pools.hpp" />
+    <ClInclude Include="gta_replayinterface.hpp" />
+    <ClInclude Include="gta_script_resource.hpp" />
+    <ClInclude Include="gta_task.hpp" />
+    <ClInclude Include="gta_vehicle.hpp" />
+    <ClInclude Include="gta_world_state.hpp" />
+    <ClInclude Include="Gui.hpp" />
+    <ClInclude Include="GunPunishments.hpp" />
+    <ClInclude Include="hashtype.hpp" />
+    <ClInclude Include="HistoricPlayer.hpp" />
+    <ClInclude Include="homoglyphs.hpp" />
+    <ClInclude Include="Hooking.hpp" />
+    <ClInclude Include="evtHostChangeEvent.hpp" />
+    <ClInclude Include="Hotkey.hpp" />
+    <ClInclude Include="HttpRequestBuilder.hpp" />
+    <ClInclude Include="HudColour.hpp" />
+    <ClInclude Include="huddecl.hpp" />
+    <ClInclude Include="hud_component.hpp" />
+    <ClInclude Include="ida_decl.hpp" />
+    <ClInclude Include="IncrementableStat.hpp" />
+    <ClInclude Include="indirect_crossmap.hpp" />
+    <ClInclude Include="input.hpp" />
+    <ClInclude Include="InstructionalButtonId.hpp" />
+    <ClInclude Include="ipls.hpp" />
+    <ClInclude Include="is_number_char.hpp" />
+    <ClInclude Include="is_rid.hpp" />
+    <ClInclude Include="is_session.hpp" />
+    <ClInclude Include="atStringHash.hpp" />
+    <ClInclude Include="joaatToString.hpp" />
+    <ClInclude Include="JoinUtil.hpp" />
+    <ClInclude Include="Label.hpp" />
+    <ClInclude Include="lang.hpp" />
+    <ClInclude Include="LangData.hpp" />
+    <ClInclude Include="LangId.hpp" />
+    <ClInclude Include="LeaveNotifications.hpp" />
+    <ClInclude Include="LeaveReasons.hpp" />
+    <ClInclude Include="tbLoadingSessionDetails.hpp" />
+    <ClInclude Include="FileLogger.hpp" />
+    <ClInclude Include="LuaConfig.hpp" />
+    <ClInclude Include="LuaResourceMap.hpp" />
+    <ClInclude Include="luaS_push.hpp" />
+    <ClInclude Include="main.hpp" />
+    <ClInclude Include="ManagedTunables.hpp" />
+    <ClInclude Include="MapUtil.hpp" />
+    <ClInclude Include="Matchmaking.hpp" />
+    <ClInclude Include="MatchmakingConfig.hpp" />
+    <ClInclude Include="rl_matching.hpp" />
+    <ClInclude Include="MenuGrid.hpp" />
+    <ClInclude Include="MenuKey.hpp" />
+    <ClInclude Include="Metrics.hpp" />
+    <ClInclude Include="Mixed.hpp" />
+    <ClInclude Include="MouseMode.hpp" />
+    <ClInclude Include="MsgTextMessage.hpp" />
+    <ClInclude Include="MyAllocator.hpp" />
+    <ClInclude Include="mystackwalker.hpp" />
+    <ClInclude Include="Names.hpp" />
+    <ClInclude Include="name_validation.hpp" />
+    <ClInclude Include="natives.hpp" />
+    <ClInclude Include="natives_decl.hpp" />
+    <ClInclude Include="NativeTableHooks.hpp" />
+    <ClInclude Include="NativeCallContext.hpp" />
+    <ClInclude Include="native_tables.hpp" />
+    <ClInclude Include="netComplaintMsg.hpp" />
+    <ClInclude Include="netGameEventId.hpp" />
+    <ClInclude Include="netGamePresenceEvent.hpp" />
+    <ClInclude Include="netHardware.hpp" />
+    <ClInclude Include="netIpAddress.hpp" />
+    <ClInclude Include="netLoggingInterface.hpp" />
+    <ClInclude Include="NetLoggingInterfaceShim.hpp" />
+    <ClInclude Include="netMessage.hpp" />
+    <ClInclude Include="netMessageText.hpp" />
+    <ClInclude Include="NetworkObjectTypes.hpp" />
+    <ClInclude Include="netPeerAddress.hpp" />
+    <ClInclude Include="netPeerId.hpp" />
+    <ClInclude Include="netSocketAddress.hpp" />
+    <ClInclude Include="netTask.hpp" />
+    <ClInclude Include="Spinlock.hpp" />
+    <ClInclude Include="NotifyGrid.hpp" />
+    <ClInclude Include="NuancedEvent.hpp" />
+    <ClInclude Include="NuancedEventWithExtraData.hpp" />
+    <ClInclude Include="nullsub.hpp" />
+    <ClInclude Include="joaat_hash_db.hpp" />
+    <ClInclude Include="OnlineVersion.hpp" />
+    <ClInclude Include="ColoadMgr.hpp" />
+    <ClInclude Include="outfit_data.hpp" />
+    <ClInclude Include="PackageMgr.hpp" />
+    <ClInclude Include="ParachuteModels.hpp" />
+    <ClInclude Include="parse_coord.hpp" />
+    <ClInclude Include="PathFind.hpp" />
+    <ClInclude Include="PatternBatch.hpp" />
+    <ClInclude Include="PedBoneId.hpp" />
+    <ClInclude Include="PedModel.hpp" />
+    <ClInclude Include="PedType.hpp" />
+    <ClInclude Include="PeHeader.hpp" />
+    <ClInclude Include="PersonalVehicle.hpp" />
+    <ClInclude Include="PersonalVehicleCustomisationIo.hpp" />
+    <ClInclude Include="pgBase.hpp" />
+    <ClInclude Include="pgDictionary.hpp" />
+    <ClInclude Include="phArchetype.hpp" />
+    <ClInclude Include="PickupManager.hpp" />
+    <ClInclude Include="Place.hpp" />
+    <ClInclude Include="PlaceBlip.hpp" />
+    <ClInclude Include="PlaceBlipSimple.hpp" />
+    <ClInclude Include="PlaceClipboard.hpp" />
+    <ClInclude Include="PlaceObjective.hpp" />
+    <ClInclude Include="PlaceSimple.hpp" />
+    <ClInclude Include="PlaceSingle3d.hpp" />
+    <ClInclude Include="PlayerClassifier.hpp" />
+    <ClInclude Include="PlayerHistory.hpp" />
+    <ClInclude Include="PlayerHistoryPacket.hpp" />
+    <ClInclude Include="evtPlayerJoinEvent.hpp" />
+    <ClInclude Include="evtPlayerLeaveEvent.hpp" />
+    <ClInclude Include="PlayerListSort.hpp" />
+    <ClInclude Include="PlayerProvider.hpp" />
+    <ClInclude Include="PlayerProviderAll.hpp" />
+    <ClInclude Include="PlayerProviderSingle.hpp" />
+    <ClInclude Include="PlayerScope.hpp" />
+    <ClInclude Include="PlayerType.hpp" />
+    <ClInclude Include="player_tags.hpp" />
+    <ClInclude Include="PointerCache.hpp" />
+    <ClInclude Include="pointers.hpp" />
+    <ClInclude Include="Pong.hpp" />
+    <ClInclude Include="Position2d.hpp" />
+    <ClInclude Include="tbPositionSelection.hpp" />
+    <ClInclude Include="PositionState.hpp" />
+    <ClInclude Include="PositionStateVehData.hpp" />
+    <ClInclude Include="PositionStateWithCam.hpp" />
+    <ClInclude Include="PosRot.hpp" />
+    <ClInclude Include="fwProfanityFilter.hpp" />
+    <ClInclude Include="TimedCall.hpp" />
+    <ClInclude Include="eEntityType.hpp" />
+    <ClInclude Include="paused.hpp" />
+    <ClInclude Include="punishments.hpp" />
+    <ClInclude Include="radio_stations.hpp" />
+    <ClInclude Include="RateLimit.hpp" />
+    <ClInclude Include="GhostDriver.hpp" />
+    <ClInclude Include="RecursiveSpinlock.hpp" />
+    <ClInclude Include="RecursiveScopedSpinlock.hpp" />
+    <ClInclude Include="fwRefAwareBase.hpp" />
+    <ClInclude Include="regular_event.hpp" />
+    <ClInclude Include="RelayCon.hpp" />
+    <ClInclude Include="RemoteGamer.hpp" />
+    <ClInclude Include="Renderer.hpp" />
+    <ClInclude Include="tbReticle.hpp" />
+    <ClInclude Include="reversible_scramble.hpp" />
+    <ClInclude Include="rlRosCredentials.hpp" />
+    <ClInclude Include="rlGamerHandle.hpp" />
+    <ClInclude Include="rlGamerId.hpp" />
+    <ClInclude Include="rlGamerInfo.hpp" />
+    <ClInclude Include="rlGetGamerStateTask.hpp" />
+    <ClInclude Include="rlPeerInfo.hpp" />
+    <ClInclude Include="rlPresenceEvent.hpp" />
+    <ClInclude Include="rlSessionInfo.hpp" />
+    <ClInclude Include="netStatus.hpp" />
+    <ClInclude Include="rlTaskBase.hpp" />
+    <ClInclude Include="rockstar_admins.hpp" />
+    <ClInclude Include="RootNameMgr.hpp" />
+    <ClInclude Include="RsonWriter.hpp" />
+    <ClInclude Include="Sanity.hpp" />
+    <ClInclude Include="ScAccount.hpp" />
+    <ClInclude Include="Scaleform.hpp" />
+    <ClInclude Include="tbScreenshotMode.hpp" />
+    <ClInclude Include="Script.hpp" />
+    <ClInclude Include="ScriptErrorRecoveryMode.hpp" />
+    <ClInclude Include="ScriptEventTaxonomy.hpp" />
+    <ClInclude Include="ScriptFuncPatch.hpp" />
+    <ClInclude Include="ScriptVmErrorHandling.hpp" />
+    <ClInclude Include="ScriptVmOpCode.hpp" />
+    <ClInclude Include="script_events.hpp" />
+    <ClInclude Include="script_func.hpp" />
+    <ClInclude Include="ScriptGlobal.hpp" />
+    <ClInclude Include="script_handler.hpp" />
+    <ClInclude Include="script_id.hpp" />
+    <ClInclude Include="ScriptLocal.hpp" />
+    <ClInclude Include="ScriptMgr.hpp" />
+    <ClInclude Include="script_packets.hpp" />
+    <ClInclude Include="script_program.hpp" />
+    <ClInclude Include="script_thread.hpp" />
+    <ClInclude Include="script_vm_common.hpp" />
+    <ClInclude Include="script_vm_reimpl.hpp" />
+    <ClInclude Include="scrNativeCallContext.hpp" />
+    <ClInclude Include="scrNativeRegistrationTable.hpp" />
+    <ClInclude Include="sc_presence_attributes.hpp" />
+    <ClInclude Include="Session.hpp" />
+    <ClInclude Include="SessionAttributes.hpp" />
+    <ClInclude Include="SessionSpoofing.hpp" />
+    <ClInclude Include="SessionType.hpp" />
+    <ClInclude Include="session_code_cache.hpp" />
+    <ClInclude Include="snEvent.hpp" />
+    <ClInclude Include="gta_session_tasks.hpp" />
+    <ClInclude Include="tbStareAtSky.hpp" />
+    <ClInclude Include="StateSaver.hpp" />
+    <ClInclude Include="StatUtil.hpp" />
+    <ClInclude Include="str2int.hpp" />
+    <ClInclude Include="StringCastable.hpp" />
+    <ClInclude Include="StringUtils.hpp" />
+    <ClInclude Include="struct_base.hpp" />
+    <ClInclude Include="synctree_player.hpp" />
+    <ClInclude Include="SyncType.hpp" />
+    <ClInclude Include="sysCriticalSection.hpp" />
+    <ClInclude Include="sysMemSimpleAllocator.hpp" />
+    <ClInclude Include="TargetingData.hpp" />
+    <ClInclude Include="eTaskType.hpp" />
+    <ClInclude Include="TcpConnection.hpp" />
+    <ClInclude Include="tbTempEmptyParachute.hpp" />
+    <ClInclude Include="Textbox.hpp" />
+    <ClInclude Include="TextColour.hpp" />
+    <ClInclude Include="TextSettings.hpp" />
+    <ClInclude Include="Texture.hpp" />
+    <ClInclude Include="TextureArray.hpp" />
+    <ClInclude Include="TextureBase.hpp" />
+    <ClInclude Include="TextureDynamic.hpp" />
+    <ClInclude Include="ThreadContext.hpp" />
+    <ClInclude Include="TickMgr.hpp" />
+    <ClInclude Include="TickQueues.hpp" />
+    <ClInclude Include="TimedText.hpp" />
+    <ClInclude Include="TimedTextCollection.hpp" />
+    <ClInclude Include="TimedTextPresenter.hpp" />
+    <ClInclude Include="TimeOfDay.hpp" />
+    <ClInclude Include="timescale.hpp" />
+    <ClInclude Include="tlsContext.hpp" />
+    <ClInclude Include="ToastConfig.hpp" />
+    <ClInclude Include="Toaster.hpp" />
+    <ClInclude Include="tbToggleableBehaviour.hpp" />
+    <ClInclude Include="ToggleableBehaviourIpl.hpp" />
+    <ClInclude Include="tbToggleableBehaviourScript.hpp" />
+    <ClInclude Include="ToggleCorrelation.hpp" />
+    <ClInclude Include="TpUtil.hpp" />
+    <ClInclude Include="TransactionQueue.hpp" />
+    <ClInclude Include="TranscendentVehicle.hpp" />
+    <ClInclude Include="evtTransitionFinishedEvent.hpp" />
+    <ClInclude Include="TransitionHelper.hpp" />
+    <ClInclude Include="TransitionState.hpp" />
+    <ClInclude Include="typedecl.hpp" />
+    <ClInclude Include="UnicodePrivateUse.hpp" />
+    <ClInclude Include="UniqueThread.hpp" />
+    <ClInclude Include="unrestrictGameplayCam.hpp" />
+    <ClInclude Include="UserScript.hpp" />
+    <ClInclude Include="using_model.hpp" />
+    <ClInclude Include="Util.hpp" />
+    <ClInclude Include="validate_file_name.hpp" />
+    <ClInclude Include="vector.hpp" />
+    <ClInclude Include="Vector2Plus.hpp" />
+    <ClInclude Include="VectorMap.hpp" />
+    <ClInclude Include="VehicleColour.hpp" />
+    <ClInclude Include="VehicleCustomisationIo.hpp" />
+    <ClInclude Include="VehicleEntityCustomisationIo.hpp" />
+    <ClInclude Include="VehicleModelFlags.hpp" />
+    <ClInclude Include="VehicleMods.hpp" />
+    <ClInclude Include="vehicle_colours.hpp" />
+    <ClInclude Include="vehicle_items.hpp" />
+    <ClInclude Include="visual_settings.hpp" />
+    <ClInclude Include="vk_string_map.hpp" />
+    <ClInclude Include="WaterQuad.hpp" />
+    <ClInclude Include="WeaponLoadout.hpp" />
+    <ClInclude Include="WeaponLoadoutTree.hpp" />
+    <ClInclude Include="WeaponMgr.hpp" />
+    <ClInclude Include="weapons.hpp" />
+    <ClInclude Include="weapon_components.hpp" />
+    <ClInclude Include="weather_names.hpp" />
+    <ClInclude Include="Whitelist.hpp" />
+    <ClInclude Include="Worker.hpp" />
+    <ClInclude Include="WorldState.hpp" />
+    <ClInclude Include="XoredNativeHash.hpp" />
+    <ClInclude Include="xormagics.hpp" />
+    <ClInclude Include="yeet_flow.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractEntity.cpp" />
+    <ClCompile Include="AbstractModel.cpp" />
+    <ClCompile Include="AbstractPlayer.cpp" />
+    <ClCompile Include="AbstractRenderer.cpp" />
+    <ClCompile Include="AddressGamers.cpp" />
+    <ClCompile Include="aiTaskTree.cpp" />
+    <ClCompile Include="AllEntitiesEveryTick.cpp" />
+    <ClCompile Include="Animations.cpp" />
+    <ClCompile Include="AntiAntiCheat.cpp" />
+    <ClCompile Include="AntiDbg.cpp" />
+    <ClCompile Include="AntiEntitySpam.cpp" />
+    <ClCompile Include="apply_spoofed_name.cpp" />
+    <ClCompile Include="AptHelper.cpp" />
+    <ClCompile Include="AttackerMgr.cpp" />
+    <ClCompile Include="BattlEyeServer.cpp" />
+    <ClCompile Include="be_delegate.cpp" />
+    <ClCompile Include="BgScript.cpp" />
+    <ClCompile Include="BodyguardMgr.cpp" />
+    <ClCompile Include="CDrivebyWeaponGroup.cpp" />
+    <ClCompile Include="ChainedVehicleMgr.cpp" />
+    <ClCompile Include="ChatHistory.cpp" />
+    <ClCompile Include="CNetworkAssetVerifier.cpp" />
+    <ClCompile Include="CodeIntegrity.cpp" />
+    <ClCompile Include="CollectablesGiver.cpp" />
+    <ClCompile Include="CommandAttackerPresets.cpp" />
+    <ClCompile Include="CommandBlipTags.cpp" />
+    <ClCompile Include="CommandBombTrajectory.cpp" />
+    <ClCompile Include="CommandCanvas.cpp" />
+    <ClCompile Include="CommandChatGadget.cpp" />
+    <ClCompile Include="CommandAutoDriveAction.cpp" />
+    <ClCompile Include="CommandDisableInVehicleHairScale.cpp" />
+    <ClCompile Include="CommandDisablePhone.cpp" />
+    <ClCompile Include="CommandDisableWantedLevelMusic.hpp" />
+    <ClCompile Include="CommandDlcpacks.cpp" />
+    <ClCompile Include="CommandDriveOnWater.cpp" />
+    <ClCompile Include="CommandForceRelay.cpp" />
+    <ClCompile Include="CommandFullPlayerList.cpp" />
+    <ClCompile Include="CommandHairHighlight.cpp" />
+    <ClCompile Include="CommandHistoricPlayerSession.cpp" />
+    <ClCompile Include="CommandHistoricPlayerStats.cpp" />
+    <ClCompile Include="CommandHistoryTransInvite.cpp" />
+    <ClCompile Include="CommandLaserSights.cpp" />
+    <ClCompile Include="CommandListActionCategory.cpp" />
+    <ClCompile Include="CommandListAnalogue.cpp" />
+    <ClCompile Include="CommandListAnimations.cpp" />
+    <ClCompile Include="CommandListAssetHashes.cpp" />
+    <ClCompile Include="CommandListLockWeapons.cpp" />
+    <ClCompile Include="CommandListMental.cpp" />
+    <ClCompile Include="CommandListOfSpawnedVehicles.cpp" />
+    <ClCompile Include="CommandListSelectDrivingMode.cpp" />
+    <ClCompile Include="CommandListSelectVehicleModel.cpp" />
+    <ClCompile Include="CommandListSession.cpp" />
+    <ClCompile Include="CommandListSessionMember.cpp" />
+    <ClCompile Include="CommandListStatEditor.cpp" />
+    <ClCompile Include="CommandListTutorial.cpp" />
+    <ClCompile Include="CommandListWeaponComponents.cpp" />
+    <ClCompile Include="CommandLockOnToAllVehicles.cpp" />
+    <ClCompile Include="CommandLua.cpp" />
+    <ClCompile Include="CommandMoveFreedom.cpp" />
+    <ClCompile Include="CommandNoBeast.cpp" />
+    <ClCompile Include="CommandNoLscBarriers.cpp" />
+    <ClCompile Include="CommandPlayerBoxEsp.hpp" />
+    <ClCompile Include="CommandPlayerKickPoolsClosed.cpp" />
+    <ClCompile Include="CommandQuickCtx.cpp" />
+    <ClCompile Include="CommandRestartfm.cpp" />
+    <ClCompile Include="CommandRidTools.cpp" />
+    <ClCompile Include="CommanDrunkMode.cpp" />
+    <ClCompile Include="CommandSaveCommandBoxPreset.cpp" />
+    <ClCompile Include="CommandSessionBrowserSession.cpp" />
+    <ClCompile Include="CommandSetGameLanguage.cpp" />
+    <ClCompile Include="CommandShowArraySynchProgress.cpp" />
+    <ClCompile Include="CommandShowTransitionState.cpp" />
+    <ClCompile Include="CommandSpawnedVehicleEntry.cpp" />
+    <ClCompile Include="CommandSpecialFlight.cpp" />
+    <ClCompile Include="CommandStandardGameVehicleColour.cpp" />
+    <ClCompile Include="CommandStatDate.cpp" />
+    <ClCompile Include="CommandStatPos.cpp" />
+    <ClCompile Include="CommandThousandsSep.cpp" />
+    <ClCompile Include="common.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ComponentGpu.cpp" />
+    <ClCompile Include="ComponentOverflowPatch.cpp" />
+    <ClCompile Include="CPedIntelligence.cpp" />
+    <ClCompile Include="CrossState.cpp" />
+    <ClCompile Include="CustomDlcMgr.cpp" />
+    <ClCompile Include="ComponentSpoofPos.cpp" />
+    <ClCompile Include="CViewportManager.cpp" />
+    <ClCompile Include="DrivebyCommons.cpp" />
+    <ClCompile Include="evtChatEvent.cpp" />
+    <ClCompile Include="CommandHistoryIp.cpp" />
+    <ClCompile Include="CommandHistoryAction.cpp" />
+    <ClCompile Include="CommandListPatches.cpp" />
+    <ClCompile Include="CommandPlayerMuggerLoop.cpp" />
+    <ClCompile Include="CommandQuickProgress.cpp" />
+    <ClCompile Include="CommandSavedata.cpp" />
+    <ClCompile Include="CommandTrnsSpdupBroadcast.cpp" />
+    <ClCompile Include="ComponentCrash.cpp" />
+    <ClCompile Include="ComponentDrawPatch.cpp" />
+    <ClCompile Include="ComponentSavedata.cpp" />
+    <ClCompile Include="ConsoleLogger.cpp" />
+    <ClCompile Include="CTunables.cpp" />
+    <ClCompile Include="ExecCtx.cpp" />
+    <ClCompile Include="FeatureCanvasDirect.cpp" />
+    <ClCompile Include="FeatureCanvasWindow.cpp" />
+    <ClCompile Include="font_bevietnamprolight_1.cpp" />
+    <ClCompile Include="fwRefAwareBase.cpp" />
+    <ClCompile Include="GarbageCollector.cpp" />
+    <ClCompile Include="gta_ped.cpp" />
+    <ClCompile Include="is_rid.cpp" />
+    <ClCompile Include="lang_it.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_ja.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_vi.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="PubSubClient.cpp" />
+    <ClCompile Include="scaleform_gfx.cpp" />
+    <ClCompile Include="gta_task.cpp" />
+    <ClCompile Include="gta_textchat.cpp" />
+    <ClCompile Include="gta_vehicle.cpp" />
+    <ClCompile Include="gta_vehicle_layout.cpp" />
+    <ClCompile Include="IceQueen.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="lua_memory.cpp" />
+    <ClCompile Include="lua_native_invoker.cpp" />
+    <ClCompile Include="lua_profiling.cpp" />
+    <ClCompile Include="NativeTableHooksBuiltin.cpp" />
+    <ClCompile Include="netAddress.cpp" />
+    <ClCompile Include="netConnection.cpp" />
+    <ClCompile Include="netConnectionManager.cpp" />
+    <ClCompile Include="netEndpoint.cpp" />
+    <ClCompile Include="OrgHelper.cpp" />
+    <ClCompile Include="PackageInstallTask.cpp" />
+    <ClCompile Include="PackageRepository.cpp" />
+    <ClCompile Include="PackageRepositoryFetchTask.cpp" />
+    <ClCompile Include="PlayerExcludes.cpp" />
+    <ClCompile Include="player_tags.cpp" />
+    <ClCompile Include="PointerNames.cpp" />
+    <ClCompile Include="RageConnector.cpp" />
+    <ClCompile Include="RemoteStats.cpp" />
+    <ClCompile Include="ResourceMgr.cpp" />
+    <ClCompile Include="ScriptHostUtil.cpp" />
+    <ClCompile Include="script_id.cpp" />
+    <ClCompile Include="ScUtil.cpp" />
+    <ClCompile Include="set_aim_mode.cpp" />
+    <ClCompile Include="sgnParseState.cpp" />
+    <ClCompile Include="SharedNativeHooks.cpp" />
+    <ClCompile Include="SpinlockBase.cpp" />
+    <ClCompile Include="Stat.cpp" />
+    <ClCompile Include="String2Hash.cpp" />
+    <ClCompile Include="TabCompletionProvider.cpp" />
+    <ClCompile Include="tbArSpinner.cpp" />
+    <ClCompile Include="AsiMod.cpp" />
+    <ClCompile Include="asi_api.cpp" />
+    <ClCompile Include="as_fraction.cpp" />
+    <ClCompile Include="AtomicString.cpp" />
+    <ClCompile Include="Auth.cpp" />
+    <ClCompile Include="BackgroundBlur.cpp" />
+    <ClCompile Include="bin.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="BinaryStream.cpp" />
+    <ClCompile Include="Blacklist.cpp" />
+    <ClCompile Include="BlipUtil.cpp" />
+    <ClCompile Include="tbBlockVisionSounds.cpp" />
+    <ClCompile Include="Box.cpp" />
+    <ClCompile Include="ButtonInstructions.cpp" />
+    <ClCompile Include="Camgr.cpp" />
+    <ClCompile Include="CMiniMapBlip.cpp" />
+    <ClCompile Include="Chat.cpp" />
+    <ClCompile Include="ChatCommandsCommon.cpp" />
+    <ClCompile Include="CleanupHelper.cpp" />
+    <ClCompile Include="Click.cpp" />
+    <ClCompile Include="CNetGamePlayer.cpp" />
+    <ClCompile Include="CNetworkPlayerMgr.cpp" />
+    <ClCompile Include="CNetworkSession.cpp" />
+    <ClCompile Include="ColoadMgr.cpp" />
+    <ClCompile Include="ColonsAndTabs.cpp" />
+    <ClCompile Include="ColonsVehicleCustomisationIo.cpp" />
+    <ClCompile Include="ColourUtil.cpp" />
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="CommandAction.cpp" />
+    <ClCompile Include="CommandActionModel.cpp" />
+    <ClCompile Include="CommandHistoricPlayerWhitelist.cpp" />
+    <ClCompile Include="CommandHistoryAdminsNote.cpp" />
+    <ClCompile Include="CommandHistoryFriendsNote.cpp" />
+    <ClCompile Include="CommandRemovedPlayers.cpp" />
+    <ClCompile Include="CommandListHandling.cpp" />
+    <ClCompile Include="CommandListQrcode.cpp" />
+    <ClCompile Include="CommandListVisualSettings.cpp" />
+    <ClCompile Include="CommandLuaTextsliderStateful.cpp" />
+    <ClCompile Include="CommandPlayerKickConfusion.cpp" />
+    <ClCompile Include="CommandSessionThunder.cpp" />
+    <ClCompile Include="CommandSessionType.cpp" />
+    <ClCompile Include="CommandTextsliderStateful.cpp" />
+    <ClCompile Include="CommandTextslider.cpp" />
+    <ClCompile Include="CommandActionSuffix.cpp" />
+    <ClCompile Include="CommandInput.cpp" />
+    <ClCompile Include="CommandInputText.cpp" />
+    <ClCompile Include="CommandAddLabel.cpp" />
+    <ClCompile Include="CommandAllPlayers.cpp" />
+    <ClCompile Include="CommandAnyVehRc.cpp" />
+    <ClCompile Include="CommandLuaList.cpp" />
+    <ClCompile Include="CommandArNotifications.cpp" />
+    <ClCompile Include="CommandArSpeed.cpp" />
+    <ClCompile Include="CommandAsiMods.cpp" />
+    <ClCompile Include="CommandAutoKickHost.cpp" />
+    <ClCompile Include="CommandBanBypass.cpp" />
+    <ClCompile Include="CommandBlockBlockJoin.cpp" />
+    <ClCompile Include="CommandBoneEsp.cpp" />
+    <ClCompile Include="Commandbox.cpp" />
+    <ClCompile Include="CommandboxGrid.cpp" />
+    <ClCompile Include="CommandBypassTimeTrialUnsuitable.cpp" />
+    <ClCompile Include="CommandChatSing.cpp" />
+    <ClCompile Include="CommandClearArea.cpp" />
+    <ClCompile Include="CommandClock.cpp" />
+    <ClCompile Include="CommandColour.cpp" />
+    <ClCompile Include="CommandColourCustom.cpp" />
+    <ClCompile Include="CommandColourPointer.cpp" />
+    <ClCompile Include="CommandColourSlider.cpp" />
+    <ClCompile Include="CommandCtxHotkey.cpp" />
+    <ClCompile Include="CommandCtxHotkeys.cpp" />
+    <ClCompile Include="CommandCtxToggleCorrelation.cpp" />
+    <ClCompile Include="CommandCustomGlider.cpp" />
+    <ClCompile Include="CommandCustoms.cpp" />
+    <ClCompile Include="CommandDebugNatives.cpp" />
+    <ClCompile Include="CommandDevFlag.cpp" />
+    <ClCompile Include="CommandDisableDeathbarriers.cpp" />
+    <ClCompile Include="CommandDisableInputs.cpp" />
+    <ClCompile Include="CommandDisableOutfitRestrictions.cpp" />
+    <ClCompile Include="CommandDiscord.cpp" />
+    <ClCompile Include="CommandDivider.cpp" />
+    <ClCompile Include="CommandEditLabel.cpp" />
+    <ClCompile Include="CommandEditLabels.cpp" />
+    <ClCompile Include="CommandExportDisplayNames.cpp" />
+    <ClCompile Include="CommandFlowEvent.cpp" />
+    <ClCompile Include="CommandFlowEventGlobal.cpp" />
+    <ClCompile Include="CommandFlowEventReaction2.cpp" />
+    <ClCompile Include="CommandFlowEventReaction3.cpp" />
+    <ClCompile Include="CommandFlowEventReaction4.cpp" />
+    <ClCompile Include="CommandFocusPlayerBeaconExcludeMe.cpp" />
+    <ClCompile Include="CommandFocusPlayerBeaconPlural.cpp" />
+    <ClCompile Include="CommandFocusPlayerBeaconSingular.cpp" />
+    <ClCompile Include="CommandGunFreedom.cpp" />
+    <ClCompile Include="CommandFriction.cpp" />
+    <ClCompile Include="CommandGallery.cpp" />
+    <ClCompile Include="CommandGamer.cpp" />
+    <ClCompile Include="CommandGamerPresets.cpp" />
+    <ClCompile Include="CommandGarage.cpp" />
+    <ClCompile Include="CommandGeoGuessr.cpp" />
+    <ClCompile Include="CommandGtaRcFreecam.cpp" />
+    <ClCompile Include="CommandHeader.cpp" />
+    <ClCompile Include="CommandHistoricPlayer.cpp" />
+    <ClCompile Include="CommandHistoricPlayerCopy.cpp" />
+    <ClCompile Include="CommandHistoricPlayerJoinReactions.cpp" />
+    <ClCompile Include="CommandHistoricPlayerNote.cpp" />
+    <ClCompile Include="CommandHistoricPlayerTime.cpp" />
+    <ClCompile Include="CommandHistoricPlayerTrack.cpp" />
+    <ClCompile Include="CommandHistoryCopy.cpp" />
+    <ClCompile Include="CommandHudColourEditor.cpp" />
+    <ClCompile Include="CommandInputIpAddress.cpp" />
+    <ClCompile Include="CommandInputScheme.cpp" />
+    <ClCompile Include="CommandInterior.cpp" />
+    <ClCompile Include="CommandInteriorBunker.cpp" />
+    <ClCompile Include="CommandInteriorCustomisable.cpp" />
+    <ClCompile Include="CommandInteriorVehware.cpp" />
+    <ClCompile Include="CommandIssuable.cpp" />
+    <ClCompile Include="CommandLevitate.cpp" />
+    <ClCompile Include="CommandLink.cpp" />
+    <ClCompile Include="CommandList.cpp" />
+    <ClCompile Include="CommandListAction.cpp" />
+    <ClCompile Include="CommandListActionItem.cpp" />
+    <ClCompile Include="CommandListConcealer.cpp" />
+    <ClCompile Include="CommandListDisables.cpp" />
+    <ClCompile Include="CommandListFolder.cpp" />
+    <ClCompile Include="CommandListHistoricPlayers.cpp" />
+    <ClCompile Include="CommandListInfoOverlay.cpp" />
+    <ClCompile Include="CommandListInteriors.cpp" />
+    <ClCompile Include="CommandListMyVehicle.cpp" />
+    <ClCompile Include="CommandListNameshare.cpp" />
+    <ClCompile Include="CommandListNonDefaults.cpp" />
+    <ClCompile Include="CommandListNotifySettings.cpp" />
+    <ClCompile Include="CommandListPlaces.cpp" />
+    <ClCompile Include="CommandListPlayer.cpp" />
+    <ClCompile Include="CommandPlayerHistory.cpp" />
+    <ClCompile Include="CommandListProtections.cpp" />
+    <ClCompile Include="CommandListRadio.cpp" />
+    <ClCompile Include="CommandListRadioStations.cpp" />
+    <ClCompile Include="CommandListReadonly.cpp" />
+    <ClCompile Include="CommandListRefreshable.cpp" />
+    <ClCompile Include="CommandListSave.cpp" />
+    <ClCompile Include="CommandListSavedPlaces.cpp" />
+    <ClCompile Include="CommandListSelect.cpp" />
+    <ClCompile Include="CommandListSessionScripts.cpp" />
+    <ClCompile Include="CommandListSessionSpoof.cpp" />
+    <ClCompile Include="CommandListSpoofing.cpp" />
+    <ClCompile Include="CommandListStarred.cpp" />
+    <ClCompile Include="CommandListTextSettings.cpp" />
+    <ClCompile Include="CommandListTransform.cpp" />
+    <ClCompile Include="CommandListUnlocks.cpp" />
+    <ClCompile Include="CommandListUserkv.cpp" />
+    <ClCompile Include="CommandListWarning.cpp" />
+    <ClCompile Include="CommandListWeapons.cpp" />
+    <ClCompile Include="CommandLockOutfit.cpp" />
+    <ClCompile Include="CommandLuaAction.cpp" />
+    <ClCompile Include="CommandLuaTextslider.cpp" />
+    <ClCompile Include="CommandLuaColour.cpp" />
+    <ClCompile Include="CommandLuaListAction.cpp" />
+    <ClCompile Include="CommandLuaListSelect.cpp" />
+    <ClCompile Include="CommandLuaScript.cpp" />
+    <ClCompile Include="CommandLuaScripts.cpp" />
+    <ClCompile Include="CommandLuaTextInput.cpp" />
+    <ClCompile Include="CommandLuaToggle.cpp" />
+    <ClCompile Include="CommandMarkedPlayers.cpp" />
+    <ClCompile Include="CommandMenuRainbow.cpp" />
+    <ClCompile Include="CommandMmRegion.cpp" />
+    <ClCompile Include="CommandModelBlacklist.cpp" />
+    <ClCompile Include="CommandNewSession.cpp" />
+    <ClCompile Include="CommandNoDailyExpenses.cpp" />
+    <ClCompile Include="CommandObjectSpawner.cpp" />
+    <ClCompile Include="CommandOnlinePhoneAnims.cpp" />
+    <ClCompile Include="CommandOutfit.cpp" />
+    <ClCompile Include="CommandOutfitComponent.cpp" />
+    <ClCompile Include="CommandOutfitComponentVariation.cpp" />
+    <ClCompile Include="CommandOutfitProp.cpp" />
+    <ClCompile Include="CommandOutfitPropVariation.cpp" />
+    <ClCompile Include="CommandPackages.cpp" />
+    <ClCompile Include="CommandBirender.cpp" />
+    <ClCompile Include="CommandPerm.cpp" />
+    <ClCompile Include="CommandPersonalVehicle.cpp" />
+    <ClCompile Include="CommandPersonalVehicleInsurance.cpp" />
+    <ClCompile Include="CommandPersonalVehicles.cpp" />
+    <ClCompile Include="CommandPhysical.cpp" />
+    <ClCompile Include="CommandPlayer.cpp" />
+    <ClCompile Include="CommandPlayerAction.cpp" />
+    <ClCompile Include="CommandPlayerActionValue.cpp" />
+    <ClCompile Include="CommandPlayerAmmo.cpp" />
+    <ClCompile Include="CommandPlayerAutoheal.cpp" />
+    <ClCompile Include="CommandPlayerBail.cpp" />
+    <ClCompile Include="CommandPlayerbar.cpp" />
+    <ClCompile Include="CommandPlayerBefriend.cpp" />
+    <ClCompile Include="CommandPlayerBounty.cpp" />
+    <ClCompile Include="CommandPlayerCeoJoin.cpp" />
+    <ClCompile Include="CommandPlayerCeopay.cpp" />
+    <ClCompile Include="CommandPlayerClassifier.cpp" />
+    <ClCompile Include="CommandPlayerClassifierDetection.cpp" />
+    <ClCompile Include="CommandPlayerCopyOutfit.cpp" />
+    <ClCompile Include="CommandPlayerCopyVehicle.cpp" />
+    <ClCompile Include="CommandPlayerCrash.cpp" />
+    <ClCompile Include="CommandPlayerExplode.cpp" />
+    <ClCompile Include="CommandPlayerInfo.cpp" />
+    <ClCompile Include="CommandPlayerIntel.cpp" />
+    <ClCompile Include="CommandPlayerIntelLambda.cpp" />
+    <ClCompile Include="CommandPlayerKickBreakup.cpp" />
+    <ClCompile Include="CommandPlayerKickHost.cpp" />
+    <ClCompile Include="CommandPlayerKickLoveLetter.cpp" />
+    <ClCompile Include="CommandPlayerKickSmart.cpp" />
+    <ClCompile Include="CommandPlayerListPlayersShortcut.cpp" />
+    <ClCompile Include="CommandPlayerNotify.cpp" />
+    <ClCompile Include="CommandPlayerNotifySpam.cpp" />
+    <ClCompile Include="CommandPlayerPong.cpp" />
+    <ClCompile Include="CommandPlayerProfile.cpp" />
+    <ClCompile Include="CommandPlayerScope.cpp" />
+    <ClCompile Include="CommandPlayerScopePointer.cpp" />
+    <ClCompile Include="CommandPlayerShowcam.cpp" />
+    <ClCompile Include="CommandPlayerSpectateLegit.cpp" />
+    <ClCompile Include="CommandPlayerSpectateNinja.cpp" />
+    <ClCompile Include="CommandPlayerTimeout.cpp" />
+    <ClCompile Include="CommandPlayerToggle.cpp" />
+    <ClCompile Include="CommandPlayerToggleBatch.cpp" />
+    <ClCompile Include="CommandPlayerWaypoint.cpp" />
+    <ClCompile Include="CommandPosition2d.cpp" />
+    <ClCompile Include="CommandPosition2dMouse.cpp" />
+    <ClCompile Include="CommandPosition3d.cpp" />
+    <ClCompile Include="CommandPositionSelection.cpp" />
+    <ClCompile Include="CommandProfile.cpp" />
+    <ClCompile Include="CommandProfiles.cpp" />
+    <ClCompile Include="CommandRainbow.cpp" />
+    <ClCompile Include="CommandReadonlyLink.cpp" />
+    <ClCompile Include="CommandReadonlyName.cpp" />
+    <ClCompile Include="CommandReadonlyValue.cpp" />
+    <ClCompile Include="CommandReadonlyValueCopy.cpp" />
+    <ClCompile Include="CommandReadonlyValueLambda.cpp" />
+    <ClCompile Include="CommandRejoin.cpp" />
+    <ClCompile Include="CommandRepeatTeleport.cpp" />
+    <ClCompile Include="CommandReportStats.cpp" />
+    <ClCompile Include="CommandInputRid.cpp" />
+    <ClCompile Include="CommandRootName.cpp" />
+    <ClCompile Include="CommandSavedPlace.cpp" />
+    <ClCompile Include="CommandSavedVehicle.cpp" />
+    <ClCompile Include="CommandSaveOutfit.cpp" />
+    <ClCompile Include="CommandSavePos.cpp" />
+    <ClCompile Include="CommandSavePv.cpp" />
+    <ClCompile Include="CommandSchemeKey.cpp" />
+    <ClCompile Include="CommandScorched.cpp" />
+    <ClCompile Include="CommandScriptHost.cpp" />
+    <ClCompile Include="CommandScriptHostLoop.cpp" />
+    <ClCompile Include="CommandScripts.cpp" />
+    <ClCompile Include="CommandScrollbar.cpp" />
+    <ClCompile Include="CommandSeamless.cpp" />
+    <ClCompile Include="CommandSearch.cpp" />
+    <ClCompile Include="CommandSearchMenu.cpp" />
+    <ClCompile Include="CommandSearchPlayer.cpp" />
+    <ClCompile Include="CommandSelectControllerKey.cpp" />
+    <ClCompile Include="CommandSelectTag.cpp" />
+    <ClCompile Include="CommandSendChatMessage.cpp" />
+    <ClCompile Include="CommandSessionBrowser.cpp" />
+    <ClCompile Include="CommandSessionCode.cpp" />
+    <ClCompile Include="CommandSessionHopper.cpp" />
+    <ClCompile Include="CommandSessionScript.cpp" />
+    <ClCompile Include="CommandSetCarClubRepLevel.cpp" />
+    <ClCompile Include="CommandSetFont.cpp" />
+    <ClCompile Include="CommandShowTyping.cpp" />
+    <ClCompile Include="CommandSkipCutscene.cpp" />
+    <ClCompile Include="CommandSlider.cpp" />
+    <ClCompile Include="CommandSliderDynamic.cpp" />
+    <ClCompile Include="CommandSliderFloat.cpp" />
+    <ClCompile Include="CommandSliderRainbow.cpp" />
+    <ClCompile Include="CommandSnake.cpp" />
+    <ClCompile Include="CommandSpawnedObject.cpp" />
+    <ClCompile Include="CommandSpawnVehicle.cpp" />
+    <ClCompile Include="CommandSpoofClan.cpp" />
+    <ClCompile Include="CommandSpoofHostToken.cpp" />
+    <ClCompile Include="CommandSpoofName.cpp" />
+    <ClCompile Include="CommandSpoofSlider.cpp" />
+    <ClCompile Include="CommandSpoofToggle.cpp" />
+    <ClCompile Include="CommandStarredPlayers.cpp" />
+    <ClCompile Include="CommandSuperFlight.cpp" />
+    <ClCompile Include="CommandSvmBpOptim.cpp" />
+    <ClCompile Include="CommandTab.cpp" />
+    <ClCompile Include="CommandTabGame.cpp" />
+    <ClCompile Include="CommandTabOnline.cpp" />
+    <ClCompile Include="CommandTabPlayers.cpp" />
+    <ClCompile Include="CommandTabSelf.cpp" />
+    <ClCompile Include="CommandTabStand.cpp" />
+    <ClCompile Include="CommandTabVehicle.cpp" />
+    <ClCompile Include="CommandTabWorld.cpp" />
+    <ClCompile Include="CommandTimecycleMod.cpp" />
+    <ClCompile Include="CommandToggle.cpp" />
+    <ClCompile Include="CommandToggleEditionbound.cpp" />
+    <ClCompile Include="CommandToggleNoCorrelation.cpp" />
+    <ClCompile Include="CommandToggleRegularSp.cpp" />
+    <ClCompile Include="CommandTrackedPlayers.cpp" />
+    <ClCompile Include="CommandTrafficColour.cpp" />
+    <ClCompile Include="CommandTrafficModelFlag.cpp" />
+    <ClCompile Include="CommandUnlockCasino.cpp" />
+    <ClCompile Include="CommandVehicle.cpp" />
+    <ClCompile Include="CommandVehicleParachuteModel.cpp" />
+    <ClCompile Include="CommandVisualZCorrection.cpp" />
+    <ClCompile Include="CommandWardrobe.cpp" />
+    <ClCompile Include="CommandWaterHeight.cpp" />
+    <ClCompile Include="CommandWaterOpacityDifferential.cpp" />
+    <ClCompile Include="CommandWaterWaveBehaviour.cpp" />
+    <ClCompile Include="CommandWaterwheels.cpp" />
+    <ClCompile Include="CommandWeb.cpp" />
+    <ClCompile Include="CommandWhitelistedPlayers.cpp" />
+    <ClCompile Include="CommandWorldDoors.cpp" />
+    <ClCompile Include="CommandWorldEditor.cpp" />
+    <ClCompile Include="ComponentCrashPatch.cpp" />
+    <ClCompile Include="ComponentNetcode.cpp" />
+    <ClCompile Include="Components.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="ConfigHotkeys.cpp" />
+    <ClCompile Include="ConfigMetaState.cpp" />
+    <ClCompile Include="ConfigSimple.cpp" />
+    <ClCompile Include="ConfigState.cpp" />
+    <ClCompile Include="ConfigTree.cpp" />
+    <ClCompile Include="ConfigTreeSimple.cpp" />
+    <ClCompile Include="ContextMenu.cpp" />
+    <ClCompile Include="ControllerInputConfig.cpp" />
+    <ClCompile Include="ControlMgr.cpp" />
+    <ClCompile Include="create_colour_with_rainbow.cpp" />
+    <ClCompile Include="create_rainbow.cpp" />
+    <ClCompile Include="tbCustomFov.cpp" />
+    <ClCompile Include="datBitBuffer.cpp" />
+    <ClCompile Include="tbDeceiveInteriorChecks.cpp" />
+    <ClCompile Include="dedsec_hacks.cpp" />
+    <ClCompile Include="DetourHook.cpp" />
+    <ClCompile Include="tbDisableDeathbarriers.cpp" />
+    <ClCompile Include="DisableDripfeed.cpp" />
+    <ClCompile Include="DlcMgr.cpp" />
+    <ClCompile Include="drawDebugText.cpp" />
+    <ClCompile Include="DrawUtil3d.cpp" />
+    <ClCompile Include="EventAggregation.cpp" />
+    <ClCompile Include="EventLabel.cpp" />
+    <ClCompile Include="EventTally.cpp" />
+    <ClCompile Include="Exceptional.cpp" />
+    <ClCompile Include="extract_delimited_string_with_escaping.cpp" />
+    <ClCompile Include="FiberPool.cpp" />
+    <ClCompile Include="FlowEvent.cpp" />
+    <ClCompile Include="FlowEventReaction.cpp" />
+    <ClCompile Include="FmBanner.cpp" />
+    <ClCompile Include="font_nanumgothic_1.cpp" />
+    <ClCompile Include="font_yahei_1.cpp" />
+    <ClCompile Include="force_door_open.cpp" />
+    <ClCompile Include="format_duration.cpp" />
+    <ClCompile Include="format_time_since_1970_for_user_locale.cpp" />
+    <ClCompile Include="tbFreecam.cpp" />
+    <ClCompile Include="free_movement.cpp" />
+    <ClCompile Include="GamerIdentifier.cpp" />
+    <ClCompile Include="GameToaster.cpp" />
+    <ClCompile Include="get_appdata_path.cpp" />
+    <ClCompile Include="get_current_time_millis.cpp" />
+    <ClCompile Include="get_display_names.cpp" />
+    <ClCompile Include="get_ground_z.cpp" />
+    <ClCompile Include="get_next_arg.cpp" />
+    <ClCompile Include="get_root_list.cpp" />
+    <ClCompile Include="get_seconds_since_unix_epoch.cpp" />
+    <ClCompile Include="get_vehicle_display_name.cpp" />
+    <ClCompile Include="GlobalsWatcher.cpp" />
+    <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="GridItem.cpp" />
+    <ClCompile Include="GridItemAddressbar.cpp" />
+    <ClCompile Include="GridItemColourBox.cpp" />
+    <ClCompile Include="GridItemColourBoxBordered.cpp" />
+    <ClCompile Include="GridItemHeader.cpp" />
+    <ClCompile Include="GridItemHeaderAnimation.cpp" />
+    <ClCompile Include="GridItemHeaderLoading.cpp" />
+    <ClCompile Include="GridItemList.cpp" />
+    <ClCompile Include="GridItemNotify.cpp" />
+    <ClCompile Include="GridItemPrimaryText.cpp" />
+    <ClCompile Include="GridItemQrcode.cpp" />
+    <ClCompile Include="GridItemScrollbar.cpp" />
+    <ClCompile Include="GridItemTabsHorizontal.cpp" />
+    <ClCompile Include="GridItemTabsVertical.cpp" />
+    <ClCompile Include="GridItemText.cpp" />
+    <ClCompile Include="GridItemCommandboxInput.cpp" />
+    <ClCompile Include="GridItemTextBigCentre.cpp" />
+    <ClCompile Include="GridItemTextBigCentreBordered.cpp" />
+    <ClCompile Include="GridToaster.cpp" />
+    <ClCompile Include="gta_entity.cpp" />
+    <ClCompile Include="gta_net_object_mgr.cpp" />
+    <ClCompile Include="Gui.cpp" />
+    <ClCompile Include="GunPunishments.cpp" />
+    <ClCompile Include="HistoricPlayer.cpp" />
+    <ClCompile Include="Hooking.cpp" />
+    <ClCompile Include="Hotkey.cpp" />
+    <ClCompile Include="HttpRequestBuilder.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="is_session.cpp" />
+    <ClCompile Include="joaatToString.cpp" />
+    <ClCompile Include="JoinUtil.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="lang.cpp" />
+    <ClCompile Include="LangData.cpp" />
+    <ClCompile Include="lang_de.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_en.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_es.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_fr.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_ko.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_lt.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_nl.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_pl.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_pt.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_ru.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_sex.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_tr.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="lang_zh.cpp">
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Dev Build|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IncludeInUnityFile>
+      <IncludeInUnityFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IncludeInUnityFile>
+    </ClCompile>
+    <ClCompile Include="LeaveReasons.cpp" />
+    <ClCompile Include="tbLoadingSessionDetails.cpp" />
+    <ClCompile Include="FileLogger.cpp" />
+    <ClCompile Include="luaS_push.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ManagedTunables.cpp" />
+    <ClCompile Include="Matchmaking.cpp" />
+    <ClCompile Include="NativeFingerprinter.cpp" />
+    <ClCompile Include="SpectateMgr.cpp" />
+    <ClCompile Include="rlFriend.cpp" />
+    <ClCompile Include="rl_matching.cpp" />
+    <ClCompile Include="MenuGrid.cpp" />
+    <ClCompile Include="Mixed.cpp" />
+    <ClCompile Include="mystackwalker.cpp" />
+    <ClCompile Include="Names.cpp" />
+    <ClCompile Include="name_validation.cpp" />
+    <ClCompile Include="NativeTableHooks.cpp" />
+    <ClCompile Include="netGameEventId.cpp" />
+    <ClCompile Include="netHardware.cpp" />
+    <ClCompile Include="netIpAddress.cpp" />
+    <ClCompile Include="netPeerAddress.cpp" />
+    <ClCompile Include="Spinlock.cpp" />
+    <ClCompile Include="NotifyGrid.cpp" />
+    <ClCompile Include="NuancedEvent.cpp" />
+    <ClCompile Include="NuancedEventWithExtraData.cpp" />
+    <ClCompile Include="joaat_hash_db.cpp" />
+    <ClCompile Include="OnlineVersion.cpp" />
+    <ClCompile Include="PackageMgr.cpp" />
+    <ClCompile Include="ParachuteModels.cpp" />
+    <ClCompile Include="parse_coord.cpp" />
+    <ClCompile Include="PathFind.cpp" />
+    <ClCompile Include="PatternBatch.cpp" />
+    <ClCompile Include="PedModel.cpp" />
+    <ClCompile Include="PersonalVehicle.cpp" />
+    <ClCompile Include="PersonalVehicleCustomisationIo.cpp" />
+    <ClCompile Include="PickupManager.cpp" />
+    <ClCompile Include="PlayerClassifier.cpp" />
+    <ClCompile Include="PlayerHistory.cpp" />
+    <ClCompile Include="PlayerListSort.cpp" />
+    <ClCompile Include="PlayerProvider.cpp" />
+    <ClCompile Include="PlayerProviderAll.cpp" />
+    <ClCompile Include="PointerCache.cpp" />
+    <ClCompile Include="Pong.cpp" />
+    <ClCompile Include="PlateDj.cpp" />
+    <ClCompile Include="tbPositionSelection.cpp" />
+    <ClCompile Include="PositionState.cpp" />
+    <ClCompile Include="PositionStateVehData.cpp" />
+    <ClCompile Include="PositionStateWithCam.cpp" />
+    <ClCompile Include="punishments.cpp" />
+    <ClCompile Include="GhostDriver.cpp" />
+    <ClCompile Include="RecursiveSpinlock.cpp" />
+    <ClCompile Include="RecursiveScopedSpinlock.cpp" />
+    <ClCompile Include="RelayCon.cpp" />
+    <ClCompile Include="RemoteGamer.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="tbReticle.cpp" />
+    <ClCompile Include="rlGamerHandle.cpp" />
+    <ClCompile Include="rlGamerId.cpp" />
+    <ClCompile Include="rlGamerInfo.cpp" />
+    <ClCompile Include="rlSessionInfo.cpp" />
+    <ClCompile Include="RootMgr.cpp" />
+    <ClCompile Include="RootNameMgr.cpp" />
+    <ClCompile Include="ScAccount.cpp" />
+    <ClCompile Include="Scaleform.cpp" />
+    <ClCompile Include="tbScreenshotMode.cpp" />
+    <ClCompile Include="Script.cpp" />
+    <ClCompile Include="ScriptEventTaxonomy.cpp" />
+    <ClCompile Include="ScriptFuncPatch.cpp" />
+    <ClCompile Include="ScriptVmErrorHandling.cpp" />
+    <ClCompile Include="ScriptGlobal.cpp" />
+    <ClCompile Include="script_handler.cpp" />
+    <ClCompile Include="ScriptLocal.cpp" />
+    <ClCompile Include="ScriptMgr.cpp" />
+    <ClCompile Include="script_program.cpp" />
+    <ClCompile Include="script_thread.cpp" />
+    <ClCompile Include="script_vm_common.cpp" />
+    <ClCompile Include="script_vm_reimpl.cpp" />
+    <ClCompile Include="scrNativeCallContext.cpp" />
+    <ClCompile Include="sc_presence_attributes.cpp" />
+    <ClCompile Include="SessionScriptMgr.cpp" />
+    <ClCompile Include="SessionSpoofing.cpp" />
+    <ClCompile Include="tbStareAtSky.cpp" />
+    <ClCompile Include="StateSaver.cpp" />
+    <ClCompile Include="StatUtil.cpp" />
+    <ClCompile Include="StringCastable.cpp" />
+    <ClCompile Include="StringUtils.cpp" />
+    <ClCompile Include="TcpConnection.cpp" />
+    <ClCompile Include="tbTempEmptyParachute.cpp" />
+    <ClCompile Include="Textbox.cpp" />
+    <ClCompile Include="TextboxInterface.cpp" />
+    <ClCompile Include="TextColour.cpp" />
+    <ClCompile Include="TextureBase.cpp" />
+    <ClCompile Include="TextureDynamic.cpp" />
+    <ClCompile Include="TickMgr.cpp" />
+    <ClCompile Include="TickQueues.cpp" />
+    <ClCompile Include="TimedCall.cpp" />
+    <ClCompile Include="TimedTextCollection.cpp" />
+    <ClCompile Include="TimedTextPresenter.cpp" />
+    <ClCompile Include="TimeOfDay.cpp" />
+    <ClCompile Include="timescale.cpp" />
+    <ClCompile Include="ToastConfig.cpp" />
+    <ClCompile Include="Toaster.cpp" />
+    <ClCompile Include="tbToggleableBehaviour.cpp" />
+    <ClCompile Include="ToggleableBehaviourIpl.cpp" />
+    <ClCompile Include="tbToggleableBehaviourScript.cpp" />
+    <ClCompile Include="ToggleCorrelation.cpp" />
+    <ClCompile Include="TpUtil.cpp" />
+    <ClCompile Include="TranscendentVehicle.cpp" />
+    <ClCompile Include="TransitionHelper.cpp" />
+    <ClCompile Include="tse.cpp" />
+    <ClCompile Include="Tunables.cpp" />
+    <ClCompile Include="TunablesParser.cpp" />
+    <ClCompile Include="Tutorial.cpp" />
+    <ClCompile Include="TutorialGrid.cpp" />
+    <ClCompile Include="UnicodePrivateUse.cpp" />
+    <ClCompile Include="UniqueThread.cpp" />
+    <ClCompile Include="unrestrictGameplayCam.cpp" />
+    <ClCompile Include="using_model.cpp" />
+    <ClCompile Include="Util.cpp" />
+    <ClCompile Include="validate_file_name.cpp" />
+    <ClCompile Include="vector.cpp" />
+    <ClCompile Include="Vector2Plus.cpp" />
+    <ClCompile Include="VehicleCustomisationIo.cpp" />
+    <ClCompile Include="VehicleEntityCustomisationIo.cpp" />
+    <ClCompile Include="VehicleModelFlags.cpp" />
+    <ClCompile Include="VehicleMods.cpp" />
+    <ClCompile Include="vehicle_colours.cpp" />
+    <ClCompile Include="vehicle_items.cpp" />
+    <ClCompile Include="WaterQuad.cpp" />
+    <ClCompile Include="WeaponLoadout.cpp" />
+    <ClCompile Include="WeaponLoadoutTree.cpp" />
+    <ClCompile Include="WeaponMgr.cpp" />
+    <ClCompile Include="weapons.cpp" />
+    <ClCompile Include="weapon_components.cpp" />
+    <ClCompile Include="Worker.cpp" />
+    <ClCompile Include="WorldState.cpp" />
+    <ClCompile Include="yeet_flow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="aes_helper.asm" />
+    <MASM Include="data_node_helper.asm" />
+    <MASM Include="exceptional_helper.asm" />
+    <MASM Include="get_stack_pointer.asm" />
+    <MASM Include="overrun_helper.asm" />
+    <MASM Include="rage_input_helper.asm" />
+    <MASM Include="script_vm_helper.asm" />
+    <MASM Include="swapchain_hook.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
